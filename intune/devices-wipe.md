@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846832"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570551"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Mediante las acciones **Retirar** o **Borrar**, puede quitar de Intune los dispositivos que ya no son necesarios, que se van a reasignar o que han desaparecido. Los usuarios también pueden emitir un comando remoto desde el Portal de empresa de Intune para los dispositivos de propiedad privada que están inscritos en Intune.
+Mediante las acciones **Retirar** o **Borrar**, puede quitar de Intune los dispositivos que ya no son necesarios, que se van a reasignar o que han desaparecido. Los usuarios también pueden emitir un comando remoto desde el Portal de empresa de Intune para los dispositivos que están inscritos en Intune.
 
 > [!NOTE]
 > Antes de eliminar un usuario de Azure Active Directory (Azure AD), use la acción **Borrar** o **Retirar** para todos los dispositivos asociados a ese usuario. Si elimina usuarios que tienen dispositivos administrados desde Azure AD, Intune ya no podrá borrar o retirar esos dispositivos.
@@ -130,7 +131,7 @@ Solo se pueden borrar dispositivos de quiosco. Los dispositivos de quiosco de An
 
 |Tipo de datos|Windows 8.1 (MDM) y Windows RT 8.1|Windows RT|Windows Phone 8.1 y Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicaciones de empresa y datos asociados instalados por Intune.|Se revocan las claves de los archivos protegidos con EFS. El usuario no puede abrir los archivos.|No se quitan las aplicaciones de empresa.|Se desinstalan las aplicaciones instaladas originalmente a través del Portal de empresa. Se quitarán los datos de la aplicación de empresa.|Las aplicaciones se desinstalarán. Se quitan las claves de instalación de prueba.<br>Para Windows 10 versión 1703 (Creator Update) y versiones posteriores, no se quitan las aplicaciones de Office 365 ProPlus.|
+|Aplicaciones de empresa y datos asociados instalados por Intune.|Se revocan las claves de los archivos protegidos con EFS. El usuario no puede abrir los archivos.|No se quitan las aplicaciones de empresa.|Se desinstalan las aplicaciones instaladas originalmente a través del Portal de empresa. Se quitarán los datos de la aplicación de empresa.|Las aplicaciones se desinstalarán. Se quitan las claves de instalación de prueba.<br>Para Windows 10 versión 1703 (Creator Update) y versiones posteriores, no se quitan las aplicaciones de Office 365 ProPlus. Las aplicaciones Win32 instaladas en la extensión de administración de Intune no serán dispositivos desinstalados o no inscritos. Los administradores pueden aprovechar la exclusión de asignación para no ofrecer las aplicaciones Win32 en los dispositivos BYOD.|
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|Quitado.|No compatible.|Quitado.|
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|Certificados eliminados y revocados.|No compatible.|Certificados eliminados y revocados.|
@@ -166,7 +167,7 @@ Puede configurar Intune para eliminar automáticamente los dispositivos que pare
 
 Es posible que deba eliminar dispositivos de Azure AD si se producen problemas de comunicación o si faltan dispositivos. Puede usar la acción **Eliminar** para quitar registros de dispositivo de Azure Portal de los dispositivos que sabe que son inaccesibles y que es poco probable que vuelvan a comunicarse con Azure. La acción **Eliminar** no quita ningún dispositivo de la administración.
 
-1.  Inicie sesión en [Azure Active Directory en Azure Portal](http://aka.ms/accessaad) con sus credenciales de administrador. También puede iniciar sesión en el [portal de Office 365](https://portal.office.com). En el menú, seleccione **Centros de administración** > **Azure AD**.
+1.  Inicie sesión en [Azure Active Directory en Azure Portal](http://aka.ms/accessaad) con sus credenciales de administrador. También puede iniciar sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com). En el menú, seleccione **Centros de administración** > **Azure AD**.
 2.  Si no tiene ninguna, cree una suscripción de Azure. Si tiene una cuenta de pago, no necesitará ninguna tarjeta de crédito ni deberá efectuar ningún pago (seleccione el vínculo de suscripción **Registre su suscripción gratuita de Azure Active Directory**).
 3.  Seleccione **Azure Active Directory** y, después, seleccione su organización.
 4.  Seleccione la pestaña **Usuarios** .

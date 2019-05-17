@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 04/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bb205472c4407dab6ff990e33737a8bd8b24a010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2a6d99cc83be1b20ef2839acd77cb83c9d6b247e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188660"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393583"
 ---
 # <a name="data-intune-sends-to-google"></a>Datos que Intune manda a Google
 
@@ -39,7 +41,7 @@ En la tabla siguiente se enumeran los datos que Microsoft Intune envía a Google
 | Datos del dispositivo | Los dispositivos de escenarios de perfil de trabajo comienzan con la inscripción en Intune. Los dispositivos de escenarios de dispositivo administrado comienzan con la inscripción en Google. | La información de los datos del dispositivo se envía entre Intune y Google para realizar varias acciones como la aplicación de directivas, la administración del dispositivo y la creación de informes generales. | **Identificador único para representar el nombre del dispositivo.** Ejemplo: enterprises/LC04ebru7b/devices/3592d971168f9ae4<br>**Identificador único para representar el nombre de usuario.** Ejemplo: Enterprises/LC04ebru7b/users/116838519924207449711<br>**Estado del dispositivo.** Ejemplos: activo, deshabilitado, aprovisionamiento.<br>**Estados de cumplimiento.** Ejemplos: configuración no admitida, faltan aplicaciones necesarias<br>**Información del software.** Ejemplos: versiones de software y nivel de revisión.<br>**Información de red.** Ejemplos: IMEI, MEID, WifiMacAddress<br>**Configuración del dispositivo.** Ejemplos: información sobre niveles de cifrado y si el dispositivo permite aplicaciones desconocidas.<br> Vea a continuación un ejemplo de un mensaje JSON. |
 | newPassword | Se origina en Intune. | Restablecer la contraseña del dispositivo. | Cadena que representa una nueva contraseña. |
 | Usuario de Google | Google | Administrar el perfil del trabajo para los escenarios de perfil de trabajo (BYOD). | Identificador único para representar la cuenta de Gmail vinculada. Ejemplo: 114223373813435875042 |
-| Datos de programa | Se origina en Intune al guardar la directiva de aplicación. |  | Cadena de nombre de aplicación. Ejemplo: app:com.microsoft.windowsintune.companyportal |
+| Datos de aplicaciones | Se origina en Intune al guardar la directiva de aplicación. |  | Cadena de nombre de aplicación. Ejemplo: app:com.microsoft.windowsintune.companyportal |
 | Cuenta de servicio de empresa | Se origina en Google tras la solicitud de Intune. | Se usa para la autenticación entre Intune y Google para transacciones relacionadas con este cliente. | Hay varias partes:<br> **Id. de empresa**: documentado anteriormente.<br>**UPN**: UPN generado usado en la autenticación en nombre del cliente.<br>Ejemplo: w49d77900526190e26708c31c9e8a0@pfwp-commicrosoftonedfmdm2.google.com.iam.gserviceaccount.com<br>**Clave**: blob codificado en Base64 usado en solicitudes de autenticación que se almacena cifrado en el servicio, pero este es el aspecto del blob:<br> Identificador único para representar la clave del cliente<br>Ejemplo: a70d4d53eefbd781ce7ad6a6495c65eb15e74f1f |
 
 

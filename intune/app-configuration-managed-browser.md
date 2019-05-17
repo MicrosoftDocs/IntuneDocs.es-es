@@ -1,40 +1,52 @@
 ---
-title: Administrar el acceso web con un explorador protegido por directiva
-titlesuffix: Microsoft Intune
-description: Use un explorador protegido por directiva para restringir la exploración web y transferencia de datos web.
+title: Administración del acceso web corporativo con un explorador protegido por directiva
+titleSuffix: Microsoft Intune
+description: Use un explorador protegido por directiva asignado por Intune para administrar la transferencia de datos web y la exploración web de una empresa.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086223"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569732"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Administración del acceso a Internet mediante un explorador protegido por directivas de Microsoft Intune
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Administración del acceso web con un explorador protegido por directiva de Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mediante un explorador protegido por una directiva de Intune (Microsoft Edge o Intune Managed Browser), tendrá la garantía de que el acceso a los sitios web corporativos se hace siempre con las medidas de seguridad adecuadas.  Cuando se configuran con Intune, los exploradores protegidos presentan estas ventajas:
 
-- Directivas de protección de aplicaciones.
-- Acceso condicional.
-- Inicio de sesión único.
-- Parámetros de configuración de la aplicación.
-- Integración de proxy de la aplicación de Azure.
+- Directivas de protección de aplicaciones
+- Acceso condicional
+- Inicio de sesión único
+- Parámetros de configuración de la aplicación
+- Integración de proxy de la aplicación de Azure
+
+## <a name="microsoft-edge-support"></a>Compatibilidad de Microsoft Edge
+
+Puede usar Microsoft Edge para escenarios empresariales en dispositivos iOS y Android. Microsoft Edge admite los mismos escenarios de administración que Intune Managed Browser con la incorporación de mejoras en la experiencia del usuario final. Están disponibles las características empresariales de Microsoft Edge siguientes habilitadas por directivas de Intune. Estas características empresariales incluyen:
+
+1. **Identidad dual**: los usuarios pueden agregar una cuenta profesional, al igual que una cuenta personal, para realizar la exploración. Hay una separación total entre ambas identidades, que es similar a la arquitectura y experiencia existente en Office 365 y Outlook. Los administradores de Intune podrán establecer las directivas deseadas para lograr una experiencia de exploración protegida dentro de la cuenta profesional. 
+2. **Integración de directivas de protección de la aplicación Intune**: los administradores ahora pueden dirigir las directivas de protección de aplicación a Microsoft Edge, incluido el control de las acciones de cortar, copiar y pegar, lo que impide las capturas de pantalla y garantiza que los vínculos seleccionados por el usuario solo se abran en otras aplicaciones administradas.
+3. **Integración de proxy de la aplicación de Azure**: los administradores pueden controlar el acceso a las aplicaciones web y a las aplicaciones SaaS, lo que permite garantizar que las aplicaciones basadas en explorador solo se ejecuten en el explorador seguro de Microsoft Edge, ya sea que los usuarios finales se conecten desde la red corporativa o desde Internet. 
+4. **Favoritos administrados y accesos directos a la página principal**: para facilitar el acceso, los administradores pueden establecer direcciones URL para que aparezcan en los favoritos cuando los usuarios finales estén en su contexto corporativo. Los administradores pueden establecer un acceso directo a la página principal, que se mostrará como el acceso directo principal cuando el usuario corporativo abra una página o una pestaña nueva en Microsoft Edge.
+
+Las directivas de protección de Microsoft Intune para Microsoft Edge ayudan a proteger los datos y los recursos de su organización. Microsoft Edge protegido por Intune garantiza que los recursos de su empresa están protegidos no solo dentro de las aplicaciones instaladas de manera nativa, sino también cuando se acceden a través del explorador web.
 
 ## <a name="getting-started"></a>Introducción
 
@@ -72,11 +84,15 @@ Dado que Intune no administra Managed Browser ni Microsoft Edge, no pueden acced
 
 ## <a name="conditional-access-for-protected-browsers"></a>Acceso condicional para exploradores protegidos
 
-Ahora, Managed Browser es una aplicación de cliente aprobada para el acceso condicional. Esto significa que se puede restringir el acceso de explorador móvil a únicamente las aplicaciones web conectadas a Azure AD donde solo se puede usar Managed Browser, e impedir el acceso desde cualquier otro explorador no protegido, como Safari o Chrome. Esta protección se puede aplicar a recursos de Azure como Exchange Online y SharePoint Online, al Portal de Office e, incluso, a sitios locales que estén expuestos a usuarios externos a través del [proxy de aplicación de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+Ahora, Managed Browser es una aplicación de cliente aprobada para el acceso condicional. Esto significa que se puede restringir el acceso de explorador móvil a únicamente las aplicaciones web conectadas a Azure AD donde solo se puede usar Managed Browser, e impedir el acceso desde cualquier otro explorador no protegido, como Safari o Chrome. Esta protección se puede aplicar a recursos de Azure como Exchange Online y SharePoint Online, el Centro de administración de Microsoft 365 e, incluso, a sitios locales que estén expuestos a usuarios externos a través del [proxy de la aplicación de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
-Para limitar las aplicaciones web conectadas a Azure AD al uso de Intune Managed Browser en plataformas móviles, puede crear una directiva de acceso condicional de Azure AD que requiera aplicaciones de cliente aprobadas. 
+Para limitar las aplicaciones web conectadas a Azure AD al uso de Intune Managed Browser en plataformas móviles, puede crear una directiva de acceso condicional que requiera aplicaciones de cliente aprobadas. 
 
-1. En Azure Portal, seleccione **Azure Active Directory** > **Aplicaciones empresariales** > **Acceso condicional** >  **Nueva directiva**. 
+> [!TIP]  
+> Acceso condicional es una tecnología de Azure Active Directory (Azure AD). El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
+
+
+1. En el portal de Intune, seleccione **Acceso condicional** > **Nueva directiva**. 
 2. Luego, seleccione **Conceder** en la sección **Controles de acceso** de la hoja. 
 3. Haga clic en **Requerir aplicación cliente aprobada**. 
 4. Haga clic en **Seleccionar** en la hoja **Conceder**. Esta directiva se debe asignar a las aplicaciones en la nube que quiera que estén accesibles a únicamente la aplicación Intune Managed Browser.
@@ -118,7 +134,7 @@ Para el inicio de sesión único hace falta que el dispositivo esté registrado 
 >Para que se apliquen las configuraciones de aplicaciones, el explorador protegido del usuario u otra aplicación del dispositivo ya deben estar administrados mediante [directivas de aplicación de Intune]( app-protection-policy.md)
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3.  En la hoja **Aplicaciones cliente** de la lista Administrar, elija **Directivas de configuración de aplicaciones**.
 4.  En la hoja **Directivas de configuración de aplicaciones**, elija **Agregar**.
 5.  En la hoja **Agregar directiva de configuración**, escriba un **nombre** y una **descripción** opcional para las opciones de configuración de aplicaciones.
@@ -264,17 +280,17 @@ Use la siguiente información para conocer los formatos permitidos y los caracte
   - `http://www.contoso.com: /*`
 ## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Apertura de vínculos dentro de Intune Managed Browser frente a Microsoft Edge 
 
-Tanto Intune Managed Browser como Microsoft Edge ahora se consideran exploradores administrados por directivas o exploradores protegidos. Hoy en día, las directivas de protección de aplicaciones existentes dan como resultado que los vínculos web de las aplicaciones administradas de Intune se abran en un explorador concreto según el escenario y la plataforma. 
+Tanto Intune Managed Browser como Microsoft Edge ahora se consideran exploradores administrados por directivas o exploradores protegidos. Hoy en día, las directivas de protección de aplicaciones existentes dan como resultado que los vínculos web de las aplicaciones administradas de Intune se abran en un explorador concreto según el escenario y la plataforma. 
 
 En Android: 
-* Managed Browser si tanto Managed Browser como Edge están en el dispositivo, a menos que la opción de configuración de la aplicación “com.microsoft.intune.useEdge” esté establecida en “true” para todas las aplicaciones administradas de Intune con un explorador administrado por directivas.  
-* Microsoft Edge si solo Microsoft Edge se encuentra en el dispositivo y es objeto de la directiva.
-* Managed Browser si solo Managed Browser se encuentra en el dispositivo y es objeto de la directiva. 
+* Managed Browser se abrirá si un usuario tiene Managed Browser y Microsoft Edge descargados en el dispositivo. Para garantizar que se abre Microsoft Edge en lugar de Managed Browser, establezca la configuración de la aplicación "com.microsoft.intune.useEdge" en "true" para todas las aplicaciones administradas de Intune con un explorador administrado por directivas requerido.  
+* Microsoft Edge se abrirá si solo Microsoft Edge se encuentra en el dispositivo y es el objetivo de la directiva.
+* Managed Browser se abrirá si solo Managed Browser se encuentra en el dispositivo y es el objetivo de la directiva. 
 
 En iOS, para aplicaciones que tienen integrado el SDK de Intune para iOS versión 9.0.9+: 
-* Managed Browser si tanto Managed Browser como Edge están en el dispositivo, a menos que la opción de configuración de la aplicación “com.microsoft.intune.useEdge” esté establecida en “true” para todas las aplicaciones administradas de Intune con un explorador administrado por directivas requerido **o** Microsoft Edge si Microsoft Edge está instalado y ha recibido la directiva. 
-* Microsoft Edge si solo Microsoft Edge se encuentra en el dispositivo y es objeto y ha recibido la directiva. 
-* Managed Browser si solo Managed Browser se encuentra en el dispositivo y es objeto y ha recibido la directiva.
+* Managed Browser si tanto Managed Browser como Edge están en el dispositivo, a menos que la opción de configuración de la aplicación "com.microsoft.intune.useEdge" esté establecida en "true" para todas las aplicaciones administradas de Intune con un explorador administrado por directivas requerido **o** Microsoft Edge si Microsoft Edge está instalado y ha recibido la directiva. 
+* Microsoft Edge si solo Microsoft Edge se encuentra en el dispositivo y es objeto y ha recibido la directiva. 
+* Managed Browser si solo Managed Browser se encuentra en el dispositivo y es objeto y ha recibido la directiva.
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Cómo tener acceso a los registros de aplicación administrada con Managed Browser en iOS
 

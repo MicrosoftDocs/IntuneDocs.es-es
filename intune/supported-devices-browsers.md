@@ -10,6 +10,7 @@ ms.date: 01/03/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbddbd1bd74044e161b1a18fcf58c5a64bdb8c70
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842499"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460621"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Exploradores y sistemas operativos compatibles en Intune
 
@@ -99,7 +100,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 Las diferentes tareas administrativas requieren que use uno de los siguientes sitios web de administración.
 
-- [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Portal de Azure](https://portal.azure.com/)
 
 Estos portales son compatibles con los siguientes exploradores:

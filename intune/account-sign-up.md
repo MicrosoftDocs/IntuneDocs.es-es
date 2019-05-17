@@ -9,6 +9,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97a1ab3327f8d76f1623d51fe80289a8f15d7ff1
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 956fe061912e0eb96a18c410e1455252874d6b84
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235232"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459958"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Suscribirse o iniciar sesión en Microsoft Intune
 
@@ -38,7 +39,7 @@ Si ya dispone de una cuenta profesional o educativa, **inicie sesión** con dich
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Cómo registrarse o iniciar sesión en Intune
 
-1. Visite la [página de registro de Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1. Visite la [página de registro de Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
    ![Captura de pantalla de la página web de registro de una cuenta de prueba de Microsoft Intune](./media/account-sign-up-site.png)
 
@@ -47,4 +48,4 @@ Si ya dispone de una cuenta profesional o educativa, **inicie sesión** con dich
 ## <a name="post-sign-up-considerations"></a>Consideraciones posteriores al registro
 Cuando se haya registrado para obtener una nueva suscripción, recibirá un mensaje de correo electrónico con la información de la cuenta en la dirección de correo electrónico que haya proporcionado durante el proceso de registro. Este mensaje confirma que la suscripción está activa.
 
-Una vez concluido el proceso de registro, se le dirigirá al Centro de administración de Office 365, desde el que se pueden agregar usuarios y asignarles licencias. Si solo dispone de cuentas basadas en la nube con el nombre de dominio onmicrosoft.com predeterminado, puede continuar para agregar usuarios y asignar licencias. Pero si tiene pensado usar el [nombre de dominio personalizado](custom-domain-name-configure.md) de su organización o [sincronizar la información de la cuenta de usuario](users-add.md#sync-active-directory-and-add-users-to-intune) de Active Directory local, puede cerrar la ventana del explorador.
+Una vez concluido el proceso de registro, se le dirigirá al Centro de administración de Microsoft 365, desde el que se pueden agregar usuarios y asignarles licencias. Si solo dispone de cuentas basadas en la nube con el nombre de dominio onmicrosoft.com predeterminado, puede continuar para agregar usuarios y asignar licencias. Pero si tiene pensado usar el [nombre de dominio personalizado](custom-domain-name-configure.md) de su organización o [sincronizar la información de la cuenta de usuario](users-add.md#sync-active-directory-and-add-users-to-intune) de Active Directory local, puede cerrar la ventana del explorador.

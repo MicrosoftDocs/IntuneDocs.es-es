@@ -1,27 +1,29 @@
 ---
 title: Emisión de certificados PKCS de Symantec con Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Instale y configure Intune Certificate Connector para emitir certificados PKCS desde el servicio web del administrador de PKI de Symantec a los dispositivos administrados por Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da57b14f8196251ee8c77de3ffcd48f5b586a12f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186875"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567717"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configuración de Intune Certificate Connector para el servicio web del administrador de PKI de Symantec
 
@@ -42,7 +44,7 @@ Si desea usar Intune Certificate Connector para una CA de Microsoft y una CA de 
 Si ya usa Intune Certificate Connector para una CA de Microsoft existente y desea agregar compatibilidad con una CA de Symantec, omita este paso y siga los pasos restantes después de instalar la versión más reciente de Intune Certificate Connector del portal de administración de Intune. Este paso solo es necesario cuando desea usar Intune Certificate Connector para una CA de Symantec independiente.
 
 1. Elija una de las versiones del sistema operativo Windows en la lista siguiente e instálela en un equipo:
-   * Windows Server 2012 R2 Datacenter
+   * Windows Server 2012 R2 Datacenter
    * Windows Server 2012 R2 Standard
    * Windows Server 2016 Datacenter
    * Windows Server 2016 Standard
@@ -114,7 +116,7 @@ Use estos pasos para obtener el certificado de autorización de registro (RA) de
 
    b. Proporcione el nombre descriptivo del certificado en el cuadro de texto designado.
 
-   c. Haga clic en **Continuar**.
+   c. Haga clic en **Continue**.
 
       Se muestra un vínculo descargable para el certificado de RA.
 
@@ -169,7 +171,7 @@ Use estos pasos para obtener el certificado de autorización de registro (RA) de
 Si ya usa la versión más reciente de Intune Certificate Connector para una CA de Microsoft existente y desea agregar la compatibilidad de la CA de Symantec, omita este paso. En caso contrario, descargue la versión más recientes de Intune Certificate Connector del portal de administración de Intune y siga estas instrucciones.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, seleccione **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, seleccione **Entidad de certificación**.
 5. Haga clic en **Agregar** y seleccione **Descargue el archivo del conector**. Guarde la descarga en una ubicación a la que pueda acceder desde el servidor donde vaya a realizar la instalación. 
@@ -282,7 +284,7 @@ El OID del perfil de certificado está asociado con una plantilla de perfil de c
    > [!IMPORTANT]
    > Los parámetros siguientes del perfil de certificado PKCS se deben configurar con los valores especificados en la siguiente tabla, tal como se muestra en la captura de pantalla para emitir los certificados PKCS mediante Intune Certificate Connector desde la CA de Symantec. 
 
-    |Parámetro de certificado PKCS | Value | Descripción |
+    |Parámetro de certificado PKCS | Valor | Descripción |
     | --- | --- | --- |
     | Entidad de certificación | pki-ws.symauth.com | Este valor debe ser el FQDN del servicio de base de la CA de Symantec sin las barras diagonales finales.  Si no está seguro de si se trata del FQDN del servicio de base correcto de la suscripción de la CA de Symantec, póngase en contacto con la asistencia al cliente de Symantec. <br><br> Si este FQDN no es correcto, Intune Certificate Connector no emitirá los certificados PKCS desde la CA de Symantec.| 
     | Nombre de la entidad de certificación | Symantec | Este valor debe ser la cadena **Symantec**. <br><br> Si hay algún cambio en este valor, Intune Certificate Connector no emitirá los certificados PKCS desde la CA de Symantec.|
@@ -308,9 +310,9 @@ Los registros de servicio de Intune Certificate Connector están disponibles en 
 
 | Mensaje de emisión o error | Pasos de resolución |
 | --- | --- |
-| No se puede iniciar sesión con la cuenta de administración del inquilino de Intune en la interfaz de usuario del conector NDES | Esto puede ocurrir cuando la instancia de Certificate Connector local no está habilitada en el portal de administración de Intune. Para resolver este problema, use los siguientes pasos: <br><br> Desde la interfaz de usuario de Silverlight: <br> 1. Inicie sesión en el [portal de administración de Intune](https://admin.manage.microsoft.com) <br> 2. Haga clic en ADMIN <br> 3. Seleccione Administración de dispositivos móviles > Certificate Connector <br> 4. Haga clic en **Configurar Certificate Connector local** <br> 5. Active la casilla **Habilitar Certificate Connector** <br> 6. Haga clic en **Aceptar**. <br><br>O bien <br><br> Desde la interfaz de usuario de Azure Portal: <br> 1. Inicie sesión en [Azure Portal](https://portal.azure.com) <br> 2. Vaya a Microsoft Intune <br> 3. Seleccione **Configuración de dispositivos** > **Entidad de certificación** <br> 4. Haga clic en **Habilitar**. <br><br> Después de completar los pasos anteriores desde la interfaz de usuario de Silverlight o en Azure Portal, intente iniciar sesión con la misma cuenta de administrador del inquilino de Intune en la interfaz de usuario del conector NDES. |
-| No se encontró el certificado del conector NDES. <br><br> System.ArgumentNullException: el valor no puede ser nulo. | Intune Certificate Connector muestra este error si la cuenta de administrador del inquilino de Intune nunca inició sesión en la interfaz de usuario del conector NDES. <br><br> Si este error persiste, reinicie Intune Service Connector. <br><br> 1. Abra services.msc <br> 2. Seleccione **Intune Connector Service**. <br> 3. Haga clic con el botón derecho y seleccione **Reiniciar**.|
-| Conector NDES: IssuePfx - Excepción genérica: <br> System.NullReferenceException: referencia de objeto no definida a una instancia de un objeto. | Este error es transitorio. Reinicie Intune Service Connector. <br><br> 1. Abra services.msc <br> 2. Seleccione **Intune Connector Service** <br> 3. Haga clic con el botón derecho y seleccione **Reiniciar**. |
+| No se puede iniciar sesión con la cuenta de administración del inquilino de Intune en la interfaz de usuario del conector NDES | Esto puede ocurrir cuando la instancia de Certificate Connector local no está habilitada en el portal de administración de Intune. Para resolver este problema, use los siguientes pasos: <br><br> Desde la interfaz de usuario de Silverlight: <br> 1. Inicie sesión en el [portal de administración de Intune](https://admin.manage.microsoft.com) <br> 2. Haga clic en ADMIN <br> 3. Seleccione Administración de dispositivos móviles > Certificate Connector <br> 4. Haga clic en **Configurar Certificate Connector local** <br> 5. Active la casilla **Habilitar Certificate Connector** <br> 6. Haga clic en **Aceptar**. <br><br>O bien, <br><br> Desde la interfaz de usuario de Azure Portal: <br> 1. Inicie sesión en [Azure Portal](https://portal.azure.com) <br> 2. Vaya a Microsoft Intune <br> 3. Seleccione **Configuración de dispositivos** > **Entidad de certificación** <br> 4. Haga clic en **Habilitar**. <br><br> Después de completar los pasos anteriores desde la interfaz de usuario de Silverlight o en Azure Portal, intente iniciar sesión con la misma cuenta de administrador del inquilino de Intune en la interfaz de usuario del conector NDES. |
+| No se encontró el certificado del conector NDES. <br><br> System.ArgumentNullException: El valor no puede ser NULL. | Intune Certificate Connector muestra este error si la cuenta de administrador del inquilino de Intune nunca inició sesión en la interfaz de usuario del conector NDES. <br><br> Si este error persiste, reinicie Intune Service Connector. <br><br> 1. Abra services.msc <br> 2. Seleccione **Intune Connector Service**. <br> 3. Haga clic con el botón derecho y seleccione **Reiniciar**.|
+| Conector NDES: IssuePfx - Excepción genérica: <br> System.NullReferenceException: Referencia de objeto no establecida en una instancia de un objeto. | Este error es transitorio. Reinicie Intune Service Connector. <br><br> 1. Abra services.msc <br> 2. Seleccione **Intune Connector Service** <br> 3. Haga clic con el botón derecho y seleccione **Reiniciar**. |
 | Proveedor de Symantec: No se pudo obtener la directiva de Symantec "Se agotó el tiempo de espera de la operación" | Intune Certificate Connector recibió un error de tiempo de espera agotado de la operación al comunicarse con la CA de Symantec. Si este error persiste, aumente el valor de tiempo de espera de la conexión y vuelva a intentarlo. <br><br> Para aumentar el tiempo de espera de la conexión: <br> 1. Vaya al equipo del conector NDES. <br>2. Abra el archivo `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` en el Bloc de notas. <br> 3. Aumente el valor de tiempo de espera para el parámetro siguiente: <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Reinicie Intune Connector Service. <br><br> Si el problema persiste, póngase en contacto con la asistencia al cliente de Symantec. |
 | Proveedor de Symantec: No se pudo obtener el certificado de cliente | Intune Certificate Connector no pudo recuperar el certificado de autorización de recursos desde el almacén de certificados personales de la máquina local. Para resolver este problema, asegúrese de instalar el certificado de autorización de recursos en el almacén de certificados personales de la máquina local junto con su clave privada. <br><br> **Nota:** El certificado de autorización de recursos se debe obtener desde la CA de Symantec. Para más detalles, póngase en contacto con la asistencia al cliente de Symantec. | 
 | Proveedor de Symantec: No se pudo obtener la directiva de Symantec "La solicitud se anuló: no se pudo crear el canal seguro SSL/TLS". | Este error se produce en los siguientes escenarios: <br><br> 1. El servicio de Intune Certificate Connector no tiene los permisos suficientes para leer el certificado de autorización de recursos junto con su clave privada desde el almacén de certificados personales de la máquina local. Para resolver este problema, revise el servicio Connector que ejecuta la cuenta de contexto en services.msc. El servicio Connector debe ejecutarse en el contexto de NT AUTHORITY\SYSTEM. <br><br> 2. El perfil de certificado PKCS en el portal de administración de Intune puede estar configurado con un nombre de dominio completo del servicio de base de la CA de Symantec no válido. El nombre de dominio completo es similar a `pki-ws.symauth.com`. Para resolver este problema, consulte con la atención al cliente de Symantec si la dirección URL es correcta para la suscripción. <br><br> 3. Intune Certificate Connector no puede realizar la autenticación con la CA de Symantec mediante el certificado de autorización de recursos porque no puede recuperar su clave privada. Para resolver este problema, asegúrese de instalar el certificado de autorización de recursos junto con su clave privada en el almacén de certificados personales de la máquina local. <br><br> Si el problema persiste, póngase en contacto con la asistencia al cliente de Symantec. |

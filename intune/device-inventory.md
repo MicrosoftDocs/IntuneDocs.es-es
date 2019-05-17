@@ -6,20 +6,22 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/10/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1954f59a008c699c6dcdeb46686d3f37f941908a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c22822f34f426897549383df5e9c71b21b497a7e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180279"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391194"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -57,7 +59,7 @@ Intune solo recopila listas de aplicaciones en dispositivos corporativos. Las ap
 |Windows 10 (sin el cliente de Configuration Manager)|Solo aplicaciones administradas|Solo aplicaciones administradas|
 |Windows 8.1 (sin el cliente de Configuration Manager)|Solo aplicaciones administradas|Solo aplicaciones administradas|  
 |Windows Phone 8|Solo aplicaciones administradas|Solo aplicaciones administradas|  
-|Windows RT|Solo aplicaciones administradas|Solo aplicaciones administradas|  
+|Windows RT|Solo aplicaciones administradas|Solo aplicaciones administradas|  
 |iOS|Solo aplicaciones administradas|Todas las aplicaciones instaladas en el dispositivo|
 |macOS|Todas las aplicaciones instaladas en el dispositivo|Todas las aplicaciones instaladas en el dispositivo|  
 |Android|Solo aplicaciones administradas|Todas las aplicaciones instaladas en el dispositivo|  

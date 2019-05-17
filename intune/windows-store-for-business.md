@@ -1,35 +1,36 @@
 ---
-title: Administración de aplicaciones desde la Tienda Microsoft para Empresas
-titlesuffix: Microsoft Intune
-description: Obtenga información sobre cómo puede sincronizar aplicaciones en Intune desde Microsoft Store para Empresas y luego asignarlas y realizar un seguimiento de ellas.
+title: Administración de aplicaciones gratis o compradas por volumen desde Microsoft Store para Empresas
+titleSuffix: Microsoft Intune
+description: Obtenga información sobre cómo puede sincronizar aplicaciones compradas (o gratuitas) en Intune desde Microsoft Store para Empresas.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e6cdd97bbc591a76e541874152455c4fe258c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234943"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587508"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Cómo administrar las aplicaciones adquiridas a través de la Tienda Microsoft para Empresas con Microsoft Intune
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Administración de aplicaciones compradas por volumen (o gratuitas) desde Microsoft Store para Empresas con Microsoft Intune.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store), puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar las aplicaciones adquiridas por volumen desde Azure Portal. Por ejemplo:
-* Puede sincronizar la lista de aplicaciones que ha adquirido en la tienda con Intune.
+* Puede sincronizar la lista de aplicaciones que compró (o que son gratuitas) en la tienda con Intune.
 * Las aplicaciones que se sincronizan aparecen en la consola de administración de Intune, y puede asignarlas igual que el resto de las aplicaciones.
 * Puede controlar el número de licencias disponibles y las que se usan en la consola de administración de Intune.
 * Intune bloquea la asignación e instalación de aplicaciones si el número de licencias disponibles es insuficiente.
@@ -65,7 +66,7 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 ## <a name="configure-synchronization"></a>Configurar la sincronización
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
 1. En el panel **Aplicaciones cliente**, seleccione **Configuración** > **Microsoft Store para Empresas**.
 2. Haga clic en **Habilitar**.
@@ -80,7 +81,7 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 
 ## <a name="assign-apps"></a>Asignación de aplicaciones
 
-Las aplicaciones de la tienda se asignan del mismo modo que cualquier otra aplicación de Intune. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md). Sin embargo, en lugar de asignar aplicaciones desde la página **Todas las aplicaciones**, asígnelas desde la página **Aplicaciones con licencia**.
+Las aplicaciones de la tienda se asignan del mismo modo que cualquier otra aplicación de Intune. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md). 
 
 Las aplicaciones sin conexión pueden dirigirse a grupos de usuarios, grupos de dispositivos o grupos con usuarios y dispositivos.
 Las aplicaciones sin conexión pueden instalarse para un usuario determinado en un dispositivo o para todos los usuarios de un dispositivo. 

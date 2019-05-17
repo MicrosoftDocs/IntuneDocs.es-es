@@ -1,15 +1,16 @@
 ---
 title: Incorporación de una aplicación de línea de negocio de iOS a Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Obtenga información sobre cómo agregar una aplicación de línea de negocio (LOB) de iOS a Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7206a29bea5a53bf13b43a9881c629f27e949dbb
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1bb213230db5a699be913929cc3b68b90a8f019a
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230013"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571763"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de iOS a Microsoft Intune
 
@@ -32,6 +33,8 @@ Use la información de este artículo para agregar una aplicación de línea de 
 
 >[!NOTE]
 >Los usuarios de dispositivos iOS pueden quitar algunas de las aplicaciones iOS integradas, como Bolsa y Mapas. No puede usar Intune para volver a implementar esas aplicaciones. Si los usuarios eliminan estas aplicaciones, deben ir a la tienda de aplicaciones y reinstalarlas manualmente.
+>
+>Las aplicaciones LOB de iOS tienen un límite de tamaño máximo de 4 GB por aplicación.
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 

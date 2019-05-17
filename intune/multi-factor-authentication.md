@@ -1,27 +1,28 @@
 ---
 title: Requerir la autenticación multifactor para la inscripción de dispositivos de Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Cómo requerir la autenticación multifactor en Azure AD para la inscripción de dispositivos de Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834099"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568796"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Requerir la autenticación multifactor para las inscripciones de dispositivos de Intune
 
@@ -50,11 +51,10 @@ Para requerir MFA cuando se inscribe un dispositivo, siga estos pasos:
 >No configure **reglas de acceso basadas en dispositivos** para la inscripción a Microsoft Intune.
 
 1. Inicie sesión en [Microsoft Azure Portal](https://portal.azure.com) con sus credenciales.
-2. En el portal, vaya a **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
-3. En **Azure Active Directory**, en Seguridad, seleccione **[Acceso condicional](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+2. En el portal, vaya a **Intune** y elija **Acceso condicional**. El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.
 4. Pulse **Nueva directiva**.
 5. En **Directiva nueva**, escriba un nombre descriptivo para la directiva.
-6. En la sección **Asignaciones**, seleccione **Usuarios y grupos**.
+6. En la sección **Asignaciones**, seleccione **Usuarios y grupos**. 
 7. En **Usuarios y grupos**, elija **Seleccionar usuarios o grupos** y marque **Usuarios y grupos**. Después, seleccione los usuarios o grupos que recibirán esta directiva y seleccione **Listo**.
 8. En la sección **Asignaciones**, elija **Aplicaciones en la nube**.
 9. En la pestaña **Incluir** de **Aplicaciones en la nube**, elija **Seleccionar aplicaciones**, **Seleccionar** > **Inscripción a Microsoft Intune** y, luego, **Listo**.

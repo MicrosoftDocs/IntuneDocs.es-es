@@ -1,27 +1,29 @@
 ---
 title: Supervisión de información y asignaciones de aplicaciones
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Después de haber asignado una aplicación a usuarios o dispositivos, use esta información para ayudarle a supervisar el estado de dicha aplicación.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325184"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567236"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Supervisión de información y asignaciones de aplicaciones con Microsoft Intune
 
@@ -49,7 +51,7 @@ En la sección **Essentials** se incluye la siguiente información sobre la apli
 |------------------------|------------------------------------------------------------------|
 | **Publicador**          | El editor de la aplicación.                                            |
 | **Sistema operativo**   | El sistema operativo de aplicación (Windows, iOS, Android, etc.). |
-| **Creado**             | Fecha y hora de creación de esta revisión.                         |
+| **Creado**             | Fecha y hora de creación de esta revisión. <b>**Nota**: este valor de fecha se actualiza cuando un administrador de TI cambia los metadatos de una aplicación, como al cambiar la categoría o la descripción de una aplicación.                        |
 | **Asignado**           | Si la aplicación se ha asignado (**Sí** o **No**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Gráficos de estado de dispositivo y usuario
@@ -80,7 +82,7 @@ Si selecciona **Estado de instalación del dispositivo** en la sección **Superv
 | **Nombre del dispositivo**      | El nombre del dispositivo en plataformas que permiten asignar nombre a un dispositivo. En otras plataformas, Intune crea un nombre a partir de otras propiedades. Este atributo no está disponible para ningún otro dispositivo.                                                                       |
 | **Nombre de usuario**        | Nombre del usuario.                                                                                                                                                                                                                                      |
 | **Plataforma**         | El sistema operativo del dispositivo (Windows, iOS, Android, etc.)                                                                                                                                                                                           |
-| **Versión**          | El número de versión de la aplicación. En el caso de las aplicaciones de línea de negocio, se muestra el número de versión completo de la aplicación. El número de versión completo identifica una versión específica de la aplicación. El número aparece como _versión_(_compilación_). Por ejemplo, 2.2(2.2.17560800). |
+| **Versión**          | El número de versión de la aplicación. En el caso de las aplicaciones de línea de negocio (LOB), se muestra el número de versión completo de la aplicación. El número de versión completo identifica una versión específica de la aplicación. El número aparece como _versión_(_compilación_). Por ejemplo, 2.2(2.2.17560800). En el caso de las aplicaciones de Store, no se muestra ninguna versión. |
 | **Estado**           | El estado de la aplicación.                                                                                                                                                                                                                                     |
 | **Detalles de estado**   | Los detalles del estado.                                                                                                                                                                                                                                     |
 | **Última inserción en el repositorio**    | La fecha de la última sincronización de dispositivos con Intune.                                                                                                                                                                                                                  |

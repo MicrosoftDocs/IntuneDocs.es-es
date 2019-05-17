@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f1fbf8f37b989112025bd6d54328dd61246913f7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181537"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400218"
 ---
 # <a name="data-intune-sends-to-apple"></a>Datos que Intune manda a Apple
 
@@ -38,7 +40,7 @@ Para que Microsoft Intune pueda establecer una conexión, debe crear una cuenta 
 
 En la tabla siguiente se muestran los datos que Microsoft Intune envía desde un dispositivo a los servicios habilitados de Apple. 
 
-| Service | Datos que se envían a Apple | Usada para |
+| Servicio | Datos que se envían a Apple | Usada para |
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Si el servidor acepta el dispositivo, este proporciona su token de dispositivo de notificación push al servidor. El servidor debe usar este token para enviar mensajes push al dispositivo. Este mensaje de registro también contiene una cadena de PushMagic. El servidor debe recordar esta cadena e incluirla en cualquier mensaje push que envíe al dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token de servidor | Token de dispositivo de notificación push usado para autenticar el servicio de Apple. |

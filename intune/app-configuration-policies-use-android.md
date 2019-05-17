@@ -1,15 +1,16 @@
 ---
 title: Agregar directivas de configuración de aplicaciones para dispositivos Android administrados
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use directivas de configuración de aplicaciones de Microsoft Intune para facilitar los valores de configuración cuando los usuarios ejecutan una aplicación de perfil de trabajo Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/21/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840423"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567431"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos Android administrados
 
@@ -34,7 +35,7 @@ Use directivas de configuración de aplicaciones de Microsoft Intune para facili
 > No todas las aplicaciones admiten la configuración de aplicaciones. Póngase en contacto con el desarrollador de la aplicación para comprobar si la aplicación admite directivas de configuración de aplicaciones.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Elija la carga de trabajo **Aplicaciones cliente**.
 4. En el grupo **Administrar**, elija **Directivas de configuración de aplicaciones** y **Agregar**.
 5. Especifique los siguientes detalles:
@@ -44,13 +45,13 @@ Use directivas de configuración de aplicaciones de Microsoft Intune para facili
 6. En **Plataforma**, seleccione **Android**.
 7. Seleccione **Aplicación asociada** para elegir la aplicación para la que quiera definir una directiva de configuración. Seleccione una de la lista de aplicaciones de perfil de trabajo Android que ha aprobado y sincronizado con Intune.
 8. Seleccione **Permisos**. Las configuraciones se pueden establecer con lo siguiente:
-    - [Diseñador de configuraciones](#Use-the-configuration-designer)
-    - [Editor JSON](#Enter-the-JSON-editor)
+    - [Diseñador de configuraciones](#use-the-configuration-designer)
+    - [Editor JSON](#enter-the-json-editor)
 9. Elija **Aceptar** y, luego, **Agregar**.
 
 ## <a name="use-the-configuration-designer"></a>Uso del diseñador de configuración
 
-Puede usar el diseñador de configuración para las aplicaciones de Android que admitan la configuración. La configuración se aplicará a los dispositivos que estén inscritos en Intune. El diseñador le permite configurar opciones específicas de la configuración que expone una aplicación.
+Puede usar el diseñador de configuración para las aplicaciones Android si la aplicación está diseñada para admitir las opciones de configuración. La configuración se aplicará a los dispositivos que estén inscritos en Intune. El diseñador le permite configurar opciones específicas de la configuración que expone una aplicación.
 
 Seleccione **Agregar** para seleccionar la lista de valores de configuración que quiere especificar para la aplicación.  
 Para cada clave y valor de la configuración, establezca lo siguiente:
@@ -105,7 +106,7 @@ Cuando se ejecuta la aplicación asignada en un dispositivo, lo hará con las op
 También puede preconfigurar permisos para que las aplicaciones accedan a las características de dispositivos Android. Las aplicaciones de Android que requieren permisos de dispositivo (como el acceso a la ubicación o la cámara del dispositivo) solicitan a los usuarios de forma predeterminada que acepten o denieguen permisos. Por ejemplo, si una aplicación usa el micrófono del dispositivo, se solicita al usuario que conceda a la aplicación el permiso para usar el micrófono.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Elija **Aplicaciones cliente**.
 3. En **Administrar**, elija **Directivas de configuración de aplicaciones** y, después, **Agregar**.
 4. Especifique los siguientes detalles:

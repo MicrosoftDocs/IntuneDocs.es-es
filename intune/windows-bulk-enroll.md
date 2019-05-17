@@ -1,6 +1,6 @@
 ---
 title: Inscripción masiva para Windows 10
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Creación de un paquete de inscripción masiva para Microsoft Intune
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236813"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568172"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236813"
 
 Como administrador, puede unir una gran cantidad de dispositivos Windows nuevos a Azure Active Directory e Intune. Para inscribir de forma masiva dispositivos para el inquilino de Azure AD, debe crear un paquete de aprovisionamiento con la aplicación Windows Configuration Designer (WC). Aplicar el paquete de aprovisionamiento en dispositivos corporativos une estos dispositivos al inquilino de Azure AD y los inscribe para la administración de Intune. Una vez que se aplica el paquete, está listo para que los usuarios de Azure AD inicien sesión.
 
-Los usuarios de Azure AD son usuarios estándar en estos dispositivos y reciben las aplicaciones requeridas y las directivas de Intune asignadas. En este momento, no se admiten los escenarios de autoservicio ni de portal de empresa.
+Los usuarios de Azure AD son usuarios estándar en estos dispositivos y reciben las aplicaciones requeridas y las directivas de Intune asignadas. Los dispositivos Windows inscritos en Intune mediante la inscripción masiva de Windows pueden usar la aplicación Portal de empresa de Intune para instalar aplicaciones disponibles. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Requisitos previos para la inscripción masiva de dispositivos Windows
 

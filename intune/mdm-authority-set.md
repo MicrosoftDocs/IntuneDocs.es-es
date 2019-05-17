@@ -1,6 +1,6 @@
 ---
 title: Establecer la entidad de administración de dispositivos móviles
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Establezca la entidad de administración de dispositivos móviles en Intune.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99b913b23638a507ed9b0a5cb32afff66679a164
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231917"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567483"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -34,12 +35,12 @@ Las configuraciones posibles son:
 
 - **Intune independiente**: administración solo en la nube, que se configura mediante el portal de Azure. Incluye el conjunto completo de funcionalidades que ofrece Intune. [Establecer la entidad de MDM en la consola de Intune](#set-mdm-authority-to-intune).
 
-- **Intune híbrido**: integración de la solución de nube de Intune con System Center Configuration Manager. Intune se configura mediante la consola de Configuration Manager. [Establecer la entidad de MDM en Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+- **Administración conjunta de Intune**: integración de la solución de nube de Intune con System Center Configuration Manager para dispositivos Windows 10. Intune se configura mediante la consola de Configuration Manager. [Configuración de la inscripción automática de dispositivos en Intune](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
-    >La incorporación de nuevos clientes de la administración de dispositivos móviles (MDM) híbrida se desactivará en una próxima versión. Para obtener más información, vea la entrada de blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Transición de la administración de dispositivos móviles híbrida a Intune en Azure).
+    >La incorporación de nuevos clientes MDM híbridos está en desuso. Para obtener más información, vea la entrada de blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Transición de la administración de dispositivos móviles híbrida a Intune en Azure).
 
-- **Administración de dispositivos móviles para Office 365**: integración de Office 365 con la solución de nube de Intune. Intune se configura desde el Centro de administración de Office 365. Incluye un subconjunto de las funcionalidades que están disponibles con la versión independiente de Intune. Establecer la entidad de MDM en el Centro de administración de Office 365.
+- **Administración de dispositivos móviles para Office 365**: integración de Office 365 con la solución de nube de Intune. Intune se configura desde el Centro de administración de Microsoft 365. Incluye un subconjunto de las funcionalidades que están disponibles con la versión independiente de Intune. Establezca la autoridad de MDM en el Centro de administración de Microsoft 365.
 
 > [!IMPORTANT]
 > En la versión 1610 o posterior de Configuration Manager y en la versión 1705 de Microsoft Intune, puede cambiar la entidad de MDM sin tener que ponerse en contacto con el soporte técnico de Microsoft y sin necesidad de anular la inscripción de los dispositivos administrados existentes e inscribirlos de nuevo. Para obtener detalles, consulte [Preparación ante el cambio de la entidad MDM a Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).
@@ -49,7 +50,7 @@ Las configuraciones posibles son:
 Haga lo siguiente si aún no ha establecido la entidad de MDM. Para cambiar de una entidad de MDM a otra, vea la sección [Cambio de la entidad de MDM](#prepare-to-change-the-mdm-authority-to-configuration-manager) más adelante.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione el banner de color naranja para abrir el ajuste **Entidad de administración de dispositivos móviles**. El banner naranja aparece únicamente si aún no ha establecido la entidad de MDM.
 4. En **Entidad de administración de dispositivos móviles**, elija la entidad de MDM entre las opciones siguientes:
    - **Entidad de MDM de Intune**

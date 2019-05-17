@@ -1,27 +1,29 @@
 ---
 title: Perfil de VPN por aplicación personalizado para Android
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo crear un perfil de VPN por aplicación para dispositivos Android administrados por Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 04/05/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 38763d5c16d5cba36220c03e9d74b30a465d752b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186025"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568471"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Use un perfil personalizado de Microsoft Intune para crear un perfil de VPN por aplicación para dispositivos Android
 
@@ -40,7 +42,7 @@ Después de asignar la directiva al dispositivo Android o a los grupos de usuari
 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
 2. En el panel de la lista de perfiles, elija **Crear perfil**.
@@ -54,7 +56,7 @@ Anote el **nombre de la conexión**, que es el valor que debe especificar al cre
 ## <a name="step-2-create-a-custom-configuration-policy"></a>Paso 2: Crear una directiva de configuración personalizada
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
 3. En el panel Perfiles, haga clic en **Crear perfil**.
@@ -81,6 +83,6 @@ De manera alternativa, puede usar el valor **WHITELIST** para especificar una li
 
 
 
-## <a name="step-3-assign-both-policies"></a>Paso 3: Asignación de ambas directivas
+## <a name="step-3-assign-both-policies"></a>Paso 3: Asignar ambas directivas
 
 Siga las instrucciones que se indican en [Asignación de perfiles de dispositivo](device-profile-assign.md) para asignar ambos perfiles a los usuarios o dispositivos necesarios.

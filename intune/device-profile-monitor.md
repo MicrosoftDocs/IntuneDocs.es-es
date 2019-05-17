@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 786cd6e7d0acaeb6e78035d8ec580c30d29d09e7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186603"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391710"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Supervisar perfiles de dispositivo en Microsoft Intune
 
@@ -66,7 +68,7 @@ Después de crear el perfil de dispositivo, Intune proporciona gráficos. Estos 
 5. De nuevo en la lista **Perfiles**, seleccione un perfil específico. También puede cambiar las propiedades existentes:
   - **Propiedades**: cambie el nombre o actualice cualquier configuración existente.
   - **Asignaciones**: incluya o excluya los dispositivos a los que se debe aplicar la directiva. Elija **Grupos seleccionados** para elegir grupos específicos.
-  - **Estado del dispositivo**: se muestran los dispositivos asignados al perfil y si el perfil se implementó correctamente. Puede seleccionar un dispositivo específico para obtener incluso más detalles, incluidas las aplicaciones instaladas.
+  - **Estado del dispositivo**: Se muestran los dispositivos asignados al perfil y si el perfil se implementó correctamente. Puede seleccionar un dispositivo específico para obtener incluso más detalles, incluidas las aplicaciones instaladas.
   - **Estado del usuario**: se muestran los nombres de usuario con los dispositivos afectados por este perfil, y si el perfil se implementó correctamente. Puede seleccionar un usuario específico para obtener incluso más detalles.
   - **Estado por valor**: se filtra el resultado, que muestra la configuración individual dentro del perfil y si la configuración se aplicó correctamente.
 

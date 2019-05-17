@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836360"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569420"
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
@@ -50,7 +51,7 @@ Se pueden configurar directivas de protección de aplicaciones para aplicaciones
 > [!IMPORTANT]
 > Puede crear directivas de administración de aplicaciones móviles para aplicaciones móviles de Office que se conectan a servicios de Office 365. También puede proteger el acceso a los buzones locales de Exchange mediante la creación de directivas de protección de aplicaciones de Intune para Outlook para iOS y Android habilitadas con autenticación moderna híbrida. Antes de usar esta característica, asegúrese de cumplir los [requisitos de Outlook para iOS y Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Las directivas de protección de aplicaciones no son compatibles con otras aplicaciones que se conectan a los servicios de Exchange o SharePoint locales.
 
-**Las ventajas más importantes del uso de directivas de protección de aplicaciones son:**
+**Las ventajas más importantes del uso de directivas de protección de aplicaciones son**:
 
 -   Protección de datos de su compañía a nivel de aplicación. Puesto que la administración de aplicaciones móviles no requiere la administración de dispositivos, puede proteger los datos de la empresa en dispositivos administrados y no administrados. La administración se centra en la identidad del usuario, lo que elimina la necesidad de administrar dispositivos.
 
@@ -69,8 +70,8 @@ Hay otras ventajas derivadas del uso de MDM con directivas de protección de apl
 ### <a name="supported-platforms-for-app-protection-policies"></a>Plataformas admitidas para directivas de protección de aplicaciones
 La compatibilidad de plataformas de directivas de aplicaciones de Intune está alineada con la compatibilidad de plataformas de aplicaciones móviles de Office para dispositivos Android e iOS. Para obtener más información, consulte la sección **Aplicaciones móviles** de [Requisitos del sistema de Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Los dispositivos Windows no son compatibles actualmente. Sin embargo, puede usar Windows Information Protection, que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-
+> [!IMPORTANT]
+> Es necesario que el Portal de empresa de Intune se encuentre en el dispositivo para recibir las directivas de protección de aplicación en Android. Para más información, consulte los [requisitos de las aplicaciones de acceso al Portal de empresa de Intune](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Protección de datos de una aplicación con directivas de protección de aplicaciones
 

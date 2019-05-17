@@ -6,21 +6,23 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4169f5625965ebc7d2bbbf9153cb4183fcd22b3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183407"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388067"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de Android
 
@@ -37,8 +39,8 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 
 Los usuarios finales necesitan permitir la instalación desde orígenes desconocidos para poder instalar [aplicaciones de LOB](lob-apps-android.md). Normalmente, esta opción se encuentra en dos lugares diferentes:
 
-* **Android 7.1.2 y versiones anteriores**: **Configuración** > **Seguridad** > **Orígenes desconocidos**
-* **Android 8.0 y versiones posteriores**: **Configuración** > **Aplicaciones y notificaciones** > **Acceso especial a las aplicaciones** > **Instalar aplicaciones desconocidas** > **Portal de empresa** > **Permitir desde este origen**
+* **Android 7.1.2 y versiones anteriores**: **Configuración** > **Seguridad** > **Orígenes desconocidos**
+* **Android 8.0 y versiones posteriores**: **Configuración** > **Aplicaciones y notificaciones** > **Acceso especial a las aplicaciones** > **Instalar aplicaciones desconocidas** > **Portal de empresa** > **Permitir desde este origen**
 
 Si ocurre esto, la aplicación Portal de empresa informará y guiará directamente al usuario final hasta la configuración adecuada. 
 
@@ -56,7 +58,7 @@ Las aplicaciones pueden ser administradas o no administradas, tal como se descri
 
 **Aplicaciones no administradas**: son aplicaciones que no se pueden administrar a través de directivas. Intune no las ha encapsulado o no incorporan el SDK para aplicaciones de Intune. Las directivas de aplicación no pueden aplicarse a estas aplicaciones.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 [Agregar aplicaciones con Microsoft Intune](apps-add.md)
 
 [Cómo obtienen sus aplicaciones los usuarios de iOS](end-user-apps-ios.md)

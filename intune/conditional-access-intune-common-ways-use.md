@@ -1,26 +1,28 @@
 ---
-title: Escenarios de acceso condicional | Microsoft Intune
+title: Escenarios de acceso condicional
+titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo se acostumbra a utilizar el acceso condicional de Intune para obtener acceso condicional basado en el dispositivo y en la aplicación.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842769"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569381"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>¿Cuáles son las formas habituales de usar el acceso condicional con Intune?
 
@@ -31,7 +33,7 @@ Hay dos tipos de acceso condicional con Intune: acceso condicional basado en el 
 La siguiente información le ayudará a comprender cómo usar las capacidades de cumplimiento de *dispositivos* móviles de Intune y las capacidades de administración de *aplicaciones* móviles (MAM) de Intune. 
 
 > [!NOTE]
-> El acceso condicional es una función de Azure Active Directory que se incluye con una licencia Premium de Azure Active Directory. Intune mejora esta función al agregar el cumplimiento de dispositivos móviles y la administración de aplicaciones móviles a la solución.
+> El acceso condicional es una función de Azure Active Directory que se incluye con una licencia Premium de Azure Active Directory. Intune mejora esta función al agregar el cumplimiento de dispositivos móviles y la administración de aplicaciones móviles a la solución. El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
 
 ## <a name="device-based-conditional-access"></a>Acceso condicional basado en dispositivos
 
@@ -71,13 +73,13 @@ Cuando los dispositivos no cumplen las condiciones establecidas, se guía al usu
 
 Intune Exchange Connector extrae todos los registros de Exchange Active Sync (EAS) que existen en el servidor de Exchange de forma que Intune pueda tomar estos registros y asignarlos a registros de dispositivos de Intune. Estos registros son de dispositivos inscritos y reconocidos por Intune. El proceso permite o bloquea el acceso al correo electrónico.
 
-Si el registro de EAS es completamente nuevo e Intune no lo sabe, emite un cmdlet que bloquea el acceso al correo electrónico. A continuación encontrará más detalles sobre cómo funciona este proceso:
+Si el registro de EAS es completamente nuevo e Intune no lo sabe, emite un cmdlet (que se pronuncia "command-let") que bloquea el acceso al correo electrónico. A continuación encontrará más detalles sobre cómo funciona este proceso:
 
 ![Exchange local con diagrama de flujo de la entidad de certificación](./media/ca-intune-common-ways-1.png)
 
 1.  El usuario intenta acceder al correo electrónico corporativo, que está hospedado en Exchange local 2010 SP1 o posterior.
 
-2.  Si el dispositivo no se administra mediante Intune, tendrá bloqueado el acceso al correo electrónico. Intune envía notificaciones de bloqueo al cliente de EAS.
+2.  Si el dispositivo no se administra mediante Intune, el acceso al correo electrónico estará bloqueado. Intune envía una notificación de bloqueo al cliente de EAS.
 
 3.  EAS recibe la notificación de bloqueo, mueve el dispositivo a cuarentena y envía el correo electrónico de cuarentena con pasos de corrección que contienen vínculos para que los usuarios puedan inscribir sus dispositivos.
 
@@ -101,7 +103,7 @@ Intune evalúa y administra el estado del dispositivo.
 
 #### <a name="whats-the-exchange-server-role"></a>¿Cuál es la función del servidor de Exchange?
 
-El servidor de Exchange proporciona la API y la infraestructura para mover los dispositivos a su cuarentena.
+El servidor de Exchange proporciona la API y la infraestructura para mover los dispositivos a cuarentena.
 
 > [!IMPORTANT]
 > Tenga en cuenta que el usuario que usa el dispositivo debe tener asignado un perfil de cumplimiento para que se pueda evaluar el cumplimiento del dispositivo. Si no se implementa ninguna directiva de cumplimiento en el usuario, el dispositivo se considera conforme y no se aplicarán restricciones de acceso.
@@ -136,7 +138,7 @@ El acceso condicional para equipos proporciona funcionalidades similares a las d
 
 -   **Unidos a un dominio de Azure AD y administración de Intune:** este escenario va encaminado principalmente a elegir su propio dispositivo (CYOD) y a situaciones de itinerancia de equipos portátiles en las que estos dispositivos raramente se conectan a la red corporativa. El dispositivo se une a Azure AD y se inscribe en Intune, lo que elimina las dependencias del entorno local de AD y de los controladores de dominio. Esta opción puede usarse como criterio de acceso condicional al acceder a los recursos corporativos.
 
--   **Unidos a un dominio de AD y System Center Configuration Manager:** a partir de la rama actual, System Center Configuration Manager proporciona funcionalidades de acceso condicional que pueden evaluar determinados criterios de cumplimiento, además de los de un equipo unido a un dominio:
+-   **Unidos a un dominio de AD y System Center Configuration Manager:** a partir de la rama actual, System Center Configuration Manager proporciona funcionalidades de acceso condicional que pueden evaluar determinados criterios de cumplimiento, además de los de un equipo unido a un dominio:
 
     -   ¿Está cifrado el equipo?
 

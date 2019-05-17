@@ -1,6 +1,6 @@
 ---
 title: Mensajes de Portal de empresa que los usuarios pueden ver en los dispositivos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Comprenda los distintos mensajes que los usuarios finales pueden ver en Portal de empresa.
 keywords: ''
 author: lenewsad
@@ -10,18 +10,19 @@ ms.date: 03/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233173"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569134"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
 
@@ -110,6 +111,34 @@ Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones p
 ### <a name="what-it-means"></a>Significado
 
 Agregue Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** en la directiva de protección de aplicaciones de Windows Information Protection (WIP). Para obtener más información, consulte [Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune](windows-information-protection-policy-create.md).
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprobación de una aplicación de empresa iOS (aplicación de línea de negocio) en un dispositivo iOS 
+
+### <a name="where-it-appears"></a>Dónde aparece
+De manera predeterminada, su dispositivo no confía en las aplicaciones iOS que desarrolla su organización que no están disponibles en App Store. Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia la aplicación, se muestra este mensaje:
+
+![Mensaje de la aplicación iOS: Desarrollador empresarial no confiable](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>Significado
+Este mensaje significa que deberá modificar la configuración del dispositivo iOS para aprobar e instalar una aplicación desarrollada por su empresa en el dispositivo iOS.
+
+Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia la aplicación, siga estos pasos para aprobar la aplicación después de descargarla:
+
+1. Después de iniciar una aplicación de empresa instalada (aplicación de línea de negocio), verá el mensaje "Desarrollador empresarial no confiable". <br>
+   Presione **Cancelar**.
+2. Vaya a **Configuración** > **General** > **Administración de dispositivos**.
+
+   ![UI de dispositivo iOS: Administración de dispositivos](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Seleccione **Perfil de administración** > **Aplicación de empresa**.
+4. Seleccione el nombre del desarrollador.
+5. Presione **Confiar en _nombre del desarrollador_**.
+6. Para confirmar la aplicación, seleccione **Confiar** en el mensaje emergente de instalación de la aplicación.
+
+   ![UI de dispositivo iOS: Mensaje de aplicación de confianza](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    Debería ser capaz de iniciar y usar la aplicación de empresa.
+
 
 ### <a name="see-also"></a>Consulte también
 [Qué decirles a los usuarios finales sobre el uso de Intune](end-user-educate.md)
