@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570772"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764724"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Windows a Microsoft Intune
 
@@ -63,7 +63,7 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega desde un arc
     - **Mostrar como aplicación destacada en el Portal de empresa**: Muestra la aplicación de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre la aplicación. La dirección URL aparece en el portal de empresa.
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre la aplicación. La dirección URL aparece en el portal de empresa.
-    - **Argumentos de línea de comandos**: si lo desea, especifique los argumentos de línea de comandos que desea aplicar al archivo .msi cuando se ejecuta. Un ejemplo es **/q**.
+    - **Argumentos de línea de comandos**: si lo desea, especifique los argumentos de línea de comandos que desea aplicar al archivo .msi cuando se ejecuta.  Un ejemplo es **/q**. No incluya el comando ni los argumentos de msiexec, como **/i** o **/x**, ya que se usan automáticamente. Para obtener más información, vea [Opciones de línea de comandos](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación. Un ejemplo es **Departamento de Recursos Humanos**.
     - **Notas**: escriba las notas que desea asociar a esta aplicación.

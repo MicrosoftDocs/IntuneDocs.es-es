@@ -442,11 +442,16 @@
                       items:
                         - name: Integración de Intune y Sophos Mobile
                           href: sophos-mtd-connector-integration.md
-            - name: ATP de Windows Defender
-              href: advanced-threat-protection.md
-            - name: Líneas base de seguridad
-              href: security-baselines.md
+            - name: Microsoft Defender
               items:
+                - name: ATP de Microsoft Defender
+                  href: advanced-threat-protection.md
+                - name: Tareas de seguridad
+                  href: atp-manage-vulnerabilities.md
+            - name: Líneas base de seguridad
+              items:
+                - name: Líneas base de seguridad
+                  href: security-baselines.md
                 - name: Supervisión de las líneas base
                   href: security-baselines-monitor.md
             - name: Endpoint Protection
@@ -552,7 +557,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android dispositivos administrados
               href: app-configuration-policies-use-android.md
-            - name: Aplicación Managed Home Screen para Android Enterprise
+            - name: Configuración de Managed Home Screen
               href: app-configuration-managed-home-screen-app.md
             - name: Aplicaciones administradas
               href: app-configuration-policies-managed-app.md
@@ -770,8 +775,12 @@
                   href: shared-user-device-settings-windows.md
                 - name: Personalizada
                   href: custom-settings-windows-10.md
-            - name: Configuración de líneas de base de seguridad
-              href: security-baseline-settings-windows.md
+            - name: Líneas base de seguridad
+              items:
+                - name: "Configuración de línea base de Windows\_10"
+                  href: security-baseline-settings-windows.md
+                - name: Configuración de línea base de ATP de Microsoft Defender
+                  href: security-baseline-settings-defender-atp.md
             - name: Configuración de Windows Update
               href: windows-update-settings.md
         - name: Windows Holographic for Business
