@@ -1,11 +1,11 @@
 ---
-title: Creación de una directiva de cumplimiento de dispositivos iOS en Microsoft Intune - Azure | Microsoft Docs
-description: Cree o configure una directiva de cumplimiento de dispositivos Microsoft Intune para dispositivos iOS para especificar una cuenta de correo electrónico, comprobar dispositivos con Jailbreak, comprobar la versión del sistema operativo mínima y máxima, así como establecer las restricciones de contraseñas, incluida la longitud de las contraseñas y la inactividad de los dispositivos.
+title: Configuración de cumplimiento de dispositivos iOS en Microsoft Intune - Azure | Microsoft Docs
+description: Vea una lista de todas las opciones que puede usar al configurar el cumplimiento de dispositivos iOS en Microsoft Intune. Requerir un correo electrónico, comprobar dispositivos liberados o modificados, establecer una versión mínima o máxima permitida de sistema operativo, establecer restricciones de contraseña, incluida la inactividad del dispositivo y la longitud de contraseña, restringir aplicaciones y mucho más.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,82 +17,57 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ce05d2f726147caee198c79db185b87854cffb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 6ec071622a2e0d49068864f8bfb47954f54c8ba4
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566155"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423618"
 ---
-# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Agregación de una directiva de cumplimiento para dispositivos iOS en Intune
+# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de iOS para marcar dispositivos como compatibles o no compatibles con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Las directivas de cumplimiento de dispositivos iOS para Intune determinan las reglas y la configuración que deben cumplir los dispositivos iOS para que sean compatibles. Al usar directivas de cumplimiento de dispositivos con acceso condicional, puede permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se pueden crear en Azure Portal de Intune. Para más información sobre las directivas de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
+En este artículo se enumeran y describen las distintas opciones de configuración de cumplimiento que se pueden establecer en dispositivos con iOS y versiones posteriores en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use estas opciones para requerir un correo electrónico, marcar los dispositivos liberados (descodificados) como no compatibles, establecer un nivel de amenaza permitido, configurar la expiración de las contraseñas y mucho más.
 
-En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
+Esta característica se aplica a:
 
----------------------------
+- iOS
 
-| **Configuración de directiva** | **iOS 8.0 y versiones posteriores** |
-| --- | --- |
-| **Configuración de PIN o contraseña** | Corregido |
-| **Cifrado del dispositivo** | Corregido (estableciendo PIN) |
-| **Dispositivo liberado o modificado** | En cuarentena (no es una configuración)
-| **Perfil de correo electrónico** | En cuarentena |
-|**Versión de SO mínima** | En cuarentena |
-| **Versión de SO máxima** | En cuarentena |
-| **Atestación de estado de Windows** | No disponible |
+Como administrador del servicio Intune, use esta configuración de cumplimiento para proteger mejor los recursos de la organización. Para más información sobre las directivas de cumplimiento y lo que hacen, vea [Introducción a las directivas de cumplimiento](device-compliance-get-started.md).
 
----------------------------
+## <a name="before-you-begin"></a>Antes de comenzar
 
-**Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
-
-**En cuarentena** = el sistema operativo del sistema no exige compatibilidad. (Por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo). Si los dispositivos no son compatibles, se emprenden las acciones siguientes:
-
-- El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
-- El portal de empresa notifica al usuario acerca de los problemas de cumplimiento.
-
-## <a name="create-a-device-compliance-policy"></a>Crear una directiva de cumplimiento de dispositivos
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Para **Plataforma**, seleccione **iOS**. 
-5. Elija **Definir configuración** y escriba las opciones **Correo electrónico**, **Estado del dispositivo**, **Propiedades del dispositivo** y **Seguridad del sistema** que se describen en este artículo. Cuando termine, seleccione **Aceptar** y **Crear**.
-
-<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
-7. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
-7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
-8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
+[Crear una directiva de cumplimiento](create-compliance-policy.md#create-the-policy). Para **Plataforma**, seleccione **iOS**.
 
 ## <a name="email"></a>Correo electrónico
 
-- **Requerir que los dispositivos móviles tengan un perfil de correo electrónico administrado**: si establece esta opción en Requerir, los dispositivos que no tengan un perfil de correo electrónico administrado por Intune se considerarán no compatibles. Un dispositivo puede no tener un perfil de correo electrónico administrado cuando no tenga definido correctamente el destino, o si el usuario configura manualmente la cuenta de correo electrónico en el dispositivo.
+- **Requerir que los dispositivos móviles tengan un perfil de correo electrónico administrado**: cuando se establece en **Requerir**, los dispositivos que no tengan un perfil de correo electrónico administrado por Intune se considerarán no compatibles. Un dispositivo no puede tener un perfil de correo administrado si no tiene correctamente definido el destino, o si el usuario configura manualmente la cuenta de correo electrónico en el dispositivo. Si elige **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta configuración.
 
-  El dispositivo se considera no conforme en las situaciones siguientes:
-  - El perfil de correo electrónico se implementa en un grupo de usuarios distinto del grupo de usuarios al que se dirige la directiva de cumplimiento.
-  - El usuario ya tiene configurada una cuenta de correo electrónico en el dispositivo que coincide con el perfil de correo electrónico de Intune implementado en dicho dispositivo. Intune no puede sobrescribir el perfil implementado por el usuario y, por tanto, no puede administrarlo. Para garantizar el cumplimiento, el usuario debe quitar la configuración de correo electrónico existente. De este modo, Intune puede instalar el perfil de correo electrónico administrado.
+  El dispositivo se considera no compatible en estas situaciones:
 
-- **Seleccione el perfil de correo electrónico que Intune debe administrar**: si se selecciona la opción **Intune debe administrar la cuenta de correo electrónico**, elija **Seleccionar** para especificar el perfil de correo electrónico de Intune. El perfil de correo electrónico debe estar presente en el dispositivo.
+  - El perfil de correo electrónico se asigna a un grupo de usuarios distinto del grupo de usuarios al que va dirigido la directiva de cumplimiento.
+  - El usuario ya tiene configurada una cuenta de correo electrónico en el dispositivo que coincide con el perfil de correo electrónico de Intune implementado en dicho dispositivo. Intune no puede sobrescribir el perfil configurado por el usuario e Intune no puede administrarlo. Para que sea compatible, el usuario final debe quitar la configuración de correo existente. De este modo, Intune puede instalar el perfil de correo electrónico administrado.
 
-Para más información sobre los perfiles de correo electrónico, consulte [Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune](email-settings-configure.md).
+- **Seleccione el perfil de correo electrónico que Intune debe administrar**: si se selecciona la opción **Intune debe administrar la cuenta de correo electrónico**, elija **Seleccionar** para especificar el perfil de correo electrónico de Intune. El perfil de correo electrónico debe existir en el dispositivo.
+
+Para más información sobre los perfiles de correo, vea [Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune](email-settings-configure.md).
 
 ## <a name="device-health"></a>Device health
 
-- **Dispositivos con Jailbreak**: si habilita esta configuración, los dispositivos con Jailbreak no serán compatibles.
-- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo** (iOS 8.0 y posterior): elija el nivel de amenaza máximo para marcar los dispositivos como no compatibles. Los dispositivos que superan este nivel de amenaza se marcan como no compatibles:
-  - **Protegido**: esta opción es la más segura y el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
+- **Dispositivos descodificados**: elija **Bloquear** para marcar los dispositivos raíz (descodificados) como no compatibles. Si elige **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta configuración.
+- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo** (iOS 8.0 y versiones posteriores): use esta opción para hacer que la evaluación del riesgo sea una condición para el cumplimiento. Si elige **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta configuración. Para usar esta configuración, elija el nivel de amenaza permitido:
+  - **Protegido**: esta opción es la más segura y significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no compatible.
   - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
-  - **Medio:** el dispositivo se evalúa como compatible si las amenazas existentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
+  - **Medio**: el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
   - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
 
 ## <a name="device-properties"></a>Propiedades del dispositivo
 
-- **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede elegir actualizar su dispositivo. Después de eso, puede acceder a los recursos de la empresa.
-- **Maximum OS version allowed** (Versión de SO máxima permitida): cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá obtener acceso a los recursos de la empresa.
-- **Minimum OS build version** (Versión mínima de compilación del sistema operativo): cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, no la versión del sistema operativo. Use esta característica para escribir un número de compilación mínimo permitido en el dispositivo. Esta comprobación de cumplimiento admite dispositivos que ejecutan iOS 8.0 y versiones posteriores. 
-- **Maximum OS build version** (Versión máxima de compilación del sistema operativo): cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, no la versión del sistema operativo. Use esta característica para escribir un número de compilación máximo permitido en el dispositivo. Esta comprobación de cumplimiento admite dispositivos que ejecutan iOS 8.0 y versiones posteriores.
+- **SO mínimo requerido** (iOS 8.0 y versiones posteriores): cuando un dispositivo no cumple el requisito de versión de SO mínima, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede elegir actualizar su dispositivo. Después, puede acceder a los recursos de la empresa.
+- **Versión de SO máxima permitida** (iOS 8.0 y versiones posteriores): cuando un dispositivo usa una versión de sistema operativo posterior a la de la regla, se bloquea el acceso a los recursos de la empresa Se pide al usuario final que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no cambie una regla para permitir la versión de sistema operativo.
+- **Versión de compilación mínima del sistema operativo** (iOS 8.0 y versiones posteriores): cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, no la versión del sistema operativo. Use esta característica para escribir un número de compilación mínimo permitido en el dispositivo.
+- **Versión de compilación máxima del sistema operativo** (iOS 8.0 y versiones posteriores): cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, pero no la versión del sistema operativo. Use esta característica para escribir un número de compilación máximo permitido en el dispositivo.
 
 ## <a name="system-security"></a>Seguridad del sistema
 
@@ -105,27 +80,25 @@ Para más información sobre los perfiles de correo electrónico, consulte [Conf
 - **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas como **1234** o **1111**. Establézcala en **No configurado** para permitir a los usuarios crear contraseñas como **1234** o **1111**.
 - **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña.
 - **Tipo de contraseña requerida**: elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
-- **Number of non-alphanumeric characters in password** (Número de caracteres no alfanuméricos de la contraseña): indique el número mínimo de caracteres especiales (&, #, %, !, etc.) que se deben incluir en la contraseña.
+- **Número de caracteres no alfanuméricos en la contraseña**: indique el número mínimo de caracteres especiales, como `&`, `#`, `%`, `!`, etc. que se deben incluir en la contraseña.
 
     Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja.
 
 - **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
 - **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
-- **Número de contraseñas anteriores que no se pueden reutilizar**: indique el número de contraseñas usadas anteriormente que no se pueden usar.
+- **Número de contraseñas anteriores que no se pueden reutilizar**: escriba el número de contraseñas usadas anteriormente que no se pueden utilizar.
 
-### <a name="restricted-applications"></a>Aplicaciones restringidas 
-Puede restringir aplicaciones si agrega sus identificadores de lote a la directiva. Después, si un dispositivo tiene instalada la aplicación, el dispositivo se marcará como no conforme. 
-- **Nombre de la aplicación**: escriba un nombre descriptivo que ayude a identificar el identificador de lote. 
-- **Identificador de lote de aplicaciones**: escriba el identificador de lote único asignado por el proveedor de la aplicación. Para buscar el identificador de lote, vea [Cómo buscar el identificador de lote para una aplicación iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).  
+### <a name="device-security"></a>Seguridad de dispositivos
 
-## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
+- **Aplicaciones restringidas**: puede restringir aplicaciones si agrega sus identificadores de lote a la directiva. Si un dispositivo tiene instalada la aplicación, el dispositivo se marca como no compatible.
 
-1. Elija una directiva que haya configurado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
-2. Elija la directiva y luego **Asignaciones**. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
-3. Elija **Grupos seleccionados** para ver los grupos de seguridad de Azure AD. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y elija **Guardar** para implementar la directiva a los usuarios.
+  - **Nombre de la aplicación**: escriba un nombre descriptivo que ayude a identificar el identificador de lote.
+  - **Identificador de lote de aplicaciones**: escriba el identificador de lote único asignado por el proveedor de la aplicación. Para buscar el identificador de lote, vea [Cómo buscar el identificador de lote para una aplicación iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre otro sitio web de Microsoft).  
 
-Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
+Seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune](actions-for-noncompliance.md)  
-[Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)
+
+- [Agregar acciones para dispositivos no compatibles](actions-for-noncompliance.md) y [usar etiquetas de ámbito para filtrar directivas](scope-tags.md).
+- [Supervisar las directivas de cumplimiento](compliance-policy-monitor.md).
+- Vea [Configuración de directivas de cumplimiento para dispositivos macOS](compliance-policy-create-mac-os.md).

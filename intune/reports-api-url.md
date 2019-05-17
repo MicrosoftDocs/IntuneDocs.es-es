@@ -64,7 +64,7 @@ Puede probar las funciones más recientes del Almacenamiento de datos mediante l
 
 ## <a name="odata-query-options"></a>Opciones de consulta OData
 
-La versión actual admite los siguientes parámetros de consulta OData: `$filter`, `$select`, `$skip,` y `$top`. En `$filter`, solo `DateKey` o `RowLastModifiedDateTimeUTC` puede admitirse cuando las columnas son aplicables, y otras propiedades desencadenaría una solicitud incorrecta.
+La versión actual admite los siguientes parámetros de consulta OData: `$filter`, `$select`, `$skip,` y `$top`. En `$filter`, solo se puede admitir `DateKey` o `RowLastModifiedDateTimeUTC` cuando las columnas son aplicables; otras propiedades desencadenarían una solicitud incorrecta.
 
 ## <a name="datekey-range-filters"></a>Filtros de intervalo de DateKey
 
@@ -84,4 +84,4 @@ Los filtros de intervalo de `DateKey` se pueden usar para limitar la cantidad de
 |    `$filter=DateKey eq 20180214`                                 |    Full                                      |    Devolver datos con `DateKey` igual a 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Full                                      |    Devolver datos con `DateKey` entre 20180214 y 20180220.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Full                                      |    Devolver datos con `DateKey` igual a 20180214. `maxhistorydays` se omite.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Full                                       |    Devolver datos con `RowLastModifiedDateTimeUTC` es mayor o igual que `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Full                                       |    Devolver datos con `RowLastModifiedDateTimeUTC` mayores o iguales que `2018-02-21T23:18:51.3277273Z`                             |

@@ -46,4 +46,4 @@ Como administrador de TI, una de sus principales prioridades es [proteger los eq
 
 ## <a name="see-also"></a>Consulte también
 
-[Preguntas comunes, problemas y resoluciones con perfiles y las directivas de dispositivos](device-profile-troubleshoot.md)
+[Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos](device-profile-troubleshoot.md)

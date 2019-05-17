@@ -28,7 +28,7 @@ ms.locfileid: "58799508"
 
 En algunas ocasiones, las instalaciones de aplicaciones en los dispositivos administrados por MDM de Microsoft Intune pueden presentar errores. Cuando esto ocurre, puede ser complicado entender el motivo del error o cómo solucionarlo. Microsoft Intune proporciona detalles del error de instalación de aplicaciones que permiten a los operadores del departamento de soporte técnico y a los administradores de Intune ver información de la aplicación para atender las solicitudes de ayuda al usuario. En el panel de solución de problemas de Intune se proporcionan detalles del error, incluidos aquellos sobre las aplicaciones administradas en el dispositivo de un usuario. Se proporcionan detalles sobre el ciclo de vida de un extremo a otro en cada dispositivo individual del panel **Aplicaciones administradas**. Puede ver problemas de instalación, por ejemplo, al crearse, modificarse, dirigirse y entregarse la aplicación a un dispositivo. 
 
-## <a name="app-troubleshooting-details"></a>Información para solucionar errores de aplicación
+## <a name="app-troubleshooting-details"></a>Detalles de solución de problemas de aplicaciones
 
 Intune proporciona los detalles de solución de problemas de la aplicación en función de las aplicaciones instaladas en el dispositivo de un usuario específico.
 
@@ -53,46 +53,46 @@ Los detalles del error de instalación de la aplicación indicarán el problema.
 > [!Note]  
 > También puede acceder al panel de **solución de problemas** visitando la página [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) desde el explorador.
 
-## <a name="win32-app-installation-troubleshooting"></a>Solución de problemas de instalación aplicación Win32
+## <a name="win32-app-installation-troubleshooting"></a>Solución de problemas de instalación de aplicaciones Win32
 
-Seleccione la aplicación de Win32 que se implementó mediante la extensión de administración de Intune. Puede seleccionar la **recopilar registros** cuando se produce un error en la instalación de la aplicación de Win32. 
+Seleccione la aplicación Win32 que se implementó mediante la extensión de administración de Intune. Puede seleccionar la opción **Recopilar registros** cuando se produce un error de instalación de la aplicación Win32. 
 
 > [!IMPORTANT]
-> El **recopilar registros** opción no se habilitará cuando se ha instalado correctamente la aplicación de Win32 en el dispositivo.<p>Para poder recopilar información de registro de aplicación de Win32, debe instalarse la extensión de administración de Intune en el cliente de Windows. La extensión de administración de Intune se instala cuando se implementa un script de PowerShell o una aplicación Win32 en un grupo de seguridad de dispositivos o usuarios. Para obtener más información, consulte [extensión Administración de Intune: requisitos previos](intune-management-extension.md#prerequisites).
+> La opción **Recopilar registros** no se habilitará cuando la aplicación Win32 se haya instalado correctamente en el dispositivo.<p>Para poder recopilar información de registro de la aplicación Win32, debe instalarse la extensión de administración de Intune en el cliente de Windows. La extensión de administración de Intune se instala cuando se implementa un script de PowerShell o una aplicación Win32 en un grupo de seguridad de dispositivos o usuarios. Para más información, vea [Requisitos previos de la extensión de administración de Intune](intune-management-extension.md#prerequisites).
 
 ### <a name="collect-log-file"></a>Recopilar archivos de registro
 
-Para recopilar los registros de instalación de la aplicación de Win32, primero siga los pasos indicados en la sección [detalles de la solución de problemas de aplicación](troubleshoot-app-install.md#app-troubleshooting-details). A continuación, continúe con los pasos siguientes:
+Para recopilar los registros de instalación de la aplicación Win32, primero siga los pasos indicados en la sección [Detalles de solución de problemas de la aplicación](troubleshoot-app-install.md#app-troubleshooting-details). Después, siga con estos pasos:
 
-1. Haga clic en el **recopilar registros** opción el **detalles de la instalación** hoja.
+1. Haga clic en la opción **Recopilar registros** en la hoja **Detalles de la instalación**.
 
     <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
 
-2. Proporcionar las rutas de acceso de archivo con el registro de nombres de archivo para iniciar el proceso de recopilación de archivos de registro y haga clic en **Aceptar**.
+2. Proporcione rutas de acceso de archivo con nombres de archivo de registro para iniciar el proceso de recopilación de archivos de registro y haga clic en **Aceptar**.
     
     > [!NOTE]
-    > Recopilación de registros tardará menos de dos horas. Tipos de archivo admitidos: *. log, .txt, .dmp, .cab, .zip, .xml, .evtx y .evtl*. Se permite un máximo de 25 rutas de acceso de archivo.
+    > La recopilación de registros tardará menos de dos horas. Tipos de archivo admitidos: *.log, .txt, .dmp, .cab, .zip, .xml, .evtx y .evtl*. Se permite un máximo de 25 rutas de acceso de archivo.
 
-3. Una vez que se han recopilado los archivos de registro, puede seleccionar la **registros** vínculo para descargar los archivos de registro.
+3. Una vez que se han recopilado los archivos de registro, puede seleccionar el vínculo **Registros** para descargarlos.
 
     <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
 
     > [!NOTE]
-    > Se mostrará una notificación que indica el éxito de la recopilación de registros de aplicación.
+    > Se mostrará una notificación que indica que la recopilación de registros de la aplicación se ha realizado correctamente.
 
-#### <a name="win32-log-collection-requirements"></a>Requisitos de recopilación del registro de Win32
+#### <a name="win32-log-collection-requirements"></a>Requisitos de recopilación de registros de Win32
 
-Hay requisitos específicos que se deben seguir para recopilar archivos de registro:
+Para recopilar archivos de registro, es necesario seguir unos requisitos específicos:
 
-- Debe especificar la ruta de acceso del archivo de registro completo. 
+- Debe especificar la ruta completa del archivo de registro. 
 - Puede especificar variables de entorno para la recopilación de registros, como las siguientes:<br>
-  *% PROGRAMFILES %, % PROGRAMDATA % PÚBLICA %, % WINDIR %, % TEMP %, % TMP %*
-- Extensiones de archivo exacto sólo se permiten, como:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Solo se permiten extensiones de archivo exactas, como:<br>
   *.log, .txt, .dmp, .cab, .zip, .xml*
-- El archivo de registro máximo para cargar es 60 MB o 25 archivos, lo que ocurra primero. 
-- Recopilación de registros de instalación de aplicación Win32 está habilitada para las aplicaciones que cumplen el necesarios disponibles y desinstalar la intención de asignación de aplicación.
-- Los registros almacenados se cifran para proteger cualquier información PII contenido en los registros.
-- Mientras los vales de soporte técnico de apertura para errores de aplicaciones de Win32, adjunte los registros de error relacionados con los pasos indicados anteriormente.
+- Se puede cargar un máximo de 25 archivos de registro o de 60 MB, lo que ocurra primero. 
+- La recopilación de registros de instalación de la aplicación Win32 está habilitada para las aplicaciones que cumplen la intención de asignación de aplicación necesaria, disponible y de instalación.
+- Los registros almacenados se cifran para proteger cualquier información PII incluida en los registros.
+- Si se produce un error al abrir incidencias de soporte técnico para aplicaciones Win32, adjunte los registros de error relacionados siguiendo los pasos arriba indicados.
 
 ## <a name="app-installation-errors"></a>Errores de instalación de la aplicación
 
@@ -114,7 +114,7 @@ Los siguientes mensajes de error y descripciones proporcionan detalles sobre err
 
 ### <a name="ios-errors"></a>Errores de iOS
 
-| Mensaje o código de error | Sugerencias de descripción y solución de problemas |
+| Mensaje o código de error | Descripción/Sugerencias de solución de problemas |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | (0x87D12906) | El agente MDM de Apple ha devuelto que no se pudo ejecutar el comando de instalación. |
 | (0x87D1313C) | Se perdió la conexión de red mientras se enviaba la dirección URL del servicio de descarga actualizada al dispositivo. En concreto, no se encontró un servidor con el nombre de host especificado. |
@@ -126,16 +126,16 @@ Los siguientes mensajes de error y descripciones proporcionan detalles sobre err
 | El usuario ha rechazado la oferta para instalar la aplicación. (0x87D13B62) | Durante la instalación de la aplicación inicial, el usuario hizo clic en Cancelar. |
 | El usuario ha rechazado la oferta para actualizar la aplicación. (0x87D13B63) | El usuario final hizo clic en Cancelar durante el proceso de actualización. |
 | Error desconocido (0x87D103E8) | Se ha producido un error desconocido durante la instalación de la aplicación. Este es el error resultante cuando no se han producido los otros. |
-| Solo se puede instalar aplicaciones de PCV en iPad compartido (-2016330861). | Las aplicaciones deben obtenerse mediante el programa de compras por volumen de Apple para instalar en un iPad compartido. |
-| No se puede instalar las aplicaciones cuando se deshabilita App Store (-2016330860).  | Store de la aplicación debe estar habilitada para que el usuario que instale la aplicación. |
-| No se encuentra la licencia VPP para aplicación (-2016330859).  | Pruebe a revocar y reasignar la licencia de aplicación. |
-| No se puede instalar las aplicaciones del sistema con su proveedor de MDM (-2016330858). | Instalación de aplicaciones que se instalaron previamente por el sistema operativo iOS no es un escenario admitido. |
-| No se puede instalar las aplicaciones cuando el dispositivo está en modo perdido (-2016330857). | Todo el uso del dispositivo está bloqueado en el modo perdido.   Deshabilitar modo perdido para instalar aplicaciones. |
-| No se puede instalar las aplicaciones cuando el dispositivo está en modo de pantalla completa (-2016330856). | Pruebe a agregar este dispositivo a un grupo de exclusión para la directiva de configuración del modo de pantalla completa para instalar aplicaciones. |
-| No se puede instalar aplicaciones de 32 bits en este dispositivo (-2016330852). | El dispositivo no admite la instalación de aplicaciones de 32 bits. Intente implementar la versión de 64 bits de la aplicación. |
-| Usuario debe iniciar sesión en el Store de la aplicación (-2016330855). | El usuario debe iniciar sesión en el Store de la aplicación antes de que se puede instalar la aplicación. |
+| Solo se pueden instalar aplicaciones de VPP en iPad compartido (-2016330861). | Las aplicaciones deben obtenerse mediante el Programa de compras por volumen de Apple para instalarlas en un iPad compartido. |
+| No se pueden instalar las aplicaciones cuando App Store está deshabilitado (-2016330860).  | App Store debe estar habilitado para que el usuario pueda instalar la aplicación. |
+| No se encuentra la licencia de VPP de la aplicación (-2016330859).  | Pruebe a revocar y reasignar la licencia de aplicación. |
+| No se pueden instalar aplicaciones del sistema con el proveedor de MDM (-2016330858). | No se permite la instalación de aplicaciones que se instalaron previamente a través del sistema operativo iOS. |
+| No se pueden instalar aplicaciones cuando el dispositivo está en modo perdido (-2016330857). | En el modo perdido, se bloquea totalmente el uso del dispositivo.   Para instalar aplicaciones, hay que deshabilitar el modo perdido. |
+| No se pueden instalar aplicaciones cuando el dispositivo está en pantalla completa (-2016330856). | Pruebe a agregar este dispositivo a un grupo de exclusión para que la directiva de configuración del modo de pantalla completa instale las aplicaciones. |
+| No se pueden instalar aplicaciones de 32 bits en este dispositivo (-2016330852). | El dispositivo no admite la instalación de aplicaciones de 32 bits. Pruebe a implementar la versión de 64 bits de la aplicación. |
+| Los usuarios deben iniciar sesión en App Store (-2016330855). | El usuario debe iniciar sesión en App Store para que la aplicación se pueda instalar. |
 | Problema desconocido. Inténtelo de nuevo (-2016330854). | No se pudo instalar la aplicación debido a un motivo desconocido.   Inténtelo de nuevo más tarde. |
-| No se pudo instalar la aplicación. Intune intentará la próxima vez que el dispositivo se sincronice (-2016330853). | Instalación de la aplicación detectó un error de dispositivo. Sincronice el dispositivo para intentar instalar de nuevo la aplicación. |
+| Error al instalar la aplicación. Intune lo intentará de nuevo la próxima vez que el dispositivo se sincronice (-2016330853). | Se produjo un error de dispositivo en la instalación de la aplicación. Sincronice el dispositivo para intentar instalar la aplicación de nuevo. |
 
 ### <a name="other-installation-errors"></a>Otros errores de instalación
 

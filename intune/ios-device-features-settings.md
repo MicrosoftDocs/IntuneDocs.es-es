@@ -23,11 +23,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/01/2019
 ms.locfileid: "58799272"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>configuración de dispositivos iOS para usar las características comunes de iOS en Intune
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Configuración de dispositivos iOS para usar las características comunes de iOS en Intune
 
 Intune incluye algunas configuraciones integradas para permitir a los usuarios de iOS usar diferentes características de Apple en sus dispositivos. Por ejemplo, los administradores pueden controlar cómo los usuarios de iOS usan impresoras AirPrint, agregan aplicaciones y carpetas a la base y páginas en la pantalla principal, muestran las notificaciones de aplicación, muestran detalles de etiqueta de recursos en la pantalla de bloqueo, usan la autenticación de inicio de sesión único y autentican usuarios con certificados.
 
-Use estas características para controlar los dispositivos iOS como parte de la solución de administración (MDM) de dispositivos móviles.
+Use estas características para controlar los dispositivos iOS como parte de la solución de administración de dispositivos móviles (MDM).
 
 En este artículo se enumeran estas opciones de configuración y se describe lo que hace cada una de ellas.
 
@@ -78,7 +78,7 @@ Use la configuración **Acoplar**, para agregar hasta seis elementos o carpetas 
 
     - **Agregar una aplicación**: elija esta opción para agregar aplicaciones a la base en la pantalla. Introduzca:
 
-      - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
+      - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
       - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](#bundle-ids-for-built-in-ios-apps) (en este artículo) para ver algunos ejemplos.
 
       Haga clic en **Aceptar** para guardar los cambios.
@@ -90,15 +90,15 @@ Use la configuración **Acoplar**, para agregar hasta seis elementos o carpetas 
       1. Escriba un nombre en **Nombre de carpeta**. Este nombre se muestra en los dispositivos de los usuarios.
       2. Vaya a **Agregar** y escriba las siguientes propiedades:
 
-          - **Nombre de la página**: escriba un nombre para la página. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-          - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
+          - **Nombre de la página**: especifique un nombre para la página. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
+          - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
           - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](#bundle-ids-for-built-in-ios-apps) (en este artículo) para ver algunos ejemplos.
 
       3. Seleccione **Agregar**. Puede agregar hasta **20** páginas para base del dispositivo.
       4. Haga clic en **Aceptar** para guardar los cambios.
 
 > [!NOTE]
-> Cuando se agregan mediante la configuración de área de iconos, los iconos en la pantalla principal y las páginas están bloqueados y no se puede mover. Esto puede deberse al diseño con iOS y las directivas MDM de Apple.
+> Cuando se agregan iconos mediante la configuración de Acoplar, se bloquean los iconos de la pantalla principal y de las páginas, y no se pueden mover. Esto puede deberse al diseño con iOS y las directivas MDM de Apple.
 
 #### <a name="example"></a>Ejemplo
 
@@ -126,7 +126,7 @@ Agregue las páginas que quiere que aparezcan en la pantalla principal y las apl
 
     - **Agregar una aplicación**: elija esta opción para agregar aplicaciones a una página en la pantalla. Introduzca:
 
-      - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
+      - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
       - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](#bundle-ids-for-built-in-ios-apps) (en este artículo) para ver algunos ejemplos.
 
       Haga clic en **Aceptar** para guardar los cambios.
@@ -138,8 +138,8 @@ Agregue las páginas que quiere que aparezcan en la pantalla principal y las apl
       1. Escriba un nombre en **Nombre de carpeta**. Este nombre se muestra en los dispositivos de los usuarios.
       2. Vaya a **Agregar** y escriba las siguientes propiedades:
 
-          - **Nombre de la página**: escriba un nombre para la página. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-          - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
+          - **Nombre de la página**: especifique un nombre para la página. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
+          - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
           - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](#bundle-ids-for-built-in-ios-apps) (en este artículo) para ver algunos ejemplos.
 
       3. Seleccione **Agregar**.
@@ -175,7 +175,7 @@ Elija cómo las aplicaciones instaladas en dispositivos iOS envían notificacion
          - **Ninguna**: no se muestra ninguna notificación.
          - **Banner**: se muestra brevemente un banner con la notificación.
          - **Modal**: se muestra la notificación y el usuario debe descartarla manualmente antes de continuar usando el dispositivo.
-       - **Distintivo en el icono de la aplicación**: seleccione **habilitar** para agregar un distintivo en el icono de la aplicación. El distintivo significa que la aplicación envió una notificación.
+       - **Distintivo en el icono de la aplicación**: seleccione **Habilitar** para agregar un distintivo en el icono de la aplicación. El distintivo significa que la aplicación envió una notificación.
        - **Sonidos**: seleccione **Habilitar** para reproducir un sonido cuando se entrega una notificación.
 
 3. Haga clic en **Aceptar** para guardar los cambios. Continúe agregando las aplicaciones que quiera. Cuando termine, seleccione **Aceptar**.
@@ -269,7 +269,7 @@ Esta configuración controla el acceso de dirección URL del explorador en dispo
 
     - **Configurar direcciones URL**: use el filtro web integrado de Apple que busca términos para adultos, incluido lenguaje obsceno y sexualmente explícito. Esta característica evalúa cada página web cuando se carga e identifica y bloquea contenido inadecuado. También puede agregar direcciones URL que no desea que el filtro compruebe. O bien, puede bloquear direcciones URL específicas, independientemente de la configuración del filtro de Apple.
 
-      - **URL permitidas**: **agregar** las direcciones URL que desea permitir. Estas direcciones URL no son capturadas por el filtro web de Apple.
+      - **URL permitidas**: **agregue** las URL que quiera permitir. Estas direcciones URL no son capturadas por el filtro web de Apple.
 
         > [!NOTE]
         > Las direcciones URL que especifique son las direcciones URL que no desea que el filtro web de Apple evalúe. Estas direcciones URL no son una lista de sitios web permitidos. Para crear una lista de sitios web permitidos, establezca **Tipo de filtro** en **Solo sitios web específicos**.
@@ -296,11 +296,11 @@ Agregue una imagen .png, .jpg o .jpeg personalizada a los dispositivos iOS super
 
 Puede experimentar un comportamiento inesperado cuando un perfil sin imagen se asigna a dispositivos con una imagen existente. Por ejemplo, crea un perfil sin una imagen. Este perfil se asigna a dispositivos que ya tienen una imagen. En este escenario, la imagen puede cambiar a la predeterminada del dispositivo, o bien la imagen original puede permanecer en el dispositivo. Este comportamiento se controla y limita por medio de la plataforma MDM de Apple.
 
-- **Ubicación para mostrar del papel tapiz**: elija una ubicación en el dispositivo para mostrar la imagen. Las opciones son:
-  - **No configurado**: no se agrega una imagen personalizada en el dispositivo. El dispositivo usa la configuración predeterminada del sistema operativo.
-  - **Pantalla de bloqueo**: agrega la imagen en la pantalla de bloqueo.
-  - **Pantalla principal**: agrega la imagen en la pantalla principal.
-  - **Pantalla de bloqueo y la pantalla principal**: utiliza la misma imagen en la pantalla de bloqueo y la pantalla principal.
+- **Ubicación de presentación del fondo de pantalla**: elija una ubicación en el dispositivo para mostrar la imagen. Las opciones son:
+  - **Sin configurar**: no se agrega una imagen personalizada al dispositivo. El dispositivo usa la configuración predeterminada del sistema operativo.
+  - **Pantalla de bloqueo**: agrega la imagen a la pantalla de bloqueo.
+  - **Pantalla de inicio**: agrega la imagen a la pantalla de inicio.
+  - **Pantalla de bloqueo y pantalla de inicio**: usa la misma imagen en la pantalla de bloqueo y en la pantalla de inicio.
 - **Imagen de fondo de pantalla**: cargue una imagen .png, .jpg o .jpeg existente que quiera usar. Asegúrese de que el tamaño del archivo es inferior a 750 KB. También puede **quitar** una imagen que ha agregado.
 
 > [!TIP]

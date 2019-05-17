@@ -1,6 +1,6 @@
 ---
-title: Creación de una directiva de cumplimiento de dispositivos Android en Microsoft Intune - Azure | Microsoft Docs
-description: Ver una lista de todas las opciones que puede usar al establecer el cumplimiento de los dispositivos Android en Microsoft Intune. Establecer reglas de contraseña, elija una versión de sistema operativo mínimo o máximo, restringir aplicaciones específicas, evitar reutilizar contraseñas y mucho más.
+title: Configuración de cumplimiento de dispositivos Android en Microsoft Intune - Azure | Microsoft Docs
+description: Vea una lista de todas las opciones que puede usar al configurar el cumplimiento de dispositivos Android en Microsoft Intune. Configure reglas de contraseña, elija una versión mínima o máxima de sistema operativo, restrinja aplicaciones específicas, evite reutilizar contraseñas y mucho más.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,17 +24,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423584"
 ---
-# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Android para marcar los dispositivos como compatible o no compatible con Intune
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Android para marcar dispositivos como compatibles o no compatibles con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-En este artículo se enumera y se describe la configuración de cumplimiento diferentes que puede configurar en dispositivos Android en Intune. Como parte de la solución de administración (MDM) de dispositivos móviles, use estas opciones para marcar los dispositivos liberados (descodificados) como no conforme, establecer un nivel de amenaza permitido, habilitar Google Play Protect y mucho más.
+En este artículo se enumeran y describen las distintas opciones de configuración de cumplimiento que se pueden establecer en dispositivos con Android y versiones posteriores en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use estas opciones para marcar los dispositivos liberados (descodificados) como no compatibles, establecer un nivel de amenaza permitido, habilitar Google Play Protect y mucho más.
 
 Esta característica se aplica a:
 
 - Android
 
-Como administrador de Intune, use esta configuración de cumplimiento para ayudar a proteger los recursos de la organización. Para más información sobre las directivas de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
+Como administrador del servicio Intune, use esta configuración de cumplimiento para proteger mejor los recursos de la organización. Para más información sobre las directivas de cumplimiento y lo que hacen, vea [Introducción a las directivas de cumplimiento](device-compliance-get-started.md).
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -49,7 +49,7 @@ Como administrador de Intune, use esta configuración de cumplimiento para ayuda
   - **Medio:** el dispositivo se evalúa como compatible si las amenazas existentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
   - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
 
-### <a name="google-play-protect"></a>Protección de Google Play
+### <a name="google-play-protect"></a>Google Play Protect
 
 - **Google Play Services está configurado**: se **requiere** que la aplicación Google Play Services esté instalada y habilitada. Google Play Services permite actualizaciones de seguridad y es una dependencia de nivel base para muchas características de seguridad en los dispositivos de Google certificados. Si elige **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta configuración.
 - **Proveedor de seguridad actualizada**: se **requiere** que un proveedor de seguridad actualizado pueda proteger un dispositivo frente a vulnerabilidades conocidas. Si elige **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta configuración.
@@ -64,7 +64,7 @@ Como administrador de Intune, use esta configuración de cumplimiento para ayuda
   - **Comprobar integridad básica y dispositivos certificados**
 
 > [!NOTE]
-> Para configurar la configuración de Google Play Protect con directivas de protección, consulte [configuración de directiva de protección de aplicaciones de Intune](app-protection-policy-settings-android.md#conditional-launch) en Android.
+> Para configurar las opciones de Google Play Protect mediante directivas de protección de aplicaciones, vea [Configuración de directivas de protección de aplicaciones de Intune](app-protection-policy-settings-android.md#conditional-launch) en Android.
 
 ## <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
 
@@ -120,14 +120,14 @@ Seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 ## <a name="locations"></a>Ubicaciones
 
-En la directiva, puede forzar cumplimiento por la ubicación del dispositivo. Elija entre ubicaciones existentes. ¿Aún no tiene una ubicación? En el apartado [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se proporcionan algunas instrucciones.
+En la directiva, puede forzar el cumplimiento según la ubicación del dispositivo. Elija entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se ofrecen algunas instrucciones.
 
-1. Elija **ubicaciones** > **seleccionar ubicaciones**.
-2. En la lista, compruebe su ubicación > **seleccione**.
+1. Elija **Ubicaciones** > **Seleccionar ubicaciones**.
+2. En la lista, compruebe la ubicación y elija **Seleccionar**.
 3. Haga clic en **Guardar** la directiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Adición de acciones para dispositivos no conformes](actions-for-noncompliance.md) y [usan etiquetas de ámbito para filtrar directivas](scope-tags.md).
-- [Supervisar las directivas de cumplimiento de normas](compliance-policy-monitor.md).
-- [Configuración de directivas de cumplimiento para Android Enterprise](compliance-policy-create-android-for-work.md)
+- [Agregar acciones para dispositivos no compatibles](actions-for-noncompliance.md) y [usar etiquetas de ámbito para filtrar directivas](scope-tags.md).
+- [Supervisar las directivas de cumplimiento](compliance-policy-monitor.md).
+- Vea [Configuración de directivas de cumplimiento para dispositivos Android Enterprise](compliance-policy-create-android-for-work.md).

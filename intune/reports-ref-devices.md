@@ -167,10 +167,10 @@ La entidad **EnrollmentTypes** indica si el dispositivo es corporativo, personal
 |---------|------------|--------|
 | ownerTypeID |Identificador único del tipo de propietario. | |
 | ownerTypeKey |Identificador único del tipo de propietario en el almacenamiento de datos. Clave suplente. | |
-| ownerTypeName |Representa el tipo de propietario de los dispositivos:  <br>Corporativo: dispositivo es propiedad de la empresa. <br>Personal: el dispositivo es de propiedad personal (BYOD).  <br>Desconocido: no hay información sobre este dispositivo. |Empresa Personal desconocido |
+| ownerTypeName |Representa el tipo de propietario de los dispositivos:  <br>Empresa: el dispositivo es propiedad de una empresa. <br>Personal: el dispositivo es de propiedad personal (BYOD).  <br>Desconocido: no hay información sobre este dispositivo. |Empresa Personal Desconocido |
 
 > [!Note]  
-> Para el `ownerTypeName` en Azure AD al crear grupos dinámicos para los dispositivos, deberá establecer el valor de filtro `deviceOwnership` como `Company`. Para obtener más información, consulte [reglas para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Para el `ownerTypeName` en Azure AD al crear grupos dinámicos para los dispositivos, deberá establecer el valor de filtro `deviceOwnership` como `Company`. Para más información, vea [Reglas de dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="managementstates"></a>ManagementStates
 

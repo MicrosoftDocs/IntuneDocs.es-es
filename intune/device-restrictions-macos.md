@@ -39,27 +39,27 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 - **Block Definition Lookup** (Bloquear búsqueda de definiciones): **Bloquear** evita que el usuario resalte una palabra y luego busque su definición en el dispositivo. **No configurado** (valor predeterminado) permite el acceso a la característica de búsqueda de definiciones.
 - **Bloquear dictado**: **Bloquear** evita que el usuario use la entrada de voz para escribir texto. **No configurado** (valor predeterminado) permite que el usuario use la entrada de dictado.
-- **Bloquear el almacenamiento en caché contenido**: elija **no configurado** (valor predeterminado) para habilitar el almacenamiento en caché contenido. Almacenamiento en caché contenido almacena datos de la aplicación, datos del explorador web, descargas y más localmente en el dispositivo. Seleccione **bloque** para evitar que estos datos se almacenen en la memoria caché.
+- **Bloquear almacenamiento en caché de contenido**: elija **Sin configurar** (valor predeterminado) para habilitar el almacenamiento en caché de contenido. El almacenamiento en caché de contenido almacena localmente en el dispositivo datos de aplicaciones, datos del explorador web, descargas y mucho más. Seleccione **Bloquear** para evitar que estos datos se almacenen en la memoria caché.
 
-  Para obtener más información sobre el almacenamiento en caché contenido en macOS, consulte [administrar el almacenamiento en caché contenido en Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (abre otro sitio Web).
+  Para más información sobre el almacenamiento en caché de contenido en macOS, vea [Gestionar el almacenamiento en caché de contenido en el Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (abre otro sitio web).
 
   Esta característica se aplica a:  
   - macOS 10.13 y versiones posteriores
 
-- **Aplazar actualizaciones de software**: cuando se establece en **no configurado** (valor predeterminado), las actualizaciones de software se muestran en el dispositivo con Apple vaya lanzando. Por ejemplo, si obtiene publica una actualización de macOS de Apple en una fecha concreta, a continuación, esa actualización naturalmente aparecerá en el dispositivo en torno a la fecha de lanzamiento. Se permiten las actualizaciones de compilación de inicialización sin retraso.
+- **Aplazar actualizaciones de software**: cuando se establece en **Sin configurar** (valor predeterminado), las actualizaciones de software se muestran en el dispositivo a medida que Apple las va publicando. Por ejemplo, si Apple publica una actualización de macOS en una fecha concreta, dicha actualización naturalmente se mostrará en el dispositivo en torno a la fecha de publicación. Se permiten las actualizaciones de compilación de inicialización sin retraso.
 
-  **Habilitar** permite retrasar cuando se muestran las actualizaciones de software en dispositivos, desde 0 a 90 días. Esta configuración no controla cuando las actualizaciones están o no están instaladas. 
+  **Habilitar** permite retrasar la visualización de las actualizaciones en el dispositivo, entre 0 y 90 días. Esta configuración no controla cuándo se instalan las actualizaciones. 
 
   - **Retrasar la visibilidad de las actualizaciones de software**: escriba un valor comprendido entre 0 y 90 días. Cuando el retraso expira, los usuarios reciben una notificación para actualizar a la versión más antigua del sistema operativo que estaba disponible cuando se desencadenó el retraso.
 
-    Por ejemplo, si está disponible en una actualización de macOS **el 1 de enero**, y **retrasar visibilidad** está establecido en **5 días**, a continuación, la actualización no se muestra como una actualización disponible en dispositivos. En el **sexto día** posteriores al lanzamiento, que está disponible la actualización y los usuarios finales pueden instalarlo.
+    Por ejemplo, si hay una actualización de macOS disponible **el 1 de enero** y **Retrasar la visibilidad** está establecido en **5 días**, la actualización no se muestra como una actualización disponible en los dispositivos. Al **sexto día** después de la publicación, esta actualización estará disponible y los usuarios finales podrán instalarla.
 
     Esta característica se aplica a:  
     - macOS 10.13.4 y versiones posteriores
 
 ## <a name="password"></a>Contraseña
 
-- **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **No configurado** (valor predeterminado) no requiere una contraseña y no obliga a las restricciones, como bloquear contraseñas simples o establecer una longitud mínima.
+- **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **Sin configurar** (valor predeterminado) no exige una contraseña y no fuerza ninguna restricción, como bloquear contraseñas simples o establecer una longitud mínima.
   - **Tipo de contraseña necesaria**: especifique si la contraseña solo puede ser numérica o si debe ser alfanumérica (contener letras y números). Esta configuración solo es compatible con Mac OS X versión 10.10.3 y posteriores.
   - **Número de caracteres no alfanuméricos en la contraseña**: especifique el número de caracteres complejos necesarios en la contraseña (de **0** a **4**).<br>Un carácter complejo es un símbolo, por ejemplo, "**?**".
   - **Longitud mínima de la contraseña**: escriba la longitud mínima de contraseña que un usuario debe configurar (entre **4** y **16** caracteres).
@@ -69,10 +69,10 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
   - **Caducidad de la contraseña (días)**: especifique cuántos días deben transcurrir antes de que el usuario tenga que cambiar la contraseña (de **1** a **255** días).
   - **Impedir la reutilización de contraseñas anteriores**: especifique el número de contraseñas de usuario usadas anteriormente que no se pueden volver a utilizar, de **1** a **24**.
 
-- **Bloquea al usuario modificar el código de acceso**: elija **bloque** para detener el código de acceso se cambie, agregado o quitado. **No configurado** (valor predeterminado) permite agregar, cambiar o quitar códigos de acceso.
+- **Block User from Modifying Passcode** (Bloquear modificación del código de acceso): elija **Bloquear** para evitar que se cambie, se agregue o se quite el código de acceso. **No configurado** (valor predeterminado) permite agregar, cambiar o quitar códigos de acceso.
 - **Bloquear desbloqueo con huella digital**: elija **Bloquear** para impedir el uso de la huella digital para desbloquear el dispositivo. **No configurado** (valor predeterminado) permite que el usuario desbloquee el dispositivo con la huella digital.
 
-- **Bloquear la característica Autorrellenar contraseñas**: elija **Bloquear** para evitar el uso de la característica Autorrellenar contraseñas en macOS. Elegir **bloque** también tiene las siguientes consecuencias:
+- **Bloquear la característica Autorrellenar contraseñas**: elija **Bloquear** para evitar el uso de la característica Autorrellenar contraseñas en macOS. Si elige **Bloquear** tendrá también este impacto:
 
   - No se les pide a los usuarios que usen una contraseña guardada en Safari ni en ninguna aplicación.
   - Se deshabilitan las contraseñas seguras automáticas y no se sugieren contraseñas seguras a los usuarios.
@@ -88,33 +88,33 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Bloquear Autorrellenar de Safari**: **Bloquear** deshabilita la característica Autorrellenar de Safari en el dispositivo. **No configurado** (valor predeterminado) permite que los usuarios cambien la configuración de Autorrellenar del explorador web.
 - **Bloquear Cámara**: elija **Bloquear** para impedir el acceso a la cámara del dispositivo. **No configurado** (valor predeterminado) permite el acceso a la cámara del dispositivo.
 - **Bloquear Apple Music**: **Bloquear** revierte la aplicación Música al modo clásico y deshabilita el servicio Música. **No configurado** (valor predeterminado) permite usar la aplicación Apple Music.
-- **Resultados de búsqueda de Internet de Spotlight bloque**: **bloque** impide que contenido destacado de devolver los resultados de una búsqueda en Internet. **No configurado** (valor predeterminado) permite que la búsqueda de Spotlight se conecte a Internet para proporcionar resultados de la búsqueda.
-- **Transferencia de archivos de bloque mediante iTunes**: **bloque** deshabilita servicios de uso compartido de archivos de aplicación. Disponible en Mac OS 10.13 y versiones posteriores. **No configurado** (valor predeterminado) permite el uso compartido de servicios de archivos de aplicación.
+- **Block Spotlight Internet Search Results** (Bloquear resultados de búsqueda de Internet de Spotlight): **Bloquear** impide que Spotlight devuelva resultados de cualquier búsqueda de Internet. **No configurado** (valor predeterminado) permite que la búsqueda de Spotlight se conecte a Internet para proporcionar resultados de la búsqueda.
+- **Bloquear transferencia de archivos mediante iTunes**: **Bloquear** deshabilita los servicios de uso compartido de archivos de aplicaciones. Disponible en macOS 10.13 y versiones posteriores. **Sin configurar** (valor predeterminado) permite servicios de uso compartido de archivos de aplicaciones.
 
 ## <a name="restricted-apps"></a>Aplicaciones restringidas
 
 En la lista de aplicaciones restringidas, puede configurar una de las listas siguientes:
 
-- Una lista de **Aplicaciones prohibidas**: se enumeran las aplicaciones no administradas por Intune que los usuarios no pueden instalar ni ejecutar. No se impide que los usuarios instalar una aplicación prohibida, pero si lo hacen, se notifica al administrador.
-- Una lista de **aplicaciones aprobadas**: se enumeran aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. No se impide que los usuarios instalen una aplicación que no se encuentra en la lista aprobada. Sin embargo, si es así, se notifica al administrador.
+- Una lista de **Aplicaciones prohibidas**: se enumeran las aplicaciones no administradas por Intune que los usuarios no pueden instalar ni ejecutar. No se impide a los usuarios que instalen una aplicación prohibida, pero si lo hacen, se notifica al administrador.
+- Una lista de **aplicaciones aprobadas**: se enumeran aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. No se impide a los usuarios que instalen una aplicación que no se encuentra en la lista aprobada, pero si lo hacen, se notifica al administrador.
 
 Para configurar la lista, haga clic en **Agregar**, especifique un nombre de su elección (puede ser el publicador de la aplicación) y el identificador de paquete de la aplicación (por ejemplo *com.apple.calculator*).
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
 - **Bloquear AirDrop**: **Bloquear** evita el uso de AirDrop en el dispositivo. **No configurado** (valor predeterminado) permite usar la característica AirDrop para intercambiar contenido con dispositivos cercanos.
-- **Bloque de Apple Watch automática desbloquear**: **bloque** impide que los usuarios desbloquear su dispositivo macOS con su Apple Watch. **No configurado** (valor predeterminado) permite a los usuarios desbloquear el dispositivo macOS con su Apple Watch.
+- **Block Apple Watch Auto Unlock** (Bloquear desbloqueo automático de Apple Watch): **Bloquear** impide que los usuarios desbloqueen su dispositivo macOS mediante Apple Watch. **Sin configurar** (valor predeterminado) permite a los usuarios desbloquear su dispositivo macOS mediante Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
 - **Bloquear la sincronización de Keychain en iCloud**: elija **Bloquear** para deshabilitar la sincronización de las credenciales almacenadas en Keychain en iCloud. **No configurado** (valor predeterminado) permite que los usuarios sincronicen estas credenciales.
-- **Bloquear la sincronización de documentos de iCloud**: **bloque** impide que la sincronización de documentos y datos iCloud. **No configurado** (valor predeterminado) permite la sincronización de clave-valor y documentos en el espacio de almacenamiento de iCloud.
-- **Bloquear el correo electrónico de copia de seguridad de iCloud**: **bloque** impide que iCloud de sincronización en la aplicación de correo de macOS. **No configurado** (valor predeterminado) permite la sincronización de correo electrónico en iCloud.
-- **Bloquear póngase en contacto con copia de seguridad de iCloud**: **bloque** impide que sincronice los contactos de los dispositivos de iCloud. **No configurado** (valor predeterminado) permite la sincronización de contactos con iCloud.
-- **Bloquear el calendario de copia de seguridad de iCloud**: **bloque** impide que iCloud de sincronización en la aplicación de calendario de macOS. **No configurado** (valor predeterminado) permite la sincronización de calendario en iCloud.
-- **Bloquear el aviso de copia de seguridad de iCloud**: **bloque** impide que iCloud de sincronización en la aplicación de avisos de macOS. **No configurado** (valor predeterminado) permite la sincronización de avisos en iCloud.
-- **Bloquear la copia de seguridad de marcador de iCloud**: **bloque** impide a iCloud sincronizando los marcadores de dispositivos. **No configurado** (valor predeterminado) permite la sincronización de marcador en iCloud.
-- **Bloque de notas de la copia de seguridad de iCloud**: **bloque** impide iCloud sincronice los dispositivos de notas. **No configurado** (valor predeterminado) permite la sincronización de notas en iCloud.
+- **Block iCloud Document Sync** (Bloquear sincronización de documentos de iCloud): **Bloquear** impide que iCloud sincronice documentos y datos. **No configurado** (valor predeterminado) permite la sincronización de clave-valor y documentos en el espacio de almacenamiento de iCloud.
+- **Block iCloud Mail Backup** (Bloquear copia de seguridad de Correo de iCloud): **Bloquear** impide que iCloud se sincronice en la aplicación Correo de macOS. **Sin configurar** (valor predeterminado) permite la sincronización de Correo en iCloud.
+- **Block iCloud Contact Backup** (Bloquear copia de seguridad de Contacto de iCloud): **Bloquear** impide que iCloud sincronice los contactos de los dispositivos. **Sin configurar** (valor predeterminado) permite la sincronización de contactos con iCloud.
+- **Block iCloud Calendar Backup** (Bloquear copia de seguridad de Calendario de iCloud): **Bloquear** impide que iCloud se sincronice en la aplicación Calendario de macOS. **Sin configurar** (valor predeterminado) permite la sincronización de Calendario en iCloud.
+- **Block iCloud Reminder Backup** (Bloquear copia de seguridad de Recordatorios de iCloud): **Bloquear** impide que iCloud se sincronice en la aplicación Recordatorios de macOS. **Sin configurar** (valor predeterminado) permite la sincronización de Recordatorios en iCloud.
+- **Block iCloud Bookmark Backup** (Bloquear copia de seguridad de marcadores de iCloud): **Bloquear** impide que iCloud sincronice Marcadores de los dispositivos. **Sin configurar** (valor predeterminado) permite la sincronización de Marcadores en iCloud.
+- **Block iCloud Notes Backup** (Bloquear copia de seguridad de Notas de iCloud): **Bloquear** impide que iCloud sincronice Notas de los dispositivos. **Sin configurar** (valor predeterminado) permite la sincronización de Notas en iCloud.
 
 ## <a name="domains"></a>Domains
 
@@ -124,4 +124,4 @@ Para configurar la lista, haga clic en **Agregar**, especifique un nombre de su 
 
 [Asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
-También puede restringir la configuración y características de dispositivos en [iOS](device-restrictions-ios.md) dispositivos.
+También puede restringir la configuración y las características en dispositivos [iOS](device-restrictions-ios.md).

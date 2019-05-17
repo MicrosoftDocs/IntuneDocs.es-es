@@ -604,7 +604,7 @@ La aplicación es responsable de establecer las identidades correctamente, tanto
 
 En todo momento, los subprocesos tienen una identidad eficaz para las tareas de la interfaz de usuario y las tareas de archivos. Esta es la identidad que se usa para comprobar qué directivas se deben aplicar, en caso de que las haya. Si la identidad es "Ninguna identidad" o si el usuario no está administrado, no se aplica ninguna directiva. Los diagramas siguientes muestran cómo se determinan las identidades reales.
 
-  ![Intune App SDK iOS: proceso de determinación de identidad](./media/ios-thread-identities.png)
+  ![SDK de aplicaciones de Intune para iOS: proceso de determinación de identidad](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Colas de subprocesos
 

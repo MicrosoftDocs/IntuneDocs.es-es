@@ -1,11 +1,11 @@
 ---
-title: Creación de una directiva de cumplimiento de dispositivos macOS en Microsoft Intune - Azure | Microsoft Docs
-description: Cree o configure una directiva de cumplimiento de dispositivos de Microsoft Intune para dispositivos macOS para usar la protección de integridad del sistema, establezca la versión de sistema operativo mínima y máxima, elija los requisitos de contraseña y cifre el almacenamiento de datos.
+title: Configuración de cumplimiento de dispositivos macOS en Microsoft Intune - Azure | Microsoft Docs
+description: Vea una lista de todas las opciones que puede usar al configurar el cumplimiento de dispositivos macOS en Microsoft Intune. Se necesitan las opciones de Apple de protección de integridad del sistema, establecer restricciones de contraseña, requerir un firewall, permitir el equipo selector y mucho más.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,47 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566614"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423652"
 ---
-# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos macOS con Intune
+# <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de macOS para marcar dispositivos como compatibles o no compatibles con Intune
 
-Una directivas de cumplimiento de dispositivos macOS para Intune determina las reglas y la configuración que deben cumplir los dispositivos macOS para que sean compatibles. Al usar directivas de cumplimiento de dispositivos con acceso condicional, puede permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se pueden crear en Azure Portal de Intune. Para más información sobre las directivas de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-En la tabla siguiente se explica cómo se administran las configuraciones no conformes cuando se usa una directiva de cumplimiento con una directiva de acceso condicional:
+En este artículo se enumeran y describen las distintas opciones de configuración de cumplimiento que se pueden establecer en dispositivos con macOS y versiones posteriores en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para establecer un requisito mínimo o máximo de versión de sistema operativo, establecer la expiración de contraseñas y mucho más.
 
----------------------------
+Esta característica se aplica a:
 
-| Configuración de directiva | macOS 10.11 y versiones posteriores |
-| --- | --- |
-| **Configuración de PIN o contraseña** | Corregido |   
-| **Cifrado del dispositivo** | Corregido (estableciendo PIN) |
-| **Perfil de correo electrónico** | En cuarentena |
-|**Versión de SO mínima** | En cuarentena |
-| **Versión de SO máxima** | En cuarentena |
+- macOS
 
----------------------------
+Como administrador del servicio Intune, use esta configuración de cumplimiento para proteger mejor los recursos de la organización. Para más información sobre las directivas de cumplimiento y lo que hacen, vea [Introducción a las directivas de cumplimiento](device-compliance-get-started.md).
 
-**Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
+## <a name="before-you-begin"></a>Antes de comenzar
 
-**En cuarentena** = el sistema operativo del sistema no exige compatibilidad. (Por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo). Si los dispositivos no son compatibles, se emprenden las acciones siguientes:
-
-- El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
-- El portal de empresa notifica al usuario acerca de los problemas de cumplimiento.
-
-## <a name="create-a-device-compliance-policy"></a>Crear una directiva de cumplimiento de dispositivos
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Para **Plataforma**, seleccione **macOS**. 
-5. Elija **Definir configuración** y especifique las opciones **Estado de dispositivos**, **Propiedades de dispositivo** y **Seguridad del sistema** que se describen en este artículo. Cuando termine, seleccione **Aceptar** y **Crear**.
+[Crear una directiva de cumplimiento](create-compliance-policy.md#create-the-policy). Para **Plataforma**, seleccione **macOS**.
 
 ## <a name="device-health"></a>Estado de dispositivos
 
-- **Requerir protección de integridad del sistema**: **requiere** que los dispositivos macOS tengan habilitada la [protección de integridad del sistema](https://support.apple.com/HT204899).
+- **Requerir protección de integridad del sistema**: **requiere** que los dispositivos macOS tengan habilitada la [protección de integridad del sistema](https://support.apple.com/HT204899) (abre el sitio web de Apple). Si se establece en **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
 
 ## <a name="device-properties"></a>Propiedades del dispositivo
 
@@ -73,13 +58,13 @@ En la tabla siguiente se explica cómo se administran las configuraciones no con
 - **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas como **1234** o **1111**. Establézcala en **No configurado** para permitir a los usuarios crear contraseñas como **1234** o **1111**.
 - **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña.
 - **Tipo de contraseña**: elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
-- **Número de caracteres no alfanuméricos en la contraseña**: indique el número mínimo de caracteres especiales (&, #, %, !, etc.) que se deben incluir en la contraseña.
+- **Número de caracteres no alfanuméricos en la contraseña**: indique el número mínimo de caracteres especiales, como `&`, `#`, `%`, `!`, etc. que se deben incluir en la contraseña.
 
     Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja.
 
 - **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
 - **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
-- **Número de contraseñas anteriores que no se pueden reutilizar**: indique el número de contraseñas usadas anteriormente que no se pueden usar.
+- **Número de contraseñas anteriores que no se pueden reutilizar**: escriba el número de contraseñas usadas anteriormente que no se pueden utilizar.
 
     > [!IMPORTANT]
     > Cuando se modifica un requisito de contraseña en un dispositivo macOS, no se aplica hasta la siguiente vez que el usuario cambia la contraseña. Por ejemplo, si establece la restricción de longitud de contraseña en ocho dígitos y el dispositivo macOS actualmente tiene una contraseña de seis dígitos, el dispositivo sigue siendo conforme hasta la siguiente vez que el usuario actualiza la contraseña en él.
@@ -89,13 +74,16 @@ En la tabla siguiente se explica cómo se administran las configuraciones no con
 - **Cifrado de almacenamiento de datos en un dispositivo**: elija **Requerir** para cifrar el almacenamiento de datos en los dispositivos.
 
 ### <a name="device-security"></a>Seguridad de dispositivos
+
 Firewall protege los dispositivos frente al acceso de red no autorizado. Puede usar Firewall para controlar las conexiones por cada aplicación. 
 
-- **Firewall**: **Habilitar** para ayudar a proteger los dispositivos frente al acceso no autorizado. Habilitar esta característica permite controlar las conexiones entrantes de Internet y usar el modo sigiloso. **No configurado** (el valor predeterminado) deja el firewall desactivado y se permite el tráfico de red (no se bloquea).
-- **Conexiones entrantes**: **bloquee** todas las conexiones de red entrantes excepto las necesarias para los servicios básicos de Internet, como DHCP, Bonjour e IPSec. Esta configuración también bloquea todos los servicios de uso compartido, incluido el uso compartido de pantalla, acceso remoto, uso compartido de música de iTunes y mucho más. **No configurado** (el valor predeterminado) permite las conexiones entrantes y los servicios de uso compartido. 
+- **Firewall**: seleccione **Habilitar** para ayudar a proteger los dispositivos frente al acceso no autorizado. Habilitar esta característica permite controlar las conexiones entrantes de Internet y usar el modo sigiloso. **No configurado** (el valor predeterminado) deja el firewall desactivado y se permite el tráfico de red (no se bloquea).
+- **Conexiones entrantes**: **bloquee** todas las conexiones de red entrantes excepto las necesarias para los servicios básicos de Internet, como DHCP, Bonjour e IPSec. Esta opción también bloquea todos los servicios de uso compartido, incluido el uso compartido de pantalla, acceso remoto, uso compartido de música de iTunes y mucho más. **No configurado** (el valor predeterminado) permite las conexiones entrantes y los servicios de uso compartido.
 - **Modo sigiloso**: **habilite** el modo sigiloso para evitar que el dispositivo responda a solicitudes de sondeo, que pueden provenir de usuarios malintencionados. Cuando se habilita, el dispositivo sigue respondiendo a las solicitudes entrantes de las aplicaciones autorizadas. **No configurado** (el valor predeterminado) deja el modo sigiloso desactivado.
 
 ### <a name="gatekeeper"></a>Equipo selector
+
+Para más información, vea [Gatekeeper en macOS](https://support.apple.com/HT202491) (abre el sitio web de Apple).
 
 **Permitir aplicaciones descargadas desde estas ubicaciones**: permite que las aplicaciones admitidas se instalen en los dispositivos desde diferentes ubicaciones. Opciones de ubicación:
 
@@ -104,19 +92,10 @@ Firewall protege los dispositivos frente al acceso de red no autorizado. Puede u
 - **Mac App Store y desarrolladores identificados**: instala aplicaciones para Mac App Store y desarrolladores identificados. macOS comprueba la identidad de los desarrolladores y realiza otras comprobaciones relacionadas con la integridad de la aplicación. Si un usuario selecciona Gatekeeper para instalar aplicaciones fuera de estas opciones, el dispositivo se considera no compatible.
 - **Cualquier ubicación**: las aplicaciones pueden instalarse desde cualquier lugar y por parte de cualquier desarrollador. Esta opción es la menos segura.
 
-Para más detalles en la documentación de Apple, vea [Gatekeeper en macOS](https://support.apple.com/HT202491).
-
-## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
-
-1. Elija una directiva que haya configurado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
-2. Elija la directiva y luego **Asignaciones**. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
-3. Elija **Grupos seleccionados** para ver los grupos de seguridad de Azure AD. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y elija **Guardar** para implementar la directiva a los usuarios.
-
-> [!TIP]
-> De forma predeterminada, los dispositivos comprueban el cumplimiento cada ocho horas. Pero los usuarios pueden forzar este proceso a través de la aplicación Portal de empresa de Intune.
-
-Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
+Seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune](actions-for-noncompliance.md)  
-[Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)
+
+- [Agregar acciones para dispositivos no compatibles](actions-for-noncompliance.md) y [usar etiquetas de ámbito para filtrar directivas](scope-tags.md).
+- [Supervisar las directivas de cumplimiento](compliance-policy-monitor.md).
+- Vea [Configuración de directivas de cumplimiento para dispositivos iOS](compliance-policy-create-ios.md).
