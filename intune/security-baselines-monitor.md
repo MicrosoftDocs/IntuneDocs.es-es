@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507055"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135091"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Supervisión de la línea base de seguridad y los perfiles en Microsoft Intune  
 
@@ -35,7 +35,7 @@ Las [líneas de base de seguridad en Intune](security-baselines.md) proporcionan
 
 Al supervisar una línea base, obtiene conclusiones sobre el estado de seguridad de los dispositivos según las recomendaciones de Microsoft. Puede ver estas conclusiones en el panel Información general de la línea base de seguridad en la consola de Intune.  Los datos tardan hasta 24 horas en aparecer después de asignar una línea base en primer lugar. Los cambios posteriores tardan hasta seis horas en aparecer.  
 
-Para ver los datos de supervisión de la línea base y los dispositivos, inicie sesión en el [portal Intune](https://aka.ms/intuneportal). Luego, seleccione **Líneas base de seguridad (vista previa)**, elija una línea base y consulte el panel **Información general**.
+Para ver los datos de supervisión de la línea base y los dispositivos, inicie sesión en el [portal Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Luego, seleccione **Seguridad de dispositivos** > **Líneas base de seguridad (vista previa)**, elija una línea base y consulte el panel **Información general**.
 
 El panel de **Información general** proporciona dos métodos para supervisar el estado:
 - **Vista de dispositivo**: resumen de cuántos dispositivos están en cada categoría de estado para la línea base.  

@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515574"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619437"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot (versión preliminar)
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot
 Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory (Azure AD) híbrido. Para ello, siga los pasos de este artículo.
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -35,7 +35,7 @@ Configure correctamente los [dispositivos unidos a Azure AD híbrido](https://do
 Los dispositivos que se inscriban también deben:
 - Ejecutar Windows 10 con la [actualización de octubre de 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
 - Tener acceso a Internet.
-- Tener acceso a Active Directory (no se admite la conexión VPN).
+- Tener acceso a Active Directory (actualmente no se admiten conexiones VPN).
 - Realizar la configuración rápida (OOBE).
 - Ser capaces de hacer ping al controlador de dominio del dominio al que está intentando unirse.
 
@@ -211,7 +211,14 @@ El cambio de estado del perfil de dispositivo de *No asignado* a *Asignando* y, 
 1. Haga clic en **Configuración** y, después, proporcione un **Prefijo de nombre de equipo**, un **Nombre de dominio** y, opcionalmente, una **Unidad organizativa** en [Formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Haga clic en **Aceptar** > **Crear**.  
     El perfil se crea y se muestra en la lista.
-1. Para asignar el perfil, siga los pasos descritos en [Asignar un perfil de dispositivo](device-profile-assign.md#assign-a-device-profile). 
+1. Para asignar el perfil, siga los pasos descritos en [Asignación de un perfil de dispositivo](device-profile-assign.md#assign-a-device-profile) y asigne el perfil al mismo grupo que se usa en este paso [Creación de un grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
+   - Implementación de varios perfiles Unión a un dominio
+   
+     a. Cree un grupo dinámico que incluya todos los dispositivos Autopilot con un perfil de implementación de Autopilot específico, escriba (device.enrollmentProfileName -eq "Nombre de perfil de Autopilot"). 
+     
+     b. Reemplace "Nombre de perfil de Autopilot" con el nombre para mostrar del perfil que ha creado en [Creación y asignación de un perfil de implementación de Autopilot](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile). 
+     
+     c. Cree varios perfiles de implementación de Autopilot y asigne ese dispositivo al perfil especificado en este grupo dinámico.
 
 > [!NOTE]
 > Las funcionalidades de nomenclatura de Windows Autopilot para la unión a Azure AD híbrido no son compatibles con variables como %SERIAL% y solo admiten prefijos para el nombre del equipo.

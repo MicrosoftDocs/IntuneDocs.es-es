@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568432"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764916"
 ---
 # <a name="what-is-device-enrollment"></a>¿Qué es la inscripción de dispositivos?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -67,11 +67,19 @@ De manera predeterminada, los dispositivos de todas las plataformas pueden inscr
 
 ## <a name="android-enrollment-methods"></a>Métodos de inscripción de Android
 
-| **Método** |  **Se requiere reinicio** |    **Afinidad de usuario**   |   **Bloqueado** | **Detalles**|
+| **Personal** | **Métodos de inscripción** | **Se requiere reinicio** | **Afinidad de usuario** | **Bloqueado** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | No|   Sí |   No | [Más información](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| No |No |No  |[Más información](./device-enrollment-manager-enroll.md)|
-|**Perfiles de trabajo Android**| No | Sí | No| [Más información](./android-work-profile-enroll.md) |
+|**Administrador de dispositivos Android**|**Iniciado por el usuario a través del Portal de empresa** | No | Sí | No | [Más información](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Perfil de trabajo de Android Enterprise**|**Iniciado por el usuario a través del Portal de empresa**| No | Sí | No | [Más información](./android-work-profile-enroll.md)|
+
+
+| **Corporativo** | **Métodos de inscripción** | **Se requiere reinicio** | **Afinidad de usuario** | **Bloqueado** | **Detalles**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Administrador de dispositivos Android**|**Iniciado por [usuarios degradados](#device-enrollment-manager) a través del Portal de empresa**| No | No | No |[Más información](./device-enrollment-manager-enroll.md)|
+|**Administrador de dispositivos Android**|**(IMEI o SN declarado previamente) Iniciado por el usuario a través del Portal de empresa**| No | Sí | No | [Más información](./corporate-identifiers-add.md)|
+|**Administradores de dispositivos Android con Zebra Mobility Extensions**|**Iniciado por el usuario o [usuarios degradados](#device-enrollment-manager) a través del Portal de empresa**| No | Sí, si es iniciado por el usuario, No si es iniciado por [usuarios degradados](#device-enrollment-manager) | No | [Más información](./android-zebra-mx-overview.md)|
+|**Android Enterprise dedicado**|**NFC, Token, código QR, Zero Touch**| Sí | No | Configurable mediante directivas | [Más información](./android-kiosk-enroll.md)|
+|**Android Enterprise totalmente administrado (versión preliminar)**|**NFC, Token, código QR, Zero Touch**| Sí | Sí | Configurable mediante directivas | [Más información](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device

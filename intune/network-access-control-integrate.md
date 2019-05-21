@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48228d0baea204fd94175750075c04771116a74d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cbef2059f42a209a63e4ba3f1e83aec410237d02
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513806"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135131"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integración del control de acceso de red (NAC) con Intune
 
@@ -63,27 +63,39 @@ La siguiente lista presenta información general sobre cómo funciona la integra
 9. La conexión se establece correctamente lo que permite al dispositivo tener acceso a los recursos de empresa.
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>Uso de NAC para VPN en dispositivos iOS  
-NAC para Cisco Legacy AnyConnect, F5 Access Legacy y Citrix VPN se admite sin tener que habilitar NAC en el perfil de VPN.
 
-También se admite NAC para Citrix SSO. Para habilitar NAC para Citrix SSO en iOS:
-- Utilice Citrix Gateway 12.0.59 o superior.  
-- Los usuarios deben tener instalado Citrix SSO 1.1.6 o posterior.
-- [Integre NetScaler con Intune para NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) tal y como se describe en la documentación del producto de Citrix.
-- En la configuración de VPN base, para **Habilitar el control de acceso a la red (NAC)**, active la casilla **Acepto**.
+- NAC está disponible en las siguientes VPN sin habilitar NAC en el perfil de VPN:
 
-Al usar Citrix SSO para iOS, la conexión VPN se desconecta cada 24 horas por motivos de seguridad. VPN se puede volver a conectar inmediatamente.
+  - NAC para Cisco Legacy AnyConnect
+  - F5 Access Legacy
+  - Citrix VPN
 
+- NAC también está disponible para Citrix SSO y F5 Access. Para habilitar NAC para Citrix SSO:
 
-**El control de acceso de red no se admite actualmente para los siguientes clientes de VPN en iOS**:
--   Cisco AnyConnect
--   F5 Access
+  - Utilice Citrix Gateway 12.0.59 o superior.  
+  - Los usuarios deben tener instalado Citrix SSO 1.1.6 o posterior.
+  - [Integre NetScaler con Intune para NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) tal y como se describe en la documentación del producto de Citrix.
+  - En el perfil de VPN, seleccione **Configuración base** > **Habilitar el control de acceso a la red (NAC)** > seleccione **Acepto**.
 
-Estamos trabajando con nuestros asociados para lanzar una solución de NAC para estos clientes más recientes. Cuando haya una solución lista, se actualizará este artículo con información adicional. 
+  La conexión VPN se desconecta cada 24 horas por motivos de seguridad. VPN se puede volver a conectar inmediatamente.
 
+- Para habilitar NAC para F5 Access:
+
+  - Use F5 BIG-IP 13.1.1.5. No se admite BIG-IP 14.
+  - Integre BIG-IP con Intune para NAC. En la guía de F5 [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (Información general: Configuración de APM para comprobaciones de posición del dispositivo con sistemas de administración de puntos de conexión) se enumeran los pasos.
+  - En el perfil de VPN, seleccione **Configuración base** > **Habilitar el control de acceso a la red (NAC)** > seleccione **Acepto**.
+
+  La conexión VPN se desconecta cada 24 horas por motivos de seguridad. VPN se puede volver a conectar inmediatamente.
+
+- El control de acceso de red no se admite actualmente para el cliente de VPN siguiente en iOS:
+  - Cisco AnyConnect
+
+Estamos trabajando con nuestros asociados para lanzar una solución de NAC para estos clientes más recientes. Cuando las soluciones estén listas, este artículo se actualizará con información adicional.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Integrar Cisco ISE con Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrar Citrix NetScaler con Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [Integración de F5 BIG-IP Access Policy Manager con Intune](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [Integrar HP Aruba Clear Pass con Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Integrar Squadra Security Removable Media Manager (secRMM) con Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
