@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 5/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,37 +15,46 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add75e252c8d49025ac01832e5fb12afea9ede67
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+mr.reviewer: karthib
+ms.openlocfilehash: c13c5d71d1ff631d7a3c84cd3f62037569757917
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512957"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975777"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Agregar la configuración de Endpoint Protection en Intune
 
-Endpoint Protection permite controlar distintas características de seguridad de los dispositivos, como el firewall, Bitlocker, permitir y bloquear aplicaciones, Windows Defender y el cifrado, etc. Puede configurar estas opciones en Microsoft Intune mediante perfiles de dispositivo.
+Con Intune, puede usar perfiles de configuración de dispositivos para administrar características de seguridad de protección de puntos de conexión comunes en los dispositivos, incluidos:
+- Firewall 
+- BitLocker
+- Permitir o bloquear aplicaciones  
+- Windows Defender y cifrado
 
 Por ejemplo, puede crear un perfil de Endpoint Protection que solo permita a los usuarios de macOS instalar aplicaciones desde Mac App Store. O bien, que habilite Windows SmartScreen al ejecutar aplicaciones en dispositivos de Windows 10.
 
-En este artículo se muestra cómo crear un perfil. Luego, seleccione la plataforma del dispositivo para obtener más detalles sobre las opciones disponibles.
+Antes de crear un perfil, revise estos artículos que detallan la configuración de la protección de puntos de conexión que Intune puede administrar para cada plataforma compatible: 
+   - [Configuración de macOS](endpoint-protection-macos.md)
+   - [Configuración de Windows 10](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Crear un perfil de dispositivo que contenga la configuración de Endpoint Protection
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=20909).
 3. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 4. Escriba un **Nombre** y una **Descripción** para el perfil de Endpoint Protection.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar configuración personalizada. Actualmente, puede elegir una de las siguientes plataformas para la configuración de restricciones de dispositivos:
    - **macOS**
    - **Windows 10 y versiones posteriores**
 6. En la lista desplegable de **Tipos de perfil**, pulse **Endpoint Protection**. 
-7. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
+7. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Vea:
    - [Configuración de macOS](endpoint-protection-macos.md)
-   - [Configuración de Windows 10](endpoint-protection-windows-10.md)
-8. Cuando haya terminado, vuelva a la página **Crear perfil** y haga clic en **Crear**.
+   - [Configuración de Windows 10](endpoint-protection-windows-10.md)  
 
-Se creará el perfil y aparecerá en la página con la lista de perfiles. Para asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
+8. Después de ajustar la configuración aplicable, seleccione **Crear** en la página **Crear perfil**.
 
-## <a name="next-steps"></a>Pasos siguientes
+   Se creará el perfil y aparecerá en la página con la lista de perfiles. Para asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
+
+
+## <a name="next-steps"></a>Pasos siguientes  
+
 Para asignar un perfil a grupos, vea [Asignación de perfiles de dispositivo](device-profile-assign.md).

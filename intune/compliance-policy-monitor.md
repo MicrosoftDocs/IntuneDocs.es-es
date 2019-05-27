@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509077"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942054"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -75,7 +75,9 @@ Descripciones de los estados de directiva de cumplimiento de dispositivos:
 
   - Dispositivos que no tienen asignada una directiva de cumplimiento y no tienen un desencadenador para comprobar su cumplimiento
   - Dispositivos que no se han registrado desde la última vez que se actualizó la directiva de cumplimiento
-  - Dispositivos no asociados a un usuario específico
+  - Dispositivos no asociados a un usuario específico, como:
+    - Dispositivos iOS adquiridos a través del Programa de inscripción de dispositivos (DEP) de Apple que no tienen afinidad entre usuario y dispositivo
+    - Dispositivos dedicados de Android Enterprise o quiosco multimedia de Android
   - Dispositivos inscritos con una cuenta del administrador de inscripciones de dispositivos (DEM)
 
 - **No conforme:** el dispositivo no pudo aplicar una o varias configuraciones de directivas de cumplimiento de dispositivos. O bien, el usuario no ha cumplido las directivas.

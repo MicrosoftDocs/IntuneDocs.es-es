@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527221"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733101"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Supervisar BitLocker y el cifrado del dispositivo  
 Intune ofrece un punto central desde el que poder identificar el estado de cifrado de los dispositivos Windows 10 y acceso a información importante de BitLocker desde los dispositivos, ya que se encuentra en Azure Active Directory (Azure AD).  
 
-- La función [Cifrado de informe (vista previa)](#encryption-report) proporciona detalles sobre el estado de cifrado de un dispositivo y si está listo. Con la información del informe es más fácil identificar problemas que impidan cifrar correctamente los dispositivos que quiere proteger.  
-- Puede [ver detalles de BitLocker (en versión preliminar pública)](#bitlocker-recovery-keys), como el identificador de clave y las claves de recuperación de los dispositivos desde el portal de Intune.  
+- El [Informe de cifrado](#encryption-report) proporciona detalles sobre el estado de cifrado de un dispositivo y si está listo. Con la información del informe es más fácil identificar problemas que impidan cifrar correctamente los dispositivos que quiere proteger.  
+- Puede [ver detalles de BitLocker](#bitlocker-recovery-keys), como el identificador de clave y las claves de recuperación de los dispositivos desde el portal de Intune.  
 
 ## <a name="encryption-report"></a>Informe de cifrado
-Puede usar el informe de cifrado (en versión preliminar pública) para ver los detalles sobre el estado de cifrado de los dispositivos Windows 10.  
+Puede usar el informe de cifrado para ver los detalles sobre el estado de cifrado de los dispositivos Windows 10.  
 
-Para encontrar el informe, inicie sesión en [Intune](https://aka.ms/intuneportal) y vaya a **Configuración del dispositivo**. Después, en *Supervisión*, seleccione **Informe de cifrado (vista previa)**.  
+Para encontrar el informe, inicie sesión en [Intune](https://aka.ms/intuneportal) y vaya a **Configuración del dispositivo**. Después, en *Supervisión*, seleccione **Informe de cifrado**.  
 
 ### <a name="prerequisites"></a>Requisitos previos:
 Para que aparezca en el informe de cifrado, un dispositivo debe ejecutar Windows versión 1607 o posterior.  
@@ -95,9 +95,9 @@ Este panel proporciona los siguientes detalles:
    - La red no está disponible y es necesaria para la copia de seguridad de clave de recuperación.  
 
 ## <a name="bitlocker-recovery-keys"></a>Claves de recuperación de BitLocker
-En versión preliminar pública, Intune proporciona acceso la hoja de Azure AD para BitLocker, para que pueda ver los identificadores de clave de BitLocker y las claves de recuperación para los dispositivos Windows 10, desde el portal de Intune.  Para que sea accesible, el dispositivo debe tener sus claves custodiadas en Azure AD. 
+Intune proporciona acceso la hoja de Azure AD para BitLocker, para que pueda ver los identificadores de clave de BitLocker y las claves de recuperación para los dispositivos Windows 10, desde el portal de Intune.  Para que sea accesible, el dispositivo debe tener sus claves custodiadas en Azure AD. 
 1. Inicie sesión en [Intune](https://aka.ms/intuneportal), vaya a **Dispositivos** y, después, en *Administrar*, seleccione **Todos los dispositivos**.
-2. Seleccione un dispositivo de la lista y, en *Monitor*, seleccione **Claves de recuperación: vista previa**.  
+2. Seleccione un dispositivo de la lista y, en *Supervisión*, seleccione **Claves de recuperación**.  
   
 Cuando las claves están disponibles en Azure AD, está disponible la siguiente información:
 - Identificador de clave de BitLocker

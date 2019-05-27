@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135120"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853949"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -153,6 +153,8 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     > Puede configurar una aplicación Win32 para instalarla en un contexto de **usuario** o **sistema**. El contexto de **usuario** hace referencia a un único usuario determinado. El contexto de **sistema** hace referencia a todos los usuarios de un dispositivo Windows 10.
     >
     > Los usuarios finales no tienen que iniciar sesión en el dispositivo para instalar las aplicaciones Win32.
+    > 
+    > La instalación y desinstalación de las aplicaciones Win32 se ejecutará bajo el privilegio de administración (de manera predeterminada) cuando la aplicación esté establecida para iniciarse en el contexto del usuario y el usuario final del dispositivo tenga privilegios de administración.
 
 4.  Cuando haya terminado, seleccione **Aceptar**.
 
@@ -243,7 +245,7 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
             El agente de Intune comprueba los resultados del script. Lee los valores escritos por el script en la secuencia de salida estándar (STDOUT), la secuencia de error estándar (STDERR) y el código de salida. Si el script sale con un valor distinto de cero, se produce un error en el script y el estado de detección de la aplicación es no instalada. Si el código de salida es cero y STDOUT contiene datos, el estado de detección de la aplicación es Instalada. 
 
             > [!NOTE]
-            > Cuando el script existe con el valor de 0, significa que el script se ha ejecutado correctamente. El segundo canal de salida indica que se ha detectado la aplicación: los datos de STDOUT indican que la aplicación se encontró en el cliente. No buscamos una cadena concreta de STDOUT.
+            > Microsoft recomienda codificar el script como UTF-8. Cuando el script existe con el valor de 0, significa que el script se ha ejecutado correctamente. El segundo canal de salida indica que se ha detectado la aplicación: los datos de STDOUT indican que la aplicación se encontró en el cliente. No buscamos una cadena concreta de STDOUT.
 
         4.  Después de agregar las reglas, seleccione **Agregar** > **Aceptar**.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506821"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992898"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -51,6 +51,13 @@ Las directivas de protección de aplicaciones que garantizan los datos de la org
 
 **¿Cuáles son los ejemplos de directivas de protección de aplicaciones?**<br></br>
 Consulte la [configuración de directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md) y la [configuración de la protección de aplicaciones iOS](app-protection-policy-settings-ios.md) para obtener información detallada sobre cada configuración de directiva de protección de la aplicación.
+
+**¿Es posible aplicar tanto la directiva de MDM como la de MAM al mismo usuario al mismo tiempo para distintos dispositivos? Por ejemplo, si un usuario pudiera tener acceso a sus recursos de trabajo desde su propia máquina habilitada para MAM, pero también viniera a trabajar y usara un dispositivo administrado por MDM de Intune. ¿Hay alguna advertencia sobre esta idea?**<br></br>
+Si aplica una directiva de MAM al usuario sin establecer el estado del dispositivo, el usuario recibirá la directiva de MAM en el dispositivo BYOD y el dispositivo administrado por Intune. También puede aplicar una directiva de MAM según el estado administrado. Por lo tanto, cuando cree una directiva de protección de aplicaciones, debería seleccionar No junto a Destinar a todos los tipos de aplicaciones. Luego, realice cualquiera de las siguientes acciones:
+- Aplique una directiva de MAM menos estricta a los dispositivos administrados por Intune y aplique una más estricta a los dispositivos no inscritos en MDM.
+- Aplique una directiva de MAM solo a los dispositivos no inscritos.
+
+Para más información, consulte [Supervisión de las directivas de protección de aplicaciones](app-protection-policies-monitor.md).
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Aplicaciones que puede administrar con directivas de protección de aplicaciones
 
