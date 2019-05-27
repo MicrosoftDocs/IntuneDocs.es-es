@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798900"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050195"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Agregar aplicaciones para PC Windows en Microsoft Intune
 
@@ -78,7 +77,7 @@ En el siguiente procedimiento usará el editor de software de Intune para config
 5. En la página **Reglas de detección de**, puede configurar reglas para detectar si la aplicación que está configurando ya está instalada en un equipo. O bien, puede usar las reglas de detección predeterminadas para sobrescribir automáticamente las versiones de la aplicación instaladas previamente. Esta opción es para Windows Installer (solo archivos .exe).
 
    Las reglas que puede configurar son las siguientes:
-   - **El archivo existe**. Especifique la ruta de acceso del archivo que quiere detectar. Puede buscar en **%ProgramFiles%** (busca en **Archivos de programa**\&lt;ruta de acceso&gt; y **Archivos de programa (x86)**\&lt;ruta de acceso&gt;) en el equipo o en **%SystemDrive%** (busca en la unidad raíz del equipo, normalmente la unidad C).
+   - **El archivo existe**. Especifique la ruta de acceso del archivo que quiere detectar. Puede buscar en **%ProgramFiles%** (busca en **Archivos de programa**\&lt;ruta de acceso&gt; y **Archivos de programa (x86)** \&lt;ruta de acceso&gt;) en el equipo o en **%SystemDrive%** (busca en la unidad raíz del equipo, normalmente la unidad C).
    - **Existe un código de producto MSI**. Elija **Examinar** para elegir el archivo de Windows Installer (.msi) que quiere detectar.
    - <strong>Existe la clave del registro</strong>. Especifique una clave del Registro que comience por <strong>HKEY_LOCAL_MACHINE\</strong>. Se busca en las rutas de acceso del Registro de 32 bits y 64 bits. Si la clave especificada existe en ambas ubicaciones, se cumple la regla de detección.
 

@@ -19,14 +19,14 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501245"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solución de problemas con la inscripción de dispositivos de Windows 10
-Si se ha inscrito el dispositivo, pero todavía no se pueden acceder a su trabajo o correo electrónico escolar y archivos, pruebe estos pasos para solucionar problemas.  
+Si ha inscrito el dispositivo pero todavía no puede acceder a sus archivos y dirección de correo electrónico profesional o educativa, pruebe estos pasos de solución de problemas.  
 
 1.  Examine las dos pantallas siguientes y encuentre la que sea similar a lo que ve en el dispositivo. Siga los pasos que tienen que ver con la pantalla que verá en el dispositivo.
 
@@ -48,13 +48,13 @@ Si se ha inscrito el dispositivo, pero todavía no se pueden acceder a su trabaj
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Si no ve la información de conexión que se muestra arriba, o lo ve, pero carece de algunas de las opciones, pulse **Connect**. Después, inicie sesión con las credenciales de la cuenta profesional o educativa para conectarse.  
+   - Si no ve la información de conexión que se muestra arriba, o la ve, pero carece de algunas de las opciones, seleccione **Conectar**. Después, inicie sesión con las credenciales de la cuenta profesional o educativa para conectarse.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Pasos de solución de problemas a seguir si ve "Su cuenta"
 
 Si después de seguir los pasos anteriores, no consigue tener acceso al correo, a los archivos y a otros datos laborales o educativos, vuelva a **Cuentas** y pulse **Acceso profesional**.
 
-- Si ve su trabajo o educativa enumerados, está conectado.  
+- Si ve su cuenta profesional o educativa en la lista, está conectado.  
 
 - Si no la ve, pulse en **Conectar** y luego inicie sesión con sus credenciales laborales o educativas.
 

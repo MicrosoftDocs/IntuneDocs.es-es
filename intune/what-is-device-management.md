@@ -7,7 +7,6 @@ manager: dougeby
 ms.date: 03/29/2019
 ms.topic: conceptual
 audience: ITPro
-ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.custom: intune
@@ -16,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15f908a34f0a9315552acfad56cbf560a23fa26d
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
-ms.translationtype: HT
+ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788452"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050277"
 ---
 # <a name="what-is-device-management"></a>¿Qué es la administración de dispositivos? 
 
@@ -66,9 +65,9 @@ Una tarea esencial de cualquier solución de administración de dispositivos con
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Elegir la solución de administración de dispositivos que más le conviene
 
-Hay dos maneras de aproximarse a la administración de dispositivos. Primero, puede administrar diferentes aspectos de los dispositivos usando las características integradas en Intune. Este método se denomina **Administración de dispositivos móviles (MDM)**. Consiste en que los usuarios "inscriben" sus dispositivos y usan certificados para comunicarse con Intune. Como administrador de TI, puede insertar aplicaciones en dispositivos, restringir dispositivos a un sistema operativo específico, bloquear dispositivos personales y mucho más. Si alguna vez se pierde un dispositivo o lo roban, también puede quitar todos los datos del dispositivo. 
+Hay dos maneras de aproximarse a la administración de dispositivos. Primero, puede administrar diferentes aspectos de los dispositivos usando las características integradas en Intune. Este método se denomina **Administración de dispositivos móviles (MDM)** . Consiste en que los usuarios "inscriben" sus dispositivos y usan certificados para comunicarse con Intune. Como administrador de TI, puede insertar aplicaciones en dispositivos, restringir dispositivos a un sistema operativo específico, bloquear dispositivos personales y mucho más. Si alguna vez se pierde un dispositivo o lo roban, también puede quitar todos los datos del dispositivo. 
 
-El otro enfoque consiste en administrar las aplicaciones en los dispositivos. Este método se denomina **Administración de aplicaciones móviles (MAM)**. Con este método, los usuarios pueden usar sus dispositivos personales para acceder a recursos de la organización. Al abrir una aplicación, como el correo electrónico o SharePoint, se pedirá a los usuarios una autenticación adicional. Si alguna vez se pierde un dispositivo o lo roban, puede quitar todos los datos de la organización del dispositivo. 
+El otro enfoque consiste en administrar las aplicaciones en los dispositivos. Este método se denomina **Administración de aplicaciones móviles (MAM)** . Con este método, los usuarios pueden usar sus dispositivos personales para acceder a recursos de la organización. Al abrir una aplicación, como el correo electrónico o SharePoint, se pedirá a los usuarios una autenticación adicional. Si alguna vez se pierde un dispositivo o lo roban, puede quitar todos los datos de la organización del dispositivo. 
 
 También puede usar una combinación de [MDM y MAM](https://docs.microsoft.com/intune/byod-technology-decisions) juntos.
 

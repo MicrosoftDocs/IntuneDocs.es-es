@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 151ceaa40f2993d3160b9de34eee92e53c35925d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 84a4db5639a03720b03da665c9df09fbc39d9df5
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565866"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045015"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Opciones de configuración de Windows Holographic for Business para administrar dispositivos compartidos con Intune
 
@@ -44,9 +43,9 @@ Para obtener más información sobre esta característica de Intune, vea [Contro
 > Los dispositivos que ejecutan Windows Holographic for Business, incluido Microsoft HoloLens, solo admiten las opciones de configuración de **Administración de cuentas**. El hecho de configurar cualquier otra de las opciones de Intune, incluida **Modo de PC compartido**, no tendrá ningún efecto sobre estos dispositivos.
 
 - **Administración de cuentas**: establezca esta opción en **Habilitar** para eliminar de forma automática las cuentas locales creadas por invitados y las cuentas en AD y Azure AD. Cuando un usuario cierre sesión en el dispositivo, o cuando se ejecute el mantenimiento del sistema, estas cuentas se eliminarán. Al habilitar esta opción, también deberá establecer lo siguiente:
-  - **Eliminación de la cuenta**: elegir cuándo se eliminan las cuentas: **al umbral de espacio de almacenamiento**, **al umbral de espacio de almacenamiento y el umbral inactiva**, o **inmediatamente después de cierre de sesión** . Indique también:
-    - **Comience a eliminar threshold(%)**: escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco sea inferior al valor indicado, las cuentas en caché se eliminarán. Se eliminan las cuentas continuamente para recuperar espacio en disco. Las cuentas que lleven más tiempo inactivas serán las primeras en eliminarse.
-    - **Detener la eliminación threshold(%)**: escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco alcance el valor indicado, la eliminación se detendrá.
+  - **Eliminación de cuenta**: elija cuándo se eliminarán las cuentas; **Umbral de espacio de almacenamiento**, **Umbral de espacio de almacenamiento y umbral de inactividad** o **Inmediatamente después de cerrar sesión**. Indique también:
+    - **Iniciar umbral de eliminación (%)** : escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco sea inferior al valor indicado, las cuentas en caché se eliminarán. Se eliminan las cuentas continuamente para recuperar espacio en disco. Las cuentas que lleven más tiempo inactivas serán las primeras en eliminarse.
+    - **Detener umbral de eliminación (%)** : escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco alcance el valor indicado, la eliminación se detendrá.
 
   Establezca esta opción en **Deshabilitar** para mantener las cuentas locales, de AD y de Azure AD creadas por invitados.
 

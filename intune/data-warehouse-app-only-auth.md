@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30d7b2acb6acf48699df92075349b06e5ad9e742
-ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
+ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59476517"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042668"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticación de solo aplicación de Almacenamiento de datos de Intune
 
@@ -91,10 +90,10 @@ Con Visual Studio, cree un proyecto de aplicación de consola (.NET Framework) q
 
 1.  Seleccione **Archivo** > **Nuevo** > **Proyecto** para mostrar el cuadro de diálogo **Nuevo proyecto**.
 2.  En el lado izquierdo, seleccione **Visual C#** para mostrar todos los proyectos de .NET Framework.
-3.  Seleccione **Aplicación de consola (.NET Framework)**, agregue un nombre para la aplicación y después haga clic en **Aceptar** para crear la aplicación.
+3.  Seleccione **Aplicación de consola (.NET Framework)** , agregue un nombre para la aplicación y después haga clic en **Aceptar** para crear la aplicación.
 4.  En el **Explorador de soluciones**, seleccione **Program.cs** para mostrar el código.
 5.  En el menú emergente, seleccione **Agregar** > **Nuevo elemento**. Se abre el cuadro de diálogo **Agregar nuevo elemento**.
-6.  A la izquierda, en **Visual C#**, seleccione **Código**.
+6.  A la izquierda, en **Visual C#** , seleccione **Código**.
 7.  Seleccione **Clase**, cambie el nombre de la clase por *IntuneDataWarehouseClass.cs* y haga clic en **Agregar**.
 8.  Agregue el código siguiente al método <code>Main</code>:
 

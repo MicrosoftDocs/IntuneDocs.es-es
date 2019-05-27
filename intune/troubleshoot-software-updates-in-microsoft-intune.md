@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 000f48f062e9e7300337ade04c8cf872d96eab2a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461352"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040230"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Solucionar problemas de actualizaciones de software en Microsoft Intune
 
@@ -142,7 +141,7 @@ En la tabla siguiente se muestran los códigos de error del **Agente de actualiz
 |**0x80cf3FFD**|OM_E_NON_UI_MODE|No se puede mostrar la interfaz de usuario en modo de funcionamiento sin interfaz de usuario. Es posible que no estén instalados los módulos de interfaz de usuario del cliente de Windows Update.|
 |**0x80cf3FFE**|OM_E_WUCLTUI_UNSUPPORTED_VERSION|No se admite esta versión de las funciones exportadas de la interfaz de usuario del cliente de WU.|
 |**0x80cf3FFF**|OM_E_AUCLIENT_UNEXPECTED|Se produjo un error de interfaz de usuario que no está cubierto por otro código de error de OM_E_AUCLIENT_&#42;.|
-|**0x80cf4007**|OM_E_PT_SOAPCLIENT_SOAPFAULT|Igual que **SOAPCLIENT_SOAPFAULT**. Error del cliente SOAP a causa de un error de SOAP con el tipo de código de error **OM_E_PT_SOAP_&#42;**.|
+|**0x80cf4007**|OM_E_PT_SOAPCLIENT_SOAPFAULT|Igual que **SOAPCLIENT_SOAPFAULT**. Error del cliente SOAP a causa de un error de SOAP con el tipo de código de error **OM_E_PT_SOAP_&#42;** .|
 |**0x80cf4008**|OM_E_PT_SOAPCLIENT_PARSEFAULT|Igual que **SOAPCLIENT_PARSEFAULT_ERROR**.  El cliente SOAP no pudo analizar un error de SOAP.|
 |**0x80cf400A**|OM_E_PT_SOAPCLIENT_PARSE|Igual que **SOAPCLIENT_PARSE_ERROR**.  El cliente SOAP no pudo analizar la respuesta del servidor.|
 |**0x80cf400B**|OM_E_PT_SOAP_VERSION|Igual que **SOAP_E_VERSION_MISMATCH**. El cliente SOAP detectó un espacio de nombres no reconocible para la envoltura SOAP.|
@@ -173,7 +172,7 @@ En la tabla siguiente se muestran los códigos de error del **Agente de actualiz
 |**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|El agente no pudo crear cookies de autenticación válidas.|
 |**0x80cf4029**|OM_E_PT_INVALID_CONFIG_PROP|Un valor de propiedad de configuración no es correcto.|
 |**0x80cf402A**|OM_E_PT_CONFIG_PROP_MISSING|Falta un valor de propiedad de configuración.|
-|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|No se pudo completar la solicitud de HTTP y la razón no se correspondía con ninguno de los códigos de error **OM_E_PT_HTTP_&#42;**.|
+|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|No se pudo completar la solicitud de HTTP y la razón no se correspondía con ninguno de los códigos de error **OM_E_PT_HTTP_&#42;** .|
 |**0x80cf402C**|OM_E_PT_WINHTTP_NAME_NOT_RESOLVED|Igual que **ERROR_WINHTTP_NAME_NOT_RESOLVED**. No se puede resolver el nombre del servidor proxy o el servidor de destino.|
 |**0x80cf402F**|OM_E_PT_ECP_SUCCEEDED_WITH_ERRORS|Se completó el procesamiento del archivo .CAB externo con algunos errores.|
 |**0x80cf4030**|OM_E_PT_ECP_INIT_FAILED|No se completó la inicialización del procesador de archivos .CAB externos.|
@@ -182,7 +181,7 @@ En la tabla siguiente se muestran los códigos de error del **Agente de actualiz
 |**0x80cf4033**|OM_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST|No se pudo extraer el resumen de archivo de un archivo .CAB externo.|
 |**0x80cf4034**|OM_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE|No se pudo descomprimir un archivo .CAB externo.|
 |**0x80cf4035**|OM_E_PT_ECP_FILE_LOCATION_ERROR|El procesador de archivos. CAB externos no pudo obtener las ubicaciones de los archivos.|
-|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Se produjo un error de comunicación que no está cubierto por otro código de error **OM_E_PT_&#42;**.|
+|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Se produjo un error de comunicación que no está cubierto por otro código de error **OM_E_PT_&#42;** .|
 |**0x80cf6001**|OM_E_DM_URLNOTAVAILABLE|No se pudo completar una operación del administrador de descargas porque el archivo solicitado no tiene una dirección URL.|
 |**0x80cf6002**|OM_E_DM_INCORRECTFILEHASH|No se pudo completar una operación del administrador de descargas porque no se reconoció el resumen de archivo.|
 |**0x80cf6003**|OM_E_DM_UNKNOWNALGORITHM|No se pudo completar una operación del administrador de descargas porque los metadatos del archivo solicitaron un algoritmo hash no reconocido.|
@@ -192,7 +191,7 @@ En la tabla siguiente se muestran los códigos de error del **Agente de actualiz
 |**0x80cf6009**|OM_E_DM_BITSTRANSFERERROR|No se pudo completar una operación del administrador de descargas a causa de un error no especificado de transferencia del Servicio de transferencia inteligente en segundo plano (BITS).|
 |**0x80cf600a**|OM_E_DM_DOWNLOADLOCATIONCHANGED|Hay que reiniciar una descarga porque la ubicación de origen de la descarga ha cambiado.|
 |**0x80cf600B**|OM_E_DM_CONTENTCHANGED|Debe reiniciar una descarga porque el contenido de actualización cambió en una nueva revisión.|
-|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Se produjo un error del administrador de descargas que no está cubierto por otro código de error **OM_E_DM_&#42;**.|
+|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Se produjo un error del administrador de descargas que no está cubierto por otro código de error **OM_E_DM_&#42;** .|
 |**0x80cf7003**|OM_E_INVALID_EVENT_PAYLOAD|Se especificó una carga de eventos que no es válida.|
 |**0x80cf7004**|OM_E_INVALID_EVENT_PAYLOADSIZE|El tamaño de la carga de eventos enviado no es válido.|
 |**0x80cf7005**|OM_E_SERVICE_NOT_REGISTERED|El servicio no está registrado.|
@@ -224,13 +223,13 @@ En la tabla siguiente se muestran los códigos de error del **Agente de actualiz
 |**0x80cf801B**|OM_E_DS_SCHEMAMISMATCH|El esquema del almacén de datos actual y el esquema de una tabla de un documento XML de copia de seguridad no coinciden.|
 |**0x80cf801C**|OM_E_DS_RESETREQUIRED|El almacén de datos requiere un reinicio de sesión. Libere la sesión y reinténtelo con una nueva sesión.|
 |**0x80cf801D**|OM_E_DS_IMPERSONATED|No se pudo completar una operación de almacén de datos porque se solicitó con una identidad suplantada.|
-|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Se produjo un error de almacén de datos que no está cubierto por otro código **OM_E_DS_&#42;**.|
+|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Se produjo un error de almacén de datos que no está cubierto por otro código **OM_E_DS_&#42;** .|
 |**0x80cfA000**|OM_E_AU_NOSERVICE|Actualizaciones automáticas no pudo atender las solicitudes entrantes.|
 |**0x80cfA004**|OM_E_AU_PAUSED|Actualizaciones automáticas no pudo procesar las solicitudes entrantes porque estaba en pausa.|
 |**0x80cfA005**|OM_E_AU_NO_REGISTERED_SERVICE|No hay ningún servicio no administrado registrado en Actualizaciones automáticas.|
 |**0x80cfA006**|OM_E_AU_DETECT_SVCID_MISMATCH|Se cambió el servicio predeterminado registrado en Actualizaciones automáticas durante la búsqueda.|
 |**0x80cfA007**|OM_E_AU_ALREADY_PROMPTING_FOR_REBOOT|Actualizaciones automáticas ya está pidiendo al usuario que reinicie el equipo.|
-|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|Se produjo un error de Actualizaciones automáticas que no está cubierto por otro código **OM_E_AU &#42;**.|
+|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|Se produjo un error de Actualizaciones automáticas que no está cubierto por otro código **OM_E_AU &#42;** .|
 |**0x80cfE001**|OM_E_EE_UNKNOWN_EXPRESSION|No se pudo completar una operación del evaluador de expresiones porque no se reconoció una expresión.|
 |**0x80cfE002**|OM_E_EE_INVALID_EXPRESSION|No se pudo completar una operación del evaluador de expresiones porque una expresión no era válida.|
 |**0x80cfE003**|OM_E_EE_MISSING_METADATA|No se pudo completar una operación del evaluador de expresiones porque una expresión contenía un número incorrecto de nodos de metadatos.|
@@ -238,7 +237,7 @@ En la tabla siguiente se muestran los códigos de error del **Agente de actualiz
 |**0x80cfE005**|OM_E_EE_NOT_INITIALIZED|No se pudo inicializar el evaluador de expresiones.|
 |**0x80cfE006**|OM_E_EE_INVALID_ATTRIBUTEDATA|No se pudo completar una operación del evaluador de expresiones porque un atributo no es válido.|
 |**0x80cfE007**|OM_E_EE_CLUSTER_ERROR|No se pudo completar una operación del evaluador de expresiones porque no se pudo determinar el estado del clúster del equipo.|
-|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Se produjo un error del evaluador de expresiones que no está cubierto por otro código de error **OM_E_EE_&#42;**.|
+|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Se produjo un error del evaluador de expresiones que no está cubierto por otro código de error **OM_E_EE_&#42;** .|
 |**0x80cfF001**|OM_E_REPORTER_EVENTCACHECORRUPT|El archivo de caché de eventos era defectuoso.|
 |**0x80cfF002**|OM_E_REPORTER_EVENTNAMESPACEPARSEFAILED|No se pudieron analizar los datos XML del descriptor del espacio de nombres de eventos.|
 |**0x80cfF003**|OM_E_INVALID_EVENT|Los datos XML del descriptor del espacio de nombres de eventos no son válidos.|

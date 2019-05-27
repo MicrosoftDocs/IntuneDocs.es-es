@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566019"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047016"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Configuración de dispositivos con Windows Holographic for Business para ejecutarse como una pantalla completa en Intune
 
@@ -60,7 +59,7 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 
   - **Inicio de sesión automático**: no se admite en Windows Holographic for Business.
   - **Cuentas de usuarios locales**: **agregue** la cuenta de usuario local (en el dispositivo). La cuenta que especifique se usa para iniciar sesión en el quiosco.
-  - **Usuario o grupo de Azure AD (Windows 10 versión 1803 y posteriores)**: requiere credenciales de usuario para iniciar sesión en el dispositivo. Seleccione **Agregar** para elegir usuarios o grupos de Azure AD en la lista. Puede seleccionar varios usuarios y grupos. Elija **Seleccionar** para guardar los cambios.
+  - **Usuario o grupo de Azure AD (Windows 10 versión 1803 y posteriores)** : requiere credenciales de usuario para iniciar sesión en el dispositivo. Seleccione **Agregar** para elegir usuarios o grupos de Azure AD en la lista. Puede seleccionar varios usuarios y grupos. Elija **Seleccionar** para guardar los cambios.
   - **Visitante de HoloLens**: la cuenta de visitante es una cuenta de invitado que no requiere ninguna credencial de usuario ni autenticación, como se describe en [Conceptos del modo de equipo compartido](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Aplicaciones**: agregue las aplicaciones que se van a ejecutar en el dispositivo del quiosco. Recuerde que puede agregar varias aplicaciones.
@@ -70,7 +69,7 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
   - **Agregar por AUMID**: use esta opción para agregar aplicaciones de Windows de bandeja de entrada. Escriba las propiedades siguientes: 
 
     - **Nombre de la aplicación**: requerido. Escriba un nombre para la aplicación.
-    - **Identificador de modelo de usuario de aplicación (AUMID)**: requerido. Escriba el identificador de modelo de usuario de aplicación (AUMID) de la aplicación de Windows. Para obtener este identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+    - **Identificador de modelo de usuario de aplicación (AUMID)** : requerido. Escriba el identificador de modelo de usuario de aplicación (AUMID) de la aplicación de Windows. Para obtener este identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
     - **Tamaño de icono**: requerido. Elija un tamaño de icono de la aplicación pequeño, mediano, ancho o grande.
 
 - **Configuración del explorador del Quiosco**: no se admite en Windows Holographic for Business.

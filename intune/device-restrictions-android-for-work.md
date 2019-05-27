@@ -1,11 +1,11 @@
 ---
 title: Configuración de dispositivos de Android Enterprise en Microsoft Intune (Azure) | Microsoft Docs
-description: En dispositivos Android Enterprise o Android for Work, restrinja opciones de configuración en el dispositivo, como copiar y pegar; mostrar notificaciones; permisos de aplicación; uso compartido de datos; longitud de contraseña; errores de inicio de sesión; usar huella digital para desbloquear; reutilizar contraseñas y habilitar el uso compartido de los contactos de trabajo mediante Bluetooth. Configurar dispositivos como un quiosco de dispositivo dedicados a ejecutar la aplicación de una o varias aplicaciones.
+description: En dispositivos Android Enterprise o Android for Work, restrinja opciones de configuración en el dispositivo, como copiar y pegar; mostrar notificaciones; permisos de aplicación; uso compartido de datos; longitud de contraseña; errores de inicio de sesión; usar huella digital para desbloquear; reutilizar contraseñas y habilitar el uso compartido de los contactos de trabajo mediante Bluetooth. Configure los dispositivos en modo de pantalla completa de dispositivo dedicado para ejecutar una o varias aplicaciones.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
-ms.translationtype: MTE75
+ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505784"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -65,32 +65,24 @@ En este artículo se enumeran y describen los diferentes valores de configuraci�
 
   **No configurado** impide que los usuarios activen la característica de ruta de escape de red.
 
-- **Permitir la instalación desde orígenes desconocidos**: elija **Permitir** para que los usuarios puedan activar los **orígenes desconocidos**. Esta configuración permite la instalación de aplicaciones de orígenes desconocidos. **No configurado** impide que los usuarios activen los **orígenes desconocidos**.
 - **Actualización del sistema**: elija una opción para definir de qué forma funciona el dispositivo a través de las actualizaciones inalámbricas:
   - **Valor predeterminado del dispositivo**: use la configuración predeterminada del dispositivo.
   - **Automática**: las actualizaciones se instalan automáticamente sin intervención del usuario. Si se configura esta directiva se instalarán inmediatamente las actualizaciones pendientes.
   - **Pospuesta**: las actualizaciones se posponen durante 30 días. Cuando termine el período de 30 días, Android le pedirá al usuario que instale la actualización. Es posible que los fabricantes de dispositivos o los transportistas impidan que se pospongan actualizaciones de seguridad importantes (es decir, que las declaren como exentas). Una actualización exenta muestra al usuario una notificación en el dispositivo. 
   - **Ventana de mantenimiento**: instala las actualizaciones automáticamente durante una ventana de mantenimiento diaria configurada en Intune. La instalación se intenta diariamente durante 30 días y pueden producirse errores si los niveles de batería o espacio no son suficientes. Después del período de 30 días, Android le solicitará al usuario que realice la instalación. La ventana también se usa para instalar actualizaciones de aplicaciones de Google Play. Use esta opción para dispositivos dedicados, como pantallas completas, ya que las aplicaciones de primer plano de dispositivos dedicados de una sola aplicación se pueden actualizar.
-- **App auto-updates** (Actualizaciones automáticas de las aplicaciones): elija el momento de instalar las actualizaciones automáticas. Las opciones son:
-  - **No configurado**.
-  - **Elección del usuario**
-  - **Nunca**
-  - **Solo Wi-Fi**
-  - **Siempre**
 
 - **Ventanas de notificación**: cuando se establecen en **Deshabilitar**, las notificaciones de ventana, incluidas las notificaciones del sistema, las llamadas entrantes, las llamadas salientes, las alertas del sistema y los errores del sistema no se muestran en el dispositivo. Cuando se establecen en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar las notificaciones.
 - **Omitir sugerencias al usar por primera vez**: elija **Habilitar** para ocultar u omitir las sugerencias de las aplicaciones de realizar los tutoriales o leer las sugerencias introductorias cuando se inicia la aplicación. Si se establece en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar estas sugerencias cuando se inicia la aplicación.
 
-
 ### <a name="system-security-settings"></a>Configuración de seguridad del sistema
 
-- **Análisis de amenazas en las aplicaciones**: **Requerir** exige que la configuración **Verificar aplicaciones** esté activada para los perfiles personales y profesionales.
+- **Examen de amenazas en las aplicaciones**: **Requerir** (valor predeterminado) permite a Google Play Protect examinar las aplicaciones antes y después de instalarlas. Si se detecta una amenaza, puede avisar al usuario para quitar la aplicación del dispositivo. **No configurado** no habilita ni ejecuta Google Play Protect para que examine las aplicaciones.
 
 ### <a name="dedicated-device-settings"></a>Configuración del dispositivo dedicado
 
-Use esta configuración para configurar una experiencia de tipo quiosco de los dispositivos dedicados. Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando un dispositivo se establece con pantalla completa, solo están disponibles las aplicaciones que agregue. Esta configuración se aplica a dispositivos Android Enterprise dedicado. No son aplicables a los dispositivos empresariales Android totalmente administrados.
+Use estas opciones para configurar una experiencia de tipo pantalla completa de los dispositivos dedicados. Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando un dispositivo se establece con pantalla completa, solo están disponibles las aplicaciones que agregue. Esta configuración se aplica a dispositivos dedicados de Android Enterprise. No se aplica a dispositivos Android Enterprise totalmente administrados.
 
-**Modo de quiosco**: elija si el dispositivo ejecuta una aplicación o ejecuta varias aplicaciones.
+**Pantalla completa**: elija si el dispositivo ejecuta una aplicación o varias aplicaciones.
 
 - **Una sola aplicación**: los usuarios solo pueden acceder a una aplicación en el dispositivo. Cuando se inicia el dispositivo, solo se inicia la aplicación específica. los usuarios no pueden abrir nuevas aplicaciones ni modificar la aplicación en ejecución.
 
@@ -117,30 +109,63 @@ Use esta configuración para configurar una experiencia de tipo quiosco de los d
     También puede agregar al dispositivo otras [aplicaciones Android](apps-add-android-for-work.md) y [aplicaciones web](web-app.md) creadas por la organización. No olvide [asignar la aplicación al grupo de dispositivos creado para los dispositivos dedicados](apps-deploy.md).
 
   - **Botón de inicio virtual**: elija **Habilitar** para mostrar un botón de inicio en el dispositivo dedicado. Cuando se selecciona, devuelve al usuario a la pantalla principal del dispositivo para que los usuarios puedan cambiar de manera sencilla entre las aplicaciones. En algunos dispositivos Android, es posible que los usuarios deban deslizarse hacia arriba de la pantalla para ver el botón de inicio. **Deshabilitar** no muestra un botón de inicio, por lo que los usuarios deben utilizar el botón de retroceso para cambiar entre las aplicaciones.
-  - **Leave kiosk mode** (Salir de pantalla completa): elija **Habilitar** para permitir que los administradores pausen de manera temporal la pantalla completa para actualizar el servicio. Para usar esta característica, el administrador: 
+  - **Leave kiosk mode** (Salir de pantalla completa): elija **Habilitar** para permitir que los administradores pausen de manera temporal la pantalla completa para actualizar el servicio. Para usar esta característica, el administrador hace lo siguiente: 
   
     1. Continúa y hace clic en el botón de retroceso hasta que aparece el botón "Exit Kiosk" (Salir de pantalla completa). 
     2. Hace clic en el botón y escribe el PIN de **Leave kiosk mode code** (Código para salir de pantalla completa).
     3. Al terminar de hacer cambios, seleccionar la aplicación **Managed Home Screen**. Este paso vuelve a bloquear el dispositivo para pantalla completa con varias aplicaciones. 
-    
+
     **Deshabilitar** no permite pausar la pantalla completa. Si el administrador sigue haciendo clic en el botón de retroceso y hace clic en el botón "Exit Kiosk" (Salir de pantalla completa), aparece un mensaje que indica que se requiere un código de acceso.
-    
+
     - **Leave kiosk mode code** (Código para salir de pantalla completa): escriba un PIN numérico de entre 4 y 6 dígitos. El administrador usa este PIN para pausar de manera temporal la pantalla completa.
- 
+
   - **Establecer fondo personalizado de la dirección URL**: escriba una dirección URL para personalizar la pantalla de fondo del dispositivo dedicado.
+    
+    > [!NOTE]
+    > Para la mayoría de los casos, se recomienda partir de imágenes cuyo tamaño es, al menos el siguiente:
+    >
+    > - Teléfono: 1080 x 1920 px
+    > - Tablet: 1920 x 1080 px
+    >    
+    > Para obtener la mejor experiencia y detalles nítidos, se recomienda crear activos de imagen por dispositivo con las especificaciones de pantalla.
+    >
+    > Las pantallas modernas tienen mayores densidades de píxeles y pueden mostrar imágenes que equivalen a definiciones 2K o 4K.
+  - **Configuración de Wi-Fi**: elija **Habilitar** para permitir que los usuarios finales conecten el dispositivo a distintas redes Wi-Fi. Si habilita esta característica, también se activa la ubicación del dispositivo. **No configurado** (valor predeterminado) impide que los usuarios se conecten a redes Wi-Fi mientras estén en Managed Home Screen (modo de bloqueo de tareas).
+
+    Más información sobre el [modo de bloqueo de tareas](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre el sitio web de Android).
+
+  - **Configuración de Bluetooth**: elija **Habilitar** para permitir el Bluetooth en el dispositivo y permitir que los usuarios finales enlacen dispositivos mediante Bluetooth. Si habilita esta característica, también se activa la ubicación del dispositivo. **No configurado** (valor predeterminado) impide que los usuarios configuren y enlacen dispositivos mediante Bluetooth mientras estén en Managed Home Screen (modo de bloqueo de tareas). 
+
+    Más información sobre el [modo de bloqueo de tareas](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre el sitio web de Android).
 
 ### <a name="device-password-settings"></a>Configuración de la contraseña del dispositivo
 
-- **Keyguard**: elija **Deshabilitar** para impedir que los usuarios usen la característica de bloqueo de pantalla Keyguard en el dispositivo. **No configurado** permite que el usuario utilice las características Keyguard.
-- **Deshabilita las características de bloqueo del teclado**: cuando está habilitado el bloqueo del teclado en el dispositivo, elija las características que desea deshabilitar. Por ejemplo, si **Secure Camera** está activado, la característica de cámara se deshabilita en el dispositivo. Las características no activadas están habilitadas en el dispositivo.
+- **Deshabilitar pantalla de bloqueo**: elija **Deshabilitar** para impedir que los usuarios usen la característica de bloqueo de pantalla Keyguard en el dispositivo. **No configurado** permite que el usuario utilice las características Keyguard.
+- **Características de la pantalla de bloqueo deshabilitada**: Si KeyGuard está habilitado en el dispositivo, elija las características que quiere deshabilitar. Por ejemplo, si **Secure Camera** está activado, la característica de cámara se deshabilita en el dispositivo. Las características no activadas están habilitadas en el dispositivo.
+
+  Estas características están disponibles para los usuarios cuando el dispositivo está bloqueado. Los usuarios no podrán ver ni acceder a las características que están activadas.
+
 - **Tipo de contraseña requerida**: define el tipo de contraseña necesaria para el dispositivo. Las opciones son:
-  - **Al menos numérica**
-  - **Complejo numérico**: no se permiten números repetidos ni consecutivos, como "1111" o "1234".
-  - **Al menos alfabética**
-  - **Al menos alfanumérica**
-  - **Al menos alfanumérica con símbolos**
-- **Longitud mínima de contraseña**: escriba la longitud mínima de contraseña que debe escribir un usuario (entre 4 y 16 caracteres).
-- **Número de errores de inicio de sesión antes de borrar el contenido del dispositivo**: escriba el número permitido de errores de inicio de sesión antes de borrar el contenido del dispositivo (entre 1 y 11).
+  - **Valor predeterminado de dispositivo**
+  - **Contraseña necesaria, sin restricciones**
+  - **Biométrica deficiente**: [Biométricas eficientes frente a deficientes](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre el sitio web de Android).
+  - **Numérica**: la contraseña solo debe contener números, por ejemplo: `123456789`. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Complejo numérico**: no se permiten números repetidos ni consecutivos, como "1111" o "1234". Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Alfabética**: son necesarias letras del alfabeto. No son necesarios números ni símbolos. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Alfanumérica**: incluye letras mayúsculas, minúsculas y caracteres numéricos. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Alfanumérica con símbolos**: incluye letras mayúsculas, minúsculas, caracteres numéricos, signos de puntuación y símbolos. Indique también:
+
+    - **Longitud mínima de la contraseña**: escriba la longitud mínima que debe tener la contraseña, entre 4 y 16 caracteres.
+    - **Número de caracteres necesarios**: escriba el número de caracteres que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres en minúscula necesarios**: escriba el número de caracteres en minúscula que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres en mayúscula necesarios**: escriba el número de caracteres en mayúscula que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres que no sean una letra necesarios**: escriba el número de caracteres que no son letras del alfabeto que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres numéricos necesarios**: escriba el número de caracteres numéricos (`1`, `2`, `3`, etc.) que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres de símbolos necesarios**: escriba el número de caracteres de símbolos (`&`, `#`, `%`, etc.) que debe tener la contraseña, entre 0 y 16 caracteres.
+
+- **Número de días hasta que expira la contraseña**: escriba el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
+- **Número de contraseñas necesarias antes de que un usuario pueda volver a usar una contraseña**: escriba el número de contraseñas recientes que no se pueden volver a usar, entre 1 y 24. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.
+- **Número de errores de inicio de sesión antes de borrar el contenido del dispositivo**: escriba el número permitido de errores de inicio de sesión antes de borrar el contenido del dispositivo (entre 4 y 11).
 
 ### <a name="power-settings"></a>Configuración de energía
 
@@ -152,6 +177,17 @@ Use esta configuración para configurar una experiencia de tipo quiosco de los d
 - **Agregar nuevos usuarios**: elija **Bloquear** para impedir que los usuarios agreguen nuevos usuarios. Cada usuario tiene un espacio personal en el dispositivo para pantallas principales, cuentas, aplicaciones y configuraciones personalizadas. **No configurado** permite que los usuarios agreguen a otros usuarios al dispositivo.
 - **Eliminación de usuarios**: elija **Bloquear** para impedir que los usuarios quiten usuarios. **No configurado** permite que los usuarios quiten a otros usuarios del dispositivos.
 - **Cambios de la cuenta**: elija **Bloquear** para impedir que los usuarios modifiquen las cuentas. **No configurado** permite que los usuarios actualicen las cuentas de usuario del dispositivo.
+
+### <a name="applications"></a>Aplicaciones
+
+- **Permitir la instalación desde orígenes desconocidos**: elija **Permitir** para que los usuarios puedan activar **Orígenes desconocidos**. Esta configuración permite que se instalen aplicaciones desde orígenes desconocidos, incluidos los orígenes que no sean Google Play Store. **No configurado** impide que los usuarios activen los **orígenes desconocidos**.
+- **Permitir el acceso a todas las aplicaciones en Google Play Store**: cuando se establece en **Permitir**, los usuarios obtienen acceso a todas las aplicaciones de Google Play Store. No obtienen acceso a las aplicaciones que el administrador bloquee en [las aplicaciones cliente](apps-add-android-for-work.md). **No configurado** obliga a los usuarios acceder solo a las aplicaciones que el administrador ponga disponibles en Google Play Store o las aplicaciones necesarias en [las aplicaciones cliente](apps-add-android-for-work.md).
+- **App auto-updates** (Actualizaciones automáticas de las aplicaciones): elija el momento de instalar las actualizaciones automáticas. Las opciones son:
+  - **No configurado**.
+  - **Elección del usuario**
+  - **Nunca**
+  - **Solo Wi-Fi**
+  - **Siempre**
 
 ### <a name="connectivity"></a>Conectividad
 
