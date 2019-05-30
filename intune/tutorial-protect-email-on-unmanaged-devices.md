@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b91e3863a23d62921f4145db4460fa07f325df98
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515829"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040294"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados
 
@@ -54,7 +53,7 @@ Para este tutorial, deberá configurar una directiva de protección de aplicacio
 
     - Para **Permitir que la aplicación transfiera datos a otras aplicaciones**, seleccione **Ninguna**.
     - Para **Permitir a la aplicación recibir datos de otras aplicaciones** , seleccione **Ninguna**.
-    - Para **Impedir "Guardar como"**, seleccione **Sí**.
+    - Para **Impedir "Guardar como"** , seleccione **Sí**.
     - Para **Restringir cortar, copiar y pegar con otras aplicaciones**, seleccione **Bloqueado**.
    
      ![Selección de la configuración de reubicación de datos de directiva de protection de la aplicación Outlook](media/tutorial-protect-email-on-unmanaged-devices/outlook-app-data-relocation.png)
@@ -179,9 +178,9 @@ Con las directivas que se han creado, los dispositivos deberán inscribirse en I
 Cuando ya no se necesiten las directivas de prueba, puede quitarlas.
 1. Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador global o administrador de servicios de Intune.
 2. Seleccione **Cumplimiento de dispositivos** > **Directivas**.
-3. En la lista **Nombre de directiva**, seleccione el menú contextual (**...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Aceptar** para confirmar la operación.
+3. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Aceptar** para confirmar la operación.
 4. Seleccione **Acceso condicional** > **Directivas**.
-5. En la lista **Nombre de directiva**, seleccione el menú contextual (**...** ) para cada una de las directivas de prueba y después seleccione **Eliminar**. Seleccione **Sí** para confirmar.
+5. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) para cada una de las directivas de prueba y después seleccione **Eliminar**. Seleccione **Sí** para confirmar.
 
  ## <a name="next-steps"></a>Pasos siguientes 
 En este tutorial, ha creado directivas de protección de aplicación para limitar lo que el usuario puede hacer con la aplicación de Outlook y ha creado directivas de acceso condicional para que los clientes de autenticación moderna usen la aplicación Outlook y MFA. Para información sobre cómo usar Intune con acceso condicional para proteger otras aplicaciones y servicios, vea [¿Qué es el acceso condicional?](conditional-access.md).

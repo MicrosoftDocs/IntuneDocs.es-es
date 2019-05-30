@@ -8,21 +8,20 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e006ce1be5a19d0557ef0a5d6046afea2c13986
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: faceee883194dbbdcec83f282806035ffc0432d1
+ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135176"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174186"
 ---
-# <a name="tutorial-use-apples-corpoate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Uso de las características de inscripción de dispositivos corporativos de Apple en Apple Business Manager (ABM) para inscribir dispositivos iOS en Intune
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Uso de las características de inscripción de dispositivos corporativos de Apple en Apple Business Manager (ABM) para inscribir dispositivos iOS en Intune
 Las características de inscripción de dispositivos de Apple Business Manager simplifican la inscripción de dispositivos. Intune también admite el antiguo portal Programa de inscripción de dispositivos (DEP) de Apple, pero se recomienda empezar desde cero con Apple Business Manager. Con Microsoft Intune y la inscripción de dispositivos corporativos de Apple, los dispositivos se inscriben de forma automática y segura la primera vez que el usuario activa el dispositivo. Por tanto, puede proporcionar dispositivos a muchos usuarios sin tener que configurar cada uno de forma individual. 
 
 En este tutorial, aprenderá a:
@@ -60,7 +59,7 @@ Para crear un token de inscripción de dispositivos se usa el portal de ABM o DE
 
 5. En **Nombre del servidor de MDM**, escriba *TestMDMServer* y, después, haga clic en **Siguiente**. El nombre del servidor es su referencia para identificar el servidor de administración de dispositivos móviles (MDM). No es el nombre ni la dirección URL del servidor de Microsoft Intune.
 
-6. Se abre el cuadro de diálogo **Agregar&lt;Nombre del servidor&gt;**, indicando **Cargar la clave pública**. Seleccione **Elegir archivo…** para cargar el archivo .pem y, después, elija **Siguiente**.
+6. Se abre el cuadro de diálogo **Agregar&lt;Nombre del servidor&gt;** , indicando **Cargar la clave pública**. Seleccione **Elegir archivo…** para cargar el archivo .pem y, después, elija **Siguiente**.
 
 6. Vaya a **Programas de implementación** > **Programa de inscripción de dispositivos** > **Administrar dispositivos**.
 7. En **Elegir dispositivos por**, seleccione **Número de serie**. <!--ask Tiffany about this-->

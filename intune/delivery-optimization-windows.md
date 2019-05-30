@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 45d91766b3bbdcdd3528afd80d74a56a94e88a2c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510204"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042635"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configuración de la opción Optimización de distribución en Microsoft Intune
 
@@ -72,7 +71,7 @@ La configuración **Optimización de distribución** reemplaza las **actualizaci
         - **Configuración**: para **Modo de descarga de Optimización de entrega**, elija el mismo modo que usa el anillo de actualización de software existente, a menos que quiera cambiar la configuración que se aplica a los dispositivos. Las opciones son:
             - **No configurado**.
             - **HTTP solo, sin emparejamiento**
-            - **HTTP combinado con el emparejamiento que se encuentra en la misma NAT** 
+            - **HTTP combinado con el emparejamiento que se encuentra en la misma NAT **
             - **HTTP combinado con el emparejamiento de un grupo privado**
             - **HTTP combinado con emparejamiento de Internet**
             - **Modo de descarga sencillo sin emparejamiento**

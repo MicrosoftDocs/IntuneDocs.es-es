@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/19/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135091"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040652"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Supervisión de la línea base de seguridad y los perfiles en Microsoft Intune  
 
@@ -35,7 +34,7 @@ Las [líneas de base de seguridad en Intune](security-baselines.md) proporcionan
 
 Al supervisar una línea base, obtiene conclusiones sobre el estado de seguridad de los dispositivos según las recomendaciones de Microsoft. Puede ver estas conclusiones en el panel Información general de la línea base de seguridad en la consola de Intune.  Los datos tardan hasta 24 horas en aparecer después de asignar una línea base en primer lugar. Los cambios posteriores tardan hasta seis horas en aparecer.  
 
-Para ver los datos de supervisión de la línea base y los dispositivos, inicie sesión en el [portal Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Luego, seleccione **Seguridad de dispositivos** > **Líneas base de seguridad (vista previa)**, elija una línea base y consulte el panel **Información general**.
+Para ver los datos de supervisión de la línea base y los dispositivos, inicie sesión en el [portal Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Luego, seleccione **Seguridad de dispositivos** > **Líneas base de seguridad (vista previa)** , elija una línea base y consulte el panel **Información general**.
 
 El panel de **Información general** proporciona dos métodos para supervisar el estado:
 - **Vista de dispositivo**: resumen de cuántos dispositivos están en cada categoría de estado para la línea base.  
@@ -114,7 +113,7 @@ Ahora conoce el valor de configuración problemático. El siguiente paso es aver
 En dispositivos con Windows 10, hay un informe de detalles de diagnóstico integrado de MDM. Este informe incluye valores predeterminados, valores actuales, enumera la directiva, muestra si se implementa en el dispositivo o el usuario, etc. Use este informe para ayudar a determinar por qué el valor de configuración está causando un conflicto o error.
 
 1. En el dispositivo, vaya a **Configuración** > **Cuentas** > **Obtener acceso a trabajo o escuela**.
-2. Seleccione la cuenta > **Información** > **Advanced Diagnostic Report (Informe de diagnóstico avanzado)** > **Crear informe**.
+2. Seleccione la cuenta > **Información** > **Advanced Diagnostic Report (Informe de diagnóstico avanzado)**  > **Crear informe**.
 3. Elija **Exportar** y abra el archivo generado.
 4. En el informe, busque el error o el valor de configuración conflictivo en las diferentes secciones del informe.
 

@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992898"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041647"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -220,6 +219,6 @@ Cuando se trabaja con diferentes tipos de configuraciones, un requisito de versi
 - [Opciones de configuración de directiva de administración de aplicaciones móviles de Android en Microsoft Intune](app-protection-policy-settings-android.md)
 - [Opciones de configuración de directiva de administración de aplicaciones móviles iOS](app-protection-policy-settings-ios.md)
 - [Actualización de las directivas de protección de aplicaciones](app-protection-policy-delivery.md)
-- [Validar las directivas de protección de aplicaciones](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [Validar las directivas de protección de aplicaciones](app-protection-policy-delivery.md)
 - [Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos](app-configuration-policies-managed-app.md)
 - [Cómo obtener soporte técnico para Microsoft Intune](get-support.md)

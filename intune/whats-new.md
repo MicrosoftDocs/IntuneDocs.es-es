@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975821"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264169"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -45,8 +44,20 @@ Conozca las novedades semanales de Microsoft Intune. También encontrará inform
 
 -->  
 
-
 <!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>Semana del 20 de mayo de 2019 
+
+### <a name="app-management"></a>Administración de aplicaciones
+
+#### <a name="windows-company-portal-app----3316993---"></a>Aplicación Portal de empresa de Windows <!-- 3316993 -->
+La aplicación Portal de empresa de Windows ahora tiene una nueva página denominada **Dispositivos**. La página **Dispositivos** ahora mostrará a los usuarios finales los dispositivos inscritos. Los usuarios verán este cambio en Portal de empresa cuando usen la versión 10.3.4291.0 o una posterior. Para obtener información sobre cómo configurar Portal de empresa, vea [Configuración de la aplicación Portal de empresa de Microsoft Intune](company-portal-app.md).
+
+### <a name="device-enrollment"></a>Inscripción de dispositivos
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Nombre del atributo OrderID del dispositivo de Autopilot cambiado a Etiqueta de grupo <!-- 4659453 -->
+
+Para hacer que sea más intuitivo, el nombre del atributo **OrderID** en los dispositivos de Autopilot se ha cambiado a **Etiqueta de grupo**. Al usar archivos CSV para cargar información de dispositivos de Autopilot, debe usar Etiqueta de grupo como encabezado de columna, en lugar de OrderID.  
 
 ## <a name="week-of-may-13-2019"></a>Semana del 13 de mayo de 2019 
 
@@ -64,7 +75,7 @@ En los dispositivos ya inscritos mediante el Asistente de configuración a trav�
 
 Si los usuarios instalan la aplicación Portal de empresa desde la tienda de aplicaciones y luego intentan inscribir estos dispositivos a través de ella, recibirán un error. Se espera que estos dispositivos solo usen la aplicación Portal de empresa cuando Intune lo inserta, automáticamente, durante la inscripción. Se actualizarán los perfiles de inscripción de Intune en Azure Portal para que pueda especificar cómo los dispositivos se autentican y si reciben la aplicación Portal de empresa. Si quiere que los usuarios de dispositivos DEP tengan la aplicación Portal de empresa, deberá especificar sus preferencias en un perfil de inscripción. 
 
-Además, se va a quitar la pantalla **Identificar el dispositivo** de la aplicación Portal de empresa de iOS. Por lo tanto, los administradores que quieren habilitar el acceso condicional o implementar aplicaciones de la empresa deben actualizar el perfil de inscripción de DEP. Este requisito solo se aplica si la inscripción de DEP se autentica con el Asistente para la configuración. En ese caso, debe insertar la aplicación Portal de empresa en el dispositivo. Para ello, elija **Intune** > **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > elija un token > **Perfiles** > elija un perfil > **Propiedades** > establezca **Instalar Portal de empresa** en **True**.
+Además, se va a quitar la pantalla **Identificar el dispositivo** de la aplicación Portal de empresa de iOS. Por lo tanto, los administradores que quieren habilitar el acceso condicional o implementar aplicaciones de la empresa deben actualizar el perfil de inscripción de DEP. Este requisito solo se aplica si la inscripción de DEP se autentica con el Asistente para la configuración. En ese caso, debe insertar la aplicación Portal de empresa en el dispositivo. Para ello, elija **Intune** > **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > elija un token > **Perfiles** > elija un perfil > **Propiedades** > establezca **Instalar Portal de empresa** en **Sí**.
 
 Para instalar la aplicación Portal de empresa en dispositivos DEP ya inscritos, deberá ir a Intune > Aplicaciones cliente e insertarla como una aplicación administrada con directivas de configuración de aplicación. 
 
@@ -77,9 +88,9 @@ Puede configurar los scripts de PowerShell para que se ejecuten con los privileg
 #### <a name="android-enterprise-app-management----4459905---"></a>Administración de aplicaciones de Android Enterprise <!-- 4459905 -->
 Para facilitar a los administradores de TI la configuración y el uso de la administración de Android Enterprise, Intune agregará automáticamente cuatro aplicaciones comunes relacionadas con Android Enterprise a la consola de administración de Intune. Las cuatro aplicaciones de Android Enterprise son las siguientes:
 
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)**: se usa para escenarios totalmente administrados de Android Enterprise.
-- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)**: ayuda a iniciar sesión en las cuentas si se usa la verificación de dos fases.
-- **[Portal de empresa de Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)**: se usa para las directivas de protección de aplicación y escenarios de perfil de trabajo de Android Enterprise.
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** : se usa para escenarios totalmente administrados de Android Enterprise.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** : ayuda a iniciar sesión en las cuentas si se usa la verificación de dos fases.
+- **[Portal de empresa de Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** : se usa para las directivas de protección de aplicación y escenarios de perfil de trabajo de Android Enterprise.
 - [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise): se usa para los escenarios de pantalla completa o dedicados de Android Enterprise.
 
 Anteriormente, los administradores de TI tenían que buscar y aprobar manualmente estas aplicaciones en la [Tienda de Google Play administrada](https://play.google.com/store/apps) como parte de la configuración. Este cambio elimina los pasos que antes eran manuales para facilitar y agilizar el uso de la administración de Android Enterprise por parte de los clientes.
@@ -432,7 +443,7 @@ La consola de Intune ya no admite la visualización y la administración de disp
 - Usar controles de Exchange como se describe en [Clients and mobile in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) (Clientes y dispositivos móviles en Exchange Online)
 
 ### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>Buscar la página Todos los dispositivos para un dispositivo concreto mediante el uso de [nombre] <!--4254930 -->
-Ahora puede buscar un nombre de dispositivo exacto. Vaya a **Intune** > **Dispositivos** > **Todos los dispositivos** > en el cuadro de búsqueda, escriba el nombre de dispositivo entre {} para buscar una coincidencia exacta. Por ejemplo, **{Device12345}**.
+Ahora puede buscar un nombre de dispositivo exacto. Vaya a **Intune** > **Dispositivos** > **Todos los dispositivos** > en el cuadro de búsqueda, escriba el nombre de dispositivo entre {} para buscar una coincidencia exacta. Por ejemplo, **{Device12345}** .
 
 ### <a name="monitor-and-troubleshoot"></a>Supervisión y solución de problemas
 
@@ -581,8 +592,8 @@ Android Enterprise
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-----"></a>Las opciones de Safari y Retrasar la visibilidad de las actualizaciones de software iOS se cambian a la interfaz de usuario de Intune <!-- 3640850, 3803313   -->
 Para los dispositivos iOS, puede establecer la configuración de Safari y configurar actualizaciones de software. En esta actualización, estas opciones se van a cambiar a otra partes de la interfaz de usuario de Intune:
 
-- La configuración de Safari cambia de **Safari** (**Configuración del dispositivo** > **Perfiles** > **Nuevo perfil** > **iOS** para la plataforma > **Restricciones de dispositivos** para el tipo de perfil) a **[Aplicaciones integradas](device-restrictions-ios.md#built-in-apps)**.
-- La opción **Delaying user software update visibility for supervised iOS devices** (Retrasar la visibilidad de las actualizaciones de software para los dispositivos iOS supervisados) (**Actualizaciones de software** > **Directivas de actualización para iOS**) se va a cambiar a **Restricciones de dispositivos** > **[General](device-restrictions-ios.md#general)**.  Para más información sobre el impacto en las directivas existentes, vea [Configuración de directivas de actualización de iOS en Intune](software-updates-ios.md#configure-the-policy). 
+- La configuración de Safari cambia de **Safari** (**Configuración del dispositivo** > **Perfiles** > **Nuevo perfil** > **iOS** para la plataforma > **Restricciones de dispositivos** para el tipo de perfil) a **[Aplicaciones integradas](device-restrictions-ios.md#built-in-apps)** .
+- La opción **Delaying user software update visibility for supervised iOS devices** (Retrasar la visibilidad de las actualizaciones de software para los dispositivos iOS supervisados) (**Actualizaciones de software** > **Directivas de actualización para iOS**) se va a cambiar a **Restricciones de dispositivos** >  **[General](device-restrictions-ios.md#general)** .  Para más información sobre el impacto en las directivas existentes, vea [Configuración de directivas de actualización de iOS en Intune](software-updates-ios.md#configure-the-policy). 
 
 Para obtener una lista de estos valores, vea:
 
@@ -594,7 +605,7 @@ Esta característica se aplica a:
 - iOS
 
 #### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164-----"></a>En los dispositivos iOS se ha cambiado el nombre de Habilitar restricciones en la configuración del dispositivo por Tiempo de uso <!-- 3699164   -->
-Puede configurar **Habilitar restricciones en la configuración del dispositivo**  en dispositivos iOS supervisados (**Configuración del dispositivo** > **Perfiles** > **Nuevo perfil** > **iOS** para plataforma > **Restricciones de dispositivos** para tipo de perfil > **General**). En esta actualización, se ha cambiado el nombre de esta opción por **Tiempo de uso (solo con supervisión)**. 
+Puede configurar **Habilitar restricciones en la configuración del dispositivo**  en dispositivos iOS supervisados (**Configuración del dispositivo** > **Perfiles** > **Nuevo perfil** > **iOS** para plataforma > **Restricciones de dispositivos** para tipo de perfil > **General**). En esta actualización, se ha cambiado el nombre de esta opción por **Tiempo de uso (solo con supervisión)** . 
 
 El comportamiento es el mismo. De manera específica: 
 

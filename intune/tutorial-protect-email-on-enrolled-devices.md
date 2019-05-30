@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 80f9d3d2799732f2d019189913c5c47cc6973809
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512313"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044588"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados
 Obtenga información sobre cómo usar las directivas de cumplimiento de dispositivos con acceso condicional para asegurarse de que los dispositivos iOS pueden acceder al correo electrónico de Exchange Online solo si se administran mediante Intune y con una aplicación de correo electrónico aprobada. 
@@ -67,7 +66,7 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
     - En **Longitud mínima de contraseña**, escriba **4**.
     - Para **Tipo de contraseña requerida**, elija **Alfanumérica**.
     - En **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, elija **Inmediatamente**.
-    - En **Expiración de contraseña (días)**, escriba **41**.
+    - En **Expiración de contraseña (días)** , escriba **41**.
     - En **Número de contraseñas anteriores para impedir su reutilización**, escriba **5**.
  
     ![Configuración de la contraseña para la directiva de cumplimiento de correo electrónico](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
@@ -134,9 +133,9 @@ Con las directivas que se han creado, cualquier dispositivo iOS que intente inic
 Cuando ya no se necesiten las directivas de prueba, puede quitarlas.
 1. Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador global o administrador de servicios de Intune.
 2. Seleccione **Cumplimiento de dispositivos** > **Directivas**.
-3. En la lista **Nombre de directiva**, seleccione el menú contextual (**...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Aceptar** para confirmar la operación.
+3. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Aceptar** para confirmar la operación.
 4. Seleccione **Acceso condicional** > **Directivas**.
-5. En la lista **Nombre de directiva**, seleccione el menú contextual (**...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Sí** para confirmar.
+5. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Sí** para confirmar.
 
  ## <a name="next-steps"></a>Pasos siguientes 
 En este tutorial, se han creado las directivas que exigen que los dispositivos iOS se inscriban en Intune y usen la aplicación Outlook para acceder al correo electrónico de Exchange Online. Para obtener información sobre cómo usar Intune con acceso condicional para proteger otras aplicaciones y servicios, incluidos los clientes de Exchange ActiveSync para Office 365 Exchange Online, vea la [configuración del acceso condicional](conditional-access.md).

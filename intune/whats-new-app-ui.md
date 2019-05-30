@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61518177"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046419"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga información sobre las actualizaciones más recientes para las aplicaciones de Microsoft Intune. Periódicamente agregamos contenido y mejoras a la aplicación y el sitio web de Portal de empresa de Intune. Si es un administrador de Intune o un empleado de soporte técnico, en este artículo encontrará la información que necesita para:
@@ -60,11 +59,11 @@ Captura de pantalla de ejemplo de la pantalla de **ayuda**:
 ## <a name="week-of-april-1-2019"></a>Semana del 1 de abril de 2019  
 
 ### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Cambios en la inscripción del Portal de empresa para los usuarios de dispositivos iOS 12 <!--3448635 -->  
-Se han actualizado los pasos y las pantallas de inscripción del Portal de empresa para iOS a fin de que se ajusten a los cambios en la inscripción de MDM que se introdujeron en Apple iOS 12.2. El flujo de trabajo actualizado pide al usuario que haga lo siguiente:  
+Se han actualizado los pasos y las pantallas de inscripción del Portal de empresa para iOS con el fin de ajustarlos a los cambios en la inscripción de MDM que se introdujeron en Apple iOS 12.2. En el nuevo flujo de trabajo, se pide a los usuarios que hagan esto:  
 
 * Permitir que Safari abra el sitio web del Portal de empresa y descargue el perfil de administración antes de volver a la aplicación Portal de empresa.  
-* Abrir la aplicación de configuración para instalar el perfil de administración en el dispositivo.  
-* Volver a la aplicación Portal de empresa para realizar la inscripción.  
+* Abrir la aplicación Ajustes para instalar el perfil de administración en el dispositivo.  
+* Volver a la aplicación Portal de empresa para completar la inscripción.  
 
 Para conocer los pasos y las pantallas de inscripción actualizados, vea cómo [inscribir dispositivos iOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
 

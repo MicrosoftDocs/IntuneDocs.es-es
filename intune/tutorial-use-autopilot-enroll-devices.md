@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732985"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044526"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Uso de Autopilot para inscribir dispositivos Windows en Intune
 Windows Autopilot simplifica el proceso de inscripción de dispositivos. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo. 
@@ -53,9 +52,9 @@ El primer paso para configurar Windows Autopilot es agregar los dispositivos Win
 
 1. En cualquier editor de texto, cree una lista de valores separados por comas (CSV) que identifican los dispositivos Windows. Use el formato siguiente:
     
-    *número-de-serie*, *Id.-de-producto-de-windows*, *hash-del-hardware*, *Id.-de-pedido-opcional*
+    *número-de-serie*, *id.-de-producto-de-windows*, *hash-del-hardware*, *etiqueta-de-grupo-opcional*
     
-    Los tres primeros elementos son necesarios, pero el identificador de pedido es opcional.
+    Los tres primeros elementos son necesarios, pero la etiqueta de grupo (anteriormente conocido como "id. de pedido") es opcional.
 
 2. Guarde el archivo CSV.
 
@@ -93,10 +92,10 @@ Después de crear un grupo de dispositivos, debe crear un perfil de implementaci
 2. En la página **Aspectos básicos**, en **Nombre**, escriba *Perfil de Autopilot*. En **Descripción**, escriba *Probar perfil para dispositivos Autopilot*.
 3. Establezca **Convertir todos los dispositivos de destino a Autopilot** en **Sí**. Esta configuración garantiza que todos los dispositivos de la lista se registren en el servicio de implementación de Autopilot. Permita un plazo de 48 horas para que se procese el registro.
 4. Seleccione **Siguiente**.
-5. En la página **Configuración rápida (OOBE)**, para **Modo de implementación**, elija **Controlado por el usuario**. Los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
+5. En la página **Configuración rápida (OOBE)** , para **Modo de implementación**, elija **Controlado por el usuario**. Los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
 6. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 7. Configure las opciones siguientes y deje el valor predeterminado en las demás:
-    - **Contrato de licencia para el usuario final (CLUF)**: **Ocultar**
+    - **Contrato de licencia para el usuario final (CLUF)** : **Ocultar**
     - **Configuración de privacidad**: **Mostrar**
     - **Tipo de cuenta de usuario**: **Estándar**
 8. Seleccione **Siguiente**.

@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/5/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2615c058c5de04842e8d607b717a290663b1a9b1
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65983270"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264133"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscripción de dispositivos Windows en Intune con Windows Autopilot  
 Windows Autopilot simplifica el proceso de inscripción de dispositivos en Intune. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
@@ -48,7 +47,8 @@ Para agregar dispositivos de Windows Autopilot, puede importar un archivo CSV co
 
     ![Captura de pantalla de dispositivos de Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. En **Agregar dispositivos Windows Autopilot**, vaya a un archivo CSV en el que se enumeren los dispositivos que quiera agregar. El archivo debe enumerar los números de serie, los identificadores de producto de Windows, los hashes de hardware y las etiquetas de grupo de los dispositivos.
+2. En **Agregar dispositivos Windows Autopilot**, vaya a un archivo CSV en el que se enumeren los dispositivos que quiera agregar. El archivo CSV debe enumerar los números de serie, los identificadores de producto de Windows opcionales, los hashes de hardware y las etiquetas de grupo de los dispositivos. Puede tener hasta 500 filas en la lista. Use el formato de línea y encabezado tal y como se muestra a continuación: `Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Captura de pantalla de Agregar dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -84,22 +84,25 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
 
 3. Si quiere que todos los dispositivos en los grupos asignados se conviertan automáticamente en Autopilot, establezca **Convertir todos los dispositivos de destino a Autopilot** en **Sí**. Todos los dispositivos que no sean Autopilot en grupos asignados se registrarán con el servicio de implementación de Autopilot. Permita un plazo de 48 horas para que se procese el registro. Cuando se anule la inscripción del dispositivo y este se restablezca, Autopilot lo inscribirá. Una vez registrado un dispositivo de este modo, si deshabilita esta opción o quitar la asignación de perfil, el dispositivo no se quitará desde el servicio de implementación de Autopilot, sino que deberá [quitar el dispositivo directamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. Seleccione **Siguiente**.
-5. En la página **Configuración rápida (OOBE)**, para **Modo de implementación**, elija una de las siguientes dos opciones:
+5. En la página **Configuración rápida (OOBE)** , para **Modo de implementación**, elija una de las siguientes dos opciones:
     - **Controlado por el usuario**: Los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
-    - **Implementación automática (versión preliminar)**: (Windows 10 Insider Preview, compilación 1809 o posteriores) los dispositivos con este perfil no están asociados al usuario que inscribe el dispositivo. No se necesitan credenciales de usuario para inscribir el dispositivo.
+    - **Implementación automática (versión preliminar)** : (Windows 10 Insider Preview, compilación 1809 o posteriores) los dispositivos con este perfil no están asociados al usuario que inscribe el dispositivo. No se necesitan credenciales de usuario para inscribir el dispositivo.
 
     ![Captura de pantalla de la página OOBE](media/enrollment-autopilot/create-profile-outofbox.png)
 
 6. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 7. Configure las siguientes opciones:
-    - **Contrato de licencia para el usuario final (CLUF)**: (Windows 10, versión 1709 o versiones posterior) elija si quiere mostrar el CLUF a los usuarios.
+    - **Contrato de licencia para el usuario final (CLUF)** : (Windows 10, versión 1709 o versiones posterior) elija si quiere mostrar el CLUF a los usuarios.
     - **Configuración de privacidad**: elija si quiere mostrar la configuración de privacidad a los usuarios.
-    - **Ocultar opciones para cambiar la cuenta (se necesita Windows 10, versión 1809 o posteriores)**: elija **Ocultar** para impedir que se muestren opciones para cambiar la cuenta en las páginas de error de inicio de sesión y dominio de empresa. Esta opción requiere la [configuración de la personalización de marca de la empresa en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    >[!IMPORTANT]
+    >Para las implementaciones de Autopilot en dispositivos con Windows 10 versión 1903 o una posterior, el valor predeterminado de Datos de diagnóstico se establece automáticamente en Completos. Para obtener más información, consulte [Datos de diagnóstico de Windows](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data). <br>
+    
+    - **Ocultar opciones para cambiar la cuenta (se necesita Windows 10, versión 1809 o posteriores)** : elija **Ocultar** para impedir que se muestren opciones para cambiar la cuenta en las páginas de error de inicio de sesión y dominio de empresa. Esta opción requiere la [configuración de la personalización de marca de la empresa en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de cuenta de usuario**: elija el tipo de cuenta de usuario (**Administrador** o **Estándar**).
     - **Permitir OOBE de White Glove**: elija **Sí** para admitir White Glove.
     - **Aplicar plantilla de nombre de dispositivo**: elija **Sí** para crear una plantilla que se usará al asignar nombres a dispositivos durante la inscripción. Los nombres deben tener 15 caracteres o menos y pueden contener letras, números y guiones. Los nombres no pueden estar formados solo por números. Use la [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para agregar el número de serie de hardware específico. O use la [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para agregar una cadena de números aleatoria, donde x equivale al número de dígitos para agregar. 
-    - **Idioma (región)**\*: elija el idioma que se usará en el dispositivo. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
-    - **Configurar el teclado automáticamente**\*: si se selecciona un valor de **Idioma (región)**, elija **Sí** para omitir la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
+    - **Idioma (región)** \*: elija el idioma que se usará en el dispositivo. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
+    - **Configurar el teclado automáticamente**\*: si se selecciona un valor de **Idioma (región)** , elija **Sí** para omitir la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
 8. Seleccione **Siguiente**.
 9. En la página **Etiquetas de ámbito**, opcionalmente, agregue las etiquetas de ámbito que quiera aplicar a este perfil. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida).
 10. Seleccione **Siguiente**.
