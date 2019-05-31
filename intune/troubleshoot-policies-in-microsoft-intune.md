@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460519"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044612"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solución de problemas de directivas y perfiles en Intune
 
@@ -56,11 +55,11 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
       - Las directivas de protección de aplicaciones (administración de aplicaciones móviles) no requieren que los dispositivos se inscriban. Para más información, vea [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md).
 
-    - **El tipo de combinación de Azure AD**: debe establecerse en **Workplace** o **AzureAD**.
+    - **Tipo de combinación de Azure AD**: se debe establecer en **Área de trabajo** o **AzureAD**.
  
       - Si el valor de esta columna es **No registrado**, es posible que haya un problema con la inscripción. Normalmente, anular la inscripción y volver a inscribir el dispositivo resuelve este estado.
 
-    - **Compatibles con Intune**: debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
+    - **Conforme con Intune**: debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
 
       Para más información, vea [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
@@ -68,14 +67,14 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
       Para más información, vea [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
-    - **Última**: debe ser una fecha y hora recientes. De forma predeterminada, los servicios de Intune se conectan cada 8 horas.
+    - **Última conexión**: debe ser una fecha y hora recientes. De forma predeterminada, los servicios de Intune se conectan cada 8 horas.
 
       - Si el valor de **Última conexión** es superior a 24 horas, es posible que haya un problema con el dispositivo. Un dispositivo que no se puede conectar no puede recibir las directivas de Intune.
 
       - Para forzar la conexión:
         - En el dispositivo Android, abra la aplicación de Portal de empresa > **Dispositivos** > elija el dispositivo en la lista > **Comprobar configuración del dispositivo**.
         - En el dispositivo iOS, abra la aplicación de Portal de empresa > **Dispositivos** > elija el dispositivo en la lista > **Comprobar configuración**. 
-        - En un dispositivo Windows, abra **Configuración** > **Cuentas** > **Acceso profesional o educativo** > seleccione la cuenta o inscripción MDM >  **Información** > **Sincronización**.
+        - En un dispositivo Windows, abra **Configuración** > **Cuentas** > **Acceso profesional o educativo** > seleccione la cuenta o inscripción MDM > **Información** > **Sincronización**.
 
     - Seleccione el dispositivo para ver información específica de la directiva.
 
@@ -110,7 +109,7 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
     - **Pendiente**: el perfil ha enviado al dispositivo, pero no ha informado del estado a Intune. Por ejemplo, el cifrado en Android requiere que el usuario final lo habilite y, por tanto, la directiva podría mostrarse como pendiente.
 
-**Vínculos útiles**: [supervisar perfiles de configuración de dispositivo](device-profile-monitor.md)
+**Vínculo de utilidad**: [Supervisar perfiles de dispositivo](device-profile-monitor.md)
 
 > [!NOTE]
 > Cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva es la que se aplica.
