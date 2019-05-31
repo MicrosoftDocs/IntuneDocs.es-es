@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/11/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf1daf42d1dfcd8dd25304040e868581a056943
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566422"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042116"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>Configuración del perfil de correo electrónico para dispositivos iOS en Intune
 
@@ -76,20 +75,20 @@ En este artículo se enumeran y se describen todas las opciones de correo electr
   Cuando se usa S/MIME con un mensaje de correo electrónico, se confirma la autenticidad del remitente y la integridad y la confidencialidad del mensaje.
 
   - **Firma S/MIME habilitada**: elija **Habilitar** para permitir a los usuarios firmar digitalmente el correo electrónico saliente de la cuenta especificada. La firma ayuda a los usuarios que reciben mensajes a estar seguros de que el mensaje procede del remitente específico y no de alguien que pretende ser el remitente. **Deshabilitar** no permite a los usuarios firmar digitalmente el mensaje.
-    - **Permitir al usuario cambiar la configuración de**: elija **habilitar** para permitir a los usuarios cambiar el comportamiento de firma S/MIME. **Deshabilitar** evita que los usuarios cambien la opción de firma S/MIME configurada. Disponible en iOS 12 y versiones más recientes.
+    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el comportamiento de firma S/MIME. **Deshabilitar** evita que los usuarios cambien la opción de firma S/MIME configurada. Disponible en iOS 12 y versiones más recientes.
 
   - **Certificado de firma S/MIME**: seleccione un perfil de certificado PKCS o SCEP existente que se usa para firmar los mensajes de correo electrónico.
-    - **Permitir al usuario cambiar la configuración de**: elija **habilitar** para permitir a los usuarios cambiar el certificado de firma. **Deshabilitar** evita que los usuarios cambien el certificado de firma y los obliga a usar el certificado configurado. Disponible en iOS 12 y versiones más recientes.
+    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el certificado de firma. **Deshabilitar** evita que los usuarios cambien el certificado de firma y los obliga a usar el certificado configurado. Disponible en iOS 12 y versiones más recientes.
 
-  - **Cifrar de forma predeterminada**: **habilitar** cifra todos los mensajes como el comportamiento predeterminado. **Deshabilitar** no cifra todos los mensajes como comportamiento predeterminado.
-    - **Permitir al usuario cambiar la configuración de**: elija **habilitar** para permitir a los usuarios cambiar el comportamiento de cifrado predeterminado. **Deshabilitar** evita que los usuarios cambien el comportamiento predeterminado de cifrado y los obliga a usar la opción configurada. Disponible en iOS 12 y versiones más recientes.
+  - **Cifrar de forma predeterminada**: **Habilitar** cifra todos los mensajes como comportamiento predeterminado. **Deshabilitar** no cifra todos los mensajes como comportamiento predeterminado.
+    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el comportamiento de cifrado predeterminado. **Deshabilitar** evita que los usuarios cambien el comportamiento predeterminado de cifrado y los obliga a usar la opción configurada. Disponible en iOS 12 y versiones más recientes.
 
   - **Forzar cifrado por mensaje**: el cifrado por mensaje permite a los usuarios elegir qué mensajes se cifran antes de enviarse. Elija **Habilitar** para mostrar la opción de cifrado por mensaje al crear un nuevo correo electrónico. Luego los usuarios pueden optar por activar o no el cifrado por mensaje. **Deshabilitar** evita que aparezca la opción de cifrado por mensaje.
 
     Si la opción **Cifrar de forma predeterminada** está habilitada, la habilitación del cifrado por mensaje permite a los usuarios anular el cifrado por mensaje. Si la opción **Cifrar de forma predeterminada** está deshabilitada, la habilitación del cifrado por mensaje permite a los usuarios optar por el cifrado por mensaje.
 
   - **Certificado de cifrado S/MIME**: seleccione un perfil de certificado PKCS o SCEP existente que se usa para cifrar los mensajes de correo electrónico.
-    - **Permitir al usuario cambiar la configuración de**: elija **habilitar** para permitir a los usuarios cambiar el certificado de cifrado. **Deshabilitar** evita que los usuarios cambien el certificado de cifrado y los obliga a usar el certificado configurado. Disponible en iOS 12 y versiones más recientes.
+    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el certificado de cifrado. **Deshabilitar** evita que los usuarios cambien el certificado de cifrado y los obliga a usar el certificado configurado. Disponible en iOS 12 y versiones más recientes.
 - **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar. También puede seleccionar **Ilimitado** para sincronizar todo el correo electrónico disponible.
 - **Permitir a los mensajes moverse a otras cuentas de correo electrónico**: la opción **Habilitar** permite a los usuarios mover los mensajes de correo electrónico entre distintas cuentas que hayan configurado los usuarios en sus dispositivos.
 - **Permitir que el correo electrónico se envíe desde aplicaciones de terceros**: la opción **Habilitar** permite a los usuarios seleccionar este perfil como cuenta predeterminada para enviar mensajes de correo electrónico. Permite que otras aplicaciones de terceros puedan abrir el correo en la aplicación de correo electrónico nativa (por ejemplo, para adjuntar archivos a los mensajes).

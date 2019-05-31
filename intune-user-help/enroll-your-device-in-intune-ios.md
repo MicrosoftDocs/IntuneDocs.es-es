@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: HT
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292431"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196855"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configuración del acceso de dispositivos iOS a los recursos de la empresa  
 
@@ -31,7 +31,9 @@ Inscriba el dispositivo iOS con la aplicación Portal de empresa de Intune para 
 
 Después de haber inscrito el dispositivo, se convierte en *administrado*. La organización puede asignar directivas y aplicaciones al dispositivo mediante un proveedor de administración de dispositivos móviles (MDM), como Intune.  
 
-Para conservar el acceso a la información profesional o educativa desde el dispositivo, deberá configurarlo para que coincida con la configuración preferida de la organización. En este artículo se describe cómo usar Portal de empresa para inscribir el dispositivo y mantener los requisitos de configuración de su organización. 
+Para conservar el acceso a la información profesional o educativa desde el dispositivo, deberá configurarlo para que coincida con la configuración preferida de la organización. En este artículo se describe cómo usar Portal de empresa para inscribir el dispositivo y mantener los requisitos de configuración de su organización.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Este artículo le interesará si ha intentado acceder al correo electrónico de la empresa en la aplicación Correo y se le ha pedido que administrara su dispositivo. Siga estas instrucciones para acceder a su correo electrónico y a otros recursos de la empresa en su dispositivo iOS.  
@@ -39,7 +41,7 @@ Para conservar el acceso a la información profesional o educativa desde el disp
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Qué esperar de la aplicación Portal de empresa  
 
 ### <a name="security"></a>Seguridad  
-Durante la instalación inicial, la aplicación requiere que se autentique con la organización. Después le informa de cualquier configuración del dispositivo que debe actualizar. Por ejemplo, las organizaciones suelen definir requisitos de caracteres mínimos o máximos para las contraseñas que tendrá que cumplir.     
+Durante la instalación inicial, la aplicación requiere que se autentique con la organización. Después le informa de cualquier configuración del dispositivo que debe actualizar. Por ejemplo, las organizaciones suelen definir requisitos de caracteres mínimos o máximos para las contraseñas que tendrá que cumplir.
 
 ### <a name="protection"></a>Protección  
 Una vez inscrito el dispositivo, la aplicación Portal de empresa continuará para asegurarse de que el dispositivo esté protegido. Por ejemplo, si instala una aplicación desde un origen que no sea de confianza, la aplicación le avisará y, en ocasiones, revocará el acceso a los datos de la empresa. Este tipo de directiva es común en las organizaciones y suele requerirle que desinstale la aplicación que no es de confianza para poder recuperar el acceso.  
@@ -118,6 +120,9 @@ Si hace una pausa de más de unos minutos durante la inscripción, puede provoca
 
 > [!Note]
 > Si su organización supervisa los límites de voz y datos, o le proporciona un dispositivo propiedad de la empresa, puede que tenga que completar algunos pasos más. Si se le pide que instale la aplicación **Datalert**, consulte [Inscripción del dispositivo en la administración de gastos de telecomunicaciones](enroll-your-device-with-telecom-expense-management-ios.md). Si su organización forma parte del Programa de inscripción de dispositivos de Apple, descubra [cómo inscribir su dispositivo de la empresa](enroll-your-device-dep-ios.md).  
+
+## <a name="it-administrator-support"></a>Soporte técnico para administradores de TI  
+Si es administrador de TI y detecta problemas al inscribir dispositivos, vea [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/en-us/help/4039809) (Solucionar problemas de inscripción de dispositivos iOS en Microsoft Intune). En este artículo se enumeran errores habituales, sus causas y los pasos para resolverlos.  
 
 ## <a name="next-steps"></a>Pasos siguientes  
 Busque aplicaciones que le ayudarán en el trabajo o la escuela. Obtenga información sobre [cómo se ponen las aplicaciones a su disposición](use-managed-apps-on-your-device-ios.md) mediante el Portal de empresa.  

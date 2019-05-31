@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429698"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046970"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para ejecutarse como una pantalla completa en Intune
 
@@ -36,19 +35,19 @@ Para más información sobre la característica de pantalla completa de Windows 
 
 - [Cree el perfil](kiosk-settings.md#create-the-profile).
 
-- Este perfil de quiosco está directamente relacionado con el perfil de restricciones de dispositivos se crea mediante la [configuración de pantalla de Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). En resumen:
+- Este perfil de pantalla completa está directamente relacionado con el perfil de restricciones de dispositivo que se crea mediante la [Configuración de quiosco de Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). En resumen:
 
-  1. Crear este perfil de quiosco para ejecutar el dispositivo en modo de quiosco.
-  2. Crear el [perfil de restricciones de dispositivo](device-restrictions-windows-10.md#microsoft-edge-browser)y configurar características específicas y valores permitidos en Microsoft Edge.
+  1. Cree este perfil de pantalla completa para ejecutar el dispositivo en pantalla completa.
+  2. Cree el [perfil de restricciones de dispositivo](device-restrictions-windows-10.md#microsoft-edge-browser) y configure opciones y características específicas que se permiten en Microsoft Edge.
 
 > [!IMPORTANT] 
-> Asegúrese de asignar este perfil de quiosco a los mismos dispositivos su [perfil de Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
+> Asegúrese de asignar este perfil de pantalla completa a los mismos dispositivos que su [perfil de Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
 
 ## <a name="single-full-screen-app-kiosks"></a>Quioscos a pantalla completa con una sola aplicación
 
-Se ejecuta solo una aplicación en el dispositivo.
+Solo se ejecuta una aplicación en el dispositivo.
 
-- **Seleccione un modo de quiosco**: elija **aplicación única, pantalla completa**.
+- **Seleccionar un modo de pantalla completa**: elija **Pantalla completa con aplicación única**.
 
 - **Tipo de inicio de sesión de usuario**: las aplicaciones que se agregan se ejecutan como la cuenta de usuario especificada. Las opciones son:
 
@@ -57,19 +56,19 @@ Se ejecuta solo una aplicación en el dispositivo.
 
 - **Tipo de aplicación**: seleccione el tipo de aplicación. Las opciones son:
 
-  - **Agregar un explorador Microsoft Edge**: seleccione **explorador Microsoft Edge**y elija el **perimetral de tipo de modo de quiosco**:
+  - **Agregar explorador Microsoft Edge**: seleccione **Explorador Microsoft Edge** y elija el **Tipo de modo de quiosco de Microsoft Edge**:
 
-    - **Señalización digital/interactivo**: abre una pantalla completa de la dirección URL y solo se muestra el contenido en dicho sitio Web. [Configurar la firma digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) proporciona más información sobre esta característica.
-    - **Exploración pública (InPrivate)**: se ejecuta una versión limitada de varias pestaña de Microsoft Edge. Los usuarios pueden examinar públicamente o finalizar su sesión de exploración.
+    - **Señal digital o interactiva**: abra una URL en pantalla completa y muestre solo el contenido de ese sitio web. En [Configurar señales digitales](https://docs.microsoft.com/windows/configuration/setup-digital-signage) se proporciona más información sobre esta característica.
+    - **Exploración pública (InPrivate)**: se ejecuta una versión limitada de varias pestaña de Microsoft Edge. Los usuarios pueden explorar públicamente o finalizar su sesión de exploración.
 
-    Para obtener más información sobre estas opciones, consulte [modo de pantalla completa de la implementación de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+    Para más información sobre estas opciones, vea [Implementar la pantalla completa de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
     > [!NOTE]
-    > Esta configuración habilita el explorador Microsoft Edge en el dispositivo. Para configurar opciones específicas de Microsoft Edge, cree un perfil de configuración de dispositivo (**configuración del dispositivo** > **perfiles** > **Crear perfil**  >  **Windows 10** para plataforma > **restricciones de dispositivos** >  **explorador Microsoft Edge**). [Explorador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) se enumeran y describen las opciones disponibles.
+    > Esta valor habilita el explorador de Microsoft Edge en el dispositivo. Para configurar opciones específicas de Microsoft Edge, cree un perfil de configuración de dispositivo (**Configuración de dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10** para la plataforma > **Restricciones de dispositivos** >  **Explorador de Microsoft Edge**). [Explorador de Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) muestra y describe las opciones disponibles.
 
     Haga clic en **Aceptar** para guardar los cambios.
 
-  - **Agregar un explorador del quiosco**: seleccione **configuración del explorador de pantalla completa**. Esta configuración controla una aplicación de explorador web en el quiosco. Asegúrese de obtener la [aplicación Kiosk Browser](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) desde la Tienda, agréguela a Intune como una [aplicación cliente](apps-add.md) y después asígnela a los dispositivos de pantalla completa.
+  - **Agregar explorador del Quiosco**: seleccione **Configuración del explorador del Quiosco**. Esta configuración controla una aplicación de explorador web en el quiosco. Asegúrese de obtener la [aplicación Kiosk Browser](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) desde la Tienda, agréguela a Intune como una [aplicación cliente](apps-add.md) y después asígnela a los dispositivos de pantalla completa.
 
     Escriba los valores siguientes:
 
@@ -96,7 +95,7 @@ Se ejecuta solo una aplicación en el dispositivo.
 
     Haga clic en **Aceptar** para guardar los cambios.
 
-  - **App Store Add**: seleccione **agregar una aplicación de tienda**y elija una aplicación de la lista.
+  - **Agregar aplicación de la tienda**: elija **Agregar una aplicación de la tienda** y seleccione una aplicación de la lista.
 
     ¿No aparece ninguna aplicación? Agregue algunas siguiendo los pasos descritos en [Aplicaciones cliente](apps-add.md).
 
@@ -104,13 +103,13 @@ Se ejecuta solo una aplicación en el dispositivo.
 
 ## <a name="multi-app-kiosks"></a>Pantallas completas con varias aplicaciones
 
-Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplicaciones son las únicas que el usuario puede abrir. Si una aplicación tiene una dependencia en otra aplicación, ambos deben incluirse en la lista de aplicaciones permitidas. Por ejemplo, Internet Explorer 64 bits tiene una dependencia en Internet Explorer 32 bits, por lo que debe permitir "C:\Program programa\internet explorer\iexplore.exe" y "C:\Program Files (x86) \Internet". 
+Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplicaciones son las únicas que el usuario puede abrir. Si una aplicación tiene una dependencia de otra, ambas deben estar incluidas en la lista de aplicaciones permitidas. Por ejemplo, Internet Explorer de 64 bits tiene una dependencia de Internet Explorer de 32 bits, por lo que debe permitir ambas, "C:\Program Files\internet explorer\iexplore.exe" y "C:\Program Files (x86)\Internet Explorer\iexplore.exe". 
 
-- **Seleccione un modo de quiosco**: elija **pantalla completa de aplicaciones de múltiples**.
+- **Seleccionar un modo de pantalla completa**: elija **Pantalla completa con varias aplicaciones**.
 
 - **Destino de Windows 10 en dispositivos en modo S**:
   - **Sí**: permite aplicaciones de la Tienda y aplicaciones AUMID (se excluyen las aplicaciones Win32) en el perfil de pantalla completa.
-  - **No**: permite aplicaciones de la Tienda, Win32 y AUMID en el perfil de pantalla completa. No se implementa este perfil de quiosco para dispositivos de modo S.
+  - **No**: permite aplicaciones de la Tienda, Win32 y AUMID en el perfil de pantalla completa. Este perfil de pantalla completa no se implementa en dispositivos en modo S.
 
 - **Tipo de inicio de sesión de usuario**: las aplicaciones que se agregan se ejecutan como la cuenta de usuario especificada. Las opciones son:
 
@@ -123,15 +122,15 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 
   - **Exploradores**
 
-    - **Agregar Microsoft Edge**: Microsoft Edge se agrega a la cuadrícula de la aplicación, y todas las aplicaciones pueden ejecutar en esta pantalla. Elija la **tipo de modo de quiosco de Microsoft Edge**:
+    - **Agregar explorador Microsoft Edge**: se agrega Microsoft Edge a la cuadrícula de la aplicación, y todas las aplicaciones se pueden ejecutar en esta pantalla completa. Elija el **Tipo de modo de quiosco de Microsoft Edge**:
 
-      - **Modo normal (versión completa de Microsoft Edge)**: se ejecuta una versión completa de Microsoft Edge con todas las características de exploración. Se guardan los datos de usuario y el estado entre sesiones.
-      - **Exploración pública (InPrivate)**: se ejecuta una versión de varias pestaña de InPrivate de Microsoft Edge con una experiencia adaptada a los quioscos que se ejecutan en modo de pantalla completa.
+      - **Modo normal (versión completa de Microsoft Edge)**: se ejecuta una versión completa de Microsoft Edge con todas las características de exploración. Los datos de usuario y el estado se guardan entre sesiones.
+      - **Exploración pública (InPrivate)**: se ejecuta una versión de varias pestaña de InPrivate de Microsoft Edge con una experiencia adaptada a los quioscos que se ejecutan en modo de pantalla completa.
 
-      Para obtener más información sobre estas opciones, consulte [modo de pantalla completa de la implementación de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+      Para más información sobre estas opciones, vea [Implementar la pantalla completa de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
       > [!NOTE]
-      > Esta configuración habilita el explorador Microsoft Edge en el dispositivo. Para configurar opciones específicas de Microsoft Edge, cree un perfil de configuración de dispositivo (**configuración del dispositivo** > **perfiles** > **Crear perfil**  >  **Windows 10** para plataforma > **restricciones de dispositivos** >  **explorador Microsoft Edge**). [Explorador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) se enumeran y describen las opciones disponibles.
+      > Esta valor habilita el explorador de Microsoft Edge en el dispositivo. Para configurar opciones específicas de Microsoft Edge, cree un perfil de configuración de dispositivo (**Configuración de dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10** para la plataforma > **Restricciones de dispositivos** >  **Explorador de Microsoft Edge**). [Explorador de Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) muestra y describe las opciones disponibles.
 
       Haga clic en **Aceptar** para guardar los cambios.
 
@@ -176,7 +175,7 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 
       Haga clic en **Aceptar** para guardar los cambios.
 
-    - **Ejecución automática de**: opcional. Elija una aplicación para inicio automático cuando el usuario inicia sesión. Solo una única aplicación puede ser AutoLaunched.
+    - **Inicio automático**: opcional. Elija una aplicación que se inicie automáticamente cuando el usuario inicie sesión. Solo puede iniciarse automáticamente una única aplicación.
     - **Tamaño de icono**: requerido. Elija un tamaño de icono de la aplicación pequeño, mediano, ancho o grande.
 
   > [!TIP]
@@ -186,7 +185,7 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 
 - **Barra de tareas de Windows**: elija **Mostrar** u **Ocultar** la barra de tareas. De forma predeterminada, la barra de tareas no aparece. Se muestran iconos, por ejemplo, el icono de Wi-Fi, pero los usuarios finales no pueden cambiar la configuración.
 
-- **Permitir el acceso a la carpeta descargas**: elija **Sí** para permitir que los usuarios accedan a la carpeta descargas en el Explorador de Windows. De forma predeterminada, el acceso a la carpeta de descargas está deshabilitado. Esta característica se usa normalmente para los usuarios finales para tener acceso a elementos descargados desde un explorador.
+- **Permitir acceso a la carpeta Descargas**: elija **Sí** para permitir que los usuarios accedan a la carpeta de descargas en el Explorador de Windows. De forma predeterminada, el acceso a la carpeta de descargas está deshabilitado. Esta característica se usa normalmente para que los usuarios finales accedan a los elementos descargados de un explorador.
 
 Haga clic en **Aceptar** para guardar los cambios.
 
