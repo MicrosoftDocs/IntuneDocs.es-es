@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 5d39b62762d623c150ac6198bd2d6215b4410663
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046301"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412297"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Uso de registros de auditoría para realizar un seguimiento y supervisar eventos en Microsoft Intune
 
@@ -39,7 +39,7 @@ Los usuarios con los siguientes permisos pueden revisar los registros de auditor
 
 Puede revisar los registros de auditoría en el grupo de supervisión para cada carga de trabajo de Intune:
 
-1. En [Azure Portal](https://portal.azure.com/), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Elija la carga de trabajo cuyos registros de auditoría quiere revisar. Por ejemplo, seleccione **Dispositivos**.
 3. En **Supervisión**, elija **Registros de auditoría**.
 

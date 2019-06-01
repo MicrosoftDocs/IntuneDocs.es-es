@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ce2813702d9b2b3cb91f5531308cbb58b1f9f80
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050612"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373321"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importar la configuración de Wi-Fi para dispositivos Windows en Intune
 
@@ -44,7 +44,7 @@ En un equipo de Windows que ya tenga instalado el perfil de Wi-Fi necesario, lle
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importación de la configuración de Wi-Fi en Intune
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 3. Escriba un **nombre** y una **descripción** para el perfil de restricción de dispositivos.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e4f94ead5ecc42f8ac67c596fc9424b112c2065
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 39aba38d808a770ee04f5d165ca8037b43576812
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048586"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374022"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Uso de una configuración personalizada para dispositivos Android en Microsoft Intune
 
@@ -42,7 +42,7 @@ En este artículo se muestra cómo crear un perfil personalizado para dispositiv
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 3. Escriba los valores siguientes:
 

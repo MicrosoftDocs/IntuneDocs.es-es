@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47115fcb2662439bff867043c2fb58bc3550dbbb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044874"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412681"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalación de aplicaciones
 
@@ -31,8 +31,7 @@ En algunas ocasiones, las instalaciones de aplicaciones en los dispositivos admi
 
 Intune proporciona los detalles de solución de problemas de la aplicación en función de las aplicaciones instaladas en el dispositivo de un usuario específico.
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Solucionar problema**.
 4. Haga clic en **Seleccionar usuario** para seleccionar un usuario para solucionar problemas. Se mostrará el panel **Seleccionar usuarios**.
 5. Seleccione un usuario escribiendo su nombre o dirección de correo electrónico. Haga clic en **Seleccionar** en la parte inferior del panel. La información de solución de problemas del usuario se muestra en el panel de **solución de problemas**. 
