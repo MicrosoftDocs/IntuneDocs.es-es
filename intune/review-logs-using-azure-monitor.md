@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045290"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412703"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Envío de datos de registro al almacenamiento, a Event Hubs o a Log Analytics en Intune (versión preliminar)
 
@@ -53,7 +53,7 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
 
 ## <a name="send-logs-to-azure-monitor"></a>Envío de registros a Azure Monitor
 
-1. En [Azure Portal](https://portal.azure.com/), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. En **Supervisión**, seleccione **Configuración de diagnóstico**. La primera vez que se abra, actívela:
 
     ![Activación de Configuración de diagnóstico en Intune para enviar registros a Azure Monitor](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ También puede exportar los registros de auditoría en otras partes de Intune, i
 
 Por ejemplo, para exportar los registros de auditoría al usar el cumplimiento del dispositivo:
 
-1. En [Azure Portal](https://portal.azure.com/), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Cumplimiento del dispositivo** > **Monitor** > **Registros de auditoría**:
 
     ![Selección de registros de auditoría para enrutar datos de Intune al almacenamiento de Azure Monitor, centros de eventos o análisis](media/audit-logs-under-monitor-in-compliance.png)

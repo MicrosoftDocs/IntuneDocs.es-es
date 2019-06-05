@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044851"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373414"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adición de directivas de actualización de software de iOS en Intune
 
@@ -31,7 +31,7 @@ El dispositivo se registra con Intune aproximadamente cada ocho horas. Si hay un
 
 ## <a name="configure-the-policy"></a>Configurar la directiva
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Actualizaciones de software** > **Directivas de actualización para iOS** > **Crear**.
 3. Escriba los valores siguientes:
 
@@ -51,7 +51,7 @@ El dispositivo se registra con Intune aproximadamente cada ocho horas. Si hay un
       - **Hora de inicio**: elija la hora de inicio del período de tiempo restringido. Por ejemplo, escriba 5:00 para que las actualizaciones no se instalen a partir de las 5:00.
       - **Hora de finalización**: elija la hora de finalización del período de tiempo restringido. Por ejemplo, escriba 1:00 para que las actualizaciones no se instalen a partir de la 1:00.
 
-    - **Retrasar la visibilidad de las actualizaciones de software para los usuarios finales sin cambios en las actualizaciones programadas (días)**: 
+    - **Retrasar la visibilidad de las actualizaciones de software para los usuarios finales sin cambios en las actualizaciones programadas (días)** : 
 
       **Esta opción se movió a [Restricciones de dispositivos](device-restrictions-ios.md#general). Se quitará de esta ubicación en el portal**. Durante un breve período, las directivas existentes se pueden cambiar aquí. Después de un mes, este valor se quitará de las directivas existentes.
 

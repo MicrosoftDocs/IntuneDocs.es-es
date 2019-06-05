@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050129"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374076"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Aplicación del cumplimiento de ATP de Windows Defender con acceso condicional en Intune
 
@@ -83,11 +83,11 @@ Una vez incorporado un dispositivo mediante el paquete de configuración, no es 
 
 ### <a name="create-the-configuration-profile"></a>Creación de un perfil de configuración
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 3. Escriba la información que desee en **Nombre** y **Descripción**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
-5. En **Tipo de perfil**, seleccione **ATP de Windows Defender (Windows 10 Desktop)**.
+5. En **Tipo de perfil**, seleccione **ATP de Windows Defender (Windows 10 Desktop)** .
 6. Defina la configuración:
 
   - **Tipo de paquete de configuración del cliente ATP de Windows Defender**: seleccione **Incorporar** para agregar el paquete de configuración al perfil. Seleccione **Cesar** para quitar el paquete de configuración del perfil.
@@ -105,11 +105,11 @@ Una vez incorporado un dispositivo mediante el paquete de configuración, no es 
 ## <a name="create-the-compliance-policy"></a>Creación de la directiva de cumplimiento
 La directiva de cumplimiento determina un nivel de riesgo aceptable en un dispositivo.
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
 3. Escriba la información que desee en **Nombre** y **Descripción**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
-5. En la configuración de **ATP de Windows Defender**, establezca **Solicitar que el dispositivo tenga o esté por debajo de la puntuación de riesgo de la máquina** en el nivel que prefiera. Las clasificaciones de nivel de amenaza vienen [determinadas por ATP de Windows Defender](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. En la configuración de **ATP de Windows Defender**, establezca **Solicitar que el dispositivo tenga o esté por debajo de la puntuación de riesgo de la máquina** en el nivel que prefiera. Las clasificaciones de nivel de amenaza vienen [determinadas por ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **Borrar**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza existente y aún puede acceder a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme. (ATP de Windows Defender usa el valor *Seguro*).
    - **Baja**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Los dispositivos con niveles de amenaza medio o alto no son compatibles.
@@ -120,7 +120,7 @@ La directiva de cumplimiento determina un nivel de riesgo aceptable en un dispos
 
 ## <a name="assign-the-policy"></a>Asignación de la directiva
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Cumplimiento del dispositivo** > **Directivas**> Seleccione la directiva de cumplimiento de ATP de Windows Defender.
 3. Seleccione **Asignaciones**.
 4. Incluya o excluya los grupos de Azure AD para asignarlos a la directiva.
@@ -153,7 +153,7 @@ La directiva de acceso condicional bloquea el acceso a los recursos *s i* el dis
 ## <a name="monitor-device-compliance"></a>Supervisión del cumplimiento del dispositivo
 A continuación, supervise el estado de los dispositivos que tienen la directiva de cumplimiento de ATP de Windows Defender.
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Cumplimiento del dispositivo** > **Directiva y cumplimiento**.
 3. Busque la directiva de ATP de Windows Defender en la lista y vea qué dispositivos son compatibles o no compatibles.
 

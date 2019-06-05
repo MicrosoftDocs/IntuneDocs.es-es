@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8554f0addf7364150c3f225e8cba1a7d751f8a7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048093"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412425"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar restricciones de dispositivos en Microsoft Intune
 
@@ -35,7 +35,7 @@ Descubra los conceptos básicos sobre los perfiles de restricción de dispositiv
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los dispositivos** > filtre por **Intune** > seleccione **Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 3. Escriba un **nombre** y una **descripción** para el perfil de restricción de dispositivos.
 4. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar configuración personalizada. Actualmente, puede elegir una de las siguientes plataformas para la configuración de restricciones de dispositivos:
@@ -48,7 +48,7 @@ Descubra los conceptos básicos sobre los perfiles de restricción de dispositiv
     - **Windows 8.1 y versiones posteriores**
     - **Windows 10 y versiones posteriores**
 
-5. En la lista desplegable **Tipo de perfil**, elija **Restricciones de dispositivos**. Para crear un perfil de restricciones de dispositivos para dispositivos Windows 10 Team, como Surface Hub, elija **Restricciones de dispositivos (Windows 10 Team)**.
+5. En la lista desplegable **Tipo de perfil**, elija **Restricciones de dispositivos**. Para crear un perfil de restricciones de dispositivos para dispositivos Windows 10 Team, como Surface Hub, elija **Restricciones de dispositivos (Windows 10 Team)** .
 6. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Elija la plataforma para la configuración detallada:
 
     - [Configuración de Android](device-restrictions-android.md)

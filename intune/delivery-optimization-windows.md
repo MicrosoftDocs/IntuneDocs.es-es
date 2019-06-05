@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042635"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373946"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configuración de la opción Optimización de distribución en Microsoft Intune
 
@@ -36,7 +36,7 @@ Para obtener más información sobre la opción Optimización de distribución e
 > **Actualizaciones de software: los círculos de actualizaciones de Windows 10** los reemplaza la configuración **Optimización de distribución**. Los círculos de actualizaciones existentes se pueden cambiar para usar la configuración **Optimización de distribución**. [Traslado de los anillos de actualizaciones existentes a la optimización de distribución](#move-existing-update-rings-to-delivery-optimization) (en este artículo) 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 
@@ -71,7 +71,7 @@ La configuración **Optimización de distribución** reemplaza las **actualizaci
         - **Configuración**: para **Modo de descarga de Optimización de entrega**, elija el mismo modo que usa el anillo de actualización de software existente, a menos que quiera cambiar la configuración que se aplica a los dispositivos. Las opciones son:
             - **No configurado**.
             - **HTTP solo, sin emparejamiento**
-            - **HTTP combinado con el emparejamiento que se encuentra en la misma NAT **
+            - **HTTP combinado con el emparejamiento que se encuentra en la misma NAT**
             - **HTTP combinado con el emparejamiento de un grupo privado**
             - **HTTP combinado con emparejamiento de Internet**
             - **Modo de descarga sencillo sin emparejamiento**

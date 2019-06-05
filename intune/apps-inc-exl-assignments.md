@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049298"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454068"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
 
@@ -44,9 +44,8 @@ Intune no tiene en cuenta la asociación de usuarios y dispositivos al excluir g
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Inclusión y exclusión de grupos al asignar aplicaciones 
 Para asignar una aplicación a grupos mediante la asignación de inclusión y exclusión, siga estos pasos:
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el menú **Intune**, seleccione **Aplicaciones cliente**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
 4. En el panel **Aplicaciones cliente**, seleccione **Aplicaciones**. Se muestra la lista de aplicaciones agregadas.
 5. Seleccione la aplicación que quiera asignar. Un panel muestra información sobre la aplicación. 
 6. En la sección **Administrar** del menú, seleccione **Asignaciones**. 
@@ -76,7 +75,7 @@ Para asignar una aplicación a grupos mediante la asignación de inclusión y ex
 
 Cuando se realizan asignaciones de grupos, los grupos que se han asignado ya no están disponibles para modificarse. Si quiere seleccionar un grupo que actualmente no está disponible, quite primero la aplicación de lista asignada de aplicaciones. 
 
-Para editar las asignaciones, en la lista de **asignaciones** de aplicaciones, seleccione la fila que contiene la asignación específica que quiere cambiar. Otra forma de quitar una asignación es seleccionar los puntos suspensivos (**…**) al final de una fila y, luego, seleccionar **Quitar**. Para cambiar la vista de la lista **Asignaciones**, agrupe por **Tipo de asignación** o por **Incluidos o excluidos**.
+Para editar las asignaciones, en la lista de **asignaciones** de aplicaciones, seleccione la fila que contiene la asignación específica que quiere cambiar. Otra forma de quitar una asignación es seleccionar los puntos suspensivos ( **…** ) al final de una fila y, luego, seleccionar **Quitar**. Para cambiar la vista de la lista **Asignaciones**, agrupe por **Tipo de asignación** o por **Incluidos o excluidos**.
 
 ![Asignaciones de aplicaciones de Intune: completar](./media/apps-inc-exl-05.png)
 
