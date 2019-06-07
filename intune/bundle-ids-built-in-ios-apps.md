@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 05/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: ''
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26f43523589da0d59afb3b667eb4ead8357f7a60
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049023"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402760"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Identificadores de lote para aplicaciones iOS integradas que puede usar en Intune
 
-Al configurar las características en dispositivos iOS, también puede agregar aplicaciones integradas en dispositivos iOS. En este artículo se enumeran los identificadores de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones.
+Al configurar las características en dispositivos iOS, también puede agregar aplicaciones integradas en dispositivos iOS. En este artículo se enumeran los identificadores de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones. Vea la lista de [identificadores de lote de iOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) de Apple (se abre el sitio web de Apple).
 
 ## <a name="bundle-ids"></a>Identificador de lote
 
@@ -59,6 +59,7 @@ Al configurar las características en dispositivos iOS, también puede agregar a
 | com.apple.mobilenotes       | Notas        | Apple     |
 | com.apple.Numbers           | Números      | Apple     |
 | com.apple.Pages             | Páginas        | Apple     |
+| com.apple.mobilephone       | Teléfono        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Fotos       | Apple     |
 | com.apple.podcasts          | Podcasts     | Apple     |

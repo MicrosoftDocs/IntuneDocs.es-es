@@ -5,7 +5,7 @@ description: Configuración de la línea de base de seguridad compatible con Int
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MTE75
+ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040743"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373511"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configuración de la línea de base de Advanced Threat Protection de Microsoft Defender
 
 Vea la configuración de la línea de base de Advanced Threat Protection de Microsoft Defender (anteriormente Advanced Threat Protection de Windows Defender) compatible con Microsoft Intune. Los valores predeterminados de este artículo representan la configuración de la línea de base predeterminada para Intune. Estos valores predeterminados representan la configuración recomendada para Intune y podrían no coincidir con los valores predeterminados de Windows.
+
+  La línea de base de Protección contra amenazas avanzada de Microsoft Defender está disponible cuando el entorno cumple con los requisitos previos para usar [Protección contra amenazas avanzada de Microsoft Defender](advanced-threat-protection.md#prerequisites).
+
+
+
 
 > [!NOTE]  
 > La configuración de la línea de base de seguridad de Advanced Threat Protection de Microsoft Defender está en **versión preliminar**. En la versión preliminar, la lista de valores de configuración disponibles, y el orden en el que este contenido presenta esos valores, podría no coincidir con lo que está disponible en el portal. 

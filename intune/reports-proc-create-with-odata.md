@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045519"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412448"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe desde la fuente de OData con Power BI
 
@@ -53,14 +53,13 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 > [!Note]  
 > Necesita permiso para acceder a los **Informes** en Intune. Para obtener más información, vea la [Autorización](reports-api-url.md).
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. Abra el panel **Almacenamiento de datos de Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Abra el panel **Almacenamiento de datos de Intune** seleccionando el vínculo Almacenamiento de datos en **Otras tareas** que se encuentra al lado derecho de la hoja de **información general de Microsoft Intune**.
 4. Copie la dirección URL de la fuente personalizada. Por ejemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Abra Power BI Desktop.
-6. Elija **Obtener datos** > **Fuente OData**.
-7. Pegue la dirección URL de la fuente personalizada en el cuadro para la URL de la ventana **Fuente OData**.
-8. Seleccione **Básica**.
+1. Abra Power BI Desktop.
+2. Elija **Obtener datos** > **Fuente OData**.
+3. Pegue la dirección URL de la fuente personalizada en el cuadro para la URL de la ventana **Fuente OData**.
+4. Seleccione **Básica**.
 
     ![Fuente OData para el Almacén de datos de Intune para su inquilino](media/reports-create-01-odatafeed.png)
 

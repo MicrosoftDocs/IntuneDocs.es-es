@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041154"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412723"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obtener datos de la API de almacenamiento de datos de Intune con un cliente de REST
 
@@ -94,9 +94,8 @@ Necesita la información siguiente para realizar una llamada REST mediante Postm
 
 También se necesita el punto de conexión. Para obtener el punto de conexión de almacenamiento de datos, necesitará la dirección URL de fuente personalizada. Puede obtener el punto de conexión de OData del panel Almacenamiento de datos.
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. Seleccione **Configurar el almacenamiento de datos de Intune** en **Otras tareas**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Abra el panel **Almacenamiento de datos de Intune** seleccionando el vínculo Almacenamiento de datos en **Otras tareas** que se encuentra al lado derecho de la hoja de **información general de Microsoft Intune**.
 4. Copie la dirección URL de fuente personalizada en **Usar servicios de informes de terceros**. Debería tener un aspecto parecido a este: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 El punto de conexión sigue este formato: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.

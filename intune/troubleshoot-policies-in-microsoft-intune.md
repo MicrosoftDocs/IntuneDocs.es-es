@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044612"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402657"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solución de problemas de directivas y perfiles en Intune
 
@@ -32,13 +32,12 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
 ## <a name="use-built-in-troubleshooting"></a>Uso de la solución de problemas integrada
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
-2. Haga clic en **Solucionar problemas**:
+1. En [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), seleccione **Solucionar problemas**:
 
     ![En Intune, vaya a Ayuda y soporte técnico, y haga clic en Solucionar problemas](./media/help-and-support-troubleshoot.png)
 
-3. Haga clic en **Seleccionar el usuario** > seleccione el usuario que tenga un problema > **Seleccionar**.
-4. Confirme que se muestran marcas de verificación de color verde para **Licencia de Intune** y **Estado de la cuenta**:
+2. Haga clic en **Seleccionar el usuario** > seleccione el usuario que tenga un problema > **Seleccionar**.
+3. Confirme que se muestran marcas de verificación de color verde para **Licencia de Intune** y **Estado de la cuenta**:
 
     ![En Intune, haga clic en el usuario y confirme que se muestran marcas de verificación de color verde para el estado en Licencia de Intune y Estado de la cuenta](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
     - [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](licenses-assign.md)
     - [Agregar usuarios a Intune](users-add.md)
 
-5. En **Dispositivos**, busque el dispositivo que tenga un problema. Revise las diferentes columnas:
+4. En **Dispositivos**, busque el dispositivo que tenga un problema. Revise las diferentes columnas:
 
     - **Administrado**: Para que un dispositivo reciba las directivas de configuración o cumplimiento, esta propiedad debe mostrar **MDM** o **EAS/MDM**.
 
@@ -98,7 +97,7 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>No está seguro de si se ha aplicado correctamente un perfil
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Dispositivos** > **Todos los dispositivos** > seleccione el dispositivo > **Configuración del dispositivo**. 
 
     Todos los dispositivos enumeran sus perfiles. Cada perfil tiene un **estado**. El estado se aplica cuando todos los perfiles asignados, incluidos los requisitos y las restricciones de hardware y del sistema operativo, se consideran de forma conjunta. Entre los estados posibles se incluyen los siguientes:
@@ -164,4 +163,6 @@ Para resolver este problema, establezca la hora del sistema local lo más cerca 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si sigue necesitando ayuda, puede [obtener soporte técnico de Microsoft Intune](get-support.md).
+[Problemas comunes y resoluciones con perfiles de correo electrónico](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+Obtenga [ayuda de soporte técnico de Microsoft](get-support.md) o use los [foros de la comunidad](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
