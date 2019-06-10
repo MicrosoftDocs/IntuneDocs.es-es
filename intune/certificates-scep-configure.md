@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c4cb95d9eacd8967ecacedfe1a5d335b729005
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
+ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043727"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448117"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -34,7 +34,7 @@ En este artículo se muestra cómo configurar la estructura y, luego, crear y as
     Si la CA ejecuta Windows Server 2008 R2, se debe [instalar la revisión de KB2483564](http://support.microsoft.com/kb/2483564/).
 
 - **Servidor SCEP**: en Windows Server 2012 R2 o posterior, configure el rol de servidor Servicio de inscripción de dispositivos de red (SCEP). En Intune no se puede usar el Servicio de inscripción de dispositivos de red en un servidor que también ejecuta la entidad de certificación empresarial. Consulte [Orientación para el Servicio de inscripción de dispositivos de red](http://technet.microsoft.com/library/hh831498.aspx) para obtener instrucciones sobre cómo configurar Windows Server 2012 R2 para hospedar NDES.
-El servidor NDES debe estar unido a un dominio dentro del mismo bosque que la CA de empresa. Puede encontrar más información sobre cómo implementar el servidor NDES en un bosque independiente, una red aislada o un dominio interno en [Uso de un módulo de directivas con el servicio de inscripción de dispositivos de red](https://technet.microsoft.com/library/dn473016.aspx).
+El servidor NDES debe estar unido a un dominio dentro del mismo bosque que la CA de empresa. Puede encontrar más información sobre cómo implementar el servidor NDES en un bosque independiente, una red aislada o un dominio interno en [Uso de un módulo de directivas con el servicio de inscripción de dispositivos de red](https://technet.microsoft.com/library/dn473016.aspx). No es posible utilizar un servidor NDES que ya se esté usando con otra MDM.
 
 - **Microsoft Intune Certificate Connector**: En el portal de Intune, vaya a **Configuración del dispositivo** > **Conectores de certificados** > **Agregar** y siga los *Pasos de instalación del conector para SCEP*. Use el vínculo de descarga en el portal para empezar la descarga del instalador del conector de certificado **NDESConnectorSetup.exe**.  Deberá ejecutar este instalador en el servidor con el rol NDES.  
 
@@ -272,8 +272,8 @@ En este paso, hará lo siguiente:
 
 2. Seleccione **Modificar configuración de característica** y después configure los valores:
 
-    - **Cadena de consulta (bytes)** = **65534**
-    - **Longitud máxima de dirección URL (bytes)** = **65534**
+    - **Cadena de consulta (bytes)**  = **65534**
+    - **Longitud máxima de dirección URL (bytes)**  = **65534**
 
 3. Revise la siguiente clave del registro:
 
@@ -297,7 +297,7 @@ En este paso, hará lo siguiente:
 > [!IMPORTANT] 
 > Microsoft Intune Certificate Connector **debe** instalarse en un servidor Windows independiente. No se puede instalar en la entidad de certificación (CA) emisora. También se **debe** instalar en el mismo servidor que el rol de Servicio de inscripción de dispositivos de red (NDES).
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Configuración del dispositivo** > **Conectores de certificación** > **Agregar**.
 3. Descargue y guarde el conector para el archivo SCEP. Guárdelo en una ubicación accesible desde el servidor donde va a instalar el conector.
 
@@ -350,7 +350,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 
 ## <a name="create-a-scep-certificate-profile"></a>Creación de un perfil de certificado SCEP
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 3. Escriba un **Nombre** y una **Descripción** para el perfil de certificado SCEP.
 4. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado SCEP. Actualmente puede seleccionar una de las siguientes plataformas para la configuración de restricciones de dispositivos:
@@ -384,17 +384,17 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
         - **Nombre común como correo electrónico**
         - **IMEI (Identidad de equipo móvil internacional)**
         - **Número de serie**
-        - **Personalizado**: cuando se selecciona esta opción, se muestra también un cuadro de texto **Personalizado**. Use este campo para escribir un formato de nombre del firmante personalizado, incluidas las variables. El formato personalizado admite dos variables: **Nombre común (CN)** y **dirección de correo electrónico (E)**. **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
+        - **Personalizado**: cuando se selecciona esta opción, se muestra también un cuadro de texto **Personalizado**. Use este campo para escribir un formato de nombre del firmante personalizado, incluidas las variables. El formato personalizado admite dos variables: **Nombre común (CN)** y **dirección de correo electrónico (E)** . **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
 
-            - **CN={{UserName}}**: nombre principal de usuario, como janedoe@contoso.com
-            - **CN={{AAD_Device_ID}}**: identificador asignado al registrar un dispositivo en Azure Active Directory (AD). Este identificador normalmente se usa para autenticarse en Azure AD.
-            - **CN={{SERIALNUMBER}}**: número de serie (SN) único que normalmente usa el fabricante para identificar un dispositivo
-            - **CN={{IMEINumber}}**: número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil
-            - **CN={{OnPrem_Distinguished_Name}}**: secuencia de nombres distintivos relativos separados por comas, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{UserName}}** : nombre principal de usuario, como janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}** : identificador asignado al registrar un dispositivo en Azure Active Directory (AD). Este identificador normalmente se usa para autenticarse en Azure AD.
+            - **CN={{SERIALNUMBER}}** : número de serie (SN) único que normalmente usa el fabricante para identificar un dispositivo
+            - **CN={{IMEINumber}}** : número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil
+            - **CN={{OnPrem_Distinguished_Name}}** : secuencia de nombres distintivos relativos separados por comas, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 Para usar la variable `{{OnPrem_Distinguished_Name}}`, asegúrese de sincronizar el atributo de usuario `onpremisesdistingishedname` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
 
-            - **CN={{onPremisesSamAccountName}}**: los administradores pueden sincronizar el atributo samAccountName de Active Directory con Azure AD mediante Azure AD Connect en un atributo llamado `onPremisesSamAccountName`. Intune puede sustituir esa variable como parte de una solicitud de emisión de certificado en el asunto de un certificado SCEP.  El atributo samAccountName es el nombre de inicio de sesión del usuario usado para admitir clientes y servidores de una versión anterior de Windows (anterior a Windows 2000). El formato del nombre de inicio de sesión del usuario es: `DomainName\testUser`, o solo `testUser`.
+            - **CN={{onPremisesSamAccountName}}** : los administradores pueden sincronizar el atributo samAccountName de Active Directory con Azure AD mediante Azure AD Connect en un atributo llamado `onPremisesSamAccountName`. Intune puede sustituir esa variable como parte de una solicitud de emisión de certificado en el asunto de un certificado SCEP.  El atributo samAccountName es el nombre de inicio de sesión del usuario usado para admitir clientes y servidores de una versión anterior de Windows (anterior a Windows 2000). El formato del nombre de inicio de sesión del usuario es: `DomainName\testUser`, o solo `testUser`.
 
                 Para usar la variable `{{onPremisesSamAccountName}}`, asegúrese de sincronizar el atributo de usuario `onPremisesSamAccountName` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
 
@@ -426,7 +426,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 
         > [!IMPORTANT]
         >  - En el texto estático del asunto, las llaves **{}** que no encierran una variable se resolverán en un error. 
-        >  - Cuando use una variable de certificado de dispositivo, incluya la variable entre llaves **{ }**.
+        >  - Cuando use una variable de certificado de dispositivo, incluya la variable entre llaves **{ }** .
         >  - `{{FullyQualifiedDomainName}}` solo funciona para Windows y dispositivos unidos a dominios. 
         >  -  Al usar las propiedades del dispositivo como el IMEI, el número de serie y el nombre de dominio completo en el asunto o SAN para un certificado de dispositivo, tenga en cuenta que una persona con acceso al dispositivo podría suplantar estas propiedades.
         >  - El perfil no se instalará en el dispositivo si no se admiten las variables de dispositivo especificadas. Por ejemplo, si {{IMEI}} se usa en el nombre del sujeto del perfil SCEP asignado a un dispositivo que no tiene un número IMEI, la instalación del perfil no se completará con éxito. 
@@ -468,8 +468,8 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
         Estas variables se pueden agregar con texto estático en el cuadro de texto de valor personalizado. Por ejemplo, el atributo DNS puede agregarse como `DNS name = {{AzureADDeviceId}}.domain.com`.
 
         > [!IMPORTANT]
-        >  - En el texto estático de SAN, no sirven las llaves **{ }**, los símbolos de barra vertical **|** y los signos de punto y coma **;**. 
-        >  - Cuando use una variable de certificado de dispositivo, incluya la variable entre llaves **{ }**.
+        >  - En el texto estático de SAN, no sirven las llaves **{ }** , los símbolos de barra vertical **|** y los signos de punto y coma **;** . 
+        >  - Cuando use una variable de certificado de dispositivo, incluya la variable entre llaves **{ }** .
         >  - `{{FullyQualifiedDomainName}}` solo funciona para Windows y dispositivos unidos a dominios. 
         >  -  Al usar las propiedades del dispositivo como el IMEI, el número de serie y el nombre de dominio completo en el asunto o SAN para un certificado de dispositivo, tenga en cuenta que una persona con acceso al dispositivo podría suplantar estas propiedades.
         >  - El perfil no se instalará en el dispositivo si no se admiten las variables de dispositivo especificadas. Por ejemplo, si se usa {{IMEI}} en el nombre alternativo del firmante del perfil SCEP asignado a un dispositivo que no tiene un número IMEI, la instalación del perfil no se completará con éxito.  
@@ -484,12 +484,12 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
    - **Uso de la clave**: especifique las opciones de uso de claves del certificado. Las opciones son:
      - **Cifrado de clave**: permite el intercambio de claves solo si la clave está cifrada
      - **Firma digital**: permite el intercambio de claves solo si una firma digital protege la clave
-   - **Tamaño de la clave (bits)**: seleccione el número de bits que contiene la clave
+   - **Tamaño de la clave (bits)** : seleccione el número de bits que contiene la clave
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Seleccione uno de los tipos de algoritmos hash disponibles para usar con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión.
    - **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado. Asegúrese de asignar este perfil de certificado raíz de confianza al mismo grupo asignado en el perfil de certificado SCEP.
    - **Uso mejorado de clave**: elija **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario.
    - **Configuración de la inscripción**
-     - **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
+     - **Umbral de renovación (%)** : especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
      - **Direcciones URL de servidor SCEP**: especifique una o varias direcciones URL para los servidores SCEP que emiten certificados mediante SCEP. Por ejemplo, escriba algo parecido a `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - Seleccione **Aceptar** y **Crear** el perfil.
 

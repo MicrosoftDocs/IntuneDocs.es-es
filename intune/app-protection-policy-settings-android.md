@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
-ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
+ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66270010"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402786"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configuración de directivas de protección de aplicaciones Android en Microsoft Intune
 En este artículo se describe la configuración de directivas de protección de aplicaciones para dispositivos Android. La configuración de directivas que se describe puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** de Azure Portal.
@@ -36,7 +36,7 @@ Hay tres categorías de configuración de directiva: configuración de protecci�
 | Setting | Cómo se usa | Valor predeterminado |
 |------|------|------|
 | **Hacer copia de seguridad de los datos de la organización en los servicios correspondientes de Android** | Seleccione **Bloquear** para impedir que esta aplicación haga una copia de seguridad de los datos profesionales o educativos en [Android Backup Service](https://developer.android.com/google/backup/index.html) (Servicio de copia de seguridad de Android).<br><br> Seleccione **Permitir** para permitir que esta aplicación haga una copia de seguridad de los datos profesionales o educativos.| **Permitir** |
-| **Enviar datos de la organización a otras aplicaciones** | Especifique qué aplicaciones pueden recibir datos de esta aplicación: <ul><li> **Aplicaciones administradas por directivas**: permite las transferencias solo para otras aplicaciones administradas por directivas.</li> <li>**Todas las aplicaciones**: permite la transferencia a cualquier aplicación. </li> <li>**Ninguna**: no permite la transferencia de datos a ninguna aplicación, incluidas otras aplicaciones administradas por directivas.</li></ul> <p>Hay aplicaciones y servicios exentos a los que Intune puede permitir la transferencia de datos de forma predeterminada. Además, puede crear sus propias excepciones si necesita permitir que los datos se transfieran a una aplicación que no admita las directivas de protección de aplicaciones de Intune. Para obtener más información, vea [Exenciones de transferencia de datos](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Esta directiva también se puede aplicar a los vínculos de las aplicaciones Android.  Los vínculos web generales se administran mediante la configuración de directiva **Abrir vínculos a aplicaciones en Intune Managed Browser**.<p>**Nota:** *Actualmente, Intune no admite la característica Android Instant Apps. Intune bloqueará todas las conexiones de datos con origen o destino a la aplicación. Para obtener más información, vea [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) en la documentación para desarrolladores de Android.*</p>| **Todas las aplicaciones** | 
+| **Enviar datos de la organización a otras aplicaciones** | Especifique qué aplicaciones pueden recibir datos de esta aplicación: <ul><li> **Aplicaciones administradas por directivas**: permite las transferencias solo para otras aplicaciones administradas por directivas.</li> <li>**Todas las aplicaciones**: permite la transferencia a cualquier aplicación. </li> <li>**Ninguna**: no permite la transferencia de datos a ninguna aplicación, incluidas otras aplicaciones administradas por directivas.</li></ul> <p>Hay aplicaciones y servicios exentos a los que Intune puede permitir la transferencia de datos de forma predeterminada. Además, puede crear sus propias excepciones si necesita permitir que los datos se transfieran a una aplicación que no admita las directivas de protección de aplicaciones de Intune. Para obtener más información, vea [Exenciones de transferencia de datos](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Esta directiva también se puede aplicar a los vínculos de las aplicaciones Android.  Los vínculos web generales se administran mediante la configuración de directiva **Abrir vínculos a aplicaciones en Intune Managed Browser**.<p><div class="NOTE"><p>Nota</p><p>Intune no admite actualmente la característica Android Instant Apps. Intune bloqueará todas las conexiones de datos con origen o destino a la aplicación. Para obtener más información, vea [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) en la documentación para desarrolladores de Android.</p><p>Si **Enviar datos de la organización a otras aplicaciones** se ha configurado en **Todas las aplicaciones**, todavía se pueden transferir datos de texto a través de la funcionalidad de uso compartido del sistema operativo al Portapapeles.</p></div> | **Todas las aplicaciones** | 
 |<ul><ui> **Seleccionar las aplicaciones que quedan exentas** | Esta opción está disponible si selecciona *Aplicaciones administradas por directivas* en la opción anterior. | |
 | **Recibir datos de otras aplicaciones** | Especifique qué aplicaciones pueden transferir datos a esta aplicación: <ul><li>**Aplicaciones administradas por directivas**: permite las transferencias solo desde otras aplicaciones administradas por directivas.</li><li>**Todas las aplicaciones**: permite la transferencia de datos desde cualquier aplicación.</li><li>**Ninguna**: no permite la transferencia de datos desde ninguna aplicación, incluidas otras aplicaciones administradas por directivas. </li></ul> <p>Hay aplicaciones y servicios exentos desde los que Intune puede permitir la transferencia de datos. Consulte [Exenciones de transferencia de datos](app-protection-policy-settings-android.md#data-transfer-exemptions) para ver una lista completa de aplicaciones y servicios. | **Todas las aplicaciones** |
 | **Guardar copias de los datos de la organización** | Elija **Bloquear** para deshabilitar el uso de la opción Guardar como en esta aplicación. Elija **Permitir** si quiere permitir el uso de Guardar como. **Nota:** *Esta opción es compatible con Microsoft Excel, OneNote, PowerPoint y Word. También puede admitirse en aplicaciones de LOB y de terceros.*| **Permitir** |  

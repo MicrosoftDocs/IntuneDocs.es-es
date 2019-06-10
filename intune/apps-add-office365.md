@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7657577372a37c7554941886b80277bfee11e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1aa79bbaa6765a0d4b6009468bdfa184222c5f00
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049421"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454089"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -47,8 +47,7 @@ Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agr
 
 ## <a name="get-started"></a>Introducción
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
 4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Administrar**, seleccione **Aplicaciones**.
 5. Seleccione **Agregar**.
@@ -79,10 +78,10 @@ En este paso, proporcionará información sobre el conjunto de aplicaciones. Est
 1. En el panel **Agregar aplicación**, seleccione **App Suite Information** (Información del conjunto de aplicaciones).
 2. En el panel **App Suite Information** (Información del conjunto de aplicaciones), haga lo siguiente:
     - **Nombre del conjunto de aplicaciones**: escriba el nombre del conjunto tal como se muestra en el Portal de empresa. Asegúrese de que todos los nombres de conjuntos de aplicaciones que use sean únicos. Si el mismo nombre del conjunto ya existe, solo se muestra una de las aplicaciones a los usuarios en el portal de empresa.
-    - **Descripción del conjunto de aplicaciones **: escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
+    - **Descripción del conjunto de aplicaciones** : escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
     - **Publicador**: Microsoft aparece como publicador.
     - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren el conjunto de aplicaciones cuando exploren el portal de empresa.
-    - **Mostrar como aplicación destacada en el Portal de empresa **: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
+    - **Mostrar como aplicación destacada en el Portal de empresa** : seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
     - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: Microsoft aparece como desarrollador.
@@ -126,6 +125,14 @@ Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro des
     - **Usar activación en equipos compartidos**: seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones. <p></p>
     Puede implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** de la hoja **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en la hoja **Configuración del conjunto de aplicaciones**. Para más información, vea [Información general acerca de la implementación de idiomas en Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="select-scope-tags-optional"></a>Selección de Etiquetas de ámbito (opcional)
+Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida).
+
+1. Seleccione **Ámbito (Etiquetas)**  > **Agregar**.
+2. Use el cuadro **Seleccionar** para buscar las etiquetas de ámbito.
+3. Seleccione la casilla de verificación situada junto a las etiquetas de ámbito que desea asignar a esta aplicación.
+4. Elija **Seleccionar** > **Aceptar**.
 
 ## <a name="enter-xml-format"></a>Especificar formato XML
 

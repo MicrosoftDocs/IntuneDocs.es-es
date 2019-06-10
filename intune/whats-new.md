@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264169"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469588"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -45,6 +45,13 @@ Conozca las novedades semanales de Microsoft Intune. También encontrará inform
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-27-2019"></a>Semana del 27 de mayo de 2019 
+
+### <a name="app-management"></a>Administración de aplicaciones
+
+#### <a name="reporting-for-potentially-harmful-apps-on-android-devices----4223162---"></a>Informes de aplicaciones potencialmente peligrosas en dispositivos Android <!-- 4223162 -->
+Intune ahora proporciona más datos sobre informes de aplicaciones potencialmente peligrosas en dispositivos Android. 
 
 ## <a name="week-of-may-20-2019"></a>Semana del 20 de mayo de 2019 
 
@@ -134,7 +141,7 @@ Para ver la configuración disponible, vaya a [Tienda de aplicaciones, presentac
 Se aplica a iOS.
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Línea de base de Protección contra amenazas avanzada de Microsoft Defender (versión preliminar)  <!--  3754134 -->
-Agregamos una versión preliminar de línea de base de seguridad para la configuración [Protección contra amenazas avanzada de Microsoft Defender](security-baseline-settings-defender-atp.md).  
+Agregamos una versión preliminar de línea de base de seguridad para la configuración [Protección contra amenazas avanzada de Microsoft Defender](security-baseline-settings-defender-atp.md). Esta línea de base está disponible cuando el entorno cumple con los requisitos previos para usar [Protección contra amenazas avanzada de Windows Defender](advanced-threat-protection.md#prerequisites).
 
 ### <a name="device-enrollment"></a>Inscripción de dispositivos
 
@@ -153,6 +160,14 @@ No será necesario que incluya espacios en los números IMEI cuando busca en **T
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Reflejo de la eliminación de un dispositivo del portal de Apple en el portal de Intune <!--2489996 -->
 Si se elimina un dispositivo de los portales del Programa de inscripción de dispositivos de Apple o de Apple Business Manager, el dispositivo se eliminará automáticamente de Intune durante la siguiente sincronización.
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>La página de estado de inscripción ahora realiza un seguimiento de las aplicaciones de Win32 <!-- 2714451 -->
+Esto solo se aplica a dispositivos que ejecutan Windows 10 versión 1903 y posteriores. Para más información, consulte [Configurar una página de estado de inscripción](windows-enrollment-status.md).
+
+### <a name="device-management"></a>Administración de dispositivos
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Restablecimiento y borrado de dispositivos de forma masiva mediante Graph API <!-- 3295288 -->
+Ahora podrá restablecer y borrar hasta 100 dispositivos de forma masiva mediante Graph API.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Supervisión y solución de problemas
@@ -227,7 +242,7 @@ Puede asignar las aplicaciones Win32 para instalarlas en dispositivos unidos a A
 La página Resumen del dispositivo mostrará el usuario primario, también denominado el usuario de afinidad de dispositivo de usuario (UDA). Para ver el usuario primario de un dispositivo, seleccione **Intune** > **Dispositivos** > **Todos los dispositivos** y elija un dispositivo. El usuario primario se muestra cerca de la parte superior de la página **Resumen**.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Otros informes de aplicaciones de Google Play administrado para dispositivos de perfil de trabajo de Android Enterprise <!-- 4105925  -->
-Para aplicaciones de Google Play administrado implementadas en dispositivos de perfil de trabajo de Android Enterprise, puede ver el número de versión específica de la aplicación instalada en un dispositivo. Esto se aplica solo a las aplicaciones necesarias. En una versión futura se habilitará la misma función para las aplicaciones disponibles. 
+Para aplicaciones de Google Play administrado implementadas en dispositivos de perfil de trabajo de Android Enterprise, puede ver el número de versión específica de la aplicación instalada en un dispositivo. Esto se aplica solo a las aplicaciones necesarias.  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>Teclados de terceros de iOS <!-- 4111843   -->
 La compatibilidad de la directiva de protección de aplicaciones (APP) de Intune con la configuración **Teclados de terceros** para iOS ya no se admite debido a un cambio de la plataforma iOS. No podrá configurar esta opción en la consola de administración de Intune y no se aplicará en el cliente en el SDK de aplicaciones de Intune.
@@ -277,7 +292,7 @@ Se aplica a: Dispositivos totalmente administrados de Android Enterprise
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Buscar un conjunto de chips TPM en una directiva de cumplimiento de dispositivos Windows 10 <!-- 3617671 -->
 
-Esta característica se ha retrasado y se incluirá en una versión futura.
+El lanzamiento de esta característica se ha retrasado y está previsto que sea más adelante.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Cambios de la interfaz de usuario actualizada para el explorador Microsoft Edge en dispositivos con Windows 10 y versiones posteriores <!-- 3775833   -->
 Cuando se crea un perfil de configuración de dispositivo, puede permitir o restringir las características de Microsoft Edge en dispositivos con Windows 10 y versiones posteriores (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** para la plataforma > **Restricciones de dispositivos** para el tipo de perfil > **Explorador Microsoft Edge**). En esta actualización, la configuración de Microsoft Edge es más descriptiva y fácil de entender. 
@@ -908,7 +923,7 @@ Intune ahora requiere macOS versión 10.12 o posterior. Los dispositivos con ver
 Puede quitar cualquier aplicación en dispositivos iOS corporativos supervisados. Puede quitar cualquier aplicación estableciendo como destino grupos de usuarios o dispositivos con un tipo de asignación **Desinstalar**. Para dispositivos iOS personales o no supervisados, podrá quitar solo las aplicaciones que se instalaron mediante Intune.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Descarga de contenido de aplicaciones Win32 de Intune <!-- 2617320 -->
-Los clientes Windows 10 RS3 y versiones posterior descargarán contenido de aplicaciones Win32 de Intune mediante un componente de Optimización de distribución del cliente Windows 10. La Optimización de distribución proporciona la funcionalidad punto a punto está activada de manera predeterminada. La Optimización de distribución se puede configurar según la directiva de grupo y, en el futuro, a través de MDM de Intune. Para más información, consulte el artículo sobre la [Optimización de distribución para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Los clientes Windows 10 RS3 y versiones posterior descargarán contenido de aplicaciones Win32 de Intune mediante un componente de Optimización de distribución del cliente Windows 10. La Optimización de distribución proporciona la funcionalidad punto a punto está activada de manera predeterminada. Actualmente, la Optimización de distribución se puede configurar según la directiva de grupo. Para más información, consulte el artículo sobre la [Optimización de distribución para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Menú de contenido de aplicaciones y dispositivos del usuario final <!-- 2771453 -->
 Los usuarios finales ahora pueden usar el menú contextual del dispositivo y las aplicaciones para desencadenar acciones comunes, como cambiar el nombre de un dispositivo o comprobar el cumplimiento.

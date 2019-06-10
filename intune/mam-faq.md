@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,19 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041647"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506880"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
 Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la administración de aplicaciones móviles (MAM) de Intune y la protección de aplicaciones de Intune.
 
 ## <a name="mam-basics"></a>Conceptos básicos de MAM
-
 
 **¿Qué es MAM?**<br></br>
 La [administración de aplicaciones móviles de Intune](/intune/app-lifecycle) hace referencia al conjunto de funciones de administración de Intune que le permite publicar, insertar, configurar, proteger, supervisar y actualizar aplicaciones móviles para los usuarios.
@@ -45,7 +44,7 @@ Intune MAM admite dos configuraciones:
 
 ## <a name="app-protection-policies"></a>Directivas de protección de aplicaciones
 
-¿**Qué son las directivas de protección de aplicaciones**?<br></br>
+**¿Qué son las directivas de protección de aplicaciones?**<br></br>
 Las directivas de protección de aplicaciones que garantizan los datos de la organización siguen siendo seguras o se encuentran en una aplicación administrada. Una directiva puede ser una regla que se aplica cuando el usuario intenta obtener acceso o mover datos "corporativos" o un conjunto de acciones que están prohibidas o que se supervisan cuando el usuario está dentro de la aplicación.
 
 **¿Cuáles son los ejemplos de directivas de protección de aplicaciones?**<br></br>
@@ -72,6 +71,13 @@ Cualquier aplicación integrada con el [SDK para aplicaciones de Intune](/intune
 - El usuario final debe pertenecer a un grupo de seguridad de destino de una directiva de protección de la aplicación. La misma directiva de protección de aplicaciones debe tener como destino la aplicación específica que se va a utilizar. Las directivas de protección de aplicaciones pueden crearse e implementarse en la consola de Intune en el [portal de Azure](https://portal.azure.com). Actualmente se pueden crear grupos de seguridad en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
 
 - El usuario final debe iniciar sesión en la aplicación con su cuenta de AAD.
+
+**¿Qué ocurre si quiero habilitar una aplicación con Intune App Protection, pero esta no está usando una plataforma de desarrollo de aplicaciones compatible?** 
+
+El equipo de desarrollo del SDK de Intune comprueba y mantiene de forma activa la compatibilidad con las aplicaciones creadas con las plataformas nativas de Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms y Cordova. Aunque algunos clientes han podido integrar con éxito el SDK de Intune con otras plataformas como React Native y NativeScript, no proporcionamos instrucciones explícitas o complementos para desarrolladores de aplicaciones que no utilicen nuestras plataformas compatibles.
+
+**¿Es compatible la biblioteca de autenticación de Microsoft (MSAL) o las cuentas de redes sociales con el SDK de aplicaciones de Intune?**<br></br>
+El SDK de aplicaciones de Intune usa algunas funcionalidades avanzadas de ADAL para las versiones de la primera y la tercera parte del SDK. Por lo tanto, la MSAL no funciona bien con muchos de nuestros escenarios básicos, como la autenticación en el servicio de Intune App Protection y el inicio condicional. Dado que el objetivo general del equipo de identidades de Microsoft es migrar a MSAL en todas las aplicaciones de Microsoft Office, el SDK de Intune tendrá que admitirlo en algún momento, pero actualmente no está previsto.
 
 **¿Cuáles son los requisitos adicionales para usar la [aplicación móvil de Outlook](https://products.office.com/outlook)?**
 
@@ -164,8 +170,7 @@ La protección de aplicaciones de Intune depende de la identidad del usuario par
 **¿Hay una forma segura de abrir vínculos web desde aplicaciones administradas?**<br></br>
 Sí. El administrador de TI puede implementar y establecer una directiva de protección de aplicaciones para la [aplicación Intune Managed Browser](app-configuration-managed-browser.md), un explorador web desarrollado por Microsoft Intune que puede administrarse fácilmente con Intune. El administrador de TI puede requerir que todos los vínculos web en aplicaciones administradas de Intune se abran con la aplicación Managed Browser.
 
-**¿Es compatible la biblioteca de autenticación de Microsoft (MSAL) o las cuentas de redes sociales con el SDK de aplicaciones de Intune?**
-El SDK de aplicaciones de Intune usa algunas funcionalidades avanzadas de ADAL para las versiones de la primera y la tercera parte del SDK. Por lo tanto, la MSAL no funciona bien con muchos de nuestros escenarios básicos, como la autenticación en el servicio de Intune App Protection y el inicio condicional. No hay ningún plan actualmente que la admita.
+
 
 ## <a name="app-experience-on-android"></a>Experiencia de la aplicación en Android
 
@@ -199,13 +204,13 @@ Las comprobaciones de la API de SafetyNet de Google Play Protect requieren que e
 Ambas opciones "Atestación de dispositivo SafetyNet" y "Examen de amenazas en las aplicaciones" requieren una versión determinada de Google Play Services para funcionar correctamente. Puesto que estas opciones de configuración corresponden al área de seguridad, si el usuario final es el destinatario de esta configuración y no dispone de la versión adecuada de Google Play Services o no tiene acceso a ella, se le bloqueará. 
 
 ## <a name="app-experience-on-ios"></a>Experiencia de aplicación en iOS
-**¿Qué ocurre si se agrega o quita una huella digital o una cara en el dispositivo?**
+**¿Qué ocurre si se agrega o quita una huella digital o una cara en el dispositivo?**<br></br>
 Las directivas de protección de aplicaciones de Intune permiten limitar el acceso a solo los usuarios con licencia de Intune. Una de las maneras de controlar el acceso a la aplicación es exigir Touch ID o Face ID de Apple en dispositivos admitidos. Intune implementa un comportamiento donde si hay algún cambio en la base de datos biométrica del dispositivo, Intune solicita al usuario un PIN cuando se alcanza el siguiente valor de tiempo de espera de inactividad. Los cambios realizados en los datos biométricos incluyen la incorporación o eliminación de una cara o una huella digital. Si el usuario de Intune no tiene establecido un PIN, se le lleva por los pasos para configurar uno.
  
 La finalidad de esto es seguir manteniendo los datos de la organización dentro de la aplicación seguros y protegidos en el nivel de aplicación. Esta característica solo está disponible para iOS y requiere la participación de aplicaciones que integran Intune APP SDK para iOS, versión 9.0.1 o posterior. La integración del SDK es necesaria para que se pueda aplicar el comportamiento en las aplicaciones de destino. Esta integración ocurre de manera gradual y depende de los equipos de la aplicación específica. Algunas de las aplicaciones que participan son WXP, Outlook, Managed Browser y Yammer. 
   
 **Puedo usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en "Solo aplicaciones administradas" o "Ninguna aplicación". ¿No es esto una pérdida de datos?**<br></br>
-La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_. Puede validar esto intentando abrir el archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
+La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_ . Puede validar esto intentando abrir el archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
 
 **¿Cómo funcionan en iOS las opciones de protección de acceso de aplicaciones de Intune configuradas para el mismo conjunto de aplicaciones y usuarios?**<br></br>
 Las directivas de protección de aplicaciones de Intune para el acceso se aplicarán en un orden específico en los dispositivos de usuario final cuando intenten obtener acceso a una aplicación de destino desde su cuenta corporativa. En general, tendría prioridad un borrado, seguido de un bloqueo y, después, una advertencia descartable. Por ejemplo, si es aplicable a la aplicación o usuario específico, una configuración de sistema operativo mínima de iOS que advierte al usuario de actualizar la versión de iOS se aplicará después de la configuración de sistema operativo mínima de iOS que bloquea el acceso del usuario. Por tanto, en el caso en que el administrador de TI configure el sistema operativo mínimo de iOS en 11.0.0.0 y el sistema operativo mínimo de iOS (solo advertencia) en 11.1.0.0, mientras el dispositivo que intenta obtener acceso a la aplicación esté en iOS 10, se bloquearía al usuario final en función del valor más restrictivo para la versión de sistema operativo de iOS mínima que provoque el bloqueo del acceso.
