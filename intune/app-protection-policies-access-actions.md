@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 490c7312f510651cafc6ade516e5f7dca8131b3a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043969"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804689"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Borrar los datos de forma selectiva mediante acciones de acceso de la directiva de protección de aplicaciones en Intune
 
@@ -32,9 +32,7 @@ Puede elegir explícitamente borrar los datos corporativos de su empresa desde e
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>Crear una directiva de protección de aplicaciones mediante acciones de acceso
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios** > **Intune**.  
-    Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones**.
 4. Haga clic en **Agregar una directiva** (también puede editar una directiva existente). 
 5. Haga clic en **Configurar los valores obligatorios** para ver la lista de valores que se pueden configurar para la directiva. 

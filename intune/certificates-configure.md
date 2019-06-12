@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048937"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713898"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configuración de un perfil de certificado para sus dispositivos en Microsoft Intune
 
@@ -90,8 +90,7 @@ Este certificado se importa al configurar un perfil de certificado de confianza.
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Paso 3: creación de perfiles de certificado de confianza
 Cree un perfil de certificado de confianza para poder crear un perfil de certificado SCEP o PKCS. Necesitará un perfil de certificado de confianza y un perfil SCEP o PKCS para cada plataforma de dispositivo. Los pasos para crear certificados de confianza son similares en todas las plataformas de dispositivos.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Seleccione **Configuración del dispositivo** > **Administrar** > **Perfiles** > **Crear perfil**.
 4. Escriba un **Nombre** y una **Descripción** para el perfil de certificado de confianza.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado de confianza. Las opciones son:
