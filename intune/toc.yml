@@ -270,7 +270,7 @@
         - name: Borrar el contenido de un dispositivo macOS
           href: device-erase.md
         - name: Dispositivos móviles de control remoto
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Restablecimiento del PIN de Windows 10
           href: device-windows-pin-reset.md
         - name: Sincronización del dispositivo
