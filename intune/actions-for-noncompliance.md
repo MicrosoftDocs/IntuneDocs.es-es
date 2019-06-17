@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373704"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819910"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatización del correo electrónico y adición de acciones para dispositivos no compatibles en Intune
 
@@ -85,7 +85,7 @@ Cuando se crea una directiva de cumplimiento de dispositivos, Intune crea autom�
 
 Puede agregar otra acción al crear una directiva de cumplimiento, o bien actualizar una directiva existente. 
 
-1. En [Azure Portal](https://portal.azure.com), abra **Microsoft Intune** > **Cumplimiento del dispositivo**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccione **Cumplimiento de dispositivo**.
 2. Seleccione **Directivas**, elija una de las directivas y, después, seleccione **Propiedades**. 
 
     ¿Aún no tiene una directiva? Cree una directiva de [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o de otra plataforma.

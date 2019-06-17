@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040661"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804474"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Control de acceso basado en rol (RBAC) con Microsoft Intune
 
@@ -30,6 +30,8 @@ El control de acceso basado en rol (RBAC) le ayuda a administrar quién tiene ac
 Para crear, editar o asignar roles, la cuenta debe tener uno de los siguientes permisos en Azure AD:
 - **Administrador global**
 - **Administrador del servicio Intune** (también conocido como **Administrador de Intune**)
+
+Para obtener consejos y sugerencias sobre la RBAC en Intune, puede ver esta serie de cinco vídeos en los que se muestran ejemplos y tutoriales: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>Roles
 Un rol define el conjunto de permisos concedidos a los usuarios que están asignados a ese rol.
@@ -84,8 +86,8 @@ Para ver una asignación de roles, seleccione **Intune** > **Roles** > **Todos l
 
 -   **Propiedades**: nombre, descripción, rol, miembros, ámbitos y etiquetas de la asignación.
 -   **Miembros**: todos los usuarios de los grupos mostrados tienen permiso para administrar los usuarios o los dispositivos que aparecen en Ámbito (grupos).
--   **Ámbito (grupos)**: los usuarios de Miembros pueden administrar todos los usuarios o dispositivos de estos grupos.
--   **[Ámbito (etiquetas)](scope-tags.md)**: los usuarios de Miembros pueden ver los recursos que tienen las mismas etiquetas de ámbito.
+-   **Ámbito (grupos)** : los usuarios de Miembros pueden administrar todos los usuarios o dispositivos de estos grupos.
+-   **[Ámbito (etiquetas)](scope-tags.md)** : los usuarios de Miembros pueden ver los recursos que tienen las mismas etiquetas de ámbito.
 
 ### <a name="multiple-role-assignments"></a>Múltiples asignaciones de roles
 Si un usuario tiene varias asignaciones de roles, los permisos de estas asignaciones de roles se amplían a diferentes objetos, como se indica a continuación:

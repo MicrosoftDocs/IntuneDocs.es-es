@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454061"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749813"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configuración y uso de certificados PKCS con Intune
 
@@ -249,12 +249,17 @@ Se publican actualizaciones para los dos conectores de certificados con regulari
 
 El *conector de certificados PFX para Microsoft Intune* [admite actualizaciones automáticas](#requirements), mientras que *Intune Certificate Connector* se actualiza de forma manual.
 
-### <a name="may-6-2019"></a>6 de mayo de 2019
+### <a name="may-17-2019"></a>17 de mayo de 2019  
+- **Conector de certificados PFX para Microsoft Intune: versión 6.1905.0.404**  
+  Cambios de esta versión:  
+  - Se ha corregido un problema por el que los certificados PFX existentes se siguen procesando, lo que provoca que el conector deje de procesar solicitudes nuevas. 
+
+### <a name="may-6-2019"></a>6 de mayo de 2019  
 - **Conector de certificados PFX para Microsoft Intune: versión 6.1905.0.402**  
   Cambios de esta versión:  
   - El intervalo de sondeo para el conector se ha reducido de 5 minutos a 30 segundos.
  
-### <a name="april-2-2019"></a>2 de abril de 2019
+### <a name="april-2-2019"></a>2 de abril de 2019  
 - **Intune Certificate Connector: versión 6.1904.1.0**  
   Cambios de esta versión:  
   - Se ha corregido un problema que podría producir que el conector no se inscriba en Intune después de iniciar sesión en el conector con una cuenta de administrador global.  

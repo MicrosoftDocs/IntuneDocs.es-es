@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043822"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804708"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -97,8 +97,7 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
-1.  Inicie sesión en el [Portal de Azure](https://portal.azure.com/).
-2.  Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
 4.  En el panel de aplicaciones **Agregar**, seleccione **Aplicación Windows (Win32)** en la lista desplegable.
 
@@ -163,10 +162,10 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
 2.  En el panel **Agregar una regla de requisitos**, configure la siguiente información. Algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Arquitectura del sistema operativo**: elija las arquitecturas necesarias para instalar la aplicación.
     - **Versión mínima del sistema operativo**: seleccione el sistema operativo necesario para instalar la aplicación.
-    - **Espacio en disco necesario (MB)**: también puede agregar el espacio libre en disco necesario en la unidad del sistema para instalar la aplicación.
-    - **Memoria física requerida (MB)**: también puede agregar la memoria física (RAM) necesaria para instalar la aplicación.
+    - **Espacio en disco necesario (MB)** : también puede agregar el espacio libre en disco necesario en la unidad del sistema para instalar la aplicación.
+    - **Memoria física requerida (MB)** : también puede agregar la memoria física (RAM) necesaria para instalar la aplicación.
     - **Número mínimo de procesadores lógicos necesarios**: también puede agregar el número mínimo de procesadores lógicos necesarios para instalar la aplicación.
-    - **Velocidad de CPU mínima requerida (MHz)**: opcionalmente, puede agregar la velocidad de CPU mínima necesaria para instalar la aplicación.
+    - **Velocidad de CPU mínima requerida (MHz)** : opcionalmente, puede agregar la velocidad de CPU mínima necesaria para instalar la aplicación.
 
 3. Haga clic en **Agregar** para mostrar la hoja **Agregar una regla de requisitos** y configurar las reglas de requisitos adicionales. Seleccione el **Tipo de requisito** para elegir el tipo de regla que se va a utilizar para determinar cómo se valida un requisito. Las reglas de requisitos se pueden basar en la información del sistema de archivos, los valores del Registro o los scripts de PowerShell. 
     - **Archivo**: cuando se elige **Archivo** como **Tipo de requisito**, la regla de requisitos debe detectar un archivo o carpeta, fecha, versión o tamaño. 
@@ -342,12 +341,50 @@ Normalmente los registros de agente en el equipo cliente se encuentran en `C:\Pr
 > *C:\Archivos de programa\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-Para obtener más información sobre la solución de problemas de aplicaciones Win32, consulte [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting) (Solución de problemas de instalación de aplicaciones Win32).
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>Detección de la versión del archivo de la aplicación Win32 mediante PowerShell
 
-### <a name="troubleshooting-areas-to-consider"></a>Áreas de la solución de problemas para tener en cuenta
+Si tiene problemas para detectar la versión del archivo de la aplicación Win32, considere la posibilidad de usar o modificar el siguiente comando de PowerShell:
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+En el comando de PowerShell anterior, reemplace la cadena `<path to binary file>` con la ruta de acceso al archivo de la aplicación Win32. Una ruta de acceso de ejemplo sería similar a la siguiente:<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+Además, reemplace la cadena `<file version of successfully detected file>` por la versión del archivo que deba detectar. Una cadena de ejemplo de la versión de archivo sería similar a la siguiente:<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+Si necesita obtener la información de versión de la aplicación Win32, puede usar el siguiente comando de PowerShell:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+En el comando de PowerShell anterior, reemplace `<path to binary file>` por la ruta de acceso del archivo.
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>Otras áreas de la solución de problemas para tener en cuenta
 - Compruebe la orientación para asegurarse de que el agente está instalado en el dispositivo. Si una aplicación Win32 o PowerShell se orientan a un grupo, se creará una directiva de instalación del agente para el grupo de seguridad.
 - Compruebe la versión del sistema operativo: Windows 10 1607 y versiones posteriores.  
 - Compruebe que Windows 10 SKU, Windows 10 S o las versiones de Windows que se ejecutan con el modo S habilitado no admiten la instalación de MSI.
+
+Para obtener más información sobre la solución de problemas de aplicaciones Win32, consulte [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting) (Solución de problemas de instalación de aplicaciones Win32).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

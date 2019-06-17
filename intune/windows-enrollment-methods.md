@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: c3f5f3b39efd33e8dbd3dd84f9a5f2abaf347216
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046706"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819583"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de inscripción de Intune para dispositivos Windows
 
@@ -49,8 +49,8 @@ Los administradores pueden configurar los siguientes métodos de inscripción qu
 
 - La [Unión a Azure AD híbrido](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) permite a los administradores configurar la directiva de grupo de Active Directory para inscribir automáticamente los dispositivos que están unidos a Azure AD híbrido. 
 - La [Administración conjunta de Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) permite a los administradores inscribir los dispositivos administrados por Configuration Manager en Intune para obtener los beneficios de Intune y Configuration Manager. 
-- El [Administrador de inscripciones de dispositivos](device-enrollment-manager-enroll.md) (DEM) es una cuenta de servicio especial. Las cuentas de DEM tienen permisos que habilitan a los usuarios autorizados a inscribir y administrar varios dispositivos corporativos. Estos tipos de dispositivos son buenos para aplicaciones de punto de venta o de utilidad, por ejemplo, pero inadecuados para usuarios que necesitan acceso al correo electrónico o a los recursos de empresa. Además, este método no permite el uso de características como el acceso condicional. 
-- La [inscripción masiva](windows-bulk-enroll.md) permite que un usuario autorizado una grandes cantidades de nuevos dispositivos corporativos a Azure Active Directory e Intune. Es necesario crear un paquete de aprovisionamiento con la aplicación Diseñador de configuración de Windows (WCD). Después, mediante el uso de un medio USB durante la experiencia inicial de configuración rápida de Windows o desde un PC Windows existente, debe instalar el paquete de aprovisionamiento para inscribir automáticamente los dispositivos en Intune. 
+- El [Administrador de inscripciones de dispositivos](device-enrollment-manager-enroll.md) (DEM) es una cuenta de servicio especial. Las cuentas de DEM tienen permisos que habilitan a los usuarios autorizados a inscribir y administrar varios dispositivos corporativos. Estos tipos de dispositivos son buenos para aplicaciones de punto de venta o de utilidad, por ejemplo, pero inadecuados para usuarios que necesitan acceso al correo electrónico o a los recursos de empresa. Este método no permite el uso de características como el acceso condicional. 
+- La [inscripción masiva](windows-bulk-enroll.md) permite que un usuario autorizado una grandes cantidades de nuevos dispositivos corporativos a Azure Active Directory e Intune. Es necesario crear un paquete de aprovisionamiento con la aplicación Diseñador de configuración de Windows (WCD). Después, mediante el uso de un medio USB durante la experiencia inicial de configuración rápida de Windows o desde un PC Windows existente, debe instalar el paquete de aprovisionamiento para inscribir automáticamente los dispositivos en Intune. Este método no permite el uso del acceso condicional. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

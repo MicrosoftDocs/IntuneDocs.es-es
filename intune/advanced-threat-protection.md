@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374076"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819873"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Aplicación del cumplimiento de ATP de Windows Defender con acceso condicional en Intune
 
@@ -52,8 +52,7 @@ Para usar ATP con Intune, asegúrese de que tiene lo siguientes configurado y li
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Habilitación de ATP de Windows Defender en Intune
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Seleccione **Cumplimiento del dispositivo** > **ATP de Windows Defender** > **Abrir el Centro de seguridad de Windows Defender**.
 
     ![Seleccionar para abrir el Centro de seguridad de Windows Defender](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ La directiva de acceso condicional bloquea el acceso a los recursos *s i* el dis
 > [!TIP]  
 > Acceso condicional es una tecnología de Azure Active Directory (Azure AD). El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
 
-1. En [Azure Portal](https://portal.azure.com), elija **Intune** > **Acceso condicional** > **Nueva directiva**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccione **Acceso condicional** > **Nueva directiva**.
 2. En **Nombre**, escriba un nombre de directiva y seleccione **Usuarios y grupos**. Utilice las opciones Incluir o Excluir para agregar los grupos para la directiva y seleccione **Listo**.
 3. Seleccione **Aplicaciones en la nube** y elija las aplicaciones que desea proteger. Por ejemplo, elija **Seleccionar aplicaciones** y seleccione **Office 365 SharePoint Online** y **Office 365 Exchange Online**.
 
