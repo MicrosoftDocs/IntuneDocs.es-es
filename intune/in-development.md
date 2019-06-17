@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: HT
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744302"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031652"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>En desarrollo para Microsoft Intune: junio de 2019
 
@@ -51,20 +51,17 @@ Para ayudarle con la preparación y planeación, en esta página se enumeran las
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Los usuarios del dispositivo pueden ver todas las aplicaciones administradas que han instalado o han intentado instalar <!-- 2352913 -->
 Portal de empresa para Windows va a mostrar una lista de todas las aplicaciones administradas (tanto las requeridas como las disponibles) que están instaladas en el dispositivo de un usuario. Los usuarios podrán ver las instalaciones de aplicaciones intentadas y pendientes, así como sus estados actuales. Si su organización no hace que las aplicaciones sean obligatorias o estén disponibles, los usuarios verán un mensaje en el que se explica que no se ha instalado ninguna aplicación de empresa. Los usuarios también podrán ordenar o filtrar sus aplicaciones por estado de instalación.
 
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Notificación de aplicaciones de Google Play disponibles para perfiles de trabajo de Android <!-- 3041956 -->
-En las instalaciones de aplicaciones disponibles en dispositivos de perfil de trabajo de Android, va a poder ver el estado de instalación de la aplicación, así como la versión instalada de aplicaciones administradas de Google Play. Para obtener más información, vea [Supervisión de las directivas de protección de aplicaciones](app-protection-policies-monitor.md), [Administrar dispositivos de perfil de trabajo Android con Intune](android-enterprise-overview.md) y [Tipo de aplicación de Google Play administrado](apps-add-android-for-work.md#managed-google-play-app-type).
-
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Configuración del explorador que se puede vincular a datos organizativos <!-- 3145939 -->
 Las directivas de protección de aplicaciones (APP) de Intune en dispositivos iOS y Android van a permitir transferir vínculos web Org a un explorador determinado más allá de Intune Managed Browser o Microsoft Edge.  Consulte [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md) para obtener más información sobre APP.
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>Página Aplicaciones instaladas en el sitio web Portal de empresa  <!-- 4224326 -->
-El [sitio web Portal de empresa](https://portal.manage.microsoft.com/) va a incluir una nueva página para mostrar a los usuarios todas las aplicaciones que se han instalado en el dispositivo. Esta lista incluye las aplicaciones disponibles y las requeridas por la organización. Desde esta página, los usuarios van a poder ver los estados de instalación y requisitos de las aplicaciones del dispositivo. Para obtener más información sobre el sitio web Portal de empresa, vea [Usar el sitio web del Portal de empresa de Intune](/intune-user-help/using-the-intune-company-portal-website.md) y [Configuración de la aplicación Portal de empresa de Microsoft Intune](company-portal-app.md).
+El [sitio web Portal de empresa](https://portal.manage.microsoft.com/) va a incluir una nueva página para mostrar a los usuarios todas las aplicaciones que se han instalado en el dispositivo. Esta lista incluye las aplicaciones disponibles y las requeridas por la organización. Desde esta página, los usuarios van a poder ver los estados de instalación y requisitos de las aplicaciones del dispositivo. Para obtener más información sobre el sitio web Portal de empresa, vea [Usar el sitio web del Portal de empresa de Intune](/intune-user-help/using-the-intune-company-portal-website) y [Configuración de la aplicación Portal de empresa de Microsoft Intune](company-portal-app.md).
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>Llamada a operaciones de lectura de Graph API desde una aplicación sin credenciales de usuario <!-- 4655885 -->
 Las aplicaciones van a poder llamar a operaciones de lectura de Graph API de Intune con la identidad de la aplicación y sin credenciales de usuario. Para obtener más información, vea [Obtener acceso sin un usuario](https://docs.microsoft.com/graph/auth-v2-service).
 
 <!-- ***********************************************-->
-### <a name="device-configuration"></a>Configuración de los dispositivos
+### <a name="device-configuration"></a>Configuración del dispositivo
 
 
 #### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>Compatibilidad con perfiles VPN de IKEv2 para iOS <!-- 1943438 -->
@@ -163,6 +160,6 @@ Puede ver el nivel de revisión de seguridad de dispositivos Android. Para ello,
 [!INCLUDE [Intune notices](./includes/intune-notices.md)]
 
 ### <a name="see-also"></a>Consulte también
-Consulte [Novedades de Microsoft Intune](whats-new.md) para obtener más información sobre los desarrollos recientes.
+Consulte [Novedades de Microsoft Intune](whats-new.md) para más información sobre los desarrollos recientes.
 
 
