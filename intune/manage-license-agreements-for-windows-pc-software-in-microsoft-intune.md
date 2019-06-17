@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046948"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031662"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Administrar contratos de licencia de software de equipos Windows en Microsoft Intune
 
@@ -53,7 +53,7 @@ Asimismo, puede generar informes que muestran recuentos de instalaciones y de li
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Agregar contratos de licencias por volumen de Microsoft
 Los contratos de licencias por volumen de Intune proporcionan información de licencias del software adquirido a través de contratos de licencias por volumen de Microsoft. Puede agregar contratos de licencias por volumen de Microsoft a Intune mediante pares coincidentes de números de contrato. Los números de autorización o contrato deben coincidir con los números de inscripción o licencia correctos. Los pares de números de contrato se obtienen al adquirir los contratos de licencia del [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-1.  En la [consola de administrador de Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), elija **Licencias**.
+1.  En la [consola de administrador de Microsoft Intune](https://admin.manage.microsoft.com/), elija **Licencias**.
 
 2.  En la página **Agregar contratos** , en **Elegir tipo de contrato**, seleccione **Contrato de licencias por volumen**.
 
@@ -138,7 +138,7 @@ También puede agregar otros tipos de contratos de licencias a Intune, además d
 
 ### <a name="to-add-other-software-agreements"></a>Para agregar otros contratos de software
 
-1.  En la [consola de administrador de Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), elija **Licencias**.
+1.  En la [consola de administrador de Microsoft Intune](https://admin.manage.microsoft.com/), elija **Licencias**.
 
 2.  Elija **Agregar contratos** en la sección **Otros contratos de licencias de software**.
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "58069330"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804432"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta del Código Abierto de Microsoft
 
@@ -20,24 +20,24 @@ Ha encontrado uno de los repositorios de GitHub que contiene el origen del conte
 
 * **Cree una cuenta de GitHub**: el registro en [GitHub.com](https://www.github.com) es gratuito.
 
-* **Utilice el explorador**: hay dos opciones: 
+* **Use el explorador**: hay dos opciones: 
 
-    **Opción 1: Editar directamente desde docs.microsoft.com**  
-    1. Vaya al tema, como [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
-    2. Seleccione **editar** (parte superior derecha). Esto muestra el archivo de markdown en el repositorio de GitHub.
-    3. Seleccione el icono de lápiz. Cuando mantenga el mouse sobre el icono de lápiz, verá el **editar este archivo** información sobre herramientas. 
-    4. Realice los cambios y, a continuación, **confirmación** los cambios. 
+    **Opción 1: editar directamente desde docs.microsoft.com**  
+    1. Vaya al tema, como [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
+    2. Seleccione **Editar**, en la parte superior derecha. Esto muestra el archivo Markdown en el repositorio de GitHub.
+    3. Seleccione el icono de lápiz. Al mantener el mouse sobre el icono de lápiz, se ve la información sobre herramientas **Editar este archivo**. 
+    4. Realice los cambios y, luego, **confírmelos**. 
     5. Cree la solicitud de incorporación de cambios.
     
-    **Opción 2: Busque el artículo en el repositorio y actualizar**  
+    **Opción 2: buscar el artículo en este repositorio y actualizarlo**  
     1.  La mayoría de los temas están en `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. En esta carpeta, busque el nombre del tema, como `troubleshoot-policies-in-microsoft-intune`. 
-    2. Seleccione el vínculo y haga clic en el icono de lápiz. Cuando mantenga el mouse sobre el icono de lápiz, verá el **editar este archivo** información sobre herramientas. 
-    3. Realice los cambios y, a continuación, **confirmación** los cambios. 
+    2. Seleccione el vínculo y haga clic en el icono de lápiz. Al mantener el mouse sobre el icono de lápiz, se ve la información sobre herramientas **Editar este archivo**. 
+    3. Realice los cambios y, luego, **confírmelos**. 
     4. Cree la solicitud de incorporación de cambios. 
 
   Una vez realizada una actualización, es posible que se le pida que firme un contrato de licencia. Se trata de una tarea que se realiza una sola vez. Así, no tendrá que volver a firmar ninguna actualización futura realizada con su nombre de usuario de GitHub. 
   
-  El valor de la `author` metadatos (en la parte superior de cada tema) enumeran el autor de GitHub. En el `troubleshoot-policies-in-microsoft-intune` ejemplo, verá `MandiOhlinger`. En la solicitud de extracción, también puede mencionar (@*authorValue*) al autor si le gusta.
+  El valor de los metadatos `author`, en la parte superior de cada tema, indica el autor de GitHub. En el ejemplo `troubleshoot-policies-in-microsoft-intune`, aparece `MandiOhlinger`. Si quiere, en la solicitud de incorporación de cambios también puede mencionar (@*authorValue*) al autor.
   
 * **Empleados de MSFT**: después de crear una cuenta de GitHub, vincúlela a la dirección de correo electrónico de Microsoft. Una vez vinculada la cuenta, no es necesario firmar ningún contrato de licencia para realizar una actualización. Pasos:
 

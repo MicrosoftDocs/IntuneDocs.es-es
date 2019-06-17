@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: HT
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373511"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749914"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configuración de la línea de base de Advanced Threat Protection de Microsoft Defender
 
-Vea la configuración de la línea de base de Advanced Threat Protection de Microsoft Defender (anteriormente Advanced Threat Protection de Windows Defender) compatible con Microsoft Intune. Los valores predeterminados de este artículo representan la configuración de la línea de base predeterminada para Intune. Estos valores predeterminados representan la configuración recomendada para Intune y podrían no coincidir con los valores predeterminados de Windows.
+Vea la configuración de la línea de base de Advanced Threat Protection de Microsoft Defender (anteriormente Advanced Threat Protection de Windows Defender) compatible con Microsoft Intune. Los valores predeterminados de línea de base de Advanced Threat Protection (ATP) representan la configuración recomendada para ATP y podrían no coincidir con los valores predeterminados para otras líneas de base de seguridad.  
 
   La línea de base de Protección contra amenazas avanzada de Microsoft Defender está disponible cuando el entorno cumple con los requisitos previos para usar [Protección contra amenazas avanzada de Microsoft Defender](advanced-threat-protection.md#prerequisites).
 
@@ -33,7 +33,7 @@ Vea la configuración de la línea de base de Advanced Threat Protection de Micr
 
 
 > [!NOTE]  
-> La configuración de la línea de base de seguridad de Advanced Threat Protection de Microsoft Defender está en **versión preliminar**. En la versión preliminar, la lista de valores de configuración disponibles, y el orden en el que este contenido presenta esos valores, podría no coincidir con lo que está disponible en el portal. 
+> La configuración de línea de base de ATP está en **versión preliminar**. En la versión preliminar, la lista de valores de configuración disponibles, y el orden en el que este contenido presenta esos valores, podría no coincidir con lo que está disponible en el portal.  
 >
 > Cuando la configuración de línea de base esté fuera de la versión preliminar, este contenido se actualizará para reflejar una lista actual de valores de configuración de línea de base de seguridad que sea compatible con Intune.
 

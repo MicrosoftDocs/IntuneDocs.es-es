@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e39766bc8a880c104bd5af9ff530144e2b5d2beb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041683"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044950"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
 
@@ -45,16 +45,16 @@ Intune admite la administración de PC con Windows como equipos con el cliente d
 **Hardware**:  
 Estos son los requisitos mínimos de hardware para instalar el software cliente de Intune:
 
-|Requisito|Más información|
+|Requisito|Información adicional|
 |---------------|--------------------|
-|Network (Red)|El cliente requiere que el equipo tenga conectividad a Internet.|
+|Red|El cliente requiere que el equipo tenga conectividad a Internet.|
 |Procesador y memoria|Consulte los requisitos de RAM y procesador para el sistema operativo del equipo.|
 |Espacio en disco|200 MB de espacio disponible en el disco antes de que se instale el software cliente.|
 
 **Software**:  
 Estos son los requisitos de software para instalar el software cliente:
 
-|Requisito|Más información|
+|Requisito|Información adicional|
 |---------------|--------------------|
 |Sistema operativo | Dispositivo Windows con Windows 7 SP1 y Windows 8.1 o posterior. </br></br>**No se admiten las versiones Home Edition.**|
 |Permisos administrativos|La cuenta que instala el software cliente debe tener permisos de administrador local en ese dispositivo.|
@@ -70,16 +70,16 @@ Como administrador de Intune, puede hacer que el cliente de software de Intune e
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Características de administración de equipos con el software cliente de Intune
 En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft Intune, lo que proporciona un mayor número de capacidades. En cambio, también puede administrar los PC mediante el cliente de software de Intune, que proporciona las siguientes características:
 
--   **[Administración de actualizaciones de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)**: puede mantener actualizados los equipos y decidir cuándo se aplican las actualizaciones.
+-   **[Administración de actualizaciones de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** : puede mantener actualizados los equipos y decidir cuándo se aplican las actualizaciones.
 
--   **[Directiva de Firewall de Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)**: ayuda a asegurarse de que ningún equipo que se use en la empresa tenga un Firewall de Windows inactivo o mal configurado.
+-   **[Directiva de Firewall de Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** : ayuda a asegurarse de que ningún equipo que se use en la empresa tenga un Firewall de Windows inactivo o mal configurado.
 
--   **[Protección antimalware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)**: Intune incluye Endpoint Protection, que ayuda a proteger los equipos contra el malware.
+-   **[Protección antimalware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** : Intune incluye Endpoint Protection, que ayuda a proteger los equipos contra el malware.
 
--   **[Asistencia remota](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)**: Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto incluida en Intune (requiere el software TeamViewer).
+-   **[Asistencia remota](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** : Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto incluida en Intune (requiere el software TeamViewer).
 
--   **[Administración de licencias de software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)**: realice el seguimiento del número de licencias de software disponibles y cuántas de estas se usan.
--   **[Implementación de aplicaciones](add-apps-for-windows-pcs-in-microsoft-intune.md)**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los PC se administran con el cliente de software.
+-   **[Administración de licencias de software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** : realice el seguimiento del número de licencias de software disponibles y cuántas de estas se usan.
+-   **[Implementación de aplicaciones](add-apps-for-windows-pcs-in-microsoft-intune.md)** : implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los PC se administran con el cliente de software.
 
 <!-- - **Compliance settings reporting** -->
 

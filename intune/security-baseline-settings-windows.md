@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045053"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749926"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de Windows para Intune  
 
-Vea la [configuración de línea de base de seguridad de Windows](security-baselines.md) admitida por Microsoft Intune.  
+Vea la [configuración de línea de base de seguridad de Windows](security-baselines.md) admitida por Microsoft Intune. Los valores predeterminados de línea de base de Windows representan la configuración recomendada para Windows y podrían no coincidir con los valores predeterminados de otras líneas de base de seguridad.  
 
 > [!NOTE]  
-> La configuración de línea de base de seguridad de Windows está en versión preliminar. En la versión preliminar, la lista de valores de configuración disponibles, y el orden en el que este contenido presenta esos valores, variará según lo que esté disponible en el portal.  
+> La configuración de línea de base de seguridad de Windows está en **versión preliminar**. En la versión preliminar, la lista de valores de configuración disponibles, y el orden en el que este contenido presenta esos valores, variará según lo que esté disponible en el portal.  
 >  
 > Cuando la configuración de línea de base está fuera de la versión preliminar, este contenido se actualiza con la lista de valores de configuración de línea de base de seguridad que no es versión preliminar que sea compatible con Intune.  
 

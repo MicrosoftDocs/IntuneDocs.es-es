@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MTE75
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043794"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506868"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -81,11 +81,11 @@ Se recomienda que se suscriba a una cuenta de GitHub que pueda usar para bifurca
 
 Necesitará una de las siguientes guías para desarrolladores que le ayudará a integrar el SDK de aplicaciones de Intune en la aplicación:
 
-* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para iOS](app-sdk-ios.md)**: este documento le guiará paso a paso para habilitar la aplicación iOS nativa con el SDK para aplicaciones de Intune.
+* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para iOS](app-sdk-ios.md)** : este documento le guiará paso a paso para habilitar la aplicación iOS nativa con el SDK para aplicaciones de Intune.
 
-* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para Android](app-sdk-android.md)**: este documento le guiará paso a paso para habilitar la aplicación Android nativa con el SDK para aplicaciones de Intune.
+* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para Android](app-sdk-android.md)** : este documento le guiará paso a paso para habilitar la aplicación Android nativa con el SDK para aplicaciones de Intune.
 
-* **[Guía de Xamarin Bindings del SDK para aplicaciones de Intune](app-sdk-xamarin.md)**: este documento le ayudará a crear aplicaciones iOS y Android con Xamarin para las directivas de protección de aplicaciones de Intune.
+* **[Guía de Xamarin Bindings del SDK para aplicaciones de Intune](app-sdk-xamarin.md)** : este documento le ayudará a crear aplicaciones iOS y Android con Xamarin para las directivas de protección de aplicaciones de Intune.
 
 
 
@@ -174,15 +174,12 @@ Si la aplicación usa su propia configuración personalizada de Azure Active Dir
 Una vez que haya registrado la aplicación dentro de un inquilino de Azure y se muestre en **Todas las aplicaciones**, debe asignar a la aplicación acceso al servicio Intune App Protection (anteriormente conocido como servicio MAM). En Azure Portal:
 
 1.  Vaya a la hoja **Azure Active Directory**.
-2.  Seleccione la configuración **Registros de aplicaciones** para la aplicación.
-3.  En **Configuración**, bajo el encabezado **Acceso de API**, seleccione **Permiso necesario**. 
-4.  Haga clic en **+ Agregar**.
-5.  Haga clic en **Seleccionar una API**. 
-6.  En el cuadro de búsqueda, escriba **Microsoft Mobile Application Management**.
-7.  Seleccione **Administración de aplicaciones móviles de Microsoft** en la lista de API y haga clic en Seleccionar.
-8.  Seleccione **Read and Write the User’s App Management Data** (Leer y escribir datos de administración de aplicaciones del usuario).
-9.  Haga clic en **Listo**.
-10. Haga clic en **Conceder permisos** y después haga clic en **Sí**. 
+2.  En **Registros de aplicaciones**, vaya a la lista configurada para la aplicación.
+3.  Haga clic en **+ Agregar un permiso**.
+4.  Haga clic en **API usadas en mi organización**. 
+5.  En el cuadro de búsqueda, escriba **Microsoft Mobile Application Management**.
+6.  En **Permisos delegados**, active la casilla **DeviceManagementManagedApps.ReadWrite: Read and Write the User's App Management Data** (DeviceManagementManagedApps.ReadWrite: Leer y escribir los datos de administración de aplicaciones del usuario)*.
+7. Haga clic en **Agregar permisos**.
 
 ### <a name="badge-your-app-optional"></a>Identificar la aplicación (opcional)
 

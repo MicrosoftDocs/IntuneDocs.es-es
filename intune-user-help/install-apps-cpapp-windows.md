@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56742540"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828952"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar y compartir aplicaciones en el dispositivo
 Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa para Windows.
@@ -71,10 +71,14 @@ Una organización selecciona las aplicaciones que resultan útiles y adecuadas p
 
 Las aplicaciones también están disponibles para los usuarios según el tipo de dispositivo. Por ejemplo, si un usuario usa la aplicación Portal de empresa para Windows, tiene acceso a aplicaciones de Windows, pero no de iOS.  
 
+## <a name="required-apps"></a>Required apps  
+
+Su organización podría implementar algunas aplicaciones directamente en el dispositivo y marcarlos como **necesario**. Estas aplicaciones se instalarán automáticamente automáticamente sin intervención.
+
 ## <a name="request-an-app-for-work-or-school"></a>Solicitud de una aplicación para el ámbito laboral o académico  
 Si necesita una aplicación, pero no la ve en el Portal de empresa, solicítela. Vea los detalles de contacto del **departamento de soporte técnico** en la aplicación Portal de empresa, en la página Ayuda y soporte técnico. La misma información de contacto aparece en el [sitio web de Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    
 
   ![Aplicación Portal de empresa para Windows 10, página Ayuda y soporte técnico, con los detalles del departamento de soporte técnico resaltados. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
