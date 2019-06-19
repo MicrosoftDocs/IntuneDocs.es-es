@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044669"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043905"
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acceso condicional
 
-Puede proteger el acceso a servicios de Office 365 como Exchange Online, SharePoint Online, Skype Empresarial Online, Exchange local y otros servicios mediante el acceso condicional de Intune. Esta característica le permite asegurarse de que el acceso a los recursos de la empresa está restringido a los dispositivos que están inscritos en Intune y cumplen con las reglas de acceso condicional que estableció en la consola de administración de Intune o en Azure Active Directory. En este artículo se describe qué hacer cuando los usuarios no pueden obtener acceso a los recursos protegidos con el acceso condicional o cuando los usuarios pueden acceder a recursos protegidos, pero se debería bloquear el acceso.
+Puede proteger el acceso a servicios de Office 365 como Exchange Online, SharePoint Online, Skype Empresarial Online, Exchange local y otros servicios mediante el acceso condicional de Intune. Esta característica le permite asegurarse de que el acceso a los recursos de la empresa está restringido a los dispositivos que están inscritos en Intune y cumplen con las reglas de acceso condicional que estableció en la consola de administración de Intune o en Azure Active Directory. En este artículo se describe qué hacer cuando los usuarios no pueden obtener acceso a los recursos protegidos con el acceso condicional o cuando los usuarios pueden acceder a recursos protegidos, pero se debería bloquear el acceso.
 
 ## <a name="requirements-for-conditional-access"></a>Requisitos del acceso condicional
 
@@ -64,7 +64,7 @@ Puede ver si estas condiciones se cumplen en los dispositivos en Azure Portal y 
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Los dispositivos no son compatibles pero no se bloquean a los usuarios
 
-- Para equipos Windows, el acceso condicional sólo bloquea la aplicación de correo electrónico nativa, Office 2013 con autenticación moderna u Office 2016. El bloqueo de las versiones anteriores de Outlook o todas las aplicaciones de correo electrónico en los equipos de Windows requiere configuraciones de Servicios de federación de Active Directory (AD FS) y registro de dispositivo de AAD tal como se indicó en [Procedimientos para configurar SharePoint Online y Exchange Online para el acceso condicional de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
+- Para equipos Windows, el acceso condicional solo bloquea la aplicación de correo electrónico nativa, Office 2013 con autenticación moderna u Office 2016. El bloqueo de las versiones anteriores de Outlook o todas las aplicaciones de correo electrónico en los equipos de Windows requiere configuraciones de Servicios de federación de Active Directory (AD FS) y registro de dispositivo de AAD, tal como se indicó en [Procedimientos para configurar SharePoint Online y Exchange Online para el acceso condicional de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - Si el dispositivo se borra selectivamente o se retira de Intune, podría continuar teniendo acceso durante varias horas después de la retirada. Esto es se debe a que Exchange almacena en caché los derechos de acceso durante 6 horas. Considere otras formas de proteger los datos en dispositivos retirados en este escenario.
 - Los dispositivos de Surface Hub admiten el acceso condicional, pero debe implementar la directiva de cumplimiento a grupos de dispositivos (no a grupos de usuarios) para la evaluación correcta.
 - Compruebe las asignaciones de las directivas de cumplimiento y las directivas de acceso condicional. Si un usuario no está en el grupo al que se asignan las directivas, o está en un grupo que se está excluyendo, el usuario no se bloqueará. Solo se comprueba el cumplimiento de los dispositivos de los usuarios de un grupo asignado.

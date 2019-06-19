@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354218"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041126"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -430,9 +430,9 @@ Estas opciones de configuración usan [DeviceLock policy CSP](https://docs.micro
     > [!IMPORTANT]
     > Cuando el requisito de contraseña se cambia a un escritorio de Windows, los usuarios se ven afectados la próxima vez que inician sesión, porque es entonces cuando el dispositivo pasa de inactivo a activo. Los usuarios con contraseñas que cumplan el requisito de todos modos tendrán que cambiarlas.
     
-  - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba el número de errores de autenticación permitido antes de que se borre el dispositivo, de 1 a 11. `0` (cero) puede deshabilitar la funcionalidad de borrado del dispositivo.
+  - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba el número de errores de autenticación permitido antes de que se borre el dispositivo, hasta 11. El número válido que especifique depende de la edición. Para obtener información detallada, vea [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) (CSP de DeviceLock/MaxDevicePasswordFailedAttempts). `0` (cero) puede deshabilitar la funcionalidad de borrado del dispositivo.
 
-    Esta opción tiene un impacto diferente en función de la edición. Para obtener información detallada, vea [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) (CSP de DeviceLock/MaxDevicePasswordFailedAttempts).
+    Esta opción también tiene un impacto diferente en función de la edición. Para obtener información detallada de esta configuración, vea [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) (CSP de DeviceLock/MaxDevicePasswordFailedAttempts).
 
   - **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: especifique el periodo de tiempo que un dispositivo debe estar inactivo antes de que se bloquee la pantalla.
   - **Caducidad de la contraseña (días)** : especifique el periodo de tiempo en días tras el cual debe cambiarse la contraseña del dispositivo, de 1 a 365. Por ejemplo, escriba `90` para que la contraseña caduque pasados 90 días.
@@ -590,7 +590,7 @@ Haga clic en **Aceptar** para guardar los cambios.
 
 Haga clic en **Aceptar** para guardar los cambios.
 
-## <a name="search"></a>Buscar
+## <a name="search"></a>Búsqueda
 
 Estas opciones de configuración usan [search policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) (CSP de directiva de búsqueda), que también indica las ediciones de Windows compatibles. 
 
@@ -602,7 +602,7 @@ Estas opciones de configuración usan [search policy CSP](https://docs.microsoft
 
 Haga clic en **Aceptar** para guardar los cambios.
 
-## <a name="start"></a>Start
+## <a name="start"></a>Inicio
 
 Estas opciones de configuración usan [start policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start) (CSP de directiva de inicio), que también indica las ediciones de Windows compatibles.  
 
@@ -733,7 +733,7 @@ Estas opciones de configuración usan [defender policy CSP](https://docs.microso
 - **Examinar archivos abiertos desde carpetas de red**: **Sin configurar** (valor predeterminado) permite que Defender examine archivos en unidades de red compartidas, como los archivos a los que se accede desde una ruta de acceso UNC. **Habilitar** evita este examen. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
 - **Protección de la nube**: **Sin configurar** (valor predeterminado) permite que Microsoft Active Protection Service reciba información relativa a la actividad de malware de los dispositivos que administra. **Habilitar** bloquea esta característica.
 - **Preguntar a los usuarios antes de enviar muestras**: controla si los archivos potencialmente malintencionados que podrían requerir un análisis posterior se envían automáticamente a Microsoft. Las opciones son:
-  - **No configurado**.
+  - **Sin configurar**
   - **Preguntar siempre**
   - **Preguntar antes de enviar datos personales**
   - **No enviar datos nunca**
@@ -789,7 +789,7 @@ Haga clic en **Aceptar** para guardar los cambios.
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusiones del antivirus de Windows Defender
 
-- **Archivos y carpetas para excluir de exámenes y protección en tiempo real**: agrega uno o varios archivos y carpetas, como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluyen en los exámenes en tiempo real ni programados.
+- **Archivos y carpetas para excluir de exámenes y protección en tiempo real**: agrega uno o varios archivos y carpetas, como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluyen en ningún examen en tiempo real ni programado.
 - **Extensiones de archivo para excluir de exámenes y protección en tiempo real**: agrega una o varias extensiones de archivo, como **jpg** o **txt** a la lista de exclusiones. Los archivos con estas extensiones no se incluyen en los exámenes en tiempo real ni programados.
 - **Procesos para excluir de exámenes y protección en tiempo real**: agregar uno o varios procesos del tipo **.exe**, **.com** o **.scr** a la lista de exclusiones. Estos procesos no se incluyen en los exámenes en tiempo real ni programados.
 

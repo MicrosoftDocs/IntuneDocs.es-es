@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049600"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045534"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -45,7 +45,7 @@ El SDK para aplicaciones de Intune consta de los siguientes archivos:
 * **CHANGELOG.txt**: proporciona un registro de los cambios hechos en cada versión del SDK.
 * **THIRDPARTYNOTICES. TXT**: es un aviso de atribución que reconoce el código de terceros o de OSS que se compilará en la aplicación.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>requisitos
 
 ### <a name="android-versions"></a>Versiones de Android
 El SDK admite desde la API 19 (Android 4.4 y versiones posteriores) a la API 28 (Android 9.0) de Android.
@@ -67,7 +67,7 @@ En [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) h
 
 El SDK para aplicaciones de Intune es una biblioteca de Android estándar que no tiene dependencias externas. **Microsoft.Intune.MAM.SDK.aar** contiene tanto las interfaces necesarias para la habilitación de una directiva de protección de aplicaciones como el código necesario para interoperar con la aplicación Portal de empresa de Microsoft Intune.
 
-**Microsoft.Intune.MAM.SDK.aar** se debe especificar como una referencia a la biblioteca de Android. Para hacerlo, abra el proyecto de aplicación en Android Studio y vaya a **Archivo > Nuevo > Nuevo módulo** y seleccione **Importar paquete .JAR/.AAR**. Luego, seleccione nuestro paquete de archivos de Android Microsoft.Intune.MAM.SDK.aar para crear un módulo para nuestro .AAR. Haga clic con el botón derecho en el módulo o los módulos que contienen el código de la aplicación y vaya a **Configuración de módulo** > **pestaña Dependencias** > **icono +** > **Module dependency** (Dependencia de módulo) > seleccione el módulo AAR de SDK de MAM que acaba de crear > **Aceptar**. Esto garantizará que el módulo se compila con el SDK de MAM al crear el proyecto.
+**Microsoft.Intune.MAM.SDK.aar** se debe especificar como una referencia a la biblioteca de Android. Para hacerlo, abra el proyecto de aplicación en Android Studio y vaya a **Archivo > Nuevo > Nuevo módulo** y seleccione **Importar paquete .JAR/.AAR**. Luego, seleccione nuestro paquete de archivos de Android Microsoft.Intune.MAM.SDK.aar para crear un módulo para nuestro .AAR. Haga clic con el botón derecho en el módulo o los módulos que contienen el código de la aplicación y vaya a **Configuración de módulo** > **pestaña Dependencias** > **icono +**  > **Module dependency** (Dependencia de módulo) > seleccione el módulo AAR de SDK de MAM que acaba de crear > **Aceptar**. Esto garantizará que el módulo se compila con el SDK de MAM al crear el proyecto.
 
 Además, las bibliotecas de **Microsoft.Intune.MAM.SDK.Support.XXX.jar** contienen variantes de Intune de las bibliotecas `android.support.XXX` correspondientes. No están integradas en Microsoft.Intune.MAM.SDK.aar en caso de que una aplicación no tenga que depender de las bibliotecas de compatibilidad.
 
@@ -565,7 +565,7 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocat
 
 ## <a name="register-for-notifications-from-the-sdk"></a>Registrarse para recibir notificaciones del SDK
 
-### <a name="overview"></a>Introducción
+### <a name="overview"></a>Información general
 El SDK para aplicaciones de Intune permite que la aplicación controle el comportamiento de determinadas directivas, como la eliminación selectiva, cuando las implemente el administrador de TI. Cuando un administrador de TI implementa esta directiva, el servicio de Intune envía una notificación al SDK.
 
 La aplicación debe registrarse para recibir notificaciones del SDK mediante la creación de `MAMNotificationReceiver` y su registro mediante `MAMNotificationReceiverRegistry`. Para ello, se proporcionan el receptor y el tipo de notificación deseada en `App.onCreate`, como se ilustra en el ejemplo siguiente:
@@ -735,9 +735,9 @@ El acceso condicional (CA) es una [característica](https://docs.microsoft.com/a
 5. Una vez que la aplicación haya enviado la integración con el SDK para aplicaciones de Intune, póngase en contacto con msintuneappsdk@microsoft.com para que se agregue a la lista de aplicaciones aprobadas para el [acceso condicional basado en aplicación](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
 6. Cuando la aplicación se haya agregado a la lista aprobada, realice la validación [configurando el CA basado en aplicación](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) y asegurándose de que el inicio de sesión en la aplicación se completa correctamente.
 
-## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin la inscripción de dispositivos
+## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin inscripción de dispositivos
 
-### <a name="overview"></a>Introducción
+### <a name="overview"></a>Información general
 La directiva de protección de aplicaciones de Intune sin inscripción de dispositivos, también conocida como APP-WE o MAM-WE, permite a las aplicaciones ser administradas mediante Intune sin necesidad de que el dispositivo esté inscrito en MDM de Intune. APP-WE funciona con o sin inscripción de dispositivos. De todos modos, es necesario que Portal de empresa esté instalado en el dispositivo, pero no es necesario que el usuario inicie sesión en él e inscriba el dispositivo.
 
 > [!NOTE]
@@ -957,7 +957,7 @@ El estado de la cuenta de usuario registrado puede cambiar cuando se recibe una 
 
 ## <a name="app-ca-with-policy-assurance"></a>CA de APP con control de directivas
 
-### <a name="overview"></a>Introducción
+### <a name="overview"></a>Información general
 Con CA (acceso condicional) de APP con control de directivas, el acceso a los recursos está condicionado a la aplicación de directivas de Intune App Protection.  Para aplicarlo, AAD requiere que APP inscriba y administre la aplicación antes de conceder un token para acceder a un recurso protegido de CA de APP con control de directivas.  La aplicación debe usar el agente de ADAL para la adquisición de tokens y la instalación es igual a la descrita anteriormente en [Acceso condicional](#conditional-access)
 
 ### <a name="adal-changes"></a>Cambios en ADAL
@@ -1183,7 +1183,7 @@ La guía sobre la copia de seguridad de datos especifica un algoritmo general pa
 
 ## <a name="multi-identity-optional"></a>Varias identidades (opcional)
 
-### <a name="overview"></a>Introducción
+### <a name="overview"></a>Información general
 De forma predeterminada, el SDK para aplicaciones de Intune aplicará la directiva a la aplicación en su conjunto. Varias identidades es una característica de protección de aplicaciones de Intune opcional que se puede habilitar para permitir que se aplique una directiva en un nivel por identidad. Para ello es necesaria más participación en la aplicación que otras características de la protección de la aplicación.
 
 > [!NOTE]
@@ -1370,9 +1370,9 @@ Al método `onMAMIdentitySwitchRequired` se le llama para todos los cambios de i
 
   * Si un servicio se ejecuta en el subproceso principal, se **debe** llamar a `reportIdentitySwitchResult` de forma sincrónica o se bloqueará el subproceso de IU.
 
-  * Para la creación de **`Activity`**, se llamará a `onMAMIdentitySwitchRequired` antes que a `onMAMCreate`. Si la aplicación debe mostrar la interfaz de usuario para determinar si se permite el cambio de identidad, esa interfaz de usuario se debe mostrar mediante una actividad *diferente*.
+  * Para la creación de **`Activity`** , se llamará a `onMAMIdentitySwitchRequired` antes que a `onMAMCreate`. Si la aplicación debe mostrar la interfaz de usuario para determinar si se permite el cambio de identidad, esa interfaz de usuario se debe mostrar mediante una actividad *diferente*.
 
-  * En un elemento **`Activity`**, cuando se solicita un cambio a la identidad vacía con el motivo `RESUME_CANCELLED`, la aplicación debe modificar la actividad reanudada para mostrar datos coherentes con ese cambio de identidad.  Si esto no es posible, la aplicación debe rechazar el cambio y se pedirá al usuario que cumpla de nuevo la directiva de reanudar la identidad (por ejemplo, con la presentación de la pantalla de entrada del PIN de la aplicación).
+  * En un elemento **`Activity`** , cuando se solicita un cambio a la identidad vacía con el motivo `RESUME_CANCELLED`, la aplicación debe modificar la actividad reanudada para mostrar datos coherentes con ese cambio de identidad.  Si esto no es posible, la aplicación debe rechazar el cambio y se pedirá al usuario que cumpla de nuevo la directiva de reanudar la identidad (por ejemplo, con la presentación de la pantalla de entrada del PIN de la aplicación).
 
     > [!NOTE]
     > Una aplicación de varias identidades siempre recibirá datos de entrada de aplicaciones tanto administradas como sin administrar. Es responsabilidad de la aplicación tratar los datos de identidades administradas de forma administrada.
@@ -1626,7 +1626,7 @@ Si la aplicación proporciona datos corporativos distintos de `ParcelFileDescrip
 
 Si no hereda `MAMContentProvider` explícitamente y en su lugar permite que la herramienta de compilación realice ese cambio, puede llamar a una versión estática del mismo método: `MAMContentProvider.isProvideContentAllowed(provider, contentIdentity)`.
 
-### <a name="selective-wipe"></a>Eliminación selectiva
+### <a name="selective-wipe"></a>eliminación selectiva
 
 Si una aplicación de varias identidades se registra para la notificación `WIPE_USER_DATA`, es responsabilidad de la aplicación quitar todos los datos del usuario que se va a eliminar, incluidos todos los archivos con etiquetas de identidad que indiquen su pertenencia a dicho usuario. Si la aplicación quita datos de usuario de un archivo, pero desea dejar otros datos en el archivo, *debe* cambiar la identidad del archivo (mediante `MAMFileProtectionManager.protect` a un usuario personal o la identidad vacía). Si la directiva de cifrado está en uso, los archivos restantes que pertenezcan al usuario que se vaya a borrar no se descifrarán y la aplicación no podrá acceder a ellos tras el borrado.
 

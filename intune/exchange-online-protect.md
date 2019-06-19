@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041847"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045026"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Proteger Office 365 Exchange Online sin requerir la administración de dispositivos
 
@@ -36,7 +36,7 @@ Si decide configurar un sistema de administración de dispositivos, también pue
 2. [Obtenga información sobre el acceso condicional basado en la aplicación](app-based-conditional-access-intune.md).
 3. [Configure directivas de acceso condicional basado en la aplicación para Exchange Online](app-based-conditional-access-intune-create.md).
 4. [Bloquee las aplicaciones que no se pueden administrar](app-modern-authentication-block.md), específicamente las que no usan Azure Active Directory Authentication Library (ADAL).
-5. (Opcional) [Configure directivas de acceso condicional basado en la aplicación para SharePoint Online](app-based-conditional-access-intune-create.md). Estas directivas bloquean el acceso a los datos de la empresa desde las aplicaciones que no pueden administrarse ni protegerse. También limitan el acceso a través de SharePoint para dispositivos móviles. 
+5. [Configure directivas de acceso condicional basado en la aplicación para SharePoint Online](app-based-conditional-access-intune-create.md) (opcional). Estas directivas bloquean el acceso a los datos de la empresa desde las aplicaciones que no pueden administrarse ni protegerse. También limitan el acceso a través de SharePoint para dispositivos móviles. 
 
 ## <a name="what-to-tell-employees-and-students"></a>Qué decir a los empleados o estudiantes
 

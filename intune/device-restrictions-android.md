@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042464"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045710"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listas de configuraciones de restricciones de dispositivos Android y Samsung Knox en Intune
 
@@ -56,8 +56,8 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba el número de errores de inicio de sesión que se permiten antes de que se borre el dispositivo.
 - **Caducidad de la contraseña (días)** : escriba el número de días antes de que se deba cambiar la contraseña del dispositivo.
 - **Tipo de contraseña necesaria**: escriba el nivel requerido de complejidad de la contraseña y si se pueden usar dispositivos biométricos. Las opciones son:
-  - **Valor predeterminado de dispositivo**
-  - **Biométrico de seguridad baja**
+  - **Valor predeterminado del dispositivo**
+  - **Biométrica de seguridad baja**
   - **Al menos numérica**
   - **Complejo numérico**: no se permiten números repetidos ni consecutivos, como "1111" o "1234".<sup>1</sup>
   - **Al menos alfabética**
