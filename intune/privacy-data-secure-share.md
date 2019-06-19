@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5ede50bed3cefbcee5aaa96dfbecfe24d2bd8d9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041262"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031643"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Uso compartido y seguridad de datos en Intune
 
@@ -70,7 +70,7 @@ Para obtener más información sobre los datos compartidos con terceros determin
 
 Microsoft Intune no comparte ningún dato con System Center Configuration Manager. System Center Configuration Manager es un producto local implementado, administrado y operado directamente por el cliente. Los datos de uso y diagnóstico recopilados por Configuration Manager solo son para mejorar la experiencia de instalación, la calidad y la seguridad de las versiones futuras.
 
-Para obtener más información, vea [Diagnostics and usage data for SCCM](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md) (Diagnósticos y datos de uso para SCCM). 
+Para obtener más información, vea [Diagnostics and usage data for SCCM](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data) (Diagnósticos y datos de uso para SCCM). 
 
 
 ## <a name="next-steps"></a>Pasos siguientes
