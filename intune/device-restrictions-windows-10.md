@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041126"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234977"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -420,7 +420,8 @@ Haga clic en **Aceptar** para guardar los cambios.
 
 Estas opciones de configuración usan [DeviceLock policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) (CSP de directiva de DeviceLock), que también indica las ediciones de Windows compatibles.
 
-- **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **Sin configurar** (valor predeterminado) permite el acceso al dispositivo sin contraseña.
+- **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **Sin configurar** (valor predeterminado) permite el acceso al dispositivo sin contraseña. Se aplica únicamente a cuentas locales. Las contraseñas de cuentas de dominio permanezcan configuradas por Active Directory (AD) y Azure AD.
+
   - **Tipo de contraseña requerida**: elija el tipo de contraseña. Las opciones son:
     - **Sin configurar**: la contraseña puede incluir números y letras.
     - **Numérica**: la contraseña solo debe contener números.
@@ -430,7 +431,7 @@ Estas opciones de configuración usan [DeviceLock policy CSP](https://docs.micro
     > [!IMPORTANT]
     > Cuando el requisito de contraseña se cambia a un escritorio de Windows, los usuarios se ven afectados la próxima vez que inician sesión, porque es entonces cuando el dispositivo pasa de inactivo a activo. Los usuarios con contraseñas que cumplan el requisito de todos modos tendrán que cambiarlas.
     
-  - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba el número de errores de autenticación permitido antes de que se borre el dispositivo, hasta 11. El número válido que especifique depende de la edición. Para obtener información detallada, vea [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) (CSP de DeviceLock/MaxDevicePasswordFailedAttempts). `0` (cero) puede deshabilitar la funcionalidad de borrado del dispositivo.
+  - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba el número de errores de autenticación permitido antes de que se borre el dispositivo, hasta 11. El número válido que especifique depende de la edición. [CSP DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) se enumeran los valores admitidos. `0` (cero) puede deshabilitar la funcionalidad de borrado del dispositivo.
 
     Esta opción también tiene un impacto diferente en función de la edición. Para obtener información detallada de esta configuración, vea [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) (CSP de DeviceLock/MaxDevicePasswordFailedAttempts).
 
@@ -590,7 +591,7 @@ Haga clic en **Aceptar** para guardar los cambios.
 
 Haga clic en **Aceptar** para guardar los cambios.
 
-## <a name="search"></a>Búsqueda
+## <a name="search"></a>Buscar
 
 Estas opciones de configuración usan [search policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) (CSP de directiva de búsqueda), que también indica las ediciones de Windows compatibles. 
 
@@ -602,7 +603,7 @@ Estas opciones de configuración usan [search policy CSP](https://docs.microsoft
 
 Haga clic en **Aceptar** para guardar los cambios.
 
-## <a name="start"></a>Inicio
+## <a name="start"></a>Start
 
 Estas opciones de configuración usan [start policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start) (CSP de directiva de inicio), que también indica las ediciones de Windows compatibles.  
 
@@ -733,7 +734,7 @@ Estas opciones de configuración usan [defender policy CSP](https://docs.microso
 - **Examinar archivos abiertos desde carpetas de red**: **Sin configurar** (valor predeterminado) permite que Defender examine archivos en unidades de red compartidas, como los archivos a los que se accede desde una ruta de acceso UNC. **Habilitar** evita este examen. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
 - **Protección de la nube**: **Sin configurar** (valor predeterminado) permite que Microsoft Active Protection Service reciba información relativa a la actividad de malware de los dispositivos que administra. **Habilitar** bloquea esta característica.
 - **Preguntar a los usuarios antes de enviar muestras**: controla si los archivos potencialmente malintencionados que podrían requerir un análisis posterior se envían automáticamente a Microsoft. Las opciones son:
-  - **Sin configurar**
+  - **No configurado**.
   - **Preguntar siempre**
   - **Preguntar antes de enviar datos personales**
   - **No enviar datos nunca**
@@ -789,7 +790,7 @@ Haga clic en **Aceptar** para guardar los cambios.
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusiones del antivirus de Windows Defender
 
-- **Archivos y carpetas para excluir de exámenes y protección en tiempo real**: agrega uno o varios archivos y carpetas, como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluyen en ningún examen en tiempo real ni programado.
+- **Archivos y carpetas para excluir de exámenes y protección en tiempo real**: agrega uno o varios archivos y carpetas, como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluyen en los exámenes en tiempo real ni programados.
 - **Extensiones de archivo para excluir de exámenes y protección en tiempo real**: agrega una o varias extensiones de archivo, como **jpg** o **txt** a la lista de exclusiones. Los archivos con estas extensiones no se incluyen en los exámenes en tiempo real ni programados.
 - **Procesos para excluir de exámenes y protección en tiempo real**: agregar uno o varios procesos del tipo **.exe**, **.com** o **.scr** a la lista de exclusiones. Estos procesos no se incluyen en los exámenes en tiempo real ni programados.
 

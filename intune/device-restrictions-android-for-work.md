@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048109"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263691"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -56,7 +56,7 @@ En este artículo se enumeran y describen los diferentes valores de configuraci�
 - **Beam data using NFC** (Transferir datos mediante NFC): elija **Bloquear** para impedir el uso de la tecnología Transmisión de datos en proximidad (NFC) para transferir datos desde las aplicaciones. **No configurado** permite usar NFC para compartir datos entre los dispositivos.
 - **Características de depuración**: elija **Permitir** para permitir que los usuarios usen las características de depuración en el dispositivo. **No configurado** impide que los usuarios utilicen las características de depuración en el dispositivo.
 - **Ajuste del micrófono**: elija **Bloquear** para impedir que los usuarios silencien el micrófono y ajusten el volumen del mismo. **No configurado** permite que el usuario utilice y ajuste el volumen del micrófono en el dispositivo.
-- **Correos electrónicos de protección ante el restablecimiento de fábrica**: elija **Direcciones de correo electrónico de la cuenta de Google**. Escriba las direcciones de correo electrónico del dispositivo que los administradores pueden desbloquear una vez que se eliminan los datos del dispositivo. Asegúrese de separar las direcciones de correo electrónico con punto y coma, como en `admin1@gmail.com;admin2@gmail.com`. Si no se especificó ningún correo electrónico, cualquier usuario puede desbloquear el dispositivo una vez que se restaura la configuración de fábrica.
+- **Correos electrónicos de protección ante el restablecimiento de fábrica**: elija **Direcciones de correo electrónico de la cuenta de Google**. Escriba las direcciones de correo electrónico del dispositivo que los administradores pueden desbloquear una vez que se eliminan los datos del dispositivo. Asegúrese de separar las direcciones de correo electrónico con punto y coma, como en `admin1@gmail.com;admin2@gmail.com`. Si no se especificó ningún correo electrónico, cualquier usuario puede desbloquear el dispositivo una vez que se restaura la configuración de fábrica. Estos mensajes de correo electrónico solo se aplican cuando se ejecuta un restablecimiento de fábrica no de usuario, como ejecutar un restablecimiento de fábrica mediante el menú de la recuperación.
 - **Ruta de escape de red**: elija **Habilitar** para permitir que los usuarios activen la característica de ruta de escape de red. Si no se realiza una conexión de red cuando se inicia el dispositivo, la ruta de escape pide conectarse de manera temporal a una red y actualizar la directiva del dispositivo. Después de aplicar la directiva, la red temporal se olvida y el dispositivo sigue arrancando. Esta característica conecta dispositivos a una red si:
   - No hay ninguna red adecuada en la última directiva.
   - El dispositivo se inicia en una aplicación en modo de bloqueo de tareas.
@@ -100,6 +100,8 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   >   - [Asignada al grupo de dispositivos](apps-deploy.md) creado para los dispositivos dedicados
   > 
   > No es necesario que la aplicación **Managed Home Screen** esté en el perfil de configuración, pero sí se debe agregar como aplicación cliente. Cuando la aplicación **Managed Home Screen** se agrega como aplicación cliente, cualquier otra aplicación que se agregue en el perfil de configuración aparece como icono en la aplicación **Managed Home Screen**. 
+  >
+  > Al usar el modo de quiosco con varias aplicaciones con Managed pantalla principal, las aplicaciones de marcador de teléfono no funcionen correctamente. 
 
   - Elija **Agregar** y seleccione las aplicaciones de la lista.
 

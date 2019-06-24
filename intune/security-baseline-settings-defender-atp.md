@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749914"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197544"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configuración de la línea de base de Advanced Threat Protection de Microsoft Defender
 
@@ -83,7 +83,7 @@ Para más información, vea [Policy CSP - SmartScreen](https://docs.microsoft.co
 
   **Valor predeterminado**: Sí
 
-## <a name="attach-surface-reduction"></a>Reducción de la superficie expuesta a ataques  
+## <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques  
 
 - **Office apps launch child process type** (Tipo de proceso secundario que inician las aplicaciones de Office)  
   [Regla de reducción de la superficie de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules): cuando se establece en *Bloquear*, las aplicaciones de Office no podrán crear procesos secundarios. Las aplicaciones de Office incluyen Word, Excel, PowerPoint, OneNote y Access. La creación de un proceso secundario es comportamiento de malware habitual, especialmente para los ataques basados en macros que intentan usar las aplicaciones de Office para iniciar o descargar archivos ejecutables malintencionados.  
