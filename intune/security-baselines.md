@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: bb1ddcadcac1ec9b4730a5dcd66abca111d80196
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374134"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251206"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Creación de una línea de base de seguridad de Windows 10 en Intune
 
@@ -70,7 +70,7 @@ Cuando se usen dispositivos administrados conjuntamente, debe cambiar la carga d
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=20909) y seleccione **Seguridad de dispositivos** > **Líneas de base de seguridad (versión preliminar)** . Hay una lista de líneas de base disponibles. 
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccione **Seguridad de dispositivos** > **Líneas de base de seguridad (versión preliminar)** . Hay una lista de líneas de base disponibles. 
 
     ![Selección de una línea de base de seguridad para configurar](./media/security-baselines/available-baselines.png)
 

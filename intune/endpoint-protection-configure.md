@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041904"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251173"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Agregar la configuración de Endpoint Protection en Intune
 
@@ -38,7 +38,7 @@ Antes de crear un perfil, revise estos artículos que detallan la configuración
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Crear un perfil de dispositivo que contenga la configuración de Endpoint Protection
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=20909).
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 4. Escriba un **Nombre** y una **Descripción** para el perfil de Endpoint Protection.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar configuración personalizada. Actualmente, puede elegir una de las siguientes plataformas para la configuración de restricciones de dispositivos:
