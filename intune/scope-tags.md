@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045191"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403784"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida
 
@@ -42,8 +42,10 @@ Por ejemplo, imagine que a un administrador de la sucursal regional de Seattle s
 
     ![Captura de pantalla de la creación de una etiqueta de ámbito.](./media/scope-tags/create-scope-tag.png)
 
-2. Proporcione un **Nombre** y una **Descripción**.
-3. Elija **Crear**.
+3. Elija si desea que todos los dispositivos en grupos específicos, **asignar la etiqueta de ámbito para todos los dispositivos en los grupos seleccionados**.
+    1. En el **seleccionar grupos para incluir** página, seleccione los grupos que contiene los dispositivos que desea asignar a esta etiqueta de ámbito.
+    2. Elija **Seleccionar**.
+4. Elija **Crear**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para asignar una etiqueta de ámbito a un rol
 
