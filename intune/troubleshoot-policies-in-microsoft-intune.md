@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402657"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298395"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solución de problemas de directivas y perfiles en Intune
 
 Microsoft Intune incluye algunas características integradas de solución de problemas. Use estas características para solucionar problemas de directivas de cumplimiento y perfiles de configuración en el entorno.
 
 En este artículo se enumeran algunas técnicas de solución de problemas comunes y se describen algunos problemas que puede experimentar.
+
+## <a name="check-tenant-status"></a>Comprobar el estado de inquilino
+Compruebe el [estado del inquilino](tenant-status.md) y confirme la suscripción está activa. También puede ver los detalles de incidentes activos y avisos de que puedan afectar a la implementación de directiva o el perfil.
 
 ## <a name="use-built-in-troubleshooting"></a>Uso de la solución de problemas integrada
 
@@ -113,6 +116,13 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 > [!NOTE]
 > Cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva es la que se aplica.
 
+## <a name="policy-troubleshooting-resources"></a>Recursos de solución de problemas de directivas
+
+- [Solución de problemas de directivas no se aplica a dispositivos de Android o iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre otro sitio de Microsoft)
+- [Solucionar problemas de directiva de Windows Intune de 10](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre un blog)
+- [Solución de problemas de configuración personalizada de CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre otro sitio de Microsoft)
+- [Directiva de grupo de Windows 10 frente a Intune MDM directiva](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre otro sitio de Microsoft)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: error al guardar las reglas de acceso en Exchange
 
 **Problema**: recibe la alerta **Error al guardar las reglas de acceso en Exchange**  en la consola de administración.
@@ -125,11 +135,13 @@ Si crea directivas en el área de trabajo Directiva de Exchange local (consola d
 
 Una vez establecidas las directivas de seguridad a través de MDM o EAS, los dispositivos Windows Phone no permiten que se reduzca su nivel de seguridad. Por ejemplo, establece una **contraseña con un número mínimo de caracteres** en 8 y después intenta reducirla a 4. Se aplica la directiva más restrictiva al dispositivo.
 
+Dispositivos Windows 10 no pueden quitar las directivas de seguridad al quitar la asignación de la directiva (detener la implementación). Es posible que deba dejar la directiva asignada y, a continuación, cambie la configuración de seguridad a los valores predeterminados.
+
 En función de la plataforma del dispositivo, si quiere cambiar la directiva a un valor menos seguro, es posible que tenga que restablecer las directivas de seguridad.
 
-Por ejemplo, en el escritorio de Windows, deslice el dedo desde la derecha para abrir la barra **Accesos**. Seleccione **Configuración** > **Panel de control** > **Cuentas de usuario**. En el lado izquierdo, seleccione el vínculo **Restablecer directivas de seguridad** y elija **Restablecer directivas**.
+Por ejemplo, en Windows 8.1, en el escritorio, deslice el dedo desde la derecha para abrir la barra **Accesos**. Seleccione **Configuración** > **Panel de control** > **Cuentas de usuario**. En el lado izquierdo, seleccione el vínculo **Restablecer directivas de seguridad** y elija **Restablecer directivas**.
 
-En otros dispositivos MDM, como Android, iOS y Windows Phone 8.1, es posible que tenga que retirarlos y volver a inscribirlos para aplicar una directiva menos restrictiva.
+En otras plataformas, como Android, iOS y Windows Phone 8.1, es posible que tenga que retirarlos y volver a inscribirlos para aplicar una directiva menos restrictiva.
 
 [Solución de problemas con la inscripción de dispositivos en Intune](troubleshoot-device-enrollment-in-intune.md) puede ser un buen recurso.
 
@@ -160,6 +172,7 @@ Para los equipos Windows con el cliente de software de Intune, los errores de di
 Se produce si la hora del sistema local está desfasada cinco minutos o más. Si la hora en el equipo local no está sincronizada, se produce un error en las transacciones seguras porque las marcas de tiempo no son válidas.
 
 Para resolver este problema, establezca la hora del sistema local lo más cerca posible a la hora de Internet. O bien, establezca a la hora en los controladores de dominio en la red.
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 
