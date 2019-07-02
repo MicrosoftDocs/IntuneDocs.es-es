@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f065849bd15a23558aa9bb7f82730dca9d4b3fa
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 506bdc73717ed9af11ab8db0e5f459145ab27f83
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043641"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407110"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin del SDK para aplicaciones de Microsoft Intune
 
@@ -74,7 +74,7 @@ Si la aplicación ya se ha configurado para usar ADAL o MSAL y tiene su propio i
       ```
       Las aplicaciones podrían pasar un valor nulo si el UPN del usuario es desconocido en el momento de hacer la llamada. En este caso, se pedirá a los usuarios que escriban su dirección de correo electrónico y su contraseña.
       
-      Si su aplicación ya usa ADAL o MSAL para autenticar a los usuarios, puede configurar una experiencia de inicio de sesión único (SSO) entre la aplicación y el SDK de Intune. En primer lugar, deberá configurar ADAL/MSAL para almacenar los tokens en el mismo grupo de acceso de cadenas de claves que Intune Xamarin Bindings para iOS (com.microsoft.adalcache). Para ADAL, puede hacerlo [estableciendo la propiedad KeychainSecurityGroup de AuthenticationContext](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Token-cache-serialization#enable-token-cache-sharing-across-ios-applications). En cuanto a MSAL, deberá [establecer la propiedad KeychainSecurityGroup de PublicClientApplication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/msal-net-2-released#you-can-now-enable-sso-between-adal-and-msal-apps-on-xamarinios). Luego deberá reemplazar la configuración predeterminada de AAD que usa el SDK de Intune por la de la aplicación. Puede hacerlo mediante el diccionario IntuneMAMSettings de Info.plist de la aplicación, como se menciona en [Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk), o bien puede usar las propiedades de invalidación de AAD de la instancia de IntuneMAMPolicyManager. El enfoque de Info.plist se recomienda para las aplicaciones cuyos valores de ADAL son estáticos, aunque se recomienda utilizar las propiedades de invalidación para las aplicaciones que determinan esos valores en runtime. Cuando se hayan configurado todas las opciones del inicio de sesión único, su aplicación debe proporcionar el UPN del usuario al método RegisterAndEnrollAccount de IntuneMAMEnrollmentManager una vez que se haya autenticado correctamente:
+      Si su aplicación ya usa ADAL o MSAL para autenticar a los usuarios, puede configurar una experiencia de inicio de sesión único (SSO) entre la aplicación y el SDK de Intune. En primer lugar, deberá configurar ADAL/MSAL para almacenar los tokens en el mismo grupo de acceso de cadenas de claves que Intune Xamarin Bindings para iOS (com.microsoft.adalcache). Para ADAL, puede hacerlo [estableciendo la propiedad iOSKeychainSecurityGroup de AuthenticationContext](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access). En cuanto a MSAL, deberá [establecer la propiedad iOSKeychainSecurityGroup de PublicClientApplication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access). Luego deberá reemplazar la configuración predeterminada de AAD que usa el SDK de Intune por la de la aplicación. Puede hacerlo mediante el diccionario IntuneMAMSettings de Info.plist de la aplicación, como se menciona en [Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk), o bien puede usar las propiedades de invalidación de AAD de la instancia de IntuneMAMPolicyManager. El enfoque de Info.plist se recomienda para las aplicaciones cuyos valores de ADAL son estáticos, aunque se recomienda utilizar las propiedades de invalidación para las aplicaciones que determinan esos valores en runtime. Cuando se hayan configurado todas las opciones del inicio de sesión único, su aplicación debe proporcionar el UPN del usuario al método RegisterAndEnrollAccount de IntuneMAMEnrollmentManager una vez que se haya autenticado correctamente:
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```

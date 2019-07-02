@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
-ms.translationtype: MTE75
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234977"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403086"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -57,7 +57,16 @@ Estas opciones de configuración usan [ApplicationManagement policy CSP](https:/
 - **Instalar los datos de aplicación en el volumen del sistema**: **Bloquear** hace que las aplicaciones dejen de almacenar datos en el volumen del sistema del dispositivo. **Sin configurar** (valor predeterminado) permite que las aplicaciones almacenen datos en el volumen de disco del sistema.
 - **Instalar las aplicaciones en la unidad del sistema**: **Bloquear** evita que las aplicaciones se instalen en la unidad del sistema del dispositivo. **Sin configurar** (valor predeterminado) permite que las aplicaciones se instalen en la unidad del sistema.
 - **Game DVR** (solo equipos de escritorio): **Bloquear** deshabilita la grabación y difusión de juegos de Windows. **Sin configurar** (valor predeterminado) permite la grabación y difusión de juegos.
-- **Solo aplicaciones de la Tienda**: **Requerir** obliga a los usuarios finales a instalar únicamente aplicaciones de la Tienda de aplicaciones Windows. **Sin configurar** permite a los usuarios finales instalar aplicaciones desde ubicaciones distintas a la Tienda de aplicaciones Windows.
+- **Las aplicaciones de tienda solo**: esta configuración determina la experiencia del usuario cuando los usuarios instalen aplicaciones desde otros lugares distintos de la Microsoft Store. Las opciones son:
+
+  - **No configurado** (valor predeterminado): permite que los usuarios finales instalen aplicaciones desde otros lugares distintos de la Microsoft Store, incluidas las aplicaciones definidas en otras configuraciones de directiva.  
+  - **Desde cualquier lugar**: desactiva las recomendaciones de la aplicación, y permite a los usuarios instalar aplicaciones desde cualquier ubicación.  
+  - **Store solo**: obliga a los usuarios finales instalen solo las aplicaciones desde la Microsoft Store.
+  - **Recomendaciones**: al instalar una aplicación desde la web que está disponible en la Microsoft Store, los usuarios ven un mensaje que recomienda que descargan de la tienda.  
+  - **Prefiere Store**: avisa a los usuarios cuando instalan aplicaciones de otros lugares distintos de la Microsoft Store.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Forzar el reinicio de las aplicaciones en caso de error de actualización**: cuando se usa una aplicación, es posible que no se actualice. Use esta configuración para forzar el reinicio de una aplicación. **Sin configurar** (valor predeterminado) no fuerza el reinicio de las aplicaciones. **Requerir** permite que los administradores fuercen un reinicio en una fecha y hora específicas o según una programación periódica. Cuando lo establezca en **Requerir**, también debe indicar:
 
   - **Fecha y hora de inicio**: elija una fecha y hora específicas para reiniciar las aplicaciones.
