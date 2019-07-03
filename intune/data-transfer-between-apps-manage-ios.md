@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042784"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512141"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune
 
@@ -34,7 +34,7 @@ Para ayudar a proteger los datos de la empresa, restrinja las transferencias de 
 
 La característica de **administración Open In** (o administración de "Abrir en") para dispositivos iOS puede limitar las transferencias de archivos para que solo se realicen entre las aplicaciones que se implementan en los dispositivos mediante el **canal de MDM**. Establezca restricciones de *administración Open In* en las opciones de configuración e impleméntelas mediante una solución de MDM.  Cuando un usuario instala la aplicación implementada, se aplican las restricciones que ha establecido.
 
-##  <a name="use-app-protection-with-ios-apps"></a>Uso de la protección de aplicaciones con aplicaciones iOS
+## <a name="use-app-protection-with-ios-apps"></a>Uso de la protección de aplicaciones con aplicaciones iOS
 Use directivas de protección de aplicaciones con la característica de **administración Open In** de iOS para proteger los datos de la empresa de las siguientes formas:
 
 -   **Dispositivos propiedad de los empleados no administrados por una solución MDM:** puede establecer la configuración de directivas de protección de aplicaciones en **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas por directivas). El comportamiento *Open In* en una aplicación administrada por directivas solo presenta otras aplicaciones administradas por directivas como opción para el uso compartido. Si un usuario intenta enviar un archivo protegido por directivas como datos adjuntos desde OneDrive en la aplicación de correo nativa, el archivo será ilegible.

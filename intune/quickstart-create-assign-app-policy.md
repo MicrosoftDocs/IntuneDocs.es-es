@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050333"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530774"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Inicio rápido: Creación y asignación de una directiva de protección de aplicaciones
 
@@ -66,12 +66,12 @@ Una vez creada la directiva de protección de aplicaciones en Intune, puede asig
 
 Use los siguientes pasos para asignar la directiva de protección de aplicaciones:
 
-1.  En [Intune](https://aka.ms/intuneportal), seleccione **Intune** > **Aplicaciones cliente** > **Directivas de protección de aplicaciones**. 
-2.  Seleccione la directiva de protección de aplicaciones que ha creado. En este tutorial de inicio rápido, la directiva es **Protección de contenido de Windows 10**.
-3.  Seleccione **Asignaciones**.
-4.  Haga clic en **Seleccionar grupos para incluir** en la pestaña **Incluir**.
-5.  Seleccione **Contoso Testers** (Evaluadores de Contoso) como el grupo que se va a incluir.
-6.  Haga clic en **Seleccionar** > **Guardar**. 
+1. En [Intune](https://aka.ms/intuneportal), seleccione **Intune** > **Aplicaciones cliente** > **Directivas de protección de aplicaciones**. 
+2. Seleccione la directiva de protección de aplicaciones que ha creado. En este tutorial de inicio rápido, la directiva es **Protección de contenido de Windows 10**.
+3. Seleccione **Asignaciones**.
+4. Haga clic en **Seleccionar grupos para incluir** en la pestaña **Incluir**.
+5. Seleccione **Contoso Testers** (Evaluadores de Contoso) como el grupo que se va a incluir.
+6. Haga clic en **Seleccionar** > **Guardar**. 
 
 Ya ha asignado la directiva de protección de aplicaciones.
 

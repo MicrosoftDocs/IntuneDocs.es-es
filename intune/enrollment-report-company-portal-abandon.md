@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041865"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529762"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Informe de inscripciones de usuario incompletas
 
@@ -35,9 +35,9 @@ Con esta información, puede actualizar los documentos de incorporación para ay
 
 Una inscripción incompleta es cuando un usuario realiza una de estas acciones:
 
--   Elige explícitamente una acción para detener la inscripción.
--   Cierra Portal de empresa durante la inscripción.
--   Dedica más de 30 minutos entre las secciones de inscripción.
+- Elige explícitamente una acción para detener la inscripción.
+- Cierra Portal de empresa durante la inscripción.
+- Dedica más de 30 minutos entre las secciones de inscripción.
 
 Si un usuario decide detener la inscripción y reiniciar varias veces, se muestra como varios intentos y varias inscripciones incompletas. Si un usuario espera 30 minutos entre las distintas pantallas de inscripción, se considera varias inscripciones incompletas.
 
@@ -53,18 +53,18 @@ Puede filtrar el intervalo de fechas, el sistema operativo y la sección inscrip
 
 En la parte superior del informe, puede ver el número y el porcentaje de inscripciones abandonadas en relación con todas las inscripciones.
 
--   Inscripciones iniciadas: número de inscripciones que se han intentado.
--   Inscripciones incompletas: número de inscripciones intentadas que no dieron lugar a la inscripción completa de un dispositivo compatible.
--   Tasa de inscripciones incompletas: porcentaje de intentos de inscripción que se abandonaron (inscripciones abandonadas/inscripciones iniciadas).
+- Inscripciones iniciadas: número de inscripciones que se han intentado.
+- Inscripciones incompletas: número de inscripciones intentadas que no dieron lugar a la inscripción completa de un dispositivo compatible.
+- Tasa de inscripciones incompletas: porcentaje de intentos de inscripción que se abandonaron (inscripciones abandonadas/inscripciones iniciadas).
 
 ### <a name="line-graph"></a>Gráfico de líneas
 
 El gráfico de líneas muestra las inscripciones incompletas para cada una de las cuatro secciones de inscripción principales:
 
--   Lista de comprobación de configuración
--   Pantallas de la plataforma
--   Términos de uso
--   Cumplimiento y activación
+- Lista de comprobación de configuración
+- Pantallas de la plataforma
+- Términos de uso
+- Cumplimiento y activación
 
 ### <a name="user-abandonment-actions"></a>Acciones de abandono del usuario
 
