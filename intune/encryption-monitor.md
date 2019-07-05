@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047820"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316932"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Supervisar BitLocker y el cifrado del dispositivo  
 Intune ofrece un punto central desde el que poder identificar el estado de cifrado de los dispositivos Windows 10 y acceso a información importante de BitLocker desde los dispositivos, ya que se encuentra en Azure Active Directory (Azure AD).  
@@ -51,7 +51,7 @@ El informe muestra el **nombre de dispositivo** para los dispositivos Windows 10
   - **No está listo**: El dispositivo no tiene capacidades de cifrado completo, pero admite el cifrado. Por ejemplo, el dispositivo podría cifrarse manualmente por un usuario o a través de la directiva de grupo que se puede establecer para permitir el cifrado sin TMP.
   - **No aplicable**: No hay suficiente información para clasificar este dispositivo.  
 
-- **Estado de cifrado**: indica si la unidad del sistema operativo está cifrada.  
+- **Estado de cifrado**: indica si la unidad del sistema operativo está cifrada. 
 
 
 ### <a name="device-encryption-status"></a>Estado de cifrado del dispositivo
@@ -60,7 +60,7 @@ Cuando se selecciona un dispositivo, Intune muestra el panel **Estado de cifrado
 Este panel proporciona los siguientes detalles:  
 - **Nombre de dispositivo**: contiene el nombre del dispositivo que está visualizando.  
 - **Preparación de cifrado**: evaluación de la preparación de los dispositivos para admitir el cifrado de BitLocker. Un dispositivo podría tener el estado *Cifrado*, aunque su grado de preparación de cifrado sea *No está listo*, porque no tiene un TPM. (Vea Preparación de cifrado en la sección anterior para obtener más detalles).
-- **Estado de cifrado**: indica si la unidad del sistema operativo está cifrada.  
+- **Estado de cifrado**: indica si la unidad del sistema operativo está cifrada. Intune puede tardar hasta 24 horas en empezar a generar informes sobre un estado de cifrado de dispositivos o un cambio de ese estado.  
 - **Perfiles**: una lista de los perfiles de *Configuración del dispositivo* que se aplican a este dispositivo e incluyen los siguientes tipos de perfil y configuración:  
   - Tipo de perfil = *Endpoint Protection*  
   - Configuración > Cifrado de Windows > Cifrar dispositivos = *necesario*  
@@ -95,7 +95,7 @@ Este panel proporciona los siguientes detalles:
 
 ## <a name="bitlocker-recovery-keys"></a>Claves de recuperación de BitLocker
 Intune proporciona acceso la hoja de Azure AD para BitLocker, para que pueda ver los identificadores de clave de BitLocker y las claves de recuperación para los dispositivos Windows 10, desde el portal de Intune.  Para que sea accesible, el dispositivo debe tener sus claves custodiadas en Azure AD. 
-1. Inicie sesión en [Intune](https://aka.ms/intuneportal), vaya a **Dispositivos** y, después, en *Administrar*, seleccione **Todos los dispositivos**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), vaya a **Dispositivos** y, después, en *Administrar*, seleccione **Todos los dispositivos**.
 2. Seleccione un dispositivo de la lista y, en *Supervisión*, seleccione **Claves de recuperación**.  
   
 Cuando las claves están disponibles en Azure AD, está disponible la siguiente información:

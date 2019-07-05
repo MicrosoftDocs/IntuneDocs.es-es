@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819583"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389260"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de inscripción de Intune para dispositivos Windows
 
@@ -51,6 +51,7 @@ Los administradores pueden configurar los siguientes métodos de inscripción qu
 - La [Administración conjunta de Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) permite a los administradores inscribir los dispositivos administrados por Configuration Manager en Intune para obtener los beneficios de Intune y Configuration Manager. 
 - El [Administrador de inscripciones de dispositivos](device-enrollment-manager-enroll.md) (DEM) es una cuenta de servicio especial. Las cuentas de DEM tienen permisos que habilitan a los usuarios autorizados a inscribir y administrar varios dispositivos corporativos. Estos tipos de dispositivos son buenos para aplicaciones de punto de venta o de utilidad, por ejemplo, pero inadecuados para usuarios que necesitan acceso al correo electrónico o a los recursos de empresa. Este método no permite el uso de características como el acceso condicional. 
 - La [inscripción masiva](windows-bulk-enroll.md) permite que un usuario autorizado una grandes cantidades de nuevos dispositivos corporativos a Azure Active Directory e Intune. Es necesario crear un paquete de aprovisionamiento con la aplicación Diseñador de configuración de Windows (WCD). Después, mediante el uso de un medio USB durante la experiencia inicial de configuración rápida de Windows o desde un PC Windows existente, debe instalar el paquete de aprovisionamiento para inscribir automáticamente los dispositivos en Intune. Este método no permite el uso del acceso condicional. 
+- La [inscripción de dispositivos Windows IoT Core](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) se logra al usar el panel de Windows IoT Core para preparar el dispositivo y, a continuación, al usar Windows Configuration Designer para crear un paquete de aprovisionamiento. Luego, usando una tarjeta SD durante el arranque inicial, instala el paquete de aprovisionamiento para inscribir automáticamente los dispositivos en Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

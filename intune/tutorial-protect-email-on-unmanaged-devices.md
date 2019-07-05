@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados'
 titleSuffix: Microsoft Intune
-description: Aprenda a proteger Office 365 Exchange Online con directivas de protección de aplicaciones de Intune y acceso condicional de Azure AD.
+description: Aprenda a proteger Office 365 Exchange Online con directivas de protección de aplicaciones de Intune y acceso condicional de Azure AD.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66828977"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046273"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados
 
@@ -29,7 +29,7 @@ Obtenga información sobre el uso de directivas de protección de aplicaciones c
 
 > [!div class="checklist"]
 > * Cree una directiva de protección de aplicaciones de Intune para la aplicación Outlook. Deberá limitar lo que el usuario puede hacer con los datos de la aplicación impidiendo que pueda ejecutar "Guardar como" y restringiendo las acciones de corte, copiar y pegado. 
-> * Cree directivas de acceso condicional de Azure Active Directory (Azure AD) que permitan solo a la aplicación Outlook acceder al correo electrónico de la compañía en Exchange Online. También necesita la autenticación multifactor (MFA) para los clientes de autenticación moderna, como Outlook para iOS y Android.
+> * Cree directivas de acceso condicional de Azure Active Directory (Azure AD) que permitan solo a la aplicación Outlook acceder al correo electrónico de la empresa en Exchange Online. También necesita la autenticación multifactor (MFA) para los clientes de autenticación moderna, como Outlook para iOS y Android.
 
 ## <a name="prerequisites"></a>Requisitos previos
   - Necesitará a un inquilino de prueba con las siguientes suscripciones para este tutorial:
@@ -83,7 +83,7 @@ Ahora vamos a crear dos directivas de acceso condicional para cubrir todas las p
 
 - La primera directiva requerirá que los clientes de autenticación moderna utilicen la aplicación de Outlook y la autenticación multifactor (MFA) aprobadas. Los clientes de autenticación moderna incluyen Outlook para iOS y Outlook para Android.  
 
-- La segunda directiva requerirá que los clientes de Exchange ActiveSync utilicen la aplicación de Outlook aprobada. (Actualmente, Exchange Active Sync no admite condiciones distintas de la plataforma del dispositivo). Puede configurar las directivas de acceso condicional en el portal de Azure AD o en el portal de Intune. Como ya estamos en el portal de Intune, vamos a crear la directiva aquí.  
+- La segunda directiva requerirá que los clientes de Exchange ActiveSync utilicen la aplicación de Outlook aprobada. (Actualmente, Exchange Active Sync no admite condiciones distintas de la plataforma del dispositivo). Puede configurar las directivas de acceso condicional en el portal de Azure AD o en el portal de Intune. Como ya estamos en el portal de Intune, vamos a crear la directiva aquí.  
 
 ### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Creación de una directiva de MFA para los clientes de autenticación moderna  
 
@@ -189,4 +189,4 @@ Cuando ya no se necesiten las directivas de prueba, puede quitarlas.
 5. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) para cada una de las directivas de prueba y después seleccione **Eliminar**. Seleccione **Sí** para confirmar.  
 
  ## <a name="next-steps"></a>Pasos siguientes  
-En este tutorial, ha creado directivas de protección de aplicación para limitar lo que el usuario puede hacer con la aplicación de Outlook y ha creado directivas de acceso condicional para que los clientes de autenticación moderna usen la aplicación Outlook y MFA. Para información sobre cómo usar Intune con acceso condicional para proteger otras aplicaciones y servicios, vea [¿Qué es el acceso condicional?](conditional-access.md).
+En este tutorial, ha creado directivas de protección de aplicación para limitar lo que el usuario puede hacer con la aplicación de Outlook y ha creado directivas de acceso condicional para que los clientes de autenticación moderna usen la aplicación Outlook y MFA. Para información sobre cómo usar Intune con acceso condicional para proteger otras aplicaciones y servicios, consulte [¿Qué es el acceso condicional?](conditional-access.md).

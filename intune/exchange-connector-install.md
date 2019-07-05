@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047697"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045685"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configuración de Exchange Connector local de Intune en Microsoft Intune
 La información de este artículo le ayudará a instalar y, luego, supervisar el conector local de EAS de Intune.  Exchange Connector local de Intune se usa con las [directivas de acceso condicional para permitir o bloquear el acceso a los buzones locales de Exchange](conditional-access-exchange-create.md). 
 
-Cuando un dispositivo intenta acceder a Exchange en el entorno local, Exchange Connector asigna registros de Exchange Active Sync (EAS) en Exchange Server a los registros de Intune con el fin de comprobar la inscripción de los dispositivos en Intune y el cumplimiento de las directivas de dispositivo correspondientes. En función de las directivas de acceso condicional, el dispositivo puede tener acceso o estar bloqueado. Consulte [¿Cuáles son las formas habituales de usar el acceso condicional con Intune?](conditional-access-intune-common-ways-use.md) para obtener más información.
+Cuando un dispositivo intenta acceder a Exchange en el entorno local, Exchange Connector asigna registros de Exchange Active Sync (EAS) en Exchange Server a los registros de Intune con el fin de comprobar la inscripción de los dispositivos en Intune y el cumplimiento de las directivas de dispositivo correspondientes. En función de las directivas de acceso condicional, el dispositivo puede tener acceso o estar bloqueado. Consulte [¿Cuáles son las formas habituales de usar el acceso condicional con Intune?](conditional-access-intune-common-ways-use.md) para más información.
 
 Intune admite la instalación de varios conectores Exchange locales por suscripción. Si tiene más de una organización de Exchange local, puede configurar un conector independiente para cada una de ellas. Sin embargo, solo se puede instalar un conector para su uso en cada organización de Exchange. 
 
@@ -186,7 +186,7 @@ Un conector de Exchange local sincroniza automáticamente registros de dispositi
 
    - La **Sincronización rápida** se produce con regularidad, varias veces al día. Una sincronización rápida recupera información del dispositivo para usuarios con licencia de Intune y con destino de acceso condicional a On-premises Exchange que hayan cambiado desde la última sincronización.
 
-   - La **Sincronización completa** se realiza una vez al día de manera predeterminada. Una sincronización completa recupera información del dispositivo para todos los usuarios con licencia de Intune y con destino de acceso condicional a On-premises Exchange. Una sincronización completa también recupera información de Exchange Server y se asegura de que la configuración especificada por Intune en Microsoft Azure Portal se actualiza en Exchange Server. 
+   - La **Sincronización completa** se realiza una vez al día de manera predeterminada. Una sincronización completa recupera información del dispositivo para todos los usuarios con licencia de Intune y con destino de acceso condicional a Exchange local. Una sincronización completa también recupera información de Exchange Server y se asegura de que la configuración especificada por Intune en Microsoft Azure Portal se actualiza en Exchange Server. 
 
 
 Puede forzar que un conector ejecute una sincronización mediante las opciones **Sincronización rápida** o **Sincronización completa** en el panel de Intune con los pasos siguientes:

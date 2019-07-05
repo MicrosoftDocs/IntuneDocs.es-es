@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804660"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044608"
 ---
 # <a name="plan-communications"></a>Planeamiento de las comunicaciones 
 El plan de comunicación es un elemento fundamental en una migración de Intune. Se ofrecen las siguientes herramientas y plantillas para ayudarle a formar a los usuarios finales. El kit de adopción de Intune incluye plantillas de correo electrónico, una guía para la inscripción de Intune y vínculos a vídeos con instrucciones para la inscripción del usuario final.  

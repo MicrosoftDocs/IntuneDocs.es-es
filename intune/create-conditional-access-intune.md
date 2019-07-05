@@ -1,7 +1,7 @@
 ---
 title: Configuración del acceso condicional basado en dispositivos con Intune
 titleSuffix: Microsoft Intune
-description: Obtenga información sobre cómo crear una directiva de acceso condicional basado en dispositivos teniendo en cuenta el cumplimiento de dispositivos de Microsoft Intune y la administración de aplicaciones móviles.
+description: Obtenga información sobre cómo crear una directiva de acceso condicional basado en dispositivos teniendo en cuenta el cumplimiento de dispositivos de Microsoft Intune y la administración de aplicaciones móviles.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,30 +16,30 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043287"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045102"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creación de una directiva de acceso condicional basado en dispositivos
 
-Con Intune, puede mejorar el acceso condicional en Azure Active Directory mediante la incorporación del cumplimiento de dispositivos móviles a los controles de acceso. Una vez que ha creado una directiva de cumplimiento de Intune que define los requisitos de cumplimiento para los dispositivos, puede usar el estado de cumplimiento de un dispositivo para permitir o bloquear el acceso a sus aplicaciones y servicios. Puede hacerlo mediante la creación de una directiva de acceso condicional que usa la opción **Requerir que el dispositivo esté marcado como compatible**.  
+Con Intune, puede mejorar el acceso condicional en Azure Active Directory mediante la incorporación del cumplimiento de dispositivos móviles a los controles de acceso. Una vez que ha creado una directiva de cumplimiento de Intune que define los requisitos de cumplimiento para los dispositivos, puede usar el estado de cumplimiento de un dispositivo para permitir o bloquear el acceso a sus aplicaciones y servicios. Puede hacerlo mediante la creación de una directiva de acceso condicional que usa la opción **Requerir que el dispositivo esté marcado como compatible**.  
 
-Una directiva de acceso condicional especifica la aplicación o los servicios que desea proteger, las condiciones bajo las que se puede acceder a las aplicaciones o a los servicios y los usuarios a los que se aplica la directiva. El acceso condicional es una característica prémium de Azure AD que se puede configurar en Azure Active Directory, pero también puede configurar estas mismas directivas desde el portal de Intune. El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
+Una directiva de acceso condicional especifica la aplicación o los servicios que desea proteger, las condiciones bajo las que se puede acceder a las aplicaciones o a los servicios y los usuarios a los que se aplica la directiva. El acceso condicional es una característica prémium de Azure AD que se puede configurar en Azure Active Directory, pero también puede configurar estas mismas directivas desde el portal de Intune. El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
 
 > [!IMPORTANT]
 > Antes de configurar el acceso condicional, deberá configurar las directivas de cumplimiento de dispositivos de Intune para evaluar dispositivos en función de si cumplen requisitos específicos. Consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
 
-## <a name="create-conditional-access-policy"></a>Crear una directiva de acceso condicional
+## <a name="create-conditional-access-policy"></a>Creación de una directiva de acceso condicional
 
 1.  En el portal de Intune, seleccione **Acceso condicional** > **Directivas** > **Nueva directiva**.
    
     ![Creación de una directiva de acceso condicional](media/create-conditional-access-intune/create-ca.png)
  
 2.  En **Asignaciones**, seleccione **Usuarios y grupos**. 
-3.  En la pestaña de **Include**, identifique los usuarios o grupos a los que desea aplicar esta directiva de acceso condicional. Una vez que haya elegido a quiénes se va a incluir, puede usar la pestaña **Excluir** si no hay ningún usuario, rol o grupo que desee excluir de esta directiva.  
+3.  En la pestaña **Incluir**, identifique los usuarios o grupos a los que quiere aplicar esta directiva de acceso condicional. Una vez que haya elegido a quiénes se va a incluir, puede usar la pestaña **Excluir** si no hay ningún usuario, rol o grupo que desee excluir de esta directiva.  
     - **Todos los usuarios**: seleccione esta opción para aplicar la directiva a todos los usuarios y grupos, incluidos los usuarios internos e invitados.
   
     - **Seleccionar usuarios y grupos**: seleccione esta opción y especifique una o varias de las opciones siguientes:
@@ -69,12 +69,12 @@ Una directiva de acceso condicional especifica la aplicación o los servicios qu
     - **Plataformas de dispositivos**: en la pestaña **Incluir**, identifique las plataformas de dispositivos a las que desea aplicar esta directiva de acceso condicional. Use la pestaña **Excluir** para excluir plataformas de esta directiva.
     - **Ubicaciones**: en la pestaña **Incluir**, especifique si la directiva se aplica a cualquier ubicación, a ubicaciones de red de confianza que están bajo el control de su departamento de TI o a ubicaciones de red específicas. Use la pestaña **Excluir** para excluir ubicaciones de red de esta directiva. 
     - **Aplicaciones cliente**: elija **Sí** para especificar si la directiva se debe aplicar a aplicaciones de explorador, a aplicaciones móviles y a clientes de escritorio. También puede seleccionar **Clientes de autenticación moderna** (como Outlook para iOS o Outlook para Android) y **Clientes de Exchange ActiveSync**.
-    - **Estado del dispositivo**: la directiva de acceso condicional se aplicará a todos los estados de dispositivo a menos que elija Sí y excluya específicamente los estados Unido a Azure AD híbrido de dispositivo o Dispositivo marcado como compatible (o ambos).
+    - **Estado del dispositivo**: la directiva de acceso condicional se aplicará a todos los estados de dispositivo a menos que elija Sí y excluya específicamente los estados Unido a Azure AD híbrido de dispositivo o Dispositivo marcado como compatible (o ambos).
     
       ![Creación de una directiva de acceso condicional](media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
-      > Si desea proteger tanto los clientes de **autenticación moderna** como los clientes de **Exchange ActiveSync**, cree dos directivas de acceso condicional independientes, una para cada tipo de cliente. Aunque Exchange ActiveSync admita autenticación moderna, la única condición que Exchange ActiveSync admite es la plataforma. Otras condiciones, incluida la autenticación multifactor, no se admiten. Para proteger eficazmente el acceso a Exchange Online desde Exchange ActiveSync, cree una directiva de acceso condicional que especifique la aplicación en la nube de Office 365 Exchange Online y la aplicación cliente Exchange ActiveSync con la directiva Aplicar solo a las plataformas admitidas seleccionadas.
+      > Si desea proteger tanto los clientes de **autenticación moderna** como los **clientes de Exchange ActiveSync**, cree dos directivas de acceso condicional independientes, una para cada tipo de cliente. Aunque Exchange ActiveSync admita autenticación moderna, la única condición que Exchange ActiveSync admite es la plataforma. Otras condiciones, incluida la autenticación multifactor, no se admiten. Para proteger eficazmente el acceso a Exchange Online desde Exchange ActiveSync, cree una directiva de acceso condicional que especifique la aplicación en la nube de Office 365 Exchange Online y la aplicación cliente Exchange ActiveSync con la directiva Aplicar solo a las plataformas admitidas seleccionadas.
 
 9.  Seleccione **Listo**.
 10. En **Controles de acceso**, seleccione **Conceder**. Configure lo que ocurre en función de las condiciones que ha definido.  Puede seleccionar entre las siguientes opciones:

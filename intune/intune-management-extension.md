@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373467"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298423"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Uso de scripts de PowerShell para dispositivos Windows 10 en Intune
 
@@ -45,7 +45,7 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
 
 - Dispositivos que ejecutan Windows 10 versión 1607 o una posterior. Si el dispositivo se inscribe mediante la [inscripción automática masiva](windows-bulk-enroll.md), los dispositivos deben ejecutar Windows 10 versión 1703 o una posterior. La extensión de administración de Intune no se admite en Windows 10 en modo S, ya que este no permite la ejecución de aplicaciones de fuera de la tienda. 
   
-- Dispositivos unidos a Azure Active Directory (AD), incluidos los siguientes:
+- Dispositivos unidos a Azure Active Directory (AD), incluidos los siguientes:  
   
   - Unidos a Azure AD híbrido: dispositivos unidos a Azure Active Directory (AD) y que también están unidos a Active Directory (AD) local. Vea [Planeamiento de la implementación de la unión a Azure Active Directory híbrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) para obtener instrucciones.
 
@@ -55,13 +55,20 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
   
   - Dispositivos inscritos manualmente en Intune, que son los que encajan con una de las siguientes descripciones:
   
-    - El usuario inicia sesión en el dispositivo con una cuenta de usuario local y, posteriormente, se une manualmente a Azure AD (y la inscripción automática en Intune está habilitada en Azure AD).
+    - La opción [Auto-enrollment to Intune](quickstart-setup-auto-enrollment.md) (Inscripción automática en Intune) está habilitada en Azure AD. El usuario final inicia sesión en el dispositivo mediante una cuenta de usuario local, une manualmente el dispositivo a Azure AD y, luego, inicia sesión en el dispositivo con su cuenta de Azure AD.
     
-    O bien,
+    O BIEN  
     
     - El usuario inicia sesión en el dispositivo con su cuenta de Azure AD y, posteriormente, se inscribe en Intune.
 
-  - Dispositivos administrados conjuntamente que usan Configuration Manager e Intune. Vea [¿Qué es la administración conjunta?](https://docs.microsoft.com/sccm/comanage/overview) para obtener instrucciones.
+  - Dispositivos administrados conjuntamente que usan Configuration Manager e Intune. Asegúrese de que la carga de trabajo **Aplicaciones cliente** esté establecida en **Piloto de Intune** o **Intune**. Para instrucciones, consulte lo siguiente: 
+  
+    - [¿Qué es la administración conjunta?](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [Carga de trabajo de aplicaciones cliente](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Cambio de las cargas de trabajo de Configuration Manager a Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> Asegúrese de que los dispositivos estén [unidos](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) a Azure AD. Los dispositivos que solo están [registrados](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) en Azure AD no recibirán los scripts.
 
 ## <a name="create-a-script-policy"></a>Creación de una directiva de script 
 
@@ -87,7 +94,7 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
 5. Seleccione **Aceptar** > **Crear** para guardar el script.
 
 > [!NOTE]
-> El script de PowerShell se ejecutara con el privilegio de administración (de manera predeterminada) cuando el script está establecido en el contexto del usuario y el usuario final del dispositivo tiene privilegios de administración.
+> Cuando los scripts están establecidos en el contexto del usuario y el usuario final tiene derechos de administración, de manera predeterminada, el script de PowerShell se ejecuta bajo el privilegio de administrador.
 
 ## <a name="assign-the-policy"></a>Asignación de la directiva
 
@@ -156,6 +163,7 @@ En [Habilitar la inscripción automática de Windows 10](windows-enroll.md#enabl
     > [!TIP]
     > La **extensión de administración de Microsoft Intune** es un servicio que se ejecuta en el dispositivo, al igual que cualquier otro servicio que aparezca en la aplicación Servicios (services.msc). Después de reiniciar un dispositivo, es posible que el servicio también lo haga y compruebe si hay algún script de PowerShell asignado con el servicio de Intune. Si el servicio de **extensión de administración de Microsoft Intune** está establecido en Manual, es posible que el servicio no se reinicie después del reinicio del dispositivo.
 
+- Asegúrese de que los dispositivos estén [unidos a Azure AD](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network). Los dispositivos que solo están unidos al área de trabajo o a la organización ([registrados](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) en Azure AD) no recibirán los scripts.
 - El cliente de la extensión de administración de Intune comprueba con Intune cada hora si se han producido cambios en el script o la directiva.
 - Confirme que la extensión de administración de Intune se ha descargado en `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Los scripts no se ejecutan en dispositivos Surface Hub ni con Windows 10 en modo S.

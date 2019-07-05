@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804474"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528245"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Control de acceso basado en rol (RBAC) con Microsoft Intune
 
@@ -38,9 +38,9 @@ Un rol define el conjunto de permisos concedidos a los usuarios que están asign
 Puede usar tanto los roles integrados como roles personalizados. Los roles integrados abarcan algunos escenarios comunes de Intune. También puede [crear sus propios roles personalizados](create-custom-role.md) con el conjunto de permisos que exactamente necesita. Varios roles de Azure Active Directory tienen permisos para Intune.
 Para ver un rol, seleccione **Intune** > **Roles** > **Todos los roles** > elija un rol. Verá las páginas siguientes:
 
--   **Propiedades**: nombre, descripción, tipo, asignaciones y etiquetas de ámbito del rol. 
--   **Permisos**: enumera un largo conjunto de conmutadores que definen qué permisos tiene el rol.
--   **Asignaciones**: lista de [asignaciones de roles]( assign-role.md) que definen qué usuarios tienen acceso a qué usuarios o dispositivos. Un rol puede tener varias asignaciones y un usuario puede tener varias asignaciones.
+- **Propiedades**: nombre, descripción, tipo, asignaciones y etiquetas de ámbito del rol. 
+- **Permisos**: enumera un largo conjunto de conmutadores que definen qué permisos tiene el rol.
+- **Asignaciones**: lista de [asignaciones de roles]( assign-role.md) que definen qué usuarios tienen acceso a qué usuarios o dispositivos. Un rol puede tener varias asignaciones y un usuario puede tener varias asignaciones.
 
 ### <a name="built-in-roles"></a>Roles integrados
 Puede asignar roles integrados a los grupos sin ninguna configuración adicional. No se puede eliminar o editar el nombre, la descripción, el tipo o los permisos de un rol integrado. Para obtener una lista completa de los permisos de cada rol integrado, vea la [tabla de RBAC de Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
@@ -68,7 +68,7 @@ Puede crear sus propios roles con permisos personalizados. Para obtener más inf
 | Administrador de datos de cumplimiento | Ninguno | Solo lectura |
 
 > [!TIP]
-> Intune también muestra tres extensiones de Azure AD: **Usuarios**, **Grupos** y **Acceso condicional**, que se controlan mediante RBAC en Azure AD. Además, el **administrador de cuentas de usuario** solo realiza actividades de usuario o grupo de AAD y no tiene permisos completos para realizar todas las actividades en Intune. Para más información, vea [RBAC con Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+> Intune también muestra tres extensiones de Azure AD: **Usuarios**, **Grupos** y **Acceso condicional**, que se controlan mediante RBAC en Azure AD. Además, el **administrador de cuentas de usuario** solo realiza actividades de usuario o grupo de AAD y no tiene permisos completos para realizar todas las actividades en Intune. Para más información, vea [RBAC con Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 ### <a name="roles-created-in-the-intune-classic-portal"></a>Roles creados en el portal clásico de Intune
 Solo los usuarios con roles de **administradores del servicio** de Intune con permisos "completos" pueden migrarse desde el portal clásico de Intune a Intune en Azure Portal. Debe reasignar a los usuarios con roles de **administradores del servicio** de Intune y con los permisos "Solo lectura" o "Departamento de soporte técnico" a los roles de Intune en Azure Portal y eliminarlos del portal clásico.
 > [!IMPORTANT]
@@ -84,10 +84,10 @@ Una asignación de roles define:
 Puede asignar a los usuarios tanto roles personalizados como integrados. Para asignar un rol de Intune a un usuario, este debe tener una licencia de Intune.
 Para ver una asignación de roles, seleccione **Intune** > **Roles** > **Todos los roles** > elija un rol > elija una asignación. Verá las páginas siguientes:
 
--   **Propiedades**: nombre, descripción, rol, miembros, ámbitos y etiquetas de la asignación.
--   **Miembros**: todos los usuarios de los grupos mostrados tienen permiso para administrar los usuarios o los dispositivos que aparecen en Ámbito (grupos).
--   **Ámbito (grupos)** : los usuarios de Miembros pueden administrar todos los usuarios o dispositivos de estos grupos.
--   **[Ámbito (etiquetas)](scope-tags.md)** : los usuarios de Miembros pueden ver los recursos que tienen las mismas etiquetas de ámbito.
+- **Propiedades**: nombre, descripción, rol, miembros, ámbitos y etiquetas de la asignación.
+- **Miembros**: todos los usuarios de los grupos mostrados tienen permiso para administrar los usuarios o los dispositivos que aparecen en Ámbito (grupos).
+- **Ámbito (grupos)** : los usuarios de Miembros pueden administrar todos los usuarios o dispositivos de estos grupos.
+- **[Ámbito (etiquetas)](scope-tags.md)** : los usuarios de Miembros pueden ver los recursos que tienen las mismas etiquetas de ámbito.
 
 ### <a name="multiple-role-assignments"></a>Múltiples asignaciones de roles
 Si un usuario tiene varias asignaciones de roles, los permisos de estas asignaciones de roles se amplían a diferentes objetos, como se indica a continuación:

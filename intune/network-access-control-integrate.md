@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9663691053d8ecd204ad899805153d0bfb25e6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041570"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044542"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integración del control de acceso de red (NAC) con Intune
 
@@ -43,7 +43,7 @@ En el caso de los dispositivos cuyo acceso a los recursos está bloqueado, el se
 
 ## <a name="nac-and-conditional-access"></a>NAC y acceso condicional
 
-NAC funciona con el acceso condicional para proporcionar decisiones de control de acceso. Para obtener más información, vea [Formas comunes de usar el acceso condicional con Intune](conditional-access-intune-common-ways-use.md).
+NAC funciona con el acceso condicional para proporcionar decisiones de control de acceso. Para más información, consulte [Formas comunes de usar el acceso condicional con Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Cómo funciona la integración de NAC
 

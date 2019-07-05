@@ -17,15 +17,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5329e23ee6307f86c7b1fcaead0cb24b8271443c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 74050f51347f234029a83ce0e3463fe6b11aee1b
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041619"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044568"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>¿Qué es la integración de Mobile Threat Defense con Intune?
-Intune puede integrar datos de un proveedor de Mobile Threat Defense como una fuente de información para directivas de cumplimiento y reglas de acceso condicional. Puede usar esta información para proteger mejor los recursos corporativos, como Exchange y SharePoint, bloqueando el acceso de dispositivos móviles en peligro.  
+Intune puede integrar datos de un proveedor de Mobile Threat Defense como un origen de información para directivas de cumplimiento y reglas de acceso condicional. Puede usar esta información para proteger mejor los recursos corporativos, como Exchange y SharePoint, bloqueando el acceso de dispositivos móviles en peligro.  
 
 ## <a name="what-problem-does-this-solve"></a>¿Qué problema soluciona esto?
 Al integrar la información de un proveedor de Mobile Threat Defense, es más fácil proteger los recursos corporativos frente a amenazas que afectan a las plataformas móviles.  

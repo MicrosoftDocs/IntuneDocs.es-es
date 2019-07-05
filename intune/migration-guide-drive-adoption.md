@@ -1,7 +1,7 @@
 ---
-title: Impulsar la adopción del acceso condicional por los usuarios finales
+title: Impulso de la adopción de usuarios finales con acceso condicional
 titleSuffix: Microsoft Intune
-description: Sepa cómo usar el acceso condicional para impulsar la inscripción de Microsoft Intune.
+description: Sepa cómo usar el acceso condicional para impulsar la inscripción de Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050473"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044591"
 ---
-# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Impulsar la adopción de usuarios finales con acceso condicional en Microsoft Intune
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Impulso de la adopción de usuarios finales con acceso condicional en Microsoft Intune
 
-La habilitación de características de acceso condicional con Intune, como el bloqueo de correo electrónico para dispositivos no inscritos, puede contribuir a impulsar la inscripción y el cumplimiento, pero no son necesarios para una correcta migración. Los requisitos de seguridad y los objetivos de adopción de la migración deben determinar el éxito.
+La habilitación de las características de acceso condicional con Intune, como el bloqueo de correo electrónico para dispositivos no inscritos, puede contribuir a impulsar la inscripción y el cumplimiento, pero no son necesarios para una correcta migración. Los requisitos de seguridad y los objetivos de adopción de la migración deben determinar el éxito.
 
 ## <a name="migration-campaign-with-conditional-access"></a>Campaña de migración con acceso condicional
 
-Aquí tiene un método típico para mejorar una campaña de migración con acceso condicional:
+Este es un método típico para mejorar una campaña de migración con acceso condicional:
 
-1.  Establezca reglas de acceso condicional que se apliquen a todos los usuarios, pero excluya específicamente los usuarios que tengan que migrar desde el proveedor de MDM antiguo. Puede crear un grupo de usuarios de Azure AD con todos los usuarios excluidos del acceso condicional.
+1.  Establezca reglas de acceso condicional que se apliquen a todos los usuarios, pero excluya específicamente los usuarios que tengan que migrar desde el proveedor de MDM antiguo. Puede crear un grupo de usuarios de Azure AD con todos los usuarios excluidos del acceso condicional.
 
 2.  A medida que se migren, quite los usuarios del grupo de exclusión de acceso condicional.
 
@@ -56,15 +56,15 @@ Se trata de un método entre otros. Es posible elegir un proceso más sencillo q
 
 ## <a name="task-list-for-conditional-access"></a>Lista de tareas para acceso condicional
 
-### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tarea 1: determinación de cómo se va a implementar el acceso condicional
+### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tarea 1: determinación de cómo se va a implementar el acceso condicional
 
-[Common ways to use conditional access](conditional-access-intune-common-ways-use.md) (Formas comunes de usar el acceso condicional).
+[Formas comunes de usar el acceso condicional](conditional-access-intune-common-ways-use.md).
 
-### <a name="task-2-set-up-intune-conditional-access"></a>Tarea 2: configuración del acceso condicional de Intune
+### <a name="task-2-set-up-intune-conditional-access"></a>Tarea 2: configuración del acceso condicional de Intune
 
 Elija una de las siguientes opciones:
 
--   [Configurar el acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+-   [Configurar el acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
 -   [Instalar el conector de Exchange local con Intune](exchange-connector-install.md)
 

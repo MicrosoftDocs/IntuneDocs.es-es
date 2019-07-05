@@ -1,7 +1,7 @@
 ---
 title: Directiva de cumplimiento de dispositivos para dispositivos Jamf
 titleSuffix: Microsoft Intune
-description: Use directivas de cumplimiento de Microsoft Intune con acceso condicional de Azure Active Directory para ayudar a proteger los dispositivos administrados por Jamf.
+description: Use directivas de cumplimiento de Microsoft Intune con acceso condicional de Azure Active Directory para ayudar a proteger los dispositivos administrados por Jamf.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55ea6a1126ca3516854c002c5643ba667b8f306e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048805"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045204"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
 
 Se aplica a: Intune en el portal de Azure
 
-Puede usar Azure Active Directory y las directivas de acceso condicional de Microsoft Intune garantizan que los usuarios finales son compatibles con los requisitos de la organización. Puede aplicar estas directivas en los equipos Mac que se [administran con Jamf Pro](conditional-access-integrate-jamf.md). Esto requiere acceso tanto a la consola de Intune como a la consola de Jamf Pro.
+Puede usar Azure Active Directory y las directivas de acceso condicional de Microsoft Intune garantizan que los usuarios finales son compatibles con los requisitos de la organización. Puede aplicar estas directivas en los equipos Mac que se [administran con Jamf Pro](conditional-access-integrate-jamf.md). Esto requiere acceso tanto a la consola de Intune como a la consola de Jamf Pro.
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Configuración de las directivas de cumplimiento de dispositivos en Intune
 
@@ -79,4 +79,4 @@ Obtenga información sobre cómo [quitar un dispositivo administrado por Jamf en
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-- [Introducción al acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
+- [Introducción al acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

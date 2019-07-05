@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744342"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344086"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -68,7 +68,7 @@ Se recomienda encarecidamente publicar el servidor NDES a través de un proxy in
 |**Plantilla de certificado**|Configure esta plantilla en la CA emisora.|
 |**Certificado de autenticación del cliente**|Solicitado desde la CA emisora o la CA pública; instale este certificado en el servidor NDES.|
 |**Certificado de autenticación de servidor**|Solicitado desde la CA emisora o la CA pública, este certificado SSL se instala y se enlaza en IIS, en el servidor NDES. Si el certificado tiene el conjunto de usos de claves de autenticación de cliente y servidor (**Usos mejorados de clave**), puede usar el mismo certificado.|
-|**Certificado de CA raíz de confianza**|Exportará este certificado como un archivo **.cer** desde la entidad de certificación raíz o cualquier dispositivo que confíe en ella. Luego, asígnelo a los usuarios o dispositivos que usan el perfil de certificado de CA de confianza, o bien a ambos.<br /><b>NOTA:<b /> al asignar un perfil de certificado SCEP, asegúrese de asignar el perfil de certificado raíz de confianza al que se hace referencia en el perfil de su certificado SCEP al mismo grupo de usuarios o dispositivos.<br /><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree.<br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
+|**Certificado de CA raíz de confianza**|Exportará este certificado como un archivo **.cer** desde la entidad de certificación raíz o cualquier dispositivo que confíe en ella. Luego, asígnelo a los usuarios o dispositivos que usan el perfil de certificado de CA de confianza, o bien a ambos.<br /> **NOTA:<br /> al asignar un perfil de certificado SCEP, asegúrese de asignar el *perfil de certificado raíz de confianza* al que se hace referencia en el perfil de su certificado SCEP al mismo grupo de usuarios o dispositivos.  Para crear este perfil, consulte cómo [crear un perfil de certificado de confianza](certficates-pfx-configure.md#create-a-trusted-certificate-profile), que está documentado en el artículo sobre los perfiles de certificado PKCS.** <br/><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree. <br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
 
 ### <a name="accounts"></a>Cuentas
 
@@ -487,7 +487,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
      - **Firma digital**: permite el intercambio de claves solo si una firma digital protege la clave
    - **Tamaño de la clave (bits)** : seleccione el número de bits que contiene la clave
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Seleccione uno de los tipos de algoritmos hash disponibles para usar con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión.
-   - **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado. Asegúrese de asignar este perfil de certificado raíz de confianza al mismo grupo asignado en el perfil de certificado SCEP.
+   - **Certificado raíz**: Elija un [perfil de certificado raíz de confianza](certficates-pfx-configure.md#create-a-trusted-certificate-profile) que haya creado previamente y asignado al usuario o al dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado. Asegúrese de asignar este perfil de certificado raíz de confianza al mismo grupo asignado en el perfil de certificado SCEP.
    - **Uso mejorado de clave**: elija **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario.
    - **Configuración de la inscripción**
      - **Umbral de renovación (%)** : especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
@@ -508,6 +508,7 @@ Considere los siguiente aspectos antes de asignar perfiles de certificado a grup
 
     > [!NOTE]
     > En iOS, si implementa varios perfiles de recursos que usen el mismo perfil de certificado, es posible que vea varias copias del certificado en el perfil de administración.
+- Si usa la administración conjunta para Intune y Configuration Manager, en Configuration Manager, e[stablezca el control deslizante de la carga de trabajo](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) de la *directiva de acceso a los recursos* en **Intune** o **Pilot de Intune**. Esta configuración permite que los clientes de Windows 10 inicien el proceso de solicitar el certificado.  
 
 Para obtener más información sobre cómo asignar perfiles, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
@@ -552,7 +553,7 @@ A partir de la versión 6.1806.x.x, el servicio de conector de Intune registra l
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Correcto  | Correcto |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | La entidad de certificación no es válida o no está disponible. Compruebe que la entidad de certificación está disponible y que el servidor puede comunicarse con él. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | No se encontró el certificado de autenticación de cliente de Symantec en el almacén de certificados local. Vea el artículo [Instalación del certificado de autorización de registro de Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para más información.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | No se encontró el certificado de autenticación de cliente de Symantec en el almacén de certificados local. Para más información, consulte el artículo [Set up Intune Certificate Connector for DigiCert PKI Platform](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) (Configuración del conector de certificado de Intune para la plataforma de PKI de DigiCert).  |
 | 0x00000402 | RevokeCert_AccessDenied  | La cuenta especificada no tiene permisos para revocar un certificado de una entidad de certificación. Vea el campo Nombre de CA en los detalles del mensaje del evento para determinar la entidad de certificación emisora.  |
 | 0x00000403 | CertThumbprint_NotFound  | No se pudo encontrar un certificado que coincida con los datos especificados. Inscriba el conector de certificado e inténtelo de nuevo. |
 | 0x00000404 | Certificate_NotFound  | No se pudo encontrar un certificado que coincida con la entrada proporcionada. Vuelva a inscribir el conector de certificado e inténtelo de nuevo. |

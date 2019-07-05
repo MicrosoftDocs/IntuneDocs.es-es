@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d200c8d56dbbe60dd331081537154951f5e5591d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041553"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528628"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
@@ -66,7 +66,7 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 8.  Haga clic en **Aceptar** dos veces, después seleccione **Crear**.
 
 > [!IMPORTANT]
-> Si crea directivas de acceso condicional para Office 365 u otros servicios, se efectuará esta evaluación de cumplimiento de dispositivo y se bloqueará el acceso de los dispositivos no conformes a los recursos corporativos hasta que se resuelva la amenaza en el dispositivo.
+> Si crea directivas de acceso condicional para Office 365 u otros servicios, se efectuará esta evaluación de cumplimiento de dispositivo y se bloqueará el acceso de los dispositivos no conformes a los recursos corporativos hasta que se resuelva la amenaza en el dispositivo.
 
 ## <a name="to-assign-an-mtd-device-compliance-policy"></a>Asignación de una directiva de cumplimiento de dispositivos de MTD
 

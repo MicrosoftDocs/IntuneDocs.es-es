@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961dcb953584bc16ad3b3613596223af2a3596c7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a50eb6e58c7b866af32387a85026eb87f825b15
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049925"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045909"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicaciones protegidas de Microsoft Intune  
 
 Las aplicaciones administradas de Intune están habilitadas con un amplio conjunto de directivas de protección de aplicaciones móviles. Las aplicaciones administradas le permiten:
 - Restringir las funciones Copiar y pegar y Guardar como
 - Configurar vínculos web para abrir dentro del explorador de Microsoft seguro
-- Habilitar el uso de varias identidades y el acceso condicional de nivel de aplicación
+- Habilitar el uso de varias identidades y el acceso condicional de nivel de aplicación.
 - Aplicar directivas de prevención de pérdida de datos sin tener que administrar el dispositivo del usuario
 - Habilitar la protección de aplicaciones sin necesidad de inscripción
 - Habilitar la protección de aplicaciones en dispositivos administrados con herramientas EMM de terceros

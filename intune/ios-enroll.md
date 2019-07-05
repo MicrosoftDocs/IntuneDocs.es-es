@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 943aa8361778c60f498f6b1919299d99bf678fd9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bc14561aa2932327d69f920885fa17538bdf245c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047104"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045547"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscripción de dispositivos iOS en Intune
 
@@ -68,7 +68,7 @@ Los dispositivos configurados con afinidad de usuario pueden instalar y ejecutar
 
 La afinidad de usuario es necesaria para admitir lo siguiente:
   - Aplicaciones de administración de aplicaciones móviles (MAM)
-  - Acceso condicional al correo electrónico y los datos de la empresa
+  - Acceso condicional al correo electrónico y los datos de la empresa.
   - Aplicación de portal de empresa
 
 **Inscripción de dispositivos iOS de empresa con afinidad de usuario**

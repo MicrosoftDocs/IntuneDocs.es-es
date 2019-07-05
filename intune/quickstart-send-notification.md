@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045848"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044253"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Inicio rápido: Enviar notificaciones a dispositivos no conformes
 
 En este tutorial de inicio rápido usará Microsoft Intune para enviar una notificación por correo electrónico a los miembros de su personal que tienen dispositivos no conformes.
 
-De forma predeterminada, cuando Intune detecta un dispositivo que no es compatible, lo marca inmediatamente como tal. Después, el [acceso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) de Azure Active Directory (AAD) bloquea el dispositivo. Cuando un dispositivo no es compatible, Intune le permite agregar acciones en caso de incumplimiento, lo que le ofrece flexibilidad a la hora de decidir lo que debe hacer. Por ejemplo, puede dar a los usuarios un período de gracia antes de bloquear los dispositivos que no sean conformes.
+De forma predeterminada, cuando Intune detecta un dispositivo que no es compatible, lo marca inmediatamente como tal. Después, el [acceso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) de Azure Active Directory (AAD) bloquea el dispositivo. Cuando un dispositivo no es compatible, Intune le permite agregar acciones en caso de incumplimiento, lo que le ofrece flexibilidad a la hora de decidir lo que debe hacer. Por ejemplo, puede dar a los usuarios un período de gracia antes de bloquear los dispositivos que no sean conformes.
 
 Una de las acciones que puede llevar a cabo si los dispositivos no son conformes es enviar un correo electrónico a los usuarios finales. También puede personalizar una notificación por correo electrónico antes de enviarlo a los usuarios finales. En concreto, puede personalizar los destinatarios, el asunto, el cuerpo del mensaje, incluido el logotipo de la empresa, y la información de contacto. Intune también incluirá información sobre los dispositivos no compatibles en la notificación por correo electrónico.
 
 Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de prueba gratuita](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
-- Al usar las directivas de cumplimiento de dispositivos para bloquear los dispositivos para evitar que usen los recursos corporativos, se debe configurar el acceso condicional de AAD. Si ha seguido el tutorial de inicio rápido [Crear una directiva de cumplimiento de dispositivos](quickstart-set-password-length-android.md), quiere decir que está usando Azure Active Directory. Para obtener más información sobre AAD, consulte [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) y [Formas habituales de usar el acceso condicional con Intune](conditional-access-intune-common-ways-use.md).
+- Al usar las directivas de cumplimiento de dispositivos para bloquear los dispositivos para evitar que usen los recursos corporativos, se debe configurar el acceso condicional de AAD. Si ha seguido el tutorial de inicio rápido [Crear una directiva de cumplimiento de dispositivos](quickstart-set-password-length-android.md), quiere decir que está usando Azure Active Directory. Para más información sobre AAD, consulte [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) y [Formas habituales de usar el acceso condicional con Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 

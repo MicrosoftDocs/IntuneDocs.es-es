@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050350"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494528"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot
 Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory (Azure AD) híbrido. Para ello, siga los pasos de este artículo.
@@ -32,7 +32,7 @@ Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azur
 Configure correctamente los [dispositivos unidos a Azure AD híbrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Asegúrese de [comprobar el registro del dispositivo]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) mediante el cmdlet Get-MsolDevice.
 
 Los dispositivos que se inscriban también deben:
-- Ejecutar Windows 10 con la [actualización de octubre de 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
+- Ejecutar la versión 1809 o superiores de Windows 10.
 - Tener acceso a Internet.
 - Tener acceso a Active Directory (actualmente no se admiten conexiones VPN).
 - Realizar la configuración rápida (OOBE).
@@ -163,7 +163,7 @@ Si los dispositivos aún no están inscritos, puede registrarlos manualmente. Pa
 
 ### <a name="register-devices-from-an-oem"></a>Registro de dispositivos de un OEM
 
-Si va a comprar nuevos dispositivos, algunos OEM pueden encargarse de registrar los dispositivos. Para más información, vea la [página de Windows Autopilot](http://aka.ms/WindowsAutopilot).
+Si va a comprar nuevos dispositivos, algunos OEM pueden encargarse de registrar los dispositivos. Para más información, vea la [página de Windows Autopilot](https://aka.ms/WindowsAutopilot).
 
 Cuando los dispositivos Autopilot están *registrados*, antes de que se inscriban en Intune, se muestran en tres lugares (con los nombres establecidos en sus números de serie):
 - El panel **Dispositivos Autopilot** de Intune en Azure Portal. Seleccione **Inscripción de dispositivos** > **Inscripción de Windows** > **Dispositivos**.

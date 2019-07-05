@@ -14,15 +14,15 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4363bb4feba52c15b8918a7c6ea02fa2917a00de
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 550dfe58687806f7ead65dab2d7e15b310ae4b6e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044953"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044048"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Conector Sophos Mobile Threat Defense con Intune
-Puede controlar el acceso de los dispositivos móviles a los recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos realizada por Sophos Mobile, una solución de Mobile Threat Defense (MTD) integrada en Microsoft Intune. El riesgo se evalúa en función de la telemetría recopilada de los dispositivos que ejecutan la aplicación Sophos Mobile.
+Puede controlar el acceso de los dispositivos móviles a los recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos realizada por Sophos Mobile, una solución de Mobile Threat Defense (MTD) integrada en Microsoft Intune. El riesgo se evalúa en función de la telemetría recopilada de los dispositivos que ejecutan la aplicación Sophos Mobile.
 Se pueden configurar directivas de acceso condicional según la evaluación de riesgos de Sophos Mobile habilitada mediante las directivas de cumplimiento de dispositivos de Intune. Esas directivas se pueden usar para permitir o bloquear los dispositivos que no cumplan los requisitos y evitar que accedan a recursos corporativos en función de las amenazas detectadas.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y Sophos Mobile a proteger los recursos de la empresa?

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751364"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044884"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Administración del acceso web mediante Microsoft Edge con Microsoft Intune
 
@@ -57,7 +57,7 @@ Si la directiva de Intune no se dirige a Microsoft Edge, los usuarios no podrá
 
 ## <a name="conditional-access-for-microsoft-edge"></a>Acceso condicional para Microsoft Edge
 
-Puede aprovechar el acceso condicional de Azure AD para redirigir a los usuarios para que accedan a contenido corporativo solo a través de Microsoft Edge. Esto restringiría el acceso del explorador móvil a únicamente las aplicaciones web conectadas a Azure AD para Microsoft Edge protegido por la directiva, y esto impediría el acceso desde cualquier otro explorador no protegido, como Safari o Chrome. El acceso condicional se puede aplicar a recursos de Azure como Exchange Online y SharePoint Online, el Centro de administración de Microsoft 365 e, incluso, a sitios locales que estén expuestos a usuarios externos a través de [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
+Puede aprovechar el acceso condicional de Azure AD para redirigir a los usuarios para que accedan a contenido corporativo solo a través de Microsoft Edge. Esto restringiría el acceso del explorador móvil a únicamente las aplicaciones web conectadas a Azure AD para Microsoft Edge protegido por la directiva, y esto impediría el acceso desde cualquier otro explorador no protegido, como Safari o Chrome. El acceso condicional se puede aplicar a recursos de Azure como Exchange Online y SharePoint Online, el Centro de administración de Microsoft 365 e, incluso, a sitios locales que estén expuestos a usuarios externos a través de [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 Para restringir las aplicaciones web conectadas a Azure AD para que usen Microsoft Edge en iOS y Android, siga estos pasos:
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
