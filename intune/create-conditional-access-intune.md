@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ed6259c996772817ceaa8ec827c8ac506adfd399
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045102"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530476"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creación de una directiva de acceso condicional basado en dispositivos
 
@@ -34,12 +34,12 @@ Una directiva de acceso condicional especifica la aplicación o los servicios qu
 
 ## <a name="create-conditional-access-policy"></a>Creación de una directiva de acceso condicional
 
-1.  En el portal de Intune, seleccione **Acceso condicional** > **Directivas** > **Nueva directiva**.
+1. En el portal de Intune, seleccione **Acceso condicional** > **Directivas** > **Nueva directiva**.
    
     ![Creación de una directiva de acceso condicional](media/create-conditional-access-intune/create-ca.png)
  
-2.  En **Asignaciones**, seleccione **Usuarios y grupos**. 
-3.  En la pestaña **Incluir**, identifique los usuarios o grupos a los que quiere aplicar esta directiva de acceso condicional. Una vez que haya elegido a quiénes se va a incluir, puede usar la pestaña **Excluir** si no hay ningún usuario, rol o grupo que desee excluir de esta directiva.  
+2. En **Asignaciones**, seleccione **Usuarios y grupos**. 
+3. En la pestaña **Incluir**, identifique los usuarios o grupos a los que quiere aplicar esta directiva de acceso condicional. Una vez que haya elegido a quiénes se va a incluir, puede usar la pestaña **Excluir** si no hay ningún usuario, rol o grupo que desee excluir de esta directiva.  
     - **Todos los usuarios**: seleccione esta opción para aplicar la directiva a todos los usuarios y grupos, incluidos los usuarios internos e invitados.
   
     - **Seleccionar usuarios y grupos**: seleccione esta opción y especifique una o varias de las opciones siguientes:
@@ -52,9 +52,9 @@ Una directiva de acceso condicional especifica la aplicación o los servicios qu
      
        > [!TIP]  
        > Pruebe la directiva en un grupo reducido de usuarios para asegurarse de que funciona según lo previsto.
-4.  Seleccione **Listo**.
-5.  En **Asignaciones**, seleccione **Aplicaciones en la nube**. 
-6.  En la pestaña **Incluir**, identifique las aplicaciones y los servicios que desea proteger con esta directiva de acceso condicional. Después, puede usar la pestaña **Excluir** si hay aplicaciones o servicios que desea excluir de esta directiva.
+4. Seleccione **Listo**.
+5. En **Asignaciones**, seleccione **Aplicaciones en la nube**. 
+6. En la pestaña **Incluir**, identifique las aplicaciones y los servicios que desea proteger con esta directiva de acceso condicional. Después, puede usar la pestaña **Excluir** si hay aplicaciones o servicios que desea excluir de esta directiva.
     - **Todas las aplicaciones en la nube**: seleccione esta opción para aplicar la directiva a todas las aplicaciones.
       > [!IMPORTANT]  
       > La aplicación Administración de Microsoft Azure para el acceso a Azure Portal se incluye en esta lista. Asegúrese de usar la pestaña **Excluir** pestaña aquí o en las opciones **Usuarios y grupos** para asegurarse de que usted (o los usuarios o grupos que designa) podrá iniciar sesión en Azure Portal. 
@@ -63,8 +63,8 @@ Una directiva de acceso condicional especifica la aplicación o los servicios qu
     
       ![Creación de una directiva de acceso condicional](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.  Seleccione **Listo**.
-8.  En **Asignaciones**, seleccione **Condiciones**.
+7. Seleccione **Listo**.
+8. En **Asignaciones**, seleccione **Condiciones**.
     - **Riesgo de inicio de sesión**: elija Sí para usar la detección de riesgo de inicio de sesión de Azure AD Identity Protection con esta directiva y luego elija los niveles de riesgo de inicio de sesión a los que se debe aplicar la directiva.
     - **Plataformas de dispositivos**: en la pestaña **Incluir**, identifique las plataformas de dispositivos a las que desea aplicar esta directiva de acceso condicional. Use la pestaña **Excluir** para excluir plataformas de esta directiva.
     - **Ubicaciones**: en la pestaña **Incluir**, especifique si la directiva se aplica a cualquier ubicación, a ubicaciones de red de confianza que están bajo el control de su departamento de TI o a ubicaciones de red específicas. Use la pestaña **Excluir** para excluir ubicaciones de red de esta directiva. 
@@ -76,7 +76,7 @@ Una directiva de acceso condicional especifica la aplicación o los servicios qu
       > [!TIP]  
       > Si desea proteger tanto los clientes de **autenticación moderna** como los **clientes de Exchange ActiveSync**, cree dos directivas de acceso condicional independientes, una para cada tipo de cliente. Aunque Exchange ActiveSync admita autenticación moderna, la única condición que Exchange ActiveSync admite es la plataforma. Otras condiciones, incluida la autenticación multifactor, no se admiten. Para proteger eficazmente el acceso a Exchange Online desde Exchange ActiveSync, cree una directiva de acceso condicional que especifique la aplicación en la nube de Office 365 Exchange Online y la aplicación cliente Exchange ActiveSync con la directiva Aplicar solo a las plataformas admitidas seleccionadas.
 
-9.  Seleccione **Listo**.
+9. Seleccione **Listo**.
 10. En **Controles de acceso**, seleccione **Conceder**. Configure lo que ocurre en función de las condiciones que ha definido.  Puede seleccionar entre las siguientes opciones:
     - **Bloquear acceso**: se denegará el acceso a los usuarios especificados en esta directiva a las aplicaciones bajo las condiciones que haya especificado.
     - **Conceder acceso**: se concederá acceso a los usuarios especificados en esta directiva, pero puede ser necesario realizar cualquiera de las siguientes acciones adicionales:

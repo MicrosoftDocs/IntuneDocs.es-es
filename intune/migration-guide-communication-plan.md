@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044608"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494577"
 ---
 # <a name="plan-communications"></a>Planeamiento de las comunicaciones 
 El plan de comunicación es un elemento fundamental en una migración de Intune. Se ofrecen las siguientes herramientas y plantillas para ayudarle a formar a los usuarios finales. El kit de adopción de Intune incluye plantillas de correo electrónico, una guía para la inscripción de Intune y vínculos a vídeos con instrucciones para la inscripción del usuario final.  
 
-Descargar:  [Kit de adopción de Intune](http://aka.ms/IntuneAdoptionKit)
+Descargar:  [Kit de adopción de Intune](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>Plantillas de correo electrónico 
 Se recomienda el siguiente plan de comunicación por correo electrónico. Hemos proporcionado plantillas para que pueda adaptarlas a su plan de comunicación:

@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046273"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528686"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados
 
@@ -74,7 +74,7 @@ Para este tutorial, deberá configurar una directiva de protección de aplicacio
 
     Seleccione **Aceptar** para volver al panel de configuración.  
 
-7.  En el panel Configuración, seleccione **Aceptar** y, después, en el panel para crear una directiva, seleccione **Crear**.
+7. En el panel Configuración, seleccione **Aceptar** y, después, en el panel para crear una directiva, seleccione **Crear**.
 
 Se crea la directiva de protección de aplicación para Outlook. A continuación, puede configurar el acceso condicional para exigir a los dispositivos que usen la aplicación Outlook.
 
@@ -188,5 +188,5 @@ Cuando ya no se necesiten las directivas de prueba, puede quitarlas.
 4. Seleccione **Acceso condicional** > **Directivas**.  
 5. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) para cada una de las directivas de prueba y después seleccione **Eliminar**. Seleccione **Sí** para confirmar.  
 
- ## <a name="next-steps"></a>Pasos siguientes  
+## <a name="next-steps"></a>Pasos siguientes  
 En este tutorial, ha creado directivas de protección de aplicación para limitar lo que el usuario puede hacer con la aplicación de Outlook y ha creado directivas de acceso condicional para que los clientes de autenticación moderna usen la aplicación Outlook y MFA. Para información sobre cómo usar Intune con acceso condicional para proteger otras aplicaciones y servicios, consulte [¿Qué es el acceso condicional?](conditional-access.md).
