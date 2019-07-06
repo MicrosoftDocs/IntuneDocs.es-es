@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8756ad134853bdd19155c3d8f50d1f07960e80f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045371"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547887"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de datos de Data Warehouse de Microsoft Intune
 
@@ -32,22 +32,22 @@ El Almacenamiento de datos de Intune muestrea los datos a diario para proporcion
 
 El almacenamiento expone los datos en las siguientes áreas de alto nivel:
 
-  -  Aplicaciones y uso habilitados para la protección de aplicaciones
-  -  Dispositivos inscritos, propiedades e inventario
-  -  Inventario de aplicaciones y software
-  -  Configuración de dispositivos y directivas de cumplimiento
+  - Aplicaciones y uso habilitados para la protección de aplicaciones
+  - Dispositivos inscritos, propiedades e inventario
+  - Inventario de aplicaciones y software
+  - Configuración de dispositivos y directivas de cumplimiento
 
 Estas áreas contienen las entidades que son significativas para el entorno de Intune. Encontrará más detalles sobre los conjuntos de entidades en los temas siguientes:
 
-  -  [Aplicación](reports-ref-application.md)
-  -  [Fecha](reports-ref-date.md)
-  -  [Dispositivos](reports-ref-devices.md)
-  -  [Extensión de administración de Intune](reports-ref-intunemanagementextension.md)
-  -  [Directiva](reports-ref-policy.md)
-  -  [Administración de aplicaciones móviles (MAM)](reports-ref-mobile-app-management.md)
-  -  [User](reports-ref-user.md)
-  -  [Usuario actual](reports-ref-current-user.md)
-  -  [Asociación de dispositivos de usuario](reports-ref-user-device.md)
+  - [Aplicación](reports-ref-application.md)
+  - [Fecha](reports-ref-date.md)
+  - [Dispositivos](reports-ref-devices.md)
+  - [Extensión de administración de Intune](reports-ref-intunemanagementextension.md)
+  - [Directiva](reports-ref-policy.md)
+  - [Administración de aplicaciones móviles (MAM)](reports-ref-mobile-app-management.md)
+  - [User](reports-ref-user.md)
+  - [Usuario actual](reports-ref-current-user.md)
+  - [Asociación de dispositivos de usuario](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>Relaciones: modelo de esquema de estrella
 

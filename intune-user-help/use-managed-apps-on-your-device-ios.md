@@ -18,12 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835070"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546613"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicaciones administradas en el dispositivo iOS
 
@@ -38,9 +38,9 @@ Cuando accede a datos de la empresa en una aplicación administrada, verá un me
 ## <a name="how-do-i-get-managed-apps"></a>¿Cómo se pueden obtener aplicaciones administradas?  
 Las aplicaciones administradas se obtienen de dos maneras distintas:
 
--   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el equipo de soporte técnico de su empresa puede instalarla en el dispositivo. Para más información sobre la inscripción, consulte [Inscribir un dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md) o [Inscribir un dispositivo macOS en Intune](enroll-your-device-in-intune-macos.md).
+- Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el equipo de soporte técnico de su empresa puede instalarla en el dispositivo. Para más información sobre la inscripción, consulte [Inscribir un dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md) o [Inscribir un dispositivo macOS en Intune](enroll-your-device-in-intune-macos.md).
 
--   Instale una aplicación desde App Store y después inicie sesión con la cuenta de usuario corporativo que administra Intune.
+- Instale una aplicación desde App Store y después inicie sesión con la cuenta de usuario corporativo que administra Intune.
 
 Es posible que el equipo de soporte técnico de su empresa a veces compre varias licencias de una aplicación que instale. Si aparece un mensaje donde se le pide aceptar el contrato de Programas de Compras por Volumen de Apple, es normal y puede aceptarlo. Si no lo hace, no podrá instalar la aplicación.
 
@@ -56,22 +56,22 @@ Es posible que el equipo de soporte técnico de su empresa a veces compre varias
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>¿Qué puede administrar el equipo de soporte técnico de mi empresa en una aplicación?  
 Estos son algunos ejemplos de opciones que el equipo de soporte técnico de su empresa puede administrar en una aplicación y que pueden afectar a las interacciones con los datos de la empresa en el dispositivo:
 
--   Acceso a sitios Web específicos
+- Acceso a sitios Web específicos
 
--   Transferencias de datos entre las aplicaciones
+- Transferencias de datos entre las aplicaciones
 
--   Almacenamiento de archivos
+- Almacenamiento de archivos
 
--   Operaciones de copiado y pegado
+- Operaciones de copiado y pegado
 
--   Requisitos de acceso PIN
+- Requisitos de acceso PIN
 
--   El inicio de sesión con credenciales corporativas
+- El inicio de sesión con credenciales corporativas
 
--   La capacidad de realizar una copia de seguridad en la nube
+- La capacidad de realizar una copia de seguridad en la nube
 
--   La capacidad de realizar capturas de pantalla
+- La capacidad de realizar capturas de pantalla
 
--   Requisitos de cifrado de datos
+- Requisitos de cifrado de datos
 
 Para más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

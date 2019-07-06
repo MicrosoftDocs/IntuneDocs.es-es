@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58163435"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546802"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
 
@@ -36,13 +36,13 @@ Si usa un dispositivo corporativo inscrito, es posible que no vea la opción par
 
 ## <a name="reset-your-passcode"></a>Restablecimiento del código de acceso
 
-1.  Abra el [sitio web del Portal de empresa](https://portal.manage.microsoft.com) y haga clic en el botón __Menú__ > __Dispositivos__.  
+1. Abra el [sitio web del Portal de empresa](https://portal.manage.microsoft.com) y haga clic en el botón __Menú__ > __Dispositivos__.  
 
 2. Seleccione el dispositivo en el que es necesario restablecer un código de acceso.  
 
     ![Captura de pantalla de la página Dispositivos, con dos iconos en los que se muestran dispositivos no identificados con nombres genéricos. Directamente debajo de los dispositivos hay un banner de color gris en el que se solicita al usuario que identifique el dispositivo que está usando o que agregue uno nuevo.](./media/rename-reset-device-step2-1808.png) 
 
-3. Haga clic en **Restablecer código de acceso**. Si la opción de código de acceso no es visible en la parte superior de la página, haga clic en **Más (...)** > **Restablecer código de acceso**.   
+3. Haga clic en **Restablecer código de acceso**. Si la opción de código de acceso no es visible en la parte superior de la página, haga clic en **Más (...)**  > **Restablecer código de acceso**.   
 
    ![Página de detalles de un dispositivo seleccionado en el sitio web del Portal de empresa, con una lista de vínculos en la parte superior incluidos Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/rename-reset-device-1808.png)   
 
@@ -79,7 +79,7 @@ En esta sección se describe el restablecimiento del código de acceso y el comp
 **iOS**: quita el código de acceso existente y no crea un código de acceso temporal. Si usa el escáner de huellas dactilares Touch ID para abrir el dispositivo o realizar compras, tendrá que configurarlo nuevo.  
 
 **Windows 10 Mobile**: quita el código de acceso existente y crea un código de acceso temporal compuesto de letras y números. Si está configurado, el reconocimiento facial de Windows Hello seguirá funcionando con el dispositivo.
-    
+
 **Windows Phone 8.1**: quita el código de acceso existente y crea un código de acceso temporal compuesto de letras y números.  
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

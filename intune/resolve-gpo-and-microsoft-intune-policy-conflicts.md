@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403772"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547952"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflictos de directivas de Microsoft Intune y objetos de directiva de grupo (GPO)
 
@@ -38,11 +38,11 @@ Cuando se producen conflictos, la directiva de grupo de nivel de dominio tiene p
 ## <a name="what-to-do-if-you-are-using-group-policy"></a>Qué hacer si se utiliza la directiva de grupo
 Asegúrese de que las directivas que aplica no se administran mediante la directiva de grupo. Para evitar conflictos, puede usar uno o más de los siguientes métodos:
 
--   Mueva los equipos a una unidad organizativa (UO) de Active Directory que no tenga aplicada la configuración de la directiva de grupo antes de instalar el cliente de Intune. También es posible bloquear la herencia de directivas de grupo en las UO que contienen equipos inscritos en Intune a los que no quiere aplicar la configuración de la directiva de grupo.
+- Mueva los equipos a una unidad organizativa (UO) de Active Directory que no tenga aplicada la configuración de la directiva de grupo antes de instalar el cliente de Intune. También es posible bloquear la herencia de directivas de grupo en las UO que contienen equipos inscritos en Intune a los que no quiere aplicar la configuración de la directiva de grupo.
 
--   Use un filtro de grupo de seguridad para restringir los GPO únicamente a los equipos que no se administran mediante Intune.
+- Use un filtro de grupo de seguridad para restringir los GPO únicamente a los equipos que no se administran mediante Intune.
 
--   Deshabilite o quite los objetos de directiva de grupo que entran en conflicto con las directivas de Intune.
+- Deshabilite o quite los objetos de directiva de grupo que entran en conflicto con las directivas de Intune.
 
 Para obtener más información acerca de Active Directory y la directiva de grupo de Windows, consulte la documentación de Windows Server.
 
@@ -54,7 +54,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
 #### To apply WMI filters to a GPO
 
-1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
+1. Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -84,42 +84,42 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
     };
     ```
 
-2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
+2. Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
     **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
+3. Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
+    - For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   For GPOs that apply to PCs that are managed by Intune, use the following:
+    - For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
+4. Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
+    - For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
+    - For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
 Puede aplicar los GPO únicamente a los grupos de seguridad especificados en el área **Filtrado de seguridad** de la Consola de administración de directivas de grupo para un GPO seleccionado. De forma predeterminada, los GPO se aplican a *usuarios autenticados*.
 
--   En el complemento **Usuarios y equipos de Active Directory**, cree un grupo de seguridad que contenga los equipos y las cuentas de usuario que no quiere administrar mediante Intune. Por ejemplo, el nombre del grupo podría ser *No en Microsoft Intune*.
+- En el complemento **Usuarios y equipos de Active Directory**, cree un grupo de seguridad que contenga los equipos y las cuentas de usuario que no quiere administrar mediante Intune. Por ejemplo, el nombre del grupo podría ser *No en Microsoft Intune*.
 
--   En la Consola de administración de directivas de grupo, en la pestaña **Delegación** del GPO seleccionado, haga clic con el botón derecho en el nuevo grupo de seguridad para delegar los permisos **Lectura** y **Aplicar directiva de grupo** apropiados en los usuarios y equipos del grupo de seguridad. (Los permisos**Aplicar directiva de grupo** están disponibles en el cuadro de diálogo **Avanzadas** ).
+- En la Consola de administración de directivas de grupo, en la pestaña **Delegación** del GPO seleccionado, haga clic con el botón derecho en el nuevo grupo de seguridad para delegar los permisos **Lectura** y **Aplicar directiva de grupo** apropiados en los usuarios y equipos del grupo de seguridad. (Los permisos**Aplicar directiva de grupo** están disponibles en el cuadro de diálogo **Avanzadas** ).
 
--   Después, aplique el nuevo filtro de grupo de seguridad a un GPO seleccionado y quite el filtro predeterminado **Usuarios autenticados**.
+- Después, aplique el nuevo filtro de grupo de seguridad a un GPO seleccionado y quite el filtro predeterminado **Usuarios autenticados**.
 
 El nuevo grupo de seguridad debe mantenerse inscrito en los cambios del servicio de Intune.
 

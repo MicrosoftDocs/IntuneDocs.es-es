@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95862c006baef40bfb219e5cff50d5622c8c00b4
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 767788d702db45686d686e21018cbf0c5b038412
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069342"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546671"
 ---
 # <a name="set-your-pin-or-password"></a>Establecimiento del PIN o la contraseña
 
@@ -31,9 +31,9 @@ El equipo de soporte técnico de su empresa puede pedir que establezca un PIN o 
 
 Para establecer un PIN o una contraseña, use los siguientes pasos.
 
-1.  Pulse en **Configuración** > **Seguridad** > **Bloqueo de pantalla** > **Contraseña**.
+1. Pulse en **Configuración** > **Seguridad** > **Bloqueo de pantalla** > **Contraseña**.
 
-2.  Elija y confirme la nueva contraseña.
+2. Elija y confirme la nueva contraseña.
 
 En ciertos dispositivos, es posible que necesite establecer un PIN de inicio además de la contraseña de pantalla. Para intentar corregir este problema, encuentre una ubicación en la aplicación de configuración para habilitar esta opción. Por ejemplo, en el Samsung Galaxy S7, habilita el inicio seguro en **Configuración** > **Pantalla de bloqueo y seguridad** > **Inicio seguro**. Puede descubrir más [aquí](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 

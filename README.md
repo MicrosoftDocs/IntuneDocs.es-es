@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804432"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545235"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta del Código Abierto de Microsoft
 
@@ -30,7 +30,7 @@ Ha encontrado uno de los repositorios de GitHub que contiene el origen del conte
     5. Cree la solicitud de incorporación de cambios.
     
     **Opción 2: buscar el artículo en este repositorio y actualizarlo**  
-    1.  La mayoría de los temas están en `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. En esta carpeta, busque el nombre del tema, como `troubleshoot-policies-in-microsoft-intune`. 
+    1. La mayoría de los temas están en `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. En esta carpeta, busque el nombre del tema, como `troubleshoot-policies-in-microsoft-intune`. 
     2. Seleccione el vínculo y haga clic en el icono de lápiz. Al mantener el mouse sobre el icono de lápiz, se ve la información sobre herramientas **Editar este archivo**. 
     3. Realice los cambios y, luego, **confírmelos**. 
     4. Cree la solicitud de incorporación de cambios. 

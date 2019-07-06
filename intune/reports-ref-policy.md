@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040981"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549181"
 ---
 # <a name="reference-for-policy-entities"></a>Referencia de entidades de directivas
 
 La categoría **Directiva** contiene entidades para dispositivos móviles que realizan el seguimiento de información como la siguiente:
 
-  -  Inventario de los perfiles de configuración de dispositivos, los perfiles de configuración de aplicaciones y las directivas de cumplimiento  
-  -  Número de dispositivos con estado correcto, estado pendiente, estado con errores o estado de error por día  
-  -  Número de usuarios con estado correcto, estado pendiente, estado con errores o estado de error por día  
-  -  Número acumulado de dispositivos con estado correcto, estado pendiente, estado con errores o estado de error  
+  - Inventario de los perfiles de configuración de dispositivos, los perfiles de configuración de aplicaciones y las directivas de cumplimiento  
+  - Número de dispositivos con estado correcto, estado pendiente, estado con errores o estado de error por día  
+  - Número de usuarios con estado correcto, estado pendiente, estado con errores o estado de error por día  
+  - Número acumulado de dispositivos con estado correcto, estado pendiente, estado con errores o estado de error  
 
 ## <a name="policy"></a>Directiva
 

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a012cb7fe25b70ee260f2b3a2d49a47c3bae06a3
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843772"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558456"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Tiene que instalar SandBlast Mobile Protect en su dispositivo Android
 
@@ -47,9 +47,9 @@ Si tiene problemas con la instalación, pruebe los pasos de solución de problem
 
 8. SandBlast Mobile Protect comienza a comprobar inmediatamente si existen amenazas de seguridad en el dispositivo.
 
-9.  Si SandBlast Mobile Protect encuentra una amenaza de seguridad en el dispositivo, verá instrucciones sobre cómo solucionar el problema.
+9. Si SandBlast Mobile Protect encuentra una amenaza de seguridad en el dispositivo, verá instrucciones sobre cómo solucionar el problema.
 
-10.  Si no se detecta ninguna amenaza, los tres tipos de amenaza aparecerán en verde.
+10. Si no se detecta ninguna amenaza, los tres tipos de amenaza aparecerán en verde.
 
 11. La pantalla **Detalles del dispositivo** del Portal de empresa muestra que ahora cumple con los requisitos de seguridad de la empresa.
 

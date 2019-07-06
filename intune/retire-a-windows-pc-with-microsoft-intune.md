@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ff00c0a41fecada6e61f8a9bfa6c5a00dab921
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040853"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549155"
 ---
 # <a name="retire-a-windows-pc"></a>Retirar un PC de Windows
 
@@ -30,9 +30,9 @@ ms.locfileid: "66040853"
 
 Use los siguientes pasos para retirar equipos de escritorio que está administrando como PC ejecutando el cliente de software de Intune en ellos. Cuando retira un PC, este se quita de la administración de Intune. No se puede borrar un PC desde Intune para establecerlo de nuevo en la configuración de fábrica original.
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el PC que quiera retirar).
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el PC que quiera retirar).
 
-2.  Seleccione los dispositivos que quiera retirar y, después, elija **Retirar/Eliminar datos**.
+2. Seleccione los dispositivos que quiera retirar y, después, elija **Retirar/Eliminar datos**.
 
 Para volver a inscribir un PC en Intune, vuelva a instalar el cliente de software en el PC según lo que se indica en [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -40,19 +40,19 @@ Si un PC no se puede conectar a Intune, verá un mensaje en el área de trabajo 
 
 Cuando retira un PC:
 
--   Se quita del inventario y la administración de Intune, y la licencia asociada al PC queda disponible para poder volver a usarla. La opción de retirar o borrar quita el cliente de software de Intune, pero no elimina las aplicaciones o los datos del PC. Esta retirada no efectúa un borrado completo en el PC.
+- Se quita del inventario y la administración de Intune, y la licencia asociada al PC queda disponible para poder volver a usarla. La opción de retirar o borrar quita el cliente de software de Intune, pero no elimina las aplicaciones o los datos del PC. Esta retirada no efectúa un borrado completo en el PC.
 
--   Su estado deja de aparecer en la consola de Intune.
+- Su estado deja de aparecer en la consola de Intune.
 
--   Intune quita el cliente de software del PC. Si el PC no está conectado al servicio de Intune, el cliente de software se quitará la próxima vez que se conecte.
+- Intune quita el cliente de software del PC. Si el PC no está conectado al servicio de Intune, el cliente de software se quitará la próxima vez que se conecte.
 
--   Microsoft Intune Endpoint Protection se quita del PC. Si el PC tiene instalada otra aplicación de puntos de conexión que está deshabilitada, esa aplicación se puede volver a habilitar después de quitar Microsoft Intune Endpoint Protection y, así, garantizar la protección del PC.
+- Microsoft Intune Endpoint Protection se quita del PC. Si el PC tiene instalada otra aplicación de puntos de conexión que está deshabilitada, esa aplicación se puede volver a habilitar después de quitar Microsoft Intune Endpoint Protection y, así, garantizar la protección del PC.
 
--   Se quitan las directivas del PC y se cambian los valores establecidos por la directiva.
+- Se quitan las directivas del PC y se cambian los valores establecidos por la directiva.
 
--   El PC deja de recibir actualizaciones de software o de definiciones de malware procedentes del servicio de Intune.
+- El PC deja de recibir actualizaciones de software o de definiciones de malware procedentes del servicio de Intune.
 
--   Según como estén configurados, los PC que se retiraron pueden seguir recibiendo actualizaciones mediante Windows Server Update Services, Windows Update o Microsoft Update.
+- Según como estén configurados, los PC que se retiraron pueden seguir recibiendo actualizaciones mediante Windows Server Update Services, Windows Update o Microsoft Update.
 
     > [!IMPORTANT]
     > Si el software cliente se instaló con un objeto de directiva de grupo (GPO), debe quitar dicho objeto para poder quitar el software cliente, a fin de evitar que el software se reinstale.

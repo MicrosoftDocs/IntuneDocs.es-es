@@ -18,21 +18,21 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9ea064da17e5447c08c3a8370017dec34e30af
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 416c109ae9d27ac48896c1601bd8448fa89d0af7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844410"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545616"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtiene un error mientras usa la aplicación Portal de empresa
 
 Si se produce un error mientras usa la aplicación de Portal de empresa en el dispositivo iOS, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información. Puede enviar información de errores de maneras diferentes:
 
--   En los mensajes de alerta de error, pulse **Informe**.
+- En los mensajes de alerta de error, pulse **Informe**.
 
--   En la pantalla **Acerca de** de la aplicación de portal de empresa, pulse **Enviar informe de diagnóstico**.
+- En la pantalla **Acerca de** de la aplicación de portal de empresa, pulse **Enviar informe de diagnóstico**.
 
--   Mientras se encuentra en la aplicación de portal de empresa, agite el dispositivo y, después, pulse **Correo electrónico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
+- Mientras se encuentra en la aplicación de portal de empresa, agite el dispositivo y, después, pulse **Correo electrónico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

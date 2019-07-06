@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 477aa18ebb1e079573e7962429d33a8ca4afabed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e4fa124d1b3fdb765ac3da964d57ade5c1c4c65
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834337"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545621"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Cifrado del dispositivo Windows
 
@@ -31,8 +31,8 @@ A fin de proteger los datos de la empresa o del centro educativo, puede que el e
 
 Si tiene un dispositivo de escritorio, siga estas instrucciones para cifrarlo.
 
-1.  Busque e inicie la aplicación **Administrar BitLocker**.
+1. Busque e inicie la aplicación **Administrar BitLocker**.
 
-2.  Haga clic en **Activar BitLocker** y siga las instrucciones que se indican para cifrar cada una de las unidades.
+2. Haga clic en **Activar BitLocker** y siga las instrucciones que se indican para cifrar cada una de las unidades.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: f0a8b0b633f64a2ed6e3e14d5d884df80342067a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196931"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545463"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Inscribir dispositivos con perfil profesional Android
 
@@ -33,7 +33,7 @@ Inscriba un dispositivo personal Android para obtener acceso al correo electrón
 
 ## <a name="create-work-profile-and-enroll-device"></a>Crear un perfil profesional e inscribir un dispositivo
 
-1.  En la pantalla de **bienvenida** del Portal de empresa de Android, pulse **Iniciar sesión** y luego inicie sesión con su cuenta profesional o educativa. Si aún no ha instalado la aplicación gratuita, descárguela e instálela desde [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. En la pantalla de **bienvenida** del Portal de empresa de Android, pulse **Iniciar sesión** y luego inicie sesión con su cuenta profesional o educativa. Si aún no ha instalado la aplicación gratuita, descárguela e instálela desde [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
     ![Pantalla de bienvenida del Portal de empresa de Android](./media/and-enroll-0-welcome-screen.png)
 
@@ -41,15 +41,15 @@ Inscriba un dispositivo personal Android para obtener acceso al correo electrón
 
     ![Pantalla Configuración de acceso a la empresa](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  En la pantalla **¿Por qué crear un perfil de trabajo?**, lea sobre lo que podrá hacer y luego pulse **CONTINUAR**.
+3. En la pantalla **¿Por qué crear un perfil de trabajo?** , lea sobre lo que podrá hacer y luego pulse **CONTINUAR**.
 
     ![Por qué crear un perfil de trabajo](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Revise una lista sobre lo que el equipo de soporte técnico de su empresa puede y no puede ver en el dispositivo y pulse **CONTINUAR**.
+4. Revise una lista sobre lo que el equipo de soporte técnico de su empresa puede y no puede ver en el dispositivo y pulse **CONTINUAR**.
 
     ![¿Qué puede ver y no ver el equipo de soporte técnico de su empresa en el dispositivo?](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  En la pantalla **What's next?** (¿Qué ocurre después?), lea lo que ocurre durante la inscripción y, luego, pulse **ENROLL** (INSCRIBIR).
+5. En la pantalla **What's next?** (¿Qué ocurre después?), lea lo que ocurre durante la inscripción y, luego, pulse **ENROLL** (INSCRIBIR).
 
     ![Pantalla What’s next? (¿Qué ocurre después?)](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
@@ -63,7 +63,7 @@ Inscriba un dispositivo personal Android para obtener acceso al correo electrón
 
     Verá un par de mensajes que indican "Configurar el perfil de trabajo" e "Inscribir el dispositivo".
 
-8. En la pantalla **¡Está a medio camino!**, espere unos segundos hasta que se abra la aplicación de portal de empresa.
+8. En la pantalla **¡Está a medio camino!** , espere unos segundos hasta que se abra la aplicación de portal de empresa.
 
     ![Pulse la aplicación Portal de empresa con el distintivo.](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
@@ -75,7 +75,7 @@ Inscriba un dispositivo personal Android para obtener acceso al correo electrón
 
     Brevemente, verá el mensaje "Inscribir el dispositivo".
 
-11. Cuando aparezca la pantalla **¡Ya está todo listo!**, que indica que todo se ha configurado correctamente, pulse **LISTO**.
+11. Cuando aparezca la pantalla **¡Ya está todo listo!** , que indica que todo se ha configurado correctamente, pulse **LISTO**.
 
     ![La configuración de acceso a la empresa muestra que está completa la inscripción y el perfil de trabajo.](/intune/media/android_work_cp_enroll_04_after_1710.png)
 

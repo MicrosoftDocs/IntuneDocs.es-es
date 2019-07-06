@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844254"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545675"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>¿Qué ocurre si anula la inscripción del dispositivo iOS o macOS de Intune?
 
 Cuando se anula la inscripción del dispositivo iOS o macOS de Intune:
 
--   El dispositivo deja de aparecer en el Portal de empresa.
+- El dispositivo deja de aparecer en el Portal de empresa.
 
--   No se podrán instalar aplicaciones desde el Portal de empresa.
+- No se podrán instalar aplicaciones desde el Portal de empresa.
 
--   Dejará de aplicarse cualquier configuración que se modificara en el dispositivo al agregarlo, por ejemplo, deshabilitar la cámara o exigir una determinada longitud de la contraseña.
+- Dejará de aplicarse cualquier configuración que se modificara en el dispositivo al agregarlo, por ejemplo, deshabilitar la cámara o exigir una determinada longitud de la contraseña.
 
--   Es posible que ya no tenga acceso en el dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
+- Es posible que ya no tenga acceso en el dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
 
--   No se podrán utilizar las aplicaciones y los datos de la empresa.
+- No se podrán utilizar las aplicaciones y los datos de la empresa.
 
--   Es posible que ya no se pueda conectar a la red de la empresa mediante Wi-Fi o una red privada virtual (VPN).
+- Es posible que ya no se pueda conectar a la red de la empresa mediante Wi-Fi o una red privada virtual (VPN).
 
--   Los perfiles de correo electrónico de empresa se quitan del dispositivo.
+- Los perfiles de correo electrónico de empresa se quitan del dispositivo.
 
 Para obtener instrucciones sobre cómo anular la inscripción, vea [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-ios.md).
 

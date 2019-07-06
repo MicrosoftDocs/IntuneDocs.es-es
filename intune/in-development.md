@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
-ms.translationtype: HT
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468727"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494240"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>En desarrollo para Microsoft Intune: julio de 2019
 
@@ -58,8 +58,6 @@ Para ayudarle con la preparación y planeación, en esta página se enumeran las
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Administración de aplicaciones
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Los usuarios del dispositivo pueden ver todas las aplicaciones administradas que han instalado o han intentado instalar <!-- 2352913 -->
-Portal de empresa para Windows va a mostrar una lista de todas las aplicaciones administradas (tanto las requeridas como las disponibles) que están instaladas en el dispositivo de un usuario. Los usuarios podrán ver las instalaciones de aplicaciones intentadas y pendientes, así como sus estados actuales. Si su organización no hace que las aplicaciones sean obligatorias o estén disponibles, los usuarios verán un mensaje en el que se explica que no se ha instalado ninguna aplicación de empresa. Los usuarios también podrán ordenar o filtrar sus aplicaciones por estado de instalación.
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Notificaciones personalizadas para usuarios y grupos    <!-- 16766574   -->
 Pronto podrá enviar notificaciones de inserción personalizadas de ad-hoc de la aplicación de Portal de empresa a los usuarios de iOS y Android dispositivos administrados con Intune. Estas notificaciones personalizadas no están vinculadas a determinadas características de Intune y se puede usar para cualquier propósito que requiera, incluidas las notificaciones generales que desea enviar a algunos o todos los empleados.  

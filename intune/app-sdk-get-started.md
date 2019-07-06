@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045811"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529184"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -160,8 +160,8 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
     * Si es un ISV que quiere habilitar las aplicaciones de la tienda Android o iOS para la directiva de protección de aplicaciones de Intune, recibirá un código de promoción una vez completado el registro con Microsoft Intune, como se describe en el paso de registro. El código de promoción le permite registrarse para obtener una versión de prueba de un año de uso extendido de Microsoft Intune.
 
     * Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
-    
-    * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Centro de administración de Microsoft 365. Para más información, vea [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](https://docs.microsoft.com/en-ca/intune/licenses-assign).
+
+    * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Centro de administración de Microsoft 365. Para más información, vea [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md). Si su aplicación ha integrado el SDK de Intune, pero aún no figura en Azure Portal como una aplicación específica, puede orientarla con una directiva seleccionando la opción "+ Más aplicaciones" y proporcionando el id. del paquete (iOS) o el nombre del paquete. (Android) en el cuadro de texto.
 
@@ -173,12 +173,12 @@ Si la aplicación usa su propia configuración personalizada de Azure Active Dir
 
 Una vez que haya registrado la aplicación dentro de un inquilino de Azure y se muestre en **Todas las aplicaciones**, debe asignar a la aplicación acceso al servicio Intune App Protection (anteriormente conocido como servicio MAM). En Azure Portal:
 
-1.  Vaya a la hoja **Azure Active Directory**.
-2.  En **Registros de aplicaciones**, vaya a la lista configurada para la aplicación.
-3.  Haga clic en **+ Agregar un permiso**.
-4.  Haga clic en **API usadas en mi organización**. 
-5.  En el cuadro de búsqueda, escriba **Microsoft Mobile Application Management**.
-6.  En **Permisos delegados**, active la casilla **DeviceManagementManagedApps.ReadWrite: Read and Write the User's App Management Data** (DeviceManagementManagedApps.ReadWrite: Leer y escribir los datos de administración de aplicaciones del usuario)*.
+1. Vaya a la hoja **Azure Active Directory**.
+2. En **Registros de aplicaciones**, vaya a la lista configurada para la aplicación.
+3. Haga clic en **+ Agregar un permiso**.
+4. Haga clic en **API usadas en mi organización**. 
+5. En el cuadro de búsqueda, escriba **Microsoft Mobile Application Management**.
+6. En **Permisos delegados**, active la casilla **DeviceManagementManagedApps.ReadWrite: Read and Write the User's App Management Data** (DeviceManagementManagedApps.ReadWrite: Leer y escribir los datos de administración de aplicaciones del usuario)*.
 7. Haga clic en **Agregar permisos**.
 
 ### <a name="badge-your-app-optional"></a>Identificar la aplicación (opcional)

@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e5e00e1f7d4f84f9bdc1d1a52b83095135479327
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833980"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546159"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Enviar los errores del dispositivo administrado macOS a las personas adecuadas
 
@@ -33,11 +33,11 @@ En ocasiones se producen errores inesperados en la aplicación Portal de empresa
 
 Envío de detalles sobre de un error en la aplicación Portal de empresa
 
--   En el mensaje de error que reciba, haga clic en **Informe**.
+- En el mensaje de error que reciba, haga clic en **Informe**.
 
--   Haga clic en el menú **Ayuda** > **Guardar informe de diagnóstico**. Elija una ubicación para guardar el archivo. A continuación, envíe por correo electrónico este archivo al personal de soporte técnico de su empresa o cárguelo en el sitio.
+- Haga clic en el menú **Ayuda** > **Guardar informe de diagnóstico**. Elija una ubicación para guardar el archivo. A continuación, envíe por correo electrónico este archivo al personal de soporte técnico de su empresa o cárguelo en el sitio.
 
--   Si la aplicación de correo electrónico está configurada, también puede ir a **Ayuda** > **Enviar informe de diagnóstico** para enviar el informe de diagnóstico. Una vez cargados los registros, haga clic en **Enviar detalles por correo electrónico**.
+- Si la aplicación de correo electrónico está configurada, también puede ir a **Ayuda** > **Enviar informe de diagnóstico** para enviar el informe de diagnóstico. Una vez cargados los registros, haga clic en **Enviar detalles por correo electrónico**.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Enviar errores de dispositivos macOS a los desarrolladores del Portal de empresa
 
@@ -45,8 +45,8 @@ En ocasiones, la aplicación Portal de empresa se puede cerrar inesperadamente. 
 
 Para enviar los registros a Microsoft, haga lo siguiente:
 
-1.  Abra la aplicación del portal de empresa.
-2.  Haga clic en el menú **Help** (Ayuda) > **Send Diagnostic Report** (Enviar informe de diagnóstico).  Una vez cargados los registros, recibirá un identificador de incidente. Copie y guarde el identificador.
-3.  Comuníquese con Microsoft por correo electrónico mediante <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">esta plantilla</a>.
+1. Abra la aplicación del portal de empresa.
+2. Haga clic en el menú **Help** (Ayuda) > **Send Diagnostic Report** (Enviar informe de diagnóstico).  Una vez cargados los registros, recibirá un identificador de incidente. Copie y guarde el identificador.
+3. Comuníquese con Microsoft por correo electrónico mediante <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">esta plantilla</a>.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

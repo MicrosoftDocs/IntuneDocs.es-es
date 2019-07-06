@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403012"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572516"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
 
@@ -48,14 +48,14 @@ La directiva de Firewall de Windows permite crear e implementar la configuració
 > [!IMPORTANT]
 > Para administrar Firewall de Windows mediante Intune, asegúrese de que los dos servicios siguientes estén habilitados en los equipos que administra:
 >
-> -   Firewall de Windows
-> -   Agente de directivas IPsec
+> - Firewall de Windows
+> - Agente de directivas IPsec
 
 ## <a name="configure-a-windows-firewall-policy"></a>Para configurar una directiva de Firewall de Windows
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** &gt; **Agregar directiva**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** &gt; **Agregar directiva**.
 
-2.  Configurar e implementar una directiva de **Configuración de Firewall de Windows** . Puede usar la configuración recomendada o personalizar la configuración. Si necesita más información sobre cómo crear e implementar directivas, vea [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Configurar e implementar una directiva de **Configuración de Firewall de Windows** . Puede usar la configuración recomendada o personalizar la configuración. Si necesita más información sobre cómo crear e implementar directivas, vea [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     En la sección siguiente se muestran los valores que puede configurar en la directiva y también los valores predeterminados que se usarán si no personaliza la directiva.
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61cbe326bbbd0e52c045491fe59ba837779ddb6e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041149"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549220"
 ---
-#  <a name="microsoft-intune-data-warehouse-api"></a>API de Data Warehouse de Microsoft Intune
+# <a name="microsoft-intune-data-warehouse-api"></a>API de Data Warehouse de Microsoft Intune
 
 La API de Almacenamiento de datos de Intune le permite obtener acceso a los datos de Intune en un formato legible para el equipo, de modo que pueda usarlos con la herramienta de análisis que prefiera. Puede usar la API para generar informes que proporcionen una visión general del entorno móvil de la empresa. La API usa el protocolo OData, que sigue patrones estándar para:
 
-  -   Encabezados de solicitud y respuesta
-  -   Códigos de estado
-  -   Métodos HTTP
-  -   Convenciones de direcciones URL
-  -   Tipos de medios
-  -   Formatos de carga
-  -   Opciones de consulta
+  - Encabezados de solicitud y respuesta
+  - Códigos de estado
+  - Métodos HTTP
+  - Convenciones de direcciones URL
+  - Tipos de medios
+  - Formatos de carga
+  - Opciones de consulta
 
 OData (Open Data Protocol) es un estándar de OASIS (Organization for the Advancement of Structured Information Standards) que define los procedimientos recomendados para compilar y usar API de RESTful. El Almacenamiento de datos de Intune usa OData versión 4.0.
 
@@ -56,8 +56,8 @@ Para obtener más información, consulte [Get data from the Data Warehouse API w
 
 La API requiere autorización con Azure AD. Azure AD usa OAuth 2.0. Una vez obtenida la autorización, para obtener datos de la API, use un verbo HTTP GET y póngase en contacto con las colecciones de entidades expuestas. Para obtener más información, consulte:
 
- -  [Autorización](reports-api-url.md)
- -  [Estructura de la dirección URL de la API](reports-api-url.md)
+ - [Autorización](reports-api-url.md)
+ - [Estructura de la dirección URL de la API](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Modelo de datos del Almacenamiento de datos de Intune
 
@@ -69,4 +69,4 @@ Para obtener más información sobre cómo trabajar con Azure AD, lea [Escenario
 
 Puede acceder a recursos de OData en [odata.org](https://www.odata.org).
   
-Revise el estándar de la versión 4.0 de OData en [Versión 4.0 de OData] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)).  
+Revise el estándar de la versión 4.0 de OData en [Versión 4.0 de OData] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) ).  

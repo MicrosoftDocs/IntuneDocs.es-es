@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836479"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528777"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Enviar al equipo de soporte técnico de la empresa información sobre problemas por correo electrónico desde el Portal de empresa para Windows
 
@@ -32,7 +32,7 @@ Solucione problemas de las aplicaciones en la aplicación Portal de empresa para
 Al solicitar ayuda, se abre un correo electrónico rellenado previamente donde puede describir el problema en detalle. También incluye un identificador de registro de diagnóstico. Si el equipo de soporte técnico no puede resolver el problema con la descripción, tiene que ponerse en contacto con Microsoft para obtener ayuda. Microsoft necesita el identificador de diagnóstico para consultar los registros de la aplicación.   
 
 
-> [!Note]       
+> [!Note]
 > Tras hacer clic en **Obtener ayuda**, el Portal de empresa enviará automáticamente los registros al equipo de soporte técnico de Microsoft. Este paso es proactivo y facilita la resolución de problemas escalados al equipo de soporte técnico de Microsoft. Como se ha mencionado anteriormente, el equipo de soporte técnico de Microsoft puede extraer los registros mediante el identificador de diagnóstico del correo electrónico.  
 
 ## <a name="what-is-a-diagnostic-log"></a>¿Qué es un registro de diagnóstico?

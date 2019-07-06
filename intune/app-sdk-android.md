@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045534"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558423"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -45,7 +45,7 @@ El SDK para aplicaciones de Intune consta de los siguientes archivos:
 * **CHANGELOG.txt**: proporciona un registro de los cambios hechos en cada versión del SDK.
 * **THIRDPARTYNOTICES. TXT**: es un aviso de atribución que reconoce el código de terceros o de OSS que se compilará en la aplicación.
 
-## <a name="requirements"></a>requisitos
+## <a name="requirements"></a>Requisitos
 
 ### <a name="android-versions"></a>Versiones de Android
 El SDK admite desde la API 19 (Android 4.4 y versiones posteriores) a la API 28 (Android 9.0) de Android.
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 De forma predeterminada, el complemento funcionará **solo** en dependencias `project`.
 La compilación de prueba no se ve afectada. Puede que se proporcione configuración a la lista
-*  Proyectos que se excluyen
-*  [Dependencias externas que se incluyen](#usage-of-includeexternallibraries) 
-*  Clases específicas que se excluyen del procesamiento
-*  Variantes que se excluyen del procesamiento. Pueden hacer referencia a un nombre de variante completo o un sabor único. Por ejemplo,
+* Proyectos que se excluyen
+* [Dependencias externas que se incluyen](#usage-of-includeexternallibraries) 
+* Clases específicas que se excluyen del procesamiento
+* Variantes que se excluyen del procesamiento. Pueden hacer referencia a un nombre de variante completo o un sabor único. Por ejemplo,
      * si la aplicación tiene los tipos de compilación `debug` y `release` con sabores {`savory`, `sweet`} y {`vanilla`, `chocolate`}, puede especificar
      * `savory` para excluir todas las variantes con el sabor savory o `savoryVanillaRelease` para excluir solo esa variante exacta.
 
@@ -565,7 +565,7 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocat
 
 ## <a name="register-for-notifications-from-the-sdk"></a>Registrarse para recibir notificaciones del SDK
 
-### <a name="overview"></a>Información general
+### <a name="overview"></a>Introducción
 El SDK para aplicaciones de Intune permite que la aplicación controle el comportamiento de determinadas directivas, como la eliminación selectiva, cuando las implemente el administrador de TI. Cuando un administrador de TI implementa esta directiva, el servicio de Intune envía una notificación al SDK.
 
 La aplicación debe registrarse para recibir notificaciones del SDK mediante la creación de `MAMNotificationReceiver` y su registro mediante `MAMNotificationReceiverRegistry`. Para ello, se proporcionan el receptor y el tipo de notificación deseada en `App.onCreate`, como se ilustra en el ejemplo siguiente:
@@ -735,9 +735,9 @@ El acceso condicional (CA) es una [característica](https://docs.microsoft.com/a
 5. Una vez que la aplicación haya enviado la integración con el SDK para aplicaciones de Intune, póngase en contacto con msintuneappsdk@microsoft.com para que se agregue a la lista de aplicaciones aprobadas para el [acceso condicional basado en aplicación](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
 6. Cuando la aplicación se haya agregado a la lista aprobada, realice la validación [configurando el CA basado en aplicación](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) y asegurándose de que el inicio de sesión en la aplicación se completa correctamente.
 
-## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin inscripción de dispositivos
+## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin la inscripción de dispositivos
 
-### <a name="overview"></a>Información general
+### <a name="overview"></a>Introducción
 La directiva de protección de aplicaciones de Intune sin inscripción de dispositivos, también conocida como APP-WE o MAM-WE, permite a las aplicaciones ser administradas mediante Intune sin necesidad de que el dispositivo esté inscrito en MDM de Intune. APP-WE funciona con o sin inscripción de dispositivos. De todos modos, es necesario que Portal de empresa esté instalado en el dispositivo, pero no es necesario que el usuario inicie sesión en él e inscriba el dispositivo.
 
 > [!NOTE]
@@ -834,7 +834,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
-        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+            return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
         }
     }
     ```
@@ -957,7 +957,7 @@ El estado de la cuenta de usuario registrado puede cambiar cuando se recibe una 
 
 ## <a name="app-ca-with-policy-assurance"></a>CA de APP con control de directivas
 
-### <a name="overview"></a>Información general
+### <a name="overview"></a>Introducción
 Con CA (acceso condicional) de APP con control de directivas, el acceso a los recursos está condicionado a la aplicación de directivas de Intune App Protection.  Para aplicarlo, AAD requiere que APP inscriba y administre la aplicación antes de conceder un token para acceder a un recurso protegido de CA de APP con control de directivas.  La aplicación debe usar el agente de ADAL para la adquisición de tokens y la instalación es igual a la descrita anteriormente en [Acceso condicional](#conditional-access)
 
 ### <a name="adal-changes"></a>Cambios en ADAL
@@ -1183,11 +1183,11 @@ La guía sobre la copia de seguridad de datos especifica un algoritmo general pa
 
 ## <a name="multi-identity-optional"></a>Varias identidades (opcional)
 
-### <a name="overview"></a>Información general
+### <a name="overview"></a>Introducción
 De forma predeterminada, el SDK para aplicaciones de Intune aplicará la directiva a la aplicación en su conjunto. Varias identidades es una característica de protección de aplicaciones de Intune opcional que se puede habilitar para permitir que se aplique una directiva en un nivel por identidad. Para ello es necesaria más participación en la aplicación que otras características de la protección de la aplicación.
 
 > [!NOTE]
->  Si la participación de la aplicación correcta no se da, puede haber fugas de datos y otros problemas de seguridad.
+> Si la participación de la aplicación correcta no se da, puede haber fugas de datos y otros problemas de seguridad.
 
 Una vez que el usuario inscriba el dispositivo o la aplicación, el SDK registra esta identidad y la considera la identidad administrada principal de Intune. Los demás usuarios de la aplicación se tratarán como usuarios no administrados con una configuración de directiva sin restricciones.
 
@@ -1317,7 +1317,7 @@ Además de la posibilidad de que la aplicación establezca la identidad, un subp
 
   1. Si una actividad se inicia desde un `Intent` enviado desde otra aplicación MAM, la identidad de la actividad se establecerá en función de la identidad efectiva de la otra aplicación en el punto en que se envió el `Intent`.
 
-  2.  En el caso de los servicios, la identidad del subproceso se establecerá de forma similar para la duración de una llamada `onStart` o `onBind`. Las llamadas a `Binder` devueltas por `onBind` también establecerán temporalmente la identidad del subproceso.
+  2. En el caso de los servicios, la identidad del subproceso se establecerá de forma similar para la duración de una llamada `onStart` o `onBind`. Las llamadas a `Binder` devueltas por `onBind` también establecerán temporalmente la identidad del subproceso.
 
   3. Las llamadas a `ContentProvider` establecerán de forma similar la identidad del subproceso a lo largo de su duración.
 
@@ -1429,12 +1429,12 @@ public final class MAMFileProtectionManager {
     * this method will silently do nothing.
     *
     * @param identity
-    *       Identity to set.
+    *        Identity to set.
     * @param file
-    *       File to protect.
+    *        File to protect.
     *
     * @throws IOException
-    *       If the file cannot be protected.
+    *         If the file cannot be protected.
     */
    public static void protect(final File file, final String identity) throws IOException;
 
@@ -1626,7 +1626,7 @@ Si la aplicación proporciona datos corporativos distintos de `ParcelFileDescrip
 
 Si no hereda `MAMContentProvider` explícitamente y en su lugar permite que la herramienta de compilación realice ese cambio, puede llamar a una versión estática del mismo método: `MAMContentProvider.isProvideContentAllowed(provider, contentIdentity)`.
 
-### <a name="selective-wipe"></a>eliminación selectiva
+### <a name="selective-wipe"></a>Eliminación selectiva
 
 Si una aplicación de varias identidades se registra para la notificación `WIPE_USER_DATA`, es responsabilidad de la aplicación quitar todos los datos del usuario que se va a eliminar, incluidos todos los archivos con etiquetas de identidad que indiquen su pertenencia a dicho usuario. Si la aplicación quita datos de usuario de un archivo, pero desea dejar otros datos en el archivo, *debe* cambiar la identidad del archivo (mediante `MAMFileProtectionManager.protect` a un usuario personal o la identidad vacía). Si la directiva de cifrado está en uso, los archivos restantes que pertenezcan al usuario que se vaya a borrar no se descifrarán y la aplicación no podrá acceder a ellos tras el borrado.
 
@@ -1742,8 +1742,8 @@ Habilite la inscripción predeterminada con los pasos siguientes:
 
 En el caso de las bases de código de gran tamaño que se ejecutan sin [ProGuard](http://proguard.sourceforge.net/), las limitaciones del formato de archivo ejecutable Dalvik se convierten en un problema. En concreto, pueden producirse las siguientes limitaciones:
 
-1.  Límite de 65 000 en campos.
-2.  Límite de 65 000 en métodos.
+1. Límite de 65 000 en campos.
+2. Límite de 65 000 en métodos.
 
 ### <a name="policy-enforcement-limitations"></a>Limitaciones de cumplimiento de directivas
 

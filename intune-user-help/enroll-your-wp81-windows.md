@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497573"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545483"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscribir el dispositivo Windows Phone 8.1 en Intune  
 
@@ -34,45 +34,45 @@ Para inscribir el dispositivo en Intune, siga el conjunto de instrucciones que c
 ## <a name="enroll-through-company-portal"></a>Inscribirse a través del Portal de empresa  
 Siga estos pasos si puede instalar la aplicación del Portal de empresa desde Microsoft Store. 
 
-1.  Pulse **Inicio** > **Tienda**.  
+1. Pulse **Inicio** > **Tienda**.  
 
-2.  Pulse **Buscar** y escriba **portal de empresa** .  
+2. Pulse **Buscar** y escriba **portal de empresa** .  
 
-3.  En la lista de resultados, pulse en **Portal de empresa** .  
+3. En la lista de resultados, pulse en **Portal de empresa** .  
 
 
     ![Resultados de búsqueda del portal de empresa](./media/WP81-1-CP-search-store-v2.png)  
 
-4.  Pulse en **Portal de empresa**  &gt; **Instalar** .  
+4. Pulse en **Portal de empresa**  &gt; **Instalar** .  
 
 
     ![Instalar el portal de empresa](./media/WP81-2-CP-install-v2.png)  
 
 Inscriba su dispositivo:  
 
-1.  En el dispositivo, abra la aplicación **Portal de empresa de Microsoft Intune** .  
+1. En el dispositivo, abra la aplicación **Portal de empresa de Microsoft Intune** .  
 
 
-2.  Proporcione sus credenciales. Se le pedirá que acepte los términos y condiciones de su empresa, si es necesario.  
+2. Proporcione sus credenciales. Se le pedirá que acepte los términos y condiciones de su empresa, si es necesario.  
 
-3.  Deslice rápidamente hasta **Mis dispositivos**.  
+3. Deslice rápidamente hasta **Mis dispositivos**.  
 
-4.  Pulse en **Pulse para inscribir o identificar el dispositivo**.  
+4. Pulse en **Pulse para inscribir o identificar el dispositivo**.  
 
 
     ![Pantalla Pulse para inscribir o identificar el dispositivo](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-5.  Pulse en **Inscribir un dispositivo**.  
+5. Pulse en **Inscribir un dispositivo**.  
 
 
     ![Pantalla Inscribir este dispositivo](./media/WP81-enroll-2-enroll-this-device.png)  
 
-6.  Pulse en **Agregar cuenta**.  
+6. Pulse en **Agregar cuenta**.  
 
 
     ![Pantalla Configuración de área de trabajo](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7.  Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción. Ahora debería aparecer su cuenta de área de trabajo en la página **Configuración** &gt; **Área de trabajo**.  
+7. Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción. Ahora debería aparecer su cuenta de área de trabajo en la página **Configuración** &gt; **Área de trabajo**.  
 
 
     ![Pantalla de cuenta agregada](./media/WP81-enroll-4-account-added.png)  
@@ -80,13 +80,13 @@ Inscriba su dispositivo:
 ## <a name="enroll-through-settings-app"></a>Inscripción a través de la aplicación de configuración  
 Siga estos pasos si no puede acceder a Microsoft Store desde su dispositivo Windows Phone o no tiene una cuenta de Microsoft.
 
-1.  Pulse en **Configuración** &gt; **Área de trabajo**.  
+1. Pulse en **Configuración** &gt; **Área de trabajo**.  
 
-2.  Pulse en **Agregar cuenta** y luego inicie sesión con su cuenta laboral.  
+2. Pulse en **Agregar cuenta** y luego inicie sesión con su cuenta laboral.  
 
-3.  Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción.  
+3. Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción.  
 
-4.  Si se le pide que instale la aplicación de empresa o un concentrador, asegúrese de que esté activada la casilla correspondiente y pulse en **Listo**.  
+4. Si se le pide que instale la aplicación de empresa o un concentrador, asegúrese de que esté activada la casilla correspondiente y pulse en **Listo**.  
 
 Si el equipo de soporte técnico de su empresa configuró el Portal de empresa para que se instale durante la inscripción, lo verá en la lista de aplicaciones.  
 

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d52ef6f2cf995031c25bc9065212e39235041b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841164"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546594"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Quitar un dispositivo iOS de Intune
 
@@ -35,9 +35,9 @@ Una vez quitado el dispositivo iOS de Intune, este ya no podrá acceder a los re
 Para quitar el dispositivo de Intune, siga estos pasos o vea este vídeo:
 
 
-1.  En la aplicación Portal de empresa, pulse **Dispositivos** y seleccione el dispositivo cuya inscripción desee anular. Si solo tiene un dispositivo, cuando pulse **Dispositivos** irá directamente a la pantalla de detalles del dispositivo.
+1. En la aplicación Portal de empresa, pulse **Dispositivos** y seleccione el dispositivo cuya inscripción desee anular. Si solo tiene un dispositivo, cuando pulse **Dispositivos** irá directamente a la pantalla de detalles del dispositivo.
 
-2.  Junto a **CAMBIAR NOMBRE**, pulse el botón de puntos suspensivos y luego seleccione **Quitar dispositivo** > **Quitar**.  
+2. Junto a **CAMBIAR NOMBRE**, pulse el botón de puntos suspensivos y luego seleccione **Quitar dispositivo** > **Quitar**.  
 
     |![Captura de la pantalla Dispositivos de la aplicación Portal de empresa en la que se muestran las opciones disponibles después de que el usuario haya hecho clic en Quitar. Muestra los botones "Quitar dispositivo", "Restablecimiento de fábrica" y "Cancelar".](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
@@ -46,33 +46,33 @@ Para quitar el dispositivo de Intune, siga estos pasos o vea este vídeo:
 
   Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:
 
-  -   El dispositivo deja de aparecer en el portal de empresa.
+  - El dispositivo deja de aparecer en el portal de empresa.
 
-  -   No se podrán instalar aplicaciones desde el Portal de empresa.
+  - No se podrán instalar aplicaciones desde el Portal de empresa.
 
-  -   Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, la opción para deshabilitar la cámara o exigir una determinada longitud de contraseña.
+  - Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, la opción para deshabilitar la cámara o exigir una determinada longitud de contraseña.
 
-  -   Es posible que deje de tener acceso en su dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
+  - Es posible que deje de tener acceso en su dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
 
-  -   No se podrán utilizar las aplicaciones y los datos de la empresa.
+  - No se podrán utilizar las aplicaciones y los datos de la empresa.
 
-  -   No se podrá conectar a la red de su empresa mediante Wi-Fi o una red privada virtual (VPN).
+  - No se podrá conectar a la red de su empresa mediante Wi-Fi o una red privada virtual (VPN).
 
-  -   Los perfiles de correo electrónico de empresa se quitan del dispositivo.
+  - Los perfiles de correo electrónico de empresa se quitan del dispositivo.
 
-  -   Los dispositivos que están configurados para el correo electrónico no aparecerán en el sitio web o en la aplicación Portal de empresa.
+  - Los dispositivos que están configurados para el correo electrónico no aparecerán en el sitio web o en la aplicación Portal de empresa.
   
-  -   Las aplicaciones se desinstalarán. Se quitarán los datos de la aplicación de empresa.
+  - Las aplicaciones se desinstalarán. Se quitarán los datos de la aplicación de empresa.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Eliminación de datos recopilados por la aplicación Portal de empresa
 
 El Portal de empresa almacena los datos locales en tres ubicaciones del dispositivo.
 
--   **Registros de información**: los datos estándar recopilados por Microsoft acerca de la actividad de la aplicación (por ejemplo, cuánto tiempo estuvo abierta la aplicación o si se ha bloqueado) se borran automáticamente cuando el dispositivo se quita del Portal de empresa.
+- **Registros de información**: los datos estándar recopilados por Microsoft acerca de la actividad de la aplicación (por ejemplo, cuánto tiempo estuvo abierta la aplicación o si se ha bloqueado) se borran automáticamente cuando el dispositivo se quita del Portal de empresa.
 
--   **Análisis de Apple**: datos estándar recopilados por Apple sobre el bloqueo de la aplicación. La única manera de quitar esta información es restablecer el dispositivo a la configuración de fábrica. Esto borrará toda la información personal en el dispositivo. Para ello, abra **Ajustes** > **General** > **Restablecer** > **Borrar contenidos y ajustes**.
+- **Análisis de Apple**: datos estándar recopilados por Apple sobre el bloqueo de la aplicación. La única manera de quitar esta información es restablecer el dispositivo a la configuración de fábrica. Esto borrará toda la información personal en el dispositivo. Para ello, abra **Ajustes** > **General** > **Restablecer** > **Borrar contenidos y ajustes**.
 
--   **Cadena de claves**: el dispositivo almacena en la cadena de claves las contraseñas y otra información que se usa para inicios de sesión. Las aplicaciones de Microsoft comparten la información de inicio de sesión con todas las aplicaciones desarrolladas por Microsoft que haya en el dispositivo, como Microsoft Outlook y Microsoft Authenticator. Al igual que con el análisis de Apple, la única manera de quitar esta información es restablecer el dispositivo a la configuración de fábrica. Esto borrará toda la información personal en el dispositivo. Para ello, abra **Ajustes** > **General** > **Restablecer** > **Borrar contenidos y ajustes**.
+- **Cadena de claves**: el dispositivo almacena en la cadena de claves las contraseñas y otra información que se usa para inicios de sesión. Las aplicaciones de Microsoft comparten la información de inicio de sesión con todas las aplicaciones desarrolladas por Microsoft que haya en el dispositivo, como Microsoft Outlook y Microsoft Authenticator. Al igual que con el análisis de Apple, la única manera de quitar esta información es restablecer el dispositivo a la configuración de fábrica. Esto borrará toda la información personal en el dispositivo. Para ello, abra **Ajustes** > **General** > **Restablecer** > **Borrar contenidos y ajustes**.
 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

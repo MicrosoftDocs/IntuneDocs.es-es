@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ecc93ae788179991fd27545405d8d7319f74481
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 45937f54926178615cf9d84230feb63d1ef242b5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61495277"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545554"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Cómo inscribir el dispositivo Windows 8.1 o Windows RT 8.1 en Intune  
 
@@ -32,23 +32,23 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispo
 
 Para inscribir el dispositivo Windows 8.1 o Windows RT 8.1:  
 
-1.  En el dispositivo, pulse en **Configuración** &gt; **Configuración de PC** &gt; **Red** &gt; **Área de trabajo**.  
+1. En el dispositivo, pulse en **Configuración** &gt; **Configuración de PC** &gt; **Red** &gt; **Área de trabajo**.  
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
-2.  Escriba una dirección de correo laboral educativa para el identificador de usuario y pulse en **Unirse**. Si el identificador de usuario no es necesario, se usa la dirección de correo electrónico que ha escrito al iniciar sesión en este dispositivo.  
+2. Escriba una dirección de correo laboral educativa para el identificador de usuario y pulse en **Unirse**. Si el identificador de usuario no es necesario, se usa la dirección de correo electrónico que ha escrito al iniciar sesión en este dispositivo.  
 
-3.  Escriba la contraseña del correo electrónico de su empresa o centro educativo.  
+3. Escriba la contraseña del correo electrónico de su empresa o centro educativo.  
 
 
     ![type-password](./media/W81-2-workplacesettings_signin.png)  
 
-4.  En **Activar la Administración de dispositivos**, pulse en **Activar**.  
+4. En **Activar la Administración de dispositivos**, pulse en **Activar**.  
 
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)  
 
-5.  En el cuadro de diálogo **Allow apps and services from company support** (Permitir aplicaciones y servicios del equipo de soporte técnico de la empresa), active la casilla **Acepto** y luego pulse **Activar**.  
+5. En el cuadro de diálogo **Allow apps and services from company support** (Permitir aplicaciones y servicios del equipo de soporte técnico de la empresa), active la casilla **Acepto** y luego pulse **Activar**.  
 
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)  
@@ -60,12 +60,12 @@ Para inscribir el dispositivo Windows 8.1 o Windows RT 8.1:
 
 También se recomienda instalar la aplicación Portal de empresa, que le permitirá identificar fácilmente y obtener las aplicaciones de la empresa que son relevantes para usted y su rol. Según la manera en que su empresa configuró Intune, la aplicación Portal de empresa se pudo haber instalado como parte del proceso de inscripción. Para comprobar si tiene la aplicación, busque **Portal de empresa** en la lista de aplicaciones. Si no ve el Portal de empresa en su lista de aplicaciones, siga estos pasos para instalarlo.
 
-1.  Pulse en **Inicio** &gt; **Tienda**.  
+1. Pulse en **Inicio** &gt; **Tienda**.  
 
-2.  Pulse **Buscar** y escriba **portal de empresa** .  
+2. Pulse **Buscar** y escriba **portal de empresa** .  
 
-3.  En la lista de resultados, pulse en **Portal de empresa**.  
+3. En la lista de resultados, pulse en **Portal de empresa**.  
 
-4.  Pulse en **Instalar** o **Gratis**. La opción que se muestra dependerá de cómo la empresa haya configurado la aplicación.  
+4. Pulse en **Instalar** o **Gratis**. La opción que se muestra dependerá de cómo la empresa haya configurado la aplicación.  
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

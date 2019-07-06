@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836438"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545661"
 ---
 # <a name="your-computer-is-already-enrolled"></a>El equipo ya está inscrito
 
@@ -31,11 +31,11 @@ Si recibe un error que afirma que el equipo ya está inscrito, significa que el 
 
 Para vincular el equipo:
 
-1.  En el equipo que quiere vincular a su cuenta, elija **Inicio** y, después, elija **Microsoft Intune Center**.
+1. En el equipo que quiere vincular a su cuenta, elija **Inicio** y, después, elija **Microsoft Intune Center**.
 
-2.  Abra el portal de empresa.
+2. Abra el portal de empresa.
 
-3.  Siga las instrucciones para vincular el equipo a su cuenta de usuario.
+3. Siga las instrucciones para vincular el equipo a su cuenta de usuario.
 
 Si prefiere anular la inscripción del dispositivo, siga las instrucciones correspondientes a su tipo de dispositivo: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) o [Windows](unenroll-your-device-from-intune-windows.md).
 

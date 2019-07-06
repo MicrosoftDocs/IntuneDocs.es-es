@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846254"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527623"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Instalación de Mobile Threat Defense en su dispositivo iOS
 
@@ -38,12 +38,12 @@ Para que pueda obtener acceso a su trabajo, el equipo de soporte técnico de su 
 
 Mobile Threat Defense es una forma que tienen las empresas de garantizar que los dispositivos se mantengan protegidos frente a aplicaciones que podrían intentar robar información corporativa. Al agregar esta protección, hay que proporcionar información adicional sobre las aplicaciones instaladas en los dispositivos al servicio Mobile Threat Defense que use su empresa. Su empresa no puede ver los datos que contengan las aplicaciones personales. Si se usa un servicio de Mobile Threat Defense, todas las aplicaciones del dispositivo se agregan al [contenido que puede ver su empresa](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md). Estos son los elementos de la aplicación que su empresa puede ver:
 
-*   Nombre de la aplicación
+* Nombre de la aplicación
 * Id. de Apple: el nombre único que identifica la aplicación en el App Store.
-*   Versión de la aplicación y número abreviado de la versión: los números de la versión específica de una aplicación.
+* Versión de la aplicación y número abreviado de la versión: los números de la versión específica de una aplicación.
 * El grupo de aplicaciones y el tamaño dinámico: la cantidad de espacio que usa una aplicación en el dispositivo.
 * Validez de la aplicación: si una aplicación está validada para usarse.
-*   Estado de administración de la aplicación: si una aplicación está administrada por su empresa o si se trata de una aplicación personal.
+* Estado de administración de la aplicación: si una aplicación está administrada por su empresa o si se trata de una aplicación personal.
 
 ## <a name="if-the-installation-doesnt-work"></a>Si la instalación no funciona
 

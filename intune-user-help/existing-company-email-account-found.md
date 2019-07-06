@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834762"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545429"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente encontrado
 
@@ -34,7 +34,7 @@ Podría haber tenido acceso con un dispositivo móvil a la cuenta de correo elec
 
 Estos pasos garantizarán que el dispositivo cumple los requisitos de seguridad de la compañía, y que los correos electrónicos permanecen seguros.
 
-1.  En el dispositivo, vaya a **Configuración** y encuentre las cuentas conectadas. En un dispositivo iOS 11 +, por ejemplo, seleccione **Cuentas y contraseñas**.
+1. En el dispositivo, vaya a **Configuración** y encuentre las cuentas conectadas. En un dispositivo iOS 11 +, por ejemplo, seleccione **Cuentas y contraseñas**.
  
 2. Seleccione y quite la cuenta de correo electrónico profesional.
 

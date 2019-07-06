@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040908"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549151"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar y proporcionar asistencia remota para equipos con Windows
 
@@ -79,13 +79,13 @@ En el menú **Acciones** de la ventana **TeamViewer**, elija **Finalizar sesión
 ## <a name="remotely-restart-a-windows-pc"></a>Reiniciar un PC Windows de forma remota
 Cuando ayuda a los usuarios con problemas, debe reiniciar su PC de forma remota de vez en cuando. Utilice los pasos siguientes para reiniciar de forma remota un PC de Windows.
 
-1.  En la [Consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el PC que quiera reiniciar).
+1. En la [Consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el PC que quiera reiniciar).
 
-2.  Seleccione uno o más PC y, después, seleccione **Tareas remotas** &gt; **Reiniciar el equipo**.
+2. Seleccione uno o más PC y, después, seleccione **Tareas remotas** &gt; **Reiniciar el equipo**.
 
-3.  Para ver el estado de la tarea, seleccione **Tareas remotas** en la esquina inferior derecha de la página.
+3. Para ver el estado de la tarea, seleccione **Tareas remotas** en la esquina inferior derecha de la página.
 
-4.  En el cuadro de diálogo **Estado de la tarea** , revise las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados.
+4. En el cuadro de diálogo **Estado de la tarea** , revise las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados.
 
 ### <a name="see-also"></a>Consulte también
 

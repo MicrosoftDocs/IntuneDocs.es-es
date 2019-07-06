@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ebca73344b88778a4d734e0690615d0aa3a20b5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041781"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572612"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar el cliente de software de Intune en equipos con Windows
 
@@ -68,34 +68,34 @@ En los equipos en los que el software cliente se va a instalar, vaya a la carpet
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Implementar el software cliente mediante una directiva de grupo
 
-1.  En la carpeta que contiene los archivos **Microsoft_Intune_Setup.exe** y **MicrosoftIntune.accountcert**, ejecute el siguiente comando para extraer los programas de instalación basados en Windows Installer para equipos de 32 bits y 64 bits:
+1. En la carpeta que contiene los archivos **Microsoft_Intune_Setup.exe** y **MicrosoftIntune.accountcert**, ejecute el siguiente comando para extraer los programas de instalación basados en Windows Installer para equipos de 32 bits y 64 bits:
 
     ```
     Microsoft_Intune_Setup.exe/Extract <destination folder>
     ```
 
-2.  Copie los archivos **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** y **MicrosoftIntune.accountcert** en una ubicación de red a la que tengan acceso todos los equipos en los que se va a instalar el software cliente.
+2. Copie los archivos **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** y **MicrosoftIntune.accountcert** en una ubicación de red a la que tengan acceso todos los equipos en los que se va a instalar el software cliente.
 
     > [!IMPORTANT]
     > No separe los archivos ni cambie sus nombres; de lo contrario, se producirá un error en la instalación del software cliente.
 
-3.  Use la directiva de grupo para implementar el software en los equipos de la red.
+3. Use la directiva de grupo para implementar el software en los equipos de la red.
 
     Para más información sobre cómo usar la directiva de grupo para implementar software automáticamente, consulte [Directiva de grupo para principiantes](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Implementar el software cliente como parte de una imagen
 El software cliente de Intune se puede implementar en equipos como parte de una imagen de sistema operativo. Para ello, puede usar el siguiente procedimiento como guía:
 
-1.  Copie los archivos de instalación del cliente, **Microsoft_Intune_Setup.exe** y **MicrosoftIntune.accountcert**, en la carpeta **%Systemdrive%\Temp\Microsoft_Intune_Setup** del equipo de referencia.
+1. Copie los archivos de instalación del cliente, **Microsoft_Intune_Setup.exe** y **MicrosoftIntune.accountcert**, en la carpeta **%Systemdrive%\Temp\Microsoft_Intune_Setup** del equipo de referencia.
 
-2.  Cree la entrada **WindowsIntuneEnrollPending** en el Registro agregando el siguiente comando al script **SetupComplete.cmd** :
+2. Cree la entrada **WindowsIntuneEnrollPending** en el Registro agregando el siguiente comando al script **SetupComplete.cmd** :
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
-3.  Agregue el siguiente comando a **setupcomplete.cmd** para ejecutar el paquete de inscripción con el argumento de línea de comandos /PrepareEnroll:
+3. Agregue el siguiente comando a **setupcomplete.cmd** para ejecutar el paquete de inscripción con el argumento de línea de comandos /PrepareEnroll:
 
     ```
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
@@ -103,9 +103,9 @@ El software cliente de Intune se puede implementar en equipos como parte de una 
     > [!TIP]
     > El script **SetupComplete.cmd** permite que el programa de instalación de Windows realice modificaciones en el sistema antes de que un usuario inicie sesión. El argumento de línea de comandos **/PrepareEnroll** prepara un equipo de destino para inscribirse automáticamente en Intune cuando haya finalizado la instalación de Windows.
 
-4.  Coloque **SetupComplete.cmd** en la carpeta **%Windir%\Setup\Scripts** del equipo de referencia.
+4. Coloque **SetupComplete.cmd** en la carpeta **%Windir%\Setup\Scripts** del equipo de referencia.
 
-5.  Capture una imagen del equipo de referencia y, a continuación, impleméntela en los equipos de destino.
+5. Capture una imagen del equipo de referencia y, a continuación, impleméntela en los equipos de destino.
 
     Cuando se reinicie el equipo de destino al finalizar la instalación de Windows, se creará la clave **WindowsIntuneEnrollPending** en el Registro. El paquete de inscripción comprueba si el equipo está inscrito. Si el equipo está inscrito, no se realiza ninguna otra acción. Si el equipo no está inscrito, el paquete de inscripción crea una tarea de inscripción automática de Microsoft Intune.
 
@@ -125,7 +125,7 @@ Si a los usuarios se les ha asignado una licencia de Intune y la entidad de MDM 
 
 - A los usuarios de equipos con Windows 10 o Windows 8.1 se les muestran dos opciones de inscripción:
 
-  -  **Inscribir el equipo como un dispositivo móvil**: los usuarios pulsan el botón **Cómo inscribirse** y se les dirige a las instrucciones sobre cómo inscribir sus equipos como un dispositivo móvil. Este botón se muestra claramente, ya que la inscripción de MDM se considera la opción de inscripción preferida y predeterminada. En cambio, la opción de MDM no se aplica a este tema, que trata solo la instalación del software cliente.
+  - **Inscribir el equipo como un dispositivo móvil**: los usuarios pulsan el botón **Cómo inscribirse** y se les dirige a las instrucciones sobre cómo inscribir sus equipos como un dispositivo móvil. Este botón se muestra claramente, ya que la inscripción de MDM se considera la opción de inscripción preferida y predeterminada. En cambio, la opción de MDM no se aplica a este tema, que trata solo la instalación del software cliente.
   - **Inscribir el equipo con el software cliente de Intune**: necesitará indicar a los usuarios que seleccionen el vínculo **Haga clic aquí para descargar**, que les guía a través de la instalación del software cliente.
 
 En la siguiente tabla se resumen las opciones.
@@ -171,19 +171,19 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 
 ### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>Para comprobar la instalación del software cliente mediante la consola de administrador de Microsoft Intune
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los equipos**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los equipos**.
 
-2.  En la lista, busque los equipos que se estén comunicando con Intune o busque un equipo administrado específico escribiendo el nombre del equipo (o una parte de él) en el cuadro **Buscar dispositivos**.
+2. En la lista, busque los equipos que se estén comunicando con Intune o busque un equipo administrado específico escribiendo el nombre del equipo (o una parte de él) en el cuadro **Buscar dispositivos**.
 
-3.  Examine el estado del equipo en el panel inferior de la consola. Resuelva los errores.
+3. Examine el estado del equipo en el panel inferior de la consola. Resuelva los errores.
 
 ### <a name="to-create-a-computer-inventory-report-to-display-all-enrolled-computers"></a>Para crear un informe de inventario de equipo que muestre todos los equipos inscritos
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Informes** &gt; **Informes de inventario de equipos**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Informes** &gt; **Informes de inventario de equipos**.
 
-2.  En la página **Crear nuevo informe** , deje los valores predeterminados en todos los campos (a menos que desee aplicar filtros) y haga clic en **Ver informe**.
+2. En la página **Crear nuevo informe** , deje los valores predeterminados en todos los campos (a menos que desee aplicar filtros) y haga clic en **Ver informe**.
 
-3.  Se abre la página de **Informe de inventario de equipos** en una nueva ventana que muestra todos los equipos que están inscritos correctamente en Intune.
+3. Se abre la página de **Informe de inventario de equipos** en una nueva ventana que muestra todos los equipos que están inscritos correctamente en Intune.
 
     > [!TIP]
     > Para ordenar la lista del informe por el contenido de una columna, haga clic en el encabezado de esa columna.
@@ -258,7 +258,7 @@ Compruebe "%ProgramFiles%\Microsoft\OnlineManagement" y asegúrese de que solo s
 
 El proceso de anulación de la suscripción no elimina la carpeta OnlineManagement. Espere 30 minutos después de la desinstalación y luego ejecute este comando. Si se ejecuta demasiado pronto, la desinstalación podría quedar en un estado desconocido. Para quitar la carpeta, abra una ventana de símbolo del sistema con privilegios elevados y ejecute:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Pasos siguientes
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

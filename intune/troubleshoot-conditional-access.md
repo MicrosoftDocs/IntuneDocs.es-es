@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043905"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530716"
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acceso condicional
 
@@ -35,8 +35,8 @@ Para que funcione el acceso condicional, se deben cumplir los siguientes requisi
 - El dispositivo debe estar inscrito en Intune, e Intune tiene que administrarlo.
 - El usuario y el dispositivo deben cumplir las directivas de cumplimiento de Intune asignadas.
 - De forma predeterminada, el usuario debe tener asignada una directiva de cumplimiento. Esto puede depender de cómo se configure la opción **Marcar los dispositivos sin directiva de cumplimiento asignada como** en **Cumplimiento del dispositivo** > **Configuración de directiva de cumplimiento** en el portal de administración de Intune.
--   Si el usuario usa el cliente de correo nativo del dispositivo en lugar de Outlook, Exchange ActiveSync debe estar activado en el dispositivo. Esto ocurre automáticamente para dispositivos iOS, Windows Phone y Android.
--   Intune Exchange Connector debe estar configurado correctamente. Consulte [Solucionar problemas de Exchange Connector en Microsoft Intune](troubleshoot-exchange-connector.md) para obtener más información.
+- Si el usuario usa el cliente de correo nativo del dispositivo en lugar de Outlook, Exchange ActiveSync debe estar activado en el dispositivo. Esto ocurre automáticamente para dispositivos iOS, Windows Phone y Android.
+- Intune Exchange Connector debe estar configurado correctamente. Consulte [Solucionar problemas de Exchange Connector en Microsoft Intune](troubleshoot-exchange-connector.md) para obtener más información.
 
 Puede ver si estas condiciones se cumplen en los dispositivos en Azure Portal y en el informe de inventario del dispositivo.
 
