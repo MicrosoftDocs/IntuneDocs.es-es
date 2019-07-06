@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044983"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044334"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Tutorial de Microsoft Intune en Azure Portal
 
@@ -104,7 +104,7 @@ Siga estos pasos para comprender mejor Intune en Azure Portal. Cuando haya compl
 
     ![Captura de pantalla del panel Acceso condicional](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    El acceso condicional hace referencia a las formas en que puede controlar los dispositivos y las aplicaciones que pueden conectarse a los recursos del correo electrónico y la empresa. Para obtener información sobre el acceso condicional basado en dispositivos y aplicaciones, y buscar escenarios comunes para usar el acceso condicional con Intune, vea [¿Qué es el acceso condicional?](conditional-access.md).
+    El acceso condicional hace referencia a las formas en que puede controlar los dispositivos y las aplicaciones que pueden conectarse a los recursos del correo electrónico y la empresa. Para información sobre el acceso condicional basado en dispositivos y aplicaciones y buscar escenarios comunes para usar el acceso condicional con Intune, consulte [¿Qué es el acceso condicional?](conditional-access.md)
 
 8. Desde [Intune](https://aka.ms/intuneportal), haga clic en **Usuarios** para mostrar detalles sobre los usuarios que haya incluido en Intune. Estos usuarios son los recursos de la empresa. 
  
