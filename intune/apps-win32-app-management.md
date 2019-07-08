@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 3cfe2aef93fb8b7c420ee6513945f11bee5bd0be
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804708"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529712"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -65,7 +65,7 @@ Si ejecuta `IntuneWinAppUtil.exe` desde la ventana de comandos sin parámetros, 
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Ayuda    |
 |    `-c <setup_folder>`     |    Carpeta para todos los archivos de instalación. Todos los archivos de esta carpeta se comprimirán en el archivo *.intunewin*.    |
-|   ` -s <setup_file>`     |    Archivo de instalación (como *setup.exe* o *setup.msi*).    |
+|    `-s <setup_file>`     |    Archivo de instalación (como *setup.exe* o *setup.msi*).    |
 |    `-o <output_folder>`     |    Carpeta de salida del archivo *.intunewin* generado.    |
 |    `-q`       |    Modo silencioso    |
 
@@ -98,28 +98,28 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
 ### <a name="step-1-specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3.  En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
-4.  En el panel de aplicaciones **Agregar**, seleccione **Aplicación Windows (Win32)** en la lista desplegable.
+3. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
+4. En el panel de aplicaciones **Agregar**, seleccione **Aplicación Windows (Win32)** en la lista desplegable.
 
     ![Captura de pantalla de la hoja Agregar aplicación - Cuadro de lista desplegable Agregar tipo](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Paso 2: Carga del archivo de paquete de aplicaciones
 
-1.  En el panel **Agregar aplicación**, seleccione **Archivo del paquete de aplicaciones** para seleccionar un archivo. Se mostrará el panel del archivo del paquete de aplicaciones.
+1. En el panel **Agregar aplicación**, seleccione **Archivo del paquete de aplicaciones** para seleccionar un archivo. Se mostrará el panel del archivo del paquete de aplicaciones.
 
     ![Captura de pantalla de la hoja del archivo del paquete de aplicaciones](./media/apps-win32-app-02.png)
 
-2.  En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. Después seleccione un archivo de instalación de Windows con la extensión *.intunewin*.
+2. En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. Después seleccione un archivo de instalación de Windows con la extensión *.intunewin*.
 
     > [!IMPORTANT]
     > Asegúrese de usar la versión más reciente de la herramienta de preparación de contenido Win32 de Microsoft. Si no usa la versión más reciente, verá una advertencia en la que se indica que la aplicación se ha empaquetado con una versión anterior de la herramienta de preparación de contenido de Win32 de Microsoft. 
 
-3.  Cuando haya terminado, seleccione **Aceptar**.
+3. Cuando haya terminado, seleccione **Aceptar**.
 
 ### <a name="step-3-configure-app-information"></a>Paso 3: Configuración de información de la aplicación
 
-1.  En el panel **Agregar aplicación**, seleccione **Información de la aplicación** para configurar la aplicación.
-2.  En el panel **Información de la aplicación**, configure la información siguiente. Algunos de los valores de este panel podrían rellenarse automáticamente.
+1. En el panel **Agregar aplicación**, seleccione **Información de la aplicación** para configurar la aplicación.
+2. En el panel **Información de la aplicación**, configure la información siguiente. Algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Nombre**: escriba el nombre de la aplicación tal como aparece en el portal de empresa. Si el mismo nombre de aplicación existe dos veces, se mostrarán las dos aplicaciones en el portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
     - **Publicador**: Escriba el nombre del publicador de la aplicación.
@@ -131,21 +131,22 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación. Un ejemplo es **Departamento de Recursos Humanos**.
     - **Notas**: escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: cargue un icono que esté asociado a la aplicación. El icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
-3.  Cuando haya terminado, seleccione **Aceptar**.
+3. Cuando haya terminado, seleccione **Aceptar**.
 
 ### <a name="step-4-configure-app-installation-details"></a>Paso 4: Configuración de los detalles de instalación de la aplicación
-1.  En el panel **Agregar aplicación**, seleccione **Programa** para configurar los comandos de instalación y desinstalación de aplicaciones para la aplicación.
-2.  Para instalar la aplicación, agregue la línea de comandos para completar la instalación. 
+1. En el panel **Agregar aplicación**, seleccione **Programa** para configurar los comandos de instalación y desinstalación de aplicaciones para la aplicación.
+2. Para instalar la aplicación, agregue la línea de comandos para completar la instalación. 
 
     Por ejemplo, si el nombre de archivo de la aplicación es **MyApp123**, agregue lo siguiente:<br>
     `msiexec /p “MyApp123.msp”`<p>
     Y si la aplicación es `ApplicationName.exe`, el comando sería el nombre de aplicación seguido de los argumentos de comando (conmutadores) compatibles con el paquete. <br>Por ejemplo:<br>
     `ApplicationName.exe /quiet`<br>
-    en el comando anterior, el paquete `ApplicationName.exe` admite el argumento de comando `/quiet`.<p> Para los argumentos específicos compatibles con el paquete de aplicación, póngase en contacto con su proveedor de aplicaciones.
+    en el comando anterior, el paquete `ApplicationName.exe` admite el argumento de comando `/quiet`.<p> 
+    Para los argumentos específicos compatibles con el paquete de aplicación, póngase en contacto con su proveedor de aplicaciones.
 
-3.  Agregar la línea de comandos de desinstalación completa para desinstalar la aplicación a partir del GUID de la aplicación. 
+3. Agregar la línea de comandos de desinstalación completa para desinstalar la aplicación a partir del GUID de la aplicación. 
 
-    Por ejemplo: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    Por ejemplo:  `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > Puede configurar una aplicación Win32 para instalarla en un contexto de **usuario** o **sistema**. El contexto de **usuario** hace referencia a un único usuario determinado. El contexto de **sistema** hace referencia a todos los usuarios de un dispositivo Windows 10.
@@ -154,12 +155,12 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     > 
     > La instalación y desinstalación de las aplicaciones Win32 se ejecutará bajo el privilegio de administración (de manera predeterminada) cuando la aplicación esté establecida para iniciarse en el contexto del usuario y el usuario final del dispositivo tenga privilegios de administración.
 
-4.  Cuando haya terminado, seleccione **Aceptar**.
+4. Cuando haya terminado, seleccione **Aceptar**.
 
 ### <a name="step-5-configure-app-requirements"></a>Paso 5: Configuración de los requisitos de la aplicación
 
-1.  En el panel **Agregar aplicación**, seleccione **Requisitos** para configurar los requisitos que deben cumplir los dispositivos para que se pueda instalar la aplicación.
-2.  En el panel **Agregar una regla de requisitos**, configure la siguiente información. Algunos de los valores de este panel podrían rellenarse automáticamente.
+1. En el panel **Agregar aplicación**, seleccione **Requisitos** para configurar los requisitos que deben cumplir los dispositivos para que se pueda instalar la aplicación.
+2. En el panel **Agregar una regla de requisitos**, configure la siguiente información. Algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Arquitectura del sistema operativo**: elija las arquitecturas necesarias para instalar la aplicación.
     - **Versión mínima del sistema operativo**: seleccione el sistema operativo necesario para instalar la aplicación.
     - **Espacio en disco necesario (MB)** : también puede agregar el espacio libre en disco necesario en la unidad del sistema para instalar la aplicación.
@@ -184,32 +185,32 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
         - **Ejecutar este script con las credenciales de inicio de sesión**: Seleccione **Sí** para ejecutar el script mediante el firmado en las credenciales del dispositivo**.
         - **Exigir la comprobación de firma del script**: seleccione **Sí** para comprobar si el script está firmado por un editor de confianza. Esto permitirá que el script se ejecute sin mostrar advertencias ni mensajes. El script se ejecutará desbloqueado. Seleccione **No** (valor predeterminado) para ejecutar el script con una confirmación del usuario final sin comprobación de firmas.
         - **Seleccionar los tipos de datos de salida**: seleccione el tipo de datos que se usa al determinar a una coincidencia de regla de requisitos.
-4.  Cuando haya terminado, seleccione **Aceptar**.
+4. Cuando haya terminado, seleccione **Aceptar**.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Paso 6: Configuración de reglas de detección de aplicaciones
 
-1.  En el panel **Agregar aplicación**, seleccione **Reglas de detección** para configurar las reglas para detectar la presencia de la aplicación.
-2.  En **Formato de las reglas**, seleccione cómo se detectará la presencia de la aplicación. Puede optar por configurar manualmente las reglas de detección o por usar un script personalizado para detectar la presencia de la aplicación. Debe elegir una regla de detección como mínimo. 
+1. En el panel **Agregar aplicación**, seleccione **Reglas de detección** para configurar las reglas para detectar la presencia de la aplicación.
+2. En **Formato de las reglas**, seleccione cómo se detectará la presencia de la aplicación. Puede optar por configurar manualmente las reglas de detección o por usar un script personalizado para detectar la presencia de la aplicación. Debe elegir una regla de detección como mínimo. 
 
     > [!NOTE]
     > En el panel **Reglas de detección**, puede agregar varias reglas. Deben cumplirse las condiciones de **todas** las reglas para detectar la aplicación.
 
     - **Configurar manualmente las reglas de detección**: puede seleccionar uno de los siguientes tipos de regla:
-        1.  **MSI**: compruébelo en función de la comprobación de versión de MSI. Esta opción solo puede agregarse una vez. Al elegir este tipo de regla, tiene dos opciones:
+        1. **MSI**: compruébelo en función de la comprobación de versión de MSI. Esta opción solo puede agregarse una vez. Al elegir este tipo de regla, tiene dos opciones:
             - **Código de producto MSI**: agregue un código de producto MSI válido para la aplicación.
             - **Comprobación de versión del producto MSI**: seleccione **Sí** para que se compruebe la versión de producto MSI además del código de producto MSI.
-        2.  **Archivo**: compruébelo en función de la fecha, la versión, el tamaño o la detección de la carpeta o del archivo.
+        2. **Archivo**: compruébelo en función de la fecha, la versión, el tamaño o la detección de la carpeta o del archivo.
             - **Ruta de acceso**: la ruta de acceso completa de la carpeta que contiene el archivo o la carpeta que se tiene que detectar.
             - **Archivo o carpeta**: el archivo o la carpeta que se va a detectar.
             - **Método de detección**: seleccione el tipo de método de detección utilizado para validar la presencia de la aplicación.
             - **Asociado con una aplicación de 32 bits en clientes de 64 bits**: seleccione **Sí** para expandir las variables de entorno de ruta de acceso en el contexto de 32 bits en clientes de 64 bits. Seleccione **No** (valor predeterminado) para expandir cualquier variable de ruta de acceso en el contexto de 64 bits en clientes de 64 bits. Los clientes de 32 bits siempre usan el contexto de 32 bits.
             
             **Ejemplos de detección basada en archivos**
-            1.  Compruebe que el archivo existe.
+            1. Compruebe que el archivo existe.
          
                 ![Captura de pantalla del panel Regla de detección - Existencia del archivo](./media/apps-win32-app-03.png)
         
-            2.  Compruebe que la carpeta existe.
+            2. Compruebe que la carpeta existe.
          
                 ![Captura de pantalla del panel Regla de detección - Existencia de la carpeta](./media/apps-win32-app-04.png)
         
@@ -220,62 +221,62 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
             - **Asociado con una aplicación de 32 bits en clientes de 64 bits**: seleccione **Sí** para buscar el registro de 32 bits en clientes de 64 bits. Seleccione **No** (valor predeterminado) para buscar el registro de 64 bits en clientes de 64 bits. Los clientes de 32 bits siempre buscan el registro de 32 bits.
             
             **Ejemplos para la detección basada en registros**
-            1.  Compruebe que la clave del registro existe.
+            1. Compruebe que la clave del registro existe.
             
                 ![Captura de pantalla del panel Regla de detección - la clave del registro existe](./media/apps-win32-app-05.png)    
             
-            2.  Compruebe si existe el valor del Registro.
+            2. Compruebe si existe el valor del Registro.
         
                 ![Captura de pantalla del panel Regla de detección - el valor del registro existe](./media/apps-win32-app-06.png)    
         
-            3.  Compruebe si la cadena de valores de registro son iguales.
+            3. Compruebe si la cadena de valores de registro son iguales.
         
                 ![Captura de pantalla del panel Regla de detección - la cadena del valor del registro es igual](./media/apps-win32-app-07.png)    
      
     - **Usar un script de detección personalizada**: especifique el script de PowerShell que se usará para detectar esta aplicación. 
     
-        1.  **Archivo de script**: seleccione un script de PowerShell que detectará la presencia de la aplicación en el cliente. La aplicación se detectará cuando el script devuelva un código de salida del valor 0 y escriba un valor de cadena en STDOUT.
+        1. **Archivo de script**: seleccione un script de PowerShell que detectará la presencia de la aplicación en el cliente. La aplicación se detectará cuando el script devuelva un código de salida del valor 0 y escriba un valor de cadena en STDOUT.
 
-        2.  **Ejecutar script como proceso de 32 bits en clientes de 64 bits**: seleccione **Sí** para ejecutar el script en un proceso de 32 bits en clientes de 64 bits. Seleccione **No** (valor predeterminado) para ejecutar el script en un proceso de 64 bits en clientes de 64 bits. Los clientes de 32 bits ejecutan el script en un proceso de 32 bits.
+        2. **Ejecutar script como proceso de 32 bits en clientes de 64 bits**: seleccione **Sí** para ejecutar el script en un proceso de 32 bits en clientes de 64 bits. Seleccione **No** (valor predeterminado) para ejecutar el script en un proceso de 64 bits en clientes de 64 bits. Los clientes de 32 bits ejecutan el script en un proceso de 32 bits.
 
-        3.  **Exigir la comprobación de firma del script**: seleccione **Sí** para comprobar si el script está firmado por un editor de confianza. Esto permitirá que el script se ejecute sin mostrar advertencias ni mensajes. El script se ejecutará desbloqueado. Seleccione **No** (valor predeterminado) para ejecutar el script con una confirmación del usuario final sin comprobación de firmas.
+        3. **Exigir la comprobación de firma del script**: seleccione **Sí** para comprobar si el script está firmado por un editor de confianza. Esto permitirá que el script se ejecute sin mostrar advertencias ni mensajes. El script se ejecutará desbloqueado. Seleccione **No** (valor predeterminado) para ejecutar el script con una confirmación del usuario final sin comprobación de firmas.
     
             El agente de Intune comprueba los resultados del script. Lee los valores escritos por el script en la secuencia de salida estándar (STDOUT), la secuencia de error estándar (STDERR) y el código de salida. Si el script sale con un valor distinto de cero, se produce un error en el script y el estado de detección de la aplicación es no instalada. Si el código de salida es cero y STDOUT contiene datos, el estado de detección de la aplicación es Instalada. 
 
             > [!NOTE]
             > Microsoft recomienda codificar el script como UTF-8. Cuando el script existe con el valor de 0, significa que el script se ha ejecutado correctamente. El segundo canal de salida indica que se ha detectado la aplicación: los datos de STDOUT indican que la aplicación se encontró en el cliente. No buscamos una cadena concreta de STDOUT.
 
-        4.  Después de agregar las reglas, seleccione **Agregar** > **Aceptar**.
+        4. Después de agregar las reglas, seleccione **Agregar** > **Aceptar**.
 
 ### <a name="step-7-configure-app-return-codes"></a>Paso 7: Configuración de los códigos de retorno de la aplicación
 
-1.  En el panel **Agregar aplicación**, seleccione **Códigos de retorno** para agregar los códigos de retorno que se usan para especificar el comportamiento de reintento de instalación de la aplicación o el comportamiento posterior a la instalación. Las entradas del código de retorno se agregan de forma predeterminada durante la creación de la aplicación. En cambio, puede agregar códigos de retorno adicionales o cambiar los códigos de retorno existentes. 
-2.  En el panel **Códigos de retorno**, agregue códigos de retorno adicionales o modifique los existentes.
+1. En el panel **Agregar aplicación**, seleccione **Códigos de retorno** para agregar los códigos de retorno que se usan para especificar el comportamiento de reintento de instalación de la aplicación o el comportamiento posterior a la instalación. Las entradas del código de retorno se agregan de forma predeterminada durante la creación de la aplicación. En cambio, puede agregar códigos de retorno adicionales o cambiar los códigos de retorno existentes. 
+2. En el panel **Códigos de retorno**, agregue códigos de retorno adicionales o modifique los existentes.
     - **Error**: valor devuelto que indica un error de instalación de la aplicación.
     - **Reinicio en frío**: el código de retorno del reinicio en frío no permite que se instalen más aplicaciones Win32 en el cliente sin llevar a cabo un reinicio. 
     - **Reinicio en caliente**: el código de retorno del reinicio en caliente permite que la siguiente aplicación Win32 se instale sin que el cliente se tenga que reiniciar. Es necesario llevar a cabo un reinicio para completar la instalación de la aplicación actual.
     - **Reintento**: el código de retorno de reintento intentará instalar la aplicación tres veces, esperando 5 minutos entre un intento y el siguiente. 
     - **Correcto**: el valor devuelto que indica que la aplicación se ha instalado correctamente.
-3.  Seleccione **Aceptar** cuando haya agregado o modificado la lista de códigos de retorno.
+3. Seleccione **Aceptar** cuando haya agregado o modificado la lista de códigos de retorno.
 
 ### <a name="step-8-add-the-app"></a>Paso 8: Agregar la aplicación
 
-1.  En el panel **Agregar aplicación**, compruebe que ha configurado correctamente la información de la aplicación.
-2.  Seleccione **Agregar** para cargar la aplicación en Intune.
+1. En el panel **Agregar aplicación**, compruebe que ha configurado correctamente la información de la aplicación.
+2. Seleccione **Agregar** para cargar la aplicación en Intune.
 
 ### <a name="step-9-assign-the-app"></a>Paso 9: Asignación de la aplicación
 
-1.  En el panel de la aplicación, seleccione **Asignaciones**.
-2.  Seleccione **Agregar grupo** para abrir el panel **Agregar grupo** que está relacionado con la aplicación.
-3.  Para la aplicación específica, seleccione un **tipo de asignación**:
+1. En el panel de la aplicación, seleccione **Asignaciones**.
+2. Seleccione **Agregar grupo** para abrir el panel **Agregar grupo** que está relacionado con la aplicación.
+3. Para la aplicación específica, seleccione un **tipo de asignación**:
     - **Disponible para dispositivos inscritos**: los usuarios instalan la aplicación desde la aplicación o el sitio web del Portal de empresa.
     - **Requerido**: la aplicación se instala en los dispositivos de los grupos seleccionados.
     - **Desinstalar**: la aplicación se desinstala de dispositivos de los grupos seleccionados.
-4.  Seleccione **Grupos incluidos** y asigne los grupos que usarán esta aplicación.
-5.  En el panel **Asignar**, seleccione **Aceptar** para completar la selección de grupos incluidos.
-6.  Si quiere excluir algún grupo de usuarios para que no se vea afectado por esta asignación de aplicaciones, seleccione **Excluir grupos**.
-7.  En el panel **Agregar grupo**, seleccione **Aceptar**.
-8.  En el panel **Asignaciones** de la aplicación, seleccione **Guardar**.
+4. Seleccione **Grupos incluidos** y asigne los grupos que usarán esta aplicación.
+5. En el panel **Asignar**, seleccione **Aceptar** para completar la selección de grupos incluidos.
+6. Si quiere excluir algún grupo de usuarios para que no se vea afectado por esta asignación de aplicaciones, seleccione **Excluir grupos**.
+7. En el panel **Agregar grupo**, seleccione **Aceptar**.
+8. En el panel **Asignaciones** de la aplicación, seleccione **Guardar**.
 
 Ya ha completado los pasos para agregar una aplicación Win32 a Intune. Para obtener información sobre la supervisión y la asignación de aplicaciones, vea [Asignación de aplicaciones a grupos con Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) y [Supervisión de información y asignaciones de aplicaciones con Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 

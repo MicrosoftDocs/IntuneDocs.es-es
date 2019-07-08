@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040652"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403574"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Supervisión de la línea base de seguridad y los perfiles en Microsoft Intune  
 
@@ -34,7 +34,7 @@ Las [líneas de base de seguridad en Intune](security-baselines.md) proporcionan
 
 Al supervisar una línea base, obtiene conclusiones sobre el estado de seguridad de los dispositivos según las recomendaciones de Microsoft. Puede ver estas conclusiones en el panel Información general de la línea base de seguridad en la consola de Intune.  Los datos tardan hasta 24 horas en aparecer después de asignar una línea base en primer lugar. Los cambios posteriores tardan hasta seis horas en aparecer.  
 
-Para ver los datos de supervisión de la línea base y los dispositivos, inicie sesión en el [portal Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Luego, seleccione **Seguridad de dispositivos** > **Líneas base de seguridad (vista previa)** , elija una línea base y consulte el panel **Información general**.
+Para ver los datos de supervisión de la línea base y los dispositivos, inicie sesión en el [portal Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Luego, seleccione **Seguridad de dispositivos** > **Líneas de base de seguridad**, elija una línea de base y consulte el panel **Información general**.
 
 El panel de **Información general** proporciona dos métodos para supervisar el estado:
 - **Vista de dispositivo**: resumen de cuántos dispositivos están en cada categoría de estado para la línea base.  

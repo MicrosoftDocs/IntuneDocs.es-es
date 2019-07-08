@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/08/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,31 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: 99f51662894cac04e6ebcd821806b433dbf3117e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041242"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413768"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Eliminación de certificados SCEP y PKCS en Microsoft Intune
 
-En Microsoft Intune, puede agregar certificados de Protocolo de inscripción de certificados simple (SCEP) y Public Key Cryptography Standards (PKCS) a los dispositivos. Estos certificados también se pueden quitar cuando al [borrar](devices-wipe.md#wipe) o [retirar](devices-wipe.md#retire) el dispositivo. 
+En Microsoft Intune, puede usar perfiles de certificados de Protocolo de inscripción de certificados simple (SCEP) y Public Key Cryptography Standards (PKCS) para agregar certificados a los dispositivos. 
 
-En algunos casos los certificados se quitan automáticamente, mientras que en otros permanecen en el dispositivo. En este artículo se muestran algunos casos comunes y el impacto en los certificados PKCS y SCEP.
+Estos certificados se pueden quitar al [borrar](devices-wipe.md#wipe) o [retirar](devices-wipe.md#retire) el dispositivo. También hay casos en los que los certificados se quitan automáticamente y otros en los que permanecen en el dispositivo. En este artículo se muestran algunos casos comunes y el impacto en los certificados PKCS y SCEP.
 
 > [!NOTE]
 > A fin de quitar y revocar los certificados de un usuario en una instancia local de Active Directory o de Azure Active Directory (Azure AD), siga estos pasos en orden:
 >
 > 1. Borre o retire el dispositivo del usuario.
 > 2. Quite al usuario de la instancia local de Active Directory o de Azure AD.
+
+## <a name="manually-deleted-certificates"></a>Certificados eliminados manualmente  
+
+La eliminación manual de un certificado es un escenario que se aplica a las plataformas y los certificados aprovisionados por SCEP o los perfiles de certificado PKCS. Por ejemplo, un usuario podría eliminar un certificado de un dispositivo si a dicho dispositivo se le sigue aplicando una directiva de certificados.  
+
+En este caso, una vez eliminado el certificado, la próxima vez que el dispositivo se registra con Intune se detecta que este no es compatible, ya que carece del certificado esperado. A continuación, Intune emite un nuevo certificado para restaurar el cumplimiento del dispositivo. No es necesaria ninguna acción adicional para restaurar el certificado.  
+
 
 ## <a name="windows-devices"></a>Dispositivos Windows
 

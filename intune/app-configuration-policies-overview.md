@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 703fafec3799b1552ec275c7c88b24b42d2259b9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044007"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494053"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
@@ -64,7 +64,7 @@ Además, puede usar Graph API para realizar tareas de configuración de aplicaci
 
 ### <a name="managed-devices"></a>Dispositivos administrados
 
- - Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos iOS.  Vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
+ - Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos iOS.  Consulte [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
  - Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos Android.  Vea [Agregar directivas de configuración de aplicaciones para dispositivos Android administrados](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Aplicaciones administradas

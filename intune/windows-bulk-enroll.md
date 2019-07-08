@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,16 +16,14 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568172"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403420"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Como administrador, puede unir una gran cantidad de dispositivos Windows nuevos a Azure Active Directory e Intune. Para inscribir de forma masiva dispositivos para el inquilino de Azure AD, debe crear un paquete de aprovisionamiento con la aplicación Windows Configuration Designer (WC). Aplicar el paquete de aprovisionamiento en dispositivos corporativos une estos dispositivos al inquilino de Azure AD y los inscribe para la administración de Intune. Una vez que se aplica el paquete, está listo para que los usuarios de Azure AD inicien sesión.
 
@@ -51,6 +48,7 @@ Los usuarios de Azure AD son usuarios estándar en estos dispositivos y reciben 
    - **Description**: descripción opcional del proyecto ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4. Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%SERIAL%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.
+   
    ![Captura de pantalla de la especificación de nombre y clave de producto en la aplicación Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5. De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no están configurados los dispositivos de red, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
@@ -91,9 +89,6 @@ El aprovisionamiento está diseñado para usarlo en dispositivos Windows nuevos.
 
 - Un paquete de aprovisionamiento que intenta unirse a un dominio de Active Directory o a un inquilino de Azure Active Directory que no crea una cuenta local podría generar que el dispositivo no sea accesible si el proceso de unión al dominio presenta un error debido a la falta de conectividad de red.
 - Los scripts ejecutados por el paquete de aprovisionamiento se ejecutan en el contexto del sistema. Los scripts pueden realizar cambios arbitrarios en el sistema de archivos del dispositivo y las configuraciones. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se borra el dispositivo.
-
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas con la inscripción masiva y el portal de empresa
-Si un usuario intenta inscribir un dispositivo inscrito de manera masiva anteriormente con el portal de empresa, recibirá una advertencia de que su dispositivo necesita más acciones, de configuración o de inscripción. El dispositivo está inscrito, pero el sitio web o la aplicación del portal de empresa no reconocen la inscripción.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Inscripción masiva mediante Wi-Fi 
 

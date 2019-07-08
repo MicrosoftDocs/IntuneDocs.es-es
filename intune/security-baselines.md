@@ -1,11 +1,11 @@
 ---
 title: 'Uso de líneas de base de seguridad en Microsoft Intune: Azure | Microsoft Docs'
-description: Agregue o defina configuraciones de seguridad de grupo recomendadas para proteger al usuario y los datos en dispositivos mediante Microsoft Intune para la administración de dispositivos móviles. Habilite BitLocker, configure Protección contra amenazas avanzada de Microsoft Defender, controle Internet Explorer, use Smart Screen, establezca directivas de seguridad locales, requiera una contraseña, bloquee las descargas de Internet, etc.
+description: Agregue o defina configuraciones de seguridad de Windows recomendadas para proteger al usuario y los datos en dispositivos con Microsoft Intune para la administración de dispositivos móviles. Habilite BitLocker, configure Protección contra amenazas avanzada de Microsoft Defender, controle Internet Explorer, use Smart Screen, establezca directivas de seguridad locales, requiera una contraseña, bloquee las descargas de Internet, etc.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,23 +15,27 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb1ddcadcac1ec9b4730a5dcd66abca111d80196
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251206"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416833"
 ---
-# <a name="create-a-windows-10-security-baseline-in-intune"></a>Creación de una línea de base de seguridad de Windows 10 en Intune
+# <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Uso de líneas de base de seguridad para configurar dispositivos Windows 10 en Intune
 
-Las líneas de base de seguridad son una característica en versión preliminar que está disponible para dispositivos con Windows 10 y versiones posteriores. Esta característica incluye numerosas configuraciones admitidas por Intune que puede usar para proteger a los usuarios y dispositivos. Automáticamente establece estas configuración en los valores que los equipos de seguridad recomiendan. Por ejemplo, la línea de base habilita automáticamente BitLocker, requiere automáticamente una contraseña para desbloquear un dispositivo, deshabilita automáticamente la autenticación básica, etc.
+Use líneas de base de seguridad de Intune que le ayuden a proteger a sus usuarios y dispositivos. Las líneas de base de seguridad son grupos preconfigurados de configuraciones de Windows que le ayudan a aplicar un grupo conocido de configuraciones y valores predeterminados que recomiendan los equipos de seguridad pertinentes. Al crear un perfil de líneas de base de seguridad en Intune, está creando un perfil de *configuración de dispositivos*.
 
 Esta característica se aplica a:
 
 - Windows 10, versión 1809 y posteriores
 
+Usted se encarga de implementar líneas de base de seguridad en grupos de usuarios o dispositivos en Intune y la configuración se aplica a dispositivos que ejecutan Windows 10 o posterior. Por ejemplo, la *línea de base de seguridad MDM* habilita automáticamente BitLocker para unidades extraíbles, requiere automáticamente una contraseña para desbloquear un dispositivo, deshabilita automáticamente la autenticación básica, etc. Si un valor predeterminado no funciona para su entorno, personalice la línea de base para aplicar la configuración que necesita.  
+
+Los tipos de línea de base independientes pueden incluir la misma configuración, pero usar valores predeterminados distintos de esa configuración. Es importante conocer los valores predeterminados de las líneas de base que elige usar y, a continuación, modificar cada línea de base para ajustarlas a sus necesidades organizativas.  
+
 > [!NOTE]
-> Mientras las líneas de base de seguridad se encuentren en versión preliminar, Microsoft no recomienda el uso de perfiles en un entorno de producción, ya que dichas líneas pueden cambiar en el transcurso de la versión preliminar. Cuando las líneas de base de seguridad están disponibles con carácter general, los perfiles existentes no se convertirán a los perfiles compatibles más recientes.
+> Microsoft no recomienda usar versiones preliminares de líneas de base de seguridad en un entorno de producción. La configuración de una línea de base en versión preliminar podría cambiar en el transcurso de la versión preliminar. 
 
 El objetivo de usar las líneas de base de seguridad es proporcionar un flujo de trabajo seguro de un extremo a otro cuando trabaja con Microsoft 365. Estas son algunas de las ventajas:
 
@@ -39,28 +43,43 @@ El objetivo de usar las líneas de base de seguridad es proporcionar un flujo de
 - Si es nuevo en Intune y no está seguro de por dónde empezar, las líneas de base de seguridad ofrecen una ventaja. Puede crear e implementar rápidamente un perfil seguro, sabiendo que ayuda a proteger los recursos y datos de su organización.
 - Si actualmente usa una directiva de grupo, migrar a Intune para la administración es mucho más fácil con estas líneas de base. Estas líneas de base están integradas de forma nativa en Intune e incluyen una experiencia de administración moderna.
 
-Las líneas de base de seguridad crean un "perfil de configuración" en Intune. Este perfil incluye todas las configuraciones en la línea de base. Después, puede aplicar o asignar este perfil a los usuarios, grupos y dispositivos.
 
-Una vez asignado el perfil, puede supervisar dicho perfil y la línea de base. Por ejemplo, puede ver los dispositivos que coinciden con la línea de base y aquellos que no coinciden con dicha línea.
-
-En este artículo puede encontrar ayuda sobre cómo usar las líneas de base de seguridad para crear, asignar y supervisar un perfil.
 
 Las [líneas de base de seguridad de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) son un excelente recurso para obtener más información sobre esta característica. La [administración de dispositivos móviles](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) es un magnífico recurso sobre MDM y lo que puede hacer en los dispositivos Windows.
 
-## <a name="available-security-baselines"></a>Líneas de base de seguridad disponibles  
+## <a name="security-baseline-versions-and-instances"></a>Instancias y versiones de línea de base de seguridad
+De vez en cuando, hay disponibles nuevas actualizaciones para una línea de base. Cada nueva instancia de versión de una línea de base puede agregar o quitar la configuración, o aplicar otros cambios. Por ejemplo, a medida que la nueva configuración de Windows 10 está disponible con nuevas versiones de Windows 10, la línea de base de seguridad MDM podría recibir una nueva instancia de versión con la configuración más reciente.  
 
-Las líneas de base de seguridad siguientes están disponibles para usarlas con Intune.
-- **Versión preliminar: línea de base de seguridad de MDM para octubre de 2018**  
-  [Consulte la configuración](security-baseline-settings-windows.md)
+En la consola de Intune, puede ver qué líneas de base de seguridad están disponibles, así como información sobre las mismas. Entre la información disponible se incluye cuántos perfiles (de los que tiene) usan ese tipo de línea de base, cuántas instancias independientes del tipo de línea de base están disponibles y desde cuándo está disponible la última y más reciente instancia, o cuándo se publicó.  En el siguiente ejemplo se muestra el icono de una línea de base de seguridad MDM bien usada:  
 
-- **VERSIÓN PRELIMINAR: línea de base de ATP de Windows Defender**  
-  [Consulte la configuración](security-baseline-settings-defender-atp.md)  
-  *Esta línea está disponible cuando el entorno cumple con los requisitos previos para usar [Protección contra amenazas avanzada de Windows Defender](advanced-threat-protection.md#prerequisites).* .
+![Icono de la línea de base](./media/security-baselines/baseline-tile.png)
 
+Para ver información sobre las versiones de línea de base que usa, seleccione una línea de base y, a continuación, seleccione **Versiones**. Intune muestra detalles sobre las versiones en uso por parte de sus perfiles. En el panel Versiones, puede seleccionar una sola versión para ver detalles más profundos sobre los perfiles que usan esa versión. También puede seleccionar dos versiones distintas y, a continuación, elegir **Comparar líneas de base** para descargar un archivo CSV que detalle esas diferencias.  
+
+![Comparar líneas de base](./media/security-baselines/compare-baselines.png)
+
+Al crear un *perfil* de la línea de base de seguridad, este usará automáticamente la instancia de línea de base de seguridad publicada hace menos tiempo.  Puede seguir usando y editando perfiles creados anteriormente que usan una instancia de versión de la línea de base anterior, incluidas las líneas de base creadas mediante una versión preliminar. 
+
+Los perfiles de la línea de base de seguridad admiten un [cambio de la versión](#change-the-baseline-instance-for-a-profile) de línea de base que se está usando. Esto significa que, cuando sale una nueva versión, no es necesario crear un nuevo perfil de la línea de base para aprovecharla. En su lugar, cuando esté listo, puede seleccionar un perfil de la línea de base y, a continuación, usar la opción integrada para cambiar la versión de la instancia de ese perfil.  
+
+## <a name="available-security-baselines"></a>Líneas de base de seguridad disponibles 
+
+Las instancias de línea de base de seguridad siguientes están disponibles para usarlas con Intune. Use los vínculos para ver la configuración de la instancia más reciente de cada línea de base. 
+
+- **Línea de base de seguridad MDM**
+  - [Línea de base de seguridad de MDM para la primavera de 2019 (19H1)](security-baseline-settings-mdm.md)
+  - [Versión preliminar: línea de base de seguridad de MDM para octubre de 2018](security-baseline-settings-mdm-archive.md)
+
+- **Línea de base de ATP de Windows Defender**  
+  *(Para usar esta línea de base, su entorno debe cumplir con los requisitos previos para usar [Protección contra amenazas avanzada de Microsoft Defender](advanced-threat-protection.md#prerequisites))* .
+  - [Versión preliminar: línea de base de ATP de Windows Defender](security-baseline-settings-defender-atp.md)  
+
+Puede continuar usando y editando los perfiles que creó anteriormente en función de una plantilla en versión preliminar, incluso si dicha plantilla deja de estar disponible para la creación de nuevos perfiles. 
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para administrar líneas base en Intune, la cuenta debe tener el rol [Administrador de directiva y de perfil](role-based-access-control.md#built-in-roles) integrado.
+- Para administrar líneas base en Intune, la cuenta debe tener el rol [Administrador de directiva y de perfil](role-based-access-control.md#built-in-roles) integrado.
 
+- El uso de algunas líneas de base podría exigirle tener una suscripción activa a servicios adicionales, como ATP de Microsoft Defender.  
 
 ## <a name="co-managed-devices"></a>Dispositivos administrados conjuntamente
 
@@ -70,37 +89,91 @@ Cuando se usen dispositivos administrados conjuntamente, debe cambiar la carga d
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccione **Seguridad de dispositivos** > **Líneas de base de seguridad (versión preliminar)** . Hay una lista de líneas de base disponibles. 
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y, a continuación, seleccione **Seguridad de dispositivos** > **Líneas de base de seguridad** para ver la lista de líneas de base disponibles.
+
 
     ![Selección de una línea de base de seguridad para configurar](./media/security-baselines/available-baselines.png)
 
-   >[!TIP]  
-   > La línea de base de Protección contra amenazas avanzada de Windows Defender está disponible cuando el entorno cumple con los requisitos previos para usar [Protección contra amenazas avanzada de Windows Defender](advanced-threat-protection.md#prerequisites).
 2. Seleccione la línea de base que le gustaría usar y, luego, **Crear perfil**.  
 
 3. En la pestaña **Aspectos básicos**, especifique estas propiedades:
 
-    - **Nombre**: escriba un nombre para el perfil de las líneas de base de seguridad. Por ejemplo, escriba *Perfil estándar para ATP de Defender*
-    - **Descripción**: escriba algún texto que describa lo que hace esta línea de base. La descripción es para que introduzca cualquier texto que desee. Es opcional, pero muy recomendable.
+    - **Nombre**: escriba un nombre para el perfil de las líneas de base de seguridad. Por ejemplo, escriba *Perfil estándar para ATP de Defender*.
 
-4. Seleccione la pestaña **Configuración** para ver los grupos disponibles de **valores** de esta línea de base. Seleccione un grupo para expandirlo y ver los valores individuales que contiene. Los valores tienen configuraciones predeterminadas para la línea de base de seguridad. Vuelva a configurar los valores predeterminados para cumplir con las necesidades de su empresa.  
+    - **Descripción**: escriba algún texto que describa lo que hace esta línea de base. La descripción es para que introduzca cualquier texto que desee. Es opcional, pero recomendable.  
+
+   Seleccione **Siguiente** para ir a la siguiente pestaña. Una vez que haya avanzado a una nueva pestaña, podrá seleccionar su nombre para volver a una consultada anteriormente.  
+
+4. En la pestaña Opciones de configuración, consulte los grupos de **Configuración** que están disponibles en la línea de base que seleccionó. Puede expandir un grupo para ver su configuración, además de los valores predeterminados de dicha configuración de la línea de base. Para encontrar la configuración específica:
+   - Seleccione un grupo para expandir y revisar la configuración disponible.  
+   - Use la barra de *búsqueda* y especifique las palabras clave que filtran la vista para mostrar solo esos grupos que incluyen sus criterios de búsqueda.  
+ 
+   Cada uno de los valores de una línea de base cuenta con una configuración predeterminada para esa versión de línea de base. Vuelva a configurar los valores predeterminados para cumplir con las necesidades de su empresa. Diferentes líneas de base podrían incluir la misma configuración y usar valores predeterminados distintos de la configuración, según la intención de la línea de base. 
 
     ![Expansión de un grupo para ver los valores de ese grupo](./media/security-baselines/sample-list-of-settings.png)
 
-5. Seleccione la pestaña **Asignaciones** para asignar la línea de base a los grupos. Asigne la línea de base a un grupo existente o cree un grupo con el proceso estándar en la consola de Intune para completar la configuración.  
+5. En la pestaña **Etiquetas de ámbito**, seleccione **Seleccionar etiquetas de ámbito** para abrir el panel *Seleccionar etiquetas* para asignar etiquetas de ámbito al perfil. 
+
+6. En la pestaña **Asignaciones**, seleccione **Seleccionar grupos para incluir** y, a continuación, asigne la línea de base a uno o varios grupos. Use **Seleccionar grupos para excluir** para ajustar la asignación.  
 
    ![Asignar un perfil](./media/security-baselines/assignments.png)
   
-6. Cuando esté listo para implementar la línea de base, seleccione la pestaña **Revisar y crear** para revisar los detalles de la línea de base. Luego, seleccione **Guardar perfil** para guardar e implementar el perfil. 
+7. Cuando esté listo para implementar la línea de base, avance a la pestaña **Revisar y crear** para revisar los detalles de la línea de base. Seleccione **Crear** para guardar e implementar el perfil.  
+
+   Tan pronto como cree el perfil, se insertará en el grupo asignado y es posible que se aplique inmediatamente.
+
+   > [!TIP]  
+   > Si guarda un perfil sin asignarlo primero a grupos, más tarde podrá editarlo para hacerlo.  
 
    ![Revisión de la línea de base](./media/security-baselines/review.png) 
 
-   Tan pronto como guarde los cambios, el perfil se insertará en los dispositivos cuando se registren en Intune. Por lo tanto, puede ocurrir inmediatamente.
+  
+8. Después de crear un perfil, edítelo en **Seguridad de dispositivos** > **Líneas de base de seguridad**, seleccione el tipo de línea de base que configuró y, luego, **Perfiles**.  Seleccione el perfil en la lista de perfiles disponibles y, a continuación, seleccione **Propiedades**. Puede editar la configuración desde todas las pestañas de configuración disponibles y seleccionar **Revisar y guardar** para confirmar sus cambios.  
 
-   > [!TIP]  
-   > Puede guardar un perfil sin asignarlo primero a los grupos. Puede editar el perfil más adelante para agregar grupos. 
+## <a name="change-the-baseline-instance-for-a-profile"></a>Cambiar la instancia de línea de base de un perfil
+Los perfiles de la línea de base admiten un cambio de la instancia de línea de base que usa el perfil. Puede seleccionar una instancia anterior o, con mayor frecuencia, una instancia más reciente de la misma línea de base.  No puede cambiar entre dos líneas de base distintas, como cambiar un perfil pasando de usar una línea de base para Defender ATP a usar la línea de base de seguridad MDM. 
 
-7. Después de crear el perfil, puede editarlo en **Seguridad de dispositivos** > **Líneas de base de seguridad**, seleccione la línea de base que configuró y, luego, **Perfiles**.  Seleccione el perfil y elija **Propiedades** para editar la configuración. Luego, seleccione **Asignaciones** para editar los grupos que reciben esta línea de base. 
+Durante la configuración de un cambio de la versión de línea de base, tendrá la opción de descargar un archivo CSV que muestra los cambios entre las dos versiones de línea de base implicadas. También tiene la opción de conservar todas sus personalizaciones en la versión de línea de base original y aplicarlas a la nueva versión, o bien implementar todos los valores predeterminados encontrados en la nueva versión de línea de base que ha seleccionado. 
+
+Al guardar, después de completarse la conversión, la línea de base se volverá a implementar inmediatamente en grupos asignados.  
+
+**Durante la conversión**:
+- Se agrega y establece una nueva configuración que no estaba en la versión original que estaba usando para utilizar los valores predeterminados.  
+
+- La configuración que no esté en la nueva versión de línea de base seleccionada se quitará y este perfil de la línea de base de seguridad ya no la aplicará.  
+
+  Si un perfil de la línea de base deja de administrar una configuración, dicha configuración no se restablecerá en el dispositivo. En su lugar, la configuración del dispositivo seguirá estando establecida en su última configuración hasta que otro proceso la administra para cambiarla. Entre los ejemplos de procesos que pueden cambiar una configuración una vez que deja de administrarla se incluyen un perfil de la línea de base diferente, una configuración de directiva de grupo o una configuración manual realizada en el dispositivo. 
+
+### <a name="to-change-the-instance-for-a-baseline"></a>Para cambiar la instancia de una línea de base  
+
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y, a continuación, seleccione **Seguridad de dispositivos** > **Líneas de base de seguridad** y, a continuación, seleccione el icono para el tipo de línea de base que tiene el perfil que desea cambiar.  
+
+2. A continuación, seleccione **Perfiles**, active la casilla del perfil que desea editar y seleccione **Cambiar versión**.  
+
+   ![seleccionar una línea de base](./media/security-baselines/select-baseline.png)  
+
+3. En el panel **Cambiar versión**, use la lista desplegable **Select a security baseline to update to** (Seleccionar una línea de base de seguridad a la que actualizar) y seleccione la instancia de versión que desea usar.  
+
+   ![seleccionar una versión](./media/security-baselines/select-instance.png)  
+ 
+4. Seleccione **Revisar actualización** para descargar un archivo CSV que muestre la diferencia entre la versión de la instancia actual del perfil y la nueva versión seleccionada. Revise este archivo para saber qué configuración se agrega y quita, y cuáles son los valores predeterminados de esta configuración en el perfil actualizado.  
+
+   Cuanto esté listo, continúe con el siguiente paso.  
+
+5. Elija una de las dos opciones para **Seleccionar un método para actualizar el perfil**: 
+   - **Aceptar los cambios en la línea de base, pero conservar mis personalizaciones de configuración existentes**: esta opción conserva las personalizaciones que realizó en el perfil de la línea de base y las aplica a la nueva versión que ha seleccionado para su uso.
+   - **Aceptar los cambios en la línea de base y descartar las personalizaciones de configuración existentes**: esta opción sobrescribe su perfil original por completo. El perfil actualizado usará los valores predeterminados de todas las configuraciones.  
+
+6. Seleccione **Enviar**. El perfil se actualiza a la versión de línea de base seleccionada y, una vez que se ha completado la conversión, la línea de base vuelve a implementarse inmediatamente en grupos asignados.
+
+## <a name="remove-a-security-baseline-assignment"></a>Quitar una asignación de la línea de base de seguridad
+Si una configuración de líneas de base de seguridad deja de aplicarse a un dispositivo o la configuración en una línea de base se establece en *No configurada*, esa configuración de un dispositivo no se revertirá a una configuración administrada previamente. En su lugar, la configuración administrada previamente del dispositivo conservará sus últimas configuraciones tal como se reciben de la línea de base hasta que otro proceso actualice esa configuración del dispositivo.  
+
+Otros procesos que podrían cambiar la configuración del dispositivo posteriormente incluyen una línea de base de seguridad nueva o diferente, un perfil de configuración de dispositivo, configuraciones de directiva de grupo o una edición manual de la configuración del dispositivo.  
+
+
+
+
 
 ## <a name="q--a"></a>Q & A
 
@@ -122,8 +195,11 @@ Estrictamente hablando, no. El equipo de seguridad de Microsoft consulta a las o
 
 - Muchos clientes utilizan las recomendaciones de línea de base de Intune como punto de partida y luego las personalizan para satisfacer sus demandas de TI y seguridad. La **línea de base de seguridad de MDM** de Windows 10 RS5 de Microsoft es la primera línea de base para lanzar. Esta línea de base se construye como una infraestructura genérica que permite a los clientes eventualmente importar otras líneas de base de seguridad basadas en CIS, NIST y otros estándares. Actualmente, está disponible para Windows y eventualmente incluirá iOS y Android.
 
-- La migración de las directivas de grupo de Active Directory locales a una solución en la nube pura mediante Azure Active Directory (AD) con Microsoft Intune es una odisea. Para ayudar en este proceso, hay GPO complementarios publicados para AD híbrido y dispositivos unidos a Azure AD. Estos dispositivos pueden obtener configuraciones de MDM desde la nube (Intune) y configuraciones de directiva de grupo desde los controladores de dominio locales según sea necesario.
+- La migración de las directivas de grupo de Active Directory locales a una solución en la nube pura mediante Azure Active Directory (AD) con Microsoft Intune es una odisea. Para ayudar, se incluyen plantillas de directiva de grupo en el [kit de herramientas para el cumplimiento de la seguridad](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) que pueden ayudar a administrar dispositivos híbridos unidos a Azure AD. Estos dispositivos pueden obtener configuraciones de MDM desde la nube (Intune) y configuraciones de directiva de grupo desde los controladores de dominio locales según sea necesario.
 
 ## <a name="next-steps"></a>Pasos siguientes
-- Vea la [configuración de línea de base de seguridad de Windows](security-baseline-settings-windows.md) compatible con Intune.  
+- Consulte la configuración en las versiones más recientes de las líneas de base disponibles:  
+  - [Línea de base de seguridad MDM](security-baseline-settings-mdm.md)  
+  - [Línea de base de ATP de Windows Defender](security-baseline-settings-defender-atp.md)  
+
 - Compruebe el estado y supervise la [línea de base y el perfil](security-baselines-monitor.md).
