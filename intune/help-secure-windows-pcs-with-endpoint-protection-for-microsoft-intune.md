@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047511"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548780"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
 
@@ -46,15 +46,15 @@ Una de las principales prioridades de un administrador de TI es proteger los equ
 
 Para cambiar de su aplicación de protección de extremos actual a Microsoft Intune Endpoint Protection, haga lo siguiente:
 
-1.  Deje que su aplicación actual de protección de extremos se siga ejecutando mientras implementa el software cliente de Intune en esos equipos.
+1. Deje que su aplicación actual de protección de extremos se siga ejecutando mientras implementa el software cliente de Intune en esos equipos.
 
-2.  Compruebe que Microsoft Intune Endpoint Protection está instalado y ayuda a proteger los equipos cliente.
+2. Compruebe que Microsoft Intune Endpoint Protection está instalado y ayuda a proteger los equipos cliente.
 
-3.  Quite el software de protección de extremos de un tercero de la manera siguiente:
+3. Quite el software de protección de extremos de un tercero de la manera siguiente:
 
-    -   Use la distribución de software de Intune para implementar una herramienta de eliminación de software proporcionada por el fabricante de la otra aplicación de protección de puntos de conexión. Para obtener más información, vea [Implementar aplicaciones con Microsoft Intune](apps-deploy.md).
+    - Use la distribución de software de Intune para implementar una herramienta de eliminación de software proporcionada por el fabricante de la otra aplicación de protección de puntos de conexión. Para obtener más información, vea [Implementar aplicaciones con Microsoft Intune](apps-deploy.md).
 
-    -   Quitar manualmente la aplicación de protección de extremos de otro fabricante.
+    - Quitar manualmente la aplicación de protección de extremos de otro fabricante.
 
 > [!NOTE]
 > Intune no desinstala automáticamente aplicaciones de protección de extremos de otro fabricante.
@@ -62,9 +62,9 @@ Para cambiar de su aplicación de protección de extremos actual a Microsoft Int
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Configurar Microsoft Intune Endpoint Protection
 Siga estos pasos como guía para la configuración de Endpoint Protection para Microsoft Intune.
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** > **Agregar directiva**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** > **Agregar directiva**.
 
-2.  Expanda **Administración de equipos** y luego elija **Configuración de agente de Microsoft Intune**. Elija **Crear e implementar una directiva personalizada** para especificar una directiva de configuración de Endpoint Protection. Luego, elija el botón **Crear directiva**.
+2. Expanda **Administración de equipos** y luego elija **Configuración de agente de Microsoft Intune**. Elija **Crear e implementar una directiva personalizada** para especificar una directiva de configuración de Endpoint Protection. Luego, elija el botón **Crear directiva**.
 
 Puede usar la configuración recomendada o personalizar la configuración. Si necesita más información sobre cómo crear e implementar directivas, vea el tema [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 

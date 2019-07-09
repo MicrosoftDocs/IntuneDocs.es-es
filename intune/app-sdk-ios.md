@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413853"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558401"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
@@ -52,7 +52,7 @@ Los archivos siguientes son relevantes para las aplicaciones o extensiones que n
 
 Los archivos siguientes son relevantes para las aplicaciones y extensiones que contienen código Swift y se compilan con Xcode 10.2 +:
 
-* **IntuneMAMSwift.framework**: framework The Intune App SDK Swift. Este marco contiene todos los encabezados para las API que llamará a la aplicación. Vincule este marco de trabajo a sus aplicaciones y extensiones para habilitar la administración de aplicaciones de cliente de Intune.
+* **IntuneMAMSwift.framework**: framework The Intune App SDK Swift. Este marco contiene todos los encabezados para las API que llamará a la aplicación. Vincule este marco al proyecto para habilitar la aplicación para la administración de aplicaciones clientes de Intune.
 
 * **IntuneMAMSwiftStub.framework**: framework The Intune App SDK Swift Stub. Se trata de una dependencia necesaria de IntuneMAMSwift.framework que se debe vincular las aplicaciones o extensiones.
 
@@ -70,6 +70,7 @@ Los siguientes archivos de encabezado incluyen las API, los tipos de datos y los
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
+    * IntuneMAMDiagnosticConsole.h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -735,6 +736,10 @@ Sí, el administrador de TI puede enviar un comando de borrado selectivo a la ap
 ### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>¿Hay una aplicación de ejemplo en la que se muestre cómo integrar el SDK?
 
 Sí. Recientemente hemos renovado nuestra aplicación de ejemplo de código abierto [Wagr for iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App). Ahora Wagr está habilitada para la directiva de protección de aplicaciones mediante Intune App SDK.
+
+### <a name="how-can-i-troubleshoot-my-app"></a>¿Cómo puedo solucionar mi aplicación?
+
+El SDK de Intune para iOS 9.0.3+ admite la capacidad para agregar una consola de diagnóstico dentro de la aplicación móvil para probar las directivas y registro de errores. `IntuneMAMDiagnosticConsole.h` define el `IntuneMAMDiagnosticConsole` interfaz de clase, que los desarrolladores pueden usar para mostrar la consola de diagnóstico de Intune. Esto permite a los usuarios finales o a los desarrolladores durante las pruebas para recopilar y compartir los registros de Intune para ayudar a diagnosticar cualquier problema que puedan tener. Esta API es opcional para los integradores de sistemas.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Enviar la aplicación a la Tienda de aplicaciones
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841341"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546032"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usar aplicaciones administradas en el dispositivo Android
 Las aplicaciones administradas están configuradas para cumplir los requisitos de seguridad de la organización y proteger los datos profesionales y educativos. Estas aplicaciones están disponibles en el dispositivo para instalarlas o usarlas automáticamente. 
@@ -45,32 +45,32 @@ La primera vez que tenga acceso a datos profesionales o educativos en una aplica
 ## <a name="commonly-managed-apps"></a>Aplicaciones administradas frecuentemente  
 A continuación se indican algunos ejemplos de aplicaciones administradas que suelen ser necesarias o estar disponibles en escuelas y en empresas:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel y PowerPoint
+- Microsoft Word, Excel y PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>¿Cómo se pueden obtener aplicaciones administradas?
-En primer lugar, debe instalar el Portal de empresa y, si es necesario, administrar el dispositivo. Después, hay tres formas de obtener aplicaciones administradas.
-* La organización instala automáticamente las aplicaciones en el dispositivo en el momento de la inscripción. Para obtener más información sobre la inscripción, vea cómo [inscribir el dispositivo en Intune](enroll-your-device-in-Intune-android.md).
-* La organización pone las aplicaciones administradas a su disposición en el Portal de empresa. Vaya a la aplicación de Portal de empresa o al sitio web para buscar, ver e instalar estas aplicaciones. 
-* Usted instala una aplicación desde Google Play Store y, después, inicia sesión en la aplicación con su cuenta profesional o educativa.  
+Hay tres maneras de obtener aplicaciones administradas.  
+* La organización instala automáticamente las aplicaciones en el dispositivo en el momento de la inscripción.  
+* Usted instala una aplicación desde Google Play Store y, después, inicia sesión en la aplicación con su cuenta profesional o educativa.    
+* La organización pone las aplicaciones administradas a su disposición en el Portal de empresa. Vaya al sitio web o a la aplicación de Portal de empresa para buscar, ver e instalar las aplicaciones disponibles. Para obtener más información acerca de estas aplicaciones, consulte la sección siguiente, [aplicaciones disponibles](#available-apps).  
 
- ## <a name="available-apps"></a>Aplicaciones disponibles   
- Una organización selecciona las aplicaciones que resultan útiles y adecuadas para los usuarios en el ámbito laboral o académico. Estas aplicaciones son las únicas que se encuentran en el Portal de empresa.   
+### <a name="available-apps"></a>Aplicaciones disponibles   
+ Su organización puede seleccionar las aplicaciones que son útiles y adecuados para usted en el trabajo o escuela y que estén disponibles para usted en el Portal de empresa.  
 
  Las aplicaciones también están disponibles para los usuarios según el tipo de dispositivo. Por ejemplo, si un usuario usa la aplicación Portal de empresa para Android, tiene acceso a aplicaciones de Android, pero no de iOS.   
 
- ## <a name="request-an-app-for-work-or-school"></a>Solicitud de una aplicación para el ámbito laboral o académico   
- Si necesita una aplicación, pero no la ve en el Portal de empresa, puede solicitarla. Vea los detalles de contacto del **departamento de soporte técnico** en la pestaña de **contacto con TI** de la aplicación Portal de empresa. La misma información de contacto aparece en el [sitio web de Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>Solicitud de una aplicación para el ámbito laboral o académico   
+ Si necesita una aplicación, pero no la ve en el Portal de empresa, puede solicitarla. Obtener detalles de contacto para su **Helpdesk** en cualquier aplicación **contactar con TI** ficha. Encontrará la misma información de contacto en el [sitio Web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>¿Qué puede administrar el equipo de soporte técnico de mi empresa en una aplicación?  
 En la lista siguiente se indican las opciones de configuración que el soporte técnico de su empresa puede administrar dentro de una aplicación. Estas opciones afectan a la visualización, el acceso y el uso de los datos profesionales o educativos en el dispositivo:
 
 * Acceso a sitios Web específicos  
 
-* Acceso a sitios web de empresa internos mediante Edge y el proxy de Azure Active Directory  
+* Acceso a sitios web de empresa internos mediante Microsoft Edge y el proxy de Azure Active Directory  
 
 * Versión mínima de la aplicación y versión del sistema operativo
 
