@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468755"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572614"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga información sobre las actualizaciones más recientes para las aplicaciones de Microsoft Intune. Periódicamente agregamos contenido y mejoras a la aplicación y el sitio web de Portal de empresa de Intune. Si es un administrador de Intune o un empleado de soporte técnico, en este artículo encontrará la información que necesita para:
@@ -246,7 +246,7 @@ Seguimos ajustando el modo de seguimiento de la relevancia, por lo que le agrade
 ## <a name="week-of-october-16-2017"></a>Semana del 16 de octubre de 2017
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Mejoras de búsqueda en el sitio web del Portal de empresa <!-- 1331697 -->
-Estamos mejorando nuestras capacidades de búsqueda de aplicaciones, empezando por el [sitio web del Portal de empresa](https://portal.manage.microsoft.com). Las búsquedas ahora se efectuarán en categorías de aplicaciones, además de en los campos Nombre y Descripción. Los resultados se ordenarán, de forma predeterminada, en orden decreciente de relevancia. 
+Estamos mejorando nuestras capacidades de búsqueda de aplicaciones, empezando por el [sitio web del Portal de empresa](https://portal.manage.microsoft.com). Las búsquedas ahora se efectuarán en categorías de aplicaciones, además de en los campos Nombre y Descripción. Los resultados se ordenarán, de forma predeterminada, en orden decreciente de relevancia. 
 
 Los usuarios de dispositivos iOS también recibirán este cambio, ya que el sitio web del Portal de empresa también se usa como parte de la aplicación del Portal de empresa para iOS. Las aplicaciones del Portal de empresa para Android y Windows recibirán actualizaciones similares en los próximos meses.
 
@@ -260,7 +260,7 @@ Con esta versión se soluciona un problema conocido en relación con el modo en 
 ## <a name="week-of-october-2-2017"></a>Semana del 2 de octubre de 2017
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Mejoras en el flujo de trabajo de configuración de dispositivos en el Portal de empresa <!-- 1490692 -->
-Hemos mejorado el flujo de trabajo de configuración de dispositivos en la aplicación Portal de empresa para Android. El lenguaje es más fácil de usar y es específico de su empresa. Además, hemos combinado pantallas siempre que hemos podido. 
+Hemos mejorado el flujo de trabajo de configuración de dispositivos en la aplicación Portal de empresa para Android. El lenguaje es más fácil de usar y es específico de su empresa. Además, hemos combinado pantallas siempre que hemos podido. 
 
 |Antes|Después|
 |---|---|
@@ -288,7 +288,7 @@ También hemos actualizado la pantalla de activación de correo electrónico de 
 
 ## <a name="week-of-september-11-2017"></a>Semana del 11 de septiembre de 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Frases más fáciles de entender para la aplicación Portal de empresa para Android <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Frases más fáciles de entender para la aplicación Portal de empresa para Android <!-- 1396349 -->  
 
 El proceso de inscripción para la aplicación de Portal de empresa para Android se ha simplificado con nuevo texto para que resulte más sencillo para los usuarios finales. Si tiene documentación de inscripción personalizada, deberá actualizarla para que se muestre en las nuevas pantallas. Puede encontrar imágenes de muestra a continuación:
 
@@ -305,7 +305,7 @@ El proceso de inscripción para la aplicación de Portal de empresa para Android
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Compatibilidad de la aplicación Mail de iOS 11 con OAuth <!-- 1196951 -->
 
-El acceso condicional con Intune es compatible con una autenticación más segura en dispositivos iOS con OAuth. Para lograr esta mayor seguridad en la autenticación, ahora habrá un flujo diferente en la aplicación Portal de empresa para iOS. Cuando los usuarios finales intenten iniciar sesión en una nueva cuenta de Exchange con la aplicación Mail, verán un mensaje de vista web. Tras la inscripción en Intune, los usuarios verán un mensaje para permitir que la aplicación nativa Mail acceda a un certificado. La mayoría de los usuarios finales no podrá ver correos electrónicos en cuarentena. Las cuentas de correo electrónico existentes continuarán usando el protocolo de autenticación básico, de modo que estos usuarios seguirán recibiendo correos electrónicos en cuarentena. Esta experiencia de inicio de sesión para los usuarios finales es similar a la de las aplicaciones móviles de Office.
+El acceso condicional con Intune es compatible con una autenticación más segura en dispositivos iOS con OAuth. Para lograr esta mayor seguridad en la autenticación, ahora habrá un flujo diferente en la aplicación Portal de empresa para iOS. Cuando los usuarios finales intenten iniciar sesión en una nueva cuenta de Exchange con la aplicación Mail, verán un mensaje de vista web. Tras la inscripción en Intune, los usuarios verán un mensaje para permitir que la aplicación nativa Mail acceda a un certificado. La mayoría de los usuarios finales no podrá ver correos electrónicos en cuarentena. Las cuentas de correo electrónico existentes continuarán usando el protocolo de autenticación básico, de modo que estos usuarios seguirán recibiendo correos electrónicos en cuarentena. Esta experiencia de inicio de sesión para los usuarios finales es similar a la de las aplicaciones móviles de Office.
 
 ![Seleccione el tipo de cuenta en la aplicación de correo electrónico nativa.](./media/ios-11-ca-email-after-1708-01.png)
 
