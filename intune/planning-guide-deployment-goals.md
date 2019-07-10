@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b29e59924ec4bf08336cbd1ea9aa588fd8612233
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 714a595263475da98a48c982e0ed24d691440097
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044420"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572262"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinación de los desafíos, los objetivos y las metas de implementación
 
@@ -32,65 +32,65 @@ Tener un buen plan de implementación comienza por identificar primero los objet
 
 Los objetivos de implementación son los logros a largo plazo que pretende conseguir con la implementación de Intune en su organización. A continuación se muestran algunos ejemplos de estos objetivos junto con la descripción y el valor empresarial de cada uno.
 
--   **Integración con Office 365 y admisión del uso de aplicaciones móviles de Office**
+- **Integración con Office 365 y admisión del uso de aplicaciones móviles de Office**
 
-    -   **Descripción:** proporcionar una integración firme con Office 365 y el uso de aplicaciones móviles de Office con la protección de aplicaciones.
+    - **Descripción:** proporcionar una integración firme con Office 365 y el uso de aplicaciones móviles de Office con la protección de aplicaciones.
 
-    -   **Valor empresarial:** experiencia de usuario segura y mejorada permitiendo a los usuarios usar las aplicaciones que prefieren y con las que están familiarizados.
+    - **Valor empresarial:** experiencia de usuario segura y mejorada permitiendo a los usuarios usar las aplicaciones que prefieren y con las que están familiarizados.
 
--   **Habilitar el acceso a los servicios corporativos internos en dispositivos móviles**
+- **Habilitar el acceso a los servicios corporativos internos en dispositivos móviles**
 
-    -   **Descripción:** permitir que los empleados sean productivos en cualquier lugar desde el que trabajen y con el dispositivo más adecuado para ellos. Este proyecto debe diseñarse para permitir la productividad móvil y el acceso a los datos corporativos de manera segura.
+    - **Descripción:** permitir que los empleados sean productivos en cualquier lugar desde el que trabajen y con el dispositivo más adecuado para ellos. Este proyecto debe diseñarse para permitir la productividad móvil y el acceso a los datos corporativos de manera segura.
 
-    -   **Valor empresarial:** permitir que los empleados sean ágiles y puedan trabajar desde donde lo necesiten hace que el negocio sea más competitivo y proporcione un entorno de trabajo más gratificante.
+    - **Valor empresarial:** permitir que los empleados sean ágiles y puedan trabajar desde donde lo necesiten hace que el negocio sea más competitivo y proporcione un entorno de trabajo más gratificante.
 
--   **Proporcionar protección de datos en dispositivos móviles**
+- **Proporcionar protección de datos en dispositivos móviles**
 
-    -   **Descripción:** el lugar donde se almacenan los datos en un dispositivo móvil debe estar protegido del uso compartido o de la pérdida accidental y malintencionada.
+    - **Descripción:** el lugar donde se almacenan los datos en un dispositivo móvil debe estar protegido del uso compartido o de la pérdida accidental y malintencionada.
 
-    -   **Valor empresarial:** la protección de datos es fundamental para garantizar que seguimos siendo competitivos y que tratamos a nuestros clientes y a sus datos con la mayor diligencia.
+    - **Valor empresarial:** la protección de datos es fundamental para garantizar que seguimos siendo competitivos y que tratamos a nuestros clientes y a sus datos con la mayor diligencia.
 
--   **Reducir costos**
+- **Reducir costos**
 
-    -   **Descripción:** cuando sea posible, el proyecto reduce los costos de operación e implementación.
+    - **Descripción:** cuando sea posible, el proyecto reduce los costos de operación e implementación.
 
-    -    **Valor empresarial:** el uso eficaz de recursos permite a las empresas invertir en otras áreas, competir de manera más eficaz y proporcionar un servicio mejor a los clientes.
+    - **Valor empresarial:** el uso eficaz de recursos permite a las empresas invertir en otras áreas, competir de manera más eficaz y proporcionar un servicio mejor a los clientes.
 
 ## <a name="deployment-objectives"></a>Objetivos de la implementación
 
 Los objetivos de la implementación son las acciones que una organización puede realizar para cumplir sus objetivos de implementación de Intune. A continuación se muestran algunos ejemplos de los objetivos de implementación, y cómo puede conseguirse cada uno.
 
--   **Reducir el número de soluciones de administración de dispositivos**
+- **Reducir el número de soluciones de administración de dispositivos**
 
-    -   **Implementación:** consolidar en una sola solución de administración de dispositivos móviles: Microsoft Intune para proteger los datos corporativos de aplicaciones y dispositivos.
+    - **Implementación:** consolidar en una sola solución de administración de dispositivos móviles: Microsoft Intune para proteger los datos corporativos de aplicaciones y dispositivos.
 
--   **Proporcionar acceso seguro a Exchange y SharePoint Online**
+- **Proporcionar acceso seguro a Exchange y SharePoint Online**
 
-    -   **Implementación:** aplicar el acceso condicional para Exchange y SharePoint Online.
+    - **Implementación:** aplicar el acceso condicional para Exchange y SharePoint Online.
 
--   **Evitar que los datos corporativos se almacenen o se reenvíen a servicios no corporativos en el dispositivo móvil**
+- **Evitar que los datos corporativos se almacenen o se reenvíen a servicios no corporativos en el dispositivo móvil**
 
-    -   **Implementación:** aplicar directivas de protección de aplicaciones de Intune para Microsoft Office y aplicaciones de línea de negocio.
+    - **Implementación:** aplicar directivas de protección de aplicaciones de Intune para Microsoft Office y aplicaciones de línea de negocio.
 
--   **Proporcionar la funcionalidad de borrar datos corporativos del dispositivo**
+- **Proporcionar la funcionalidad de borrar datos corporativos del dispositivo**
 
-    -   **Implementación:** Inscribir dispositivos en Intune. Esta opción le ofrece la posibilidad de realizar un borrado remoto de los datos y los recursos corporativos cuando sea apropiado.
+    - **Implementación:** Inscribir dispositivos en Intune. Esta opción le ofrece la posibilidad de realizar un borrado remoto de los datos y los recursos corporativos cuando sea apropiado.
 
 ## <a name="deployment-challenges"></a>Desafíos de la implementación
 
 Los desafíos de la implementación son problemas de alta prioridad para una organización y que pueden tener un impacto negativo sobre dicho proceso. En ocasiones pueden estar relacionados con problemas anteriores de proyectos anteriores que le gustaría evitar, o con nuevos problemas relacionados con el esfuerzo de implementación actual. A continuación se muestran algunos ejemplos de desafíos de implementación de Intune junto con sus posibles remedios.
 
--   La preparación del soporte técnico y la experiencia del usuario final no se incluyen en el ámbito inicial del proyecto. Como consecuencia, los usuarios finales experimentan problemas de adopción y la organización de soporte técnico se encuentra con dificultades.
+- La preparación del soporte técnico y la experiencia del usuario final no se incluyen en el ámbito inicial del proyecto. Como consecuencia, los usuarios finales experimentan problemas de adopción y la organización de soporte técnico se encuentra con dificultades.
 
-    -   **Mitigación:** incorporar cursos de aprendizaje para el personal de soporte técnico. Validar la experiencia del usuario final con métricas de éxito en el plan de implementación.
+    - **Mitigación:** incorporar cursos de aprendizaje para el personal de soporte técnico. Validar la experiencia del usuario final con métricas de éxito en el plan de implementación.
 
--   Los objetivos no están claramente definidos y las métricas de éxito conducen a resultados intangibles. La organización puede pasar al modo reactivo cuando surgen los problemas.
+- Los objetivos no están claramente definidos y las métricas de éxito conducen a resultados intangibles. La organización puede pasar al modo reactivo cuando surgen los problemas.
 
-    -   **Mitigación:** definir los objetivos y las métricas correctas en una fase temprana del ámbito del proyecto, y usar estos puntos de datos para materializar el resto de fases de la implementación. Asegurarse de que los objetivos sean específicos, mensurables, alcanzables, realistas y oportunos (SMART). Planear la medición en relación con los objetivos en cada fase y asegurarse de que el proyecto de implementación se mantenga encarrilado.
+    - **Mitigación:** definir los objetivos y las métricas correctas en una fase temprana del ámbito del proyecto, y usar estos puntos de datos para materializar el resto de fases de la implementación. Asegurarse de que los objetivos sean específicos, mensurables, alcanzables, realistas y oportunos (SMART). Planear la medición en relación con los objetivos en cada fase y asegurarse de que el proyecto de implementación se mantenga encarrilado.
 
--   No crea, valida ni comparte activamente una propuesta de valor claro que tenga una repercusión en su organización. Como consecuencia, la adopción es limitada y no se rentabiliza la inversión (ROI).
+- No crea, valida ni comparte activamente una propuesta de valor claro que tenga una repercusión en su organización. Como consecuencia, la adopción es limitada y no se rentabiliza la inversión (ROI).
 
-    -   **Mitigación:** aunque es posible que esté deseando empezar el proyecto, asegúrese de tener unos objetivos claramente definidos. Inclúyalos en todas las actividades de difusión y aprendizaje para ayudar a garantizar que los usuarios entiendan por qué la organización ha seleccionado Intune.
+    - **Mitigación:** aunque es posible que esté deseando empezar el proyecto, asegúrese de tener unos objetivos claramente definidos. Inclúyalos en todas las actividades de difusión y aprendizaje para ayudar a garantizar que los usuarios entiendan por qué la organización ha seleccionado Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

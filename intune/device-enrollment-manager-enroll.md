@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8bbb1c7ec7151a09c8eeae33f4252781e5338f7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048325"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546707"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscripción de dispositivos en Intune mediante una cuenta de administrador de inscripción de dispositivos
 
@@ -44,11 +44,11 @@ Los dispositivos y las cuentas de los usuarios de DEM inscritos con una cuenta d
 
 ## <a name="add-a-device-enrollment-manager"></a>Agregar un administrador de inscripción de dispositivos
 
-1.  En Intune, en [Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Administradores de inscripción de dispositivos**.
+1. En Intune, en [Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Administradores de inscripción de dispositivos**.
 
-2.  Seleccione **Agregar**.
+2. Seleccione **Agregar**.
 
-3.  En la hoja **Agregar usuario**, escriba un nombre principal de usuario para el usuario de DEM y seleccione **Agregar**. El usuario DEM se agrega a la lista de usuarios DEM.
+3. En la hoja **Agregar usuario**, escriba un nombre principal de usuario para el usuario de DEM y seleccione **Agregar**. El usuario DEM se agrega a la lista de usuarios DEM.
 
 ## <a name="permissions-for-dem"></a>Permisos para DEM
 

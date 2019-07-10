@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041464"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548330"
 ---
 # <a name="develop-a-support-plan"></a>Desarrollo de un plan de soporte técnico
 
 Tener un plan de soporte técnico de Intune puede ayudarle a identificar y resolver los problemas relacionados con Intune de una manera más eficaz. Esto, a su vez, mejora la experiencia general de Intune de los usuarios. Estas son algunas preguntas para tener en cuenta al desarrollar su plan de soporte técnico de Intune:
 
--   ¿Qué equipos serán los responsables de proporcionar asistencia técnica de Intune?
+- ¿Qué equipos serán los responsables de proporcionar asistencia técnica de Intune?
 
--   ¿Qué proceso se usará para proporcionar soporte técnico de Intune?
+- ¿Qué proceso se usará para proporcionar soporte técnico de Intune?
 
--   ¿Cómo planea proporcionar aprendizaje de soporte técnico de Intune?
+- ¿Cómo planea proporcionar aprendizaje de soporte técnico de Intune?
 
--   ¿Cuáles son las oportunidades para implicar pronto al equipo de soporte técnico en el proceso de implementación de Intune?
+- ¿Cuáles son las oportunidades para implicar pronto al equipo de soporte técnico en el proceso de implementación de Intune?
 
 Revisemos cada área con más detalle.
 
@@ -50,23 +50,23 @@ Más información sobre el [soporte técnico de Intune](/intune/get-support).
 
 Para las fases de implementación de producción iniciales, puede tener los tres niveles participando en una llamada en puente o de Skype. Este es un ejemplo de cómo una organización puede implementar los flujos de trabajo del departamento de soporte técnico de TI:
 
-1.  El usuario final se pone en contacto con el nivel 1 del departamento de soporte técnico de TI con un problema de inscripción.
+1. El usuario final se pone en contacto con el nivel 1 del departamento de soporte técnico de TI con un problema de inscripción.
 
-2.  El nivel 1 del departamento de soporte técnico de TI no puede determinar la causa principal y lo escala al nivel 2.
+2. El nivel 1 del departamento de soporte técnico de TI no puede determinar la causa principal y lo escala al nivel 2.
 
-3.  El nivel 2 del departamento de soporte técnico de TI investiga, pero no puede resolver el problema y lo escala al nivel 3, proporcionando información adicional para ayudar en la investigación.
+3. El nivel 2 del departamento de soporte técnico de TI investiga, pero no puede resolver el problema y lo escala al nivel 3, proporcionando información adicional para ayudar en la investigación.
 
-4.  El nivel 3 del departamento de soporte técnico de TI investiga más, determina la causa principal y comunica la solución a los niveles 2 y 1.
+4. El nivel 3 del departamento de soporte técnico de TI investiga más, determina la causa principal y comunica la solución a los niveles 2 y 1.
 
-5.  Después, el nivel 1 del departamento de soporte técnico de TI se pone en contacto con el cliente y resuelve el problema.
+5. Después, el nivel 1 del departamento de soporte técnico de TI se pone en contacto con el cliente y resuelve el problema.
 
 Este tipo de método, especialmente en las primeras fases del lanzamiento de Intune, aporta muchas ventajas, como:
 
--   Ayuda en el aprendizaje tecnológico y puesta en marcha.
+- Ayuda en el aprendizaje tecnológico y puesta en marcha.
 
--   Identificación rápida de problemas y soluciones.
+- Identificación rápida de problemas y soluciones.
 
--   Mejorar la experiencia general del usuario.
+- Mejorar la experiencia general del usuario.
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>¿Cómo planea proporcionar aprendizaje de soporte técnico de Intune?
 
@@ -74,15 +74,15 @@ Es importante proporcionar aprendizaje técnico de Intune al personal del depart
 
 A continuación se proporciona un ejemplo de un programa de aprendizaje de soporte técnico de Intune.
 
--   Revisión de un plan de soporte técnico de Intune
+- Revisión de un plan de soporte técnico de Intune
 
--   Información general de Intune
+- Información general de Intune
 
--   Solucionar los problemas comunes
+- Solucionar los problemas comunes
 
--   Herramientas y recursos
+- Herramientas y recursos
 
--   Q & A
+- Q & A
 
 La [documentación de Intune](https://docs.microsoft.com/intune/) proporciona información general de Intune, descripciones detalladas de las características e información sobre solución de problemas. El [foro de Intune](https://social.technet.microsoft.com/Forums/home) es un recurso basado en la comunidad para ver preguntas y temas que no se tratan en la documentación de Intune.
 

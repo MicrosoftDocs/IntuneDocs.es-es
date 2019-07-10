@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530748"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548042"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados
 Obtenga información sobre cómo usar las directivas de cumplimiento de dispositivos con acceso condicional para asegurarse de que los dispositivos iOS pueden acceder al correo electrónico de Exchange Online solo si se administran mediante Intune y con una aplicación de correo electrónico aprobada. 
@@ -53,7 +53,7 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
 4. En **Plataforma**, seleccione **iOS**. 
 5. Seleccione **Configuración** > **Correo electrónico**. 
      
-    1.  Junto a **Requerir que los dispositivos móviles tengan un perfil de correo electrónico administrado**, seleccione **Requerir**.
+    1. Junto a **Requerir que los dispositivos móviles tengan un perfil de correo electrónico administrado**, seleccione **Requerir**.
     2. Seleccione **Aceptar**.
 
     ![Configuración de la directiva de cumplimiento de correo electrónico para requerir un perfil de correo electrónico administrado](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -77,7 +77,7 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
 ## <a name="create-the-conditional-access-policy"></a>Creación de la directiva de acceso condicional
 Ahora se va a crear una directiva de acceso condicional que requiere que todas las plataformas de dispositivo se inscriban en Intune y cumplan la directiva de cumplimiento de Intune para que puedan acceder a Exchange Online. También se necesita la aplicación Outlook para el acceso al correo electrónico. Las directivas de acceso condicional se pueden configurar en el portal de Azure AD o en el portal de Intune. Como ya estamos en el portal de Intune, vamos a crear la directiva aquí.
 1. En Intune, seleccione **Acceso condicional** > **Directivas** > **Nueva directiva**.
-1.  En **Nombre**, escriba **Probar directiva para el correo electrónico de Office 365**. 
+1. En **Nombre**, escriba **Probar directiva para el correo electrónico de Office 365**. 
 3. En **Asignaciones**, seleccione **Usuarios y grupos**. En la pestaña **Incluir**, seleccione **Todos los usuarios**, y luego seleccione **Listo**.
 
 4. En **Asignaciones**, seleccione **Aplicaciones en la nube**. Puesto que deseamos proteger el correo electrónico de Office 365 Exchange Online, lo seleccionaremos siguiendo estos pasos:

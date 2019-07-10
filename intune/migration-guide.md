@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 384b940182b86e769868e2fabce3a9674e695094
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528268"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549402"
 ---
 # <a name="intune-migration-guide"></a>Guía de migración de Intune
 
@@ -35,39 +35,39 @@ Esta guía le conduce por los diversos detalles implicados en la migración de u
 
 Esta guía desglosa la migración en dos fases que incluyen tareas, estrategias y orientación táctica que le ayudarán a seguir de principio a fin el proceso de migración a la MDM de Intune.
 
--   [Fase 1: Preparar Intune para la administración de dispositivos móviles](migration-guide-prepare.md)
+- [Fase 1: Preparar Intune para la administración de dispositivos móviles](migration-guide-prepare.md)
 
-    -   [Evaluar los requisitos de migración de MDM](migration-guide-prepare.md#assess-mdm-requirements)
+    - [Evaluar los requisitos de migración de MDM](migration-guide-prepare.md#assess-mdm-requirements)
 
-    -   [Configuración básica](migration-guide-setup.md)
+    - [Configuración básica](migration-guide-setup.md)
 
-    -   [Configurar las directivas de administración de dispositivos y aplicaciones](migration-guide-configure-policies.md)
+    - [Configurar las directivas de administración de dispositivos y aplicaciones](migration-guide-configure-policies.md)
 
-    -   [Configurar las directivas de protección de aplicaciones](migration-guide-app-protection-policies.md)
+    - [Configurar las directivas de protección de aplicaciones](migration-guide-app-protection-policies.md)
 
-    -   [Consideraciones especiales de la migración](migration-guide-considerations.md)
+    - [Consideraciones especiales de la migración](migration-guide-considerations.md)
 
--   [Fase 2: Campaña de migración](migration-guide-campaign.md)
+- [Fase 2: Campaña de migración](migration-guide-campaign.md)
 
-    -   [Plan de comunicación](migration-guide-communication-plan.md)
+    - [Plan de comunicación](migration-guide-communication-plan.md)
 
-    -   [Impulse la adopción de usuarios finales con acceso condicional](migration-guide-drive-adoption.md)
+    - [Impulse la adopción de usuarios finales con acceso condicional](migration-guide-drive-adoption.md)
 
-    -   [Ciclo de migración típica](migration-guide-cycle.md)
-        -   [Supervisión de la migración](migration-guide-cycle.md#monitoring-migration)
-        -   [Tareas posteriores a la migración](migration-guide-cycle.md#post-migration)
+    - [Ciclo de migración típica](migration-guide-cycle.md)
+        - [Supervisión de la migración](migration-guide-cycle.md#monitoring-migration)
+        - [Tareas posteriores a la migración](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Suposiciones
 
--   Ya ha evaluado Intune en un entorno de prueba de concepto (PoC) y ha decidido usarlo como la solución MDM de su organización.
+- Ya ha evaluado Intune en un entorno de prueba de concepto (PoC) y ha decidido usarlo como la solución MDM de su organización.
 
--   Ya está familiarizado con Intune y sus características.
+- Ya está familiarizado con Intune y sus características.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
 Es importante reconocer que la nueva implementación de Intune puede ser diferente de la implementación de MDM antigua. A diferencia de los servicios tradicionales de MDM, Intune se centra en el control de acceso por identidad, por lo que no requiere una aplicación proxy de red para controlar el acceso a los datos corporativos desde dispositivos móviles externos al perímetro de red de la organización. Microsoft ofrece soluciones para proteger los servicios de datos dentro de la propia nube mediante un conjunto de servicios en la nube estrechamente integrados, denominados colectivamente como Enterprise Mobility + Security.
 
--   Revise las [formas más habituales de usar Intune](common-scenarios.md).
+- Revise las [formas más habituales de usar Intune](common-scenarios.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

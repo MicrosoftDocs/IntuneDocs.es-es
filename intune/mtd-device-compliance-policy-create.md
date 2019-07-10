@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2315136fe277f06f6dbb11c13139a9dc193ce6f7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528628"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549370"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
@@ -37,23 +37,23 @@ Como parte de la configuración de MTD, en la consola del partner de MTD se crea
 
 Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
--   Configuración de la integración de MTD con Intune
+- Configuración de la integración de MTD con Intune
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>Creación de una directiva de cumplimiento de dispositivos de MTD
 
-1.  Vaya a [Azure Portal](https://portal.azure.com/) e inicie sesión con sus credenciales de Intune.
+1. Vaya a [Azure Portal](https://portal.azure.com/) e inicie sesión con sus credenciales de Intune.
 
-2.  En el **panel de Azure**, elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
+2. En el **panel de Azure**, elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
 
-3.  Pulse **Intune** y se abrirá el **panel de Intune**.
+3. Pulse **Intune** y se abrirá el **panel de Intune**.
 
 4. En el **panel de Intune**, seleccione **Cumplimiento de dispositivos** y, luego, seleccione **Directivas** en la sección **Administrar**.
 
-5.  Pulse **Crear directiva**, escriba el **nombre** y la **descripción** de cumplimiento del dispositivo, seleccione la **Plataforma** y, después, seleccione **Configurar** en la sección **Configuración**.
+5. Pulse **Crear directiva**, escriba el **nombre** y la **descripción** de cumplimiento del dispositivo, seleccione la **Plataforma** y, después, seleccione **Configurar** en la sección **Configuración**.
 
-6.  En el panel **Directiva de cumplimiento**, seleccione **Estado de dispositivos**.
+6. En el panel **Directiva de cumplimiento**, seleccione **Estado de dispositivos**.
 
-7.  En el panel **Estado de dispositivos**, pulse el nivel de Mobile Threat en la lista desplegable en **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**.
+7. En el panel **Estado de dispositivos**, pulse el nivel de Mobile Threat en la lista desplegable en **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**.
 
     a.  **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
 
@@ -63,7 +63,7 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
     d.  **Alta**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
 
-8.  Haga clic en **Aceptar** dos veces, después seleccione **Crear**.
+8. Haga clic en **Aceptar** dos veces, después seleccione **Crear**.
 
 > [!IMPORTANT]
 > Si crea directivas de acceso condicional para Office 365 u otros servicios, se efectuará esta evaluación de cumplimiento de dispositivo y se bloqueará el acceso de los dispositivos no conformes a los recursos corporativos hasta que se resuelva la amenaza en el dispositivo.

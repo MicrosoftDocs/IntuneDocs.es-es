@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 233b093ba9c062618740fd8f14c5ea306647acdd
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050510"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549382"
 ---
 # <a name="basic-setup"></a>Configuración básica
 
@@ -32,15 +32,15 @@ Después de evaluar el entorno, ha llegado la hora de configurar Microsoft Intun
 
 Intune exige Azure Active Directory (AAD) como proveedor de agrupaciones de identidades y de usuarios. Más información acerca de:
 
--  [¿Requisitos de identidad?](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [¿Requisitos de identidad?](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   [Requisitos de sincronización de directorios](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Requisitos de sincronización de directorios](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
--   [Planeación de grupos de usuarios y dispositivos](users-add.md)
+- [Planeación de grupos de usuarios y dispositivos](users-add.md)
 
--   [Creación de grupos de usuarios y dispositivos](groups-get-started.md)
+- [Creación de grupos de usuarios y dispositivos](groups-get-started.md)
 
 Si su organización ya usa Office 365, Intune debe usar el mismo entorno de Azure Active Directory.
 
@@ -48,9 +48,9 @@ Si su organización ya usa Office 365, Intune debe usar el mismo entorno de Azur
 
 Si piensa usar autenticación basada en certificados para perfiles de VPN, Wi-Fi o correo electrónico con Intune, tendrá que asegurarse de que tiene una [infraestructura PKI específica](certificates-configure.md) lista para crear e implementar perfiles de certificado. Obtenga más información sobre la configuración de certificados en Intune:
 
--   [Cómo configurar la infraestructura de certificados para SCEP](/intune/certificates-scep-configure).
+- [Cómo configurar la infraestructura de certificados para SCEP](/intune/certificates-scep-configure).
 
--   [Cómo configurar la infraestructura de certificados para PFX](/intune/certficates-pfx-configure).
+- [Cómo configurar la infraestructura de certificados para PFX](/intune/certficates-pfx-configure).
 
 
 ## <a name="task-list-for-an-intune-setup"></a>Lista de tareas para una configuración de Intune
@@ -59,17 +59,17 @@ Si piensa usar autenticación basada en certificados para perfiles de VPN, Wi-Fi
 
 Para poder migrar a Intune, necesita primero una suscripción a Intune.
 
--   Puede visitar [esta página](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que le ofrece instrucciones sobre cómo:
+- Puede visitar [esta página](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que le ofrece instrucciones sobre cómo:
 
-    -   Crear una suscripción a Intune vinculada a un nuevo inquilino de AAD.
+    - Crear una suscripción a Intune vinculada a un nuevo inquilino de AAD.
 
-    -   Vincular la suscripción a Intune iniciando sesión en un inquilino existente de AAD.
+    - Vincular la suscripción a Intune iniciando sesión en un inquilino existente de AAD.
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Tarea 2: Asignación de licencias de usuario de Intune
 
--   Aprenda a [asignar licencias de usuario de Intune](licenses-assign.md).
+- Aprenda a [asignar licencias de usuario de Intune](licenses-assign.md).
 
--   Si ha creado un inquilino de Azure Active Directory, aprenda a [crear otros usuarios o a sincronizar un usuario desde su Active Directory (AD) local.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
+- Si ha creado un inquilino de Azure Active Directory, aprenda a [crear otros usuarios o a sincronizar un usuario desde su Active Directory (AD) local.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarea 3: Establecer Intune como entidad de MDM
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 6480c6fb412c12e228b8bc3647045cf15da531e1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044077"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548032"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Conector de Symantec Endpoint Protection Mobile
 
 Puede controlar el acceso desde dispositivos móviles a recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos efectuada por Symantec Endpoint Protection Mobile (SEP Mobile), una solución de defensa contra amenazas móviles integrada en Microsoft Intune. El riesgo se evalúa según la telemetría recopilada de dispositivos que ejecutan SEP Mobile, lo que incluye:
 
--   Defensa física
+- Defensa física
 
--   Defensa de red
+- Defensa de red
 
--   Defensa de aplicaciones
+- Defensa de aplicaciones
 
--   Defensa de vulnerabilidades
+- Defensa de vulnerabilidades
 
 Puede habilitar la evaluación de riesgos de SEP Mobile mediante directivas de cumplimiento de dispositivos y luego usar directivas de acceso condicional para permitir o bloquear el acceso a los dispositivos no conformes a los recursos corporativos en función de las amenazas detectadas.
 
@@ -48,9 +48,9 @@ Si se detecta que el dispositivo no es conforme, se bloqueará el acceso a recur
 
 Intune admite dos modos de integración con SEP Mobile:
 
--   **Configuración básica**, que es un modo de solo lectura que permite la visibilidad de SEP Mobile para dispositivos en Intune.
+- **Configuración básica**, que es un modo de solo lectura que permite la visibilidad de SEP Mobile para dispositivos en Intune.
 
--   **Integración completa**, que permite que SEP Mobile notifique la información de riesgos e incidentes de seguridad de los dispositivos a Intune.
+- **Integración completa**, que permite que SEP Mobile notifique la información de riesgos e incidentes de seguridad de los dispositivos a Intune.
 
 ## <a name="sample-scenarios"></a>Escenarios de ejemplo
 
@@ -60,11 +60,11 @@ Estos son algunos escenarios frecuentes:
 
 Cuando se detectan aplicaciones malintencionadas, como malware, en los dispositivos, puede bloquearlos de la siguiente manera hasta que la amenaza se resuelva:
 
--   Conectarse al correo electrónico corporativo
+- Conectarse al correo electrónico corporativo
 
--   Sincronizar los archivos corporativos mediante la aplicación OneDrive para el trabajo
+- Sincronizar los archivos corporativos mediante la aplicación OneDrive para el trabajo
 
--   Acceder a las aplicaciones de empresa
+- Acceder a las aplicaciones de empresa
 
 **Bloquear cuando se detectan aplicaciones malintencionadas:**
 
@@ -100,17 +100,17 @@ Detecte amenazas para la red, como **ataques de tipo Man-in-the-middle**, y evit
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
--   **Android 4.1 y versiones posteriores**
+- **Android 4.1 y versiones posteriores**
 
--   **iOS 8 y versiones posteriores**
+- **iOS 8 y versiones posteriores**
 
 ## <a name="pre-requisites"></a>Requisitos previos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Suscripción a Microsoft Intune
+- Suscripción a Microsoft Intune
 
--   Suscripción a Symantec Endpoint Protection Mobile
+- Suscripción a Symantec Endpoint Protection Mobile
 
 Para más información, visite el [sitio web de Symantec](https://www.skycure.com/skycure-microsoft-integration/).
 

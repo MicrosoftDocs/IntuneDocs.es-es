@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 86aefbfc37db7929f9748d4783db319cf97d4545
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512271"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548463"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar directivas administración de aplicaciones y cumplimiento de los dispositivos al migrar a Microsoft Intune
 
@@ -30,13 +30,13 @@ El objetivo principal al migrar a Intune es que todos los dispositivos estén in
 
 Puede que cada plataforma de dispositivo ofrezca una configuración diferente, pero las directivas de dispositivos de Intune funcionan con cada plataforma de dispositivo proporcionando las siguientes capacidades de administración de dispositivos móviles:
 
--   Regular el número de dispositivos que cada usuario inscribe.
+- Regular el número de dispositivos que cada usuario inscribe.
 
--   Administrar la configuración de dispositivos (por ejemplo, cifrado de nivel de dispositivo, longitud de la contraseña, uso de la cámara).
+- Administrar la configuración de dispositivos (por ejemplo, cifrado de nivel de dispositivo, longitud de la contraseña, uso de la cámara).
 
--   Entregar aplicaciones, perfiles de correo electrónico y perfiles de VPN, entre otros.
+- Entregar aplicaciones, perfiles de correo electrónico y perfiles de VPN, entre otros.
 
--   Evaluar los criterios de nivel de dispositivo para las directivas de cumplimiento de seguridad.
+- Evaluar los criterios de nivel de dispositivo para las directivas de cumplimiento de seguridad.
 
 > [!IMPORTANT]
 > Las directivas de administración de dispositivos no se asignan directamente a usuarios o dispositivos individuales, sino que se asignan a grupos de usuarios. Las directivas pueden aplicarse directamente a un grupo de usuarios y, por lo tanto, al dispositivo del usuario. También pueden aplicarse a un grupo de dispositivos y, por lo tanto, a los miembros del grupo.
@@ -61,9 +61,9 @@ Tiene que crear un perfil de configuración de dispositivos para aplicar la conf
 
 #### <a name="directly-import-ios-configuration-profiles-optional"></a>Importar directamente los perfiles de configuración de iOS (opcional)
 
--   **Perfiles de iOS de Apple Configurator (iOS 7.1 y posterior):** si la solución MDM existente usa perfiles de Apple Configurator (archivos .mobileconfig), Intune puede importarlos directamente como directivas de configuración personalizadas.
+- **Perfiles de iOS de Apple Configurator (iOS 7.1 y posterior):** si la solución MDM existente usa perfiles de Apple Configurator (archivos .mobileconfig), Intune puede importarlos directamente como directivas de configuración personalizadas.
 
--   **Directivas de configuración de aplicaciones móviles de iOS:** si la solución MDM existente usa directivas de configuración de aplicaciones móviles de iOS, Intune puede importarlas directamente siempre que cumplan con el formato XML especificado por Apple para listas de propiedades.
+- **Directivas de configuración de aplicaciones móviles de iOS:** si la solución MDM existente usa directivas de configuración de aplicaciones móviles de iOS, Intune puede importarlas directamente siempre que cumplan con el formato XML especificado por Apple para listas de propiedades.
 
 - Obtenga información sobre cómo agregar una directiva personalizada de [iOS](custom-settings-ios.md).
 
@@ -71,25 +71,25 @@ Tiene que crear un perfil de configuración de dispositivos para aplicar la conf
 
 Las directivas de cumplimiento de dispositivos evalúan la configuración orientada a la seguridad y ofrecen informes que muestran si los dispositivos son compatibles con los estándares corporativos o no. Dicha configuración incluye:
 
--   Longitud del PIN
+- Longitud del PIN
 
--   Estado de liberado
+- Estado de liberado
 
--   Versión del sistema operativo
+- Versión del sistema operativo
 
 Vea otros recursos de configuración de cumplimiento de dispositivos:
 
--   Más información sobre las [directivas de cumplimiento de dispositivos](device-compliance.md).
+- Más información sobre las [directivas de cumplimiento de dispositivos](device-compliance.md).
 
--   Aprenda a [crear una directiva de cumplimiento de dispositivos](device-compliance-get-started.md).
+- Aprenda a [crear una directiva de cumplimiento de dispositivos](device-compliance-get-started.md).
 
 ### <a name="task-5-publish-and-deploy-apps"></a>Tarea 5: Publicar e implementar aplicaciones
 
 Cuando use la MDM de Intune, puede proporcionar aplicaciones requiriendo su instalación automática o poniéndolas a disposición de los usuarios en el portal de empresa.
 
--   [Cómo agregar aplicaciones](apps-add.md).
+- [Cómo agregar aplicaciones](apps-add.md).
 
--   [Cómo implementar aplicaciones](apps-deploy.md).
+- [Cómo implementar aplicaciones](apps-deploy.md).
 
 ### <a name="task-6-enable-device-enrollment"></a>Tarea 6: Permitir la inscripción de dispositivos
 

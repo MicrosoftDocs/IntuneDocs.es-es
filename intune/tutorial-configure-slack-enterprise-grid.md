@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e7ff4e1fd9f055268a461d1a81b8a2e31fe3d32b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530709"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548991"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configuración de Slack para usar Intune para EMM y la configuración de aplicaciones
 
@@ -62,8 +62,8 @@ Agregue Slack para EMM como una aplicación iOS administrada en Intune y asigne 
 6. En la barra de búsqueda, escriba "Slack para EMM" y seleccione la aplicación que acaba de agregar.
 7. En Administrar, seleccione **Asignaciones**.
 8. Seleccione **Agregar grupo**. En función de quién haya elegido que se vea afectado al activar EMM para Slack, en **Tipo de asignación**, es posible que quiera seleccionar:
-    -  **Disponible para dispositivos inscritos** si eligió "All members (including guests)"(Todos los miembros [incluidos los invitados]) O BIEN,
-    -  **Disponible con o sin inscripción** si eligió "All members (excluding guests)" (Todos los miembros [excepto los invitados]) u "Optional" (Opcional).
+    - **Disponible para dispositivos inscritos** si eligió "All members (including guests)"(Todos los miembros [incluidos los invitados]) O BIEN,
+    - **Disponible con o sin inscripción** si eligió "All members (excluding guests)" (Todos los miembros [excepto los invitados]) u "Optional" (Opcional).
 9. Seleccione **Grupos incluidos** y seleccione **Sí** en Make this app available to all users (Hacer que esta aplicación esté disponible para todos los usuarios).
 10. Haga clic en **Aceptar** y, luego, vuelva a hacer clic en **Aceptar**.
 11. Haga clic en **Guardar**.
@@ -77,7 +77,7 @@ Agregue una directiva de configuración de aplicaciones de Slack para EMM de iOS
 5. Seleccione **Aplicación asociada**.
 6. En la barra de búsqueda, escriba "Slack para EMM" y seleccione la aplicación.
 7. Haga clic en **Aceptar** y, luego, seleccione **Configuration settings** (Opciones de configuración). 
-    -   Para información sobre las claves de configuración y sus valores, consulte la documentación que aparece en la pestaña "Technical" (Aspectos técnicos) de la [página web AppConfig de Slack](https://www.appconfig.org/company/slack/).
+    - Para información sobre las claves de configuración y sus valores, consulte la documentación que aparece en la pestaña "Technical" (Aspectos técnicos) de la [página web AppConfig de Slack](https://www.appconfig.org/company/slack/).
 8. Seleccione **Aceptar** y, luego, seleccione **Agregar**.
 9. En la barra de búsqueda, escriba "Prueba de la directiva de configuración de aplicaciones de Slack" y seleccione la directiva que acaba de agregar.
 10. En Administrar, seleccione **Asignaciones**.
@@ -92,13 +92,13 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
 4. En Plataforma, seleccione **iOS**.
 5. Seleccione **Estado del dispositivo**. Junto a Dispositivos con Jailbreak, seleccione **Bloquear** y, luego, **Aceptar**.
 6. Seleccione **Seguridad del sistema** y escriba el valor de la Contraseña. Para este tutorial, seleccione la siguiente configuración recomendada:
-    -   En Requerir una contraseña para desbloquear dispositivos móviles, seleccione **Requerir**.
-    -   En Contraseñas sencillas, seleccione **Bloquear**.
-    -   En Longitud mínima de contraseña, escriba 4.
-    -   Para Tipo de contraseña requerida, elija **Alfanumérica**.
-    -   En Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña, elija **Inmediatamente**.
-    -   En Expiración de contraseña (días), escriba 41.
-    -   En Número de contraseñas anteriores para impedir su reutilización, escriba 5.
+    - En Requerir una contraseña para desbloquear dispositivos móviles, seleccione **Requerir**.
+    - En Contraseñas sencillas, seleccione **Bloquear**.
+    - En Longitud mínima de contraseña, escriba 4.
+    - Para Tipo de contraseña requerida, elija **Alfanumérica**.
+    - En Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña, elija **Inmediatamente**.
+    - En Expiración de contraseña (días), escriba 41.
+    - En Número de contraseñas anteriores para impedir su reutilización, escriba 5.
 7. Haga clic en **Aceptar** y, luego, en **Aceptar** nuevamente.
 8. Haga clic en **Crear**.
 
@@ -114,8 +114,8 @@ Agregue Slack como aplicación administrada de Google Play en Intune y asigne su
 5. En la barra de búsqueda, escriba "Slack" y seleccione la aplicación que acaba de agregar.
 6. En Administrar, seleccione **Asignaciones**.
 7. Seleccione **Agregar grupo**. En función de quién haya elegido que se vea afectado al activar EMM para Slack, en **Tipo de asignación**, es posible que quiera seleccionar:
-    -   **Disponible para dispositivos inscritos** si eligió "All members (including guests)"(Todos los miembros [incluidos los invitados]) O BIEN,
-    -   **Disponible con o sin inscripción** si eligió "All members (excluding guests)" (Todos los miembros [excepto los invitados]) u "Optional" (Opcional).
+    - **Disponible para dispositivos inscritos** si eligió "All members (including guests)"(Todos los miembros [incluidos los invitados]) O BIEN,
+    - **Disponible con o sin inscripción** si eligió "All members (excluding guests)" (Todos los miembros [excepto los invitados]) u "Optional" (Opcional).
 8. Seleccione Grupos incluidos y seleccione **Sí** en Make this app available to all users (Hacer que esta aplicación esté disponible para todos los usuarios).
 9. Haga clic en **Aceptar** y, luego, vuelva a hacer clic en **Aceptar**.
 10. Haga clic en **Guardar**.
@@ -129,7 +129,7 @@ Agregue una directiva de configuración de aplicaciones de Slack. Las directivas
 5. Seleccione **Aplicación asociada**.
 6. En la barra de búsqueda, escriba "Slack" y seleccione la aplicación.
 7. Seleccione **Aceptar** y, luego, seleccione **Configuration settings** (Opciones de configuración).
-    -   Para información sobre las claves de configuración y sus valores, consulte la documentación que aparece en la pestaña "Technical" (Aspectos técnicos) de la [página web AppConfig de Slack](https://www.appconfig.org/company/slack/).
+    - Para información sobre las claves de configuración y sus valores, consulte la documentación que aparece en la pestaña "Technical" (Aspectos técnicos) de la [página web AppConfig de Slack](https://www.appconfig.org/company/slack/).
 8. Haga clic en **Aceptar** y, luego, seleccione **Agregar**.
 9. En la barra de búsqueda, escriba "Prueba de la directiva de configuración de aplicaciones de Slack" y seleccione la directiva que acaba de agregar.
 10. En Administrar, seleccione **Asignaciones**.
@@ -145,12 +145,12 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
 5. En Tipo de perfil, seleccione **Perfil de trabajo**.
 6. Seleccione **Estado del dispositivo**. Junto a Dispositivos liberados, seleccione **Bloquear** y luego **Aceptar**.
 7. Seleccione **Seguridad del sistema** y escriba la **configuración de la Contraseña**. Para este tutorial, seleccione la siguiente configuración recomendada:
-    -   En Requerir una contraseña para desbloquear dispositivos móviles, seleccione **Requerir**.
-    -   En Tipo de contraseña requerida, seleccione **Al menos alfanumérica**.
-    -   En Longitud mínima de contraseña, escriba 4.
-    -   En Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña, elija **15 minutos**.
-    -   En Expiración de contraseña (días), escriba 41.
-    -   En Número de contraseñas anteriores para impedir su reutilización, escriba 5.
+    - En Requerir una contraseña para desbloquear dispositivos móviles, seleccione **Requerir**.
+    - En Tipo de contraseña requerida, seleccione **Al menos alfanumérica**.
+    - En Longitud mínima de contraseña, escriba 4.
+    - En Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña, elija **15 minutos**.
+    - En Expiración de contraseña (días), escriba 41.
+    - En Número de contraseñas anteriores para impedir su reutilización, escriba 5.
 8. Haga clic en **Aceptar** y, luego, vuelva a hacer clic en **Aceptar**.
 9. Haga clic en **Crear**.
 

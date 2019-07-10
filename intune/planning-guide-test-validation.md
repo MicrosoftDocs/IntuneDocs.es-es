@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046049"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549350"
 ---
 # <a name="intune-testing-and-validation"></a>Pruebas y validación de Intune
 
@@ -33,17 +33,17 @@ Le recomendamos que incorpore a su personal del departamento de soporte técnico
 
 Le recomendamos que documente lo siguiente:
 
--   **Criterios de prueba:** identifique los bancos de pruebas en los que se van a medir.
+- **Criterios de prueba:** identifique los bancos de pruebas en los que se van a medir.
 
--   **Componentes de diseño:** deben existir en al menos un criterio de prueba.
+- **Componentes de diseño:** deben existir en al menos un criterio de prueba.
 
 Si un componente de diseño no existe en al menos un criterio de prueba que se adapta a un requisito o escenario, plantéese si este es necesario o no. Además, asegúrese de tener los siguientes elementos:
 
--   **Cuentas:** cuentas de prueba que tienen una licencia de EMS y Office 365 para probar todos los escenarios de casos de uso.
+- **Cuentas:** cuentas de prueba que tienen una licencia de EMS y Office 365 para probar todos los escenarios de casos de uso.
 
--   **Dispositivos:** dispositivos de prueba que se pueden borrar o restablecer a los valores de fábrica.
+- **Dispositivos:** dispositivos de prueba que se pueden borrar o restablecer a los valores de fábrica.
 
--   **Componentes de integración:** Todos los componentes de integración (conectores de certificados y el conector local de Intune Exchange) deben estar instalados y configurados si fuera necesario.
+- **Componentes de integración:** Todos los componentes de integración (conectores de certificados y el conector local de Intune Exchange) deben estar instalados y configurados si fuera necesario.
 
 Puede que necesite efectuar cambios de diseño para contemplar problemas imprevistos. Además, todos los cambios de diseño deben estar completamente documentados con el motivo de cada cambio. Aquí se muestra un ejemplo para mostrar lo que puede ser un cambio:
 
@@ -51,9 +51,9 @@ Puede que necesite efectuar cambios de diseño para contemplar problemas imprevi
 
 Puede experimentar problemas que requieran instrucciones técnicas o una solución de problemas especializada durante el proceso de validación y de pruebas. Le recomendamos que solicite ayuda a través de los canales de soporte técnico de Microsoft.
 
--   [Más información sobre cómo obtener soporte técnico de Intune](get-support.md)
+- [Más información sobre cómo obtener soporte técnico de Intune](get-support.md)
 
--   [Asistencia telefónica para Microsoft Intune](get-support.md)
+- [Asistencia telefónica para Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Pruebas de validación funcional
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045989"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549287"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificación de escenarios de casos de uso de administración de dispositivos móviles
 
@@ -33,9 +33,9 @@ Se van a tratar algunos ejemplos para ayudar a su organización a identificar es
 ## <a name="device-ownership"></a>Propiedad del dispositivo
 Puede comenzar haciendo referencia a los objetivos y metas de la implementación de Intune de la organización para ayudar a identificar los escenarios de casos de uso principales para su implementación. Dentro del ámbito de su plan de implementación de Intune, responda a las siguientes preguntas:
 
--   ¿Está planeando admitir dispositivos propiedad de la empresa?
+- ¿Está planeando admitir dispositivos propiedad de la empresa?
 
--   ¿Está planeando admitir dispositivos de propiedad personal (BYOD)?
+- ¿Está planeando admitir dispositivos de propiedad personal (BYOD)?
 
 No se trata de una u otra opción. Es posible que necesite admitir ambas formas de propiedad del dispositivo para cumplir los objetivos de la organización. Los casos de subuso permitirán aclarar dónde aplicar las diferentes directivas de administración de dispositivos.
 
@@ -43,11 +43,11 @@ No se trata de una u otra opción. Es posible que necesite admitir ambas formas 
 
 Determine si cada escenario de caso de uso también incluye casos de subuso. Por ejemplo, la organización puede tener requisitos identificados para admitir un escenario de casos de uso corporativos que incluye casos de subuso adicionales basados en el tipo de usuario o en el rol de dispositivo, como:
 
--   Trabajador de la información
+- Trabajador de la información
 
--   Ejecutivo
+- Ejecutivo
 
--   Pantalla completa
+- Pantalla completa
 
 Aquí se muestran algunos ejemplos de escenarios de casos de uso y de casos de subuso:
 

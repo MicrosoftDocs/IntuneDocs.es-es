@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046224"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548344"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desarrollo de un plan de comunicación
 
 Una administración de cambios adecuada se basa en comunicaciones claras y útiles sobre los cambios futuros. Para facilitar el camino de la implementación de Intune, su plan de comunicación de implementación debe incluir cuatro áreas:
 
--   Qué información se va a comunicar
+- Qué información se va a comunicar
 
--   El método de entrega usado para las comunicaciones
+- El método de entrega usado para las comunicaciones
 
--   Quién recibe las comunicaciones
+- Quién recibe las comunicaciones
 
--   La escala de tiempo de las comunicaciones
+- La escala de tiempo de las comunicaciones
 
 Revisemos cada área con más detalle.
 
@@ -56,13 +56,13 @@ Puede encontrar útil esta [guía de inscripción para el usuario final](https:/
 
 Existen varios métodos de entrega que puede usar para comunicar la información de implementación de Intune a sus usuarios y grupos de la organización de destino. En la lista siguiente se muestran algunos ejemplos y la fase con la que puede usar el método:
 
--   Reuniones de Microsoft Teams o en persona de toda la organización que se usan en la fase de puesta en marcha
+- Reuniones de Microsoft Teams o en persona de toda la organización que se usan en la fase de puesta en marcha
 
--   Correo electrónico usado para las fases de inscripción previa, inscripción e inscripción posterior
+- Correo electrónico usado para las fases de inscripción previa, inscripción e inscripción posterior
 
--   Sitios web de la organización que se usan en todas las fases
+- Sitios web de la organización que se usan en todas las fases
 
--   Yammer, pósteres o folletos que se usan para las fases de puesta en marcha e inscripción previa
+- Yammer, pósteres o folletos que se usan para las fases de puesta en marcha e inscripción previa
 
 ## <a name="communications-timeline"></a>Escala de tiempo de las comunicaciones
 

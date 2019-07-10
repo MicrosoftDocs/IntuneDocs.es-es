@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494585"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548358"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: preparación de Microsoft Intune para la administración de dispositivos móviles (MDM)
 
@@ -31,30 +31,30 @@ Antes de profundizar en los detalles de configuración de Intune, revisemos los 
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>¿Qué tipos de dispositivos tiene que administrar?
 
--   ¿Qué [plataformas](supported-devices-browsers.md) tiene que admitir?
+- ¿Qué [plataformas](supported-devices-browsers.md) tiene que admitir?
 
--   ¿Son corporativos o personales los dispositivos que tiene que admitir?
+- ¿Son corporativos o personales los dispositivos que tiene que admitir?
 
--   ¿Qué tipo de conectividad usa? ¿Wi-Fi, móvil, VPN?
+- ¿Qué tipo de conectividad usa? ¿Wi-Fi, móvil, VPN?
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>¿Qué tienen que hacer sus usuarios en dispositivos administrados?
 
--   ¿Necesita aprovisionar aplicaciones a los usuarios finales?
+- ¿Necesita aprovisionar aplicaciones a los usuarios finales?
 
--   ¿Usa aplicaciones de línea de negocio personalizadas? ¿O solo necesita aplicaciones de la tienda pública?
+- ¿Usa aplicaciones de línea de negocio personalizadas? ¿O solo necesita aplicaciones de la tienda pública?
 
--   ¿Tiene que aprovisionar cuentas de correo electrónico?
+- ¿Tiene que aprovisionar cuentas de correo electrónico?
 
 ### <a name="what-kinds-of-users"></a>¿Qué tipos de usuarios?
 
--   ¿Cuántos usuarios van a usar un solo dispositivo?
+- ¿Cuántos usuarios van a usar un solo dispositivo?
 
--   ¿Qué términos de uso necesita?
+- ¿Qué términos de uso necesita?
 
-    -   Asegúrese de involucrar en esto al departamento legal desde el principio.
-    -   ¿Qué localización se requiere?
+    - Asegúrese de involucrar en esto al departamento legal desde el principio.
+    - ¿Qué localización se requiere?
 
--   ¿Están los usuarios familiarizados con la tecnología y el entorno de TI en general?
+- ¿Están los usuarios familiarizados con la tecnología y el entorno de TI en general?
 
 ### <a name="what-is-your-device-security-policy"></a>¿Cuál es su directiva de seguridad de dispositivos?
 
@@ -68,11 +68,11 @@ Antes de profundizar en los detalles de configuración de Intune, revisemos los 
 
 - ¿Qué tipos de autenticación debe admitir? Si necesita una autenticación basada en certificados, ¿qué tipos de certificados se deben aprovisionar?
   - Intune puede aprovisionar certificados con perfiles de acceso a recursos en dispositivos inscritos.
-  -   ¿Qué tipo de infraestructura de clave pública (PKI) tiene que admitir?
+  - ¿Qué tipo de infraestructura de clave pública (PKI) tiene que admitir?
   <br></br>
 - ¿Tiene que admitir red privada virtual (VPN) en el nivel de aplicación o de dispositivo?
 
-  -   Intune puede aprovisionar configuraciones de VPN para proveedores de VPN de terceros.
+  - Intune puede aprovisionar configuraciones de VPN para proveedores de VPN de terceros.
   <br/><br/>
 - ¿Se pueden hacer excepciones temporales en determinados requisitos para así evitar el tiempo de inactividad? ¿O deben los dispositivos con acceso cumplir siempre todos los requisitos de seguridad?
 

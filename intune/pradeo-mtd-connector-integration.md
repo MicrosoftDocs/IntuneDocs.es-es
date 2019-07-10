@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1907ebf3d9233ca2324a4759b4f22a4c62e143c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ec3685df5865d22874b68a8bf42539d37fb486d7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045797"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549241"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Integración de Pradeo con Intune
 
@@ -32,47 +32,47 @@ Complete estos pasos para integrar la solución Mobile Threat Defense de Pradeo 
 
 Antes de iniciar el proceso de integración de Pradeo con Intune, asegúrese de disponer de lo siguiente:
 
--   Suscripción a Microsoft Intune
+- Suscripción a Microsoft Intune
 
--   Credenciales de administrador de Azure Active Directory para conceder los permisos siguientes:
+- Credenciales de administrador de Azure Active Directory para conceder los permisos siguientes:
 
-    -   Iniciar sesión y leer el perfil del usuario
+    - Iniciar sesión y leer el perfil del usuario
 
-    -   Obtener acceso al directorio con el usuario que tiene la sesión iniciada
+    - Obtener acceso al directorio con el usuario que tiene la sesión iniciada
 
-    -   Leer datos de directorio
+    - Leer datos de directorio
 
-    -   Enviar información del dispositivo a Intune
+    - Enviar información del dispositivo a Intune
 
--   Credenciales de administrador para obtener acceso a la consola Pradeo Security.
+- Credenciales de administrador para obtener acceso a la consola Pradeo Security.
 
 ### <a name="pradeo-app-authorization"></a>Autorización de la aplicación Pradeo
 
 El proceso de autorización de la aplicación Pradeo es el siguiente:
 
--   Permita que el servicio de Pradeo comunique a Intune la información relacionada con el estado de mantenimiento del dispositivo.
+- Permita que el servicio de Pradeo comunique a Intune la información relacionada con el estado de mantenimiento del dispositivo.
 
--   Pradeo se sincroniza con la pertenencia a grupos de inscripción de Azure AD para rellenar la base de datos de su dispositivo.
+- Pradeo se sincroniza con la pertenencia a grupos de inscripción de Azure AD para rellenar la base de datos de su dispositivo.
 
--   Permita que la consola de administración de Pradeo use el inicio de sesión único (SSO) de Azure AD.
+- Permita que la consola de administración de Pradeo use el inicio de sesión único (SSO) de Azure AD.
 
--   Permita que la aplicación de Pradeo inicie sesión con el SSO de Azure AD.
+- Permita que la aplicación de Pradeo inicie sesión con el SSO de Azure AD.
 
 ## <a name="to-set-up-pradeo-integration"></a>Para configurar la integración de Pradeo
 
-1.  Vaya a la [consola Pradeo Security](https://www.apps-security.com) e inicie sesión con sus credenciales.
+1. Vaya a la [consola Pradeo Security](https://www.apps-security.com) e inicie sesión con sus credenciales.
 
-2.  En el menú, elija **Administración - Enterprise Mobility Management**.
+2. En el menú, elija **Administración - Enterprise Mobility Management**.
 
-3.  Elija el **logotipo de Intune**.
+3. Elija el **logotipo de Intune**.
 
-4.  En la ventana **EMM (Enterprise Mobility Management) - Intune**, en el **paso 1**, elija el botón **Pradeo Connector** (Connector de Pradeo). 
+4. En la ventana **EMM (Enterprise Mobility Management) - Intune**, en el **paso 1**, elija el botón **Pradeo Connector** (Connector de Pradeo). 
 
     ![Captura de pantalla de la ventana Pradeo EMM Intune](./media/pradeo_setup.png)
 
 5. En la ventana de conexión de Microsoft Intune, escriba sus credenciales de Intune.
 
-5.  La página web de Pradeo se volverá a abrir. En el **paso 2**, elija el botón **Pradeo Device Health** (Estado del dispositivo de Pradeo).
+5. La página web de Pradeo se volverá a abrir. En el **paso 2**, elija el botón **Pradeo Device Health** (Estado del dispositivo de Pradeo).
 
 7. En la ventana del conector de Pradeo-Intune, seleccione **Aceptar**. 
 
@@ -86,4 +86,4 @@ El proceso de autorización de la aplicación Pradeo es el siguiente:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
--   [Configuración de las aplicaciones de Pradeo](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configuración de las aplicaciones de Pradeo](mtd-apps-ios-app-configuration-policy-add-assign.md)

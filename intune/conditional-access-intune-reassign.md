@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530666"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546882"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reasignación de directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal
 
@@ -51,13 +51,13 @@ Si está listo para moverse a Azure Portal, siga los pasos de este tema para re
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Para comprobar las directivas de acceso condicional basadas en el dispositivo en el Portal de Intune clásico
 
-1.  Vaya al [Portal de Intune clásico](https://manage.microsoft.com) e inicie sesión con sus credenciales.
+1. Vaya al [Portal de Intune clásico](https://manage.microsoft.com) e inicie sesión con sus credenciales.
 
-2.  Pulse **Directiva** en el menú de la izquierda.
+2. Pulse **Directiva** en el menú de la izquierda.
 
-3.  Pulse **Acceso condicional** y, después, seleccione el servicio en la nube de Microsoft (por ejemplo, Exchange Online o SharePoint Online) para el que ha creado una directiva de acceso condicional.
+3. Pulse **Acceso condicional** y, después, seleccione el servicio en la nube de Microsoft (por ejemplo, Exchange Online o SharePoint Online) para el que ha creado una directiva de acceso condicional.
 
-4.  Tome nota de las opciones de acceso condicional y consúltelas cuando cree las mismas directivas de acceso condicional en Azure Portal.
+4. Tome nota de las opciones de acceso condicional y consúltelas cuando cree las mismas directivas de acceso condicional en Azure Portal.
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Las directivas de acceso condicional basadas en el dispositivo y la aplicación funcionan conjuntamente
 
@@ -194,13 +194,13 @@ Después de que haya reasignado las directivas de acceso condicional en Azure P
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Para deshabilitar las directivas de acceso condicional
 
-1.  Vaya al [Portal de Intune clásico](https://manage.microsoft.com) e inicie sesión con sus credenciales.
+1. Vaya al [Portal de Intune clásico](https://manage.microsoft.com) e inicie sesión con sus credenciales.
 
-2.  Pulse **Directiva** en el menú de la izquierda.
+2. Pulse **Directiva** en el menú de la izquierda.
 
-3.  Pulse **Acceso condicional** y, después, seleccione el servicio en la nube de Microsoft (por ejemplo, Exchange Online o SharePoint Online) para el que ha creado una directiva de acceso condicional.
+3. Pulse **Acceso condicional** y, después, seleccione el servicio en la nube de Microsoft (por ejemplo, Exchange Online o SharePoint Online) para el que ha creado una directiva de acceso condicional.
 
-4.  Desactive la opción **Habilitar directiva de acceso condicional** y, después, haga clic en **Guardar**.
+4. Desactive la opción **Habilitar directiva de acceso condicional** y, después, haga clic en **Guardar**.
 
     ![Imagen de Deshabilitar directivas de acceso condicional en el Portal de Intune clásico](./media/reassign-ca-18.png)
 

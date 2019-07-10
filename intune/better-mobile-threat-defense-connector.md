@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511776"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547290"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Better Mobile con Intune
 
@@ -41,11 +41,11 @@ Estos son algunos casos más frecuentes.
 
 Cuando se detectan aplicaciones malintencionadas, como el malware, en los dispositivos, puede bloquear las siguientes acciones hasta resolver la amenaza:
 
--   Conectarse al correo electrónico corporativo
+- Conectarse al correo electrónico corporativo
 
--   Sincronizar los archivos corporativos mediante la aplicación OneDrive para el trabajo
+- Sincronizar los archivos corporativos mediante la aplicación OneDrive para el trabajo
 
--   Acceder a las aplicaciones de empresa
+- Acceder a las aplicaciones de empresa
 
 **Bloquear cuando se detectan aplicaciones malintencionadas:**
 
@@ -81,19 +81,19 @@ Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
--   **Android 4.1 y versiones posteriores**
+- **Android 4.1 y versiones posteriores**
 
--   **iOS 8.0 y versiones posteriores**
+- **iOS 8.0 y versiones posteriores**
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Suscripción a Microsoft Intune
+- Suscripción a Microsoft Intune
 
--   Suscripción a Mobile Threat Defense de Better Mobile
+- Suscripción a Mobile Threat Defense de Better Mobile
 
-    -   Para obtener más información, vea el [sitio web de Better Mobile](https://www.better.mobi/).
+    - Para obtener más información, vea el [sitio web de Better Mobile](https://www.better.mobi/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
