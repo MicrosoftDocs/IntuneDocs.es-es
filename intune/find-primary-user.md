@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325530"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500644"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Búsqueda del usuario primario de un dispositivo de Intune
 
@@ -60,8 +60,8 @@ Intune agrega automáticamente el usuario primario a los dispositivos durante la
 | Windows | Unión a Azure AD (configuración rápida) | El usuario de la inscripción | Durante la inscripción | 
 | Windows | Unión a Azure AD (configuración rápida de AutoPilot) | El usuario de la inscripción | Durante la inscripción | 
 | Windows | Inscripción solo en MDM | El usuario de la inscripción | Durante la inscripción | 
-| Windows | Unión a AAD híbrida + GPO de inscripción automática | El primer usuario en iniciar sesión | Cuando el primer usuario inicia sesión | 
-| Windows | Administración conjunta | El primer usuario en iniciar sesión | Cuando el primer usuario inicia sesión | 
+| Windows | Unión a AAD híbrida + GPO de inscripción automática | El primer usuario que inicia sesión en Windows | Cuando el primer usuario inicia sesión en Windows| 
+| Windows | Administración conjunta | El primer usuario que inicia sesión en Windows | Cuando el primer usuario inicia sesión en Windows | 
 | Windows | Unión a Azure AD (token de inscripción masiva) | Ninguno | No disponible | 
 | Windows | Unión a Azure AD (modo de implementación automática de AutoPilot) | Ninguno | No disponible | 
 | Multiplataforma | Inscripción controlada por el usuario con la aplicación Portal de empresa | El usuario de la inscripción | Durante la inscripción |

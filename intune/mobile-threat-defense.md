@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74050f51347f234029a83ce0e3463fe6b11aee1b
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044568"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407174"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>¿Qué es la integración de Mobile Threat Defense con Intune?
 Intune puede integrar datos de un proveedor de Mobile Threat Defense como un origen de información para directivas de cumplimiento y reglas de acceso condicional. Puede usar esta información para proteger mejor los recursos corporativos, como Exchange y SharePoint, bloqueando el acceso de dispositivos móviles en peligro.  
@@ -80,4 +80,4 @@ Obtenga información sobre cómo proteger el acceso al recurso de la empresa en 
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
 - [Sophos Mobile](sophos-mtd-connector.md)
-- Wandera (detalles próximamente)
+- [Wandera Mobile Threat Defense](wandera-mtd-connector.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389305"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512111"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscripción de dispositivos Windows en Intune con Windows Autopilot  
 Windows Autopilot simplifica el proceso de inscripción de dispositivos en Intune. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
@@ -35,7 +35,7 @@ Windows Autopilot simplifica el proceso de inscripción de dispositivos en Intun
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Obtención del archivo CSV para importarlo en Intune
 
-Vea el cmdlet de Powershell para más información sobre cómo usarlo.
+Para más información, consulte el cmdlet de PowerShell.
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ Para agregar dispositivos de Windows Autopilot, puede importar un archivo CSV co
 
     ![Captura de pantalla de dispositivos de Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. En **Agregar dispositivos Windows Autopilot**, vaya a un archivo CSV en el que se enumeren los dispositivos que quiera agregar. El archivo CSV debe enumerar los números de serie, los identificadores de producto de Windows opcionales, los hashes de hardware y las etiquetas de grupo de los dispositivos. Puede tener hasta 500 filas en la lista. Use el formato de línea y encabezado tal y como se muestra a continuación: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. En **Agregar dispositivos Windows Autopilot**, vaya a un archivo CSV en el que se enumeren los dispositivos que quiera agregar. El archivo CSV debe mostrar los números de serie, los id. del producto de Windows, los hashes de hardware y las etiquetas de grupo opcionales, los usuarios asignados y otros id. de los dispositivos. Puede tener hasta 500 filas en la lista. Use el formato de línea y encabezado tal y como se muestra a continuación:
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![Captura de pantalla de Agregar dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ Para agregar dispositivos de Windows Autopilot, puede importar un archivo CSV co
     Los dispositivos Autopilot que aún no estén inscritos son aquellos en los que el nombre de dispositivo y el número de serie son el mismo.
 4. Si ha elegido **Dispositivos dinámicos** en **Tipo de pertenencia** anteriormente, elija **Miembros del dispositivo dinámico** en la hoja **Grupo** y escriba cualquiera de los siguientes códigos en el cuadro **Regla avanzada**.
     - Si quiere crear un grupo que incluya todos los dispositivos Autopilot, escriba `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - El campo de etiqueta de grupo de Intune se asigna al atributo OrderID en los dispositivos de Azure AD. Si quiere crear un grupo que incluya todos los dispositivos Autopilot con una etiqueta de grupo específica (OrderID), escriba `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `.
+    - El campo de etiqueta de grupo de Intune se asigna al atributo OrderID en los dispositivos de Azure AD. Si quiere crear un grupo que incluya todos los dispositivos Autopilot con una etiqueta de grupo específica (OrderID), debe escribir: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Si quiere crear un grupo que incluya todos los dispositivos Autopilot con un identificador de pedido de compra específico, escriba `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Después de agregar el código de **Regla avanzada**, elija **Guardar**.
@@ -95,7 +96,7 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
     - **Contrato de licencia para el usuario final (CLUF)** : (Windows 10, versión 1709 o versiones posterior) elija si quiere mostrar el CLUF a los usuarios.
     - **Configuración de privacidad**: elija si quiere mostrar la configuración de privacidad a los usuarios.
     >[!IMPORTANT]
-    >Para las implementaciones de Autopilot en dispositivos con Windows 10 versión 1903 o una posterior, el valor predeterminado de Datos de diagnóstico se establece automáticamente en Completos. Para obtener más información, consulte [Datos de diagnóstico de Windows](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data). <br>
+    >Para las implementaciones de Autopilot en dispositivos con Windows 10 versión 1903 o una posterior, el valor predeterminado de Datos de diagnóstico se establece automáticamente en Completos. Para obtener más información, consulte [Datos de diagnóstico de Windows](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data). <br>
     
     - **Ocultar opciones para cambiar la cuenta (se necesita Windows 10, versión 1809 o posteriores)** : elija **Ocultar** para impedir que se muestren opciones para cambiar la cuenta en las páginas de error de inicio de sesión y dominio de empresa. Esta opción requiere la [configuración de la personalización de marca de la empresa en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de cuenta de usuario**: elija el tipo de cuenta de usuario (**Administrador** o **Estándar**).
@@ -118,7 +119,7 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
     ![Captura de pantalla de la página Revisión](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune buscará de forma periódica nuevos dispositivos en los grupos asignados y, después, iniciará el proceso de asignación de perfiles a esos dispositivos. Este proceso puede tardar varios minutos en completarse. Antes de implementar un dispositivo, asegúrese de haber completado este proceso.  Puede comprobarlo en **Inscripción de dispositivos** > **Inscripción de Windows ** > **Dispositivos**, donde verá el cambio de estado de perfil de "Sin asignar" a "Asignando" y, finalmente, a "Asignado".
+> Intune buscará de forma periódica nuevos dispositivos en los grupos asignados y, después, iniciará el proceso de asignación de perfiles a esos dispositivos. Este proceso puede tardar varios minutos en completarse. Antes de implementar un dispositivo, asegúrese de haber completado este proceso.  Puede comprobarlo en **Inscripción de dispositivos** > **Inscripción de Windows** > **Dispositivos** donde verá el cambio de estado del perfil de "Sin asignar" a "Asignando" y, finalmente, a "Asignado".
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Editar un perfil de implementación de Autopilot
 Cuando haya creado un perfil de implementación de Autopilot, puede editar ciertas partes del perfil de implementación.   

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/14/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78d6b8faf5c5c3ef41f3eb5007d550c869491f60
-ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
+ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141800"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67407111"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune  
 
@@ -56,6 +56,7 @@ Elija la sección que corresponda, según su proveedor MTD:
 - [Pradeo](#configure-pradeo-apps)
 - [Better Mobile](#configure-better-mobile-apps)
 - [Sophos Mobile](#configure-sophos-apps)
+- [Wandera](#configure-wandera-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Configuración de aplicaciones Lookout for Work  
 - **Android**  
@@ -129,6 +130,14 @@ Elija la sección que corresponda, según su proveedor MTD:
 - **iOS**
   - Vea las instrucciones para [agregar aplicaciones de la tienda iOS en Microsoft Intune](store-apps-ios.md). Use la [dirección URL de ActiveShield en la tienda App Store](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) que aparece en el **paso 11** como la **dirección URL de la tienda App Store**.
 
+### <a name="configure-wandera-apps"></a>Configuración de aplicaciones de Wandera  
+ 
+- **Android**
+  - Vea las instrucciones para [agregar aplicaciones de la tienda Android en Microsoft Intune](store-apps-android.md). Use esta [dirección URL de la tienda de aplicaciones de Wandera Mobile](https://play.google.com/store/apps/details?id=com.wandera.android) en el **paso 7**. En **Versión mínima del sistema operativo**, seleccione **Android 5.0**.
+
+- **iOS**
+  - Vea las instrucciones para [agregar aplicaciones de la tienda iOS en Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Use la [dirección URL de Wandera Mobile en la tienda App Store](https://itunes.apple.com/app/wandera/id605469330) que aparece en el **paso 11** como la **dirección URL de la tienda App Store**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Configuración de aplicaciones de MTD con una directiva de configuración de aplicaciones iOS  
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Directiva de configuración de aplicaciones Lookout for Work  
@@ -196,6 +205,27 @@ Pradeo no es compatible con la directiva de configuración de aplicaciones en iO
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Directiva de configuración de aplicaciones de Sophos Mobile  
 Cree la directiva de configuración de aplicaciones para iOS como se describe en el artículo [Usar la directiva de configuración de aplicaciones para iOS](app-configuration-policies-use-ios.md).
+
+### <a name="wandera-app-configuration-policy"></a>Directiva de configuración de aplicaciones de Wandera  
+Consulte las instrucciones para [usar las directivas de configuración de aplicaciones de Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para agregar la directiva de configuración de aplicaciones de Wandera para iOS.
+- En el **paso 8**, use la opción **Especificar datos XML**. Inicie sesión en el portal RADAR de Wandera y vaya a **Configuración** > **Integración de EMM** > **App Push** (Inserción de aplicación). Seleccione **Intune** y, luego, copie el contenido siguiente y péguelo en el cuerpo de la directiva de configuración.  
+
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>  
+  ```
 
 ## <a name="assign-apps-to-groups"></a>Asignación de aplicaciones a grupos  
 - Este paso se aplica a todos los asociados de MTD. Consulte las instrucciones para [asignar aplicaciones a grupos con Intune](apps-deploy.md).

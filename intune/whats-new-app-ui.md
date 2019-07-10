@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045627"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468755"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga información sobre las actualizaciones más recientes para las aplicaciones de Microsoft Intune. Periódicamente agregamos contenido y mejoras a la aplicación y el sitio web de Portal de empresa de Intune. Si es un administrador de Intune o un empleado de soporte técnico, en este artículo encontrará la información que necesita para:
@@ -33,6 +33,29 @@ Obtenga información sobre las actualizaciones más recientes para las aplicacio
 Si es un empleado o un alumno, asegúrese de consultar las capturas de pantalla y los vínculos de la documentación de ayuda del Portal de empresa. Para obtener más información sobre cómo usar la aplicación Portal de empresa, vea la [documentación de ayuda al usuario del Portal de empresa](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-june-24-2019"></a>Semana del 24 de junio de 2019  
+
+### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Ver todas las aplicaciones instaladas desde la página web del Portal de empresa <!-- 4224326 -->
+La nueva página **Aplicaciones instaladas** del sitio web del Portal de empresa muestra todas las aplicaciones administradas (requeridas y disponibles) que están instaladas en los dispositivos de un usuario. Además del tipo de asignación, los usuarios pueden ver el editor de la aplicación, la fecha de publicación y el estado de instalación actual. Si todavía no hay ninguna aplicación requerida o disponible para los usuarios, estos verán un mensaje en el que se explica que no hay ninguna aplicación de la empresa instalada. Para ver la página nueva en la Web, vaya al [sitio web del Portal de empresa](https://portal.manage.microsoft.com) y haga clic en **Aplicaciones instaladas**.   
+
+![Captura de pantalla del sitio web del Portal de empresa, página Aplicaciones instaladas.](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>La vista nueva permite que los usuarios de las aplicaciones vean todas las aplicaciones administradas instaladas en el dispositivo <!-- 2352913 -->
+La aplicación Portal de empresa para Windows ahora muestra todas las aplicaciones administradas (tanto las requeridas como las disponibles) que están instaladas en el dispositivo de un usuario. Los usuarios también pueden ver las instalaciones de aplicaciones intentadas y pendientes, además de sus estados actuales. Si todavía no hay ninguna aplicación requerida o disponible para los usuarios, estos verán un mensaje en el que se explica que no hay ninguna aplicación de la empresa instalada. Para ver la vista nueva, vaya al panel de navegación del Portal de empresa y seleccione **Aplicaciones** > **Aplicaciones instaladas**.   
+
+![Captura de pantalla de ejemplo de la aplicación Portal de empresa para Windows 10, página Aplicaciones instaladas. ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## <a name="week-of-june-17-2019"></a>Semana del 17 de junio de 2019  
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Características nuevas de la aplicación Microsoft Intune
+Agregamos características nuevas a la aplicación Microsoft Intune (versión preliminar) para Android. Los usuarios de dispositivos Android totalmente administrados ahora pueden:  
+
+* Ver y administrar los dispositivos inscritos mediante la aplicación Portal de empresa de Intune o Microsoft Intune.    
+* Ponerse en contacto con su organización para obtener soporte técnico.    
+* Enviar comentarios a Microsoft.    
+* Consultar los términos y condiciones, si la organización los estableció. 
 
 ## <a name="week-of-april-15-2019"></a>Semana del 15 de abril de 2019  
 
