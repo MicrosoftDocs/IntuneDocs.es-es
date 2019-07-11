@@ -1,7 +1,7 @@
 ---
-title: Archivar - MDM de Intune las líneas de base de configuración de seguridad para Windows 10
+title: Archivo de configuración de líneas de base de seguridad de MDM de Intune para Windows 10
 titleSuffix: Microsoft Intune
-description: Archivo de las versiones anteriores de la configuración de línea de base de seguridad MDM para administrar Windows 10 con Microsoft Intune
+description: Archivo de las versiones de lanzamiento anteriores de la configuración de línea de base de seguridad de MDM para administrar Windows 10 con Microsoft Intune
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,29 +16,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e83aa6b13f192da87a78690b0040e545d8943e
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418964"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735790"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# <a name="archive-of-mdm-security-baseline-settings"></a>Archivo de configuración de línea de base de seguridad MDM  
+# <a name="archive-of-mdm-security-baseline-settings"></a>Archivo de configuración de línea de base de seguridad de MDM  
 
-Ver detalles de las versiones archivadas de la línea de base de seguridad MDM de Intune.  
+Vea los detalles de las versiones archivadas de la línea base de seguridad de MDM para Intune.  
 
-Cuando se publique una nueva línea de base de seguridad MDM, la lista anterior de la configuración de mover desde el artículo de configuración de línea de base de seguridad para este archivo. Estas versiones son compatibles aún para su uso, y este archivo se proporciona para ayudar a comprender la configuración predeterminada para las versiones anteriores de línea base.
+Cuando se lanza una nueva línea de base de seguridad de MDM, la lista anterior de configuraciones se mueve del artículo de configuración de línea de base de seguridad a este archivo. Estas versiones todavía se admiten para su uso, y este archivo se proporciona para ayudar a comprender la configuración predeterminada de las versiones de línea base más antiguas.
 
-Cuando ya no se admite una versión de línea de base para su uso, a continuación, se quitará de este artículo.
+Cuando una versión de línea de base ya no se admite para su uso, se quitará de este artículo.
 
-- Ver la configuración que está disponible en [la línea de base de seguridad actual de MDM](security-baseline-settings-mdm.md) 
-- Obtenga información sobre [líneas base de seguridad](security-baselines.md)y cómo actualizar la versión de referencia en los perfiles de línea de base de seguridad.
+- Ver la configuración que está disponible en [la línea de base de seguridad de MDM actual](security-baseline-settings-mdm.md) 
+- Obtenga información [sobre las](security-baselines.md)líneas base de seguridad y cómo actualizar la versión de línea base en los perfiles de línea de base de seguridad.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Versión preliminar: línea de base de seguridad de MDM para octubre de 2018  
 
-*Esta línea de base se ha reemplazado por [línea base de seguridad de MDM para 2019 Spring (1 de 19 H)](security-baseline-settings-mdm.md)*
+*Esta línea base se sustituye por [la línea de base de seguridad de MDM para Spring 2019 (19H1)](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Above Lock (Por encima de la pantalla de bloqueo)  
 
@@ -261,38 +261,38 @@ Para más información, vea [Policy CSP - DeviceLock](https://docs.microsoft.com
   
   **Valor predeterminado**: Sí  
   
-    Cuando *Requerir contraseña* está establecido en *Sí*, las siguientes opciones están disponibles.
+  Cuando *Requerir contraseña* está establecido en *Sí*, las siguientes opciones están disponibles.
 
-    - **Password minimum character set count** (Número mínimo de conjuntos de caracteres de contraseña)  
-      El número de elementos complejos (letras mayúsculas y minúsculas, números y signos de puntuación) necesarios para una contraseña o PIN fuerte. El PIN aplica el comportamiento siguiente para los dispositivos móviles y de escritorios: 1 - Solo dígitos 2 - Se requieren dígitos y letras minúsculas 3 - Se requieren dígitos, letras minúsculas y letras mayúsculas. No se admite en cuentas de Microsoft de escritorio y cuentas de dominio. 4 - Se requieren dígitos, letras minúsculas, letras mayúsculas y caracteres especiales. No se admite en el escritorio. El valor predeterminado es 1. 
-      
-      **Valor predeterminado**: 3  
+  - **Password minimum character set count** (Número mínimo de conjuntos de caracteres de contraseña)  
+    El número de elementos complejos (letras mayúsculas y minúsculas, números y signos de puntuación) necesarios para una contraseña o PIN fuerte. El PIN aplica el comportamiento siguiente para los dispositivos móviles y de escritorios: 1 - Solo dígitos 2 - Se requieren dígitos y letras minúsculas 3 - Se requieren dígitos, letras minúsculas y letras mayúsculas. No se admite en cuentas de Microsoft de escritorio y cuentas de dominio. 4 - Se requieren dígitos, letras minúsculas, letras mayúsculas y caracteres especiales. No se admite en el escritorio. El valor predeterminado es 1. 
+    
+    **Valor predeterminado**: 3  
   
-    - **Número de errores de inicio de sesión antes de borrar el dispositivo**  
-      El número de errores de autenticación permitidos antes de que se borre el dispositivo. Un valor de 0 deshabilita la funcionalidad de borrado del dispositivo.
-        
-      **Valor predeterminado**: 10  
+  - **Número de errores de inicio de sesión antes de borrar el dispositivo**  
+    El número de errores de autenticación permitidos antes de que se borre el dispositivo. Un valor de 0 deshabilita la funcionalidad de borrado del dispositivo.
+    
+    **Valor predeterminado**: 10  
   
-    - **Expiración de contraseña (días)**  
-      La configuración de directiva Vigencia máxima de la contraseña determina cuánto tiempo (en días) se puede usar una contraseña antes de que el sistema requiera que el usuario la cambie. Puede establecer las contraseñas para que expiren después de un número de días comprendido entre 1 y 999, o bien que no expiren nunca si establece el número de días en 0. Si el valor de Vigencia máxima de la contraseña está comprendido entre 1 y 999 días, la vigencia mínima de la contraseña debe ser menor que la máxima. Si el valor de Vigencia máxima de la contraseña se establece en 0, la vigencia mínima de la contraseña puede ser cualquier valor entre 0 y 998 días.
-      
-      **Valor predeterminado**: 60  
+  - **Expiración de contraseña (días)**  
+    La configuración de directiva Vigencia máxima de la contraseña determina cuánto tiempo (en días) se puede usar una contraseña antes de que el sistema requiera que el usuario la cambie. Puede establecer las contraseñas para que expiren después de un número de días comprendido entre 1 y 999, o bien que no expiren nunca si establece el número de días en 0. Si el valor de Vigencia máxima de la contraseña está comprendido entre 1 y 999 días, la vigencia mínima de la contraseña debe ser menor que la máxima. Si el valor de Vigencia máxima de la contraseña se establece en 0, la vigencia mínima de la contraseña puede ser cualquier valor entre 0 y 998 días.
+    
+    **Valor predeterminado**: 60  
   
-    - **Tipo de contraseña obligatoria**  
-      Determina el tipo de PIN o contraseña requerido.
-      
-      **Valor predeterminado**: Alfanumérico  
+  - **Tipo de contraseña obligatoria**  
+    Determina el tipo de PIN o contraseña requerido.
+    
+    **Valor predeterminado**: Alfanumérico  
   
-    - **Longitud mínima de contraseña**  
-      La configuración de directiva Longitud mínima de contraseña determina el menor número de caracteres que pueden formar una contraseña para una cuenta de usuario. Puede establecer un valor comprendido entre 1 y 14 caracteres, o bien que no se requiera ninguna contraseña si establece el número de caracteres en 0.
-      
-      **Valor predeterminado**: 8  
-  
-    - **Bloquear contraseñas simples**  
-      Especifica si se permiten números de PIN o contraseñas como "1111" o "1234". Para el escritorio, también controla el uso de contraseñas de imagen.
-      
-      **Valor predeterminado**: Sí  
-        *Un valor de Sí impide el uso de contraseñas simples.* 
+  - **Longitud mínima de contraseña**  
+    La configuración de directiva Longitud mínima de contraseña determina el menor número de caracteres que pueden formar una contraseña para una cuenta de usuario. Puede establecer un valor comprendido entre 1 y 14 caracteres, o bien que no se requiera ninguna contraseña si establece el número de caracteres en 0.
+    
+    **Valor predeterminado**: 8  
+
+  - **Bloquear contraseñas simples**  
+    Especifica si se permiten números de PIN o contraseñas como "1111" o "1234". Para el escritorio, también controla el uso de contraseñas de imagen.
+    
+    **Valor predeterminado**: Sí  
+      *Un valor de Sí impide el uso de contraseñas simples.* 
 
   - **Impedir la reutilización de contraseñas anteriores**  
     Especifica cuántas contraseñas se pueden almacenar en el historial que no se pueden usar. El valor incluye la contraseña actual del usuario. Por ejemplo, con una configuración de *1*, el usuario no puede reutilizar la contraseña actual al elegir una contraseña nueva. Un valor de *5* significa que un usuario no puede establecer la nueva contraseña en su contraseña actual o en cualquiera de sus cuatro contraseñas anteriores.
@@ -344,10 +344,10 @@ Para más información, vea [Policy CSP - Experience](https://docs.microsoft.com
     Especifica si se permiten sugerencias de contenido y aplicaciones de editores de software de terceros en características de Contenido destacado de Windows como el contenido destacado en la pantalla de bloqueo, aplicaciones sugeridas en el menú Inicio y sugerencias de Windows. Es posible que los usuarios sigan viendo sugerencias sobre características, aplicaciones y servicios de Microsoft.
       
     **Valor predeterminado**: Sí  
-   - **Block consumer specific features** (Bloquear características específicas del consumidor)  
-      Permite a los administradores de TI activar experiencias que suelen ser solo para consumidores, como las sugerencias de inicio, las notificaciones de suscripción, la instalación de aplicaciones tras la Bienvenida de Windows y los iconos de redireccionamiento.
-      
-     **Valor predeterminado**: Sí  
+  - **Block consumer specific features** (Bloquear características específicas del consumidor)  
+    Permite a los administradores de TI activar experiencias que suelen ser solo para consumidores, como las sugerencias de inicio, las notificaciones de suscripción, la instalación de aplicaciones tras la Bienvenida de Windows y los iconos de redireccionamiento.
+    
+    **Valor predeterminado**: Sí  
 
 
 ### <a name="exploit-guard"></a>Protección contra vulnerabilidades de seguridad  
@@ -1440,5 +1440,5 @@ Para más información, vea [Policy CSP - WindowsPowerShell](https://docs.micros
  
 ## <a name="next-steps"></a>Pasos siguientes  
 
-[Ver la versión actual de la línea de base](security-baseline-settings-mdm.md)  
-[Actualizar perfiles para usar una nueva versión](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Ver la versión de línea base actual](security-baseline-settings-mdm.md)  
+[Actualizar perfiles para usar una nueva versión de línea base](security-baselines.md#change-the-baseline-instance-for-a-profile)

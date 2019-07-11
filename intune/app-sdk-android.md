@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558423"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735636"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -105,6 +105,7 @@ buildscript {
 ```
 
 Después, en el archivo `build.gradle` del proyecto APK, basta con aplicar el complemento como
+
 ```groovy
 apply plugin: 'com.microsoft.intune.mam'
 ```
@@ -141,8 +142,8 @@ intunemam {
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
-
 ```
+
 Esto tendría los siguientes efectos:
 * `:product:FooLib` no se reescribe porque está incluido en `excludeProjects`
 * `:product:foo-project` se reescribe, excepto para `com.contoso.SplashActivity`, que se omite porque se encuentra en `excludeClasses`
@@ -1072,9 +1073,10 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 
 > [!NOTE]
 > El método `MAMServiceAuthenticationCallback.acquireToken()` de la aplicación debe pasar *true* con la nueva marca `forceRefresh` a `acquireTokenSilentSync()` para forzar una actualización del agente.  Esto sirve para solucionar un problema de almacenamiento en caché con tokens en ADAL que puede afectar a tokens del servicio MAM. En general, tendrá este aspecto:
-```java
-AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
-```
+>
+> ```java
+> AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+> ```
 
 > [!NOTE]
 > Si quiere mostrar una experiencia de usuario de bloqueo personalizada durante el intento de corrección, debería pasar *false* con el parámetro showUX a `remediateCompliance()`. Debe asegurarse de que se muestra la experiencia de usuario y se registra el cliente de escucha de notificaciones antes de llamar a `remediateCompliance()`.  Esto evitará una condición de carrera en la que podría faltar la notificación si `remediateCompliance()` no se realiza muy rápidamente.  Por ejemplo, el método `onCreate()` o `onMAMCreate()` de una subclase Activity es el lugar ideal para registrar el cliente de escucha de notificaciones y luego llamara a `remediateCompliance()`.  Los parámetros de `remediateCompliance()` pueden pasarse a la experiencia de usuario como extras de intención.  Cuando se recibe la notificación de estado de cumplimiento, se puede mostrar el resultado o simplemente finalizar la actividad.
@@ -1415,6 +1417,7 @@ Para usar `MAMAsyncTask`, simplemente herede de ella en lugar de `AsyncTask` y r
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+
 ### <a name="file-protection"></a>Protección de archivos
 
 Cada archivo tiene una identidad asociada en el momento de creación basada en la identidad del proceso y del subproceso. Esta identidad se utilizará para el cifrado de archivos y la eliminación selectiva. Solo se cifrarán los archivos cuya identidad está administrada y tiene una directiva que exige cifrado. La eliminación de funcionalidad selectiva predeterminada del SDK solo eliminará los archivos asociados con la identidad administrada para la que se ha solicitado una eliminación. La aplicación puede consultar o cambiar la identidad de un archivo con la clase `MAMFileProtectionManager`.
@@ -1643,6 +1646,7 @@ Intune no interpreta en absoluto los pares clave-valor, sino que se pasan a la a
 > Las configuraciones establecidas para la entrega a través de MAM-WE no se pueden entregar en `offline`.  En este caso, solo se entregará Android Enterprise AppRestrictions a través de un `MAMUserNotification` en una identidad vacía.
 
 ### <a name="example"></a>Ejemplo
+
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1678,6 +1682,7 @@ Las vistas que el SDK de MAM genera se pueden personalizar visualmente para que 
 
 ### <a name="how-to-customize"></a>Cómo realizar la personalización
 Para aplicar cambios de estilo a las vistas de MAM de Intune, primero debe crear un archivo XML de invalidación de estilo. Este archivo se debe colocar en el directorio "/res/xml" de la aplicación y puede ponerle el nombre que desee. A continuación se muestra un ejemplo del formato que debe tener este archivo.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1722,16 +1727,20 @@ Habilite la inscripción predeterminada con los pasos siguientes:
 1. Si la aplicación integra ADAL o hay que habilitar SSO, [configure ADAL](#configure-azure-active-directory-authentication-library-adal) según la [configuración común de ADAL](#common-adal-configurations) #2. Si no es así, puede omitir este paso.
    
 2. Habilite la inscripción predeterminada indicando el siguiente valor en el manifiesto:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
+
    > [!NOTE] 
    > Esta debe ser la única integración de MAM-WE en la aplicación. Surgirán conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
 
 3. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
+
    > [!NOTE] 
    > Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
 
@@ -1748,9 +1757,11 @@ En el caso de las bases de código de gran tamaño que se ejecutan sin [ProGuard
 ### <a name="policy-enforcement-limitations"></a>Limitaciones de cumplimiento de directivas
 
 * **Uso de solucionadores de contenido**: la directiva de "transferencia o recepción" de Intune puede bloquear (o bloquear parcialmente) el uso de un solucionador de contenido para acceder al proveedor de contenido de otra aplicación. Esto hará que los métodos `ContentResolver` devuelvan un valor nulo o generen un valor de error (por ejemplo, `openOutputStream` generará `FileNotFoundException` si se bloquea). La aplicación puede determinar si fue la directiva quien produjo un error al escribir los datos a través de un solucionador de contenido, cuando realizó la siguiente llamada:
+
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
+
     o si no hay ninguna actividad asociada
 
     ```java
