@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 50ac3ff27c22bf63b73f2ae10e6909112564180f
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049951"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648744"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configuración de la aplicación Managed Home Screen de Microsoft para Android Enterprise
 
@@ -74,12 +74,12 @@ En la tabla siguiente se enumeran las claves de configuración disponibles de Ma
 | Habilitar la fuente de la pantalla principal | bool | FALSE | Habilita la fuente de la pantalla principal, que se puede ver si se desliza hacia la izquierda. Esta fuente muestra otro tipo de contenido, como noticias, el calendario, las aplicaciones de uso frecuente, la tarjeta del asistente de voz de Cortana, etc. Si lo habilita, el usuario final podrá deslizar hacia la izquierda en la pantalla principal para ir a la fuente. |
 | Habilitar el modo de introducción | bool | FALSE | Permite a los usuarios finales agregar o quitar otras páginas en la pantalla principal a las que se puede acceder si se desliza el dedo hacia la derecha desde la pantalla predeterminada. Si habilita esta opción, el usuario final podrá agregar páginas a la derecha de la página predeterminada de la pantalla principal, también podrá cambiar la página predeterminada y acceder a la configuración de Managed Home Screen. |
 | Habilitar la telemetría de dispositivo | bool | FALSE | Habilita toda la telemetría que se captura para la pantalla principal administrada. Si habilita esta opción, Microsoft podrá capturar la telemetría de uso del dispositivo, como el número de veces que se inicia una aplicación determinada en este dispositivo. |
-| Establecer aplicaciones en la lista de permitidos | bundleArray | FALSE | Le permite definir el conjunto de aplicaciones visibles en la pantalla principal de entre las instaladas en el dispositivo. Para definir las aplicaciones, escriba el nombre del paquete de aplicación de las aplicaciones que le gustaría hacer visibles; por ejemplo, com.android.settings hará que se pueda acceder a la configuración desde la pantalla principal. Las aplicaciones que incluya en la lista de permitidas en esta sección ya deben estar instaladas en el dispositivo para que se vean en la pantalla principal. |
+| Establecer aplicaciones permitidas | bundleArray | FALSE | Le permite definir el conjunto de aplicaciones visibles en la pantalla principal de entre las instaladas en el dispositivo. Para definir las aplicaciones, escriba el nombre del paquete de aplicación de las aplicaciones que le gustaría hacer visibles; por ejemplo, com.microsoft.emmx hará que se pueda acceder a la configuración desde la pantalla principal. Las aplicaciones que incluya en la lista de permitidas en esta sección ya deben estar instaladas en el dispositivo para que se vean en la pantalla principal. |
 | Establecer vínculos web anclados | bundleArray | FALSE | Le permite anclar sitios web como iconos de inicio rápido en la pantalla principal. Con esta configuración, puede definir la dirección URL y agregarla a la pantalla principal para que el usuario final inicie el explorador con un solo toque. |
 | Habilitar la barra de búsqueda | bool | FALSE | Habilita la barra de búsqueda en la pantalla principal. Si habilita esta opción, los usuarios del dispositivo verán la barra de búsqueda en la pantalla principal, donde podrán escribir todo lo que quieran buscar en la Web. |
 | Deshabilitar la aplicación de configuración | bool | FALSE | Deshabilita la página de configuración de Managed Home Screen. Si deshabilita esta opción, el usuario final del dispositivo no podrá acceder a la configuración de Managed Home Screen. |
-| Habilitar protector de pantalla | bool | FALSE | Para habilitar el modo de protector de pantalla o no. Si se establece en true, puede configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** y **media_detect_screen_saver**. |
-| Imagen del protector de pantalla | cadena |   | Establezca la dirección URL de la imagen del protector de pantalla. Si no se establece ninguna dirección URL, los dispositivos mostrará la pantalla predeterminada cuando se active el protector de pantalla.  |
+| Habilitar protector de pantalla | bool | FALSE | Para habilitar o no el modo de protector de pantalla. Si se establece en true, puede configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** y **media_detect_screen_saver**. |
+| Imagen del protector de pantalla | cadena |   | Establezca la dirección URL de la imagen del protector de pantalla. Si no se establece ninguna dirección URL, los dispositivos mostrarán la imagen del protector de pantalla predeterminada cuando se active el protector de pantalla. La imagen predeterminada muestra el icono de la aplicación Managed Home Screen.  |
 | Mostrar hora del protector de pantalla | integer | 0 | Ofrece la opción de establecer la cantidad de tiempo en segundos que el dispositivo mostrará el protector de pantalla durante el modo de protector de pantalla. Si se establece en 0, el protector de pantalla se mostrará en modo de protector de pantalla indefinidamente hasta que el dispositivo se active.  |
 | Tiempo de inactividad para habilitar el protector de pantalla | integer | 30 | El número de segundos que el dispositivo está inactivo antes de desencadenar el protector de pantalla. Si se establece en 0, el dispositivo nunca pasará al modo de protector de pantalla. |
 | Detectar medios antes de mostrar el protector de pantalla | bool | TRUE | Elija si en la pantalla del dispositivo se debe mostrar el protector de pantalla cuando se reproduce audio o vídeo en el dispositivo. Si se establece en true, el dispositivo no reproducirá audio o vídeo, con independencia del valor de **inactive_time_to_show_scree_saver**. Si se establece en false, en la pantalla del dispositivo se mostrará el protector de pantalla según el valor establecido en **inactive_time_to_show_screen_saver**.   |
@@ -89,6 +89,9 @@ En la tabla siguiente se enumeran las claves de configuración disponibles de Ma
 | Contraseña para salir del modo de bloqueo de tareas | cadena |   | Escriba un código de 4-6 dígitos para salir temporalmente del modo de bloqueo de tareas para solucionar problemas. |
 | Mostrar configuración de Wi-Fi | bool | FALSE | Al establecer esta opción en `True` se permite al usuario final activar o desactivar la conexión Wi-Fi, o bien conectarse a otras redes Wi-Fi.  |
 | Mostrar la configuración de Bluetooth | bool | FALSE | Al establecer esta opción en `True` se permite al usuario final activar o desactivar Bluetooth, o bien conectarse a otros dispositivos compatibles con Bluetooth.   |
+| Las aplicaciones de la carpeta se ordenan por nombre. | bool | TRUE | Si selecciona `False`, los elementos de una carpeta aparecerán en el orden en que se hayan especificado. En caso contrario, aparecerán en la carpeta ordenados alfabéticamente.   |
+| Orden de la aplicación habilitada | bool | FALSE | Si selecciona `True`, podrá establecer el orden de las aplicaciones, los vínculos web y las carpetas en la aplicación Managed Home Screen. Una vez habilitada, establezca el orden con **app_order**. El usuario final activará o desactivará Bluetooth y se conectará a los distintos dispositivos compatibles con Bluetooth.   |
+| Orden de la aplicación | bundleArray | FALSE | Permite especificar el orden de las aplicaciones, los vínculos web y las carpetas en la aplicación Managed Home Screen. Para usar esta configuración, **Bloquear pantalla de inicio** debe estar habilitada, **Definir tamaño de la cuadrícula** deben estar definido y **Orden de la aplicación habilitada** debe establecerse en `True`.   |
 
 ## <a name="enter-json-data"></a>Especificar datos JSON
 
@@ -111,10 +114,6 @@ Este es un ejemplo de script JSON con todas las claves de configuración disponi
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -236,6 +235,87 @@ Este es un ejemplo de script JSON con todas las claves de configuración disponi
         {
             "key": "show_bluetooth_setting",
             "valueBool": false
+        },
+        {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "key": "managed_folders",

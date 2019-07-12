@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494053"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649019"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
-Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración para una aplicación para iOS o Android. Estos valores de configuración permiten que se personalice una aplicación. No asigne estas directivas de configuración directamente a usuarios o dispositivos. En su lugar, asocie la directiva de configuración a una aplicación y, después, asigne la aplicación. La configuración de directivas de configuración se usa cada vez que la aplicación comprueba dichas directivas, que suele ser la primera vez que se ejecuta.
+Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración para una aplicación para iOS o Android. Estos valores de configuración permiten personalizar una aplicación mediante el uso de un enfoque estándar del sector para la configuración y administración de aplicaciones. La configuración de directivas de configuración se usa cada vez que la aplicación comprueba dichas directivas, que suele ser la primera vez que se ejecuta.
 
 Puede asignar una directiva de configuración de aplicación a un grupo de usuarios y dispositivos mediante una combinación de asignaciones de inclusión y exclusión. Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones de la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplica la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**.
 
@@ -52,9 +52,11 @@ Tiene dos opciones sobre cómo usar las configuraciones de aplicación con Intun
 
 ## <a name="apps-that-support-app-configuration"></a>Aplicaciones que admiten la configuración de aplicaciones
 
-Puede usar las directivas de configuración de aplicaciones en las aplicaciones que lo admitan. Para admitir la configuración de aplicaciones en Intune, las aplicaciones deben haberse escrito con ese fin. Consulte con el proveedor de su aplicación para obtener más información.
+### <a name="managed-devices"></a>Dispositivos administrados
+Puede usar las directivas de configuración de aplicaciones en las aplicaciones que lo admitan. Para admitir la configuración de aplicaciones en Intune, las aplicaciones deben haberse escrito para este fin, tal como lo define la [Appconfig Community](https://www.appconfig.org/members). Consulte con el proveedor de su aplicación para obtener más información.
 
-Puede preparar las aplicaciones de línea de negocio incorporando Intune App SDK en la aplicación o encapsulando la aplicación después de que haberla desarrollado. El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de configuración de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md).
+### <a name="managed-apps"></a>Aplicaciones administradas
+Puede preparar las aplicaciones de línea de negocio incorporando Intune App SDK en la aplicación o encapsulando la aplicación después de que haberla desarrollado. El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de configuración de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Compatibilidad de Graph API para la configuración de aplicaciones
 

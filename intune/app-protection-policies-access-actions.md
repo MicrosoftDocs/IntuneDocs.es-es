@@ -1,7 +1,7 @@
 ---
-title: Borrar los datos mediante acciones de acceso de la directiva de protección de aplicaciones
+title: Borrado de los datos mediante acciones de inicio condicional de la directiva de protección de aplicaciones
 titleSuffix: Microsoft Intune
-description: Obtenga información sobre cómo borrar los datos de forma selectiva mediante acciones de acceso de directiva de protección de aplicaciones en Microsoft Intune.
+description: Obtenga información sobre cómo borrar los datos de forma selectiva mediante acciones de inicio condicional de directiva de protección de aplicaciones en Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804689"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558437"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Borrar los datos de forma selectiva mediante acciones de acceso de la directiva de protección de aplicaciones en Intune
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Borrado de los datos mediante acciones de inicio condicional de la directiva de protección de aplicaciones en Intune
 
 Con las directivas de protección de aplicaciones de Intune, puede configurar valores para impedir que los usuarios finales accedan a una aplicación o a una cuenta corporativas. Estos valores de configuración afectan a la reubicación de datos y a los requisitos de acceso establecidos por su organización, por ejemplo, para dispositivos con jailbreak aplicado y versiones mínimas de sistema operativo.
  
 Puede elegir explícitamente borrar los datos corporativos de su empresa desde el dispositivo del usuario final como una acción que se realizará mediante estos valores en caso de incumplimiento. En algunos valores, podrá configurar varias acciones, como bloquear el acceso y borrar los datos en función de diferentes valores especificados.
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>Crear una directiva de protección de aplicaciones mediante acciones de acceso
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Creación de una directiva de protección de aplicaciones mediante acciones de inicio condicional
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones**.
 4. Haga clic en **Agregar una directiva** (también puede editar una directiva existente). 
 5. Haga clic en **Configurar los valores obligatorios** para ver la lista de valores que se pueden configurar para la directiva. 
-6. Si se desplaza hacia abajo en el panel Configuración, verá una sección titulada **Acciones de acceso** con una tabla editable.
+6. Si se desplaza hacia abajo en el panel Configuración, verá una sección titulada **Inicio condicional** con una tabla editable.
 
     ![Captura de pantalla de las acciones de acceso de protección de aplicaciones de Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ La tabla de configuración de la directiva de protección de aplicaciones tiene 
 
 ### <a name="ios-policy-settings"></a>Configuración de directivas de iOS
 Para iOS, podrá configurar las acciones de las siguientes opciones desde el menú desplegable **Configuración**:
--  Intentos máximos de PIN
--  Período de gracia sin conexión
--  Dispositivos con jailbreak o liberados
--  Versión mínima de sistema operativo
--  Versión mínima de la aplicación
--  Versión mínima del SDK
--  Modelos de dispositivos
+- Intentos máximos de PIN
+- Período de gracia sin conexión
+- Dispositivos con jailbreak o liberados
+- Versión mínima de sistema operativo
+- Versión mínima de la aplicación
+- Versión mínima del SDK
+- Modelos de dispositivos
 
 Para usar el valor de configuración **Modelos de dispositivo**, indique una lista de identificadores de modelos de iOS separados por punto y coma. Puede encontrar un identificador de modelo de iOS en la columna Tipo de dispositivo en la [documentación de soporte técnico de HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Entrada de ejemplo: *iPhone5,2;iPhone5,3*
@@ -74,15 +74,15 @@ Cuando surgen conflictos entre dos directivas de protección para los valores co
 ### <a name="android-policy-settings"></a>Configuración de directivas de Android
 
 Para Android, podrá configurar las acciones de las siguientes opciones desde el menú desplegable **Configuración**:
--  Intentos máximos de PIN
--  Período de gracia sin conexión
--  Dispositivos con jailbreak o liberados
--  Versión mínima de sistema operativo
--  Versión mínima de la aplicación
--  Versión mínima del parche
--  Fabricantes de dispositivos
--  Atestación de dispositivo SafetyNet
--  Examen de amenazas en las aplicaciones
+- Intentos máximos de PIN
+- Período de gracia sin conexión
+- Dispositivos con jailbreak o liberados
+- Versión mínima de sistema operativo
+- Versión mínima de la aplicación
+- Versión mínima del parche
+- Fabricantes de dispositivos
+- Atestación de dispositivo SafetyNet
+- Examen de amenazas en las aplicaciones
 
 Para usar el valor de configuración **Fabricantes de dispositivos**, indique una lista de fabricantes de Android separados por punto y coma. Puede encontrar el fabricante de Android de un dispositivo en la configuración del dispositivo.<br>
 Entrada de ejemplo: *Fabricante A; Fabricante B* 
@@ -105,9 +105,9 @@ De forma predeterminada, la tabla tendrá filas rellenadas como valores configur
 Para llevar a cabo la configuración, seleccione una opción de la lista desplegable en la columna **Configuración**. Cuando la opción esté seleccionada, se habilitará el cuadro de texto editable en la columna **Valor** de la misma fila, si es necesario establecer un valor. Además, se habilitará la lista desplegable en la columna **Acción** con el conjunto de acciones de inicio condicional aplicables a la configuración. 
 
 En la siguiente lista aparece la lista de acciones más comunes:
--  **Bloquear el acceso**: impide que el usuario final acceda a la aplicación corporativa.
--  **Borrar datos**: borra los datos corporativos del dispositivo del usuario final.
--  **Advertir**: muestra un cuadro de diálogo al usuario final como mensaje de advertencia.
+- **Bloquear el acceso**: impide que el usuario final acceda a la aplicación corporativa.
+- **Borrar datos**: borra los datos corporativos del dispositivo del usuario final.
+- **Advertir**: muestra un cuadro de diálogo al usuario final como mensaje de advertencia.
 
 En algunos casos, como el valor **Versión mínima del sistema operativo**, puede configurar la opción para realizar todas las acciones aplicables en función de los diferentes números de versión. 
 

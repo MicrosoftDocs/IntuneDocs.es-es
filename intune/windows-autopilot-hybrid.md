@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494528"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649101"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot
 Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory (Azure AD) híbrido. Para ello, siga los pasos de este artículo.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Configure correctamente los [dispositivos unidos a Azure AD híbrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Asegúrese de [comprobar el registro del dispositivo]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) mediante el cmdlet Get-MsolDevice.
+Configure correctamente los [dispositivos unidos a Azure AD híbrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Asegúrese de [comprobar el registro del dispositivo](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) mediante el cmdlet Get-MsolDevice.
 
 Los dispositivos que se inscriban también deben:
 - Ejecutar la versión 1809 o superiores de Windows 10.
-- Tener acceso a Internet.
-- Tener acceso a Active Directory (actualmente no se admiten conexiones VPN).
-- Realizar la configuración rápida (OOBE).
+- Tener acceso a Internet [siguiendo los requisitos de red documentados de Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements).
+- Tener acceso a un controlador de dominio de Active Directory, por lo que debe estar conectado a la red de la organización (donde puede resolver los registros DNS para el dominio de AD y el controlador de dominio de AD, y comunicarse con el controlador de dominio para autenticar al usuario). La conexión VPN no se admite en este momento.
 - Ser capaces de hacer ping al controlador de dominio del dominio al que está intentando unirse.
+- Si utiliza el proxy, la opción de configuración del proxy WPAD debe estar activada y configurada.
+- Realizar la configuración rápida (OOBE).
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar la inscripción automática de Windows 10
 
@@ -139,7 +140,7 @@ Si tiene un proxy web en el entorno de red, asegúrese de que el conector de Int
 
 1. Si ha seleccionado **Dispositivos dinámicos** para el tipo de pertenencia, seleccione **Miembros del dispositivo dinámico** en el panel **Grupo** y, después, en el cuadro **Regla avanzada**, siga estos pasos:
     - Para crear un grupo que incluya todos los dispositivos Autopilot, escriba `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - El campo Etiqueta de grupo de Intune se asigna al atributo OrderID en los dispositivos de Azure AD. Si quiere crear un grupo que incluya todos los dispositivos Autopilot con una etiqueta de grupo específica (OrderID), escriba  `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`.
+    - El campo Etiqueta de grupo de Intune se asigna al atributo OrderID en los dispositivos de Azure AD. Si quiere crear un grupo que incluya todos los dispositivos Autopilot con una etiqueta de grupo específica (OrderID), debe escribir: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Para crear un grupo que incluya todos los dispositivos Autopilot con un identificador de pedido de compra específico, escriba `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. Seleccione **Guardar**.

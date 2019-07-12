@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044907"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548752"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Administrar versiones de sistemas operativos con Intune
 En las plataformas modernas de ordenadores y dispositivos móviles, podrá implementar rápidamente actualizaciones principales, revisiones y nuevas versiones. Tiene controles para administrar completamente las actualizaciones y revisiones en Windows, pero otras plataformas, como iOS y Android, requieren que los usuarios finales participen en el proceso.  Microsoft Intune tiene las capacidades para ayudarle a estructurar la administración de versiones del sistema operativo en diferentes plataformas.
@@ -77,7 +77,7 @@ Puede usar las capacidades de Intune que se describen en este artículo para imp
 - **Paso 1**: use las restricciones de lanzamiento para requerir la versión 2 del sistema operativo como versión mínima para inscribir el dispositivo. Esto garantiza que los dispositivos de los usuarios finales nuevos cumplan los requisitos a la hora de realizar la inscripción.
 - **Paso 2a**: use las directivas de protección de aplicaciones de Intune para advertir a los usuarios de que se requiere la versión 2 del sistema operativo cuando la aplicación se abra o reanude.
 - **Paso 2b**: use las directivas de cumplimiento de dispositivos para requerir la versión 2 del sistema operativo como versión mínima para que un dispositivo cumpla los requisitos. En los casos en que no se cumplan los requisitos, use **Acciones** para conceder un período de gracia de siete días y enviar una notificación por correo electrónico a los usuarios finales con la escala de tiempo y los requisitos.
-  -  En estas directivas se informará a los usuarios finales de que los dispositivos existentes deben actualizarse por correo electrónico, a través del Portal de empresa de Intune y, si la aplicación está abierta y tiene la función habilitada, con una directiva de protección de aplicaciones.
+  - En estas directivas se informará a los usuarios finales de que los dispositivos existentes deben actualizarse por correo electrónico, a través del Portal de empresa de Intune y, si la aplicación está abierta y tiene la función habilitada, con una directiva de protección de aplicaciones.
   - Puede ejecutar un informe de cumplimiento para identificar a los usuarios que no cumplan los requisitos. 
 - **Paso 3a**: use las directivas de protección de aplicaciones de Intune para bloquear a los usuarios que usen un dispositivo en el que no se esté ejecutando la versión 2 del sistema operativo cuando se abra o reanude una aplicación.
 - **Paso 3b**: use las directivas de cumplimiento de dispositivos para requerir la versión 2 del sistema operativo como versión mínima para que un dispositivo cumpla los requisitos.
