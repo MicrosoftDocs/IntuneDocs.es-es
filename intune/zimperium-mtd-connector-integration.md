@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3eb18c45f81e427f1d14ce77086e0d7684994e82
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572166"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884158"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar Zimperium con Intune
 
@@ -39,13 +39,13 @@ Antes de iniciar el proceso de integración de Zimperium con Intune, asegúrese 
 
 - Credenciales de administrador de Administrador global de Azure Active Directory para conceder los permisos siguientes:
 
-    - Iniciar sesión y leer el perfil del usuario
+  - Iniciar sesión y leer el perfil del usuario
 
-    - Obtener acceso al directorio con el usuario que tiene la sesión iniciada
+  - Obtener acceso al directorio con el usuario que tiene la sesión iniciada
 
-    - Leer datos de directorio
+  - Leer datos de directorio
 
-    - Enviar información del dispositivo a Intune
+  - Enviar información del dispositivo a Intune
 
 - Credenciales de administrador para obtener acceso a la consola MTD de Zimperium.
 

@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 1a5cd898545bae51395352d5cf1e7b1ee9bd22dd
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251173"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883243"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Agregar la configuración de Endpoint Protection en Intune
 
@@ -33,8 +33,8 @@ Con Intune, puede usar perfiles de configuración de dispositivos para administr
 Por ejemplo, puede crear un perfil de Endpoint Protection que solo permita a los usuarios de macOS instalar aplicaciones desde Mac App Store. O bien, que habilite Windows SmartScreen al ejecutar aplicaciones en dispositivos de Windows 10.
 
 Antes de crear un perfil, revise estos artículos que detallan la configuración de la protección de puntos de conexión que Intune puede administrar para cada plataforma compatible: 
-   - [Configuración de macOS](endpoint-protection-macos.md)
-   - [Configuración de Windows 10](endpoint-protection-windows-10.md)
+- [Configuración de macOS](endpoint-protection-macos.md)
+- [Configuración de Windows 10](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Crear un perfil de dispositivo que contenga la configuración de Endpoint Protection
 

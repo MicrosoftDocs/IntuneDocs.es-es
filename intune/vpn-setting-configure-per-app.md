@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373653"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884516"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configuración de la red privada virtual (VPN) por aplicación para dispositivos iOS en Intune
 
@@ -150,16 +150,16 @@ Una vez que la VPN por aplicación esté configurada y asociada a su aplicación
 
 ### <a name="before-you-attempt-to-connect"></a>Antes de probar la conexión
 
- - Asegúrese de implementar todas las directivas mencionadas anteriormente en el mismo grupo. En caso contrario, la experiencia de VPN por aplicación no funcionará.
- - Si usa la aplicación de VPN Pulse Secure o una aplicación de cliente VPN personalizada, puede elegir la tunelización de la capa de aplicaciones o de la capa de paquetes. Establezca el valor **ProviderType** en **app-proxy** para la tunelización de la capa de la aplicación o **packet-tunnel** para la tunelización de la capa de paquetes. Compruebe la documentación de su proveedor de VPN para asegurarse de que usa el valor correcto.
+- Asegúrese de implementar todas las directivas mencionadas anteriormente en el mismo grupo. En caso contrario, la experiencia de VPN por aplicación no funcionará.
+- Si usa la aplicación de VPN Pulse Secure o una aplicación de cliente VPN personalizada, puede elegir la tunelización de la capa de aplicaciones o de la capa de paquetes. Establezca el valor **ProviderType** en **app-proxy** para la tunelización de la capa de la aplicación o **packet-tunnel** para la tunelización de la capa de paquetes. Compruebe la documentación de su proveedor de VPN para asegurarse de que usa el valor correcto.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Conexión mediante la VPN por aplicación
 
 Conéctese sin seleccionar la VPN ni escribir las credenciales para comprobar la experiencia sin intervención por parte del usuario. Por "experiencia sin intervención por parte del usuario" se entiende lo siguiente:
 
- - El dispositivo no solicita que confíe en el servidor VPN. Es decir, el usuario no ve el cuadro de diálogo de **Dynamic Trust** (Confianza dinámica).
- - El usuario no tiene que escribir las credenciales.
- - El dispositivo del usuario está conectado a la VPN cuando el usuario abre una de las aplicaciones asociadas.
+- El dispositivo no solicita que confíe en el servidor VPN. Es decir, el usuario no ve el cuadro de diálogo de **Dynamic Trust** (Confianza dinámica).
+- El usuario no tiene que escribir las credenciales.
+- El dispositivo del usuario está conectado a la VPN cuando el usuario abre una de las aplicaciones asociadas.
 
 <!-- ## Troubleshooting the per-app VPN
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f2548e0ff3d4406f64d2091001c38056fe585896
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546707"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883531"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscripción de dispositivos en Intune mediante una cuenta de administrador de inscripción de dispositivos
 
@@ -32,13 +32,13 @@ Puede inscribir hasta 1000 dispositivos móviles con una sola cuenta de Azure Ac
 
 Los dispositivos y las cuentas de los usuarios de DEM inscritos con una cuenta de usuario de DEM tienen las siguientes limitaciones:
 
-  - Se debe asignar una cuenta de usuario DEM a una licencia de Intune.
-  - No se puede realizar el borrado desde el Portal de empresa. Se puede borrar un dispositivo inscrito por una cuenta de usuario de DEM desde Intune en Azure Portal.
-  - Solo el dispositivo local aparece en el sitio web o en la aplicación de Portal de empresa.
-  - Las cuentas de usuario de DEM no pueden usar aplicaciones del Programa de Compras por Volumen de Apple (VPP) con las licencias de usuario de Apple VPP debido a los requisitos de ID de Apple por usuario para la administración de aplicaciones.
-  - Los dispositivos pueden instalar aplicaciones de VPP si disponen de licencias de dispositivo de Apple VPP.
-  - Los dispositivos están bloqueados para el acceso condicional con la excepción de Windows 10 1803+.
-  - Todos los dispositivos inscritos con cuentas DEM deben tener la licencia correspondiente para que Intune los administre. La licencia puede ser una licencia de usuario de Intune o una licencia de dispositivo de Intune.
+- Se debe asignar una cuenta de usuario DEM a una licencia de Intune.
+- No se puede realizar el borrado desde el Portal de empresa. Se puede borrar un dispositivo inscrito por una cuenta de usuario de DEM desde Intune en Azure Portal.
+- Solo el dispositivo local aparece en el sitio web o en la aplicación de Portal de empresa.
+- Las cuentas de usuario de DEM no pueden usar aplicaciones del Programa de Compras por Volumen de Apple (VPP) con las licencias de usuario de Apple VPP debido a los requisitos de ID de Apple por usuario para la administración de aplicaciones.
+- Los dispositivos pueden instalar aplicaciones de VPP si disponen de licencias de dispositivo de Apple VPP.
+- Los dispositivos están bloqueados para el acceso condicional con la excepción de Windows 10 1803+.
+- Todos los dispositivos inscritos con cuentas DEM deben tener la licencia correspondiente para que Intune los administre. La licencia puede ser una licencia de usuario de Intune o una licencia de dispositivo de Intune.
 
 
 

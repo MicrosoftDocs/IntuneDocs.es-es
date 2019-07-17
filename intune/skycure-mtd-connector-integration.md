@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572435"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884434"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configuración de la integración de Symantec Endpoint Protection Mobile con Intune
 
@@ -44,7 +44,7 @@ SEP Mobile admite dos modos de integración con Intune:
 
 - **Integración de solo lectura (configuración básica):** solo se crea un inventario de dispositivos de Azure Active Directory y se rellenan en la consola de administración de Symantec Endpoint Protection Mobile.
 <br>
-    - Si las casillas **Report the health and risk of devices to Intune** (Notificar el estado y el riesgo de los dispositivos a Intune) y **Also report security incidents to Intune** (Notificar también los incidentes de seguridad a Intune) no están seleccionadas en la consola de administración de Symantec Endpoint Protection Mobile, la integración es de solo lectura y, por tanto, el estado de un dispositivo (conforme o no conforme) nunca cambia en Intune.
+  - Si las casillas **Report the health and risk of devices to Intune** (Notificar el estado y el riesgo de los dispositivos a Intune) y **Also report security incidents to Intune** (Notificar también los incidentes de seguridad a Intune) no están seleccionadas en la consola de administración de Symantec Endpoint Protection Mobile, la integración es de solo lectura y, por tanto, el estado de un dispositivo (conforme o no conforme) nunca cambia en Intune.
 <br></br>
 - **Integración completa:** permite que SEP Mobile notifique la información de riesgo e incidentes de seguridad de los dispositivos a Intune, lo que crea una comunicación bidireccional entre ambos servicios en la nube.
 

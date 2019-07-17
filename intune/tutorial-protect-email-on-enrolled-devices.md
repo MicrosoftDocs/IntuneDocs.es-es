@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a5a355c82455e135319b7683756eb0ef5c032876
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548042"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882361"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados
 Obtenga información sobre cómo usar las directivas de cumplimiento de dispositivos con acceso condicional para asegurarse de que los dispositivos iOS pueden acceder al correo electrónico de Exchange Online solo si se administran mediante Intune y con una aplicación de correo electrónico aprobada. 
@@ -35,10 +35,10 @@ En este tutorial, aprenderá a:
 Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de prueba gratuita](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
-  - Necesitará a un inquilino de prueba con las siguientes suscripciones para este tutorial:
-    - Azure Active Directory Premium ([evaluación gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Suscripción de Office 365 Empresa que incluya Exchange ([evaluación gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - Antes de comenzar, cree un perfil de dispositivo de prueba para dispositivos iOS siguiendo los pasos descritos en [Inicio rápido: Crear un perfil de dispositivo de correo para iOS](quickstart-email-profile.md).
+- Necesitará a un inquilino de prueba con las siguientes suscripciones para este tutorial:
+  - Azure Active Directory Premium ([evaluación gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Suscripción de Office 365 Empresa que incluya Exchange ([evaluación gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Antes de comenzar, cree un perfil de dispositivo de prueba para dispositivos iOS siguiendo los pasos descritos en [Inicio rápido: Crear un perfil de dispositivo de correo para iOS](quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 

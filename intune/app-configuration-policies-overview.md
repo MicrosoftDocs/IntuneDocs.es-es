@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649019"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885119"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
@@ -44,8 +44,8 @@ Las directivas de configuración de aplicaciones pueden ayudarle a eliminar los 
 Los valores de configuración se usan cada vez que la aplicación los busca. Normalmente, una aplicación busca opciones de configuración la primera vez que el usuario ejecuta la aplicación.
 
 Tiene dos opciones sobre cómo usar las configuraciones de aplicación con Intune:
- - **Dispositivos administrados**: el dispositivo se administra mediante Intune como el proveedor de administración de dispositivos móviles (MDM).
- - **Aplicaciones administradas**: una aplicación se administra sin la inscripción de dispositivos.
+- **Dispositivos administrados**: el dispositivo se administra mediante Intune como el proveedor de administración de dispositivos móviles (MDM).
+- **Aplicaciones administradas**: una aplicación se administra sin la inscripción de dispositivos.
 
 > [!NOTE]
 > Como administrador de Microsoft Intune, puede controlar qué cuentas de usuario se agregan a las aplicaciones de Microsoft Office en dispositivos administrados. Puede limitar el acceso solo a las cuentas de usuario de la organización permitidas y bloquear las cuentas personales en los dispositivos inscritos. Las aplicaciones auxiliares procesan la configuración de la aplicación y quitan y bloquean las cuentas no aprobadas.
@@ -66,9 +66,9 @@ Además, puede usar Graph API para realizar tareas de configuración de aplicaci
 
 ### <a name="managed-devices"></a>Dispositivos administrados
 
- - Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos iOS.  Consulte [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
- - Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos Android.  Vea [Agregar directivas de configuración de aplicaciones para dispositivos Android administrados](app-configuration-policies-use-android.md).
+- Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos iOS.  Consulte [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
+- Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos Android.  Vea [Agregar directivas de configuración de aplicaciones para dispositivos Android administrados](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Aplicaciones administradas
 
- - Obtenga información sobre cómo usar la configuración de aplicaciones con aplicaciones administradas. Consulte [Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos](app-configuration-policies-managed-app.md).
+- Obtenga información sobre cómo usar la configuración de aplicaciones con aplicaciones administradas. Consulte [Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos](app-configuration-policies-managed-app.md).

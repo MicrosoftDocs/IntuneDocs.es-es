@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316932"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883366"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Supervisar BitLocker y el cifrado del dispositivo  
 Intune ofrece un punto central desde el que poder identificar el estado de cifrado de los dispositivos Windows 10 y acceso a información importante de BitLocker desde los dispositivos, ya que se encuentra en Azure Active Directory (Azure AD).  
@@ -76,22 +76,22 @@ Este panel proporciona los siguientes detalles:
 
   Los siguientes son ejemplos de los detalles de estado que se pueden informar en Intune:  
 
-   - La directiva de BitLocker requiere el consentimiento del usuario para iniciar el Asistente para Cifrado de unidad BitLocker con el fin de iniciar el cifrado del volumen del sistema operativo, pero el usuario no ha dado su consentimiento.  
-   - El método de cifrado del volumen del sistema operativo no coincide con la directiva de BitLocker.  
-   - La directiva de BitLocker requiere protección con TPM para el volumen del sistema operativo, pero no se utiliza TPM.  
-   - La directiva de BitLocker requiere protección solo con TPM para el volumen del sistema operativo, pero no se utiliza protección con TPM.  
-   - La directiva de BitLocker requiere protección con TPM y PIN para el volumen del sistema operativo, pero no se utiliza protección con TPM y PIN.  
-   - La directiva de BitLocker requiere protección con TPM y PIN para el volumen del sistema operativo, pero no se usa protección con TPM y PIN.  
-   - La directiva de BitLocker requiere protección con TPM, PIN y clave de inicio para el volumen del sistema operativo, pero no se utiliza protección con TPM, PIN y clave de inicio.  
-   - El volumen del sistema operativo no está protegido.  
-   - Error de copia de seguridad de la clave de recuperación.  
-   - Una unidad de disco fija no está protegida.  
-   - El método de cifrado de la unidad de disco fija no coincide con la directiva de BitLocker.  
-   - Para cifrar unidades, la directiva de BitLocker requiere que el usuario inicie sesión como administrador, o bien, si el dispositivo está unido a Azure AD, debe establecerse la directiva AllowStandardUserEncryption en 1.  
-   - Entorno de recuperación de Windows (WinRE) no está configurado.  
-   - No hay un TPM disponible para BitLocker, bien porque no hay, porque se ha deshabilitado en el Registro o porque el sistema operativo está en una unidad extraíble.  
-   - El TPM no está listo para BitLocker.  
-   - La red no está disponible y es necesaria para la copia de seguridad de clave de recuperación.  
+  - La directiva de BitLocker requiere el consentimiento del usuario para iniciar el Asistente para Cifrado de unidad BitLocker con el fin de iniciar el cifrado del volumen del sistema operativo, pero el usuario no ha dado su consentimiento.  
+  - El método de cifrado del volumen del sistema operativo no coincide con la directiva de BitLocker.  
+  - La directiva de BitLocker requiere protección con TPM para el volumen del sistema operativo, pero no se utiliza TPM.  
+  - La directiva de BitLocker requiere protección solo con TPM para el volumen del sistema operativo, pero no se utiliza protección con TPM.  
+  - La directiva de BitLocker requiere protección con TPM y PIN para el volumen del sistema operativo, pero no se utiliza protección con TPM y PIN.  
+  - La directiva de BitLocker requiere protección con TPM y PIN para el volumen del sistema operativo, pero no se usa protección con TPM y PIN.  
+  - La directiva de BitLocker requiere protección con TPM, PIN y clave de inicio para el volumen del sistema operativo, pero no se utiliza protección con TPM, PIN y clave de inicio.  
+  - El volumen del sistema operativo no está protegido.  
+  - Error de copia de seguridad de la clave de recuperación.  
+  - Una unidad de disco fija no está protegida.  
+  - El método de cifrado de la unidad de disco fija no coincide con la directiva de BitLocker.  
+  - Para cifrar unidades, la directiva de BitLocker requiere que el usuario inicie sesión como administrador, o bien, si el dispositivo está unido a Azure AD, debe establecerse la directiva AllowStandardUserEncryption en 1.  
+  - Entorno de recuperación de Windows (WinRE) no está configurado.  
+  - No hay un TPM disponible para BitLocker, bien porque no hay, porque se ha deshabilitado en el Registro o porque el sistema operativo está en una unidad extraíble.  
+  - El TPM no está listo para BitLocker.  
+  - La red no está disponible y es necesaria para la copia de seguridad de clave de recuperación.  
 
 ## <a name="bitlocker-recovery-keys"></a>Claves de recuperación de BitLocker
 Intune proporciona acceso la hoja de Azure AD para BitLocker, para que pueda ver los identificadores de clave de BitLocker y las claves de recuperación para los dispositivos Windows 10, desde el portal de Intune.  Para que sea accesible, el dispositivo debe tener sus claves custodiadas en Azure AD. 

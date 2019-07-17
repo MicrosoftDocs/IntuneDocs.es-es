@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735447"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884043"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -37,9 +37,9 @@ Para usar la administración de aplicaciones Win32, asegúrese de cumplir los cr
 
 - Windows 10 versión 1607 o posteriores (versiones Enterprise, Pro y Education)
 - El cliente de Windows 10 debe: 
-    - Los dispositivos deben estar unidos a Azure AD y se deben inscribir automáticamente. La extensión de administración de Intune admite dispositivos inscritos unidos a Azure AD, unidos a dominios híbridos y de directiva de grupo. 
-    > [!NOTE]
-    > Para el escenario de inscripciones según la directiva de grupo: el usuario final usa la cuenta de usuario AAD local para unir su dispositivo Windows 10. El usuario debe iniciar sesión en el dispositivo con su cuenta de usuario AAD e inscribirse en Intune. Intune instalará la extensión de administración de Intune en el dispositivo si un script de PowerShell o una aplicación Win32 tiene como destino el usuario o dispositivo.
+  - Los dispositivos deben estar unidos a Azure AD y se deben inscribir automáticamente. La extensión de administración de Intune admite dispositivos inscritos unidos a Azure AD, unidos a dominios híbridos y de directiva de grupo. 
+  > [!NOTE]
+  > Para el escenario de inscripciones según la directiva de grupo: el usuario final usa la cuenta de usuario AAD local para unir su dispositivo Windows 10. El usuario debe iniciar sesión en el dispositivo con su cuenta de usuario AAD e inscribirse en Intune. Intune instalará la extensión de administración de Intune en el dispositivo si un script de PowerShell o una aplicación Win32 tiene como destino el usuario o dispositivo.
 - El tamaño de la aplicación Windows está limitado a 8 GB por aplicación.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar el contenido de la aplicación Win32 para la carga

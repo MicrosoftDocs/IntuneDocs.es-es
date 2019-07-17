@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040515"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882222"
 ---
 # <a name="intune-tenant-status-page"></a>Página Estado del inquilino de Intune
 La página de estado del inquilino es un centro donde puede ver detalles importantes y actuales sobre el inquilino. Entre estos detalles se incluyen la disponibilidad y el uso de la licencia, el estado del conector y comunicaciones importantes sobre el servicio Intune.  
@@ -48,14 +48,14 @@ Si hay más de un conector de cualquier tipo, el estado es un resumen de todos e
 
 **Estado del conector**:
 - **Incorrecto**:
-    - El certificado o la credencial ha expirado
-    - La última sincronización fue hace tres o más días
+  - El certificado o la credencial ha expirado
+  - La última sincronización fue hace tres o más días
 - **Advertencia**:
-    - El certificado o la credencial expira en siete días
-    - La última sincronización fue hace más de un día
+  - El certificado o la credencial expira en siete días
+  - La última sincronización fue hace más de un día
 - **Correcto**:
-    - El certificado o la credencial no expira en los próximos siete días
-    - La última sincronización fue hace menos de un día  
+  - El certificado o la credencial no expira en los próximos siete días
+  - La última sincronización fue hace menos de un día  
 
 Cuando se selecciona un conector de la lista, el portal presenta la página del portal que es relevante para crear o configurar ese conector.  Por ejemplo, si selecciona el conector **Fecha de caducidad de VPP**, se abre la página **Tokens del programa de compras por volumen de iOS**, donde puede ver más detalles sobre ese conector. Luego puede crear una nueva configuración o editar y solucionar problemas con una ya existente.  
 

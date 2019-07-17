@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407174"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885078"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>¿Qué es la integración de Mobile Threat Defense con Intune?
 Intune puede integrar datos de un proveedor de Mobile Threat Defense como un origen de información para directivas de cumplimiento y reglas de acceso condicional. Puede usar esta información para proteger mejor los recursos corporativos, como Exchange y SharePoint, bloqueando el acceso de dispositivos móviles en peligro.  
@@ -47,14 +47,14 @@ Este servicio es de suscripción, y no se comparte información de inventario de
 **Inventario de aplicaciones**  
 Si activa la sincronización de aplicaciones para dispositivos iOS, los inventarios de los dispositivos iOS, tanto de empresa como personales, se envían al proveedor de servicios MTD. El inventario de aplicaciones incluye los datos siguientes:
 
- - Identificador de la aplicación
- - Versión de la aplicación
- - Nombre corto de la versión
- - Nombre de la aplicación
- - Tamaño del lote de aplicaciones
- - Tamaño dinámico de la aplicación
- - Independientemente de si la aplicación está validada o no
- - Independientemente de si la aplicación está administrada o no
+- Identificador de la aplicación
+- Versión de la aplicación
+- Nombre corto de la versión
+- Nombre de la aplicación
+- Tamaño del lote de aplicaciones
+- Tamaño dinámico de la aplicación
+- Independientemente de si la aplicación está validada o no
+- Independientemente de si la aplicación está administrada o no
 
 ## <a name="sample-scenarios"></a>Escenarios de ejemplo
 

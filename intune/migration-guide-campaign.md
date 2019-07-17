@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549426"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882863"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Campaña de migración
 
@@ -43,19 +43,19 @@ Estas son las claves para llevar a cabo una migración correcta de un proveedor 
 
 - Supervise la carga del departamento de soporte técnico y el éxito de la inscripción de cada ciclo. Deje un margen de tiempo en la programación para asegurarse de que los criterios de éxito se pueden evaluar para cada grupo antes de migrar el siguiente. La implementación piloto debe validar lo siguiente:
 
-    - Las tasas de éxito y error de inscripción se encuentran dentro de las expectativas.
+  - Las tasas de éxito y error de inscripción se encuentran dentro de las expectativas.
 
-    - Productividad del usuario:
+  - Productividad del usuario:
 
-        - Los recursos corporativos, como VPN, Wi-Fi, correo electrónico y certificados, funcionan.
+    - Los recursos corporativos, como VPN, Wi-Fi, correo electrónico y certificados, funcionan.
 
-        - Se puede obtener acceso a las aplicaciones aprovisionadas.
+    - Se puede obtener acceso a las aplicaciones aprovisionadas.
 
-    - Seguridad de los datos:
+  - Seguridad de los datos:
 
-        - Se generan informes de cumplimiento.
+    - Se generan informes de cumplimiento.
 
-        - Se aplican protecciones de aplicaciones móviles.
+    - Se aplican protecciones de aplicaciones móviles.
 
 Cuando esté satisfecho con la primera fase de las migraciones, repita el [ciclo de migración](migration-guide-cycle.md) para la siguiente fase.
 

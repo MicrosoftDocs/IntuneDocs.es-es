@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528686"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884511"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados
 
@@ -32,10 +32,10 @@ Obtenga información sobre el uso de directivas de protección de aplicaciones c
 > * Cree directivas de acceso condicional de Azure Active Directory (Azure AD) que permitan solo a la aplicación Outlook acceder al correo electrónico de la empresa en Exchange Online. También necesita la autenticación multifactor (MFA) para los clientes de autenticación moderna, como Outlook para iOS y Android.
 
 ## <a name="prerequisites"></a>Requisitos previos
-  - Necesitará a un inquilino de prueba con las siguientes suscripciones para este tutorial:
-    - Azure Active Directory Premium ([evaluación gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Suscripción a Intune ([evaluación gratuita](free-trial-sign-up.md))
-    - Suscripción de Office 365 Empresa que incluya Exchange ([evaluación gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Necesitará a un inquilino de prueba con las siguientes suscripciones para este tutorial:
+  - Azure Active Directory Premium ([evaluación gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Suscripción a Intune ([evaluación gratuita](free-trial-sign-up.md))
+  - Suscripción de Office 365 Empresa que incluya Exchange ([evaluación gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 

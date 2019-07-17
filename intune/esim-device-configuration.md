@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402728"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883268"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfiles de telefonía móvil eSIM en Intune: versión preliminar pública
 
@@ -160,12 +160,12 @@ Puede supervisar y ver una lista detallada de dispositivos que puede ver en Esta
 1. Seleccione **Configuración del dispositivo** > **Perfiles de telefonía móvil eSIM** > seleccione una suscripción existente.
 2. Seleccione **Estado del dispositivo**. Intune muestra detalles adicionales sobre el dispositivo:
 
-  - **Nombre del dispositivo**: nombre del dispositivo de destino.
-  - **Usuario**: usuario del dispositivo inscrito.
-  - **ICCID**: código único proporcionado por el operador de telefonía móvil dentro del código de activación instalado en el dispositivo.
-  - **Estado de activación**: estado de entrega e instalación de Intune del código de activación en el dispositivo.
-  - **Estado de la red de telefonía móvil**: estado proporcionado por el operador de telefonía móvil. Realice el seguimiento con el operador de telefonía móvil para solucionar problemas.
-  - **Última inserción en el repositorio**: fecha de la última comunicación del dispositivo con Intune.
+    - **Nombre del dispositivo**: nombre del dispositivo de destino.
+    - **Usuario**: usuario del dispositivo inscrito.
+    - **ICCID**: código único proporcionado por el operador de telefonía móvil dentro del código de activación instalado en el dispositivo.
+    - **Estado de activación**: estado de entrega e instalación de Intune del código de activación en el dispositivo.
+    - **Estado de la red de telefonía móvil**: estado proporcionado por el operador de telefonía móvil. Realice el seguimiento con el operador de telefonía móvil para solucionar problemas.
+    - **Última inserción en el repositorio**: fecha de la última comunicación del dispositivo con Intune.
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Supervisar los detalles del perfil de eSIM en el dispositivo
 

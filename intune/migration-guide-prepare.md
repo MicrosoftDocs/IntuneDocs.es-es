@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548358"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882837"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: preparación de Microsoft Intune para la administración de dispositivos móviles (MDM)
 
@@ -51,8 +51,8 @@ Antes de profundizar en los detalles de configuración de Intune, revisemos los 
 
 - ¿Qué términos de uso necesita?
 
-    - Asegúrese de involucrar en esto al departamento legal desde el principio.
-    - ¿Qué localización se requiere?
+  - Asegúrese de involucrar en esto al departamento legal desde el principio.
+  - ¿Qué localización se requiere?
 
 - ¿Están los usuarios familiarizados con la tecnología y el entorno de TI en general?
 
@@ -63,8 +63,8 @@ Antes de profundizar en los detalles de configuración de Intune, revisemos los 
 - ¿Cuál es la longitud del código PIN o código de acceso de su dispositivo actual?
 
 - ¿Tiene que deshabilitar características del dispositivo o restringir determinados comportamientos del dispositivo? Puede controlar diversas opciones de configuración específicas de la plataforma con perfiles de configuración de dispositivo; por ejemplo:
-    - Deshabilitar la cámara
-    - Bloquear en modo de aplicación sencilla.<br/>
+  - Deshabilitar la cámara
+  - Bloquear en modo de aplicación sencilla.<br/>
 
 - ¿Qué tipos de autenticación debe admitir? Si necesita una autenticación basada en certificados, ¿qué tipos de certificados se deben aprovisionar?
   - Intune puede aprovisionar certificados con perfiles de acceso a recursos en dispositivos inscritos.

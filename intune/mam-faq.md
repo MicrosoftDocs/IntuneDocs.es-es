@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54511e29bd44b862a5ad06bdfda2067ed7248677
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 2d4cf000d395bb278b3207fc7a4327d3307abbe4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494279"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883004"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -123,9 +123,9 @@ El número de identificación personal (PIN) es un código de acceso que se util
 
 - **¿Con qué frecuencia se pedirá al usuario que escriba el PIN de Intune?**<br></br> El administrador de TI puede definir la opción de configuración de directivas de protección de aplicaciones de Intune "Volver a comprobar los requisitos de acceso tras (minutos)" en la consola de administración de Intune. Esta opción permite especificar el período de tiempo antes de comprobar los requisitos de acceso en el dispositivo. El PIN de la aplicación se vuelve a mostrar. Sin embargo, los detalles importantes sobre el PIN que afectan a la frecuencia con la que se solicitará al usuario son los siguientes: 
 
-    - **El PIN se comparte entre las aplicaciones del mismo publicador para mejorar la capacidad de uso:** En iOS, un PIN de aplicación se comparte entre todas las aplicaciones **del mismo publicador de aplicaciones**. En el caso de Android, este es compartido entre todas las aplicaciones.
-    - **El comportamiento "Volver a comprobar los requisitos de acceso después de (minutos)" tras un reinicio del dispositivo:** Un "temporizador de PIN" realiza un seguimiento del número de minutos de inactividad que determinan cuándo se debe mostrar el siguiente el PIN de la aplicación de Intune. En iOS, el temporizador de PIN no se ve afectado por el reinicio del dispositivo. Por lo tanto, reiniciar el dispositivo no tiene ningún efecto en el número de minutos que el usuario ha estado inactivo desde una aplicación de iOS con la directiva de PIN de Intune. En Android, el temporizador de PIN se restablece con el reinicio del dispositivo. Por lo tanto, las aplicaciones de Android con una directiva de PIN de Intune probablemente soliciten un PIN de aplicación, independientemente del valor de configuración "Volver a comprobar los requisitos de acceso después de (minutos)" **tras un reinicio del dispositivo**.  
-    - **La naturaleza gradual del temporizador asociado al PIN:** al escribir el PIN para acceder a una aplicación (aplicación A), cuando esta deja de estar en segundo plano (foco de entrada principal) en el dispositivo, se restablece el temporizador del PIN. En el caso de cualquier otra aplicación (aplicación B) que use el mismo PIN, no se solicitará al usuario que lo vuelva a escribir, ya que el temporizador se habrá restablecido. La solicitud se volverá a mostrar una vez que se haya alcanzado el valor establecido en "Volver a comprobar los requisitos de acceso tras (minutos)".
+  - **El PIN se comparte entre las aplicaciones del mismo publicador para mejorar la capacidad de uso:** En iOS, un PIN de aplicación se comparte entre todas las aplicaciones **del mismo publicador de aplicaciones**. En el caso de Android, este es compartido entre todas las aplicaciones.
+  - **El comportamiento "Volver a comprobar los requisitos de acceso después de (minutos)" tras un reinicio del dispositivo:** Un "temporizador de PIN" realiza un seguimiento del número de minutos de inactividad que determinan cuándo se debe mostrar el siguiente el PIN de la aplicación de Intune. En iOS, el temporizador de PIN no se ve afectado por el reinicio del dispositivo. Por lo tanto, reiniciar el dispositivo no tiene ningún efecto en el número de minutos que el usuario ha estado inactivo desde una aplicación de iOS con la directiva de PIN de Intune. En Android, el temporizador de PIN se restablece con el reinicio del dispositivo. Por lo tanto, las aplicaciones de Android con una directiva de PIN de Intune probablemente soliciten un PIN de aplicación, independientemente del valor de configuración "Volver a comprobar los requisitos de acceso después de (minutos)" **tras un reinicio del dispositivo**.  
+  - **La naturaleza gradual del temporizador asociado al PIN:** al escribir el PIN para acceder a una aplicación (aplicación A), cuando esta deja de estar en segundo plano (foco de entrada principal) en el dispositivo, se restablece el temporizador del PIN. En el caso de cualquier otra aplicación (aplicación B) que use el mismo PIN, no se solicitará al usuario que lo vuelva a escribir, ya que el temporizador se habrá restablecido. La solicitud se volverá a mostrar una vez que se haya alcanzado el valor establecido en "Volver a comprobar los requisitos de acceso tras (minutos)".
 
 Para los dispositivos iOS, incluso si el PIN se comparte entre aplicaciones de diferentes publicadores, se mostrará nuevamente el símbolo del sistema cuando se vuelva a alcanzar el valor **Volver a comprobar los requisitos de acceso después de (minutos)** de la aplicación que no es el foco de entrada principal. Por tanto, por ejemplo, un usuario tiene la aplicación _A_ del publicador _X_ y la aplicación _B_ del publicador _Y_, y esas dos aplicaciones comparten el mismo PIN. El usuario se centra en la aplicación _A_ (en primer plano) y la aplicación _B_ está minimizada. Después de que se alcance el valor **Volver a comprobar los requisitos de acceso después de (minutos)** y el usuario cambie a la aplicación _B_, se requeriría el PIN.
 

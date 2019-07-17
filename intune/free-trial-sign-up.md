@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ec03471e4ff3940f09fe4a9bef53b86e32bafa8
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 8c640eb7ffccf3b522c1f9049b97eff499b346ff
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713338"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883228"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Inicio rápido: Prueba gratuita de Microsoft Intune 
 
@@ -33,8 +33,8 @@ Intune proporciona administración de dispositivos móviles (MDM) y administraci
 ## <a name="prerequisites"></a>Requisitos previos
 Antes de configurar Microsoft Intune, revise los siguientes requisitos:
 
-   - [Exploradores y sistemas operativos compatibles](supported-devices-browsers.md) 
-   - [Ancho de banda y requisitos de configuración de red de Intune](network-bandwidth-use.md)
+- [Exploradores y sistemas operativos compatibles](supported-devices-browsers.md) 
+- [Ancho de banda y requisitos de configuración de red de Intune](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Suscríbase para disfrutar de una prueba gratuita de Microsoft Intune
 
