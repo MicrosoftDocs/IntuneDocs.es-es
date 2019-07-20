@@ -1,16 +1,14 @@
 ---
-ms.openlocfilehash: 472a1e5192b9054c9d89a7d4240750824a3a8b0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499239"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882002"
 ---
-
-
 ### <a name="apple"></a>Apple
-  - Apple iOS 9.0 y versiones posteriores
-  - Mac OS X 10.9 y versiones posteriores
+- Apple iOS 9.0 y versiones posteriores
+- Mac OS X 10.9 y versiones posteriores
 
 ### <a name="windows"></a>Windows
 - Equipos con Windows 10 (versiones Home, Pro, Education y Enterprise)

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546594"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883940"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Quitar un dispositivo iOS de Intune
 
@@ -44,25 +44,25 @@ Para quitar el dispositivo de Intune, siga estos pasos o vea este vídeo:
     |![Captura de la pantalla Dispositivos de la aplicación Portal de empresa en la que se muestran las opciones disponibles después de que el usuario haya hecho clic en el botón Quitar dispositivo. Muestra el botón "Quitar" resaltado en rojo y los botones "Más información" y "Cancelar" resaltados en azul.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
 
-  Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:
+    Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:
 
-  - El dispositivo deja de aparecer en el portal de empresa.
+    - El dispositivo deja de aparecer en el portal de empresa.
 
-  - No se podrán instalar aplicaciones desde el Portal de empresa.
+    - No se podrán instalar aplicaciones desde el Portal de empresa.
 
-  - Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, la opción para deshabilitar la cámara o exigir una determinada longitud de contraseña.
+    - Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, la opción para deshabilitar la cámara o exigir una determinada longitud de contraseña.
 
-  - Es posible que deje de tener acceso en su dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
+    - Es posible que deje de tener acceso en su dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
 
-  - No se podrán utilizar las aplicaciones y los datos de la empresa.
+    - No se podrán utilizar las aplicaciones y los datos de la empresa.
 
-  - No se podrá conectar a la red de su empresa mediante Wi-Fi o una red privada virtual (VPN).
+    - No se podrá conectar a la red de su empresa mediante Wi-Fi o una red privada virtual (VPN).
 
-  - Los perfiles de correo electrónico de empresa se quitan del dispositivo.
+    - Los perfiles de correo electrónico de empresa se quitan del dispositivo.
 
-  - Los dispositivos que están configurados para el correo electrónico no aparecerán en el sitio web o en la aplicación Portal de empresa.
-  
-  - Las aplicaciones se desinstalarán. Se quitarán los datos de la aplicación de empresa.
+    - Los dispositivos que están configurados para el correo electrónico no aparecerán en el sitio web o en la aplicación Portal de empresa.
+
+    - Las aplicaciones se desinstalarán. Se quitarán los datos de la aplicación de empresa.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Eliminación de datos recopilados por la aplicación Portal de empresa
 

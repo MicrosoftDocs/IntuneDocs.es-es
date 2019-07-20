@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548653"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353883"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea administrar actualizaciones para equipos Windows inscriben como dispositivos móviles, consulte [administrar actualizaciones de software en Intune](windows-update-for-business-configure.md).
+> La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea administrar las actualizaciones de equipos Windows inscritos como dispositivos móviles, consulte [Administración de actualizaciones de software en Intune](windows-update-for-business-configure.md).
 
 Microsoft Intune le ayuda a proteger los equipos administrados de varias formas. Por ejemplo, Intune puede administrar e instalar rápidamente las actualizaciones de software que mantienen los equipos actualizados con las últimas revisiones y mejoras de software.
 
@@ -260,5 +260,5 @@ Al seleccionar una actualización de la lista estarán disponibles otros comando
 6. Puede comprobar los mensajes recordatorios acerca de la actualización en el panel de detalles de la parte inferior de la página **Todas las actualizaciones** .
 
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

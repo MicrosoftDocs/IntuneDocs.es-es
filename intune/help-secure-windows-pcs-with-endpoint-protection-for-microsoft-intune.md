@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61e0a7fa4fa63e17a1fa4165042d9e82a2ffacc2
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548780"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354092"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
 
@@ -145,8 +145,8 @@ La opción **Extensiones de archivos que se excluirán al ejecutar un examen o a
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>Especificar la configuración de Microsoft Active Protection Service
 Microsoft Active Protection Service es una comunidad en línea que ayuda a decidir cómo responder a amenazas potenciales. La comunidad también ayuda a detener la propagación de nuevas infecciones de malware. Para **Unirse a Microsoft Active Protection Service**, seleccione **Sí** y, después, especifique el **Nivel de pertenencia**:
-  - **Básica**: envía a Microsoft información básica sobre el malware detectado. Esta información incluye de dónde procede el software, las acciones que el usuario aplica o que Endpoint Protection aplica automáticamente y si las acciones obtuvieron resultados satisfactorios.
-  - **Avanzada**: envía más información a Microsoft acerca de malware, spyware y software potencialmente no deseado. Esto incluye información sobre la ubicación del software, los nombres de archivo, cómo funciona el software y cómo ha afectado al equipo.
+- **Básica**: envía a Microsoft información básica sobre el malware detectado. Esta información incluye de dónde procede el software, las acciones que el usuario aplica o que Endpoint Protection aplica automáticamente y si las acciones obtuvieron resultados satisfactorios.
+- **Avanzada**: envía más información a Microsoft acerca de malware, spyware y software potencialmente no deseado. Esto incluye información sobre la ubicación del software, los nombres de archivo, cómo funciona el software y cómo ha afectado al equipo.
 
 También puede **Recibir definiciones dinámicas en función de los informes de Microsoft Active Protection Service**.
 
@@ -197,5 +197,5 @@ Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint 
 ## <a name="need-more-help"></a>¿Necesita más ayuda?
 Para obtener más ayuda y soporte técnico, vea [Solucionar problemas de Endpoint Protection en Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b655dc64958350623ea62caf848043f6baf3787c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548900"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883305"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Cómo usar Azure AD para acceder a las API de Intune en Microsoft Graph
 
@@ -30,13 +30,13 @@ El acceso a las API de Intune en Microsoft Graph requieren lo siguiente:
 
 - Un identificador de la aplicación con:
 
-    - Permiso para llamar a Azure AD y a las API de Microsoft Graph.
-    - Ámbitos de permiso pertinentes a tareas de aplicación específicas.
+  - Permiso para llamar a Azure AD y a las API de Microsoft Graph.
+  - Ámbitos de permiso pertinentes a tareas de aplicación específicas.
 
 - Credenciales de usuario con:
 
-    - Permiso para acceder al inquilino de Azure AD asociado a la aplicación.
-    - Permisos de rol necesarios para admitir los ámbitos de permiso de aplicación.
+  - Permiso para acceder al inquilino de Azure AD asociado a la aplicación.
+  - Permisos de rol necesarios para admitir los ámbitos de permiso de aplicación.
 
 - Usuario final al que se concede permiso a la aplicación para realizar tareas de aplicaciones para su inquilino de Azure.
 
@@ -164,10 +164,10 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 - Configuración **Habilitar acceso**: __Leer en aplicaciones de Microsoft Intune__
 
 - Permite el acceso de lectura a las siguientes propiedades de entidades y estado:
-    - Aplicaciones de cliente
-    - Categorías de aplicaciones móviles
-    - Directivas de protección de aplicaciones
-    - Configuraciones de aplicaciones
+  - Aplicaciones de cliente
+  - Categorías de aplicaciones móviles
+  - Directivas de protección de aplicaciones
+  - Configuraciones de aplicaciones
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
@@ -177,19 +177,19 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 
 - También permite cambios en las siguientes entidades:
 
-    - Aplicaciones de cliente
-    - Categorías de aplicaciones móviles
-    - Directivas de protección de aplicaciones
-    - Configuraciones de aplicaciones
+  - Aplicaciones de cliente
+  - Categorías de aplicaciones móviles
+  - Directivas de protección de aplicaciones
+  - Configuraciones de aplicaciones
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
 - Configuración **Habilitar acceso**: __Leer en la configuración de dispositivos y directivas de Microsoft Intune__
 
 - Permite el acceso de lectura a las siguientes propiedades de entidades y estado:
-    - Configuración de dispositivos
-    - Directiva de cumplimiento de dispositivos
-    - Mensajes de notificación
+  - Configuración de dispositivos
+  - Directiva de cumplimiento de dispositivos
+  - Mensajes de notificación
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
@@ -198,34 +198,34 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 - Permite las mismas operaciones que __DeviceManagementConfiguration.Read.All__.
 
 - Las aplicaciones también pueden crear, asignar, eliminar y cambiar las siguientes entidades:
-    - Configuración de dispositivos
-    - Directiva de cumplimiento de dispositivos
-    - Mensajes de notificación
+  - Configuración de dispositivos
+  - Directiva de cumplimiento de dispositivos
+  - Mensajes de notificación
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - Configuración **Habilitar acceso**: __Realizar acciones remotas que influyen en el usuario en dispositivos de Microsoft Intune__
 
 - Permite las acciones remotas siguientes en un dispositivo administrado:
-    - Retirar
-    - Eliminación de datos
-    - Restablecimiento y recuperación de código de acceso
-    - Bloqueo remoto
-    - Habilitar o deshabilitar el modo de pérdida
-    - Limpiar PC
-    - Reiniciar
-    - Eliminar usuario de dispositivo compartido
+  - Retirar
+  - Eliminación de datos
+  - Restablecimiento y recuperación de código de acceso
+  - Bloqueo remoto
+  - Habilitar o deshabilitar el modo de pérdida
+  - Limpiar PC
+  - Reiniciar
+  - Eliminar usuario de dispositivo compartido
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - Configuración **Habilitar acceso**: __Leer en dispositivos de Microsoft Intune__
 
 - Permite el acceso de lectura a las siguientes propiedades de entidades y estado:
-    - Dispositivo administrado
-    - Categoría de dispositivo
-    - Aplicación detectada
-    - Acciones remotas
-    - Información de malware
+  - Dispositivo administrado
+  - Categoría de dispositivo
+  - Aplicación detectada
+  - Acciones remotas
+  - Información de malware
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
@@ -234,22 +234,22 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 - Permite las mismas operaciones que __DeviceManagementManagedDevices.Read.All__.
 
 - Las aplicaciones también pueden crear, eliminar y cambiar las siguientes entidades:
-    - Dispositivo administrado
-    - Categoría de dispositivo
+  - Dispositivo administrado
+  - Categoría de dispositivo
 
 - También se admiten las siguientes acciones remotas:
-    - Buscar dispositivo
-    - Omitir el bloqueo de activación
-    - Solicitar asistencia remota
+  - Buscar dispositivo
+  - Omitir el bloqueo de activación
+  - Solicitar asistencia remota
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
 - Configuración **Habilitar acceso**: __Leer en la configuración RBAC de Microsoft Intune__
 
 - Permite el acceso de lectura a las siguientes propiedades de entidades y estado:
-    - Asignaciones de roles
-    - Definiciones de roles
-    - Operaciones de recursos
+  - Asignaciones de roles
+  - Definiciones de roles
+  - Operaciones de recursos
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
@@ -258,24 +258,24 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 - Permite las mismas operaciones que __DeviceManagementRBAC.Read.All__.
 
 - Las aplicaciones también pueden crear, asignar, eliminar y cambiar las siguientes entidades:
-    - Asignaciones de roles
-    - Definiciones de roles
+  - Asignaciones de roles
+  - Definiciones de roles
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - Configuración **Habilitar acceso**: __Leer en la configuración de Microsoft Intune__
 
 - Permite el acceso de lectura a las siguientes propiedades de entidades y estado:
-    - Inscripción de dispositivos
-    - Certificado de notificaciones push de Apple
-    - Programa de inscripción de dispositivos de Apple
-    - Programa de Compras por Volumen de Apple
-    - Exchange Connector
-    - Términos y condiciones
-    - Administración de gastos de telecomunicaciones
-    - PKI de nube
-    - Personalización de marca
-    - Mobile Threat Defense
+  - Inscripción de dispositivos
+  - Certificado de notificaciones push de Apple
+  - Programa de inscripción de dispositivos de Apple
+  - Programa de Compras por Volumen de Apple
+  - Exchange Connector
+  - Términos y condiciones
+  - Administración de gastos de telecomunicaciones
+  - PKI de nube
+  - Personalización de marca
+  - Mobile Threat Defense
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -284,16 +284,16 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 - Permite las mismas operaciones que DeviceManagementServiceConfig.Read.All_
 
 - Las aplicaciones también pueden configurar las características de Intune siguientes:
-    - Inscripción de dispositivos
-    - Certificado de notificaciones push de Apple
-    - Programa de inscripción de dispositivos de Apple
-    - Programa de Compras por Volumen de Apple
-    - Exchange Connector
-    - Términos y condiciones
-    - Administración de gastos de telecomunicaciones
-    - PKI de nube
-    - Personalización de marca
-    - Mobile Threat Defense
+  - Inscripción de dispositivos
+  - Certificado de notificaciones push de Apple
+  - Programa de inscripción de dispositivos de Apple
+  - Programa de Compras por Volumen de Apple
+  - Exchange Connector
+  - Términos y condiciones
+  - Administración de gastos de telecomunicaciones
+  - PKI de nube
+  - Personalización de marca
+  - Mobile Threat Defense
 
 ## <a name="azure-ad-authentication-examples"></a>Ejemplos de autenticación de Azure AD
 

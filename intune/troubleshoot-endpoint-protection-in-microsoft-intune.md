@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402643"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353343"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemas de Endpoint Protection y posibles soluciones en Microsoft Intune
 
@@ -34,7 +34,7 @@ Revise los registros de eventos y los códigos de error para [solucionar problem
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>Errores comunes de Intune y posibles resoluciones
 
-#### <a name="endpoint-protection-engine-unavailable"></a>Motor de Endpoint Protection no disponible
+### <a name="endpoint-protection-engine-unavailable"></a>Motor de Endpoint Protection no disponible
 
 **Causa posible**: el motor de Intune Endpoint Protection se dañó o eliminó.
 
@@ -45,7 +45,7 @@ Revise los registros de eventos y los códigos de error para [solucionar problem
 - En Panel de control > Programas, seleccione **Agente de Microsoft Intune Endpoint Protection**. Desinstale la aplicación.
 - Durante la próxima sincronización de actualización, el Administrador de actualizaciones de Microsoft Online Management detectará el programa que falta y lo reinstalará a la hora de instalación programada.
 
-#### <a name="features-are-disabled"></a>Las características están deshabilitadas
+### <a name="features-are-disabled"></a>Las características están deshabilitadas
 
 Puede que vea un mensaje que indique que algunas características están deshabilitadas. Estos mensajes pueden ocurrir si un administrador deshabilitó Intune Endpoint Protection o Windows Defender con un perfil de configuración. O bien, si un usuario final los deshabilitó en el dispositivo. Mensajes posibles:
 
@@ -63,19 +63,19 @@ Puede que vea un mensaje que indique que algunas características están deshabi
 - [Antivirus de Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus)
 - [End users: Turn on real-time protection to access company resources](/intune-user-help/turn-on-defender-windows) (Usuarios finales: activación de la protección en tiempo real para acceder a los recursos de la empresa)
 
-#### <a name="malware-definitions-out-of-date"></a>Definiciones de malware desactualizadas
+### <a name="malware-definitions-out-of-date"></a>Definiciones de malware desactualizadas
 
 Este estado aparece cuando las definiciones de malware del dispositivo no se han actualizado como mínimo desde hace 14 días. Por ejemplo, el mensaje puede mostrar si el dispositivo está desconectado de Internet o si las definiciones de malware no están actualizadas.
 
 **Soluciones posibles**: si las definiciones de malware no están actualizadas, use el [antivirus de Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) para actualizarlas.
 
-#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Examen completo vencido o examen rápido vencido
+### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Examen completo vencido o examen rápido vencido
 
 No se ha realizado un examen completo ni un examen rápido en los últimos 14 días. Este escenario puede ocurrir si el dispositivo se reinicia durante un examen completo.
 
 **Soluciones posibles**: si hay un examen vencido, puede ejecutar un examen único o programar exámenes recurrentes. Vea [Antivirus de Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="another-endpoint-protection-application-running"></a>Otra aplicación de protección de extremos en ejecución
+### <a name="another-endpoint-protection-application-running"></a>Otra aplicación de protección de extremos en ejecución
 
 Se está ejecutando otra aplicación de Endpoint Protection y el dispositivo está en buenas condiciones.
 

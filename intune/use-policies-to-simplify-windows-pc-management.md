@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: eb9f7eef1f7f0e4a712bdf3e8a3706374ac002a8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548820"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353313"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usar directivas para simplificar la administración de PC de Windows
 
@@ -32,7 +32,7 @@ Para administrar escritorios de Windows como PC, ejecutando el cliente de softwa
 
 ![Plantilla de directivas para equipos con Windows](media/pc_policy_template.png)
 
-### <a name="manage-the-microsoft-intune-center"></a>Administrar Microsoft Intune Center
+## <a name="manage-the-microsoft-intune-center"></a>Administrar Microsoft Intune Center
 Los usuarios ven el cliente de software de Intune como **Microsoft Intune Center**. Con Microsoft Intune Center se puede hacer lo siguiente:
 
 - Obtener aplicaciones desde el portal de empresa.
@@ -63,6 +63,6 @@ Consulte los siguientes recursos para obtener información sobre las directivas 
 - [Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md): estas directivas simplifican la administración de la configuración de Firewall de Windows en los equipos administrados.
 
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

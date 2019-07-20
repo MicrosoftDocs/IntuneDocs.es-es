@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735636"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885044"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -116,8 +116,8 @@ La compilación de prueba no se ve afectada. Puede que se proporcione configurac
 * [Dependencias externas que se incluyen](#usage-of-includeexternallibraries) 
 * Clases específicas que se excluyen del procesamiento
 * Variantes que se excluyen del procesamiento. Pueden hacer referencia a un nombre de variante completo o un sabor único. Por ejemplo,
-     * si la aplicación tiene los tipos de compilación `debug` y `release` con sabores {`savory`, `sweet`} y {`vanilla`, `chocolate`}, puede especificar
-     * `savory` para excluir todas las variantes con el sabor savory o `savoryVanillaRelease` para excluir solo esa variante exacta.
+  * si la aplicación tiene los tipos de compilación `debug` y `release` con sabores {`savory`, `sweet`} y {`vanilla`, `chocolate`}, puede especificar
+  * `savory` para excluir todas las variantes con el sabor savory o `savoryVanillaRelease` para excluir solo esa variante exacta.
 
 #### <a name="example-partial-buildgradle"></a>Ejemplo de build.gradle parcial
 
@@ -680,15 +680,15 @@ Para configurar la aplicación y habilitar la autenticación correcta, agregue l
 
 * **NonBrokerRedirectURI** es el URI de direccionamiento de AAD para usar en casos sin agente. Si no se especifica ninguno, se usa el valor predeterminado de `urn:ietf:wg:oauth:2.0:oob`. Este valor predeterminado es adecuado para la mayoría de las aplicaciones.
 
-    * Solo se usa NonBrokerRedirectURI cuando SkipBroker es "true".
+  * Solo se usa NonBrokerRedirectURI cuando SkipBroker es "true".
 
 * **SkipBroker** se usa para invalidar el comportamiento de participación predeterminado de SSO de ADAL. SkipBroker debe especificarse solo para las aplicaciones que especifican un ClientID **y** no admiten autenticación asincrónica/SSO en todos los dispositivos. En este caso debe establecerse en "true". En la mayoría de las aplicaciones no debe establecerse el parámetro SkipBroker.
 
-    * Se **debe** especificar un ClientID en el manifiesto para especificar un valor de SkipBroker.
+  * Se **debe** especificar un ClientID en el manifiesto para especificar un valor de SkipBroker.
 
-    * Cuando se especifica un ClientID, el valor predeterminado es "false".
+  * Cuando se especifica un ClientID, el valor predeterminado es "false".
 
-    * Cuando SkipBroker es "true", se utilizará NonBrokerRedirectURI. Las aplicaciones que no integran ADAL (y, por lo tanto, no tienen ningún ClientID) también serán "true" de forma predeterminada.
+  * Cuando SkipBroker es "true", se utilizará NonBrokerRedirectURI. Las aplicaciones que no integran ADAL (y, por lo tanto, no tienen ningún ClientID) también serán "true" de forma predeterminada.
 
 ### <a name="common-adal-configurations"></a>Opciones de configuración comunes de ADAL
 
@@ -1317,48 +1317,48 @@ Además de la posibilidad de que la aplicación establezca la identidad, un subp
 
 #### <a name="examples"></a>Ejemplos
 
-  1. Si una actividad se inicia desde un `Intent` enviado desde otra aplicación MAM, la identidad de la actividad se establecerá en función de la identidad efectiva de la otra aplicación en el punto en que se envió el `Intent`.
+1. Si una actividad se inicia desde un `Intent` enviado desde otra aplicación MAM, la identidad de la actividad se establecerá en función de la identidad efectiva de la otra aplicación en el punto en que se envió el `Intent`.
 
-  2. En el caso de los servicios, la identidad del subproceso se establecerá de forma similar para la duración de una llamada `onStart` o `onBind`. Las llamadas a `Binder` devueltas por `onBind` también establecerán temporalmente la identidad del subproceso.
+2. En el caso de los servicios, la identidad del subproceso se establecerá de forma similar para la duración de una llamada `onStart` o `onBind`. Las llamadas a `Binder` devueltas por `onBind` también establecerán temporalmente la identidad del subproceso.
 
-  3. Las llamadas a `ContentProvider` establecerán de forma similar la identidad del subproceso a lo largo de su duración.
-
-
-  Además, la interacción del usuario con una actividad puede provocar un cambio de identidad implícita.
-
-  **Ejemplo**: la cancelación por un usuario de un mensaje de autorización durante `Resume` dará como resultado un cambio implícito a una identidad vacía.
-
-  La aplicación tiene la oportunidad de enterarse de esos cambios y puede prohibirlos, si debe hacerlo. `MAMService` y `MAMContentProvider` exponen el siguiente método que las subclases pueden reemplazar:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  En la clase `MAMActivity`, existe un parámetro adicional en el método:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * `AppIdentitySwitchReason` captura el origen del cambio implícito y puede aceptar los valores `CREATE`, `RESUME_CANCELLED` y `NEW_INTENT`.  La razón de `RESUME_CANCELLED` se usa cuando la reanudación de la actividad provoca que se muestren el PIN, la autenticación u otra IU compatible y el usuario intenta cancelar esa IU, por lo general mediante el uso del botón Atrás.
+3. Las llamadas a `ContentProvider` establecerán de forma similar la identidad del subproceso a lo largo de su duración.
 
 
-  * `AppIdentitySwitchResultCallback` es así:
+    Además, la interacción del usuario con una actividad puede provocar un cambio de identidad implícita.
+
+    **Ejemplo**: la cancelación por un usuario de un mensaje de autorización durante `Resume` dará como resultado un cambio implícito a una identidad vacía.
+
+    La aplicación tiene la oportunidad de enterarse de esos cambios y puede prohibirlos, si debe hacerlo. `MAMService` y `MAMContentProvider` exponen el siguiente método que las subclases pueden reemplazar:
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    Donde ```AppIdentitySwitchResult``` es `SUCCESS` o `FAILURE`.
+    En la clase `MAMActivity`, existe un parámetro adicional en el método:
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * `AppIdentitySwitchReason` captura el origen del cambio implícito y puede aceptar los valores `CREATE`, `RESUME_CANCELLED` y `NEW_INTENT`.  La razón de `RESUME_CANCELLED` se usa cuando la reanudación de la actividad provoca que se muestren el PIN, la autenticación u otra IU compatible y el usuario intenta cancelar esa IU, por lo general mediante el uso del botón Atrás.
+
+
+    * `AppIdentitySwitchResultCallback` es así:
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      Donde ```AppIdentitySwitchResult``` es `SUCCESS` o `FAILURE`.
 
 Al método `onMAMIdentitySwitchRequired` se le llama para todos los cambios de identidad implícitos, excepto aquellos realizados a través de un enlazador devueltos por `MAMService.onMAMBind`. Las implementaciones predeterminadas de `onMAMIdentitySwitchRequired` llaman inmediatamente a:
 
@@ -1498,13 +1498,13 @@ public interface MAMFileProtectionInfo {
 MAM no puede inferior automáticamente una relación entre los archivos que se leen y los datos que se muestran en una `Activity`. Las aplicaciones *deben* establecer la identidad de UI de manera adecuada antes de mostrar los datos corporativos. Esto incluye los datos leídos de los archivos. Si un archivo proviene de fuera de la aplicación (ya sea de un `ContentProvider` o se lee de una ubicación grabable de manera pública), la aplicación *debe* intentar determinar la identidad de archivo (con `MAMFileProtectionManager.getProtectionInfo`) antes de mostrar la información leída desde el archivo. Si `getProtectionInfo` informa una identidad no nula y no vacía, la identidad de UI se *debe* establecer para que coincida con esta identidad (con `MAMActivity.switchMAMIdentity` o `MAMPolicyManager.setUIPolicyIdentity`). Si el cambio de identidad presenta un error, los datos del archivo *no se deben* mostrar.
 
 Un flujo de ejemplo debería ser similar al siguiente:
-  * El usuario selecciona un documento para abrirlo en la aplicación.
-  * Durante el flujo de apertura, antes de leer los datos del disco, la aplicación confirma la identidad que se debe usar para mostrar el contenido
-    * Información de MAMFileProtectionInfo = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * La aplicación espera hasta que se informa un resultado para devolución de llamada
-    * Si el resultado informado es un error, la aplicación no muestra el documento.
-  * La aplicación abre y representa el archivo.
+* El usuario selecciona un documento para abrirlo en la aplicación.
+* Durante el flujo de apertura, antes de leer los datos del disco, la aplicación confirma la identidad que se debe usar para mostrar el contenido
+  * Información de MAMFileProtectionInfo = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * La aplicación espera hasta que se informa un resultado para devolución de llamada
+  * Si el resultado informado es un error, la aplicación no muestra el documento.
+* La aplicación abre y representa el archivo.
   
 #### <a name="single-identity-to-multi-identity-transition"></a>Transición de identidad única a varias identidades
 Si una aplicación que anteriormente se publicó con la integración de identidad única de Intune más adelante integra varias identidades, las aplicaciones instaladas previamente experimentarán una transición (no es visible para el usuario, no hay ninguna experiencia de usuario asociada). No se *requiere* que la aplicación haga nada explícito para controlar esta transición. Todos los archivos creados antes de la transición se seguirán considerando administrados (por lo que permanecerán cifrados si la directiva de cifrado está activa). Si quiere, puede detectar la actualización y usar `MAMFileProtectionManager.protect` para etiquetar determinados archivos o directorios con la identidad vacía (lo que eliminará el cifrado si estaban cifrados).
@@ -1513,11 +1513,11 @@ Si una aplicación que anteriormente se publicó con la integración de identida
 
 El etiquetado de identidad de archivo es sensible al modo sin conexión. Se deben tener en cuenta los siguientes puntos:
 
-  * Si no está instalado el Portal de empresa, no se puede etiquetar la identidad de los archivos.
+* Si no está instalado el Portal de empresa, no se puede etiquetar la identidad de los archivos.
 
-  * Si está instalado el Portal de empresa, pero la aplicación no tiene una directiva MAM de Intune, no se puede etiquetar la identidad de los archivos de forma confiable.
+* Si está instalado el Portal de empresa, pero la aplicación no tiene una directiva MAM de Intune, no se puede etiquetar la identidad de los archivos de forma confiable.
 
-  * Cuando esté disponible el etiquetado de identidad de los archivos, todos los archivos creados anteriormente se tratan como personales o no administrados (que pertenecen a la identidad de cadena vacía), a menos que la aplicación se instalara anteriormente como una aplicación administrada de una única identidad, en cuyo caso se tratan como pertenecientes al usuario inscrito.
+* Cuando esté disponible el etiquetado de identidad de los archivos, todos los archivos creados anteriormente se tratan como personales o no administrados (que pertenecen a la identidad de cadena vacía), a menos que la aplicación se instalara anteriormente como una aplicación administrada de una única identidad, en cuyo caso se tratan como pertenecientes al usuario inscrito.
 
 ### <a name="directory-protection"></a>Protección de los directorios
 

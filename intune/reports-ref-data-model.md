@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547887"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884758"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de datos de Data Warehouse de Microsoft Intune
 
@@ -32,22 +32,22 @@ El Almacenamiento de datos de Intune muestrea los datos a diario para proporcion
 
 El almacenamiento expone los datos en las siguientes áreas de alto nivel:
 
-  - Aplicaciones y uso habilitados para la protección de aplicaciones
-  - Dispositivos inscritos, propiedades e inventario
-  - Inventario de aplicaciones y software
-  - Configuración de dispositivos y directivas de cumplimiento
+- Aplicaciones y uso habilitados para la protección de aplicaciones
+- Dispositivos inscritos, propiedades e inventario
+- Inventario de aplicaciones y software
+- Configuración de dispositivos y directivas de cumplimiento
 
 Estas áreas contienen las entidades que son significativas para el entorno de Intune. Encontrará más detalles sobre los conjuntos de entidades en los temas siguientes:
 
-  - [Aplicación](reports-ref-application.md)
-  - [Fecha](reports-ref-date.md)
-  - [Dispositivos](reports-ref-devices.md)
-  - [Extensión de administración de Intune](reports-ref-intunemanagementextension.md)
-  - [Directiva](reports-ref-policy.md)
-  - [Administración de aplicaciones móviles (MAM)](reports-ref-mobile-app-management.md)
-  - [User](reports-ref-user.md)
-  - [Usuario actual](reports-ref-current-user.md)
-  - [Asociación de dispositivos de usuario](reports-ref-user-device.md)
+- [Aplicación](reports-ref-application.md)
+- [Fecha](reports-ref-date.md)
+- [Dispositivos](reports-ref-devices.md)
+- [Extensión de administración de Intune](reports-ref-intunemanagementextension.md)
+- [Directiva](reports-ref-policy.md)
+- [Administración de aplicaciones móviles (MAM)](reports-ref-mobile-app-management.md)
+- [User](reports-ref-user.md)
+- [Usuario actual](reports-ref-current-user.md)
+- [Asociación de dispositivos de usuario](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>Relaciones: modelo de esquema de estrella
 
@@ -63,6 +63,6 @@ El almacén de datos es descendiente en relación con los datos de Intune. Todos
 
 ## <a name="next-steps"></a>Pasos siguientes
 
- - Para más información sobre cómo el almacenamiento de datos realiza un seguimiento de la duración de un usuario en Intune, vea [Representación de la duración del usuario en el Almacenamiento de datos de Intune](reports-ref-user-timeline.md).
- - Para más información sobre cómo trabajar con almacenamientos de datos, vea [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creación del primer almacenamiento de datos).
- - Para obtener más información sobre cómo trabajar con Power BI y un almacén de datos, consulte [Creación de un informe de Power BI nuevo mediante la importación de un conjunto de datos](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
+- Para más información sobre cómo el almacenamiento de datos realiza un seguimiento de la duración de un usuario en Intune, vea [Representación de la duración del usuario en el Almacenamiento de datos de Intune](reports-ref-user-timeline.md).
+- Para más información sobre cómo trabajar con almacenamientos de datos, vea [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creación del primer almacenamiento de datos).
+- Para obtener más información sobre cómo trabajar con Power BI y un almacén de datos, consulte [Creación de un informe de Power BI nuevo mediante la importación de un conjunto de datos](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

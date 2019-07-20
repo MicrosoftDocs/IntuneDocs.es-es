@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648797"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313743"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Punto de conexión de la API de Almacenamiento de datos de Intune
 
@@ -51,7 +51,7 @@ La dirección URL contiene los elementos siguientes:
 | Elemento | Ejemplo | Descripción |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | ubicación | msua06 | Para localizar la URL base, vea la hoja de la API de Almacenamiento de datos en Azure Portal. |
-| entity-collection | fechas | Nombre de la colección de entidades OData. Para obtener más información sobre las colecciones y las entidades del modelo de datos, vea [Data Model](reports-ref-data-model.md) (Modelo de datos). |
+| entity-collection | devicePropertyHistories | Nombre de la colección de entidades OData. Para obtener más información sobre las colecciones y las entidades del modelo de datos, vea [Data Model](reports-ref-data-model.md) (Modelo de datos). |
 | api-version | beta | "Version" hace referencia a la versión de la API a la que se va a tener acceso. Para obtener más información, vea [Version](reports-api-url.md#api-version-information) (Versión). |
 | maxhistorydays | 7 | (Opcional) Número máximo de días del historial que se va a recuperar. Este parámetro se puede proporcionar a cualquier colección, pero solo tendrá efecto en las colecciones que incluyan `dateKey` como parte de su propiedad de clave. Vea [Filtros de intervalo de DateKey](reports-api-url.md#datekey-range-filters) para obtener más información. |
 

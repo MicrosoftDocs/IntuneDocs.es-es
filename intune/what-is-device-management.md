@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043843"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884268"
 ---
 # <a name="what-is-device-management"></a>¿Qué es la administración de dispositivos? 
 
@@ -58,8 +58,8 @@ Una tarea esencial de cualquier solución de administración de dispositivos con
 
 - **Windows Defender** incluye muchas características de seguridad con las que puede proteger dispositivos Windows 10. Por ejemplo, con Intune y Windows Defender juntos puede hacer esto: 
 
-    - Habilitar [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) para buscar actividades sospechosas en archivos y aplicaciones en dispositivos móviles. 
-    - Usar [Protección contra amenazas avanzada de Windows Defender (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) para evitar infracciones de seguridad en dispositivos móviles, y limitar el impacto de una infracción de seguridad mediante el bloqueo de un usuario desde los recursos corporativos.
+  - Habilitar [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) para buscar actividades sospechosas en archivos y aplicaciones en dispositivos móviles. 
+  - Usar [Protección contra amenazas avanzada de Windows Defender (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) para evitar infracciones de seguridad en dispositivos móviles, y limitar el impacto de una infracción de seguridad mediante el bloqueo de un usuario desde los recursos corporativos.
 
 - **Acceso condicional** es una característica de Azure Active Directory que se integra perfectamente con Intune. Al usar el [acceso condicional](https://docs.microsoft.com/intune/conditional-access), asegúrese de que solo los dispositivos compatibles pueden acceder al correo electrónico, SharePoint y otras aplicaciones. 
 

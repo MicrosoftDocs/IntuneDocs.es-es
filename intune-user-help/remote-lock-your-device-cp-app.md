@@ -17,12 +17,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada708c3ea6f9e8d835b667ac8162037c1de05f9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e8a3ee1aaf2c115d99e0eedfeb187ba23f623264
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836496"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884116"
 ---
 # <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Bloquear el dispositivo desde la aplicación Portal de empresa para Windows 10
 
@@ -32,11 +32,11 @@ Bloquee de forma remota un dispositivo perdido o robado desde la aplicación Por
 
 El bloqueo remoto está admitido en los dispositivos que ejecutan:  
 
-  * Android
-  * iOS
-  * macOS
-  * Windows 10 Mobile (si el dispositivo ya tenía un código de acceso establecido)
-  * Windows Phone 8.1 (si el dispositivo ya tenía un código de acceso establecido) 
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (si el dispositivo ya tenía un código de acceso establecido)
+* Windows Phone 8.1 (si el dispositivo ya tenía un código de acceso establecido) 
   
 ## <a name="remote-lock-device"></a>Bloquear de forma remota un dispositivo
 Realice los pasos siguientes para bloquear el dispositivo desde la aplicación Portal de empresa.  

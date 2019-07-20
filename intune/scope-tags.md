@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403784"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882506"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida
 
@@ -42,8 +42,8 @@ Por ejemplo, imagine que a un administrador de la sucursal regional de Seattle s
 
     ![Captura de pantalla de la creación de una etiqueta de ámbito.](./media/scope-tags/create-scope-tag.png)
 
-3. Elija si desea que todos los dispositivos en grupos específicos, **asignar la etiqueta de ámbito para todos los dispositivos en los grupos seleccionados**.
-    1. En el **seleccionar grupos para incluir** página, seleccione los grupos que contiene los dispositivos que desea asignar a esta etiqueta de ámbito.
+3. Si quiere que todos los dispositivos estén en grupos específicos, elija **asignar etiqueta de ámbito a todos los dispositivos de los grupos seleccionados**.
+    1. En la página **seleccionar grupos que se van a incluir** , elija los grupos que contengan los dispositivos a los que desea asignar esta etiqueta de ámbito.
     2. Elija **Seleccionar**.
 4. Elija **Crear**.
 
@@ -108,17 +108,17 @@ En el caso de los dispositivos con **Tipo de inscripción del dispositivo** esta
 Al trabajar con etiquetas de ámbito, recuerde estos detalles:
 
 - De momento, puede asignar etiquetas de ámbito a:
-    - Asignaciones de roles
-    - Directivas de cumplimiento de dispositivos
-    - Perfiles de configuración de dispositivos
-    - Anillos de actualización de Windows 10
-    - Dispositivos administrados
-    - Aplicaciones
-    - Directivas de configuración de aplicaciones: dispositivos administrados
-    - Scripts de PowerShell
-    - Token de DEP
-    - Perfil de aprovisionamiento de aplicaciones de iOS
-    - Tokens del Programa de Compras por Volumen (VPP)
+  - Asignaciones de roles
+  - Directivas de cumplimiento de dispositivos
+  - Perfiles de configuración de dispositivos
+  - Anillos de actualización de Windows 10
+  - Dispositivos administrados
+  - Aplicaciones
+  - Directivas de configuración de aplicaciones: dispositivos administrados
+  - Scripts de PowerShell
+  - Token de DEP
+  - Perfil de aprovisionamiento de aplicaciones de iOS
+  - Tokens del Programa de Compras por Volumen (VPP)
 - Cuando un administrador crea un objeto en Intune, todas las etiquetas de ámbito asignadas a ese administrador se asignan automáticamente al nuevo objeto.
 - El RBAC de Intune no se aplica a los roles de Azure Active Directory. Por lo tanto, los roles Administradores de servicios de Intune y Administradores globales tienen acceso de administrador completo a Intune independientemente de las etiquetas de ámbito que tengan.
 - Los administradores de una asignación de roles con etiquetas de ámbito también pueden ver objetos de Intune sin etiquetas de ámbito.

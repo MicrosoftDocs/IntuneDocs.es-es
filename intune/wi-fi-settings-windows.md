@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046661"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884257"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Agregar Wi-Fi para dispositivos Windows 10 y versiones posteriores en Intune
 
@@ -119,29 +119,29 @@ Seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y
     > [!NOTE]
     > Actualmente, solo se admiten los perfiles de certificado SCEP cuando se usa un tipo de EAP. No se admiten los perfiles de certificado PKCS. Cada vez que se le pida a un usuario que escriba un certificado, asegúrese de que se elige un certificado SCEP.
 
-      - **Confianza del servidor**  
+    - **Confianza del servidor**  
 
-        **Nombres de servidor de certificados**: se usan con los tipos de EAP **EAP-TLS**, **EAP-TTLS** o **PEAP**. Escriba uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir el cuadro de diálogo de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.  
+      **Nombres de servidor de certificados**: se usan con los tipos de EAP **EAP-TLS**, **EAP-TTLS** o **PEAP**. Escriba uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir el cuadro de diálogo de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.  
 
-        **Certificado raíz para validación del servidor**: se usa con los tipos de EAP **EAP-TLS**, **EAP-TTLS** o **PEAP**. Seleccione el perfil de certificado raíz de confianza que se usa para autenticar la conexión.  
+      **Certificado raíz para validación del servidor**: se usa con los tipos de EAP **EAP-TLS**, **EAP-TTLS** o **PEAP**. Seleccione el perfil de certificado raíz de confianza que se usa para autenticar la conexión.  
 
-        **Privacidad de identidad (identidad externa)** : se usa con el tipo de EAP **PEAP**. Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.  
+      **Privacidad de identidad (identidad externa)** : se usa con el tipo de EAP **PEAP**. Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.  
 
-      - **Autenticación de cliente**
+    - **Autenticación de cliente**
 
-        **Certificado cliente para la autenticación del cliente (certificado de identidad)** : se usa con el tipo de EAP **EAP-TLS**. Seleccione el perfil de certificado que se usa para autenticar la conexión.
+      **Certificado cliente para la autenticación del cliente (certificado de identidad)** : se usa con el tipo de EAP **EAP-TLS**. Seleccione el perfil de certificado que se usa para autenticar la conexión.
 
-        **Método de autenticación**: se usa con el tipo de EAP **EAP-TTLS**. Seleccione el método de autenticación para la conexión:  
+      **Método de autenticación**: se usa con el tipo de EAP **EAP-TTLS**. Seleccione el método de autenticación para la conexión:  
 
-          - **Certificados**: seleccione el certificado de cliente que es el certificado de identidad presentado al servidor.
-          - **Nombre de usuario y contraseña**: escriba un **Método que no es EAP (identidad interna)** para la autenticación. Las opciones son:
+      - **Certificados**: seleccione el certificado de cliente que es el certificado de identidad presentado al servidor.
+      - **Nombre de usuario y contraseña**: escriba un **Método que no es EAP (identidad interna)** para la autenticación. Las opciones son:
 
-            - **Contraseña no cifrada (PAP)**
-            - **Desafío mutuo (CHAP)**
-            - **Microsoft CHAP (MS-CHAP)**
-            - **Microsoft CHAP versión 2 (MS-CHAP v2)**
+        - **Contraseña no cifrada (PAP)**
+        - **Desafío mutuo (CHAP)**
+        - **Microsoft CHAP (MS-CHAP)**
+        - **Microsoft CHAP versión 2 (MS-CHAP v2)**
 
-        **Privacidad de identidad (identidad externa)** : se usa con el tipo de EAP **EAP-TTLS**. Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
+      **Privacidad de identidad (identidad externa)** : se usa con el tipo de EAP **EAP-TTLS**. Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
 
 - **Configuración del proxy de la empresa**: elija la configuración de proxy que se va a usar en la organización. Las opciones son:
   - **Ninguno**: no se configura ningún valor de proxy.

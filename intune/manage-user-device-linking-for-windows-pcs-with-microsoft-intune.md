@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402894"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353642"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Administrar la vinculación de dispositivos de usuario en PC de Windows
 
@@ -32,7 +32,7 @@ La información de este tema se aplica solo a equipos de escritorio de Windows q
 
 Antes de implementar software en un usuario, debe vincular el usuario a un PC. Puede vincular un usuario a varios PC, pero cada PC puede vincularse solo a un usuario. Los usuarios se vinculan automáticamente a los PC que tengan inscritos en Intune a través del portal de empresa.
 
-Para obtener más información sobre el usuario primario de un dispositivo, consulte [usuario principal de búsqueda](find-primary-user.md).
+Para obtener más información sobre el usuario principal de un dispositivo, consulte [Buscar usuario primario](find-primary-user.md).
 
 Para vincular un usuario a un PC:
 
@@ -53,6 +53,6 @@ Para vincular un usuario a un PC:
 > [!TIP]
 > Si quiere restringir la capacidad de los usuarios finales para vincularse a PC, habilite la opción **Restringir la capacidad de los usuarios de vincularse a equipos PC** en la directiva de **Configuración de agente de Microsoft Intune**.
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

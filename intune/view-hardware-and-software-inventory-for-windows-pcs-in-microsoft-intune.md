@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2b9d17426bf3dde3fd1684c12113adf0c5095d5f
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547971"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353293"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Visualización del inventario de software y hardware para equipos Windows
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea ver el inventario para equipos Windows inscritos como dispositivos móviles, consulte [ver detalles del dispositivo en Intune](device-inventory.md).
+> La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea ver el inventario de equipos Windows inscritos como dispositivos móviles, consulte [Ver detalles del dispositivo en Intune](device-inventory.md).
 
 Intune recopila información detallada sobre el hardware y software de los escritorios que administra como PC con el cliente de software de Intune. Use la información de los siguientes procedimientos para aprender a crear:
 
@@ -71,6 +71,6 @@ Intune recopila información detallada sobre el hardware y software de los escri
 
     Se abre el cuadro de diálogo **Estado de la tarea** , que muestra las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados, y proporciona un vínculo a información de solución de problemas, si es necesario.
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

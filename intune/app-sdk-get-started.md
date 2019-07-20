@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 428d9c333bb45d1f8456154104209690a95fb508
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529184"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885107"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -90,24 +90,24 @@ Necesitará una de las siguientes guías para desarrolladores que le ayudará a 
 
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Habilitar su aplicación iOS o Android para un acceso condicional basado en aplicación
- 
- Además de habilitar la aplicación para la directiva de protección de aplicaciones, se requiere lo siguiente para que la aplicación funcione correctamente con el acceso condicional basado en la aplicación Azure Active Directory (AAD):
- 
- * La aplicación se compiló con la [Biblioteca de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) y está habilitada para la autenticación de agente AAD.
- 
- * El [identificador de cliente de AAD](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) de la aplicación debe ser único en las plataformas iOS y Android.
- 
+
+Además de habilitar la aplicación para la directiva de protección de aplicaciones, se requiere lo siguiente para que la aplicación funcione correctamente con el acceso condicional basado en la aplicación Azure Active Directory (AAD):
+
+* La aplicación se compiló con la [Biblioteca de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) y está habilitada para la autenticación de agente AAD.
+
+* El [identificador de cliente de AAD](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) de la aplicación debe ser único en las plataformas iOS y Android.
+
 ## <a name="configure-telemetry-for-your-app"></a>Configuración de la telemetría para la aplicación
 
 Microsoft Intune recopila datos sobre las estadísticas de uso de la aplicación.
 
 * **SDK para aplicaciones de Intune para iOS**: de forma predeterminada, el SDK registra los datos de telemetría del SDK en eventos de uso. Estos datos se envían a Microsoft Intune.
 
-    * Si decide no enviar datos de telemetría del SDK a Microsoft Intune desde su aplicación, debe deshabilitar la transmisión de telemetría estableciendo la propiedad `MAMTelemetryDisabled` en "Sí" en el diccionario IntuneMAMSettings.
+  * Si decide no enviar datos de telemetría del SDK a Microsoft Intune desde su aplicación, debe deshabilitar la transmisión de telemetría estableciendo la propiedad `MAMTelemetryDisabled` en "Sí" en el diccionario IntuneMAMSettings.
 
 * **SDK de aplicaciones de Intune para Android**: el SDK para aplicaciones de Intune para Android no controla la recopilación de datos de su aplicación. La aplicación de Portal de empresa registra los datos de telemetría de manera predeterminada. Estos datos se envían a Microsoft Intune. Según las directivas de Microsoft, no se recopila información de identificación personal (PII por sus siglas en inglés). 
 
-    * Si los usuarios finales deciden no enviar estos datos, deberán desactivar la telemetría en la sección Configuración de la aplicación Portal de empresa. Para obtener más información, consulte [Desactivar la recopilación de datos de uso de Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+  * Si los usuarios finales deciden no enviar estos datos, deberán desactivar la telemetría en la sección Configuración de la aplicación Portal de empresa. Para obtener más información, consulte [Desactivar la recopilación de datos de uso de Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## <a name="line-of-business-app-version-numbers"></a>Números de versión de las aplicaciones de línea de negocio
 
@@ -119,11 +119,11 @@ El número de versión completo identifica una versión específica de la aplica
 
 El número de versión completo consta de dos componentes:
 
- - **Versión**  
-   El número de versión es el número que pueden ver los usuarios. Sirve para que los usuarios finales distingan las diferentes versiones de la aplicación.
+- **Versión**  
+  El número de versión es el número que pueden ver los usuarios. Sirve para que los usuarios finales distingan las diferentes versiones de la aplicación.
 
- - **Número de compilación**  
-    El número de compilación es un número interno que puede usarse para la detección de la aplicación y para administrar la aplicación mediante programación. El número de compilación alude a una iteración de la aplicación que hace referencia a los cambios en el código.
+- **Número de compilación**  
+  El número de compilación es un número interno que puede usarse para la detección de la aplicación y para administrar la aplicación mediante programación. El número de compilación alude a una iteración de la aplicación que hace referencia a los cambios en el código.
 
 ### <a name="version-and-build-number-in-android-and-ios"></a>Números de versión y compilación en Android y iOS
 
@@ -139,16 +139,16 @@ Número de compilación|CFBundleVersion|PackageVersionCode |Este número se usa 
 #### <a name="ios"></a>iOS
 
 - **CFBundleShortVersionString**  
-    Especifica el número de versión de lanzamiento del conjunto. Este número identifica una versión publicada de la aplicación y lo utilizan los usuarios finales para hacer referencia a ella.
+  Especifica el número de versión de lanzamiento del conjunto. Este número identifica una versión publicada de la aplicación y lo utilizan los usuarios finales para hacer referencia a ella.
 - **CFBundleVersion**  
-    Se trata de la versión de compilación del conjunto que identifica una iteración de dicho conjunto. El número permite identificar una versión o un conjunto sin publicar y se usa para fines de detección de la aplicación.
+  Se trata de la versión de compilación del conjunto que identifica una iteración de dicho conjunto. El número permite identificar una versión o un conjunto sin publicar y se usa para fines de detección de la aplicación.
 
 #### <a name="android"></a>Android
 
- - **PackageVersionName**  
-    Es el número de versión que se muestra a los usuarios. Este atributo puede establecerse como una cadena sin formato o como una referencia a un recurso de la cadena. La cadena no tiene ningún otro propósito que mostrarse a los usuarios.
- - **PackageVersionCode**  
-    Se trata de un número de versión interno. Este número se usa únicamente para determinar si una versión es más reciente que otra. Los números más altos indican versiones más recientes. No es la versión. 
+- **PackageVersionName**  
+  Es el número de versión que se muestra a los usuarios. Este atributo puede establecerse como una cadena sin formato o como una referencia a un recurso de la cadena. La cadena no tiene ningún otro propósito que mostrarse a los usuarios.
+- **PackageVersionCode**  
+  Se trata de un número de versión interno. Este número se usa únicamente para determinar si una versión es más reciente que otra. Los números más altos indican versiones más recientes. No es la versión. 
 
 ## <a name="next-steps-after-integration"></a>Pasos siguientes después de la integración
 
@@ -157,11 +157,11 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
 
 * **Cuenta de prueba de Microsoft Intune**: para probar la aplicación administrada por Intune con las características de protección de aplicaciones de Intune, necesitará una cuenta de Microsoft Intune.
 
-    * Si es un ISV que quiere habilitar las aplicaciones de la tienda Android o iOS para la directiva de protección de aplicaciones de Intune, recibirá un código de promoción una vez completado el registro con Microsoft Intune, como se describe en el paso de registro. El código de promoción le permite registrarse para obtener una versión de prueba de un año de uso extendido de Microsoft Intune.
+  * Si es un ISV que quiere habilitar las aplicaciones de la tienda Android o iOS para la directiva de protección de aplicaciones de Intune, recibirá un código de promoción una vez completado el registro con Microsoft Intune, como se describe en el paso de registro. El código de promoción le permite registrarse para obtener una versión de prueba de un año de uso extendido de Microsoft Intune.
 
-    * Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
+  * Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
 
-    * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Centro de administración de Microsoft 365. Para más información, vea [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](https://docs.microsoft.com/intune/licenses-assign).
+  * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Centro de administración de Microsoft 365. Para más información, vea [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md). Si su aplicación ha integrado el SDK de Intune, pero aún no figura en Azure Portal como una aplicación específica, puede orientarla con una directiva seleccionando la opción "+ Más aplicaciones" y proporcionando el id. del paquete (iOS) o el nombre del paquete. (Android) en el cuadro de texto.
 

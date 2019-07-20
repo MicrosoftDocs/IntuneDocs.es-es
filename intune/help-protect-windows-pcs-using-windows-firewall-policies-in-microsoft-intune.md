@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572516"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354007"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea administrar la configuración del firewall para equipos Windows inscritos como dispositivos móviles, consulte [Agregar configuración de endpoint protection en Intune](endpoint-protection-configure.md).
+> La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea administrar la configuración de Firewall para equipos Windows inscritos como dispositivos móviles, consulte [Agregar configuración de Endpoint Protection en Intune](endpoint-protection-configure.md).
 
 Microsoft Intune puede ayudarle a proteger los equipos que administra con el cliente de Intune de varias maneras. Una de ellas es proporcionar directivas que permiten configurar Firewall de Windows en equipos.
 
@@ -140,5 +140,5 @@ Puede configurar las excepciones que permiten determinados tipos de tráfico de 
 |**Windows Virtual PC**<br>(Windows 7 o posterior)|Permite que las máquinas virtuales se comuniquen con otros equipos.|
 |**Dispositivos portátiles inalámbricos**|Permite la transferencia de archivos multimedia a equipos administrados desde cualquier cámara o dispositivo multimedia que se pueda conectar a la red, por medio de Protocolo de transferencia multimedia (MTP). Esta configuración usa los protocolos de red SSDP y UPnP.|
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
