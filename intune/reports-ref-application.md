@@ -17,54 +17,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713140"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313806"
 ---
 # <a name="reference-for-application-entities"></a>Referencia de entidades de aplicaciones
 
 La categoría **Application** contiene entidades para dispositivos móviles que realizan el seguimiento de información como la siguiente:
 
-  - Versiones de una aplicación
-  - Origen de instalación de una aplicación
-  - Tipo de los desarrolladores que han creado una aplicación
-  - Tipos de software administrado para una aplicación, por ejemplo **asociado** o **escritorio**
-  - Estado del Programa de Compras por Volumen (VPP) de una aplicación
+- Versiones de una aplicación
+- Origen de instalación de una aplicación
+- Tipo de los desarrolladores que han creado una aplicación
+- Tipos de software administrado para una aplicación, por ejemplo **asociado** o **escritorio**
+- Estado del Programa de Compras por Volumen (VPP) de una aplicación
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-La entidad **AppRevision** muestra todas las versiones de las aplicaciones.
+La entidad **appRevision** muestra todas las versiones de las aplicaciones.
 
 | Propiedad  | Descripción | Ejemplo |
 |---------|------------|--------|
-| AppKey |Identificador único de la aplicación. |123 |
-| ApplicationId |Identificador único de la aplicación. Se parece a AppKey, pero es una clave natural. |b66bc706-ffff-7437-0340-032819502773 |
-| Revisión |Versión tal como la indicó el administrador durante la carga del archivo binario. |2 |
-| Título |Título de la aplicación. |Excel |
-| Publicador |Editor de la aplicación. |Microsoft |
-| UploadState |Estado de carga de la aplicación. |1 |
-| AppTypeKey |Referencia a AppType, descrito en la sección siguiente. | |
-| VppProgramTypeKey |Referencia a VppProgramType, descrito más adelante. | |
-| CreationTime |Fecha y hora de creación de esta revisión. |23/11/2016 12:00:00 AM |
-| ModifiedTime |Fecha y hora de la última modificación de cualquier elemento relacionado con esta revisión. |23/11/2016 12:00:00 AM |
-| Tamaño |Tamaño del archivo binario. | |
-| StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado esta revisión de la aplicación en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
-| EndDateExclusiveUTC |Fecha y hora en formato UTC en que esta revisión de la aplicación ha quedado obsoleta. |23/11/2016 12:00:00 AM |
-| IsCurrent |Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos. |Verdadero/Falso |
-| RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez esta versión de la aplicación en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
+| appKey |Identificador único de la aplicación. |123 |
+| applicationId |Identificador único de la aplicación. Se parece a AppKey, pero es una clave natural. |b66bc706-ffff-7437-0340-032819502773 |
+| revision |Versión tal como la indicó el administrador durante la carga del archivo binario. |2 |
+| title |Título de la aplicación. |Excel |
+| publisher |Editor de la aplicación. |Microsoft |
+| uploadState |Estado de carga de la aplicación. |1 |
+| appTypeKey |Referencia a AppType, descrito en la sección siguiente. | |
+| vppProgramTypeKey |Referencia a VppProgramType, descrito más adelante. | |
+| creationTime |Fecha y hora de creación de esta revisión. |23/11/2016 12:00:00 AM |
+| modifiedTime |Fecha y hora de la última modificación de cualquier elemento relacionado con esta revisión. |23/11/2016 12:00:00 AM |
+| tamaño |Tamaño del archivo binario. | |
+| startDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado esta revisión de la aplicación en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
+| endDateExclusiveUTC |Fecha y hora en formato UTC en que esta revisión de la aplicación ha quedado obsoleta. |23/11/2016 12:00:00 AM |
+| isCurrent |Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos. |Verdadero/Falso |
+| rowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez esta versión de la aplicación en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-La entidad **AppTypes** muestra el origen de instalación de una aplicación.
+La entidad **appTypes** muestra el origen de instalación de una aplicación.
 
 | Propiedad  | Descripción |
 |---------|------------|
-| AppTypeID |Identificador del tipo. |
-| AppTypeKey |Clave suplente de la clave. |
-| AppTypeName |Tipo de aplicación |
+| appTypeID |Identificador del tipo. |
+| appTypeKey |Clave suplente de la clave. |
+| appTypeName |Tipo de aplicación |
 
 ### <a name="example"></a>Ejemplo
 
@@ -85,15 +85,15 @@ La entidad **AppTypes** muestra el origen de instalación de una aplicación.
 | 12 |Aplicación de línea de negocio de Windows Phone | Una aplicación de línea de negocio de Windows Phone. |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-La entidad **VppProgramTypes** muestra los posibles tipos de programa VPP para una aplicación.
+La entidad **vppProgramTypes** muestra los posibles tipos de programa VPP para una aplicación.
 
 | Propiedad  | Descripción |
 |---------|------------|
-| VppProgramTypeID | Identificador del tipo. |
-| VppProgramTypeKey | Clave suplente de la clave. |
-| VppProgramTypeName | Tipo de programa VPP. |
+| vppProgramTypeID | Identificador del tipo. |
+| vppProgramTypeKey | Clave suplente de la clave. |
+| vppProgramTypeName | Tipo de programa VPP. |
 
 ### <a name="example"></a>Ejemplo
 
@@ -105,27 +105,27 @@ La entidad **VppProgramTypes** muestra los posibles tipos de programa VPP para u
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationInventories
 
-La entidad **ApplicationInventory** muestra las aplicaciones que se encuentran en el dispositivo en el momento de recopilación del inventario.
+La entidad **applicationInventory** muestra las aplicaciones que se encuentran en el dispositivo en el momento de la recopilación del inventario.
 
 | Propiedad  | Descripción |
 |---------|------------|
-| DeviceKey | Se trata de una referencia a la tabla de dispositivos que contiene el identificador de dispositivo de Intune. |
-| DateKey | Referencia a la tabla de fechas que indica el día del inventario. |
-| ApplicationName | El nombre de la aplicación. |
-| ApplicationVersion | Versión de la aplicación. |
-| BundleSize | El tamaño de la aplicación en bytes. |
+| deviceKey | Se trata de una referencia a la tabla de dispositivos que contiene el identificador de dispositivo de Intune. |
+| dateKey | Referencia a la tabla de fechas que indica el día del inventario. |
+| applicationName | El nombre de la aplicación. |
+| applicationVersion | Versión de la aplicación. |
+| bundleSize | El tamaño de la aplicación en bytes. |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-La entidad **MobileAppInstallState** representa el estado de instalación de una aplicación móvil una vez que se ha asignado a un grupo que contiene dispositivos, usuarios o ambos.
+La entidad **mobileAppInstallState** representa el estado de la instalación de una aplicación móvil una vez asignada a un grupo que contiene dispositivos, usuarios o ambos.
 
 | Propiedad | Descripción |
 |---|---|
-| AppInstallStateKey | El identificador único del estado de instalación de aplicación de su cuenta. |
-| AppInstallState | Valor de enumeración del estado de instalación de aplicación. |
-| AppInstallStateName | Nombre del estado de instalación de aplicación. |
+| appInstallStateKey | El identificador único del estado de instalación de aplicación de su cuenta. |
+| appInstallState | Valor de enumeración del estado de instalación de aplicación. |
+| appInstallStateName | Nombre del estado de instalación de aplicación. |
 
 
 

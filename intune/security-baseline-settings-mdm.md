@@ -16,25 +16,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
-ms.translationtype: MTE75
+ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549060"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735771"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Intune  
 
-Ver la configuración de línea de base de seguridad MDM que sean compatibles con Microsoft Intune para dispositivos que ejecutan Windows 10 o posterior. Los valores predeterminados de configuración en esta línea base representan la configuración recomendada para los dispositivos es aplicable y podrían no coincidir con los valores predeterminados de la línea de base de otras líneas de base de seguridad.  
+Vea la configuración de línea de base de seguridad de MDM compatible con Microsoft Intune para dispositivos que ejecutan Windows 10 o posterior. Los valores predeterminados de la configuración de esta línea base representan la configuración recomendada para los dispositivos aplicables y es posible que no coincidan con los valores predeterminados de línea base de otras líneas de base de seguridad.  
 
-La versión más reciente de la línea de base es **MDM de línea base de seguridad para la actualización de primavera de 2019 (1 de 19 H)**  
+La versión de línea de base más reciente es la **línea base de seguridad de MDM para la actualización Spring 2019 (19H1)**  
 
-Para obtener información acerca de qué ha cambiado en la versión más reciente de esta línea de base de la versión anterior, consulte [cambios en la nueva plantilla](#whats-changed-in-the-new-template).  
+Para obtener información sobre lo que ha cambiado en la versión más reciente de esta línea de base de la versión anterior, consulte [cambios en la nueva plantilla](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> En junio de 2019, la línea de base de seguridad MDM de vista previa ha sido reemplazado por la versión de la *MDM de línea base de seguridad para la actualización de primavera de 2019 (1 de 19H)* plantilla, que es generaly disponible (no en versión preliminar). Los perfiles que se crearon antes de la disponibilidad de la *MDM de línea base de seguridad para la actualización de primavera de 2019 (1 de 19 H)* línea base no se actualizan para reflejar la configuración y los valores que se encuentran en la línea de base de seguridad de MDM para actualización de primavera de 2019 (19 H 1 ) versión.  Aunque no se puede crear nuevos perfiles basados en la plantilla de vista previa, puede editar y continuar utilizar perfiles que creó anteriormente y que se basan en la plantilla de vista previa.   
+> En junio de 2019, la versión preliminar de la línea de base de seguridad de MDM se ha reemplazado por el lanzamiento de la plantilla de *línea de base de seguridad de MDM para la actualización de Spring 2019 (19H1)* , que está disponible con carácter general (no en versión preliminar). Los perfiles que se crearon antes de la disponibilidad de la línea de base de *seguridad de MDM para la actualización de spring 2019 Update (19H1)* no se actualizan para reflejar la configuración y los valores que se encuentran en la versión de línea de base de seguridad de MDM para la actualización de Spring 2019 (19H1).  Aunque no se pueden crear nuevos perfiles basados en la plantilla de vista previa, se pueden editar y seguir usando perfiles creados previamente que se basan en la plantilla de vista previa.   
   
-Para obtener información sobre el uso de líneas base de seguridad con Intune, consulte [líneas de base de seguridad](security-baselines.md).  
+Para obtener información sobre el uso de las líneas de base de seguridad con Intune, consulte [uso de líneas de base de seguridad](security-baselines.md).  
 
 
    
@@ -47,7 +47,7 @@ Para más información, vea [Policy CSP - AboveLock](https://docs.microsoft.com/
 
   **Valor predeterminado**: Sí  
 
-- **Voz activar las aplicaciones de la pantalla bloqueada**  
+- **Voz activar aplicaciones de la pantalla bloqueada**  
 
   **Valor predeterminado**: Deshabilitado
 
@@ -64,16 +64,16 @@ Para más información, vea [Policy CSP - AppRuntime](https://docs.microsoft.com
 ## <a name="application-management"></a>Administración de aplicaciones   
 Para más información, vea [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) (CSP de directiva: ApplicationManagement) en la documentación de Windows.  
 
-- **Bloque de control de usuario a través de las instalaciones**  
-  Esta configuración de directiva permite a los usuarios para cambiar las opciones de instalación que normalmente solo están disponibles para los administradores del sistema. Si habilita a esta configuración de directiva, se omiten algunas de las características de seguridad de Windows Installer. Permite completar las instalaciones que en caso contrario, se detendrían debido a una infracción de seguridad. Si deshabilita o no configura esta directiva, las características de seguridad de Windows Installer impiden que los usuarios cambiar las opciones de instalación normalmente reservadas para los administradores del sistema, como especificar el directorio a la que se instalan los archivos. Si el instalador de Windows detecta que un paquete de instalación ha permitido al usuario cambiar una opción protegida, detiene la instalación y muestra un mensaje. Estas características de seguridad funcionan sólo cuando se ejecuta el programa de instalación en un contexto de seguridad con privilegios en el que tiene acceso a directorios denegados al usuario. Esta configuración de directiva está diseñada para entornos menos restrictivos. Puede usarlo para evitar errores en el programa de instalación que impide la instalación de software.  
+- **Bloquear el control de usuario en las instalaciones**  
+  Esta configuración de directiva permite a los usuarios cambiar las opciones de instalación que normalmente solo están disponibles para los administradores del sistema. Si habilita esta configuración de Directiva, se omiten algunas de las características de seguridad de Windows Installer. Permite que las instalaciones se completen y, de lo contrario, se detendrían debido a una infracción de seguridad. Si deshabilita o no establece esta configuración de Directiva, las características de seguridad de Windows Installer evitar que los usuarios cambien las opciones de instalación que normalmente están reservadas para los administradores del sistema, como especificar el directorio en el que se instalan los archivos. Si Windows Installer detecta que un paquete de instalación ha permitido al usuario cambiar una opción protegida, detiene la instalación y muestra un mensaje. Estas características de seguridad solo funcionan cuando el programa de instalación se ejecuta en un contexto de seguridad con privilegios en el que tiene acceso a los directorios denegados al usuario. Esta configuración de directiva está diseñada para entornos menos restrictivos. Se puede usar para eludir los errores en un programa de instalación que impide que se instale el software.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
   **Valor predeterminado**: Sí
 
-- **Instalaciones de aplicaciones de bloque MSI con privilegios elevados**  
+- **Bloquear las instalaciones de aplicaciones MSI con privilegios elevados**  
   Esta configuración de directiva indica a Windows Installer que use permisos elevados cuando instale cualquier programa en el sistema.  
-  - *Si habilita esta configuración de directiva*, privilegios se extienden a todos los programas. Normalmente, estos privilegios están reservados para los programas que se han asignado al usuario (ofrecido en el escritorio), asignado a la f de equipo (instalados automáticamente), o que están disponibles en Agregar o quitar programas en el Panel de Control. Esta configuración de perfil permite a los usuarios instalar programas que requieren acceso a directorios que el usuario que no tenga permiso para ver o cambiar, incluidos los directorios de equipos muy restringidos.
-  - *Si deshabilita o no configura esta directiva*, el sistema aplica los permisos del usuario actual cuando instale programas que un administrador del sistema no distribuir o de la oferta. Nota: Esta configuración de directiva aparece en las carpetas Configuración del equipo y Configuración de usuario. Para que esta configuración de directiva surta efecto, debe habilitarla en ambas carpetas. Precaución: Los usuarios experimentados pueden aprovechar las ventajas de los permisos de esta configuración concede a cambiar sus privilegios y obtener acceso permanente a carpetas y archivos restringidos de directiva. Tenga en cuenta que la versión de configuración de usuario de esta configuración de directiva no se garantiza que sea seguro.  
+  - *Si habilita esta configuración de directiva*, los privilegios se extienden a todos los programas. Estos privilegios normalmente se reservan para los programas que se han asignado al usuario (ofrecido en el escritorio), asignados al equipo (instalado automáticamente) en f o disponibles en Agregar o quitar programas en el panel de control. Esta configuración de perfil permite a los usuarios instalar programas que requieren acceso a directorios en los que es posible que el usuario no tenga permiso para ver o cambiar, incluidos los directorios de equipos altamente restringidos.
+  - *Si deshabilita o no establece esta configuración de directiva*, el sistema aplica los permisos del usuario actual cuando instala programas que un administrador del sistema no distribuye u ofrece. Nota: Esta configuración de directiva aparece en las carpetas Configuración del equipo y Configuración de usuario. Para que esta configuración de directiva sea efectiva, debe habilitarla en ambas carpetas. PRECAUCIÓN: los usuarios experimentados pueden aprovechar los permisos que esta configuración de directiva concede para cambiar sus privilegios y obtener acceso permanente a carpetas y archivos restringidos. Tenga en cuenta que no se garantiza que la versión de configuración de usuario de esta configuración de directiva sea segura.  
   
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067134)    
 
@@ -270,44 +270,44 @@ Para más información, vea [Policy CSP - DeviceLock](https://docs.microsoft.com
   
   **Valor predeterminado**: Sí  
   
-    Cuando *Requerir contraseña* está establecido en *Sí*, las siguientes opciones están disponibles.
+  Cuando *Requerir contraseña* está establecido en *Sí*, las siguientes opciones están disponibles.
 
-    - **Password minimum character set count** (Número mínimo de conjuntos de caracteres de contraseña)  
-      El número de elementos complejos (letras mayúsculas y minúsculas, números y signos de puntuación) necesarios para una contraseña o PIN fuerte. El PIN aplica el comportamiento siguiente para los dispositivos móviles y de escritorios: 1 - Solo dígitos 2 - Se requieren dígitos y letras minúsculas 3 - Se requieren dígitos, letras minúsculas y letras mayúsculas. No se admite en cuentas de Microsoft de escritorio y cuentas de dominio. 4 - Se requieren dígitos, letras minúsculas, letras mayúsculas y caracteres especiales. No se admite en el escritorio. El valor predeterminado es 1.  
-      [Más información](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Password minimum character set count** (Número mínimo de conjuntos de caracteres de contraseña)  
+    El número de elementos complejos (letras mayúsculas y minúsculas, números y signos de puntuación) necesarios para una contraseña o PIN fuerte. El PIN aplica el comportamiento siguiente para los dispositivos móviles y de escritorios: 1 - Solo dígitos 2 - Se requieren dígitos y letras minúsculas 3 - Se requieren dígitos, letras minúsculas y letras mayúsculas. No se admite en cuentas de Microsoft de escritorio y cuentas de dominio. 4 - Se requieren dígitos, letras minúsculas, letras mayúsculas y caracteres especiales. No se admite en el escritorio. El valor predeterminado es 1.  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Valor predeterminado**: 3  
+
+  - **Número de errores de inicio de sesión antes de borrar el dispositivo**  
+    El número de errores de autenticación permitidos antes de que se borre el dispositivo. Un valor de 0 deshabilita la funcionalidad de borrado del dispositivo.  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Valor predeterminado**: 3  
-  
-    - **Número de errores de inicio de sesión antes de borrar el dispositivo**  
-      El número de errores de autenticación permitidos antes de que se borre el dispositivo. Un valor de 0 deshabilita la funcionalidad de borrado del dispositivo.  
-      [Más información](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Valor predeterminado**: 10  
-  
-    - **Expiración de contraseña (días)**  
-      La configuración de directiva Vigencia máxima de la contraseña determina cuánto tiempo (en días) se puede usar una contraseña antes de que el sistema requiera que el usuario la cambie. Puede establecer las contraseñas para que expiren después de un número de días comprendido entre 1 y 999, o bien que no expiren nunca si establece el número de días en 0. Si el valor de Vigencia máxima de la contraseña está comprendido entre 1 y 999 días, la vigencia mínima de la contraseña debe ser menor que la máxima. Si el valor de Vigencia máxima de la contraseña se establece en 0, la vigencia mínima de la contraseña puede ser cualquier valor entre 0 y 998 días.  
-      [Más información](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Valor predeterminado**: 60  
-  
-    - **Tipo de contraseña obligatoria**  
-      Determina el tipo de PIN o contraseña requerido.  
-      [Más información](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Valor predeterminado**: Alfanumérico  
-  
-    - **Longitud mínima de contraseña**  
-      La configuración de directiva Longitud mínima de contraseña determina el menor número de caracteres que pueden formar una contraseña para una cuenta de usuario. Puede establecer un valor comprendido entre 1 y 14 caracteres, o bien que no se requiera ninguna contraseña si establece el número de caracteres en 0.  
-      [Más información](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Valor predeterminado**: 8  
-  
-    - **Bloquear contraseñas simples**  
-      Especifica si se permiten números de PIN o contraseñas como "1111" o "1234". Para el escritorio, también controla el uso de contraseñas de imagen.  
-      [Más información](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Valor predeterminado**: Sí  
-        *Un valor de Sí impide el uso de contraseñas simples.* 
+    **Valor predeterminado**: 10  
+
+  - **Expiración de contraseña (días)**  
+    La configuración de directiva Vigencia máxima de la contraseña determina cuánto tiempo (en días) se puede usar una contraseña antes de que el sistema requiera que el usuario la cambie. Puede establecer las contraseñas para que expiren después de un número de días comprendido entre 1 y 999, o bien que no expiren nunca si establece el número de días en 0. Si el valor de Vigencia máxima de la contraseña está comprendido entre 1 y 999 días, la vigencia mínima de la contraseña debe ser menor que la máxima. Si el valor de Vigencia máxima de la contraseña se establece en 0, la vigencia mínima de la contraseña puede ser cualquier valor entre 0 y 998 días.  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Valor predeterminado**: 60  
+
+  - **Tipo de contraseña obligatoria**  
+    Determina el tipo de PIN o contraseña requerido.  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Valor predeterminado**: Alfanumérico  
+
+  - **Longitud mínima de contraseña**  
+    La configuración de directiva Longitud mínima de contraseña determina el menor número de caracteres que pueden formar una contraseña para una cuenta de usuario. Puede establecer un valor comprendido entre 1 y 14 caracteres, o bien que no se requiera ninguna contraseña si establece el número de caracteres en 0.  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Valor predeterminado**: 8  
+
+  - **Bloquear contraseñas simples**  
+    Especifica si se permiten números de PIN o contraseñas como "1111" o "1234". Para el escritorio, también controla el uso de contraseñas de imagen.  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Valor predeterminado**: Sí  
+      *Un valor de Sí impide el uso de contraseñas simples.* 
 
   - **Impedir la reutilización de contraseñas anteriores**  
     Especifica cuántas contraseñas se pueden almacenar en el historial que no se pueden usar. El valor incluye la contraseña actual del usuario. Por ejemplo, con una configuración de *1*, el usuario no puede reutilizar la contraseña actual al elegir una contraseña nueva. Un valor de *5* significa que un usuario no puede establecer la nueva contraseña en su contraseña actual o en cualquiera de sus cuatro contraseñas anteriores.  
@@ -331,7 +331,7 @@ Para más información, vea [Policy CSP - DeviceLock](https://docs.microsoft.com
 ## <a name="dma-guard"></a>Protección de DMA  
 Para más información, vea [Policy CSP - DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) (CSP de directiva: DmaGuard) en la documentación de Windows.
 - **Enumeración de los dispositivos externos compatibles con Kernel DMA Protection**  
-  Esta directiva está pensada para proporcionar seguridad adicional contra los dispositivos compatibles con DMA externos. Permite mayor control sobre la enumeración de dispositivos externos compatibles con DMA incompatibles con la reasignación de DMA o el aislamiento de la memoria de dispositivo y el espacio aislado. Esta directiva solo surte efecto cuando la característica Kernel DMA Protection se admite y está habilitada por el firmware del sistema. Protección de DMA kernel es una característica de plataforma que no se puede controlar mediante una directiva o por el usuario final. Tiene que ser compatible con el sistema en el momento de fabricación. Para comprobar si el sistema admite la protección de DMA del Kernel, compruebe el campo de la protección de DMA del Kernel en la página de resumen de MSINFO32.exe.  
+  Esta directiva está diseñada para proporcionar seguridad adicional a los dispositivos compatibles con DMA externo. Permite mayor control sobre la enumeración de dispositivos externos compatibles con DMA incompatibles con la reasignación de DMA o el aislamiento de la memoria de dispositivo y el espacio aislado. Esta directiva solo surte efecto cuando la característica Kernel DMA Protection se admite y está habilitada por el firmware del sistema. La protección de DMA de kernel es una característica de plataforma que no se puede controlar a través de una directiva o por el usuario final. Tiene que ser compatible con el sistema en el momento de fabricación. Para comprobar si el sistema admite la protección DMA de kernel, consulte el campo protección de DMA de kernel en la página Resumen de MSINFO32. exe.  
   [Más información](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
   **Valor predeterminado**: Bloquear todo   
@@ -531,12 +531,12 @@ Para más información, vea [Policy CSP - InternetExplorer](https://docs.microso
   
   **Valor predeterminado**: No hay sitios  
 
-- **La compatibilidad con el cifrado de Internet Explorer**  
-  Esta configuración de directiva permite desactivar la compatibilidad para seguridad de capa de transporte (TLS) 1.0, TLS 1.1, TLS 1.2, capa de Sockets seguros (SSL) 2.0 o 3.0 de SSL en el explorador. TLS y SSL son protocolos que ayudan a proteger la comunicación entre el explorador y el servidor de destino. Cuando el explorador intenta establecer una comunicación protegida con el servidor de destino, el explorador y el servidor negocian qué protocolo y la versión que se usará. El explorador y el servidor intentan coincidir con la otra lista de protocolos admitidos y las versiones y selecciona a la coincidencia más preferida. Si habilita a esta configuración de directiva, el explorador se negocia o no negocia un túnel cifrado mediante el uso de los métodos de cifrado que seleccione en la lista desplegable. Si deshabilita o no configura esta directiva, el usuario puede seleccionar que el cifrado es compatible con el Explorador de método.  
+- **Compatibilidad con cifrado de Internet Explorer**  
+  Esta configuración de directiva permite desactivar la compatibilidad con la seguridad de la capa de transporte (TLS) 1,0, TLS 1,1, TLS 1,2, Capa de sockets seguros (SSL) 2,0 o SSL 3,0 en el explorador. TLS y SSL son protocolos que ayudan a proteger la comunicación entre el explorador y el servidor de destino. Cuando el explorador intenta configurar una comunicación protegida con el servidor de destino, el explorador y el servidor negocian qué protocolo y versión usar. El explorador y el servidor intentan hacer coincidir la lista de protocolos y versiones compatibles entre sí y seleccionan la coincidencia más preferida. Si habilita esta configuración de Directiva, el explorador negocia o no negocia un túnel de cifrado mediante los métodos de cifrado que seleccione en la lista desplegable. Si deshabilita o no establece esta configuración de Directiva, el usuario puede seleccionar el método de cifrado que admite el explorador.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Default**: 2 elementos: TLS versión 1.1 y TLS v1.2  
-  *Seleccione la flecha hacia abajo para mostrar las opciones que se pueden seleccionar para esta configuración.*
+  **Valor predeterminado**: 2 elementos: TLS v 1.1 y TLS v 1.2  
+  *Seleccione la flecha abajo para mostrar las opciones que puede seleccionar para esta configuración.*
   
 - **Internet Explorer locked down internet zone smart screen** (Bloqueo de SmartScreen para la zona de Internet de Internet Explorer)  
   Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina las páginas de esta zona para detectar contenido malintencionado.  
@@ -940,7 +940,7 @@ Para más información, vea [Policy CSP - InternetExplorer](https://docs.microso
   
   **Valor predeterminado**: Habilitado  
   
-- **Scriptlets de zona de internet de Internet Explorer**  
+- **Scriptlets de zona Internet de Internet Explorer**  
   Esta configuración de directiva permite administrar si el usuario puede ejecutar scriptlets. Si habilita esta configuración de directiva, el usuario puede ejecutar scriptlets. Si deshabilita esta configuración de directiva, el usuario no puede ejecutar scriptlets. Si no establece esta configuración de directiva, el usuario puede habilitar o deshabilitar los scriptlets.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067176)  
   
@@ -1387,28 +1387,28 @@ Para más información, vea [Policy CSP - Power](https://docs.microsoft.com/wind
 
 ## <a name="remote-assistance"></a>Asistencia remota
 - **Asistencia remota solicitada**  
-  Esta configuración de directiva le permite activar o desactivar Solicited (pedir) Asistencia remota en este equipo. 
-  - *Si habilita esta configuración de directiva*, los usuarios de este equipo pueden utilizar el correo electrónico o transferencia de archivos pedirle a alguien para obtener ayuda. Además, los usuarios pueden utilizar programas de mensajería instantánea para permitir conexiones a este equipo, y puede configurar opciones adicionales de asistencia remota. 
-  - *Si deshabilita esta configuración de directiva*, los usuarios en este equipo no pueden usar el correo electrónico o transferencia de archivos para pedir ayuda a alguien. Además, los usuarios no pueden usar programas de mensajería instantánea para permitir conexiones a este equipo. 
-  - *Si no configura esta configuración de directiva*, los usuarios pueden activar o desactivar asistencia remota Solicited (pedir) a sí mismos en las propiedades del sistema en el Panel de Control. Los usuarios también pueden configurar la configuración de asistencia remota. 
+  Esta configuración de directiva permite activar o desactivar la asistencia remota solicitada (solicitar) en este equipo. 
+  - *Si habilita esta configuración de directiva*, los usuarios de este equipo pueden usar el correo electrónico o la transferencia de archivos para pedir ayuda a alguien. Además, los usuarios pueden usar programas de mensajería instantánea para permitir las conexiones a este equipo, y puede configurar otras opciones de asistencia remota. 
+  - *Si deshabilita esta configuración de directiva*, los usuarios de este equipo no podrán usar el correo electrónico o la transferencia de archivos para pedir ayuda a alguien. Además, los usuarios no pueden utilizar programas de mensajería instantánea para permitir las conexiones a este equipo. 
+  - *Si no establece esta configuración de directiva*, los usuarios pueden activar o desactivar la asistencia remota solicitada (solicitar) en las propiedades del sistema en el panel de control. Los usuarios también pueden configurar las opciones de asistencia remota. 
 
-  Si habilita esta configuración de directiva, tiene dos maneras de permitir que las aplicaciones auxiliares proporcionar asistencia remota: "Permitir que las aplicaciones auxiliares para ver solo el equipo" o "Permitir aplicaciones auxiliares para controlar de forma remota el equipo". El "tiempo máximo de vale" configuración de directiva establece un límite en la cantidad de tiempo que una invitación de asistencia remota creada mediante el uso de correo electrónico o transferencia de archivos puede permanecer abierta. La "Seleccione el método para enviar invitaciones por correo electrónico" valor especifica qué estándar de correo electrónico a usar para enviar invitaciones de asistencia remota. Dependiendo de su programa de correo electrónico, puede usar el estándar de Mailto (el destinatario de la invitación se conecta a través de un vínculo de Internet) o el SMAPI (MAPI Simple) estándar (la invitación se adjunta al mensaje de correo electrónico). Esta configuración de directiva no está disponible en Windows Vista como SMAPI es el único método que admite. Si habilita a esta configuración de directiva también debe habilitar excepciones de firewall correspondientes permitir a las comunicaciones de asistencia remota.  
+  Si habilita esta configuración de Directiva, tiene dos maneras de permitir que los auxiliares proporcionen asistencia remota: "permitir que los ayudantes solo vean el equipo" o "permitir que los ayudantes controlen el equipo de forma remota". La configuración de directiva "tiempo máximo de vale" establece un límite en la cantidad de tiempo que una invitación de asistencia remota creada mediante correo electrónico o transferencia de archivos puede permanecer abierta. La configuración "Seleccione el método para enviar invitaciones por correo electrónico" especifica qué estándar de correo electrónico se utiliza para enviar invitaciones de asistencia remota. Según el programa de correo electrónico, puede usar el estándar mailto (el destinatario de la invitación se conecta a través de un vínculo a Internet) o el estándar SMAPI (MAPI simple) (la invitación se adjunta al mensaje de correo electrónico). Esta configuración de Directiva no está disponible en Windows Vista, ya que SMAPI es el único método admitido. Si habilita esta configuración de Directiva, también debe habilitar las excepciones de Firewall adecuadas para permitir las comunicaciones de asistencia remota.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067198)
 
-  **Default**: deshabilitar la asistencia remota
+  **Valor predeterminado**: deshabilitar asistencia remota
 
-  Cuando se establece en *habilitar asistencia remota*, configure las siguientes opciones adicionales:  
-  - **Asistencia remota solicitada permiso**  
+  Cuando se establece en *Habilitar asistencia remota*, configure las siguientes opciones adicionales:  
+  - **Permiso solicitado de asistencia remota**  
     **Valor predeterminado**: Vista  
 
-  - **Valor de tiempo máximo de vale**  
+  - **Valor máximo de tiempo de vale**  
     **Valor predeterminado**: *Sin configurar*  
 
-  - **Período de tiempo máximo de vale**  
-    **Default**: minutos    
+  - **Período máximo de tiempo de vale**  
+    **Valor predeterminado**: minutos    
 
-  - **Método de invitación de correo electrónico**  
-    **Default**: MAPI Simple
+  - **Método de invitación por correo electrónico**  
+    **Valor predeterminado**: MAPI simple
 
   
 ## <a name="remote-desktop-services"></a>Servicios de Escritorio Remoto  
@@ -1660,7 +1660,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Sí
   
 - **Supervisión de comportamiento**  
-  Permite o impide la funcionalidad de supervisión del comportamiento de Windows Defender. Insertados en Windows 10, estos sensores recopilan y procesan las señales de comportamiento de procesos del sistema operativo y envían estos datos de sensor a la instancia de nube privada y aislada de ATP de Microsoft Defender.  
+  Permite o deshabilita la funcionalidad de supervisión del comportamiento de Windows Defender. Insertados en Windows 10, estos sensores recopilan y procesan las señales de comportamiento de procesos del sistema operativo y envían estos datos de sensor a la instancia de nube privada y aislada de ATP de Microsoft Defender.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Valor predeterminado**: Sí
@@ -1709,9 +1709,9 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Bloquear
 
 ## <a name="windows-defender-firewall"></a>Firewall de Windows Defender  
-Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) en la documentación de protocolos de Windows.  
+Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) en la documentación sobre los protocolos de Windows.  
 
-- **Dominio del perfil de Firewall**  
+- **Dominio de Perfil de Firewall**  
   Especifica los perfiles a la que pertenece la regla: dominio, privado o público. Este valor representa el perfil para las redes que están conectadas a dominios.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2066796)  
 
@@ -1727,7 +1727,7 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
   - **Firewall habilitado**  
     **Valor predeterminado**: Permitido
 
-- **Perfil de firewall público**  
+- **Perfil de Firewall público**  
   Especifica los perfiles a la que pertenece la regla: dominio, privado o público. Este valor representa el perfil para las redes públicas. Estas redes se clasifican como públicas por los administradores en el host del servidor. La clasificación se produce la primera vez que el host se conecta a la red. Por lo general, estas redes se encuentran en aeropuertos, cafeterías y otros lugares públicos, donde otros usuarios o el administrador de la red no son de confianza.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067143)  
 
@@ -1749,11 +1749,11 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
   - **Policy rules from group policy not merged** (Reglas de directiva de la directiva de grupo no combinadas)  
     **Valor predeterminado**: Sí
 
-- **Perfil del firewall privado**  
+- **Perfil de Firewall privado**  
   Especifica los perfiles a la que pertenece la regla: dominio, privado o público. Este valor representa el perfil para las redes privadas.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
+  - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
     **Valor predeterminado**: Sí
 
   - **Outbound connections required** (Conexiones salientes requeridas)  
@@ -1767,7 +1767,7 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para empresas  
 - **Require enhanced anti-spoofing, when available** (Requerir tecnología mejorada contra la suplantación de identidad, cuando esté disponible)  
-  En caso afirmativo, dispositivos usará anti-spoofing mejorado, cuando esté disponible. Si No, se bloqueará la suplantación. No se configura, se respetarán las configuraciones realizadas en el cliente.  
+  En caso afirmativo, los dispositivos usarán la protección mejorada contra la suplantación de identidad, cuando esté disponible. Si no es así, se bloqueará la protección contra la suplantación de identidad. No configurado respetará las configuraciones realizadas en el cliente.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Valor predeterminado**: Sí
@@ -1778,22 +1778,22 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
   **Valor predeterminado**: Sí
 
 - **Requerir minúsculas en el PIN**  
-  Si es necesario, el PIN del usuario debe incluir al menos una letra minúscula.
+  Si es necesario, el PIN de usuario debe incluir al menos una letra minúscula.
 
   **Valor predeterminado**: Permitido
 
 - **Requerir caracteres especiales en el PIN**  
-  Si es necesario, el PIN del usuario debe incluir al menos un carácter especial.
+  Si es necesario, el PIN de usuario debe incluir al menos un carácter especial.
 
   **Valor predeterminado**: Permitido
 
 - **Longitud mínima del PIN**  
-  Longitud mínima del PIN debe estar entre 4 y 127.
+  La longitud mínima del PIN debe estar comprendida entre 4 y 127.
 
   **Valor predeterminado**: 6
 
 - **Requerir mayúsculas en el PIN**  
-  Si es necesario, el PIN del usuario debe incluir al menos una letra mayúscula.
+  Si es necesario, el PIN de usuario debe incluir al menos una letra mayúscula.
 
   **Valor predeterminado**: Permitido
 
@@ -1820,34 +1820,34 @@ Para más información, vea [Policy CSP - WindowsPowerShell](https://docs.micros
   **Valor predeterminado**: Habilitado
 
 ## <a name="whats-changed-in-the-new-template"></a>Cambios en la nueva plantilla
-El *MDM de línea base de seguridad para la actualización de primavera de 2019 (1 de 19H)* plantilla tiene los siguientes cambios desde el *preview* plantilla.
+La plantilla de la *línea de base de seguridad de MDM para la actualización de Spring 2019 (19H1)* tiene los siguientes cambios de la plantilla de *vista previa* .
 
-### <a name="changes-to-the-baseline-settings"></a>Cambios en la configuración de línea base
+### <a name="changes-to-the-baseline-settings"></a>Cambios en la configuración de línea de base
 La configuración es alguna de las siguientes:
-- *Nuevo* en esta versión más reciente de la línea base.
-- *Quitar* de esta última versión de línea de base, pero estaban presentes en la versión anterior.
-- *Revisado* de alguna manera de cómo la configuración aparece en la versión anterior. 
+- *Novedades* de esta versión más reciente de la línea base.
+- ** Se quitó de esta última versión de línea base, pero estaba presente en la versión anterior.
+- Se ha *revisado* de alguna manera de cómo aparecía la configuración en la versión anterior. 
 
-*[Nuevo]*  [ **Anteriormente bloqueo**](#above-lock):
-- **Voz activar las aplicaciones de la pantalla bloqueada**    
+*[Nuevo]* [**Anterior bloqueo**](#above-lock):
+- **Voz activar aplicaciones de la pantalla bloqueada**    
 
 *[Nuevo]* [**Administración de aplicaciones**](#application-management): 
-- **Bloque de control de usuario a través de las instalaciones**  
-- **Instalaciones de aplicaciones de bloque MSI con privilegios elevados**  
+- **Bloquear el control de usuario en las instalaciones**  
+- **Bloquear las instalaciones de aplicaciones MSI con privilegios elevados**  
 
-*[Quitado]*  [ **Bitlocker**](#bitlocker):  
-- Directiva de unidad extraíble de caja de seguridad de bits > **método de cifrado**
-- **Se ha corregido la directiva de unidad con BitLocker** *(toda la configuración)*
-- **Directiva de unidad del sistema de la caja de seguridad de bits** *(toda la configuración)*
+*[Quitado]* [**BitLocker**](#bitlocker):  
+- **Método** de cifrado > de directiva de unidad extraíble del bloqueador de bits
+- **Directiva de unidad fija de bloqueo de bits** *(todas las configuraciones)*
+- **Directiva de unidad del sistema del bloqueador de bits** *(todas las configuraciones)*
 
 *[Nuevo]* [**Conectividad**](#connectivity):
-- **Configurar el acceso seguro a las rutas de acceso UNC**
+- **Configurar el acceso seguro a rutas UNC**
 
 *[Nuevo]* [**Device Guard**](#device-guard):
 - **Virtualization based security** (Seguridad basada en la virtualización)
 
 
-*[Nuevo]*  [ **DMA Guard**](#dma-guard):
+*[Nuevo]* [**Protección de DMA**](#dma-guard):
 - **Enumeración de los dispositivos externos compatibles con Kernel DMA Protection**  
 
 *[Nuevo]* [**Internet Explorer**](#internet-explorer):
@@ -1855,17 +1855,17 @@ La configuración es alguna de las siguientes:
 - **Internet Explorer internet zone drag and drop or copy and paste files** (Arrastrar y colocar, o copiar y pegar archivos en la zona de Internet de Internet Explorer)  
 - **Internet Explorer restricted zone .NET Framework reliant components** (Componentes que dependen de .NET Framework en la zona restringida de Internet Explorer)  
 - **Internet Explorer local machine zone do not run antimalware against Active X controls** (No ejecutar antimalware en los controles ActiveX de la zona Equipo local de Internet Explorer)
-- **La compatibilidad con el cifrado de Internet Explorer**  
+- **Compatibilidad con cifrado de Internet Explorer**  
 
-*[Revisión]*  [ **Internet Explorer**](#internet-explorer):
-- **Internet Explorer internet zona automática símbolo del sistema para las descargas de archivos** > el valor predeterminado es ahora **deshabilitado**. En la versión preliminar, esto se estableció en habilitado.
+*[Revisado]* [**Internet Explorer**](#internet-explorer):
+- **Solicitud automática de Internet Explorer Internet Zone para la descarga de archivos** > el valor **** predeterminado ahora está deshabilitado. En la vista previa, se estableció en habilitado.
 
 *[Nuevo]* [**Asistencia remota**](#remote-assistance):  
 - **Asistencia remota solicitada** 
-  - **Asistencia remota solicitada permiso**
-  - **Valor de tiempo máximo de vale**  
-  - **Período de tiempo máximo de vale**  
-  - **Método de invitación de correo electrónico**
+  - **Permiso solicitado de asistencia remota**
+  - **Valor máximo de tiempo de vale**  
+  - **Período máximo de tiempo de vale**  
+  - **Método de invitación por correo electrónico**
 
 
 *[Nuevo]* [**WIndows Defender**](#windows-defender):
@@ -1873,19 +1873,19 @@ La configuración es alguna de las siguientes:
 - **Inicio de aplicaciones de comunicación de Office en un proceso secundario** 
 
 *[Nuevo]* [**Firewall de Windows Defender**](#windows-defender-firewall)
-- **Dominio del perfil de Firewall**  
+- **Dominio de Perfil de Firewall**  
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
   - **Outbound connections required** (Conexiones salientes requeridas)  
   - **Inbound notifications blocked** (Notificaciones entrantes bloqueadas)  
   - **Firewall habilitado**  
-- **Perfil de firewall público**  
+- **Perfil de Firewall público**  
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
   - **Outbound connections required** (Conexiones salientes requeridas)  
   - **Inbound notifications blocked** (Notificaciones entrantes bloqueadas)  
   - **Firewall habilitado** 
   - **Connection security rules from group policy not merged** (Reglas de seguridad de conexión de la directiva de grupo no combinadas)   
   - **Policy rules from group policy not merged** (Reglas de directiva de la directiva de grupo no combinadas)  
-- **Perfil del firewall privado**  
+- **Perfil de Firewall privado**  
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
   - **Outbound connections required** (Conexiones salientes requeridas)  
   - **Inbound notifications blocked** (Notificaciones entrantes bloqueadas)  

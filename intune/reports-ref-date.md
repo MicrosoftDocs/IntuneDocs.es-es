@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,42 +17,42 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0baf74515af22fb04f773da0d26b94a7eec5f572
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 16cb03788f8a3dd261a1e6d9dbc3efe4b50f4f73
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041028"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313833"
 ---
-# <a name="reference-for-date-entity"></a>Referencia de la entidad Date
+# <a name="reference-for-dates-entity"></a>Referencia de la entidad Dates
 
-La categoría **Fecha** contiene la entidad **Date**, que se usa para definir las referencias de fecha en el modelo de datos.
+La categoría **Fechas** contiene la entidad **date**, que se usa para definir las referencias de fecha en el modelo de datos.
 
-## <a name="date"></a>Fecha
+## <a name="dates"></a>fechas
 
-La entidad **Date** representa fechas a las que se hace referencia en varias entidades de almacenamiento de datos.
+La entidad **date** representa fechas a las que se hace referencia en varias entidades de almacenamiento de datos.
 
 
 |    Propiedad     |                      Descripción                       |       Ejemplo        |
 |-----------------|--------------------------------------------------------|----------------------|
-|     DateKey     | Identificador único de esta fecha en el almacenamiento de datos. |       20160703       |
-|    FullDate     |    Esta fecha representada en formato completo de fecha y hora.     | 3/7/2016 12:00:00 AM |
-|    DayOfWeek    |                      Día de la semana.                       |          1           |
-|   DayOfMonth    |                      Día del mes.                      |          3           |
-|    DayOfYear    |                      Día del año.                       |         185          |
-|   WeekOfYear    |                      Semana del año.                      |          28          |
-|   MonthOfYear   |                   Mes del año.                    |          7           |
-| CalendarQuarter |                    Trimestre natural.                    |          3           |
-|  CalendarYear   |                     Año natural.                      |         2016         |
-|     DateKey     | Identificador único de esta fecha en el almacenamiento de datos. |       20160703       |
-|    FullDate     |    Esta fecha representada en formato completo de fecha y hora.     | 3/7/2016 12:00:00 AM |
-|    DayOfWeek    |                      Día de la semana.                       |          1           |
-|   DayOfMonth    |                      Día del mes.                      |          3           |
-|    DayOfYear    |                      Día del año.                       |         185          |
-|   WeekOfYear    |                      Semana del año.                      |          28          |
-|   MonthOfYear   |                   Mes del año.                    |          7           |
-| CalendarQuarter |                    Trimestre natural.                    |          3           |
-|  CalendarYear   |                     Año natural.                      |         2016         |
+|     dateKey     | Identificador único de esta fecha en el almacenamiento de datos. |       20160703       |
+|    fullDate     |    Esta fecha representada en formato completo de fecha y hora.     | 3/7/2016 12:00:00 AM |
+|    dayOfWeek    |                      Día de la semana.                       |          1           |
+|   dayOfMonth    |                      Día del mes.                      |          3           |
+|    dayOfYear    |                      Día del año.                       |         185          |
+|   weekOfYear    |                      Semana del año.                      |          28          |
+|   monthOfYear   |                   Mes del año.                    |          7           |
+| calendarQuarter |                    Trimestre natural.                    |          3           |
+|  calendarYear   |                     Año natural.                      |         2016         |
+|     dateKey     | Identificador único de esta fecha en el almacenamiento de datos. |       20160703       |
+|    fullDate     |    Esta fecha representada en formato completo de fecha y hora.     | 3/7/2016 12:00:00 AM |
+|    dayOfWeek    |                      Día de la semana.                       |          1           |
+|   dayOfMonth    |                      Día del mes.                      |          3           |
+|    dayOfYear    |                      Día del año.                       |         185          |
+|   weekOfYear    |                      Semana del año.                      |          28          |
+|   monthOfYear   |                   Mes del año.                    |          7           |
+| calendarQuarter |                    Trimestre natural.                    |          3           |
+|  calendarYear   |                     Año natural.                      |         2016         |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

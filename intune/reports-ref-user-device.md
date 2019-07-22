@@ -1,7 +1,7 @@
 ---
 title: Asociación de dispositivos de usuario - Almacenamiento de datos de Intune
 titleSuffix: Microsoft Intune
-description: La entidad UserDeviceAssociation contiene las asociaciones de dispositivos de usuario que se dan en su organización.
+description: La entidad userDeviceAssociation contiene las asociaciones de dispositivos de usuario que se dan en su organización.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
@@ -17,27 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7401b5da7629addf03498afd44033a59839d39e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8d24716f65d5ff8afba5fc0a89cfef082712429
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045317"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313670"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Referencia de la entidad Asociación de dispositivos del usuario
 
-La entidad **UserDeviceAssociation** contiene las asociaciones de dispositivos de usuario que se dan en su organización.
+La entidad **userDeviceAssociation** contiene las asociaciones de dispositivos de usuario que se dan en su organización.
 
-## <a name="userdeviceassociation"></a>UserDeviceAssociation
+## <a name="userdeviceassociations"></a>userDeviceAssociations
 
 
 |        Nombre        |                                           Descripción                                            |        Ejemplo         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
-|      UserKey       |              Identificador único del usuario en el almacenamiento de datos. (Clave suplente).               |          123           |
-|     DeviceKey      |                      Identificador único del dispositivo en el almacenamiento de datos.                      |          123           |
-| CreatedDateTimeUTC |           Fecha y hora de creación de la asociación de dispositivos de usuario. Utiliza el formato UTC.           | 23/11/2016 12:00:00 AM |
-|     IsDeleted      | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. |       Verdadero/Falso       |
-|  EndedDateTimeUTC  |              Fecha y hora (UTC) en que IsDeleted cambió a <strong>True</strong>.               | 06/23/2017 12:00:00 AM |
+|      userKey       |              Identificador único del usuario en el almacenamiento de datos. (Clave suplente).               |          123           |
+|     deviceKey      |                      Identificador único del dispositivo en el almacenamiento de datos.                      |          123           |
+| createdDateTimeUTC |           Fecha y hora de creación de la asociación de dispositivos de usuario. Utiliza el formato UTC.           | 23/11/2016 12:00:00 AM |
+|     isDeleted      | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. |       Verdadero/Falso       |
+|  endedDateTimeUTC  |              Fecha y hora (UTC) en que IsDeleted cambió a <strong>True</strong>.               | 06/23/2017 12:00:00 AM |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

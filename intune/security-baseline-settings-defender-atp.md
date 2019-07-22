@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549125"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354436"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configuración de la línea de base de Advanced Threat Protection de Microsoft Defender
 
 Vea la configuración de la línea de base de Advanced Threat Protection de Microsoft Defender (anteriormente Advanced Threat Protection de Windows Defender) compatible con Microsoft Intune. Los valores predeterminados de línea de base de Advanced Threat Protection (ATP) representan la configuración recomendada para ATP y podrían no coincidir con los valores predeterminados para otras líneas de base de seguridad.  
 
-  La línea de base de Protección contra amenazas avanzada de Microsoft Defender está disponible cuando el entorno cumple con los requisitos previos para usar [Protección contra amenazas avanzada de Microsoft Defender](advanced-threat-protection.md#prerequisites).
+La línea base de [Advanced Threat Protection de Microsoft Defender](advanced-threat-protection.md#prerequisites) está disponible si el entorno cumple con los requisitos previos para su uso. 
 
-
+Esta línea base está optimizada para dispositivos físicos y actualmente no se recomienda para su uso en máquinas virtuales (VM) o puntos de conexión VDI. Ciertas configuraciones de línea de base pueden afectar a las sesiones interactivas remotas en entornos virtualizados. Para obtener más información, consulte [aumento del cumplimiento de la línea de base de seguridad de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) en la documentación de Windows.
 
 
 > [!NOTE]  
@@ -164,22 +164,22 @@ Para más información, vea [Configuración de las directivas de grupo de BitLoc
 
   Para la directiva de la unidad extraíble de BitLocker, configure las siguientes opciones:
 
-    - **Require encryption for write access** (Requerir cifrado para el acceso de escritura)  
-      **Valor predeterminado**: Sí
+  - **Require encryption for write access** (Requerir cifrado para el acceso de escritura)  
+    **Valor predeterminado**: Sí
 
-    - **Método de cifrado**  
-      **Valor predeterminado**: AES CBC de 128 bits
+  - **Método de cifrado**  
+    **Valor predeterminado**: AES CBC de 128 bits
 
 - **Bit locker fixed drive policy** (Directiva de unidad fija de BitLocker)  
   Los valores de esta directiva determinan la intensidad del cifrado que BitLocker usa para el cifrado de unidades fijas. Las empresas pueden controlar el nivel de cifrado para mejorar la seguridad (AES-256 es más seguro que AES-128). Si habilita esta directiva, puede configurar un algoritmo de cifrado y la intensidad de cifrado de clave para unidades de datos fijas, unidades del sistema operativo y unidades de datos extraíbles de manera individual. Para unidades del sistema operativo y unidades fijas, se recomienda usar el algoritmo XTS-AES. Para unidades extraíbles, debe usar el cifrado AES-CBC de 128 bits o AES-CBC de 256 bits si la unidad se usa en otros dispositivos que no ejecuten Windows 10 (versión 1511 o posterior). El cambio del método de cifrado no tendrá ningún efecto si la unidad ya está cifrada o si el cifrado está en curso. En estos casos, se omite esta configuración de directiva.
 
   Para la directiva de la unidad fija de BitLocker, configure las siguientes opciones:
 
-    - **Require encryption for write access** (Requerir cifrado para el acceso de escritura)  
-      **Valor predeterminado**: Sí
+  - **Require encryption for write access** (Requerir cifrado para el acceso de escritura)  
+    **Valor predeterminado**: Sí
 
-    - **Método de cifrado**  
-      **Valor predeterminado**: AES XTS de 128 bits
+  - **Método de cifrado**  
+    **Valor predeterminado**: AES XTS de 128 bits
 
 - **Bit locker system drive policy** (Directiva de unidad del sistema de BitLocker)  
   Los valores de esta directiva determinan la intensidad del cifrado que BitLocker usa para el cifrado de la unidad del sistema. A las empresas les interesa controlar el nivel de cifrado para mejorar la seguridad (AES-256 es más seguro que AES-128). Si habilita esta directiva, puede configurar un algoritmo de cifrado y la intensidad de cifrado de clave para unidades de datos fijas, unidades del sistema operativo y unidades de datos extraíbles de manera individual. Para unidades del sistema operativo y unidades fijas, se recomienda usar el algoritmo XTS-AES. Para unidades extraíbles, debe usar el cifrado AES-CBC de 128 bits o AES-CBC de 256 bits si la unidad se usa en otros dispositivos que no ejecuten Windows 10 (versión 1511 o posterior). El cambio del método de cifrado no tendrá ningún efecto si la unidad ya está cifrada o si el cifrado está en curso. En estos casos, se omite esta configuración de directiva.  
