@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
+ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494240"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341347"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>En desarrollo para Microsoft Intune: julio de 2019
 
@@ -60,10 +60,10 @@ Para ayudarle con la preparación y planeación, en esta página se enumeran las
 
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Notificaciones personalizadas para usuarios y grupos    <!-- 16766574   -->
-Pronto podrá enviar notificaciones de inserción personalizadas de ad-hoc de la aplicación de Portal de empresa a los usuarios de iOS y Android dispositivos administrados con Intune. Estas notificaciones personalizadas no están vinculadas a determinadas características de Intune y se puede usar para cualquier propósito que requiera, incluidas las notificaciones generales que desea enviar a algunos o todos los empleados.  
+Pronto podrá enviar notificaciones de Active Directory personalizadas desde la aplicación Portal de empresa a los usuarios de dispositivos iOS y Android que se administran con Intune. Estas notificaciones personalizadas no están asociadas a características específicas de Intune y se pueden usar para cualquier propósito que necesite, incluidas las notificaciones generales que desea enviar a algunos o a todos los empleados.  
 
-### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Configurar el contenido de la notificación de aplicación para las cuentas de organización <!-- 2576686 -->
-Directivas de protección de aplicación (aplicación) de Intune en dispositivos iOS y Android le permitirá al contenido de notificación de aplicación de control de cuentas de organización. Esta característica requiere compatibilidad de aplicaciones y puede no estar disponible para todas las aplicaciones de la aplicación habilitada. Consulte [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md) para obtener más información sobre APP.
+### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Configurar el contenido de notificación de aplicación para las cuentas de la organización <!-- 2576686 -->
+Las directivas de protección de aplicaciones (APP) de Intune en dispositivos iOS y Android le permitirán controlar el contenido de las notificaciones de la aplicación para las cuentas de la organización. Esta característica requerirá la compatibilidad de las aplicaciones y es posible que no esté disponible para todas las aplicaciones habilitadas para la aplicación. Consulte [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md) para obtener más información sobre APP.
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Notificación de aplicaciones de Google Play disponibles para perfiles de trabajo de Android <!-- 3041956  -->
 En las instalaciones de aplicaciones disponibles en dispositivos de perfil de trabajo de Android, puede ver el estado de instalación de la aplicación, así como la versión instalada de aplicaciones administradas de Google Play. Para obtener más información, vea [Supervisión de las directivas de protección de aplicaciones](app-protection-policies-monitor.md), [Administrar dispositivos de perfil de trabajo Android con Intune](android-enterprise-overview.md) y [Tipo de aplicación de Google Play administrado](apps-add-android-for-work.md#managed-google-play-app-type).
@@ -87,17 +87,11 @@ Puede crear perfiles de configuración de dispositivo Windows 10 (**Configuraci�
 Se aplica a: 
 - Windows 10 y versiones posteriores
 
-### <a name="administrative-templates-for-group-policy---------3510695---"></a>Plantillas administrativas para directiva de grupo     <!--  3510695 -->
-Para ayudar a mejorar la seguridad de los dispositivos en la nube, se van a lanzar plantillas administrativas que permiten usar Intune para configurar y seleccionar opciones de directiva de grupo para equipos Windows.  Estas plantillas usan el proveedor de servicios de configuración (CSP) de directivas para proporcionar hasta 2500 opciones adicionales de Office, Windows y OneDrive.
-
-### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>Administrar FileVault para macOS   <!--  3858502 + 1210104   -->
-Podrá usar un perfil de configuración de dispositivo de Intune endpoint protection para administrar el cifrado de clave FileVault para dispositivos macOS. Esto incluye la custodia de visualización de y rotar las claves de cifrado de los dispositivos corporativos. Los usuarios finales podrán recuperar dichas claves en el sitio Web de Portal de empresa.
-
 ### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Configuración avanzada del Firewall de Windows Defender   <!--  1311949     -->
 Como versión preliminar pública, pronto podrá usar Intune para administrar las reglas de firewall personalizadas en los clientes de Windows Defender.  
 
 ### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Nuevo diseñador de configuración al crear un perfil de OEMConfig para Android Enterprise <!-- 3712769  -->
-En Intune, puede crear un perfil de configuración de dispositivo que usa una aplicación OEMConfig (configuración del dispositivo > perfiles > Crear perfil > Android enterprise para plataforma > OEMConfig para el tipo de perfil). Al hacerlo, se abre un editor de JSON con una plantilla y valores para que pueda cambiar. Esta actualización incluye un diseñador de configuración con una experiencia de usuario mejorada que muestre detalles incrustados en la aplicación, incluidos los títulos, descripciones y mucho más. El editor de JSON sigue estando disponible y muestra todos los cambios realizados en el Diseñador de configuración.
+En Intune, puede crear un perfil de configuración de dispositivo que use una aplicación de OEMConfig (configuración de dispositivos > perfiles > crear un perfil > Android Enterprise for Platform > OEMConfig para el tipo de perfil). Al hacerlo, se abre un editor de JSON con una plantilla y valores que puede cambiar. Esta actualización incluye un diseñador de configuración con una experiencia de usuario mejorada que muestra los detalles insertados en la aplicación, incluidos los títulos, las descripciones, etc. El editor de JSON sigue estando disponible y muestra los cambios que se realicen en el diseñador de configuración.
 
 Para ver la configuración actual, vaya a [uso y administración de dispositivos empresariales Android con OEMConfig](android-oem-configuration-overview.md).
 
@@ -108,17 +102,17 @@ Se aplica a: Android Enterprise
 ## <a name="device-management"></a>Administración de dispositivos
 
 ### <a name="improve-device-location---3855417---"></a>Mejorar la ubicación del dispositivo<!-- 3855417 -->
-Podrá acercar las coordenadas exactas de un dispositivo mediante el **Buscar dispositivo** acción. Para obtener más información acerca de cómo buscar dispositivos perdidos de iOS, consulte [buscar dispositivos iOS perdidos](device-locate.md).
+Podrá acercar las coordenadas exactas de un dispositivo mediante la acción **Buscar dispositivo** . Para obtener más información sobre cómo buscar dispositivos iOS perdidos, consulte [Buscar dispositivos iOS perdidos](device-locate.md).
 
-### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Configurar el límite de tiempo de limpieza automática de dispositivos hasta 30 días <!--4231059  -->
-Podrá establecer el límite de tiempo de limpieza automática de dispositivos lo más corto 30 días (en lugar de límite actual de 90 días) después del último inicio de sesión. Para ello, vaya a **Intune** > **dispositivos** > **instalación** > **limpia de las reglas de dispositivo**.
+### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Configurar el límite de tiempo de limpieza automática de dispositivos en 30 días <!--4231059  -->
+Podrá establecer el límite de tiempo de limpieza automática del dispositivo en un plazo de 30 días (en lugar de en el límite actual de 90 días) después del último inicio de sesión. Para ello, vaya a **Intune** > **configuración** > de**dispositivos** > **limpiar reglas**.
 
 
 <!-- ***********************************************-->
 ## <a name="security"></a>Seguridad
 
 ### <a name="import-and-export-security-baselines------3408610------------"></a>Importar y exportar líneas base de seguridad    <!--3408610          -->  
-Estamos agregando la capacidad de exportar e importar líneas base de seguridad para que pueda realizar las personalizaciones con usted y compartirlos entre los entornos de Intune.
+Estamos agregando la capacidad de exportar e importar líneas de base de seguridad para que pueda tomar sus personalizaciones y compartirlas entre entornos de Intune.
 
 
 
