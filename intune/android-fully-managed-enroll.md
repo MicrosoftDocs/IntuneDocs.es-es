@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 54d9fa1016ff39fcf1e7da9c21391ce70f7acaac
+ms.sourcegitcommit: e451295ca3ee3efc31bf9ee360e599b28ef643ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819896"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67863080"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configuración de la inscripción en Intune de dispositivos Android Enterprise totalmente administrados (versión preliminar)
 
 Los dispositivos Android Enterprise totalmente administrados son dispositivos de propiedad corporativa que están asociados a un solo usuario y se usan exclusivamente para el trabajo y no para uso personal. Los administradores pueden administrar todo el dispositivo y aplicar controles de directiva que no están disponibles para perfiles de trabajo, como:
-- permitir la instalación de aplicaciones solo desde Google Play administrado;
-- bloquear la desinstalación de aplicaciones administradas, e
-- impedir que los usuarios restablezcan los dispositivos a los valores de fábrica, etc.
+- Permitir la instalación de aplicaciones solo desde Google Play administrado
+- Bloquear la desinstalación de aplicaciones administradas
+- Impedir que los usuarios restablezcan los dispositivos a los valores de fábrica, etc.
 
 Con Intune es más fácil instalar aplicaciones y aplicar una configuración a los dispositivos Android de la empresa, incluidos los dispositivos Android Enterprise totalmente administrados. Para más detalles sobre Android Enterprise, vea [Requisitos para usar dispositivos Android en una empresa](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
@@ -58,8 +58,8 @@ Para configurar la administración de dispositivos Android Enterprise totalmente
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y elija **Inscripción de dispositivos** > **Inscripción de Android** > **Corporate-owned, fully managed user devices (Preview)** (Dispositivos de usuario totalmente administrados de propiedad corporativa [vista previa]).
 2. En **Allow users to enroll corporate-owned user devices** (Permitir a los usuarios inscribir dispositivos de usuario de propiedad corporativa), elija **Sí**.
 
-[!NOTE]
-Si tiene definida una directiva de acceso condicional de Azure AD que use el control de *requerir que un dispositivo se marque como compatible* y se aplique a **Todas las aplicaciones en la nube**, **Android** y **Exploradores**, debe excluir la aplicación en la nube **Microsoft Intune** de esta directiva. Esto es así porque los procesos de instalación de Android usan una pestaña de Chrome para autenticar a los usuarios durante la inscripción. Para más información, vea [Documentación sobre el acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+> [!NOTE]
+> Si tiene definida una directiva de acceso condicional de Azure AD que use el control de *requerir que un dispositivo se marque como compatible* y se aplique a **Todas las aplicaciones en la nube**, **Android** y **Exploradores**, debe excluir la aplicación en la nube **Microsoft Intune** de esta directiva. Esto es así porque los procesos de instalación de Android usan una pestaña de Chrome para autenticar a los usuarios durante la inscripción. Para más información, vea [Documentación sobre el acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 Cuando esta opción se establece en **Sí**, proporciona un token de inscripción (una cadena aleatoria) y un código QR para el inquilino de Intune. Este token de inscripción único es válido para todos los usuarios y no expira. Según el sistema operativo Android y la versión del dispositivo, puede usar el token o un código QR para inscribir el dispositivo de quiosco multimedia.
 

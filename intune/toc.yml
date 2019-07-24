@@ -171,6 +171,7 @@
       items:
         - name: ¿Qué es la inscripción de dispositivos?
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: Capacidades de administración de dispositivos
           href: device-management-capabilities.md
         - name: Opciones de inscripción
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: Identificadores corporativos
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: Multi-factor Authentication
               href: multi-factor-authentication.md
             - name: Administrador de inscripción de dispositivos
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: Buscar usuario principal
           href: find-primary-user.md
+        - name: Enviar notificaciones
+          href: custom-notifications.md
         - name: Borrar el contenido de un dispositivo macOS
           href: device-erase.md
         - name: Dispositivos móviles de control remoto
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: Scripts de PowerShell
               href: intune-management-extension.md
-        - name: Implementación de aplicaciones
-          href: apps-deploy.md
+        - name: Asignación de aplicaciones
           items:
+            - name: Asignación de aplicaciones a grupos
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: Incluir y excluir aplicaciones
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: Implementar aplicaciones de Windows 10
               href: apps-windows-10-app-deploy.md
             - name: Implementación de aplicaciones en entornos de administración pública
               href: apps-deploy-gcc-dod.md
         - name: Supervisión de aplicaciones
           href: apps-monitor.md
+        - name: Aplicaciones detectadas
+          href: app-discovered-apps.md
         - name: Configurar aplicaciones
-          href: app-configuration-policies-overview.md
           items:
+            - name: Directivas de configuración de aplicaciones
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS dispositivos administrados
               href: app-configuration-policies-use-ios.md
             - name: Android dispositivos administrados

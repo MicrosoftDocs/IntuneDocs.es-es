@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744316"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812532"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune. 
 
@@ -65,10 +65,26 @@ Con la integración de Intune App SDK o el ajuste de aplicaciones, puede protege
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
 Compruebe sus aplicaciones de Microsoft, de terceros y de línea de negocio (LOB). Debe asegurarse de que todas sus aplicaciones protegidas con la aplicación de Intune usan la versión 8.1.1 del SDK o una versión posterior.
 
-- Para aplicaciones de LOB: Es posible que deba volver a publicar las aplicaciones integradas con la versión 8.1.1 del SDK o con una versión posterior. Le recomendamos que utilice la versión más reciente del SDK. Para información sobre cómo preparar las aplicaciones de LOB para las directivas de protección de aplicaciones, vea [Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones](../apps-prepare-mobile-application-management.md).
+- Para aplicaciones de LOB: Es posible que deba volver a publicar las aplicaciones integradas con la versión 8.1.1 del SDK o con una versión posterior. Le recomendamos que utilice la versión más reciente del SDK. Para información sobre cómo preparar las aplicaciones de LOB para las directivas de protección de aplicaciones, consulte [Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones](../apps-prepare-mobile-application-management.md).
 - Para las aplicaciones de terceros o de Microsoft: Asegúrese de que está implementando la versión más reciente de estas aplicaciones a los usuarios.
 
 También debe actualizar la documentación o las instrucciones para desarrolladores, si procede, para que incluyan este cambio en el soporte técnico para el SDK.
 
 #### <a name="additional-information"></a>Información adicional
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Plan de cambio: Nueva configuración de actualizaciones de Windows en Intune <!-- 4464404 -->
+A partir de la versión de agosto para el servicio de Intune o actualización 1908, estamos agregando una nueva "configuración de la fecha límite" que puede configurar en lugar de la configuración de "Permitir al usuario que reinicie (reinicio establecido)". Planeamos deshabilitar la configuración del reinicio establecido en la interfaz de usuario en la actualización 1909 o en la actualización de septiembre y luego quitarlos completamente de la consola hacia finales de octubre. 
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Si administra dispositivos de Windows 10 en su entorno: 
+- Con la actualización de Intune de agosto o 1908, verá una nueva configuración de la fecha límite en la consola, además de la antigua configuración del reinicio establecido.
+- Cuando se configuran estos dos valores, la configuración de la fecha límite sustituyen a los valores de la configuración del reinicio establecido.
+- La configuración de la fecha límite reemplazará la opción "Permitir al usuario que reinicie (reinicio establecido) en la consola de la actualización 1910.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
+Empiece a usar la configuración de la fecha límite en la actualización 1908 con los valores deseados. Una vez que lo haya hecho, puede establecer la configuración del reinicio establecido en "Sin configurar" para preparar su retirada de la consola en octubre.
+
+Actualice la documentación y cualquier script de automatización si es necesario. 
+
+Le mantendremos informado y enviaremos un recordatorio al centro de mensajes antes de quitar la configuración del reinicio establecido.

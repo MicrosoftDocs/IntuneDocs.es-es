@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
+ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045296"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270292"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Uso de Intune para corregir las vulnerabilidades que identifica ATP de Microsoft Defender  
 
@@ -32,7 +32,7 @@ Al integrar Intune con la Protección de amenazas avanzada (ATP) de Microsoft D
 
 Una vez que conecta Intune con la Protección contra amenazas avanzada de Microsoft Defender, ATP recibe detalles de amenazas y vulnerabilidades desde los dispositivos administrados.  
 
-En la consola del Centro de seguridad de Windows Defender, los administradores de seguridad de ATP revisan los datos sobre las vulnerabilidades del punto de conexión. Los administradores luego usan un solo clic para crear tareas de seguridad que marcan los dispositivos vulnerables para corregirlos. Las tareas de seguridad se pasan de inmediato a la consola de Intune, donde los administradores de Intune pueden verlas. La tarea de seguridad identifica el tipo de vulnerabilidad, la prioridad, el estado y los pasos que hay que tomar para corregirla. El administrador de Intune elige aceptar o rechazar la tarea.  
+En la consola del Centro de seguridad de Microsoft Defender, los administradores de seguridad de ATP revisan los datos sobre las vulnerabilidades del punto de conexión. Los administradores luego usan un solo clic para crear tareas de seguridad que marcan los dispositivos vulnerables para corregirlos. Las tareas de seguridad se pasan de inmediato a la consola de Intune, donde los administradores de Intune pueden verlas. La tarea de seguridad identifica el tipo de vulnerabilidad, la prioridad, el estado y los pasos que hay que tomar para corregirla. El administrador de Intune elige aceptar o rechazar la tarea.  
 
 Una vez que se acepta una tarea, el administrador de Intune actúa para corregir la vulnerabilidad a través de Intune, con las instrucciones que se proporcionan como parte de la tarea de seguridad.  
 
@@ -67,7 +67,7 @@ Un flujo de trabajo de ejemplo:
 **Configuraciones de Intune para ATP**:  
 - Configure una conexión de servicio a servicio con ATP de Microsoft Defender.  
 - Implemente una directiva de cumplimiento de dispositivos con un tipo de perfil de **ATP de Microsoft Defender (Windows 10 Escritorio)** en dispositivos en los que ATP evaluará el riesgo.
-  Para información sobre cómo configurar Intune para que trabaje junto con ATP, consulte [Aplicación del cumplimiento de ATP de Windows Defender con acceso condicional en Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+  Para información sobre cómo configurar Intune para que trabaje junto con ATP, consulte [Aplicación del cumplimiento de ATP de Windows Defender con acceso condicional en Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Trabajo con tareas de seguridad  
 
