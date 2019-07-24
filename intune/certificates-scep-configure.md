@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547366"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353778"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -46,7 +46,7 @@ Este conector de certificado de NDES también admite el modo Estándar federal d
   
 - **Azure AD Application Proxy** (opcional): Azure AD Application Proxy se puede usar en lugar de un servidor proxy de aplicación web (WAP) dedicado para publicar el servidor SCEP en Internet. Para más información, consulte [Provisión de acceso remoto seguro a aplicaciones locales](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
-#### <a name="additional"></a>Adicional
+### <a name="additional"></a>Adicional
 
 - El servidor que hospeda WAP [debe instalar una actualización](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilite la compatibilidad con las direcciones URL largas que usa el Servicio de inscripción de dispositivos de red. Esta actualización está incluida en el [paquete acumulativo de actualizaciones de diciembre de 2014](http://support.microsoft.com/kb/3013769)o está disponible por separado, en [KB3011135](http://support.microsoft.com/kb/3011135).
 - El servidor WAP debe tener un certificado SSL que coincida con el nombre que se publica para los clientes externos, así como confiar en el certificado SSL que se usa en el servidor NDES. Estos certificados habilitan al servidor WAP para terminar la conexión SSL entre clientes y crear una nueva conexión SSL hacia el servidor NDES.
@@ -79,17 +79,17 @@ Se recomienda encarecidamente publicar el servidor NDES a través de un proxy in
 ## <a name="configure-your-infrastructure"></a>Configurar la infraestructura
 Para poder configurar perfiles de certificado, lleve a cabo los siguientes pasos. Estos pasos requieren conocimientos de Windows Server 2012 R2 o versiones posteriores y de Servicios de certificados de Active Directory (ADCS):
 
-#### <a name="step-1---create-an-ndes-service-account"></a>Paso 1: crear una cuenta de servicio NDES
+### <a name="step-1---create-an-ndes-service-account"></a>Paso 1: crear una cuenta de servicio NDES
 
 Cree una cuenta de usuario de dominio que vaya a usar como cuenta de servicio NDES. Esta cuenta se especifica al configurar las plantillas en la CA emisora antes de instalar y configurar NDES. Asegúrese de que el usuario tenga los derechos predeterminados, los derechos **Iniciar sesión localmente**, **Iniciar sesión como un servicio** e **Iniciar sesión como trabajo por lotes**. Algunas organizaciones tienen directivas de protección que deshabilitan estos derechos.
 
-#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Paso 2: configurar plantillas de certificado en la entidad de certificación
+### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Paso 2: configurar plantillas de certificado en la entidad de certificación
 En este paso, hará lo siguiente:
 
 - Configurar una plantilla de certificado para NDES
 - Publicar la plantilla de certificado para NDES
 
-##### <a name="configure-the-certification-authority"></a>Configurar la entidad de certificación
+#### <a name="configure-the-certification-authority"></a>Configurar la entidad de certificación
 
 1. Inicie sesión como administrador de organización.
 
@@ -150,7 +150,7 @@ Configure la CA para permitir que el solicitante especifique el período de vali
 
 3. Valide que la plantilla se publicó visualizándola en la carpeta **Plantillas de certificado** .
 
-#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Paso 3: configurar los requisitos previos en el servidor NDES
+### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Paso 3: configurar los requisitos previos en el servidor NDES
 En este paso, hará lo siguiente:
 
 - Agregar NDES a un servidor con Windows Server y configurar IIS para que admita NDES
@@ -190,7 +190,7 @@ En este paso, hará lo siguiente:
 
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
-#### <a name="step-4---configure-ndes-for-use-with-intune"></a>Paso 4: configurar NDES para su uso con Intune
+### <a name="step-4---configure-ndes-for-use-with-intune"></a>Paso 4: configurar NDES para su uso con Intune
 En este paso, hará lo siguiente:
 
 - Configurar NDES para su uso con la CA emisora
@@ -241,7 +241,7 @@ En este paso, hará lo siguiente:
 
     Si aparece **503 Servicio no disponible**, compruebe el Visor de eventos. Es probable que el grupo de aplicaciones se haya detenido debido a la falta de un derecho para el usuario SCEP. Esos derechos se describen en el paso 1.
 
-##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Instalar y enlazar certificados en el servidor NDES
+#### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Instalar y enlazar certificados en el servidor NDES
 
 1. En el servidor NDES, solicite e instale un certificado de **autenticación de servidor** de la CA interna o de una CA pública. Después, este certificado SSL se enlaza en IIS.
 
@@ -267,7 +267,7 @@ En este paso, hará lo siguiente:
 
     - **Nombre del firmante**: este valor debe ser igual al nombre DNS del servidor donde se instala el certificado (el servidor SCEP)
 
-##### <a name="configure-iis-request-filtering"></a>Configurar el filtrado de solicitudes de IIS
+#### <a name="configure-iis-request-filtering"></a>Configurar el filtrado de solicitudes de IIS
 
 1. En el servidor NDES, abra el **Administrador de IIS**, seleccione el **Sitio web predeterminado** en el panel **Conexiones** y abra **Filtrado de solicitudes**.
 
@@ -287,13 +287,13 @@ En este paso, hará lo siguiente:
 
 4. Reinicie el servidor de NDES. El servidor está ya preparado para admitir el conector certificado.
 
-#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Paso 5: habilitar, instalar y configurar Intune Certificate Connector
+### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Paso 5: habilitar, instalar y configurar Intune Certificate Connector
 En este paso, hará lo siguiente:
 
 - Habilitar la compatibilidad con SCEP en Intune.
 - Descargue, instale y configure Certificate Connector en el servidor que hospede el rol Servicio de inscripción de dispositivos de red (NDES) de su entorno. Para aumentar la escala de la implementación de NDES en la organización, puede instalar varios servidores NDES con Microsoft Intune Certificate Connector en cada uno de ellos.
 
-##### <a name="download-install-and-configure-the-certificate-connector"></a>Descargar, instalar y configurar Certificate Connector
+#### <a name="download-install-and-configure-the-certificate-connector"></a>Descargar, instalar y configurar Certificate Connector
 
 > [!IMPORTANT] 
 > Microsoft Intune Certificate Connector **debe** instalarse en un servidor Windows independiente. No se puede instalar en la entidad de certificación (CA) emisora. También se **debe** instalar en el mismo servidor que el rol de Servicio de inscripción de dispositivos de red (NDES).

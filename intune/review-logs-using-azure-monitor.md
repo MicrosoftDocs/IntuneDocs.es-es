@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412703"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354523"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Envío de datos de registro al almacenamiento, a Event Hubs o a Log Analytics en Intune (versión preliminar)
 
@@ -174,43 +174,43 @@ Para revisar los costos relacionados con la administración del área de trabajo
 
 Obtenga respuestas a las preguntas más frecuentes así como información sobre los problemas conocidos con los registros de Intune en Azure Monitor.
 
-#### <a name="which-logs-are-included"></a>¿Qué registros se incluyen?
+### <a name="which-logs-are-included"></a>¿Qué registros se incluyen?
 
 Los registros de auditoría y los registros operativos (versión preliminar) están disponibles para el enrutamiento mediante esta característica.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Después de una acción, ¿cuándo se muestran los registros correspondientes en el centro de eventos?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Después de una acción, ¿cuándo se muestran los registros correspondientes en el centro de eventos?
 
 Los registros normalmente se muestran en el centro de eventos unos minutos después de realizar la acción. [Documentación de Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/) proporciona más información.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Después de una acción, ¿cuándo se muestran los registros correspondientes en la cuenta de almacenamiento?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Después de una acción, ¿cuándo se muestran los registros correspondientes en la cuenta de almacenamiento?
 
 Para las cuentas de almacenamiento de Azure, la latencia es en cualquier lugar de 5 a 15 minutos después de que se ejecuta la acción.
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>¿Qué ocurre si un administrador cambia el período de retención de una configuración de diagnóstico?
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>¿Qué ocurre si un administrador cambia el período de retención de una configuración de diagnóstico?
 
 La nueva directiva de retención se aplica a los registros recopilados después del cambio. Los registros recopilados antes del cambio de directiva no se ven afectados.
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>¿Cuánto cuesta almacenar mis datos?
+### <a name="how-much-does-it-cost-to-store-my-data"></a>¿Cuánto cuesta almacenar mis datos?
 
 Los costos de almacenamiento dependen del tamaño de los registros y del período de retención que elija. Para una lista de los costos estimados para los inquilinos, que dependen del volumen de los registros generado, vea [Tamaño de almacenamiento para los registros de actividad](#storage-size-for-activity-logs) (en este artículo).
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>¿Cuánto cuesta transmitir mis datos a un centro de eventos?
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>¿Cuánto cuesta transmitir mis datos a un centro de eventos?
 
 Los costos de transmisión dependen del número de mensajes que se reciben por minuto. Para detalles sobre cómo se calculan los costos y las estimaciones de costos en función del número de mensajes, consulte [Mensajes del centro de eventos para los registros de actividad](#event-hub-messages-for-activity-logs) (en este artículo).
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>¿Cómo integro los registros de auditoría de Intune con mi sistema SIEM?
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>¿Cómo integro los registros de auditoría de Intune con mi sistema SIEM?
 
 Use Azure Monitor con Event Hubs para transmitir registros al sistema SIEM. En primer lugar, [transmita los registros a un centro de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). A continuación, [configure la herramienta SIEM](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) con el centro de eventos configurado. 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>¿Qué herramientas SIEM se admiten actualmente?
+### <a name="what-siem-tools-are-currently-supported"></a>¿Qué herramientas SIEM se admiten actualmente?
 
 Actualmente, [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar y [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (abre un nuevo sitio Web) admiten Azure Monitor. Para más información sobre cómo funcionan los conectores, consulte [Flujo de datos de supervisión de Azure a un centro de eventos para que lo consuma una herramienta externa](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>¿Puedo acceder a los datos desde un centro de eventos sin usar una herramienta SIEM externa?
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>¿Puedo acceder a los datos desde un centro de eventos sin usar una herramienta SIEM externa?
 
 Sí. Para acceder a los registros desde su aplicación personalizada, puede usar la [API de Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph).
 
-#### <a name="what-data-is-stored"></a>¿Dónde se almacenan los datos?
+### <a name="what-data-is-stored"></a>¿Dónde se almacenan los datos?
 
 Intune no almacena los datos enviados a través de la canalización. Intune enruta los datos a la canalización de Azure Monitor, con la autorización del inquilino. Para más información, vea [Introducción a Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview).
 
