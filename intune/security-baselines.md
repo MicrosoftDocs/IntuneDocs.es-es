@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851477"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353595"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Uso de líneas de base de seguridad para configurar dispositivos Windows 10 en Intune
 
@@ -73,6 +73,9 @@ Las instancias de línea de base de seguridad siguientes están disponibles para
 - **Línea de base de ATP de Microsoft Defender**  
   *(Para usar esta línea de base, su entorno debe cumplir con los requisitos previos para usar [Protección contra amenazas avanzada de Microsoft Defender](advanced-threat-protection.md#prerequisites))* .
   - [Versión preliminar: línea de base de ATP de Microsoft Defender](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > La base de referencia de seguridad de ATP de Microsoft Defender se ha optimizado para dispositivos físicos y actualmente no se recomienda su uso en máquinas virtuales (VM) ni puntos de conexión de VDI. Ciertas configuraciones de base de referencia pueden afectar a las sesiones interactivas remotas en entornos virtualizados.  Para obtener más información, vea [Aumento del cumplimiento de la base de referencia de seguridad de ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) en la documentación de Windows.
 
 Puede continuar usando y editando los perfiles que creó anteriormente en función de una plantilla en versión preliminar, incluso si dicha plantilla deja de estar disponible para la creación de nuevos perfiles. 
 
@@ -177,19 +180,19 @@ Otros procesos que podrían cambiar la configuración del dispositivo posteriorm
 
 ## <a name="q--a"></a>Q & A
 
-#### <a name="why-these-settings"></a>¿Por qué esta configuración?
+### <a name="why-these-settings"></a>¿Por qué esta configuración?
 
 El grupo de seguridad de Microsoft acumula muchos años de experiencia trabajando directamente con los desarrolladores de Windows y la comunidad de seguridad para crear estas recomendaciones. Las configuraciones de esta línea de base se consideran las opciones de configuración relacionadas con la seguridad más pertinentes. En cada nueva compilación de Windows, el equipo ajusta sus recomendaciones basándose en las características lanzadas recientemente.
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>¿Hay alguna diferencia en las recomendaciones para las líneas de base de seguridad de Windows para la directiva de grupo frente a Intune?
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>¿Hay alguna diferencia en las recomendaciones para las líneas de base de seguridad de Windows para la directiva de grupo frente a Intune?
 
 El mismo equipo de seguridad de Microsoft eligió y organizó la configuración para cada línea de base. Intune incluye todas las configuración pertinentes en la línea de base de seguridad de Intune. Hay algunas configuraciones en la línea de base de la directiva de grupo que son específicas de un controlador de dominio local. Estas opciones se excluyen de las recomendaciones de Intune. Todas las demás configuraciones son las mismas.
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>¿Son compatibles las líneas de base de seguridad CIS o NSIT de Intune?
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>¿Son compatibles las líneas de base de seguridad CIS o NSIT de Intune?
 
 Estrictamente hablando, no. El equipo de seguridad de Microsoft consulta a las organizaciones, como CIS, para recopilar sus recomendaciones. Sin embargo, no hay una asignación unívoca entre las líneas de base de Microsoft y “compatibles con CIS”.
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>¿Qué certificaciones tienen las líneas de base de seguridad de Microsoft? 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>¿Qué certificaciones tienen las líneas de base de seguridad de Microsoft? 
 
 - Microsoft continúa publicando líneas de base de seguridad para directivas de grupo (GPO) y el [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), como ha hecho durante muchos años. Muchas organizaciones usan estas líneas de base. Las recomendaciones que figuran en estas líneas de base provienen del compromiso del equipo de seguridad de Microsoft con clientes empresariales y agencias externas, incluido el Departamento de Defensa (DoD), el Instituto Nacional de Estándares y Tecnología (NIST), etc. Compartimos nuestras recomendaciones y líneas de base con estas organizaciones. Estas organizaciones también tienen sus propias recomendaciones que reflejan fielmente las recomendaciones de Microsoft. Dado que la administración de dispositivos móviles (MDM) continúa creciendo en la nube, Microsoft ha creado recomendaciones de MDM equivalentes de estas líneas de base de directivas de grupo. Estas líneas de base adicionales están integradas en Microsoft Intune e incluyen informes de cumplimiento sobre usuarios, grupos y dispositivos que siguen (o no) la línea de base.
 
@@ -202,4 +205,5 @@ Estrictamente hablando, no. El equipo de seguridad de Microsoft consulta a las o
   - [Línea de base de seguridad MDM](security-baseline-settings-mdm.md)  
   - [Línea de base de ATP de Microsoft Defender](security-baseline-settings-defender-atp.md)  
 
-- Compruebe el estado y supervise la [línea de base y el perfil](security-baselines-monitor.md).
+- Comprobación del estado y supervisión de la [base de referencia y el perfil](security-baselines-monitor.md)
+
