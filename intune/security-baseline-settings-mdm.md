@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735771"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882292"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Intune  
 
@@ -116,8 +116,8 @@ Para más información, vea [Policy CSP - Bitlocker](https://docs.microsoft.com/
 
   Para la directiva de la unidad extraíble de BitLocker, configure las siguientes opciones:
 
-    - **Require encryption for write access** (Requerir cifrado para el acceso de escritura)  
-      **Valor predeterminado**: Sí  
+  - **Require encryption for write access** (Requerir cifrado para el acceso de escritura)  
+    **Valor predeterminado**: Sí  
   
 
 ## <a name="browser"></a>Explorador  
@@ -226,17 +226,17 @@ Para más información, vea [Policy CSP - DeviceInstallation](https://docs.micro
   
   **Valor predeterminado**: Bloquear la instalación de dispositivos de hardware  
 
-    Cuando se seleccione *Bloquear la instalación de dispositivos de hardware*, las siguientes opciones están disponibles.
-  
-    - **Remove matching hardware devices**  (Quitar dispositivos de hardware que coinciden)  
+  Cuando se seleccione *Bloquear la instalación de dispositivos de hardware*, las siguientes opciones están disponibles.
+
+  - **Remove matching hardware devices**  (Quitar dispositivos de hardware que coinciden)  
     Esta opción solo está disponible cuando *Hardware device installation by device identifiers* (Instalación de dispositivos de hardware mediante identificadores de dispositivo) se establece en *Bloquear la instalación de dispositivos de hardware*.
-      
-      **Valor predeterminado**: Sí
-  
-    - **Hardware device identifiers that are blocked** (Identificadores de dispositivo de hardware que están bloqueados)  
-       Esta opción solo está disponible cuando *Hardware device installation by device identifiers* (Instalación de dispositivos de hardware mediante identificadores de dispositivo) se establece en *Bloquear la instalación de dispositivos de hardware*.
-      
-      **Valor predeterminado**: Sí  
+    
+    **Valor predeterminado**: Sí
+
+  - **Hardware device identifiers that are blocked** (Identificadores de dispositivo de hardware que están bloqueados)  
+    Esta opción solo está disponible cuando *Hardware device installation by device identifiers* (Instalación de dispositivos de hardware mediante identificadores de dispositivo) se establece en *Bloquear la instalación de dispositivos de hardware*.
+    
+    **Valor predeterminado**: Sí  
   
 - **Hardware device installation by setup classes** (Instalación de dispositivos de hardware mediante clases de instalación)  
   Esta configuración de directiva permite especificar una lista de identificadores únicos globales (GUID) de clases de instalación de dispositivos para los controladores de dispositivos que no se pueden instalar en Windows. Esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que permita a Windows instalar dispositivos. Si habilita esta configuración de directiva, Windows no podrá instalar ni actualizar controladores de dispositivos cuyos GUID de clases de instalación de dispositivos aparezcan en la lista que cree. Si habilita esta configuración de directiva en un servidor de escritorio remoto, esta afectará a la redirección de los dispositivos especificados desde un cliente de escritorio remoto al servidor de escritorio remoto. Si deshabilita o no establece esta configuración de directiva, Windows puede instalar o actualizar dispositivos según lo permitan o impidan otras configuraciones de directiva.  
@@ -244,16 +244,16 @@ Para más información, vea [Policy CSP - DeviceInstallation](https://docs.micro
   
   **Valor predeterminado**: Bloquear la instalación de dispositivos de hardware  
 
-    Cuando se seleccione *Bloquear la instalación de dispositivos de hardware*, las siguientes opciones están disponibles.
-    - **Remove matching hardware devices**   (Quitar dispositivos de hardware que coinciden)  
+  Cuando se seleccione *Bloquear la instalación de dispositivos de hardware*, las siguientes opciones están disponibles.
+  - **Remove matching hardware devices**   (Quitar dispositivos de hardware que coinciden)  
     Esta opción solo está disponible cuando *Hardware device installation by setup classes* (Instalación de dispositivos de hardware por clases de instalación) se establece en *Bloquear la instalación de dispositivos de hardware*.  
 
-      **Valor predeterminado**: *Sin configuración predeterminada*  
-  
-    - **Hardware device identifiers that are blocked** (Identificadores de dispositivo de hardware que están bloqueados)  
-      Esta opción solo está disponible cuando *Hardware device installation by setup classes* (Instalación de dispositivos de hardware por clases de instalación) se establece en *Bloquear la instalación de dispositivos de hardware*.
-      
-      **Valor predeterminado**: *Sin configuración predeterminada*  
+    **Valor predeterminado**: *Sin configuración predeterminada*  
+
+  - **Hardware device identifiers that are blocked** (Identificadores de dispositivo de hardware que están bloqueados)  
+    Esta opción solo está disponible cuando *Hardware device installation by setup classes* (Instalación de dispositivos de hardware por clases de instalación) se establece en *Bloquear la instalación de dispositivos de hardware*.
+    
+    **Valor predeterminado**: *Sin configuración predeterminada*  
 
 ## <a name="device-lock"></a>Bloqueo del dispositivo  
 Para más información, vea [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) (CSP de directiva: DeviceLock) en la documentación de Windows.  
@@ -1186,12 +1186,12 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   
 - **Administrator elevation prompt behavior** (Comportamiento de petición de elevación del administrador)  
   Esta configuración de directiva controla el comportamiento de la petición de elevación para los administradores. Las opciones son: 
-    - *Elevar sin preguntar*: permite a las cuentas con privilegios realizar una operación que requiera elevación sin requerir consentimiento o credenciales. Nota: Use esta opción solo en los entornos más restringidos. 
-    - *Pedir credenciales en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, pide al usuario del escritorio seguro que escriba un nombre de usuario y una contraseña con privilegios. Si el usuario escribe credenciales válidas, la operación continuará con el mayor privilegio disponible del usuario. 
-    - *Pedir consentimiento en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, se pide al usuario del escritorio seguro que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario. 
-    - *Pedir credenciales*: cuando una operación requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continúa con el privilegio aplicable. 
-    - *Pedir consentimiento*: cuando una operación requiere la elevación de privilegios, se pide al usuario que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario.  
-    - *Pedir consentimiento para binarios que no son de Windows*: cuando una operación para una aplicación que no es de Microsoft requiere la elevación de privilegios, se pide al usuario del escritorio seguro que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario. 
+  - *Elevar sin preguntar*: permite a las cuentas con privilegios realizar una operación que requiera elevación sin requerir consentimiento o credenciales. Nota: Use esta opción solo en los entornos más restringidos. 
+  - *Pedir credenciales en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, pide al usuario del escritorio seguro que escriba un nombre de usuario y una contraseña con privilegios. Si el usuario escribe credenciales válidas, la operación continuará con el mayor privilegio disponible del usuario. 
+  - *Pedir consentimiento en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, se pide al usuario del escritorio seguro que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario. 
+  - *Pedir credenciales*: cuando una operación requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continúa con el privilegio aplicable. 
+  - *Pedir consentimiento*: cuando una operación requiere la elevación de privilegios, se pide al usuario que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario.  
+  - *Pedir consentimiento para binarios que no son de Windows*: cuando una operación para una aplicación que no es de Microsoft requiere la elevación de privilegios, se pide al usuario del escritorio seguro que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario. 
   
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067215)   
   
@@ -1208,11 +1208,11 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   **Valor predeterminado**: Requerir cifrado NTLM V2 128
   
 - **Comportamiento de extracción de tarjeta inteligente**  
-    Esta configuración de seguridad determina lo que sucede cuando la tarjeta inteligente de un usuario que haya iniciado sesión se extrae del lector de tarjetas inteligentes. Las opciones son:
-     - *Ninguna acción*. 
-     - *Bloquear la estación de trabajo*: la estación de trabajo se bloquea cuando se retira la tarjeta inteligente, lo que permite a los usuarios abandonar el área, llevarse su tarjeta inteligente y seguir manteniendo una sesión protegida.
-     - *Forzar cierre de sesión*: el usuario se desconecta automáticamente cuando se quita la tarjeta inteligente.
-     - *Desconectar sesión de Escritorio remoto*: al quitar la tarjeta inteligente se desconecta la sesión sin cerrar la sesión del usuario. Esta opción permite al usuario insertar la tarjeta inteligente y reanudar la sesión más tarde o en otro equipo equipado con lector de tarjeta inteligente, sin necesidad de volver a iniciar la sesión. Si la sesión es local, esta directiva funciona de forma idéntica a Bloquear estación de trabajo.
+  Esta configuración de seguridad determina lo que sucede cuando la tarjeta inteligente de un usuario que haya iniciado sesión se extrae del lector de tarjetas inteligentes. Las opciones son:
+  - *Ninguna acción*. 
+  - *Bloquear la estación de trabajo*: la estación de trabajo se bloquea cuando se retira la tarjeta inteligente, lo que permite a los usuarios abandonar el área, llevarse su tarjeta inteligente y seguir manteniendo una sesión protegida.
+  - *Forzar cierre de sesión*: el usuario se desconecta automáticamente cuando se quita la tarjeta inteligente.
+  - *Desconectar sesión de Escritorio remoto*: al quitar la tarjeta inteligente se desconecta la sesión sin cerrar la sesión del usuario. Esta opción permite al usuario insertar la tarjeta inteligente y reanudar la sesión más tarde o en otro equipo equipado con lector de tarjeta inteligente, sin necesidad de volver a iniciar la sesión. Si la sesión es local, esta directiva funciona de forma idéntica a Bloquear estación de trabajo.
   
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067331) 
     
@@ -1825,7 +1825,7 @@ La plantilla de la *línea de base de seguridad de MDM para la actualización de
 ### <a name="changes-to-the-baseline-settings"></a>Cambios en la configuración de línea de base
 La configuración es alguna de las siguientes:
 - *Novedades* de esta versión más reciente de la línea base.
-- ** Se quitó de esta última versión de línea base, pero estaba presente en la versión anterior.
+- *Se* quitó de esta última versión de línea base, pero estaba presente en la versión anterior.
 - Se ha *revisado* de alguna manera de cómo aparecía la configuración en la versión anterior. 
 
 *[Nuevo]* [**Anterior bloqueo**](#above-lock):
@@ -1858,7 +1858,7 @@ La configuración es alguna de las siguientes:
 - **Compatibilidad con cifrado de Internet Explorer**  
 
 *[Revisado]* [**Internet Explorer**](#internet-explorer):
-- **Solicitud automática de Internet Explorer Internet Zone para la descarga de archivos** > el valor **** predeterminado ahora está deshabilitado. En la vista previa, se estableció en habilitado.
+- **Solicitud automática de Internet Explorer Internet Zone para la** descarga de archivos > el valor **predeterminado**ahora está deshabilitado. En la vista previa, se estableció en habilitado.
 
 *[Nuevo]* [**Asistencia remota**](#remote-assistance):  
 - **Asistencia remota solicitada** 
