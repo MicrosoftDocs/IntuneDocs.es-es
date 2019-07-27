@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329470"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467313"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Inscribir dispositivos con perfil profesional Android
 
-Inscriba un dispositivo personal Android para obtener acceso al correo electrónico, las aplicaciones y otros datos profesionales de la empresa. Durante la inscripción, se configura un perfil profesional Android. Este perfil separa los datos personales del dispositivo de los profesionales. El equipo de soporte técnico de la empresa solo administra el perfil profesional, que consta de los archivos y los datos profesionales. El equipo de soporte técnico de la empresa no puede administrar los datos personales del dispositivo. Puede encontrar más información sobre [¿Qué ocurre cuando se crea un perfil de trabajo?](what-happens-when-you-create-a-work-profile-android.md)  
+Inscriba un dispositivo personal Android para obtener acceso al correo electrónico, las aplicaciones y otros datos profesionales de la empresa. Durante la inscripción, se configura un perfil profesional Android. Este perfil separa los datos personales del dispositivo de los profesionales. El equipo de soporte técnico de la empresa solo administra el perfil profesional, que consta de los archivos y los datos profesionales. El equipo de soporte técnico de la empresa no puede administrar los datos personales del dispositivo.
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+Puede encontrar más información sobre [¿Qué ocurre cuando se crea un perfil de trabajo?](what-happens-when-you-create-a-work-profile-android.md)
 
 ## <a name="create-work-profile-and-enroll-device"></a>Crear un perfil profesional e inscribir un dispositivo
 
@@ -69,7 +73,7 @@ Inscriba un dispositivo personal Android para obtener acceso al correo electrón
 
     ![Captura de pantalla de la pantalla Actualizar configuración del dispositivo.](./media/android-wp-08-1908.png) 
 
-9. Cuando vea el mensaje **¡Ya está todo listo!** , pulse en **LISTO**.  
+9. Cuando vea el mensaje **¡Ya está todo listo!** , Pulse en **listo**.  
 
     ![La configuración de acceso a la empresa muestra que está completa la inscripción y el perfil de trabajo.](./media/android-wp-09-1908.png)  
 

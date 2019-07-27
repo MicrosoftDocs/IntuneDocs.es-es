@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341320"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467413"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configuración de Endpoint Protection de macOS en Intune  
 
@@ -92,36 +92,24 @@ Para obtener más información sobre la configuración de FileVault de Apple, co
   - **Tipo de clave de recuperación**  
     Se crean claves de recuperación de *clave personal* para dispositivos. Configure las siguientes opciones para la clave personal.  
 
-     - **Ubicación de la clave de recuperación personal** : especifique un mensaje breve para el usuario que explica cómo puede recuperar su clave de recuperación personal. Este texto se inserta en el mensaje que el usuario ve al habilitar FileVault.  
+    - **Ubicación de la clave de recuperación personal** : especifique un mensaje breve para el usuario que explique cómo y dónde pueden recuperar su clave de recuperación personal. Este texto se inserta en el mensaje que el usuario ve en la pantalla de inicio de sesión cuando se le pide que escriba su clave de recuperación personal si se olvida una contraseña.  
       
-     - **Rotación de claves de recuperación personal** : especifique la frecuencia con la que se girará la clave de recuperación personal de un dispositivo. Puede seleccionar el valor predeterminado de **no configurado**, o un valor de **1** a **12** meses.  
+    - **Rotación de claves de recuperación personal** : especifique la frecuencia con la que se girará la clave de recuperación personal de un dispositivo. Puede seleccionar el valor predeterminado de **no configurado**, o un valor de **1** a **12** meses.  
 
-  - **Diferir FileVault hasta cerrar sesión** 
-    > [!NOTE]
-    > La compatibilidad con FileVault está limitada hasta que la versión de julio complete el lanzamiento en unos días. Hasta que se complete la implementación, si configura FileVault, debe establecer *defer FileVault hasta* que se cierre la sesión en **Habilitar**.   
-
-    FileVault no se habilitará hasta que el usuario cierra la sesión. Se le pedirá a un usuario local o a una cuenta móvil que habilite FileVault al cerrar sesión o el siguiente inicio de sesión.  
+  - **Deshabilitar preguntar al cerrar sesión**  
+    Evite el aviso al usuario que le solicita que habilite FileVault cuando cierre la sesión.  Cuando se establece en deshabilitado, el aviso en el cierre de sesión está deshabilitado y, en su lugar, se le solicita al usuario que inicie sesión.  
     - **No configurado**.  
-    - **Habilitar**  
-    
+    - **Deshabilitar**  
+
     **Valor predeterminado**: No configurado  
 
+  - **Número de veces que se permite omitir**  
+  Establezca el número de veces que un usuario puede omitir las solicitudes para habilitar FileVault antes de que FileVault sea necesario para que el usuario inicie sesión.  
 
-
-    - **Deshabilitar preguntar al cerrar sesión**  
-      Evite el aviso al usuario que le solicita que habilite FileVault cuando cierre la sesión.  
-      - **No configurado**.  
-      - **Habilitar**  
-
-      **Valor predeterminado**: No configurado  
-
-    - **Número de veces que se permite omitir**  
-      Establezca el número de veces que un usuario puede omitir las solicitudes para habilitar FileVault antes de que FileVault sea necesario para que el usuario inicie sesión.  
-
-      - **No configurado** : el cifrado en el dispositivo es necesario antes de que se permita el siguiente inicio de sesión.  
-      -  de **1** a **10** : permite que un usuario ignore el aviso de 1 a 10 veces antes de requerir el cifrado en el dispositivo.  
-      - **Sin límite, preguntar siempre** : se solicita al usuario que habilite FileVault pero el cifrado nunca es necesario.  
+    - **No configurado** : el cifrado en el dispositivo es necesario antes de que se permita el siguiente inicio de sesión.  
+    - de **1** a **10** : permite que un usuario ignore el aviso de 1 a 10 veces antes de requerir el cifrado en el dispositivo.  
+    - **Sin límite, preguntar siempre** : se solicita al usuario que habilite FileVault pero el cifrado nunca es necesario.  
  
-      **Valor predeterminado**: No configurado  
+    **Valor predeterminado**: No configurado  
 
 
