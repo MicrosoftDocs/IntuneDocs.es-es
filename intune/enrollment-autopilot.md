@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649111"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387318"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscripción de dispositivos Windows en Intune con Windows Autopilot  
 Windows Autopilot simplifica el proceso de inscripción de dispositivos en Intune. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
+
+Hay cuatro tipos de implementación de Autopilot: el [Modo de implementación automática](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) para quioscos multimedia, señalización digital o un dispositivo compartido; el modo [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove), que permite que los asociados o el personal de TI aprovisionen de manera previa un equipo con Windows 10 con el fin de que esté totalmente configurado y listo para el negocio; [Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices), que permite implementar fácilmente la versión más reciente de Windows 10 en los dispositivos existentes y el [Modo controlado por el usuario](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven), para los usuarios tradicionales. 
 
 
 ## <a name="prerequisites"></a>Requisitos previos

@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: e5d6bf546a67ef36107aa566de299397959190e3
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413768"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374680"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Eliminación de certificados SCEP y PKCS en Microsoft Intune
 
-En Microsoft Intune, puede usar perfiles de certificados de Protocolo de inscripción de certificados simple (SCEP) y Public Key Cryptography Standards (PKCS) para agregar certificados a los dispositivos. 
+En Microsoft Intune, puede usar perfiles de certificados de Protocolo de inscripción de certificados simple (SCEP) y Public Key Cryptography Standards (PKCS) para agregar certificados a los dispositivos.
 
 Estos certificados se pueden quitar al [borrar](devices-wipe.md#wipe) o [retirar](devices-wipe.md#retire) el dispositivo. También hay casos en los que los certificados se quitan automáticamente y otros en los que permanecen en el dispositivo. En este artículo se muestran algunos casos comunes y el impacto en los certificados PKCS y SCEP.
 
@@ -35,16 +35,15 @@ Estos certificados se pueden quitar al [borrar](devices-wipe.md#wipe) o [retirar
 > 1. Borre o retire el dispositivo del usuario.
 > 2. Quite al usuario de la instancia local de Active Directory o de Azure AD.
 
-## <a name="manually-deleted-certificates"></a>Certificados eliminados manualmente  
+## <a name="manually-deleted-certificates"></a>Certificados eliminados manualmente
 
-La eliminación manual de un certificado es un escenario que se aplica a las plataformas y los certificados aprovisionados por SCEP o los perfiles de certificado PKCS. Por ejemplo, un usuario podría eliminar un certificado de un dispositivo si a dicho dispositivo se le sigue aplicando una directiva de certificados.  
+La eliminación manual de un certificado es un escenario que se aplica a las plataformas y los certificados aprovisionados por SCEP o los perfiles de certificado PKCS. Por ejemplo, un usuario podría eliminar un certificado de un dispositivo si a dicho dispositivo se le sigue aplicando una directiva de certificados.
 
-En este caso, una vez eliminado el certificado, la próxima vez que el dispositivo se registra con Intune se detecta que este no es compatible, ya que carece del certificado esperado. A continuación, Intune emite un nuevo certificado para restaurar el cumplimiento del dispositivo. No es necesaria ninguna acción adicional para restaurar el certificado.  
-
+En este caso, una vez eliminado el certificado, la próxima vez que el dispositivo se registra con Intune se detecta que este no es compatible, ya que carece del certificado esperado. A continuación, Intune emite un nuevo certificado para restaurar el cumplimiento del dispositivo. No es necesaria ninguna acción adicional para restaurar el certificado.
 
 ## <a name="windows-devices"></a>Dispositivos Windows
 
-#### <a name="scep-certificates"></a>Certificados SCEP
+### <a name="scep-certificates"></a>Certificados SCEP
 
 Un certificado SCEP se revoca *y* se elimina cuando:
 
@@ -67,7 +66,7 @@ Los certificados SCEP *permanecen* en el dispositivo (es decir, no se revocan ni
 - Un administrador retira la licencia de Intune.
 - Un administrador elimina el usuario o el grupo de Azure AD.
 
-#### <a name="pkcs-certificates"></a>Certificados PKCS
+### <a name="pkcs-certificates"></a>Certificados PKCS
 
 Un certificado PKCS se revoca *y* se elimina cuando:
 
@@ -90,7 +89,7 @@ Los certificados PKCS *permanecen* en el dispositivo (es decir, no se revocan ni
 
 ## <a name="ios-devices"></a>Dispositivos iOS
 
-#### <a name="scep-certificates"></a>Certificados SCEP
+### <a name="scep-certificates"></a>Certificados SCEP
 
 Un certificado SCEP se revoca *y* se elimina cuando:
 
@@ -113,7 +112,7 @@ Los certificados SCEP *permanecen* en el dispositivo (es decir, no se revocan ni
 - Un administrador retira la licencia de Intune.
 - Un administrador elimina el usuario o el grupo de Azure AD.
 
-#### <a name="pkcs-certificates"></a>Certificados PKCS
+### <a name="pkcs-certificates"></a>Certificados PKCS
 
 Un certificado PKCS se revoca *y* se elimina cuando:
 
@@ -123,7 +122,7 @@ Un certificado PKCS se revoca *y* se elimina cuando:
 
 Un certificado PKCS se elimina cuando:
 - Un perfil de certificado se quita de la asignación de grupo.
-  
+
 Un certificado raíz se elimina cuando:
 - Un usuario anula su inscripción.
 - Un administrador ejecuta la acción de [borrar](devices-wipe.md#wipe).
@@ -137,7 +136,7 @@ Los certificados PKCS *permanecen* en el dispositivo (es decir, no se revocan ni
 
 ## <a name="android-knox-devices"></a>Dispositivos Android KNOX
 
-#### <a name="scep-certificates"></a>Certificados SCEP
+### <a name="scep-certificates"></a>Certificados SCEP
 
 Un certificado SCEP se revoca *y* se elimina cuando:
 - Un usuario anula su inscripción.
@@ -160,7 +159,7 @@ Los certificados SCEP *permanecen* en el dispositivo (es decir, no se revocan ni
 - Un administrador retira la licencia de Intune.
 - Un administrador elimina el usuario o el grupo de Azure AD.
 
-#### <a name="pkcs-certificates"></a>Certificados PKCS
+### <a name="pkcs-certificates"></a>Certificados PKCS
 
 Un certificado PKCS se revoca *y* se elimina cuando:
 
@@ -179,14 +178,15 @@ Los certificados PKCS *permanecen* en el dispositivo (es decir, no se revocan ni
 - Un administrador elimina el usuario o el grupo de Azure AD.
 - Un administrador cambia o actualiza el perfil PKCS.
 - Un perfil de certificado se quita de la asignación de grupo.
-  
-  
+
+
 > [!NOTE]
-> Los dispositivos Android for Work no están validados para los escenarios anteriores. Los dispositivos antiguos de Android (todos los dispositivos de perfiles que no sean de trabajo ni de Samsung) no están habilitados para la eliminación de certificados. 
+> Los dispositivos Android for Work no están validados para los escenarios anteriores.
+> Los dispositivos antiguos de Android (todos los dispositivos de perfiles que no sean de trabajo ni de Samsung) no están habilitados para la eliminación de certificados.
 
 ## <a name="macos-certificates"></a>Certificados macOS
 
-#### <a name="scep-certificates"></a>Certificados SCEP
+### <a name="scep-certificates"></a>Certificados SCEP
 
 Un certificado SCEP se revoca *y* se elimina cuando:
 - Un usuario anula su inscripción.
@@ -205,7 +205,7 @@ Los certificados SCEP *permanecen* en el dispositivo (es decir, no se revocan ni
 > [!NOTE]
 > No se admite el uso de la acción de [borrar](devices-wipe.md#wipe) para el restablecimiento de fábrica de dispositivos macOS.
 
-#### <a name="pkcs-certificates"></a>Certificados PKCS
+### <a name="pkcs-certificates"></a>Certificados PKCS
 
 No se admiten certificados PKCS en macOS.
 

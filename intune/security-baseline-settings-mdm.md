@@ -5,7 +5,7 @@ description: Configuración de líneas de base de seguridad de Intune para admin
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
-ms.translationtype: HT
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882292"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491906"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Intune  
 
@@ -1773,7 +1773,12 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
   **Valor predeterminado**: Sí
 
 - **Configurar Windows Hello para empresas**   
-  Windows Hello para empresas es un método alternativo para iniciar sesión en dispositivos Windows mediante la sustitución de contraseñas, tarjetas inteligentes y tarjetas inteligentes virtuales. Si habilita o no configura esta opción de directiva, el dispositivo aprovisiona Windows Hello para empresas. Si deshabilita esta opción de directiva, el dispositivo no aprovisiona Windows Hello para empresas para ningún usuario.
+    Windows Hello para empresas es un método alternativo para iniciar sesión en dispositivos Windows mediante la sustitución de contraseñas, tarjetas inteligentes y tarjetas inteligentes virtuales.  
+
+  - Cuando se establece en *sí*, se habilita esta directiva y el dispositivo aprovisiona Windows Hello para empresas.  
+  - Cuando se establece en *no configurado*, la línea de base no afecta a la configuración de la Directiva del dispositivo. Esto significa que si Windows Hello para empresas está deshabilitado en un dispositivo, permanece deshabilitado. Si está habilitada, permanece habilitada. 
+
+  No se puede deshabilitar Windows Hello para empresas a través de esta línea base. Puede deshabilitar Windows Hello para empresas al configurar la [inscripción de Windows](windows-hello.md)o como parte de un perfil de configuración de dispositivo para la [protección](identity-protection-configure.md)de identidades.  
 
   **Valor predeterminado**: Sí
 
@@ -1825,7 +1830,7 @@ La plantilla de la *línea de base de seguridad de MDM para la actualización de
 ### <a name="changes-to-the-baseline-settings"></a>Cambios en la configuración de línea de base
 La configuración es alguna de las siguientes:
 - *Novedades* de esta versión más reciente de la línea base.
-- *Se* quitó de esta última versión de línea base, pero estaba presente en la versión anterior.
+- Se *quitó* de esta última versión de línea base, pero estaba presente en la versión anterior.
 - Se ha *revisado* de alguna manera de cómo aparecía la configuración en la versión anterior. 
 
 *[Nuevo]* [**Anterior bloqueo**](#above-lock):
@@ -1858,7 +1863,7 @@ La configuración es alguna de las siguientes:
 - **Compatibilidad con cifrado de Internet Explorer**  
 
 *[Revisado]* [**Internet Explorer**](#internet-explorer):
-- **Solicitud automática de Internet Explorer Internet Zone para la** descarga de archivos > el valor **predeterminado**ahora está deshabilitado. En la vista previa, se estableció en habilitado.
+- **Solicitud automática de Internet Explorer Internet Zone para la descarga de archivos** > el valor predeterminado ahora está **deshabilitado**. En la vista previa, se estableció en habilitado.
 
 *[Nuevo]* [**Asistencia remota**](#remote-assistance):  
 - **Asistencia remota solicitada** 

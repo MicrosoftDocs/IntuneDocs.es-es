@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735701"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374849"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configuración de la aplicación Managed Home Screen de Microsoft para Android Enterprise
 
@@ -383,6 +383,9 @@ Este es un ejemplo de script JSON con todas las claves de configuración disponi
     ]
 }
 ```
+
+## <a name="googles-android-device-policy-app"></a>Aplicación de directiva de dispositivo Android de Google
+La aplicación de Pantalla principal administrada ahora proporciona acceso a la aplicación de directiva de dispositivo Android de Google. La aplicación de Pantalla principal administrada es un iniciador personalizado que se usa para dispositivos inscritos en Intune, como dispositivos dedicados de Android Enterprise (AE) que usan el modo de pantalla completa de varias aplicaciones. Puede acceder a la aplicación de directiva de dispositivo Android o guiar a los usuarios a esta aplicación, con fines de soporte técnico y depuración. Esta capacidad de inicio está disponible en el momento en que el dispositivo se inscribe y se bloquea en la Pantalla principal administrada. No se necesitan instalaciones adicionales para usar esta funcionalidad.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

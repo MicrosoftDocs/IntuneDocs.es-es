@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2084ad1ec0deefd24c0d61f69d99ee11149af96
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 4dd77be45c21db53dd82322049d377ced247c4c7
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882733"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427340"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Habilitar el conector Mobile Threat Defense en Intune
 
 > [!NOTE] 
 > La información de este tema se aplica a todos los asociados de Mobile Threat Defense.
 
-Durante la configuración de Mobile Threat Defense (MTD), ha configurado una directiva para clasificar amenazas en la consola del asociado de MTD y ha creado la directiva de cumplimiento de dispositivo en Intune. Si ya ha configurado el conector de Intune en la consola del asociado de MTD, ya puede habilitar la conexión de MTD en Intune.
+Durante la configuración de Mobile Threat Defense (MTD), ha configurado una directiva para clasificar amenazas en la consola del asociado de MTD y ha creado la directiva de cumplimiento de dispositivo en Intune. Si ya ha configurado el conector de Intune en la consola del asociado de MTD, ya puede habilitar la conexión de MTD para las aplicaciones de asociados de MTD.
+
+Al integrar una nueva aplicación en Intune Mobile Threat Defense y habilitar la conexión, Intune crea una directiva de acceso condicional clásica en Azure Active Directory. Todas las aplicaciones de MTD que integre, como [Defender ATP](advanced-threat-protection.md) o cualquiera de nuestros [asociados de MTD](mobile-threat-defense.md#mobile-threat-defense-partners) adicionales, crean una directiva de acceso condicional clásica.  Estas directivas se pueden omitir, pero no se deben editar, eliminar ni deshabilitar.
+
+Directivas de acceso condicional clásicas para aplicaciones de MTD: 
+
+- Las usa Intune MTD para requerir que los dispositivos estén registrados en Azure AD, de modo que dispongan de un id. de dispositivo. El id. es necesario para que los dispositivos puedan informar de su estado correctamente a Intune.  
+- Son diferentes a las directivas de acceso condicional que puede crear para ayudarle con la administración de MTD.
+- De manera predeterminada, no interactúan con otras directivas de acceso condicional que usa para la evaluación.  
+
+Para ver las directivas de acceso condicional clásicas, en [Azure](https://portal.azure.com/#home), vaya a **Azure Active Directory** > **Acceso condicional** > **Directivas clásicas**.
+
 
 ## <a name="to-enable-the-mtd-connector"></a>Para habilitar el conector de MTD
 
