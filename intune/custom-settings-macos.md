@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04671df820fee96d4090b13f6fa8f6c4f983a1ac
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e0309c5aa73dc8c03cabd69878d55ac51aa6d4f3
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530232"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375138"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Usar una configuración personalizada para dispositivos macOS en Microsoft Intune
 
@@ -31,13 +31,17 @@ Cuando se usan dispositivos macOS, hay dos maneras de obtener una configuración
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-Puede usar estas herramientas para exportar configuraciones a un perfil de configuración. En Intune, debe importar este archivo y, después, asignar el perfil a los usuarios y los dispositivos de macOS. Una vez asignado, la configuración se distribuye y también se crea una línea base o un estándar para macOS en la organización.
+Puede usar estas herramientas para exportar configuraciones a un perfil de configuración. En Intune, debe importar este archivo y, después, asignar el perfil a los usuarios y los dispositivos de macOS. Una vez asignada, la configuración se distribuye. También crean una base de referencia o un estándar para macOS en su organización.
 
-En este artículo se muestra cómo crear un perfil personalizado para dispositivos macOS. También se proporcionan indicaciones sobre el uso de Apple Configurator y Apple Profile Manager.
+En este artículo se proporcionan instrucciones sobre el uso de Apple Configurator y Apple Profile Manager, y se describen las propiedades que se pueden configurar.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-- Cuando use **Apple Configurator** para crear el perfil de configuración, asegúrese de que la configuración que exporta sea compatible con la versión de macOS de los dispositivos que usa. Para obtener información sobre la resolución de configuraciones incompatibles, busque **Configuration Profile Reference** (Referencia de perfiles de configuración) y **Mobile Device Management Protocol Reference** (Referencia del protocolo de administración de dispositivos móviles) en el sitio web de [Apple Developer](https://developer.apple.com/).
+[Cree el perfil](device-profile-create.md).
+
+## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+
+- Cuando use **Apple Configurator** para crear el perfil de configuración, asegúrese de que la configuración que exporta sea compatible con la versión de macOS de los dispositivos. Para obtener información sobre la resolución de configuraciones incompatibles, busque **Configuration Profile Reference** (Referencia de perfiles de configuración) y **Mobile Device Management Protocol Reference** (Referencia del protocolo de administración de dispositivos móviles) en el sitio web de [Apple Developer](https://developer.apple.com/).
 
 - Cuando use **Apple Profile Manager**, no olvide hacer lo siguiente:
 
@@ -47,25 +51,19 @@ En este artículo se muestra cómo crear un perfil personalizado para dispositiv
 
     Descargue y guarde este archivo, ya que lo usará en el perfil de Intune. 
 
-  - Asegúrese de que la configuración que exporte desde Apple Profile Manager sea compatible con la versión de macOS de los dispositivos que está usando. Para obtener información sobre la resolución de configuraciones incompatibles, busque **Configuration Profile Reference** (Referencia de perfiles de configuración) y **Mobile Device Management Protocol Reference** (Referencia del protocolo de administración de dispositivos móviles) en el sitio web de [Apple Developer](https://developer.apple.com/).
+  - Asegúrese de que la configuración que exporte desde Apple Profile Manager sea compatible con la versión de macOS de los dispositivos. Para obtener información sobre la resolución de configuraciones incompatibles, busque **Configuration Profile Reference** (Referencia de perfiles de configuración) y **Mobile Device Management Protocol Reference** (Referencia del protocolo de administración de dispositivos móviles) en el sitio web de [Apple Developer](https://developer.apple.com/).
 
-## <a name="create-the-profile"></a>Creación del perfil
+## <a name="custom-configuration-profile-settings"></a>Ajustes de perfiles de configuración personalizados
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
-3. Escriba los valores siguientes:
+- **Nombre del perfil de configuración personalizado**: escriba un nombre para la directiva. Este nombre se muestra en el dispositivo y en el estado de Intune.
+- **Archivo del perfil de configuración**: vaya al perfil de configuración que ha creado mediante Apple Configurator o Apple Profile Manager. El archivo importado se muestra en el área **Contenido del archivo**.
 
-    - **Nombre**: escriba un nombre para el perfil, como `macos custom profile`.
-    - **Descripción**: escriba una descripción para el perfil
-    - **Plataforma**: seleccione **macOS**.
-    - **Tipo de perfil**: elija **Personalizado**.
+  También puede Agregar tokens de dispositivo a `.mobileconfig` los archivos. Los tokens de dispositivo se usan para agregar información específica del dispositivo. Por ejemplo, para que se muestre el número de serie, escriba `{{serialnumber}}`. En el dispositivo, el texto se muestra de `123456789ABC`forma similar a, que es único para cada dispositivo. Al especificar variables, no olvide usar llaves: `{{ }}`. En los [tokens de configuración de aplicación](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) podrá ver una lista de las variables que puede usar. También puede usar `deviceid` o cualquier otro valor específico del dispositivo.
 
-4. En **Configuración personalizada**, escriba los valores siguientes:
+  > [!NOTE]
+  > Las variables no se validan en la interfaz de usuario y distinguen mayúsculas de minúsculas. Como resultado, es posible que vea perfiles guardados con entradas incorrectas. Por ejemplo, si escribe `{{DeviceID}}` en lugar de `{{deviceid}}`, se muestra la cadena literal en lugar del identificador del dispositivo. Asegúrese de escribir la información correcta.
 
-    - **Nombre del perfil de configuración personalizado**: escriba un nombre para la directiva. Este nombre se muestra en el dispositivo y en el estado de Intune.
-    - **Archivo del perfil de configuración**: vaya al perfil de configuración que ha creado mediante Apple Configurator o Apple Profile Manager. El archivo importado se muestra en el área **Contenido del archivo**.
-
-5. Seleccione **Aceptar** > **Crear** para crear el perfil de Intune. Una vez que se haya completado, el perfil se mostrará en la lista **Configuración del dispositivo - Perfiles**.
+Seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y se muestra en la lista de perfiles.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

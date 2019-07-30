@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebd8f15a8f8633043f64cb4e004aafbb3c399042
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: b93fc8bc1bddbae8b1b0bde4f8b8815e8052fb51
+ms.sourcegitcommit: 2fa20338bd0236884e1f3fde624cf70da89fd254
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648894"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68507690"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalación de aplicaciones
 
@@ -156,6 +156,7 @@ Los siguientes mensajes de error y descripciones proporcionan detalles sobre err
 |    0x80073CF3    |    Error de actualización, dependencia o validación de conflicto en el paquete. Posibles causas:<ul><li> El paquete entrante entra en conflicto con un paquete instalado.</li><li> No se encuentra una dependencia del paquete especificado.</li><li> El paquete no es compatible con la arquitectura correcta del procesador.</li></ul> Compruebe el registro de eventos **AppXDeployment-Server** para información. Para más información, consulte [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Solución de problemas de empaquetado, implementación y consulta de aplicaciones de la Tienda Windows).    |
 |    0x80073CFB    |    El paquete suministrado ya está instalado y se ha bloqueado la reinstalación del paquete. Podría recibir este error si está instalando un paquete que no es idéntico al paquete que ya está instalado. Confirme que la firma digital también forma parte del paquete. Cuando un paquete se vuelve a generar o a firmar, dicho paquete ya no es idéntico bit a bit al paquete instalado previamente. Dos opciones para corregir este error son:<ul><li> Incrementar el número de versión de la aplicación y, a continuación, volver a generar y a firmar el paquete.</li><li> Quitar el paquete antiguo para todos los usuarios del sistema antes de instalar el nuevo paquete.</li></ul> Para más información, consulte [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Solución de problemas de empaquetado, implementación y consulta de aplicaciones de la Tienda Windows).    |
 |    0x87D1041C    |    La instalación de la aplicación se realizó correctamente, pero esta no se detecta. La aplicación se implementó correctamente mediante Intune y luego se desinstaló. Las razones por las que la aplicación se va a desinstalar son:<ul><li> El usuario final desinstaló la aplicación.</li><li> La información de identidad en el paquete no coincide con lo que el dispositivo informa para las aplicaciones incorrectas.</li><li>Para los MSI de actualización automática, la versión del producto no coincide con la información de la aplicación después de que se actualiza fuera de Intune.</li></ul> Indique al usuario que vuelva a instalar la aplicación desde el portal de empresa. Tenga en cuenta que las aplicaciones necesarias se reinstalarán automáticamente cuando se vuelva a registrar el dispositivo.    |
+|    0x8000FFFF    |    Error inesperado durante la instalación. Compruebe los registros de instalación para obtener más información.    |
 
 ## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Solucionar problemas de aplicaciones de la Microsoft Store
 

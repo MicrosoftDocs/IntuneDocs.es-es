@@ -1,6 +1,6 @@
 ---
 title: 'Configuración de características de dispositivos iOS en Microsoft Intune: Azure | Microsoft Docs'
-description: Consulte todas las opciones de configuración para configurar dispositivos iOS para AirPrint, el diseño de la pantalla principal, las notificaciones de aplicaciones, el dispositivo compartido, el inicio de sesión único y la configuración de filtro de contenido web en Microsoft Intune. Use estas opciones configuración en un perfil de configuración de dispositivo para configurar dispositivos iOS para usar estas características diferentes de Apple en su organización.
+description: Consulte todas las opciones de configuración para configurar dispositivos iOS para AirPrint, el diseño de la pantalla principal, las notificaciones de aplicaciones, el dispositivo compartido, el inicio de sesión único y la configuración de filtro de contenido web en Microsoft Intune. Use estas opciones de configuración en un perfil de configuración de dispositivo para configurar dispositivos iOS para que usen estas características de Apple en su organización.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413806"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387112"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Configuración de dispositivos iOS para usar las características comunes de iOS en Intune
 
@@ -41,7 +41,7 @@ En este artículo se enumeran estas opciones de configuración y se describe lo 
 - **Puerto**: escriba el puerto de escucha del destino de AirPrint. Si se deja esta propiedad en blanco, AirPrint usa el puerto predeterminado. Disponible en iOS 11.0 y versiones posteriores.
 - **TLS**: elija **Habilitar** para proteger las conexiones AirPrint con Seguridad de la capa de transporte (TLS). Disponible en iOS 11.0 y versiones posteriores.
 
-**Agregar** agrega el servidor AirPrint a la lista. Puede agregar varios servidores AirPrint. También puede **importar** un archivo separado por comas (.csv) con esta información. Después de crear la lista, también puede **exportar** la lista de servidores AirPrint.
+**Agregar** agrega el servidor AirPrint a la lista. Se pueden agregar muchos servidores de transimpresiones. También puede **importar** un archivo separado por comas (.csv) con esta información. **Exportar** crea una lista de los servidores de impresión de la que ha agregado.
 
 Seleccione **Aceptar** para guardar la lista.
 
@@ -253,7 +253,7 @@ Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="web-content-filter-settings"></a>Configuración del filtro de contenido web
 
-Esta configuración controla el acceso de dirección URL del explorador en dispositivos iOS.
+Esta configuración controla el acceso de dirección URL del explorador en dispositivos iOS supervisados.
 
 - **Tipo de filtro**: seleccione esta opción para permitir sitios web específicos. Las opciones son:
 

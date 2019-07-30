@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise incluye Microsoft Intune. Vea cómo Intune
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884268"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427309"
 ---
 # <a name="what-is-device-management"></a>¿Qué es la administración de dispositivos? 
 
@@ -59,7 +59,7 @@ Una tarea esencial de cualquier solución de administración de dispositivos con
 - **Windows Defender** incluye muchas características de seguridad con las que puede proteger dispositivos Windows 10. Por ejemplo, con Intune y Windows Defender juntos puede hacer esto: 
 
   - Habilitar [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) para buscar actividades sospechosas en archivos y aplicaciones en dispositivos móviles. 
-  - Usar [Protección contra amenazas avanzada de Windows Defender (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) para evitar infracciones de seguridad en dispositivos móviles, y limitar el impacto de una infracción de seguridad mediante el bloqueo de un usuario desde los recursos corporativos.
+  - Usar [Protección contra amenazas avanzada de Microsoft Defender (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) para evitar infracciones de seguridad en dispositivos móviles, y limitar el impacto de una infracción de seguridad mediante el bloqueo de un usuario desde los recursos corporativos.
 
 - **Acceso condicional** es una característica de Azure Active Directory que se integra perfectamente con Intune. Al usar el [acceso condicional](https://docs.microsoft.com/intune/conditional-access), asegúrese de que solo los dispositivos compatibles pueden acceder al correo electrónico, SharePoint y otras aplicaciones. 
 
@@ -73,11 +73,11 @@ También puede usar una combinación de [MDM y MAM](https://docs.microsoft.com/i
 
 Al configurar Intune, también elige si trabaja solo en el portal de Azure para administrar dispositivos o si usa Intune y Microsoft 365 juntos para administrar dispositivos. [Migración de administración de dispositivos móviles a Intune en Azure Portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) es un caso práctico de Microsoft IT. En este caso práctico, se explica cómo Microsoft IT ha elegido un enfoque moderno de administración de dispositivos y las lecciones aprendidas.
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>Simplificar tareas de TI mediante el panel Administración de dispositivos
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Simplificación de las tareas de TI mediante el centro de administración de Administración de dispositivos
 
-El panel [Administración de dispositivos](https://devicemanagement.portal.azure.com/) es un punto centralizado donde se pueden administrar y completar tareas para los dispositivos móviles. Este panel incluye los servicios usados para la administración de dispositivos, incluido Intune y Azure Active Directory, y también para administrar aplicaciones cliente. 
+El [centro de administración de Administración de dispositivos](https://devicemanagement.portal.azure.com/) es un punto centralizado donde se pueden administrar y completar tareas para los dispositivos móviles. Esta área de trabajo incluye los servicios usados para la administración de dispositivos, incluido Intune y Azure Active Directory, y también para administrar aplicaciones cliente. 
 
-En el panel Administración de dispositivos, puede:
+En el centro de administración de dispositivos, puede:
 
 - [Inscripción de dispositivos](https://docs.microsoft.com/intune/device-enrollment)
 - [Establecimiento del cumplimiento de los dispositivos](https://docs.microsoft.com/intune/device-compliance-get-started)
