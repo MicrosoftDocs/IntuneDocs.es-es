@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e595ee2353a1554d97e49af666d20642a631596
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d05d9dd896321e48c3d1d9dec22cd0d1192dc0b6
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549298"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533185"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar el plan de Microsoft Intune
 
@@ -137,8 +137,4 @@ Intune admite iOS, Mac OS, Android, el escritorio de Windows y las plataformas d
 
 
 ## <a name="next-steps"></a>Pasos siguientes
-
-Consulte este [módulo de la sesión de Intune de la Academia virtual de Microsoft](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) para obtener más información sobre el proceso de implementación de Intune.
-
-
 Consulte instrucciones sobre las [pruebas y la validación de la implementación de Intune](planning-guide-test-validation.md).

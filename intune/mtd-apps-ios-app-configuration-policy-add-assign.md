@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885006"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660965"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune  
 
@@ -164,26 +164,23 @@ Elija la sección que corresponda, según su proveedor MTD:
 - Consulte las instrucciones para [usar las directivas de configuración de aplicaciones de Microsoft Intune para iOS](app-configuration-policies-use-ios.md) con el fin de agregar la directiva de configuración de aplicaciones de SandBlast Mobile de Check Point para iOS.
   - En el **paso 8**, use la opción **Especificar datos XML**, copie el contenido siguiente y péguelo en el cuerpo de la directiva de configuración.
 
-```
-<dict><key>MDM</key><string>INTUNE</string></dict>
-```
+        <dict><key>MDM</key><string>INTUNE</string></dict>
+
 
 ### <a name="zimperium-app-configuration-policy"></a>Directiva de configuración de aplicaciones de Zimperium  
 - Vea las instrucciones para [usar las directivas de configuración de aplicaciones de Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para agregar la directiva de configuración de aplicaciones de Zimperium para iOS.
   - En el **paso 8**, use la opción **Especificar datos XML**, copie el contenido siguiente y péguelo en el cuerpo de la directiva de configuración.
-
-```
-<dict>
-<key>provider</key><string>Intune</string>
-<key>userprincipalname</key><string>{{userprincipalname}}</string>
-<key>deviceid</key>
-<string>{{deviceid}}</string>
-<key>serialnumber</key>
-<string>{{serialnumber}}</string>
-<key>udidlast4digits</key>
-<string>{{udidlast4digits}}</string>
-</dict>
-```
+ 
+        <dict>
+        <key>provider</key><string>Intune</string>
+        <key>userprincipalname</key><string>{{userprincipalname}}</string>
+        <key>deviceid</key>
+        <string>{{deviceid}}</string>
+        <key>serialnumber</key>
+        <string>{{serialnumber}}</string>
+        <key>udidlast4digits</key>
+        <string>{{udidlast4digits}}</string>
+        </dict>
 
 ### <a name="pradeo-app-configuration-policy"></a>Directiva de configuración de aplicaciones de Pradeo  
 Pradeo no es compatible con la directiva de configuración de aplicaciones en iOS.  En su lugar, para configurar una aplicación, trabaje con Pradeo para implementar archivos IPA o APK personalizados que estén preconfigurados con la configuración que quiera.
@@ -192,16 +189,15 @@ Pradeo no es compatible con la directiva de configuración de aplicaciones en iO
 - Para agregar la directiva de configuración de aplicaciones de Better Mobile, consulte las instrucciones para [usar directivas de configuración de aplicaciones de Microsoft Intune para iOS](app-configuration-policies-use-ios.md).
   - En el **paso 8**, use la opción **Especificar datos XML**, copie el contenido siguiente y péguelo en el cuerpo de la directiva de configuración. Reemplace la dirección URL `https://client.bmobi.net` por la dirección URL de consola apropiada.
 
-```
-<dict>
-<key>better_server_url</key>
-<string>https://client.bmobi.net</string>
-<key>better_udid</key>
-<string>{{aaddeviceid}}</string>
-<key>better_user</key>
-<string>{{userprincipalname}}</string>
-</dict>
-```
+        <dict>
+        <key>better_server_url</key>
+        <string>https://client.bmobi.net</string>
+        <key>better_udid</key>
+        <string>{{aaddeviceid}}</string>
+        <key>better_user</key>
+        <string>{{userprincipalname}}</string>
+        </dict>
+
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Directiva de configuración de aplicaciones de Sophos Mobile  
 Cree la directiva de configuración de aplicaciones para iOS como se describe en el artículo [Usar la directiva de configuración de aplicaciones para iOS](app-configuration-policies-use-ios.md).
@@ -210,22 +206,20 @@ Cree la directiva de configuración de aplicaciones para iOS como se describe en
 Consulte las instrucciones para [usar las directivas de configuración de aplicaciones de Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para agregar la directiva de configuración de aplicaciones de Wandera para iOS.
 - En el **paso 8**, use la opción **Especificar datos XML**. Inicie sesión en el portal RADAR de Wandera y vaya a **Configuración** > **Integración de EMM** > **App Push** (Inserción de aplicación). Seleccione **Intune** y, luego, copie el contenido siguiente y péguelo en el cuerpo de la directiva de configuración.  
 
-  ```
-  <dict><key>secretKey</key>
-  <string>SeeRADAR</string>
-  <key>apiKey</key>
-  <string> SeeRADAR </string>
-  <key>customerId</key>
-  <string> SeeRADAR </string>
-  <key>email</key>
-  <string>{{mail}}</string>
-  <key>firstName</key>
-  <string>{{username}}</string>
-  <key>lastName</key>
-  <string></string>
-  <key>activationType</key>
-  <string>PROVISION_THEN_AWP</string></dict>  
-  ```
+      <dict><key>secretKey</key>
+       <string>SeeRADAR</string>
+       <key>apiKey</key>
+       <string> SeeRADAR </string>
+       <key>customerId</key>
+       <string> SeeRADAR </string>
+       <key>email</key>
+       <string>{{mail}}</string>
+       <key>firstName</key>
+       <string>{{username}}</string>
+       <key>lastName</key>
+       <string></string>
+       <key>activationType</key>
+       <string>PROVISION_THEN_AWP</string></dict>  
 
 ## <a name="assign-apps-to-groups"></a>Asignación de aplicaciones a grupos  
 - Este paso se aplica a todos los asociados de MTD. Consulte las instrucciones para [asignar aplicaciones a grupos con Intune](apps-deploy.md).

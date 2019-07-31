@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528314"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482807"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Inicio rápido: Agregar y asignar una aplicación cliente
 
@@ -43,7 +43,6 @@ Inicie sesión en [Intune](https://aka.ms/intuneportal) como [administrador glob
 Se puede incluir una aplicación para que Intune pueda administrar los distintos aspectos de la aplicación. 
 
 Siga estos pasos para agregar una aplicación a Intune:
-
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. 
 2. Seleccione **Windows 10** en la sección **Conjunto de aplicaciones Office 365** del cuadro desplegable **Tipo de aplicación**.
 3. Seleccione **Configure conjunto de aplicaciones** para seleccionar las aplicaciones de Office que se van a asignar al usuario de Intune.
@@ -56,9 +55,9 @@ Siga estos pasos para agregar una aplicación a Intune:
 
     ![Captura de pantalla al agregar información de la aplicación](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. Seleccione **Configuración del conjunto de aplicaciones**.
-9. En el cuadro desplegable **Canal de actualización**, seleccione **Mensual**.
-10. Haga clic en **Aceptar** > **Agregar**.
+10. Seleccione **Configuración del conjunto de aplicaciones**.
+11. En el cuadro desplegable **Canal de actualización**, seleccione **Mensual**.
+12. Haga clic en **Aceptar** > **Agregar**.
 
 ## <a name="assign-the-app-to-a-group"></a>Asignar la aplicación a un grupo
 
