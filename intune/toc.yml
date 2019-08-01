@@ -233,6 +233,8 @@
               displayName: gms
             - name: Inscripción de dispositivos dedicados o totalmente administrados de Android Enterprise
               href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Inscripción del administrador de dispositivos Android
+              href: android-enroll-device-administrator.md
             - name: Administración de dispositivos de perfil de trabajo de Android Enterprise
               href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
@@ -705,6 +707,8 @@
               items:
                 - name: Solución de problemas de inscripción de dispositivos iOS
                   href: troubleshoot-ios-enrollment-errors.md
+                - name: Solución de problemas de inscripción de dispositivos Windows
+                  href: troubleshoot-windows-enrollment-errors.md
             - name: Ayuda para los usuarios para solucionar problemas
               href: help-desk-operators.md
             - name: Solucionar problemas de acceso a recursos de empresa
