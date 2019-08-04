@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794365"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680062"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin del SDK para aplicaciones de Microsoft Intune
 
@@ -114,6 +114,9 @@ Para excluir una clase de la unificación MAM por el reasignador, se puede Agreg
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> En este momento, un problema con el reasignador evita la depuración en aplicaciones de Xamarin. Android. Se recomienda la integración manual para depurar la aplicación hasta que se resuelva este problema.
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Métodos renombrados](app-sdk-android.md#renamed-methods)
 En muchos casos, un método que se encuentra en la clase Android se marca como final de la clase de reemplazo MAM. En este caso, la clase de reemplazo MAM proporciona un método con un nombre similar (generalmente lleva el sufijo `MAM`) que es el que se debe reemplazar. Por ejemplo, al derivar desde `MAMActivity`, en lugar de reemplazar `OnCreate()` y llamar a `base.OnCreate()`, `Activity` debe reemplazar a `OnMAMCreate()` y llamar a `base.OnMAMCreate()`.
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 Para las aplicaciones `Xamarin.Forms` el paquete `Microsoft.Intune.MAM.Remapper` remplaza las clases de MAM automáticamente mediante la inserción de clases `MAM` en la jerarquía de clases `Xamarin.Forms` de uso común. 
 
 > [!NOTE]
-> Se realiza la integración de Xamarin.Forms además de la integración de Xamarin.Android detallada anteriormente.
+> Se realiza la integración de Xamarin.Forms además de la integración de Xamarin.Android detallada anteriormente. El reasignador se comporta de forma diferente para las aplicaciones de Xamarin. Forms, por lo que todavía será necesario realizar los reemplazos manuales de MAM.
 
 Una vez agregado el reasignador al proyecto, deberá realizar los reemplazos equivalentes de MAM. Por ejemplo, `FormsAppCompatActivity` y `FormsApplicationActivity` pueden seguir utilizándose en las invalidaciones de aplicación proporcionada a `OnCreate` y `OnResume` se reemplaza por `OnMAMCreate` y `OnMAMResume` equivalentes de MAM respectivamente.
 
@@ -199,6 +202,9 @@ Es lo que se espera porque, cuando el reasignador modifica la herencia de clases
 
 > [!NOTE]
 > El reasignador reescribe una dependencia que Visual Studio emplea para la finalización automática de IntelliSense. Por tanto, es posible que deba volver a cargar y recompilar el proyecto cuando se agrega el reasignador para que IntelliSense reconozca correctamente los cambios.
+
+#### <a name="troubleshooting"></a>Solucionar problemas
+* Si encuentra una pantalla en blanco en la aplicación en el inicio, puede que tenga que forzar que las llamadas de navegación se ejecuten en el subproceso principal.
 
 ### <a name="company-portal-app"></a>Aplicación de portal de empresa
 Los enlaces Xamarin del SDK de Intune dependen de la presencia de la aplicación [portal de empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android en el dispositivo para habilitar las directivas de protección de aplicaciones. El Portal de empresa recupera las directivas de protección de aplicaciones del servicio Intune. Cuando se inicializa la aplicación, carga la directiva y el código para aplicar dicha directiva desde el Portal de empresa. No es necesario que el usuario inicie sesión.

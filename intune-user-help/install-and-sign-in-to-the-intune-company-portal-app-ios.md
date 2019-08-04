@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,22 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 3c764d0bf5cccecef692b8efe1e45af383584cd2
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546331"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625069"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e iniciar sesión en la aplicación de portal de empresa
 
 Instale la aplicación Portal de empresa en el dispositivo iOS para acceder a las aplicaciones, el correo electrónico y la red de la empresa o la escuela. Use la aplicación para inscribir el dispositivo en Microsoft Intune y proteger el acceso a los recursos de la empresa o la escuela. Para más información, vea [¿Qué ocurrirá cuando instale la aplicación Portal de empresa e inscriba el dispositivo en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1. Abra el **App Store** y busque el **Portal de empresa de Intune**.
+1. Abra **App Store** y busque **Portal de empresa de Intune**.
 
 2. Descargue la aplicación **Portal de empresa de Intune**.
 
-    ![Captura de pantalla de cómo la aplicación Portal de empresa de Intune aparecerá en el App Store.](./media/CP_iosRedesign_after_1803_04.PNG)
+    ![Captura de pantalla de cómo la aplicación Portal de empresa de Intune aparecerá en el App Store.](./media/cp-ios-redesign-after-1904.PNG)  
 
 3. Abra la aplicación Portal de empresa, escriba la dirección y la contraseña del correo electrónico profesional o educativa y luego pulse **Iniciar sesión**.
 

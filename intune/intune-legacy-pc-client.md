@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047282"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756528"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Consola de Intune en Azure y cliente de equipo de Intune heredado
 
@@ -45,7 +45,7 @@ Debido al cambio a los grupos de Azure AD, el filtrado "basado en grupo" de las 
 1. Seleccione una vista.
 2. En el cuadro **Filtros**, escriba el nombre del grupo por el que desea filtrar y presione Entrar. Con esto se filtrará la vista de lista de los dispositivos de ese grupo determinado.
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![Entrada desplegable Filtros con ninguno seleccionado](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Continuación de la administración de Windows 7 mediante el cliente de equipo de Intune
@@ -61,7 +61,7 @@ Para una comparación detallada entre las funcionalidades del cliente de equipo 
 Para pasar de administrar los dispositivos Windows 10 con el cliente de equipo de Intune a administrarlos con MDM, siga estos pasos:
 
 1. En la consola de Silverlight, realice una **eliminación de datos selectiva** para cancelar la inscripción del dispositivo desde el cliente de equipo.
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![Cuadro emergente de advertencia con el botón de radio ' borrar de forma selectiva el dispositivo ' seleccionado](media/intune-legacy-pc-client/image02.png)
 2. Vuelva a inscribir el dispositivo con [MDM (o con combinación de Azure AD)](https://docs.microsoft.com/intune/windows-enroll). 
 
 ## <a name="next-steps"></a>Pasos siguientes
