@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388518"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590915"
 ---
 # <a name="intune-discovered-apps"></a>Aplicaciones descubiertas de Intune
 
@@ -30,13 +30,22 @@ Las **aplicaciones descubiertas** de Intune es una lista de aplicaciones detecta
 
 ## <a name="monitor-discovered-apps-with-intune"></a>Supervisión de aplicaciones descubiertas con Intune
 
-Intune proporciona una lista de aplicaciones detectadas en los dispositivos inscritos en Intune del inquilino.
+Intune proporciona una lista agregada de aplicaciones detectadas en los dispositivos inscritos en Intune del inquilino.
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones descubiertas**.
 
 >[!NOTE]
 >Puede exportar la lista de aplicaciones descubiertas a un archivo .csv seleccionando **Exportar** en la hoja **Aplicaciones descubiertas**.
+>
+>Para las aplicaciones Win32 detectadas, no hay actualmente ningún recuento agregado. Este tipo de datos solo se puede ver en cada dispositivo.
+
+Intune también proporciona la lista de aplicaciones detectadas de cada dispositivo del inquilino. 
+
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. En el panel de Intune, seleccione **Dispositivos** > **Todos los dispositivos**.
+3. Seleccione un dispositivo.
+4. Para ver las aplicaciones detectadas de este dispositivo , seleccione **Aplicaciones detectadas** en la sección **Supervisión**. 
 
 ## <a name="details-of-discovered-apps"></a>Detalles de las aplicaciones descubiertas
 

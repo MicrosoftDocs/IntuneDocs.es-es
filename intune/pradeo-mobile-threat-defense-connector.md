@@ -1,7 +1,7 @@
 ---
 title: Conector Mobile Threat Defense de Pradeo con Intune
 titleSuffix: Intune on Azure
-description: Configure el conector Mobile Threat Defense de Pradeo con Intune.
+description: Aprenda a integrar Intune con el conector Mobile Threat Defense de Pradeo para controlar el acceso de los dispositivos móviles a los recursos corporativos.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccfe9ccd186f38a971aa6bac5d58bf61e44450d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ae354d2c5cd367c30d76f46022a8c430c6f81be3
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882762"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671062"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Pradeo con Intune
 

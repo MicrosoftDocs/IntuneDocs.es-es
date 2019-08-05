@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883838"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590921"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementación de aplicaciones Windows 10 con Microsoft Intune 
 
@@ -41,7 +41,7 @@ Las aplicaciones LOB de Windows 10 se firman y se cargan en la consola de admini
 
 ## <a name="microsoft-store-for-business-apps"></a>Aplicaciones de Tienda Microsoft para Empresas
 
-Las aplicaciones de Microsoft Store para Empresas son aplicaciones modernas que se compran a través del portal de administración de Microsoft Store para Empresas y se sincronizan a través de Microsoft Intune para la administración. Las aplicaciones pueden ser **con licencia en línea** o **con licencia sin conexión**. Las actualizaciones de las aplicaciones de Microsoft Store para Empresas se administran directamente mediante Microsoft Store, sin ninguna acción adicional exigida por el administrador. El administrador también puede evitar las actualizaciones de aplicaciones específicas mediante un identificador uniforme de recursos (URI) personalizado. Para obtener más información, vea [Administración de aplicaciones empresariales - Impedir las actualizaciones automáticas de la aplicación](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). En el dispositivo, el usuario final también puede deshabilitar las actualizaciones de todas las aplicaciones de Microsoft Store para Empresas en el dispositivo. 
+Las aplicaciones de Microsoft Store para Empresas son aplicaciones modernas que se compran en el portal de administración de Microsoft Store para Empresas y se sincronizan a través de Microsoft Intune para administrarlas. Las aplicaciones pueden ser **con licencia en línea** o **con licencia sin conexión**. Las actualizaciones de las aplicaciones de Microsoft Store para Empresas se administran directamente mediante Microsoft Store, sin ninguna acción adicional exigida por el administrador. El administrador también puede evitar las actualizaciones de aplicaciones específicas mediante un identificador uniforme de recursos (URI) personalizado. Para obtener más información, vea [Administración de aplicaciones empresariales - Impedir las actualizaciones automáticas de la aplicación](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). En el dispositivo, el usuario final también puede deshabilitar las actualizaciones de todas las aplicaciones de Microsoft Store para Empresas en el dispositivo. 
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Instalación de aplicaciones en dispositivos Windows 10
 Según el tipo de aplicación, se puede instalar en un dispositivo Windows 10 de una de dos maneras:

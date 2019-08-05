@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374849"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482860"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configuración de la aplicación Managed Home Screen de Microsoft para Android Enterprise
 
@@ -386,6 +386,9 @@ Este es un ejemplo de script JSON con todas las claves de configuración disponi
 
 ## <a name="googles-android-device-policy-app"></a>Aplicación de directiva de dispositivo Android de Google
 La aplicación de Pantalla principal administrada ahora proporciona acceso a la aplicación de directiva de dispositivo Android de Google. La aplicación de Pantalla principal administrada es un iniciador personalizado que se usa para dispositivos inscritos en Intune, como dispositivos dedicados de Android Enterprise (AE) que usan el modo de pantalla completa de varias aplicaciones. Puede acceder a la aplicación de directiva de dispositivo Android o guiar a los usuarios a esta aplicación, con fines de soporte técnico y depuración. Esta capacidad de inicio está disponible en el momento en que el dispositivo se inscribe y se bloquea en la Pantalla principal administrada. No se necesitan instalaciones adicionales para usar esta funcionalidad.
+
+## <a name="managed-home-screen-debug-screen"></a>Pantalla de depuración de Managed Home Screen
+Para acceder a la pantalla de depuración de Managed Home Screen, haga clic en el botón **atrás** hasta que se muestre la pantalla de depuración (haga clic en el botón **atrás** 15 veces o más). En esta pantalla de depuración, puede iniciar la aplicación de directivas de dispositivos Android, ver y cargar registros o pausar temporalmente la pantalla completa para actualizar el dispositivo. Para más información sobre cómo pausar el modo de pantalla completa, consulte el elemento **Salir del modo de pantalla completa,** en la [configuración de dispositivo dedicada](device-restrictions-android-for-work.md#dedicated-device-settings) de Android Enterprise.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

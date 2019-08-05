@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375153"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671058"
 ---
-# <a name="monitor-device-encryption"></a>Supervisión del cifrado de dispositivos  
+# <a name="monitor-device-encryption-with-intune"></a>Supervisión del cifrado de dispositivos con Intune   
 
 El informe de cifrado de Microsoft Intune es una ubicación centralizada para ver los detalles sobre el estado de cifrado de los dispositivos administrados. Vea los detalles sobre el estado de cifrado de un dispositivo y busque opciones para administrar las claves de recuperación del mismo. Las opciones de clave de recuperación disponibles dependen del tipo de dispositivo que se está viendo.  
 
@@ -93,8 +93,6 @@ Cuando se selecciona un dispositivo desde el informe de cifrado, Intune muestra 
 - **Resumen de estado de perfil**: resumen de los perfiles que se aplican a este dispositivo. El resumen representa la condición menos favorable entre los perfiles aplicables. Por ejemplo, aunque solo se produzca un error en un perfil aplicable de entre varios, el *resumen de estado de perfil* mostrará *Error*.  
 
 - **Detalles del estado**: detalles avanzados sobre el estado de cifrado del dispositivo.  
-  > [!NOTE]
-  > La compatibilidad con FileVault está limitada hasta que la versión de julio complete el lanzamiento en unos días. Hasta que se complete el lanzamiento, es posible que los detalles del estado y del cifrado del dispositivo para macOS no se muestren con precisión en el informe de cifrado.
 
   > [!IMPORTANT]  
   > En dispositivos Windows 10, Intune solo muestra *Detalles del estado* para dispositivos que ejecutan la *actualización de Windows 10 de abril de 2019* o una versión posterior.  

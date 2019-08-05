@@ -7,14 +7,35 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: 4423e731bc1538cd2454de32f0d50f2d08eedc69
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67812532"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670924"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune. 
+
+
+### <a name="decreasing-support-for-android-device-administrator"></a>Reducción de la compatibilidad con el administrador de dispositivos Android 
+El administrador de dispositivos Android (que a veces se conoce como administración de Android "heredada" y publicada con Android 2.2) es una manera de administrar dispositivos Android. Sin embargo, ahora existe una funcionalidad de administración mejorada que se incluye con [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (publicada con Android 5.0). Con el fin de realizar la transición a la administración de dispositivos moderna, más completa y segura, Google va a reducir la compatibilidad con el administrador de dispositivos en las nuevas versiones de Android.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Debido a estos cambios de Google, los usuarios de Intune se verán afectados de las siguientes maneras: 
+- Intune solo podrá proporcionar compatibilidad con dispositivos Android administrados por el administrador de dispositivos que ejecuten Android 10 y versiones posteriores (también conocido como Android Q) hasta el verano 2020. Es en esta fecha cuando se espera que se lance la versión principal de Android.  
+- Los dispositivos administrados por el administrador de dispositivos que ejecutan Android 10 o posterior después del verano de 2020 ya no se podrán administrar por completo.    
+- Los dispositivos Android administrados por el administrador de dispositivos que permanezcan en versiones de Android inferiores a Android 10 no se verán afectados y se podrán seguir administrando por completo con el administrador de dispositivos.  
+- En todos los dispositivos Android 10 y versiones posteriores, Google ha restringido a los agentes de administración del administrador de dispositivos, como el Portal de empresa, el acceso a la información de identificación del dispositivo. Esta situación afecta a las siguientes características de Intune después de que un dispositivo se actualice a Android 10 o una versión posterior: 
+    - El control de acceso a la red de VPN dejará de funcionar.  
+    - La identificación de los dispositivos como propiedad de la empresa con el número IMEI o el número de serie no marcará automáticamente los dispositivos como propiedad de la empresa. 
+    - El número IMEI y el número de serie ya no serán visibles para los administradores de TI en Intune. 
+        > [!Note]
+        > Esta situación solo afecta a los dispositivos administrados por el administrador de dispositivos en Android 10 y versiones posteriores; no a los administrados con Android Enterprise. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+Para evitar la reducción de la funcionalidad que tendrá lugar en el verano de 2020, siga estas recomendaciones:
+- No incorpore nuevos dispositivos a la administración del administrador de dispositivos.
+- Si está previsto que un dispositivo reciba una actualización de Android 10, mígrelo de la administración del administrador de dispositivos a la administración de Android Enterprise o a las directivas de protección de aplicaciones.
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Actualización de la aplicación del Portal de empresa de Android a la versión más reciente <!--4536963-->
 Intune publica actualizaciones periódicamente de la aplicación del Portal de empresa de Android. En noviembre de 2018 publicamos una actualización del Portal de empresa, que incluía un conmutador de back-end, en preparación para el cambio de Google de su plataforma de notificación existente a Firebase Cloud Messaging (FCM). Cuando Google retire su plataforma de notificación existente y se traslade a FCM, los usuarios finales deberán haber actualizado la aplicación del Portal de empresa al menos a la versión de noviembre de 2018 para seguir comunicándose con Google Play Store.
@@ -63,7 +84,7 @@ A partir de septiembre de 2019, Intune pasará a admitir aplicaciones de iOS con
 Con la integración de Intune App SDK o el ajuste de aplicaciones, puede proteger los datos corporativos de aplicaciones y usuarios no aprobados mediante el cifrado de datos. El SDK de aplicaciones de Intune para iOS usará las claves de cifrado de 256 bits de forma predeterminada cuando el cifrado esté habilitado mediante las directivas de protección de aplicaciones (APP). Después de este cambio, las aplicaciones de iOS en versiones de SDK anteriores a la 8.1.1, que utilizan claves de cifrado de 128 bits, ya no podrán compartir datos con las aplicaciones integradas con SDK 8.1.1 o con claves de 256 bits. Todas las aplicaciones de iOS deberán tener una versión de SDK de 8.1.1 o posterior para permitir el uso compartido de datos.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
-Compruebe sus aplicaciones de Microsoft, de terceros y de línea de negocio (LOB). Debe asegurarse de que todas sus aplicaciones protegidas con la aplicación de Intune usan la versión 8.1.1 del SDK o una versión posterior.
+Compruebe sus aplicaciones de Microsoft, de terceros y de línea de negocio (LOB). Asegúrese de que todas sus aplicaciones protegidas con la aplicación de Intune usan la versión 8.1.1 del SDK o una posterior.
 
 - Para aplicaciones de LOB: Es posible que deba volver a publicar las aplicaciones integradas con la versión 8.1.1 del SDK o con una versión posterior. Le recomendamos que utilice la versión más reciente del SDK. Para información sobre cómo preparar las aplicaciones de LOB para las directivas de protección de aplicaciones, consulte [Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones](../apps-prepare-mobile-application-management.md).
 - Para las aplicaciones de terceros o de Microsoft: Asegúrese de que está implementando la versión más reciente de estas aplicaciones a los usuarios.
@@ -74,7 +95,7 @@ También debe actualizar la documentación o las instrucciones para desarrollado
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Plan de cambio: Nueva configuración de actualizaciones de Windows en Intune <!-- 4464404 -->
-A partir de la versión de agosto para el servicio de Intune o actualización 1908, estamos agregando una nueva "configuración de la fecha límite" que puede configurar en lugar de la configuración de "Permitir al usuario que reinicie (reinicio establecido)". Planeamos deshabilitar la configuración del reinicio establecido en la interfaz de usuario en la actualización 1909 o en la actualización de septiembre y luego quitarlos completamente de la consola hacia finales de octubre. 
+A partir de la versión de agosto del servicio de Intune o actualización 1908, estamos agregando una nueva "configuración de la fecha límite" que puede configurar en lugar de la configuración "Permitir al usuario que reinicie (reinicio establecido)". Planeamos deshabilitar la configuración del reinicio establecido en la interfaz de usuario en la actualización 1909 o en la actualización de septiembre y luego quitarlos completamente de la consola hacia finales de octubre. 
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 Si administra dispositivos de Windows 10 en su entorno: 
@@ -83,8 +104,27 @@ Si administra dispositivos de Windows 10 en su entorno:
 - La configuración de la fecha límite reemplazará la opción "Permitir al usuario que reinicie (reinicio establecido) en la consola de la actualización 1910.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
-Empiece a usar la configuración de la fecha límite en la actualización 1908 con los valores deseados. Una vez que lo haya hecho, puede establecer la configuración del reinicio establecido en "Sin configurar" para preparar su retirada de la consola en octubre.
+Empiece a usar la configuración de la fecha límite en la actualización 1908 con los valores deseados. Una vez que lo haya hecho, puede configurar el valor de reinicio establecido en "Sin configurar" para preparar su retirada de la consola en octubre.
 
 Actualice la documentación y cualquier script de automatización si es necesario. 
 
 Le mantendremos informado y enviaremos un recordatorio al centro de mensajes antes de quitar la configuración del reinicio establecido.
+
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Plan de cambio: Intune App SDK y las directivas de protección de aplicaciones de Android van a pasar a ser compatible con Android 5.0 y versiones posteriores en octubre <!--4911065 -->
+Intune pasará a ser compatible con Android 5.x (Lollipop) y versiones posteriores en octubre. Actualice las aplicaciones encapsuladas con la instancia de Intune App SDK más reciente y actualice los dispositivos.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Si no va a usar, ni tiene pensado usar, el SDK o la aplicación para Android, este cambio no le afectará. Si va a usar Intune App SDK, asegúrese de actualizarse a la versión más reciente y también actualice los dispositivos a Android 5.x y versiones posteriores. Si no realiza la actualización, las aplicaciones no recibirán actualizaciones y la calidad de su experiencia empeorará con el tiempo. 
+
+A continuación, encontrará una lista de dispositivos comunes inscritos en Intune que ejecutan Android versión 4.x. Si tiene uno de estos dispositivos, siga los pasos adecuados para asegurarse de que sea compatible con Android 5.0 o superior o de que se va a reemplazar por un dispositivo que admita la versión 5.0 o posterior de Android. Esta lista no incluye todos los dispositivos que puede ser necesario evaluar:
+- Samsung SM-T561  
+- Samsung SM-T365 
+- Samsung GT-I9195 
+- Samsung SM-G800F
+- Samsung SM-G357FZ
+- Motorola XT1080
+- Samsung GT-I9305
+- Samsung SM-T231
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+Encapsule las aplicaciones con la versión más reciente de Intune App SDK. También puede establecer la configuración de inicio condicional "Requerir versión mínima del sistema operativo (solo advertencia)" para notificar a los usuarios finales los dispositivos personales que se van a actualizar.

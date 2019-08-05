@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427332"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660944"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configuración de Exchange Connector local de Intune en Microsoft Intune
 La información de este artículo le ayudará a instalar y, luego, supervisar el conector local de EAS de Intune.  Exchange Connector local de Intune se usa con las [directivas de acceso condicional para permitir o bloquear el acceso a los buzones locales de Exchange](conditional-access-exchange-create.md). 
@@ -121,7 +121,7 @@ Siga estos pasos para instalar Intune On-Premises Exchange Connector. Si tiene v
 
 5. Proporcione las credenciales necesarias para enviar notificaciones al buzón de Exchange Server de un usuario. Este usuario se puede destinar solo a las notificaciones. El usuario de notificaciones necesita un buzón de Exchange para enviar notificaciones por correo electrónico. Puede configurar estas notificaciones con directivas de acceso condicional en Intune.  
 
-       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+   Asegúrese de que el servicio de detección automática y servicios Web Exchange están configurados en el servidor de acceso de cliente de Exchange. Para obtener más información, consulte [Client Access server](https://technet.microsoft.com/library/dd298114.aspx) (Servidor de acceso de cliente).
 
 6. En el campo **Contraseña**, indique la contraseña de la cuenta para permitir que Intune obtenga acceso al servidor Exchange.
 
@@ -158,7 +158,7 @@ Para realizar la conmutación por error, después de que el conector establezca 
 
 Cuando se admiten 5000 o más dispositivos con Exchange ActiveSync, puede configurar un valor opcional para mejorar el rendimiento del conector. Se logra un mayor rendimiento al permitir que Exchange use varias instancias de un espacio de ejecución de comandos de PowerShell. 
 
-Antes de realizar este cambio, asegúrese de que la cuenta que usa para ejecutar Exchange Connector no se utiliza para otras finalidades de administración de Exchange. Esto se debe a que Exchange tiene un límite de 18 espacios de ejecución por cuenta, la mayoría de los cuales los usará el conector. 
+Antes de realizar este cambio, asegúrese de que la cuenta que usa para ejecutar Exchange Connector no se utiliza para otras finalidades de administración de Exchange. Esto se debe a que Exchange tiene un número limitado de espacios de ejecución por cuenta, la mayoría de los cuales los usará el conector. 
 
 Este cambio en el rendimiento no es adecuado para los conectores que se ejecuten en hardware antiguo o lento.  
 

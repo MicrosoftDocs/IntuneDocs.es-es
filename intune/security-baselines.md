@@ -1,6 +1,6 @@
 ---
 title: 'Uso de líneas de base de seguridad en Microsoft Intune: Azure | Microsoft Docs'
-description: Agregue o defina configuraciones de seguridad de Windows recomendadas para proteger al usuario y los datos en dispositivos con Microsoft Intune para la administración de dispositivos móviles. Habilite BitLocker, configure Protección contra amenazas avanzada de Microsoft Defender, controle Internet Explorer, use Smart Screen, establezca directivas de seguridad locales, requiera una contraseña, bloquee las descargas de Internet, etc.
+description: Use la configuración de seguridad de Windows recomendada para proteger a los usuarios y a los datos de los dispositivos con Microsoft Intune en la administración de dispositivos móviles. Habilite el cifrado, configure Advanced Threat Protection de Microsoft Defender, controle Internet Explorer, establezca directivas de seguridad locales, exija una contraseña, bloquee las descargas de Internet, y mucho más.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671015"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Uso de líneas de base de seguridad para configurar dispositivos Windows 10 en Intune
 
