@@ -1,7 +1,7 @@
 ---
 title: Configuración de líneas de base de seguridad de Intune para Windows 10
 titleSuffix: Microsoft Intune
-description: Configuración de líneas de base de seguridad de Intune para administrar Windows 10
+description: Revise los valores predeterminados y los valores disponibles que se encuentran en la línea de base de seguridad MDM de Windows para los dispositivos Windows 10 que administra con Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491906"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680032"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Intune  
 
 Vea la configuración de línea de base de seguridad de MDM compatible con Microsoft Intune para dispositivos que ejecutan Windows 10 o posterior. Los valores predeterminados de la configuración de esta línea base representan la configuración recomendada para los dispositivos aplicables y es posible que no coincidan con los valores predeterminados de línea base de otras líneas de base de seguridad.  
 
-La versión de línea de base más reciente es la **línea base de seguridad de MDM para la actualización Spring 2019 (19H1)**  
+La versión de línea de base más reciente es la **línea base de seguridad de MDM para el 2019 de mayo**  
 
 Para obtener información sobre lo que ha cambiado en la versión más reciente de esta línea de base de la versión anterior, consulte [cambios en la nueva plantilla](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> En junio de 2019, la versión preliminar de la línea de base de seguridad de MDM se ha reemplazado por el lanzamiento de la plantilla de *línea de base de seguridad de MDM para la actualización de Spring 2019 (19H1)* , que está disponible con carácter general (no en versión preliminar). Los perfiles que se crearon antes de la disponibilidad de la línea de base de *seguridad de MDM para la actualización de spring 2019 Update (19H1)* no se actualizan para reflejar la configuración y los valores que se encuentran en la versión de línea de base de seguridad de MDM para la actualización de Spring 2019 (19H1).  Aunque no se pueden crear nuevos perfiles basados en la plantilla de vista previa, se pueden editar y seguir usando perfiles creados previamente que se basan en la plantilla de vista previa.   
+> En junio de 2019, la versión preliminar de la línea de base de seguridad de MDM se ha reemplazado por el lanzamiento de la plantilla de la *línea de base de seguridad de MDM de mayo de 2019* , que está disponible con carácter general (no en versión preliminar) Los perfiles que se crearon antes de la disponibilidad de la *línea de base de seguridad de MDM para el 2019 de mayo* no se actualizarán para reflejar la configuración y los valores que se encuentran en la línea de base de seguridad de MDM para la versión 2019 de mayo.  Aunque no se pueden crear nuevos perfiles basados en la plantilla de vista previa, se pueden editar y seguir usando perfiles creados previamente que se basan en la plantilla de vista previa.   
   
 Para obtener información sobre el uso de las líneas de base de seguridad con Intune, consulte [uso de líneas de base de seguridad](security-baselines.md).  
 
@@ -1825,7 +1825,7 @@ Para más información, vea [Policy CSP - WindowsPowerShell](https://docs.micros
   **Valor predeterminado**: Habilitado
 
 ## <a name="whats-changed-in-the-new-template"></a>Cambios en la nueva plantilla
-La plantilla de la *línea de base de seguridad de MDM para la actualización de Spring 2019 (19H1)* tiene los siguientes cambios de la plantilla de *vista previa* .
+La plantilla *de la línea de base de seguridad de MDM para el 2019 de mayo* tiene los siguientes cambios de la plantilla de *vista previa* .
 
 ### <a name="changes-to-the-baseline-settings"></a>Cambios en la configuración de línea de base
 La configuración es alguna de las siguientes:
