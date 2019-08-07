@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287213"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701012"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Administración del acceso web mediante Microsoft Edge con Microsoft Intune
 
@@ -76,9 +76,6 @@ Para restringir el uso de Microsoft Edge en iOS y Android por parte de las apli
 
 9. En la sección **Asignaciones**, seleccione **Usuarios y grupos** y, después, elija los usuarios o grupos a los que quiera asignar esta directiva.
 
-    > [!NOTE]
-    > A los usuarios también se les deben asignar directivas de Intune App Protection para recibir directivas de configuración de aplicaciones. Para más información sobre cómo crear directivas de Intune App Protection, vea [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md).
-
 10. En la sección **Asignaciones**, seleccione **Aplicaciones en la nube** para elegir las aplicaciones que se van a proteger con esta directiva.
 
 Una vez configurada la directiva, los usuarios deben usar obligatoriamente Microsoft Edge para acceder a las aplicaciones web conectadas a Azure AD que estén protegidas con dicha directiva. Si los usuarios intentan usar un explorador no administrado en este escenario, recibirán un mensaje en el que se les indicará que deben usar Microsoft Edge.
@@ -96,8 +93,6 @@ Para el inicio de sesión único es necesario que el dispositivo esté registrad
 > El registro de dispositivos consiste en un sencillo registro en el servicio de Azure AD. No se requiere una inscripción de dispositivo completa ni se otorga a TI ningún tipo de privilegio extra en el dispositivo.
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Establecimiento de una configuración de aplicaciones de explorador protegido
-
-Para que se apliquen las configuraciones de las aplicaciones, el explorador protegido del usuario u otra aplicación del dispositivo ya deben estar administrados mediante [la directiva de aplicación de Intune](app-protection-policy.md).
 
 Para crear la configuración de la aplicación para Microsoft Edge:
 
