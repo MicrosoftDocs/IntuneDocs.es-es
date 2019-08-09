@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467413"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756511"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configuración de Endpoint Protection de macOS en Intune  
 
@@ -97,11 +97,18 @@ Para obtener más información sobre la configuración de FileVault de Apple, co
     - **Rotación de claves de recuperación personal** : especifique la frecuencia con la que se girará la clave de recuperación personal de un dispositivo. Puede seleccionar el valor predeterminado de **no configurado**, o un valor de **1** a **12** meses.  
 
   - **Deshabilitar preguntar al cerrar sesión**  
-    Evite el aviso al usuario que le solicita que habilite FileVault cuando cierre la sesión.  Cuando se establece en deshabilitado, el aviso en el cierre de sesión está deshabilitado y, en su lugar, se le solicita al usuario que inicie sesión.  
+    Evite el aviso al usuario que le solicita que habilite FileVault cuando cierre la sesión.  Cuando se establece en habilitado, el aviso en el cierre de sesión está deshabilitado y, en su lugar, se le solicita al usuario cuando inicie sesión.  
     - **No configurado**.  
-    - **Deshabilitar**  
+    - **Habilitar** : deshabilite el aviso en el cierre de sesión.
 
     **Valor predeterminado**: No configurado  
+
+     > [!IMPORTANT]  
+     > Hay un problema conocido cuando la opción **deshabilitar preguntar al cerrar sesión** está establecida en *Habilitar*. Cuando se establece en *habilitado*, el valor de **número de veces que se puede omitir** se debe establecer en un valor y no debe establecerse como *no configurado*. Si se establece en *no configurado*, el perfil produce un error en el dispositivo. En este escenario, el dispositivo informa de que se trata de un **Resumen de estado de perfil** como **error** sin más detalles.
+     > 
+     > Cuando la deshabilitación **del símbolo del sistema en el cierre de sesión** se establece en *no configurado*, el **número de veces que se permite omitir** puede *no estar configurado* o tener un valor.  
+     > 
+     > Esta incidencia se resolverá en una actualización futura. 
 
   - **Número de veces que se permite omitir**  
   Establezca el número de veces que un usuario puede omitir las solicitudes para habilitar FileVault antes de que FileVault sea necesario para que el usuario inicie sesión.  
