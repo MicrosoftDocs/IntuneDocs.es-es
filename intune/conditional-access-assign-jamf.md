@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045204"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680005"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
 
@@ -33,7 +33,10 @@ Puede usar Azure Active Directory y las directivas de acceso condicional de Mi
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Configuración de las directivas de cumplimiento de dispositivos en Intune
 
 1. Abra Microsoft Azure y, luego, navegue a **Intune** > **Cumplimiento de dispositivos** > **Directivas**. Puede crear directivas para macOS, incluida la elección de una serie de acciones (por ejemplo, el envío de correos electrónicos de advertencia) a usuarios y grupos no compatibles.
-2. Busque los grupos deseados y, luego, aplíqueles las directivas.
+2. Seleccione la directiva > Asignaciones. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
+3. Elija Grupos seleccionados para ver los grupos de seguridad de Azure AD. Seleccione los grupos de usuarios a los que quiere aplicar esta directiva > Elija Guardar para implementar la directiva a los usuarios.
+
+Ya aplicó la directiva a los usuarios. Los dispositivos usados por los usuarios de destino de la directiva se evalúan para el cumplimiento y se marcan como compatibles para la opción "Requerir que el dispositivo esté marcado como compatible" en Azure Active Directory.
 
 > [!Note]
 > Intune requiere que el cifrado de disco completo sea compatible.

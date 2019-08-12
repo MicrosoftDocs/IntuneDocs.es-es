@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a1ac47fd512323ce809d4ee13c5e98f563ce51c
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548412"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783114"
 ---
 # <a name="develop-a-rollout-plan"></a>Desarrollo de un plan de lanzamiento
 
@@ -93,16 +93,16 @@ A continuación se muestra un ejemplo actualizado del plan de lanzamiento de Int
 
 | **Fase de implementación** | **Julio** | **Agosto** | **Septiembre** | **Octubre** |
 |:---:|:---:|:---:|:---:|:---:|
-| Piloto limitado |  |  |  |  |                                                         
+| Piloto limitado |  |  |  |  |
 | Autoservicio | TI |  |  |  |
-| Piloto expandido |  |  |  |  |                                                         
+| Piloto expandido |  |  |  |  |
 | Autoservicio | TI |  |  |  |
 | Preferencial | Ejecutivos de TI |  |  |  |
 | Fase de implementación de producción 1 |  | Ventas, Marketing |  |  |
 | Autoservicio |  | Ventas y marketing |  |  |
 | Fase de implementación de producción 2 |  |  | Venta directa |  |
-| Autoservicio |  |  |  |  |
-| Fase de implementación de producción 3 |  |  | Venta directa |  |
+| Autoservicio |  |  | Venta directa |  |
+| Fase de implementación de producción 3 |  |  |  | Ejecutivos, recursos humanos, finanzas |
 | Autoservicio |  |  |  | Recursos humanos, finanzas |
 | Preferencial |  |  |  | Ejecutivos |
 

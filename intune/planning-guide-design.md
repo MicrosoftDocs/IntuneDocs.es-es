@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884877"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783239"
 ---
 # <a name="create-a-design"></a>Creación de un diseño
 
@@ -116,7 +116,7 @@ Intune ofrece dos opciones de implementación: independiente e híbrida. Indepen
 
 ## <a name="intune-tenant-location"></a>Ubicación del inquilino de Intune
 
-Si su organización tiene una presencia global, asegúrese de planear dónde se encontrará su inquilino al suscribirse al servicio. El país se define cuando se registra en una suscripción de Intune la primera vez, y se asignan las regiones del mundo que se muestran a continuación:
+Si su organización tiene una presencia global, asegúrese de planear dónde se encontrará su inquilino al suscribirse al servicio. El país o región se define cuando se registra en una suscripción de Intune la primera vez, y se asignan los países o regiones del mundo que se muestran a continuación:
 
 - América del Norte
 
@@ -125,7 +125,7 @@ Si su organización tiene una presencia global, asegúrese de planear dónde se 
 - Asia y Pacífico
 
 >[!IMPORTANT]
-> No es posible cambiar el país y la ubicación del inquilino posteriormente.
+> No es posible cambiar el país o región y la ubicación del inquilino posteriormente.
 
 ## <a name="external-dependencies"></a>Dependencias externas
 
