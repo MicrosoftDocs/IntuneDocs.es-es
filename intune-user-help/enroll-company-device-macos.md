@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511932"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783017"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Inscripción de dispositivos macOS proporcionados por la organización en la administración
 
@@ -40,10 +40,10 @@ Es posible que la organización haya comprado los dispositivos a través de lo q
 Complete los siguientes pasos para inscribir un dispositivo macOS en la administración. Si usa un dispositivo propio, que la organización no le haya proporcionado, siga los pasos para los [dispositivos personales y Bring Your Own Device](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Encienda el dispositivo macOS. 
-2. Elija el país y haga clic en **Continuar**.  
+2. Elija el país o la región y haga clic en **Continuar**.  
 
    ![Captura de la pantalla de bienvenida del asistente de configuración de dispositivos macOS en la que se muestra una lista de idiomas.](./media/macos-dep-welcome-1808.png)   
-3. Elija una distribución de teclado. En la lista se muestra una o más opciones, según el país seleccionado. Para ver todas las opciones de distribución, independientemente del país seleccionado, haga clic en **Mostrar todo**. Cuando termine, haga clic en **Continuar**.  
+3. Elija una distribución de teclado. En la lista se muestra una o más opciones, según la región o el país seleccionado. Para ver todas las opciones de distribución, independientemente de la región o del país seleccionado, haga clic en **Mostrar todo**. Cuando termine, haga clic en **Continuar**.  
 
    ![Captura de la pantalla de distribución de teclado del asistente de configuración de dispositivos macOS en la que se muestra una lista de idiomas de teclado con la opción Mostrar todo desactivada y los botones Atrás y Continuar.](./media/macos-dep-keyboard-1808.png)  
 4. Seleccione la red Wi-Fi. Debe disponer de conexión a Internet para continuar con la configuración. Si no ve la red o necesita conectarse mediante cable, haga clic en **Otras opciones de red**. Cuando termine, haga clic en **Continuar**.  

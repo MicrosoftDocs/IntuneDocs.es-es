@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
-ms.translationtype: MTE75
+ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482950"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783208"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -636,7 +636,7 @@ Las siguientes notificaciones se envían a la aplicación y es posible que algun
 > [!NOTE]
 > Una aplicación nunca debe registrarse para recibir notificaciones `WIPE_USER_DATA` y `WIPE_USER_AUXILIARY_DATA`.
 
-### <a name="managementremoved"></a>MANAGEMENT_REMOVED
+### <a name="management_removed"></a>MANAGEMENT_REMOVED
 
 La notificación `MANAGEMENT_REMOVED` indica que un usuario previamente administrado por directivas ya no será administrado por la directiva de MAM de Intune. Esto no requiere que se borren los datos del usuario ni que el usuario cierre la sesión (si fuera necesario un borrado, se enviaría una notificación `WIPE_USER_DATA`). Es posible que muchas aplicaciones no tengan que controlar esta notificación en absoluto, pero las aplicaciones que utilizan `MAMDataProtectionManager` deben [prestar especial atención a esta notificación](#data-protection).
 
@@ -1370,7 +1370,7 @@ Al método `onMAMIdentitySwitchRequired` se le llama para todos los cambios de i
 
   * Si se bloquea un cambio de identidad, el resultado es el mismo que si la configuración de uso compartido `Receive` hubiera prohibido la entrada de datos.
 
-  * Si un servicio se ejecuta en el subproceso principal, se **debe** llamar a `reportIdentitySwitchResult` de forma sincrónica o se bloqueará el subproceso de IU.
+  * Si un servicio se ejecuta en el subproceso principal, se **debe** llamar a `reportIdentitySwitchResult` de forma sincrónica o el subproceso de IU dejará de responder.
 
   * Para la creación de **`Activity`** , se llamará a `onMAMIdentitySwitchRequired` antes que a `onMAMCreate`. Si la aplicación debe mostrar la interfaz de usuario para determinar si se permite el cambio de identidad, esa interfaz de usuario se debe mostrar mediante una actividad *diferente*.
 
