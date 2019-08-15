@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
-ms.translationtype: HT
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670908"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833544"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>En desarrollo para Microsoft Intune: agosto de 2019
 
@@ -73,7 +73,7 @@ En las instalaciones de aplicaciones disponibles en dispositivos de perfil de tr
 ## <a name="device-configuration"></a>Configuración de los dispositivos
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>Algunas restricciones de dispositivos iOS no supervisadas se supervisarán solo con la versión iOS 13,0 <!-- 4867809  -->
-Algunos valores de configuración se aplicarán a los dispositivos solo supervisados con la versión iOS 13,0. Estas opciones incluyen:
+Algunos valores de configuración se aplicarán a los dispositivos supervisados a partir de la versión iOS 13,0. Estas opciones incluyen:
 
 - Tienda de aplicaciones, presentación de documentos, juegos
   - Tienda de aplicaciones
@@ -98,16 +98,16 @@ Se aplica a:
 - iOS 13,0 y versiones más recientes
 
 ### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709----"></a>Nuevas configuraciones y cambios en la configuración existente para restringir características en dispositivos iOS y macOS <!-- 4867699 4867709  -->
-Podrá crear perfiles para restringir la configuración de los dispositivos que ejecutan iOS y MacOS (**perfiles** > de**configuración** > de dispositivo**crear perfil** > **iOS** o **MacOS** para plataforma Escriba > **restricciones de dispositivos**). Se agregarán las siguientes características:
+Podrá crear perfiles para restringir la configuración de los dispositivos que ejecutan iOS y MacOS **(**  >   **creación** > **deperfilesdeconfiguracióndedispositivos.**  > **iOS** o**MacOS**para el tipo de plataforma >**restriccionesdedispositivos)** . Se agregarán las siguientes características:
 
-- En**la nube y el almacenamiento**de**restricciones** > de dispositivos **MacOS** > , use la nueva configuración de **entrega** para impedir que los usuarios inicien el trabajo en un dispositivo MacOS y continúe trabajando en otro dispositivo MacOS o iOS.
+- En **la**nube y el almacenamiento > **derestricciones** >  **dedispositivos**MacOS, **use la nueva configuración de la entrega para**  impedir que los usuarios inicien el trabajo en un dispositivo macOS y seguir trabajando en otro dispositivo macOS o iOS.
   Para ver la configuración actual, vaya a [Configuración de dispositivos macOS para permitir o restringir características mediante Intune](device-restrictions-macos.md).
-- En las**restricciones de dispositivos** **iOS** > , hay algunos cambios:
-  - **Aplicaciones integradas** **Buscar mi iPhone (solo supervisado)** : nueva configuración que bloquea esta característica en la característica buscar mi aplicación. >  
-  - **Aplicaciones integradas** **Buscar mis amigos (solo supervisado)** : nueva configuración que bloquea esta característica en la característica buscar mi aplicación. >  
-  - **Modificación inalámbrica** > **del estado de Wi-Fi (solo supervisado)** : nueva configuración que impide que los usuarios enciendan o desactiven Wi-Fi en el dispositivo.
-  - **Teclado y Diccionario** > **QuickPath (solo supervisado)** : nueva configuración que bloquea la característica QuickPath.
-  - **Nube y almacenamiento: la**continuación de la **actividad** cambia de nombre a **entrega**.
+- En **las** > restricciones**de dispositivos iOS, hayalgunoscambios:**
+  - **Aplicaciones** >  **integradas buscar mi iPhone (solo supervisado)** : nueva configuración que bloquea esta característica en la característica buscar mi aplicación. 
+  - **Aplicaciones** >  **integradas buscar mis amigos (solo supervisado)** : nueva configuración que bloquea esta característica en la característica buscar mi aplicación. 
+  - **Modificación**inalámbrica > **del estado de Wi-Fi (solo supervisado)** : nueva configuración que impide que los usuarios enciendan o desactiven Wi-Fi en el dispositivo.
+  - **Teclado y diccionario** >  **QuickPath (solo supervisado)** : nueva configuración que bloquea la característica QuickPath.
+  - **Nube y almacenamiento**: **la continuación** de la actividad **cambia**de nombre a entrega.
 
   Para ver la configuración actual, vaya a [Configuración de dispositivos iOS para permitir o restringir características mediante Intune](device-restrictions-ios.md).
 
@@ -116,7 +116,7 @@ Se aplica a:
 - iOS 13 y versiones más recientes
 
 ### <a name="control-the-apps-files-documents-and-folders-that-open-when-user-signs-in-to-macos-devices---3914202----"></a>Controle las aplicaciones, los archivos, los documentos y las carpetas que se abren cuando el usuario inicia sesión en dispositivos macOS <!--3914202  -->
-Podrá habilitar y configurar características en dispositivos MacOS (**perfiles** > de**configuración** > de dispositivos**crear perfil** > **MacOS** para plataformas > características de **dispositivo** para tipo de perfil). 
+Podrá habilitar y configurar características en dispositivos MacOS (**perfiles**  > **de configuración** >  **de dispositivos crear perfil** ).  >  **MacOS** for Platform >**características** de dispositivo para el tipo de perfil). 
 
 Habrá nuevas opciones de configuración de elementos de inicio de sesión para controlar qué aplicaciones, archivos, documentos y carpetas se abren cuando un usuario inicia sesión en el dispositivo inscrito. 
 
@@ -126,13 +126,13 @@ Se aplica a:
 - macOS
 
 ### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946----"></a>Nuevas características para dispositivos Android Enterprise dedicados en modo de varias aplicaciones <!-- 3755304 3041943 3041946  -->
-Podrá controlar las características y la configuración en una experiencia de estilo quiosco en los dispositivos de Android Enterprise dedicados. Para ello, elija **configuración** > de dispositivos**perfiles** > **crear perfil** > **Android Enterprise** para plataforma > **propietario del dispositivo solo, restricciones de dispositivo** para el tipo de perfil.
+Podrá controlar las características y la configuración en una experiencia de estilo quiosco en los dispositivos de Android Enterprise dedicados. Para **ello, elija configuracióndeldispositivo**  >  **perfiles** > **crearperfil** > Android Enterprise **solo para** la **plataforma > propietario del dispositivo,** restricciones de dispositivo para el tipo de perfil.
 
 Se agregarán las siguientes características:
 - **Dispositivos dedicados** > **varias aplicaciones**: el **botón Inicio virtual** se puede mostrar al avanzar en el dispositivo o flotar en la pantalla para que los usuarios puedan moverla.
 - **Dispositivos dedicados** > **múltiples aplicaciones**: el acceso a la **linterna** permite a los usuarios usar la linterna. 
 - **Dispositivos dedicados** > **múltiples aplicaciones**: **control de volumen multimedia** permite a los usuarios controlar el volumen multimedia del dispositivo con un control deslizante. 
-- **Dispositivos dedicados:** **aplicación múltiple**: habilita un protector de la imagen, carga una imagen personalizada y controla cuándo se muestra el protector de la cámara. > 
+- **Dispositivos** > **dedicados:** aplicación múltiple: habilita un protector de la imagen, carga una imagen personalizada y controla cuándo se muestra el protector de la cámara.
 
 Para ver la configuración actual, vaya a [Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune](device-restrictions-android-for-work.md#dedicated-device-settings).
 
@@ -167,8 +167,8 @@ Podrá establecer perfiles de Programa de inscripción de dispositivos para omit
 - Tiempo de pantalla
 - Configuración de Touch ID
 
-Para ello, vaya a **inscripción** > de dispositivos inscripción de**Apple** > tokens del**programa de inscripción** > Elija un token > **perfiles** > elegir un perfil > **propiedades** > **Editar.** junto a **Personalización del asistente**para la instalación.
-Para obtener más información sobre la personalización del Asistente para la configuración, consulte [creación de un perfil de inscripción de Apple ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+Para ello, vaya a inscripción **de dispositivos inscripción**  >  **de Apple tokens del programa** >  **de inscripción** > Elija un token > **Perfiles** > Elija un perfil > **propiedades** > **Editarjuntoa** **Personalización**del Asistente para la instalación.
+Para obtener más información sobre la personalización del asistente [para la configuración, consulte ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)creación de un perfil de inscripción de Apple.
 
 ### <a name="android-enrollment-device-administrator-support----4869749----"></a>Compatibilidad con el administrador de dispositivos de inscripción de Android <!-- 4869749  -->
 La opción de inscripción del administrador de dispositivos Android se agregará a la página  > de inscripción de Android (inscripción de**dispositivos** > de **Intune** inscripción de**Android**). El administrador de dispositivos Android seguirá estando habilitado de forma predeterminada para todos los inquilinos.  
@@ -189,7 +189,7 @@ Podrá establecer el límite de tiempo de limpieza automática del dispositivo e
 ## <a name="role-based-access-control"></a>Control de acceso basado en roles
 
 ### <a name="default-scope-tag----3702875---"></a>Etiqueta de ámbito predeterminada <!-- 3702875 -->
-Habrá disponible una nueva etiqueta de ámbito predeterminada integrada. Todos los objetos de Intune no etiquetados que admiten etiquetas de ámbito se asignarán automáticamente a la etiqueta de ámbito predeterminada. La etiqueta de ámbito **predeterminada** se agregará a todas las asignaciones de roles existentes para mantener la paridad con la experiencia de administración hoy mismo. Si no desea que un administrador vea los objetos de Intune con etiquetas de ámbito predeterminadas, quite la etiqueta de ámbito predeterminada de la asignación de roles. Esta característica es similar a la característica de ámbitos de seguridad en System Center Configuration Manager.
+Habrá disponible una nueva etiqueta de ámbito predeterminada integrada. Todos los objetos de Intune no etiquetados que admiten etiquetas de ámbito se asignarán automáticamente a la etiqueta de ámbito predeterminada. La **etiqueta** de ámbito predeterminada se agregará a todas las asignaciones de roles existentes para mantener la paridad con la experiencia de administración hoy mismo. Si no desea que un administrador vea los objetos de Intune con etiquetas de ámbito predeterminadas, quite la etiqueta de ámbito predeterminada de la asignación de roles. Esta característica es similar a la característica de ámbitos de seguridad en System Center Configuration Manager.
 
 <!-- ***********************************************-->
 ## <a name="security"></a>Seguridad
