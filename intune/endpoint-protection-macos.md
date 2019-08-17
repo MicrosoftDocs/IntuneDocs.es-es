@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756511"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960413"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configuración de Endpoint Protection de macOS en Intune  
 
@@ -82,6 +82,9 @@ Use el firewall para controlar conexiones por aplicación en lugar de por puerto
 ## <a name="filevault"></a>FileVault  
 Para obtener más información sobre la configuración de FileVault de Apple, consulte [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) en el contenido para desarrolladores de Apple. 
 
+> [!IMPORTANT]  
+> A partir de macOS 10,15, la configuración de FileVault requiere la inscripción de MDM aprobada por el usuario. 
+
 - **FileVault**  
   Puede *Habilitar* el cifrado de disco completo mediante XTS-AES 128 con FileVault en los dispositivos que ejecutan MacOS 10,13 y versiones posteriores.  
   - **No configurado**.  
@@ -104,9 +107,9 @@ Para obtener más información sobre la configuración de FileVault de Apple, co
     **Valor predeterminado**: No configurado  
 
      > [!IMPORTANT]  
-     > Hay un problema conocido cuando la opción **deshabilitar preguntar al cerrar sesión** está establecida en *Habilitar*. Cuando se establece en *habilitado*, el valor de **número de veces que se puede omitir** se debe establecer en un valor y no debe establecerse como *no configurado*. Si se establece en *no configurado*, el perfil produce un error en el dispositivo. En este escenario, el dispositivo informa de que se trata de un **Resumen de estado de perfil** como **error** sin más detalles.
+     > Hay un problema conocido cuando el valor **Deshabilitar mensaje al cierre de sesión** se establece en *habilitado*. Cuando se establece en *habilitado*, el valor de **número de veces que se puede omitir** se debe establecer en un valor y no debe establecerse como *no configurado*. Si se establece en *Sin configurar*, el perfil producirá un error en el dispositivo. En este escenario, el dispositivo informa de que se trata de un **Resumen de estado del perfil** como **Error** sin detalles adicionales.
      > 
-     > Cuando la deshabilitación **del símbolo del sistema en el cierre de sesión** se establece en *no configurado*, el **número de veces que se permite omitir** puede *no estar configurado* o tener un valor.  
+     > Cuando **Deshabilitar mensaje al cierre de sesión** se establece en *Sin configurar*, **Número de veces que se permite omitir** puede estar *Sin configurar* o tener un valor.  
      > 
      > Esta incidencia se resolverá en una actualización futura. 
 

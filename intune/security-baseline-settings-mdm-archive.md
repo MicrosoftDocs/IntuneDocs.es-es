@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7871fa6f8655ff02242135d04385984368d52625
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 7e8aeb3428aeece2de9b94c0ebf7796ce73a0267
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680086"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978522"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -1441,4 +1441,4 @@ Para más información, vea [Policy CSP - WindowsPowerShell](https://docs.micros
 ## <a name="next-steps"></a>Pasos siguientes  
 
 [Ver la versión de línea base actual](security-baseline-settings-mdm.md)  
-[Actualizar perfiles para usar una nueva versión de línea base](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Actualizar perfiles para usar una nueva versión de línea base](security-baselines.md#change-the-baseline-version-for-a-profile)

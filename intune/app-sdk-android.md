@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
-ms.translationtype: HT
+ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783208"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960547"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -1726,7 +1726,7 @@ Habilite la inscripción predeterminada con los pasos siguientes:
 
 1. Si la aplicación integra ADAL o hay que habilitar SSO, [configure ADAL](#configure-azure-active-directory-authentication-library-adal) según la [configuración común de ADAL](#common-adal-configurations) #2. Si no es así, puede omitir este paso.
    
-2. Habilite la inscripción predeterminada indicando el siguiente valor en el manifiesto:
+2. Habilite la inscripción predeterminada agregando el siguiente valor en el manifiesto en `<application>` la etiqueta:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1735,7 +1735,7 @@ Habilite la inscripción predeterminada con los pasos siguientes:
    > [!NOTE] 
    > Esta debe ser la única integración de MAM-WE en la aplicación. Surgirán conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
 
-3. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:
+3. Habilite la Directiva MAM necesaria agregando el siguiente valor en el manifiesto en `<application>` la etiqueta:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
