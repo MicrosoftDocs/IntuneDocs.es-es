@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 08/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1826498b3bfa2191900d7574f79051af8f758558
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 63f2832dd321425efe8092f1bb12dd0d479ef71b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041711"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549921"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configuración de características de dispositivos macOS en Intune
 
@@ -65,6 +65,19 @@ Para agregar servidores AirPrinter, necesita la dirección IP de la impresora, l
    Anote la dirección IP. Por ejemplo, puede devolver algo parecido a `PING myprinter.local (10.50.25.21)`.
 
 4. Use los valores de dirección IP y de ruta de acceso del recurso. En este ejemplo, la dirección IP es `10.50.25.21` y la ruta de acceso del recurso es `/ipp/port1`.
+
+## <a name="login-items"></a>Elementos de inicio de sesión
+
+- **Archivos, carpetas y aplicaciones personalizadas**: **agregue** la ruta de acceso de un archivo, una carpeta, una aplicación personalizada o una aplicación del sistema que quiera abrir cuando un usuario inicie sesión en el dispositivo. Las aplicaciones del sistema o las aplicaciones compiladas o personalizadas para su organización `Applications` suelen estar en la carpeta, con `/Applications/AppName.app`una ruta de acceso similar a. 
+
+  Puede agregar muchos archivos, carpetas y aplicaciones. Por ejemplo, escriba:  
+  
+  - `/Applications/Calculator.app`
+  - `/Applications`
+  - `/Applications/Microsoft Office/root/Office16/winword.exe`
+  - `/Users/UserName/music/itunes.app`
+  
+  Al agregar una aplicación, una carpeta o un archivo, asegúrese de escribir la ruta de acceso correcta. No todos los elementos están en `Applications` la carpeta. Si un usuario mueve un elemento de una ubicación a otra, la ruta de acceso cambia. Este elemento que se ha despasado no se abrirá cuando el usuario inicie sesión.
 
 ## <a name="login-window"></a>Ventana de inicio de sesión
 

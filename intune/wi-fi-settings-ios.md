@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f51f2eafed0d54fb58eff643785451e2f49c853
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 04b864689bce1814eba78dc2435905d4df82e8c0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046687"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022677"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Adición de la configuración de Wi-Fi para dispositivos iOS en Microsoft Intune
 
@@ -71,8 +71,8 @@ Ambas se describen en este artículo.
 
   - **EAP-TLS**: especifique también:
 
-    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
-    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
+    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza a los servidores de acceso a la red inalámbrica. Por ejemplo, agregue `mywirelessserver.contoso.com` o `mywirelessserver`. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
+    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado permite al cliente confiar en el certificado del servidor de acceso a la red inalámbrica.
 
       Haga clic en **Aceptar** para guardar los cambios.
 
@@ -82,8 +82,8 @@ Ambas se describen en este artículo.
 
   - **EAP-TTLS**: especifique también:
 
-    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
-    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
+    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza a los servidores de acceso a la red inalámbrica. Por ejemplo, agregue `mywirelessserver.contoso.com` o `mywirelessserver`. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
+    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado permite al cliente confiar en el certificado del servidor de acceso a la red inalámbrica.
 
       Haga clic en **Aceptar** para guardar los cambios.
 
@@ -104,8 +104,8 @@ Ambas se describen en este artículo.
 
   - **PEAP**: especifique también:
 
-    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
-    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
+    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza a los servidores de acceso a la red inalámbrica. Por ejemplo, agregue `mywirelessserver.contoso.com` o `mywirelessserver`. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
+    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado permite al cliente confiar en el certificado del servidor de acceso a la red inalámbrica.
 
       Haga clic en **Aceptar** para guardar los cambios.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883430"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550189"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -85,13 +85,13 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
 - **Una sola aplicación**: los usuarios solo pueden acceder a una aplicación en el dispositivo. Cuando se inicia el dispositivo, solo se inicia la aplicación específica. los usuarios no pueden abrir nuevas aplicaciones ni modificar la aplicación en ejecución.
 
-  **Pasos**
-  1. Elija **Seleccionar una aplicación administrada** y seleccione la aplicación de Google Play administrada en la lista. 
+  - **Seleccione una aplicación administrada**: seleccione la aplicación de Google Play administrada en la lista.
 
-      Si no aparece ninguna aplicación, [agregue algunas aplicaciones Android](apps-add-android-for-work.md) al dispositivo. No olvide [asignar la aplicación al grupo de dispositivos creado para los dispositivos dedicados](apps-deploy.md).
+    Si no aparece ninguna aplicación, [agregue algunas aplicaciones Android](apps-add-android-for-work.md) al dispositivo. No olvide [asignar la aplicación al grupo de dispositivos creado para los dispositivos dedicados](apps-deploy.md).
 
-  2. Elija **Aceptar** > **Aceptar** para agregar la aplicación.
-
+  > [!IMPORTANT]
+  > Cuando se usa el modo de pantalla completa de una sola aplicación, es posible que las aplicaciones de teléfono y de marcado no funcionen correctamente. 
+  
 - **Varias aplicaciones**: los usuarios pueden acceder a un conjunto limitado de aplicaciones en el dispositivo. Cuando se inicia el dispositivo, solo se inician las aplicaciones que agrega. También puede agregar algunos vínculos web que los usuarios pueden abrir. Al aplicar la directiva, los usuarios ven los iconos de las aplicaciones permitidas en la pantalla principal.
 
   > [!IMPORTANT]
@@ -101,43 +101,65 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   > 
   > No es necesario que la aplicación **Managed Home Screen** esté en el perfil de configuración, pero sí se debe agregar como aplicación cliente. Cuando la aplicación **Managed Home Screen** se agrega como aplicación cliente, cualquier otra aplicación que se agregue en el perfil de configuración aparece como icono en la aplicación **Managed Home Screen**. 
   >
-  > Al usar el modo de quiosco de varias aplicaciones con la pantalla de inicio administrada, es posible que las aplicaciones de marcado o de teléfono no funcionen correctamente. 
+  > Al usar el modo de pantalla completa de varias aplicaciones, es posible que las aplicaciones de teléfono y de marcado no funcionen correctamente. 
 
-  - Elija **Agregar** y seleccione las aplicaciones de la lista.
+  - **Agregar**: seleccione las aplicaciones de la lista.
 
     Si la aplicación **Managed Home Screen** no aparece en la lista, [agréguela desde Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). No olvide [asignar la aplicación](apps-deploy.md) al grupo de dispositivos creado para los dispositivos dedicados.
 
     También puede agregar al dispositivo otras [aplicaciones Android](apps-add-android-for-work.md) y [aplicaciones web](web-app.md) creadas por la organización. No olvide [asignar la aplicación al grupo de dispositivos creado para los dispositivos dedicados](apps-deploy.md).
 
-  - **Botón de inicio virtual**: elija **Habilitar** para mostrar un botón de inicio en el dispositivo dedicado. Cuando se selecciona, devuelve al usuario a la pantalla principal del dispositivo para que los usuarios puedan cambiar de manera sencilla entre las aplicaciones. En algunos dispositivos Android, es posible que los usuarios deban deslizarse hacia arriba de la pantalla para ver el botón de inicio. **Deshabilitar** no muestra un botón de inicio, por lo que los usuarios deben utilizar el botón de retroceso para cambiar entre las aplicaciones.
-  - **Leave kiosk mode** (Salir de pantalla completa): elija **Habilitar** para permitir que los administradores pausen de manera temporal la pantalla completa para actualizar el servicio. Para usar esta característica, el administrador hace lo siguiente: 
-  
-    1. Continúa y hace clic en el botón de retroceso hasta que aparece el botón "Exit Kiosk" (Salir de pantalla completa). 
-    2. Hace clic en el botón y escribe el PIN de **Leave kiosk mode code** (Código para salir de pantalla completa).
-    3. Al terminar de hacer cambios, seleccionar la aplicación **Managed Home Screen**. Este paso vuelve a bloquear el dispositivo para pantalla completa con varias aplicaciones. 
+  - **Botón de inicio virtual**: botón de tecla programable que devuelve a los usuarios a la pantalla de inicio administrada para que los usuarios puedan cambiar entre las aplicaciones. Las opciones son:
 
-    **Deshabilitar** no permite pausar la pantalla completa. Si el administrador sigue haciendo clic en el botón de retroceso y hace clic en el botón "Exit Kiosk" (Salir de pantalla completa), aparece un mensaje que indica que se requiere un código de acceso.
+    - **No configurado** (valor predeterminado): no se muestra un botón Inicio. Los usuarios deben usar el botón atrás para cambiar entre las aplicaciones.
+    - **Deslizar rápidamente**: un botón Inicio muestra cuando un usuario se desliza rápidamente hacia arriba en el dispositivo.
+    - **Flotante**: muestra un botón de inicio flotante persistente en el dispositivo.
+
+  - **Leave kiosk mode** (Salir de pantalla completa): elija **Habilitar** para permitir que los administradores pausen de manera temporal la pantalla completa para actualizar el servicio. Para usar esta característica, el administrador hace lo siguiente:
+  
+    1. Continúa y hace clic en el botón de retroceso hasta que aparece el botón **Exit Kiosk** (Salir de pantalla completa). 
+    2. Selecciona el botón **Exit kiosk** (Salir de pantalla completa) y escribe el PIN de **Leave kiosk mode code** (Código para salir del modo de pantalla completa).
+    3. Cuando termine, seleccione la aplicación administrada de la **pantalla de inicio** . Este paso vuelve a bloquear el dispositivo para pantalla completa con varias aplicaciones.
+
+      Cuando se establece en **no configurado**, los administradores no pueden pausar el modo de quiosco. Si el administrador sigue haciendo clic en el botón de retroceso y hace clic en el botón **Exit Kiosk** (Salir de pantalla completa), aparece un mensaje que indica que se requiere un código de acceso.
 
     - **Leave kiosk mode code** (Código para salir de pantalla completa): escriba un PIN numérico de entre 4 y 6 dígitos. El administrador usa este PIN para pausar de manera temporal la pantalla completa.
 
   - **Establecer fondo personalizado de la dirección URL**: escriba una dirección URL para personalizar la pantalla de fondo del dispositivo dedicado.
-    
+
     > [!NOTE]
     > Para la mayoría de los casos, se recomienda partir de imágenes cuyo tamaño es, al menos el siguiente:
     >
     > - Teléfono: 1080 x 1920 px
     > - Tablet: 1920 x 1080 px
-    >    
+    >
     > Para obtener la mejor experiencia y detalles nítidos, se recomienda crear activos de imagen por dispositivo con las especificaciones de pantalla.
     >
     > Las pantallas modernas tienen mayores densidades de píxeles y pueden mostrar imágenes que equivalen a definiciones 2K o 4K.
-  - **Configuración de Wi-Fi**: elija **Habilitar** para permitir que los usuarios finales conecten el dispositivo a distintas redes Wi-Fi. Si habilita esta característica, también se activa la ubicación del dispositivo. **No configurado** (valor predeterminado) impide que los usuarios se conecten a redes Wi-Fi mientras estén en Managed Home Screen (modo de bloqueo de tareas).
 
-    Más información sobre el [modo de bloqueo de tareas](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre el sitio web de Android).
+  - **Configuración de Wi-Fi**: **Habilitar** muestra el control de Wi-Fi en la pantalla de inicio administrada y permite que los usuarios finales conecten el dispositivo a distintas redes WiFi. Si habilita esta característica, también se activa la ubicación del dispositivo. **No configurado** (valor predeterminado) no muestra el control de Wi-Fi en la pantalla de inicio administrada. Impide que los usuarios se conecten a redes Wi-Fi mientras usan la pantalla de inicio administrada.
 
-  - **Configuración de Bluetooth**: elija **Habilitar** para permitir el Bluetooth en el dispositivo y permitir que los usuarios finales enlacen dispositivos mediante Bluetooth. Si habilita esta característica, también se activa la ubicación del dispositivo. **No configurado** (valor predeterminado) impide que los usuarios configuren y enlacen dispositivos mediante Bluetooth mientras estén en Managed Home Screen (modo de bloqueo de tareas). 
+  - **Configuración de Bluetooth**: **Habilitar** muestra el control Bluetooth en la pantalla de inicio administrada y permite a los usuarios finales emparejar dispositivos a través de Bluetooth. Si habilita esta característica, también se activa la ubicación del dispositivo. **No configurado** (valor predeterminado) no muestra el control Bluetooth en la pantalla principal administrada. Impide que los usuarios configuren dispositivos Bluetooth y de emparejamiento mientras usan la pantalla de inicio administrada.
 
-    Más información sobre el [modo de bloqueo de tareas](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre el sitio web de Android).
+  - **Acceso a la linterna**: **Habilitar** muestra el control de linterna en la pantalla de inicio administrada y permite a los usuarios finales activar o desactivar la linterna. **No configurado** (valor predeterminado) no muestra el control de linterna en la pantalla principal administrada. Impide que los usuarios usen la linterna mientras usan la pantalla de inicio administrada.
+
+  - **Control de volumen de medios**: **Habilitar** muestra el control de volumen multimedia en la pantalla de inicio administrada y permite a los usuarios finales ajustar el volumen multimedia del dispositivo con un control deslizante. **No configurado** (valor predeterminado) no muestra el control de volumen multimedia en la pantalla principal administrada. Impide que los usuarios ajusten el volumen multimedia del dispositivo mientras se usa la pantalla de inicio administrada, a menos que los botones de hardware lo admitan. 
+
+  - **Modo de protector de pantalla**: **Habilitar** muestra un protector de pantalla en la pantalla de inicio administrada cuando el dispositivo está bloqueado o se agota el tiempo de espera. **No configurado** (valor predeterminado) no muestra un protector de pantalla en la pantalla de inicio administrada.
+
+    Cuando está habilitada, configure también:
+
+    - **Establecer imagen personalizada del protector de pantalla**: escriba la dirección URL de una imagen personalizada. Por ejemplo, escriba:
+
+      - `http://www.contoso.com/image.jpg`
+      - `www.contoso.com/image.bmp`
+      - `https://www.contoso.com/image.html`
+
+      Si no especifica una dirección URL, se usa la imagen predeterminada del dispositivo, si hay una imagen predeterminada.
+
+    - **Número de segundos que el dispositivo muestra el protector de pantalla antes de desactivar la pantalla**: elija cuánto tiempo el dispositivo muestra el protector de pantalla. Escriba un valor entre 0-9999999 segundos. El valor predeterminado es `0`segundos. Cuando se deja en blanco o se establece en`0`cero (), el protector de pantalla está activo hasta que un usuario interactúa con el dispositivo.
+    - **Número de segundos que el dispositivo está inactivo antes de mostrar el protector de pantalla**: elija cuánto tiempo está inactivo el dispositivo antes de mostrar el protector de pantalla. Escriba un valor entre 1-9999999 segundos. El valor predeterminado es `30` segundos. Debe especificar un número mayor que cero (`0`).
+    - **Detectar medios antes de iniciar el protector de pantalla**: **Habilitar** (predeterminado) no muestra el protector de pantalla si se está reproduciendo audio o vídeo en el dispositivo. **No configurado** muestra el protector de pantalla, aunque se esté reproduciendo audio o vídeo.
 
 ### <a name="device-password-settings"></a>Configuración de la contraseña del dispositivo
 
