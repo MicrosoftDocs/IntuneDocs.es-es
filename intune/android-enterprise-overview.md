@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 3a51951d02d73a0d79f6246dd9502c3c7fe89759
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885140"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550095"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Administrar dispositivos de perfil de trabajo Android con Intune
 
@@ -68,7 +68,7 @@ Las directivas de protección de aplicaciones que se aplican son totalmente comp
 
 La compatibilidad con VPN es similar a los perfiles de VPN de Android. Android Enterprise dispone de las mismas opciones de configuración básicas y de los mismos proveedores de VPN, aunque con dos diferencias:
 
-- **VPN con ámbito de perfiles de trabajo**: las conexiones VPN se limitan solo a las aplicaciones implementadas en el perfil de trabajo. Solo las aplicaciones administradas con Android Enterprise pueden usar la conexión VPN. Las aplicaciones personales del dispositivo no pueden usar una conexión VPN administrada. Para más información, vea [Configuración de VPN en Android Enterprise](vpn-settings-android.md#android-enterprise-vpn-settings).
+- **VPN con ámbito de perfiles de trabajo**: las conexiones VPN se limitan solo a las aplicaciones implementadas en el perfil de trabajo. Solo las aplicaciones administradas con Android Enterprise pueden usar la conexión VPN. Las aplicaciones personales del dispositivo no pueden usar una conexión VPN administrada. Para más información, vea [Configuración de VPN en Android Enterprise](vpn-settings-android-enterprise.md).
 
 - **VPN específica de la aplicación**: la VPN específica de la aplicación puede configurarse en Intune si el proveedor VPN admite:
   - la configuración para una VPN específica de la aplicación,
