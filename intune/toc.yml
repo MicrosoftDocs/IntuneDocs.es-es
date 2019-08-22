@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: Entrega de directivas de protección de aplicaciones
                   href: app-protection-policy-delivery.md
+                - name: Protección de las extensiones de aplicaciones
+                  href: app-protection-policy-extensions.md
                 - name: Supervisión del estado de usuario de protección de aplicaciones
                   href: app-protection-policies-monitor.md
                 - name: Preparativos para las directivas de protección de aplicaciones de trabajo en curso
