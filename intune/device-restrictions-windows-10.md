@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550165"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998947"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -66,13 +66,6 @@ Estas opciones de configuración usan [ApplicationManagement policy CSP](https:/
   - **Preferir tienda**: advierte a los usuarios cuando instalan aplicaciones desde lugares distintos del Microsoft Store.
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **Forzar el reinicio de las aplicaciones en caso de error de actualización**: cuando se usa una aplicación, es posible que no se actualice. Use esta configuración para forzar el reinicio de una aplicación. **Sin configurar** (valor predeterminado) no fuerza el reinicio de las aplicaciones. **Requerir** permite que los administradores fuercen un reinicio en una fecha y hora específicas o según una programación periódica. Cuando lo establezca en **Requerir**, también debe indicar:
-
-  - **Fecha y hora de inicio**: elija una fecha y hora específicas para reiniciar las aplicaciones.
-  - **Periodicidad**: elija un reinicio diario, semanal o mensual.
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 - **Control de usuario sobre las instalaciones**: si está establecido en **Sin configurar** (valor predeterminado), Windows Installer impide que los usuarios cambien las opciones de instalación que habitualmente están reservadas para los administradores del sistema, como entrar al directorio para instalar los archivos. **Bloquear** permite que los usuarios cambien estas opciones de instalación y se omiten algunas de las características de seguridad de Windows Installer.
 
