@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701012"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651172"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Administración del acceso web mediante Microsoft Edge con Microsoft Intune
 
@@ -181,7 +181,22 @@ Use el siguiente par clave-valor para configurar un acceso directo en la página
 |    Key    |    Valor    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique una dirección URL válida. Las direcciones URL incorrectas se bloquean como medida de seguridad.<br>**Ejemplo:**  <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configuración del color de marca y del logotipo de la organización para nuevas páginas de pestañas en Microsoft Edge
+
+Esta configuración permite personalizar la Página Nueva pestaña para Microsoft Edge para mostrar el logotipo de la organización y el color de la marca como fondo de la página.
+
+Para cargar el logotipo y el color de la organización, complete primero los siguientes pasos:
+- En Azure Portal, vaya a Intune -> Aplicaciones cliente -> Personalización de marca y personalización-> Personalización de marca de identidad de empresa
+- Para establecer el logotipo de la marca, en "Mostrar", elija solo "Logotipo de la empresa". Se recomienda usar logotipos con un fondo transparente. 
+- Para establecer el color de fondo de la marca, en "Mostrar" elija "Color de tema". Microsoft Edge aplica una sombra más clara del color en Página Nueva pestaña, lo que garantiza que la página tenga una gran legibilidad. 
+
+A continuación, use los siguientes pares clave/valor para extraer la marca de la organización en Microsoft Edge:
+
+|    Key    |    Valor    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configuración de marcadores administrados para Microsoft Edge
 
@@ -232,7 +247,8 @@ Puede usar diferentes formatos de URL para crear listas de sitios permitidos o b
     |    `http://www.contoso.com`    |    Coincide con una sola página    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Coincide con una sola página    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    Coincide con todas las direcciones URL que comienzan por `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Coincide con todos los subdominios en `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Coincide con todos los subdominios que terminan en `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    Coincide con todos los subdominios en `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    Coincide con todos los subdominios que terminan en `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    Coincide con una sola carpeta    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Coincide con una sola página, con un número de puerto    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Coincide con una sola página segura    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |

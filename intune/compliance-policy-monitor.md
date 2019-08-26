@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041295"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651207"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -152,7 +152,9 @@ En el informe **Conformidad de dispositivos** > **Configuración de cumplimiento
 Cuando se selecciona una configuración específica, puede ver el **estado de cumplimiento**, **alias de correo electrónico del usuario**, **modelo del dispositivo** y **ubicación** de cada dispositivo seleccionado como destino por esa configuración.
 
 > [!NOTE]
-> Los dispositivos Windows 10 que están unidos a Azure AD pueden mostrar la cuenta del sistema como un usuario no compatible. Este es el comportamiento esperado y no afecta al cumplimiento general del dispositivo. 
+> Se puede asignar una directiva a un dispositivo y a un usuario de ese mismo dispositivo. En algunos escenarios, un dispositivo puede sincronizarse antes de que el usuario inicie sesión, por ejemplo, cuando se reinicie el dispositivo. El cumplimiento puede evaluar a este usuario y mostrar el dispositivo como no conforme. Este comportamiento también puede mostrar la cuenta del sistema como un usuario no compatible.
+>
+> Se trata de un problema conocido con dispositivos Windows 10 de varios usuarios. Cualquier cambio o actualización en este comportamiento se anuncia en [En desarrollo para Microsoft Intune: agosto de 2019](in-development.md) o [Novedades de Microsoft Intune](whats-new.md).
 
 ## <a name="view-status-of-device-policies"></a>Ver el estado de las directivas de dispositivo
 

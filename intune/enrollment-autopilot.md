@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 6df8922f9f7252c493b4a2119814c0001245fa8b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68700995"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550008"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscripción de dispositivos Windows en Intune con Windows Autopilot  
 Windows Autopilot simplifica el proceso de inscripción de dispositivos en Intune. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
 
-Hay cuatro tipos de implementación de Autopilot: el [Modo de implementación automática](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) para quioscos multimedia, señalización digital o un dispositivo compartido; el modo [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove), que permite que los asociados o el personal de TI aprovisionen de manera previa un equipo con Windows 10 con el fin de que esté totalmente configurado y listo para el negocio; [Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices), que permite implementar fácilmente la versión más reciente de Windows 10 en los dispositivos existentes y el [Modo controlado por el usuario](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven), para los usuarios tradicionales. 
+Hay cuatro tipos de implementación de Autopilot: el [Modo de implementación automática](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) para quioscos multimedia, señalización digital o un dispositivo compartido; el modo [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove), que permite que los asociados o el personal de TI aprovisionen de manera previa un equipo con Windows 10 con el fin de que esté totalmente configurado y listo para el negocio; [Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices), que permite implementar fácilmente la versión más reciente de Windows 10 en los dispositivos existentes y el [Modo controlado por el usuario](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven), para los usuarios tradicionales. 
 
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -49,10 +49,10 @@ Para agregar dispositivos de Windows Autopilot, puede importar un archivo CSV co
 
     ![Captura de pantalla de dispositivos de Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. En **Agregar dispositivos Windows Autopilot**, vaya a un archivo CSV en el que se enumeren los dispositivos que quiera agregar. El archivo CSV debe enumerar los números de serie, los identificadores de producto de Windows, los hashes de hardware y las etiquetas de grupo opcionales. Puede tener hasta 500 filas en la lista. Use el formato de línea y encabezado tal y como se muestra a continuación:
+2. En **Agregar dispositivos Windows Autopilot**, vaya a un archivo CSV en el que se enumeren los dispositivos que quiera agregar. El archivo CSV debe enumerar los números de serie, los identificadores de producto de Windows, los hashes de hardware, las etiquetas de grupo opcionales y el usuario asignado opcional. Puede tener hasta 500 filas en la lista. Use el formato de línea y encabezado tal y como se muestra a continuación:
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
-    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Captura de pantalla de Agregar dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
 

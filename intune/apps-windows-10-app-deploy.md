@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680072"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550069"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementación de aplicaciones Windows 10 con Microsoft Intune 
 
@@ -44,6 +44,13 @@ Las aplicaciones LOB de Windows 10 se firman y se cargan en la consola de admini
 ## <a name="microsoft-store-for-business-apps"></a>Aplicaciones de Tienda Microsoft para Empresas
 
 Las aplicaciones de Microsoft Store para Empresas son aplicaciones modernas que se compran en el portal de administración de Microsoft Store para Empresas y se sincronizan a través de Microsoft Intune para administrarlas. Las aplicaciones pueden ser **con licencia en línea** o **con licencia sin conexión**. Las actualizaciones de las aplicaciones de Microsoft Store para Empresas se administran directamente mediante Microsoft Store, sin ninguna acción adicional exigida por el administrador. El administrador también puede evitar las actualizaciones de aplicaciones específicas mediante un identificador uniforme de recursos (URI) personalizado. Para obtener más información, vea [Administración de aplicaciones empresariales - Impedir las actualizaciones automáticas de la aplicación](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). En el dispositivo, el usuario final también puede deshabilitar las actualizaciones de todas las aplicaciones de Microsoft Store para Empresas en el dispositivo. 
+
+### <a name="categorize-microsoft-store-for-business-apps"></a>Categorización de aplicaciones de Microsoft Store para Empresas 
+Para categorizar las aplicaciones de la Tienda Microsoft para Empresas, siga estos pasos: 
+
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Seleccione **Aplicaciones cliente** > **Aplicaciones** > seleccione Aplicación de la Tienda Microsoft para Empresas > **Información de la aplicación** > **Categoría**. 
+3. Seleccione una categoría en el menú desplegable.
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Instalación de aplicaciones en dispositivos Windows 10
 Según el tipo de aplicación, se puede instalar en un dispositivo Windows 10 de una de dos maneras:

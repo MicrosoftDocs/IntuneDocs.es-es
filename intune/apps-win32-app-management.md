@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884043"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960583"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -283,6 +283,8 @@ Ya ha completado los pasos para agregar una aplicación Win32 a Intune. Para obt
 ## <a name="app-dependencies"></a>Dependencias de aplicaciones
 
 Las dependencias de aplicaciones son aplicaciones que se deben instalar antes de que se puede instalar la aplicación Win32. Se puede requerir que otras aplicaciones estén instaladas como dependencias. En concreto, el dispositivo debe instalar las aplicaciones dependientes antes de que se instale la aplicación Win32. Hay un máximo de 100 dependencias, que incluye las dependencias de cualquier dependencia incluida, así como la propia aplicación. Se pueden agregar las dependencias de aplicaciones Win32 solo después de que se haya agregado y cargado la aplicación Win32 en Intune. Una vez agregada la aplicación Win32, verá la opción **Dependencias** en la hoja de la aplicación Win32. 
+
+Cualquier dependencia de la aplicación Win32 debe ser también una aplicación Win32. No se admite en función de otros tipos de aplicaciones, como aplicaciones de línea de negocio de MSI únicas o aplicaciones de la Tienda.
 
 Al agregar una dependencia de aplicación, se puede buscar en función del nombre y el editor de la aplicación. Asimismo, se pueden ordenar las dependencias que se han agregado en función del nombre y editor de la aplicación. Las dependencias de aplicación agregadas anteriormente no se pueden seleccionar en la lista de dependencias de aplicación agregada. 
 

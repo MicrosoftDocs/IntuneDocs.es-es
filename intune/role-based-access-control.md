@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528245"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549967"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Control de acceso basado en rol (RBAC) con Microsoft Intune
 
@@ -85,16 +85,16 @@ Puede asignar a los usuarios tanto roles personalizados como integrados. Para as
 Para ver una asignación de roles, seleccione **Intune** > **Roles** > **Todos los roles** > elija un rol > elija una asignación. Verá las páginas siguientes:
 
 - **Propiedades**: nombre, descripción, rol, miembros, ámbitos y etiquetas de la asignación.
-- **Miembros**: todos los usuarios de los grupos mostrados tienen permiso para administrar los usuarios o los dispositivos que aparecen en Ámbito (grupos).
-- **Ámbito (grupos)** : los usuarios de Miembros pueden administrar todos los usuarios o dispositivos de estos grupos.
+- **Miembros**: todos los usuarios de los grupos de seguridad de Azure mostrados tienen permiso para administrar los usuarios o los dispositivos que aparecen en Ámbito (grupos).
+- **Ámbito (grupos)** : los usuarios de Miembros pueden administrar todos los usuarios o dispositivos de estos grupos de seguridad de Azure.
 - **[Ámbito (etiquetas)](scope-tags.md)** : los usuarios de Miembros pueden ver los recursos que tienen las mismas etiquetas de ámbito.
 
 ### <a name="multiple-role-assignments"></a>Múltiples asignaciones de roles
-Si un usuario tiene varias asignaciones de roles, los permisos de estas asignaciones de roles se amplían a diferentes objetos, como se indica a continuación:
+Si un usuario tiene varias asignaciones de roles, los permisos y las etiquetas de ámbito de estas asignaciones de roles se amplían a diferentes objetos, como se indica a continuación:
 
-- Los permisos de asignación solo se aplican a los objetos (como directivas o aplicaciones) del Ámbito (grupos) de la asignación de ese rol. Los permisos de asignación no se aplican a los objetos de otras asignaciones de roles, a menos que la otra asignación los conceda específicamente.
-- Otros permisos (por ejemplo, los de creación y lectura) se aplican a todos los objetos del mismo tipo (como todas las directivas o todas las aplicaciones) en cualquiera de las asignaciones del usuario.
-- Los permisos para objetos de tipos diferentes (como directivas o aplicaciones) no se aplican a entre sí. Por ejemplo, un permiso de lectura para una directiva no proporciona un permiso de lectura a las aplicaciones de las asignaciones del usuario.
+- Los permisos de asignación y las etiquetas de ámbito solo se aplican a los objetos (como directivas o aplicaciones) del Ámbito (grupos) de la asignación de ese rol. Los permisos de asignación y las etiquetas de ámbito no se aplican a los objetos de otras asignaciones de roles, a menos que la otra asignación los conceda específicamente.
+- Otros permisos (por ejemplo, los de creación, lectura, actualización, eliminación) y las etiquetas de ámbito se aplican a todos los objetos del mismo tipo (como todas las directivas o todas las aplicaciones) en cualquiera de las asignaciones del usuario.
+- Los permisos y las etiquetas de ámbito para objetos de tipos diferentes (como directivas o aplicaciones) no se aplican entre sí. Por ejemplo, un permiso de lectura para una directiva no proporciona un permiso de lectura a las aplicaciones de las asignaciones del usuario.
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Asignación de un rol a un usuario](assign-role.md)

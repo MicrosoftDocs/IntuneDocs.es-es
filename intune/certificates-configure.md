@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530562"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582923"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configuración de un perfil de certificado para sus dispositivos en Microsoft Intune
 
@@ -88,30 +88,35 @@ Exporte el certificado de entidades de certificación raíz de confianza como un
 Este certificado se importa al configurar un perfil de certificado de confianza.
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Paso 3: creación de perfiles de certificado de confianza
+
 Cree un perfil de certificado de confianza para poder crear un perfil de certificado SCEP o PKCS. Necesitará un perfil de certificado de confianza y un perfil SCEP o PKCS para cada plataforma de dispositivo. Los pasos para crear certificados de confianza son similares en todas las plataformas de dispositivos.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Seleccione **Configuración del dispositivo** > **Administrar** > **Perfiles** > **Crear perfil**.
-4. Escriba un **Nombre** y una **Descripción** para el perfil de certificado de confianza.
-5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado de confianza. Las opciones son:
+1. En [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), seleccione **Configuración del dispositivo** > **Administrar** > **Perfiles** > **Crear perfil**.
+2. Escriba las propiedades siguientes:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 y versiones posteriores**
-    - **Windows 10 y versiones posteriores**
+    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil. Asígnele un nombre a los perfiles para que pueda identificarlos de manera sencilla más adelante. Por ejemplo, un buen nombre de perfil **Perfil de certificado de confianza para dispositivos de propietario de dispositivos empresariales Android Enterprise** o **Perfil de certificado de confianza para dispositivos iOS**.
+    - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
+    - **Plataforma**: seleccione la plataforma de los dispositivos. Las opciones son:
 
-6. En la lista desplegable **Tipos de perfil**, elija **Certificado de confianza**.
-7. Busque el certificado que guardó en el [Paso 2: exportación del certificado de entidad de certificación raíz de confianza](#step-2-export-your-trusted-root-ca-certificate) y seleccione **Aceptar**.
-8. Solo para dispositivos Windows 8.1 y Windows 10, seleccione el **almacén de destino** del certificado de confianza. Las opciones son:
+      - **Android**
+      - **Android Enterprise** > **Solo el propietario del dispositivo**
+      - **Android Enterprise** > **Solo perfil de trabajo**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 y versiones posteriores**
+      - **Windows 10 y versiones posteriores**
 
-    - **Almacén de certificados de equipo - Raíz**
-    - **Almacén de certificados de equipo - Intermedio**
-    - **Almacén de certificados de usuario - Intermedio**
+    - **Tipo de perfil**: Elija **Certificado de confianza**.
 
-9. Cuando haya terminado, elija **Aceptar**, vuelva al panel **Crear perfil** y seleccione **Crear**.
+3. Busque el certificado que guardó en el [Paso 2: exportación del certificado de entidad de certificación raíz de confianza](#step-2-export-your-trusted-root-ca-certificate) y seleccione **Aceptar**.
+4. Solo para dispositivos Windows 8.1 y Windows 10, seleccione el **almacén de destino** del certificado de confianza. Las opciones son:
+
+    - **Almacén de certificados de equipo - Raíz** (SCEP)
+    - **Almacén de certificados de equipo - Intermedio** (SCEP)
+    - **Almacén de certificados de usuario - Intermedio** (PKCS, SCEP)
+
+5. Cuando haya terminado, elija **Aceptar**, vuelva al panel **Crear perfil** y seleccione **Crear**.
 
 Se creará el perfil y aparecerá en la lista. Para asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
@@ -128,6 +133,7 @@ Consulte uno de los artículos siguientes para configurar y asignar cada tipo de
 Después de haber creado un perfil de certificado de confianza, cree perfiles de certificado SCEP o PKCS para cada plataforma que quiera usar. Al crear un perfil de certificado SCEP, escriba un perfil de certificado de confianza para esa misma plataforma. Este paso vincula los dos perfiles de certificado, aunque todavía deberá asignar cada perfil por separado.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 [Asignar perfiles de dispositivo](device-profile-assign.md)  
 [Usar S/MIME para firmar y cifrar mensajes de correo electrónico](certificates-s-mime-encryption-sign.md)  
 [Uso de la entidad de certificación de terceros](certificate-authority-add-scep-overview.md)

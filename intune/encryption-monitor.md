@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671058"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550121"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Supervisión del cifrado de dispositivos con Intune   
 
@@ -102,15 +102,15 @@ Cuando se selecciona un dispositivo desde el informe de cifrado, Intune muestra 
   Los siguientes son ejemplos de los detalles de estado que se pueden informar en Intune:  
   
   **macOS**:
-  - El perfil no se puede instalar actualmente, ya que esperamos un requisito previo.  
+  - La clave de recuperación todavía no se ha recuperado ni almacenado. Lo más probable es que el dispositivo no se haya desbloqueado o que no se haya protegido.  
  
-    *Tenga en cuenta lo siguiente: este resultado no representa necesariamente una condición de error, sino un estado temporal que podría deberse a un momento en el dispositivo en el que se debe configurar la custodia de las claves de recuperación antes de que se envíe la solicitud de cifrado al dispositivo. Esto también puede indicar que el dispositivo permanece bloqueado o no se ha registrado con Intune recientemente. Por último, dado que el cifrado de FileVault no se inicia hasta que un dispositivo está conectado (en carga), es posible que un usuario reciba una clave de recuperación para un dispositivo que todavía no esté cifrado*.  
+    *Tenga en cuenta lo siguiente: este resultado no representa necesariamente una condición de error, sino un estado temporal que podría deberse a un momento en el dispositivo en el que se debe configurar la custodia de las claves de recuperación antes de que se envíe la solicitud de cifrado al dispositivo. Este estado también puede indicar que el dispositivo permanece bloqueado o no se ha registrado con Intune recientemente. Por último, dado que el cifrado de FileVault no se inicia hasta que un dispositivo está conectado (en carga), es posible que un usuario reciba una clave de recuperación para un dispositivo que todavía no esté cifrado*.  
 
-  - El perfil de FileVault está instalado, pero FileVault no está habilitado en el dispositivo.  
+  - El usuario está aplazando el cifrado o actualmente se encuentra en el proceso de cifrado.  
  
     *Tenga en cuenta lo siguiente: o el usuario todavía no ha cerrado sesión después de recibir la solicitud de cifrado, lo cual es necesario para que FileVault pueda cifrar el dispositivo, o bien ha descifrado manualmente el dispositivo. Intune no puede impedir que un usuario descifre su dispositivo.*  
 
-  - El usuario ya ha habilitado FileVault, por lo que Intune no puede administrar su recuperación.  
+  - El dispositivo ya está cifrado. El usuario del dispositivo debe descifrar el dispositivo para continuar.  
  
     *Tenga en cuenta lo siguiente: Intune no puede configurar FileVault en un dispositivo que ya está cifrado. En lugar de eso, el usuario debe descifrar de forma manual el dispositivo antes de que se pueda administrar mediante una directiva de configuración de dispositivo e Intune.* 
  
@@ -118,9 +118,9 @@ Cuando se selecciona un dispositivo desde el informe de cifrado, Intune muestra 
  
     *Tenga en cuenta lo siguiente: a partir de la versión de macOS 10.15 (Catalina), la configuración de inscripción aprobada por el usuario puede tener como resultado un requisito por el que los usuarios deban aprobar el cifrado de FileVault de forma manual. Para obtener más información, en la documentación de Intune consulte [Inscripción aprobada por el usuario](macos-enroll.md)* .  
 
-  - El dispositivo iOS ha devuelto un valor NotNow (está bloqueado).  
+  - Desconocido.  
 
-    *Tenga en cuenta lo siguiente: el dispositivo está actualmente bloqueado e Intune no puede iniciar el proceso de custodia o de cifrado. Una vez desbloqueado el dispositivo, el progreso puede continuar*.  
+    *Tenga en cuenta lo siguiente: Una posible causa de un estado desconocido es que el dispositivo está bloqueado e Intune no puede iniciar el proceso de custodia o de cifrado. Una vez desbloqueado el dispositivo, el progreso puede continuar*.  
 
   **Windows 10**:  
   - La directiva de BitLocker requiere el consentimiento del usuario para iniciar el Asistente para Cifrado de unidad BitLocker con el fin de iniciar el cifrado del volumen del sistema operativo, pero el usuario no ha dado su consentimiento.  
