@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487754"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998890"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para ejecutarse como una pantalla completa en Intune
 
@@ -97,6 +97,17 @@ Solo se ejecuta una aplicación en el dispositivo.
   - **Agregar aplicación de la tienda**: elija **Agregar una aplicación de la tienda** y seleccione una aplicación de la lista.
 
     ¿No aparece ninguna aplicación? Agregue algunas siguiendo los pasos descritos en [Aplicaciones cliente](apps-add.md).
+    
+ - **Especificar la ventana de mantenimiento para**los reinicios de la aplicación: el valor predeterminado es "no configurado", seleccione "requerir" para buscar aplicaciones que requieran un reinicio para completar la instalación.
+ 
+     Si usa el explorador de quiosco u otro Microsoft Store para la aplicación empresarial, decida con qué frecuencia se deben buscar las actualizaciones de aplicaciones que requieran reinicio para completar la instalación de la aplicación. Si no está configurado, Microsoft Store para las aplicaciones empresariales se reiniciarán en un momento no programado 3 días después de instalar una actualización de la aplicación.
+     
+     - **Hora de inicio**de la ventana de mantenimiento: seleccione la fecha y la hora del día en que se iniciará la comprobación de las actualizaciones de aplicaciones que requieran reinicio. La hora de inicio predeterminada es medianoche o cero minutos.
+     
+     - Periodicidad de la **ventana de mantenimiento**: el valor predeterminado es diariamente.
+         Establezca la frecuencia con que se realizarán las ventanas de mantenimiento para las actualizaciones de aplicaciones. La recomendación es diaria para evitar reinicios de aplicaciones no programados.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>Pantallas completas con varias aplicaciones
 
