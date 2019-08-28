@@ -1,12 +1,12 @@
 ---
-title: Creación de un informe desde la fuente de OData con Power BI
+title: Creación de un informe de Intune desde la fuente de OData con Power BI
 titleSuffix: Microsoft Intune
 description: Cree una vista de gráfico de rectángulos mediante Power BI Desktop con un filtro interactivo de la API de Almacenamiento de datos de Intune.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353650"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894323"
 ---
-# <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe desde la fuente de OData con Power BI
+# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe de Intune desde la fuente de OData con Power BI
 
-En este artículo se explica cómo crear una visualización de gráfico de rectángulos mediante Power BI Desktop con un filtro interactivo. Por ejemplo, puede ser que su directora financiera quiera conocer cuál es la distribución global de los dispositivos según si son propiedad de la empresa o personales. El gráfico de rectángulos ofrece información sobre el número total de tipos de dispositivos. Puede revisar el número de dispositivos iOS, Android y Windows que son propiedad de la empresa o de uso personal.
+En este artículo se explica cómo crear una visualización de rectángulos de los datos de Intune mediante Power BI Desktop que los usuarios tengan un filtro interactivo. Por ejemplo, es posible que su CFO le guste saber cómo se compara la distribución general de los dispositivos entre dispositivos de propiedad de la empresa y dispositivos personales. El gráfico de rectángulos ofrece información sobre el número total de tipos de dispositivos. Puede revisar el número de dispositivos iOS, Android y Windows que son propiedad de la empresa o de uso personal.
 
 ## <a name="overview-of-creating-the-chart"></a>Información general para crear el gráfico
 
-Para crear este gráfico, es necesario:
+Para crear este gráfico, hará lo siguiente:
 1. Instalar Power BI Desktop, si aún no lo tiene.
 2. Conectar con el modelo de datos de Almacenamiento de datos de Intune y recuperar los datos actuales para el modelo.
 3. Crear o administrar las relaciones del modelo de datos.
@@ -42,7 +42,7 @@ Para crear este gráfico, es necesario:
 
 En Power BI va a trabajar con tablas. Una tabla contiene campos de datos. Cada campo de datos admite un tipo de datos. El campo solo puede contener datos del tipo de datos en cuestión. Los tipos de datos pueden ser números, texto, fechas, etc. Las tablas de Power BI se rellenan con datos recientes del historial del inquilino al cargar el modelo. Aunque los datos específicos cambian con el tiempo, la estructura de la tabla no cambiará a menos que se actualice el modelo de datos subyacente.
 
-El uso de los términos _entidad_ y _tabla_ puede llevar a confusión. Se puede acceder al modelo de datos desde una fuente OData. Los contenedores que se denominan tablas en Power BI se denominan entidades en el universo de OData. Estos términos hacen referencia al mismo lugar que contiene sus datos.
+El uso de los términos *entidad* y *tabla* puede llevar a confusión. El modelo de datos es accesible a través de una fuente de OData (Open Data Protocol). Los contenedores que se denominan tablas en Power BI se denominan entidades en el universo de OData. Estos términos hacen referencia al mismo lugar que contiene sus datos. Para obtener más información sobre OData, consulte [información general de oData](/odata/overview).
 
 ## <a name="install-power-bi-desktop"></a>Instalar Power BI Desktop
 
@@ -54,48 +54,48 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 > Necesita permiso para acceder a los **Informes** en Intune. Para obtener más información, vea la [Autorización](reports-api-url.md).
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Abra el panel **Almacenamiento de datos de Intune** seleccionando el vínculo Almacenamiento de datos en **Otras tareas** que se encuentra al lado derecho de la hoja de **información general de Microsoft Intune**.
-4. Copie la dirección URL de la fuente personalizada. Por ejemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-1. Abra Power BI Desktop.
-2. Elija **Obtener datos** > **Fuente OData**.
-3. Pegue la dirección URL de la fuente personalizada en el cuadro para la URL de la ventana **Fuente OData**.
-4. Seleccione **Básica**.
+2. Abra el panel **Almacenamiento de datos de Intune** seleccionando el vínculo Almacenamiento de datos en **Otras tareas** que se encuentra al lado derecho de la hoja de **información general de Microsoft Intune**.
+3. Copie la dirección URL de la fuente personalizada. Por ejemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Abra Power BI Desktop.
+5. En la barra de menús, seleccione **File** > **Get Data** > **OData feed**.
+6. Pegue la dirección URL de la fuente personalizada, que copió del paso anterior, en el cuadro Dirección URL de la ventana **fuente OData** .
+7. Seleccione **Básica**.
 
     ![Fuente OData para el Almacén de datos de Intune para su inquilino](media/reports-create-01-odatafeed.png)
 
-9. Seleccione **Aceptar**.
-10. Seleccione **Cuenta de la organización** y después inicie sesión con sus credenciales de Intune.
+8. Seleccione **Aceptar**.
+9. Seleccione **Cuenta de la organización** y después inicie sesión con sus credenciales de Intune.
 
     ![Credenciales de la cuenta de la organización](media/reports-create-02-org-account.png)
 
-11. Seleccione **Conectar**. Se abrirá el navegador y mostrará la lista de tablas en el Almacén de datos de Intune.
+10. Seleccione **Conectar**. Se abrirá el navegador y mostrará la lista de tablas en el Almacén de datos de Intune.
 
     ![Captura de pantalla del navegador: la lista de tablas de almacenamiento de datos](media/reports-create-02-loadentities.png)
 
-12. Seleccione las tablas **dispositivos** y **ownerTypes**.  Seleccione **Cargar**. Power BI cargará los datos en el modelo.
+11. Seleccione las tablas **dispositivos** y **ownerTypes**.  Seleccione **Cargar**. Power BI cargará los datos en el modelo.
 
 ## <a name="create-a-relationship"></a>Crear una relación
 
-Puede importar varias tablas para analizar no solo los datos en una sola tabla sino los datos relacionados en diferentes tablas.  Power BI tiene una característica denominada **detección automática**, que intenta buscar y crear relaciones automáticamente. Se han creado tablas en el Almacén de datos para trabajar con la característica de detección automática de Power BI. En cambio, aunque Power BI no encuentre automáticamente las relaciones, usted puede administrarlas.
+Puede importar varias tablas para analizar no solo los datos en una sola tabla sino los datos relacionados en diferentes tablas. Power BI tiene una característica denominada **detección automática**, que intenta buscar y crear relaciones automáticamente. Se han creado tablas en el Almacén de datos para trabajar con la característica de detección automática de Power BI. En cambio, aunque Power BI no encuentre automáticamente las relaciones, usted puede administrarlas.
 
 ![Administrar las relaciones de los datos relacionados en las tablas](media/reports-create-03-managerelationships.png)
 
 1. Seleccione **Administrar relaciones**.
-2. Si Power BI todavía no ha detectado las relaciones, seleccione**Detección automática...**
+2. Si Power BI todavía no ha detectado las relaciones, seleccione **Detección automática...**
 
 La relación se muestra en una columna Desde a una columna Hasta. En este ejemplo, el campo de datos **ownerTypeKey** de la tabla **dispositivos** enlaza con el campo de datos **ownerTypeKey** de la tabla **ownerTypes**. La relación le servirá para buscar el nombre simple del código del tipo de dispositivo en la tabla **dispositivos**.
 
 ## <a name="create-a-treemap-visualization"></a>Crear una visualización de gráfico de rectángulos
 
-En un gráfico de rectángulos se muestran datos jerárquicos en forma de cuadros dentro de cuadros. Cada rama de la jerarquía es un cuadro que contiene cuadros más pequeños que representan las subramas. Puede usar Power BI Desktop para crear un gráfico de rectángulos de los datos de Intune.
+En un gráfico de rectángulos se muestran datos jerárquicos en forma de cuadros dentro de cuadros. Cada rama de la jerarquía es un cuadro que contiene cuadros más pequeños que representan las subramas. Puede usar Power BI Desktop para crear un rectángulo de los datos de inquilino de Intune que muestra cantidades relativas de tipos de fabricantes de dispositivos.
 
 ![Visualizaciones de gráfico de rectángulos de Power BI](media/reports-create-03-treemap.png)
 
-1. Seleccione un tipo de gráfico. Seleccione **Gráfico de rectángulos**.
-2. En el modelo de datos, busque la tabla **dispositivos**.
-3. Expanda la **tabla de dispositivos** y seleccione el campo de datos **fabricante** en el panel **Campos**.
-4. Arrastre el campo de datos **fabricante** al gráfico de rectángulos en el lienzo del informe.
-5. Arrastre el campo de datos **deviceKey** de la tabla **dispositivos** a la sección **Valores** del panel **Visualizaciones** y suéltelo en el cuadro con la etiqueta **Arrastrar el campo de datos aquí**.  
+1. En el panel **visualizaciones**, busque y seleccione **TreeMap**. El **gráfico de rectángulos** se agregará al lienzo del informe.
+2. En el panel **campos** , busque la `devices` tabla.
+3. Expanda `devices` la tabla y seleccione `manufacturer` el campo de datos.
+4. Arrastre el `manufacturer` campo de datos hasta el lienzo del informe y colóquelo en el **gráfico de rectángulos**.
+5. Arrastre el `deviceKey` campo de datos de `devices` la tabla al panel **visualizaciones** y colóquelo en la sección **valores** del cuadro **agregar campos de datos aquí**.  
 
 Ahora dispone de un objeto visual en el que se muestra la distribución de los fabricantes de dispositivos en la organización.
 
@@ -105,18 +105,19 @@ Ahora dispone de un objeto visual en el que se muestra la distribución de los f
 
 Puede agregar un filtro al gráfico de rectángulos para poder responder a preguntas adicionales con la aplicación.
 
+1. Para agregar un filtro, seleccione el lienzo del informe y, después, haga clic en el **icono de segmentación de datos** (![Gráfico de rectángulos con modelo de datos y relaciones admitidas](media/reports-create-slicer.png)) en **Visualizaciones**. La visualización de **segmentación vacía** aparecerá en el lienzo.
+2. En el panel **campos** , busque la `ownerTypes` tabla.
+3. Expanda `ownerTypes` la tabla y seleccione `ownerTypeName` el campo de datos.
+4. Arrastre el `onwerTypeName` campo de datos de `ownerTypes` la tabla al panel **filtros** y colóquelo en la sección **filtros de esta página** del cuadro **agregar campos de datos aquí**.  
 
-1. Para agregar un filtro, seleccione el lienzo del informe y, después, haga clic en el **icono de segmentación de datos** (![Gráfico de rectángulos con modelo de datos y relaciones admitidas](media/reports-create-slicer.png)) en **Visualizaciones**.
-2. Busque la tabla **ownerTypes** y arrastre el campo de datos **ownerTypeName** de la sección **Filtros** en el panel **Visualizaciones**.  
-
-   En la tabla de dispositivos, hay un campo de datos denominado **OwnerTypeKey** que contiene un código que indica si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla **ownerTypes** y arrastre el **ownerTypeName**. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
+   En la `OwnerTypes` tabla, hay un campo de datos denominado `OwnerTypeKey`que contiene datos sobre si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla `ownerTypes` y arrastre el **ownerTypeName** a la segmentación. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
 
 ![Gráfico de rectángulos con filtro: compatible con las relaciones entre tablas](media/reports-create-08_ownertype.png)
 
 Ahora tiene un filtro interactivo que puede usar para alternar entre dispositivos que son propiedad de la empresa y dispositivos personales. Use este filtro para ver cómo cambia la distribución.
 
-1. Seleccione **Empresa** para ver la distribución de los dispositivos que son propiedad de la empresa.
-2. Seleccione **Personal** para ver los dispositivos personales.
+1. Seleccione **Company** en la segmentación para ver que la distribución de dispositivos propiedad de la empresa.
+2. Seleccione **personal** en la segmentación para ver los dispositivos de propiedad personal.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
