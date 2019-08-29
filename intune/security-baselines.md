@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978505"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063041"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Uso de líneas de base de seguridad para configurar dispositivos Windows 10 en Intune
 
@@ -64,6 +64,12 @@ Al crear un *perfil* de la línea de base de seguridad, este usará automáticam
 Puede optar por [cambiar la versión](#change-the-baseline-version-for-a-profile) de una línea de base que está en uso con un perfil determinado. Esto significa que, cuando sale una nueva versión, no es necesario crear un nuevo perfil de la línea de base para aprovecharla. En su lugar, cuando esté listo, puede seleccionar un perfil de la línea de base y luego usar la opción integrada para cambiar la versión de la instancia de ese perfil a una nueva.  
 
 ## <a name="available-security-baselines"></a>Líneas de base de seguridad disponibles 
+
+ Puede usar una o varias de las líneas de base disponibles en su entorno de Intune al mismo tiempo. También puede usar varias instancias de las mismas líneas de base de seguridad con diversas personalizaciones. 
+
+Al usar varias líneas de base de seguridad, revise la configuración en cada una para identificar los casos en los que diferentes líneas de base presentan valores en conflicto de la misma configuración. Dado que puede implementar líneas de base de seguridad diseñadas para diversas intenciones e implementar varias instancias de la misma línea de base que incluye la configuración personalizada, es posible que cree [conflictos de configuración para dispositivos que deben investigarse y resolverse](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Tenga también en cuenta sus [perfiles de configuración del dispositivo](device-profiles.md), que pueden configurar muchas de las mismas opciones de configuración que las líneas de base de seguridad. 
+
+
 
 Las instancias de línea de base de seguridad siguientes están disponibles para usarlas con Intune. Use los vínculos para ver la configuración de la instancia más reciente de cada línea de base. 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 330bfa319ca0202a5edc09d8f27e40c18ce89d39
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582934"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021797"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configuración y uso de certificados PKCS con Intune
 
@@ -70,9 +70,10 @@ Para usar certificados PKCS con Intune, debe contar con esta infraestructura:
   El conector controla las solicitudes de archivos PFX importados en Intune para el cifrado de correo electrónico S/MIME para un usuario específico.  
 
   Este conector pueda actualizarse automáticamente cuando estén disponibles nuevas versiones. Para usar la función de actualización, debe:
-  - Instalar el Conector de certificado PFX para Microsoft Intune en el servidor.
-  - Para recibir automáticamente actualizaciones importantes, asegúrese de que los firewalls están abiertos para permitir que el conector se ponga en contacto con **autoupdate.msappproxy.net** en el puerto **443**.  
+  - Instalar el Conector de certificado PFX para Microsoft Intune en el servidor.  
+  - Para recibir automáticamente actualizaciones importantes, asegúrese de que los firewalls están abiertos para permitir que el conector se ponga en contacto con **autoupdate.msappproxy.net** en el puerto **443**.   
 
+  Para obtener más información sobre todos los puntos de conexión de red a los que el conector debe poder obtener acceso, consulte [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector).
 
 - **Windows Server**:  
   se usa Windows Server para hospedar:

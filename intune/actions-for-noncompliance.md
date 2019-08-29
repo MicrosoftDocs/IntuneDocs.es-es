@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1c13bffa797d8480ee0ba1db2b72c787ed94274f
+ms.sourcegitcommit: dbb2410de7e4849626f84ef07cf6a2891bcdd542
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044807"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974260"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatización del correo electrónico y adición de acciones para dispositivos no compatibles en Intune
 
@@ -103,7 +103,13 @@ Puede agregar otra acción al crear una directiva de cumplimiento, o bien actual
     
     - **Bloquear de forma remota el dispositivo no conforme**: cuando el dispositivo no sea compatible, bloquéelo. Esta acción obliga al usuario a escribir un PIN o una contraseña para desbloquear el dispositivo. 
     
-5. Configurar una **programación**: escriba el número de días (de 0 a 365) después del incumplimiento para desencadenar la acción en los dispositivos de los usuarios. Después de este período de gracia, puede aplicar una directiva de acceso condicional. Si escribe **0** (cero) para el número de días, el acceso condicional surte efecto **inmediatamente**. Por ejemplo, puede bloquear inmediatamente el acceso a los recursos corporativos si un dispositivo no es compatible.
+5. Configurar una **programación**: escriba el número de días (de 0 a 365) después del incumplimiento para desencadenar la acción en los dispositivos de los usuarios. Después de este período de gracia, puede aplicar una directiva de [acceso condicional](conditional-access-intune-common-ways-use.md). Si escribe **0** (cero) para el número de días, el acceso condicional surte efecto **inmediatamente**. Por ejemplo, si un dispositivo no es compatible, use el acceso condicional para bloquear el acceso al correo electrónico, SharePoint y otros recursos de la organización inmediatamente.
+
+    Al crear una directiva de cumplimiento, se crea automáticamente la acción **Marcar el dispositivo como no conforme** y se establece también automáticamente en **0** días (inmediatamente). Con esta acción, cuando el dispositivo se registra, se evalúa como no conforme inmediatamente. Si también se usa el acceso condicional, este se inicia inmediatamente. Si desea permitir un período de gracia, cambie la **Programación** en la acción **Marcar el dispositivo como no conforme**.
+    
+    En la directiva de cumplimiento, por ejemplo, también desea notificar al usuario. Puede agregar la acción **Enviar correo electrónico a usuario final**. En esta acción **Enviar correo electrónico**, debe establecer la **Programación** en 2 días. Si el dispositivo o usuario final sigue evaluándose como no conforme el día 2, su correo electrónico se enviará dicho día. Si desea volver a enviar un correo electrónico de incumplimiento el día 5, agregue otra acción y establezca la **Programación** en 5 días.
+
+    Para obtener más información sobre el cumplimiento y las acciones integradas, consulte la [información general de cumplimiento](device-compliance-get-started.md).
 
 6. Cuando termine, haga clic en **Agregar** > **Aceptar** para guardar los cambios.
 

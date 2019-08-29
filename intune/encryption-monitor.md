@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550121"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027383"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Supervisión del cifrado de dispositivos con Intune   
 
-El informe de cifrado de Microsoft Intune es una ubicación centralizada para ver los detalles sobre el estado de cifrado de los dispositivos administrados. Vea los detalles sobre el estado de cifrado de un dispositivo y busque opciones para administrar las claves de recuperación del mismo. Las opciones de clave de recuperación disponibles dependen del tipo de dispositivo que se está viendo.  
+El informe de cifrado de Microsoft Intune es una ubicación centralizada para ver los detalles sobre el estado de cifrado de un dispositivo y buscar opciones para administrar las claves de recuperación del mismo. Las opciones de clave de recuperación disponibles dependen del tipo de dispositivo que se está viendo.  
 
 Para encontrar el informe, inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y vaya a **Configuración del dispositivo**. Después, en *Supervisión*, seleccione **Informe de cifrado**.  
 
@@ -74,9 +74,11 @@ Cuando se selecciona un dispositivo desde el informe de cifrado, Intune muestra 
 
 - **Preparación de cifrado**: evaluación de la preparación de los dispositivos para admitir el cifrado a través de la directiva MDM.  
   
-  Por ejemplo: cuando un dispositivo Windows 10 tiene una preparación de *No está listo*, es posible que aún sea compatible con el cifrado. Para que el dispositivo Windows 10 tenga la designación de *Listo*, debe contar con un chip TPM. No es necesario que los chips TPM sean compatibles con el cifrado. (Vea Preparación de cifrado en la sección anterior para obtener más detalles).  
+  Por ejemplo: cuando un dispositivo Windows 10 tiene una preparación de *No está listo*, es posible que aún sea compatible con el cifrado. Para que el dispositivo Windows 10 tenga la designación de *Listo*, debe contar con un chip TPM. No es necesario que los chips TPM sean compatibles con el cifrado. (Para obtener más información, consulte *Preparación de cifrado* en la sección anterior).  
 
-- **Estado de cifrado**: indica si la unidad del sistema operativo está cifrada. Intune puede tardar hasta 24 horas en generar informes sobre el estado de cifrado de un dispositivo o un cambio de ese estado.  
+- **Estado de cifrado**: indica si la unidad del sistema operativo está cifrada. Intune puede tardar hasta 24 horas en generar informes sobre el estado de cifrado de un dispositivo o un cambio de ese estado. En este tiempo se incluye el tiempo de cifrado del sistema operativo, así como el tiempo necesario para que el dispositivo informe a Intune.  
+
+  Para acelerar la generación de informes del estado de cifrado de FileVault antes de que se produzca el registro del dispositivo con normalidad, haga que los usuarios sincronicen sus dispositivos una vez completado el cifrado.  
 
 - **Perfiles**: una lista de los perfiles de *Configuración del dispositivo* que se aplican a este dispositivo y que se configuran con los valores siguientes:  
 
@@ -91,6 +93,8 @@ Cuando se selecciona un dispositivo desde el informe de cifrado, Intune muestra 
   Se puede usar esta lista de perfiles con el fin de identificar directivas individuales para revisarlas en caso de que el *resumen de estado del perfil* indique problemas.  
 
 - **Resumen de estado de perfil**: resumen de los perfiles que se aplican a este dispositivo. El resumen representa la condición menos favorable entre los perfiles aplicables. Por ejemplo, aunque solo se produzca un error en un perfil aplicable de entre varios, el *resumen de estado de perfil* mostrará *Error*.  
+  
+  Para ver más detalles de un estado, vaya a **Intune** > **Configuración del dispositivo** > **Perfiles** y seleccione el perfil. Opcionalmente, seleccione **Estado del dispositivo** y, a continuación, seleccione un dispositivo.  
 
 - **Detalles del estado**: detalles avanzados sobre el estado de cifrado del dispositivo.  
 
