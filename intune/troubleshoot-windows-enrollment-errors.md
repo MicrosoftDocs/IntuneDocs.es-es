@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993698"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063008"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos Windows en Microsoft Intune
 
@@ -223,7 +223,7 @@ Para corregir este problema en MDM híbrida con Intune y Configuration Manager, 
 #### <a name="resolution"></a>Solución
 1. Inicie sesión en [Azure Portal](https://portal.azure.com/) como administrador.    
 2. Vaya a **Azure Active Directory dispositivos de > > la configuración del dispositivo**.    
-3. Establezca **los usuarios pueden unir dispositivos para Azure ad** a **todos** o **seleccionar**.
+3. Establezca **Los usuarios pueden inscribir dispositivos en Azure AD** en **Todos** o **Seleccionado**.
 
    Si elige **seleccionada**, haga clic en **seleccionado**y, a continuación, haga clic en **Agregar miembros** para agregar todos los usuarios que pueden unir sus dispositivos a Azure ad. Asegúrese de que se han agregado todas las cuentas de Azure AD del paquete de aprovisionamiento.
  
@@ -331,7 +331,7 @@ Error 0x80070774: se ha producido un problema. Confirme que está usando la info
 
 Este problema se produce normalmente antes de que el dispositivo se reinicie en un escenario de Azure AD híbrido AutoPilot, cuando el dispositivo agota el tiempo de espera durante la pantalla de inicio de sesión inicial. Significa que el controlador de dominio no se puede encontrar o alcanzar correctamente debido a problemas de conectividad. O que el dispositivo ha entrado en un estado que no se puede unir al dominio.
 
-**Causa:** La causa más común es que se está usando Unión a Azure AD híbrido y que la característica de asignación de usuario está configurada en el perfil de AutoPilot. El uso de la característica asignar usuario realiza una Azure AD combinación en el dispositivo durante la pantalla de inicio de sesión inicial, que pone el dispositivo en un estado en el que no se puede unir al dominio local. Por lo tanto, la característica de asignación de usuario solo se debe usar en escenarios de la fase piloto de Azure AD estándar.  La característica se debe usar en escenarios de Unión a Azure AD híbrido.
+**Causa:** La causa más común es que se está usando Unión a Azure AD híbrido y que la característica de asignación de usuario está configurada en el perfil de AutoPilot. El uso de la característica asignar usuario realiza una Azure AD combinación en el dispositivo durante la pantalla de inicio de sesión inicial, que pone el dispositivo en un estado en el que no se puede unir al dominio local. Por lo tanto, la característica de asignación de usuario solo se debe usar en escenarios de la fase piloto de Azure AD estándar.  La característica no debe usarse en escenarios de Unión a Azure AD híbrido.
 
 #### <a name="resolution"></a>Solución
 

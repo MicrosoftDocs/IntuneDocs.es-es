@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960413"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158019"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configuración de Endpoint Protection de macOS en Intune  
 
@@ -100,14 +100,14 @@ Para obtener más información sobre la configuración de FileVault de Apple, co
     - **Rotación de claves de recuperación personal** : especifique la frecuencia con la que se girará la clave de recuperación personal de un dispositivo. Puede seleccionar el valor predeterminado de **no configurado**, o un valor de **1** a **12** meses.  
 
   - **Deshabilitar preguntar al cerrar sesión**  
-    Evite el aviso al usuario que le solicita que habilite FileVault cuando cierre la sesión.  Cuando se establece en habilitado, el aviso en el cierre de sesión está deshabilitado y, en su lugar, se le solicita al usuario cuando inicie sesión.  
+    Evite el aviso al usuario que le solicita que habilite FileVault cuando cierre la sesión.  Cuando se establece en Disable, el aviso en el cierre de sesión está deshabilitado y, en su lugar, se le solicita al usuario cuando inicie sesión.  
     - **No configurado**.  
-    - **Habilitar** : deshabilite el aviso en el cierre de sesión.
+    - **Deshabilitar** : deshabilite el aviso en el cierre de sesión.
 
     **Valor predeterminado**: No configurado  
 
      > [!IMPORTANT]  
-     > Hay un problema conocido cuando el valor **Deshabilitar mensaje al cierre de sesión** se establece en *habilitado*. Cuando se establece en *habilitado*, el valor de **número de veces que se puede omitir** se debe establecer en un valor y no debe establecerse como *no configurado*. Si se establece en *Sin configurar*, el perfil producirá un error en el dispositivo. En este escenario, el dispositivo informa de que se trata de un **Resumen de estado del perfil** como **Error** sin detalles adicionales.
+     > Hay un problema conocido cuando el valor **Deshabilitar mensaje al cierre de sesión** se establece en *Deshabilitado*. Cuando se establece en *Deshabilitado*, la opción **Número de veces que se permite omitir** se debe establecer en un valor y no debe establecerse como *No configurado*. Si se establece en *Sin configurar*, el perfil producirá un error en el dispositivo. En este escenario, el dispositivo informa de que se trata de un **Resumen de estado del perfil** como **Error** sin detalles adicionales.
      > 
      > Cuando **Deshabilitar mensaje al cierre de sesión** se establece en *Sin configurar*, **Número de veces que se permite omitir** puede estar *Sin configurar* o tener un valor.  
      > 
@@ -122,4 +122,5 @@ Para obtener más información sobre la configuración de FileVault de Apple, co
  
     **Valor predeterminado**: No configurado  
 
+Para obtener más información sobre FileVault con Intune, consulte [claves de recuperación de FileVault](encryption-monitor.md#filevault-recovery-keys).
 
