@@ -1,5 +1,5 @@
 ---
-title: Firmar y cifrar el correo electrónico mediante S/MIME - Microsoft Intune - Azure | Microsoft Docs
+title: 'Firma y cifrado de correo electrónico mediante S/MIME - Microsoft Intune: Azure | Microsoft Docs'
 description: Aprenda a usar los certificados digitales de Microsoft Intune para firmar y cifrar el correo electrónico en los dispositivos. Estos certificados se denominan S/MIME y se configuran mediante perfiles de configuración de dispositivo. Los certificados de firma y cifrado usan PKCS, o certificados privados, y un conector para importar certificados.
 keywords: ''
 author: MandiOhlinger
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048893"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122221"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Información general sobre S/MIME para firmar y cifrar el correo electrónico en Intune
 
@@ -80,7 +80,7 @@ Después de crear los perfiles de certificado de firma y cifrado S/MIME, puede [
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Usar certificados SCEP](certificates-scep-configure.md)
+- [Uso de SCEP para los certificados](certificates-scep-configure.md)
 - [Usar certificados PKCS](certficates-pfx-configure.md)
 - [Usar una entidad de certificación asociada](certificate-authority-add-scep-overview.md)
 - [Emitir certificados PKCS desde un servicio web de administración de PKI de Symantec](certificates-symantec-configure.md)

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: faff917dfafaaedb988cbbfb8174547f0b0ccf3b
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648454"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122259"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adición de entidades de certificación de asociado en Intune mediante SCEP
 
@@ -42,7 +42,7 @@ En este artículo se proporciona información general de esta característica de
 
 ## <a name="overview"></a>Introducción
 
-Los pasos siguientes proporcionan una visión general de la emisión de certificados SCEP en Intune:
+Los pasos siguientes proporcionan una visión general del uso de SCEP para certificados en Intune:
 
 1. En Intune, un administrador crea un perfil de certificado SCEP y, después, lo destina a los usuarios o dispositivos.
 2. El dispositivo se registra con Intune.
@@ -87,7 +87,7 @@ Asegúrese de que tiene los permisos necesarios para registrar una aplicación d
    > [!IMPORTANT]  
    > Antes de salir de la página, copie el valor del secreto de cliente y anótelo para usarlo más adelante con la implementación de la CA de terceros. Este valor no se volverá a mostrar. No olvide revisar las instrucciones correspondientes a la CA de terceros sobre cómo se configuran el identificador de la aplicación, la clave de autenticación y el identificador de inquilino.  
 
-6. Anote el **identificador de inquilino**. El identificador de inquilino es el texto de dominio después del signo @ de la cuenta. Por ejemplo, si la cuenta es *admin@name.onmicrosoft.com* , entonces el identificador de inquilino es **name.onmicrosoft.com**.  
+6. Anote el **identificador de inquilino**. El identificador de inquilino es el texto de dominio después del signo @ de la cuenta. Por ejemplo, si la cuenta es *admin@name.onmicrosoft.com*, entonces el identificador de inquilino es **name.onmicrosoft.com**.  
 
 7. En el panel de navegación de la aplicación, vaya a **Permisos de API** en **Administrar** y seleccione **Agregar un permiso**.  
 
@@ -106,9 +106,9 @@ Asegúrese de que tiene los permisos necesarios para registrar una aplicación d
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Configurar e implementar un perfil de certificado SCEP
 Como administrador, cree un perfil de certificado SCEP destinado a los usuarios o dispositivos. Después, asigne el perfil.
 
-- [Creación de un perfil de certificado SCEP](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [Creación de un perfil de certificado SCEP](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [Asignar el perfil de certificado](certificates-scep-configure.md#assign-the-certificate-profile)
+- [Asignar el perfil de certificado](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## <a name="removing-certificates"></a>Eliminación de certificados
 

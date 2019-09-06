@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a3055d375c98f9a74d0e738b7e894ba038b31776
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783239"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121860"
 ---
 # <a name="create-a-design"></a>Creación de un diseño
 
@@ -166,7 +166,7 @@ La infraestructura de clave pública proporciona certificados a los dispositivos
 
 Si está planeando usar certificados con perfiles de VPN, Wi-Fi o correo electrónico con Intune, asegúrese de que tiene una [infraestructura de PKI](certificates-configure.md) admitida y lista para crear e implementar perfiles de certificado.
 
-Además, si se van a emitir certificados SCEP, debe determinar qué servidor hospedará la característica del Servicio de inscripción de dispositivos de red (NDES) y cómo se producirá la comunicación.
+Además, si se van a usar perfiles de certificado SCEP, debe determinar qué servidor hospedará la característica Servicio de inscripción de dispositivos de red (NDES) y cómo se producirá la comunicación.
 
 Más información acerca de:
 
@@ -297,7 +297,7 @@ Los perfiles de certificado permiten que Intune emita un certificado para un usu
 Se recomienda que documente qué grupo de usuarios necesita un certificado, cuántos perfiles de certificado se necesitan y en qué grupos de usuarios se van a implementar.
 
 >[!NOTE]
-> Recuerde que se necesita el certificado de raíz de confianza para el certificado SCEP, de manera que asegúrese de que todos los usuarios destinados al certificado SCEP también reciben un certificado de raíz de confianza. Si necesita certificados SCEP, diseñe y documente qué plantillas de certificado SCEP se van a necesitar.
+> Recuerde que se necesita el certificado raíz de confianza para el perfil de certificado SCEP, de manera que asegúrese de que todos los usuarios destinados al perfil de certificado SCEP también reciben un certificado raíz de confianza. Si necesita certificados SCEP, diseñe y documente qué plantillas de certificado SCEP se van a necesitar.
 
 Aquí se muestra un ejemplo de cómo puede documentar los certificados durante el diseño:
 

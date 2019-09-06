@@ -1,11 +1,11 @@
 ---
 title: Usar plantillas para dispositivos Windows 10 en Microsoft Intune - Azure | Microsoft Docs
-description: Use plantillas administrativas de Microsoft Intune para crear grupos de valores de configuración para dispositivos Windows 10. Use estos valores en un perfil de configuración de dispositivo para controlar programas de Office, proteger características de Internet Explorer, controlar el acceso a OneDrive, usar características de escritorio remoto, habilitar la reproducción automática, establecer la configuración de administración de energía, usar la impresión a través de HTTP, usar otras opciones de inicio de sesión de usuario y controlar el tamaño del registro de eventos.
+description: Use plantillas administrativas de Microsoft Intune para crear grupos de valores de configuración para dispositivos Windows 10. Use estos valores en un perfil de configuración de dispositivo para controlar programas de Office, Microsoft Edge, proteger características de Internet Explorer, controlar el acceso a OneDrive, usar características de escritorio remoto, habilitar la reproducción automática, establecer la configuración de administración de energía, usar la impresión a través de HTTP, usar otras opciones de inicio de sesión de usuario y controlar el tamaño del registro de eventos.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 8/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
-ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
+ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67842795"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214336"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usar plantillas de Windows 10 para configurar opciones de directiva de grupo en Microsoft Intune
 
-Al administrar dispositivos en una organización, el objetivo es crear un grupo de valores de configuración que se apliquen a diferentes grupos de dispositivos. Por ejemplo, hay varios grupos de dispositivos. Para el grupo A, se quiere asignar un conjunto concreto de valores configuración. Para el grupo B, se quiere asignar otro conjunto de valores configuración. También se quiere obtener una vista sencilla de los valores que se pueden configurar.
+Al administrar dispositivos en una organización, el objetivo es crear grupos de valores de configuración que se apliquen a otros grupos de dispositivos. Por ejemplo, hay varios grupos de dispositivos. Para el grupo A, se quiere asignar un conjunto concreto de valores configuración. Para el grupo B, se quiere asignar otro conjunto de valores configuración. También se quiere obtener una vista sencilla de los valores que se pueden configurar.
 
-Esta tarea se puede realizar con **Plantillas administrativas** de Microsoft Intune. Las plantillas administrativas incluyen cientos de valores que controlan características de Internet Explorer, programas de Microsoft Office, el escritorio remoto, OneDrive, contraseñas y PIN, y mucho más. Esta configuración permite a los administradores de grupo administrar las directivas de grupo mediante la nube.
+Esta tarea se puede realizar con **Plantillas administrativas** de Microsoft Intune. Las plantillas administrativas incluyen cientos de valores que controlan características de Microsoft Edge, Internet Explorer, programas de Microsoft Office, el escritorio remoto, OneDrive, contraseñas y PIN, y mucho más. Esta configuración permite a los administradores de grupo administrar las directivas de grupo mediante la nube.
 
-La configuración de Windows es similar a la configuración de la directiva de grupo (GPO) en Active Directory (AD). Estas configuraciones están integradas en Windows y son [configuraciones con respaldo de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (abre otro sitio de Microsoft) que utilizan XML. La configuración de Office está probada por ADMX y utiliza la configuración de ADMX en los [archivos de plantillas administrativas de Office](https://www.microsoft.com/download/details.aspx?id=49030). Pero las plantillas de Intune están totalmente basadas en la nube. Ofrecen una manera simple y sencilla de configurar y de buscar la configuración deseada.
+La configuración de Windows es similar a la configuración de la directiva de grupo (GPO) en Active Directory (AD). Estas configuraciones están integradas en Windows y son [configuraciones con respaldo de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) en las que se usa XML. La configuración de Office está probada por ADMX y utiliza la configuración de ADMX en los [archivos de plantillas administrativas de Office](https://www.microsoft.com/download/details.aspx?id=49030). Pero las plantillas de Intune están totalmente basadas en la nube. Ofrecen una manera simple y sencilla de configurar y de buscar la configuración deseada.
 
 Las **plantillas administrativas** están integradas en Intune y no requieren personalizaciones, ni siquiera el uso de OMA-URI. Como parte de la solución de administración de dispositivos móviles (MDM), use estos valores de plantilla como centro único para administrar los dispositivos Windows 10.
 
@@ -38,7 +38,7 @@ En este artículo se enumeran los pasos para crear una plantilla para dispositiv
 
 - Algunos de estos ajustes están disponibles a partir de la versión 1703 (RS2) de Windows 10. Para obtener la mejor experiencia, se recomienda usar Windows 10 Enterprise versión 1903 (19H1) y posteriores.
 
-- La configuración de Windows utiliza los [CSP de directivas de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (se abre otro sitio de Microsoft). El CSP funciona en diferentes ediciones de Windows, como por ejemplo, Home, Professional, Enterprise, etcétera. Para ver si un CSP funciona en una edición específica, vaya al [CSP de directivas de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre otro sitio de Microsoft).
+- La configuración de Windows usa los [CSP de directivas de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). El CSP funciona en diferentes ediciones de Windows, como por ejemplo, Home, Professional, Enterprise, etcétera. Para ver si un CSP funciona en una edición específica, vaya a [CSP de directivas de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 
 ## <a name="create-a-template"></a>Crear una plantilla
 
@@ -58,9 +58,16 @@ En este artículo se enumeran los pasos para crear una plantilla para dispositiv
     > [!TIP]
     > La configuración de Windows en Intune se correlaciona con la ruta de acceso de la directiva de grupo local que se ve en el Editor de directivas de grupo local (`gpedit`).
 
-5. De forma predeterminada, la lista desplegable muestra **Todos los productos**. Desde la lista, también puede filtrar la configuración para que solo muestre la configuración de **Windows** o solo la de **Office**:
+5. De forma predeterminada, la lista desplegable muestra **Todos los productos**. Desde la lista, también puede filtrar la configuración para que solo muestre la configuración de **Windows**, la de **Office** o la de **Microsoft Edge**:
 
     ![Filtrado de la lista para mostrar todas las configuraciones de Windows o de Office en las plantillas administrativas de Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+    > [!NOTE]
+    > La configuración de Microsoft Edge se aplica a:
+    >
+    > - Windows 10 RS4 y versiones más recientes con [KB 4512509](https://support.microsoft.com/kb/4512509) instalado.
+    > - Windows 10 RS5 y versiones más recientes con [KB 4512534](https://support.microsoft.com/kb/4512534) instalado.
+    > - Windows 10 19H1 y versiones más recientes con [KB 4512941](https://support.microsoft.com/kb/4512941) instalado.
 
 6. Seleccione cualquier valor. Por ejemplo, filtre por **Office** y seleccione **Activar exploración restringida**. Se muestra una descripción detallada del valor. Elija **Habilitado**, **Deshabilitado** o bien deje el valor como **Sin configurar** (valor predeterminado). La descripción detallada también explica lo que sucede cuando se elige **Habilitado**, **Deshabilitado** o **Sin configurar**.
 7. Haga clic en **Aceptar** para guardar los cambios.
@@ -69,9 +76,10 @@ Siga examinando la lista de valores y configure los que quiera en el entorno. Es
 
 - Use el valor **Configuración de notificaciones para macros de VBA** para controlar las macros de VBA en diferentes programas de Microsoft Office, incluidos Word y Excel.
 - Use el valor **Permitir la descarga de archivos** para permitir o evitar las descargas desde Internet Explorer.
-- Use el valor **Requerir una contraseña al activar el equipo (conectado)** para solicitar una contraseña a los usuarios cuando los dispositivos se activan del modo de suspensión.
+- Use **Requerir una contraseña al activar el equipo (conectado)** para solicitar una contraseña a los usuarios cuando los dispositivos se activan del modo de suspensión.
 - Use el valor **Descargar los controles ActiveX no firmados** para evitar que los usuarios descarguen controles ActiveX no firmados de Internet Explorer.
 - Use el valor **Desactivar Restaurar sistema** para permitir o evitar que los usuarios ejecuten una restauración del sistema en el dispositivo.
+- Use la opción de **permitir la importación de favoritos** para permitir o impedir que los usuarios importen favoritos de otro explorador en Microsoft Edge.
 - Y mucho más...
 
 ## <a name="find-some-settings"></a>Buscar algunos valores

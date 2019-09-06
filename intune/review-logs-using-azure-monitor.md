@@ -1,11 +1,11 @@
 ---
-title: 'Enrutamiento de registros de auditoría en Azure Monitor mediante Microsoft Intune: Azure | Microsoft Docs'
+title: 'Enrutamiento de registros a Azure Monitor mediante Microsoft Intune: Azure | Microsoft Docs'
 description: Use la característica Configuración de diagnóstico para enviar los registros de auditoría y los registros operativos de Microsoft Intune a la cuenta de almacenamiento de Azure, Event Hubs o Log Analytics. Elija cuánto tiempo desea conservar los datos y vea algunos costos estimados para inquilinos de diferente tamaño.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354523"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122410"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Envío de datos de registro al almacenamiento, a Event Hubs o a Log Analytics en Intune (versión preliminar)
 
-Microsoft Intune incluye los registros integrados que proporcionan información sobre el entorno. Los **registros de auditoría** muestran detalles sobre los distintos eventos o tareas que tienen lugar en Intune. Los **registros operativos (versión preliminar)** muestran detalles sobre los usuarios y los dispositivos que se inscribieron correctamente o que no se pudieron inscribir, así como detalles sobre los dispositivos no compatibles.
+Microsoft Intune incluye registros integrados que proporcionan información sobre el entorno:
+
+- Los **registros de auditoría** muestran detalles sobre los distintos eventos o tareas que tienen lugar en Intune.
+- Los **registros operativos (versión preliminar)** muestran detalles sobre los usuarios y los dispositivos que se han inscrito correctamente o que no se pudieron inscribir, y detalles sobre los dispositivos no compatibles.
+- **Los registros organizativos de conformidad de dispositivos (versión preliminar)** muestran un informe organizativo de la conformidad de dispositivos en Intune y detalles sobre los dispositivos no compatibles.
 
 Estos registros también se pueden enviar a los servicios de Azure Monitor, incluidas las cuentas de almacenamiento, Event Hubs y Log Analytics. En concreto, puede:
 
@@ -35,7 +39,7 @@ Estos registros también se pueden enviar a los servicios de Azure Monitor, incl
 
 Estas características forman parte de la característica **Configuración de diagnóstico** en Intune.
 
-En este artículo se muestra cómo usar la característica **Configuración de diagnóstico** para enviar datos de registro a distintos servicios, ofrece ejemplos y estimaciones de costos y responde a algunas preguntas comunes.
+En este artículo se muestra cómo usar la característica **Configuración de diagnóstico** para enviar datos de registro a distintos servicios, ofrece ejemplos y estimaciones de costos y responde a algunas preguntas comunes. Una vez que haya habilitado esta característica, los registros se enrutan al servicio Azure Monitor que elija.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -54,7 +58,7 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
 ## <a name="send-logs-to-azure-monitor"></a>Envío de registros a Azure Monitor
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En **Supervisión**, seleccione **Configuración de diagnóstico**. La primera vez que se abra, actívela:
+2. En **Supervisión**, seleccione **Configuración de diagnóstico**. La primera vez que lo abra, actívelo. De lo contrario, agregue un valor de configuración.
 
     ![Activación de Configuración de diagnóstico en Intune para enviar registros a Azure Monitor](media/diagnostics-settings-turn-on.png)
 
@@ -87,7 +91,14 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
       Si decide usar una cuenta de almacenamiento, especifique también cuántos días desea conservar los datos (retención). Para conservar los datos indefinidamente, establezca **Retención (días)** en `0` (cero).
 
       > [!NOTE]
-      > Los registros operativos se encuentran en versión preliminar. Para proporcionar comentarios, incluida la información contenida en los registros operativos, vaya a [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (abre un nuevo sitio Web).
+      > Los registros operativos se encuentran en versión preliminar. Para proporcionar comentarios, incluida la información de los registros operativos, vaya a [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
+
+    - **LOG** > **DeviceComplianceOrg**: Los registros organizativos de conformidad de dispositivos (versión preliminar) muestran el informe organizativo de la conformidad de dispositivos en Intune y los detalles de los dispositivos no compatibles. Elija esta opción para enviar los registros de cumplimiento a la cuenta de almacenamiento, al centro de eventos o a Log Analytics.
+
+      Si decide usar una cuenta de almacenamiento, especifique también cuántos días desea conservar los datos (retención). Para conservar los datos indefinidamente, establezca **Retención (días)** en `0` (cero).
+ 
+      > [!NOTE]
+      > Los registros organizativos de conformidad de dispositivos se encuentran en versión preliminar. Para proporcionar comentarios, incluida la información del informe, vaya a [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
 
     Cuando termine, la configuración tendrá un aspecto similar a la siguiente configuración: 
 

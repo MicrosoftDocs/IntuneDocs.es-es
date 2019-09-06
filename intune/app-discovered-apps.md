@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590915"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206408"
 ---
 # <a name="intune-discovered-apps"></a>Aplicaciones descubiertas de Intune
 
@@ -62,6 +62,9 @@ En la lista siguiente se proporciona el tipo de plataforma de aplicaciones, las 
 | macOS | Todas las aplicaciones instaladas en el dispositivo | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
 | Android | Solo aplicaciones administradas | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
 | Android Enterprise | Solo aplicaciones administradas | Solo aplicaciones instaladas en el perfil de trabajo | Cada 7 días a partir de la inscripción de dispositivos |
+
+> [!NOTE]
+>Los dispositivos Windows 10 unidos a Azure AD híbrido con la extensión de administración de Intune no recopilan actualmente el inventario de aplicaciones según la programación anterior. Este es un problema conocido. Cualquier cambio o actualización en este comportamiento se anuncia en [En desarrollo para Microsoft Intune: agosto de 2019](in-development.md) o [Novedades de Microsoft Intune](whats-new.md).
 
 El número de aplicaciones detectadas puede no coincidir con el recuento del estado de instalación de la aplicación. Estas son las posibles incoherencias:
 - Un cambio de orientación de una aplicación administrada instalada puede hacer que el recuento de instalación en la hoja de estado disminuya, pero se mantenga presente en las aplicaciones detectadas.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
-ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
+ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620210"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122136"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -53,6 +53,18 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-26-2019"></a>Semana del 26 de agosto de 2019
+
+### <a name="configure-microsoft-edge-settings-using-administrative-templates-for-windows-10-and-newer----5228061---"></a>Configuración de Microsoft Edge mediante plantillas administrativas para Windows 10 y versiones más recientes <!-- 5228061 -->
+
+En los dispositivos Windows 10 y más recientes, puede crear plantillas administrativas para configurar las opciones de directiva de grupo en Intune. En esta actualización, puede configurar las opciones que se aplican a la versión 77 y posteriores de Microsoft Edge.
+
+Para más información sobre las plantillas administrativas, vea [Usar plantillas de Windows 10 para configurar opciones de directiva de grupo en Intune](administrative-templates-windows.md).
+
+Se aplica a:
+
+- Windows 10 y versiones más recientes (Windows RS4+)
 
 ## <a name="week-of-august-12-2019"></a>Semana del 12 de agosto de 2019
 
@@ -1016,8 +1028,8 @@ Cuando el administrador cambia la directiva de contraseña nueva o existente, se
 Se aplica a:  
 macOS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>Asignar certificados SCEP en un dispositivo macOS sin usuarios  <!-- 2340521  -->
-Puede asignar los certificados del Protocolo de inscripción de certificados simple (SCEP) mediante los atributos del dispositivo para dispositivos macOS, incluidos los dispositivos sin afinidad de usuario y asociar el perfil de certificado con perfiles de Wi-Fi o VPN. Esto amplía la compatibilidad que ya tenemos para [asignar certificados del SCEP a dispositivos con y sin afinidad de usuario](certificates-scep-configure.md#create-a-scep-certificate-profile) que tienen instalado Windows, iOS y Android.  Esta actualización agrega la opción de seleccionar un tipo de certificado de *Dispositivo* al configurar un perfil de certificado SCEP para macOS.
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>Asignar certificados SCEP en un dispositivo macOS sin usuarios    <!-- 2340521    -->
+Puede asignar los certificados del Protocolo de inscripción de certificados simple (SCEP) mediante los atributos del dispositivo para dispositivos macOS, incluidos los dispositivos sin afinidad de usuario y asociar el perfil de certificado con perfiles de Wi-Fi o VPN. Esto amplía la compatibilidad que ya tenemos para [asignar certificados del SCEP a dispositivos con y sin afinidad de usuario](certificates-profile-scep.md) que tienen instalado Windows, iOS y Android.  Esta actualización agrega la opción de seleccionar un tipo de certificado de *Dispositivo* al configurar un perfil de certificado SCEP para macOS.
 
 Se aplica a: 
 - macOS

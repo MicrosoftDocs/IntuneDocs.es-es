@@ -13,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511376"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234813"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Inicio rápido: Creación de un usuario en Intune y asignación de una licencia
 
@@ -28,7 +28,7 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 
-Inicie sesión en [Intune](https://aka.ms/intuneportal) como [administrador global o administrador de servicios de Intune](users-add.md#types-of-administrators). Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
+Inicie sesión en [Intune](https://aka.ms/intuneportal) como [administrador global o administrador de servicios de Intune](users-add.md#types-of-administrators). Si ha creado una suscripción de prueba de Intune, la cuenta con la que la haya creado es el administrador global.
 
 ## <a name="create-a-user"></a>Crear un usuario
 
@@ -55,13 +55,13 @@ Para asignar una licencia de Intune a un usuario:
 2. Elija **Usuarios** > **Usuarios activos** > y elija el usuario que acaba de crear.
 3. Junto a **Licencias de productos**, seleccione **Editar**.
 4. En **Ubicación**, elija una ubicación para el usuario.
-5. Haga clic en **Activar** junto a la licencia de Intune (o en otra licencia que tenga que incluya Intune). El [nombre de producto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** que se muestra se usa como plan de servicio en la administración de Azure 
+5. Haga clic en **Activar** junto a la licencia de Intune (o en otra licencia que tenga y que incluya Intune). El [nombre de producto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** que se muestra se usa como plan de servicio en la administración de Azure 
 
    > [!NOTE]
    > Este valor usa una de las licencias de este usuario. Si usa un entorno de evaluación, es posible que más tarde quiera reasignar esta licencia a un usuario real en un entorno activo.
 6. Elija **Guardar** > **Cerrar**.
 
-El nuevo usuario activo de Intune ahora mostrará que está usando una licencia de **Intune**.
+Ahora el nuevo usuario activo de Intune mostrará que está usando una licencia de **Intune**.
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 

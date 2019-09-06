@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 4893f3484c497ed72352b2bbb229003c2d639107
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354508"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122282"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configuración de la red privada virtual (VPN) por aplicación para dispositivos iOS en Intune
 
@@ -83,7 +83,7 @@ El perfil de certificado raíz de confianza permite al dispositivo confiar de fo
 
 Para configurar y asignar el certificado de autenticación del cliente, consulte uno de los siguientes artículos:
 
-- [Configuración y administración de certificados SCEP con Intune](certificates-scep-configure.md)
+- [Configuración de la infraestructura para admitir SCEP con Intune](certificates-scep-configure.md)
 - [Configuración y administración de certificados PKCS con Intune](certficates-pfx-configure.md)
 
 Asegúrese de configurar el certificado para la autenticación de cliente. Puede establecer esto directamente en los perfiles de certificado SCEP (lista **Uso mejorado de clave** > **Autenticación de cliente**). En el caso de PKCS, establezca la autenticación de cliente en la plantilla de certificado en la entidad de certificación (CA).
@@ -107,7 +107,7 @@ El perfil de VPN contiene el certificado SCEP o PKCS con las credenciales del cl
     - **Certificado de autenticación**: seleccione un certificado SCEP o PKCS existente > **Aceptar**.      
     - **Tunelización dividida**: seleccione **Deshabilitar** para forzar que todo el tráfico use el túnel VPN cuando la conexión VPN esté activa. 
 
-      ![En un perfil de VPN por aplicación, especifique una conexión, la dirección IP o el FQDN, el método de autenticación y la tunelización dividida en Microsoft Intune](./media/vpn-per-app-create-vpn-profile.png)
+      ![En un perfil de VPN por aplicación, especifique una conexión, la dirección IP o FQDN, el método de autenticación y la tunelización dividida en Microsoft Intune](./media/vpn-per-app-create-vpn-profile.png)
 
     Para obtener información sobre las demás opciones de configuración, vea [Configuración de VPN de iOS](vpn-settings-ios.md).
 
