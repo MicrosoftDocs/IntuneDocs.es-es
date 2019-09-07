@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353343"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302350"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemas de Endpoint Protection y posibles soluciones en Microsoft Intune
 
@@ -60,20 +60,20 @@ Puede que vea un mensaje que indique que algunas características están deshabi
 **Soluciones posibles**: habilite estas características. Para obtener instrucciones, consulte:
 
 - [Agregar la configuración de Endpoint Protection](endpoint-protection-configure.md)
-- [Antivirus de Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Antivirus de Windows Defender](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [End users: Turn on real-time protection to access company resources](/intune-user-help/turn-on-defender-windows) (Usuarios finales: activación de la protección en tiempo real para acceder a los recursos de la empresa)
 
 ### <a name="malware-definitions-out-of-date"></a>Definiciones de malware desactualizadas
 
 Este estado aparece cuando las definiciones de malware del dispositivo no se han actualizado como mínimo desde hace 14 días. Por ejemplo, el mensaje puede mostrar si el dispositivo está desconectado de Internet o si las definiciones de malware no están actualizadas.
 
-**Soluciones posibles**: si las definiciones de malware no están actualizadas, use el [antivirus de Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) para actualizarlas.
+**Soluciones posibles**: si las definiciones de malware no están actualizadas, use el [antivirus de Windows Defender](device-restrictions-windows-10.md#microsoft-defender-antivirus) para actualizarlas.
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Examen completo vencido o examen rápido vencido
 
 No se ha realizado un examen completo ni un examen rápido en los últimos 14 días. Este escenario puede ocurrir si el dispositivo se reinicia durante un examen completo.
 
-**Soluciones posibles**: si hay un examen vencido, puede ejecutar un examen único o programar exámenes recurrentes. Vea [Antivirus de Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Soluciones posibles**: si hay un examen vencido, puede ejecutar un examen único o programar exámenes recurrentes. Vea [Antivirus de Windows Defender](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Otra aplicación de protección de extremos en ejecución
 
