@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998947"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302293"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
-En este artículo se enumeran y describen todos los diferentes valores de configuración que puede controlar en los dispositivos con Windows 10 y versiones posteriores. Como parte de la solución de administración de dispositivos móviles (MDM), use estos valores para habilitar o deshabilitar características, establecer reglas de contraseña, personalizar la pantalla de bloqueo, usar Windows Defender, etc.
+En este artículo se enumeran y describen todos los diferentes valores de configuración que puede controlar en los dispositivos con Windows 10 y versiones posteriores. Como parte de la solución de administración de dispositivos móviles (MDM), use estos valores para habilitar o deshabilitar características, establecer reglas de contraseña, personalizar la pantalla de bloqueo, usar Microsoft Defender, etc.
 
 Estos valores se agregan a un perfil de configuración de dispositivo en Intune y luego se asignan o implementan en los dispositivos con Windows 10.
 
@@ -79,8 +79,6 @@ Estas opciones de configuración usan [ApplicationManagement policy CSP](https:/
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="cellular-and-connectivity"></a>Red de telefonía móvil y conectividad
 
 Estas opciones de configuración usan los CSP de [directiva de conectividad](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) y [directiva de Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi), que también enumeran las ediciones de Windows compatibles.
@@ -90,7 +88,7 @@ Estas opciones de configuración usan los CSP de [directiva de conectividad](htt
 - **Canal de datos móviles**: elija si los usuarios finales pueden usar datos —por ejemplo, para navegar por Internet— cuando están conectados a una red móvil. Las opciones son:
   - **Sin configurar** (valor predeterminado): usa el sistema operativo predeterminado, que puede permitir el canal de datos móviles. Los usuarios finales pueden desactivarlo.
   - **Bloquear**: no permite el canal de datos móviles. Los usuarios finales no pueden activarlo.
-  - **Permitir (no editable)** : permite el canal de datos móviles. Los usuarios finales no pueden desactivarlo.
+  - **Permitir (no editable)**: permite el canal de datos móviles. Los usuarios finales no pueden desactivarlo.
 
 - **Itinerancia de datos**: **Bloquear** evita la itinerancia de datos móviles en el dispositivo. **Sin configurar** (valor predeterminado) permite la itinerancia entre redes al acceder a datos.
 - **VPN a través de la red de telefonía móvil**: **Bloquear** evita que el dispositivo acceda a las conexiones VPN cuando se conecta a una red móvil. **Sin configurar** (valor predeterminado) permite que la VPN use cualquier conexión, incluida la móvil.
@@ -114,8 +112,6 @@ Estas opciones de configuración usan [Bluetooth policy CSP](https://docs.micros
 
   [ServicesAllowedList usage guide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) (Guía de uso de ServicesAllowedList) contiene más información sobre la lista de servicios.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
 Estas opciones de configuración usan [accounts policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts) (CSP de directiva de cuentas), que también indica las ediciones de Windows compatibles.
@@ -124,8 +120,6 @@ Estas opciones de configuración usan [accounts policy CSP](https://docs.microso
 - **Cuenta que no es Microsoft**: **Bloquear** evita que los usuarios finales agreguen cuentas que no son de Microsoft mediante la interfaz de usuario. **Sin configurar** (valor predeterminado) permite que los usuarios agreguen cuentas de correo electrónico que no están asociadas a una cuenta Microsoft.
 - **Sincronización de configuración de cuenta Microsoft**: **Sin configurar** (valor predeterminado) permite sincronizar la configuración de dispositivos y aplicaciones asociados a una cuenta Microsoft entre dispositivos. **Bloquear** evita esta sincronización.
 - **Ayudante para el inicio de sesión de cuenta Microsoft**: si se establece en **Sin configurar** (valor predeterminado), los usuarios finales pueden iniciar y detener el servicio **Ayudante para el inicio de sesión de cuenta Microsoft** (wlidsvc). Este servicio del sistema operativo permite a los usuarios iniciar sesión en su cuenta Microsoft. **Deshabilitar** evita que los usuarios finales controlen el servicio Ayudante para el inicio de sesión de cuenta Microsoft (wlidsvc).
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="cloud-printer"></a>Impresora en la nube
 
@@ -140,8 +134,6 @@ Estas opciones de configuración usan [EnterpriseCloudPrint policy CSP](https://
 
 > [!TIP]
 > Después de configurar la [impresión de Windows Server híbrida en la nube](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), puede configurar estas opciones e implementarlas en los dispositivos Windows.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="control-panel-and-settings"></a>Panel de control y configuración
 
@@ -165,8 +157,6 @@ Haga clic en **Aceptar** para guardar los cambios.
   - **Privacidad**: **Bloquear** evita el acceso al área Privacidad de la aplicación Configuración en el dispositivo. **Sin configurar** (valor predeterminado) permite el acceso.
   - **Actualización y seguridad**: **Bloquear** evita el acceso al área Actualización y seguridad de la aplicación Configuración en el dispositivo. **Sin configurar** (valor predeterminado) permite el acceso.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="display"></a>Pantalla
 
 Estas opciones de configuración usan [display policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display) (CSP de directiva de pantalla), que también indica las ediciones de Windows compatibles.
@@ -183,14 +173,12 @@ El ajuste de escala de PPP de GDI permite a las aplicaciones sin reconocimiento 
 
 También puede **Importar** un archivo .csv con la lista de aplicaciones.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="general"></a>General
 
 Estas opciones de configuración usan [experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) (CSP de directiva de experiencia), que también indica las ediciones de Windows compatibles. 
 
 - **Captura de pantalla** (solo móviles): **Bloquear** evita que los usuarios finales obtengan capturas de pantalla en el dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
-- **Copiar y pegar (solo móvil)** : **Bloquear** evita que los usuarios finales usen Copiar y Pegar entre aplicaciones en el dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
+- **Copiar y pegar (solo móvil)**: **Bloquear** evita que los usuarios finales usen Copiar y Pegar entre aplicaciones en el dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
 - **Cancelación manual de la suscripción**: **Bloquear** evita que los usuarios finales eliminen la cuenta del área trabajo mediante el panel de control del área de trabajo en el dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
 
   Esta configuración de directiva no se aplica si el equipo está unido a Azure AD y la inscripción automática está habilitada.
@@ -210,8 +198,8 @@ Estas opciones de configuración usan [experience policy CSP](https://docs.micro
 - **Agregar paquetes de aprovisionamiento**: **Bloquear** evita que el agente de configuración en tiempo de ejecución instale paquetes de aprovisionamiento en el dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
 - **Quitar paquetes de aprovisionamiento**: **Bloquear** evita que el agente de configuración en tiempo de ejecución quite paquetes de aprovisionamiento del dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
 - **Detección de dispositivos**: **Bloquear** evita que otros dispositivos detecten un dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
-- **Cambio de tarea (solo móviles)** : **Bloquear** evita el cambio de tareas en el dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
-- **Cuadro de diálogo de error de tarjeta SIM (sólo móviles)** : **Bloquear** la aparición de mensajes de error en el dispositivo si no se detecta ninguna tarjeta SIM. **Sin configurar** (valor predeterminado) muestra los mensajes de error.
+- **Cambio de tarea (solo móviles)**: **Bloquear** evita el cambio de tareas en el dispositivo. **Sin configurar** (valor predeterminado) permite esta característica.
+- **Cuadro de diálogo de error de tarjeta SIM (sólo móviles)**: **Bloquear** la aparición de mensajes de error en el dispositivo si no se detecta ninguna tarjeta SIM. **Sin configurar** (valor predeterminado) muestra los mensajes de error.
 - **Ink Workspace** (Área de trabajo de Ink): elija si el usuario tiene acceso al área de trabajo de Ink y cómo. Las opciones son:
   - **Sin configurar** (valor predeterminado): activa el área de trabajo de Ink y el usuario puede usarla por encima de la pantalla de bloqueo.
   - **Deshabilitada en la pantalla de bloqueo**: el área de trabajo de Ink está habilitada y la característica está activada. Pero el usuario no puede acceder a ella por encima de la pantalla de bloqueo.
@@ -230,20 +218,18 @@ Estas opciones de configuración usan [experience policy CSP](https://docs.micro
 
 - **Finalizar procesos desde el Administrador de tareas**: esta configuración determina si los usuarios que no son administradores pueden usar el Administrador de tareas para finalizar tareas. Si selecciona **Bloquear**, se impide que los usuarios estándar (no administradores) usen el Administrador de tareas para finalizar un proceso o una tarea en el dispositivo. Si selecciona **Sin configurar** (valor predeterminado), se permite que los usuarios estándar finalicen un proceso o una tarea mediante el Administrador de tareas.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
 
-- **Notificaciones del centro de actividades (solo móviles)** : **Bloquear** evita que las notificaciones del centro de actividades aparezcan en la pantalla de bloqueo del dispositivo. **Sin configurar** (valor predeterminado) permite a los usuarios elegir qué aplicaciones muestran notificaciones en la pantalla de bloqueo.
+- **Notificaciones del centro de actividades (solo móviles)**: **Bloquear** evita que las notificaciones del centro de actividades aparezcan en la pantalla de bloqueo del dispositivo. **Sin configurar** (valor predeterminado) permite a los usuarios elegir qué aplicaciones muestran notificaciones en la pantalla de bloqueo.
 
   [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications) (CSP de AboveLock/AllowActionCenterNotifications)
 
-- **URL de imagen de pantalla de bloqueo (solo equipos de escritorio)** : escriba la dirección URL de una imagen en formato JPG, JPEG o PNG que se use como fondo de la pantalla de bloqueo de Windows. Por ejemplo, escriba `https://contoso.com/image.png`. Esta opción bloquea la imagen y no se puede cambiar posteriormente.
-- **Tiempo de espera de la pantalla configurable por el usuario (solo dispositivos móviles)** : **Permitir** permite a los usuarios configurar el tiempo de espera de la pantalla. **Sin configurar** (valor predeterminado) no da a los usuarios esta opción.
+- **URL de imagen de pantalla de bloqueo (solo equipos de escritorio)**: escriba la dirección URL de una imagen en formato JPG, JPEG o PNG que se use como fondo de la pantalla de bloqueo de Windows. Por ejemplo, escriba `https://contoso.com/image.png`. Esta opción bloquea la imagen y no se puede cambiar posteriormente.
+- **Tiempo de espera de la pantalla configurable por el usuario (solo dispositivos móviles)**: **Permitir** permite a los usuarios configurar el tiempo de espera de la pantalla. **Sin configurar** (valor predeterminado) no da a los usuarios esta opción.
 
   [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig) (CSP de DeviceLock/AllowScreenTimeoutWhileLockedUserConfig)
 
-- **Cortana en pantalla bloqueada (solo escritorio)** : **Bloquear** evita que los usuarios interactúen con Cortana cuando el dispositivo está en la pantalla de bloqueo. **Sin configurar** (valor predeterminado) permite la interacción con Cortana.
+- **Cortana en pantalla bloqueada (solo escritorio)**: **Bloquear** evita que los usuarios interactúen con Cortana cuando el dispositivo está en la pantalla de bloqueo. **Sin configurar** (valor predeterminado) permite la interacción con Cortana.
 
   [AboveLock/AllowCortanaAboveLock CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowcortanaabovelock) (CSP de AboveLock/AllowCortanaAboveLock)
 
@@ -251,21 +237,17 @@ Haga clic en **Aceptar** para guardar los cambios.
 
   [AboveLock/AllowToasts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts) (CSP de AboveLock/AllowToasts)
 
-- **Tiempo de espera de la pantalla (solo dispositivos móviles)** : establezca la duración (en segundos) desde que se bloquea la pantalla hasta que se apaga. Los valores admitidos son de 11 a 1800. Por ejemplo, escriba `300` para establecer este tiempo de espera en 5 minutos.
+- **Tiempo de espera de la pantalla (solo dispositivos móviles)**: establezca la duración (en segundos) desde que se bloquea la pantalla hasta que se apaga. Los valores admitidos son de 11 a 1800. Por ejemplo, escriba `300` para establecer este tiempo de espera en 5 minutos.
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked) (CSP de DeviceLock/ScreenTimeoutWhileLocked)
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="messaging"></a>Mensajería
 
 Estas opciones de configuración usan [messaging policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging) (CSP de directiva de mensajería), que también indica las ediciones de Windows compatibles.
 
-- **Sincronización de mensajes (solo móvil)** : **Bloquear** deshabilita la copia de seguridad y la restauración de los mensajes de texto, así como la sincronización de mensajes entre dispositivos Windows. La deshabilitación ayuda a evitar que la información se almacene en servidores fuera del control de la organización. **Sin configurar** (valor predeterminado) permite a los usuarios cambiar esta opción y sincronizar sus mensajes.
-- **MMS (solo móvil)** : **Bloquear** deshabilita la funcionalidad de envío y recepción de MMS en el dispositivo. En las empresas, use esta directiva para deshabilitar MMS en los dispositivos como parte del requisito de auditoría o administración. **Sin configurar** (valor predeterminado) permite el envío y recepción de MMS.
-- **RCS (solo móvil)** : **Bloquear** deshabilita la funcionalidad de envío y recepción de Rich Communication Services (RCS) en el dispositivo. En las empresas, use esta directiva para deshabilitar RCS en los dispositivos como parte del requisito de auditoría o administración. **Sin configurar** (valor predeterminado) permite el envío y recepción de RCS.
-
-Haga clic en **Aceptar** para guardar los cambios.
+- **Sincronización de mensajes (solo móvil)**: **Bloquear** deshabilita la copia de seguridad y la restauración de los mensajes de texto, así como la sincronización de mensajes entre dispositivos Windows. La deshabilitación ayuda a evitar que la información se almacene en servidores fuera del control de la organización. **Sin configurar** (valor predeterminado) permite a los usuarios cambiar esta opción y sincronizar sus mensajes.
+- **MMS (solo móvil)**: **Bloquear** deshabilita la funcionalidad de envío y recepción de MMS en el dispositivo. En las empresas, use esta directiva para deshabilitar MMS en los dispositivos como parte del requisito de auditoría o administración. **Sin configurar** (valor predeterminado) permite el envío y recepción de MMS.
+- **RCS (solo móvil)**: **Bloquear** deshabilita la funcionalidad de envío y recepción de Rich Communication Services (RCS) en el dispositivo. En las empresas, use esta directiva para deshabilitar RCS en los dispositivos como parte del requisito de auditoría o administración. **Sin configurar** (valor predeterminado) permite el envío y recepción de RCS.
 
 ## <a name="microsoft-edge-browser"></a>Explorador Microsoft Edge
 
@@ -276,10 +258,10 @@ Estas opciones de configuración usan [browser policy CSP](https://docs.microsof
 Las opciones de configuración disponibles cambian en función de lo que elija. Las opciones son:
 
 - **No** (valor predeterminado): Microsoft Edge no se ejecuta en pantalla completa. Toda la configuración de Microsoft Edge está disponible y puede cambiarla y configurarla.
-- **Señal digital o interactiva (pantalla completa con una sola aplicación)** : filtra la configuración de Microsoft Edge que se aplica a la pantalla completa de Microsoft Edge de señal digital o interactiva para que solo se use en pantallas completas con una sola aplicación de Windows 10. Elija esta configuración para abrir una URL en pantalla completa y mostrar solo el contenido de ese sitio web. En [Configurar señales digitales](https://docs.microsoft.com/windows/configuration/setup-digital-signage) se proporciona más información sobre esta característica.
-- **Exploración pública InPrivate (pantalla completa con una sola aplicación)** : filtra la configuración de Microsoft Edge que se aplica a la pantalla completa de Microsoft Edge de exploración pública InPrivate para que se use en pantallas completas con una sola aplicación de Windows 10. Se ejecuta una versión de varias pestañas de Microsoft Edge.
-- **Modo normal (pantalla completa con varias aplicaciones)** : filtra la configuración de Microsoft Edge que se aplica a la pantalla completa normal de Microsoft Edge. Se ejecuta una versión completa de Microsoft Edge con todas las características de exploración.
-- **Exploración pública (pantalla completa con varias aplicaciones)** : filtra la configuración de Microsoft Edge que se aplica a la exploración pública en una pantalla completa con varias aplicaciones de Windows 10.  Se ejecuta una versión de varias pestañas de Microsoft Edge InPrivate.
+- **Señal digital o interactiva (pantalla completa con una sola aplicación)**: filtra la configuración de Microsoft Edge que se aplica a la pantalla completa de Microsoft Edge de señal digital o interactiva para que solo se use en pantallas completas con una sola aplicación de Windows 10. Elija esta configuración para abrir una URL en pantalla completa y mostrar solo el contenido de ese sitio web. En [Configurar señales digitales](https://docs.microsoft.com/windows/configuration/setup-digital-signage) se proporciona más información sobre esta característica.
+- **Exploración pública InPrivate (pantalla completa con una sola aplicación)**: filtra la configuración de Microsoft Edge que se aplica a la pantalla completa de Microsoft Edge de exploración pública InPrivate para que se use en pantallas completas con una sola aplicación de Windows 10. Se ejecuta una versión de varias pestañas de Microsoft Edge.
+- **Modo normal (pantalla completa con varias aplicaciones)**: filtra la configuración de Microsoft Edge que se aplica a la pantalla completa normal de Microsoft Edge. Se ejecuta una versión completa de Microsoft Edge con todas las características de exploración.
+- **Exploración pública (pantalla completa con varias aplicaciones)**: filtra la configuración de Microsoft Edge que se aplica a la exploración pública en una pantalla completa con varias aplicaciones de Windows 10.  Se ejecuta una versión de varias pestañas de Microsoft Edge InPrivate.
 
 > [!TIP]
 > Para obtener más información sobre qué hacen estas opciones, consulte [Tipos de configuración del modo de pantalla completa de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
@@ -314,7 +296,7 @@ Este perfil de restricciones de dispositivos está directamente relacionado con 
   - **Dirección URL del botón de inicio**: escriba la dirección URL que se va a abrir. Por ejemplo, escriba `https://www.bing.com` o `https://www.contoso.com`.
   - **Hide Home button** (Ocultar el botón Inicio): oculta el botón Inicio
 - **Permitir a los usuarios cambiar el botón Inicio**: **Sí** permite a los usuarios cambiar el botón Inicio. Los cambios del usuario reemplazan cualquier configuración del administrador en el botón Inicio. **No** (valor predeterminado) evita que los usuarios cambien la forma en que el administrador ha configurado el botón Inicio.
-- **Mostrar la página Primera experiencia de ejecución (solo móvil)** : **Sí** (valor predeterminado) muestra la página de introducción del primer uso en Microsoft Edge. **No** evita que la página de introducción aparezca la primera vez que se ejecuta Microsoft Edge. Esta característica permite que las empresas (por ejemplo, aquellas organizaciones que usan configuraciones de cero emisiones) bloqueen esta página.
+- **Mostrar la página Primera experiencia de ejecución (solo móvil)**: **Sí** (valor predeterminado) muestra la página de introducción del primer uso en Microsoft Edge. **No** evita que la página de introducción aparezca la primera vez que se ejecuta Microsoft Edge. Esta característica permite que las empresas (por ejemplo, aquellas organizaciones que usan configuraciones de cero emisiones) bloqueen esta página.
 - **Ubicación de la lista de URL de Primera experiencia de ejecución** (solo Windows 10 Mobile): escriba la dirección URL que dirige al archivo XML que contiene las direcciones URL de página de primera ejecución. Por ejemplo, escriba `https://www.contoso.com/sites.xml`.
 
 - **Actualizar el explorador después del tiempo de inactividad**: escriba el número de minutos de inactividad hasta que se actualiza el explorador, de 0 a 1440 minutos. El valor predeterminado es `5` minutos. Cuando se establece en `0` (cero), el explorador no se actualiza tras estar inactivo.
@@ -322,12 +304,12 @@ Este perfil de restricciones de dispositivos está directamente relacionado con 
   Esta configuración solo está disponible cuando se ejecuta en [Exploración pública InPrivate (pantalla completa con una sola aplicación)](#use-microsoft-edge-kiosk-mode).
 
 - **Permitir elementos emergentes** (solo equipos de escritorio): **Sí** (valor predeterminado) permite elementos emergentes en el explorador web. **No** evita las ventanas emergentes en el explorador.
-- **Enviar el tráfico de la intranet a Internet Explorer**  (solo equipos de escritorio): **Sí** permite que los usuarios abran sitios web de intranet en Internet Explorer en lugar de Microsoft Edge. Esta opción es para la compatibilidad con versiones anteriores. **No** (valor predeterminado) permite que los usuarios usen Microsoft Edge.
+- **Enviar el tráfico de la intranet a Internet Explorer ** (solo equipos de escritorio): **Sí** permite que los usuarios abran sitios web de intranet en Internet Explorer en lugar de Microsoft Edge. Esta opción es para la compatibilidad con versiones anteriores. **No** (valor predeterminado) permite que los usuarios usen Microsoft Edge.
 - **Ubicación de la lista de sitios del modo de empresa** (solo escritorio): escriba la dirección URL que dirige al archivo XML que contiene una lista de los sitios web que se abren en el modo de empresa. Los usuarios no pueden cambiar esta lista. Por ejemplo, escriba `https://www.contoso.com/sites.xml`.
 - **Message when opening sites in Internet Explorer** (Mensaje al abrir sitios en Internet Explorer): use este valor para configurar Microsoft Edge para que muestre una notificación antes de que un sitio se abra en Internet Explorer 11. Las opciones son:
   - **No volver a mostrar este mensaje**: se usa el comportamiento predeterminado del sistema operativo, que puede no mostrar un mensaje.
   - **Mostrar mensaje de que el sitio está abierto en Internet Explorer 11**: muestra el mensaje cuando se abren sitios en IE. Los sitios se abren en IE. 
-  - **Mostrar el mensaje con la opción para abrir sitios en Microsoft Edge**: muestra el mensaje al abrir sitios en Edge. El mensaje incluye un vínculo **Keep going in Microsoft Edge** (Seguir en Microsoft Edge) para que los usuarios puedan elegir Microsoft Edge en lugar de IE.
+  - **Mostrar el mensaje con la opción para abrir sitios en Microsoft Edge**: muestra el mensaje al abrir sitios en Microsoft Edge. El mensaje incluye un vínculo **Keep going in Microsoft Edge** (Seguir en Microsoft Edge) para que los usuarios puedan elegir Microsoft Edge en lugar de IE.
 
   > [!IMPORTANT]
   > Este valor exige usar la opción **Ubicación de la lista de sitios del modo de empresa**, **Enviar el tráfico de la intranet a Internet Explorer** o ambas.
@@ -335,8 +317,6 @@ Este perfil de restricciones de dispositivos está directamente relacionado con 
 - **Permitir lista de compatibilidad de Microsoft**: **Sí** (valor predeterminado) permite usar una lista de compatibilidad de Microsoft. **No** evita la lista de compatibilidad de Microsoft en Microsoft Edge. La lista de Microsoft ayuda a que Microsoft Edge muestre de manera correcta sitios con problemas de compatibilidad conocidos.
 - **Precarga de páginas de inicio y página Nueva pestaña**: **Sí** (valor predeterminado) usa el comportamiento predeterminado del sistema operativo, que puede ser cargar previamente estas páginas. La carga previa minimiza el tiempo de inicio de Microsoft Edge y carga nuevas pestañas. **No** evita que Microsoft Edge cargue previamente las páginas de inicio y la página Nueva pestaña.
 - **Inicio previo de páginas de inicio y página Nueva pestaña**: **Sí** (valor predeterminado) usa el comportamiento predeterminado del sistema operativo, que puede ser iniciar previamente estas páginas. El inicio previo ayuda al rendimiento de Microsoft Edge y minimiza el tiempo necesario para iniciar Microsoft Edge. **No** evita que Microsoft Edge inicie previamente las páginas de inicio y la página Nueva pestaña.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ### <a name="favorites-and-search"></a>Favoritos y búsqueda
 
@@ -357,8 +337,6 @@ Haga clic en **Aceptar** para guardar los cambios.
 - **Permitir cambios en el motor de búsqueda**: **Sí** (valor predeterminado) permite que los usuarios agreguen nuevos motores de búsqueda o cambien el motor de búsqueda predeterminado en Microsoft Edge. Elija **No** para impedir que los usuarios personalicen el motor de búsqueda.
 
   Esta configuración solo está disponible cuando se ejecuta en [Modo normal (pantalla completa con varias aplicaciones)](#use-microsoft-edge-kiosk-mode).
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ### <a name="privacy-and-security"></a>Privacidad y seguridad
 
@@ -383,8 +361,6 @@ Si "Bloquear y habilitar el reemplazo de usuarios" está seleccionado, el usuari
 - **Permitir recopilación de datos para iconos dinámicos**: **Sí** (valor predeterminado) permite que Microsoft Edge recopile información de los iconos dinámicos anclados al menú Inicio. **No** evita la recopilación de esta información, lo que puede limitar la experiencia de los usuarios.
 - **User can override certificate errors** (El usuario puede invalidar los errores de certificado): **Sí** (valor predeterminado) permite a los usuarios acceder a sitios web que tienen errores de Capa de sockets seguros (SSL) o Seguridad de la capa de transporte (TLS). **No** (recomendado para una mayor seguridad) evita que los usuarios accedan a sitios web con errores de SSL o TLS.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ### <a name="additional"></a>Adicional
 
 - **Permitir el explorador de Microsoft Edge** (solo Mobile): **Sí** (valor predeterminado) permite el uso del explorador web Microsoft Edge en el dispositivo móvil. **No** evita el uso de Microsoft Edge en el dispositivo. Si elige **No**, la demás configuración individual solo se aplica a los equipos de escritorio.
@@ -401,8 +377,6 @@ Haga clic en **Aceptar** para guardar los cambios.
 
   También puede **Importar** un archivo .csv que incluya los nombres de familia de paquete. O bien puede **Exportar** los nombres de familia de paquete que especifique.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="network-proxy"></a>Proxy de red
 
 Estas opciones de configuración usan [NetworkProxy policy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp) (CSP de directiva de NetworkProxy), que también indica las ediciones de Windows compatibles.
@@ -415,8 +389,6 @@ Estas opciones de configuración usan [NetworkProxy policy CSP](https://docs.mic
   - **Número de puerto**: escriba el número de puerto del servidor proxy.
   - **Excepciones de proxy**: escriba las direcciones URL que no deben usar el servidor proxy. Use un punto y coma para separar cada elemento.
   - **Omitir el servidor proxy para direcciones locales**: **Sin configurar** (valor predeterminado) evita usar un servidor proxy para direcciones locales en la intranet. **Permitir** usa un servidor proxy para direcciones locales.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="password"></a>Contraseña
 
@@ -438,7 +410,7 @@ Estas opciones de configuración usan [DeviceLock policy CSP](https://docs.micro
     Esta opción también tiene un impacto diferente en función de la edición. Para obtener información detallada de esta configuración, vea [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) (CSP de DeviceLock/MaxDevicePasswordFailedAttempts).
 
   - **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: especifique el periodo de tiempo que un dispositivo debe estar inactivo antes de que se bloquee la pantalla.
-  - **Caducidad de la contraseña (días)** : especifique el periodo de tiempo en días tras el cual debe cambiarse la contraseña del dispositivo, de 1 a 365. Por ejemplo, escriba `90` para que la contraseña caduque pasados 90 días.
+  - **Caducidad de la contraseña (días)**: especifique el periodo de tiempo en días tras el cual debe cambiarse la contraseña del dispositivo, de 1 a 365. Por ejemplo, escriba `90` para que la contraseña caduque pasados 90 días.
   - **Impedir la reutilización de contraseñas anteriores**: especifique el número de contraseñas usadas anteriormente que no se pueden emplear, de 1 a 24. Por ejemplo, escriba `5` para que los usuarios no puedan establecer una nueva contraseña en su contraseña actual o en cualquiera de sus cuatro contraseñas anteriores.
   - **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad** (Mobile y Holographic): seleccione **Requerir** para que los usuarios deban escribir una contraseña para desbloquear el dispositivo después de estar inactivo. **Sin configurar** (valor predeterminado) no requiere un PIN o una contraseña cuando el dispositivo se reanuda desde un estado de inactividad.
   - **Contraseñas sencillas**: establezca en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas, como `1234` o `1111`. Establezca en **Sin configurar** (valor predeterminado) para permitir a los usuarios crear contraseñas como `1234` o `1111`. Esta configuración también permite o bloquea el uso de contraseñas de imagen de Windows.
@@ -446,7 +418,7 @@ Estas opciones de configuración usan [DeviceLock policy CSP](https://docs.micro
 
   [CSP Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Directiva del Estándar federal de procesamiento de información (FIPS)** : **Permitir** usa la directiva del Estándar federal de procesamiento de información (FIPS), que es un estándar del gobierno de Estados Unidos para el cifrado, las operaciones hash y la firma. **No configurado** (valor predeterminado) usa el valor predeterminado del sistema operativo, que no utiliza FIPS.
+- **Directiva del Estándar federal de procesamiento de información (FIPS)**: **Permitir** usa la directiva del Estándar federal de procesamiento de información (FIPS), que es un estándar del gobierno de Estados Unidos para el cifrado, las operaciones hash y la firma. **No configurado** (valor predeterminado) usa el valor predeterminado del sistema operativo, que no utiliza FIPS.
 
   [CSP Cryptography/AllowFipsAlgorithmPolicy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
@@ -465,8 +437,6 @@ Estas opciones de configuración usan [DeviceLock policy CSP](https://docs.micro
 - **Dominio de inquilino de Azure AD preferido**: escriba un nombre de dominio existente en su organización de Azure AD. Cuando los usuarios de este dominio inicien sesión, no tendrán que escribir el nombre de dominio. Por ejemplo, escriba `contoso.com`. Los usuarios del dominio `contoso.com` pueden iniciar sesión con su nombre de usuario, como `abby`, en lugar de `abby@contoso.com`.
 
   [CSP Authentication/PreferredAadTenantDomainName](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="per-app-privacy-exceptions"></a>Excepciones de privacidad para cada aplicación
 
@@ -496,23 +466,17 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 - **Comentarios y diagnóstico**: define si esta aplicación puede tener acceso a la información de diagnóstico.
 - **Sincronización con dispositivos**: defina si esta aplicación puede compartir y sincronizar automáticamente información con dispositivos inalámbricos que no se emparejan explícitamente con el dispositivo.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="personalization"></a>Personalization
 
 Estas opciones de configuración usan [personalization policy CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp) (CSP de directiva de personalización), que también indica las ediciones de Windows compatibles.
 
-- **URL de imagen de fondo de escritorio (solo equipos de escritorio)** : indique la dirección URL de una imagen en formato .jpg, .jpeg o .png que quiera usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar la imagen. Por ejemplo, escriba `https://contoso.com/logo.png`.
-
-Haga clic en **Aceptar** para guardar los cambios.
+- **URL de imagen de fondo de escritorio (solo equipos de escritorio)**: indique la dirección URL de una imagen en formato .jpg, .jpeg o .png que quiera usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar la imagen. Por ejemplo, escriba `https://contoso.com/logo.png`.
 
 ## <a name="printer"></a>Impresora
 
 - **Impresoras**: lista de impresoras locales que se han agregado.
 - **Impresora predeterminada**: establezca la impresora predeterminada.
 - **Acceso de usuario para agregar nuevas impresoras**: permita o bloquee el uso de las impresoras locales.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="privacy"></a>Privacidad
 
@@ -524,8 +488,6 @@ Estas opciones de configuración usan [privacy policy CSP](https://docs.microsof
 - **Solo actividades locales**: **Bloquear** evita experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas según la actividad local únicamente. **Sin configurar** (valor predeterminado) habilita esta característica.
 
 Puede configurar la información a la que pueden tener acceso todas las aplicaciones del dispositivo. También, puede definir excepciones para cada aplicación mediante **excepciones de privacidad de cada aplicación**.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ### <a name="exceptions"></a>Excepciones
 
@@ -548,8 +510,6 @@ Haga clic en **Aceptar** para guardar los cambios.
 - **Comentarios y diagnóstico**: elija si esta aplicación puede tener acceso a la información de diagnóstico.
 - **Sincronización con dispositivos**: define si esta aplicación puede compartir y sincronizar información automáticamente con dispositivos inalámbricos que no se emparejan explícitamente con este PC, tableta o teléfono.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="projection"></a>Proyección
 
 Estas opciones de configuración usan [WirelessDisplay policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay) (CSP de directiva de WirelessDisplay), que también indica las ediciones de Windows compatibles.
@@ -557,8 +517,6 @@ Estas opciones de configuración usan [WirelessDisplay policy CSP](https://docs.
 - **Entrada de usuario desde receptores de pantalla inalámbricos**: **Bloquear** evita la entrada de usuario desde receptores de pantalla inalámbricos. **Sin configurar** (valor predeterminado) permite que una pantalla inalámbrica envíe entrada de teclado, mouse, lápiz y táctil de vuelta al dispositivo de origen.
 - **Proyección en este equipo**: **Bloquear** evita que otros dispositivos encuentren el equipo para proyección. **Sin configurar** (valor predeterminado) permite que el dispositivo sea detectable y que se pueda proyectar a él por encima de la pantalla de bloqueo.
 - **Requerir PIN para emparejamiento**: seleccione **Requerir** para solicitar siempre un PIN cuando se conecte a un dispositivo de proyección. **Sin configurar** (valor predeterminado) no requiere un PIN para emparejar el dispositivo con un dispositivo de proyección.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="reporting-and-telemetry"></a>Informes y telemetría
 
@@ -597,13 +555,11 @@ Haga clic en **Aceptar** para guardar los cambios.
 
 Estas opciones de configuración usan [search policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) (CSP de directiva de búsqueda), que también indica las ediciones de Windows compatibles. 
 
-- **Búsqueda segura (solo dispositivos móviles)** : controla cómo Cortana filtra contenido para adultos en los resultados de la búsqueda. Las opciones son:
+- **Búsqueda segura (solo dispositivos móviles)**: controla cómo Cortana filtra contenido para adultos en los resultados de la búsqueda. Las opciones son:
   - **Definido por el usuario**: permita a los usuarios finales elegir su propia configuración.
   - **Estricto**: filtrado más alto del contenido para adultos.
   - **Moderado**: filtrado moderado del contenido para adultos. No se filtran los resultados de búsqueda válidos.
 - **Mostrar los resultados de los sitios web en la búsqueda**: cuando se establece en **Bloquear**, los usuarios no pueden buscar y los resultados web no se muestran en la búsqueda. **Sin configurar** (valor predeterminado) permite a los usuarios buscar en Internet y los resultados se muestran en el dispositivo.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="start"></a>Start
 
@@ -675,8 +631,6 @@ Estas opciones de configuración usan [start policy CSP](https://docs.microsoft.
   - **Ocultar**: el acceso directo se oculta y se deshabilita la opción de la aplicación Configuración.
   - **Mostrar**: el acceso directo se muestra y se deshabilita la opción de la aplicación Configuración.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="windows-defender-smart-screen"></a>SmartScreen de Windows Defender
 
 - **SmartScreen para Microsoft Edge**: **Requerir** desactiva SmartScreen de Windows Defender y evita que los usuarios lo activen. **Sin configurar** (valor predeterminado) activa SmartScreen. Ayuda a proteger a los usuarios frente a amenazas potenciales y evita que lo desactiven.
@@ -693,8 +647,6 @@ Haga clic en **Aceptar** para guardar los cambios.
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) (CSP de Browser/PreventSmartScreenPromptOverrideForFiles)
 
-Haga clic en **Aceptar** para guardar los cambios.
-
 ## <a name="windows-spotlight"></a>Contenido destacado de Windows
 
 Estas opciones de configuración usan [experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) (CSP de directiva de experiencia), que también indica las ediciones de Windows compatibles.
@@ -709,38 +661,96 @@ Estas opciones de configuración usan [experience policy CSP](https://docs.micro
   - **Personalización de Contenido destacado de Windows**: **Bloquear** evita que Windows use datos de diagnóstico para proporcionar experiencias personalizadas al usuario. **Sin configurar** (valor predeterminado) permite a Microsoft usar datos de diagnóstico para proporcionar recomendaciones y sugerencias personalizadas y ofrece personalizar Windows para las necesidades del usuario.
   - **Experiencia de bienvenida de Windows**: **Bloquear** desactiva la característica de experiencia de bienvenida de Windows de Contenido destacado de Windows. La experiencia de bienvenida de Windows no muestra si hay actualizaciones y cambios para Windows y sus aplicaciones. **Sin configurar** (valor predeterminado) permite que la experiencia de bienvenida de Windows muestre al usuario información sobre características nuevas o actualizadas.
 
-Haga clic en **Aceptar** para guardar los cambios.
-
-## <a name="windows-defender-antivirus"></a>Antivirus de Windows Defender
+## <a name="microsoft-defender-antivirus"></a>Antivirus de Microsoft defender
 
 Estas opciones de configuración usan [defender policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (CSP de directiva de Defender), que también indica las ediciones de Windows compatibles.
 
 - **Supervisión en tiempo real**: **Habilitar** evita el examen en tiempo real de malware, spyware y otro software no deseado. **Sin configurar** (valor predeterminado) permite esta característica.
-- **Supervisión de comportamiento**: **Habilitar** evita que Defender compruebe determinados patrones conocidos de actividad sospechosa en los dispositivos. **Sin configurar** (valor predeterminado) permite la supervisión de comportamiento de Windows Defender.
-- **Sistema de inspección de red (NIS)** : NIS ayuda a proteger los dispositivos contra las vulnerabilidades de seguridad basadas en red. Usa las firmas de vulnerabilidades conocidas de Microsoft Endpoint Protection Center para ayudar a detectar y bloquear el tráfico malintencionado.
-- **Analizar todas las descargas**: controla si Defender examina todos los archivos descargados de Internet.
-- **Examinar scripts cargados en exploradores web de Microsoft**: **Sin configurar** (valor predeterminado) permite a Defender examinar scripts que se usan en Internet Explorer. **Habilitar** evita este examen.
-- **Acceso de usuario final a Defender**: **Bloquear** oculta la interfaz de usuario de Windows Defender a los usuarios finales. También se suprimen todas las notificaciones de Windows Defender. **Sin configurar** (valor predeterminado) permite el acceso de los usuarios a la interfaz de usuario de Windows Defender. Cuando se cambia esta configuración, surtirá efecto la próxima vez que se reinicie el equipo del usuario final.
-- **Intervalo de actualización de firma (en horas)** : especifique el intervalo durante el que Defender busca nuevos archivos de firmas, de 0 a 24. Las opciones son:
 
-  - **Sin configurar** (valor predeterminado).
-  - **No comprobar**: Defender no busca nuevos archivos de firmas.
+  [CSP de defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Supervisión de comportamiento**: **Habilitar** evita que Defender compruebe determinados patrones conocidos de actividad sospechosa en los dispositivos. **Sin configurar** (valor predeterminado) permite la supervisión de comportamiento de Windows Defender.
+
+  [CSP de defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **Sistema de inspección de red (NIS)**: NIS ayuda a proteger los dispositivos contra las vulnerabilidades de seguridad basadas en red. Usa las firmas de vulnerabilidades conocidas de Microsoft Endpoint Protection Center para ayudar a detectar y bloquear el tráfico malintencionado.
+
+  **No configurado** (valor predeterminado) deshabilita esta característica. No se impide que los usuarios se conecten a vulnerabilidades conocidas. Cuando se establece en **habilitado**, la protección de red y el bloqueo de red están activados y los usuarios no pueden desactivarlos. Se impide que los usuarios se conecten a vulnerabilidades conocidas.
+
+  [CSP de defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Examinar todas las descargas**: **no configurado** (valor predeterminado) tiene defender examina todos los archivos descargados de Internet. Cuando se establece en **habilitado**, esta característica está deshabilitada. Por lo tanto, defender no examina todos los archivos descargados de Internet.
+
+  [CSP de defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **Examinar scripts cargados en exploradores web de Microsoft**: **Sin configurar** (valor predeterminado) permite a Defender examinar scripts que se usan en Internet Explorer. **Habilitar** evita este examen.
+
+  [CSP de defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Acceso de usuario final a Defender**: **Bloquear** oculta la interfaz de usuario de Windows Defender a los usuarios finales. También se suprimen todas las notificaciones de Windows Defender. **Sin configurar** (valor predeterminado) permite el acceso de los usuarios a la interfaz de usuario de Windows Defender. Cuando se cambia esta configuración, surtirá efecto la próxima vez que se reinicie el equipo del usuario final.
+
+  [CSP de defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Intervalo de actualización de inteligencia de seguridad (en horas)** : especifique el intervalo en el que defender comprueba la nueva inteligencia de seguridad, en 0-24. Las opciones son:
+
+  - **No configurado** (valor predeterminado): Compruebe las actualizaciones cada 8 horas.
+  - **No comprobar**: defender no busca nuevas actualizaciones de inteligencia de seguridad.
   - **1-24**: `1` busca cada hora, `2` busca cada dos horas, `24` busca cada día, etc.
-- **Supervisar la actividad de archivos y programas**: permite que Defender supervise la actividad de archivos y programas en los dispositivos.
-- **Días antes de eliminar el malware en cuarentena**: siga realizando el seguimiento de malware resuelto durante el número de días especificado para poder comprobar de forma manual los dispositivos previamente afectados. Si establece el número de días en **0**, el malware permanece en la carpeta de cuarentena y no se quita automáticamente. Cuando se establece en `90`, los elementos en cuarentena se almacenan durante 90 días en el sistema y luego se eliminan.
-- **Límite de uso de la CPU durante un examen**: limita la cantidad de CPU que pueden usar los exámenes (de **1** a **100**).
-- **Examinar archivos de almacenamiento**: **Habilitar** evita que Defender examine archivos almacenados, como archivos .zip o .cab. **Sin configurar** (valor predeterminado) permite este examen.
+  
+  [CSP de defender/SignatureUpdateInterval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Supervisar la actividad de archivos y programas**: permite que Defender supervise la actividad de archivos y programas en los dispositivos. Las opciones son:
+
+  - **No configurado** (valor predeterminado): supervisa todos los archivos
+  - **Supervisión deshabilitada**
+  - **Supervisar todos los archivos**
+  - **Supervisar solo los archivos entrantes**
+  - **Supervisar solo los archivos salientes**
+
+  [CSP de defender/RealTimeScanDirection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **Días antes de eliminar el malware en cuarentena**: siga realizando el seguimiento de malware resuelto durante el número de días especificado para poder comprobar de forma manual los dispositivos previamente afectados. Si establece el número de días en `0`, el malware permanece en la carpeta de cuarentena y no se quita automáticamente. Cuando se establece en `90`, los elementos en cuarentena se almacenan durante 90 días en el sistema y luego se eliminan.
+
+  [CSP de defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **Límite de uso de la CPU durante un examen**: limita la cantidad de CPU que pueden usar los exámenes (de `0` a `100`).
+- **Examinar archivos de almacenamiento**: **habilita** desactivar defender para que no examine archivos de almacenamiento, como archivos zip o CAB. **Sin configurar** (valor predeterminado) permite este examen.
+
+  [CSP de defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **Examinar mensajes de correo entrante**: **Habilitar** permite que Defender examine los mensajes de correo electrónico a medida que llegan al dispositivo. **Sin configurar** (valor predeterminado) evita el examen de correo electrónico.
+
+  [CSP de defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **Examinar unidades extraíbles durante un examen completo**: **Habilitar** evita los exámenes completos de las unidades extraíbles. **Sin configurar** (valor predeterminado) permite que Defender examine unidades extraíbles, como sticks USB.
+
+  Durante un examen rápido, es posible que se sigan analizando las unidades extraíbles.
+
+  [CSP de defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **Examinar unidades de red asignadas durante un examen completo**: **Habilitar** permite que Defender examine archivos en unidades de red asignadas. **Sin configurar** (valor predeterminado) evita el examen completo. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
+
+  Durante un examen rápido, es posible que se sigan analizando las unidades de red asignadas.
+
+  [CSP de defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **Examinar archivos abiertos desde carpetas de red**: **Sin configurar** (valor predeterminado) permite que Defender examine archivos en unidades de red compartidas, como los archivos a los que se accede desde una ruta de acceso UNC. **Habilitar** evita este examen. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
+
+  [CSP de defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Protección de la nube**: **Sin configurar** (valor predeterminado) permite que Microsoft Active Protection Service reciba información relativa a la actividad de malware de los dispositivos que administra. **Habilitar** bloquea esta característica.
+
+  [CSP de defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **Preguntar a los usuarios antes de enviar muestras**: controla si los archivos potencialmente malintencionados que podrían requerir un análisis posterior se envían automáticamente a Microsoft. Las opciones son:
-  - **No configurado**.
+
+  - **No configurado** (valor predeterminado): enviar muestras seguras automáticamente.
   - **Preguntar siempre**
   - **Preguntar antes de enviar datos personales**
   - **No enviar datos nunca**
-  - **Enviar todos los datos sin preguntar**: los datos se envían automáticamente
+  - **Enviar todos los datos sin preguntar**: los datos se envían automáticamente.
+
+  [CSP de defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Hora a la que se realizará un examen rápido diario**: elija la hora a la que se ejecutará un examen rápido diario. **No configurado**: no se ejecuta ningún examen diario. Si quiere personalizar más esta opción, configure el valor **Tipo de examen del sistema para realizar**.
 
@@ -756,12 +766,16 @@ Estas opciones de configuración usan [defender policy CSP](https://docs.microso
     - **Día programado**: elija el día en el que se ejecutará el examen.
     - **Hora programada**: elija la hora a la que se ejecutará el examen.
 
-  Esta configuración podría entrar en conflicto con la configuración **Hora a la que se realizará un examen rápido diario**. Algunas recomendaciones:
-
-  - Para ejecutar un examen rápido diario, configure el valor **Hora a la que se realizará un examen rápido diario**.
-  - Para ejecutar un examen rápido diario y uno completo semanal, configure **Hora a la que se realizará un examen rápido diario**. Establezca **Tipo de examen del sistema para realizar** en un examen completo con el día y la hora.
-  - No configure el valor **Hora a la que se realizará un examen rápido diario** simultáneamente con **Tipo de examen del sistema para realizar** establecido en **Examen rápido**. Esta configuración podría entrar en conflicto y puede que no se ejecute un examen.
-  - Para ejecutar un examen rápido todos los martes a las 6:00, configure el valor **Tipo de examen del sistema para realizar**.
+  > [!TIP]
+  > Esta configuración podría entrar en conflicto con la configuración **Hora a la que se realizará un examen rápido diario**. Algunas recomendaciones:  
+  >
+  > - Si desea programar un examen rápido diario y un examen completo semanal, haga lo siguiente:
+  >   1. Configure el **tiempo para realizar una configuración de examen rápido diaria** .
+  >   2. Configure el **tipo de examen del sistema para realizar** un examen completo.
+  > 
+  > - Si solo desea un examen rápido diario (sin examen completo), use cualquiera de estas opciones: **Time (tiempo) para realizar un examen rápido diario** o el **tipo de examen del sistema que se va a realizar**. Por ejemplo, para ejecutar un examen rápido todos los martes a las 6:00, configure el valor **Tipo de examen del sistema para realizar**.
+  > 
+  > - No configure el valor **Hora a la que se realizará un examen rápido diario** simultáneamente con **Tipo de examen del sistema para realizar** establecido en **Examen rápido**. Esta configuración podría entrar en conflicto y puede que no se ejecute un examen.
 
   [CSP Defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [CSP Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ Estas opciones de configuración usan [defender policy CSP](https://docs.microso
 
   Para obtener más información sobre aplicaciones potencialmente no deseadas, vea [Detectar y bloquear aplicaciones potencialmente no deseadas](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Acciones para amenazas de malware detectadas**: elija las acciones que quiere que Defender realice para cada nivel de amenaza que detecte: bajo, moderado, alto y grave. Si no es posible, Windows Defender elige la mejor opción para asegurarse de corregir la amenaza. Las opciones son:
+  [CSP de defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Acciones sobre amenazas de malware detectadas**: elija cómo desea controlar los subprocesos de malware. **No configurado** (valor predeterminado) permite a Microsoft defender elegir la mejor opción. Cuando se establece en **Habilitar**, seleccione las acciones que quiere que Defender realice para cada nivel de amenaza que detecte (bajo, moderado, alto y grave). Las opciones son:
+  
   - **Limpiar**
   - **Cuarentena**
   - **Quitar**
@@ -782,15 +799,15 @@ Estas opciones de configuración usan [defender policy CSP](https://docs.microso
   - **Definido por el usuario**
   - **Bloquear**
 
-Haga clic en **Aceptar** para guardar los cambios.
+  Si la acción no es posible, Windows Defender elige la mejor opción para garantizar que se corrija la amenaza. 
+
+  [CSP de defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusiones del antivirus de Windows Defender
 
 - **Archivos y carpetas para excluir de exámenes y protección en tiempo real**: agrega uno o varios archivos y carpetas, como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluyen en los exámenes en tiempo real ni programados.
 - **Extensiones de archivo para excluir de exámenes y protección en tiempo real**: agrega una o varias extensiones de archivo, como **jpg** o **txt** a la lista de exclusiones. Los archivos con estas extensiones no se incluyen en los exámenes en tiempo real ni programados.
 - **Procesos para excluir de exámenes y protección en tiempo real**: agregar uno o varios procesos del tipo **.exe**, **.com** o **.scr** a la lista de exclusiones. Estos procesos no se incluyen en los exámenes en tiempo real ni programados.
-
-Haga clic en **Aceptar** para guardar los cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
