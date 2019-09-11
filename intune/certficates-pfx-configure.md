@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122395"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376937"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configuración y uso de certificados PKCS con Intune
 
@@ -73,7 +73,7 @@ Para usar certificados PKCS con Intune, debe contar con esta infraestructura:
   - Instalar el Conector de certificado PFX para Microsoft Intune en el servidor.  
   - Para recibir automáticamente actualizaciones importantes, asegúrese de que los firewalls están abiertos para permitir que el conector se ponga en contacto con **autoupdate.msappproxy.net** en el puerto **443**.   
 
-  Para obtener más información sobre todos los puntos de conexión de red a los que el conector debe poder obtener acceso, consulte [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector).
+  Para obtener más información sobre todos los puntos de conexión de red a los que el conector debe poder obtener acceso, consulte [Microsoft Intune Certificate Connector](intune-endpoints.md).
 
 - **Windows Server**:  
   se usa Windows Server para hospedar:
@@ -155,7 +155,7 @@ Para autenticar un dispositivo con VPN, Wi-Fi u otros recursos, el dispositivo n
     3. De manera predeterminada, el servicio de conector inicia sesión con la cuenta de sistema local. Si se requiere un servidor proxy para el acceso a Internet, confirme que la cuenta de servicio local puede acceder a la configuración de proxy en el servidor.
 
 5. Microsoft Intune Certificate Connector abre la pestaña **Inscripción**. Para habilitar la conexión con Intune, **inicie sesión** y escriba una cuenta con permisos administrativos globales.
-6. En la pestaña **Avanzadas**, se recomienda dejar seleccionado **Usar la cuenta SYSTEM de este equipo (predeterminado)**.
+6. En la pestaña **Avanzadas**, se recomienda dejar seleccionado **Usar la cuenta SYSTEM de este equipo (predeterminado)** .
 7. **Aplicar** > **Cerrar**
 8. Vuelva al portal de Intune [**Intune** > **Configuración del dispositivo** > **Certification Connectors** (Conectores de certificación)]. Tras unos minutos, se mostrará una marca de verificación verde y el **Estado de la conexión** figurará como **Activo**. Ahora, el servidor del conector puede comunicarse con Intune.
 9. Si tiene un proxy web en el entorno de red, es posible que necesite configuraciones adicionales para que el conector funcione. Para obtener más información, consulte [Trabajo con servidores proxy locales existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) en la documentación de Azure Active Directory.
@@ -166,7 +166,7 @@ Para autenticar un dispositivo con VPN, Wi-Fi u otros recursos, el dispositivo n
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>Conector de certificado PFX para Microsoft Intune
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Certification Connectors (Conectores de certificación)** > **Agregar**.
+2. Seleccione **Configuración del dispositivo** > **Certification Connectors (Conectores de certificación)**  > **Agregar**.
 3. Descargue y guarde el Conector de certificado PFX para Microsoft Intune. Guárdelo en una ubicación accesible desde el servidor donde va a instalar el conector.
 4. Una vez finalizada la descarga, inicie sesión en el servidor. Después:
 
@@ -212,14 +212,14 @@ Para autenticar un dispositivo con VPN, Wi-Fi u otros recursos, el dispositivo n
 
 3. Vaya a **Configuración** y escriba las siguientes propiedades:
 
-    - **Umbral de renovación (%)**: el valor recomendado es del 20 %.
+    - **Umbral de renovación (%)** : el valor recomendado es del 20 %.
     - **Período de validez del certificado**: si no ha cambiado la plantilla de certificado, esta opción puede estar establecida en un año.
-    - **Proveedor de almacenamiento de claves (KSP)**: en el caso de Windows, seleccione la ubicación del dispositivo en la que quiera almacenar las claves.
+    - **Proveedor de almacenamiento de claves (KSP)** : en el caso de Windows, seleccione la ubicación del dispositivo en la que quiera almacenar las claves.
     - **Entidad de certificación**: muestra el nombre de dominio completo (FQDN) interno de la CA empresarial.
     - **Nombre de la entidad de certificación**: muestra el nombre de la CA empresarial, por ejemplo "Contoso Certification Authority".
     - **Nombre de plantilla de certificado**: corresponde al nombre de la plantilla que ha creado previamente. Recuerde que el **nombre de la plantilla** predeterminado es el mismo que el **nombre para mostrar de la plantilla** *sin espacios*.
     - **Formato de nombre del sujeto**: establezca esta opción en **Nombre común**, a menos que sea necesario hacerlo de otro modo.
-    - **Nombre alternativo del firmante**: establezca esta opción en **Nombre principal de usuario (UPN)**, a menos que sea necesario hacerlo de otro modo.
+    - **Nombre alternativo del firmante**: establezca esta opción en **Nombre principal de usuario (UPN)** , a menos que sea necesario hacerlo de otro modo.
 
 4. Seleccione **Aceptar** > **Crear** para guardar el perfil.
 5. Para asignar el perfil nuevo a uno o varios dispositivos, consulte [Asignación de perfiles de dispositivo en Microsoft Intune](device-profile-assign.md).
@@ -247,7 +247,7 @@ Después de importar los certificados en Intune, cree un perfil de **certificado
 
     - **Propósito planteado**: corresponde al propósito planteado de los certificados que se importan para este perfil. Un administrador puede haber importado los certificados con otros propósitos planteados (por ejemplo, autenticación, firma S/MIME o cifrado S/MIME). El propósito planteado seleccionado en el perfil de certificado coincide con el perfil de certificado con los certificados importados adecuados.
     - **Período de validez del certificado**: si no ha cambiado la plantilla de certificado, esta opción puede estar establecida en un año.
-    - **Proveedor de almacenamiento de claves (KSP)**: en el caso de Windows, seleccione la ubicación del dispositivo en la que quiera almacenar las claves.
+    - **Proveedor de almacenamiento de claves (KSP)** : en el caso de Windows, seleccione la ubicación del dispositivo en la que quiera almacenar las claves.
 
 4. Seleccione **Aceptar** > **Crear** para guardar el perfil.
 5. Para asignar el perfil nuevo a uno o varios dispositivos, consulte [Asignación de perfiles de dispositivo en Microsoft Intune](device-profile-assign.md).

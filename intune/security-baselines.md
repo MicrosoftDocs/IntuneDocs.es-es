@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063041"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815457"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Uso de líneas de base de seguridad para configurar dispositivos Windows 10 en Intune
 
@@ -74,8 +74,8 @@ Al usar varias líneas de base de seguridad, revise la configuración en cada un
 Las instancias de línea de base de seguridad siguientes están disponibles para usarlas con Intune. Use los vínculos para ver la configuración de la instancia más reciente de cada línea de base. 
 
 - **Línea de base de seguridad MDM**
-  - [Línea de base de seguridad de MDM para mayo de 2019](security-baseline-settings-mdm.md)
-  - [Versión preliminar: línea de base de seguridad de MDM para octubre de 2018](security-baseline-settings-mdm-archive.md)
+  - [Línea de base de seguridad de MDM para mayo de 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [Versión preliminar: línea de base de seguridad de MDM para octubre de 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Línea de base de ATP de Microsoft Defender**  
   *(Para usar esta línea de base, su entorno debe cumplir con los requisitos previos para usar [Protección contra amenazas avanzada de Microsoft Defender](advanced-threat-protection.md#prerequisites))* .
@@ -215,7 +215,7 @@ Estrictamente hablando, no. El equipo de seguridad de Microsoft consulta a las o
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Consulte la configuración en las versiones más recientes de las líneas de base disponibles:  
-  - [Línea de base de seguridad MDM](security-baseline-settings-mdm.md)  
+  - [Línea de base de seguridad MDM](security-baseline-settings-mdm-all.md)  
   - [Línea de base de ATP de Microsoft Defender](security-baseline-settings-defender-atp.md)  
 
 - Comprobación del estado y supervisión de la [base de referencia y el perfil](security-baselines-monitor.md)
