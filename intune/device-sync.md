@@ -1,13 +1,12 @@
 ---
-title: Sincronización de dispositivos con Microsoft Intune - Azure | Microsoft Docs
+title: Sincronizar dispositivos con Microsoft Intune - Azure | Microsoft Docs
 description: Sincronice los dispositivos registrados o administrados con Microsoft Intune para obtener las directivas y acciones más recientes. Incluye los pasos necesarios para efectuar la sincronización con Azure Portal y se enumeran los códigos de error que se pueden recuperar.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388106"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808633"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronización de dispositivos para obtener las directivas y las acciones más recientes con Intune
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a registrarse inmediatamente en Intune. Cuando un dispositivo se registra, recibe de inmediato las acciones o las directivas pendientes que se le han asignado. Esta característica puede ayudarle a validar y a solucionar problemas de directivas que se le hayan asignado inmediatamente, sin tener que esperar al siguiente registro programado.
+La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a registrarse inmediatamente en Intune. Cuando un dispositivo se registra, recibe de inmediato las acciones o las directivas pendientes que se le han asignado. Esta característica puede ayudarle a validar y a solucionar problemas de directivas que se le hayan asignado inmediatamente, sin tener que esperar al siguiente registro programado.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
@@ -40,15 +37,14 @@ La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a r
 
 ## <a name="sync-a-device"></a>Sincronizar un dispositivo
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y, luego, seleccione **Microsoft Intune**. 
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
 3. En **Intune**, seleccione **Dispositivos** > **Todos los dispositivos**.
-4. En la lista de dispositivos que administra, seleccione un dispositivo, seleccione **Más** y, luego, seleccione **Sincronizar**.
+4. En la lista de dispositivos que administra, seleccione un dispositivo para abrir su panel de *información general* y, luego, seleccione **Sincronizar**.
 5. Para confirmar, seleccione **Sí**.
 
 Seleccione **Dispositivos** > **Acciones de dispositivo** para ver el estado de la acción de sincronización.
 
-Puede encontrar las frecuencias de sincronización de directivas de Intune estándar en [Tiempos de ciclo de actualización](device-profiles.md).
+Puede encontrar las frecuencias de sincronización de directivas de Intune estándar en [Tiempos de ciclo de actualización](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 ## <a name="retryable-error-codes"></a>Códigos de error que admiten reintentos
 

@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373414"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739202"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adición de directivas de actualización de software de iOS en Intune
 
@@ -53,14 +53,8 @@ El dispositivo se registra con Intune aproximadamente cada ocho horas. Si hay un
 
     - **Retrasar la visibilidad de las actualizaciones de software para los usuarios finales sin cambios en las actualizaciones programadas (días)** : 
 
-      **Esta opción se movió a [Restricciones de dispositivos](device-restrictions-ios.md#general). Se quitará de esta ubicación en el portal**. Durante un breve período, las directivas existentes se pueden cambiar aquí. Después de un mes, este valor se quitará de las directivas existentes.
-
-      Para limitar el impacto, se recomienda:
-        - Quitar la directiva existente de esta ubicación en el portal.
-        - Crear una nueva [directiva de restricción de dispositivo](device-restrictions-ios.md#general).
-        - Tener como destino los mismos usuarios que la directiva original.
-
-      Si hay un conflicto, este valor no hace nada *a menos que* los dos valores sean idénticos. Para evitar conflictos, asegúrese de cambiar o quitar la directiva existente de esta ubicación en el portal.
+      **Si desea retrasar la visibilidad de las actualizaciones de software durante un período de tiempo específico en sus dispositivos iOS supervisados, establezca esta configuración en [Restricciones de dispositivos](device-restrictions-ios.md#general).
+     
       > [! Importante]  
       > Una directiva que tiene una *Hora de inicio* y una *Hora de finalización* establecida en las 12:00 se evalúa como 0 horas en vez de 24 horas. El resultado es que no se aplica ninguna restricción.  
 

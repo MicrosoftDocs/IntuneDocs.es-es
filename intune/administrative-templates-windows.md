@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214336"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376920"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usar plantillas de Windows 10 para configurar opciones de directiva de grupo en Microsoft Intune
 
 Al administrar dispositivos en una organización, el objetivo es crear grupos de valores de configuración que se apliquen a otros grupos de dispositivos. Por ejemplo, hay varios grupos de dispositivos. Para el grupo A, se quiere asignar un conjunto concreto de valores configuración. Para el grupo B, se quiere asignar otro conjunto de valores configuración. También se quiere obtener una vista sencilla de los valores que se pueden configurar.
 
-Esta tarea se puede realizar con **Plantillas administrativas** de Microsoft Intune. Las plantillas administrativas incluyen cientos de valores que controlan características de Microsoft Edge, Internet Explorer, programas de Microsoft Office, el escritorio remoto, OneDrive, contraseñas y PIN, y mucho más. Esta configuración permite a los administradores de grupo administrar las directivas de grupo mediante la nube.
+Esta tarea se puede realizar con **Plantillas administrativas** de Microsoft Intune. Las plantillas administrativas incluyen cientos de valores que controlan características de la versión 77 Microsoft Edge y posteriores, Internet Explorer, programas de Microsoft Office, el escritorio remoto, OneDrive, contraseñas y PIN, y mucho más. Esta configuración permite a los administradores de grupo administrar las directivas de grupo mediante la nube.
 
-La configuración de Windows es similar a la configuración de la directiva de grupo (GPO) en Active Directory (AD). Estas configuraciones están integradas en Windows y son [configuraciones con respaldo de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) en las que se usa XML. La configuración de Office está probada por ADMX y utiliza la configuración de ADMX en los [archivos de plantillas administrativas de Office](https://www.microsoft.com/download/details.aspx?id=49030). Pero las plantillas de Intune están totalmente basadas en la nube. Ofrecen una manera simple y sencilla de configurar y de buscar la configuración deseada.
+La configuración de Windows es similar a la configuración de la directiva de grupo (GPO) en Active Directory (AD). Estas configuraciones están integradas en Windows y son [configuraciones con respaldo de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) en las que se usa XML. La configuración de Office y Microsoft Edge está probada por ADMX y utiliza la configuración de ADMX en los [archivos de plantillas administrativas de Office](https://www.microsoft.com/download/details.aspx?id=49030) y los [archivos de plantillas administrativas de Microsoft Edge](https://www.microsoftedgeinsider.com/enterprise). Pero las plantillas de Intune están totalmente basadas en la nube. Ofrecen una manera simple y sencilla de configurar y de buscar la configuración deseada.
 
 Las **plantillas administrativas** están integradas en Intune y no requieren personalizaciones, ni siquiera el uso de OMA-URI. Como parte de la solución de administración de dispositivos móviles (MDM), use estos valores de plantilla como centro único para administrar los dispositivos Windows 10.
 
@@ -58,16 +58,17 @@ En este artículo se enumeran los pasos para crear una plantilla para dispositiv
     > [!TIP]
     > La configuración de Windows en Intune se correlaciona con la ruta de acceso de la directiva de grupo local que se ve en el Editor de directivas de grupo local (`gpedit`).
 
-5. De forma predeterminada, la lista desplegable muestra **Todos los productos**. Desde la lista, también puede filtrar la configuración para que solo muestre la configuración de **Windows**, la de **Office** o la de **Microsoft Edge**:
+5. De forma predeterminada, la lista desplegable muestra **Todos los productos**. Desde la lista, también puede filtrar la configuración para que solo muestre la configuración de **Windows**, la de **Office** o la de la **versión 77 de Microsoft Edge o posteriores**:
 
     ![Filtrado de la lista para mostrar todas las configuraciones de Windows o de Office en las plantillas administrativas de Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > La configuración de Microsoft Edge se aplica a:
     >
-    > - Windows 10 RS4 y versiones más recientes con [KB 4512509](https://support.microsoft.com/kb/4512509) instalado.
-    > - Windows 10 RS5 y versiones más recientes con [KB 4512534](https://support.microsoft.com/kb/4512534) instalado.
-    > - Windows 10 19H1 y versiones más recientes con [KB 4512941](https://support.microsoft.com/kb/4512941) instalado.
+    > - Versión 77 de Microsoft Edge y posteriores. Para configurar la versión 45 de Microsoft Edge y anteriores, consulte [Configuración de restricciones de dispositivos del explorador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
+    > - Windows 10 RS4 y versiones más recientes con [KB 4512509](https://support.microsoft.com/kb/4512509) instalado
+    > - Windows 10 RS5 y versiones más recientes con [KB 4512534](https://support.microsoft.com/kb/4512534) instalado
+    > - Windows 10 19H1 y versiones más recientes con [KB 4512941](https://support.microsoft.com/kb/4512941) instalado
 
 6. Seleccione cualquier valor. Por ejemplo, filtre por **Office** y seleccione **Activar exploración restringida**. Se muestra una descripción detallada del valor. Elija **Habilitado**, **Deshabilitado** o bien deje el valor como **Sin configurar** (valor predeterminado). La descripción detallada también explica lo que sucede cuando se elige **Habilitado**, **Deshabilitado** o **Sin configurar**.
 7. Haga clic en **Aceptar** para guardar los cambios.

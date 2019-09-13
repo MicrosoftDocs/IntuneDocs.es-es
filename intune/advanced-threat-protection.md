@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 0d9fe180e81c9e661954dd0986f05ac3b5e749ed
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960645"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739186"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Aplicación del cumplimiento de ATP de Microsoft Defender con acceso condicional en Intune  
 
@@ -101,6 +101,7 @@ Cuando estableció la conexión a ATP de Microsoft Defender, Intune recibió un 
 
 Después de incorporar un dispositivo mediante el paquete de configuración, no es necesario hacerlo de nuevo. También puede incorporar dispositivos mediante una [directiva de grupo o System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
+
 ### <a name="create-the-device-configuration-profile"></a>Creación de un perfil de configuración de dispositivo
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
@@ -122,6 +123,7 @@ Después de incorporar un dispositivo mediante el paquete de configuración, no 
 
 7. Seleccione **Aceptar** y **Crear** para guardar los cambios, lo que crea el perfil.
 8. [Asigne el perfil de configuración de dispositivo](device-profile-assign.md) a los dispositivos que quiera evaluar con ATP de Microsoft Defender.  
+
 
 ## <a name="create-and-assign-the-compliance-policy"></a>Creación y asignación de la directiva de cumplimiento  
 
@@ -179,6 +181,9 @@ A continuación, supervise el estado de los dispositivos que tienen la directiva
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Cumplimiento del dispositivo** > **Directiva y cumplimiento**.
 3. Busque la directiva de ATP de Microsoft Defender en la lista y vea qué dispositivos son compatibles o no compatibles.
+
+## <a name="view-onboarding-status"></a>Ver estado de incorporación
+Para ver el estado de incorporación de todos los dispositivos Windows 10 administrados por Intune, puede ir a **Conformidad de dispositivos** > **ATP de Microsoft Defender**. En esta página, también puede iniciar la creación de un perfil de configuración de dispositivo para incorporar más dispositivos a ATP de Microsoft Defender.
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
