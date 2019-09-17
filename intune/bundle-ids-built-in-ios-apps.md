@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402760"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912814"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Identificadores de lote para aplicaciones iOS integradas que puede usar en Intune
 
@@ -30,11 +30,12 @@ Al configurar las características en dispositivos iOS, también puede agregar a
 
 | Identificador de lote                   | Nombre de la aplicación     | Publicador |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | Tienda de aplicaciones    | Apple     |
+| com. Apple. Store             | Tienda de aplicaciones    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
 | com.apple.mobilecal         | Calendario     | Apple     |
 | com.apple.camera            | Cámara       | Apple     |
 | com.apple.mobiletimer       | Reloj        | Apple     |
+| com. Apple. clips             | Imágenes        | Apple     |
 | com.apple.compass           | Compass      | Apple     |
 | com.apple.MobileAddressBook | Contactos     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -74,7 +75,7 @@ Al configurar las características en dispositivos iOS, también puede agregar a
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Inspección        | Apple     |
-| com.apple.weather           | Clima      | Apple     |
+| com.apple.weather           | Clima      | Apple     |      
 
 ## <a name="next-steps"></a>Pasos siguientes
 
