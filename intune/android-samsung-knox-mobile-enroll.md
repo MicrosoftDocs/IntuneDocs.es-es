@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
-ms.reviewer: arnab
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993544"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071642"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscripción automática de dispositivos Android mediante Knox Mobile Enrollment de Samsung
 
@@ -120,7 +120,7 @@ Después de crear y asignar un perfil de MDM, asociar un nombre de usuario e ide
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-- **Compatibilidad con el propietario del dispositivo:**  -  **** Intune admite la inscripción de dispositivos dedicados y totalmente administrados mediante el portal de KME. Se admitirán otros modos de propietario de dispositivo de Android Enterprise en cuanto estén disponibles en Intune.
+- **Compatibilidad con el propietario del dispositivo:** Intune admite la inscripción de dispositivos dedicados y totalmente administrados mediante el portal de KME. Se admitirán otros modos de propietario de dispositivo de Android Enterprise en cuanto estén disponibles en Intune.
 
 - **Sin compatibilidad con el perfil de trabajo:** KME es un método de inscripción de dispositivos corporativo y los dispositivos inscritos en el perfil de trabajo de Android garantizan que los datos profesionales y personales estén separados en los dispositivos personales. Así pues, la inscripción de dispositivos en un perfil de trabajo mediante KME no es un escenario admitido en Intune.
 
