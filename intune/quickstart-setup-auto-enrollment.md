@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b81525034f69b43abeb60f562e4d6ee6a46b866
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e44bbf9396cd2aff3f2b2b134c72eb871f719a91
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511831"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080126"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Inicio rápido: Configurar la inscripción automática para dispositivos Windows 10
 
@@ -39,7 +39,7 @@ Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador globa
 
 En este ejemplo, usará la inscripción de MDM para que se puedan inscribir automáticamente tanto los dispositivos corporativos como los dispositivos personales que traen los empleados. Tendrá que registrarse para obtener una suscripción gratuita a Azure Active Directory Premium.
 
-1. En Azure, seleccione **Azure Active Directory** > **Movilidad (MDM y MAM)**.
+1. En Azure, seleccione **Azure Active Directory** > **Movilidad (MDM y MAM)** .
 2. Seleccione **Obtener una prueba gratuita Premium para usar esta característica**. Si selecciona esta opción, se permitirá la inscripción automática con la versión de prueba gratuita Premium de Azure Active Directory. 
 
     ![Selección de la versión de prueba gratuita Premium de Azure Active Directory](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
@@ -56,12 +56,12 @@ En este ejemplo, usará la inscripción de MDM para que se puedan inscribir auto
 
     ![Selección de "Algunos" en la lista de configuración](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)** > **Seleccionar** como grupo asignado.
+5. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)**  > **Seleccionar** como grupo asignado.
 
     ![Selección del grupo que se va a inscribir](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
 6. Seleccione **Algunos** en **Ámbito de usuario de MAM** para administrar los datos en los dispositivos de su personal.
-7. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)** > **Seleccionar** como grupo asignado. 
+7. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)**  > **Seleccionar** como grupo asignado. 
 8. Use los valores predeterminados para los demás valores de configuración.
 9. Elija **Guardar**.
 

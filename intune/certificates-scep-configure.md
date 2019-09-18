@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76cd6084815a9f63e653a63d36ba8265a7a0fbd6
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122577"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061390"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configuración de la infraestructura para admitir SCEP con Intune  
   
@@ -355,7 +355,7 @@ Para instalar Intune Certificate Connector:
 8. Abra un símbolo del sistema, escriba **services.msc** y presione **Entrar**. Haga clic con el botón derecho en **Servicio del conector de Intune** >  y en **Reiniciar**.
 
 
-Para validar que el servicio se ejecuta, abra un explorador y escriba la siguiente dirección URL. Debe devolver un error **403**: `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
+Para validar que el servicio se ejecuta, abra un explorador y escriba la siguiente dirección URL. Debe devolver un error **403**: `https://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
 
 > [!NOTE]  
 > Intune Certificate Connector admite TLS 1.2. Si el servidor en el que se hospeda el conector admite TLS 1.2, se usa TLS 1.2. Si el servidor no admite TLS 1.2, entonces se usará TLS 1.1. Actualmente, se usa TLS 1.1 para la autenticación entre los dispositivos y el servidor.

@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d053b0b37931443a343c91b5122b7a097d248c51
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 10366a41be05dbedee5cd84a1222a727a02a1b93
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048689"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071472"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Creación de un rol personalizado en Intune
 
@@ -43,7 +43,7 @@ Para crear, editar o asignar roles, la cuenta debe tener uno de los siguientes p
 
 5. En la hoja **Permisos**, elija los permisos que quiere usar con este rol. Use la [tabla de RBAC en Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ayudarle a decidir qué permisos desea aplicar.
 
-6. En la hoja **Ámbito (etiquetas)**, seleccione las etiquetas para este rol. Este rol puede acceder a los recursos que también tengan estas etiquetas.
+6. En la hoja **Ámbito (etiquetas)** , seleccione las etiquetas para este rol. Este rol puede acceder a los recursos que también tengan estas etiquetas.
 
 7. Cuando haya terminado, seleccione **Aceptar**.
 

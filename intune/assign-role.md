@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a22fef1c04ae52a8a4cc65eaadc1ef6fcd524c19
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043595"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071530"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Asignación de un rol a un usuario de Intune
 
@@ -47,11 +47,11 @@ Para obtener una lista completa de los permisos de cada rol integrado, vea la [t
 
 7. En la hoja **Asignaciones de roles**, escriba un **nombre de asignación** y una **descripción** opcional para la asignación.
 
-8. En **Miembros (grupos)**, elija un grupo que contenga el usuario al que quiere conceder los permisos.
+8. En **Miembros (grupos)** , elija un grupo que contenga el usuario al que quiere conceder los permisos.
 
-9. En **Ámbito (grupos)**, elija un grupo que contenga los usuarios o los dispositivos que el miembro anterior tendrá permiso para administrar.
+9. En **Ámbito (grupos)** , elija un grupo que contenga los usuarios o los dispositivos que el miembro anterior tendrá permiso para administrar.
 
-10. En **Ámbito (etiquetas)**, elija las etiquetas donde se aplicará esta asignación de roles.
+10. En **Ámbito (etiquetas)** , elija las etiquetas donde se aplicará esta asignación de roles.
 
 11. Cuando haya terminado, seleccione **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
 

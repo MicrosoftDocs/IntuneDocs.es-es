@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
-ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
+ms.openlocfilehash: 4f59f7a0a53061a49655c85c3fda9d5939f59daa
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808633"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71070778"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronización de dispositivos para obtener las directivas y las acciones más recientes con Intune
 
