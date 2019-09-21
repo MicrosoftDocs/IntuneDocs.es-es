@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756528"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166372"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Consola de Intune en Azure y cliente de equipo de Intune heredado
 
@@ -31,7 +31,7 @@ Considere estos puntos cuando use Intune en Azure para administrar los dispositi
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>Administración de dispositivos Windows 10 mediante MDM
 
-Se recomienda que use la [administración de dispositivos móviles (MDM) para administrar los dispositivos Windows 10](https://docs.microsoft.com/intune/device-restrictions-windows-10) en lugar de usar el cliente de equipo de Intune heredado. La capacidad de administrar Windows 10 mediante MDM está disponible en el portal Intune en Azure. Windows 10 MDM proporciona muchas funcionalidades de administración y seguridad nuevas que no están disponibles a través del cliente de equipo de Intune heredado.
+Se recomienda que use la [administración de dispositivos móviles (MDM) para administrar los dispositivos Windows 10](device-restrictions-windows-10.md) en lugar de usar el cliente de equipo de Intune heredado. La capacidad de administrar Windows 10 mediante MDM está disponible en el portal Intune en Azure. Windows 10 MDM proporciona muchas funcionalidades de administración y seguridad nuevas que no están disponibles a través del cliente de equipo de Intune heredado.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Las características del cliente de equipo heredado solo están disponibles en la consola Silverlight
 
@@ -54,7 +54,7 @@ En el caso de Windows 7, que no se puede administrar mediante MDM, se seguirán 
 
 ## <a name="mdm-capabilities"></a>Funcionalidades de MDM
 
-Para una comparación detallada entre las funcionalidades del cliente de equipo y las de MDM, consulte [Comparación de la administración de equipos con Windows como dispositivos móviles o equipos](pc-management-comparison.md). Las actualizaciones de MDM seguirán incorporando nuevas funcionalidades de administración a los dispositivos de Windows 10 inscritos en MDM, incluida la evaluación de opciones para aplicaciones de Win 32. Consulte las [novedades](https://docs.microsoft.com/intune/whats-new) para conocer las adiciones de las versiones más recientes al servicio.
+Para una comparación detallada entre las funcionalidades del cliente de equipo y las de MDM, consulte [Comparación de la administración de equipos con Windows como dispositivos móviles o equipos](pc-management-comparison.md). Las actualizaciones de MDM seguirán incorporando nuevas funcionalidades de administración a los dispositivos de Windows 10 inscritos en MDM, incluida la evaluación de opciones para aplicaciones de Win 32. Consulte las [novedades](whats-new.md) para conocer las adiciones de las versiones más recientes al servicio.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Cambio desde el cliente de equipo a MDM
 
@@ -62,9 +62,7 @@ Para pasar de administrar los dispositivos Windows 10 con el cliente de equipo d
 
 1. En la consola de Silverlight, realice una **eliminación de datos selectiva** para cancelar la inscripción del dispositivo desde el cliente de equipo.
   ![Cuadro emergente de advertencia con el botón de radio ' borrar de forma selectiva el dispositivo ' seleccionado](media/intune-legacy-pc-client/image02.png)
-2. Vuelva a inscribir el dispositivo con [MDM (o con combinación de Azure AD)](https://docs.microsoft.com/intune/windows-enroll). 
+2. Vuelva a inscribir el dispositivo con [MDM (o con combinación de Azure AD)](windows-enroll.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Inscribir dispositivos Windows](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[Inscribir dispositivos Windows](windows-enroll.md)

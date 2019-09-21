@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,21 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849013"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163298"
 ---
 # <a name="set-or-change-your-passcode"></a>Establecer o cambiar el código de acceso
 
-Si el dispositivo iOS no se ajusta a la directiva de códigos de acceso del equipo de soporte técnico de su empresa, aparece un mensaje que describe el problema brevemente y explica lo que debe hacer para que el código de acceso cumpla los requisitos.
+Cree un nuevo código de acceso o cambie uno existente para satisfacer los requisitos de su organización. El código de acceso impedirá que personas no autorizadas desbloqueen y utilicen el dispositivo. 
 
-El equipo de soporte técnico de su empresa puede establecer más de un requisito para los códigos de acceso. Por ejemplo, el código de acceso podría contener un número determinado de caracteres y ser una combinación de números, letras o caracteres. Puesto que se puede establecer más de un requisito, en estas instrucciones solo se puede explicar cómo establecer o cambiar el código de acceso. No se explican todas las combinaciones posibles de requisitos. Por ejemplo, estos códigos de acceso se utilizan para acceder al dispositivo desde la pantalla de bloqueo.
+Su organización puede establecer más de un requisito de código de acceso. Para obtener una lista de los requisitos de contraseña comunes, consulte [requisitos de contraseña de dispositivo para dispositivos inscritos](password-does-not-meet-it-administrator-requirements.md).  
 
-Si tiene problemas para establecer un código de acceso que cumpla los requisitos, póngase en contacto con el equipo de soporte técnico de su empresa para obtener ayuda.
+Si tiene problemas para crear o cambiar el código de acceso, póngase en contacto con el personal de soporte técnico de ti.  
+
 
 ## <a name="set-your-passcode"></a>Establecer el código de acceso
 

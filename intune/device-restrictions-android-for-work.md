@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 53a9c3e8b80f611bc9e293ba7e07c1aece0cfc58
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550189"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163033"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -119,7 +119,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   
     1. Continúa y hace clic en el botón de retroceso hasta que aparece el botón **Exit Kiosk** (Salir de pantalla completa). 
     2. Selecciona el botón **Exit kiosk** (Salir de pantalla completa) y escribe el PIN de **Leave kiosk mode code** (Código para salir del modo de pantalla completa).
-    3. Cuando termine, seleccione la aplicación administrada de la **pantalla de inicio** . Este paso vuelve a bloquear el dispositivo para pantalla completa con varias aplicaciones.
+    3. Cuando termine, seleccione la aplicación **administrada** de la pantalla de inicio. Este paso vuelve a bloquear el dispositivo para pantalla completa con varias aplicaciones.
 
       Cuando se establece en **no configurado**, los administradores no pueden pausar el modo de quiosco. Si el administrador sigue haciendo clic en el botón de retroceso y hace clic en el botón **Exit Kiosk** (Salir de pantalla completa), aparece un mensaje que indica que se requiere un código de acceso.
 
@@ -201,6 +201,9 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 - **Eliminación de usuarios**: elija **Bloquear** para impedir que los usuarios quiten usuarios. **No configurado** permite que los usuarios quiten a otros usuarios del dispositivos.
 - **Cambios de la cuenta**: elija **Bloquear** para impedir que los usuarios modifiquen las cuentas. **No configurado** permite que los usuarios actualicen las cuentas de usuario del dispositivo.
 
+  > [!NOTE]
+  > Esta configuración no se aplica a los dispositivos del propietario del dispositivo (totalmente administrados). Si configura esta opción, se omitirá la configuración y no se verá afectada.
+
 ### <a name="applications"></a>Aplicaciones
 
 - **Permitir la instalación desde orígenes desconocidos**: elija **Permitir** para que los usuarios puedan activar **Orígenes desconocidos**. Esta configuración permite que se instalen aplicaciones desde orígenes desconocidos, incluidos los orígenes que no sean Google Play Store. **No configurado** impide que los usuarios activen los **orígenes desconocidos**.
@@ -226,7 +229,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   - F5 Access
   - Palo Alto Networks GlobalProtect
   - Pulse Secure
-  - Personalizada
+  - Personalizado
     - **Id. de paquete**: escriba el identificador de paquete de la aplicación en Google Play Store. Por ejemplo, si la dirección URL de la aplicación en Play Store es `https://play.google.com/store/details?id=com.contosovpn.android.prod`, el identificador del paquete es `com.contosovpn.android.prod`.
 
   > [!IMPORTANT]
@@ -270,6 +273,10 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 - **Search work contacts from personal profile** (Buscar contactos de trabajo desde el perfil personal): elija **Bloquear** para impedir que los usuarios busquen contactos de trabajo en aplicaciones del perfil personal. **No requerido** permite buscar contactos de trabajo en el perfil personal.
 
 - **Cámara**: elija **Bloquear** para impedir el acceso a la cámara del dispositivo en el perfil de trabajo. La configuración no afecta a la cámara en el perfil personal. **No requerido** permite el acceso a la cámara en el perfil de trabajo.
+
+- **Permitir widgets de aplicaciones de Perfil de trabajo**: **Habilitar** permite a los usuarios finales colocar widgets expuestos por aplicaciones en la pantalla principal. **No configurado** (valor predeterminado) deshabilita esta característica.
+
+  Por ejemplo, Outlook se instala en los perfiles de trabajo de los usuarios. Cuando se establece en **habilitado**, los usuarios pueden colocar el widget de la agenda en la pantalla principal del dispositivo.
 
 #### <a name="work-profile-password"></a>Contraseña del perfil de trabajo
 
@@ -333,7 +340,7 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
   - F5 Access
   - Palo Alto Networks GlobalProtect
   - Pulse Secure
-  - Personalizada
+  - Personalizado
     - **Id. de paquete**: escriba el identificador de paquete de la aplicación en Google Play Store. Por ejemplo, si la dirección URL de la aplicación en Play Store es `https://play.google.com/store/details?id=com.contosovpn.android.prod`, el identificador del paquete es `com.contosovpn.android.prod`.
 
   > [!IMPORTANT]
@@ -351,6 +358,6 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
 
 También puede crear perfiles de pantalla completa de dispositivo dedicado para dispositivos [Android](device-restrictions-android.md#kiosk) y [Windows 10](kiosk-settings.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 [Configuring and troubleshooting Android enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974) (Configuración y solución de problemas de dispositivos empresariales Android en Microsoft Intune)

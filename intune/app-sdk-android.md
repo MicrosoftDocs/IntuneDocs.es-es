@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 8d6f0182fed362cba1e4c383ac6b4e083b6baa8e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960547"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167164"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -173,7 +173,7 @@ Si la respuesta es "Sí" a ambas preguntas, debe incluir esa biblioteca en `incl
 | Se incluye una biblioteca como React Native que contiene clases derivadas de `Activity`, `Application` y `Fragment`, pero solo se usan clases auxiliares estáticas o clases de utilidades | No |
 | Se incluye que contiene clases de vista derivadas de `TextView` y se usan esas clases o se derivan aún más en la aplicación | Sí |
 
-#### <a name="reporting"></a>Generación de informes
+#### <a name="reporting"></a>Informes
 El complemento de compilación puede generar un informe HTML de los cambios que realiza. Para solicitar la generación de este informe, especifique `report = true` en el bloque de configuración `intunemam`. Si se genera, el informe se escribirá en el directorio de compilación, en `outputs/logs`.
 
 ```groovy
@@ -699,7 +699,7 @@ A continuación se describen las maneras comunes en que se puede configurar una 
 
 #### <a name="2-app-integrates-adal"></a>2. La aplicación integra ADAL
 
-|Parámetro obligatorio de ADAL| Valor |
+|Parámetro obligatorio de ADAL| Value |
 |--|--|
 | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
 
@@ -707,14 +707,14 @@ En caso necesario, puede especificarse la autoridad.
 
 Debe registrar su aplicación en Azure AD y darle acceso al servicio de directiva de protección de aplicaciones:
 * Consulte [este artículo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) para obtener información sobre cómo registrar una aplicación con Azure AD.
-* Asegúrese de que se siguen los pasos para conceder los permisos de aplicación de Android para el servicio Directiva de protección de aplicaciones (APP). Siga las instrucciones de la [guía de introducción al SDK de Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) sobre cómo conceder acceso al servicio Intune App Protection (opcional). 
+* Asegúrese de que se siguen los pasos para conceder los permisos de aplicación de Android para el servicio Directiva de protección de aplicaciones (APP). Siga las instrucciones de la [guía de introducción al SDK de Intune](app-sdk-get-started.md#next-steps-after-integration) sobre cómo conceder acceso al servicio Intune App Protection (opcional). 
 
 Consulte también más adelante los requisitos para el [acceso condicional](#conditional-access).
 
 
 #### <a name="3-app-integrates-adal-but-does-not-support-brokered-authenticationdevice-wide-sso"></a>3. La aplicación integra ADAL pero no admite la autenticación intermediada o SSO en todo el dispositivo.
 
-|Parámetro obligatorio de ADAL| Valor |
+|Parámetro obligatorio de ADAL| Value |
 |--|--|
 | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
 | SkipBroker | **True** |
@@ -723,18 +723,18 @@ Se pueden especificar los valores de Authority y NonBrokerRedirectURI si resulta
 
 ### <a name="conditional-access"></a>Acceso condicional
 
-El acceso condicional (CA) es una [característica](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer) de Azure Active Directory que puede usarse para controlar el acceso a recursos de AAD. [Los administradores de Intune pueden definir reglas de CA](https://docs.microsoft.com/intune/conditional-access) que permiten el acceso a los recursos únicamente desde dispositivos o aplicaciones administrados por Intune. Para asegurarse de que la aplicación sea capaz de acceder a los recursos cuando proceda, debe seguir los pasos que se incluyen más adelante. Si la aplicación no adquiere ningún token de acceso de AAD o accede solo a recursos que no se pueden proteger con CA, puede saltarse estos pasos.
+El acceso condicional (CA) es una [característica](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer) de Azure Active Directory que puede usarse para controlar el acceso a recursos de AAD. [Los administradores de Intune pueden definir reglas de CA](conditional-access.md) que permiten el acceso a los recursos únicamente desde dispositivos o aplicaciones administrados por Intune. Para asegurarse de que la aplicación sea capaz de acceder a los recursos cuando proceda, debe seguir los pasos que se incluyen más adelante. Si la aplicación no adquiere ningún token de acceso de AAD o accede solo a recursos que no se pueden proteger con CA, puede saltarse estos pasos.
 
 1. Siga las [directrices de integración de ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    Vea especialmente el paso 11 para el uso del agente.
 2. [Registre la aplicación con Azure Active Directory] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    El URI de redirección se puede encontrar en las directrices de integración de ADAL anteriores.
 3. Establezca los parámetros de los metadatos del manifiesto de acuerdo con las [configuraciones comunes de ADAL](#common-adal-configurations) del punto 2 anterior.
-4. Compruebe que todo esté configurado correctamente habilitando el [CA basado en dispositivos](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) desde [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) y confirme lo siguiente:
+4. Compruebe que todo esté configurado correctamente habilitando el [CA basado en dispositivos](conditional-access-intune-common-ways-use.md) desde [Azure Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) y confirme lo siguiente:
     - El inicio de sesión en la aplicación solicita la instalación y la inscripción del Portal de empresa de Intune.
     - Tras la inscripción, el inicio de sesión en la aplicación se completa correctamente.
-5. Una vez que la aplicación haya enviado la integración con el SDK para aplicaciones de Intune, póngase en contacto con msintuneappsdk@microsoft.com para que se agregue a la lista de aplicaciones aprobadas para el [acceso condicional basado en aplicación](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
-6. Cuando la aplicación se haya agregado a la lista aprobada, realice la validación [configurando el CA basado en aplicación](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) y asegurándose de que el inicio de sesión en la aplicación se completa correctamente.
+5. Una vez que la aplicación haya enviado la integración con el SDK para aplicaciones de Intune, póngase en contacto con msintuneappsdk@microsoft.com para que se agregue a la lista de aplicaciones aprobadas para el [acceso condicional basado en aplicación](conditional-access-intune-common-ways-use.md#app-based-conditional-access).
+6. Cuando la aplicación se haya agregado a la lista aprobada, realice la validación [configurando el CA basado en aplicación](app-based-conditional-access-intune-create.md) y asegurándose de que el inicio de sesión en la aplicación se completa correctamente.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin la inscripción de dispositivos
 
@@ -1629,7 +1629,7 @@ Si la aplicación proporciona datos corporativos distintos de `ParcelFileDescrip
 
 Si no hereda `MAMContentProvider` explícitamente y en su lugar permite que la herramienta de compilación realice ese cambio, puede llamar a una versión estática del mismo método: `MAMContentProvider.isProvideContentAllowed(provider, contentIdentity)`.
 
-### <a name="selective-wipe"></a>Eliminación selectiva
+### <a name="selective-wipe"></a>Borrado selectivo
 
 Si una aplicación de varias identidades se registra para la notificación `WIPE_USER_DATA`, es responsabilidad de la aplicación quitar todos los datos del usuario que se va a eliminar, incluidos todos los archivos con etiquetas de identidad que indiquen su pertenencia a dicho usuario. Si la aplicación quita datos de usuario de un archivo, pero desea dejar otros datos en el archivo, *debe* cambiar la identidad del archivo (mediante `MAMFileProtectionManager.protect` a un usuario personal o la identidad vacía). Si la directiva de cifrado está en uso, los archivos restantes que pertenezcan al usuario que se vaya a borrar no se descifrarán y la aplicación no podrá acceder a ellos tras el borrado.
 
@@ -1639,7 +1639,7 @@ El borrado selectivo predeterminado cerrará la aplicación correctamente, final
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Habilitación de la configuración de destino de MAM para las aplicaciones Android (opcional)
-Los pares clave-valor específicos de la aplicación se pueden configurar en la consola de Intune para [MAM-WE](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) y [aplicaciones del perfil de trabajo Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
+Los pares clave-valor específicos de la aplicación se pueden configurar en la consola de Intune para [MAM-WE](app-configuration-policies-managed-app.md) y [aplicaciones del perfil de trabajo Android](app-configuration-policies-use-android.md).
 Intune no interpreta en absoluto los pares clave-valor, sino que se pasan a la aplicación. Las aplicaciones que desean recibir dicha configuración pueden usar las clases `MAMAppConfigManager` y `MAMAppConfig` para hacerlo. Si hay varias directivas dirigidas a la misma aplicación, puede haber varios valores en conflicto disponibles para la misma clave.
 
 > [!NOTE] 
@@ -1673,7 +1673,7 @@ La configuración de aplicación agrega un nuevo tipo de notificación:
 ### <a name="further-reading"></a>Lectura adicional
 Para más información sobre las capacidades de Graph API, vea la [referencia de Graph API](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
-Para más información sobre cómo crear una directiva de configuración de aplicaciones de destino de MAM en Android, vea la sección de la configuración de aplicaciones de destino de MAM en [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android) (Uso de las directivas de configuración de aplicaciones de Microsoft Intune para Android).
+Para más información sobre cómo crear una directiva de configuración de aplicaciones de destino de MAM en Android, vea la sección de la configuración de aplicaciones de destino de MAM en [How to use Microsoft Intune app configuration policies for Android](app-configuration-policies-use-android.md) (Uso de las directivas de configuración de aplicaciones de Microsoft Intune para Android).
 
 ## <a name="style-customization-optional"></a>Personalización del estilo (opcional)
 

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022745"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167431"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo cifrado, pero las aplicaciones dicen lo contrario
 
@@ -48,16 +48,17 @@ Esta sección solo se aplica a la aplicación Portal de empresa. Si el dispositi
 
 ## <a name="specific-manufacturer-issues"></a>Problemas específicos del fabricante
 
-Algunos dispositivos Android de la versión 7.0 y posteriores cifran los datos de maneras incoherentes con determinados estándares de la plataforma Android. Estos métodos de cifrado ponen en peligro la información del dispositivo. Como resultado, no se admiten estos dispositivos. 
+Algunos dispositivos Android de la versión 7.0 y posteriores cifran los datos de maneras incoherentes con determinados estándares de la plataforma Android. Estos métodos de cifrado ponen en peligro la información del dispositivo. Como resultado, no se admiten estos dispositivos.
 
-Para obtener una lista no exhaustiva de los dispositivos Android compatibles, consulte el artículo [compatibilidad con exploradores y sistemas operativos en Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Si el dispositivo no aparece en la lista, consulte al fabricante del dispositivo o póngase en contacto con el personal de soporte técnico. 
+Para obtener una lista no exhaustiva de los dispositivos Android compatibles, consulte el artículo [compatibilidad con exploradores y sistemas operativos en Intune](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices). Si el dispositivo no aparece en la lista, consulte al fabricante del dispositivo o póngase en contacto con el personal de soporte técnico.
 
 > [!Note]
-> Microsoft trabaja junto con los fabricantes para abordar cualquier problema que se encuentre durante las pruebas o que los usuarios informen. Este artículo se actualiza cada vez que hay nueva información disponible. 
+> Microsoft trabaja junto con los fabricantes para abordar cualquier problema que se encuentre durante las pruebas o que los usuarios informen. Este artículo se actualiza cada vez que hay nueva información disponible.
 
-## <a name="update-devices"></a>Actualizar dispositivos   
+## <a name="update-devices"></a>Actualizar dispositivos
 
 Si no ha actualizado el dispositivo a la versión más reciente de Android, vaya a la aplicación de **configuración** del dispositivo y seleccione **Actualizar**.  
 
-## <a name="next-steps"></a>Pasos siguientes   
+## <a name="next-steps"></a>Pasos siguientes
+
 ¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.  

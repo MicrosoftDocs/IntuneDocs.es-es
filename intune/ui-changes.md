@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046329"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166988"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>¿Dónde está mi característica de Intune en Azure?
 Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Esta guía de referencia está dirigida a aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
@@ -77,7 +77,7 @@ Si quiere ver y modificar las directivas de acceso condicional desde Azure Porta
 ## <a name="where-did-my-compliance-policies-go"></a>¿Dónde puedo encontrar mis directivas de cumplimiento?
 Las directivas de cumplimiento del inquilino se seguirán aplicando cuando el inquilino se haya migrado a Azure Portal. Sin embargo, no podrá ver o modificarlas desde Intune en Azure Portal.
 
-Si quiere ver y modificar las directivas de cumplimiento desde Azure Portal, deberá quitar del portal clásico las directivas anteriores. Después, deberá volver a crearlas en Azure Portal. Para obtener más información sobre las directivas de cumplimiento de dispositivos, consulte la [introducción a las directivas de cumplimiento de dispositivos en Intune](https://docs.microsoft.com/intune/device-compliance-get-started). 
+Si quiere ver y modificar las directivas de cumplimiento desde Azure Portal, deberá quitar del portal clásico las directivas anteriores. Después, deberá volver a crearlas en Azure Portal. Para obtener más información sobre las directivas de cumplimiento de dispositivos, consulte la [introducción a las directivas de cumplimiento de dispositivos en Intune](device-compliance-get-started.md). 
 
 ## <a name="where-did-apple-dep-go"></a>¿Dónde está el servicio DEP de Apple?
 En el portal clásico, podía configurar Intune para que se integrara con el Programa de inscripción de dispositivos de Apple y solicitar manualmente la sincronización con el servicio de Apple:

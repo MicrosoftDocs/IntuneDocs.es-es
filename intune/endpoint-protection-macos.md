@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158019"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162865"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configuración de Endpoint Protection de macOS en Intune  
 
@@ -105,13 +105,6 @@ Para obtener más información sobre la configuración de FileVault de Apple, co
     - **Deshabilitar** : deshabilite el aviso en el cierre de sesión.
 
     **Valor predeterminado**: No configurado  
-
-     > [!IMPORTANT]  
-     > Hay un problema conocido cuando el valor **Deshabilitar mensaje al cierre de sesión** se establece en *Deshabilitado*. Cuando se establece en *Deshabilitado*, la opción **Número de veces que se permite omitir** se debe establecer en un valor y no debe establecerse como *No configurado*. Si se establece en *Sin configurar*, el perfil producirá un error en el dispositivo. En este escenario, el dispositivo informa de que se trata de un **Resumen de estado del perfil** como **Error** sin detalles adicionales.
-     > 
-     > Cuando **Deshabilitar mensaje al cierre de sesión** se establece en *Sin configurar*, **Número de veces que se permite omitir** puede estar *Sin configurar* o tener un valor.  
-     > 
-     > Esta incidencia se resolverá en una actualización futura. 
 
   - **Número de veces que se permite omitir**  
   Establezca el número de veces que un usuario puede omitir las solicitudes para habilitar FileVault antes de que FileVault sea necesario para que el usuario inicie sesión.  

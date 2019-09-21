@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df943fdc0105b0f32401b79434045811f065bef
-ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
+ms.openlocfilehash: 19307f2ffc234a1eacf30b3aa43fe9c626073f6c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864542"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167829"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -34,12 +34,12 @@ Cuando se lanza una nueva línea de base de seguridad de MDM, la lista anterior 
 
 Cuando una versión de línea de base ya no se admite para su uso, se quitará de este artículo.
 
-- Vea la configuración que está disponible en [la línea de base de seguridad de MDM actual](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019). 
+- Vea la configuración que está disponible en [la línea de base de seguridad de MDM actual](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019).
 - Obtenga información sobre las [líneas base de seguridad](security-baselines.md)y cómo actualizar la versión de línea base en los perfiles de línea de base de seguridad.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Versión preliminar: línea de base de seguridad de MDM para octubre de 2018  
 
-*Esta línea base se sustituye por la [línea de base de seguridad de MDM para el 2019 de mayo](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)*
+*Esta línea base se sustituye por la [línea de base de seguridad de MDM para el 2019 de mayo](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)*
 
 ### <a name="above-lock"></a>Above Lock (Por encima de la pantalla de bloqueo)  
 
@@ -577,7 +577,7 @@ Para más información, vea [Policy CSP - InternetExplorer](https://docs.microso
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone allow vbscript to run** (Permitir que VBScript se ejecute en la zona de Internet de Internet Explorer)  
-  Esta configuración de directiva permite administrar si VBScript se puede ejecutar en las páginas de zonas específicas de Internet Explorer. Las opciones son: 
+  Esta configuración de directiva permite administrar si VBScript se puede ejecutar en las páginas de zonas específicas de Internet Explorer. Las opciones incluyen: 
   - *Habilitar*: VBScript se ejecuta en páginas de zonas específicas sin la intervención del usuario. 
   - *Preguntar*: se consultará con los empleados si quieren permitir la ejecución de VBScript en la zona. 
   - *Deshabilitar*: se impide que VBScript se ejecute en la zona. Si deshabilita o no establece esta configuración de directiva, VBScript se ejecuta en la zona especificada sin ninguna interacción. 
@@ -1150,7 +1150,7 @@ Para más información, vea [Policy CSP - Power](https://docs.microsoft.com/wind
   
   **Valor predeterminado**: Habilitado
   
-### <a name="remote-desktop-services"></a>Servicios de Escritorio Remoto  
+### <a name="remote-desktop-services"></a>Servicios de Escritorio remoto  
 
 Para más información, vea [Policy CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) (CSP de directiva: RemoteDesktopServices) en la documentación de Windows.  
 
@@ -1261,7 +1261,7 @@ Para más información, vea [Policy CSP - SmartScreen](https://docs.microsoft.co
 
   **Valor predeterminado**: Sí
   
-### <a name="system"></a>System (Sistema)  
+### <a name="system"></a>System  
 
 Para más información, vea [Policy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) (CSP de directiva: System) en la documentación de Windows.  
 
@@ -1441,5 +1441,5 @@ Para más información, vea [Policy CSP - WindowsPowerShell](https://docs.micros
  
 ## <a name="next-steps"></a>Pasos siguientes  
 
-[Ver la versión de línea base actual](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
+[Ver la versión de línea base actual](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)  
 [Actualizar perfiles para usar una nueva versión de línea base](security-baselines.md#change-the-baseline-version-for-a-profile)

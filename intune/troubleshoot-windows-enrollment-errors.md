@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 0f78f069f46ce036752fde80519abc03dc7c424c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063008"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167776"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos Windows en Microsoft Intune
 
@@ -149,7 +149,7 @@ Vaya al [centro de administración de Microsoft 365](https://portal.office.com/a
 ##### <a name="correct-the-mdm-terms-of-use-url"></a>Corrija la dirección URL de los términos de uso de MDM
   1. Inicie sesión en [Azure Portal](https://portal.azure.com/) y seleccione **Azure Active Directory**.    
   2. Seleccione **movilidad (MDM y MAM)** y, a continuación, haga clic en **Microsoft Intune**.    
-  3. Seleccione **restaurar direcciones**URL de MDM predeterminadas, compruebe que la **dirección URL de los términos de uso de MDM** esté establecida en **https://portal.manage.microsoft.com/TermsofUse.aspx** .    
+  3. Seleccione **restaurar direcciones URL de MDM predeterminadas**, compruebe que la **dirección URL de los términos de uso de MDM** esté establecida en **https://portal.manage.microsoft.com/TermsofUse.aspx** .    
   4. Elija **Guardar**.    
 
 
@@ -388,4 +388,4 @@ Este problema se debe normalmente a la delegación incorrecta de los permisos en
 - [Formule una pregunta en el foro de Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 - [Consultar el blog del equipo de soporte técnico de Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Consulte el blog de Microsoft Enterprise Mobility and Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
-- [Cómo obtener asistencia para Microsoft Intune](https://docs.microsoft.com/intune/get-support) 
+- [Cómo obtener asistencia para Microsoft Intune](get-support.md)

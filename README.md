@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545235"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166467"
 ---
-## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta del Código Abierto de Microsoft
+## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta del código abierto de Microsoft
 
-Este proyecto adoptó el [Código de conducta del Código Abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/).
-Para obtener más información, consulte las [Preguntas Frecuentes del Código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene más preguntas o comentarios.
+Este proyecto ha adoptado el [código de conducta del código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Para obtener más información, vea las [preguntas más frecuentes sobre el código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene preguntas o comentarios adicionales.
 
 # <a name="docsmicrosoftcom-github-repository"></a>Repositorio de Github de docs.microsoft.com
 
@@ -23,7 +23,7 @@ Ha encontrado uno de los repositorios de GitHub que contiene el origen del conte
 * **Use el explorador**: hay dos opciones: 
 
     **Opción 1: editar directamente desde docs.microsoft.com**  
-    1. Vaya al tema, como [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
+    1. Vaya al tema, como [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md). 
     2. Seleccione **Editar**, en la parte superior derecha. Esto muestra el archivo Markdown en el repositorio de GitHub.
     3. Seleccione el icono de lápiz. Al mantener el mouse sobre el icono de lápiz, se ve la información sobre herramientas **Editar este archivo**. 
     4. Realice los cambios y, luego, **confírmelos**. 

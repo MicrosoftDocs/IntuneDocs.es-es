@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b333c848368f00f005ed0febc61f67f098ee7e5e
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: eb470885be8f09f0c99dfe26a1d982570644ac8a
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979181"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167605"
 ---
 # <a name="intune-data-warehouse-collections"></a>Colecciones de almacenamiento de datos de Intune
 
@@ -36,7 +36,7 @@ La entidad **appRevision** muestra todas las versiones de las aplicaciones.
 | AppKey                     | Identificador único de la aplicación.                                                         | 123                                  |
 | ApplicationId              | Identificador único de la aplicación. Se parece a AppKey, pero es una clave natural.        | b66bc706-ffff-7437-0340-032819502773 |
 | Revisión                   | Versión tal como la indicó el administrador durante la carga del archivo binario.                   | 2                                    |
-| Título                      | Título de la aplicación.                                                                     | Excel                                |
+| Title                      | Título de la aplicación.                                                                     | Excel                                |
 | Publicador                  | Editor de la aplicación.                                                                 | Microsoft                            |
 | UploadState                | Estado de carga de la aplicación.                                                              | 1                                    |
 | AppTypeKey                 | Referencia a AppType descrita en la sección siguiente.                            | 1                                    |
@@ -46,7 +46,7 @@ La entidad **appRevision** muestra todas las versiones de las aplicaciones.
 | Tamaño                       | Tamaño del archivo binario en bytes.                                                          | 120,392,000                          |
 | StartDateInclusiveUTC      | Fecha y hora en formato UTC en que se ha creado esta revisión de la aplicación en el almacenamiento de datos.      | 23/11/2016 0:00                      |
 | EndDateExclusiveUTC        | Fecha y hora en formato UTC en que ha quedado obsoleta esta revisión de la aplicación.                        | 23/11/2016 0:00                      |
-| IsCurrent                  | Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos.         | Verdadero/Falso                           |
+| IsCurrent                  | Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos.         | Verdadero o falso                           |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se ha modificado por última vez esta versión de la aplicación en el almacenamiento de datos. | 23/11/2016 0:00                      |
 
 ## <a name="apptypes"></a>appTypes
@@ -115,7 +115,7 @@ La siguiente tabla resume el estado de asignación de directivas de cumplimiento
 
 |  complianceStatus  |                       Descripción                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unknown         |    Desconocido.                                                                        |
+|    Unknown         |    desconocida.                                                                        |
 |    Conforme       |    Conforme.                                                                      |
 |    No conforme    |       Dispositivo no conforme y con acceso bloqueado a los recursos corporativos.             |
 |    Conflicto        |    Conflicto con otras reglas.                                                      |
@@ -359,7 +359,7 @@ La entidad **EnrollmentFailureCategory** indica el motivo del error de una inscr
 | No disponible                   | La categoría del error de la inscripción no está disponible.                                                             |
 | Unknown                         | Error desconocido.                                                                                                |
 | Autenticación                  | Error de autenticación.                                                                                        |
-| Autorización                   | La llamada se ha autenticado, pero no tiene autorización para inscribirse.                                                         |
+| Authorization                   | La llamada se ha autenticado, pero no tiene autorización para inscribirse.                                                         |
 | AccountValidation               | Error al validar la cuenta para la inscripción. (Cuenta bloqueada, inscripción no habilitada).                      |
 | UserValidation                  | No se ha podido validar al usuario. (El usuario no existe, falta la licencia).                                           |
 | DeviceNotSupported              | El dispositivo no es compatible con la administración de dispositivos móviles.                                                         |
@@ -436,7 +436,7 @@ La entidad **MamApplication** muestra las aplicaciones de línea de negocio (LOB
 | mamApplicationKey |Identificador único de la aplicación MAM. | 432 |
 | mamApplicationName |Nombre de la aplicación MAM. |Nombre de ejemplo de la aplicación MAM |
 | mamApplicationId |Identificador de la aplicación MAM. | 123 |
-| IsDeleted |Indica si se ha actualizado el registro de la aplicación MAM. <br>True: la aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de esta aplicación MAM. |Verdadero/Falso |
+| IsDeleted |Indica si se ha actualizado el registro de la aplicación MAM. <br>True: la aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de esta aplicación MAM. |Verdadero o falso |
 | StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 | DeletedDateUTC |Fecha y hora en formato UTC en que IsDeleted ha cambiado a True. |23/11/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
@@ -461,7 +461,7 @@ La entidad **MamApplicationInstance** muestra las aplicaciones de administració
 | mamDeviceId | Identificador de dispositivo al que está asociada la instancia de la aplicación MAM.   | 23/11/2016 12:00:00 AM   |
 | mamDeviceType | Tipo de dispositivo al que está asociada la instancia de la aplicación MAM.   | 23/11/2016 12:00:00 AM   |
 | mamDeviceName | Nombre de dispositivo al que está asociada la instancia de la aplicación MAM.   | 23/11/2016 12:00:00 AM   |
-|         IsDeleted          | Indica si se ha actualizado el registro de la instancia de esta aplicación MAM. <br>True: la instancia de esta aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de la instancia de esta aplicación MAM. |              Verdadero/Falso              |
+|         IsDeleted          | Indica si se ha actualizado el registro de la instancia de esta aplicación MAM. <br>True: la instancia de esta aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de la instancia de esta aplicación MAM. |              Verdadero o falso              |
 |   StartDateInclusiveUtc    |                                                              Fecha y hora en formato UTC en que se ha creado la instancia de esta aplicación MAM en el almacenamiento de datos.                                                               |        23/11/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                                                              |        23/11/2016 12:00:00 AM        |
 | RowLastModifiedDateTimeUtc |                                                           Fecha y hora en formato UTC en que se ha modificado por última vez la instancia de esta aplicación MAM en el almacenamiento de datos.                                                            |        23/11/2016 12:00:00 AM        |
@@ -575,7 +575,7 @@ Representa el estado de instalación de una aplicación móvil para un tipo de d
 | AppKey             | Clave de la aplicación móvil usada para identificar una instancia de AppRevision.                                                          |
 | DeviceTypeKey      | Clave del tipo de dispositivo asociada a la aplicación móvil.                                                              |
 | AppInstallStateKey | Clave del estado de instalación de la aplicación usada para identificar una instancia de MobileAppInstallState.                                         |
-| ErrorCode          | El código de error devuelto por el instalador de la aplicación, la plataforma móvil o el servicio referente a la instalación de la aplicación. |
+| Código de error          | El código de error devuelto por el instalador de la aplicación, la plataforma móvil o el servicio referente a la instalación de la aplicación. |
 | Número              | Número total.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
@@ -599,7 +599,7 @@ La entidad **Policy** muestra los perfiles de configuración de dispositivos, lo
 | PolicyId                   | Identificador único de la directiva en el almacenamiento de datos.                                                                                                 | b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName                 | Nombre de la directiva.                                                                                                                                    | "Línea base de Windows 10"                |
 | PolicyVersion              | Versión de la directiva. Cuando la directiva se modifica o se cambia, se crea una versión más reciente.                                                             | 1, 2, 3                              |
-| IsDeleted                  | Indica si se ha actualizado el registro de la directiva.  True: la directiva tiene un nuevo registro con campos actualizados.  False: registro más reciente de la directiva. | Verdadero/Falso                           |
+| IsDeleted                  | Indica si se ha actualizado el registro de la directiva.  True: la directiva tiene un nuevo registro con campos actualizados.  False: registro más reciente de la directiva. | Verdadero o falso                           |
 | StartDateInclusiveUTC      | Fecha y hora en formato UTC en que se ha creado la directiva en el almacenamiento de datos.                                                                              | 23/11/2016 0:00                      |
 | DeletedDateUTC             | Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                                                                                   | 23/11/2016 0:00                      |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se ha modificado por última vez la directiva en el almacenamiento de datos.                                                                        | 23/11/2016 0:00                      |
@@ -666,7 +666,7 @@ Una entidad **termsAndConditions** representa los metadatos y el contenido de un
 |    termsAndCondidionsId    |    El identificador de esta entrada termsAndConditions    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    La versión de esta entrada de términos y condiciones    |    1    |
 |    name    |    El nombre de esta entrada termsAndConditions.        |    Términos de uso de Intune     |
-|    description    |    La descripción de estos términos y condiciones.     |         |
+|    descripción    |    La descripción de estos términos y condiciones.     |         |
 |    title    |    El título de estos términos y condiciones.     |    Directiva corporativa de administración de dispositivos        |
 |    summaryOfTerms    |    El resumen de términos dados al usuario.     |    Acepto los términos y condiciones.    |
 |    termsAndConditionsBodyText    |    El cuerpo del texto de estos términos y condiciones.       |    *Cifrado de dispositivo* Exigencia de PIN de 6 dígitos    |
@@ -682,7 +682,7 @@ La entidad **UserDeviceAssociation** contiene las asociaciones de dispositivos d
 | UserKey            | Identificador único del usuario en el almacenamiento de datos.   (Clave suplente).                            | 123             |
 | DeviceKey          | Identificador único del dispositivo en el almacenamiento de datos.                                             | 123             |
 | CreatedDateTimeUTC | Fecha y hora de creación de la asociación de dispositivos de usuario. Utiliza el formato UTC.                     | 23/11/2016 0:00 |
-| IsDeleted          | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. | Verdadero/Falso      |
+| IsDeleted          | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. | Verdadero o falso      |
 | EndedDateTimeUTC   | Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                               | 23/6/2017 0:00  |
 
 ## <a name="users"></a>usuarios
@@ -698,7 +698,7 @@ La colección de entidades **user** contiene los datos de usuario. Dichos regist
 | userPrincipalName                        | Nombre principal del usuario.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Nombre para mostrar del usuario.                                                                                                                                                                                                      | Juan                                 |
 | IntuneLicensed             | Especifica si este usuario tiene licencia de Intune o no.                                                                                                                                                                              | Verdadero/Falso                           |
-| IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero/Falso                           |
+| IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero o falso                           |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se modificó por última vez el registro en el almacenamiento de datos                                                                                                                                                 | 23/11/2016 0:00                      |
 
 ## <a name="usertermsandconditionsacceptances"></a>userTermsAndConditionsAcceptances
@@ -731,5 +731,4 @@ La entidad **vppProgramTypes** muestra los posibles tipos de programa VPP para u
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para más información sobre el almacenamiento de datos de Intune, consulte [Modelo de datos de Almacenamiento de datos](https://docs.microsoft.com/intune/reports-ref-data-model).
-
+Para más información sobre el almacenamiento de datos de Intune, consulte [Modelo de datos de Almacenamiento de datos](reports-ref-data-model.md).

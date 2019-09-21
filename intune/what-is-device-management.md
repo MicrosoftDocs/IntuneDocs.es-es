@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 99dcf53d7571dfa660ee669c1d7adcea65f0797e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022862"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167730"
 ---
 # <a name="what-is-device-management"></a>¿Qué es la administración de dispositivos? 
 
@@ -28,7 +28,7 @@ Una tarea esencial para cualquier administrador es la de proteger y asegurar los
 
 Si la organización usa un proveedor de administración de dispositivos, tendrá la garantía de que solo acceden a la información de su propiedad aquellas personas y dispositivos que están autorizados. Del mismo modo, los usuarios de los dispositivos pueden acceder con tranquilidad a los datos de su trabajo desde la comodidad de su teléfono, porque saben que su dispositivo cumple los requisitos de seguridad de su organización. Las organizaciones se preguntarán: **¿qué debemos usar para proteger nuestros recursos?**
 
-La respuesta es [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune). Intune ofrece administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM). Estas son algunas tareas esenciales de cualquier solución de MDM o MAM:
+La respuesta es [Microsoft Intune](introduction-intune.md). Intune ofrece administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM). Estas son algunas tareas esenciales de cualquier solución de MDM o MAM:
 
 - Admitir un entorno móvil variado y administrar dispositivos iOS, Android, Windows y macOS de forma segura.
 - Garantizar que los dispositivos y las aplicaciones sean compatibles con los requisitos de seguridad de la organización.
@@ -44,7 +44,7 @@ Es habitual que las personas tengan varios dispositivos que usan plataformas dis
 
 Con Intune es posible administrar varios dispositivos por persona y las distintas plataformas que se ejecutan en cada dispositivo, incluido iOS, macOS, Android y Windows. Intune separa las directivas y la configuración por plataforma de dispositivo, para que resulte fácil administrar y ver los dispositivos de una plataforma específica.
 
-**[Usos habituales de Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios)** es un excelente recurso para ver cómo Intune responde ante preguntas comunes al trabajar con dispositivos móviles. Encontrará escenarios sobre:  
+**[Usos habituales de Microsoft Intune](common-scenarios.md)** es un excelente recurso para ver cómo Intune responde ante preguntas comunes al trabajar con dispositivos móviles. Encontrará escenarios sobre:  
 - Protección del correo electrónico con Exchange local
 - Acceso a Office 365 de forma segura
 - Uso de dispositivos personales para acceder a recursos de la organización
@@ -52,16 +52,16 @@ Con Intune es posible administrar varios dispositivos por persona y las distinta
 ## <a name="integration-with-secure-and-protect-services"></a>Integración con servicios de protección
 Una tarea esencial de cualquier solución de administración de dispositivos consiste en proporcionar seguridad y protección. Intune se integra a la perfección con otros servicios para realizar esta tarea. Por ejemplo:
 
-- **Microsoft 365** es un componente clave para simplificar las tareas comunes de TI. En el centro de administración de Microsoft 365, se crean usuarios y se administran grupos. También se puede acceder a otros servicios, como Intune, Azure AD y mucho más. 
+- **Microsoft 365** es un componente clave para simplificar las tareas comunes de TI. En el centro de administración de Microsoft 365, se crean usuarios y se administran grupos. También se puede acceder a otros servicios, como Intune, Azure AD y mucho más.
 
   Por ejemplo, se puede crear un grupo de dispositivos iOS en Microsoft 365. Después, use Intune para insertar directivas en el grupo de dispositivos iOS que se centra en características de iOS, como acceder a la tienda de aplicaciones, usar AirDrop, hacer copias de seguridad en iCloud, usar el filtro web de Apple y mucho más.
 
 - **Windows Defender** incluye muchas características de seguridad con las que puede proteger dispositivos Windows 10. Por ejemplo, con Intune y Windows Defender juntos puede hacer esto: 
 
-  - Habilitar [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) para buscar actividades sospechosas en archivos y aplicaciones en dispositivos móviles. 
-  - Usar [Protección contra amenazas avanzada de Microsoft Defender (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) para evitar infracciones de seguridad en dispositivos móviles, y limitar el impacto de una infracción de seguridad mediante el bloqueo de un usuario desde los recursos corporativos.
+  - Habilitar [Windows Defender SmartScreen](endpoint-protection-windows-10.md) para buscar actividades sospechosas en archivos y aplicaciones en dispositivos móviles. 
+  - Usar [Protección contra amenazas avanzada de Microsoft Defender (ATP)](advanced-threat-protection.md) para evitar infracciones de seguridad en dispositivos móviles, y limitar el impacto de una infracción de seguridad mediante el bloqueo de un usuario desde los recursos corporativos.
 
-- **Acceso condicional** es una característica de Azure Active Directory que se integra perfectamente con Intune. Al usar el [acceso condicional](https://docs.microsoft.com/intune/conditional-access), asegúrese de que solo los dispositivos compatibles pueden acceder al correo electrónico, SharePoint y otras aplicaciones. 
+- **Acceso condicional** es una característica de Azure Active Directory que se integra perfectamente con Intune. Al usar el [acceso condicional](conditional-access.md), asegúrese de que solo los dispositivos compatibles pueden acceder al correo electrónico, SharePoint y otras aplicaciones. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Elegir la solución de administración de dispositivos que más le conviene
 
@@ -69,7 +69,7 @@ Hay dos maneras de aproximarse a la administración de dispositivos. Primero, pu
 
 El otro enfoque consiste en administrar las aplicaciones en los dispositivos. Este método se denomina **Administración de aplicaciones móviles (MAM)** . Con este método, los usuarios pueden usar sus dispositivos personales para acceder a recursos de la organización. Al abrir una aplicación, como el correo electrónico o SharePoint, se pedirá a los usuarios una autenticación adicional. Si alguna vez se pierde un dispositivo o lo roban, puede quitar todos los datos de la organización del dispositivo. 
 
-También puede usar una combinación de [MDM y MAM](https://docs.microsoft.com/intune/byod-technology-decisions) juntos.
+También puede usar una combinación de [MDM y MAM](byod-technology-decisions.md) juntos.
 
 Al configurar Intune, también elige si trabaja solo en el portal de Azure para administrar dispositivos o si usa Intune y Microsoft 365 juntos para administrar dispositivos. [Migración de administración de dispositivos móviles a Intune en Azure Portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) es un caso práctico de Microsoft IT. En este caso práctico, se explica cómo Microsoft IT ha elegido un enfoque moderno de administración de dispositivos y las lecciones aprendidas.
 
@@ -79,20 +79,20 @@ El [centro de administración de Administración de dispositivos](https://device
 
 En el centro de administración de dispositivos, puede:
 
-- [Inscripción de dispositivos](https://docs.microsoft.com/intune/device-enrollment)
-- [Establecimiento del cumplimiento de los dispositivos](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [Administrar dispositivos](https://docs.microsoft.com/intune/device-management)
-- [Administración de aplicaciones](https://docs.microsoft.com/intune/app-management)  
-- [eBooks de iOS](https://docs.microsoft.com/intune/vpp-ebooks-ios)  
-- [Instalar el conector local de Exchange](https://docs.microsoft.com/intune/exchange-connector-install)  
-- [Administración de roles](https://docs.microsoft.com/intune/role-based-access-control)  
+- [Inscripción de dispositivos](device-enrollment.md)
+- [Establecimiento del cumplimiento de los dispositivos](device-compliance-get-started.md)
+- [Administrar dispositivos](device-management.md)
+- [Administración de aplicaciones](app-management.md)  
+- [eBooks de iOS](vpp-ebooks-ios.md)  
+- [Instalar el conector local de Exchange](exchange-connector-install.md)  
+- [Administración de roles](role-based-access-control.md)  
 - Administrar actualizaciones de software
-  - [Administrar actualizaciones de Windows 10](https://docs.microsoft.com/intune/windows-update-for-business-configure)  
-  - [Administrar actualizaciones de iOS](https://docs.microsoft.com/intune/software-updates-ios)  
+  - [Administrar actualizaciones de Windows 10](windows-update-for-business-configure.md)  
+  - [Administrar actualizaciones de iOS](software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Administración de usuarios](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Administrar grupos y miembros](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [Solución de problemas](https://docs.microsoft.com/intune/help-desk-operators)
+- [Solución de problemas](help-desk-operators.md)
 
 ## <a name="next-step"></a>Paso siguiente
 Cuando esté listo para empezar a trabajar con una solución de MDM o MAM, siga los distintos pasos para configurar Intune, inscribir dispositivos y empezar a crear directivas. [Mobile device management for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) (Administración de dispositivos móviles para Microsoft 365) también es un excelente recurso.

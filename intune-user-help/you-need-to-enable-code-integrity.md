@@ -18,23 +18,25 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 167d091f212536ed94e3f4ce0c103649e4a2e537
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413825"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167479"
 ---
 # <a name="enable-code-integrity"></a>Habilitación de la integridad de código
 
-Su organización puede requerir su PC esté habilitado con una característica de protección contra amenazas denominada *integridad de código*. Integridad de código comprueba los controladores y los archivos del sistema en el dispositivo en busca de indicios de daños o software malintencionado. Para que la integridad de código para que funcione en su dispositivo, otra característica de seguridad llamado [ *arranque seguro* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) también debe estar habilitada. 
+Su organización puede requerir que el equipo esté habilitado con una característica de protección contra amenazas denominada *integridad de código*. La integridad de código comprueba los controladores y los archivos del sistema del dispositivo en busca de indicios de daños o software malintencionado. Para que la integridad del código funcione en el dispositivo, también debe estar habilitada otra característica de seguridad denominada [*arranque seguro*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) .
 
-Si su PC no es compatible porque la integridad de código está deshabilitada, debe ponerse en contacto con su organización TI equipo de soporte técnico. Le ayudaremos a habilitar el arranque seguro, lo que desencadenará la integridad de código la próxima vez que se inicia el dispositivo. 
+Si el equipo no es compatible porque la integridad del código está deshabilitada, debe ponerse en contacto con el equipo de soporte técnico de TI de su organización. Le ayudarán a habilitar el arranque seguro, que desencadenará la integridad del código la próxima vez que inicie el dispositivo.
 
-Si identificarse como un usuario del dispositivo avanzado y desea probar los pasos por su cuenta, consulte [volver a habilitar el arranque seguro](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
+Si se identifica como un usuario de dispositivo avanzado y desea probar los pasos por su cuenta, consulte [volver a habilitar el arranque seguro](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-## <a name="additional-resources-for-it-administrators"></a>Recursos adicionales para los administradores de TI  
-Si es un administrador de Intune y desea obtener más información sobre la configuración de cumplimiento de estado de dispositivo de Intune, consulte [agregar una directiva de cumplimiento para dispositivos Windows 10 en Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Para una visión detallada de las acciones de cumplimiento que puede realizar en Intune, consulte el [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+## <a name="additional-resources-for-it-administrators"></a>Recursos adicionales para los administradores de ti
 
-## <a name="next-steps"></a>Pasos siguientes  
+Si es administrador de Intune y desea obtener más información sobre la configuración de cumplimiento de estado de los dispositivos de Intune, consulte [incorporación de una directiva de cumplimiento de dispositivos para dispositivos Windows 10 en Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows.md). Para ver una visión detallada de las acciones de cumplimiento que puede realizar en Intune, consulte el [CSP de HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+
+## <a name="next-steps"></a>Pasos siguientes
+
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

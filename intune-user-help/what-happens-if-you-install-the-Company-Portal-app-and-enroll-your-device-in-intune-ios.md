@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545863"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099809"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>¿Qué ocurre si instala la aplicación Portal de empresa e inscribe su dispositivo iOS en Intune?
 
@@ -37,7 +37,10 @@ Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS en I
 
 - Configurar automáticamente la cuenta de correo electrónico profesional.
 
-Cuando inscribe el dispositivo en Intune, está concediendo permiso al equipo de soporte técnico de su empresa para administrarlo con el fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
+> [!NOTE]
+> Por cualquier motivo, no vendemos ningún dato recopilado por nuestro servicio a terceros.  
+
+Cuando inscribe el dispositivo en Intune, está concediendo permiso al equipo de soporte técnico de su empresa para administrarlo con el fin de ayudarle a proteger la información de la empresa que tiene en el mismo.  
 
 Cuando el dispositivo esté inscrito, el equipo de soporte técnico de su empresa podrá:
 
@@ -64,5 +67,7 @@ Cuando el dispositivo esté inscrito, el equipo de soporte técnico de su empres
 - Habilitar o deshabilitar la movilidad de voz en el dispositivo. Si se permite la itinerancia de voz, podrían aplicarse cargos por movilidad.
 
 - Habilitar o deshabilitar en el dispositivo la sincronización automática de archivos en modo de movilidad. Si se permite la sincronización automática de archivos, podrían aplicarse cargos por movilidad.
+
+
 
 Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

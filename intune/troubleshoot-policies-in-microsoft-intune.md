@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298395"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071701"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solución de problemas de directivas y perfiles en Intune
 
@@ -30,8 +30,8 @@ Microsoft Intune incluye algunas características integradas de solución de pro
 
 En este artículo se enumeran algunas técnicas de solución de problemas comunes y se describen algunos problemas que puede experimentar.
 
-## <a name="check-tenant-status"></a>Comprobar el estado de inquilino
-Compruebe el [estado del inquilino](tenant-status.md) y confirme la suscripción está activa. También puede ver los detalles de incidentes activos y avisos de que puedan afectar a la implementación de directiva o el perfil.
+## <a name="check-tenant-status"></a>Comprobar el estado del inquilino
+Compruebe el [Estado del inquilino](tenant-status.md) y confirme que la suscripción está activa. También puede ver los detalles de incidentes activos y avisos que pueden afectar a la implementación de la Directiva o el perfil.
 
 ## <a name="use-built-in-troubleshooting"></a>Uso de la solución de problemas integrada
 
@@ -118,10 +118,10 @@ Compruebe el [estado del inquilino](tenant-status.md) y confirme la suscripción
 
 ## <a name="policy-troubleshooting-resources"></a>Recursos de solución de problemas de directivas
 
-- [Solución de problemas de directivas no se aplica a dispositivos de Android o iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre otro sitio de Microsoft)
-- [Solucionar problemas de directiva de Windows Intune de 10](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre un blog)
-- [Solución de problemas de configuración personalizada de CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre otro sitio de Microsoft)
-- [Directiva de grupo de Windows 10 frente a Intune MDM directiva](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre otro sitio de Microsoft)
+- [Solución de problemas de directivas de iOS o Android que no se aplican a los dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre otro sitio de Microsoft)
+- [Solución de problemas de errores de directivas de Windows 10 Intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre un blog)
+- [Solucionar problemas de configuración personalizada de CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre otro sitio de Microsoft)
+- [Directiva de MDM de Windows 10 Directiva de grupo frente a Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre otro sitio de Microsoft)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: error al guardar las reglas de acceso en Exchange
 
@@ -135,7 +135,7 @@ Si crea directivas en el área de trabajo Directiva de Exchange local (consola d
 
 Una vez establecidas las directivas de seguridad a través de MDM o EAS, los dispositivos Windows Phone no permiten que se reduzca su nivel de seguridad. Por ejemplo, establece una **contraseña con un número mínimo de caracteres** en 8 y después intenta reducirla a 4. Se aplica la directiva más restrictiva al dispositivo.
 
-Dispositivos Windows 10 no pueden quitar las directivas de seguridad al quitar la asignación de la directiva (detener la implementación). Es posible que deba dejar la directiva asignada y, a continuación, cambie la configuración de seguridad a los valores predeterminados.
+Los dispositivos de Windows 10 no pueden quitar directivas de seguridad cuando se anula la asignación de la Directiva (detener la implementación). Es posible que deba dejar la directiva asignada y, a continuación, volver a cambiar la configuración de seguridad a los valores predeterminados.
 
 En función de la plataforma del dispositivo, si quiere cambiar la directiva a un valor menos seguro, es posible que tenga que restablecer las directivas de seguridad.
 

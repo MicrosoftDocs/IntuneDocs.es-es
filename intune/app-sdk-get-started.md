@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbaeb5efa2b23a7fad4761878b25118786609447
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 4b24387636408d2e28891aae13962c2febf9f329
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842134"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167193"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -161,7 +161,7 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
 
   * Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
 
-  * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Centro de administración de Microsoft 365. Para más información, vea [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](https://docs.microsoft.com/intune/licenses-assign).
+  * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Centro de administración de Microsoft 365. Para más información, vea [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](licenses-assign.md).
 
 * **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md). Si su aplicación ha integrado el SDK de Intune, pero aún no figura en Azure Portal como una aplicación específica, puede orientarla con una directiva seleccionando la opción "+ Más aplicaciones" y proporcionando el id. del paquete (iOS) o el nombre del paquete. (Android) en el cuadro de texto.
 

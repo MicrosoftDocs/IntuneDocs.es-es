@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa723942c9633a3851f75e3e08bf843cbb4bdf55
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 850c7a28c4df1638e9f635713695dcf2e914ffce
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842154"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166936"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalación de aplicaciones
 
@@ -61,7 +61,7 @@ Se deben tener en cuenta las siguientes acciones cuando tenga problemas al insta
   3. Vaya a [Azure Active Directory usuarios](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
   4. Seleccione el usuario afectado y haga clic en **dispositivos**.
   5. Si el usuario supera el límite establecido, elimine los registros obsoletos que ya no sean necesarios.
-- En el caso de dispositivos DEP de iOS, asegúrese de que el usuario aparece como **inscrito por el usuario** en la hoja de información general del dispositivo de Intune. Si muestra NA, implemente una directiva de configuración para el Portal de empresa de Intune. Para obtener más información, consulte [configuración de la aplicación portal de empresa](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
+- En el caso de dispositivos DEP de iOS, asegúrese de que el usuario aparece como **inscrito por el usuario** en la hoja de información general del dispositivo de Intune. Si muestra NA, implemente una directiva de configuración para el Portal de empresa de Intune. Para obtener más información, consulte [configuración de la aplicación portal de empresa](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Solución de problemas de instalación de aplicaciones Win32
 
@@ -151,7 +151,7 @@ En esta sección se menciona la inscripción de administrador de dispositivos (D
 | No se pueden instalar aplicaciones cuando el dispositivo está en pantalla completa (-2016330856). | Pruebe a agregar este dispositivo a un grupo de exclusión para que la directiva de configuración de pantalla completa instale las aplicaciones. |
 | No se pueden instalar aplicaciones de 32 bits en este dispositivo (-2016330852). | El dispositivo no admite la instalación de aplicaciones de 32 bits. Pruebe a implementar la versión de 64 bits de la aplicación. |
 | Los usuarios deben iniciar sesión en App Store (-2016330855). | El usuario debe iniciar sesión en App Store para que la aplicación se pueda instalar. |
-| Problema desconocido. Inténtelo de nuevo (-2016330854). | No se pudo instalar la aplicación debido a un motivo desconocido. Inténtelo de nuevo más tarde. |
+| Problema desconocido. Inténtelo de nuevo (-2016330854). | No se pudo instalar la aplicación debido a un motivo desconocido. Inténtelo más tarde. |
 | Error al instalar la aplicación. Intune lo intentará de nuevo la próxima vez que el dispositivo se sincronice (-2016330853). | Se produjo un error de dispositivo en la instalación de la aplicación. Sincronice el dispositivo para intentar instalar la aplicación de nuevo. |
 | Error de asignación de licencia con el error de Apple "no hay licencias de PCV restantes" (0x87d13b7e) | Este es el comportamiento esperado. Para solucionarlo, adquiera licencias de PCV adicionales o reclame licencias de usuarios que ya no tengan como destino. |
 | Error de instalación de la aplicación 12024: causa desconocida. (0x87d13b6e) | Apple no nos ha proporcionado información suficiente para determinar por qué se produjo un error en la instalación. No hay nada que notificar. |
