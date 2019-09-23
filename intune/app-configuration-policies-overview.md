@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160566"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061592"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
 Las directivas de configuración de aplicaciones pueden ayudar a eliminar problemas de configuración de aplicaciones, ya que permiten asignar opciones de configuración a una directiva que se asigna a los usuarios finales antes de que ejecuten la aplicación. La configuración se proporciona de forma automática al configurar la aplicación en el dispositivo de los usuarios finales, que no tendrán que realizar ninguna acción. Los valores de configuración son únicos para cada aplicación. 
 
-Puede crear y usar directivas de configuración de aplicaciones para proporcionar valores de configuración para aplicaciones iOS o Android. Estos valores de configuración permiten personalizar una aplicación mediante el uso de un [enfoque estándar del sector](https://www.appconfig.org/) para la configuración y administración de aplicaciones. Los valores de la directiva de configuración se usan cada vez que la aplicación los comprueba, que suele ser la primera vez que se ejecuta. 
+Puede crear y usar directivas de configuración de aplicaciones para proporcionar valores de configuración para aplicaciones iOS o Android. Estos valores de configuración permiten personalizar una aplicación mediante el uso de la configuración y administración de aplicaciones. Los valores de la directiva de configuración se usan cada vez que la aplicación los comprueba, que suele ser la primera vez que se ejecuta. 
 
 Por ejemplo, para una aplicación podría ser necesario especificar uno de estos detalles:
 
@@ -60,7 +60,7 @@ Tiene dos opciones para usar las directivas de configuración de aplicaciones co
 ## <a name="apps-that-support-app-configuration"></a>Aplicaciones que admiten la configuración de aplicaciones
 
 ### <a name="managed-devices"></a>Dispositivos administrados
-Puede usar las directivas de configuración de aplicaciones en las aplicaciones que las admitan. Para admitir la configuración de aplicaciones en Intune, las aplicaciones se deben escribir para este fin, como lo define la [AppConfig Community](https://www.appconfig.org/members). Consulte con el proveedor de su aplicación para obtener más información.
+Puede usar las directivas de configuración de aplicaciones en las aplicaciones que las admitan. Para admitir la configuración de aplicaciones en Intune, las aplicaciones se deben escribir para este fin, como lo define el sistema operativo. Consulte al proveedor de la aplicación para obtener más información sobre las claves de configuración de la aplicación que admite.
 
 ### <a name="managed-apps"></a>Aplicaciones administradas
 Puede preparar las aplicaciones de línea de negocio si incorpora [Intune App SDK](app-sdk.md) en la aplicación, o bien si la encapsula después de que haberla desarrollado con la [Herramienta de ajuste de aplicaciones de Intune](apps-prepare-mobile-application-management.md). Intune App SDK intenta minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md). Para obtener una comparación entre Intune App SDK y la herramienta de ajuste de aplicaciones de Intune, vea [Preparación de aplicaciones de línea de negocio para las directivas de protección de aplicaciones](apps-prepare-mobile-application-management.md#feature-comparison).

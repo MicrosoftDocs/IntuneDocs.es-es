@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: cbf2031a316b1f7c2e22d165363cca12cfd70291
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374937"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061579"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Uso de scripts de PowerShell para dispositivos Windows 10 en Intune
 
@@ -181,7 +181,7 @@ En [Habilitar la inscripción automática de Windows 10](windows-enroll.md#enabl
 - Mire si hay errores en los registros. Consulte, en este artículo, [Registros de extensión de administración de Intune](#intune-management-extension-logs).
 - Para comprobar si existen problemas de permisos, asegúrese de que las propiedades del script de PowerShell estén establecidas en `Run this script using the logged on credentials`. Compruebe también que el usuario que ha iniciado sesión tenga los permisos adecuados para ejecutar el script.
 
-- Para aislar los problemas de scripting, siga los pasos siguientes:
+- Para aislar los problemas de scripts, haga lo siguiente:
 
   - Revise la configuración de ejecución de PowerShell de los dispositivos. Vea la [directiva de ejecución de PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) para obtener instrucciones.
   - Ejecute un script de ejemplo con la extensión de administración de Intune. Por ejemplo, cree el directorio `C:\Scripts` y proporcione a todos control total. Ejecute el siguiente script:
@@ -194,7 +194,31 @@ En [Habilitar la inscripción automática de Windows 10](windows-enroll.md#enabl
 
   - Para probar la ejecución del script sin Intune, ejecute los scripts en la cuenta del sistema mediante el uso local de la [herramienta psexec](https://docs.microsoft.com/sysinternals/downloads/psexec):
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - Si el script informa de que se ha realizado correctamente, pero no ha sido así en realidad, es posible que el servicio antivirus se encuentre en un espacio aislado por AgentExecutor. El siguiente script siempre informa de un error en Intune. Como prueba, puede usar este script:
+  
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+
+    Si el script informa de que se ha realizado correctamente, consulte `AgentExecutor.log` para confirmar la salida de error. Si se ejecuta el script, la longitud debe ser > 2.
+
+  - Para capturar los archivos .error y .output, el fragmento de código siguiente ejecuta el script a través de AgentExecutor en PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`). Mantiene los registros para su revisión. Recuerde que la extensión de administración de Intune limpia los registros después de que se ejecute el script:
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## <a name="next-steps"></a>Pasos siguientes
 

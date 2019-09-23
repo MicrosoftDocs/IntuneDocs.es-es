@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: b439067d06cf49a4ff83288e109d1fccd3801106
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251088"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012510"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integración de Jamf Pro con Intune para cumplimiento
 
@@ -38,13 +38,13 @@ Necesitará lo siguiente para configurar el acceso condicional con Jamf Pro:
 - [Aplicación Portal de empresa para macOS](https://aka.ms/macoscompanyportal)
 - Dispositivos macOS con OS X 10.11 Yosemite o versiones posteriores
 
-## <a name="connecting-intune-to-jamf-pro"></a>Conexión de Intune a Jamf Pro
+## <a name="connect-intune-to-jamf-pro"></a>Conexión de Intune a Jamf Pro
 
-Para conectar Intune con Jamf Pro, siga estos pasos:
+Para conectar Intune con Jamf Pro:
 
-1. Creación de una aplicación en Azure.
-2. Habilitación de Intune para su integración con Jamf Pro
-3. Configuración del acceso condicional en Jamf Pro
+1. Cree una aplicación en Azure.
+2. Habilite Intune para su integración con Jamf Pro.
+3. Configure el acceso condicional en Jamf Pro.
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Creación de una aplicación en Azure Active Directory
 
@@ -55,7 +55,7 @@ Para conectar Intune con Jamf Pro, siga estos pasos:
    - Para la sección **Supported account types** (Tipos de cuenta admitidos), seleccione **Accounts in any organizational directory** (Cuentas en cualquier directorio organizativo). 
    - En **URI de redireccionamiento**, deje el valor predeterminado de Web y, luego, especifique la dirección URL de la instancia de Jamf Pro.  
 
-3. Seleccione **Registrar** para crear la aplicación y abrir la página de información general de la aplicación nueva.  
+3. Seleccione **Registrar** para crear la aplicación y abrir la página de **información general** de la aplicación nueva.  
 
 4. En la página **Información general** de la aplicación, copie el valor de **Application (client) ID** (Identificador de aplicación [cliente]) y anótelo para usarlo más adelante. Lo necesitará en procedimientos posteriores.  
 
@@ -64,13 +64,13 @@ Para conectar Intune con Jamf Pro, siga estos pasos:
    > [!IMPORTANT]  
    > Antes de salir de la página, copie el valor del secreto de cliente y anótelo para usarlo más adelante. Lo necesitará en procedimientos posteriores. Este valor no vuelve a estar disponible sin volver a crear el registro de la aplicación.  
 
-6. Seleccione **Permisos de API** en Administrar.  Seleccione los permisos existentes y, luego, seleccione **Quitar permiso** para eliminar todos esos permisos. Quitar todos los permisos existentes es necesario, ya que agregará un nuevo permiso y la aplicación solo funciona si tiene un único permiso necesario.  
+6. Seleccione **Permisos de API** en **Administrar**. Seleccione los permisos existentes y, luego, seleccione **Quitar permiso** para eliminar todos esos permisos. Quitar todos los permisos existentes es necesario, ya que agregará un nuevo permiso y la aplicación solo funciona si tiene un único permiso necesario.  
 
-7. Para asignar un permiso nuevo, seleccione **Agregar un permiso**. En la página **Request API permissions** (Solicitar permisos de API), seleccione **Intune** y, luego, **Permisos de aplicación**. Active solo la casilla **update_device_attributes**.  
+7. Para asignar un permiso nuevo, seleccione **Agregar un permiso**. En la página **Request API permissions** (Solicitar permisos de API), seleccione **Intune** y, luego, **Permisos de aplicación**. Active solo la casilla para **update_device_attributes**.  
 
    Seleccione **Agregar permiso** para guardar esta configuración.  
 
-8. En la página **Permisos de API**, seleccione **Grant admin consent for Microsoft** (Conceder consentimiento del administrador para Microsoft) y, luego, seleccione Sí.  
+8. En la página **Permisos de API**, seleccione **Grant admin consent for Microsoft** (Conceder consentimiento del administrador para Microsoft) y, luego, seleccione **Sí**.  
 
    El proceso de registro de la aplicación en Azure AD se completó.
 
@@ -88,9 +88,9 @@ Para conectar Intune con Jamf Pro, siga estos pasos:
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Configurar la integración de Microsoft Intune en Jamf Pro
 
-1. En Jamf Pro, navegue a **Administración global** > **Acceso condicional**. Haga clic en el botón **Editar** de la pestaña **Integración de Microsoft Intune**.
+1. En Jamf Pro, navegue a **Administración global** > **Acceso condicional**. Haga clic en el botón **Editar** de la pestaña **macOS Intune Integration** (Integración de Intune para macOS).
 
-2. Active la casilla **Habilitar integración de Microsoft Intune**.
+2. Active la casilla **Enable Intune Integration for macOS** (Habilitar la integración de Intune para macOS).
 
 3. Proporcione la información necesaria sobre su inquilino de Azure, como la **ubicación**, el **nombre de dominio**, el **identificador de aplicación** y el valor del *secreto de cliente* que guardó cuando creó la aplicación en Azure AD.  
 
@@ -100,7 +100,17 @@ Para conectar Intune con Jamf Pro, siga estos pasos:
 
 Después de configurar la integración entre Intune y Jamf, tiene que [aplicar directivas de cumplimiento en los dispositivos administrados por Jamf](conditional-access-assign-jamf.md).
 
+## <a name="disconnect-jamf-pro-and-intune"></a>Desconexión de Jamf Pro e Intune 
 
+Si ya no usa Jamf Pro para administrar los equipos Mac de la organización y desea que los usuarios se administren mediante Intune, debe quitar la conexión entre Jamf Pro e Intune. Quite la conexión mediante la consola de Jamf Pro. 
+
+1. En Jamf Pro, vaya a **Administración global** > **Acceso condicional**. En la pestaña **Integración de MacOS Intune**, seleccione **Editar**.
+2. Desactive la casilla **Enable Intune Integration for macOS** (Habilitar la integración de Intune para macOS).
+3. Seleccione **Guardar**. Jamf Pro envía la configuración a Intune y se terminará la integración.
+4. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Vaya a **Microsoft Intune** > **Device Compliance**  > **Partner device management** (Cumplimiento del dispositivo > Administración de dispositivos de asociados) para comprobar que el estado es ahora **Terminated** (Terminado). 
+
+   > [!NOTE]
+   > Los dispositivos Mac de la organización se retirarán en la fecha (tres meses) que se muestra en la consola. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

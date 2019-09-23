@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: a038f55f6dbdd894742a8712c878e77557a77210
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063019"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061539"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Borrado de los datos mediante acciones de inicio condicional de la directiva de protección de aplicaciones en Intune
 
@@ -44,7 +44,7 @@ Puede elegir explícitamente borrar los datos corporativos de su empresa desde e
 8. Seleccione la **Acción** que quiere llevar a cabo si los usuarios no cumplen los requisitos. En algunos casos, se pueden configurar varias acciones para una sola configuración. Para obtener más información, consulte [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md).
 
 >[!NOTE]
-> Para usar el valor **Modelos de dispositivo o Fabricantes de dispositivos**, escriba una lista de identificadores de modelo separados por punto y coma. Evite los espacios en las listas de varios valores. Estos valores no distinguen entre mayúsculas y minúsculas. 
+> Para usar el valor **Modelos de dispositivo o Fabricantes de dispositivos**, escriba una lista de identificadores de modelo de dispositivo (iOS) o de fabricantes de dispositivos (Android) separados por puntos y comas. Evite los espacios en las listas de varios valores. Estos valores no distinguen entre mayúsculas y minúsculas. 
 
 ## <a name="policy-settings"></a>Configuraciones de directiva 
 

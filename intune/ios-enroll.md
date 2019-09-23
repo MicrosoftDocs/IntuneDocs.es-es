@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
-ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
+ms.openlocfilehash: 3f7018b791d5ab22ebcf6bbc45ac01963d2c5d42
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68738272"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079958"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscripción de dispositivos iOS en Intune
 
@@ -39,7 +39,7 @@ Antes de que pueda habilitar dispositivos iOS, complete estos pasos:
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivos iOS corporativos (BYOD)
 
-Puede permitir que los usuarios inscriban sus dispositivos personales para la administración de Intune. Esto se conoce como "Bring Your Own Device" o BYOD. Tras completar los requisitos previos y asignar licencias a los usuarios, estos podrán descargar la aplicación Portal de empresa de Intune del App Store y seguir las instrucciones de inscripción.
+Puede permitir que los usuarios inscriban sus dispositivos personales para la administración de Intune. Esto se conoce como "Bring Your Own Device" o BYOD. Tras completar los requisitos previos y asignar licencias a los usuarios, estos podrán descargar la aplicación Portal de empresa de Intune del App Store y seguir las instrucciones de inscripción. Puede personalizar la declaración de privacidad del Portal de empresa en dispositivos iOS, tal como se explica en [Personalización de la declaración de privacidad](company-portal-app.md#privacy-statement-customization).
 
 ## <a name="company-owned-ios-devices"></a>Dispositivos iOS propiedad de la empresa
 En las organizaciones que adquieran dispositivos para sus usuarios, Intune admite los siguientes métodos de inscripción de dispositivos de empresa para iOS:

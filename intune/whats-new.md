@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842145"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061681"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -54,6 +54,21 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>Semana del 16 de septiembre de 2019
+
+### <a name="app-management"></a>Administración de aplicaciones
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>Compatibilidad de macOS con aplicaciones web <!-- 3174427 -->
+Las aplicaciones web, que le permiten agregar un acceso directo a una dirección URL en la web, se pueden instalar en el Dock mediante el Portal de empresa de macOS. Los usuarios finales pueden tener acceso a la acción de **instalación** desde la página de detalles de la aplicación para una aplicación web en el Portal de empresa de MacOS. Para más información sobre el tipo de aplicación de **vínculo web**, consulte [Incorporación de aplicaciones a Microsoft Intune](apps-add.md) y [Agregar aplicaciones web a Microsoft Intune](web-app.md).
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>Compatibilidad de macOS con las aplicaciones de VPP <!-- 3173501  -->
+Las aplicaciones macOS, compradas con Apple Business Manager, se muestran en la consola cuando se sincronizan los tokens de VPP de Apple en Intune. Puede asignar, revocar y reasignar licencias basadas en dispositivos y usuarios para grupos mediante la consola de Intune. Microsoft Intune le ayuda a administrar las aplicaciones de VPP compradas para su uso en su empresa:
+- Informes sobre la información de licencia desde la tienda de aplicaciones.
+- Realizando un seguimiento de cuántas licencias ha usado.
+- Le ayudamos a no instalar más copias de la aplicación que las que tiene.
+
+Para más información, consulte [Administración de aplicaciones y libros comprados por volumen con Microsoft Intune](vpp-apps.md).
+
 ## <a name="week-of-september-9-2019"></a>Semana del 9 de septiembre de 2019
 
 ### <a name="app-management"></a>Administración de aplicaciones
@@ -64,6 +79,10 @@ La aplicación de Microsoft Intune para Android se ha actualizado con las siguie
 - Se ha agregado una página adicional que muestra el perfil del usuario.
 - Se ha agregado la muestra de notificaciones interactivas en la aplicación para el usuario, como la necesidad de actualizar la configuración del dispositivo.
 - Se ha agregado la muestra de notificaciones push personalizadas, alineando la aplicación con la compatibilidad agregada recientemente en la aplicación Portal de empresa para iOS y Android. Para más información, consulte [Envío de notificaciones personalizadas en Intune](custom-notifications.md).
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>Para dispositivos iOS, personalice la pantalla de privacidad del proceso de inscripción del Portal de empresa. <!-- 4394993 -->
+Con Markdown, puede personalizar la pantalla de privacidad del Portal de empresa que los usuarios finales ven durante la inscripción de iOS. En concreto, podrá personalizar la lista de elementos que la organización no puede ver o realizar en el dispositivo. Para más información, consulte [Configuración de la aplicación Portal de empresa de Intune](company-portal-app.md#privacy-statement-customization).
+
 
 ## <a name="week-of-september-2-2019"></a>Semana del 2 de septiembre de 2019
 
@@ -217,7 +236,7 @@ La opción de inscripción del administrador de dispositivos Android se ha agreg
 #### <a name="skip-more-screens-in-setup-assistant---4877451----"></a>Omisión de más pantallas en el Asistente de configuración <!--4877451  -->
 Puede establecer perfiles de Programa de inscripción de dispositivos para omitir las siguientes pantallas del Asistente de configuración:
 - Para iOS
-    - Aspecto
+    - Apariencia
     - Express Language (Idioma rápido)
     - Idioma preferido
     - Device to Device Migration (Migración entre dispositivos)
@@ -228,7 +247,7 @@ Puede establecer perfiles de Programa de inscripción de dispositivos para omiti
 Para más información sobre la personalización del Asistente de configuración, consulte [Creación de un perfil de inscripción de Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) y [Creación de un perfil de inscripción de Apple para macOS](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Incorporación de una columna de usuario al proceso de carga de CSV del dispositivo AutoPilot <!-- 3823054 -->
-Ahora puede agregar una columna de usuario a la carga CSV para Dispositivos Autopilot. Esto le permite asignar usuarios en masa en el momento de importar el archivo CSV. El nuevo formato de las filas en el archivo CSV es similar al siguiente: número-de-serie, id.-del-producto-windows, hash-de-hardware, etiqueta-de-grupo-opcional, usuario-asignado-opcional. Para más información, consulte [Inscripción de dispositivos Windows en Intune con Windows Autopilot](enrollment-autopilot.md).
+Ahora puede agregar una columna de usuario a la carga CSV para Dispositivos Autopilot. Esto le permite asignar usuarios en masa en el momento de importar el archivo CSV. Para más información, consulte [Inscripción de dispositivos Windows en Intune con Windows Autopilot](enrollment-autopilot.md).
 
 
 ### <a name="device-management"></a>Administración de dispositivos
