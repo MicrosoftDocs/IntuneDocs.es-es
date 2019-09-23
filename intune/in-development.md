@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96fa9fac25f6de4180d3dcc9ee4022a2cc43fe
-ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
+ms.openlocfilehash: 4bd5392abba3ea22127cb9bcbbb53ec4929f2d5e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70190251"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166333"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>En desarrollo para Microsoft Intune: septiembre de 2019
 
@@ -90,7 +90,7 @@ Las aplicaciones podrán llamar al Graph API de Intune con operaciones de lectur
 Las directivas de protección de aplicaciones (APP) de Intune en dispositivos iOS y Android le permitirán controlar el contenido de las notificaciones de la aplicación para las cuentas de la organización. Esta característica requerirá la compatibilidad de las aplicaciones y es posible que no esté disponible para todas las aplicaciones habilitadas para la aplicación. Consulte [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md) para obtener más información sobre APP.
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Notificación de aplicaciones de Google Play disponibles para perfiles de trabajo de Android <!-- 3041956  -->
-En las instalaciones de aplicaciones disponibles en dispositivos de perfil de trabajo de Android, puede ver el estado de instalación de la aplicación y la versión instalada de aplicaciones administradas de Google Play. Para obtener más información, vea [Supervisión de las directivas de protección de aplicaciones](app-protection-policies-monitor.md), [Administrar dispositivos de perfil de trabajo Android con Intune](android-enterprise-overview.md) y [Tipo de aplicación de Google Play administrado](apps-add-android-for-work.md#managed-google-play-app-type).
+En las instalaciones de aplicaciones disponibles en dispositivos de perfil de trabajo de Android, puede ver el estado de instalación de la aplicación y la versión instalada de aplicaciones administradas de Google Play. Para obtener más información, vea [Supervisión de las directivas de protección de aplicaciones](app-protection-policies-monitor.md), [Administrar dispositivos de perfil de trabajo Android con Intune](android-enterprise-overview.md) y [Tipo de aplicación de Google Play administrado](apps-add-android-for-work.md#managed-google-play-app-types).
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Configuración de los dispositivos
@@ -132,7 +132,7 @@ En una actualización futura, habrá nuevas opciones de configuración que puede
 - **Control de voz**: habilita el control de voz en el dispositivo mientras está en el modo de pantalla completa.
 - **Modificación del control de voz**: permite a los usuarios cambiar la configuración de control de voz en el dispositivo en modo de pantalla completa.
 
-Para ver la configuración actual, vaya a [configuración de pantalla completa de iOS (solo supervisado)](device-restrictions-ios.md#kiosk-supervised-only).
+Para ver la configuración actual, vaya a [configuración de pantalla completa de iOS (solo supervisado)](device-restrictions-ios.md#kiosk).
 
 Se aplica a:
 
@@ -167,7 +167,7 @@ Puede escribir la dirección URL de la tienda de aplicaciones de iTunes `https:/
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
-Para obtener más información sobre esta configuración, vea [Mostrar u ocultar aplicaciones (solo supervisado)](device-restrictions-ios.md#show-or-hide-apps-supervised-only).
+Para obtener más información sobre esta configuración, vea [Mostrar u ocultar aplicaciones](device-restrictions-ios.md#show-or-hide-apps).
 
 Se aplica a:
 
@@ -187,11 +187,11 @@ Se aplica a iOS.
 ## <a name="device-enrollment"></a>Inscripción de dispositivos
 
 ### <a name="new-tenants-will-default-away-from-android-device-administrator-management----4869790----"></a>Los nuevos inquilinos desaparecerán de forma predeterminada administración de administradores de dispositivos Android <!-- 4869790  -->
-Las funcionalidades de administrador de dispositivos de Android se han sustituido por Android Enterprise. Por lo tanto, se recomienda usar Android Enterprise para nuevas inscripciones en su lugar. En una actualización futura, los nuevos inquilinos deberán completar los siguientes pasos de requisitos previos de la inscripción de Android para usar la administración de **administrador** >  de dispositivos: ir a Intune**inscripción** > de dispositivos**inscripción de Android** >  Los dispositivos **personales y corporativos con privilegios** > de administración de dispositivos**usan el administrador de dispositivos para administrar los dispositivos**.
+Las funcionalidades de administrador de dispositivos de Android se han sustituido por Android Enterprise. Por lo tanto, se recomienda usar Android Enterprise para nuevas inscripciones en su lugar. En una actualización futura, los nuevos inquilinos deberán completar los siguientes pasos de requisitos previos de la inscripción de Android para usar la administración de administrador de dispositivos: ir a **Intune** > **inscripción** > de dispositivos**inscripción de Android** Los dispositivos **personales y corporativos con privilegios** > de administración de dispositivos**usan el administrador de dispositivos para administrar los dispositivos.**  > 
 
 Los inquilinos existentes no experimentarán ningún cambio en sus entornos. 
 
-Para obtener más información sobre el administrador de dispositivos Android en Intune, consulte [inscripción de administrador de dispositivos Android](https://docs.microsoft.com/intune/android-enroll-device-administrator).
+Para obtener más información sobre el administrador de dispositivos Android en Intune, consulte [inscripción de administrador de dispositivos Android](android-enroll-device-administrator.md).
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Para dispositivos iOS, personalice la pantalla de privacidad del proceso de inscripción del Portal de empresa <!-- 4394993  -->
 Con Markdown, podrá personalizar la pantalla de privacidad del Portal de empresa que los usuarios finales ven durante la inscripción de iOS. En concreto, podrá personalizar la lista de elementos que su organización no puede ver o realizar en el dispositivo.
@@ -213,8 +213,8 @@ Agregaremos la siguiente compatibilidad para dispositivos Android totalmente adm
     - crear un perfil de SCEP en la sección DO de Android Enterprise
     - vinculación de certificados SCEP para el perfil de Wi-Fi para la autenticación
     - vinculación de certificados SCEP para realizar perfiles de VPN para la autenticación
-    - vinculación de certificados SCEP a perfiles de correo electrónico para la autenticación (a través de AppConfig)
-- Las aplicaciones del sistema se admitirán en dispositivos empresariales Android. En Intune, agregará una aplicación de sistema de Android Enterprise seleccionando aplicaciones de **cliente** > **Aplicaciones** > **Agregar**. En la lista **tipo de aplicación** , seleccione aplicación de **sistema empresarial Android**. Para obtener más información sobre agregar aplicaciones en Intune, vea [Incorporación de aplicaciones a Microsoft Intune](apps-add.md). <!-- 4062195 -->
+    - vinculación de certificados SCEP para realizar perfiles de correo electrónico para la autenticación (a través de la configuración de la aplicación)
+- Las aplicaciones del sistema se admitirán en dispositivos empresariales Android. En Intune, agregará una aplicación de sistema de Android Enterprise seleccionando **aplicaciones** de  >  **cliente** > **Agregar**. En la lista **tipo de aplicación** , seleccione aplicación de **sistema empresarial Android**. Para obtener más información sobre agregar aplicaciones en Intune, vea [Incorporación de aplicaciones a Microsoft Intune](apps-add.md). <!-- 4062195 -->
 - En **cumplimiento** > de dispositivos, el**propietario del dispositivo** **Android Enterprise** > , podrá crear una directiva de cumplimiento que establezca el nivel de atestación de Google SafetyNet.   <!-- 4631425 -->
 - En dispositivos Android Enterprise totalmente administrados, se admitirán los proveedores de Mobile Threat Defense. En **cumplimiento** > de dispositivos, el**propietario del dispositivo** **Android Enterprise** > , puede elegir un nivel de amenaza aceptable. <!-- 4631440 --> En [Configuración de Android Enterprise para marcar dispositivos como compatibles o no compatibles con Intune](compliance-policy-create-android-for-work.md#device-owner) se muestra la configuración actual.
 
@@ -240,7 +240,7 @@ Agregaremos *protección contra manipulaciones* a la configuración que Intune p
 
 [!INCLUDE [Intune notices](./includes/intune-notices.md)]
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 Consulte [Novedades de Microsoft Intune](whats-new.md) para obtener más información sobre los desarrollos recientes.
 
 
