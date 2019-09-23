@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68775923"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166339"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Reducción de la compatibilidad con el administrador de dispositivos Android 
-El administrador de dispositivos Android (que a veces se conoce como administración de Android "heredada" y publicada con Android 2.2) es una manera de administrar dispositivos Android. Sin embargo, ahora hay una funcionalidad de administración mejorada disponible con [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (publicada con Android 5.0). Con el fin de realizar la transición a la administración de dispositivos moderna, más completa y segura, Google va a reducir la compatibilidad con el administrador de dispositivos en las nuevas versiones de Android.
+El administrador de dispositivos Android (que a veces se conoce como administración de Android "heredada" y publicada con Android 2.2) es una manera de administrar dispositivos Android. Sin embargo, ahora hay una funcionalidad de administración mejorada disponible con [Android Enterprise](../connect-intune-android-enterprise.md) (publicada con Android 5.0). Con el fin de realizar la transición a la administración de dispositivos moderna, más completa y segura, Google va a reducir la compatibilidad con el administrador de dispositivos en las nuevas versiones de Android.
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 Debido a estos cambios de Google, los usuarios de Intune se verán afectados de las siguientes maneras: 
@@ -66,7 +66,7 @@ No es necesario realizar ninguna acción, pero puede considerar la posibilidad d
 #### <a name="additional-information"></a>Información adicional 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Plan de cambio: Intune admitirá iOS 11 y versiones posteriores a partir de septiembre <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Plan de cambio: Intune admitirá iOS 11 y versiones posteriores a partir de septiembre <!-- 4665324-->
 Esperamos que Apple lance iOS 13 en septiembre. La inscripción de Intune, el Portal de empresa y el explorador administrado pasarán a admitir iOS 11 y versiones posteriores poco después del lanzamiento de iOS 13.
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
@@ -76,7 +76,7 @@ Puesto que iOS 11.0 y las versiones posteriores admiten las aplicaciones móvil
 - iPhone 5c
 - iPad (4.ª generación)
 
-A partir de julio, los dispositivos inscritos en MDM con iOS 10 y el Portal de empresa recibirán un aviso para actualizar el sistema operativo o el dispositivo. Si usa directivas de protección de aplicaciones (APP, por sus siglas en inglés), también puede establecer la configuración de acceso "Requerir sistema operativo iOS mínimo (solo es una advertencia)".
+Si usa directivas de protección de aplicaciones (APP, por sus siglas en inglés), también puede establecer la configuración de acceso "Requerir sistema operativo iOS mínimo (solo es una advertencia)".
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
 Compruebe los informes de Intune para ver qué dispositivos o usuarios pueden verse afectados. Vaya a **Dispositivos** > **Todos los dispositivos** y filtre por sistema operativo. Puede agregar columnas adicionales para ayudar a identificar qué usuarios de su organización tienen dispositivos que ejecutan iOS 10. Pida a los usuarios finales que actualicen sus dispositivos a una versión del sistema operativo compatible antes de septiembre.
@@ -96,7 +96,7 @@ Compruebe sus aplicaciones de Microsoft, de terceros y de línea de negocio (LOB
 También debe actualizar la documentación o las instrucciones para desarrolladores, si procede, para que incluyan este cambio en el soporte técnico para el SDK.
 
 #### <a name="additional-information"></a>Información adicional
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Plan de cambio: Nueva configuración de actualizaciones de Windows en Intune <!-- 4464404 -->
 A partir de la versión de agosto del servicio de Intune o actualización 1908, estamos agregando una nueva "configuración de la fecha límite" que puede configurar en lugar de la configuración "Permitir al usuario que reinicie (reinicio establecido)". Planeamos deshabilitar la configuración del reinicio establecido en la interfaz de usuario en la actualización 1909 o en la actualización de septiembre y luego quitarlos completamente de la consola hacia finales de octubre. 
