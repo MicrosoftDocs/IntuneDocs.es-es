@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 08/30/2019
-  ms.openlocfilehash: c671531c878863dc56d00cc0c8cdeb5768517c43
-  ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
+  ms.openlocfilehash: e094a13f20cb4d66e96c3c559d04a0c6a51e7a3a
+  ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/13/2019
-  ms.locfileid: "70986397"
+  ms.lasthandoff: 09/20/2019
+  ms.locfileid: "71166314"
 highlightedContent:
   items:
   - title: ¿Qué es Intune?
@@ -182,7 +182,7 @@ conceptualContent:
     - url: reports-nav-create-intune-reports.md
       itemType: concept
       text: Usar Data Warehouse de Microsoft Intune
-    - url: https://docs.microsoft.com/intune/app-sdk
+    - url: app-sdk.md
       itemType: overview
       text: Introducción al SDK para aplicaciones de Microsoft Intune
     - url: reports-nav-create-intune-reports.md
@@ -205,7 +205,7 @@ additionalContent:
       - text: Descripción del servicio Enterprise Mobility + Security para el gobierno de EE. UU.
         url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
       - text: Puntos de conexión del gobierno de EE. UU para Intune
-        url: https://docs.microsoft.com/intune/intune-us-government-endpoints
+        url: intune-us-government-endpoints.md
       - text: Sitio de Azure Government
         url: https://azure.microsoft.com/global-infrastructure/government/
     - title: Microsoft 365
@@ -243,3 +243,4 @@ additionalContent:
     - title: Éxito de clientes de Intune
       summary: Obtención de ayuda en el sitio de éxito de clientes de Intune
       url: https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess
+  footer: ¿Tiene comentarios o desea colaborar en documentación? [Consulte este recurso](use-docs.md).

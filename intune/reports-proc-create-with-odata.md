@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894323"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167865"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe de Intune desde la fuente de OData con Power BI
 
@@ -108,7 +108,7 @@ Puede agregar un filtro al gráfico de rectángulos para poder responder a pregu
 1. Para agregar un filtro, seleccione el lienzo del informe y, después, haga clic en el **icono de segmentación de datos** (![Gráfico de rectángulos con modelo de datos y relaciones admitidas](media/reports-create-slicer.png)) en **Visualizaciones**. La visualización de **segmentación vacía** aparecerá en el lienzo.
 2. En el panel **campos** , busque la `ownerTypes` tabla.
 3. Expanda `ownerTypes` la tabla y seleccione `ownerTypeName` el campo de datos.
-4. Arrastre el `onwerTypeName` campo de datos de `ownerTypes` la tabla al panel **filtros** y colóquelo en la sección **filtros de esta página** del cuadro **agregar campos de datos aquí**.  
+4. Arrastre el campo de datos `onwerTypeName` desde la tabla `ownerTypes` hasta el panel **Filtros** y colóquelo en la sección **Filtros de esta página** en el cuadro llamado **Agregar campos de datos aquí**.  
 
    En la `OwnerTypes` tabla, hay un campo de datos denominado `OwnerTypeKey`que contiene datos sobre si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla `ownerTypes` y arrastre el **ownerTypeName** a la segmentación. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
 
@@ -122,4 +122,4 @@ Ahora tiene un filtro interactivo que puede usar para alternar entre dispositivo
 ## <a name="next-steps"></a>Pasos siguientes
 
 - Obtenga más información sobre cómo [crear y administrar relaciones](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) en Power BI Desktop en la documentación de Power BI.
-- Abra el [Modelo de Almacenamiento de datos de Intune](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Abra el [Modelo de Almacenamiento de datos de Intune](reports-ref-data-model.md).

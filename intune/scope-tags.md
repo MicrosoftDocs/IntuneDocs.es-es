@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 2fb82b02057e1e028755da16a05755b0b8ddb93a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550025"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163799"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida
 
@@ -35,10 +35,10 @@ Por ejemplo, imagine que un administrador de la sucursal regional de Seattle tie
 3. Agregue la etiqueta de ámbito Seattle a las directivas y los perfiles a los que quiera que puedan tener acceso los administradores de Miembros (grupos).
 4. Agregar la etiqueta de ámbito Seattle a los dispositivos que quiere que sean visibles para los administradores de Miembros (grupos). 
 
-## <a name="default-scope-tag"></a>Etiqueta de ámbito predeterminada
+## <a name="default-scope-tag"></a>Etiquetas de ámbito predeterminadas
 La etiqueta de ámbito predeterminada se agrega automáticamente a todos los objetos sin etiqueta que admiten etiquetas de ámbito.
 
-La característica de etiqueta de ámbito predeterminada es similar a la característica de ámbitos de seguridad en System Center Configuration Manager. 
+Esta característica es similar a la característica de ámbitos de seguridad de System Center Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Para crear una etiqueta de ámbito
 
@@ -101,7 +101,6 @@ Al trabajar con etiquetas de ámbito, recuerde estos detalles:
     - Categorías de dispositivos
     - Restricciones de inscripción
     - Identificadores de dispositivo Corp
-    - Términos y condiciones
     - Dispositivos AutoPilot
     - Ubicaciones de cumplimiento de dispositivos
     - Dispositivos Jamf

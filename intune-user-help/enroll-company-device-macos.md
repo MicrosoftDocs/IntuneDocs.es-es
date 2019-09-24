@@ -18,31 +18,33 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: 9066fefccde39ccac281f3bda9008168ea28b77f
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783017"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166624"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Inscripción de dispositivos macOS proporcionados por la organización en la administración
 
 Obtenga información sobre cómo administrar un dispositivo macOS nuevo en Intune.  
 
-Los dispositivos proporcionados por su empresa o centro educativo a menudo están preconfigurados antes de recibirlos. La organización enviará estas opciones configuradas previamente al dispositivo después de encenderlo e iniciar sesión por primera vez. Una vez configurado el dispositivo, recibirá acceso a los recursos profesionales o educativos. 
+Los dispositivos proporcionados por su empresa o centro educativo a menudo están preconfigurados antes de recibirlos. La organización enviará estas opciones configuradas previamente al dispositivo después de encenderlo e iniciar sesión por primera vez. Una vez configurado el dispositivo, recibirá acceso a los recursos profesionales o educativos.
 
-Para comenzar con la configuración de administración, encienda el dispositivo e inicie sesión con sus credenciales profesionales o educativas. A continuación, en este artículo se describirán los pasos y las pantallas que verá en el asistente de configuración.   
+Para comenzar con la configuración de administración, encienda el dispositivo e inicie sesión con sus credenciales profesionales o educativas. A continuación, en este artículo se describirán los pasos y las pantallas que verá en el asistente de configuración.
 
 ## <a name="what-is-apple-dep"></a>¿Qué es DEP de Apple?
-Es posible que la organización haya comprado los dispositivos a través de lo que se denomina *Programa de inscripción de dispositivos de Apple* (DEP). DEP de Apple permite a las organizaciones comprar una gran cantidad de dispositivos iOS o macOS. De este modo, pueden configurar y administrar esos dispositivos con su proveedor de administración de dispositivos móviles preferido, como Intune. Si es un administrador y quiere obtener más información sobre DEP de Apple, vea [Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos de Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
 
-## <a name="get-your-device-managed"></a>Conversión del dispositivo en administrado 
+Es posible que la organización haya comprado los dispositivos a través de lo que se denomina *Programa de inscripción de dispositivos de Apple* (DEP). DEP de Apple permite a las organizaciones comprar una gran cantidad de dispositivos iOS o macOS. De este modo, pueden configurar y administrar esos dispositivos con su proveedor de administración de dispositivos móviles preferido, como Intune. Si es un administrador y quiere obtener más información sobre DEP de Apple, vea [Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos de Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos.md).  
+
+## <a name="get-your-device-managed"></a>Conversión del dispositivo en administrado
+
 Complete los siguientes pasos para inscribir un dispositivo macOS en la administración. Si usa un dispositivo propio, que la organización no le haya proporcionado, siga los pasos para los [dispositivos personales y Bring Your Own Device](enroll-your-device-in-intune-macos-cp.md).  
 
-1. Encienda el dispositivo macOS. 
+1. Encienda el dispositivo macOS.
 2. Elija el país o la región y haga clic en **Continuar**.  
 
-   ![Captura de la pantalla de bienvenida del asistente de configuración de dispositivos macOS en la que se muestra una lista de idiomas.](./media/macos-dep-welcome-1808.png)   
+   ![Captura de la pantalla de bienvenida del asistente de configuración de dispositivos macOS en la que se muestra una lista de idiomas.](./media/macos-dep-welcome-1808.png)
 3. Elija una distribución de teclado. En la lista se muestra una o más opciones, según la región o el país seleccionado. Para ver todas las opciones de distribución, independientemente de la región o del país seleccionado, haga clic en **Mostrar todo**. Cuando termine, haga clic en **Continuar**.  
 
    ![Captura de la pantalla de distribución de teclado del asistente de configuración de dispositivos macOS en la que se muestra una lista de idiomas de teclado con la opción Mostrar todo desactivada y los botones Atrás y Continuar.](./media/macos-dep-keyboard-1808.png)  
@@ -62,14 +64,17 @@ Complete los siguientes pasos para inscribir un dispositivo macOS en la administ
     * Crear una cuenta en el equipo
     * Completar los pasos de una configuración rápida
     * Configurar el equipo Mac  
-## <a name="get-the-company-portal-app"></a>Obtener la aplicación Portal de empresa      
-Descargue la aplicación Portal de empresa de Intune para macOS en el dispositivo. La aplicación le permite supervisar, sincronizar, agregar y quitar el dispositivo de la administración, así como instalar aplicaciones. En este proceso también se describe cómo registrar el dispositivo con Portal de empresa.  
-1. En el dispositivo macOS, vaya a https://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
+
+## <a name="get-the-company-portal-app"></a>Obtener la aplicación Portal de empresa
+
+Descargue la aplicación Portal de empresa de Intune para macOS en el dispositivo. La aplicación le permite supervisar, sincronizar, agregar y quitar el dispositivo de la administración, así como instalar aplicaciones. En este proceso también se describe cómo registrar el dispositivo con Portal de empresa.
+
+1. En el dispositivo macOS, vaya a [https://portal.manage.microsoft.com/EnrollmentRedirect.aspx](https://portal.manage.microsoft.com/EnrollmentRedirect.aspx).
 2. Inicie sesión en el sitio web del Portal de empresa con su cuenta profesional o educativa. 
 3. Haga clic en **Obtener la aplicación** para descargar el instalador de Portal de empresa para macOS.
 4. Cuando se le pida, abra el archivo .pkg y complete los pasos de instalación.
-4. Abra la aplicación Portal de empresa e inicie sesión con su cuenta profesional o educativa.
-5. Busque el dispositivo y haga clic en **Registrar**.
-6. Haga clic en **Continuar** > **Listo**. El dispositivo debería aparecer ahora en la aplicación Portal de empresa como un dispositivo corporativo compatible.
+5. Abra la aplicación Portal de empresa e inicie sesión con su cuenta profesional o educativa.
+6. Busque el dispositivo y haga clic en **Registrar**.
+7. Haga clic en **Continuar** > **Listo**. El dispositivo debería aparecer ahora en la aplicación Portal de empresa como un dispositivo corporativo compatible.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
