@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270292"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167238"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Uso de Intune para corregir las vulnerabilidades que identifica ATP de Microsoft Defender  
 
@@ -37,13 +37,15 @@ En la consola del Centro de seguridad de Microsoft Defender, los administradore
 Una vez que se acepta una tarea, el administrador de Intune actúa para corregir la vulnerabilidad a través de Intune, con las instrucciones que se proporcionan como parte de la tarea de seguridad.  
 
 Entre las acciones de corrección comunes se incluye:  
+
 - **Bloquear** la ejecución de una aplicación.  
 - **Implementar** una actualización del sistema operativo para mitigar la vulnerabilidad.  
 - **Modificar** un valor del Registro.  
 - **Deshabilitar** o **habilitar** una configuración para afectar la vulnerabilidad.  
 - **Requerir atención** alerta al administrador sobre la amenaza cuando no hay ninguna recomendación adecuada que proporcionar.  
 
-Un flujo de trabajo de ejemplo:  
+Un flujo de trabajo de ejemplo:
+
 - Dentro de ATP de Microsoft Defender, se detecta una vulnerabilidad en una aplicación denominada Contoso Media Player v4 y un administrador crea una tarea de seguridad para actualizar dicha aplicación. Contoso Media Player es una aplicación no administrada que se implementó con Intune.  
 
   Esta tarea de seguridad aparece en la consola de Intune con el estado Pending (Pendiente):  
@@ -61,13 +63,16 @@ Un flujo de trabajo de ejemplo:
 ## <a name="prerequisites"></a>Requisitos previos  
 
 **Suscripciones**:  
+
 - Microsoft Intune  
 - Protección contra amenazas avanzada de Microsoft Defender ([Suscríbase para disfrutar de una prueba gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)).  
 
 **Configuraciones de Intune para ATP**:  
+
 - Configure una conexión de servicio a servicio con ATP de Microsoft Defender.  
 - Implemente una directiva de cumplimiento de dispositivos con un tipo de perfil de **ATP de Microsoft Defender (Windows 10 Escritorio)** en dispositivos en los que ATP evaluará el riesgo.
-  Para información sobre cómo configurar Intune para que trabaje junto con ATP, consulte [Aplicación del cumplimiento de ATP de Windows Defender con acceso condicional en Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).  
+
+  Para información sobre cómo configurar Intune para que trabaje junto con ATP, consulte [Aplicación del cumplimiento de ATP de Windows Defender con acceso condicional en Intune](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Trabajo con tareas de seguridad  
 
@@ -89,6 +94,6 @@ Un flujo de trabajo de ejemplo:
 Una vez que la corrección se realiza correctamente, la puntuación de exposición a riesgos puede disminuir en función de la información nueva proveniente de los dispositivos corregidos. 
 
 ## <a name="next-steps"></a>Pasos siguientes
-Más información sobre Intune y [ATP de Microsoft Defender](https://docs.microsoft.com/intune/advanced-threat-protection)  
-Revise [Mobile Threat Defense](https://docs.microsoft.com/intune/mobile-threat-defense) de Intune  
+Más información sobre Intune y [ATP de Microsoft Defender](advanced-threat-protection.md)  
+Revise [Mobile Threat Defense](mobile-threat-defense.md) de Intune  
 Revise el [panel de Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) en ATP de Microsoft Defender

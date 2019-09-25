@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979211"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167394"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Opciones de configuración de Microsoft Outlook 
 
@@ -30,7 +30,7 @@ Para los dispositivos inscritos:
 - Para crear una directiva de configuración de aplicaciones para dispositivos iOS administrados, vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md). 
 - Para crear una directiva de configuración de aplicaciones para dispositivos Android administrados, vea [Agregar directivas de configuración de aplicaciones para dispositivos Android administrados](app-configuration-policies-use-android.md). 
 
-En el caso de los dispositivos no inscritos, consulte [Agregar directivas de configuración de aplicaciones para aplicaciones administradas sin inscripción de dispositivos](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) con el fin de crear una directiva de configuración de aplicaciones de Outlook en iOS y Android.
+En el caso de los dispositivos no inscritos, consulte [Agregar directivas de configuración de aplicaciones para aplicaciones administradas sin inscripción de dispositivos](app-configuration-policies-managed-app.md) con el fin de crear una directiva de configuración de aplicaciones de Outlook en iOS y Android.
 
 ## <a name="configuration-settings"></a>Opciones de configuración
 

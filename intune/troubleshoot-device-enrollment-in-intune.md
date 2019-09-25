@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375241"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167806"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos en Microsoft Intune
 
@@ -447,7 +447,7 @@ Encontrará una lista de errores de inscripción de iOS en nuestra documentació
 
 |Mensaje de error|Problema|Solución|
 |---|---|---|
-|**El administrador de TI debe asignar una licencia para el acceso**<br>El administrador de TI no le ha concedido acceso para usar esta aplicación. Solicite ayuda al administrador de TI o vuelva a intentarlo más tarde.|El dispositivo no se puede inscribir porque la cuenta del usuario no tiene la licencia necesaria.|Antes de que los usuarios puedan inscribir los dispositivos, deben tener asignada la licencia necesaria. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles. Por ejemplo, verá este error si se cumplen las dos condiciones siguientes: <ol><li>Se ha establecido Intune como la entidad de administración de dispositivos móviles</li><li>Usan una licencia de System Center 2012 R2 Configuration Manager.</li></ol>Consulte información sobre cómo [asignar licencias de Intune a las cuentas de usuario](https://docs.microsoft.com/intune/licenses-assign).|
+|**El administrador de TI debe asignar una licencia para el acceso**<br>El administrador de TI no le ha concedido acceso para usar esta aplicación. Solicite ayuda al administrador de TI o vuelva a intentarlo más tarde.|El dispositivo no se puede inscribir porque la cuenta del usuario no tiene la licencia necesaria.|Antes de que los usuarios puedan inscribir los dispositivos, deben tener asignada la licencia necesaria. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles. Por ejemplo, verá este error si se cumplen las dos condiciones siguientes: <ol><li>Se ha establecido Intune como la entidad de administración de dispositivos móviles</li><li>Usan una licencia de System Center 2012 R2 Configuration Manager.</li></ol>Consulte información sobre cómo [asignar licencias de Intune a las cuentas de usuario](licenses-assign.md).|
 
 
 

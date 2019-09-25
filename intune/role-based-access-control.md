@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080027"
+ms.locfileid: "71094671"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Control de acceso basado en rol (RBAC) con Microsoft Intune
 
@@ -43,7 +43,7 @@ Para ver un rol, seleccione **Intune** > **Roles** > **Todos los roles** > elija
 - **Asignaciones**: lista de [asignaciones de roles]( assign-role.md) que definen qué usuarios tienen acceso a qué usuarios o dispositivos. Un rol puede tener varias asignaciones y un usuario puede tener varias asignaciones.
 
 ### <a name="built-in-roles"></a>Roles integrados
-Puede asignar roles integrados a los grupos sin ninguna configuración adicional. No se puede eliminar o editar el nombre, la descripción, el tipo o los permisos de un rol integrado. Para obtener una lista completa de los permisos de cada rol integrado, vea la [tabla de RBAC de Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+Puede asignar roles integrados a los grupos sin ninguna configuración adicional. No se puede eliminar o editar el nombre, la descripción, el tipo o los permisos de un rol integrado.
 
 - **Operador del departamento de soporte técnico**: realiza tareas remotas relacionadas con usuarios y dispositivos y puede asignar aplicaciones o directivas a usuarios o dispositivos.
 - **Administrador de directivas y perfiles**: administra la directiva de cumplimiento, los perfiles de configuración, la inscripción de Apple, los identificadores de dispositivos corporativos y las líneas base de seguridad.

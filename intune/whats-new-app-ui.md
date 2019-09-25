@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061728"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167883"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga información sobre las actualizaciones más recientes para las aplicaciones de Microsoft Intune. Periódicamente agregamos contenido y mejoras a la aplicación y el sitio web de Portal de empresa de Intune. Si es un administrador de Intune o un empleado de soporte técnico, en este artículo encontrará la información que necesita para:
@@ -120,7 +120,7 @@ Se ha agregado una nueva pantalla denominada **Categorías de aplicaciones** par
 ## <a name="week-of-november-12-2018"></a>Semana del 12 de noviembre de 2018
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Métodos abreviados de teclado del Portal de empresa de Windows <!-- 2771518 -->
-Ahora, los usuarios finales podrán desencadenar acciones de aplicación y dispositivo en el Portal de empresa de Windows [mediante métodos abreviados de teclado (aceleradores)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
+Ahora, los usuarios finales podrán desencadenar acciones de aplicación y dispositivo en el Portal de empresa de Windows [mediante métodos abreviados de teclado (aceleradores)](company-portal-app.md#windows-company-portal-keyboard-shortcuts).
 
 ## <a name="week-of-october-22-2018"></a>Semana del 22 de octubre de 2018
 
@@ -572,4 +572,4 @@ Estos son los planes para mejorar la experiencia del usuario mediante la actuali
 ## <a name="see-also"></a>Consulte también
 * [Blog de Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guía básica de Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novedades de Intune](https://docs.microsoft.com/intune/whats-new)
+* [Novedades de Intune](whats-new.md)

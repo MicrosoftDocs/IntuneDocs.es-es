@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 4465a8715b84e06e337fb7dee5af4308cdd153ae
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427111"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167644"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Administrar versiones de sistemas operativos con Intune
 En las plataformas modernas de ordenadores y dispositivos móviles, podrá implementar rápidamente actualizaciones principales, revisiones y nuevas versiones. Tiene controles para administrar completamente las actualizaciones y revisiones en Windows, pero otras plataformas, como iOS y Android, requieren que los usuarios finales participen en el proceso.  Microsoft Intune tiene las capacidades para ayudarle a estructurar la administración de versiones del sistema operativo en diferentes plataformas.
@@ -32,30 +32,34 @@ Intune puede ayudarle a resolver estos escenarios comunes:
   
 ## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a>Control de la versión del sistema operativo mediante las restricciones de inscripción de la administración de dispositivos móviles (MDM) de Intune
 Las restricciones de inscripción de MDM de Intune le permiten definir los requisitos del dispositivo del cliente antes de permitir la inscripción del dispositivo. El objetivo es requerir que los usuarios finales inscriban solamente dispositivos compatibles para poder obtener acceso a los recursos de la organización. Los requisitos del dispositivo incluyen tanto las versiones del sistema operativo mínimas como las máximas admitidas para las plataformas compatibles.
- 
-![Hoja de restricciones en la configuración de la plataforma](./media/os-version-platform-configurations.png) 
- 
+
+![Hoja de restricciones en la configuración de la plataforma](./media/os-version-platform-configurations.png)
+
 ### <a name="in-practice"></a>A la práctica
-Las organizaciones usan restricciones según el tipo de dispositivo para controlar el acceso a los recursos de la organización mediante las siguientes opciones de configuración: 
-1. Usar la versión mínima del sistema operativo para que los usuarios finales usen plataformas actuales y compatibles en su organización. 
+
+Las organizaciones usan restricciones según el tipo de dispositivo para controlar el acceso a los recursos de la organización mediante las siguientes opciones de configuración:
+
+1. Usar la versión mínima del sistema operativo para que los usuarios finales usen plataformas actuales y compatibles en su organización.
 2. No especificar la versión máxima del sistema operativo (sin límite) o establecerlo en la última versión validada en su organización para dar tiempo a que se prueben internamente las nuevas versiones del sistema operativo.
 
-Para obtener información, consulte [Establecer restricciones de tipo de dispositivo](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction).
- 
+Para obtener información, consulte [Establecer restricciones de tipo de dispositivo](enrollment-restrictions-set.md#create-a-device-type-restriction).
+
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>Informes de la versión del sistema operativo y cumplimiento de las directivas de cumplimiento de dispositivos de MDM de Intune
-Las directivas de cumplimiento de dispositivos MDM de Intune proporcionan las siguientes herramientas: 
+
+Las directivas de cumplimiento de dispositivos MDM de Intune proporcionan las siguientes herramientas:
+
 - Especificar reglas de cumplimiento
 - Ver el estado de cumplimiento mediante informes
 - Actuar sobre los dispositivos no compatibles poniendo el dispositivo en cuarentena y ofreciéndole un acceso condicional
 
 Igual que las restricciones de inscripción, las directivas de cumplimiento de dispositivos incluyen tanto la versión mínima como la máxima del sistema operativo. Las directivas también tienen una escala de tiempo de cumplimiento para ofrecer a los usuarios un período de gracia para cumplir con la directiva. Las directivas de cumplimiento del dispositivo hacen que los dispositivos de los usuarios finales inscritos cumplan con la directiva de la organización.
 
-![Cumplimiento de dispositivos: acciones para dispositivos no compatibles](./media/os-version-actions-noncompliance.png) 
+![Cumplimiento de dispositivos: acciones para dispositivos no compatibles](./media/os-version-actions-noncompliance.png)
 
 ### <a name="in-practice"></a>A la práctica
 Las organizaciones usan las directivas de cumplimiento de dispositivos en los mismos escenarios que las restricciones de inscripción. Estas directivas hacen que los usuarios usen versiones actuales y validadas del sistema operativo en su organización. Si los dispositivos de los usuarios finales no cumplen las directivas, se puede bloquear el acceso a recursos de la organización mediante un acceso condicional hasta que los usuarios finales estén dentro del rango del sistema operativo compatible para su organización. A los usuarios finales se les informa de que no están cumpliendo con la directiva y se les explican los pasos para volver a obtener acceso.   
 
-Para obtener información, consulte [Introducción a las directivas de cumplimiento de dispositivos](https://docs.microsoft.com/intune/device-compliance-get-started).
+Para obtener información, consulte [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Controles de la versión del sistema operativo mediante directivas de protección de aplicaciones de Intune    
 Las directivas de protección de aplicaciones de Intune y la configuración de acceso a la administración de aplicaciones móviles (MAM) le permiten especificar la versión mínima del sistema operativo en el nivel de aplicación. Esto le permite informar a los usuarios finales de que pueden actualizar su sistema operativo a una versión mínima especificada y fomentar o requerirles que lo hagan.
@@ -70,7 +74,7 @@ Tiene dos opciones:
 ### <a name="in-practice"></a>A la práctica
 Al abrir o reanudar aplicaciones, las organizaciones usan la configuración de la directiva de protección de aplicaciones para explicar a los usuarios finales la necesidad de mantener las aplicaciones actualizadas. Por ejemplo, se podría establecer una configuración en la que a los usuarios finales se les advirtiera cuando estuvieran usando la versión actual menos uno y se les bloqueara cuando usaran la versión actual menos dos.
  
-Para obtener información, consulte [Creación y asignación de directivas de protección de aplicaciones](https://docs.microsoft.com/intune/app-protection-policies).
+Para obtener información, consulte [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md).
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>Administrar el lanzamiento de una versión de sistema operativo
 Puede usar las capacidades de Intune que se describen en este artículo para implementar una nueva versión de sistema operativo en su organización en la escala de tiempo que defina. En los pasos siguientes se ofrece un modelo de implementación de muestra para hacer que los usuarios de la versión 1 del sistema operativo pasen a la versión 2 en un plazo de siete días.
@@ -84,8 +88,9 @@ Puede usar las capacidades de Intune que se describen en este artículo para imp
   - Estas directivas requieren que los dispositivos estén actualizados para seguir teniendo acceso a datos de la organización. Los servicios protegidos se bloquean cuando se usan con acceso condicional al dispositivo. Las aplicaciones que disponen de una directiva de protección de aplicaciones se bloquean cuando se abren o cuando acceden a datos de la organización.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Use los siguientes recursos para administrar las versiones del sistema operativo en su organización: 
 
-- [Establecer restricciones de tipo de dispositivo](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
-- [Introducción al cumplimiento de dispositivos](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [Creación y asignación de directivas de protección de aplicaciones](https://docs.microsoft.com/intune/app-protection-policies)
+Use los siguientes recursos para administrar las versiones del sistema operativo en su organización:
+
+- [Establecer restricciones de tipo de dispositivo](enrollment-restrictions-set.md#create-a-device-type-restriction)
+- [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md)
+- [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md)

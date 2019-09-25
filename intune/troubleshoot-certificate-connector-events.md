@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a282662032fe77cbf39da279c587bff31ad9e24
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70123229"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167766"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Eventos y códigos de diagnóstico de Intune Certificate Connector
 
@@ -60,7 +60,7 @@ A partir de la versión 6.1806.x.x, el servicio de conector de Intune registra l
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Correcto  | Correcto |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | La entidad de certificación no es válida o no está disponible. Compruebe que la entidad de certificación está disponible y que el servidor puede comunicarse con él. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | No se encontró el certificado de autenticación de cliente de Symantec en el almacén de certificados local. Vea el artículo [Instalación del certificado de autorización de registro de Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para más información.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | No se encontró el certificado de autenticación de cliente de Symantec en el almacén de certificados local. Vea el artículo [Instalación del certificado de autorización de registro de Symantec](certificates-digicert-configure.md#install-the-digicert-ra-certificate) para más información.  |
 | 0x00000402 | RevokeCert_AccessDenied  | La cuenta especificada no tiene permisos para revocar un certificado de una entidad de certificación. Vea el campo Nombre de CA en los detalles del mensaje del evento para determinar la entidad de certificación emisora.  |
 | 0x00000403 | CertThumbprint_NotFound  | No se pudo encontrar un certificado que coincida con los datos especificados. Inscriba el conector de certificado e inténtelo de nuevo. |
 | 0x00000404 | Certificate_NotFound  | No se pudo encontrar un certificado que coincida con la entrada proporcionada. Vuelva a inscribir el conector de certificado e inténtelo de nuevo. |
