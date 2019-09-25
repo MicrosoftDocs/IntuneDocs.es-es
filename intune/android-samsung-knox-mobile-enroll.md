@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071642"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167424"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscripción automática de dispositivos Android mediante Knox Mobile Enrollment de Samsung
 
@@ -105,7 +105,7 @@ En el caso de los dispositivos inscritos en Intune mediante KME para Android, pu
 
 - **Sin asociación de nombre de usuario:** en el portal de Knox, en **Detalles del dispositivo**, deje en blanco los campos **Identificador del usuario** y **Contraseña** de los dispositivos agregados. Esta opción requiere que el usuario final escriba tanto su nombre de usuario como la contraseña cuando se inscriba en Intune.
 
-- **Con asociación de nombre de usuario:** en el portal de Knox, en **Detalles del dispositivo**, proporcione un **Identificador de usuario**, como un nombre de usuario para el usuario asignado o una cuenta [Administrador de inscripción de dispositivos](https://docs.microsoft.com/intune/device-enrollment-manager-enroll), para los dispositivos agregados. Esta opción rellena previamente el nombre de usuario y requiere que el usuario final escriba una contraseña cuando se inscriba en Intune.
+- **Con asociación de nombre de usuario:** en el portal de Knox, en **Detalles del dispositivo**, proporcione un **Identificador de usuario**, como un nombre de usuario para el usuario asignado o una cuenta [Administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md), para los dispositivos agregados. Esta opción rellena previamente el nombre de usuario y requiere que el usuario final escriba una contraseña cuando se inscriba en Intune.
 
 > [!NOTE]
 >
