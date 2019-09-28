@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4efa2a813dda16805effe55ff3d1b967ef5d6c88
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: edff9ca3e292a2b5653a8b156a8deaa02bb79e9d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798234"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71303179"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Uso de directivas personalizadas en Microsoft Intune para permitir y bloquear aplicaciones para dispositivos Samsung Knox Standard 
 
@@ -36,8 +35,7 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung Knox
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Creación de una lista de aplicaciones permitidas o bloqueadas
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 2. En la hoja de lista de perfiles, elija **Crear perfil**.
@@ -51,9 +49,9 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung Knox
 
    - **Nombre**: escriba **PreventStartPackages**.
    - **Descripción**: escriba una descripción opcional, por ejemplo, "Lista de aplicaciones bloqueadas que no se pueden ejecutar".
-   -    **Tipo de datos**: en la lista desplegable, elija **Cadena**.
-   -    **OMA-URI**: escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
-   -    **Valor**: escriba una lista de los nombres de paquetes de aplicaciones que quiere permitir. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
+   - **Tipo de datos**: en la lista desplegable, elija **Cadena**.
+   - **OMA-URI**: escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
+   - **Valor**: escriba una lista de los nombres de paquetes de aplicaciones que quiere permitir. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
 
    Para obtener una lista de las aplicaciones que los usuarios pueden instalar de Google Play Store al excluir todas las demás aplicaciones:
    - **Nombre**: escriba **AllowInstallPackages**.

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167532"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238961"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Anular la inscripción del dispositivo Android de la administración  
 
@@ -64,7 +64,7 @@ También puede pulsar **Configuración** > **Aplicaciones** > **Portal de empres
 
 Como último recurso, puede desinstalar la aplicación del dispositivo como administrador del dispositivo.  
 
-Si tiene un dispositivo propiedad de su empresa, su organización puede requerir que el Portal de empresa esté instalado en el dispositivo en todo momento. Si lo desinstala, podría perder acceso a los recursos protegidos de la compañía, como correo electrónico, aplicaciones, Wi-Fi o VPN, hasta que se vuelva a instalar la aplicación. Para obtener más información sobre la instalación, la actualización o la eliminación de las aplicaciones necesarias, vea [Agregar aplicaciones a Microsoft Intune](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune).  
+Si tiene un dispositivo propiedad de su empresa, su organización puede requerir que el Portal de empresa esté instalado en el dispositivo en todo momento. Si lo desinstala, podría perder acceso a los recursos protegidos de la compañía, como correo electrónico, aplicaciones, Wi-Fi o VPN, hasta que se vuelva a instalar la aplicación. Para obtener más información sobre la instalación, la actualización o la eliminación de las aplicaciones necesarias, vea [Agregar aplicaciones a Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
 
 Aquí le indicamos cómo deshabilitar el Portal de empresa como administrador del dispositivo. Los nombres reales de cada configuración pueden variar en su dispositivo Android.  
 

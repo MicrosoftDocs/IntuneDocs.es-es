@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/31/2019
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e912c14418d54321b0998dad3081f297ae81114d
-ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
+ms.openlocfilehash: 7837ab6e24c5d4fa848218b662cbd89dfbbe7b72
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867439"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71301877"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Grupos clásicos de Microsoft Intune en Azure Portal
 
@@ -47,11 +46,11 @@ Algunas de las funcionalidades de los grupos que podría haber usado anteriormen
 ## <a name="how-to-get-started"></a>Cómo empezar
 
 - Lea los siguientes temas para obtener información sobre los grupos de seguridad de Azure AD y su funcionamiento:
-    -  [Administración del acceso a los recursos con grupos de Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
-    -  [Administración de grupos en Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
--  Asegúrese de que los administradores que necesiten crear grupos se agreguen al rol de Azure AD **Administrador del servicio de Intune**. El rol Administrador del servicio de Azure AD no tiene permisos de **Administrar grupo**.
--  Si los grupos de Intune han usado la opción **Excluir miembros específicos**, decida si puede volver a diseñar estos grupos sin exclusiones, o si necesita reglas avanzadas para satisfacer las necesidades empresariales.
+  - [Administración del acceso a los recursos con grupos de Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+  - [Administración de grupos en Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+  - [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+- Asegúrese de que los administradores que necesiten crear grupos se agreguen al rol de Azure AD **Administrador del servicio de Intune**. El rol Administrador del servicio de Azure AD no tiene permisos de **Administrar grupo**.
+- Si los grupos de Intune han usado la opción **Excluir miembros específicos**, decida si puede volver a diseñar estos grupos sin exclusiones, o si necesita reglas avanzadas para satisfacer las necesidades empresariales.
 
 
 ## <a name="what-happened-to-intune-groups"></a>¿Qué ha sucedido con los grupos de Intune?

@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 7d51d504f63e9a9c942bbcbc689c67bc63d74a2c
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798109"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71304927"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover los datos de la cuenta de almacenamiento de datos de Intune 
 
@@ -82,5 +81,5 @@ El cliente X solicita que un movimiento de cuenta se inicie el 06/01/2018. En re
 
 ## <a name="next-steps"></a>Pasos siguientes
 
- - Conozca las [novedades semanales de Intune](whats-new.md). También podrá obtener información sobre los próximos cambios, notificaciones importantes sobre el servicio e información sobre las versiones anteriores.
- - Lea el [Blog de Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).
+- Conozca las [novedades semanales de Intune](whats-new.md). También podrá obtener información sobre los próximos cambios, notificaciones importantes sobre el servicio e información sobre las versiones anteriores.
+- Lea el [Blog de Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

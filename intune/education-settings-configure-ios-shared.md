@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0b8230a842a7b4e3b1368388cb186defa8df72
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8747a398447dc1f477e2b0149104c4c65d3ed741
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566597"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71302188"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Configuración del entorno educativo de Intune para dispositivos iPad compartidos
 
@@ -68,8 +67,7 @@ Puede importar información a SDS mediante uno de los siguientes métodos:
 
 ### <a name="configure-general-settings"></a>Configuración de las opciones generales
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
 5. En el panel Perfiles, elija **Crear perfil**.
@@ -103,7 +101,7 @@ En **Teacher PKCS#12 certificate** (Certificado de profesor PKCS#12), configure 
 - **Entidad de certificación**: entidad de certificación (CA) empresarial que se ejecuta en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes.
 - **Nombre de la entidad de certificación**: escriba el nombre de la entidad de certificación.
 - **Nombre de plantilla de certificado**: escriba el nombre de una plantilla de certificado que se haya agregado a una CA emisora.
-- **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
+- **Umbral de renovación (%)** : especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
 - **Período de validez del certificado**: especifique la cantidad de tiempo que queda antes de que expire el certificado. Puede especificar un valor inferior al período de validez de la plantilla de certificado especificada, pero no superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora.
 
 Cuando haya terminado la configuración de los certificados de profesores, seleccione **Aceptar**.
@@ -125,7 +123,7 @@ En **Student PKCS#12 certificate** (Certificado de estudiante PKCS#12), configur
 - **Entidad de certificación**: entidad de certificación (CA) empresarial que se ejecuta en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes.
 - **Nombre de la entidad de certificación**: escriba el nombre de la entidad de certificación.
 - **Nombre de plantilla de certificado**: escriba el nombre de una plantilla de certificado que se haya agregado a una CA emisora.
-- **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
+- **Umbral de renovación (%)** : especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
 - **Período de validez del certificado**: especifique la cantidad de tiempo que queda antes de que expire el certificado. Puede especificar un valor inferior al período de validez de la plantilla de certificado especificada, pero no superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora.
 
 Cuando haya terminado la configuración de los certificados, haga clic en **Aceptar**.
@@ -139,8 +137,7 @@ Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 
 ## <a name="step-3---create-a-device-category"></a>Paso 3: Crear una categoría de dispositivo
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, seleccione **Inscripción de dispositivos**.
 4. En el panel **Inscripción de dispositivos: introducción**, elija **Categorías de dispositivos**.
 5. En el panel **Inscripción de dispositivos: categorías de dispositivos**, elija **Crear**.
@@ -151,8 +148,7 @@ La categoría de dispositivos se crea en el panel **Inscripción: categorías de
 
 ## <a name="step-4--create-a-dynamic-group"></a>Paso 4: Crear un grupo dinámico
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Grupos**.
 4. En el panel **Usuarios y grupos: todos los grupos**, seleccione **Nuevo grupo**.
 5. En el panel **Grupo**, elija un **Tipo de grupo** y, después, escriba un **Nombre** y una **Descripción** para el grupo.
@@ -169,8 +165,7 @@ El grupo dinámico se crea en el panel **Usuarios y grupos: todos los grupos**.
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Paso 5: Asignar un dispositivo a una categoría (Carros)
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Dispositivos**.
 4. En el panel **Dispositivos**, seleccione **Todos los dispositivos**.
 5. En el panel **Dispositivos: todos los dispositivos**, seleccione un dispositivo.
@@ -182,14 +177,13 @@ Ahora el dispositivo está asociado a la categoría de dispositivo. Repita este 
 
 ## <a name="step-6--create-classroom-profiles"></a>Paso 6: Crear perfiles de aulas
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, seleccione **Administrar** > **Perfiles de carro**.
 5. En el panel Perfiles, elija **Crear perfil**.
 6. En el panel **Crear asociación**, escriba un **Nombre** y una **Descripción**.
 7. Pulse **Seleccionar clases** > **Configurar** para asociar grupos al perfil de carro.
-8. Seleccione las clases que se van a incluir en el perfil de carro y, después, pulse **Seleccionar**. 
+8. Seleccione las clases que se van a incluir en el perfil de carro y, después, pulse **Seleccionar**. 
 9. Pulse **Seleccionar carros** > **Configurar** para asociar grupos al perfil de carro.
 10. Seleccione los grupos que se van a incluir en el perfil de carro y, después, pulse **Seleccionar**.
 11. En el panel **Crear asociación**, seleccione **Guardar** para guardar el perfil de carro.
@@ -198,13 +192,12 @@ Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Paso 7: Asignar el perfil de carro a las clases
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, elija **Supervisar** > **Estado de la asignación**.
 5. En el panel **Estado de la asignación**, seleccione el **Perfil de carro** que ha creado.
 6. En el panel **Perfil de carro**, elija **Asignaciones** y, después, en **Incluir**, elija **Seleccionar grupos para incluir**.
-7. Seleccione las clases que quiere que se dirijan al perfil de carro (no seleccione un grupo) y, después, pulse **Seleccionar**. 
+7. Seleccione las clases que quiere que se dirijan al perfil de carro (no seleccione un grupo) y, después, pulse **Seleccionar**. 
 8. Cuando termine, elija **Guardar**.
 
 La asignación se completa e Intune implementa el perfil de Classroom a los dispositivos de destino basándose en la asignación del aula.

@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461165"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302175"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Configuración de Intune para la aplicación Classroom para iOS
 
@@ -78,15 +77,14 @@ Puede importar información a SDS mediante uno de los siguientes métodos:
 
 ### <a name="configure-general-settings"></a>Configuración de las opciones generales
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
-5.  En el panel Perfiles, elija **Crear perfil**.
-6.  En el panel **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil Educación de iOS.
-7.  En la lista desplegable **Plataforma**, elija **iOS**.
-8.  En la lista desplegable **Tipo de perfil**, elija **Educación**.
-9.  Elija **Configuración** > **Configurar**.
+5. En el panel Perfiles, elija **Crear perfil**.
+6. En el panel **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil Educación de iOS.
+7. En la lista desplegable **Plataforma**, elija **iOS**.
+8. En la lista desplegable **Tipo de perfil**, elija **Educación**.
+9. Elija **Configuración** > **Configurar**.
 
 
 En la siguiente sección, creará certificados para establecer una relación de confianza entre los iPad de profesores y estudiantes. Se utilizan certificados para autenticar sin problemas y de forma silenciosa las conexiones entre los dispositivos sin tener que escribir nombres de usuario ni contraseñas.
@@ -116,7 +114,7 @@ En **Teacher PKCS#12 certificate** (Certificado de profesor PKCS#12), configure 
 - **Entidad de certificación**: entidad de certificación (CA) empresarial que se ejecuta en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes. 
 - **Nombre de la entidad de certificación**: escriba el nombre de la entidad de certificación.
 - **Nombre de plantilla de certificado**: escriba el nombre de una plantilla de certificado que se haya agregado a una CA emisora. 
-- **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
+- **Umbral de renovación (%)** : especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
 - **Período de validez del certificado**: especifique la cantidad de tiempo que queda antes de que expire el certificado.
 Puede especificar un valor inferior al período de validez de la plantilla de certificado especificada, pero no superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora.
 
@@ -124,8 +122,8 @@ Cuando haya terminado la configuración de los certificados, haga clic en **Acep
 
 ### <a name="configure-student-certificates"></a>Configuración de certificados de estudiantes
 
-1.  En el panel **Educación**, elija **Certificados de alumno**.
-2.  En el panel **Certificados de alumno** de la lista **Tipos de certificados de dispositivo de alumno**, elija **1:1**.
+1. En el panel **Educación**, elija **Certificados de alumno**.
+2. En el panel **Certificados de alumno** de la lista **Tipos de certificados de dispositivo de alumno**, elija **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Configuración de certificado raíz de estudiantes
 
@@ -141,7 +139,7 @@ En **Student PKCS#12 certificate** (Certificado de estudiante PKCS#12), configur
 - **Entidad de certificación**: entidad de certificación (CA) empresarial que se ejecuta en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes. 
 - **Nombre de la entidad de certificación**: escriba el nombre de la entidad de certificación.
 - **Nombre de plantilla de certificado**: escriba el nombre de una plantilla de certificado que se haya agregado a una CA emisora. 
-- **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
+- **Umbral de renovación (%)** : especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
 - **Período de validez del certificado**: especifique la cantidad de tiempo que queda antes de que expire el certificado.
 Puede especificar un valor inferior al período de validez de la plantilla de certificado especificada, pero no superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora.
 
@@ -149,9 +147,9 @@ Cuando haya terminado la configuración de los certificados, haga clic en **Acep
 
 ## <a name="finish-up"></a>Finalizar
 
-1.  En el panel **Educación**, elija Aceptar.
-2.  En el panel **Crear perfil**, elija **Crear**.
-    
+1. En el panel **Educación**, elija Aceptar.
+2. En el panel **Crear perfil**, elija **Crear**.
+
 Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 
 Asigne el perfil a los dispositivos de estudiante en los grupos de aula que se crearon al sincronizar los datos de la escuela con Azure AD (consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
