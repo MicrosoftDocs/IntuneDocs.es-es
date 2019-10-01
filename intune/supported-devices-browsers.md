@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460621"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239575"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Exploradores y sistemas operativos compatibles en Intune
 
@@ -115,12 +114,12 @@ Estos portales son compatibles con los siguientes exploradores:
 
 ### <a name="intune-classic-portal"></a>Portal de Intune clásico
 
-Las características únicamente clásicas de Intune, como el cliente de software de PC de Intune y la integración con asociados de Mobile Threat Defense, solo están disponibles en el portal de Intune clásico (https://manage.microsoft.com). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
+El portal de Intune clásico solo se usa para administrar dispositivos inscritos con el cliente de software de equipos de Intune (https://manage.microsoft.com) ). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
 
 Los siguientes exploradores Silverlight admiten la consola de Intune:
 - Internet Explorer 10 o posterior
 - Google Chrome (las versiones anteriores a la 42)
-- Mozilla Firefox on Silverlight habilitado [Más información](https://go.microsoft.com/fwlink/?linkid=836872)
+- Mozilla Firefox con Silverlight habilitado (versiones anteriores a la 56)
 
 > [!Note]
 > Microsoft Edge y los exploradores móviles no son compatibles con el portal clásico de Intune porque no admiten [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).

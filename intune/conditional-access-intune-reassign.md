@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883786"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256197"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reasignación de directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal
 
@@ -194,15 +194,9 @@ Después de que haya reasignado las directivas de acceso condicional en Azure P
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Para deshabilitar las directivas de acceso condicional
 
-1. Vaya al [Portal de Intune clásico](https://manage.microsoft.com) e inicie sesión con sus credenciales.
+Como MDM se ha quitado del portal clásico de Intune, se ha proporcionado el siguiente vínculo para ver o deshabilitar estas directivas clásicas:
 
-2. Pulse **Directiva** en el menú de la izquierda.
-
-3. Pulse **Acceso condicional** y, después, seleccione el servicio en la nube de Microsoft (por ejemplo, Exchange Online o SharePoint Online) para el que ha creado una directiva de acceso condicional.
-
-4. Desactive la opción **Habilitar directiva de acceso condicional** y, después, haga clic en **Guardar**.
-
-    ![Imagen de Deshabilitar directivas de acceso condicional en el Portal de Intune clásico](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>Consulte también
 

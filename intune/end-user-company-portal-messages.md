@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569134"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239371"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> La siguiente información se aplica solo a dispositivos con Android 6.0 y versiones posteriores.
+> La siguiente información se aplica solo a dispositivos con Android 6.0 y versiones posteriores y iOS 10 y versiones posteriores.
 
 Comprenda los distintos mensajes de la aplicación que los usuarios finales pueden ver en Portal de empresa. Normalmente, estos mensajes de la aplicación se muestran en distintos puntos del proceso de inscripción. Descubra dónde aparecen, cuál es su significado y qué ocurre si los usuarios deniegan el acceso. Además, aprenderá a explicar mejor los mensajes a los usuarios.
 
 - __¿Permitir que el Portal de empresa realice y administre llamadas telefónicas?__
 - __¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?__
+
+> [!NOTE]
+> No vendemos ningún dato recogido por nuestro servicio a terceros por ningún motivo.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>¿Permitir que Portal de empresa realice y administre llamadas telefónicas?
 
@@ -47,7 +49,7 @@ Al aceptar este aviso, los usuarios permiten que se envíen los números de tel�
 > [!NOTE]
 > **La aplicación Portal de empresa nunca hace ni administra llamadas telefónicas.** Google controla el texto del mensaje y no se puede cambiar.
 
-Para ver la página **Hardware**, debe ir a **Grupos** > **All mobile devices (Todos los dispositivos móviles)** > **Dispositivos**. Seleccione el dispositivo del usuario y vaya a **Ver propiedades** > **Hardware**.
+Para ver la página **Hardware**, debe ir a **Grupos** > **All mobile devices (Todos los dispositivos móviles)**  > **Dispositivos**. Seleccione el dispositivo del usuario y vaya a **Ver propiedades** > **Hardware**.
 
 ### <a name="what-happens-if-users-deny-access"></a>Qué sucede si los usuarios deniegan el acceso
 Si los usuarios deniegan el acceso, pueden seguir usando la aplicación de Portal de empresa e inscribir su dispositivo. Sin embargo, el número de teléfono y el IMEI del dispositivo estarán en blanco en la página de __hardware__ de la consola de administración. La segunda vez que los usuarios inician sesión en la aplicación Portal de empresa después de denegar el acceso, el mensaje muestra una casilla de verificación **Never ask again** (No volver a preguntar) que los usuarios pueden marcar para detener el aviso.
@@ -57,7 +59,7 @@ Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparecer�
 Si los usuarios más adelante deciden permitir el acceso, pueden ir a **Configuración** > **Aplicaciones** > **Portal de empresa** > **Permisos** > **Teléfono** y activarlo.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Cómo explicar esto a los usuarios
-Envíe a los usuarios a [Inscribir el dispositivo Android en Intune](/intune-user-help/enroll-your-device-in-intune-android) para más información.
+Envíe a los usuarios a [Inscribir el dispositivo Android en Intune](/intune-user-help/enroll-device-android-company-portal) para más información.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Allow Company Portal to access your contacts? (¿Permitir que el portal de empresa tenga acceso a los contactos?)
 
@@ -78,7 +80,7 @@ Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparece l
 Si los usuarios más adelante deciden permitir el acceso, pueden ir a **Configuración** > **Aplicaciones** > **Portal de empresa** > **Permisos** > **Teléfono** y activarlo.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Cómo explicar esto a los usuarios
-Envíe a los usuarios a [Inscribir el dispositivo Android en Intune](/intune-user-help/enroll-your-device-in-intune-android) para más información.
+Envíe a los usuarios a [Inscribir el dispositivo Android en Intune](/intune-user-help/enroll-device-android-company-portal) para más información.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?
 
@@ -132,7 +134,7 @@ Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia
 
 3. Seleccione **Perfil de administración** > **Aplicación de empresa**.
 4. Seleccione el nombre del desarrollador.
-5. Presione **Confiar en _nombre del desarrollador_**.
+5. Presione **Confiar en _nombre del desarrollador_** .
 6. Para confirmar la aplicación, seleccione **Confiar** en el mensaje emergente de instalación de la aplicación.
 
    ![UI de dispositivo iOS: Mensaje de aplicación de confianza](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
@@ -140,5 +142,5 @@ Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia
     Debería ser capaz de iniciar y usar la aplicación de empresa.
 
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 [Qué decirles a los usuarios finales sobre el uso de Intune](end-user-educate.md)

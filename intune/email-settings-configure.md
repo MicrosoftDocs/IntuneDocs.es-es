@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b579849d9afdb50470b7a772e003cc616e1f94a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2a534aef3cdb989376dc1c148abedfb4f4e4f78b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530037"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162887"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Agregar la configuración de correo electrónico a dispositivos que usan Intune
 
@@ -40,23 +40,29 @@ En este artículo se explica cómo crear un perfil de correo electrónico en Mic
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
-3. Escriba un **nombre** y una **descripción** para el perfil de correo electrónico.
-4. Elija su **plataforma** en la lista desplegable. Las opciones son:
+3. Escriba las propiedades siguientes:
 
-    - **Android** (solo Android Samsung Knox Standard)
-    - **Android Enterprise**
-    - **iOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 y versiones posteriores**
+    - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Configuración de correo electrónico para todos los dispositivos Windows**.
+    - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
+    - **Plataforma**: seleccione la plataforma de los dispositivos. Las opciones son:
 
-5. En la lista desplegable de tipos de **perfil**, elija **Correo electrónico**.
-6. Las opciones que se pueden configurar pueden variar en función de la plataforma de la que se trate. Para una configuración específica, elija la plataforma:
+        - **Android** (solo Android Samsung Knox Standard)
+        - **Android Enterprise**
+        - **iOS/iPadOS**
+        - **Windows Phone 8.1**
+        - **Windows 10 y versiones posteriores**
+
+    - **Tipo de perfil**: Seleccione **Correo electrónico**.
+
+4. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Elija la plataforma para la configuración detallada:
 
     - [Configuración de Android Samsung Knox Standard](email-settings-android.md)
     - [Configuración de Android Enterprise](email-settings-android-enterprise.md)
-    - [Configuración de iOS](email-settings-ios.md)
+    - [Configuración de iOS/iPadOS](email-settings-ios.md)
     - [Configuración de Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Configuración de Windows 10](email-settings-windows-10.md)
+
+5. Cuando haya terminado, seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 Después de escribir la configuración y crear el perfil, el perfil se muestra en la lista de perfiles. A continuación, [asigne este perfil a algunos grupos](device-profile-assign.md).
 

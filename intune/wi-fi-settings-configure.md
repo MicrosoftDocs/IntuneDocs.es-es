@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 80e70db4b64770af1a96ee7f24a3cf875269adce
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545919"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163488"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Adición y uso de la configuración de Wi-Fi en los dispositivos en Microsoft Intune
 
@@ -57,7 +57,7 @@ Los perfiles de Wi-Fi admiten las siguientes plataformas de dispositivo:
 
       - **Android**
       - **Android Enterprise**
-      - **iOS**
+      - **iOS/iPadOS**
       - **macOS**
       - **Windows 8.1 y versiones posteriores**
       - **Windows 10 y versiones posteriores**
@@ -73,7 +73,7 @@ Los perfiles de Wi-Fi admiten las siguientes plataformas de dispositivo:
 
     - [Android](wi-fi-settings-android.md)
     - [Android Enterprise](wi-fi-settings-android-enterprise.md), incluidos los dispositivos dedicados
-    - [iOS](wi-fi-settings-ios.md)
+    - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 y versiones posteriores](wi-fi-settings-windows.md)
     - [Windows 8.1 y versiones posteriores](wi-fi-settings-import-windows-8-1.md), incluido Windows Holographic for Business

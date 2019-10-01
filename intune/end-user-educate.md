@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569784"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239791"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Cómo presentar Microsoft Intune a los usuarios finales
 
@@ -58,9 +57,9 @@ En esta lista ofrecemos algunas sugerencias para facilitar la implementación de
 
 * __Sea accesible.__ Indique a los usuarios dónde pueden buscar ayuda para los problemas que tengan con sus dispositivos. Cuando [personalice el Portal de empresa](company-portal-customize.md), no olvide incluir la información de contacto del administrador de TI.
 
-* __Sea personal.__ Proporcione instrucciones que sean específicas para la implementación de la organización. De este modo, está mostrando a los usuarios que se preocupa por su experiencia. Use esta [plantilla personalizable de inscripción de usuarios en Intune](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) para crear sus propias instrucciones de inscripción dirigidas a los usuarios.
+* __Sea personal.__ Proporcione instrucciones que sean específicas para la implementación de la organización. De este modo, está mostrando a los usuarios que se preocupa por su experiencia. Use esta [kit de adopción de Intune](https://aka.ms/IntuneAdoptionKit) personalizable para crear sus propias instrucciones de inscripción dirigidas a los usuarios.
 
-* __Busque formas distintas de comunicarse.__ Los usuarios tienen [diferentes estilos de aprendizaje](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) y maneras preferidas de usar la información. Para los más visuales, Intune ofrece [versiones en vídeo de cómo inscribir distintos tipos de dispositivo](https://channel9.msdn.com/Series/IntuneEnrollment) en Channel 9. Estos vídeos se pueden incluir directamente en su propio [sitio de SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). También puede descargar copias locales de la pista de vídeo o audio.
+* __Busque formas distintas de comunicarse.__ Los usuarios tienen [diferentes estilos de aprendizaje](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) y maneras preferidas de usar la información. Para los más visuales, Intune ofrece [versiones en vídeo de cómo inscribir distintos tipos de dispositivo](https://channel9.msdn.com/Series/IntuneEnrollment) en Channel 9. Estos vídeos se pueden incluir directamente en su propio [sitio de SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). También puede descargar copias locales de la pista de vídeo o audio.
 
 * __Sea consciente.__ La experiencia de usuario de Intune también tiene un impacto en la productividad. Al comprender la experiencia de los usuarios, resulta más fácil solucionar los problemas de los usuarios y los dispositivos. Por ejemplo, puede conocer y entender el modo en que los usuarios adquieren sus aplicaciones. Al conocer esta información con antelación, le resultará más fácil y rápido diagnosticar y corregir problemas.
 

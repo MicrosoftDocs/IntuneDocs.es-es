@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394242"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239311"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de iOS
 
@@ -36,7 +35,7 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 
 **Aplicaciones administradas**: son aplicaciones que se pueden administrar mediante directivas y que se han "encapsulado" con Intune o se han creado con el kit de desarrollo de software (SDK) para aplicaciones de Intune. Estas aplicaciones pueden administrarse mediante Intune y las directivas de protección de aplicaciones pueden aplicarse a estas.
 
-**Aplicaciones no administradas**: son aplicaciones que se pueden administrar mediante directivas y que no están encapsuladas con Intune o no incorporan el SDK de aplicaciones de Intune. Las directivas de aplicación no pueden aplicarse a estas aplicaciones.
+**Aplicaciones no administradas**: las aplicaciones que los usuarios pueden descargar desde el App Store de iOS que no están integradas con el SDK para aplicaciones de Intune. Intune no tiene ningún control sobre la distribución, la administración o el borrado selectivo de estas aplicaciones.  
 
 Las restricciones de Apple prohíben que las aplicaciones de la tienda de aplicaciones de línea de negocio y administradas aparezcan en la aplicación Portal de empresa. Para solucionar este problema, los iconos de la aplicación Portal de empresa para iOS apuntan a los usuarios a distintas vistas de una única ubicación (el sitio web de Portal de empresa) para todas sus aplicaciones.
 
@@ -53,7 +52,7 @@ Los usuarios inscritos obtienen sus aplicaciones tocando en los iconos siguiente
 
 Para más información sobre cómo agregar aplicaciones, vea [Agregar una aplicación a Microsoft Intune](apps-add.md).
 
-### <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulte también
 [Cómo obtienen sus aplicaciones los usuarios de Android](end-user-apps-android.md)
 
 [Cómo obtienen sus aplicaciones los usuarios de Windows](end-user-apps-windows.md)

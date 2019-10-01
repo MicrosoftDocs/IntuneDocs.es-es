@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc495e6356a35215943415e03a46496a72bddf1
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: c8c9375449e55d2e6cac511cb0e279355ec95294
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071043"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163270"
 ---
 # <a name="android-device-administrator-enrollment"></a>Inscripción del administrador de dispositivos Android
 
@@ -50,7 +50,8 @@ Para más información sobre las características de Android Enterprise de Googl
 De forma predeterminada, Intune permite la inscripción de dispositivos Android con funcionalidades de administrador de dispositivos.
 
 1. Para prepararse para administrar dispositivos móviles, debe establecer la entidad de administración de dispositivos móviles (MDM) en **Microsoft Intune**. Para obtener instrucciones, consulte [Set the MDM authority](mdm-authority-set.md) (Establecimiento de la autoridad de MDM). Este elemento solo se establece una vez, la primera vez que configura Intune para la administración de dispositivos móviles.
-2. [Indique a los usuarios cómo deben inscribir sus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).  
+2. Vaya a **Intune** > **Inscripción de dispositivos** > **Inscripción de Android** > **Personal and corporate-owned devices with device administration privileges**(Dispositivos personales y corporativos con privilegios de administración de dispositivos) > **Use el administrador de dispositivos para administrar los dispositivos**.
+3. [Indique a los usuarios cómo deben inscribir sus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).  
 
 Después de que un usuario se haya inscrito, puede empezar a administrar sus dispositivos en Intune, que incluye la [asignación de directivas de cumplimiento de normas](compliance-policy-create-android.md), la [administración de aplicaciones](app-management.md) y mucho más.
 

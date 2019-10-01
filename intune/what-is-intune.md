@@ -5,9 +5,8 @@ keywords: ¿Qué es Intune?
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460587"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238244"
 ---
 # <a name="what-is-microsoft-intune"></a>¿Qué es Microsoft Intune?
 
@@ -85,7 +84,7 @@ Cuando hablamos sobre la configuración de la aplicación de Intune, nos referim
 Al usar Intune con los demás servicios de EMS, puede proporcionar a la organización una seguridad adicional para las aplicaciones móviles, que se añade a la que proporcionan el sistema operativo móvil y las propias aplicaciones móviles mediante la configuración de la aplicación. Una aplicación administrada con EMS tiene acceso a un conjunto más amplio de características de protección de datos y aplicaciones móviles que incluye lo siguiente:
 
 * [Inicio de sesión único](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Autenticación multifactor](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [Autenticación multifactor](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [Acceso condicional a aplicaciones: permitir el acceso si la aplicación móvil contiene datos corporativos](app-based-conditional-access-intune.md)
 * [Aislamiento de los datos corporativos y los datos personales dentro de la misma aplicación](app-protection-policy.md)
 * [Directiva de protección de aplicaciones (PIN, cifrado, guardar como, Portapapeles, etc.)](app-protection-policies.md)
