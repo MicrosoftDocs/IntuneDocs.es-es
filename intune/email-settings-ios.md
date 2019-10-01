@@ -1,11 +1,11 @@
 ---
-title: Configuración del correo electrónico para dispositivos iOS en Microsoft Intune - Azure | Microsoft Docs
+title: 'Configuración del correo electrónico para dispositivos iOS en Microsoft Intune: Azure | Microsoft Docs'
 description: Vea una lista de todas las opciones de correo electrónico que se pueden configurar y agregar en dispositivos iOS en Microsoft Intune, incluido el uso de servidores de Exchange y la obtención de atributos de Azure Active Directory. También puede habilitar SSL, autenticar usuarios con certificados o con nombre de usuario y contraseña, y sincronizar el correo electrónico en dispositivos iOS con perfiles de configuración de dispositivo de Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,14 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8fa0a7edd1782cd3eae725e6adf0af867e0f3727
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042116"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71301941"
 ---
-# <a name="email-profile-settings-for-ios-devices-in-intune"></a>Configuración del perfil de correo electrónico para dispositivos iOS en Intune
+# <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Incorporación de la configuración de correo electrónico para dispositivos iOS en Microsoft Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En Microsoft Intune, puede crear y configurar el correo electrónico para conectarse a un servidor de correo electrónico, elegir cómo se autentican los usuarios, usar S/MIME para el cifrado, etc.
 
@@ -29,7 +31,10 @@ En este artículo se enumeran y se describen todas las opciones de correo electr
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-[Cree un perfil de configuración de dispositivo](email-settings-configure.md#create-a-device-profile).
+[Cree un perfil de configuración de dispositivo](email-settings-configure.md).
+
+> [!NOTE]
+> Estas opciones están disponibles para todos los tipos de inscripción. Para obtener más información sobre los tipos de inscripción, consulte [inscripción de iOS](ios-enroll.md).
 
 ## <a name="email-settings"></a>Configuración de correo electrónico
 
@@ -98,4 +103,4 @@ En este artículo se enumeran y se describen todas las opciones de correo electr
 
 Se crea el perfil, pero todavía no hace nada. Después, [asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
-Configure el correo electrónico en dispositivos [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md) y [Windows Phone 8.1](email-settings-windows-phone-8-1.md).
+Configure los valores de correo electrónico en dispositivos [Android](email-settings-android.md), [Android Enterprise](email-settings-android-enterprise.md), [Windows 10](email-settings-windows-10.md)y [Windows Phone 8,1](email-settings-windows-phone-8-1.md) .

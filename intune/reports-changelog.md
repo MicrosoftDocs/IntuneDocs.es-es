@@ -6,9 +6,8 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/11/2019
+ms.date: 08/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
-ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
-ms.translationtype: HT
+ms.openlocfilehash: 0aaa305ac216e0f80f82116e626b21f3ae7a8510
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59571814"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303310"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registro de cambios en la API Almacenamiento de datos de Intune
 
@@ -182,13 +181,13 @@ _Publicado en febrero de 2019_
 
 ### <a name="power-bi-compliance-app"></a>Aplicación de cumplimiento de Power BI 
 
-Acceda al almacenamiento de datos de Intune en Power BI Online mediante la aplicación [Cumplimiento de Intune (Almacenamiento de datos)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance). Con esta aplicación de Power BI, ahora puede acceder y compartir informes creados previamente sin necesidad de configuración y sin salir de su explorador web. 
+Acceda al almacenamiento de datos de Intune en Power BI Online mediante la aplicación [Cumplimiento de Intune (Almacenamiento de datos)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp). Con esta aplicación de Power BI, ahora puede acceder y compartir informes creados previamente sin necesidad de configuración y sin salir de su explorador web. 
 
 > [!NOTE]
 > Hay dos filtros más que se pueden aplicar a la aplicación de cumplimiento de Intune.
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Agregar filtros adicionales a la aplicación de cumplimiento de Intune
-1. Abra la aplicación [Cumplimiento de Intune (almacenamiento de datos)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) en el explorador web.
+1. Abra la aplicación [Cumplimiento de Intune (almacenamiento de datos)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) en el explorador web.
 2. Haga clic en **Dispositivos no compatibles** y seleccione **No compatible** en el filtro **complianceStatus**. 
 3. Haga clic en **Dispositivos no compatibles** y seleccione **No disponible aún** en el filtro **complianceStatus**. 
 
@@ -239,8 +238,8 @@ Puede usar <code>$select</code> como un parámetro de consulta OData. La versió
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Nuevas entidades en el modelo de datos de Data Warehouse <!-- 2077804 -->
 
- - Se ha agregado la entidad [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md). El valor **MobileAppDeviceUserInstallStatus** representa un estado de instalación de aplicación móvil para un dispositivo y un usuario determinados.
- - Se ha agregado la entidad [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate). La entidad **MobileAppInstallState** representa el estado de instalación de una aplicación móvil una vez que se ha asignado a un grupo que contiene dispositivos, usuarios o ambos. 
+- Se ha agregado la entidad [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md). El valor **MobileAppDeviceUserInstallStatus** representa un estado de instalación de aplicación móvil para un dispositivo y un usuario determinados.
+- Se ha agregado la entidad [**MobileAppInstallStates**](reports-ref-application.md#mobileappinstallstates). La entidad **MobileAppInstallState** representa el estado de instalación de una aplicación móvil una vez que se ha asignado a un grupo que contiene dispositivos, usuarios o ambos. 
 
 ## <a name="1710"></a>1710
 _Publicado en noviembre de 2017_
@@ -260,9 +259,9 @@ Ahora puede generar informes y visualizaciones de datos con la información de a
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Nuevas entidades en el modelo de datos de Data Warehouse <!-- 1479526 --><!-- -->
 
- - La entidad, [**UserDeviceAssociation**](reports-ref-user-device.md), agregada. **UserDeviceAssociation** contiene las asociaciones de dispositivos de usuario que se dan en su organización. Ahora puede generar informes y visualizaciones de datos con la información de asociación de dispositivo de usuario que asocia las colecciones de la entidad de dispositivo y de usuario.  
- - Se ha agregado la entidad [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md). **IntuneManagementExtension** contiene entidades para dispositivos móviles que realizan el seguimiento de información como la versión y el estado de la instalación.
+- La entidad, [**UserDeviceAssociation**](reports-ref-user-device.md), agregada. **UserDeviceAssociation** contiene las asociaciones de dispositivos de usuario que se dan en su organización. Ahora puede generar informes y visualizaciones de datos con la información de asociación de dispositivo de usuario que asocia las colecciones de la entidad de dispositivo y de usuario.  
+- Se ha agregado la entidad [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md). **IntuneManagementExtension** contiene entidades para dispositivos móviles que realizan el seguimiento de información como la versión y el estado de la instalación.
 
 ## <a name="next-steps"></a>Pasos siguientes
- - Conozca las [novedades semanales de Intune](whats-new.md). También podrá obtener información sobre los próximos cambios, notificaciones importantes sobre el servicio e información sobre las versiones anteriores.
- - Lea el [Blog de Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).
+- Conozca las [novedades semanales de Intune](whats-new.md). También podrá obtener información sobre los próximos cambios, notificaciones importantes sobre el servicio e información sobre las versiones anteriores.
+- Lea el [Blog de Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

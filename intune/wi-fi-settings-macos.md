@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,14 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50269e63f016c1d4f74b006d7748e5c300faac61
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0692a8ac0bcd1fd415d0bceb7f5a269648dd5b30
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050242"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302560"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Incorporación de la configuración de Wi-Fi para dispositivos macOS en Microsoft Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Puede crear un perfil con una configuración específica de Wi-Fi y después implementar este perfil en los dispositivos macOS. Microsoft Intune ofrece muchas características, incluidas la autenticación en la red, agregar un certificado PKS o SCEP y muchas más.
 
@@ -33,6 +35,9 @@ Ambas se describen en este artículo.
 ## <a name="before-you-begin"></a>Antes de comenzar
 
 [Creación de un perfil de dispositivo en Microsoft Intune](device-profile-create.md).
+
+> [!NOTE]
+> Estas opciones están disponibles para todos los tipos de inscripción. Para obtener más información sobre los tipos de inscripción, consulte [inscripción de MacOS](macos-enroll.md).
 
 ## <a name="basic-profiles"></a>Perfiles básicos
 
@@ -74,18 +79,12 @@ Ambas se describen en este artículo.
     - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
     - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
 
-      Haga clic en **Aceptar** para guardar los cambios.
-
     - **Autenticación de cliente** - **Certificado para la autenticación de cliente (certificado de identidad)** : elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
-
-      Haga clic en **Aceptar** para guardar los cambios.
 
   - **EAP-TTLS**: especifique también:
 
     - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
     - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
-
-      Haga clic en **Aceptar** para guardar los cambios.
 
     - **Autenticación de cliente**: elija un **método de autenticación**. Las opciones son:
 
@@ -96,8 +95,6 @@ Ambas se describen en este artículo.
 
       - **Certificados**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
 
-        Haga clic en **Aceptar** para guardar los cambios.
-
       - **Privacidad de identidad (identidad interna)** : escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
 
   - **LEAP**
@@ -107,15 +104,11 @@ Ambas se describen en este artículo.
     - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
     - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
 
-      Haga clic en **Aceptar** para guardar los cambios.
-
     - **Autenticación de cliente**: elija un **método de autenticación**. Las opciones son:
 
       - **Nombre de usuario y contraseña**: pida al usuario un nombre de usuario y una contraseña para autenticar la conexión. 
 
       - **Certificados**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
-
-        Haga clic en **Aceptar** para guardar los cambios.
 
       - **Privacidad de identidad (identidad interna)** : escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
 
@@ -124,12 +117,8 @@ Ambas se describen en este artículo.
   - **Manual**: especifique la **dirección del servidor proxy** como una dirección IP y su **número de puerto**.
   - **Automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, `http://proxy.contoso.com`) que contiene el archivo de configuración.
 
-Seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y se muestra en la lista de perfiles.
-
 ## <a name="next-steps"></a>Pasos siguientes
 
-Se crea el perfil, pero no hacen nada. A continuación, [asigne este perfil](device-profile-assign.md).
+Se crea el perfil, pero no hacen nada. Después, [asigne este perfil](device-profile-assign.md) y [supervise su estado](device-profile-monitor.md).
 
-## <a name="more-resources"></a>Más recursos
-
-[Introducción a la configuración de Wi-Fi](wi-fi-settings-configure.md), incluidas otras plataformas disponibles.
+Configure las opciones de Wi-Fi en dispositivos [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [iOS](wi-fi-settings-ios.md)y [Windows 10](wi-fi-settings-windows.md) .

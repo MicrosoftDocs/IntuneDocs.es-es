@@ -1,13 +1,12 @@
 ---
-title: Los registros de uso StageNow en dispositivos Android Zebra en Microsoft Intune - Azure | Microsoft Docs
-description: Ver los problemas y resoluciones habituales al usar StageNow en dispositivos Android con Microsoft Intune. También aprenderá cómo obtener los registros y ver ejemplos de cómo leer los registros de aciertos o errores.
+title: Uso de registros de StageNow en dispositivos Android Zebra en Microsoft Intune-Azure | Microsoft Docs
+description: Vea problemas y soluciones comunes al usar StageNow en dispositivos Android con Microsoft Intune. También puede obtener información sobre cómo obtener registros y ver ejemplos de cómo leer los registros para comprobar si son correctos o errores.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: ''
 ms.technology: ''
@@ -17,63 +16,63 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36476820805c00cefafcd9f64dd2f08a014762c0
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 6110476aace30daa27450326aea3f4abd4fb3ea0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490548"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71303891"
 ---
-# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Solución de problemas y ver los posibles problemas en dispositivos Android Zebra en Microsoft Intune
+# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Solucionar problemas y ver los posibles problemas en los dispositivos Android Zebra en Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-En Microsoft Intune, puede usar [Zebra Mobility extensiones (MX) para administrar dispositivos Android Zebra](android-zebra-mx-overview.md). Cuando se utilizan dispositivos de cebra, creación de perfiles en StageNow para administrar la configuración y cargarlos en Intune. Intune usa la aplicación StageNow para aplicar la configuración en los dispositivos. La aplicación StageNow también crea un archivo de registro detallado en el dispositivo que se usa para solucionar problemas.
+En Microsoft Intune, puede usar [las extensiones de movilidad Zebra (mx) para administrar dispositivos Android Zebra](android-zebra-mx-overview.md). Cuando se usan dispositivos Zebra, se crean perfiles en StageNow para administrar la configuración y cargarlos en Intune. Intune usa la aplicación StageNow para aplicar la configuración en los dispositivos. La aplicación StageNow también crea un archivo de registro detallado en el dispositivo que se usa para solucionar problemas.
 
 Esta característica se aplica a:
 
 - Android
 
-Por ejemplo, crear un perfil en StageNow para configurar un dispositivo. Cuando se crea el perfil StageNow, el último paso genera un archivo para probar el perfil. Consumir este archivo con la aplicación StageNow en el dispositivo.
+Por ejemplo, puede crear un perfil en StageNow para configurar un dispositivo. Al crear el perfil de StageNow, el último paso genera un archivo para probar el perfil. Este archivo se usa con la aplicación StageNow en el dispositivo.
 
-En otro ejemplo, crear un perfil en StageNow y probarlo. En Intune, agregar el perfil StageNow y, a continuación, asignarla a los dispositivos de cebra. Cuando se comprueba el estado del perfil asignado, el perfil muestra un estado de alto nivel.
+En otro ejemplo, creará un perfil en StageNow y lo probará. En Intune, agregue el perfil StageNow y luego asígnelo a los dispositivos Zebra. Al comprobar el estado del perfil asignado, el perfil muestra un estado de alto nivel.
 
-En ambos casos, puede obtener más detalles en el archivo de registro StageNow, que se guarda en el dispositivo cada vez que se aplica un perfil StageNow.
+En ambos casos, puede obtener más detalles del archivo de registro de StageNow, que se guarda en el dispositivo cada vez que se aplica un perfil de StageNow.
 
-Algunos problemas no estén relacionados con el contenido del perfil StageNow y no se reflejan en los registros.
+Algunos problemas no están relacionados con el contenido del perfil de StageNow y no se reflejan en los registros.
 
-En este artículo se muestra cómo leer los registros de StageNow y se muestra algunos posibles problemas con dispositivos de cebra que pueden no reflejarse en los registros.
+En este artículo se muestra cómo leer los registros de StageNow y se enumeran otros posibles problemas con los dispositivos Zebra que es posible que no se reflejen en los registros.
 
-[Usar y administrar dispositivos de cebra con extensiones de movilidad de cebra](android-zebra-mx-overview.md) contiene más información sobre esta característica.
+[Usar y administrar dispositivos Zebra con las extensiones de movilidad Zebra](android-zebra-mx-overview.md) tiene más información sobre esta característica.
 
-## <a name="get-the-logs"></a>Obtención de registros
+## <a name="get-the-logs"></a>Obtener los registros
 
-### <a name="use-the-stagenow-app-on-the-device"></a>Utilice la aplicación StageNow en el dispositivo
-Cuando se prueba un perfil directamente mediante StageNow en el equipo, en lugar de usar [Intune para implementar el perfil](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), la aplicación StageNow en el dispositivo guarda los registros de la prueba. Para obtener el archivo de registro, use el **más (...)**  opción en la aplicación StageNow en el dispositivo.
+### <a name="use-the-stagenow-app-on-the-device"></a>Uso de la aplicación StageNow en el dispositivo
+Cuando se prueba un perfil directamente mediante StageNow en el equipo en, en lugar de usar [Intune para implementar el perfil](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), la aplicación StageNow del dispositivo guarda los registros de la prueba. Para obtener el archivo de registro, use la opción **más (...)** de la aplicación StageNow en el dispositivo.
 
-### <a name="get-logs-using-android-debug-bridge"></a>Obtención de registros con Android Debug Bridge
-Para obtener los registros después de que el perfil ya se implementa con Intune, conecte el dispositivo a un equipo con [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) (abre el sitio web de Android).
+### <a name="get-logs-using-android-debug-bridge"></a>Obtención de registros mediante Android Debug Bridge
+Para obtener los registros después de que el perfil ya esté implementado con Intune, conecte el dispositivo a un equipo con [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb) (abre el sitio web de Android).
 
 En el dispositivo, los registros se guardan en `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
 
-### <a name="get-logs-from-email"></a>Obtener registros de correo electrónico
-Para obtener los registros después de que el perfil ya se implementa con Intune, los usuarios finales puede enviar por correo electrónico, los registros mediante una aplicación de correo electrónico en el dispositivo. En el dispositivo de cebra, abra la aplicación de Portal de empresa, y [enviar los registros](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). El uso de la característica de registros de envío también crea un PowerLift incidentes identificador, que puede hacer referencia a si ponerse en contacto con soporte técnico de Microsoft.
+### <a name="get-logs-from-email"></a>Obtener registros del correo electrónico
+Para obtener los registros después de que el perfil ya se haya implementado con Intune, los usuarios finales pueden enviar por correo electrónico los registros con una aplicación de correo electrónico en el dispositivo. En el dispositivo Zebra, abra el Portal de empresa aplicación y [envíe los registros](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). El uso de la característica enviar registros también crea un identificador de incidente de PowerLift, al que puede hacer referencia si se pone en contacto con el soporte técnico de Microsoft.
 
 ## <a name="read-the-logs"></a>Leer los registros
 
-Al examinar los registros, hay un error siempre que vea el `<characteristic-error>` etiqueta. Detalles del error se escriben en el `<parm-error>` etiqueta > `desc` propiedad.
+Cuando se examinan los registros, hay un error cada vez que se ve la etiqueta `<characteristic-error>`. Los detalles del error se escriben en la etiqueta `<parm-error>` > propiedad `desc`.
 
-## <a name="error-types"></a>Tipos de errores
+## <a name="error-types"></a>Tipos de error
 
-Dispositivos de cebra incluyen niveles de información de error diferentes:
+Los dispositivos Zebra incluyen distintos niveles de informes de errores:
 
 - El CSP no es compatible con el dispositivo. Por ejemplo, el dispositivo no es un dispositivo de telefonía móvil y no tiene un administrador de telefonía móvil.
-- No coincide la versión del registro MX ni OSX. Cada CSP tiene versiones. Una matriz de soporte técnico completo, vea [documentación de cebra](http://techdocs.zebra.com/mx/) (abre el sitio web de cebra).
-- El dispositivo informa de otro problema o error.
+- La versión MX o OSX no coincide. Cada CSP tiene versiones. Para obtener una matriz de compatibilidad completa, consulte [la documentación de Zebra](http://techdocs.zebra.com/mx/) (abre el sitio web de Zebra).
+- El dispositivo notifica otro problema o error.
 
 ## <a name="examples"></a>Ejemplos
 
-Por ejemplo, tiene el perfil de entrada siguiente:
+Por ejemplo, tiene el siguiente perfil de entrada:
 
 ```xml
 <wap-provisioningdoc>
@@ -86,7 +85,7 @@ Por ejemplo, tiene el perfil de entrada siguiente:
 </wap-provisioningdoc>
 ```
 
-En el registro, el XML es idéntico a la entrada. Este resultado coincidente significa que el perfil que se aplicó correctamente en el dispositivo sin errores:
+En el registro, el código XML es idéntico a la entrada. Esta salida coincidente significa que el perfil se aplicó correctamente al dispositivo sin errores:
 
 ```xml
 <wap-provisioningdoc>
@@ -113,7 +112,7 @@ En otro ejemplo, tiene la siguiente entrada:
 </wap-provisioningdoc>
 ```
 
-El registro muestra un error, ya que contiene un `<characteristic-error>` etiqueta. En este escenario, el perfil ha intentado instalar un paquete de Android (APK) que no existe en la ruta de acceso dada:
+El registro muestra un error, ya que contiene una etiqueta `<characteristic-error>`. En este escenario, el perfil intentó instalar un paquete de Android (APK) que no existe en la ruta de acceso dada:
 
 ```xml
 <wap-provisioningdoc>
@@ -127,28 +126,28 @@ El registro muestra un error, ya que contiene un `<characteristic-error>` etique
 </wap-provisioningdoc>
 ```
 
-## <a name="other-potential-issues-with-zebra-devices"></a>Otros posibles problemas con dispositivos de cebra
+## <a name="other-potential-issues-with-zebra-devices"></a>Otros posibles problemas con los dispositivos Zebra
 
-Esta sección enumeran otros posibles problemas que puede ver al usar dispositivos de cebra con el Administrador de dispositivos. Estos problemas no se notifican en los registros StageNow.
+En esta sección se enumeran otros posibles problemas que pueden aparecer al usar dispositivos Zebra con el administrador de dispositivos. Estos problemas no se incluyen en los registros de StageNow.
 
-### <a name="android-system-webview-is-out-of-date"></a>Android WebView del sistema no está actualizada
+### <a name="android-system-webview-is-out-of-date"></a>Android System WebView no está actualizado
 
-Cuando los dispositivos más antiguos se inicie sesión con la aplicación de Portal de empresa, los usuarios pueden ver un mensaje que el componente WebView del sistema está obsoleto y debe actualiza. Si el dispositivo tiene instalado Google Play, conectarse a internet y compruebe si hay actualizaciones. Si el dispositivo no tiene instalado de Google Play, obtener la versión actualizada del componente y se aplican a los dispositivos. O bien, actualice al dispositivo más reciente del sistema operativo emitido cebra.
+Cuando los dispositivos más antiguos inician sesión con la aplicación Portal de empresa, es posible que los usuarios vean un mensaje que indica que el componente WebView del sistema no está actualizado y debe actualizarse. Si el dispositivo tiene Google Play instalado, conéctelo a Internet y compruebe si hay actualizaciones. Si el dispositivo no tiene Google Play instalado, obtenga la versión actualizada del componente y aplíquelo a los dispositivos. O bien, actualice al sistema operativo del dispositivo más reciente emitido por Zebra.
 
 ### <a name="management-actions-take-a-long-time"></a>Las acciones de administración tardan mucho tiempo
 
-Si Google Play services no están disponibles, algunas tareas tardar hasta 8 horas en Finalizar. [Aplicación de Portal de empresa de las limitaciones de Intune para Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (abre otro sitio web de Microsoft) puede ser un buen recurso.
+Si Google Play servicios no están disponibles, algunas tareas tardan hasta 8 horas en completarse. Las [limitaciones de portal de empresa de Intune aplicación para Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (abre otro sitio web de Microsoft) pueden ser un buen recurso.
 
-### <a name="device-spoofing-suspected-shows-in-intune"></a>"Dispositivo de suplantación sospechosa" se muestra en Intune
+### <a name="device-spoofing-suspected-shows-in-intune"></a>En Intune, se muestra "suplantación de dispositivos sospechosa".
 
-Este error significa que Intune sospecha que un dispositivo no - cebra Android está informando de su modelo y fabricante, como un dispositivo de cebra.
+Este error significa que Intune sospecha que un dispositivo Android no Zebra informa de su modelo y fabricante como un dispositivo Zebra.
 
-### <a name="company-portal-app-is-older-than-minimum-required-version"></a>Aplicación de Portal de empresa es anterior a la versión mínima requerida
+### <a name="company-portal-app-is-older-than-minimum-required-version"></a>Portal de empresa aplicación es anterior a la versión mínima requerida
 
-Intune puede actualizar la versión mínima necesaria de la aplicación de Portal de empresa. Si Google Play no está instalado en el dispositivo, la aplicación de Portal de empresa no se actualizará automáticamente. Si la versión mínima necesaria es más reciente que la versión instalada, la aplicación de Portal de empresa deja de funcionar. Actualización de la aplicación de Portal de empresa más reciente con [instalación de prueba en dispositivos de cebra](android-zebra-mx-overview.md#sideload-the-company-portal-app).
+Intune puede actualizar la versión mínima necesaria de la aplicación Portal de empresa. Si Google Play no está instalado en el dispositivo, la aplicación de Portal de empresa no se actualiza automáticamente. Si la versión mínima requerida es más reciente que la versión instalada, la aplicación Portal de empresa deja de funcionar. Actualice a la aplicación de Portal de empresa más reciente mediante la instalación [de prueba en dispositivos Zebra](android-zebra-mx-overview.md#sideload-the-company-portal-app).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Paneles de discusión de cebra](https://developer.zebra.com/community/home/discussions) (abre el sitio web de cebra)
+[Paneles de discusión de Zebra](https://developer.zebra.com/community/home/discussions) (abre el sitio web de Zebra)
 
-[Usar y administrar dispositivos de cebra con extensiones de movilidad de cebra en Intune](android-zebra-mx-overview.md)
+[Usar y administrar dispositivos Zebra con extensiones de movilidad de Zebra en Intune](android-zebra-mx-overview.md)

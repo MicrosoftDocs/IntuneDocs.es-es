@@ -1,13 +1,12 @@
 ---
 title: 'Configuración de VPN de Windows 10 en Microsoft Intune: Azure | Microsoft Docs'
-description: Obtenga información sobre toda la configuración de VPN que está disponible en Microsoft Intune, para qué se usa y qué hace, incluidas las reglas de tráfico, el acceso condicional y la configuración de DNS y proxy para dispositivos con Windows 10 y Windows Holographic for Business.
+description: Obtenga información sobre toda la configuración de VPN que está disponible en Microsoft Intune, para qué se usa y qué hace, incluidas las reglas de tráfico, el acceso condicional y la configuración de DNS y proxy para dispositivos con Windows 10 y Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/12/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b71bc2ea893199b83de5fd1480dae5630c3edfd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a35ebcf6ecbaaa746a6da98c5bd5c13ca9a7b130
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565675"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302735"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Configuración de dispositivos con Windows 10 y Windows Holographic para agregar conexiones VPN mediante Intune
 
@@ -68,29 +67,29 @@ Según la configuración que elija, es posible que no se puedan configurar todos
   - **PPTP**
 
   Al elegir un tipo de conexión de VPN; puede que también se le solicite la siguiente configuración:  
-    - **Always On**: elija **Habilitar** para conectarse automáticamente a la VPN cuando se produzcan estas situaciones: 
-      - Los usuarios inicien sesión en sus dispositivos
-      - La red del dispositivo cambie
-      - La pantalla del dispositivo se vuelva a activar después de haberse desactivado 
+  - **Always On**: elija **Habilitar** para conectarse automáticamente a la VPN cuando se produzcan estas situaciones: 
+    - Los usuarios inicien sesión en sus dispositivos
+    - La red del dispositivo cambie
+    - La pantalla del dispositivo se vuelva a activar después de haberse desactivado 
 
-    - **Método de autenticación**: seleccione cómo desea que los usuarios se autentiquen en el servidor VPN. El uso de **certificados** ofrece características mejoradas, como experiencia sin interacción del usuario, VPN a petición y VPN por aplicación.
-    - **Remember credentials at each logon** (Recordar credenciales en cada inicio de sesión): elija almacenar en caché las credenciales de autenticación.
-    - **XML personalizado**: escriba los comandos XML personalizados que configuran la conexión VPN.
-    - **XML de EAP**: escriba algún comando de XML de EAP que configure la conexión VPN.
+  - **Método de autenticación**: seleccione cómo desea que los usuarios se autentiquen en el servidor VPN. El uso de **certificados** ofrece características mejoradas, como experiencia sin interacción del usuario, VPN a petición y VPN por aplicación.
+  - **Remember credentials at each logon** (Recordar credenciales en cada inicio de sesión): elija almacenar en caché las credenciales de autenticación.
+  - **XML personalizado**: escriba los comandos XML personalizados que configuran la conexión VPN.
+  - **XML de EAP**: escriba algún comando de XML de EAP que configure la conexión VPN.
 
-#### <a name="pulse-secure-example"></a>Ejemplo de Pulse Secure
+### <a name="pulse-secure-example"></a>Ejemplo de Pulse Secure
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-#### <a name="f5-edge-client-example"></a>Ejemplo de F5 Edge Client
+### <a name="f5-edge-client-example"></a>Ejemplo de F5 Edge Client
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-#### <a name="sonicwall-mobile-connect-example"></a>Ejemplo de SonicWALL Mobile Connect
+### <a name="sonicwall-mobile-connect-example"></a>Ejemplo de SonicWALL Mobile Connect
 **Login group or domain** (Grupo o dominio de inicio de sesión): esta propiedad no se puede establecer en el perfil de VPN. En su lugar, Mobile Connect analiza este valor cuando el nombre de usuario y el dominio se escriben en los formatos `username@domain` o `DOMAIN\username`.
 
 Ejemplo:
@@ -99,13 +98,13 @@ Ejemplo:
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
-#### <a name="checkpoint-mobile-vpn-example"></a>Ejemplo de CheckPoint Mobile VPN
+### <a name="checkpoint-mobile-vpn-example"></a>Ejemplo de CheckPoint Mobile VPN
 
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-#### <a name="writing-custom-xml"></a>Escritura de XML personalizado
+### <a name="writing-custom-xml"></a>Escritura de XML personalizado
 Para obtener más información sobre cómo escribir comandos XML personalizados, consulte la documentación de la VPN de cada fabricante.
 
 Para obtener más información sobre la creación de XML de EAP personalizado, consulte [configuración de EAP](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
@@ -143,7 +142,7 @@ Para obtener más información sobre la creación de XML de EAP personalizado, c
 
   ![Seleccione los tres puntos y haga clic y arrastre para mover el sufijo DNS.](./media/vpn-settings-windows10-move-dns-suffix.png)
 
-- **Las reglas de la tabla (NRPT) de directiva de resolución de nombre**: reglas de directiva de resolución de nombre de la tabla (NRPT) definen cómo DNS resuelve nombres cuando se conecta a la VPN. Después de haber establecido la conexión VPN, elija qué servidores DNS usa la conexión VPN.
+- **Reglas de la tabla de directivas de resolución de nombres (NRPT)** : las reglas de la tabla de directivas de resolución de nombres (NRPT) definen el modo en que DNS resuelve los nombres cuando se conecta a la VPN. Después de haber establecido la conexión VPN, elija qué servidores DNS usa la conexión VPN.
 
   Puede agregar reglas a la tabla que incluyan el dominio, el servidor DNS, el proxy y otros detalles para resolver el dominio que escriba. La conexión VPN usa estas reglas cuando los usuarios se conectan a los dominios que escriba.
 

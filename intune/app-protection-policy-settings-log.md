@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ea64a8b9c4e8fb044e0fd66be32dcc71e4a5aefc
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239430"
 ---
 # <a name="review-client-app-protection-logs"></a>Revisión de los registros de protección de aplicaciones cliente
 
@@ -31,7 +31,7 @@ Obtenga información sobre la configuración que puede revisar en los registros 
 El proceso para habilitar y recopilar registros varía según la plataforma:
 - **Dispositivos Android**: use el *Portal de empresa*. Vea [Enviar registros al equipo de soporte técnico de su empresa por correo electrónico](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
 - **Dispositivos iOS**: use una instancia de Managed Browser o *Microsoft Edge* para recopilar los registros. Para obtener más información, vea la entrada del blog del equipo de soporte técnico de Intune [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021) (Nueva consola de diagnóstico de Intune para el envío de registros en el explorador administrado de Intune). 
-- **Dispositivos Windows 10**: use *MDMDiag* y registros de eventos. Vea [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (Diagnosis de errores de MDM en Windows 10), que encontrará en el contenido de administración del cliente de Windows, así como la entrada de blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (Solución de problemas de errores de directivas de Intune en Windows 10).
+- **Dispositivos Windows 10**: use *MDMDiag* y registros de eventos. Consulte [Diagnósticos de errores de MDM en Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10), que encontrará en el contenido de administración del cliente de Windows, así como la entrada de blog [Solución de problemas de errores de directivas de Intune en Windows 10](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/).
 
 
 En la tabla siguiente se incluye el nombre y una explicación de la configuración que se registró en el registro.

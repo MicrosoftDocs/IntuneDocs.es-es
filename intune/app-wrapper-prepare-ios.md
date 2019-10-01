@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 228a4af302a1344f60dc43c02c12efac23e34f74
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566665"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71238780"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -80,13 +79,13 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 3. Lea la lista de comprobación de lo que necesita inscribir. Haga clic en **Start Your Enrollment (Iniciar la inscripción)** en la parte inferior de la página.
 
-4. **Inicie sesión** con el id. de Apple de la organización. Si no tiene uno, haga clic en **Create Apple ID (Crear id. de Apple)**.
+4. **Inicie sesión** con el id. de Apple de la organización. Si no tiene uno, haga clic en **Create Apple ID (Crear id. de Apple)** .
 
 5. Seleccione su **Tipo de entidad** y haga clic en **Continuar**.
 
 6. Rellene el formulario con la información de su organización. Haga clic en **Continue**. En este punto, Apple se pondrá en contacto con usted para comprobar que está autorizado para inscribir su organización.
 
-8. Después de la comprobación, haga clic en **Agree to License (Acepto la licencia)**.
+8. Después de la comprobación, haga clic en **Agree to License (Acepto la licencia)** .
 
 9. Después de aceptar la licencia, termine **comprando y activando el programa**.
 
@@ -100,7 +99,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 3. **Inicie sesión** con su id. de Apple de la organización.
 
-4. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)**.
+4. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)** .
 
    ![Portal para desarrolladores de Apple: certificados, identificadores y perfiles](./media/iOS-signing-cert-1.png)
 
@@ -121,7 +120,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 9. Siga las instrucciones anteriores para crear una solicitud de firma de certificado. En su equipo macOS, inicie la aplicación **Acceso a llaves**.
 
-10. En el menú de macOS en la parte superior de la pantalla, vaya a **Acceso a llaves > Asistente de certificado > Request a Certificate From a Certificate Authority (Solicitar un certificado de una entidad de certificación)**.  
+10. En el menú de macOS en la parte superior de la pantalla, vaya a **Acceso a llaves > Asistente de certificado > Request a Certificate From a Certificate Authority (Solicitar un certificado de una entidad de certificación)** .  
 
     ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-5.png)
 
@@ -151,7 +150,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 1. Vuelva al [Portal de la cuenta de Apple Developer](https://developer.apple.com/account/) e **inicie sesión** con su id. de Apple de la organización.
 
-2. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)**.
+2. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)** .
 
 3. Haga clic en la pestaña ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un perfil de aprovisionamiento de iOS.
 
@@ -169,9 +168,9 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 ## <a name="download-the-app-wrapping-tool"></a>Descargar la herramienta de ajuste de aplicaciones
 
-1.  Descargue los archivos de la herramienta de ajuste de aplicaciones de [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) en un equipo macOS.
+1. Descargue los archivos de la herramienta de ajuste de aplicaciones de [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) en un equipo macOS.
 
-2.  Haga doble clic en **Microsoft Intune App Wrapping Tool for iOS.dmg**. Aparecerá una ventana con los términos de licencia. Lea detenidamente el documento.
+2. Haga doble clic en **Microsoft Intune App Wrapping Tool for iOS.dmg**. Aparecerá una ventana con los términos de licencia. Lea detenidamente el documento.
 
 3. Elija **Acepto** para aceptar los términos de licencia, con lo que se monta el paquete en el equipo.
 
@@ -203,30 +202,38 @@ Puede usar los siguientes parámetros de línea de comandos con la herramienta d
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
-|**-h**|Muestra información de uso detallada sobre las propiedades de línea de comandos disponibles para la herramienta de ajuste de aplicaciones.|
-|**-v**|(Opcional) Genera mensajes detallados para la consola. Se recomienda usar esta marca para depurar cualquier error.|
+|**-h**| Muestra información de uso detallada sobre las propiedades de línea de comandos disponibles para la herramienta de ajuste de aplicaciones. |
+|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` es decir, `login.windows.net/common` |
+|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` este es el GUID del campo ID. de cliente procede de la lista de la aplicación en la hoja registro de aplicaciones. |
+|**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` este es el URI de redireccionamiento configurado en el registro de la aplicación. Normalmente sería el protocolo de dirección URL de la aplicación a la que se devolvería la aplicación Microsoft Authenticator después de la autenticación negociada. |
+|**-v**| (Opcional) Genera mensajes detallados para la consola. Se recomienda usar esta marca para depurar cualquier error. |
 |**-e**| (Opcional) Use esta marca para que la herramienta de ajuste de aplicaciones quite los derechos que faltan mientras procesa la aplicación. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para más información.|
 |**-xe**| (Opcional) Imprime información sobre las extensiones de iOS de la aplicación y sobre los derechos necesarios para usarlas. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para más información. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Úsela si la aplicación necesita perfiles de aprovisionamiento de extensión.|
-|**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Use esta marca delante del archivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) si decide usar la plantilla plist para especificar el resto de las propiedades de IntuneMAMPackager, como -i, -o y -p. Consulte Usar un archivo plist para la entrada de argumentos. |
 |**-b**|(Opcional) Use -b sin un argumento si quiere que la aplicación de salida ajustada tenga la misma versión de paquete que la aplicación de entrada (no recomendado). <br/><br/> Use `-b <custom bundle version>` si quiere que la aplicación ajustada tenga un valor CFBundleVersion personalizado. Si decide especificar un valor CFBundleVersion personalizado, se recomienda que incremente el valor de CFBundleVersion de la aplicación nativa según el componente menos significativo, por ejemplo, 1.0.0 -> 1.0.1. |
+|**-citrix**|Opta Incluya el SDK para aplicaciones de Citrix XenMobile (variante solo de red). Para usar esta opción, debe tener el [Kit de herramientas de Citrix MDX](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) instalado. |
+|**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Use esta marca delante del archivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) si decide usar la plantilla plist para especificar el resto de las propiedades de IntuneMAMPackager, como -i, -o y -p. Consulte Usar un archivo plist para la entrada de argumentos. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Usar un archivo plist para la entrada de argumentos
 Una manera fácil de ejecutar la herramienta de ajuste de aplicaciones consiste en colocar todos los argumentos de comando en un archivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html). El formato de archivo plist es similar a XML. Se puede usar para la entrada de argumentos de línea de comandos mediante una interfaz de formulario.
 
 En la carpeta IntuneMAMPackager/Contents/MacOS, abra `Parameters.plist`, que es una plantilla plist en blanco, con un editor de texto o Xcode. Escriba los argumentos para las claves siguientes:
 
-| Clave de plist |  Valor predeterminado| Notas |
-|------------------|--------------|-----|
-| Ruta de acceso del paquete de aplicación de entrada  |vacío| Igual que -i|
-| Ruta de acceso del paquete de aplicación de salida |vacío| Igual que -o|
-| Ruta de acceso del perfil de aprovisionamiento |vacío| Igual que -p|
-| Hash del certificado SHA-1 |vacío| Igual que -c|
-| Modo detallado habilitado |false| Igual que -v|
-| Quitar los derechos que faltan | false| Igual que -c|
-| Impedir la compilación predeterminada |false | Equivale a usar -b sin argumentos|
-|Invalidación de la cadena de compilación | vacío| Valor de CFBundleVersion personalizado de la aplicación de salida ajustada. |
-|Rutas de acceso del perfil de aprovisionamiento de extensión | vacío| Matriz de perfiles de aprovisionamiento de extensión para la aplicación.
+| Clave de plist | Tipo |  Valor predeterminado | Notas |
+|------------------|-----|--------------|-----|
+| Ruta de acceso del paquete de aplicación de entrada |String|vacío| Igual que -i|
+| Ruta de acceso del paquete de aplicación de salida |String|vacío| Igual que -o|
+| Ruta de acceso del perfil de aprovisionamiento |String|vacío| Igual que -p|
+| Hash del certificado SHA-1 |String|vacío| Igual que -c|
+| Autoridad de ADAL |String|vacío| Igual que -aa|
+| IDENTIFICADOR de cliente de ADAL |String|vacío| Igual que -ac|
+| URI de respuesta de ADAL |String|vacío| Igual que -ar|
+| Modo detallado habilitado |Boolean|false| Igual que -v|
+| Quitar los derechos que faltan |Boolean|false| Igual que -c|
+| Impedir la actualización de la compilación predeterminada |Boolen|false| Equivale a usar -b sin argumentos|
+| Invalidación de la cadena de compilación |String|vacío| Valor de CFBundleVersion personalizado de la aplicación de salida ajustada.|
+| Incluir el SDK de aplicación de Citrix XenMobile (variante solo de red)|Boolean|false| Igual que-Citrix|
+| Rutas de acceso del perfil de aprovisionamiento de extensión |Matriz de cadenas|vacío| Matriz de perfiles de aprovisionamiento de extensión para la aplicación.
 
 
 Ejecute IntuneMAMPackager con plist como único argumento:
@@ -285,15 +292,16 @@ Si la herramienta de ajuste de aplicaciones no se completa correctamente, se mos
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Archivos de registro de la herramienta de ajuste de aplicaciones
 Las aplicaciones que se ajustaron mediante la herramienta de ajuste de aplicaciones generan los registros que se escriben en la consola del dispositivo cliente de iOS. Esta información resulta útil cuando se tienen problemas con la aplicación y es necesario determinar si el problema está relacionado con la herramienta de ajuste de aplicaciones. Para resolver este problema, use los siguientes pasos:
 
-1.  Reproduzca el problema ejecutando la aplicación.
+1. Reproduzca el problema ejecutando la aplicación.
 
-2.  Recopile la salida de consola siguiendo las instrucciones de [Depuración de aplicaciones iOS implementadas](https://developer.apple.com/library/ios/qa/qa1747/_index.html)de Apple.
+2. Recopile la salida de consola siguiendo las instrucciones de [Depuración de aplicaciones iOS implementadas](https://developer.apple.com/library/ios/qa/qa1747/_index.html)de Apple.
 
-3.  Filtre los registros guardados para la salida de restricciones de la aplicación especificando el siguiente script en la consola:
+3. Filtre los registros guardados para la salida de restricciones de la aplicación especificando el siguiente script en la consola:
 
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     Puede enviar los registros filtrados a Microsoft.
 
     > [!NOTE]
@@ -331,7 +339,7 @@ Antes de ajustar la aplicación, puede concederle *derechos* para que tenga perm
 
 ### <a name="steps-to-enable-entitlements"></a>Pasos para habilitar derechos
 
-1.  Habilite las capacidades de la aplicación:
+1. Habilite las capacidades de la aplicación:
 
     a.  En Xcode, vaya al destino de la aplicación y haga clic en **Capabilities** (Funcionalidades).
 
@@ -341,7 +349,7 @@ Antes de ajustar la aplicación, puede concederle *derechos* para que tenga perm
 
     d.  Compile y firme la aplicación para que se realicen los ajustes oportunos.
 
-2.  Habilite los derechos en el perfil de aprovisionamiento:
+2. Habilite los derechos en el perfil de aprovisionamiento:
 
     a.  Inicie sesión en el Centro de usuarios registrados de Apple Developer.
 
@@ -351,7 +359,7 @@ Antes de ajustar la aplicación, puede concederle *derechos* para que tenga perm
 
     d.  Finalice el Asistente para perfiles de aprovisionamiento y descargue el archivo.
 
-3.  Asegúrese de que se hayan cumplido todos los requisitos previos y, a continuación, ajuste la aplicación.
+3. Asegúrese de que se hayan cumplido todos los requisitos previos y, a continuación, ajuste la aplicación.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Solucionar errores comunes con derechos
 Si la herramienta de ajuste de aplicaciones para iOS muestra un error de derecho, intente los siguientes pasos de solución de problemas.
@@ -364,20 +372,20 @@ Si la herramienta de ajuste de aplicaciones para iOS muestra un error de derecho
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>Buscar los derechos existentes de una aplicación firmada
 Para revisar los derechos existentes de una aplicación firmada y de un perfil de aprovisionamiento:
 
-1.  Busque el archivo .ipa y cambie la extensión a .zip.
+1. Busque el archivo .ipa y cambie la extensión a .zip.
 
-2.  Expanda el archivo .zip. Esto creará una carpeta de carga que contiene el lote .app.
+2. Expanda el archivo .zip. Esto creará una carpeta de carga que contiene el lote .app.
 
-3.  Use la herramienta de firma de código para comprobar los derechos en el paquete de aplicaciones, donde `YourApp.app` es el nombre real del paquete de aplicaciones:
+3. Use la herramienta de firma de código para comprobar los derechos en el paquete de aplicaciones, donde `YourApp.app` es el nombre real del paquete de aplicaciones:
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
-4.  Use la herramienta de seguridad para comprobar los derechos del perfil de aprovisionamiento de la aplicación incrustada, donde `YourApp.app` es el nombre real del grupo de aplicaciones.
+4. Use la herramienta de seguridad para comprobar los derechos del perfil de aprovisionamiento de la aplicación incrustada, donde `YourApp.app` es el nombre real del grupo de aplicaciones.
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Eliminación de derecho de una aplicación mediante el parámetro – e
@@ -390,19 +398,19 @@ Este comando quita cualquier funcionalidad habilitada en la aplicación que no e
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>Seguridad y privacidad de la herramienta de ajuste de aplicaciones
 Use los procedimientos recomendados de seguridad y privacidad siguientes al usar la herramienta de ajuste de aplicaciones.
 
--   El certificado de firma, el perfil de aprovisionamiento y la aplicación de línea de negocio que especifique deben estar en el mismo equipo macOS que use para ejecutar la herramienta de ajuste de aplicaciones. Si los archivos están en una ruta de acceso UNC, asegúrese de que se pueda acceder a ellos desde la máquina macOS. La ruta de acceso debe estar protegida mediante la firma SMB o IPsec.
+- El certificado de firma, el perfil de aprovisionamiento y la aplicación de línea de negocio que especifique deben estar en el mismo equipo macOS que use para ejecutar la herramienta de ajuste de aplicaciones. Si los archivos están en una ruta de acceso UNC, asegúrese de que se pueda acceder a ellos desde la máquina macOS. La ruta de acceso debe estar protegida mediante la firma SMB o IPsec.
 
     La aplicación ajustada que se importa a la consola de administración debe estar en el mismo equipo en el que se ejecuta la herramienta. Si el archivo está en una ruta de acceso UNC, asegúrese de que sea accesible desde el equipo en el que se ejecuta la consola de administración. La ruta de acceso debe estar protegida mediante la firma SMB o IPsec.
 
--   El entorno donde se descarga la herramienta de ajuste de aplicaciones desde el repositorio de GitHub debe protegerse mediante la firma SMB o IPsec.
+- El entorno donde se descarga la herramienta de ajuste de aplicaciones desde el repositorio de GitHub debe protegerse mediante la firma SMB o IPsec.
 
--   La aplicación que procese debe proceder de un origen de confianza para garantizar la protección frente a ataques.
+- La aplicación que procese debe proceder de un origen de confianza para garantizar la protección frente a ataques.
 
--   Asegúrese de que la carpeta de salida especificada en la herramienta de ajuste de aplicaciones esté protegida, especialmente si se trata de una carpeta remota.
+- Asegúrese de que la carpeta de salida especificada en la herramienta de ajuste de aplicaciones esté protegida, especialmente si se trata de una carpeta remota.
 
--   Las aplicaciones iOS que incluyen un cuadro de diálogo de carga de archivos pueden permitir a los usuarios evitar las restricciones al cortar, copiar y pegar aplicadas a la aplicación. Por ejemplo, un usuario podría usar el cuadro de diálogo de carga de archivos para cargar una captura de pantalla de los datos de aplicación.
+- Las aplicaciones iOS que incluyen un cuadro de diálogo de carga de archivos pueden permitir a los usuarios evitar las restricciones al cortar, copiar y pegar aplicadas a la aplicación. Por ejemplo, un usuario podría usar el cuadro de diálogo de carga de archivos para cargar una captura de pantalla de los datos de aplicación.
 
--   Cuando supervisa la carpeta de documentos en su dispositivo desde dentro de una aplicación ajustada, puede que vea una carpeta llamada .msftintuneapplauncher. Si cambia o elimina este archivo, podría afectar al funcionamiento correcto de las aplicaciones restringidas.
+- Cuando supervisa la carpeta de documentos en su dispositivo desde dentro de una aplicación ajustada, puede que vea una carpeta llamada .msftintuneapplauncher. Si cambia o elimina este archivo, podría afectar al funcionamiento correcto de las aplicaciones restringidas.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Herramienta de ajuste de aplicaciones de Intune para iOS con mVPN de Citrix MDX
 Esta característica es una integración con el contenedor de aplicaciones de Citrix MDX para iOS. La integración es simplemente una marca adicional y opcional de línea de comandos, `-citrix` para la Herramienta de ajuste de aplicaciones de Intune general.
@@ -418,11 +426,13 @@ Para usar la marca `-citrix`, también deberá instalar el [contenedor de aplica
 Simplemente ejecute el comando de ajuste de aplicaciones general con la marca `-citrix` adjunta. La marca `-citrix` actualmente no toma ningún argumento.
 
 **Formato de uso**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Comando de ejemplo**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
@@ -442,5 +452,5 @@ Siga estos pasos para obtener registros para las aplicaciones ajustadas durante 
 ## <a name="see-also"></a>Consulte también
 
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)
-- [Preguntas comunes, problemas y resoluciones con perfiles y las directivas de dispositivos](device-profile-troubleshoot.md)
+- [Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos](device-profile-troubleshoot.md)
 - [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](app-sdk.md)

@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 09/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,18 +14,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d956526d483a74ca5929180a48ea2dcd8b3eab7
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: cda6c5f5ffa2244376e318e81a38a1ed410a443f
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423635"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71305043"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Windows 10 y versiones posteriores para marcar dispositivos como compatibles o no compatibles con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-En este artículo se enumeran y describen las distintas opciones de configuración de cumplimiento que se pueden establecer en dispositivos con Windows 10 y versiones posteriores en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para exigir BitLocker, establecer un sistema operativo mínimo y máximo, establecer un nivel de riesgo con Protección contra amenazas avanzada de Windows Defender (ATP) y mucho más.
+En este artículo se enumeran y describen las distintas opciones de configuración de cumplimiento que se pueden establecer en dispositivos con Windows 10 y versiones posteriores en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para exigir BitLocker, establecer un sistema operativo mínimo y máximo, establecer un nivel de riesgo con Protección contra amenazas avanzada (ATP) de Microsoft Defender y mucho más.
 
 Esta característica se aplica a:
 
@@ -100,23 +99,32 @@ Solo se aplica a dispositivos administrados conjuntamente en los que se ejecuta 
 
 ### <a name="password"></a>Contraseña
 
-- **Requerir una contraseña para desbloquear dispositivos móviles**: **requiere** que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
+- **Requerir una contraseña para desbloquear dispositivos móviles**: **requiere** que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos. Cuando **no está configurado**, Intune no evalúa el dispositivo para la configuración de contraseña para el cumplimiento.
 - **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas como **1234** o **1111**. Establézcala en **No configurado** para permitir a los usuarios crear contraseñas como **1234** o **1111**.
-- **Tipo de contraseña**: elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
+- **Tipo de contraseña**: elija el tipo de contraseña o PIN requerido. Las opciones son:
 
-  - **Número de caracteres no alfanuméricos en la contraseña**: si la opción **Tipo de contraseña requerida** está establecida en **Alfanumérico**, esta configuración especifica el número mínimo de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
-    - Letras minúsculas
-    - Letras mayúsculas
-    - Símbolos
-    - Números
+  - **Dispositivo predeterminado**: requiere una contraseña, un PIN numérico o un PIN alfanumérico
+  - **Numeric**: requerir una contraseña o un PIN numérico
+  - **Alfanumérico**: requiere una contraseña o un PIN alfanumérico. Elija también la **complejidad**de la contraseña: 
+    
+    - **Requerir dígitos y letras minúsculas**
+    - **Requerir dígitos, letras minúsculas y mayúsculas**
+    - **Requerir dígitos, letras minúsculas, letras mayúsculas y caracteres especiales**
 
-    Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja.
+    > [!TIP]
+    > Las directivas de contraseña alfanuméricas pueden ser complejas. Se recomienda que los administradores lean los CSP para obtener más información:
+    >
+    > - [CSP DeviceLock/AlphanumericDevicePasswordRequired](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)
+    > - [CSP DeviceLock/MinDevicePasswordComplexCharacters](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
 
 - **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña.
 - **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
-- **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
+- **Expiración de la contraseña (días)** : escriba el número de días que faltan para que la contraseña expire y se deba crear una nueva (de 1 a 730).
 - **Número de contraseñas anteriores que no se pueden reutilizar**: escriba el número de contraseñas usadas anteriormente que no se pueden utilizar.
-- **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad (Mobile y Holographic)**: exija a los usuarios a que escriban la contraseña cada vez que el dispositivo regresa de un estado de inactividad.
+- **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad (Mobile y Holographic)** : exija a los usuarios a que escriban la contraseña cada vez que el dispositivo regresa de un estado de inactividad.
+
+  > [!IMPORTANT]
+  > Cuando el requisito de contraseña se cambia a un escritorio de Windows, los usuarios se ven afectados la próxima vez que inician sesión, porque es entonces cuando el dispositivo pasa de inactivo a activo. Los usuarios con contraseñas que cumplan el requisito de todos modos tendrán que cambiarlas.
 
 ### <a name="encryption"></a>Cifrado
 
@@ -127,10 +135,30 @@ Solo se aplica a dispositivos administrados conjuntamente en los que se ejecuta 
 
 ### <a name="device-security"></a>Seguridad de dispositivos
 
-- **Antivirus**: cuando se establece en **Requerir**, puede comprobar el cumplimiento mediante soluciones antivirus registradas con el [Centro de seguridad de Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), como Symantec y Windows Defender. Si se establece en **Sin configurar**, Intune no busca soluciones antivirus instaladas en el dispositivo.
-- **Antispyware**: cuando se establece en **Requerir**, puede comprobar el cumplimiento a través de soluciones antispyware registradas con el [Centro de seguridad de Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), como Symantec y Windows Defender. Si se establece en **Sin configurar**, Intune no busca soluciones antispyware instaladas en el dispositivo.
+- **Firewall**: establézcalo en **requerir** para activar el Firewall de Microsoft defender y evitar que los usuarios lo desactiven. **No configurado** (valor predeterminado) no controla el Firewall de Microsoft defender ni cambia la configuración existente.
 
-## <a name="windows-defender-atp"></a>ATP de Windows Defender
+  [CSP de Firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+- **Módulo de plataforma segura (TPM)** : cuando se establece en **requerir**, Intune comprueba el cumplimiento de la versión. El dispositivo es compatible Si la versión del chip TPM es mayor que 0 (cero). El dispositivo no es compatible Si no hay una versión de TPM en el dispositivo. Cuando **no se configura**, Intune no comprueba si el dispositivo tiene una versión de chip de TPM.
+
+  [DeviceStatus CSP: nodo DeviceStatus/TPM/SpecificationVersion](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
+  
+- **Antivirus**: cuando se establece en **Requerir**, puede comprobar el cumplimiento mediante soluciones antivirus registradas con el [Centro de seguridad de Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), como Symantec y Microsoft Defender. Si se establece en **Sin configurar**, Intune no busca soluciones antivirus instaladas en el dispositivo.
+- **Antivirus**: cuando se establece en **Requerir**, puede comprobar el cumplimiento mediante soluciones antivirus registradas con el [Centro de seguridad de Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), como Symantec y Microsoft Defender. Si se establece en **Sin configurar**, Intune no busca soluciones antispyware instaladas en el dispositivo.
+
+### <a name="defender"></a>Defender
+
+- **Antimalware de Microsoft defender**: establézcalo en **requerir** para activar el servicio antimalware de Microsoft defender y evitar que los usuarios lo desactiven. **No configurado** (valor predeterminado) no controla el servicio ni cambia la configuración existente.
+- **Versión mínima de antimalware de Microsoft defender**: escriba la versión mínima permitida del servicio antimalware de Microsoft defender. Por ejemplo, escriba `4.11.0.0`. Cuando se deja en blanco, se puede usar cualquier versión del servicio antimalware de Microsoft defender.
+- **Inteligencia de seguridad antimalware de Microsoft defender actualizada**: controla las actualizaciones de protección contra amenazas y virus de seguridad de Windows en los dispositivos. **Requerir** fuerza la actualización de la inteligencia de seguridad de Microsoft defender. **No configurado** (valor predeterminado) no impone ningún requisito.
+
+  [Las actualizaciones de inteligencia de seguridad para el antivirus de Microsoft defender y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates) tienen más información sobre la inteligencia de seguridad.
+
+- **Protección en tiempo real**: **requiere** activar la protección en tiempo real, que busca malware, spyware y otro software no deseado. **No configurado** (valor predeterminado) no controla esta característica ni cambia la configuración existente.
+
+  [CSP de defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+## <a name="microsoft-defender-atp"></a>ATP de Microsoft Defender
 
 - **Require the device to be at or under the machine risk score** (Requerir que el dispositivo tenga la puntuación de riesgo de máquina o esté por debajo de ella): use esta opción para hacer que la evaluación del riesgo de los servicios de amenazas de defensa sean una condición para la conformidad. Elija el máximo nivel de amenaza permitido:
 
@@ -139,7 +167,7 @@ Solo se aplica a dispositivos administrados conjuntamente en los que se ejecuta 
   - **Medio:** el dispositivo se evalúa como compatible si las amenazas existentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
   - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
   
-  Para configurar ATP (protección contra amenazas avanzada) de Windows Defender como servicio de defensa contra amenazas, consulte [Habilitación de ATP de Windows Defender con acceso condicional](advanced-threat-protection.md).
+  Para configurar ATP (protección contra amenazas avanzada) de Microsoft Defender como servicio de defensa contra amenazas, consulte [Habilitación de ATP de Microsoft Defender con acceso condicional](advanced-threat-protection.md).
 
 Seleccione **Aceptar** > **Crear** para guardar los cambios.
 
@@ -153,7 +181,7 @@ Para verificar el cifrado de dispositivo en Microsoft HoloLens, vea [Verificar e
 
 ## <a name="surface-hub"></a>Surface Hub
 
-Surface Hub usa la plataforma **Windows 10 y versiones posteriores**. Las instancias de Surface Hub son compatibles tanto con el cumplimiento como con el acceso condicional. Para habilitar estas características en Surface Hubs, le recomendamos que [habilite la inscripción automática de Windows 10 ](windows-enroll.md) en Intune (se necesita Azure Active Directory [Azure AD]) y dirija los dispositivos de Surface Hub como grupos de dispositivos. Se requiere que Surface Hub se una a Azure AD para que el cumplimiento y el acceso condicional funcionen.
+Surface Hub usa la plataforma **Windows 10 y versiones posteriores**. Las instancias de Surface Hub son compatibles tanto con el cumplimiento como con el acceso condicional. Para habilitar estas características en Surface Hubs, le recomendamos que [habilite la inscripción automática de Windows 10 ](windows-enroll.md) en Intune (se necesita Azure Active Directory [Azure AD]) y dirija los dispositivos de Surface Hub como grupos de dispositivos. Se requiere que Surface Hub se una a Azure AD para que el cumplimiento y el acceso condicional funcionen.
 
 Consulte [Configuración de la inscripción de dispositivos Windows](windows-enroll.md) para instrucciones.
 

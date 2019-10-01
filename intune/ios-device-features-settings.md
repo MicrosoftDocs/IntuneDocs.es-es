@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,35 +15,43 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 7eaed88adc8603ee1f79f47cbd94eec1c3b71b95
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387112"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71301843"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Configuración de dispositivos iOS para usar las características comunes de iOS en Intune
+# <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Configuración de dispositivos iOS e IPadOS para usar las características comunes de iOS en Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune incluye algunas configuraciones integradas para permitir a los usuarios de iOS usar diferentes características de Apple en sus dispositivos. Por ejemplo, los administradores pueden controlar cómo los usuarios de iOS usan impresoras AirPrint, agregan aplicaciones y carpetas a la base y páginas en la pantalla principal, muestran las notificaciones de aplicación, muestran detalles de etiqueta de recursos en la pantalla de bloqueo, usan la autenticación de inicio de sesión único y autentican usuarios con certificados.
 
 Use estas características para controlar los dispositivos iOS como parte de la solución de administración de dispositivos móviles (MDM).
 
-En este artículo se enumeran estas opciones de configuración y se describe lo que hace cada una de ellas.
+En este artículo se enumeran estas opciones de configuración y se describe lo que hace cada una de ellas. Para obtener más información sobre estas características, vaya a [Agregar configuración de características de dispositivos iOS o MacOS](device-features-configure.md).
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-[Cree un perfil de configuración de dispositivo iOS](device-features-configure.md#create-a-device-profile).
+[Cree un perfil de configuración de dispositivo iOS](device-features-configure.md).
+
+> [!NOTE]
+> Esta configuración se aplica a diferentes tipos de inscripción, con algunas opciones de configuración aplicables a todas las opciones de inscripción. Para obtener más información sobre los diferentes tipos de inscripción, consulte [inscripción de iOS](ios-enroll.md).
 
 ## <a name="airprint"></a>AirPrint
+
+### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
 
 - **Dirección IP**: escriba la dirección IPv4 o IPv6 de la impresora. Si usa nombres de host para identificar impresoras, puede obtener la dirección IP haciendo ping a la impresora en el terminal. En la sección Obtención de la dirección IP y la ruta de acceso (en este artículo) se proporcionan más detalles.
 - **Ruta de acceso**: la ruta de acceso suele ser `ipp/print` para las impresoras de la red. En la sección Obtención de la dirección IP y la ruta de acceso (en este artículo) se proporcionan más detalles.
 - **Puerto**: escriba el puerto de escucha del destino de AirPrint. Si se deja esta propiedad en blanco, AirPrint usa el puerto predeterminado. Disponible en iOS 11.0 y versiones posteriores.
 - **TLS**: elija **Habilitar** para proteger las conexiones AirPrint con Seguridad de la capa de transporte (TLS). Disponible en iOS 11.0 y versiones posteriores.
 
-**Agregar** agrega el servidor AirPrint a la lista. Se pueden agregar muchos servidores de transimpresiones. También puede **importar** un archivo separado por comas (.csv) con esta información. **Exportar** crea una lista de los servidores de impresión de la que ha agregado.
+Para agregar servidores de impresión, puede:
 
-Seleccione **Aceptar** para guardar la lista.
+- **Agregar** agrega el servidor AirPrint a la lista. Se pueden agregar muchos servidores de transimpresiones.
+- **Importe** un archivo separado por comas (.csv) con esta información. O bien, **exportar** para crear una lista de los servidores de impresión de la que ha agregado.
 
 ### <a name="get-server-ip-address-resource-path-and-port"></a>Obtención de la dirección IP del servidor, la ruta de acceso de recursos y el puerto
 
@@ -60,9 +68,13 @@ Para agregar servidores AirPrinter, necesita la dirección IP de la impresora, l
 
 4. Use los valores de dirección IP y de ruta de acceso del recurso. En este ejemplo, la dirección IP es `10.50.25.21` y la ruta de acceso del recurso es `/ipp/port1`.
 
-## <a name="home-screen-layout-settings"></a>Configuración de diseño de pantalla principal
+## <a name="home-screen-layout"></a>Diseño de la pantalla principal
 
-Estas configuraciones definen el diseño de aplicaciones y carpetas en la base y las pantallas principales de los dispositivos iOS. Para usar esta característica, los dispositivos iOS deben estar en modo supervisado y ejecutar iOS 9.3 o versiones posteriores.
+Esta característica se aplica a:
+
+- iOS 9,3 o posterior
+
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
 ### <a name="dock"></a>Acoplar
 
@@ -78,8 +90,6 @@ Puede agregar hasta **seis** elementos (aplicaciones y carpetas combinadas) para
     - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
     - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
-    Haga clic en **Aceptar** para guardar los cambios.
-
   - **Carpeta**: elija esta opción para agregar una carpeta a la base en la pantalla.
 
     Las aplicaciones que agrega a una página en una carpeta se organizan de izquierda a derecha y en el mismo orden que en la lista. Si agrega más aplicaciones de las que pueden caber en una página, se mueven a otra página.
@@ -92,8 +102,6 @@ Puede agregar hasta **seis** elementos (aplicaciones y carpetas combinadas) para
       - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
       Puede agregar hasta **20** páginas para base del dispositivo.
-
-    Haga clic en **Aceptar** para guardar los cambios.
 
 > [!NOTE]
 > Cuando se agregan iconos mediante la configuración de Acoplar, se bloquean los iconos de la pantalla principal y de las páginas, y no se pueden mover. Esto puede deberse al diseño con iOS y las directivas MDM de Apple.
@@ -132,8 +140,6 @@ Puede agregar hasta **40** páginas en un dispositivo.
         - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
         - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
-      Haga clic en **Aceptar** para guardar los cambios.
-
       - **Carpeta**: elija esta opción para agregar una carpeta a la base en la pantalla.
 
         Las aplicaciones que agrega a una página en una carpeta se organizan de izquierda a derecha y en el mismo orden que en la lista. Si agrega más aplicaciones de las que pueden caber en una página, se mueven a otra página.
@@ -145,8 +151,6 @@ Puede agregar hasta **40** páginas en un dispositivo.
           - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
           - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
-      Haga clic en **Aceptar** para guardar los cambios.
-
 #### <a name="example"></a>Ejemplo
 
 En el ejemplo siguiente, se agrega una nueva página denominada **Contoso**. La página muestra las aplicaciones Buscar a mis amigos y Ajustes. Se ha seleccionado la aplicación Ajustes para mostrar sus propiedades:
@@ -157,9 +161,9 @@ Cuando asigna la directiva a un iPhone, la página tiene un aspecto similar al d
 
 ![Dispositivo iOS con la pantalla principal modificada](./media/Bd37PHa.png)
 
-## <a name="app-notifications-settings"></a>Configuración de notificaciones de aplicación
+## <a name="app-notifications"></a>Notificaciones de la aplicación
 
-Elija cómo las aplicaciones instaladas en dispositivos iOS envían notificaciones. Esta configuración admite dispositivos supervisados que ejecuten iOS 9.3 y versiones posteriores.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
 - **Agregar**: agregue notificaciones para las aplicaciones:
 
@@ -178,13 +182,13 @@ Elija cómo las aplicaciones instaladas en dispositivos iOS envían notificacion
     - **Distintivo en el icono de la aplicación**: seleccione **Habilitar** para agregar un distintivo en el icono de la aplicación. El distintivo significa que la aplicación envió una notificación.
     - **Sonidos**: seleccione **Habilitar** para reproducir un sonido cuando se entrega una notificación.
 
-Haga clic en **Aceptar** para guardar los cambios.
+## <a name="lock-screen-message"></a>Mensaje de la pantalla de bloqueo
 
-## <a name="lock-screen-message-settings"></a>Configuración del mensaje de la pantalla de bloqueo
+Esta característica se aplica a:
 
-Use esta configuración para mostrar un mensaje o un texto personalizado en la ventana de inicio de sesión y la pantalla de bloqueo. Por ejemplo, puede escribir el mensaje "En caso de pérdida, devolver a..." y agregar información sobre la etiqueta de activo. 
+- iOS 9.3 y versiones posteriores
 
-Esta característica admite dispositivos supervisados que ejecuten iOS 9.3 y versiones posteriores.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
 - **Información de etiqueta de activo**: escriba información sobre la etiqueta de activo del dispositivo. Por ejemplo, escriba `Owned by Contoso Corp` o `Serial Number: {{serialnumber}}`.
 
@@ -197,18 +201,9 @@ Esta característica admite dispositivos supervisados que ejecuten iOS 9.3 y ve
   > [!NOTE]
   > Las variables no se validan en la interfaz de usuario y distinguen mayúsculas de minúsculas. Como resultado, es posible que vea perfiles guardados con entradas incorrectas. Por ejemplo, si escribe `{{DeviceID}}` en lugar de `{{deviceid}}`, se muestra la cadena literal en lugar del identificador del dispositivo. Asegúrese de escribir la información correcta.
 
-Haga clic en **Aceptar** para guardar los cambios.
+## <a name="single-sign-on"></a>Inicio de sesión único
 
-## <a name="single-sign-on-settings"></a>Configuración de inicio de sesión único
-
-La mayoría de las aplicaciones de línea de negocio (LOB) necesita cierto nivel de autenticación de usuario para ofrecer seguridad. En muchos casos, esta autenticación exige que el usuario escriba las mismas credenciales repetidamente, lo que es frustrante para los usuarios. Para mejorar la experiencia del usuario, los desarrolladores pueden crear aplicaciones que usen el inicio de sesión único (SSO). El uso del inicio de sesión único reduce el número de veces que un usuario debe escribir las credenciales.
-
-Para usar el inicio de sesión único, asegúrese de que tiene:
-
-- Una aplicación programada para buscar el almacén de credenciales del usuario en el inicio de sesión único en el dispositivo.
-- Intune configurado para el inicio de sesión único para dispositivos iOS.
-
-![Panel Inicio de sesión único](./media/sso-blade.png)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos, inscripción de dispositivo automatizada (supervisado)
 
 - **Username attribute from AAD** (Atributo de nombre de usuario de AAD): Intune busca este atributo para cada usuario de Azure AD. Después, Intune rellena el campo correspondiente (como UPN) antes de generar el código XML que se instala en el dispositivo. Las opciones son:
 
@@ -249,11 +244,9 @@ Para usar el inicio de sesión único, asegúrese de que tiene:
 
 - **Certificado de renovación de credenciales**: si usa certificados para la autenticación (no contraseñas), seleccione el certificado SCEP o PFX existente como certificado de autenticación. Normalmente, se trata del mismo certificado implementado para el usuario para otros perfiles como VPN, Wi-Fi o correo electrónico.
 
-Haga clic en **Aceptar** para guardar los cambios.
+## <a name="web-content-filter"></a>Filtro de contenido web
 
-## <a name="web-content-filter-settings"></a>Configuración del filtro de contenido web
-
-Esta configuración controla el acceso de dirección URL del explorador en dispositivos iOS supervisados.
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
 - **Tipo de filtro**: seleccione esta opción para permitir sitios web específicos. Las opciones son:
 
@@ -261,14 +254,10 @@ Esta configuración controla el acceso de dirección URL del explorador en dispo
 
     - **URL permitidas**: **agregue** las URL que quiera permitir. Estas direcciones URL no son capturadas por el filtro web de Apple.
 
-      > [!NOTE]
+        > [!NOTE]
         > Las direcciones URL que especifique son las direcciones URL que no desea que el filtro web de Apple evalúe. Estas direcciones URL no son una lista de sitios web permitidos. Para crear una lista de sitios web permitidos, establezca **Tipo de filtro** en **Solo sitios web específicos**.
 
-      Haga clic en **Aceptar** para guardar los cambios.
-
     - **URL bloqueadas**: **agregue** las direcciones URL que quiera impedir que se abran, independientemente de la configuración del filtro web de Apple.
-
-      Haga clic en **Aceptar** para guardar los cambios.
 
   - **Solo sitios web específicos** (solo para el explorador web Safari): estas direcciones URL se agregan a los marcadores del explorador Safari. El usuario **solo** tiene permiso para visitar estos sitios; no pueden abrir otros sitios. Use esta opción solo si conoce la lista exacta de direcciones URL a las que pueden acceder los usuarios.
 
@@ -278,13 +267,68 @@ Esta configuración controla el acceso de dirección URL del explorador en dispo
 
     Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder a ningún sitio web, excepto `microsoft.com`, `microsoft.net` y `apple.com`. Intune permite automáticamente estas direcciones URL.
 
-    Haga clic en **Aceptar** para guardar los cambios.
+## <a name="single-sign-on-app-extension"></a>Extensión de aplicación de inicio de sesión único
 
-## <a name="wallpaper-settings"></a>Configuración del fondo de pantalla
+Esta característica se aplica a:
 
-Agregue una imagen .png, .jpg o .jpeg personalizada a los dispositivos iOS supervisados. Por ejemplo, use un logotipo de empresa en la pantalla de bloqueo.
+- iOS 13.0 y versiones posteriores
+- iPados 13,0 y versiones posteriores
+
+### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
+
+- **Tipo de extensión de aplicación de SSO**: elija el tipo de extensión de aplicación SSO de credenciales. Las opciones son:
+
+  - **No configurado**: no se usan las extensiones de aplicación. Para deshabilitar una extensión de aplicación, puede cambiar el tipo de extensión de aplicación de SSO de **Kerberos** o **credencial** a **no configurado**.
+  - **Credential**: Use una extensión de aplicación de credenciales genérica y personalizable para realizar el inicio de sesión único. Asegúrese de que conoce el identificador de la extensión de la aplicación SSO de su organización.
+  - **Kerberos**: Use la extensión integrada de Kerberos de Apple, que se incluye en iOS 13,0 (y versiones más recientes) y en ipados 13,0 (y versiones más recientes). Esta opción es una versión específica de Kerberos de la extensión de la aplicación de **credenciales** .
+
+  > [!TIP]
+  > Con el tipo de **credencial** , se agregan sus propios valores de configuración para pasar a través de la extensión. En su lugar, considere la posibilidad de usar las opciones de configuración integradas proporcionadas por Apple en el tipo de **Kerberos** .
+
+- **Identificador de extensión** (solo credencial): escriba el identificador de paquete que identifica la extensión de la aplicación de SSO, como `com.apple.extensiblesso`.
+- **Identificador de equipo** (solo credencial): escriba el identificador de equipo de la extensión de la aplicación de SSO. Un identificador de equipo es una cadena alfanumérica de 10 caracteres (números y letras) que genera Apple, como `ABCDE12345`. No es necesario el identificador del equipo.
+
+  [Busque el identificador de su equipo](https://help.apple.com/developer-account/#/dev55c3c710c) (abre el sitio web de Apple) para obtener más información.
+
+- **Territorio**: escriba el nombre del dominio Kerberos. El nombre de dominio Kerberos debe escribirse en mayúsculas, como `CONTOSO.COM`. Normalmente, el nombre de dominio Kerberos es el mismo que el nombre de dominio DNS, pero en mayúsculas.
+
+- **Dominios**: escriba los nombres de dominio o de host de los sitios que pueden autenticarse a través de SSO. Por ejemplo, si el sitio web es `mysite.contoso.com`, `mysite` es el nombre de host y `contoso.com` es el nombre de dominio. Cuando los usuarios se conectan a cualquiera de estos sitios, la extensión de la aplicación controla el desafío de autenticación. Esta autenticación permite a los usuarios usar el ID. de la persona, Touch ID o pincode/PASSCODE de Apple para iniciar sesión.
+
+  - Todos los dominios de la extensión de aplicación de inicio de sesión único perfiles de Intune deben ser únicos. No se puede repetir un dominio en ningún perfil de extensión de aplicación de inicio de sesión, aunque se usen distintos tipos de extensiones de aplicación de SSO.
+  - Estos dominios no distinguen mayúsculas de minúsculas.
+
+- **Configuración adicional** (solo credencial): escriba datos adicionales específicos de la extensión para pasarlos a la extensión de la aplicación de SSO:
+  - **Clave de configuración**: escriba el nombre del elemento que desea agregar, como `user name`.
+  - **Tipo de valor**: escriba el tipo de datos. Las opciones son:
+
+    - String
+    - Booleano: en **valor de configuración**, escriba `True` o `False`.
+    - Entero: en **valor de configuración**, escriba un número.
+    
+  - **Valor de configuración**: escriba los datos.
+
+  - **Agregar**: Seleccione esta configuración para agregar las claves de configuración.
+
+- **Uso de cadena de claves** (solo Kerberos): elija **bloquear** para impedir que se guarden y almacenen contraseñas en la cadena de claves. **No configurado** (valor predeterminado) permite guardar y almacenar contraseñas en la cadena de claves.
+- **Identificador de la esfera, Touch ID o PASSCODE** (solo Kerberos): **requerir** obliga a los usuarios a escribir su identificador de la esfera, Touch ID o el código de acceso de Apple para iniciar sesión en los dominios que ha agregado. **No configurado** (valor predeterminado) no requiere que los usuarios utilicen la biometría o el código de acceso para iniciar sesión.
+- **Dominio Kerberos predeterminado** (solo Kerberos): elija **Habilitar** para establecer el valor de **dominio** Kerberos que especificó como dominio predeterminado. **No configurado** (valor predeterminado) no establece un dominio Kerberos predeterminado.
+
+  > [!TIP]
+  > - **Habilite** esta opción si va a configurar varias extensiones de aplicación SSO de Kerberos en su organización.
+  > - **Habilite** esta opción si usa varios dominios. Establece el valor de **dominio Kerberos** que escribió como el dominio Kerberos predeterminado.
+  > - Si solo tiene un dominio Kerberos, déjelo como **no configurado** (valor predeterminado).
+
+- **Nombre principal** (solo Kerberos): escriba el nombre de usuario de la entidad de seguridad de Kerberos. No es necesario incluir el nombre de dominio Kerberos. Por ejemplo, en `user@contoso.com`, `user` es el nombre principal y `contoso.com` es el nombre de dominio Kerberos.
+- **Código de sitio de Active Directory** (solo Kerberos): escriba el nombre del sitio Active Directory que debe usar la extensión de Kerberos. Es posible que no necesite cambiar este valor, ya que la extensión de Kerberos puede encontrar automáticamente el código del sitio Active Directory.
+- **Nombre de caché** (solo Kerberos): escriba el nombre de los servicios de seguridad genéricos (GSS) de la memoria caché de Kerberos. Lo más probable es que no tenga que establecer este valor.
+- **Identificadores de lote de aplicaciones** (solo Kerberos): **agregue** los identificadores de lote de aplicaciones que deben usar el inicio de sesión único en los dispositivos. A estas aplicaciones se les concede acceso al vale de concesión de vales de Kerberos, el vale de autenticación y autenticar a los usuarios en los servicios a los que están autorizados para obtener acceso.
+- **Asignación de dominio Kerberos** (solo Kerberos): **agregue** los sufijos DNS de dominio que deben asignarse a su dominio Kerberos. Use esta opción cuando los nombres DNS de los hosts no coincidan con el nombre de dominio Kerberos. Lo más probable es que no tenga que crear esta asignación personalizada de dominio a dominio Kerberos.
+
+## <a name="wallpaper"></a>Papeles
 
 Puede experimentar un comportamiento inesperado cuando un perfil sin imagen se asigna a dispositivos con una imagen existente. Por ejemplo, crea un perfil sin una imagen. Este perfil se asigna a dispositivos que ya tienen una imagen. En este escenario, la imagen puede cambiar a la predeterminada del dispositivo, o bien la imagen original puede permanecer en el dispositivo. Este comportamiento se controla y limita por medio de la plataforma MDM de Apple.
+
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
 - **Ubicación de presentación del fondo de pantalla**: elija una ubicación en el dispositivo para mostrar la imagen. Las opciones son:
   - **Sin configurar**: no se agrega una imagen personalizada al dispositivo. El dispositivo usa la configuración predeterminada del sistema operativo.
