@@ -25,7 +25,7 @@ ms.locfileid: "71726185"
 ---
 # <a name="what-is-microsoft-intune"></a>¿Qué es Microsoft Intune?
 
-Microsoft Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Al igual que otros servicios de Azure, Microsoft Intune está disponible en Azure Portal. Intune permite:
+Microsoft Intune, es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Al igual que otros servicios de Azure, Microsoft Intune está disponible en Azure Portal. Intune permite:
 
 - Administrar los dispositivos móviles y los equipos que los empleados usan para tener acceso a datos de la empresa.
 - Administrar las aplicaciones móviles que usa la plantilla.
@@ -49,7 +49,7 @@ Intune es el componente del conjunto Enterprise Mobility + Security (EMS) de Mic
 
 Vea una [versión ampliada](./media/intunearchitecture.svg) del diagrama de arquitectura de Intune.
 
-La manera en que use las características de administración de dispositivos y aplicaciones de Intune y la protección de datos de EMS dependerá del [problema empresarial que intente resolver](#common-business-problems-that-intune-helps-solve). Por ejemplo:
+En la manera en que use las características de administración de dispositivos y aplicaciones de Intune y la protección de datos de EMS dependerá del [problema empresarial que intente resolver](#common-business-problems-that-intune-helps-solve). Por ejemplo:
 * Si está creando un grupo de dispositivos de uso único que compartirán los trabajadores por turnos de un comercio, hará un uso intensivo de la administración de dispositivos.
 * Si permite que los empleados usen sus dispositivos personales para tener acceso a los datos corporativos (BYOD), usará la administración de aplicaciones y la protección de datos.  
 * Si distribuye teléfonos corporativos entre los trabajadores de la información, dependerá de todas estas tecnologías.
