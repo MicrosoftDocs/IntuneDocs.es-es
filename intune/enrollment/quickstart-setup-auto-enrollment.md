@@ -60,7 +60,7 @@ En este ejemplo, usará la inscripción de MDM para que se puedan inscribir auto
 
     ![Selección del grupo que se va a inscribir](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
-6. Seleccione **Algunos** en **Ámbito de usuario de MAM** para administrar los datos en los dispositivos de su personal.
+6. Seleccione **Algunos** en **Ámbito de usuario de MAM**, para administrar los datos en los dispositivos de su personal.
 7. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)**  > **Seleccionar** como grupo asignado. 
 8. Use los valores predeterminados para los demás valores de configuración.
 9. Elija **Guardar**.
