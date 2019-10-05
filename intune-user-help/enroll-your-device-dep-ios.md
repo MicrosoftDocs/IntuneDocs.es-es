@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: bca7ff55653d12d352b4fb90163f4622a9e573ab
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239425"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721006"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Inscripción de dispositivos iOS proporcionados por la organización en la administración
 
@@ -31,11 +31,11 @@ Obtenga información sobre cómo administrar un dispositivo iOS nuevo en Intune.
 
 Los dispositivos iOS proporcionados por su empresa o centro educativo a menudo están preconfigurados antes de recibirlos. La organización enviará estas opciones configuradas previamente al dispositivo después de encenderlo e iniciar sesión por primera vez. Una vez configurado el dispositivo, recibirá acceso a los recursos profesionales o educativos.  
 
-Para comenzar con la configuración, encienda el dispositivo e inicie sesión con sus credenciales profesionales o educativas. A continuación, en este artículo se describirán los pasos y las pantallas que verá en el asistente de configuración. 
+Para comenzar con la configuración, encienda el dispositivo e inicie sesión con sus credenciales profesionales o educativas. A continuación, en este artículo se describirán los pasos y las pantallas que verá en el asistente de configuración.
 
 ## <a name="what-is-apple-dep"></a>¿Qué es DEP de Apple?
 
-Es posible que la organización haya comprado los dispositivos a través de lo que se denomina *Programa de inscripción de dispositivos de Apple* (DEP). DEP de Apple permite a las organizaciones comprar una gran cantidad de dispositivos iOS o macOS. De este modo, pueden configurar y administrar esos dispositivos con su proveedor de administración de dispositivos móviles preferido, como Intune. Si es un administrador y quiere obtener más información sobre DEP de Apple, vea [Inscripción automática de dispositivos iOS con el Programa de inscripción de dispositivos de Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
+Es posible que la organización haya comprado los dispositivos a través de lo que se denomina *Programa de inscripción de dispositivos de Apple* (DEP). DEP de Apple permite a las organizaciones comprar una gran cantidad de dispositivos iOS o macOS. De este modo, pueden configurar y administrar esos dispositivos con su proveedor de administración de dispositivos móviles preferido, como Intune. Si es un administrador y quiere obtener más información sobre DEP de Apple, vea [Inscripción automática de dispositivos iOS con el Programa de inscripción de dispositivos de Apple](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-ios.md).  
 
 ## <a name="set-up-your-ios-device"></a>Configuración de un dispositivo iOS
 
@@ -51,7 +51,7 @@ Si usa un dispositivo iOS propio, que la organización no le haya proporcionado,
 4. Una vez que se haya conectado a la red Wi-Fi, aparecerá la pantalla **Configuración**, donde se le indicará que **[su empresa] configurará automáticamente su dispositivo.**
 
    **La configuración permite que [su empresa] administre este dispositivo de forma inalámbrica. Un administrador puede ayudarle a configurar las cuentas de red y correo electrónico, instalar y configurar aplicaciones y administrar la configuración de manera remota. Un administrador puede deshabilitar características, instalar y quitar aplicaciones, supervisar y restringir el tráfico de Internet y borrar de manera remota este dispositivo.**
- 
+
    **Configuración proporcionada por: Equipo de iOS de [su empresa] [dirección]**
 
 5. Inicie sesión con su identificador de Apple. El inicio de sesión le permite instalar la aplicación de Portal de empresa e instalar el perfil de administración con el que su empresa le proporcionará acceso a los recursos, como el correo electrónico y las aplicaciones.

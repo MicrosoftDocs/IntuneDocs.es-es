@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238973"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721180"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo cifrado, pero las aplicaciones dicen lo contrario
 
@@ -31,7 +31,7 @@ Si Portal de empresa o la aplicación Microsoft Intune decir que el dispositivo 
 
 ## <a name="add-a-startup-pin"></a>Agregar un PIN de inicio
 
-Ciertos dispositivos Android le exigen que cree un PIN de inicio para garantizar que el dispositivo sea seguro. La ubicación de esta configuración estará en la aplicación de **configuración** del dispositivo. El nombre y la ubicación de la configuración pueden variar. Por ejemplo, en Samsung Galaxy S7, la configuración se denomina **Inicio seguro**. Para habilitarlo y crear un código de acceso, vaya a **configuración** > **pantalla de bloqueo y seguridad** > de**Inicio seguro**.  
+Ciertos dispositivos Android le exigen que cree un PIN de inicio para garantizar que el dispositivo sea seguro. La ubicación de esta configuración estará en la aplicación de **configuración** del dispositivo. El nombre y la ubicación de la configuración pueden variar. Por ejemplo, en Samsung Galaxy S7, la configuración se denomina **Inicio seguro**. Para habilitarlo y crear un código de acceso, vaya a **configuración** > **pantalla de bloqueo y seguridad** > **Inicio seguro**.  
 
 ## <a name="encrypt-the-entire-device"></a>Cifrado de todo el dispositivo
 
@@ -50,7 +50,7 @@ Esta sección solo se aplica a la aplicación Portal de empresa. Si el dispositi
 
 Algunos dispositivos Android de la versión 7.0 y posteriores cifran los datos de maneras incoherentes con determinados estándares de la plataforma Android. Estos métodos de cifrado ponen en peligro la información del dispositivo. Como resultado, no se admiten estos dispositivos.
 
-Para obtener una lista no exhaustiva de los dispositivos Android compatibles, consulte el artículo [compatibilidad con exploradores y sistemas operativos en Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Si el dispositivo no aparece en la lista, consulte al fabricante del dispositivo o póngase en contacto con el personal de soporte técnico.
+Para obtener una lista no exhaustiva de los dispositivos Android compatibles, consulte el artículo [compatibilidad con exploradores y sistemas operativos en Intune](https://docs.microsoft.com/intune/fundamentals/supported-devices-browsers#supported-samsung-knox-standard-devices). Si el dispositivo no aparece en la lista, consulte al fabricante del dispositivo o póngase en contacto con el personal de soporte técnico.
 
 > [!Note]
 > Microsoft trabaja junto con los fabricantes para abordar cualquier problema que se encuentre durante las pruebas o que los usuarios informen. Este artículo se actualiza cada vez que hay nueva información disponible.
