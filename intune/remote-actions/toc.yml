@@ -1,0 +1,67 @@
+- name: Acciones remotas
+  href: index.yml
+- name: Introducción
+  expanded: true
+  items:
+    - name: Información general sobre la administración de dispositivos
+      href: device-management.md
+- name: Guías paso a paso
+  items:
+    - name: Bloqueos y contraseñas
+      items:
+        - name: Bloqueo del dispositivo
+          href: device-remote-lock.md
+        - name: Restablecer código acceso
+          href: device-passcode-reset.md
+        - name: Restablecimiento del PIN de Windows 10
+          href: device-windows-pin-reset.md
+    - name: Eliminación y reinicio
+      items:
+        - name: Retirada de dispositivos
+          href: devices-wipe.md
+        - name: Administración del inicio desde cero de Windows
+          href: device-fresh-start.md
+        - name: Reinicio del dispositivo
+          href: device-restart.md
+    - name: Acciones de dispositivos Apple
+      items:
+        - name: Búsqueda de dispositivos perdidos de iOS
+          href: device-locate.md
+        - name: Habilitación del modo perdido de iOS
+          href: device-lost-mode.md
+        - name: Activación del modo supervisado de iOS
+          href: device-supervised-mode.md
+        - name: Borrar el contenido de un dispositivo macOS
+          href: device-erase.md
+        - name: Omitir el bloqueo de activación
+          href: device-activation-lock-bypass.md
+    - name: Acciones del usuario
+      items:
+        - name: Cierre de sesión del usuario actual
+          href: device-logout-user.md
+        - name: Quitar usuario
+          href: device-remove-user.md
+        - name: Buscar usuario principal
+          href: find-primary-user.md
+    - name: Otras acciones
+      items:
+        - name: Cambio de nombre de un dispositivo
+          href: device-rename.md
+        - name: Enviar notificaciones
+          href: custom-notifications.md
+        - name: Dispositivos móviles de control remoto
+          href: teamviewer-support.md
+        - name: Sincronización del dispositivo
+          href: device-sync.md
+        - name: Examen del inventario de dispositivos
+          href: device-inventory.md
+    - name: Solucionar problemas
+      items:
+        - name: Solución de problemas de acciones de dispositivos
+          href: troubleshoot-device-actions.md
+- name: Recursos
+  items:
+    - name: Guías de implementación de escenarios
+      items:
+        - name: Reducir los costos del departamento de soporte técnico
+          href: password-reset.md

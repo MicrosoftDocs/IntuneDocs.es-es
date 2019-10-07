@@ -1,0 +1,111 @@
+- name: Inscripción en Microsoft Intune
+  href: index.yml
+- name: Introducción
+  expanded: true
+  items:
+    - name: Introducción a la inscripción de dispositivos
+      href: device-enrollment.md
+      displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
+    - name: Capacidades de administración de dispositivos inscritos
+      href: device-management-capabilities.md
+    - name: Opciones de inscripción
+      href: enrollment-options.md
+- name: Inicios rápidos
+  items:
+    - name: Configurar inscripción automática
+      href: quickstart-setup-auto-enrollment.md
+    - name: Inscripción de dispositivos Windows 10
+      href: quickstart-enroll-windows-device.md
+- name: Tutoriales
+  items:
+    - name: Uso de Autopilot para la inscripción de dispositivos Windows
+      href: tutorial-use-autopilot-enroll-devices.md
+    - name: Uso de DEP para inscribir dispositivos iOS
+      href: tutorial-use-device-enrollment-program-enroll-ios.md
+- name: Conceptos
+  items:
+    - name: términos y condiciones
+      href: terms-and-conditions-create.md
+    - name: Restricciones
+      href: enrollment-restrictions-set.md
+    - name: Certificado push MDM de Apple
+      href: apple-mdm-push-certificate-get.md
+    - name: Identificadores corporativos
+      href: corporate-identifiers-add.md
+      displayName: COD
+    - name: Multi-factor Authentication
+      href: multi-factor-authentication.md
+      displayName: mfa; multifactor
+    - name: Administrador de inscripción de dispositivos
+      href: device-enrollment-manager-enroll.md
+    - name: Asignar dispositivos a grupos
+      href: device-group-mapping.md
+- name: Guías paso a paso
+  items:
+    - name: Configuración de la inscripción de Windows
+      items:
+        - name: Métodos de inscripción de Windows
+          href: windows-enrollment-methods.md
+        - name: Capacidades de método de inscripción
+          href: enrollment-method-capab.md
+        - name: Inscripción de Windows
+          href: windows-enroll.md
+        - name: Inscripción masiva
+          href: windows-bulk-enroll.md
+        - name: Página de estado de inscripción
+          href: windows-enrollment-status.md
+        - name: Programa Windows Autopilot Deployment
+          href: enrollment-autopilot.md
+        - name: Azure AD híbrido con Autopilot
+          href: windows-autopilot-hybrid.md
+        - name: Configuración del proxy para el conector de AD de Intune
+          href: autopilot-hybrid-connector-proxy.md
+    - name: Configuración de la inscripción de Android
+      items:
+        - name: Configuración de la inscripción de Android
+          href: android-enroll.md
+          displayName: wpj
+        - name: Conexión de Intune a Android Enterprise
+          href: connect-intune-android-enterprise.md
+        - name: Inscripción de perfiles de trabajo de Android Enterprise
+          href: android-work-profile-enroll.md
+        - name: Inscripción de dispositivos dedicados de Android Enterprise
+          href: android-kiosk-enroll.md
+          displayName: gms
+        - name: Inscripción totalmente administrada de Android Enterprise
+          href: android-fully-managed-enroll.md
+          displayName: gms
+        - name: Inscripción de dispositivos dedicados o totalmente administrados de Android Enterprise
+          href: android-dedicated-devices-fully-managed-enroll.md
+        - name: Inscripción del administrador de dispositivos Android
+          href: android-enroll-device-administrator.md
+        - name: Administración de dispositivos de perfil de trabajo de Android Enterprise
+          href: android-enterprise-overview.md
+        - name: Samsung Knox Mobile Enrollment
+          href: android-samsung-knox-mobile-enroll.md
+          displayName: kda; kme
+    - name: Configuración de la inscripción en iOS
+      href: ios-enroll.md
+      items:
+        - name: Programa de inscripción de dispositivos
+          href: device-enrollment-program-enroll-ios.md
+        - name: Apple School Manager
+          href: apple-school-manager-set-up-ios.md
+        - name: Apple Configurator
+          href: apple-configurator-enroll-ios.md
+    - name: Configuración de la inscripción de macOS
+      href: macos-enroll.md
+      items:
+        - name: Programa de inscripción de dispositivos o Apple School Manager
+          href: device-enrollment-program-enroll-macos.md
+    - name: Informe de inscripción incompleta
+      href: enrollment-report-company-portal-abandon.md
+    - name: Solución de problemas de inscripción
+      items:
+        - name: Solucionar problemas de inscripción de dispositivos
+          href: troubleshoot-device-enrollment-in-intune.md
+          displayName: sso
+        - name: Solución de problemas de inscripción de dispositivos iOS
+          href: troubleshoot-ios-enrollment-errors.md
+        - name: Solución de problemas de inscripción de dispositivos Windows
+          href: troubleshoot-windows-enrollment-errors.md

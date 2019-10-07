@@ -1,0 +1,150 @@
+### YamlMime:Landing
+title: Configuración de las opciones de dispositivo
+summary: Microsoft Intune incluye valores de configuración y características que puede habilitar o deshabilitar en distintos dispositivos dentro de su organización. Estas opciones y características se agregan a "perfiles de configuración" y, luego, se puede se usar Intune para aplicar o "asignar" el perfil a los dispositivos.
+metadata:
+  title: Configuración de las opciones de dispositivo
+  description: Microsoft Intune incluye valores de configuración y características que puede habilitar o deshabilitar en distintos dispositivos dentro de su organización. Estas opciones y características se agregan a "perfiles de configuración" y, luego, se puede se usar Intune para aplicar o "asignar" el perfil a los dispositivos.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: dougeby
+  ms.date: 09/16/2019
+  ms.openlocfilehash: 38324e042e1d3b4bcfc3f16e05520118374bb5ff
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728948"
+landingContent:
+- title: Aplicación de características y valores de configuración en los dispositivos
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Información general sobre la configuración de dispositivo
+      url: device-profiles.md
+  - linkListType: quickstart
+    links:
+    - text: Crear un perfil de dispositivo de correo para iOS
+      url: quickstart-email-profile.md
+  - linkListType: how-to-guide
+    links:
+    - text: Creación de un perfil
+      url: device-profile-create.md
+    - text: Asignación de perfiles
+      url: device-profile-assign.md
+    - text: Supervisión de perfiles
+      url: device-profile-monitor.md
+- title: Configuración para Windows 10 y versiones posteriores
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Uso de plantillas de Windows 10 para configurar los valores de directiva de grupo
+      url: administrative-templates-windows.md
+    - text: Configuración de restricciones de dispositivo
+      url: device-restrictions-configure.md
+    - text: Configuración de la optimización de entrega
+      url: delivery-optimization-windows.md
+    - text: Adición de la configuración de correo electrónico a los dispositivos
+      url: email-settings-configure.md
+    - text: Configuración para funcionar como un quiosco dedicado
+      url: kiosk-settings.md
+    - text: Creación de perfiles de VPN para conectarse a servidores VPN
+      url: vpn-settings-configure.md
+    - text: Adición y uso de la configuración de Wi-Fi en los dispositivos
+      url: wi-fi-settings-configure.md
+- title: Configuración de Windows Holographic for Business
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Actualización de las ediciones de Windows 10 o salida del modo S
+      url: edition-upgrade-configure-windows-10.md
+    - text: Configuración para funcionar como un quiosco dedicado
+      url: kiosk-settings.md
+    - text: Creación de perfiles de VPN para conectarse a servidores VPN
+      url: vpn-settings-configure.md
+    - text: Adición y uso de la configuración de Wi-Fi en los dispositivos
+      url: wi-fi-settings-configure.md
+    - text: Control del acceso, las cuentas y las características de energía en dispositivos con varios usuarios o equipos compartidos
+      url: shared-user-device-settings.md
+- title: Configuración para iOS
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Adición de la configuración de las características de dispositivos iOS
+      url: device-features-configure.md
+    - text: Configuración de restricciones de dispositivo
+      url: device-restrictions-configure.md
+    - text: Adición de la configuración de correo electrónico a los dispositivos
+      url: email-settings-configure.md
+    - text: Creación de perfiles de VPN para conectarse a servidores VPN
+      url: vpn-settings-configure.md
+    - text: Creación de perfiles de VPN por aplicación para dispositivos iOS
+      url: vpn-setting-configure-per-app.md
+    - text: Adición y uso de la configuración de Wi-Fi en los dispositivos
+      url: wi-fi-settings-configure.md
+- title: Configuración para macOS
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Adición de la configuración de las características de dispositivos iOS
+      url: device-features-configure.md
+    - text: Configuración de restricciones de dispositivo
+      url: device-restrictions-configure.md
+    - text: Creación de perfiles de VPN para conectarse a servidores VPN
+      url: vpn-settings-configure.md
+    - text: Adición y uso de la configuración de Wi-Fi en los dispositivos
+      url: wi-fi-settings-configure.md
+    - text: Adición de extensiones de kernel de macOS
+      url: kernel-extensions-overview-macos.md
+- title: Configuración para Android
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Configuración de restricciones de dispositivo
+      url: device-restrictions-configure.md
+    - text: Adición de la configuración de correo electrónico a los dispositivos
+      url: email-settings-configure.md
+    - text: Creación de perfiles de VPN para conectarse a servidores VPN
+      url: vpn-settings-configure.md
+    - text: Adición y uso de la configuración de Wi-Fi en los dispositivos
+      url: wi-fi-settings-configure.md
+    - text: Creación de un perfil de Wi-Fi con una clave precompartida
+      url: wi-fi-profile-shared-key.md
+    - text: Administración de dispositivos Zebra con Zebra Mobility Extensions
+      url: android-zebra-mx-overview.md
+    - text: Administración de dispositivos Android Enterprise con OEMConfig
+      url: android-oem-configuration-overview.md
+- title: Configuración para Android Enterprise
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Configuración de restricciones de dispositivo
+      url: device-restrictions-configure.md
+    - text: Adición de la configuración de correo electrónico a los dispositivos
+      url: email-settings-configure.md
+    - text: Creación de perfiles de VPN para conectarse a servidores VPN
+      url: vpn-settings-configure.md
+    - text: Adición y uso de la configuración de Wi-Fi en los dispositivos
+      url: wi-fi-settings-configure.md
+- title: Listas de configuración
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Android
+      url: device-restrictions-android.md
+    - text: Android Enterprise
+      url: device-restrictions-android-for-work.md
+    - text: iOS
+      url: ios-device-features-settings.md
+    - text: macOS
+      url: macos-device-features-settings.md
+    - text: Windows 10 y versiones posteriores
+      url: delivery-optimization-settings.md
+    - text: Windows Holographic for Business
+      url: device-restrictions-windows-holographic.md
+    - text: Windows 8.1
+      url: device-restrictions-windows-8-1.md
+    - text: Windows Phone 8,1
+      url: device-restrictions-windows-phone-8-1.md
