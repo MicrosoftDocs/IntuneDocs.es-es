@@ -25,7 +25,7 @@ ms.locfileid: "71726185"
 ---
 # <a name="what-is-microsoft-intune"></a>¿Qué es Microsoft Intune?
 
-Microsoft Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Al igual que otros servicios de Azure, Microsoft Intune está disponible en Azure Portal. Intune permite:
+Microsoft Intune, es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Al igual que otros servicios de Azure, Microsoft Intune está disponible en Azure Portal. Intune permite:
 
 - Administrar los dispositivos móviles y los equipos que los empleados usan para tener acceso a datos de la empresa.
 - Administrar las aplicaciones móviles que usa la plantilla.
