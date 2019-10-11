@@ -17,62 +17,68 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 449e799dfc0531958c1578179cf07440d348ecf8
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721466"
+ms.locfileid: "71813951"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Datos que Jamf Pro envía a Intune
 
 Cuando se usa [Jamf Pro](https://www.jamf.com) para administrar los equipos Mac de los usuarios finales con Intune, Jamf Pro captura información de inventario sobre los dispositivos macOS administrados. 
 
 ## <a name="data"></a>Datos  
-Jamf Pro informa lo siguiente a Intune:  
+Para obtener la lista de datos que Jamf Pro comparte con Intune, consulte [Apéndice: Información de inventario compartida con Microsoft Intune ](https://docs.jamf.com/technical-papers/jamf-pro/microsoft-intune/10.9.0/Appendix__Inventory_Information_Shared_with_Microsoft_Intune.html) en la documentación técnica de Jamf Pro. 
 
-* Id. de Azure AD del dispositivo
-* Estado del inventario JAMF (el estado de inventario de un equipo registrado con Jamf Pro en las últimas 24 horas)
-* Versión del SO
-* Id. de Azure AD del usuario
-* Cifrado (FileVault 2)
-* Estado del equipo selector
-* Contraseña: número mínimo de conjuntos de caracteres
-* Expiración de contraseña (días)
-* Tipo de contraseña: simple, alfanumérico o desconocido
-* Evitar inicio de sesión automático
-* Longitud necesaria del código de acceso
-* Contraseña: número de contraseñas anteriores para impedir su reutilización
-* Protección de la integridad del sistema
-* Hora de última comprobación
-* Tipo de arquitectura
-* Ranuras de RAM disponibles
-* Capacidad de la batería
-* ROM de arranque
-* Velocidad de bus
-* Tamaño de caché
-* Nombre del dispositivo
-* Unión al dominio
-* Id. de Jamf
-* Dirección MAC
-* Marca
-* Modelo
-* Identificador de modelo
-* Velocidad de NIC
-* Número de núcleos
-* Número de procesadores
-* Sistema operativo
-* Plataforma
-* Velocidad del procesador
-* Tipo de procesador
-* Dirección MAC secundaria
-* Número de serie
-* Versión de SMC
-* RAM total
+<!--  
+Jamf Pro reports the following information to Intune:  
+
+* Device Azure AD ID
+* JAMF Inventory State (inventory state of a computer checked in with Jamf Pro within the last 24 hours)
+* OS Version
+* User Azure AD ID
+* Encrypted (FileVault 2)
+* Gatekeeper Status
+* Password: minimum number of character sets
+* Password expiration (days)
+* Password Type - simple, alphanumeric, or unknown
+* Prevent Auto Login
+* Required Passcode Length
+* Password: number of previous passwords to prevent reuse
+* System Integrity Protection
+* Last Check-In Time
+* Architecture Type
+* Available RAM Slots
+* Battery Capacity
+* Boot ROM
+* Bus Speed
+* Cache Size
+* Device Name
+* Domain Join
+* Jamf ID
+* MAC address
+* Make
+* Model
+* Model Identifier
+* NIC Speed
+* Number of Cores
+* Number of Processors
+* OS
+* Platform
+* Processor Speed
+* Processor Type
+* Secondary MAC Address
+* Serial Number
+* SMC Version
+* Total RAM
 * UDID
-* Correo electrónico del usuario
+* User Email
+--> 
 
-Puede quitar un dispositivo administrado por Jamf de la consola de Intune si selecciona **Eliminar** en la vista **Todos los dispositivos**. La eliminación de dispositivos de forma masiva puede habilitarse si se seleccionan varios dispositivos y se hace clic en **Eliminar**.
+<!-- 
+You can remove a Jamf-managed device from the Intune console by selecting **Delete** in the **All devices** view. Bulk device deletion can be enabled by selecting multiple devices and clicking **Delete**.
+-->
 
 ## <a name="next-steps"></a>Pasos siguientes
 Obtenga información sobre cómo [quitar un dispositivo administrado por Jamf en los documentos de Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). También puede presentar una incidencia de soporte técnico al [soporte técnico de Jamf](https://www.jamf.com/support/) para obtener más ayuda. 

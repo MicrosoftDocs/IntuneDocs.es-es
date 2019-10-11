@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af81552942805bed07e818d6005231e9305b3460
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725795"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940372"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
@@ -88,6 +88,77 @@ Puede validar la directiva de configuración de aplicaciones mediante los tres m
 
       ![Captura de pantalla de la configuración de la aplicación](./media/app-configuration-policies-overview/app-configuration.png)
 
+## <a name="diagnostic-logs"></a>Registros de diagnóstico
+
+### <a name="ios-configuration-on-unmanaged-devices"></a>Configuración de iOS en dispositivos no administrados
+
+Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos no administrados para la configuración de aplicaciones administradas.
+
+1. Si aún no está instalado en el dispositivo, descargue e instale **Intune Managed Browser** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
+2. Inicie **Intune Managed Browser** y seleccione **acerca de** > **intunehelp** en la barra de navegación.
+3. Haga clic en **Introducción**.
+4. Haga clic en **Compartir registros**.
+5. Use la aplicación de correo que prefiera para enviarse el registro y verlo en su PC. 
+6. Revise **IntuneMAMDiagnostics.txt** en el visor del archivo de texto.
+7. Busque `ApplicationConfiguration`. Los resultados tendrán un aspecto similar al siguiente:
+
+    ``` JSON
+        {
+            (
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.BlockListURLs";
+                    Value = "https://www.aol.com";
+                },
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.bookmarks";
+                    Value = "Outlook Web|https://outlook.office.com||Bing|https://www.bing.com";
+                }
+            );
+        },
+        {
+            ApplicationConfiguration =             
+            (
+                {
+                Name = IntuneMAMUPN;
+                Value = "CMARScrubbedM:13c45c42712a47a1739577e5c92b5bc86c3b44fd9a27aeec3f32857f69ddef79cbb988a92f8241af6df8b3ced7d5ce06e2d23c33639ddc2ca8ad8d9947385f8a";
+                },
+                {
+                Name = "com.microsoft.outlook.Mail.NotificationsEnabled";
+                Value = false;
+                }
+            );
+        }
+    ```
+
+Los detalles de configuración de la aplicación deben coincidir con las directivas de configuración de la aplicación configuradas para el inquilino. 
+
+![Configuración de la aplicación de destino](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
+
+### <a name="ios-configuration-on-managed-devices"></a>Configuración de iOS en dispositivos administrados
+
+Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos administrados para la configuración de aplicaciones administradas.
+
+1. Si aún no está instalado en el dispositivo, descargue e instale **Intune Managed Browser** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
+2. Inicie **Intune Managed Browser** y seleccione **acerca de** > **intunehelp** en la barra de navegación.
+3. Haga clic en **Introducción**.
+4. Haga clic en **Compartir registros**.
+5. Use la aplicación de correo que prefiera para enviarse el registro y verlo en su PC. 
+6. Revise **IntuneMAMDiagnostics.txt** en el visor del archivo de texto.
+7. Busque `AppConfig`. Los resultados deben coincidir con las directivas de configuración de la aplicación configuradas para el inquilino.
+
+### <a name="android-configuration-on-managed-devices"></a>Configuración de Android en dispositivos administrados
+
+Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos administrados para la configuración de aplicaciones administradas.
+
+Para recopilar registros de un dispositivo Android, usted o el usuario final deben descargar los registros del dispositivo a través de una conexión USB (o el equivalente al **Explorador de archivos** del dispositivo). Estos son los pasos:
+
+1. Conecte el dispositivo Android al equipo con el cable USB.
+2. En el equipo, busque un directorio que contenga el nombre del dispositivo. En ese directorio, busque `Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal`.
+3. En la carpeta `com.microsoft.windowsintune.companyportal`, abra la carpeta de archivos y abra `OMADMLog_0`.
+3. Busque `AppConfigHelper` para ubicar mensajes relacionados con la configuración de la aplicación. Los resultados tendrán un aspecto similar al siguiente bloque de datos:
+
+    `2019-06-17T20:09:29.1970000       INFO   AppConfigHelper     10888  02256  Returning app config JSON [{"ApplicationConfiguration":[{"Name":"com.microsoft.intune.mam.managedbrowser.BlockListURLs","Value":"https:\/\/www.aol.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.bookmarks","Value":"Outlook Web|https:\/\/outlook.office.com||Bing|https:\/\/www.bing.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.homepage","Value":"https:\/\/www.arstechnica.com"}]},{"ApplicationConfiguration":[{"Name":"IntuneMAMUPN","Value":"AdeleV@M365x935807.OnMicrosoft.com"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled","Value":"false"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed","Value":"false"}]}] for user User-875363642`
+    
 ## <a name="graph-api-support-for-app-configuration"></a>Compatibilidad de Graph API para la configuración de aplicaciones
 
 Puede usar Graph API para realizar tareas de configuración de aplicaciones. Para obtener más información, consulte la [referencia sobre Graph API para la configuración de destino de MAM](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).

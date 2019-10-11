@@ -43,18 +43,20 @@
               href: store-apps-ios.md
             - name: Aplicaciones de la Tienda Windows Phone 8.1
               href: store-apps-windows-phone-8-1.md
-            - name: Aplicaciones de Microsoft Store
-              items:
-                - name: Aplicaciones de Windows
-                  href: store-apps-windows.md
-                - name: Aplicación de portal de empresa
-                  href: store-apps-company-portal-app.md
+            - name: Aplicaciones de Windows
+              href: store-apps-windows.md
+            - name: Aplicaciones de Tienda Microsoft para Empresas
+              href: windows-store-for-business.md
             - name: Aplicaciones administradas de Google Play
               href: apps-add-android-for-work.md
+        - name: Conjunto de aplicaciones Office 365
+          items:
             - name: Aplicaciones de Office 365 para Windows 10
               href: apps-add-office365.md
             - name: Aplicaciones de Office 365 para macOS
               href: apps-add-office365-macos.md
+        - name: Aplicaciones del sistema de Android Enterprise
+          href: apps-ae-system.md
         - name: Aplicaciones web
           href: web-app.md
           displayName: web; web link; weblink; web-link
@@ -74,10 +76,12 @@
               href: app-sideload-windows.md
             - name: Aplicaciones de LOB para macOS
               href: lob-apps-macos.md
-        - name: Aplicaciones del sistema de Android Enterprise
-          href: apps-ae-system.md
-        - name: Administración de aplicaciones Win32
-          href: apps-win32-app-management.md
+            - name: Administración de aplicaciones Win32
+              href: apps-win32-app-management.md
+        - name: Adición de aplicaciones específicas
+          items:
+            - name: Aplicación de portal de empresa
+              href: store-apps-company-portal-app.md
         - name: Scripts de PowerShell
           href: intune-management-extension.md
     - name: Asignación de aplicaciones

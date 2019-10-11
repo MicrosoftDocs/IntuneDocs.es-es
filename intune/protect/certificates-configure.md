@@ -16,22 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b920deeb5255f6f938f0c8b07eaab6d765e68e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722974"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999309"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Uso de certificados para la autenticación en Microsoft Intune  
 
 Use certificados con Intune para autenticar a los usuarios en las aplicaciones y los recursos corporativos a través de VPN, Wi-Fi o perfiles de correo electrónico. Cuando se usan certificados para autenticar estas conexiones, los usuarios finales no tendrán que escribir nombres de usuario ni contraseñas, lo que facilita su acceso. Los certificados también se usan para firmar y cifrar el correo electrónico mediante S/MIME.
 
-Intune admite los tipos de certificado siguientes:  
-
-- Protocolo de inscripción de certificados simple (SCEP)  
-- PKCS#12 (o PFX)  
-- Certificados PKCS importados
+## <a name="intune-supported-certificates-and-usage"></a>Certificados y uso admitidos por Intune
+| Tipo              | Autenticación | Firma S/MIME | Cifrado S/MIME  |
+|--|--|--|--|
+| Certificado PKCS importado |  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png)|
+| PKCS#12 (o PFX)    | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |  |
+| Protocolo de inscripción de certificados simple (SCEP)  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | |
 
 Para implementar estos certificados, debe crear y asignar perfiles de certificado a los dispositivos.  
 

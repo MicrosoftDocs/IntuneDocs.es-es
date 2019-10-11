@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323412"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302594"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Habilitar la inscripción automática de Windows 10
 
@@ -21,7 +21,7 @@ La inscripción automática permite a los usuarios inscribir sus dispositivos Wi
 
    ![Captura de pantalla de Azure Portal](../media/auto-enroll-azure-main.png)
 
-2. Seleccione **Movilidad (MDM y MAM)**.
+2. Seleccione **Movilidad (MDM y MAM)** .
 
    ![Captura de pantalla de Azure Portal](../media/auto-enroll-mdm.png)
 
@@ -41,7 +41,7 @@ La inscripción automática permite a los usuarios inscribir sus dispositivos Wi
       > En el caso de los dispositivos corporativos, el ámbito de usuario MDM tiene prioridad si ambos ámbitos están habilitados. Los dispositivos se inscriben en MDM.
 
    > [!NOTE]
-   > El ámbito de usuario de MAM debe establecerse en un grupo de usuarios o una colección.
+   > El ámbito de usuario de MDM debe establecerse en un grupo de Azure AD que contenga objetos de usuario.
 
    ![Captura de pantalla de Azure Portal](../media/auto-enroll-scope.png)
 
