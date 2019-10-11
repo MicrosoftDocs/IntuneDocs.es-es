@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725171"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960892"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Incorporación de aplicaciones del sistema Android Enterprise a Microsoft Intune
 
@@ -42,9 +42,13 @@ Para agregar una aplicación del sistema Android Enterprise a Intune desde Azur
 5. Seleccione **Aceptar**.
 6. Seleccione **Agregar**.
 
+> [!NOTE]
+> Tendrá que contactar con el OEM del dispositivo para que le indique cómo averiguar el nombre del paquete de la aplicación que desea habilitar o deshabilitar.
+
 La aplicación que ha creado aparece en la lista de aplicaciones, donde puede asignarla a los grupos que seleccione. 
 
 Las aplicaciones del sistema Android Enterprise habilitarán o deshabilitarán las aplicaciones que ya forman parte de la plataforma. Para habilitar una aplicación, asigne la aplicación del sistema como **Requerida**. Para deshabilitar una aplicación, asigne la aplicación del sistema como **Desinstalar**. Las aplicaciones del sistema no se pueden asignar como disponibles para un usuario.
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

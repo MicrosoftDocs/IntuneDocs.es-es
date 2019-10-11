@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9b579e944827e511700073f0b3348b5ef20adc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724703"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036464"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Windows a Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Una aplicación de línea de negocio (LOB) es aquella que se agrega desde un archivo de instalación de la aplicación. Este tipo de aplicación normalmente se escribe localmente. En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar una aplicación de LOB de Windows a Microsoft Intune.
+
+> [!IMPORTANT]
+> Al implementar aplicaciones Win32 con un archivo de instalación con la extensión *.msi*, considere la posibilidad de usar la [extensión de administración de Intune](../apps/intune-management-extension.md). Si combina la instalación de aplicaciones de Win32 y aplicaciones de línea de negocio durante la inscripción de AutoPilot, puede producirse un error en la instalación de la aplicación.  
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
