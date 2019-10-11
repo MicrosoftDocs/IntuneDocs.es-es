@@ -26,7 +26,7 @@ ms.locfileid: "71726549"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Inicio rápido: Prueba gratuita de Microsoft Intune
 
-Microsoft Intune permite administrar los dispositivos y las aplicaciones para proteger los datos corporativos de los recursos. En este tutorial de inicio rápido, creará una suscripción gratuita para probar Intune en un entorno de prueba.
+Microsoft Intune, permite administrar los dispositivos y las aplicaciones para proteger los datos corporativos de los recursos. En este tutorial de inicio rápido, creará una suscripción gratuita para probar Intune en un entorno de prueba.
 
 Intune proporciona administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM) desde un servicio seguro basado en la nube que se administra mediante Microsoft Azure Portal. Con Intune, se asegura de que los recursos corporativos de los empleados (datos, dispositivos y aplicaciones) están configurados correctamente y actualizados, se puede acceder a ellos y satisfacen las directivas de cumplimiento y los requisitos de su compañía.
 
