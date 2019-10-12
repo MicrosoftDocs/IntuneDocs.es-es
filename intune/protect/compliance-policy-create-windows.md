@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732833"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251588"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Windows 10 y versiones posteriores para marcar dispositivos como compatibles o no compatibles con Intune
 
@@ -138,6 +138,9 @@ Solo se aplica a dispositivos administrados conjuntamente en los que se ejecuta 
 - **Firewall**: establézcalo en **requerir** para activar el Firewall de Microsoft defender y evitar que los usuarios lo desactiven. **No configurado** (valor predeterminado) no controla el Firewall de Microsoft defender ni cambia la configuración existente.
 
   [CSP de Firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > Si el dispositivo se sincroniza inmediatamente después de un reinicio, o sincroniza inmediatamente la activación desde el modo de suspensión, es posible que esta configuración informe como un **error**. Es posible que este escenario no afecte al estado general del cumplimiento del dispositivo. Para volver a evaluar el estado de cumplimiento, [sincronice manualmente el dispositivo](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
 
 - **Módulo de plataforma segura (TPM)** : cuando se establece en **requerir**, Intune comprueba el cumplimiento de la versión. El dispositivo es compatible Si la versión del chip TPM es mayor que 0 (cero). El dispositivo no es compatible Si no hay una versión de TPM en el dispositivo. Cuando **no se configura**, Intune no comprueba si el dispositivo tiene una versión de chip de TPM.
 

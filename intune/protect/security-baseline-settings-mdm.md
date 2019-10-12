@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736005"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237260"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Intune  
 
@@ -1622,7 +1622,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
 
 - **Email content execution type** (Tipo de ejecución de contenido del mensaje de correo electrónico)  
   Esta regla impide que los siguientes tipos de archivos se ejecuten o inicien desde un correo electrónico visto en Microsoft Outlook o webmail (como Gmail.com o Outlook.com): archivos ejecutables (como .exe, .dll o .scr) archivos de script (como un archivo PowerShell.ps, VisualBasic.vbs o JavaScript.js) o archivos de almacenamiento de script.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [Más información](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **Valor predeterminado**: Bloquear
 
@@ -1632,7 +1632,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
 
 - **Tipo de protección de red**  
   Esta directiva permite activar o desactivar la protección de red (Bloquear o Auditar) en Protección contra vulnerabilidades de seguridad de Windows Defender. Protección de red es una característica de Protección contra vulnerabilidades de seguridad de Windows Defender que evita que los empleados que usan una aplicación accedan a estafas de suplantación de identidad, sitios que hospedan vulnerabilidades de seguridad y contenido malintencionado en Internet. Esto incluye impedir que exploradores de terceros se conecten a sitios peligrosos. El tipo de valor es entero. Si habilita esta configuración, se activa la protección de red y los empleados no podrán desactivarla. Este comportamiento se puede controlar mediante las opciones siguientes: Bloquear y Auditar. Si habilita esta directiva con la opción "Bloquear", se impide que usuarios y aplicaciones se conecten a dominios peligrosos. Podrá ver esta actividad en el Centro de seguridad de Windows Defender. Si habilita esta directiva con la opción "Auditar", no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. Pero podrá seguir viendo esta actividad en el Centro de seguridad de Windows Defender. Si deshabilita esta directiva, no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. No verá ninguna actividad de red en el Centro de seguridad de Windows Defender. Si no configura esta directiva, se deshabilitará el bloqueo de la red de forma predeterminada.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [Más información](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Valor predeterminado**: Habilitar
   
