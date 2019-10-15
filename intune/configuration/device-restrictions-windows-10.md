@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734796"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251551"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -665,29 +665,55 @@ Estas opciones de configuración usan [experience policy CSP](https://docs.micro
 
 Estas opciones de configuración usan [defender policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (CSP de directiva de Defender), que también indica las ediciones de Windows compatibles.
 
-- **Supervisión en tiempo real**: **Habilitar** evita el examen en tiempo real de malware, spyware y otro software no deseado. **Sin configurar** (valor predeterminado) permite esta característica.
+- **Supervisión en tiempo real**: **Habilitar** activa el examen en tiempo real de malware, spyware y otro software no deseado. Los usuarios no pueden desactivarlo. 
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo activa esta característica y permite a los usuarios cambiarla.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **Supervisión de comportamiento**: **Habilitar** evita que Defender compruebe determinados patrones conocidos de actividad sospechosa en los dispositivos. **Sin configurar** (valor predeterminado) permite la supervisión de comportamiento de Windows Defender.
+- **Supervisión de comportamiento**: **Habilitar** activa la supervisión del comportamiento, y comprueba determinados patrones conocidos de actividad sospechosa en los dispositivos. Los usuarios no pueden desactivar la supervisión del comportamiento. 
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo activa la supervisión del comportamiento y permite a los usuarios cambiarla.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **Sistema de inspección de red (NIS)** : NIS ayuda a proteger los dispositivos contra las vulnerabilidades de seguridad basadas en red. Usa las firmas de vulnerabilidades conocidas de Microsoft Endpoint Protection Center para ayudar a detectar y bloquear el tráfico malintencionado.
 
-  **No configurado** (valor predeterminado) deshabilita esta característica. No se impide que los usuarios se conecten a vulnerabilidades conocidas. Cuando se establece en **habilitado**, la protección de red y el bloqueo de red están activados y los usuarios no pueden desactivarlos. Se impide que los usuarios se conecten a vulnerabilidades conocidas.
+  **Habilitar** activa la protección de red y el bloqueo de red. Los usuarios no pueden desactivarlo. Cuando está habilitada, los usuarios no pueden conectarse a vulnerabilidades conocidas.
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo activa NIS y permite a los usuarios cambiarlo.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **Examinar todas las descargas**: **no configurado** (valor predeterminado) tiene defender examina todos los archivos descargados de Internet. Cuando se establece en **habilitado**, esta característica está deshabilitada. Por lo tanto, defender no examina todos los archivos descargados de Internet.
+- **Examinar todas las descargas**: **habilita** activar esta opción y defender examina todos los archivos descargados de Internet. Los usuarios no pueden desactivar esta opción. 
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo activa esta configuración y permite a los usuarios cambiarla.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **Examinar scripts cargados en exploradores web de Microsoft**: **Sin configurar** (valor predeterminado) permite a Defender examinar scripts que se usan en Internet Explorer. **Habilitar** evita este examen.
+- **Examinar scripts cargados en exploradores web de Microsoft**: **Habilitar** permite a Defender examinar scripts que se usan en Internet Explorer. Los usuarios no pueden desactivar esta opción. 
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo activa esta configuración y permite a los usuarios cambiarla.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **Acceso de usuario final a Defender**: **Bloquear** oculta la interfaz de usuario de Windows Defender a los usuarios finales. También se suprimen todas las notificaciones de Windows Defender. **Sin configurar** (valor predeterminado) permite el acceso de los usuarios a la interfaz de usuario de Windows Defender. Cuando se cambia esta configuración, surtirá efecto la próxima vez que se reinicie el equipo del usuario final.
+- **Acceso de usuario final a Defender**: **Bloquear** oculta la interfaz de usuario de Microsoft Defender a los usuarios finales. También se suprimen todas las notificaciones de Microsoft Defender.
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si bloquea la configuración y, a continuación, la vuelve a cambiar a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo permite el acceso de los usuarios a la interfaz de usuario de Microsoft defender y permite a los usuarios cambiarla.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
+
+  Cuando se cambia esta configuración, surtirá efecto la próxima vez que se reinicie el equipo del usuario final.
 
   [CSP de defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ Estas opciones de configuración usan [defender policy CSP](https://docs.microso
   [CSP de defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **Límite de uso de la CPU durante un examen**: limita la cantidad de CPU que pueden usar los exámenes (de `0` a `100`).
-- **Examinar archivos de almacenamiento**: **habilita** desactivar defender para que no examine archivos de almacenamiento, como archivos zip o CAB. **Sin configurar** (valor predeterminado) permite este examen.
+- **Examinar archivos de almacenamiento**: **habilita activar** defender para que examine archivos de almacenamiento, como archivos zip o CAB. Los usuarios no pueden desactivar esta opción.
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo activa este análisis y permite a los usuarios cambiarlo.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **Examinar mensajes de correo entrante**: **Habilitar** permite que Defender examine los mensajes de correo electrónico a medida que llegan al dispositivo. **Sin configurar** (valor predeterminado) evita el examen de correo electrónico.
+- **Examinar mensajes de correo entrante**: **Habilitar** permite que Defender examine los mensajes de correo electrónico a medida que llegan al dispositivo. Cuando está habilitada, el motor analiza el buzón y los archivos de correo para analizar el cuerpo del correo y los datos adjuntos. Puede examinar los formatos. pst (Outlook),. dbx,. MBX, MIME (Outlook Express) y BinHex (Mac).
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo desactiva este análisis y permite a los usuarios cambiarlo.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **Examinar unidades extraíbles durante un examen completo**: **Habilitar** evita los exámenes completos de las unidades extraíbles. **Sin configurar** (valor predeterminado) permite que Defender examine unidades extraíbles, como sticks USB.
+- **Examinar unidades extraíbles durante un examen completo**: **habilita la activación** de los exámenes de unidades extraíbles de defender durante un examen completo. Los usuarios no pueden desactivar esta opción.
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo permite que defender examine unidades extraíbles, como sticks USB, y permite a los usuarios cambiar esta configuración.
 
   Durante un examen rápido, es posible que se sigan analizando las unidades extraíbles.
 
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
+
   [CSP de defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- **Examinar unidades de red asignadas durante un examen completo**: **Habilitar** permite que Defender examine archivos en unidades de red asignadas. **Sin configurar** (valor predeterminado) evita el examen completo. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
+- **Examinar unidades de red asignadas durante un examen completo**: **Habilitar** permite que Defender examine archivos en unidades de red asignadas. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos. Los usuarios no pueden desactivar esta opción.
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo activa esta característica y permite a los usuarios cambiarla.
 
   Durante un examen rápido, es posible que se sigan analizando las unidades de red asignadas.
 
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
+
   [CSP de defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **Examinar archivos abiertos desde carpetas de red**: **Sin configurar** (valor predeterminado) permite que Defender examine archivos en unidades de red compartidas, como los archivos a los que se accede desde una ruta de acceso UNC. **Habilitar** evita este examen. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
+- **Examinar archivos abiertos desde carpetas de red**: **Habilitar** with defender examina archivos abiertos desde carpetas de red o unidades de red compartidas, como los archivos a los que se accede desde una ruta de acceso UNC. Los usuarios no pueden desactivar esta opción. Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo examina los archivos abiertos desde carpetas de red y permite a los usuarios cambiarlos.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **Protección de la nube**: **Sin configurar** (valor predeterminado) permite que Microsoft Active Protection Service reciba información relativa a la actividad de malware de los dispositivos que administra. **Habilitar** bloquea esta característica.
+- **Protección de la nube**: **Habilitar** permite que Microsoft Active Protection Service reciba información relativa a la actividad de malware de los dispositivos que administra. Los usuarios no pueden cambiar esta configuración. 
+
+  Cuando se establece en **no configurado** (valor predeterminado), Intune no toca esta configuración. Si habilita la opción y, a continuación, vuelve a cambiarla a **no configurado**, Intune deja la configuración en su estado configurado previamente. De forma predeterminada, el sistema operativo permite al Microsoft Active Protection Service recibir información y permite a los usuarios cambiar esta configuración.
+
+  Intune no desactiva esta característica. Para deshabilitarlo, use un URI personalizado.
 
   [CSP de defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 

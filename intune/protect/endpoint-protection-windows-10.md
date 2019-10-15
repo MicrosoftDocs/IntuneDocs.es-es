@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
-ms.translationtype: HT
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732729"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163577"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configuración de Windows 10 (y versiones posteriores) para proteger dispositivos mediante Intune  
 
@@ -155,7 +155,7 @@ Esta configuración se aplica a todos los tipos de redes.
    - **Códigos de tipo ICMP de IPv6 de descubrimiento de vecinos**  
    - **ICMP**  
    - **Códigos de tipo ICMP de IPv6 de descubrimiento de enrutadores**  
-   - **Tráfico de red DHCP de IPv4 e IPv6 **  
+   - **Tráfico de red DHCP de IPv4 e IPv6**  
 
 - **Comprobación de la lista de revocación de certificados**  
   **Valor predeterminado**: No configurado  
@@ -776,26 +776,27 @@ Esta configuración se aplica específicamente a las unidades de datos extraíbl
  
 ## <a name="windows-defender-exploit-guard"></a>Protección contra vulnerabilidades de seguridad de Windows Defender  
 
-Use la [Protección contra vulnerabilidades de seguridad de Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) para administrar y reducir la superficie expuesta a ataques de las aplicaciones que usan sus empleados.  
+Use la [protección contra vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) para administrar y reducir la superficie expuesta a ataques de las aplicaciones que usan los empleados.  
 
 ### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques  
 
-Para obtener información sobre las reglas de reducción de la superficie expuesta a *ataques* , consulte reducir las [superficies de ataque con la protección contra vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) de seguridad de Windows Defender en la documentación de protección contra vulnerabilidades de seguridad  
+Las reglas de reducción de la superficie expuesta a ataques ayudan a evitar comportamientos que el malware usa a menudo para infectar equipos con código malintencionado.  
 
 #### <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques  
 
 - **Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows**  
   **Valor predeterminado**: No configurado  
-  Protección contra vulnerabilidades: reglas de reducción de la [superficie expuesta a ataques](https://go.microsoft.com/fwlink/?linkid=874499)
+  Regla: [Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows (lsass.exe)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   Ayudar a evitar las acciones y aplicaciones usadas normalmente por malware que busca vulnerabilidades de seguridad para infectar equipos.  
+
   - **No configurado**.  
   - **Habilitar**: marque el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows (lsass.exe).  
   - **Solo auditoría**  
 
 - **Creación de procesos desde Adobe Reader (beta)**  
   **Valor predeterminado**: No configurado  
-  Protección contra vulnerabilidades: reglas de reducción de la [superficie expuesta a ataques](https://go.microsoft.com/fwlink/?linkid=853979)  
+  Regla: [impedir que Adobe Reader cree procesos secundarios](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **No configurado**.  
   - **Habilitar** : bloquee los procesos secundarios creados desde Adobe Reader.  
@@ -807,7 +808,7 @@ Impedir que las aplicaciones de Office realicen las siguientes acciones:
 
 - **Inserción de aplicaciones de Office en otros procesos (sin excepciones)**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=872974)  
+  Regla: [Impedir que las aplicaciones de Office inserten código en otros procesos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **No configurado**.  
   - **Bloquear** : impide que las aplicaciones de Office inserten en otros procesos.  
@@ -815,7 +816,7 @@ Impedir que las aplicaciones de Office realicen las siguientes acciones:
 
 - **Macros o aplicaciones de Office que crean contenido ejecutable**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=872975)  
+  Regla: [Impedir que las aplicaciones de Office creen contenido ejecutable](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **No configurado**.  
   - **Bloquear** : bloquear las aplicaciones de Office y las macros para crear contenido ejecutable.  
@@ -823,7 +824,7 @@ Impedir que las aplicaciones de Office realicen las siguientes acciones:
 
 - **Aplicaciones de Office que inician procesos secundarios**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=872976)  
+  Regla: [impide que todas las aplicaciones de Office creen procesos secundarios](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes) .  
 
   - **No configurado**.  
   - **Bloquear** : impide que las aplicaciones de Office inicien procesos secundarios.  
@@ -831,7 +832,7 @@ Impedir que las aplicaciones de Office realicen las siguientes acciones:
   
 - **Importación de Win32 desde código de macros de Office**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=872977)  
+  Regla: [Impedir las llamadas a la API Win32 desde las macros de Office](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **No configurado**.  
   - Importaciones de Win32 de bloque **bloqueado** desde el código de la macro en Office.  
@@ -839,7 +840,7 @@ Impedir que las aplicaciones de Office realicen las siguientes acciones:
   
 - **Creación de procesos desde productos de comunicación de Office**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=874499)  
+  Regla: [bloquear la aplicación de comunicación de Office para crear procesos secundarios](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **No configurado**.  
   - **Habilitar** : bloquee la creación de procesos secundarios desde aplicaciones de comunicaciones de Office.  
@@ -851,7 +852,7 @@ Bloquee los siguientes elementos para evitar las amenazas de script:
 
 - **Código de js/vbs/ps/macro ofuscado**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=872978)    
+  Regla: [Bloquear la ejecución de scripts potencialmente alterados](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **No configurado**.  
   - **Bloquear:** bloquee cualquier código de JS/VBS/PS/macro ofuscado.  
@@ -859,7 +860,7 @@ Bloquee los siguientes elementos para evitar las amenazas de script:
 
 - **js/vbs que ejecuta carga útil descargada de Internet (sin excepciones)**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=872979)  
+  Regla: [Impedir que JavaScript o VBScript inicien el contenido ejecutable descargado](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **No configurado**.  
   - **Block-Block** JS/vbs de ejecutar carga descargada de Internet.  
@@ -867,7 +868,7 @@ Bloquee los siguientes elementos para evitar las amenazas de script:
 
 - **Creación del proceso desde comandos PSExec y WMI**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=874500)  
+  Regla: [Bloquear creaciones del proceso que se originan desde comandos PSExec y WMI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **No configurado**.  
   - **Bloquear**: bloquee las creaciones del proceso que se originan desde comandos PSExec y WMI.  
@@ -876,7 +877,7 @@ Bloquee los siguientes elementos para evitar las amenazas de script:
 
 - **Procesos que no son de confianza y sin firma que se ejecutan desde una unidad USB**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=874502)    
+  Regla: [Bloquear los procesos que no son de confianza y sin firma que se ejecutan desde una unidad USB](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **No configurado**.  
   - **Bloquear**: bloquee los procesos que no son de confianza y sin firma que se ejecutan desde una unidad USB.  
@@ -884,7 +885,7 @@ Bloquee los siguientes elementos para evitar las amenazas de script:
   
 - **Archivos ejecutables que no cumplen unos criterios de uso habitual, edad o lista de confianza**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=874503)    
+  Regla: [Bloquear la ejecución de los archivos ejecutables a menos que cumplan unos criterios de uso habitual, edad o lista de confianza](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **No configurado**.  
   - **Bloquear**: bloquee la ejecución de los archivos ejecutables a menos que cumplan unos criterios de uso habitual, edad o lista de confianza.  
@@ -896,7 +897,7 @@ Bloquee los siguientes elementos para evitar las amenazas de correo electrónico
 
 - **Activación de contenido ejecutable (exe, dll, ps, js, vbs, etc.) eliminada del correo electrónico (correo electrónico web/cliente de correo electrónico) (sin excepciones)**  
   **Valor predeterminado**: No configurado  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=872980)  
+  Regla: [Bloquear contenido ejecutable del cliente de correo electrónico y el correo electrónico basado en web](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **No configurado**.  
   - **Bloquear**: impida la ejecución del contenido ejecutable (exe, dll, ps, js, vbs, etc.) que se quitó del correo electrónico (correo electrónico web/cliente de correo electrónico).  
@@ -906,7 +907,7 @@ Bloquee los siguientes elementos para evitar las amenazas de correo electrónico
 
 - **Protección de ransomware avanzada**  
   Valor predeterminado: Sin configurar  
-  [Documentación de protección contra vulnerabilidades](https://go.microsoft.com/fwlink/?linkid=874504)  
+  Regla: [Usar la protección avanzada frente a ransomware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **No configurado**.  
   - **Habilitar**: Usar protección ransomware intensa.  
@@ -932,7 +933,7 @@ Bloquee los siguientes elementos para evitar las amenazas de correo electrónico
 
 ### <a name="controlled-folder-access"></a>Acceso controlado a carpetas  
 
-Ayude a [proteger los datos importantes](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) de las amenazas y las aplicaciones malintencionadas, como ransomware.  
+Ayude a [proteger los datos importantes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) de las amenazas y las aplicaciones malintencionadas, como ransomware.  
 
 - **Protección de carpetas**  
   **Valor predeterminado**: No configurado  
@@ -979,7 +980,7 @@ Bloquee las conexiones salientes desde cualquier aplicación a direcciones IP o 
 - **Cargar XML**  
   **Valor predeterminado**: *Sin configurar*  
 
-  Para usar la protección contra vulnerabilidades de seguridad para [proteger los dispositivos frente a vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), cree un archivo XML que incluya la configuración de mitigación del sistema y de la aplicación que desee. Existen dos métodos para crear el archivo XML:  
+  Para usar la protección contra vulnerabilidades de seguridad para [proteger los dispositivos frente a vulnerabilidades](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), cree un archivo XML que incluya la configuración de mitigación del sistema y de la aplicación que desee. Existen dos métodos para crear el archivo XML:  
 
   - *PowerShell*: use uno o varios de los cmdlets de PowerShell *Get-ProcessMitigation*, *Set-ProcessMitigation* y *ConvertTo-ProcessMitigationPolicy*. Los cmdlets configuran los valores de mitigación y exportan una representación XML de ellos.  
 
