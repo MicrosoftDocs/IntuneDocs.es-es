@@ -1,5 +1,6 @@
 ---
 title: Solución de problemas de Microsoft Intune Certificate Connector y los Id. de evento | Microsoft Docs
+titleSuffix: Microsoft Intune
 description: Solucione problemas de Microsoft Intune Certificate Connector mediante la revisión de los identificadores y las descripciones de eventos, y revise los códigos de diagnóstico del servicio de conector de Intune.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d798f22ee4e0f11f46626eec01ad3b739d61467
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721765"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306710"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Eventos y códigos de diagnóstico de Intune Certificate Connector
 

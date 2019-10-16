@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4b82124fe8f6da7116c8333e293f219d7c667f9c
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036432"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310915"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adición de entidades de certificación de asociado en Intune mediante SCEP
 
@@ -31,7 +31,7 @@ El uso de esta característica tiene dos partes: la API de código abierto y las
 **Parte 1: Uso de una API de código abierto**  
 Microsoft ha creado una API para integrarse con Intune. Mediante la API, puede validar los certificados, enviar notificaciones correctas o de error, y usar SSL, en concreto el generador de sockets SSL, para comunicarse con Intune.
 
-La API está disponible en el [repositorio público de GitHub de la API de SCEP de Intune](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) para descargar y usar en las soluciones. Use esta API con servidores SCEP de terceros para ejecutar la validación de la comprobación personalizada en Intune antes de entregar un certificado a un dispositivo.
+La API está disponible en el [repositorio público de GitHub de la API de SCEP de Intune](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) para descargar y usar en las soluciones. Use esta API con servidores SCEP de terceros para ejecutar la validación de la comprobación personalizada en Intune antes de entregar un certificado a un dispositivo.
 
 En [Integración con soluciones de administración SCEP de Intune](scep-libraries-apis.md) se proporcionan más detalles sobre cómo usar la API, sus métodos y probar la solución que se compila.
 
@@ -129,11 +129,11 @@ Las entidades de certificación de terceros siguientes son compatibles con Intun
 
 Si es una entidad de certificación de terceros interesada en la integración de su producto con Intune, revise las instrucciones de la API:
 
-- [Repositorio de la API de SCEP de Intune en GitHub](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Repositorio de la API de SCEP de Intune en GitHub](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [Instrucciones de la API de SCEP de Intune para las entidades de certificación de terceros](scep-libraries-apis.md)
 
 ## <a name="see-also"></a>Consulte también
 
 - [Configuración de perfiles de certificado](certificates-scep-configure.md)
-- [Repositorio de la API de SCEP de Intune en GitHub](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Repositorio de la API de SCEP de Intune en GitHub](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [Instrucciones de la API de SCEP de Intune para las entidades de certificación de terceros](scep-libraries-apis.md)

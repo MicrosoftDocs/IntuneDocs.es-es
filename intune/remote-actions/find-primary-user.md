@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728369"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379715"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Búsqueda del usuario primario de un dispositivo de Intune
 
@@ -46,7 +46,7 @@ La aplicación Portal de empresa espera que la cuenta de usuario que inició ses
 
 Si un dispositivo de Intune no tiene asignado ningún usuario primario, la aplicación Portal de empresa lo detectará como dispositivo compartido. Los dispositivos compartidos se identifican de manera visual con una etiqueta de "compartido" que aparece en el icono del dispositivo. En este modo, la aplicación Portal de empresa todavía se puede usar para solicitar e instalar aplicaciones disponibles. Sin embargo, las acciones de autoservicio (restablecer, cambiar nombre, retirar) no están disponibles.  
 
-Para aparecer en la aplicación Portal de empresa de los dispositivos compatibles, las aplicaciones disponibles deben estar asignadas a un grupo de usuarios. Se instalarán en el contexto del sistema o en el contexto del usuario, en función de cómo el administrador de TI configuró la aplicación. Para más información sobre el contexto de la aplicación, consulte [Instalación de aplicaciones en dispositivos Windows 10](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Para usar esta característica, se requiere la versión 10.3.4651.0 o posterior de la aplicación Portal de empresa.
+Para aparecer en la aplicación Portal de empresa de los dispositivos compatibles, las aplicaciones disponibles deben estar asignadas a un grupo de usuarios. Se instalarán en el contexto del sistema o en el contexto del usuario, en función de cómo el administrador de TI configuró la aplicación. Para más información sobre el contexto de la aplicación, consulte [Instalación de aplicaciones en dispositivos Windows 10](../apps/apps-windows-10-app-deploy.md). Para usar esta característica, se requiere la versión 10.3.4651.0 o posterior de la aplicación Portal de empresa.
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>¿Quién está asignado como el usuario primario?

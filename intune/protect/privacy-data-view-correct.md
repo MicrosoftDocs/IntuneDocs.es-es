@@ -1,5 +1,6 @@
 ---
 title: Visualización y corrección de datos personales
+titleSuffix: Microsoft Intune
 description: Obtenga más información sobre cómo visualizar y corregir los datos personales.
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9261c451a7a5bdf5f718193adbfcb2389fa285a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9b6ca291f55511be9e88b0ff898d9383691542bf
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727927"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310892"
 ---
 # <a name="view-and-correct-personal-data"></a>Visualización y corrección de datos personales
 
@@ -43,7 +44,7 @@ Microsoft usa controles estrictos para determinar el acceso a los datos del clie
 
 Puede proteger y controlar el acceso a los datos personales del usuario final mediante el uso del control de administración basada en roles (RBAC). Para obtener más información, vea [RBAC con Microsoft Intune](../fundamentals/role-based-access-control.md).
 
-Para obtener más información sobre las prácticas de datos de Microsoft, lea los términos de los servicios en línea y la [declaración de privacidad de Microsoft](http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409). 
+Para obtener más información sobre las prácticas de datos de Microsoft, lea los términos de los servicios en línea y la [declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409). 
 
 ## <a name="correct-end-user-personal-data"></a>Corrección de los datos personales del usuario final
 
