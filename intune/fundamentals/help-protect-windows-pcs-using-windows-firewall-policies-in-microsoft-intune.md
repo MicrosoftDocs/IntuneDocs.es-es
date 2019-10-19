@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4de635066b2f054b9061f6944bc4010a56d54526
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735823"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502830"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea administrar la configuración de Firewall para equipos Windows inscritos como dispositivos móviles, consulte [Agregar configuración de Endpoint Protection en Intune](../protect/endpoint-protection-configure.md).
@@ -43,7 +44,7 @@ La directiva de Firewall de Windows permite crear e implementar la configuració
 > [!NOTE]
 > Si la directiva de Microsoft Intune y la directiva de grupo están configuradas para administrar la misma opción en el equipo, la opción de la directiva de grupo anula la opción de la directiva de Microsoft Intune. Para obtener información sobre cómo evitar conflictos entre la directiva de Intune y la directiva de grupo, consulte [Resolver conflictos de directivas de Microsoft Intune y GPO](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
-> Si quiere implementar la configuración de Firewall de Windows en equipos que ejecutan Windows Vista, primero debe instalar la [revisión KB971800](http://support2.microsoft.com/kb/971800) en estos equipos.
+> Si quiere implementar la configuración de Firewall de Windows en equipos que ejecutan Windows Vista, primero debe instalar la [revisión KB971800](https://support2.microsoft.com/kb/971800) en estos equipos.
 
 > [!IMPORTANT]
 > Para administrar Firewall de Windows mediante Intune, asegúrese de que los dos servicios siguientes estén habilitados en los equipos que administra:
@@ -84,7 +85,7 @@ Esta configuración de directiva configura Firewall de Windows para bloquear el 
 El valor predeterminado de cada uno de estos valores es **Sí**, que es el valor más seguro.
 
 > [!IMPORTANT]
-> Si su entorno incluye equipos administrados que ejecutan Windows Vista sin ningún Service Pack instalado, debe instalar la actualización asociada al [artículo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) de Microsoft Knowledge Base o deshabilitar la configuración de directiva **Bloquear todas las conexiones entrantes** en las directivas implementadas en dichos equipos.
+> Si su entorno incluye equipos administrados que ejecutan Windows Vista sin ningún Service Pack instalado, debe instalar la actualización asociada al [artículo 971800](https://go.microsoft.com/fwlink/?LinkId=188405) de Microsoft Knowledge Base o deshabilitar la configuración de directiva **Bloquear todas las conexiones entrantes** en las directivas implementadas en dichos equipos.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Notificar al usuario cuando Firewall de Windows bloquee un nuevo programa
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa4dbfb7c13d767df41655b391767fc7aa13d914
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817591"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508862"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Solución de errores comunes de Intune Exchange Connector
 
@@ -76,7 +77,7 @@ Al intentar configurar el Microsoft Intune Exchange Connector, recibirá el mens
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Este error puede producirse si se usa un servidor proxy para conectarse a Internet y está bloqueando el tráfico al servicio de Intune. Para determinar si un proxy está en uso, vaya a **Panel de Control** > **Opciones de Internet**, seleccione la pestaña **conexión** y, a continuación, haga clic en configuración de **LAN**.
+Este error puede producirse si se usa un servidor proxy para conectarse a Internet y está bloqueando el tráfico al servicio de Intune. Para determinar si un proxy está en uso, vaya al **Panel de Control**  > **Opciones de Internet**, seleccione la pestaña **conexión** y, a continuación, haga clic en **configuración de LAN**.
 
 **Solución**:  
 
@@ -131,7 +132,7 @@ Para asignar el derecho de usuario **iniciar sesión como servicio** a la cuenta
 
 1. Inicie sesión en el equipo como administrador o como miembro del grupo administradores.
 2. Ejecute **SECPOL. msc** para abrir la Directiva de seguridad local.
-3. Vaya a **configuración de seguridad** > **Directivas locales**y seleccione **asignación de derechos de usuario**.
+3. Vaya a **configuración de seguridad**  > **Directivas locales**y seleccione **asignación de derechos de usuario**.
 4. En el panel derecho, haga doble clic en **Iniciar sesión como servicio**.
 5. Seleccione **Agregar usuario o grupo**, agregue **WIEC_USER** a la Directiva y, a continuación, seleccione **Aceptar** dos veces.
 

@@ -9,6 +9,7 @@ ms.date: 01/23/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 810e2175faef422eb0ccf9bd24ac8d9b43aee92d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9cba684be990c45bad48bfd44423e39ffe4b1549
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846917"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500437"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Habilite los exámenes de amenazas de seguridad en el dispositivo 
 Si instala una aplicación no segura sin saberlo, los datos del dispositivo podrían estar en riesgo. Para proteger los datos del dispositivo, se recomienda que: 

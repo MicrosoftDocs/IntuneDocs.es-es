@@ -5,27 +5,32 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 10/15/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f481c17e6cb1285147c7f6361bfff73801b2bba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736135"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510101"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
+
+> [!WARNING]
+> Microsoft anunció que el [soporte técnico para Windows 7 terminará el 14 de enero de 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). En esta fecha, Intune también retirará la compatibilidad con dispositivos que ejecutan Windows 7. Microsoft recomienda encarecidamente que cambie a Windows 10 para evitar las interrupciones de servicio o soporte técnico.
+> 
+> Para obtener más información, vea [plan de Intune para cambio: cerca de la finalización del soporte técnico para Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-).
 
 > [!NOTE]
 > Puede usar Microsoft Intune para administrar equipos con Windows [como dispositivos móviles con la administración de dispositivos móviles (MDM)](../enrollment/windows-enroll.md) o como equipos con el software cliente de Intune, tal y como se describe a continuación. Sin embargo, Microsoft recomienda que los clientes [usen la solución de administración de MDM](../enrollment/windows-enroll.md) siempre que sea posible. Para obtener más información, vea [Comparación de la administración de equipos con Windows como dispositivos móviles o equipos](pc-management-comparison.md). 
@@ -35,7 +40,6 @@ Intune proporciona una solución completa para que las organizaciones administre
 El cliente de software de Intune es ideal para PC con Windows que ejecutan sistemas operativos heredados, como Windows 7, que no se pueden administrar como dispositivos móviles. El cliente de software de Intune usa las funcionalidades de administración como la Directiva de grupos para administrar los equipos desde la nube.
 
 Intune admite la administración de PC con Windows como equipos con el cliente de software para 7000 equipos como máximo. Para implementaciones más grandes, administre los PC con Windows 10 como dispositivos móviles. Cada versión de Intune y actualización de Windows 10 incluyen características de administración basadas en la arquitectura de administración de dispositivos móviles. Se recomienda encarecidamente que traslade su organización a Windows 10 administrado como dispositivos móviles.
-
 
 > [!NOTE]
 > Puede administrar dispositivos con Windows 8.1 o versiones posteriores como equipos con el software de cliente de Intune, o como dispositivos móviles. No puede usar ambos métodos en el mismo dispositivo. Piense detenidamente antes de decidir administrar equipos con el software de cliente de Intune. Este tema solo se aplica a la administración de dispositivos como equipos mediante la ejecución del software cliente de Intune.
@@ -60,9 +64,6 @@ Estos son los requisitos de software para instalar el software cliente:
 |Permisos administrativos|La cuenta que instala el software cliente debe tener permisos de administrador local en ese dispositivo.|
 |Windows Installer 3.1|El equipo debe tener, como mínimo, Windows Installer 3.1.<br /><br />Para ver la versión de Windows Installer de un equipo:<br /><br />  En el PC, haga clic con el botón derecho en **%windir%\System32\msiexec.exe** y, luego, haga clic en **Propiedades**.<br /><br />Puede descargar la última versión de Windows Installer desde [Windows Installer Redistributables (Paquetes redistribuibles de Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) en el sitio web de Microsoft Developer Network.|
 |Quitar software cliente incompatible|Antes de instalar el software cliente de Intune, desinstale cualquier software cliente de Configuration Manager, Operations Manager y Service Manager desde ese equipo.|
-
-> [!WARNING]
-> Microsoft anunció que el [soporte técnico para Windows 7 terminará el 14 de enero de 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). En esta fecha, Intune también retirará la compatibilidad con dispositivos que ejecutan Windows 7. Microsoft recomienda encarecidamente que cambie a Windows 10 para evitar las interrupciones de servicio o soporte técnico. 
 
 ## <a name="deploying-the-intune-software-client"></a>Implementación del cliente de software de Intune
 Como administrador de Intune, puede hacer que el cliente de software de Intune esté disponible para los usuarios de diversas formas. Para obtener una guía, vea [Instalar el cliente de software de Intune en equipos con Windows](../install-the-windows-pc-client-with-microsoft-intune.md).

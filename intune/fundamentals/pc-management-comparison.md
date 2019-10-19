@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 217b93fcd78010428ce427a755e6c0c20f4372df
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736278"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510052"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparación de la administración de equipos con Windows como dispositivos móviles o equipos
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Las organizaciones pueden usar Microsoft Intune para administrar equipos con Windows como dispositivos móviles con la administración de dispositivos móviles (MDM) o como equipos con el software cliente de Intune.  Microsoft recomienda que los clientes usen la solución de administración de MDM siempre que sea posible. Para ayudarle a entender mejor las diferencias entre estas opciones, en la tabla siguiente se ofrece una comparación de las dos opciones de administración.
 

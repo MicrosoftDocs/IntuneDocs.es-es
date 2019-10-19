@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736382"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584466"
 ---
 # <a name="windows-update-settings-for-intune"></a>Configuración de actualizaciones de Windows para Intune  
 
@@ -216,45 +217,9 @@ La configuración de la experiencia de usuario controla la experiencia del usuar
   - **Desactivar todas las notificaciones, excluidas las advertencias de reinicio**
   - **Desactivar todas las notificaciones, incluidas las advertencias de reinicio**  
 
-- **Permitir al usuario que reinicie (reinicio establecido)**  
-  **Valor predeterminado**: No configurado  
-  > [!IMPORTANT]  
-  > Ya no se recomienda usar la configuración de *reinicio de embragado* . En su lugar, use la nueva configuración de *fecha límite* que sustituye a la configuración de *reinicio de embragado* . Intune dejará de admitir la configuración de [ *reinicio* ](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) de la opción en una actualización futura.
-
-  El reinicio comprometido es compatible con Windows 10 versión 1803 y versiones posteriores. 
-
-  > [!NOTE]  
-  > La versión 1809 de Windows 10 presenta valores de configuración adicionales de reinicio establecido que permiten aplicar distintos valores a actualizaciones de características y de calidad. Sin embargo, la configuración administrada por Intune no se aplica de forma diferente a los distintos tipos de actualizaciones. En cambio, Intune aplica los mismos valores a las actualizaciones de características y de calidad.  
-  
-  - **No configurado**.  
-  - **Requerido**: esta opción se establece en *Requerido* para permitir el uso de las opciones de reinicio establecido para las actualizaciones de Windows 10. Estas opciones hacen partícipe al usuario de un dispositivo para que ayude a administrar cuándo reiniciarlo tras la instalación de una actualización que requiere un reinicio.  
-
-  Para más información sobre esta opción, consulte [Reinicio establecido](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart) en la documentación de Windows 10 para la implementación de actualizaciones.  
-
-  Los siguientes valores de configuración se usan para controlar cuándo se producirán las acciones de reinicio establecido.  
-
-  - **Hacer la transición de los usuarios al reinicio comprometido después de un reinicio automático (días)**  
-    **Valor predeterminado**: no configurado Windows Update CSP: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    Especifique un valor entre **2** y **30** días para indicar cuánto tiempo transcurre desde que se instala la actualización hasta que el dispositivo entra en el comportamiento de reinicio establecido. Después de obtener el número de días configurado, los usuarios reciben un aviso para reiniciar el dispositivo.  
-
-  - **Posponer el recordatorio de reinicio establecido (días)**  
-    **Valor predeterminado**: No configurado    
-    Windows Update CSP: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    Especifique un valor entre **1** y **3** para el tiempo que se puede posponer una solicitud de reinicio.  Tras el período de aplazamiento, se vuelve a ofrecer el aviso de reinicio. El usuario puede seguir posponiendo el aviso hasta que se alcance la fecha límite de instalación.  
-
-  - **Establecer fecha límite para reinicios pendientes (días)**  
-    **Valor predeterminado**: No configurado  
-    Windows Update CSP: [Update/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    Especifique un valor entre **2** y **30** como el número máximo de días de espera después de que comience el comportamiento de reinicio establecido antes de que un dispositivo aplique un reinicio obligatorio. Este reinicio solicita a los usuarios que guarden su trabajo.
-
 - **Usar configuración de fecha límite**  
   **Valor predeterminado**: No configurado  
-  > [!IMPORTANT]  
-  > A partir de la actualización de agosto de Intune, se recomienda usar la siguiente configuración de fecha límite que sustituye a la configuración de reinicio de la opción activada. Intune dejará de admitir la configuración de [ *reinicio* ](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) de la actividad en una actualización futura de Intune.  
-
+ 
   Permite al usuario usar la configuración de fecha límite.  
 
   - **No configurado**.
@@ -263,21 +228,21 @@ La configuración de la experiencia de usuario controla la experiencia del usuar
   Cuando se establece en *permitir*, puede configurar las siguientes opciones para las fechas límite:
 
   - **Fecha límite para las actualizaciones de características**  
-    **Valor predeterminado**: 7  
+    **Valor predeterminado**: *Sin configurar*  
     Windows Update CSP: [Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     Especifica el número de días que un usuario tiene antes de que se instalen automáticamente las actualizaciones de características en sus dispositivos (2-30).
 
   - **Fecha límite para las actualizaciones de calidad**  
-    **Valor predeterminado**: 7  
+    **Valor predeterminado**: *Sin configurar*  
     Windows Update CSP: [Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     Especifica el número de días que un usuario tiene antes de que se instalen automáticamente las actualizaciones de calidad en sus dispositivos (2-30).
 
   - **Período de gracia**  
-    **Valor predeterminado**: 2 Windows Update CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **Valor predeterminado**: *no configurado* Windows Update CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    Especifica un número mínimo de días después de la fecha límite hasta que los reinicios se producen automáticamente (0-7).
+    Especifica un número mínimo de días después de la fecha límite hasta que los reinicios se producen automáticamente (2-7).
 
   - **Reinicio automático antes de la fecha límite**  
     **Valor predeterminado**: sí Windows Update CSP: [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ La configuración de la experiencia de usuario controla la experiencia del usuar
     Especifica si el dispositivo debe reiniciarse automáticamente antes de la fecha límite.
     - **Sí**
     - **No**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>Modo de descarga de optimización de entrega  
 

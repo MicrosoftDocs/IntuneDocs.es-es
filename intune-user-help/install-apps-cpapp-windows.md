@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,27 +19,28 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cb8168075badda65b3cd02f8ae059119769c7c
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413891"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506115"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar y compartir aplicaciones en el dispositivo
+
 Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa para Windows.
 
 ## <a name="install-apps"></a>Instalar aplicaciones
 
 1. Abra la aplicación Portal de empresa e inicie sesión con su cuenta profesional o educativa.  
 
-    ![Página principal de la aplicación Portal de empresa para Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
+    ![Página principal de la aplicación Portal de empresa para Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Encuentre e instale aplicaciones de cualquiera de las secciones siguientes de la aplicación Portal de empresa:  
 
     * **Inicio**: seleccione de una lista de aplicaciones destacadas de la organización.  
     * **Mostrar todo**: en la sección **página Inicio** > **Aplicaciones**, haga clic en **Mostrar todo** para ver todas las aplicaciones disponibles.  
     * **Todas las aplicaciones**: seleccione esta página en el panel de navegación para ver todas las aplicaciones disponibles, incluyendo las instaladas y las destacadas. Ver, ordenar y filtrar las aplicaciones. Los resultados de búsqueda se ordenan automáticamente por relevancia.  
-    * **Categorías de aplicaciones**: seleccione esta página en el panel de navegación para elegir las aplicaciones basadas en el tipo o función. Las aplicaciones se clasifican en categorías como **destacado**, **Education**, y **productividad**.  
+    * **Categorías de aplicaciones**: Seleccione esta página en el panel de navegación para elegir aplicaciones basadas en el tipo o la función. Las aplicaciones se ordenan en categorías como **destacado**, **educación**y **productividad**.  
     * **Buscar aplicaciones**: hay una barra de búsqueda estática en el panel de navegación de la aplicación.  Para buscar las aplicaciones disponibles, busque por el nombre de la aplicación o del publicador.  
 
 3. Seleccione una aplicación.   
@@ -49,7 +51,7 @@ Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa pa
     ![Estado "Instalado" en la página de detalles de aplicaciones de la aplicación Portal de empresa para Windows 10 una vez instalada la aplicación. El botón Instalar cambia a Reinstalar.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
 > [!IMPORTANT]
-> Si no se puede instalar una aplicación necesaria y su organización pone a disposición de la instalación manualmente, seleccione **vuelva a intentar**. Puede tardar hasta diez minutos para ver el estado actualizado. Si selecciona **vuelva a intentar** nuevo durante este tiempo y reciba un error, que es correcto. Siga esperando los diez minutos para un estado actualizado.   
+> Si una aplicación requerida no se puede instalar y su organización está disponible para su instalación manual, seleccione **Reintentar**. Puede tardar hasta diez minutos en ver el estado actualizado. Si selecciona **Reintentar** de nuevo durante este tiempo y recibe un error, es correcto. Continúe esperando los diez minutos para un estado actualizado.   
 
 Según el tamaño de la empresa, puede ver varias versiones de Office disponibles para su descarga desde el Portal de empresa. Para información específica sobre el conjunto de aplicaciones Office para dispositivos Windows, vea [Instalación de Office 365 en dispositivos Windows 10](./install-office-windows.md).
 
@@ -68,11 +70,11 @@ Comparta y recomiende las aplicaciones a sus contactos profesionales o de instit
 Después de compartir, el destinatario recibirá un vínculo y un mensaje para ver los detalles de la aplicación. El vínculo abre la página **Detalles de la aplicación** de Portal de empresa. 
 
 ## <a name="available-and-required-apps"></a>Aplicaciones disponibles y necesarias
-Aplicaciones es asignadas por la organización y con la etiqueta en el Portal de empresa como **disponible** o **necesario**. 
+Las aplicaciones las asigna su organización y se etiquetan en Portal de empresa como **disponibles** o **necesarias**. 
 
-* Las aplicaciones disponibles: estas aplicaciones están seleccionadas de forma que su organización y son adecuados y útil para la empresa o centro educativo. Son opcionales para instalar y son las únicas que encontrará en el Portal de empresa para instalar. 
+* Aplicaciones disponibles: la organización selecciona estas aplicaciones y son adecuadas y útiles para el trabajo o la escuela. Son opcionales para instalar y son las únicas aplicaciones que encontrará en el Portal de empresa para instalar. 
 
-* Aplicaciones obligatorias: estas aplicaciones son necesarias para profesionales o educativas y se implementan directamente en el dispositivo. Estas aplicaciones se instalan automáticamente automáticamente sin intervención. 
+* Aplicaciones necesarias: estas aplicaciones son necesarias para el trabajo y la escuela y se implementan directamente en el dispositivo. Estas aplicaciones se instalan automáticamente sin intervención. 
 
 Las aplicaciones también están disponibles para los usuarios según el tipo de dispositivo. Por ejemplo, si un usuario usa la aplicación Portal de empresa para Windows, tiene acceso a aplicaciones de Windows, pero no de iOS.
 
@@ -81,20 +83,20 @@ Si necesita una aplicación, pero no la ve en el Portal de empresa, solicítela.
 
   ![Aplicación Portal de empresa para Windows 10, página Ayuda y soporte técnico, con los detalles del departamento de soporte técnico resaltados. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
-## <a name="view-installed-apps"></a>Aplicaciones de la vista instalada  
-Ver una lista de todas las aplicaciones instaladas en el dispositivo. El **aplicaciones instaladas** página muestra los siguientes detalles sobre cada aplicación:
+## <a name="view-installed-apps"></a>Visualización de las aplicaciones instaladas  
+Vea una lista de todas las aplicaciones instaladas en el dispositivo. En la página **aplicaciones instaladas** se muestran los detalles siguientes sobre cada aplicación:
 
-* Nombre: nombre de la aplicación. Aplicaciones disponibles para incluyen un vínculo a la **detalles de la aplicación** página.
-* Tipo de asignación: cómo la aplicación se asigna y a su disposición. 
-* Publicador: El nombre del desarrollador o empresa que distribuye la aplicación. Un publicador suele ser un proveedor de software o su organización.  
-* Fecha de publicación: La fecha en la que se puso a disposición descargar la aplicación. Publicar fecha podría mostrar la versión inicial de una aplicación o actualiza una aplicación más reciente.
-* Estado: El estado de instalación actual de la aplicación en el dispositivo. Pueden mostrar las aplicaciones que la instalación, instalado y no se pudo. Las aplicaciones necesarias podrían tardar hasta 10 minutos para mostrar un estado actualizado. Consulte la nota bajo [instalar aplicaciones](#install-apps) para obtener detalles importantes acerca de cómo instalar una aplicación requerida. 
+* Nombre: nombre de la aplicación. Las aplicaciones disponibles incluyen un vínculo a la página de detalles de la **aplicación** .
+* Tipo de asignación: cómo se asigna y pone a disposición la aplicación. 
+* Publicador: el nombre del desarrollador o la compañía que distribuyó la aplicación. Un publicador suele ser un proveedor de software o su organización.  
+* Fecha de publicación: la fecha en la que la aplicación estuvo disponible para su descarga. La fecha de publicación podría mostrar la versión inicial de una aplicación o la actualización más reciente de la aplicación.
+* Estado: el estado de la instalación actual de la aplicación en el dispositivo. Las aplicaciones pueden mostrar como error de instalación, instalación e instalación. Las aplicaciones requeridas pueden tardar hasta 10 minutos en mostrar un estado actualizado. Vea la nota en [instalar aplicaciones](#install-apps) para obtener detalles importantes sobre la instalación de una aplicación requerida. 
 
-Para llegar a esta página, vaya al menú de navegación y seleccione **aplicaciones instaladas**. 
+Para acceder a esta página, vaya al menú de navegación y seleccione **aplicaciones instaladas**. 
 
-  ![Captura de pantalla de ejemplo de la aplicación de Portal de empresa para Windows 10, página de aplicaciones instalado. ](./media/installed-apps-cp-1906.png)  
+  ![Captura de pantalla de ejemplo de la aplicación Portal de empresa para Windows 10, página Aplicaciones instaladas. ](./media/installed-apps-cp-1906.png)  
 
 
-Use **ordenar por** para reorganizar el tipo de asignación de aplicaciones, publisher, alfabéticamente por nombre o cronológicamente por fecha de publicación. Use **filtrar por** para limitar las aplicaciones para ver el estado de instalación.  Si no hay aplicaciones disponibles, verá un mensaje que no hay aplicaciones de empresa se han instalado.  
+Use **ordenar por** para reorganizar el tipo de asignación de aplicaciones, el publicador, alfabéticamente por nombre, o cronológicamente por fecha de publicación. Use **filtrar por** para limitar las aplicaciones que ve según el estado de la instalación.  Si no hay ninguna aplicación disponible, verá un mensaje que indica que no se ha instalado ninguna aplicación de empresa.  
 
 ¿Necesita más ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

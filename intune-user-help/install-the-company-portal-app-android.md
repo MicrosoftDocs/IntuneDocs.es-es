@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 0e4ed29d6a2da79b7bfd3502ebf8ce53259f1ae6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546342"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506076"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Instalar la aplicación de portal de empresa para Android
 
-El portal de empresa es una aplicación que le proporciona acceso a las aplicaciones de empresa o educativas, correo electrónico y conexiones a Internet. Esta aplicación le ayuda a proteger la información de la organización manteniendo la seguridad del dispositivo. Por ejemplo, actualizando las aplicaciones de empresa o asegurándose de que el dispositivo se bloquee después de un determinado período. Para obtener más información acerca de las características de Portal de empresa y su parte de la administración de dispositivos, consulte [¿por qué inscribir el dispositivo Android](why-enroll-android-device.md).  
+El portal de empresa es una aplicación que le proporciona acceso a las aplicaciones de empresa o educativas, correo electrónico y conexiones a Internet. Esta aplicación le ayuda a proteger la información de la organización manteniendo la seguridad del dispositivo. Por ejemplo, actualizando las aplicaciones de empresa o asegurándose de que el dispositivo se bloquee después de un determinado período. Para obtener más información sobre las características de Portal de empresa y su parte en la administración de dispositivos, consulte [¿por qué inscribir el dispositivo Android](why-enroll-android-device.md)?  
 
 1. Pulse en **Inicio** > **Play Store**.
 

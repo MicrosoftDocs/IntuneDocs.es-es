@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 675f98d952cb243b5aa43e94972b3ef42fbee463
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734822"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72494012"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos macOS para permitir o restringir características mediante Intune
 
@@ -89,12 +90,12 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
     Esta característica se aplica a:  
     - macOS 10.10.3 y versiones más recientes
 
-  - **Número de caracteres no alfanuméricos en la contraseña**: especifique el número de caracteres complejos necesarios en la contraseña (de **0** a **4**).<br>Un carácter complejo es un símbolo, por ejemplo, "**?**".
+  - **Número de caracteres no alfanuméricos en la contraseña**: especifique el número de caracteres complejos necesarios en la contraseña (de **0** a **4**).<br>Un carácter complejo es un símbolo, por ejemplo, " **?** ".
   - **Longitud mínima de la contraseña**: escriba la longitud mínima de contraseña que un usuario debe configurar (entre **4** y **16** caracteres).
   - **Contraseñas sencillas**: permita el uso de contraseñas sencillas, como **0000** o **1234**.
   - **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**: especifique cuánto tiempo debe estar inactivo el equipo antes de que se requiera una contraseña para desbloquearlo.
   - **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: especifique el período de tiempo que el equipo debe estar inactivo antes de la pantalla se bloquee.
-  - **Caducidad de la contraseña (días)**: especifique cuántos días deben transcurrir antes de que el usuario tenga que cambiar la contraseña (de **1** a **255** días).
+  - **Caducidad de la contraseña (días)** : especifique cuántos días deben transcurrir antes de que el usuario tenga que cambiar la contraseña (de **1** a **255** días).
   - **Impedir la reutilización de contraseñas anteriores**: especifique el número de contraseñas de usuario usadas anteriormente que no se pueden volver a utilizar, de **1** a **24**.
 
 - **Block User from Modifying Passcode** (Bloquear modificación del código de acceso): elija **Bloquear** para evitar que se cambie, se agregue o se quite el código de acceso. **No configurado** (valor predeterminado) permite agregar, cambiar o quitar códigos de acceso.

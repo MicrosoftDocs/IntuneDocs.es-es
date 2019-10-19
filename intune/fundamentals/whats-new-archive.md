@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 7/8/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
@@ -18,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1af106227442e91121f6c8c653c261bd677f3a9f
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 327e0d56400a2aac545d1bae92279e242aa2006a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814192"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585237"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novedades de Microsoft Intune: meses anteriores
 
@@ -68,7 +69,7 @@ Se está agregando una configuración que permitirá personalizar la apariencia 
 Para ver la configuración de pantalla completa, consulte las [restricciones de los dispositivos Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
 #### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Guardar y aplicar asignaciones de la directiva de protección de la aplicación <!-- 3104570 -->
-Ahora puede controlar mejor las [asignaciones de la directiva de protección de la aplicación](../apps/app-protection-policies.md#deploy-a-policy-to-users). Cuando selecciona *Asignaciones* para establecer o editar las asignaciones de una directiva, debe **guardar** la configuración antes de que se aplique el cambio. Use **Descartar** para borrar todos los cambios que haga sin guardar ningún cambio en las listas de inclusión o exclusión.  Como se requiere guardar o descartar, solo los usuarios deseados tienen asignada una directiva de protección de la aplicación.
+Ahora puede controlar mejor las [asignaciones de la directiva de protección de la aplicación](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users). Cuando selecciona *Asignaciones* para establecer o editar las asignaciones de una directiva, debe **guardar** la configuración antes de que se aplique el cambio. Use **Descartar** para borrar todos los cambios que haga sin guardar ningún cambio en las listas de inclusión o exclusión.  Como se requiere guardar o descartar, solo los usuarios deseados tienen asignada una directiva de protección de la aplicación.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Nueva configuración del explorador Microsoft Edge en Windows 10 y versiones posteriores <!-- 3174639 -->
 Esta actualización incluye una nueva configuración para ayudar a controlar y administrar el explorador Microsoft Edge en los dispositivos. Para ver una lista de estas configuraciones, consulte[Restricciones de dispositivos para Windows 10 (y versiones posteriores)](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).

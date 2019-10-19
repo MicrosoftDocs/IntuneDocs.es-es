@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c535dbd91605a41fdc1c526ecd8ff9d9fc9e2448
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733678"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490976"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -203,8 +204,8 @@ Puede usar los siguientes parámetros de línea de comandos con la herramienta d
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Muestra información de uso detallada sobre las propiedades de línea de comandos disponibles para la herramienta de ajuste de aplicaciones. |
-|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` es decir, `login.windows.net/common` |
-|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` este es el GUID del campo ID. de cliente procede de la lista de la aplicación en la hoja registro de aplicaciones. |
+|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` es decir `login.windows.net/common` |
+|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` es el GUID del campo ID. de cliente procede de la lista de la aplicación en la hoja registro de aplicaciones. |
 |**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` este es el URI de redireccionamiento configurado en el registro de la aplicación. Normalmente sería el protocolo de dirección URL de la aplicación a la que se devolvería la aplicación Microsoft Authenticator después de la autenticación negociada. |
 |**-v**| (Opcional) Genera mensajes detallados para la consola. Se recomienda usar esta marca para depurar cualquier error. |
 |**-e**| (Opcional) Use esta marca para que la herramienta de ajuste de aplicaciones quite los derechos que faltan mientras procesa la aplicación. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para más información.|

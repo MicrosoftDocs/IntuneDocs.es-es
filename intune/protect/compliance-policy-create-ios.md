@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac2ec4224bead13455752488f6ea34af6e012bc8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f473e376278b454ca2d173c7c147137226a9fc9
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733054"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601507"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de iOS para marcar dispositivos como compatibles o no compatibles con Intune
 
@@ -73,7 +74,7 @@ Para más información sobre los perfiles de correo, vea [Configurar el acceso a
 ### <a name="password"></a>Contraseña
 
 > [!NOTE]
-> Después de poner en marcha una directiva de configuración o cumplimiento en un dispositivo iOS, cada 15 minutos se pedirá al usuario que establezca un código de acceso y se le seguirá pidiendo hasta que se establezca un código de acceso.
+> Después de poner en marcha una directiva de configuración o cumplimiento en un dispositivo iOS, cada 15 minutos se pedirá al usuario que establezca un código de acceso y se le seguirá pidiendo hasta que se establezca un código de acceso. Cuando se establece un código de acceso para el dispositivo iOS, el proceso de cifrado se inicia automáticamente. El dispositivo permanece cifrado hasta que se deshabilite el código de acceso.
 
 - **Requerir una contraseña para desbloquear dispositivos móviles**: **requiere** que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos. Los dispositivos iOS que usan una contraseña están cifrados.
 - **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas como **1234** o **1111**. Establézcala en **No configurado** para permitir a los usuarios crear contraseñas como **1234** o **1111**.

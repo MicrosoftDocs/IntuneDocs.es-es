@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840965"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506062"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Cómo actualizar la aplicación de portal de empresa
 
@@ -44,13 +45,13 @@ Cuando hay disponible una nueva versión, aparece una opción **Actualización**
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>Actualización de la aplicación Portal de empresa en dispositivos iOS
 
-Configurar el Portal de empresa para instalar automáticamente actualizaciones conforme estén disponibles. 
+Configure Portal de empresa para instalar automáticamente las actualizaciones a medida que estén disponibles. 
 
-1. Abra el Portal de empresa y vaya a **ayuda**. 
+1. Abra Portal de empresa y vaya a **ayuda**. 
 2. Seleccione **Buscar actualizaciones**. 
-3. En la pantalla de Microsoft AutoUpdate, seleccione **descargar e instalar automáticamente**. 
+3. En la pantalla Microsoft AutoUpdate, seleccione **Descargar e instalar automáticamente**. 
 
-Para ver las actualizaciones disponibles, seleccione **buscar actualizaciones**.  
+Para ver las actualizaciones disponibles, seleccione **Buscar actualizaciones**.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Actualización de la aplicación Portal de empresa en dispositivos Windows
 Para obtener actualizaciones automáticamente conforme estén disponibles, abra Microsoft Store y vaya a **Configuración**. Active **Actualizaciones de aplicaciones**. Para ver las actualizaciones recientes y las aplicaciones que están en espera en la cola de descarga, vaya a **Descargas y actualizaciones**.  
@@ -61,4 +62,4 @@ Siga estos pasos si prefiere actualizar manualmente la aplicación o si su empre
 3. Haga clic en la aplicación para instalar la versión más reciente en el dispositivo. 
 
 
-¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

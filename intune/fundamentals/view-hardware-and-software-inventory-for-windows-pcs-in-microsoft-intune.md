@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d31fa30d784f14eeef6f33d2523909c1391f34
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1ea74904657ec5457454e4371fb956648c74c422
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735524"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504799"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Visualización del inventario de software y hardware para equipos Windows
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune. Si desea ver el inventario de equipos Windows inscritos como dispositivos móviles, consulte [Ver detalles del dispositivo en Intune](../remote-actions/device-inventory.md).

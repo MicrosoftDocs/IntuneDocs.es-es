@@ -9,6 +9,7 @@ ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: dd79fc4d-6265-4dd0-87fb-8ab66b1cf692
 searchScope:
@@ -18,14 +19,14 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e7290820134ffba2638c313adb4297d7da29c3b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d4d6ecdc84371c0f485fc1cf26065ed681f29804
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545952"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501927"
 ---
-# <a name="unenroll-your-macos-device-from-company-portal"></a>Anular la inscripción de su dispositivo macOS de Portal de empresa
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Anular la inscripción del dispositivo macOS desde Portal de empresa
 
 Cuando anule la inscripción de su dispositivo macOS de Intune, el dispositivo ya no podrá tener acceso a recursos de la empresa.
 
@@ -34,7 +35,7 @@ Siga estos pasos para anular la inscripción del dispositivo macOS de la adminis
 1. Inicie sesión en la aplicación Portal de empresa para macOS.
 2. Vaya a **Dispositivos** y seleccione el dispositivo cuya inscripción quiere anular.
 
-3. Seleccione el icono de menú del botón de puntos suspensivos > **quitar**.
+3. Seleccione el icono del menú de puntos suspensivos > **quitar**.
 4. Aparece un mensaje de confirmación. Seleccione **quitar** para anular la inscripción del dispositivo. 
 
 Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:

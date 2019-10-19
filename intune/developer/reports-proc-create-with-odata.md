@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733483"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490476"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe de Intune desde la fuente de OData con Power BI
 
@@ -57,7 +58,7 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 2. Abra el panel **Almacenamiento de datos de Intune** seleccionando el vínculo Almacenamiento de datos en **Otras tareas** que se encuentra al lado derecho de la hoja de **información general de Microsoft Intune**.
 3. Copie la dirección URL de la fuente personalizada. Por ejemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Abra Power BI Desktop.
-5. En la barra de menús, seleccione **archivo** > **obtener datos** > **fuentes de oData**.
+5. En la barra de menús, seleccione **archivo**  > **obtener datos**  > **fuente de oData**.
 6. Pegue la dirección URL de la fuente personalizada, que copió del paso anterior, en el cuadro Dirección URL de la ventana **fuente OData** .
 7. Seleccione **Básica**.
 
@@ -93,7 +94,7 @@ En un gráfico de rectángulos se muestran datos jerárquicos en forma de cuadro
 
 1. En el panel **visualizaciones**, busque y seleccione **TreeMap**. El **gráfico de rectángulos** se agregará al lienzo del informe.
 2. En el panel **campos** , busque la tabla `devices`.
-3. Expanda la tabla `devices` y seleccione el campo de datos `manufacturer`.
+3. Expanda la tabla `devices` y seleccione el campo datos de `manufacturer`.
 4. Arrastre el `manufacturer` campo de datos hasta el lienzo del informe y colóquelo en el **gráfico de rectángulos**.
 5. Arrastre el `deviceKey` campo de datos de `devices` la tabla al panel **visualizaciones** y colóquelo en la sección **valores** del cuadro **agregar campos de datos aquí**.  
 
@@ -107,10 +108,10 @@ Puede agregar un filtro al gráfico de rectángulos para poder responder a pregu
 
 1. Para agregar un filtro, seleccione el lienzo del informe y, después, haga clic en el **icono de segmentación de datos** (![Gráfico de rectángulos con modelo de datos y relaciones admitidas](./media/reports-proc-create-with-odata/reports-create-slicer.png)) en **Visualizaciones**. La visualización de **segmentación vacía** aparecerá en el lienzo.
 2. En el panel **campos** , busque la tabla `ownerTypes`.
-3. Expanda la tabla `ownerTypes` y seleccione el campo de datos `ownerTypeName`.
+3. Expanda la tabla `ownerTypes` y seleccione el campo datos de `ownerTypeName`.
 4. Arrastre el campo de datos `onwerTypeName` desde la tabla `ownerTypes` hasta el panel **Filtros** y colóquelo en la sección **Filtros de esta página** en el cuadro llamado **Agregar campos de datos aquí**.  
 
-   En la tabla `OwnerTypes`, hay un campo de datos denominado @no__t-clientes 1 contiene un dato que indica si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla `ownerTypes` y arrastre el **ownerTypeName** a la segmentación. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
+   En la tabla `OwnerTypes`, hay un campo de datos denominado `OwnerTypeKey`that contiene datos sobre si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla `ownerTypes` y arrastre el **ownerTypeName** a la segmentación. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
 
 ![Gráfico de rectángulos con filtro: compatible con las relaciones entre tablas](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

@@ -7,24 +7,24 @@ ms.author: erikje
 ms.date: 07/13/2017
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: 99dcf916-d80f-42c5-863b-a4595e1ec67a
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45a88e4cc1f84c157b5ece1204bddfb7ebe01b57
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1484aa2cf9ab665796b6c02e060d2d7c4cb4fcd1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736096"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502795"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar el cliente de software de Intune en equipos con Windows
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > Puede usar Microsoft Intune para administrar equipos con Windows [como dispositivos móviles con la administración de dispositivos móviles (MDM)](../enrollment/windows-enroll.md) o como equipos con el software cliente de Intune, tal y como se describe a continuación. Sin embargo, Microsoft recomienda que los clientes [usen la solución de administración de MDM](../enrollment/windows-enroll.md) siempre que sea posible. Para más información, consulte [Comparación de la administración de equipos con Windows como dispositivos móviles o equipos](pc-management-comparison.md). 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67393f83ecd76250e01deef3eee20aa1206b3f99
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 588b6d39f1e3dc86f76279ef0446d9d58dc3e1df
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734289"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506610"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Configuración de Windows 10 y versiones posteriores para administrar dispositivos compartidos mediante Intune
 
@@ -46,16 +47,16 @@ Para obtener más información sobre esta característica de Intune, vea [Contro
   - **Invitado y dominio**: se crea una cuenta de invitado de forma local en el dispositivo y en Azure Active Directory (AD).
 - **Administración de cuentas**: establezca esta opción en **Habilitar** para eliminar de forma automática las cuentas locales creadas por invitados y las cuentas en AD y Azure AD. Cuando un usuario cierre sesión en el dispositivo, o cuando se ejecute el mantenimiento del sistema, estas cuentas se eliminarán. Al habilitar esta opción, también deberá establecer lo siguiente:
   - **Eliminación de cuenta**: elija cuándo se eliminarán las cuentas; **Umbral de espacio de almacenamiento**, **Umbral de espacio de almacenamiento y umbral de inactividad** o **Inmediatamente después de cerrar sesión**. Indique también:
-    - **Iniciar umbral de eliminación (%)**: escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco sea inferior al valor indicado, las cuentas en caché se eliminarán. Se eliminan las cuentas continuamente para recuperar espacio en disco. Las cuentas que lleven más tiempo inactivas serán las primeras en eliminarse.
-    - **Detener umbral de eliminación (%)**: escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco alcance el valor indicado, la eliminación se detendrá.
+    - **Iniciar umbral de eliminación (%)** : escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco sea inferior al valor indicado, las cuentas en caché se eliminarán. Se eliminan las cuentas continuamente para recuperar espacio en disco. Las cuentas que lleven más tiempo inactivas serán las primeras en eliminarse.
+    - **Detener umbral de eliminación (%)** : escriba un porcentaje (0-100) de espacio en disco. Cuando el espacio de almacenamiento o en disco alcance el valor indicado, la eliminación se detendrá.
 
   Establezca esta opción en **Deshabilitar** para mantener las cuentas locales, de AD y de Azure AD creadas por invitados.
 
 - **Almacenamiento local**: elija **Habilitado** para impedir que los usuarios guarden y vean los archivos en el disco duro del dispositivo. Elija **Deshabilitado** para permitir que los usuarios vean y guarden archivos de forma local mediante el Explorador de archivos. La opción **No configurado** (valor predeterminado) deja esta configuración sin que Intune la administre y no inserta ninguna directiva para controlar esta configuración en un dispositivo.
 - **Directivas de energía**: cuando se establece en **Habilitado**, los usuarios no pueden desactivar la hibernación, invalidar todas las acciones de suspensión (por ejemplo, cerrar la tapa) ni cambiar la configuración de energía. Cuando se establece en **Deshabilitado**, los usuarios pueden hibernar el dispositivo, cerrar la tapa para suspender el dispositivo y cambiar la configuración de energía. La opción **No configurado** (valor predeterminado) deja esta configuración sin que Intune la administre y no inserta ninguna directiva para controlar esta configuración en un dispositivo.
-- **Tiempo de espera de suspensión (en segundos)**: escriba el número de segundos durante los que el dispositivo estará inactivo (de 0 a 100) antes de que entre en modo de suspensión. Si no establece un tiempo, el dispositivo entrará en suspensión al cabo de 60 minutos.
+- **Tiempo de espera de suspensión (en segundos)** : escriba el número de segundos durante los que el dispositivo estará inactivo (de 0 a 100) antes de que entre en modo de suspensión. Si no establece un tiempo, el dispositivo entrará en suspensión al cabo de 60 minutos.
 - **Iniciar sesión cuando se reactive el PC**: establézcalo en **Habilitado** para requerir que los usuarios inicien sesión con una contraseña cuando el dispositivo salga del modo de suspensión. Elija **Deshabilitado** para que los usuarios no tengan que escribir su nombre de usuario y contraseña. La opción **No configurado** (valor predeterminado) deja esta configuración sin que Intune la administre y no inserta ninguna directiva para controlar esta configuración en un dispositivo.
-- **Hora de inicio de mantenimiento (en minutos desde la medianoche)**: escriba la hora en minutos (de 0 a 1440) a la que se ejecutarán las tareas de mantenimiento automático, como Windows Update. La hora de inicio predeterminada es medianoche o cero (`0`) minutos. Para cambiar la hora de inicio, escriba una hora de inicio en minutos desde la medianoche. Por ejemplo, si quiere que el mantenimiento empiece a las 2:00, escriba `120`. Si quiere que el mantenimiento empiece a las 20:00, escriba `1200`.
+- **Hora de inicio de mantenimiento (en minutos desde la medianoche)** : escriba la hora en minutos (de 0 a 1440) a la que se ejecutarán las tareas de mantenimiento automático, como Windows Update. La hora de inicio predeterminada es medianoche o cero (`0`) minutos. Para cambiar la hora de inicio, escriba una hora de inicio en minutos desde la medianoche. Por ejemplo, si quiere que el mantenimiento empiece a las 2:00, escriba `120`. Si quiere que el mantenimiento empiece a las 20:00, escriba `1200`.
 - **Directivas de educación**: seleccione **Habilitado** para usar la configuración recomendada para los dispositivos que se usan en escuelas, que es más restrictiva. Elija **Deshabilitado** para que no se usen las directivas de educación recomendadas y predeterminadas. La opción **No configurado** (valor predeterminado) deja esta configuración sin que Intune la administre y no inserta ninguna directiva para controlar esta configuración en un dispositivo.
 
   Para obtener más información sobre qué hacen las directivas de educación, consulte [Recomendaciones de configuración de Windows 10 para clientes del sector educativo](https://docs.microsoft.com/education/windows/configure-windows-for-education).

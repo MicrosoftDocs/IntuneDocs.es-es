@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862156"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506294"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Inscribir dispositivos corporativos con la aplicación Microsoft Intune
 
@@ -78,7 +79,7 @@ Siga estos pasos para configurar e inscribir el dispositivo.
 
    ![Imagen de ejemplo de configuración de la pantalla del teléfono profesional con el botón Instalar resaltado.](./media/fully-managed-intune-app-11.png)   
 
-10. **Puntee** en iniciar para abrir la aplicación Microsoft Intune y registrar el dispositivo. 
+10. Puntee en **iniciar** para abrir la aplicación Microsoft Intune y registrar el dispositivo. 
 
     ![Imagen de ejemplo de configuración de la pantalla del teléfono profesional con el botón Inicio resaltado.](./media/fully-managed-intune-app-17.png)   
 

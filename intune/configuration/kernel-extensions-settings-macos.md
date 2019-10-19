@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1306bfea1880061980413d283943e6521c1ac213
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734497"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506700"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>configuración de dispositivos macOS para configurar y usar las extensiones de kernel en Intune
 
@@ -57,12 +58,12 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 - **Extensiones de kernel permitidas**: Use esta opción para permitir extensiones de kernel específicas. Solo se permite o se confía en las extensiones de kernel que especifique. 
 
-  **Agregue** el identificador de lote y el identificador de equipo de una extensión de kernel que desee cargar. En el caso de las extensiones de kernel heredadas sin firmar, use un identificador de equipo vacío. Puede agregar varias extensiones de kernel. El identificador de equipo debe ser alfanumérico (letras y números) y tener 10 caracteres. Por ejemplo, escriba `com.contoso.appname.macos` para el ID. de **paquete**y `ABCDE12345` para el **identificador del equipo**.
+  **Agregue** el identificador de lote y el identificador de equipo de una extensión de kernel que desee cargar. En el caso de las extensiones de kernel heredadas sin firmar, use un identificador de equipo vacío. Puede agregar varias extensiones de kernel. El identificador de equipo debe ser alfanumérico (letras y números) y tener 10 caracteres. Por ejemplo, escriba `com.contoso.appname.macos` para **ID**. de paquete y `ABCDE12345` para el **identificador del equipo**.
 
   > [!TIP]
   > Para obtener el identificador de paquete de una extensión de kernel (kext) en un dispositivo macOS, puede:
   >
-  > 1. En el terminal, ejecute `kextstat | grep -v com.apple` y anote la salida. Instale el software o kext que desee. Vuelva a ejecutar `kextstat | grep -v com.apple` y busque los cambios.
+  > 1. En el terminal, ejecute `kextstat | grep -v com.apple` y anote el resultado. Instale el software o kext que desee. Vuelva a ejecutar `kextstat | grep -v com.apple` y busque los cambios.
   >
   >    En el terminal, `kextstat` enumera todas las extensiones de kernel del sistema operativo. 
   >

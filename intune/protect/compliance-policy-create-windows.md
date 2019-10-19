@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 2e427fe0889dcfb51ba5be322ed4db566cc29e9d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251588"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502472"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Windows 10 y versiones posteriores para marcar dispositivos como compatibles o no compatibles con Intune
 
