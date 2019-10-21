@@ -1,5 +1,5 @@
 ---
-title: Cifrado de dispositivos en Microsoft Intune mediante el uso de los métodos de cifrado compatibles con las plataformas
+title: Cifrado de dispositivos con el método de cifrado compatible con plataformas
 titleSuffix: Microsoft Intune
 description: Cifre dispositivos con métodos de cifrado integrados como BitLocker o FileVault y administre las claves de recuperación de esos dispositivos cifrados en el portal de Intune.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad995a4b8b67a2ff7e3604f899fdbeebc2bad8cc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721401"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306858"
 ---
 # <a name="use-device-encryption-with-intune"></a>Uso del cifrado de dispositivos con Intune  
 

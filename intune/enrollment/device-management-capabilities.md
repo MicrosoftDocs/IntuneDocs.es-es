@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bac049aebfb0fec6c9d86e1e08e81237867175d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bf862e59e135a875f5f18af731c581f3e5ea89d5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723117"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306619"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Funcionalidades de administración de dispositivos inscritos en Microsoft Intune
 
@@ -43,6 +43,7 @@ Los usuarios obtienen acceso al Portal de empresa que les permite instalar aplic
 |Directivas de configuración<br><br>Directivas personalizadas| Le permiten administrar numerosas opciones y características de los dispositivos móviles de su organización. Por ejemplo, puede exigir una contraseña, limitar el número de intentos erróneos, limitar la cantidad de tiempo antes de que la pantalla se bloquee, establecer el plazo de expiración de una contraseña e impedir que se usen contraseñas que se han usado previamente. También puede controlar el uso de las características de hardware y software, como la cámara del dispositivo o el explorador web.<br><br>Use directivas personalizadas cuando las directivas de configuración no contengan la configuración que necesita. Para dispositivos iOS, puede importar la configuración que ha exportado desde la herramienta Apple Configurator. Para otros dispositivos, puede usar la configuración OMA-URI (identificador uniforme de recursos de Open Mobile Alliance) para configurar opciones y características en el dispositivo.|[Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](../protect/device-compliance-get-started.md)|
 |Eliminación remota, bloqueo remoto y restablecimiento de código de acceso|Borra información confidencial tras la pérdida o el robo de un dispositivo. Por ejemplo, puede bloquear el dispositivo de forma remota, restaurar la configuración de fábrica o borrar solo los datos corporativos.<br><br>Puede restablecer los códigos de acceso si los usuarios dejan de tener acceso a sus dispositivos, bloquear dispositivos extraviados o robados, e incluso borrar los datos de dispositivos extraviados o robados.|Ayudar a proteger los dispositivos con el [bloqueo remoto](../remote-actions/device-remote-lock.md) y el [restablecimiento de código de acceso](../remote-actions/device-passcode-reset.md)|
 |Modo de quiosco|Le permite bloquear determinadas características de dispositivos móviles, como las capturas de pantalla y los interruptores de alimentación. También le permite restringir dispositivos para que ejecuten una única aplicación que especifique. |[Configuración de directivas de configuración de iOS en Microsoft Intune](../configuration/device-restrictions-ios.md)|
+|Restablecimiento de Autopilot|Envía una tarea al dispositivo para iniciar el proceso de restablecimiento de forma remota, sin que así sea necesario que el personal de TI u otros administradores visiten cada máquina para iniciar el proceso. Al usarse el restablecimiento de Autopilot en un dispositivo, se quitará el usuario primario del dispositivo. El próximo usuario que inicie sesión tras el restablecimiento se establecerá como usuario primario.|[Restablecimiento remoto de Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>Administración de aplicaciones
 

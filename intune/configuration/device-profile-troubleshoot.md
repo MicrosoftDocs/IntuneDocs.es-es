@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724092"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349998"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune
 
@@ -47,41 +47,41 @@ Algunas recomendaciones adicionales:
 
 ## <a name="how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned"></a>¿Cuánto tiempo tardan los dispositivos en obtener una directiva, un perfil o una aplicación después de que se hayan asignado?
 
-Intune notifica al dispositivo que se sincronice con el servicio de Intune. Los tiempos de notificación varían y van desde inmediatamente hasta unas horas. Estos tiempos de notificación también varían entre las plataformas.
+Intune notifica al dispositivo que se sincronice con el servicio de Intune. Los tiempos de notificación varían y van desde inmediatamente hasta unas horas. Estos tiempos de notificación también varían según la plataforma.
 
 Si un dispositivo no se sincroniza para recibir la directiva o el perfil después de la primera notificación, Intune hace tres intentos más. Es posible que un dispositivo sin conexión, como apagado o no conectado a una red, no reciba las notificaciones. En ese caso, el dispositivo obtiene la directiva o el perfil en la próxima sincronización programada con el servicio Intune, que **se estima** en:
 
 | Plataforma | Ciclo de actualización|
 | --- | --- |
-| iOS | Aproximadamente cada 8 horas |
-| macOS | Aproximadamente cada 8 horas |
-| Android | Aproximadamente cada 8 horas |
-| Equipos Windows 10 inscritos como dispositivos | Aproximadamente cada 8 horas |
-| Windows Phone | Aproximadamente cada 8 horas |
-| Windows 8.1 | Aproximadamente cada 8 horas |
+| iOS | Aproximadamente cada 8 horas |
+| macOS | Aproximadamente cada 8 horas |
+| Android | Aproximadamente cada 8 horas |
+| Equipos Windows 10 inscritos como dispositivos | Aproximadamente cada 8 horas |
+| Windows Phone | Aproximadamente cada 8 horas |
+| Windows 8.1 | Aproximadamente cada 8 horas |
 
 Si el dispositivo se inscribió recientemente, la sincronización de cumplimiento y configuración se ejecuta con más frecuencia y **se estima** en:
 
 | Plataforma | Frecuencia |
 | --- | --- |
-| iOS | Cada 15 minutos durante 1 hora y, luego, cada 8 horas |  
-| macOS | Cada 15 minutos durante 1 hora y, luego, cada 8 horas | 
-| Android | Cada 3 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
-| Equipos Windows 10 inscritos como dispositivos | Cada 3 minutos durante 30 minutos y, luego, cada 8 horas | 
-| Windows Phone | Cada 5 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
-| Windows 8.1 | Cada 5 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
+| iOS | Cada 15 minutos durante 1 hora y, luego, cada 8 horas |  
+| macOS | Cada 15 minutos durante 1 hora y, luego, cada 8 horas | 
+| Android | Cada 3 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
+| Equipos Windows 10 inscritos como dispositivos | Cada 3 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
+| Windows Phone | Cada 5 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
+| Windows 8.1 | Cada 5 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
 
-En cualquier momento, los usuarios pueden abrir la aplicación Portal de empresa de Intune y sincronizar el dispositivo para comprobar de inmediato las actualizaciones de la directiva o del perfil.
+En cualquier momento, los usuarios pueden abrir la aplicación Portal de empresa. **Configuración** > **Sincronizar** para comprobar de inmediato las actualizaciones de la directiva o del perfil.
 
-En los dispositivos sin afinidad de usuario, la frecuencia de sincronización inmediatamente después de la inscripción puede variar de horas a un día o más. Intune envía solicitudes a diferentes intervalos para que un dispositivo se conecte con Intune. En cambio, la inserción en el repositorio depende del dispositivo. Después de la inscripción inicial, el tiempo que un dispositivo tarda en completar la inserción en el repositorio es imprevisible. También depende del tipo de inscripción de dispositivo y de las directivas y perfiles asignados a un dispositivo. Una vez que se inscribe el dispositivo y se aplican todas las directivas y perfiles iniciales, el dispositivo busca nuevas directivas y perfiles cada 6 u 8 horas, en función de la hora en que el dispositivo se inscribe en Intune.
+En los dispositivos sin afinidad de usuario, la frecuencia de sincronización inmediatamente después de la inscripción puede variar de horas a un día o más. Intune envía solicitudes a diferentes intervalos para que un dispositivo se conecte con Intune. En cambio, la inserción en el repositorio depende del dispositivo. Después de la inscripción inicial, el tiempo que un dispositivo tarda en completar la inserción en el repositorio es imprevisible. También depende del tipo de inscripción de dispositivo y de las directivas y perfiles asignados a un dispositivo. Una vez que se inscribe el dispositivo y se aplican todas las directivas y perfiles iniciales, busca nuevas directivas y perfiles cada 6 u 8 horas, en función de la hora en que el dispositivo se inscribe en Intune.
 
 Como procedimiento recomendado, asegúrese de que los dispositivos estén en línea durante al menos ocho horas consecutivas para obtener los mejores resultados.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>¿Qué acciones provocan que Intune envíe inmediatamente una notificación a un dispositivo?
 
-Hay distintas acciones que desencadenan una notificación, por ejemplo, cuando se asigna (o anula la asignación), actualiza, elimina, etc. una directiva, un perfil o una aplicación. Estos tiempos de acción varían entre las plataformas.
+Hay distintas acciones que desencadenan una notificación, por ejemplo, cuando se asigna (o anula la asignación), actualiza, elimina, etc. una directiva, un perfil o una aplicación. Estos tiempos de acción varían según la plataforma.
 
-Los dispositivos se sincronizan con Intune cuando reciben una notificación para sincronizarse o durante la sincronización programada. Cuando el destino es un dispositivo o usuario con una acción (por ejemplo, bloqueo, restablecimiento de código de acceso, asignación de aplicaciones, asignación de perfiles o asignación de directivas), Intune notifica inmediatamente al dispositivo para que se sincronice y reciba estas actualizaciones.
+Los dispositivos se sincronizan con Intune cuando reciben una notificación para sincronizarse o durante la sincronización programada. Cuando el destino es un dispositivo o usuario con una acción (por ejemplo, bloqueo, restablecimiento de código de acceso o asignación de aplicaciones, perfiles o directivas), Intune lo notifica inmediatamente al dispositivo para que se sincronice y reciba estas actualizaciones.
 
 Otros cambios, como la revisión de la información de contacto de la aplicación Portal de empresa, no provocan una notificación inmediata a los dispositivos.
 

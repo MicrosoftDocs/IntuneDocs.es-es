@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723169"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350047"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Aplicación del cumplimiento de ATP de Microsoft Defender con acceso condicional en Intune  
 
@@ -135,7 +135,8 @@ La directiva de cumplimiento determina el nivel de riesgo que se considera acept
 2. Seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
 3. Escriba la información que desee en **Nombre** y **Descripción**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
-5. En la configuración de **ATP de Microsoft Defender**, establezca **Solicitar que el dispositivo tenga o esté por debajo de la puntuación de riesgo de la máquina** en el nivel que prefiera. 
+5. En **Configuración**, seleccione **ATP de Microsoft Defender**.
+6. Establezca **Solicitar que el dispositivo tenga o esté por debajo de la puntuación de riesgo de la máquina** en el nivel que prefiera. 
    
    Las clasificaciones de nivel de amenaza vienen [determinadas por ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
@@ -145,7 +146,7 @@ La directiva de cumplimiento determina el nivel de riesgo que se considera acept
    - **Alta**: este nivel es el menos seguro, ya que permite todos los niveles de amenaza. Por tanto, los dispositivos con niveles de amenaza alto, medio o bajo se consideran compatibles.
 
 6. Seleccione **Aceptar** y **Crear** para guardar los cambios (y crear la directiva).  
-7. [Asigne la directiva de cumplimiento de dispositivo](create-compliance-policy.md#assign-user-groups) a los grupos aplicables.
+7. [Asigne la directiva de cumplimiento de dispositivo](create-compliance-policy.md#assign-the-policy) a los grupos aplicables.
 
 
 

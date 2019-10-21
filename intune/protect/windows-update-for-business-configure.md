@@ -14,16 +14,14 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9ecc1cabb00122d2812580b663fcd0c1dfabc3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728096"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314705"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Use Intune para definir los anillos de actualización que especifican cómo y cuándo Windows como servicio actualiza los dispositivos de Windows 10. Los anillos de actualización son directivas que debe asignar a grupos de dispositivos. Gracias a ellos, puede crear una estrategia de actualización que refleje sus necesidades empresariales. Para obtener más información, consulte [Administrar actualizaciones con Windows Update para empresas](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -92,7 +90,7 @@ Además de ver el estado de la asignación, puede seleccionar las acciones sigui
 ### <a name="delete"></a>Eliminar  
 Seleccione **Eliminar** para dejar de aplicar la configuración del anillo de actualización de Windows 10 seleccionado. Eliminar un anillo quita su configuración de Intune para que este deje de aplicar esas configuraciones.  
 
-Eliminar un anillo de Intune no modifica la configuración de los dispositivos que tenían asignado el anillo de actualización.  En lugar de eso, el dispositivo conserva la configuración actual. Esto se debe a que los dispositivos no conservan un registro histórico de las configuraciones aplicadas anteriormente y porque es posible que el dispositivo reciba la configuración de otros anillos de actualización que siguen activos.  
+Eliminar un anillo de Intune no modifica la configuración de los dispositivos que tenían asignado el anillo de actualización.  En lugar de eso, el dispositivo conserva la configuración actual. Los dispositivos no mantienen un registro histórico de su configuración anterior. Los dispositivos también pueden recibir configuraciones de anillos de actualización adicionales que permanecen activos.  
 
 #### <a name="to-delete-a-ring"></a>Para eliminar un anillo  
 1. Mientras ve la página de información general de un anillo de actualización, seleccione **Eliminar**.  
@@ -130,6 +128,12 @@ Mientras un anillo de actualización está en pausa, puede seleccionar **Extende
 ### <a name="uninstall"></a>Desinstalar  
 Un administrador de Intune puede usar **Desinstalar** para desinstalar (revertir) la actualización de *características* o la actualización de *calidad* más reciente para un anillo de actualización activo o en pausa. Después de desinstalar un tipo, puede desinstalar el otro. Intune no admite ni administra la capacidad de los usuarios de desinstalar actualizaciones.  
 
+> [!IMPORTANT] 
+> Cuando se usa la opción de *Desinstalar*, Intune pasa inmediatamente la solicitud de desinstalación a los dispositivos. 
+> - Los dispositivos Windows inician la eliminación de actualizaciones en cuanto reciben el cambio en la directiva de Intune. La eliminación de la actualización no se limita a las programaciones de mantenimiento, incluso cuando están configuradas como parte del anillo de actualización. 
+> - Si la eliminación de la actualización requiere un reinicio del dispositivo, el dispositivo se reinicia sin ofrecer a los usuarios del dispositivo una opción para retrasar.
+
+
 Para que la desinstalación se realice correctamente:  
 - Un dispositivo debe ejecutar la actualización de Windows del 10 de abril de 2018 (versión 1803) o una versión posterior.  
 
@@ -142,7 +146,7 @@ Cuando realice la desinstalación, debe tener en cuenta lo siguiente:
 
 - En un dispositivo con Windows 10, una vez que se revierte correctamente una actualización de calidad, los usuarios finales seguirán viendo la actualización en **Configuración de Windows** > **Actualizaciones** > **Historial de actualizaciones**.  
 
-- En el caso específico de las actualizaciones de características, el plazo en el que puede desinstalar la actualización de características es limitado entre 2 y 60 días, según la configuración de la actualización **Establecimiento del período de desinstalación de actualizaciones de características (de 2 a 60 días)** de los anillos de actualización. No puede revertir una actualización de características que se haya instalado en un dispositivo después de que la actualización de características haya estado instalada durante más tiempo que el período de desinstalación configurado.  
+- En el caso específico de las actualizaciones de características, el plazo en el que puede desinstalar la actualización de características es limitado entre 2 y 60 días, según la configuración de la actualización **Establecimiento del período de desinstalación de actualizaciones de características (de 2 a 60 días)** de los anillos de actualización. No puede revertir una actualización de características que se haya instalado en un dispositivo después de que se haya instalado durante más tiempo que el período de desinstalación configurado.  
 
   Por ejemplo, imagine un anillo de actualización con un período de desinstalación de actualizaciones de características de 20 días. A los 25 días decide revertir la última actualización de características y usar la opción Desinstalar.  Los dispositivos que instalaron la actualización de características hace más de 20 días no pueden desinstalarla ya que quitaron los bits necesarios como parte de su mantenimiento. Sin embargo, los dispositivos que solo instalaron la actualización de características hace 19 días pueden desinstalarla si se registran correctamente para recibir el comando de desinstalación antes de superar el período de desinstalación de 20 días.  
 
@@ -168,5 +172,5 @@ El portal clásico de Azure también tiene un número limitado de otras opciones
 
 [Informes de cumplimiento de Intune para las actualizaciones](../windows-update-compliance-reports.md)
 
-[Solución de problemas de los círculos de actualizaciones de Windows 10](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
+[Troubleshooting Windows 10 update rings](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046) (Solución de problemas de los anillos de actualización de Windows 10)
 

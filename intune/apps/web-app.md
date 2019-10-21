@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830573"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349977"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Agregar aplicaciones web a Microsoft Intune
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830573"
 
 Intune admite diversos tipos de aplicación, incluidas aplicaciones web. Una aplicación web es una aplicación cliente-servidor. El servidor proporciona la aplicación web, que incluye la interfaz de usuario, el contenido y la funcionalidad. Además, las plataformas de hospedaje web modernas normalmente ofrecen seguridad, equilibrio de carga y otras ventajas. Una aplicación web se mantiene por separado en Internet. Microsoft Intune se usa para que apunte a este tipo de aplicación. También puede asignar los grupos de usuarios que pueden acceder a esta aplicación. 
 
-Antes de poder administrar y asignar aplicaciones a los usuarios, agregue la aplicación a Intune. Intune crea un acceso directo a la aplicación web en la pantalla principal del dispositivo del usuario.
+Antes de poder administrar y asignar aplicaciones a los usuarios, agregue la aplicación a Intune. 
+
+Intune crea un acceso directo a la aplicación web en el dispositivo del usuario. En el caso de dispositivos iOS, se agrega un acceso directo a la aplicación web a la pantalla principal. En el caso de los dispositivos Android, se agrega un acceso directo a la aplicación web en el widget del portal de empresa de Intune, que el usuario debe anclar manualmente. En el caso de los dispositivos Windows, se coloca un acceso directo a la aplicación web en el menú Inicio.
 
 > [!Note]
 > No se admiten aplicaciones web en dispositivos de perfil de trabajo Android. Para poder iniciar aplicaciones web, debe haber un explorador instalado en el dispositivo del usuario.

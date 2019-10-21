@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726380"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379831"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Requerir la autenticación multifactor para las inscripciones de dispositivos de Intune
 
@@ -56,7 +56,7 @@ Para requerir MFA cuando se inscribe un dispositivo, siga estos pasos:
 6. En la sección **Asignaciones**, seleccione **Usuarios y grupos**. 
 7. En **Usuarios y grupos**, elija **Seleccionar usuarios o grupos** y marque **Usuarios y grupos**. Después, seleccione los usuarios o grupos que recibirán esta directiva y seleccione **Listo**.
 8. En la sección **Asignaciones**, elija **Aplicaciones en la nube**.
-9. En la pestaña **Incluir** de **Aplicaciones en la nube**, elija **Seleccionar aplicaciones**, **Seleccionar** > **Inscripción a Microsoft Intune** y, luego, **Listo**.
+9. En la pestaña **Incluir** de **Aplicaciones en la nube**, elija **Seleccionar aplicaciones**, **Seleccionar** > **Inscripción a Microsoft Intune** y, luego, **Listo**. Al elegir la **inscripción a Microsoft Intune**, la autenticación MFA de acceso condicional se aplica solo a la inscripción del dispositivo (solicitud única de MFA).
 10. En la sección **Asignaciones**, en **Condiciones** no es necesario configurar ninguna opción para MFA.
 11. En la sección **Controles de acceso**, elija **Conceder**.
 12. En **Conceder**, seleccione **Conceder acceso** y, luego, **Requerir autenticación multifactor**. No seleccione **Requerir que el dispositivo esté marcado como compatible**, puesto que el cumplimiento normativo de un dispositivo no puede evaluarse hasta que esté inscrito. Luego, elija **Seleccionar**.

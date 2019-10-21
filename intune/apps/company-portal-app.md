@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724924"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350003"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -165,7 +165,7 @@ Los usuarios pueden realizar acciones en sus dispositivos locales o remotos a tr
 - **Sincronizar**: esta acción inicia una inserción en el repositorio del dispositivo en el servicio Intune. Esto se muestra como **Comprobar estado** en el Portal de empresa.
 - **Bloqueo remoto**: bloquea el dispositivo y requiere un PIN para desbloquearlo.
 - **Restablecer código de acceso**: esta acción se usa para restablecer el código de acceso del dispositivo. En los dispositivos iOS, se quitará el código de acceso y se solicitará al usuario final que especifique un nuevo código en la configuración. En los dispositivos Android compatibles, Intune genera un nuevo código de acceso que se muestra temporalmente en el Portal de empresa.
-- **Recuperación de clave**: esta acción se usa para recuperar una clave de cifrado para dispositivos cifrados.
+- **Recuperación de clave**: esta acción se utiliza para recuperar una clave de recuperación personal para dispositivos macOS cifrados desde el sitio web Portal de empresa. 
 
 ### <a name="self-service-actions"></a>Acciones de autoservicio
 
@@ -180,8 +180,8 @@ Algunas plataformas y configuraciones no realizar permiten acciones de autoservi
 
 
 <sup>(1) </sup> La función Retirar siempre está bloqueada en dispositivos Windows unidos a Azure AD.<br>
-<sup>(2)</sup> Recuperación de clave para MacOS solo está disponible a través del portal web.<br>
-<sup>(3) </sup> Todas las acciones remotas se deshabilitan si se usa una inscripción del administrador de inscripción de dispositivos.<br>
+<sup>(2)</sup> La recuperación de clave personal para MacOS solo está disponible a través del sitio web Portal de empresa.<br> 
+<sup>(3)</sup> Todas las acciones remotas se deshabilitan si se usa una inscripción del administrador de inscripción de dispositivos.<br>
 <sup>(4) </sup> Rename solo cambia el nombre del dispositivo en la aplicación o el sitio web Portal de empresa, no en el dispositivo.<br>
 <sup>(5) </sup> el borrado remoto no está disponible en los dispositivos MacOS.<br>
 <sup>(6)</sup> En algunas configuraciones de Android Enterprise no se admite el restablecimiento del código de acceso. Para más información, consulte [Restablecimiento o eliminación del código de acceso de un dispositivo en Intune](../remote-actions/device-passcode-reset.md).<br>

@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721271"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306810"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados
 
@@ -113,7 +113,7 @@ Ahora vamos a crear dos directivas de acceso condicional para cubrir todas las p
    3. Desactive las demás casillas.  
    4. Seleccione **Listo** > **Listo** para volver al panel de directiva nueva.  
 
-   ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![Selección de clientes y aplicaciones móviles](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. En **Controles de acceso**, seleccione **Conceder**. 
      
@@ -123,11 +123,11 @@ Ahora vamos a crear dos directivas de acceso condicional para cubrir todas las p
    4. En **Para varios controles**, seleccione **Requerir todos los controles seleccionados**. Esta configuración garantiza que ambos requisitos que ha seleccionado se aplican cuando un dispositivo intenta acceder al correo electrónico.
    5. Elija **Seleccionar**.
      
-   ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![Selección de controles](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. En **Habilitar directiva**, seleccione **Activar** y después seleccione **Crear**.  
      
-    ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![Creación de directiva](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 Se crea la directiva de acceso condicional para clientes de autenticación moderna. Ahora puede crear una directiva para los clientes de Exchange Active Sync.
 
@@ -153,14 +153,14 @@ Se crea la directiva de acceso condicional para clientes de autenticación moder
    4. Desactive todas las demás casillas.  
    5. Seleccione **Listo** y después vuelva a seleccionar **Listo**.  
     
-   ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![Aplicación a plataformas compatibles](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. En **Controles de acceso**, seleccione **Conceder**.  
    1. En el panel **Conceder**, seleccione **Conceder acceso**.  
    2. Seleccione **Requerir aplicación cliente aprobada**. Desactive todas las demás casillas.  
    3. Elija **Seleccionar**.  
      
-   ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![Requerimiento de aplicación cliente aprobada](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. En **Habilitar directiva**, seleccione **Activar**.  
 

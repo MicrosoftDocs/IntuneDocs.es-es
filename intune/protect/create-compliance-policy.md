@@ -1,26 +1,26 @@
 ---
-title: Directivas de cumplimiento de dispositivos en Microsoft Intune - Azure | Microsoft Docs
-description: Introducción al uso de directivas de cumplimiento de dispositivos, información general de los estados y los niveles de gravedad, uso del estado InGracePeriod, trabajo con el acceso condicional, control de los dispositivos sin una directiva asignada y diferencias de cumplimiento en Azure Portal y el portal clásico en Microsoft Intune
+title: Creación de directivas de cumplimiento de dispositivos en Microsoft Intune - Azure | Microsoft Docs
+description: Creación de directivas de cumplimiento de dispositivos, información general de los estados y los niveles de gravedad, uso del estado En período de gracia, trabajar con el acceso condicional, control de los dispositivos sin una directiva asignada y diferencias de cumplimiento en Azure Portal y el portal clásico en Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722636"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306581"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creación de una directiva de cumplimiento en Microsoft Intune
 
@@ -68,7 +68,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
     - **Información general**: muestra un resumen y el número de dispositivos que están en cumplimiento, no evaluados, etc. También se muestran las directivas y la configuración individual de las directivas. [Supervisión de las directivas de cumplimiento de dispositivos Intune](compliance-policy-monitor.md) proporciona información relevante.
     - **Administrar**: cree directivas de dispositivos, envíe [notificaciones](quickstart-send-notification.md) a dispositivos que no están en cumplimiento y habilite la [limitación de red](use-network-locations.md).
     - **Supervisión**: Compruebe el estado de cumplimiento de los dispositivos y en el nivel de configuración y directiva. [Supervisión de las directivas de cumplimiento de dispositivos Intune](compliance-policy-monitor.md) es un recurso útil. También permite ver los registros y comprobar el estado del agente de amenazas de los dispositivos.
-    - **Configuración**: Use las [directivas de cumplimiento integradas](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), habilite la [Protección contra amenazas avanzada (ATP) de Microsoft Defender](advanced-threat-protection.md), agregue un [conector Mobile Threat Defense](mobile-threat-defense.md) y use [Jamf](conditional-access-integrate-jamf.md).
+    - **Configuración**: Use las [directivas de cumplimiento integradas](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), habilite [Advanced Threat Protection (ATP) de Microsoft Defender](advanced-threat-protection.md), agregue un [conector Mobile Threat Defense](mobile-threat-defense.md) y use [Jamf](conditional-access-integrate-jamf.md).
 
 3. Seleccione **Directivas** > **Crear directiva**. Escriba las propiedades siguientes:
 
@@ -95,15 +95,15 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
 4. Cuando termine, seleccione **Aceptar** > **Crear** para guardar los cambios. La directiva se crea y se muestra en la lista. A continuación, asigne la directiva a los grupos.
 
-## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
+## <a name="assign-the-policy"></a>Asignación de la directiva
 
 Una vez que se crea una directiva, el paso siguiente es asignar la directiva a los grupos:
 
 1. Elija una directiva que haya creado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
 2. Seleccione la directiva > **Asignaciones**. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
-3. Elija **Grupos seleccionados** para ver los grupos de seguridad de Azure AD. Seleccione los grupos de usuarios a los que quiere aplicar esta directiva > Elija **Guardar** para implementar la directiva a los usuarios.
+3. Elija **Grupos seleccionados** para ver los grupos de seguridad de Azure AD. Seleccione los grupos a los que quiere aplicar esta directiva > Elija **Guardar** para implementar la directiva.
 
-Ya aplicó la directiva a los usuarios. Se evalúa el cumplimiento de los dispositivos que utilizan los usuarios a los que se destina la directiva.
+Los usuarios o dispositivos de destino de la directiva se evalúan para comprobar su compatibilidad cuando se registran en Intune.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>Evaluación de cuántos usuarios se rigen por una directiva
 
@@ -138,8 +138,8 @@ El estado En período de gracia de una directiva de cumplimiento es un valor. Es
 
 En concreto, si un dispositivo tiene un estado No conforme para una directiva de cumplimiento asignada y si se dan los casos siguientes:
 
-- El dispositivo no tiene asignado ningún período de gracia, de modo que el valor asignado para la directiva de cumplimiento es No conforme
-- El dispositivo tiene un período de gracia que ha expirado, de modo que el valor asignado para la directiva de cumplimiento es No conforme
+- El dispositivo no tiene asignado ningún período de gracia, de modo que el valor asignado para la directiva de cumplimiento es No conforme.
+- El dispositivo tiene un período de gracia que ha expirado, de modo que el valor asignado para la directiva de cumplimiento es No conforme.
 - El dispositivo tiene un período de gracia futuro, de modo que el valor asignado para la directiva de cumplimiento es En período de gracia
 
 En la siguiente tabla se resumen estos aspectos:

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724118"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237207"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724118"
 Puede crear un perfil e incluir toda la configuración que escribió. El paso siguiente es implementar o "asignar el perfil" a los grupos de dispositivos o usuarios de Azure Active Directory (Azure AD). Cuando se asigna, los usuarios y dispositivos reciben su perfil y se aplica la configuración que escribió.
 
 En este artículo se muestra cómo asignar un perfil y se incluye información sobre el uso de las etiquetas de ámbito en los perfiles.
+
+> [!NOTE]  
+> Cuando se quita una directiva o deja de estar asignada a un dispositivo, el parámetro puede mantener el valor existente. La configuración no se revierte a un valor predeterminado. Para cambiar el parámetro a un valor diferente, cree una nueva directiva y asígnela.
 
 ## <a name="assign-a-device-profile"></a>Asignar un perfil de dispositivo
 

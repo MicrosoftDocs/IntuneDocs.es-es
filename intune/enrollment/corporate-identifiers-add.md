@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac86e9155f08683ab073ae0b46ea3f2780060c90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723351"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314679"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -35,7 +35,7 @@ A la hora de efectuar la inscripción, Intune asigna de forma automática estado
 - Se ha inscrito con una cuenta de [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md) (todas las plataformas).
 - Se ha inscrito mediante el [Programa de inscripción de dispositivos](device-enrollment-program-enroll-ios.md) de Apple, [Apple School Manager](apple-school-manager-set-up-ios.md) o [Apple Configurator](apple-configurator-enroll-ios.md) (solo iOS).
 - [Se ha identificado como corporativo antes de la inscripción](#identify-corporate-owned-devices-with-imei-or-serial-number) mediante un número de identidad internacional de dispositivos móviles IMEI (todas las plataformas con números IMEI) o un número de serie (iOS y Android).
-- Unido a Azure Active Directory como un dispositivo Windows 10 Enterprise
+- Se ha unido a Azure Active Directory con credenciales profesionales o educativas. [Los dispositivos Azure Active Directory registrados](https://docs.microsoft.com/azure/active-directory/devices/overview) se marcarán como personales.
 - Se ha establecido como corporativo en la [lista de propiedades del dispositivo](#change-device-ownership).
 
 Una vez realizada la inscripción, [podrá cambiar la opción de propiedad](#change-device-ownership) entre **Personal** y **Corporativo**.

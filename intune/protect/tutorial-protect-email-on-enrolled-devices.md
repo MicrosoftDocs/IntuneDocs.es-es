@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados por Intune'
+title: 'Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados'
 titleSuffix: Microsoft Intune
 description: Aprenda a proteger Exchange Online con las directivas de cumplimiento de Intune para iOS y el acceso condicional de Azure AD para exigir dispositivos administrados y la aplicación Outlook.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727940"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306868"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados
 Obtenga información sobre cómo usar las directivas de cumplimiento de dispositivos con acceso condicional para asegurarse de que los dispositivos iOS pueden acceder al correo electrónico de Exchange Online solo si se administran mediante Intune y con una aplicación de correo electrónico aprobada. 
@@ -95,7 +95,7 @@ Ahora se va a crear una directiva de acceso condicional que requiere que todas l
     2. En la pestaña **Incluir**, seleccione **Cualquier dispositivo** y luego seleccione **Listo**. 
     3. Vuelva a seleccionar **Listo**.
    
-    ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![Incluir cualquier dispositivo](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. En **Asignaciones**, seleccione **Condiciones** > **Aplicaciones cliente**.
      
@@ -103,7 +103,7 @@ Ahora se va a crear una directiva de acceso condicional que requiere que todas l
     2. Para este tutorial, seleccione **Aplicaciones móviles y clientes de escritorio** y **Clientes de autenticación moderna** (que hace referencia a aplicaciones como Outlook para iOS y Outlook para Android). Desactive todas las demás casillas.
     3. Seleccione **Listo** y después vuelva a seleccionar **Listo**.
     
-    ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![Selección de aplicaciones y clientes](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. En **Controles de acceso**, seleccione **Conceder**. 
      
@@ -113,11 +113,11 @@ Ahora se va a crear una directiva de acceso condicional que requiere que todas l
     4. En **Para varios controles**, seleccione **Requerir todos los controles seleccionados**. Esta configuración garantiza que ambos requisitos que ha seleccionado se aplican cuando un dispositivo intenta acceder al correo electrónico.
     5. Elija **Seleccionar**.
      
-    ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![Selección de controles](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. En **Habilitar directiva**, seleccione **Activar**.
      
-    ![Seleccione la aplicación Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![Habilitar una directiva](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. Seleccione **Crear**.
 
