@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71918003"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503649"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Resolver problemas comunes con Intune Exchange Connector
  
@@ -55,7 +56,7 @@ Es posible que un usuario no reciba el mensaje de correo electrónico de notific
 Revise las siguientes secciones para solucionar problemas de notificación de correo electrónico.
 
 ### <a name="check-the-notification-account-that-retrieves-autodiscover-settings"></a>Compruebe la cuenta de notificación que recupera la configuración de detección automática.
-1. Asegúrese de que el servicio de detección automática y EWS estén configurados en los servicios de acceso de cliente de Exchange. Para obtener más información, consulte [servicios de acceso de cliente](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) y [servicio de detección automática en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
+1. Asegúrese de que el servicio de detección automática y EWS están configurados en los servicios de acceso de cliente de Exchange. Para obtener más información, consulte [servicios de acceso de cliente](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) y [servicio de detección automática en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
 
 
 2. Compruebe que la cuenta de notificación cumple los requisitos siguientes:
@@ -69,10 +70,10 @@ Revise las siguientes secciones para solucionar problemas de notificación de co
    1. En un símbolo del sistema, escriba *nslookup*.  
 
    2. Escriba *Autodiscover.SMTPdomain.com*. La salida debe ser similar a la siguiente imagen:  
-      ![Nslookup Results](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
+      ![Nslookup resultados ](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   También puede probar el servicio de detección automática desde Internet en https://testconnectivity.microsoft.com. O pruébelo desde un dominio local mediante la herramienta Microsoft Connectivity Analyzer. Para obtener más información, vea [Microsoft Connectivity Analyzer Tool](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Si es necesario, [Descargue la herramienta Microsoft Connectivity Analyzer](http://go.microsoft.com/fwlink/?LinkID=313782).
+   También puede probar el servicio de detección automática desde Internet en https://testconnectivity.microsoft.com. O pruébelo desde un dominio local mediante la herramienta Microsoft Connectivity Analyzer. Para obtener más información, vea [Microsoft Connectivity Analyzer Tool](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Si es necesario, [Descargue la herramienta Microsoft Connectivity Analyzer](https://go.microsoft.com/fwlink/?LinkID=313782).
 
 
 ### <a name="check-autodiscovery"></a>Comprobar detección automática  
