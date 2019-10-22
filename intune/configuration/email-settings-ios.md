@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bd91891fa6da770404dc0af6d59016aeefe30b3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4cbf9c29a1e694726b1b42f7072eea859f812751
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734601"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593809"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Incorporación de la configuración de correo electrónico para dispositivos iOS en Microsoft Intune
 
@@ -55,7 +56,7 @@ En este artículo se enumeran y se describen todas las opciones de correo electr
       - **Nombre de dominio personalizado que quiere usar**: escriba un valor que Intune use como nombre de dominio, como `contoso.com` o `contoso`.
 
 - **Atributo Dirección de correo electrónico de AAD**: elija cómo se genera la dirección de correo electrónico para el usuario. Seleccione **Nombre principal de usuario** (`user1@contoso.com` o `user1`) para usar el nombre principal completo como dirección de correo electrónico. Seleccione **Dirección SMTP principal** (`user1@contoso.com`) para usar la dirección SMTP principal para iniciar sesión en Exchange.
-- **Método de autenticación**: seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico. La autenticación multifactor de Azure no es compatible.
+- **Método de autenticación**: seleccione **Nombre de usuario y contraseña**, **Certificados** o **Credencial derivada** como método de autenticación que usa el perfil de correo electrónico. La autenticación multifactor de Azure no es compatible.
   - Si seleccionó **Certificado**, seleccione un SCEP cliente o un perfil de certificado PKCS creados anteriormente, que se usará para autenticar la conexión de Exchange.
 - **SSL**: la opción **Habilitar** usa la comunicación de Capa de sockets seguros (SSL) al enviar y recibir correos electrónicos y comunicarse con el servidor de Exchange.
 - **OAuth**: la opción **Habilitar** usa la comunicación Open Authorization (OAuth) al enviar y recibir correos electrónicos y comunicarse con Exchange. Si su servidor OAuth usa la autenticación de certificado, elija **Certificado** como **método de autenticación** e incluya el certificado con el perfil. Si no, elija **Nombre de usuario y contraseña** como **método de autenticación**. Al utilizar OAuth, no olvide:

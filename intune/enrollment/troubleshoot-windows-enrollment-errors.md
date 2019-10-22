@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ab0ebd9a7977b5433c814e9496276ce7a7fc900
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735745"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503090"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos Windows en Microsoft Intune
 
@@ -56,11 +57,11 @@ Error 80180003: "Se ha producido un problema. Este usuario no está autorizado p
 - El equipo está ejecutando Windows 10 Home. Sin embargo, la inscripción en Intune o la Unión de Azure AD solo se admite en las ediciones Windows 10 Pro y versiones posteriores.
 
 #### <a name="resolution"></a>Solución
-Hay varias soluciones posibles para este problema:
+Hay varias posibles soluciones a este problema:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Quitar los dispositivos inscritos
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).    
-2. Vaya a **usuarios** > **todos los usuarios**.    
+2. Vaya a **usuarios**  > **todos los usuarios**.    
 3. Seleccione la cuenta de usuario afectada y, a continuación, haga clic en **dispositivos**.    
 4. Seleccione los dispositivos no usados o no deseados y, a continuación, haga clic en **eliminar**. 
 
@@ -70,12 +71,12 @@ Hay varias soluciones posibles para este problema:
 > Este método aumenta el límite de inscripción de dispositivos para todos los usuarios, no solo el usuario afectado.
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
-2. Vaya a **inscripción de dispositivos** > **restricciones de inscripción**y, a continuación, seleccione restricciones de límite de **dispositivo**.    
+2. Vaya a **inscripción de dispositivos**  > **restricciones de inscripción**y, a continuación, seleccione restricciones de **límite de dispositivo**.    
 3. Aumente el valor de **límite de dispositivos**. 
 
 ##### <a name="check-device-type-restrictions"></a>Comprobar las restricciones de tipo de dispositivo
 1. Inicie sesión en el [Portal de Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) con una cuenta de administrador global.
-2. Vaya a **inscripción de dispositivos** > **restricciones de inscripción**y, a continuación, seleccione la restricción **predeterminada** en restricciones de **tipo de dispositivo**.    
+2. Vaya a **inscripción de dispositivos**  > **restricciones de inscripción**y, a continuación, seleccione la restricción **predeterminada** en restricciones de **tipo de dispositivo**.    
 3. Seleccione **plataformas**y, a continuación, seleccione **permitir** para **Windows (MDM)** .
 
     > [!IMPORTANT]
@@ -105,16 +106,16 @@ Error 0x801c0003: "no se permite la inscripción de este usuario. Puede intentar
 Error 8018000a: "se ha producido un problema. El dispositivo ya está inscrito.  Puede ponerse en contacto con el administrador del sistema con el código de error 8018000a ".
 
 **Causa**: se cumplen una o varias de las condiciones siguientes:
-- Otro usuario ya ha inscrito el dispositivo en Intune o ha unido el dispositivo a Azure AD. Para determinar si este es el caso, vaya a **configuración** > **cuentas** > **acceso al trabajo**. Busque un mensaje similar al siguiente: "otro usuario del sistema ya está conectado a un trabajo o escuela. Quite esa conexión profesional o educativa e inténtelo de nuevo ".    
+- Otro usuario ya ha inscrito el dispositivo en Intune o ha unido el dispositivo a Azure AD. Para determinar si este es el caso, vaya a **configuración**  > **cuentas**  >  el**acceso al trabajo**. Busque un mensaje similar al siguiente: "otro usuario del sistema ya está conectado a un trabajo o escuela. Quite esa conexión profesional o educativa e inténtelo de nuevo ".    
 - El agente cliente de Configuration Manager está instalado en el equipo.    
 
 #### <a name="resolution"></a>Solución
 
-Use uno de los métodos siguientes para resolver este problema:
+Utilice uno de los métodos siguientes para resolver el error:
 
 ##### <a name="remove-the-other-work-or-school-account"></a>Quitar la otra cuenta profesional o educativa
 1. Cierre la sesión de Windows y, a continuación, inicie sesión con la otra cuenta que ha inscrito o unido al dispositivo.    
-2. Vaya a **configuración** > **cuentas** > **acceso al trabajo**y, a continuación, quite la cuenta profesional o educativa.
+2. Vaya a **configuración**  > **cuentas**  >  el**acceso al trabajo**y, a continuación, quite la cuenta profesional o educativa.
 3. Cierre la sesión de Windows y, a continuación, inicie sesión con su cuenta.    
 4. Inscribir el dispositivo en Intune o unir el dispositivo a Azure AD. 
 
@@ -166,7 +167,7 @@ Para solucionar este problema, use uno de los métodos siguientes:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Deshabilite la inscripción automática de MDM en Azure.
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com/).    
-2. Vaya a **Azure Active Directory** > **Mobility (MDM y MAM)**  > **Microsoft Intune**.    
+2. Vaya a **Azure Active Directory**  > **de movilidad (MDM y MAM)**  > **Microsoft Intune**.    
 3. Establezca el **ámbito de usuario de MDM** en **ninguno**y, a continuación, haga clic en **Guardar**.    
      
 ##### <a name="uninstall"></a>Desinstalar
@@ -180,7 +181,7 @@ Error: "no se puede instalar el software, 0x80cf4017".
 
 #### <a name="resolution"></a>Solución
 1. Inicie sesión en [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Vaya a **administración** > **descarga del software cliente**y, a continuación, haga clic en **Descargar software cliente**.    
+2. Vaya a **administración**  > **cliente descargar**y, a continuación, haga clic en **Descargar software cliente**.    
 3. Guarde el paquete de instalación y, a continuación, instale el software cliente. 
 
 
@@ -192,7 +193,7 @@ Error: "El certificado de cuenta no es válido y puede que haya expirado, 0x80cf
 
 #### <a name="resolution"></a>Solución
 1. Inicie sesión en [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Vaya a **administración** > **descarga del software cliente**y, a continuación, haga clic en **Descargar software cliente**.    
+2. Vaya a **administración**  > **cliente descargar**y, a continuación, haga clic en **Descargar software cliente**.    
 3. Guarde el paquete de instalación y, a continuación, instale el software cliente.    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>Su organización no es compatible con esta versión de Windows. 
@@ -205,7 +206,7 @@ Error: "se produjo un problema. Su organización no es compatible con esta versi
 Para corregir este problema en un entorno de Intune independiente, siga estos pasos: 
  
 1. Inicie sesión en [Azure Portal](https://portal.azure.com/) como administrador.    
-2. Seleccione **Intune** a la izquierda y, a continuación, vaya a **inscripción de dispositivos** > **restricciones de inscripción**.    
+2. Seleccione **Intune** a la izquierda y, a continuación, vaya a **inscripción de dispositivos**  > **restricciones de inscripción**.    
 3. En **restricciones de tipo de dispositivo**, haga clic en **plataformas**y, a continuación, seleccione **permitir** para **Windows (MDM)** .    
 4. Haga clic en **Guardar**.    
  
@@ -213,7 +214,7 @@ Para corregir este problema en MDM híbrida con Intune y Configuration Manager, 
 1. Abra la consola de Configuration Manager.    
 2. Seleccione **Administración**y, a continuación, seleccione **Cloud Services**.    
 3. Haga clic con el botón secundario en **Microsoft Intune suscripción**y, a continuación, seleccione **configurar plataformas > Windows**.    
-4. Active **Habilitar inscripción de Windows** > **aplicar** > **correcto**.  
+4. Active **Habilitar inscripción de Windows**  > **aplicar**  > **Aceptar**.  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Error de instalación durante la inscripción masiva.
@@ -235,7 +236,7 @@ Para obtener más información sobre la aplicación configurar equipos escolares
 ### <a name="auto-mdm-enroll-failed"></a>Inscripción automática de MDM: no superada 
 
 Al intentar inscribir un dispositivo de Windows 10 automáticamente mediante directiva de grupo, se producen los siguientes problemas: 
-- En Programador de tareas, en **Microsoft** > **Windows** > **EnterpriseMgmt**, el resultado de la última ejecución de la **programación creada por el cliente de inscripción para inscribirse automáticamente en MDM desde la tarea de AAD** es el siguiente: **evento 76 Inscripción automática de MDM: error (código de error de Win32 desconocido: 0x8018002b)**       
+- En Programador de tareas, en **Microsoft**  > **Windows**  > **EnterpriseMgmt**, el resultado de la última ejecución de la **programación creada por el cliente de inscripción para inscribirse automáticamente en MDM desde la tarea de AAD** es el siguiente: **evento 76 Inscripción automática de MDM: error (código de error de Win32 desconocido: 0x8018002b)**       
 - En Visor de eventos, se registra el siguiente evento en **registros de aplicaciones y servicios/Microsoft/Windows/DeviceManagement-Enterprise-Diagnostics-Provider/admin**:   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -335,7 +336,7 @@ Este problema se produce normalmente antes de que el dispositivo se reinicie en 
 
 #### <a name="resolution"></a>Solución
 
-1. Vaya a **Intune** >  **inscripción de dispositivos** > **inscripción de Windows** > **dispositivos**.
+1. Vaya a **Intune**  >  **inscripción de dispositivos**  >  la**inscripción de Windows**  > **dispositivos**.
 2. Seleccione el dispositivo que está experimentando el problema > haga clic en los puntos suspensivos (...) del lado derecho.
 3. Seleccione **desasignar usuario** y espere a que finalice el proceso.
 4. Compruebe que se ha asignado el perfil de AutoPilot Azure AD híbrido antes de volver a intentar OOBE.
@@ -375,12 +376,12 @@ Este problema se debe normalmente a la delegación incorrecta de los permisos en
 3. En el asistente **Delegación de control**, haga clic en **Siguiente** > **Agregar** > **Tipos de objeto**.
 4. En panel **Tipos de objeto**, seleccione la casilla **Equipos** > **Aceptar**.
 5. En el panel **Seleccionar usuarios**, **Equipos** o **Grupos**, en el cuadro **Escriba los nombres de objeto que desea seleccionar**, escriba el nombre del equipo donde está instalado el conector.
-6. Seleccione **Comprobar nombres** para validar la entrada > **Aceptar** > **siguiente**.
+6. Seleccione **Comprobar nombres** para validar la entrada > **Aceptar**  > **siguiente**.
 7. Haga clic en **Crear una tarea personalizada para delegar** > **Siguiente**.
 8. Active la casilla **Solo los siguientes objetos en la carpeta** y, después, active las casillas **Objetos de equipo**, **Crear los objetos seleccionados en esta carpeta** y  **Eliminar los objetos seleccionados en esta carpeta**.
 9. Seleccione **Siguiente**.
 10. En **Permisos**, active la casilla **Control total**. Esta acción selecciona todas las demás opciones.
-11. Seleccione **siguiente** > **Finalizar**.
+11. Seleccione **siguiente**  > **Finalizar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

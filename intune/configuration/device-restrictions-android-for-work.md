@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58eefffac670a12fc1d1a065534b4c1a4505426
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734952"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585383"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -67,7 +68,7 @@ En este artículo se enumeran y describen los diferentes valores de configuraci�
 - **Actualización del sistema**: elija una opción para definir de qué forma funciona el dispositivo a través de las actualizaciones inalámbricas:
   - **Valor predeterminado del dispositivo**: use la configuración predeterminada del dispositivo.
   - **Automática**: las actualizaciones se instalan automáticamente sin intervención del usuario. Si se configura esta directiva se instalarán inmediatamente las actualizaciones pendientes.
-  - **Pospuesta**: las actualizaciones se posponen durante 30 días. Cuando termine el período de 30 días, Android le pedirá al usuario que instale la actualización. Es posible que los fabricantes de dispositivos o los transportistas impidan que se pospongan actualizaciones de seguridad importantes (es decir, que las declaren como exentas). Una actualización exenta muestra al usuario una notificación en el dispositivo. 
+  - **Pospuesta**: las actualizaciones se posponen durante 30 días. Cuando termine el período de 30 días, Android le pedirá al usuario que instale la actualización. Es posible que los fabricantes de dispositivos o los transportistas impidan que se pospongan actualizaciones de seguridad importantes (es decir, que las declaren como exentas). Una actualización exenta muestra al usuario una notificación en el dispositivo.
   - **Ventana de mantenimiento**: instala las actualizaciones automáticamente durante una ventana de mantenimiento diaria configurada en Intune. La instalación se intenta diariamente durante 30 días y pueden producirse errores si los niveles de batería o espacio no son suficientes. Después del período de 30 días, Android le solicitará al usuario que realice la instalación. La ventana también se usa para instalar actualizaciones de aplicaciones de Google Play. Use esta opción para dispositivos dedicados, como pantallas completas, ya que las aplicaciones de primer plano de dispositivos dedicados de una sola aplicación se pueden actualizar.
 
 - **Ventanas de notificación**: cuando se establecen en **Deshabilitar**, las notificaciones de ventana, incluidas las notificaciones del sistema, las llamadas entrantes, las llamadas salientes, las alertas del sistema y los errores del sistema no se muestran en el dispositivo. Cuando se establecen en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar las notificaciones.
@@ -98,8 +99,8 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   > En los dispositivos dedicados con varias aplicaciones, la [aplicación Managed Home Screen](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) de Google Play **debe estar**:
   >   - [Agregada como aplicación cliente](../apps/apps-add-android-for-work.md) en Intune
   >   - [Asignada al grupo de dispositivos](../apps/apps-deploy.md) creado para los dispositivos dedicados
-  > 
-  > No es necesario que la aplicación **Managed Home Screen** esté en el perfil de configuración, pero sí se debe agregar como aplicación cliente. Cuando la aplicación **Managed Home Screen** se agrega como aplicación cliente, cualquier otra aplicación que se agregue en el perfil de configuración aparece como icono en la aplicación **Managed Home Screen**. 
+  >
+  > No es necesario que la aplicación **Managed Home Screen** esté en el perfil de configuración, pero sí se debe agregar como aplicación cliente. Cuando la aplicación **Managed Home Screen** se agrega como aplicación cliente, cualquier otra aplicación que se agregue en el perfil de configuración aparece como icono en la aplicación **Managed Home Screen**.
   >
   > Al usar el modo de pantalla completa de varias aplicaciones, es posible que las aplicaciones de teléfono y de marcado no funcionen correctamente. 
 
@@ -157,8 +158,8 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
       Si no especifica una dirección URL, se usa la imagen predeterminada del dispositivo, si hay una imagen predeterminada.
 
-    - **Número de segundos que el dispositivo muestra el protector de pantalla antes de desactivar la pantalla**: elija cuánto tiempo el dispositivo muestra el protector de pantalla. Escriba un valor entre 0-9999999 segundos. El valor predeterminado es `0`segundos. Cuando se deja en blanco o se establece en cero (`0`), el protector de pantalla está activo hasta que un usuario interactúa con el dispositivo.
-    - **Número de segundos que el dispositivo está inactivo antes de mostrar el protector de pantalla**: elija cuánto tiempo está inactivo el dispositivo antes de mostrar el protector de pantalla. Escriba un valor entre 1-9999999 segundos. El valor predeterminado es `30` segundos. Debe especificar un número mayor que cero (`0`).
+    - **Número de segundos que el dispositivo muestra el protector de pantalla antes de desactivar la pantalla**: elija cuánto tiempo el dispositivo muestra el protector de pantalla. Especifique un valor entre 0 y 9999999 segundos. El valor predeterminado es `0`segundos. Cuando se deja en blanco o se establece en cero (`0`), el protector de pantalla está activo hasta que un usuario interactúa con el dispositivo.
+    - **Número de segundos que el dispositivo está inactivo antes de mostrar el protector de pantalla**: elija cuánto tiempo está inactivo el dispositivo antes de mostrar el protector de pantalla. Especifique un valor entre 1 y 9999999 segundos. El valor predeterminado es `30` segundos. Debe especificar un número mayor que cero (`0`).
     - **Detectar medios antes de iniciar el protector de pantalla**: **Habilitar** (predeterminado) no muestra el protector de pantalla si se está reproduciendo audio o vídeo en el dispositivo. **No configurado** muestra el protector de pantalla, aunque se esté reproduciendo audio o vídeo.
 
 ### <a name="device-password-settings"></a>Configuración de la contraseña del dispositivo
@@ -241,7 +242,22 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
   Elija **No configurado** para permitir que el tráfico fluya a través del túnel VPN o a través de la red móvil.
 
-## <a name="work-profile-only"></a>Solo perfil de trabajo 
+- **Proxy global recomendado**: elija **Habilitar** para agregar un proxy global a los dispositivos. Cuando está habilitado, el tráfico HTTP y HTTPS, incluidas algunas aplicaciones del dispositivo, usa el proxy que especifique. Este proxy es solo una recomendación. Es posible que algunas aplicaciones no usen el proxy. **No configurado** (valor predeterminado) no agrega un proxy global recomendado.
+
+  Para obtener más información sobre esta característica, vea [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (abre un sitio de Android).
+
+  Cuando está habilitada, especifique también el **tipo** de proxy. Las opciones son:
+
+  - **Directo**: elija esta opción para especificar manualmente los detalles del servidor proxy, incluidos:
+    - **Host**: escriba el nombre de host o la dirección IP del servidor proxy. Por ejemplo, escriba `proxy.contoso.com` o `127.0.0.1`.
+    - **Número de puerto**: escriba el número de puerto TCP utilizado por el servidor proxy. Por ejemplo, escriba `8080`.
+    - **Hosts excluidos**: especifique una lista de nombres de host o direcciones IP que no usarán el proxy. Esta lista puede incluir un carácter comodín de asterisco (`*`) y varios hosts separados por punto y coma (`;`) sin espacios. Por ejemplo, escriba `127.0.0.1;web.contoso.com;*.microsoft.com`.
+
+  - **Configuración automática de proxy**: escriba la **dirección URL de PAC** para un script de configuración automática de proxy. Por ejemplo, escriba `https://proxy.contoso.com/proxy.pac`.
+
+    Para obtener más información sobre los archivos PAC, consulte [archivo de configuración automática de proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre un sitio que no es de Microsoft).
+
+## <a name="work-profile-only"></a>Solo perfil de trabajo
 
 ### <a name="work-profile-settings"></a>Configuración de perfil de trabajo
 
@@ -249,9 +265,10 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
 - **Copiar y pegar entre el perfil de trabajo y el perfil personal**: elija **Bloquear** para impedir la acción de copiar y pegar entre aplicaciones de trabajo y aplicaciones personales. **No configurado** permite que los usuarios compartan datos mediante copiar y pegar con aplicaciones en el perfil personal. 
 - **Uso compartido de datos entre el perfil de trabajo y el perfil personal**: elija si las aplicaciones del perfil de trabajo pueden compartir con las aplicaciones del perfil personal. Por ejemplo, puede controlar las acciones de uso compartido dentro de las aplicaciones, como la opción **Compartir…** en la aplicación del explorador Chrome. Esta configuración no se aplica al comportamiento del Portapapeles de copiar y pegar. Las opciones de uso compartido son:
-  - **Restricciones de uso compartido predeterminadas**: el comportamiento predeterminado del uso compartido del dispositivo, que varía según la versión de Android. De manera predeterminada, se permite el uso compartido desde el perfil personal hasta el perfil de trabajo. También de manera predeterminada, el uso compartido desde el perfil de trabajo hasta el perfil personal está bloqueado. Esta opción evita que se compartan datos desde el perfil de trabajo hasta el perfil personal. En dispositivos que ejecutan versiones 6.0 y posteriores, Google no bloquea el uso compartido desde el perfil personal hacia el perfil de trabajo.
+  - **Valor predeterminado del dispositivo**: el comportamiento predeterminado del uso compartido del dispositivo, que varía según la versión de Android. De manera predeterminada, se permite el uso compartido desde el perfil personal hasta el perfil de trabajo. También de manera predeterminada, el uso compartido desde el perfil de trabajo hasta el perfil personal está bloqueado. Esta opción evita que se compartan datos desde el perfil de trabajo hasta el perfil personal. En dispositivos que ejecutan versiones 6.0 y posteriores, Google no bloquea el uso compartido desde el perfil personal hacia el perfil de trabajo.
   - **Apps in work profile can handle sharing request from personal profile** (Las aplicaciones de un perfil de trabajo pueden controlar la solicitud de uso compartido desde un perfil personal): habilita la característica de Android integrada que permite el uso compartido desde el perfil personal al perfil de trabajo. Cuando esta opción está habilitada, una solicitud de uso compartido que se inicia en una aplicación del perfil personal se podrá compartir con las aplicaciones del perfil de trabajo. Esta opción es el comportamiento predeterminado de los dispositivos Android que ejecutan versiones anteriores a 6.0.
-  - **Permitir el uso compartido a través de límites**: permite el uso compartido a través del límite del perfil de trabajo en ambas direcciones. Cuando selecciona esta configuración, las aplicaciones del perfil de trabajo pueden compartir datos con aplicaciones no administradas del perfil personal. Esta configuración permite administrar aplicaciones en el perfil de trabajo para compartirlas con aplicaciones del lado sin administrar del dispositivo. Por lo tanto, use esta configuración con precaución.
+  - **Impedir el uso compartido entre límites**: impide el uso compartido entre perfiles de trabajo y de personal.
+  - **No hay restricciones en el uso compartido**: permite el uso compartido a través del límite del perfil de trabajo en ambas direcciones. Cuando selecciona esta configuración, las aplicaciones del perfil de trabajo pueden compartir datos con aplicaciones no administradas del perfil personal. Esta configuración permite administrar aplicaciones en el perfil de trabajo para compartirlas con aplicaciones del lado sin administrar del dispositivo. Por lo tanto, use esta configuración con precaución.
 
 - **Notificaciones del perfil profesional con dispositivo bloqueado**: controla si las aplicaciones del perfil de trabajo pueden mostrar datos en las notificaciones cuando el dispositivo está bloqueado. **Bloquear** no muestra los datos. **No configurado** muestra los datos.
 - **Permisos de aplicación predeterminados**: establece la directiva de permisos predeterminada para todas las aplicaciones del perfil de trabajo. A partir de Android 6, se solicita al usuario que conceda determinados permisos que requieren las aplicaciones cuando se inician. Esta configuración de directiva permite decidir si se pedirá a los usuarios que concedan permisos para todas las aplicaciones del perfil de trabajo. Por ejemplo, suponga que asigna una aplicación al perfil de trabajo que requiere acceso mediante la ubicación. Normalmente, esa aplicación pide al usuario que apruebe o deniegue el acceso a la aplicación mediante la ubicación. Use esta directiva para conceder permisos y denegar permisos automáticamente sin preguntar al usuario o dejar que el usuario final decida. Elija de entre las siguientes opciones:
@@ -284,7 +301,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 - **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe tener la contraseña del usuario (de **4**-**16**).
 - **Maximum minutes of inactivity until work profile locks** (Máximo de minutos de inactividad hasta que se bloquea el perfil de trabajo): seleccione la cantidad de tiempo antes de que se bloquee el perfil de trabajo. El usuario deberá especificar sus credenciales para volver a obtener acceso.
 - **Number of sign-in failures before wiping device** (Número de errores de inicio de sesión antes de borrar el dispositivo): escriba la cantidad de veces que se puede escribir una contraseña incorrecta antes de que se borre el perfil de trabajo del dispositivo.
-- **Expiración de la contraseña (días)**: escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**).
+- **Expiración de la contraseña (días)** : escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**).
 - **Tipo de contraseña requerida**: seleccione el tipo de contraseña que se debe establecer en el dispositivo. Elija de entre las siguientes opciones:
   - **Valor predeterminado del dispositivo**
   - **Biométrico de seguridad baja**
@@ -305,7 +322,7 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
 - **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe tener la contraseña del usuario (de **4**-**14**).
 - **Maximum minutes of inactivity until screen locks** (Máximo de minutos de inactividad hasta que se bloquea la pantalla): seleccione el tiempo antes de que un dispositivo inactivo se bloquee de forma automática.
 - **Number of sign-in failures before wiping device** (Número de errores de inicio de sesión antes de borrar el dispositivo): escriba la cantidad de veces que se puede escribir una contraseña incorrecta antes de que se borren todos los datos del dispositivo
-- **Expiración de la contraseña (días)**: escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**)
+- **Expiración de la contraseña (días)** : escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**)
 - **Tipo de contraseña requerida**: seleccione el tipo de contraseña que se debe establecer en el dispositivo. Elija de entre las siguientes opciones:
   - **Valor predeterminado del dispositivo**
   - **Biométrico de seguridad baja**
@@ -325,6 +342,13 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
 
    > [!Note]
    > Esta configuración solo sirve para dispositivos Android O y posteriores.
+
+- **Impedir las instalaciones de aplicaciones de orígenes desconocidos en el perfil personal**: por diseño, los dispositivos de Perfil de trabajo empresarial de Android no pueden instalar aplicaciones desde orígenes distintos de los Play Store. Por naturaleza, los dispositivos de Perfil de trabajo están diseñados para ser de dos perfiles:
+
+  - Un perfil de trabajo administrado mediante MDM.
+  - Un perfil personal aislado de la administración de MDM.
+
+  Esta configuración permite a los administradores tener un mayor control de las instalaciones de aplicaciones de orígenes desconocidos. **No configurado** (valor predeterminado) permite las instalaciones de aplicaciones de orígenes desconocidos en el perfil personal. El **bloqueo** impide las instalaciones de aplicaciones desde orígenes distintos del Play Store del perfil personal.
 
 ### <a name="connectivity"></a>Conectividad
 

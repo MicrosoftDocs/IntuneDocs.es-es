@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c46caf4d1c9f9a32a7f324fc5e1734dbe8043bd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735264"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550828"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usar y administrar dispositivos empresariales Android con OEMConfig en Microsoft Intune
 
@@ -120,7 +121,7 @@ Asegúrese de que el dispositivo es compatible con OEMConfig, que se ha agregado
 
     Cualquier cambio realizado en el diseñador de configuración también se realiza automáticamente en el editor de JSON. Del mismo modo, los cambios realizados en el editor de JSON se realizan automáticamente en el diseñador de configuración. Si la entrada contiene valores no válidos, no puede cambiar entre el diseñador de configuración y el editor de JSON hasta que corrija los problemas.
 
-6. Seleccione **aceptar** > **Agregar** para guardar los cambios. La directiva se crea y se muestra en la lista.
+6. Seleccione **Aceptar** > **Agregar** para guardar los cambios. La directiva se crea y se muestra en la lista.
 
 Asegúrese de [asignar el perfil](device-profile-assign.md) y [supervise su estado](device-profile-monitor.md).
 
@@ -144,13 +145,14 @@ En comparación con las aplicaciones estándar, las aplicaciones de OEMConfig ex
 | Tecnologías Zebra | com. Zebra. oemconfig. Common | [Información general de Zebra OEMConfig](http://techdocs.zebra.com/oemconfig ) |
 | Lógica de los | com. oemconfig | [Documentación de usuario para OEMConfig de la lógica de los usuarios](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |
+| Kyocera | JP. Kyocera. enterprisedeviceconfig |  |
 
 -----------------
 
-Si existe una aplicación OEMConfig para el dispositivo, pero no se encuentra en la tabla anterior, o no aparece en la consola de Intune, envíe un correo electrónico `IntuneOEMConfig@microsoft.com`.
+Si existe una aplicación OEMConfig para el dispositivo, pero no se encuentra en la tabla anterior, o no aparece en la consola de Intune, envíe un correo electrónico a `IntuneOEMConfig@microsoft.com`.
 
 > [!NOTE]
-> Las aplicaciones de OEMConfig deben estar integradas en Intune antes de que se puedan configurar con perfiles de OEMConfig. Una vez que se admite una aplicación, no es necesario que se ponga en contacto con Microsoft para configurarla en su inquilino. Solo tiene que seguir las instrucciones de esta página.
+> Las aplicaciones de OEMConfig deben estar integradas en Intune antes de que se puedan configurar con perfiles de OEMConfig. Una vez que se admite una aplicación, no es necesario que se ponga en contacto con Microsoft para configurarla en su inquilino. Solo tiene que seguir las instrucciones que aparecerán en esta página.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

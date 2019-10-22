@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5adde9049f1e5f88df4a55b473f59f1d4a08e396
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733873"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593766"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Adición de la configuración de Wi-Fi para dispositivos iOS en Microsoft Intune
 
@@ -79,7 +80,13 @@ Ambas se describen en este artículo.
     - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza a los servidores de acceso a la red inalámbrica. Por ejemplo, agregue `mywirelessserver.contoso.com` o `mywirelessserver`. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
     - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado permite al cliente confiar en el certificado del servidor de acceso a la red inalámbrica.
 
-    - **Autenticación de cliente** - **Certificado para la autenticación de cliente (certificado de identidad)** : elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
+    - **Autenticación de cliente**: elija un **método de autenticación**. Las opciones son:
+      
+      - **Credencial derivada**: Si no se ha configurado ningún emisor de credenciales derivado, Intune le pedirá que lo haga.
+      
+      - **Certificados**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
+
+    - **Privacidad de identidad (identidad interna)** : escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
 
   - **EAP-TTLS**: especifique también:
 
@@ -88,6 +95,8 @@ Ambas se describen en este artículo.
 
     - **Autenticación de cliente**: elija un **método de autenticación**. Las opciones son:
 
+      - **Credencial derivada**: Si no se ha configurado ningún emisor de credenciales derivado, Intune le pedirá que lo haga.  
+      
       - **Nombre de usuario y contraseña**: pida al usuario un nombre de usuario y una contraseña para autenticar la conexión. Indique también:
         - **Método que no es EAP (identidad interna)** : seleccione cómo se autentica la conexión. Asegúrese de elegir el mismo protocolo que está configurado en su red Wi-Fi.
 
@@ -106,6 +115,8 @@ Ambas se describen en este artículo.
 
     - **Autenticación de cliente**: elija un **método de autenticación**. Las opciones son:
 
+      - **Credencial derivada**: Si no se ha configurado ningún emisor de credenciales derivado, Intune le pedirá que lo haga.  
+      
       - **Nombre de usuario y contraseña**: pida al usuario un nombre de usuario y una contraseña para autenticar la conexión. 
 
       - **Certificados**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.

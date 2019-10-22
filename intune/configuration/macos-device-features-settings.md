@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816867"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506671"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configuración de características de dispositivos macOS en Intune
 
@@ -80,7 +81,7 @@ Para agregar servidores AirPrinter, necesita la dirección IP de la impresora, l
   - `/Applications/Microsoft Office/root/Office16/winword.exe`
   - `/Users/UserName/music/itunes.app`
   
-  Al agregar una aplicación, una carpeta o un archivo, asegúrese de escribir la ruta de acceso correcta. No todos los elementos están en la carpeta `Applications`. Si un usuario mueve un elemento de una ubicación a otra, la ruta de acceso cambia. Este elemento que se ha despasado no se abrirá cuando el usuario inicie sesión.
+  Al agregar una aplicación, una carpeta o un archivo, asegúrese de escribir la ruta de acceso correcta. No todos los elementos se encuentran en la carpeta `Applications`. Si un usuario mueve un elemento de una ubicación a otra, la ruta de acceso cambia. Este elemento que se ha despasado no se abrirá cuando el usuario inicie sesión.
 
 ## <a name="login-window"></a>Ventana de inicio de sesión
 
@@ -200,15 +201,15 @@ Esta característica se aplica a:
 
 - **Identificador**de la aplicación: escriba el identificador de la aplicación que se va a asociar a un sitio Web. El identificador de la aplicación incluye el identificador del equipo y un identificador de paquete: `TeamID.BundleID`.
 
-  El identificador de equipo es una cadena alfanumérica de 10 caracteres (letras y números) que Apple genera para los desarrolladores de aplicaciones, como `ABCDE12345`. [Busque el ID](https://help.apple.com/developer-account/#/dev55c3c710c). de equipo   (abre el sitio web de Apple) para obtener más información.
+  El identificador de equipo es una cadena alfanumérica de 10 caracteres (letras y números) que Apple genera para los desarrolladores de aplicaciones, como `ABCDE12345`. [Busque el identificador de equipo](https://help.apple.com/developer-account/#/dev55c3c710c)   (abre el sitio web de Apple) más información.
 
-  El identificador de paquete identifica de forma única la aplicación y, normalmente, tiene el formato de notación de nombre de dominio inversa. Por ejemplo, el identificador de paquete de Finder es `com.apple.finder`. Para buscar el identificador de paquete, use el AppleScript en terminal:
+  El identificador de paquete identifica de forma única la aplicación y, normalmente, tiene el formato de notación de nombre de dominio inversa. Por ejemplo, el identificador de paquete del buscador es `com.apple.finder`. Para buscar el identificador de paquete, use el AppleScript en terminal:
 
   `osascript -e 'id of app "ExampleApp"'`
 
 - **Dominio**: escriba el dominio del sitio web que se va a asociar a una aplicación. El dominio incluye un tipo de servicio y un nombre de host completo, como `webcredentials:www.contoso.com`.
 
-  Puede hacer coincidir todos los subdominios de un dominio asociado escribiendo `*.` (un comodín de asterisco y un punto) antes del principio del dominio. El período es obligatorio. Los dominios exactos tienen una prioridad más alta que los dominios comodín. Por lo tanto, los patrones de los dominios primarios coinciden *si* no se encuentra ninguna coincidencia en el subdominio completo.
+  Puede hacer coincidir todos los subdominios de un dominio asociado escribiendo `*.` (un carácter comodín de asterisco y un punto) antes del principio del dominio. El período es obligatorio. Los dominios exactos tienen una prioridad más alta que los dominios comodín. Por lo tanto, los patrones de los dominios primarios coinciden *si* no se encuentra ninguna coincidencia en el subdominio completo.
 
   El tipo de servicio puede ser:
 
@@ -219,7 +220,7 @@ Esta característica se aplica a:
 - **Agregar**: Seleccione esta propiedad para agregar sus aplicaciones y dominios asociados.
 
 > [!TIP]
-> Para solucionar problemas, en el dispositivo macOS, Abra **preferencias del sistema** > **perfiles**. Confirme que el perfil que ha creado está en la lista de perfiles de dispositivo. Si aparece, asegúrese de que la **configuración de dominios asociados** está en el perfil e incluye el ID. de aplicación y los dominios correctos.
+> Para solucionar problemas, en el dispositivo macOS, Abra **preferencias del sistema**  > **perfiles**. Confirme que el perfil que ha creado está en la lista de perfiles de dispositivo. Si aparece, asegúrese de que la **configuración de dominios asociados** está en el perfil e incluye el ID. de aplicación y los dominios correctos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

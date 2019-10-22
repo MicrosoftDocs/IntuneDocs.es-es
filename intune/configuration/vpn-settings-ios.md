@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734159"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593788"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Incorporación de VPN en dispositivos iOS en Microsoft Intune
 
@@ -72,6 +73,8 @@ La configuración que se muestra en la siguiente lista se determina según el ti
     > [!NOTE]
     > Si el nombre de usuario y la contraseña se usan como método de autenticación para VPN Cisco IPsec, deben entregar la credencial SharedSecret a través de un perfil personalizado de Apple Configurator.
 
+  - **Credencial derivada**: Si no se ha configurado ningún emisor de credenciales derivado, Intune le pedirá que lo haga.
+
 - **Direcciones URL excluidas** (solo Zscaler): cuando se conecta a la VPN de Zscaler, las direcciones URL de la lista son accesibles desde fuera de la nube de Zscaler. 
 
 - **Tunelización dividida**: puede **Habilitar** o **Deshabilitar** esta opción para que los dispositivos decidan qué conexión usar en función del tráfico. Por ejemplo, un usuario en un hotel usa la conexión VPN para acceder a los archivos de trabajo, pero usa la red normal del hotel para la exploración web habitual.
@@ -105,7 +108,7 @@ La configuración que se muestra en la siguiente lista se determina según el ti
 
 ## <a name="ikev2-settings"></a>Configuración de IKEv2
 
-Esta configuración se aplica cuando se elige el **tipo de conexión** > **IKEv2**.
+Esta configuración se aplica cuando se elige el **tipo de conexión**  > **IKEv2**.
 
 - **Identificador remoto**: escriba la dirección IP de red, el FQDN, USERFQDN o ASN1DN del servidor IKEv2. Por ejemplo, escriba `10.0.0.3` o `vpn.contoso.com`. Normalmente, se escribe el mismo valor que el [**nombre**](#base-vpn-settings) de la conexión (en este artículo). Pero depende de la configuración del servidor IKEv2.
 
@@ -143,7 +146,7 @@ Esta configuración se aplica cuando se elige el **tipo de conexión** > **IKEv2
 - **Configurar parámetros**de la Asociación de seguridad: **no configurado** (valor predeterminado) usa el valor predeterminado del sistema iOS. Seleccione **Habilitar** para especificar los parámetros que se usan al crear asociaciones de seguridad con el servidor VPN:
   - **Algoritmo de cifrado**: seleccione el algoritmo que desee:
     - DES
-    - DICHA
+    - 3DES
     - AES-128
     - AES-256 (valor predeterminado)
     - AES-128-GCM
@@ -154,7 +157,7 @@ Esta configuración se aplica cuando se elige el **tipo de conexión** > **IKEv2
     - SHA2-256 (valor predeterminado)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: seleccione el grupo que desee. El valor predeterminado es Group `2`.
+  - **Grupo Diffie-Hellman**: seleccione el grupo que desee. El valor predeterminado es el grupo `2`.
   - **Duración** (minutos): elija cuánto tiempo permanece activo la Asociación de seguridad hasta que se rotan las claves. Escriba un valor entero entre `10` y `1440` (1440 minutos es 24 horas). El valor predeterminado es `1440`.
 
 - **Configurar un conjunto independiente de parámetros para las asociaciones de seguridad secundarias**: iOS le permite configurar parámetros independientes para la conexión IKE y cualquier conexión secundaria. 
@@ -162,7 +165,7 @@ Esta configuración se aplica cuando se elige el **tipo de conexión** > **IKEv2
   **No configurado** (valor predeterminado) usa los valores especificados en la configuración anterior **Configurar parámetros** de la Asociación de seguridad. Seleccione **Habilitar** para especificar los parámetros que se usan al crear asociaciones de seguridad *secundarias* con el servidor VPN:
   - **Algoritmo de cifrado**: seleccione el algoritmo que desee:
     - DES
-    - DICHA
+    - 3DES
     - AES-128
     - AES-256 (valor predeterminado)
     - AES-128-GCM
@@ -173,7 +176,7 @@ Esta configuración se aplica cuando se elige el **tipo de conexión** > **IKEv2
     - SHA2-256 (valor predeterminado)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: seleccione el grupo que desee. El valor predeterminado es Group `2`.
+  - **Grupo Diffie-Hellman**: seleccione el grupo que desee. El valor predeterminado es el grupo `2`.
   - **Duración** (minutos): elija cuánto tiempo permanece activo la Asociación de seguridad hasta que se rotan las claves. Escriba un valor entero entre `10` y `1440` (1440 minutos es 24 horas). El valor predeterminado es `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Configuración automática de VPN

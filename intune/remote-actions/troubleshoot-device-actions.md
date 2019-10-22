@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1b3139db8b217dceb495f67e809eae8319eae0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735706"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508499"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas de acciones de dispositivo en Intune
 
@@ -31,7 +32,7 @@ Microsoft Intune tiene muchas acciones que le ayudan a administrar los dispositi
 ## <a name="bypass-activation-lock-action"></a>Acción Omitir bloqueo de activación
 
 ### <a name="i-clicked-the-bypass-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Hago clic en la acción "omitir Bloqueo de activación" en el portal, pero no ocurrió nada en el dispositivo.
-Esto es normal. Después de iniciar la acción de omitir Bloqueo de activación, Intune solicita un código actualizado de Apple. Escribirá manualmente el código en el campo de código de acceso después de que el dispositivo esté en la pantalla de Bloqueo de activación. Este código solo es válido durante 15 días, por lo que debe asegurarse de hacer clic en la acción y copiar el código antes de emitir el borrado.
+Esto es lo esperado. Después de iniciar la acción de omitir Bloqueo de activación, Intune solicita un código actualizado de Apple. Escribirá manualmente el código en el campo de código de acceso después de que el dispositivo esté en la pantalla de Bloqueo de activación. Este código solo es válido durante 15 días, por lo que debe asegurarse de hacer clic en la acción y copiar el código antes de emitir el borrado.
 
 ### <a name="why-dont-i-see-the-bypass-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>¿Por qué no veo el código de bypass Bloqueo de activación en la hoja de información general de hardware de mi dispositivo iOS?
 Los motivos más probables son:
@@ -53,7 +54,7 @@ No. Y no es necesario escribir los guiones.
 ## <a name="remove-devices-action"></a>Acción quitar dispositivos
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Cómo ¿qué inició una retirada/borrado?
-Vaya a **Intune** > **dispositivos** > **acciones de dispositivo** > Compruebe la columna **Iniciado por** .
+Vaya a **Intune**  > **dispositivos**  > **acciones de dispositivo** > Compruebe la columna **Iniciado por** .
 Si no ve ninguna entrada, lo más probable es que la persona que ha iniciado la acción sea el usuario del dispositivo. Probablemente usaban la aplicación Portal de empresa o portal.manage.microsoft.com.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>¿Por qué no se desinstaló la aplicación después de usar retirar?
@@ -68,7 +69,7 @@ Este comportamiento es normal. Google no permite el restablecimiento de fábrica
 Dado que la retirada de un dispositivo no revoca los tokens de acceso. Puede usar las directivas de acceso condicional para mitigar esta situación.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>¿Cómo se puede supervisar una acción de retirada/borrado después de su emisión?
-Vaya a **Intune** > **dispositivos** > **acciones de dispositivo**.
+Vaya a **Intune**  > **dispositivos**  > **acciones de dispositivo**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>¿Por qué algunas veces los borradores aparecen como pendientes indefinidamente?
 Los dispositivos no siempre notifican su estado al servicio de Intune antes de que se iniciara el restablecimiento. Por lo tanto, la acción se muestra como pendiente. Si ha confirmado que la acción se ha realizado correctamente, elimine el dispositivo del servicio.

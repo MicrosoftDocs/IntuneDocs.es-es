@@ -5,9 +5,10 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d1d0c52db57ca6b41c399aeefc948735eea0af
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830529"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503493"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -547,15 +548,6 @@ Si la aplicación tiene su propia experiencia de usuario de PIN, es posible que 
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Ejemplo: determine si se requiere un PIN para la aplicación
-
-Si la aplicación tiene su propia experiencia de usuario de PIN, es posible que desee deshabilitarla si el administrador de TI configuró el SDK para solicitar un PIN de aplicación. Con el fin de determinar si el administrador de TI implementó la directiva de PIN de esta aplicación para el usuario final actual, llame al método siguiente:
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
-
 ### <a name="example-determine-the-primary-intune-user"></a>Ejemplo: determine el usuario primario de Intune
 
 Además de las API expuestas en AppPolicy, el nombre principal de usuario (**UPN**) también lo expone la API `getPrimaryUser()` definida dentro de la interfaz `MAMUserInfo`. Para obtener el UPN, llame a lo siguiente:
@@ -602,7 +594,7 @@ El parámetro `service` debe ser uno de los siguientes valores `SaveLocation`:
 - `SaveLocation.LOCAL`
 - `SaveLocation.OTHER`
 
-`username` debe ser el UPN/nombre de usuario/correo electrónico asociado al servicio en la nube en donde se guarda (*no* necesariamente igual al usuario propietario del documento que se guarda). Use NULL si no existe una asignación entre el UPN de AAD y el nombre de usuario del servicio en la nube o si no se conoce el nombre de usuario. `SaveLocation.LOCAL` no es un servicio en la nube y, por lo tanto, siempre debe usarse con un parámetro de nombre de usuario `null`.
+`username` debe ser el UPN/nombre de usuario/correo electrónico asociado al servicio en la nube en donde se guarda (*no* necesariamente igual al usuario propietario del documento que se guarda). Use NULL si no existe una asignación entre el UPN de AAD y el nombre de usuario del servicio en la nube o si no se conoce el nombre de usuario. `SaveLocation.LOCAL` no es un servicio en la nube y, por tanto, siempre debe usarse con un parámetro de nombre de usuario `null`.
 
 El método anterior para determinar si la directiva de un usuario le permite guardar datos en diversas ubicaciones era `getIsSaveToPersonalAllowed()` dentro de la misma **AppPolicy**. Esta función está **en desuso** y no se debe usar; la invocación siguiente equivale a `getIsSaveToPersonalAllowed()`:
 
@@ -624,7 +616,7 @@ NotificationRestriction notificationRestriction =
 
 Si la restricción es `BLOCKED`, la aplicación no debe mostrar ninguna notificación para el usuario asociado a esta Directiva. Si `BLOCK_ORG_DATA`, la aplicación debe mostrar una notificación modificada que no contenga los datos de la organización. Si `UNRESTRICTED`, se permiten todas las notificaciones.
 
-Si no se invoca `getNotificationRestriction`, el SDK de MAM realizará el mejor esfuerzo para restringir automáticamente las notificaciones para las aplicaciones de identidad única. Si se habilita el bloqueo automático y se establece `BLOCK_ORG_DATA`, la notificación no se mostrará en absoluto. Para un control más específico, compruebe el valor de `getNotificationRestriction` y modifique las notificaciones de la aplicación correctamente.
+Si no se invoca `getNotificationRestriction`, el SDK de MAM realizará el mejor esfuerzo para restringir automáticamente las notificaciones para las aplicaciones de identidad única. Si está habilitado el bloqueo automático y `BLOCK_ORG_DATA` está establecido, la notificación no se mostrará en absoluto. Para un control más específico, compruebe el valor de `getNotificationRestriction` y modifique las notificaciones de la aplicación correctamente.
 
 ## <a name="register-for-notifications-from-the-sdk"></a>Registrarse para recibir notificaciones del SDK
 
@@ -681,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 Las siguientes notificaciones se envían a la aplicación y es posible que algunas de ellas necesiten que participe la aplicación:
 
-* **WIPE_USER_DATA**: esta notificación se envía en una clase `MAMUserNotification`. Cuando se recibe esta notificación, la aplicación *debe* eliminar todos los datos asociados a la identidad administrada (de `MAMUserNotification.getUserIdentity()`). La notificación puede producirse por diversos motivos, como cuando la aplicación llama a `unregisterAccountForMAM`, cuando un administrador de ti inicia un borrado o cuando no se cumplen las directivas de acceso condicional requeridas por el administrador. Si la aplicación no se registra para esta notificación, se realizará el comportamiento de borrado predeterminado. El comportamiento predeterminado eliminará todos los archivos de una aplicación de identidad única o todos los archivos etiquetados con la identidad administrada para una aplicación de varias identidades. Esta notificación nunca se enviará en el subproceso de la interfaz de usuario.
+* **WIPE_USER_DATA**: esta notificación se envía en una clase `MAMUserNotification`. Cuando se recibe esta notificación, la aplicación *debe* eliminar todos los datos asociados a la identidad administrada (desde `MAMUserNotification.getUserIdentity()`). La notificación puede producirse por diversos motivos, como cuando la aplicación llama a `unregisterAccountForMAM`, cuando un administrador de ti inicia un borrado o cuando no se cumplen las directivas de acceso condicional requeridas por el administrador. Si la aplicación no se registra para esta notificación, se realizará el comportamiento de borrado predeterminado. El comportamiento predeterminado eliminará todos los archivos de una aplicación de identidad única o todos los archivos etiquetados con la identidad administrada para una aplicación de varias identidades. Esta notificación nunca se enviará en el subproceso de la interfaz de usuario.
 
 * **WIPE_USER_AUXILIARY_DATA**: las aplicaciones pueden registrarse para esta notificación si quieren que el SDK para aplicaciones de Intune realice el comportamiento predeterminado de eliminación selectiva, pero les gustaría quitar algunos datos auxiliares cuando se produzca la eliminación. Esta notificación no está disponible para aplicaciones de identidad única; solo se enviará a las aplicaciones de varias identidades. Esta notificación nunca se enviará en el subproceso de la interfaz de usuario.
 
@@ -978,7 +970,7 @@ La primera vez que se registra una cuenta, comienza con el estado `PENDING`, lo 
 | `NOT_LICENSED` | El usuario no cuenta con licencia para Intune, o bien se produjo un error al intentar ponerse en contacto con el servicio MAM de Intune.  La aplicación debe continuar con un estado no administrado (normal) y no se debe bloquear el usuario.  Las inscripciones se reintentarán periódicamente ante la eventualidad de que el usuario obtenga una licencia en el futuro. |
 | `ENROLLMENT_SUCCEEDED` | El intento de inscripción se completó con éxito, o bien el usuario ya está inscrito.  En caso de que se trate de una inscripción correcta, se enviará una notificación de actualización de política antes de esta notificación.  Se debe permitir el acceso a los datos corporativos. |
 | `ENROLLMENT_FAILED` | Error al intentar la inscripción.  Puede encontrar más detalles en los registros del dispositivo.  En este estado, la aplicación no debe permitir el acceso a los datos corporativos, ya que anteriormente se determinó que el usuario no tiene licencia para Intune.|
-| `WRONG_USER` | Solo un usuario por dispositivo puede inscribir una aplicación con el servicio MAM. Este resultado indica que el usuario para el que se entregó este resultado (el segundo usuario) está destinada a la Directiva de MAM, pero otro usuario ya está inscrito. Dado que no se puede aplicar la Directiva de MAM para el segundo usuario, la aplicación no debe permitir el acceso a los datos de este usuario (posiblemente mediante la eliminación del usuario de la aplicación) a menos que la inscripción de este usuario se realice en un momento posterior. Al mismo tiempo que proporciona este `WRONG_USER`, MAM le pedirá la opción de quitar la cuenta existente. Si el usuario humano responde en la respuesta afirmativa, será posible inscribir el segundo usuario una vez más tarde. Siempre que el segundo usuario permanezca registrado, MAM volverá a intentar la inscripción periódicamente. |
+| `WRONG_USER` | Solo un usuario por dispositivo puede inscribir una aplicación con el servicio MAM. Este resultado indica que el usuario para el que se entregó este resultado (el segundo usuario) está destinada a la Directiva de MAM, pero otro usuario ya está inscrito. Dado que no se puede aplicar la Directiva de MAM para el segundo usuario, la aplicación no debe permitir el acceso a los datos de este usuario (posiblemente mediante la eliminación del usuario de la aplicación) a menos que la inscripción de este usuario se realice en un momento posterior. Al mismo tiempo que proporciona este `WRONG_USER` resultado, MAM le pedirá la opción de quitar la cuenta existente. Si el usuario humano responde en la respuesta afirmativa, será posible inscribir el segundo usuario una vez más tarde. Siempre que el segundo usuario permanezca registrado, MAM volverá a intentar la inscripción periódicamente. |
 | `UNENROLLMENT_SUCCEEDED` | La anulación de inscripción se realizó correctamente.|
 | `UNENROLLMENT_FAILED` | Error en la solicitud de anulación de inscripción.  Puede encontrar más detalles en los registros del dispositivo. En general, esto no ocurrirá siempre que la aplicación pase un UPN válido (ni nulo ni vacío). No hay ninguna corrección directa y confiable que pueda tomar la aplicación. Si se recibe este valor al anular el registro de un UPN válido, notifique como un error al equipo de MAM de Intune.|
 | `PENDING` | El intento de inscripción inicial para el usuario está en curso.  La aplicación puede bloquear el acceso a los datos corporativos hasta que se conozca el resultado de la inscripción, pero no es necesario que lo haga. |
@@ -1119,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>Notas de implementación
 > [!NOTE]
 > **Cambio importante.**  <br>
-> El método `MAMServiceAuthenticationCallback.acquireToken()` de la aplicación debe pasar el *valor false* para la nueva marca `forceRefresh` a `acquireTokenSilentSync()`.
+> El método de `MAMServiceAuthenticationCallback.acquireToken()` de la aplicación debe pasar *false* para la nueva marca de `forceRefresh` a `acquireTokenSilentSync()`.
 > Anteriormente, se recomienda pasar *true* para solucionar un problema con la actualización de tokens del agente, pero se encontró un problema con Adal que podía impedir la adquisición de tokens en algunos escenarios si esta marca es *true*.
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);
@@ -1321,7 +1313,7 @@ Todos los métodos usados para establecer la identidad devuelven valores de resu
 
 La aplicación debe garantizar que un cambio de identidad se realice correctamente antes de mostrar o usar datos corporativos. Actualmente, los cambios de identidad de proceso y subproceso siempre se realizarán correctamente para una aplicación compatible con varias identidades. Sin embargo, nos reservamos el derecho a agregar condiciones de error. El cambio de identidad de UI podría presentar un error si los argumentos no son válidos, si entrara en conflicto con la identidad de subproceso o si el usuario cancelara los requisitos de inicio condicional (por ejemplo, si presiona el botón Atrás en la pantalla del PIN). El comportamiento predeterminado de un cambio de identidad de interfaz de usuario con error en una actividad es finalizar la actividad (vea `onSwitchMAMIdentityComplete` a continuación).
 
-En el caso de establecer una identidad `Context` mediante `setUIPolicyIdentity`, el resultado se notifica de forma asincrónica. Si `Context` es `Activity`, el SDK no sabe si el cambio de identidad se ha realizado correctamente hasta después de realizar el inicio condicional, lo que puede requerir que el usuario escriba un PIN o sus credenciales corporativas. La aplicación puede implementar un `MAMSetUIIdentityCallback` para recibir este resultado o puede pasar null para el objeto de devolución de llamada. Tenga en cuenta que si se realiza una llamada a `setUIPolicyIdentity` mientras el resultado de una llamada anterior a `setUIPolicyIdentity` *en el mismo contexto* aún no se ha entregado, la nueva devolución de llamada reemplazará a la antigua y la devolución de llamada original nunca recibirá un resultado.
+En el caso de establecer una identidad `Context` mediante `setUIPolicyIdentity`, el resultado se notifica de forma asincrónica. Si `Context` es `Activity`, el SDK no sabe si el cambio de identidad se ha realizado correctamente hasta después de realizar el inicio condicional, lo que puede requerir que el usuario escriba un PIN o sus credenciales corporativas. La aplicación puede implementar un `MAMSetUIIdentityCallback` para recibir este resultado o puede pasar null para el objeto de devolución de llamada. Tenga en cuenta que si se realiza una llamada a `setUIPolicyIdentity` mientras que el resultado de una llamada anterior a `setUIPolicyIdentity` *en el mismo contexto* aún no se ha entregado, la nueva devolución de llamada reemplazará a la antigua y la devolución de llamada original nunca recibirá un resultado.
 
 ```java
     public interface MAMSetUIIdentityCallback {
@@ -1756,7 +1748,7 @@ enum StringQueryType {
 
 La aplicación también puede solicitar los datos sin procesar como una lista de conjuntos de pares clave-valor.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 

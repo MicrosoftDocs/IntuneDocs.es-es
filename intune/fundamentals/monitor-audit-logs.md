@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736304"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585239"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Uso de registros de auditoría para realizar un seguimiento y supervisar eventos en Microsoft Intune
 
@@ -49,7 +50,8 @@ También se pueden enrutar registros de auditoría y registros operativos a Azur
 
 ![Exportación de datos de registro en Azure Monitor seleccionando Exportar configuración de datos en Intune](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-Para más información sobre esta característica, consulte [Envío de datos de registro al almacenamiento, a Event Hubs o a Log Analytics](review-logs-using-azure-monitor.md).
+> [!NOTE]
+> Para más información sobre esta característica y para revisar los requisitos previos para usarla, consulte [envío de datos de registro a Storage, Event hubs o log Analytics](review-logs-using-azure-monitor.md).
 
 ## <a name="review-audit-events"></a>Revisión de eventos de auditoría
 
@@ -67,11 +69,11 @@ Un registro de auditoría tiene una vista de lista predeterminada que muestra lo
 
 Para ver información más específica sobre un evento, seleccione un elemento de la lista:
 
-![Obtener información más específica sobre quiénes hicieron qué en registro de auditoría de Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "Detalles del registro de auditoría")
+![Obtener información más específica sobre quiénes hicieron qué en registro de auditoría de Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
 
 > [!NOTE]
 > **Iniciado por (actor)** incluye información sobre quién ejecutó la tarea y sobre dónde se ejecutó. Por ejemplo, si ejecuta la actividad en Intune en Azure Portal, como **Aplicación** siempre figura **Extensión del portal de Microsoft Intune** y como **Id. de aplicación** siempre se usa el mismo GUID.
-> 
+>
 > La sección **Destinos** muestra varios destinos y las propiedades que cambiaron.  
 
 ## <a name="filter-audit-events"></a>Filtrado de eventos de auditoría

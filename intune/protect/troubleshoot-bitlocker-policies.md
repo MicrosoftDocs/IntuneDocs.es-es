@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 197ad888dc8a07cc35efbaec538fde93c76c81c3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 440eb2d457783ac71b905d064a6d83abaa966cfe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817630"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503922"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Solucionar problemas de directivas de BitLocker en Microsoft Intune
 
@@ -32,9 +33,9 @@ El cifrado de unidad BitLocker es un servicio ofrecido por los sistemas operativ
 
 Con Microsoft Intune, tiene los siguientes métodos para administrar BitLocker en dispositivos Windows 10:
 
-- **Directivas de configuración de dispositivos** : algunas opciones de directiva integrada están disponibles en la consola de administración de Intune en **configuración de dispositivo** > **Endpoint Protection** **Directiva de cifrado de Windows** > . Puede encontrar todos los conmutadores y características disponibles aquí: [cifrado de Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+- **Directivas de configuración de dispositivos** : algunas opciones de directiva integrada están disponibles en la consola de administración de Intune en **configuración de dispositivos**  > **Endpoint Protection**  > **Directiva de cifrado de Windows**. Puede encontrar todos los conmutadores y características disponibles aquí: [cifrado de Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
-- **Líneas base de seguridad** -  las[líneas de base de seguridad](security-baselines.md) son grupos conocidos de configuración y valores predeterminados recomendados por el equipo de seguridad relevante para ayudar a proteger los dispositivos Windows. Distintos orígenes de línea base, como la línea de base de *seguridad de MDM* o la línea de base de *ATP de Microsoft defender* , pueden administrar la misma configuración que la otra. También pueden administrar la misma configuración que administra con las directivas de configuración de dispositivos. 
+- Las **líneas base de seguridad**  - [líneas de base de seguridad](security-baselines.md) son grupos conocidos de configuración y valores predeterminados que el equipo de seguridad pertinente recomienda para ayudar a proteger los dispositivos Windows. Distintos orígenes de línea base, como la línea de base de *seguridad de MDM* o la línea de base de *ATP de Microsoft defender* , pueden administrar la misma configuración que la otra. También pueden administrar la misma configuración que administra con las directivas de configuración de dispositivos. 
 
 Además de Intune, es posible que la configuración de BitLocker esté administrada por otros medios, como directiva de grupo, o que un usuario del dispositivo establezca manualmente.
 
@@ -59,21 +60,21 @@ Como primer paso, determine si la Directiva de Intune se ha implementado correct
 
 ### <a name="device-configuration-policy-device-status"></a>Estado del dispositivo de directiva de configuración de dispositivos  
 
-Al usar la Directiva de configuración de dispositivos para configurar BitLocker, puede comprobar el estado de la Directiva en el portal de Intune. En el portal, vaya a **configuración de dispositivo** > **perfiles** > seleccione el perfil que contiene la configuración de BitLocker y, a continuación, seleccione **Estado del dispositivo**. Los dispositivos asignados al perfil aparecen en la lista y la columna *Estado del dispositivo* indica si un dispositivo ha implementado correctamente el perfil. 
+Al usar la Directiva de configuración de dispositivos para configurar BitLocker, puede comprobar el estado de la Directiva en el portal de Intune. En el portal, vaya a **configuración del dispositivo**  > **perfiles** > seleccione el perfil que contiene la configuración de BitLocker y, a continuación, seleccione **Estado del dispositivo**. Los dispositivos asignados al perfil aparecen en la lista y la columna *Estado del dispositivo* indica si un dispositivo ha implementado correctamente el perfil. 
 
 Recuerde que puede haber un retraso entre un dispositivo que recibe una directiva de BitLocker y que la unidad está totalmente cifrada.  
 
  
 ### <a name="use-control-panel-on-the-client"></a>Usar el panel de control en el cliente  
 
-En un dispositivo que ha habilitado BitLocker y cifrado una unidad, puede ver el estado de BitLocker desde un panel de control de dispositivos. En el dispositivo, abra el **Panel de Control** > **sistema y seguridad** > **cifrado de unidad BitLocker**. La confirmación aparece como se muestra en la siguiente imagen.  
+En un dispositivo que ha habilitado BitLocker y cifrado una unidad, puede ver el estado de BitLocker desde un panel de control de dispositivos. En el dispositivo, abra el **Panel de Control**  > **sistema y seguridad**  > **cifrado de unidad BitLocker**. La confirmación aparece como se muestra en la siguiente imagen.  
 
 ![BitLocker está activado en el panel de control](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
 ### <a name="use-a-command-prompt"></a>Uso de un símbolo del sistema  
 
-En un dispositivo que haya habilitado BitLocker y que haya cifrado una unidad, inicie el símbolo del sistema con credenciales de administrador y, a continuación, ejecute `manage-bde -status`. Los resultados deberían ser similares al ejemplo siguiente:  
-![A resultado del comando de estado](./media/troubleshooting-bitlocker-policies/command.png)
+En un dispositivo que haya habilitado BitLocker y que haya cifrado una unidad, inicie el símbolo del sistema con credenciales de administrador y, a continuación, ejecute `manage-bde -status`. El resultado debería ser similar al ejemplo siguiente:  
+![A resultado del comando status ](./media/troubleshooting-bitlocker-policies/command.png)
 
 En el ejemplo: 
 - La **protección de BitLocker** está **activada**,  
@@ -150,7 +151,7 @@ La **Directiva está presente pero no toda la configuración se configuró corre
   La Directiva se refiere a un dispositivo como una sola unidad, por lo que si se aplican algunas opciones de configuración y otras no, puede estar seguro de que se recibe la propia Directiva. En este escenario, es posible que la versión de Windows del dispositivo no admita la configuración problemática. Consulte [CSP de BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) en la documentación de Windows para obtener más información sobre los requisitos de versión de cada opción.  
 
   1. **BitLocker no se admite en todo el hardware**.  
-  Incluso si tiene la versión correcta de Windows, es posible que el hardware del dispositivo subyacente no cumpla los requisitos del cifrado de BitLocker. Puede encontrar los [requisitos del sistema para BitLocker (https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) en la documentación de Windows, pero lo principal que debe comprobar es que el dispositivo tiene un chip TPM compatible (1,2 o posterior) y un BIOS compatible con Trusted Computing Group (TCG) o firmware UEFI.
+  Incluso si tiene la versión correcta de Windows, es posible que el hardware del dispositivo subyacente no cumpla los requisitos del cifrado de BitLocker. Puede encontrar los [requisitos del sistema para BitLocker (https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) en la documentación de Windows, pero lo principal que debe comprobar es que el dispositivo tiene un chip TPM compatible (1,2 o posterior) y un firmware UEFI o BIOS compatible con Trusted Computing Group (TCG).
 
 **Ejemplo de investigación** : puede implementar una directiva de BitLocker en un dispositivo de Windows 10 y la configuración **cifrar dispositivos** muestra un estado de **error** en el portal.
 
@@ -168,7 +169,7 @@ La **Directiva está presente pero no toda la configuración se configuró corre
 
 - Dado que BitLocker se basa en TPM, podría concluir que BitLocker no genera un error debido a un problema con Intune o la Directiva, pero en lugar de que el dispositivo no tenga un chip TPM o TPM esté deshabilitado en el BIOS.
 
-  Como sugerencia adicional, puede confirmar lo mismo en el Visor de eventos de Windows en el **registro de aplicaciones y servicios** > **Windows** > **API de BitLocker**. En el registro de eventos de la **API de BitLocker** , encontrará un identificador de evento 853 que significa que TPM no está disponible:
+  Como sugerencia adicional, puede confirmar lo mismo en el Visor de eventos de Windows en el **registro de aplicaciones y servicios**  >  la**API**de**Windows**  >  BitLocker. En el registro de eventos de la **API de BitLocker** , encontrará un identificador de evento 853 que significa que TPM no está disponible:
 
   ![Id. de evento 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

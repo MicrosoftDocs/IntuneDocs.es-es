@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f462b04166a2204d47f288d225e1490f8d3ea2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0be7627403cc95316a99e841127a137e0279ff1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736031"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508971"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Windows para Intune
 Vea la configuración de línea de base de seguridad de MDM compatible con Microsoft Intune para dispositivos que ejecutan Windows 10 o posterior. Los valores predeterminados de la configuración de esta línea base representan la configuración recomendada para los dispositivos aplicables y es posible que no coincidan con los valores predeterminados de línea base de otras líneas de base de seguridad o desde otras versiones de esta línea base.
@@ -171,19 +172,19 @@ Para más información, vea [Policy CSP - Bitlocker](https://docs.microsoft.com/
 Para más información, vea [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) (CSP de directiva: Browser) en la documentación de Windows.  
 
 - **Require SmartScreen for Microsoft Edge** (Requerir SmartScreen para Microsoft Edge)  
-  Microsoft Edge usa SmartScreen de Windows Defender (activado) para proteger a los usuarios de software malintencionado y posibles estafas de suplantación de identidad de forma predeterminada. Además, de forma predeterminada, los usuarios no pueden deshabilitar (desactivar) SmartScreen de Windows Defender. Si habilita esta directiva se desactiva SmartScreen de Windows Defender y se impide que los usuarios lo activen. No configure esta directiva para permitir que los usuarios puedan elegir activar o desactivar SmartScreen de Windows Defender.  
+  Microsoft Edge usa SmartScreen de Microsoft Defender (activado) para proteger a los usuarios de software malintencionado y posibles estafas de suplantación de identidad de forma predeterminada. Además, de forma predeterminada, los usuarios no pueden deshabilitar (desactivar) SmartScreen de Microsoft Defender. Si habilita esta directiva se desactiva SmartScreen de Microsoft Defender y se impide que los usuarios lo activen. No configure esta directiva para permitir que los usuarios puedan elegir activar o desactivar SmartScreen de Microsoft Defender.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **Valor predeterminado**: Sí  
   
 - **Block malicious site access** (Bloquear el acceso a sitios malintencionados)  
-  De forma predeterminada, Microsoft Edge permite a los usuarios omitir las advertencias de SmartScreen de Windows Defender sobre sitios potencialmente malintencionados, lo que les permite continuar al sitio. Pero con esta directiva puede configurar Microsoft Edge para evitar que los usuarios omitan las advertencias, e impedir que continúen al sitio.  
+  De forma predeterminada, Microsoft Edge permite a los usuarios omitir las advertencias de SmartScreen de Microsoft Defender sobre sitios potencialmente malintencionados, lo que les permite continuar al sitio. Pero con esta directiva puede configurar Microsoft Edge para evitar que los usuarios omitan las advertencias, e impedir que continúen al sitio.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **Valor predeterminado**: Sí  
   
 - **Block unverified file download** (Bloquear la descarga de archivos no comprobados)  
-  De forma predeterminada, Microsoft Edge permite a los usuarios omitir las advertencias de SmartScreen de Windows Defender sobre archivos potencialmente malintencionados, lo que les permite continuar con la descarga de los archivos no comprobados. Al habilitar esta directiva se impide que los usuarios omitan las advertencias, y se les impide que descarguen los archivos no comprobados.  
+  De forma predeterminada, Microsoft Edge permite a los usuarios omitir las advertencias de SmartScreen de Microsoft Defender sobre archivos potencialmente malintencionados, lo que les permite continuar con la descarga de los archivos no comprobados. Al habilitar esta directiva se impide que los usuarios omitan las advertencias, y se les impide que descarguen los archivos no comprobados.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **Valor predeterminado**: Sí  
@@ -272,8 +273,8 @@ Para más información, vea [Policy CSP - DeviceGuard](https://docs.microsoft.co
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **seguridad basada en la virtualización** 
-  **valor predeterminado**: habilitar vbs con arranque seguro
+- **seguridad basada en la virtualización**  
+  **predeterminada**: habilitar vbs con arranque seguro
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
@@ -1395,7 +1396,7 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   **Valor predeterminado**: Sí
 
 - **Virtualizar los errores de escritura de archivo y del Registro a ubicaciones por usuario**  
-  Esta configuración de directiva controla si se redireccionan los errores de escritura de aplicaciones a ubicaciones definidas en el Registro y el sistema de archivos. Esta configuración de directiva mitiga las aplicaciones que se ejecutan como administrador y que escriben los datos de aplicaciones en tiempo de ejecución en *%ProgramFiles%*, *%Windir%*, *%Windir%\system32* o *HKLM\Software*.  
+  Esta configuración de directiva controla si se redireccionan los errores de escritura de aplicaciones a ubicaciones definidas en el Registro y el sistema de archivos. Esta configuración de directiva mitiga las aplicaciones que se ejecutan como administrador y que escriben los datos de aplicaciones en tiempo de ejecución en *%ProgramFiles%* , *%Windir%* , *%Windir%\system32* o *HKLM\Software*.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067321)  
   
   **Valor predeterminado**: Sí
@@ -1525,7 +1526,7 @@ Para más información, vea [Policy CSP - RemoteDesktopServices](https://docs.mi
   **Valor predeterminado**: Habilitado
   
 - **Block drive redirection** (Bloquear la redirección de unidad)  
-  Esta configuración de directiva especifica si se debe impedir la asignación de unidades cliente en una sesión de Servicios de Escritorio remoto (redirección de unidad). De forma predeterminada, el servidor host de sesión de Escritorio remoto asigna unidades cliente automáticamente al conectarse. Las unidades asignadas aparecen en el árbol de carpetas de sesión en el Explorador de archivos o en Equipo con el formato *\<letraDeUnidad>* en *\<nombreDeEquipo>*. Puede usar esta directiva para invalidar este comportamiento. Si habilita esta configuración de directiva, no se permitirá la redirección de unidades cliente en sesiones de Servicios de Escritorio remoto ni se permitirá la redirección de copias de archivos del Portapapeles en equipos que ejecuten Windows Server 2003, Windows 8 y Windows XP. Si deshabilita esta configuración de directiva, se permitirá siempre la redirección de unidades cliente. Además, la redirección de copias de archivo del Portapapeles siempre se permite si se permite la redirección del Portapapeles. Si no establece esta configuración de directiva, la redirección de unidades cliente y la redirección de copias de archivo del Portapapeles no se especificarán en el nivel de directiva de grupo.  
+  Esta configuración de directiva especifica si se debe impedir la asignación de unidades cliente en una sesión de Servicios de Escritorio remoto (redirección de unidad). De forma predeterminada, el servidor host de sesión de Escritorio remoto asigna unidades cliente automáticamente al conectarse. Las unidades asignadas aparecen en el árbol de carpetas de sesión en el Explorador de archivos o en Equipo con el formato *\<letraDeUnidad>* en *\<nombreDeEquipo>* . Puede usar esta directiva para invalidar este comportamiento. Si habilita esta configuración de directiva, no se permitirá la redirección de unidades cliente en sesiones de Servicios de Escritorio remoto ni se permitirá la redirección de copias de archivos del Portapapeles en equipos que ejecuten Windows Server 2003, Windows 8 y Windows XP. Si deshabilita esta configuración de directiva, se permitirá siempre la redirección de unidades cliente. Además, la redirección de copias de archivo del Portapapeles siempre se permite si se permite la redirección del Portapapeles. Si no establece esta configuración de directiva, la redirección de unidades cliente y la redirección de copias de archivo del Portapapeles no se especificarán en el nivel de directiva de grupo.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067197)  
   
   **Valor predeterminado**: Habilitado
@@ -1670,7 +1671,7 @@ Para más información, vea [Policy CSP - WindowsConnectionManager](https://docs
 
   **Valor predeterminado**: Habilitado
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (CSP de directiva: Defender) en la documentación de Windows.  
 
 - **Examinar mensajes de correo entrante**  
@@ -1686,7 +1687,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Bloquear
   
 - **Defender sample submission consent type** (Tipo de consentimiento de envío de muestra de Windows Defender)  
-  Comprueba el nivel de consentimiento del usuario en Windows Defender para enviar datos. Si ya se ha concedido el consentimiento requerido, Windows Defender los envía. En caso contrario (y si el usuario ha especificado que no se pida nunca) se inicia la interfaz de usuario para solicitar el consentimiento del usuario (cuando se permite Defender/AllowCloudProtection) antes de enviar los datos.  
+  Comprueba el nivel de consentimiento del usuario en Microsoft Defender para enviar datos. Si ya se ha concedido el consentimiento requerido, Microsoft Defender los envía. En caso contrario (y si el usuario ha especificado que no se pida nunca) se inicia la interfaz de usuario para solicitar el consentimiento del usuario (cuando se permite Defender/AllowCloudProtection) antes de enviar los datos.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **Valor predeterminado**: Enviar muestras seguras automáticamente 
@@ -1702,7 +1703,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Bloquear
   
 - **Prevent credential stealing type** (Impedir el tipo de robo de credenciales)  
-  Credential Guard de Windows Defender usa la seguridad basada en virtualización para aislar los secretos de forma que solo el software de sistema con privilegios pueda acceder a ellos. El acceso no autorizado a estos secretos puede conducir a ataques de robo de credenciales, como pass-the-hash o pass-the-ticket. Credential Guard de Windows Defender impide estos ataques mediante la protección de los hash de contraseña NTLM, los vales de concesión de vales de Kerberos y las credenciales almacenadas por las aplicaciones como credenciales de dominio.  
+  Credential Guard de Microsoft Defender usa la seguridad basada en virtualización para aislar los secretos de forma que solo el software de sistema con privilegios pueda acceder a ellos. El acceso no autorizado a estos secretos puede conducir a ataques de robo de credenciales, como pass-the-hash o pass-the-ticket. Credential Guard de Microsoft Defender impide estos ataques mediante la protección de los hash de contraseña NTLM, los vales de concesión de vales de Kerberos y las credenciales almacenadas por las aplicaciones como credenciales de dominio.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Valor predeterminado**: Habilitar
@@ -1721,9 +1722,9 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Tipo de protección de red**  
-  Esta directiva permite activar o desactivar la protección de red (Bloquear o Auditar) en Protección contra vulnerabilidades de seguridad de Windows Defender. Protección de red es una característica de Protección contra vulnerabilidades de seguridad de Windows Defender que evita que los empleados que usan una aplicación accedan a estafas de suplantación de identidad, sitios que hospedan vulnerabilidades de seguridad y contenido malintencionado en Internet. Esto incluye impedir que exploradores de terceros se conecten a sitios peligrosos. El tipo de valor es entero. Si habilita esta configuración, se activa la protección de red y los empleados no podrán desactivarla. Este comportamiento se puede controlar mediante las opciones siguientes: Bloquear y Auditar. Si habilita esta directiva con la opción "Bloquear", se impide que usuarios y aplicaciones se conecten a dominios peligrosos. Podrá ver esta actividad en el Centro de seguridad de Windows Defender. Si habilita esta directiva con la opción "Auditar", no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. Pero podrá seguir viendo esta actividad en el Centro de seguridad de Windows Defender. Si deshabilita esta directiva, no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. No verá ninguna actividad de red en el Centro de seguridad de Windows Defender. Si no configura esta directiva, se deshabilitará el bloqueo de la red de forma predeterminada.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067102)  
+- **Protección de red**  
+  Esta directiva permite activar o desactivar la protección de red (Bloquear o Auditar) en Protección contra vulnerabilidades de seguridad de Microsoft Defender. Protección de red es una característica de Protección contra vulnerabilidades de seguridad de Microsoft Defender que evita que los empleados que usan una aplicación accedan a estafas de suplantación de identidad, sitios que hospedan vulnerabilidades de seguridad y contenido malintencionado en Internet. Esto incluye impedir que exploradores de terceros se conecten a sitios peligrosos. El tipo de valor es entero. Si habilita esta configuración, se activa la protección de red y los empleados no podrán desactivarla. Este comportamiento se puede controlar mediante las opciones siguientes: Bloquear y Auditar. Si habilita esta directiva con la opción "Bloquear", se impide que usuarios y aplicaciones se conecten a dominios peligrosos. Podrá ver esta actividad en el Centro de seguridad de Microsoft Defender. Si habilita esta directiva con la opción "Auditar", no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. Pero podrá seguir viendo esta actividad en el Centro de seguridad de Microsoft Defender. Si deshabilita esta directiva, no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. No verá ninguna actividad de red en el Centro de seguridad de Microsoft Defender. Si no configura esta directiva, se deshabilitará el bloqueo de la red de forma predeterminada.  
+  [Más información](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Valor predeterminado**: Habilitar
   
@@ -1733,13 +1734,13 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Todos los días
   
 - **Protección que proporciona la nube**  
-  Para proteger mejor el PC, Windows Defender enviará información a Microsoft sobre los problemas que encuentre. Microsoft analizará esa información, obtendrá detalles sobre los problemas que le afectan a usted y a otros clientes, y ofrecerá soluciones mejoradas.  
+  Para proteger mejor el PC, Microsoft Defender enviará información a Microsoft sobre los problemas que encuentre. Microsoft analizará esa información, obtendrá detalles sobre los problemas que le afectan a usted y a otros clientes, y ofrecerá soluciones mejoradas.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **Valor predeterminado**: Sí  
 
 - **Defender potentially unwanted app action** (Acción frente a aplicaciones potencialmente no deseadas de Windows Defender)  
-  La característica de protección frente a aplicaciones potencialmente no deseadas (PUA) del Antivirus de Windows Defender puede identificar aplicaciones PUA e impedir que se descarguen e instalen en puntos de conexión de la red. Estas aplicaciones no se consideran virus, malware u otro tipo de amenazas, pero es posible que realicen acciones en los puntos de conexión que afecten de forma negativa a su rendimiento o uso. PUA también puede hacer referencia a las aplicaciones que se consideran que tienen una mala reputación. Incluye el comportamiento típico de las aplicaciones potencialmente no deseadas: varios tipos de paquetes de software que insertan anuncios en exploradores web, optimizadores de controladores y registros que detectan problemas y solicitan pagos para corregir los errores, pero permanecen en el punto de conexión y no realizan cambios ni optimizaciones (también conocidos como programas "antivirus fraudulentos"). Estas aplicaciones pueden aumentar el riesgo de que su red se infecte con malware, provocar que las infecciones de malware sean más difíciles de identificar y desperdiciar recursos de TI en la limpieza de las aplicaciones.  
+  La característica de protección frente a aplicaciones potencialmente no deseadas (PUA) del Antivirus de Microsoft Defender puede identificar aplicaciones PUA e impedir que se descarguen e instalen en puntos de conexión de la red. Estas aplicaciones no se consideran virus, malware u otro tipo de amenazas, pero es posible que realicen acciones en los puntos de conexión que afecten de forma negativa a su rendimiento o uso. PUA también puede hacer referencia a las aplicaciones que se consideran que tienen una mala reputación. Incluye el comportamiento típico de las aplicaciones potencialmente no deseadas: varios tipos de paquetes de software que insertan anuncios en exploradores web, optimizadores de controladores y registros que detectan problemas y solicitan pagos para corregir los errores, pero permanecen en el punto de conexión y no realizan cambios ni optimizaciones (también conocidos como programas "antivirus fraudulentos"). Estas aplicaciones pueden aumentar el riesgo de que su red se infecte con malware, provocar que las infecciones de malware sean más difíciles de identificar y desperdiciar recursos de TI en la limpieza de las aplicaciones.  
   [Más información](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **Valor predeterminado**: Bloquear  
@@ -1751,7 +1752,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Bloquear
   
 - **Examinar unidades extraíbles durante un examen completo**  
-  Permite que Windows Defender busque software malintencionado y no deseado en las unidades extraíbles (por ejemplo, unidades flash) durante un examen completo. Antivirus de Windows Defender examina todos los archivos en los dispositivos USB antes de la ejecución.  
+  Permite que Microsoft Defender busque software malintencionado y no deseado en las unidades extraíbles (por ejemplo, unidades flash) durante un examen completo. Antivirus de Microsoft Defender examina todos los archivos en los dispositivos USB antes de la ejecución.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **Valor predeterminado**: Sí  
@@ -1762,7 +1763,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Sí
   
 - **Supervisión de comportamiento**  
-  Permite o deshabilita la funcionalidad de supervisión del comportamiento de Windows Defender. Insertados en Windows 10, estos sensores recopilan y procesan las señales de comportamiento de procesos del sistema operativo y envían estos datos de sensor a la instancia de nube privada y aislada de ATP de Microsoft Defender.  
+  Permite o deniega la funcionalidad de supervisión de comportamiento de Microsoft defender. Insertados en Windows 10, estos sensores recopilan y procesan las señales de comportamiento de procesos del sistema operativo y envían estos datos de sensor a la instancia de nube privada y aislada de ATP de Microsoft Defender.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Valor predeterminado**: Sí
@@ -1816,7 +1817,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## <a name="windows-defender-firewall"></a>Firewall de Windows Defender  
+## <a name="microsoft-defender-firewall"></a>Firewall de Microsoft defender  
 Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) en la documentación sobre los protocolos de Windows.  
 
 - **Dominio de Perfil de Firewall**  
@@ -1985,11 +1986,11 @@ La configuración es alguna de las siguientes:
   - **Método de invitación por correo electrónico**
 
 
-*[Nuevo]* [**Windows Defender**](#windows-defender):
+*[Nuevo]* [**Microsoft Defender**](#microsoft-defender):
 - **Inicio de Adobe Reader en un proceso secundario**  
 - **Inicio de aplicaciones de comunicación de Office en un proceso secundario** 
 
-*[Nuevo]* [**Firewall de Windows Defender**](#windows-defender-firewall)
+*[Nuevo]* [ **firewall de Microsoft defender**](#microsoft-defender-firewall)
 - **Dominio de Perfil de Firewall**  
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
   - **Outbound connections required** (Conexiones salientes requeridas)  

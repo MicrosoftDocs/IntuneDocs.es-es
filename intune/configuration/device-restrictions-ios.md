@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcd86cedc7684f31483d7cd3c8294a76a9c306b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734913"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584888"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -140,12 +141,12 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos, inscripción de dispositivo automatizada (supervisado)
 
 > [!IMPORTANT]
-> En los dispositivos inscritos por el usuario, si configura cualquier opción de contraseña, la configuración de **contraseñas simples** se establece automáticamente en **bloquear**y se aplica un PIN de 6 dígitos.
+> En los dispositivos inscritos por usuarios, si configura cualquier opción de contraseña, la configuración de **Contraseñas sencillas** se establece automáticamente en **Bloquear** y se aplica un PIN de 6 dígitos.
 >
-> Por ejemplo, configure el valor de **expiración** de la contraseña e inserte esta directiva en los dispositivos inscritos por el usuario. En los dispositivos, ocurre lo siguiente:
+> Por ejemplo, configura el valor **Caducidad de la contraseña** e inserta esta directiva en dispositivos con usuarios inscritos. En los dispositivos, ocurre lo siguiente:
 >
-> - Se omite la configuración de **expiración** de la contraseña.
-> - No se permiten contraseñas simples, como `1111` o `1234`.
+> - Se omite el valor de **Caducidad de la contraseña**.
+> - No se permiten contraseñas sencillas, como `1111` o `1234`.
 > - Se aplica un PIN de 6 dígitos.
 
 - **Contraseñas sencillas**: elija **Bloquear** para exigir contraseñas más complejas. **No configurado** permite contraseñas sencillas, como `0000` y `1234`.
@@ -267,6 +268,11 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
   A partir de iOS 13,0, esta configuración requiere dispositivos supervisados.
 
+- **Acceso a la unidad de red en la aplicación de archivos**: mediante el protocolo de bloque de mensajes del servidor (SMB), los dispositivos pueden tener acceso a archivos u otros recursos de un servidor de red. **Deshabilitar** impide el acceso a archivos en una unidad SMB de red. **Sin configurar** (valor predeterminado) permite el acceso.
+
+  Esta característica se aplica a:  
+  - iOS y iPados 13,0 y versiones más recientes
+
 ## <a name="built-in-apps"></a>Aplicaciones integradas
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
@@ -377,7 +383,7 @@ Se aplica a dispositivos que ejecutan iOS 9,3 o posterior.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
-- **Tipo de lista de aplicaciones**: cree una lista de aplicaciones para mostrar u ocultar. Las opciones son:
+- **Tipo de lista de aplicaciones**: cree una lista de aplicaciones para mostrar u ocultar. Puede mostrar u ocultar las aplicaciones integradas y las aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094). Las opciones son:
 
   - **Aplicaciones ocultas**: escriba una lista de las aplicaciones ocultas a los usuarios. Los usuarios no pueden ver ni abrir estas aplicaciones.
   - **Aplicaciones visibles**: escriba una lista de aplicaciones que los usuarios pueden ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
@@ -432,7 +438,12 @@ Para agregar aplicaciones, puede:
   - iOS 12.2 y versiones más recientes
 
 - **Conexión a redes Wi-Fi con perfiles de configuración**: **Requerir** obliga al dispositivo a usar solo redes Wi-Fi configuradas a través de perfiles de configuración de Intune. **No configurado** (valor predeterminado) permite que el dispositivo use otras redes Wi-Fi.
-- La **modificación del estado de Wi-Fi**: **no configurado** (valor predeterminado) permite a los usuarios activar o desactivar la conexión Wi-Fi en el dispositivo. **Bloquear** impide activar o desactivar Wi-Fi.
+- **Wi-Fi siempre activada**: cuando se establece en **requerir**, Wi-Fi permanece en la aplicación de configuración. No se puede desactivar en la configuración o en el centro de control, incluso cuando el dispositivo está en modo de avión. **No configurado** (valor predeterminado) permite al usuario controlar la activación o desactivación de la red Wi-Fi.
+
+  La configuración de esta opción no impide que los usuarios seleccionen una red Wi-Fi.
+
+  Esta característica se aplica a:  
+  - iOS y iPados 13,0 y versiones más recientes
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
@@ -458,6 +469,11 @@ Para agregar aplicaciones, puede:
 
   Esta característica se aplica a:  
   - iOS 11.0 y versiones más recientes
+
+- **Acceso a los archivos de la unidad USB**: los dispositivos pueden conectar y abrir archivos en una unidad USB. **Deshabilitar** impide el acceso del dispositivo a la unidad USB en la aplicación de archivos cuando un USB está conectado al dispositivo. Al deshabilitar esta característica, también se impide que los usuarios finales transfieran archivos a una unidad USB conectada a un iPad. **No configurado** (valor predeterminado) permite el acceso a una unidad USB en la aplicación archivos.
+
+  Esta característica se aplica a:  
+  - iOS y iPados 13,0 y versiones más recientes
 
 ## <a name="keyboard-and-dictionary"></a>Teclado y diccionario
 
@@ -533,7 +549,7 @@ También puede **importar** un archivo .csv con la lista de nombres de aplicacio
 
   Esta configuración solo es aplicable a:  
   - iOS 13.0 y versiones más recientes
-  - iPados 13,0 y versiones más recientes
+  - IPadOS 13.0 y versiones más recientes
   
   > [!TIP]
   > Si tiene aplicaciones LOB disponibles para su organización y no están preparadas para el **control de voz** en el día 0 cuando se lancen iOS 13,0, se recomienda dejar esta configuración como **no configurada**.
@@ -553,7 +569,7 @@ También puede **importar** un archivo .csv con la lista de nombres de aplicacio
 
   Esta configuración solo es aplicable a:  
   - iOS 13.0 y versiones más recientes
-  - iPados 13,0 y versiones más recientes
+  - IPadOS 13.0 y versiones más recientes
 
 - **Control de VoiceOver**: **Permitir** cambios en VoiceOver para que los usuarios puedan actualizar la función VoiceOver, por ejemplo, la velocidad con que el texto en pantalla se lee en voz alta. **No configurado** impide los cambios en VoiceOver.
 - **Control de zoom**: **Permitir** que el usuario haga cambios en el zoom. **No configurado** impide cambios en el zoom.

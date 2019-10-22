@@ -1,5 +1,5 @@
 ---
-title: Administración de aplicaciones desde el sitio Web del Portal de empresa de Intune
+title: Administración de aplicaciones desde el sitio web del Portal de empresa de Intune
 description: Administrar y ver las aplicaciones disponibles e instaladas
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,84 +19,84 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c7b91e63a559c45cbbcbd7056a7f5e259e07481
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416862"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506100"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Administrar aplicaciones desde el sitio web del Portal de empresa 
-Visite el [sitio Web del Portal de empresa](https://portal.manage.microsoft.com) para ver y administrar aplicaciones de su organización. 
+Visite el [sitio web de portal de empresa](https://portal.manage.microsoft.com) para ver y administrar aplicaciones de su organización. 
 
 ## <a name="view-all-apps"></a>Ver todas las aplicaciones  
-En el menú, seleccione **aplicaciones** para ver todas las aplicaciones disponibles por su organización. 
+En el menú, seleccione **aplicaciones** para ver todas las aplicaciones que su organización pone a su disposición. 
 
-   ![Sitio Web de captura de pantalla del Portal de empresa, página de aplicaciones, que muestra las opciones de redefinir.](./media/intune-view-apps-1907.png)  
+   ![Captura de pantalla de Portal de empresa sitio web, página de aplicaciones, mostrando opciones refinas.](./media/intune-view-apps-1907.png)  
 
-Esta página enumera los siguientes detalles sobre cada aplicación:  
+En esta página se muestran los detalles siguientes sobre cada aplicación:  
 
-* Nombre: El nombre de la aplicación, con un vínculo a la página de detalles de la aplicación.
-* Publicador: El nombre del desarrollador o empresa que distribuye la aplicación. Un publicador suele ser un proveedor de software o su organización.  
-* Fecha de publicación: La fecha en la que se puso a disposición descargar la aplicación. Publicar fecha podría mostrar la versión inicial de una aplicación o actualiza una aplicación más reciente.
-* Estado: El estado actual de la aplicación en el dispositivo, que incluye la instalación, instalados y disponibles. 
-* Categoría: La aplicación (función) o propósito, como destacado, ingeniería, educación y productividad.  
+* Nombre: el nombre de la aplicación, con un vínculo a la página de detalles de la aplicación.
+* Publicador: el nombre del desarrollador o la compañía que distribuyó la aplicación. Un publicador suele ser un proveedor de software o su organización.  
+* Fecha de publicación: la fecha en la que la aplicación estuvo disponible para su descarga. La fecha de publicación podría mostrar la versión inicial de una aplicación o la actualización más reciente de la aplicación.
+* Estado: el estado actual de la aplicación en el dispositivo, que incluye disponible, instalado e instalando. 
+* Categoría: la función o el propósito de la aplicación, como destacado, ingeniería, educación y productividad.  
 
-### <a name="search-and-refine"></a>Búsqueda y refinar   
+### <a name="search-and-refine"></a>Buscar y refinar   
 
 Use la barra de búsqueda para buscar aplicaciones. Los resultados de búsqueda se ordenan automáticamente por relevancia.  
 
-   ![Sitio Web de captura de pantalla del Portal de empresa, página de aplicaciones, que muestra las opciones de redefinir.](./media/intune-refine-all-apps-1907.png)  
+   ![Captura de pantalla de Portal de empresa sitio web, página de aplicaciones, mostrando opciones refinas.](./media/intune-refine-all-apps-1907.png)  
 
-Seleccione **refinar** ver, filtrar y ordenar las opciones. Filtrar la lista para mostrar las aplicaciones con determinados criterios, incluidos **tipo**, **disponibilidad**, y **publicadores**. Seleccione **ordenación** para volver a organizar las aplicaciones por:
+Seleccione **redefinir** para ver las opciones de filtro y ordenación. Filtre la lista para mostrar las aplicaciones con criterios específicos, como el **tipo**, la **disponibilidad**y los **publicadores**. Seleccione **ordenar** para reorganizar las aplicaciones:
 
-* Nombre de la aplicación, ascendente o descendente por orden alfabético 
-* Nombre del publicador, ascendente o descendente por orden alfabético 
-* Fecha más antigua o más reciente de publicación  
+* Nombre de la aplicación, ascendente o descendente en orden alfabético 
+* Nombre del publicador, ascendente o descendente en orden alfabético 
+* Fecha de publicación, más antigua o más reciente  
 
-## <a name="view-installed-apps"></a>Aplicaciones de la vista instalada  
+## <a name="view-installed-apps"></a>Visualización de las aplicaciones instaladas  
 En el menú, seleccione **aplicaciones instaladas** para ver una lista de todas las aplicaciones instaladas en el dispositivo.  
 
-   ![Sitio Web de captura de pantalla del Portal de empresa, página de aplicaciones instaladas.](./media/intune-installed-apps-1907.png)  
+   ![Captura de pantalla del sitio web del Portal de empresa, página Aplicaciones instaladas.](./media/intune-installed-apps-1907.png)  
 
 
-Esta página enumera los siguientes detalles sobre cada aplicación:  
+En esta página se muestran los detalles siguientes sobre cada aplicación:  
 
-* Nombre: El nombre de la aplicación, con un vínculo a la página de detalles de la aplicación.
-* Tipo de asignación: cómo la aplicación se asigna y a su disposición. Ver disponibles y las aplicaciones necesarias para obtener más detalles. Su organización puede ya sea que una aplicación esté disponible para que instale usted mismo, o pueden requerir e instalar automáticamente una aplicación en el dispositivo.  
-* Publicador: El nombre del desarrollador o empresa que distribuye la aplicación. Un publicador suele ser un proveedor de software o su organización.  
-* Fecha de publicación: La fecha en la que se puso a disposición descargar la aplicación. Publicar fecha podría mostrar la versión inicial de una aplicación o actualiza una aplicación más reciente.
-* Estado: El estado de instalación actual de la aplicación en el dispositivo. Pueden mostrar las aplicaciones que la instalación, instalado y no se pudo. Las aplicaciones necesarias podrían tardar hasta 10 minutos para mostrar un estado actualizado.  
+* Nombre: el nombre de la aplicación, con un vínculo a la página de detalles de la aplicación.
+* Tipo de asignación: cómo se asigna y pone a disposición la aplicación. Consulte aplicaciones disponibles y necesarias para obtener más detalles. Su organización puede hacer que una aplicación esté disponible para su instalación, o bien puede requerir e instalar una aplicación en el dispositivo automáticamente.  
+* Publicador: el nombre del desarrollador o la compañía que distribuyó la aplicación. Un publicador suele ser un proveedor de software o su organización.  
+* Fecha de publicación: la fecha en la que la aplicación estuvo disponible para su descarga. La fecha de publicación podría mostrar la versión inicial de una aplicación o la actualización más reciente de la aplicación.
+* Estado: el estado de la instalación actual de la aplicación en el dispositivo. Las aplicaciones pueden mostrar como error de instalación, instalación e instalación. Las aplicaciones requeridas pueden tardar hasta 10 minutos en mostrar un estado actualizado.  
 
-### <a name="search-and-refine"></a>Búsqueda y refinar  
+### <a name="search-and-refine"></a>Buscar y refinar  
 
 Use la barra de búsqueda para buscar aplicaciones. Los resultados de búsqueda se ordenan automáticamente por relevancia.  
 
-   ![Sitio Web de la captura de pantalla del Portal de empresa, aplicaciones instaladas, refinar las opciones.](./media/intune-installed-refine-1907.png)  
+   ![Captura de pantalla del sitio web del Portal de empresa, Aplicaciones instaladas, redefinir opciones.](./media/intune-installed-refine-1907.png)  
 
-Seleccione **refinar** ver, filtrar y ordenar las opciones. Filtrar la lista para mostrar las aplicaciones con determinados criterios, incluidos **tipos**, **publicadores**, y **estados**. Seleccione **ordenación** para volver a organizar las aplicaciones por:
+Seleccione **redefinir** para ver las opciones de filtro y ordenación. Filtre la lista para mostrar las aplicaciones con criterios específicos, incluidos los **tipos**, los **publicadores**y los **Estados**. Seleccione **ordenar** para reorganizar las aplicaciones:
 
-* Nombre de la aplicación, ascendente o descendente por orden alfabético  
-* Nombre del publicador, ascendente o descendente por orden alfabético  
-* Fecha más antigua o más reciente de publicación  
+* Nombre de la aplicación, ascendente o descendente en orden alfabético  
+* Nombre del publicador, ascendente o descendente en orden alfabético  
+* Fecha de publicación, más antigua o más reciente  
 
 ¿Necesita más ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ### <a name="available-and-required-apps"></a>Aplicaciones disponibles y necesarias
-Las aplicaciones son asignadas por su organización y etiquetadas como disponible o requerida. El **aplicaciones instaladas** página muestra las aplicaciones que tienen en el **tipo de asignación** columna. 
+Las aplicaciones las asigna su organización y se etiquetan como disponibles o como necesarias. En la página **aplicaciones instaladas** se muestran las aplicaciones que tiene en la columna **tipo de asignación** . 
 
 
-* Las aplicaciones disponibles: estas aplicaciones están seleccionadas de forma que su organización y son adecuados y útil para la empresa o centro educativo. Son opcionales para instalar y son las únicas que encontrará en el Portal de empresa para instalar. 
+* Aplicaciones disponibles: la organización selecciona estas aplicaciones y son adecuadas y útiles para el trabajo o la escuela. Son opcionales para instalar y son las únicas aplicaciones que encontrará en el Portal de empresa para instalar. 
 
-* Aplicaciones obligatorias: su organización podría implementar necesario aplicaciones profesionales y educativas directamente en tu dispositivo. Estas aplicaciones se instalan automáticamente automáticamente sin intervención. 
+* Aplicaciones necesarias: su organización puede implementar aplicaciones profesionales y educativas necesarias directamente en el dispositivo. Estas aplicaciones se instalan automáticamente sin intervención. 
 
 Las aplicaciones también están disponibles para los usuarios según el tipo de dispositivo. Por ejemplo, si un usuario usa el sitio web del Portal de empresa en un dispositivo Windows, tiene acceso a aplicaciones de Windows, pero no de iOS.  
 
 ## <a name="view-app-details"></a>Ver detalles de la aplicación  
-Seleccione una aplicación en el **aplicaciones** o **aplicaciones instaladas** página para ver sus detalles. Se le dirigirá a **detalles de la aplicación**, donde encontrará los requisitos y descripción de la aplicación. Si una aplicación ya no está instalada en el dispositivo, puede instalarlo desde esta página. 
+Seleccione una aplicación en la página **aplicaciones** o **aplicaciones instaladas** para ver sus detalles. Se le dirigirá a los detalles de la **aplicación**, donde encontrará la descripción y los requisitos de la aplicación. Si una aplicación no está ya instalada en el dispositivo, puede instalarla desde esta página. 
 
 
-   ![Sitio Web de captura de pantalla del Portal de empresa, página de detalles de la aplicación.](./media/intune-app-details-1907.png)  
+   ![Captura de pantalla de Portal de empresa sitio web, página de detalles de la aplicación.](./media/intune-app-details-1907.png)  
 
 ## <a name="next-steps"></a>Pasos siguientes
 ¿Necesita más ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
