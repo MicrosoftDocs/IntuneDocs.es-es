@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1d039d5be449d1c1b8cc13e69b84e1bd7f7dd2b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725288"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507385"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firma de aplicaciones de línea de negocio para que se puedan implementar en dispositivos Windows con Intune
 
@@ -41,11 +42,11 @@ En Windows 10, la instalación de prueba es diferente de la de versiones anteri
 
 ### <a name="code-sign-your-app"></a>Firma de código de la aplicación
 
-El primer paso es firmar el código del paquete appx. Para obtener más información, consulte [Firma de un paquete de la aplicación con SignTool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool).
+El primer paso es firmar el código del paquete de la aplicación. Para más información, consulte [Firma de un paquete de la aplicación con SignTool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool).
 
 ### <a name="upload-your-app"></a>Carga de la aplicación
 
-A continuación, debe cargar el archivo appx firmado. Para obtener información detallada, consulte [Adición de una aplicación de línea de negocio de Windows a Microsoft Intune](lob-apps-windows.md).
+A continuación, debe cargar el archivo appx firmado. Para más información, consulte [Adición de una aplicación de línea de negocio de Windows a Microsoft Intune](lob-apps-windows.md).
 
 Si implementa la aplicación según sea necesario para los usuarios o dispositivos, no necesita la aplicación Portal de empresa de Intune. Sin embargo, si implementa la aplicación como disponible para los usuarios, puede usar la aplicación Portal de empresa de la instancia pública de Microsoft Store o la aplicación Portal de empresa de la instancia privada de la Microsoft Store para Empresas; o bien tendrá que firmar e implementar manualmente la aplicación Portal de empresa de Intune.
 
@@ -63,7 +64,7 @@ Intune solo implementa el archivo. cer más reciente que se cargó. Si tiene var
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Cómo renovar el certificado de firma de código de empresa de Symantec
 
-El certificado usado para implementar aplicaciones móviles de Windows Phone 8.1 se dejó de usar el 28 de febrero de 2019 y ya no está disponible para su renovación desde Symantec. Si va a realizar la implementación en un dispositivo móvil de Windows 10, puede seguir usando los certificados de firma de código de Symantec Desktop Enterprise siguiendo las instrucciones respecto de la [instalación de prueba de Windows 10](app-sideload-windows.md#windows-10-sideloading).
+El certificado usado para implementar aplicaciones móviles de Windows Phone 8.1 se dejó de usar el 28 de febrero de 2019 y ya no está disponible para su renovación desde Symantec. Si va a realizar la implementación en un dispositivo móvil de Windows 10, puede seguir usando los certificados de firma de código de Symantec Desktop Enterprise siguiendo las instrucciones sobre la [instalación de prueba de Windows 10](app-sideload-windows.md#windows-10-sideloading).
 
 ## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>Instalación del certificado actualizado para aplicaciones de línea de negocio (LOB)
 

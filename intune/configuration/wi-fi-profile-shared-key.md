@@ -1,5 +1,5 @@
 ---
-title: Creación de un perfil de Wi-Fi con una clave precompartida - Microsoft Intune - Azure | Microsoft Docs
+title: 'Creación de un perfil Wi-Fi con una clave precompartida: Microsoft Intune (Azure) | Microsoft Docs'
 description: Use un perfil personalizado para crear un perfil de Wi-Fi con una clave precompartida y obtenga el código XML de ejemplo para Windows, Android y perfiles de Wi-Fi basados en EAP, en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 175be4d51b034745ce6fab050f68be277f1d4858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723767"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506494"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Uso de un perfil de dispositivo personalizado para crear un perfil de Wi-Fi con una clave precompartida - Intune
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -214,21 +215,21 @@ En el ejemplo siguiente se incluye el código XML de un perfil de Wi-Fi basado e
 
 También puede crear un archivo XML desde una conexión Wi-Fi existente. En un equipo Windows, siga estos pasos:
 
-1. Cree una carpeta local para los perfiles de Wi-Fi exportados, como c:\Wi-Fi.
-2. Abra un símbolo del sistema como administrador (haga clic con el botón derecho en `cmd` > **Ejecutar como administrador**)
+1. Cree una carpeta local para los perfiles Wi-Fi exportados, como c:\WiFi.
+2. Abra un símbolo del sistema como administrador (haga clic con el botón derecho en `cmd` > **Ejecutar como administrador**).
 3. Ejecute `netsh wlan show profiles`. Se muestran los nombres de todos los perfiles.
 4. Ejecute `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`. Este comando crea un archivo denominado `Wi-Fi-YourProfileName.xml` en c:\Wifi.
 
-    - Si va a exportar un perfil de Wi-Fi que incluye una clave previamente compartida, agregue `key=clear` al comando:
+    - Si va a exportar un perfil Wi-Fi que incluye una clave precompartida, agregue `key=clear` al comando:
   
       `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
-      `key=clear` exporta la clave en texto sin formato, lo que es preciso para usar correctamente el perfil.
+      `key=clear` exporta la clave en texto sin formato, lo que es necesario para usar correctamente el perfil.
 
-Cuando tenga el archivo XML, copie y pegue la sintaxis XML en la configuración de OMA-URI > **Tipo de datos**. [Creación de un perfil personalizado](#create-a-custom-profile) (en este artículo) indica los pasos.
+Cuando tenga el archivo XML, copie y pegue la sintaxis XML en la configuración de OMA-URI > **Tipo de datos**. En [Creación de un perfil personalizado](#create-a-custom-profile) (en este artículo) se indican los pasos.
 
 > [!TIP]
-> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` incluye también todos los perfiles den formato XML.
+> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` incluye también todos los perfiles en formato XML.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
@@ -236,4 +237,4 @@ Cuando tenga el archivo XML, copie y pegue la sintaxis XML en la configuración 
 
 - Al rotar claves (contraseñas o frases de contraseña), tenga previsto que va a producirse un tiempo de inactividad y, por tanto, planee las implementaciones. Considere la posibilidad de insertar nuevos perfiles de Wi-Fi durante las horas no laborables. Avise igualmente a los usuarios de que la conectividad puede verse afectada.
 
-- Para tener una transición sin problemas, asegúrese de que el dispositivo del usuario final tiene una conexión a Internet alternativa. Por ejemplo, el usuario final puede volver a la red Wi-Fi de invitado (o a alguna otra red Wi-Fi) o disponer de una conexión de telefonía móvil para comunicarse con Intune. Esta conexión adicional permite que el usuario reciba actualizaciones de las directivas cuando se actualice el perfil de red Wi-Fi corporativo en el dispositivo.
+- Para tener una transición sin problemas, asegúrese de que el dispositivo del usuario final tenga una conexión a Internet alternativa. Por ejemplo, el usuario final puede volver a la red Wi-Fi de invitado (o a alguna otra red Wi-Fi) o disponer de una conexión de telefonía móvil para comunicarse con Intune. Esta conexión adicional permite que el usuario reciba actualizaciones de las directivas cuando se actualice el perfil de red Wi-Fi corporativo en el dispositivo.

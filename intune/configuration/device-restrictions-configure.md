@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a8815bdbb0121d727c80dda0421922e0531cf7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b7b4597106d1fffb65f112feae750aa7c8feefc0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724053"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493991"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar restricciones de dispositivos en Microsoft Intune
 
@@ -27,13 +28,13 @@ ms.locfileid: "71724053"
 
 Intune incluye directivas de restricción de dispositivos que ayudan a los administradores a controlar dispositivos Android, iOS, macOS y Windows. Estas restricciones permiten controlar una amplia variedad de configuraciones y características para proteger los recursos de la organización. Por ejemplo, los administradores pueden:
 
-- Permitir o bloquear la cámara del dispositivo.
-- Controlar el acceso a Google Play, a las tiendas de aplicaciones, a la visualización de documentos y a juegos.
-- Bloquear aplicaciones integradas o crear una lista de aplicaciones permitidas o prohibidas.
-- Permitir o impedir la copia de seguridad de archivos en la nube y en cuentas de almacenamiento.
-- Establecer una longitud mínima de contraseña y bloquear las contraseñas poco seguras.
+- Permitir o bloquear la cámara del dispositivo
+- Controlar el acceso a Google Play, las tiendas de aplicaciones, la visualización de documentos y los juegos
+- Bloquear aplicaciones integradas o crear una lista de aplicaciones permitidas o prohibidas
+- Permitir o impedir la copia de seguridad de archivos en la nube y en cuentas de almacenamiento
+- Establecer una longitud mínima de contraseña y bloquear las contraseñas poco seguras
 
-Estas características están disponibles en Intune y el administrador puede configurarlas. Intune usa "perfiles de configuración" para crear y personalizar estas configuraciones para las necesidades de su organización. Después de agregar estas características en un perfil, puede insertar o implementar el perfil en dispositivos de su organización.
+Estas características están disponibles en Intune y el administrador puede configurarlas. Intune usa "perfiles de configuración" para crear y personalizar estas configuraciones para las necesidades de su organización. Después de agregar estas características en un perfil, puede insertar o implementar el perfil en los dispositivos de su organización.
 
 En este artículo se muestra cómo crear un perfil de restricciones de dispositivos. También puede ver todas las opciones de configuración disponibles para las distintas plataformas.
 

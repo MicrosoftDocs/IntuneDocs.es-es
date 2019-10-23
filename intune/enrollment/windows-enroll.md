@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24ac01525a0fa1d08187fcb9a96297f2d1094890
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 55147de71d764feb89aa305c7e3282cfb1fff3c1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722324"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503046"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configuración de la inscripción de dispositivos Windows
 
@@ -50,16 +51,16 @@ Las organizaciones que pueden usar la inscripción automática también pueden c
 
 ## <a name="device-enrollment-prerequisites"></a>Requisitos previos para la inscripción de dispositivos
 
-Para que un administrador pueda inscribir dispositivos en Intune para su administración, las licencias ya deben estar asignadas a la cuenta del administrador. [Más información sobre la asignación de licencias para la inscripción de dispositivos](../fundamentals/licenses-assign.md)
+Para que un administrador pueda inscribir dispositivos en Intune para su administración, ya se deben haber asignado licencias a la cuenta del administrador. [Más información sobre la asignación de licencias para la inscripción de dispositivos](../fundamentals/licenses-assign.md)
 
 ## <a name="multi-user-support"></a>Compatibilidad con varios usuarios
 
 Intune admite varios usuarios en dispositivos que:
 
-- Ejecuten Windows 10 Creators Update
+- Ejecuten la actualización Windows 10 Creators Update
 - Estén unidos a un dominio de Azure Active Directory.
 
-Cuando los usuarios estándar inician sesión con sus credenciales de Azure AD, reciben aplicaciones y directivas asignadas a su nombre de usuario. Solo el [Usuario primario](../remote-actions/find-primary-user.md) del dispositivo puede usar el Portal de empresa para escenarios de autoservicio, como la instalación de aplicaciones y la realización de acciones de dispositivo (quitar, restablecer). Para los dispositivos compartidos de Windows 10 que no tienen asignado un usuario primario, puede seguir utilizándose el Portal de empresa para instalar aplicaciones disponibles.
+Cuando los usuarios estándar inician sesión con sus credenciales de Azure AD, reciben aplicaciones y directivas asignadas a su nombre de usuario. Solo el [usuario primario](../remote-actions/find-primary-user.md) del dispositivo puede usar el Portal de empresa en escenarios de autoservicio, como la instalación de aplicaciones y la realización de acciones de dispositivo (quitar, restablecer). En el caso de dispositivos compartidos de Windows 10 que no tienen asignado un usuario primario, puede seguir utilizándose el Portal de empresa para instalar aplicaciones disponibles.
 
 [!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 

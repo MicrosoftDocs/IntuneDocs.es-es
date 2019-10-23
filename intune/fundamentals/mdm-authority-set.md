@@ -9,20 +9,20 @@ manager: dougeby
 ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb5abe54529a9de575cf84b8a89b0f402f8d117b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727056"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502637"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -41,7 +41,7 @@ Las configuraciones posibles son:
 
 - **Administración de dispositivos móviles para Office 365**: integración de Office 365 con la solución de nube de Intune. Intune se configura desde el Centro de administración de Microsoft 365. Incluye un subconjunto de las funcionalidades que están disponibles con la versión independiente de Intune. Establezca la autoridad de MDM en el Centro de administración de Microsoft 365.
 
-- **Coexistencia de MDM de Office 365** Puede activar y usar tanto MDM para Office 365 como Intune de manera simultánea en su inquilino y establecer la entidad de administración, ya sea en Intune o en MDM para Office 365, para que cada usuario indique qué servicio usará para administrar sus dispositivos móviles. La entidad de administración del usuario se define en función de la licencia asignada al usuario. Para más información, consulte [Coexistencia de Microsoft Intune con MDM para Office 365](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365).
+- **Coexistencia de MDM de Office 365** Puede activar y usar tanto MDM para Office 365 como Intune de manera simultánea en su inquilino y establecer la entidad de administración en Intune o en MDM para Office 365, de forma que cada usuario indique qué servicio usará para administrar sus dispositivos móviles. La entidad de administración del usuario se define en función de la licencia asignada al usuario. Para más información, consulte [Coexistencia de Microsoft Intune con MDM para Office 365](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365).
 
 ## <a name="set-mdm-authority-to-intune"></a>Establecimiento de la entidad de MDM en Intune
 
@@ -77,7 +77,7 @@ Después de cambiar a la nueva entidad de MDM, habrá probablemente un tiempo de
 
 ## <a name="change-mdm-authority-to-office-365"></a>Cambio de la entidad de MDM a Office 365
 
-Para activar Office 365 MDM (o para habilitar la coexistencia de MDM además del servicio Intune existente), vaya a [https://protection.office.com](https://protection.office.com), elija **Prevención de pérdida de datos** > **Directivas de seguridad de dispositivos** > **View list of Managed Devices** (Ver lista de dispositivos administrados) > **Empezar**.
+Para activar Office 365 MDM (o para habilitar la coexistencia de MDM además del servicio Intune existente), vaya a [https://protection.office.com](https://protection.office.com), elija **Prevención de pérdida de datos** > **Directivas de seguridad de dispositivos** > **Ver la lista de dispositivos administrados** > **Empecemos**.
 
 Para obtener más información, vea [Configurar la administración de dispositivos móviles (MDM) en Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd).
 
@@ -89,7 +89,7 @@ El certificado MDM se renueva automáticamente cuando los dispositivos móviles 
 
 ## <a name="remove-mdm-authority"></a>Eliminación de la entidad de MDM
 
-No se puede cambiar la entidad de MDM a Desconocido. El servicio usa la entidad de MDM para determinar qué dispositivos inscritos en el portal se notifican a (Microsoft Intune u Office 365 MDM).
+No se puede cambiar la entidad de MDM a Desconocido. El servicio usa la entidad de MDM para determinar qué dispositivos inscritos en el portal informan a (Microsoft Intune u Office 365 MDM).
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>Qué esperar después de cambiar la entidad de MDM
 

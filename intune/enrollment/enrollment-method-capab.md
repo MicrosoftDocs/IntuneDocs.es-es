@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30b46fcbb7ec6963e855c79478dbdef5b5cd8b90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c6b12bb0066c37eb470065a169a3ad7866c69a17
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723143"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503269"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Capacidades de Intune por método de inscripción para dispositivos Windows
 [!INCLUDE[azure_portal](../includes/azure_portal.md)]
@@ -52,7 +53,7 @@ Hay varios métodos para inscribir los dispositivos de los recursos en Intune. C
 |Admite la inscripción automática después de unirse a Hybrid Azure AD|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|
 |Admite la inscripción automática después de unirse a Azure AD       |![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|![Marca de verificación](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|
 
-\* Las cargas de trabajo de aplicaciones cliente en Configuration Manager deben moverse a Intune piloto o Intune.
+\* Las cargas de trabajo de aplicaciones cliente en Configuration Manager deben moverse a Intune piloto o a Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

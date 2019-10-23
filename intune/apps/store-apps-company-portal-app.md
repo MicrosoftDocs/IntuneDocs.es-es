@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31fcc3a47a131ca017e3691cc53a7295b81fe67c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 32411e513cec9683faf598c8d73d6d803bcddb3d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724599"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507110"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adición manual de la aplicación Portal de empresa para Windows 10 con Microsoft Intune
 
@@ -52,19 +53,19 @@ Para administrar dispositivos e instalar aplicaciones, los usuarios pueden insta
 
 7. Descargue todos los paquetes de "Marcos necesarios" al seleccionar **Descargar**.  
 
-    Esta acción se debe realizar para arquitecturas x86, x64 y ARM:<br> 
-    *Hay 9 paquetes de Framework necesarios cuando se selecciona 1507 como la versión mínima del SO, 12 paquetes cuando se selecciona la versión 1511 y 15, cuando se selecciona la versión 1607.*
+    Esta acción se debe realizar en arquitecturas x86, x64 y ARM:<br> 
+    *Hay 9 paquetes de .NET Framework necesarios cuando se selecciona 1507 como la versión mínima del SO, 12 paquetes cuando se selecciona la versión 1511 y 15 cuando se selecciona la versión 1607.*
 
-8. En Microsoft Intune, en Azure Portal, cargue la aplicación Portal de empresa como una nueva aplicación. Para agregar la aplicación, seleccione Aplicación de línea de negocio como el **Tipo de aplicación** en el panel **Agregar aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .AppxBundle).
+8. En Microsoft Intune, en Azure Portal, cargue la aplicación Portal de empresa como una nueva aplicación. Para agregar la aplicación, seleccione la aplicación de línea de negocio en **Tipo de aplicación** en el panel **Agregar aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .AppxBundle).
 
 9. En **Select dependency app files** (Seleccionar archivos de aplicación de dependencia), seleccione todas las dependencias que descargó en el paso 7 con Mayús + clic y compruebe que la columna **Agregado** muestra **Sí** en la arquitectura que se necesita.
 
      > [!NOTE]
      > Si no se agregan las dependencias, es posible que la aplicación no se instale en los tipos de dispositivo especificados.
 
-10. Haga clic en **Aceptar**, escriba la **Información de aplicación** que desee y haga clic en **Agregar**.
+10. Haga clic en **Aceptar**, rellene el campo **Información de la aplicación** y haga clic en **Agregar**.
 
-11. Asigne la aplicación Portal de empresa como una aplicación requerida al conjunto seleccionado de grupos de dispositivos o usuarios.  
+11. Asigne la aplicación Portal de empresa como una aplicación necesaria al conjunto seleccionado de grupos de dispositivos o usuarios.  
 
 Para obtener más información sobre cómo controla Intune las dependencias de las aplicaciones universales, vea [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Implementación de appxbundle con dependencias a través de la MDM de Microsoft Intune).  
 

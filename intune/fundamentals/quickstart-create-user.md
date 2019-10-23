@@ -4,21 +4,24 @@ description: 'Inicio rápido: Crear un usuario en Intune.'
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/25/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.manager: dougeby
+ms.assetid: 820fcb18-0927-4ebd-be79-dce92b51c261
+ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16d8eb3b3a0117495fe8740160e9ebcec299d764
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727095"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509888"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Inicio rápido: Creación de un usuario en Intune y asignación de una licencia
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c447b6b21021573d95a5ece3297e548f216b7a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4339f98ed133c3426faee8bd4b18024fd2648606
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723533"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503356"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-work-profile-devices"></a>Configuración de la inscripción de dispositivos del perfil de trabajo de Android Enterprise
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune le ayuda a implementar aplicaciones y opciones de configuración en dispositivos del perfil de trabajo de Android Enterprise a fin de garantizar que la información laboral y la personal se mantengan aparte. Para más detalles sobre Android Enterprise, vea [Requisitos para usar dispositivos Android en una empresa](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune lo ayuda a implementar aplicaciones y opciones de configuración en dispositivos del perfil de trabajo de Android Enterprise a fin de garantizar que la información laboral y la personal se mantengan aparte. Para más detalles sobre Android Enterprise, vea [Requisitos para usar dispositivos Android en una empresa](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Para configurar la administración de perfiles de trabajo Android Enterprise, siga estos pasos:
 
