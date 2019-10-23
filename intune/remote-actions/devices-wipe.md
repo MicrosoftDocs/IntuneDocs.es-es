@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f81dcf6a3553b4ff08ec6c2dbffda24bc7946b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728408"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508572"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -75,7 +76,7 @@ Si el dispositivo está encendido y conectado, la acción **Borrar** se propaga 
 
 ## <a name="retire"></a>Retirar
 
-La acción **Retirar** elimina los datos de las aplicaciones administradas (si procede), la configuración y los perfiles de correo electrónico asignados con Intune. El dispositivo se quita de la administración de Intune. Esto sucede la próxima vez que el dispositivo se registra y recibe la acción remota **Retirar**. El dispositivo seguirá apareciendo en Intune hasta que el dispositivo se registra. Si quiere quitar dispositivos obsoletos de inmediato, use en su lugar la [acción Eliminar](devices-wipe.md#delete-devices-from-the-intune-portal).
+La acción **Retirar** elimina los datos de las aplicaciones administradas (si procede), la configuración y los perfiles de correo electrónico asignados con Intune. El dispositivo se quita de la administración de Intune. Esto sucede la próxima vez que el dispositivo se registra y recibe la acción remota **Retirar**. El dispositivo seguirá apareciendo en Intune hasta que se registra. Si quiere quitar dispositivos obsoletos de inmediato, use en su lugar la [acción Eliminar](devices-wipe.md#delete-devices-from-the-intune-portal).
 
 **Retirar** deja los datos personales del usuario en el dispositivo.  
 
@@ -141,7 +142,7 @@ Solo se pueden borrar dispositivos de quiosco. Los dispositivos de quiosco de An
 |Separación de Azure AD|No.|No.|Se quita el registro de Azure AD.|Se quita el registro de Azure AD.|
 
 > [!NOTE]
-> En el caso de los dispositivos Windows 10 que se unen a Azure AD durante la instalación inicial (OOBE), el comando de retiro quita todas las cuentas de Azure AD del dispositivo. Siga los pasos en [Iniciar el PC en modo seguro en Windows 10](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) para iniciar sesión como administración local y recupere el acceso a los datos locales del usuario. 
+> En el caso de los dispositivos Windows 10 que se unen a Azure AD durante la configuración rápida (OOBE), el comando de retiro quita todas las cuentas de Azure AD del dispositivo. Siga los pasos que se indican en [Iniciar el PC en modo seguro en Windows 10](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) para iniciar sesión como administración local y recuperar el acceso a los datos locales del usuario. 
 
 ### <a name="retire"></a>Retirar
 
@@ -163,7 +164,7 @@ Si quiere quitar dispositivos del portal de Intune, puede eliminarlos desde el p
 Puede configurar Intune para eliminar automáticamente los dispositivos que parecen estar inactivos, obsoletos o que no responden. Estas reglas de limpieza supervisan constantemente el inventario de dispositivos para que los registros de dispositivos se mantengan al día. Los dispositivos eliminados de esta forma se quitan de la administración de Intune.
 1. Inicie sesión en [Intune en Azure Portal](https://aka.ms/intuneportal).
 2. Elija **Dispositivos** > **Reglas de limpieza de dispositivos** > **Sí**.
-3. En el cuadro **Delete devices that haven’t checked in for this many days** (Eliminar dispositivos que no se han protegido durante este número de días), escriba un número entre 30 y 270.
+3. En el cuadro **Eliminar los dispositivos que no se hayan registrado durante el siguiente número de días**, escriba un número entre 30 y 270.
 4. Elija **Guardar**.
 
 
