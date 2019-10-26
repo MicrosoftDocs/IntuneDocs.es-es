@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585383"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915718"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -193,7 +193,8 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
 ### <a name="power-settings"></a>Configuración de energía
 
-- **Tiempo para bloquear la pantalla**: establece la cantidad de tiempo de inactividad requerido antes de que el dispositivo se bloquee.
+- **Hora de bloqueo de la pantalla**: especifique el tiempo máximo que un usuario puede establecer hasta que el dispositivo se bloquee. Por ejemplo, si establece esta opción en **10 minutos**, los usuarios pueden establecer el tiempo desde 15 segundos hasta 10 minutos. Cuando se establece en **no configurado** (valor predeterminado), Intune no cambia ni controla esta configuración.
+
 - **Pantalla activada mientras el dispositivo está conectado**: elija qué fuentes de alimentación provocan que la pantalla del dispositivo permanezca activa cuando está conectado.
 
 ### <a name="users-and-accounts-settings"></a>Configuración de cuentas y usuarios

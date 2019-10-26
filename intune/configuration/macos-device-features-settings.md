@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506671"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776903"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configuración de características de dispositivos macOS en Intune
 
@@ -42,7 +42,7 @@ En este artículo se enumeran estas opciones de configuración y se describe lo 
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada 
 
 - **Dirección IP**: escriba la dirección IPv4 o IPv6 de la impresora. Si usa nombres de host para identificar las impresoras, puede obtener la dirección IP haciendo ping a la impresora en la aplicación Terminal. En la sección [Obtención de la dirección IP y la ruta de acceso](#get-the-ip-address-and-path) (en este artículo) se proporcionan más detalles.
 - **Ruta de acceso**: escriba la ruta de acceso de la impresora. La ruta de acceso suele ser `ipp/print` para las impresoras de la red. En la sección [Obtención de la dirección IP y la ruta de acceso](#get-the-ip-address-and-path) (en este artículo) se proporcionan más detalles.
@@ -85,7 +85,7 @@ Para agregar servidores AirPrinter, necesita la dirección IP de la impresora, l
 
 ## <a name="login-window"></a>Ventana de inicio de sesión
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada 
 
 #### <a name="window-layout"></a>Diseño de ventana
 

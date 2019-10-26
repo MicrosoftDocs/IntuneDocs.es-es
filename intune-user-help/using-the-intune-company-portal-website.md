@@ -19,17 +19,19 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a2c4e26c191f612705a4cc404955b96b4b5982c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50eb3495362d4b88071707e25a5faa39b76b6c3b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501834"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810366"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Usar el sitio web del Portal de empresa de Intune
-Use el [sitio web del Portal de empresa](https://portal.manage.microsoft.com) para ver, editar, agregar y quitar los dispositivos administrados.
+Use el [sitio web de portal de empresa](https://portal.manage.microsoft.com) para buscar, instalar y desinstalar aplicaciones para la escuela o el trabajo. y para ver, editar, agregar y quitar los dispositivos inscritos.  
 
 Desde el sitio web del Portal de empresa, puede realizar cualquiera de las acciones siguientes:
+
+- [Administración de aplicaciones](manage-apps-cpweb.md)  
 
 - [Cambiar el nombre del dispositivo](rename-your-device-cpwebsite.md)
 

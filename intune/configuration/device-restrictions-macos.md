@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494012"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776878"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos macOS para permitir o restringir características mediante Intune
 
@@ -40,7 +40,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="general"></a>General
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
 
 - **Búsqueda de definiciones**: **Bloquear** evita que el usuario resalte una palabra y luego busque su definición en el dispositivo. **No configurado** (valor predeterminado) permite el acceso a la característica de búsqueda de definiciones.
 - **Dictado**: **Bloquear** evita que el usuario use la entrada de voz para escribir texto. **No configurado** (valor predeterminado) permite que el usuario use la entrada de dictado.
@@ -82,7 +82,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="password"></a>Contraseña
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
 
 - **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **No configurado** (valor predeterminado) no requiere una contraseña. Tampoco fuerza ninguna restricción, como el bloqueo de contraseñas simples o la configuración de una longitud mínima.
   - **Tipo de contraseña necesaria**: especifique si la contraseña solo puede ser numérica o si debe ser alfanumérica (contener letras y números).
@@ -114,7 +114,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="built-in-apps"></a>Aplicaciones integradas
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
 
 - **Bloquear Autorrellenar de Safari**: **Bloquear** deshabilita la característica Autorrellenar de Safari en el dispositivo. **No configurado** (valor predeterminado) permite que los usuarios cambien la configuración de Autorrellenar del explorador web.
 - **Bloquear Cámara**: elija **Bloquear** para impedir el acceso a la cámara del dispositivo. **No configurado** (valor predeterminado) permite el acceso a la cámara del dispositivo.
@@ -127,7 +127,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="restricted-apps"></a>Aplicaciones restringidas
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
 
 - **Tipo de lista de aplicaciones restringidas**: cree una lista de aplicaciones que los usuarios no pueden instalar ni usar. Las opciones son:
 
@@ -145,14 +145,14 @@ Para agregar aplicaciones a estas listas, puede:
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
 
 - **Bloquear AirDrop**: **Bloquear** evita el uso de AirDrop en el dispositivo. **No configurado** (valor predeterminado) permite usar la característica AirDrop para intercambiar contenido con dispositivos cercanos.
 - **Block Apple Watch Auto Unlock** (Bloquear desbloqueo automático de Apple Watch): **Bloquear** impide que los usuarios desbloqueen su dispositivo macOS mediante Apple Watch. **Sin configurar** (valor predeterminado) permite a los usuarios desbloquear su dispositivo macOS mediante Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
 
 - **Bloquear la sincronización de Keychain en iCloud**: elija **Bloquear** para deshabilitar la sincronización de las credenciales almacenadas en Keychain en iCloud. **No configurado** (valor predeterminado) permite que los usuarios sincronicen estas credenciales.
 - **Block iCloud Document Sync** (Bloquear sincronización de documentos de iCloud): **Bloquear** impide que iCloud sincronice documentos y datos. **No configurado** (valor predeterminado) permite la sincronización de clave-valor y documentos en el espacio de almacenamiento de iCloud.
@@ -170,7 +170,7 @@ Para agregar aplicaciones a estas listas, puede:
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
 
 - **Dirección URL de dominio de correo electrónico**: **agregue** una o varias direcciones URL a la lista. Cuando los usuarios reciben un correo electrónico de un dominio distinto del que ha configurado, este se marca como correo electrónico de no confianza en la aplicación Mail de macOS.
 

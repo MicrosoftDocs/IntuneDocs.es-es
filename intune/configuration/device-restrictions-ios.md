@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584888"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785520"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -300,6 +300,11 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
   Esta característica se aplica a:  
   - iOS 12.2 y versiones más recientes
+
+  > [!NOTE]
+  > Apple ha dejado de usar el valor **de configuración de registro del lado servidor para comandos Siri** . En una próxima versión, esta configuración se quita de la consola de Intune.
+  >
+  > Actualmente, esta configuración no tiene ningún efecto en los dispositivos, aunque el valor se muestra en perfiles de administración. Para eliminar esta configuración de cualquier directiva, abra la Directiva, realice un cambio menor y, a continuación, guarde la Directiva. La Directiva se actualiza y la configuración se elimina de los dispositivos.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
