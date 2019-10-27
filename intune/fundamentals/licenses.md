@@ -24,7 +24,7 @@ ms.lasthandoff: 10/16/2019
 ms.locfileid: "72510146"
 ---
 # <a name="microsoft-intune-licensing"></a>Licencias de Microsoft Intune
-Microsoft Intune está disponible para las distintas necesidades de los clientes y los diversos tamaños de las organizaciones, desde una experiencia de administración fácil de usar para escuelas y pequeñas empresas a funcionalidades más avanzadas requeridas por los clientes empresariales. La mayoría de las licencias que incluyen Microsoft Intune también conceden los derechos a usar System Center Configuration Manager, siempre y cuando la suscripción permanezca activa. 
+Microsoft Intune está disponible para las distintas necesidades de los clientes, los diversos tamaños y tipos de organizaciones, desde una experiencia de administración fácil de usar para escuelas y pequeñas empresas a funcionalidades más avanzadas requeridas por los clientes empresariales. La mayoría de las licencias que incluyen Microsoft Intune también conceden los derechos a usar System Center Configuration Manager, siempre y cuando la suscripción permanezca activa. 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Intune se incluye en las licencias siguientes:
