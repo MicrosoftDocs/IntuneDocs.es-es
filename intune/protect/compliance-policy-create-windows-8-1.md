@@ -2,10 +2,10 @@
 title: 'Configuración de cumplimiento de Windows 8.1 en Microsoft Intune: Azure | Microsoft Docs'
 description: Vea una lista de todas las opciones que puede usar al configurar el cumplimiento de dispositivos Windows 8.1 y Windows Phone 8.1 en Microsoft Intune. Compruebe el cumplimiento de los requisitos mínimo y máximo de sistema operativo, establezca restricciones de contraseña y longitud, habilite el cifrado en almacenamiento de datos y mucho más.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 322d6f1e23464f1f75cc79346d839a9ccdbd7bc7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3e074d922078a9772ca67a6ebd99948bc3e64601
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504645"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813216"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Windows 8.1 para marcar dispositivos como compatibles o no compatibles con Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 En este artículo se enumeran y describen las distintas opciones de cumplimiento que se pueden configurar en dispositivos con Windows 8.1 en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para bloquear contraseñas sencillas, establecer un requisito mínimo o máximo de versión de sistema operativo y mucho más.
 
@@ -39,10 +37,23 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 [Crear una directiva de cumplimiento](create-compliance-policy.md#create-the-policy). Para **Plataforma**, seleccione **Windows Phone 8.1** o **Windows 8.1 y posterior**.
 
-## <a name="device-properties"></a>Propiedades del dispositivo
+## <a name="device-properties"></a>Propiedades de dispositivos
 
-- **SO mínimo requerido**: especifique la versión mínima permitida. Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo y luego acceder a los recursos de la empresa.
-- **Versión de SO máxima permitida**: escriba el número de versión máxima permitida. cuando un dispositivo usa una versión de SO posterior a la de la especificada en la regla, se bloquea el acceso a los recursos de la empresa. Se solicita al usuario que se ponga en contacto con el administrador de TI. El dispositivo no puede acceder a recursos de la organización hasta que cambie la regla para permitir la versión del SO.
+### <a name="operating-system-version"></a>Versión de sistema operativo
+
+**Windows Phone 8.1 y versiones posteriores**
+- **Versión mínima del sistema operativo para dispositivos móviles**:  
+  Escriba la versión mínima permitida. Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario del dispositivo puede optar por actualizar este y luego acceder a los recursos de la empresa.
+
+- **Versión máxima del sistema operativo para dispositivos móviles**:  
+  Escriba la versión máxima permitida. Cuando un dispositivo usa una versión de sistema operativo posterior a la de la regla, se bloquea el acceso a los recursos de la empresa. Se pide al usuario del dispositivo que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no cambie una regla para permitir la versión de sistema operativo.
+
+**Windows 8.1 y versiones posteriores**
+- **Versión mínima del sistema operativo**:  
+  Escriba la versión mínima permitida. Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario del dispositivo puede optar por actualizar este y luego acceder a los recursos de la empresa.
+
+- **Versión máxima de SO**:  
+  Escriba la versión máxima permitida. Cuando un dispositivo usa una versión de sistema operativo posterior a la de la regla, se bloquea el acceso a los recursos de la empresa. Se pide al usuario del dispositivo que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no cambie una regla para permitir la versión de sistema operativo.
 
 Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versión de sistema operativo se establece en Windows 8.1 para Windows, el dispositivo se notificará como no compatible, aunque tenga Windows 8.1.
 
@@ -50,36 +61,59 @@ Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versi
 
 ### <a name="password"></a>Contraseña
 
-- **Requerir una contraseña para desbloquear dispositivos móviles**: **requiere** que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
-- **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas como **1234** o **1111**. Establézcala en **No configurado** para permitir a los usuarios crear contraseñas como **1234** o **1111**.
-- **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña.
+- **Requerir una contraseña para desbloquear dispositivos móviles**:  
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Requerir**: los usuarios deben introducir una contraseña para poder acceder al dispositivo.
 
-  Para los dispositivos que ejecutan Windows y a los que se accede con una cuenta de Microsoft, la directiva de cumplimiento no se puede evaluar correctamente:
-  - Si la longitud mínima de la contraseña es superior a ocho caracteres
-  - O si el número mínimo de conjuntos de caracteres es superior a dos
+- **Contraseñas sencillas**:  
+  - **No configurado** (*valor predeterminado*): los usuarios pueden crear contraseñas sencillas como **1234** o **1111**.
+  - **Bloquear**: los usuarios no puedan crear contraseñas sencillas, como **1234** o **1111**.  
 
-- **Tipo de contraseña**: elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
-  
-  - **Número de caracteres no alfanuméricos en la contraseña**: si la opción **Tipo de contraseña requerida** está establecida en **Alfanumérico**, esta configuración especifica el número mínimo de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
+- **Longitud mínima de la contraseña**:  
+  especifique el número mínimo de dígitos o caracteres que debe tener la contraseña.
+
+  En el caso de los dispositivos que ejecutan Windows y a los que se tiene acceso con un cuenta de Microsoft, la Directiva de cumplimiento no puede evaluarse correctamente si se cumple alguna de las siguientes condiciones:  
+  - La longitud mínima de la contraseña es superior a ocho caracteres
+  - El número mínimo de conjuntos de caracteres es superior a dos
+
+- **Tipo de contraseña**:  
+  elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
+
+  Cuando se establece en *alfanumérico*, está disponible la siguiente configuración.  
+
+  - **Número de caracteres no alfanuméricos en la contraseña**:  
+    Cuando el *tipo de contraseña* está establecido en **alfanumérico**, especifique el número mínimo de conjuntos de caracteres que debe contener la contraseña. Las opciones incluyen de **0** a **4** conjuntos, con un valor predeterminado de **1**.
+    
+    Los conjuntos de cuatro caracteres son los siguientes:
     - Letras minúsculas
     - Letras mayúsculas
     - Símbolos
     - Números
 
-    Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja. Para los dispositivos a los que se accede con una cuenta de Microsoft, la directiva de cumplimiento no se puede evaluar correctamente:
+    Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja. En el caso de los dispositivos a los que se tiene acceso con un cuenta de Microsoft, la Directiva de cumplimiento no puede evaluarse correctamente si se cumple alguna de las siguientes condiciones:
 
-    - Si la longitud mínima de la contraseña es superior a ocho caracteres
-    - O si el número mínimo de conjuntos de caracteres es superior a dos
+    - La longitud mínima de la contraseña es superior a ocho caracteres
+    - El número mínimo de conjuntos de caracteres es superior a dos
 
-- **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
-- **Expiración de la contraseña (días)** : seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
-- **Número de contraseñas anteriores que no se pueden reutilizar**: escriba el número de contraseñas usadas anteriormente que no se pueden utilizar.
+- **Máximo de minutos de inactividad antes de solicitar la contraseña**:  
+  especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña.
+
+- **Expiración de la contraseña (días)** :  
+  seleccione el número de días que faltan para que expire la contraseña y los usuarios deban crear una nueva.
+
+- **Número de contraseñas anteriores que no se pueden reutilizar**:  
+  escriba el número de contraseñas usadas previamente que no se pueden volver a usar.
 
 ### <a name="encryption"></a>Cifrado
 
-- **Require encryption on mobile device** (Requerir cifrado en dispositivo móvil): **requerir** que el dispositivo se cifre para conectarse a recursos de almacenamiento de datos.
+- **Cifrado de almacenamiento de datos en el dispositivo**:  
+  - **Sin configurar** (*valor predeterminado*).
+  - **Requerir**: use *Requerir* para cifrar el almacenamiento de datos en los dispositivos.
 
-Seleccione **Aceptar** > **Crear** para guardar los cambios.
+
+<!-- not on phone   
+- **Require encryption on mobile device**: **Require** the device to be encrypted to connect to data storage resources.
+--> 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
