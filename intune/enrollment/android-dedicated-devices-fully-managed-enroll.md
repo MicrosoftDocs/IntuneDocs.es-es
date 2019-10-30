@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c54d82e2f0035272acce93f54f4080aca53579b9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2ad96c80a2cad71feec2afdfa87da767aa72fdb1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726003"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505616"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices"></a>Inscripción de dispositivos dedicados o totalmente administrados de Android Enterprise
 
-Después de configurar los [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) o [totalmente administrados](android-fully-managed-enroll.md) en Intune, puede inscribir los dispositivos. La forma de inscribir los dispositivos Android Enterprise depende del sistema operativo.
+Después de configurar los [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) o [totalmente administrados](android-fully-managed-enroll.md) en Intune, puede inscribir los dispositivos. La inscripción de Intune tanto de dispositivos dedicados como de dispositivos totalmente administrados comienza con un restablecimiento de fábrica. La forma de inscribir los dispositivos Android Enterprise depende del sistema operativo.
 
 | Método de inscripción | Versión mínima del SO Android para dispositivos dedicados y totalmente administrados |
 | ----- | ----- |

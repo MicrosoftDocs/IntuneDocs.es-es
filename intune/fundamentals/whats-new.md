@@ -6,9 +6,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/23/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71920155"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786126"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -50,8 +51,170 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
-
 -->  
+
+
+<!-- ########################## -->
+
+## <a name="week-of-october-21-2019"></a>Semana del 21 de octubre de 2019
+
+### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Nuevo perfil de interfaz de configuración de firmware de dispositivo para dispositivos con Windows 10 y versiones posteriores <!-- 2266073 idready wnready -->
+
+En Windows 10 y versiones posteriores, puede crear un perfil de configuración de dispositivo para controlar la configuración y las características (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** como plataforma). En esta actualización, existe un nuevo tipo de perfil de interfaz de configuración de firmware de dispositivo que permite a Intune administrar la configuración de UEFI (BIOS).
+
+Para más información sobre esta característica, vea [Uso de perfiles de DFCI en dispositivos Windows en Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
+
+Se aplica a:
+
+- Windows 10 RS5 (1809) y versiones más recientes en firmware compatible
+
+## <a name="week-of-october-14-2019"></a>Semana del 14 de octubre de 2019
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Administración de aplicaciones 
+
+#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956-----"></a>Notificación de aplicaciones de Google Play disponibles para perfiles de trabajo de Android <!-- 3041956   -->
+En las instalaciones de aplicaciones disponibles en dispositivos dedicados, totalmente administrados y de perfil de trabajo de Android Enterprise, puede ver el estado de instalación de la aplicación, así como la versión instalada de aplicaciones administradas de Google Play. Para obtener más información, vea [Supervisión de las directivas de protección de aplicaciones](~/apps/app-protection-policies-monitor.md), [Administrar dispositivos de perfil de trabajo Android con Intune](~/enrollment/android-enterprise-overview.md) y [Tipo de aplicación de Google Play administrado](~/apps/apps-add-android-for-work.md#managed-google-play-app-types).
+
+#### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Microsoft Edge versión 77 y posteriores para Windows 10 y macOS (versión preliminar pública) <!-- 3872025, 4678761  -->
+Microsoft Edge versión 77 y posteriores ya está disponible para su implementación en equipos que ejecutan Windows 10 y macOS. La versión preliminar pública ofrece los canales **Dev** y **Beta** para Windows 10 y un canal **Beta** para macOS. La implementación solo está en inglés (EN), pero los usuarios finales pueden cambiar el idioma para mostrar en el explorador, en **Configuración** > **Idiomas**. Microsoft Edge es una aplicación Win32 que se instala en el contexto del sistema y en arquitecturas similares (aplicación x86 en sistemas operativos x86 y aplicación x64 en sistemas operativos x64). Además, las actualizaciones automáticas del explorador están **Activadas** de forma predeterminada, y Microsoft Edge no se puede desinstalar. Para más información, vea [Adición de Microsoft Edge para Windows 10 a Microsoft Intune](~/apps/apps-windows-edge.md) y la [documentación de Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823).
+
+#### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>Actualización de la interfaz de usuario de protección de aplicaciones y de la interfaz de usuario de aprovisionamiento de aplicaciones de iOS <!-- 4102027, 4102029   -->
+La interfaz de usuario para crear y editar directivas de protección de aplicaciones y perfiles de aprovisionamiento de aplicaciones de iOS en Intune se ha actualizado. Los cambios de la UI son:
+- Una experiencia más sencilla, dado el uso de un formato de tipo asistente condensado dentro de una hoja. 
+- Una actualización del flujo de creación para incluir asignaciones.
+- Una página de resumen de todos los elementos establecidos al ver las propiedades, antes de crear una nueva directiva o al editar una propiedad. Además, al editar las propiedades, el resumen solo mostrará una lista de elementos de la categoría de propiedades que se están editando.
+
+Para más información, vea [Creación y asignación de directivas de protección de aplicaciones](~/apps/app-protection-policies.md) y [Uso de perfiles de aprovisionamiento de aplicaciones para iOS](~/apps/app-provisioning-profile-ios.md).
+
+#### <a name="intune-guided-scenarios----4850318-4831296-3610611----"></a>Escenarios guiados de Intune <!-- 4850318, 4831296, 3610611  -->
+Ahora, Intune proporciona escenarios guiados que ayudan a realizar una tarea concreta o un conjunto de tareas en Intune. Un escenario guiado es una serie personalizada de pasos (flujo de trabajo) en torno a un caso de uso completo. Los escenarios más habituales se definen en función del rol que un administrador, un usuario o un dispositivo desempeñan en la organización. Estos flujos de trabajo suelen requerir una colección de perfiles, opciones, aplicaciones y controles de seguridad cuidadosamente organizados para proporcionar la mejor experiencia de usuario y seguridad. Estos son los nuevos escenarios guiados:
+- [Implementación de Microsoft Edge para dispositivos móviles](~/fundamentals/guided-scenarios-edge.md)
+- [Aplicaciones móviles seguras de Microsoft Office](~/fundamentals/guided-scenarios-office-mobile.md) 
+- [Escritorio moderno administrado en la nube](~/fundamentals/guided-scenarios-cloud-managed-pc.md)
+
+Para más información, vea [Introducción a los escenarios guiados de Intune](guided-scenarios-overview.md).
+
+#### <a name="additional-app-configuration-variable-available----4969237-----"></a>Variable de configuración de aplicaciones adicional disponible <!-- 4969237   -->
+Al crear una directiva de configuración de aplicaciones, puede incluir la variable de configuración `AAD Device ID` como parte de los valores de configuración. En Intune, seleccione **Aplicaciones cliente** > **Directivas de configuración de aplicaciones** > **Agregar**. Especifique los detalles de la directiva de configuración y seleccione **Opciones de configuración** para ver la hoja **Opciones de configuración**. Para más información, vea la sección [Uso del diseñador de configuración en Adición de directivas de configuración de aplicaciones para dispositivos Android Enterprise administrados](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer).
+
+
+#### <a name="create-groups-of-management-objects-called-policy-sets----3762880----"></a>Creación de grupos de objetos de administración denominados conjuntos de directivas <!-- 3762880  -->
+Los conjuntos de directivas permiten crear una agrupación de referencias a entidades de administración ya existentes que se deben identificar, establecer como destino y supervisar como una sola unidad conceptual. Los conjuntos de directivas no reemplazan los conceptos ni los objetos existentes. Puede seguir asignando objetos individuales en Intune y hacer referencia a objetos individuales como parte de un conjunto de directivas. Por lo tanto, cualquier cambio que se realice en esos objetos individuales se verá reflejado en el conjunto de directivas.  En Intune, deberá seleccionar **Conjuntos de directivas** > **Crear** para crear un conjunto de directivas desde cero. 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>Configuración de los dispositivos
+
+#### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089-----------"></a>Actualización de la interfaz de usuario para crear y editar anillos de actualización de Windows 10  <!-- 4099089         -->
+Hemos actualizado la experiencia de interfaz de usuario para [crear y editar anillos de actualización de Windows 10](../protect/windows-update-for-business-configure.md#create-and-assign-update-rings) para Intune. Los cambios en la interfaz de usuario son los siguientes:  
+- Formato de tipo asistente condensado en una sola hoja de la consola, bastante alejado de la dispersión de la hoja anterior cuando se configuraban anillos de actualización.   
+- El flujo de trabajo revisado incluye las asignaciones antes de completar la configuración inicial del anillo.
+- Una página de resumen que se puede usar para revisar todas las configuraciones realizadas antes de guardar e implementar un anillo de actualización nuevo. Al editar un anillo de actualización, en el resumen solo muestra la lista de elementos establecidos en la categoría de las propiedades que se hayan editado.
+
+#### <a name="ui-update-for-creating-and-editing-ios-software-update-policy-----4099090---------"></a>Actualización de la interfaz de usuario para crear y editar una directiva de actualización de software de iOS  <!-- 4099090       --> 
+Hemos actualizado la experiencia de interfaz de usuario para [crear](../protect/software-updates-ios.md#configure-the-policy) y [editar](../protect/software-updates-ios.md#edit-a-policy) directivas de actualización de software de iOS para Intune.  Los cambios en la interfaz de usuario son los siguientes:  
+- Formato de tipo asistente condensado en una sola hoja de la consola, bastante alejado de la dispersión de la hoja anterior cuando se configuraban directivas de actualización.   
+- El flujo de trabajo revisado incluye las asignaciones antes de completar la configuración inicial de la directiva.
+- Una página de resumen que se puede usar para revisar todas las configuraciones realizadas antes de guardar e implementar una directiva nueva. Al editar una directiva, en el resumen solo muestra la lista de elementos establecidos en la categoría de las propiedades que se hayan editado.
+
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings------4464404---wnready-----"></a>La configuración Reinicio establecido se ha quitado de los anillos de Windows Update  <!--  4464404   WNReady   -->
+Como ya anunciamos en su día, ahora los anillos de actualización de Windows 10 de Intune [admiten la configuración de fechas límite](../protect/windows-update-settings.md) y ya no admiten *Reinicio establecido*. Las opciones de *Reinicio establecido* ya no están disponibles cuando al configurar o administrar anillos de actualización en Intune.  
+
+Este cambio viene de la mano de algunos [cambios recientes en el Servicio de actualización de Windows](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing) y en los dispositivos que ejecutan Windows 10 1903 o versiones posteriores, las *fechas límite* reemplazan las configuraciones de *Reinicio establecido*.
+
+#### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices----4760025-----"></a>Imposibilidad de instalar aplicaciones desde orígenes desconocidos en dispositivos de perfil de trabajo de Android Enterprise <!-- 4760025   -->
+En los dispositivos de perfil de trabajo de Android Enterprise, los usuarios no pueden instalar aplicaciones procedentes de orígenes desconocidos en ninguna circunstancia. En esta actualización hay una nueva configuración, **Impedir la instalación de aplicaciones de orígenes desconocidos en el perfil personal**. Esta opción impide de forma predeterminada que los usuarios carguen aplicaciones de orígenes desconocidos en el perfil personal del dispositivo.
+
+Para ver los valores que se pueden configurar, vaya a [Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune](../configuration/device-restrictions-android-for-work.md).
+
+Se aplica a:
+- Perfil de trabajo de Android Enterprise
+
+#### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339-----"></a>Creación de un proxy HTTP global en los dispositivos de propietario de dispositivos de Android Enterprise <!-- 4816339   -->
+En los dispositivos de Android Enterprise, se puede configurar un proxy HTTP global para cumplir los estándares de exploración web de la organización (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Android Enterprise** como plataforma > **Propietario del dispositivo > Restricciones de dispositivos** como tipo de perfil > **Conectividad**). Una vez configurado, todo el tráfico HTTP usará este proxy.
+
+Para configurar esta característica y ver los valores que se pueden configurar, vaya a [Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune](../configuration/device-restrictions-android-for-work.md).
+
+Se aplica a:
+- Propietario del dispositivo Android Enterprise
+
+#### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise----5021055-----"></a>La opción Conectar automáticamente se ha quitado de los perfiles de Wi-Fi del administrador de dispositivos Android y Android Enterprise <!-- 5021055   -->
+En los dispositivos de administrador de dispositivos Android y Android Enterprise, puede crear un perfil de Wi-Fi para configurar diferentes opciones (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Administrador de dispositivos Android** o **Android Enterprise** como plataforma > **Wi-Fi** como tipo de perfil). En esta actualización, la opción **Conectar automáticamente** se ha quitado, ya que [no es compatible con Android](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29). 
+
+Si utiliza esta configuración en un perfil de Wi-Fi, posiblemente haya notado que **Conectar automáticamente** no funciona. No es necesario realizar ninguna acción, pero tenga en cuenta que esta configuración se ha quitado en la interfaz de usuario de Intune.
+
+Para ver la configuración actual, vaya a [Configuración de Wi-Fi de Android](../configuration/wi-fi-settings-android.md) y [Configuración de Wi-Fi de Android Enterprise](../configuration/wi-fi-settings-android-enterprise.md).
+
+Se aplica a:
+- Administrador de dispositivos Android 
+- Android Enterprise
+
+
+#### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices----5199328-----"></a>Nuevos valores de configuración de dispositivo para dispositivos iOS e iPadOS supervisados <!-- 5199328   -->
+En los dispositivos iOS e iPad se puede crear un perfil para restringir las características y la configuración de esos dispositivos (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **iOS/iPadOS** como plataforma > **Restricciones de dispositivos** como tipo de perfil). En esta actualización, hay nuevas opciones de configuración que puede controlar: 
+- El acceso a la unidad de red en la aplicación de archivos  
+- El acceso a la unidad USB en la aplicación de archivos 
+- La posibilidad tener Wi-Fi siempre activado 
+
+Para ver estas opciones, vaya a [Configuración de dispositivos iOS para permitir o restringir características mediante Intune](../configuration/device-restrictions-ios.md).
+
+Se aplica a:
+- iOS 13.0 y versiones más recientes
+- IPadOS 13.0 y versiones más recientes
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>Inscripción de dispositivos
+
+#### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697-----"></a>Especificar qué versiones de sistema operativo del dispositivo Android se inscriben con el perfil de trabajo o la inscripción del administrador de dispositivos <!-- 4350697   -->
+Con las restricciones del tipo de dispositivo de Intune, puede usar la versión del sistema operativo del dispositivo para especificar qué dispositivos de usuario usarán la inscripción de perfil de trabajo de Android Enterprise o la inscripción de administrador de dispositivos Android.  Para obtener más información, consulte [Establecer restricciones de inscripción](../enrollment/enrollment-restrictions-set.md).
+
+#### <a name="windows-autopilot-deployment-reports----3856172---"></a>Informes de implementación de Windows Autopilot <!-- 3856172 -->
+Un nuevo informe detalla cada dispositivo implementado mediante Windows Autopilot. Para más información, vea [Informe de implementaciones de Autopilot](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). Estamos en proceso de implementar esta característica para todos los clientes, y se espera que el proceso finalice al término de la semana próxima.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Administración de dispositivos
+
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>Nuevas restricciones para cambiar el nombre de los dispositivos Windows <!-- 3478938  -->
+Al cambiar el nombre de un dispositivo Windows, se deben seguir reglas nuevas:
+- 15 caracteres o menos (debe ser menor o igual que 63 bytes, sin incluir el valor NULL final).
+- No puede ser una cadena nula o vacía.
+- Caracteres ASCII permitidos: letras (a-z, A-Z), números (0-9) y guiones.
+- Caracteres Unicode permitidos: caracteres >=0x80, debe tener un formato UTF8 válido, debe ser asignable mediante IDN (es decir, el proceso RtlIdnToNameprepUnicode debe finalizar correctamente. Consulte el documento RFC 3492).
+- El nombre no debe contener números exclusivamente.
+- El nombre no debe contener espacios.
+- Caracteres no permitidos: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
+
+ Para más información, vea [Cambio de nombre de un dispositivo en Intune](../remote-actions/device-rename.md).
+
+### <a name="new-android-report-on-devices-overview-page----4924364---"></a>Nuevo informe de Android en la página de información general de dispositivos <!-- 4924364 -->
+Un nuevo informe en la página de información general de dispositivos muestra la cantidad de dispositivos Android inscritos en cada solución de administración de dispositivos. Este gráfico muestra la cantidad de dispositivos inscritos de perfil de trabajo, totalmente administrados, dedicados y de administrador de dispositivos. Para ver el informe, elija **Intune** > **Dispositivos** > **Información general**.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>Seguridad de dispositivos 
+
+#### <a name="pkcs-certificates-for-macos-----1333650---------"></a>Certificados PKCS para macOS  <!-- 1333650       -->
+Ahora puede [usar certificados PKCS con macOS](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). Puede seleccionar el certificado PKCS como un tipo de perfil para macOS e implementar certificados de usuario y de dispositivo que tengan [campos de firmante y de nombre alternativo del firmante personalizados](../protect/certficates-pfx-configure.md#subject-name-format-for-macos).  
+
+El certificado PKCS para macOS también admite una nueva opción, _Permitir el acceso de todas las aplicaciones_. Con ella, puede permitir el acceso de todas las aplicaciones asociadas a la clave privada del certificado.  Para más información sobre esta opción, vea la documentación de Apple en https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
+
+####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>Credenciales derivadas para aprovisionar dispositivos móviles iOS con certificados      <!--  1736036, 1736037, 1772050, 2777333         -->  
+Intune admite el uso de [credenciales derivadas](../protect/derived-credentials.md) como método de autenticación y para el cifrado y la firma S/MIME de dispositivos iOS. Las credenciales derivadas son una implementación de la norma *800-157 del National Institute of Standards and Technology (NIST)* relativa a la implementación de certificados en dispositivos.  
+
+Las credenciales derivadas se basan en el uso de una tarjeta de verificación de identidad personal (PIV) o una tarjeta de acceso común (CAC), como una tarjeta inteligente. Para obtener una credencial derivada para un dispositivo móvil, los usuarios comienzan en la aplicación Portal de empresa y siguen un flujo de trabajo de inscripción que es único para el proveedor que usen.  Un requisito común a todos los proveedores es usar una tarjeta inteligente en un equipo para autenticarse en el proveedor de las credenciales derivadas. Tras ello, dicho proveedor emite un certificado para el dispositivo que viene derivado de la tarjeta inteligente del usuario.  
+
+Intune admite los siguientes proveedores de credenciales derivadas:   
+- DISA Purebred
+- Entrust Datacard
+- Intercede
+
+Las credenciales derivadas se usan como método de autenticación de los perfiles de configuración de dispositivos de VPN, Wi-Fi y correo electrónico. También se pueden usar para la autenticación de aplicaciones y el cifrado y la firma S/MIME.  
+
+Para más información sobre la norma, vea el documento sobre [credenciales PIV derivadas](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials) en www.nccoe.nist.gov.
+
+#### <a name="use-graph-api-to-specify-a-on-premises-user-principal-name-as-a-variable-for-scep-certificates--------5437939----------"></a>Uso de Graph API para especificar un nombre principal de usuario local como una variable para certificados SCEP    <!--  5437939        -->  
+Cuando use [Graph API de Intune](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0), puede especificar onPremisesUserPrincipalName como variable del nombre alternativo del firmante (SAN) de los certificados SCEP.
+
+
 
 <!-- ########################## -->
 
@@ -367,7 +530,7 @@ Se aplica a:
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Las fechas límite reemplazan la configuración del reinicio establecido de los anillos de Windows Update   <!-- 4464404        -->
 Para estar en consonancia con [los cambios recientes en el servicio de Windows](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing), los anillos de actualización de Windows 10 de Intune ahora [admiten la configuración de fechas límite](../protect/windows-update-settings.md). Las *fechas límite* determinan cuándo un dispositivo instala las actualizaciones de características y seguridad.  En los dispositivos que ejecutan Windows 10 1903 o una versión posterior, las *fechas límite* sustituyen a las configuraciones del *reinicio establecido*.  En el futuro, las *fechas límite* reemplazarán también al *reinicio establecido* de las versiones anteriores de Windows 10.  
 
-Cuando no configure las *fechas límite*, los dispositivos seguirán usando la configuración de *reinicio establecido*, pero [Intune dejará de admitir la configuración de reinicio establecido](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) en una actualización futura.  
+Cuando no se configuran *fechas límite*, los dispositivos seguirán usando la configuración de *Reinicio establecido*, pero Intune dejará de admitir la configuración de Reinicio establecido en una actualización futura.  
 
 Planee el uso de *fechas límite* para todos los dispositivos Windows 10. Una vez que haya establecido la configuración de las *fechas límite*, puede cambiar las configuraciones de Intune para que el *reinicio establecido* sea Sin configurar. Cuando se establece en Sin configurar, Intune deja de administrar esa configuración en los dispositivos, pero no quita las últimas configuraciones de la configuración del dispositivo. Por lo tanto, las últimas configuraciones que se establecieron para el *reinicio establecido* permanecen activas y en uso en los dispositivos hasta que dichas configuraciones se modifican mediante un método distinto de Intune. Más adelante, cuando la versión de los dispositivos de Windows cambia o cuando la compatibilidad de Intune con las *fechas límite* se expande a la versión de Windows de los dispositivos, el dispositivo comenzará a usar la nueva configuración, que ya está en su lugar.
 

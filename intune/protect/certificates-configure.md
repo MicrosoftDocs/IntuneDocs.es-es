@@ -1,13 +1,14 @@
 ---
 title: Creación de un perfil de certificado en Microsoft Intune - Azure | Microsoft Docs
-description: Para sus dispositivos, agregue o cree un perfil de certificado configurando un entorno de certificados PKCS o SCEP, exporte el certificado público, cree el perfil en Azure Portal y asigne el SCEP o PKCS a los perfiles de certificado de Microsoft Intune en Azure Portal
+description: Obtenga información sobre cómo usar certificados y perfiles de certificado de Protocolo de inscripción de certificados simple (SCEP) y Public Key Cryptography Standards (PKCS) con Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
@@ -16,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 65ced1dfb0fe872129b7437e8dda3dde680b5d07
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251565"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786829"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Uso de certificados para la autenticación en Microsoft Intune  
 
-Use certificados con Intune para autenticar a los usuarios en las aplicaciones y los recursos corporativos a través de VPN, Wi-Fi o perfiles de correo electrónico. Cuando se usan certificados para autenticar estas conexiones, los usuarios finales no tendrán que escribir nombres de usuario ni contraseñas, lo que facilita su acceso. Los certificados también se usan para firmar y cifrar el correo electrónico mediante S/MIME.
+Use certificados con Intune para autenticar a los usuarios en las aplicaciones y los recursos corporativos a través de VPN, Wi-Fi o perfiles de correo electrónico. Cuando se usan certificados para autenticar estas conexiones, los usuarios finales no tendrán que escribir nombres de usuario ni contraseñas, lo que puede facilitar su acceso. Los certificados también se usan para firmar y cifrar el correo electrónico mediante S/MIME.
 
 ## <a name="intune-supported-certificates-and-usage"></a>Certificados y uso admitidos por Intune
 | Tipo              | Autenticación | Firma S/MIME | Cifrado S/MIME  |
 |--|--|--|--|
-| Certificado PKCS importado |  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png)|
+| Certificado importado de Public Key Cryptography Standards (PKCS) |  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png)|
 | PKCS#12 (o PFX)    | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |  |
 | Protocolo de inscripción de certificados simple (SCEP)  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | |
 
@@ -43,9 +44,9 @@ Cada perfil de certificado individual que cree es compatible con una sola plataf
 - Si usa perfiles de certificado SCEP con Servicios de certificados de Active Directory de Microsoft, configurará un servidor de Servicio de inscripción de dispositivos de red (NDES).
 - Si usa SCEP con uno de nuestros asociados de entidad de certificación, tendrá que [integrarlo con Intune](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).
 - Los perfiles de certificado SCEP y PKCS requieren que descargue, instale y configure Microsoft Intune Certificate Connector. 
-- Los certificados PCKS importados requieren que descargue, instale y configure el Conector de certificado PFX para Microsoft Intune.
+- Los certificados PKCS importados requieren que descargue, instale y configure el Conector de certificado PFX para Microsoft Intune.
 - Los certificados PKCS importados requieren que exporte los certificados desde la entidad de certificación y los importe en Microsoft Intune. Vea [el proyecto PFXImport de PowerShell](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
-- Para que un dispositivo use perfiles de certificado SCEP, PCKS o PKCS importados, ese dispositivo debe confiar en la entidad de certificación raíz. Un *perfil de certificado de confianza* se usa para implementar el certificado de entidad de certificación raíz de confianza en los dispositivos.  
+- Para que un dispositivo use perfiles de certificado SCEP, PKCS o PKCS importados, ese dispositivo debe confiar en la entidad de certificación raíz. Un *perfil de certificado de confianza* se usa para implementar el certificado de entidad de certificación raíz de confianza en los dispositivos.  
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>Plataformas compatibles y perfiles de certificado  
 | Plataforma              | Perfil de certificado de confianza | Perfil de certificado PKCS | Perfil de certificado SCEP | Perfil de certificado PKCS importado  |
@@ -55,13 +56,13 @@ Cada perfil de certificado individual que cree es compatible con una sola plataf
 | Android Enterprise <br> - Dedicado (propietario del dispositivo)   |  |   |  |   |
 | Android Enterprise <br> - Perfil de trabajo    | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
-| macOS                 | ![Compatible.](./media/certificates-configure/green-check.png) |   |![Compatible.](./media/certificates-configure/green-check.png)|![Compatible.](./media/certificates-configure/green-check.png)|
+| macOS                 | ![Compatible.](./media/certificates-configure/green-check.png) |  ![Compatible.](./media/certificates-configure/green-check.png) |![Compatible.](./media/certificates-configure/green-check.png)|![Compatible.](./media/certificates-configure/green-check.png)|
 | Windows Phone 8,1     |![Compatible.](./media/certificates-configure/green-check.png)  |  | ![Compatible.](./media/certificates-configure/green-check.png)| ![Compatible.](./media/certificates-configure/green-check.png) |
 | Windows 8.1 y posterior |![Compatible.](./media/certificates-configure/green-check.png)  |  |![Compatible.](./media/certificates-configure/green-check.png) |   |
 | Windows 10 y versiones posteriores  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>Exportación del certificado de entidad de certificación raíz de confianza  
-Para usar certificados PKCS, SCEP y PKCS importados, los dispositivos deben confiar en la entidad de certificación raíz. Para establecer esta confianza, exporte el certificado de entidad de certificación (CA) raíz de confianza, así como cualquier certificado de entidad de certificación intermedia o emisora, como un certificado público (.cer). Puede obtener estos certificados de la entidad de certificación emisora o desde cualquier dispositivo que confíe en ella.  
+Para usar certificados PKCS, SCEP y PKCS importados, los dispositivos deben confiar en la entidad de certificación raíz. Para establecer la confianza, exporte el certificado de entidad de certificación (CA) raíz de confianza y cualquier certificado de entidad de certificación intermedia o emisora, como un certificado público (.cer). Puede obtener estos certificados de la entidad de certificación emisora o desde cualquier dispositivo que confíe en ella.  
 
 Para exportar el certificado, consulte la documentación de la entidad de certificación. Tendrá que exportar el certificado público como un archivo .cer.  No exporte la clave privada, un archivo .pfx.  
 
@@ -70,7 +71,7 @@ Usará este archivo .cer al [crear perfiles de certificado de confianza](#create
 ## <a name="create-trusted-certificate-profiles"></a>creación de perfiles de certificado de confianza  
 Cree un perfil de certificado de confianza antes de poder crear un perfil de certificado SCEP, PKCS o PKCS importado. La implementación de un perfil de certificado de confianza garantiza que cada dispositivo reconozca la legitimidad de la entidad de certificación. Los perfiles de certificado SCEP hacen referencia directamente a un perfil de certificado de confianza. Los perfiles de certificado PKCS no hacen referencia directamente al perfil de certificado de confianza, pero sí al servidor en el que se hospeda la entidad de certificación. Los perfiles de certificado PKCS importados no hacen referencia directamente al perfil de certificado de confianza, pero pueden usarlo en el dispositivo. La implementación de un perfil de certificado de confianza en los dispositivos garantiza que se establece esta confianza. Cuando un dispositivo no confía en la entidad de certificación raíz, se producirá un error en la directiva de perfil de certificado SCEP o PKCS.  
 
-Cree un perfil de certificado de confianza independiente para cada plataforma de dispositivo que quiera admitir, como lo haría con los perfiles de certificado SCEP, PCKS y PKCS importados.  
+Cree un perfil de certificado de confianza independiente para cada plataforma de dispositivo que quiera admitir, como lo haría con los perfiles de certificado SCEP, PKCS y PKCS importados.  
 
 
 ### <a name="to-create-a-trusted-certificate-profile"></a>Para crear un perfil de certificado de confianza  
@@ -86,7 +87,7 @@ Cree un perfil de certificado de confianza independiente para cada plataforma de
    - **Almacén de certificados de equipo - Intermedio**
    - **Almacén de certificados de usuario - Intermedio**
 8. Cuando haya terminado, elija **Aceptar**, vuelva al panel **Crear perfil** y seleccione **Crear**.
-El perfil aparece en la lista de perfiles del panel de vista *Configuración del dispositivo - Perfiles*, con un tipo de perfil de **Certificado de confianza**.  Asegúrese de asignar este perfil a los dispositivos que vayan a usar certificados SCEP o PCKS. Para asignar el perfil a grupos, vea [Asignación de perfiles de dispositivo](../configuration/device-profile-assign.md).
+El perfil aparece en la lista de perfiles del panel de vista *Configuración del dispositivo - Perfiles*, con un tipo de perfil de **Certificado de confianza**.  Asegúrese de asignar este perfil a los dispositivos que vayan a usar certificados SCEP o PKCS. Para asignar el perfil a grupos, vea [Asignación de perfiles de dispositivo](../configuration/device-profile-assign.md).
 
 > [!NOTE]  
 > Es posible que los dispositivos Android muestren un mensaje que indica que un tercero ha instalado un certificado de confianza.  
@@ -97,7 +98,7 @@ El perfil aparece en la lista de perfiles del panel de vista *Configuración del
 - [Uso de entidades de certificación de terceros](certificate-authority-add-scep-overview.md)  
 
 ## <a name="next-steps"></a>Pasos siguientes  
-Después de crear y asignar perfiles de certificado de confianza, cree perfiles de certificado SCEP, PKCS o PKCS importados para cada plataforma que quiera usar. Para continuar, vea los artículos siguientes:  
+Cree perfiles de certificado SCEP, PKCS o PKCS importados para cada plataforma que quiera usar. Para continuar, vea los artículos siguientes:  
 - [Configuración de la infraestructura para admitir certificados SCEP con Intune](certificates-scep-configure.md)  
 - [Configuración y administración de certificados PKCS con Intune](certficates-pfx-configure.md)  
 - [Creación de un perfil de certificado PKCS importado](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  

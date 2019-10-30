@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,17 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728512"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584533"
 ---
 # <a name="rename-a-device-in-intune"></a>Cambio de nombre de un dispositivo en Intune
-
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 La acción **Cambiar el nombre del dispositivo** le permite cambiar el nombre de un dispositivo que está inscrito en Intune. El nombre del dispositivo se cambia en Intune y en el dispositivo.
 
@@ -44,6 +42,15 @@ Esta característica no es compatible actualmente con el cambio de nombre de dis
 5. Si quiere reiniciar el dispositivo después de cambiarle el nombre, elija **Sí** junto a **Restart after rename** (Reiniciar tras cambio de nombre).
 6. Elija **Cambiar nombre**.
 
+## <a name="windows-device-rename-rules"></a>Reglas para cambiar el nombre de un dispositivo Windows
+Al cambiar el nombre de un dispositivo Windows, el nuevo nombre debe seguir estas reglas:
+- 15 caracteres o menos (debe ser menor o igual que 63 bytes, sin incluir el valor NULL final).
+- No puede ser una cadena nula o vacía.
+- Caracteres ASCII permitidos: letras (a-z, A-Z), números (0-9) y guiones.
+- Caracteres Unicode permitidos: caracteres >=0x80, debe tener un formato UTF8 válido, debe ser asignable mediante IDN (es decir, el proceso RtlIdnToNameprepUnicode debe finalizar correctamente. Consulte el documento RFC 3492).
+- El nombre no debe contener números exclusivamente.
+- El nombre no debe contener espacios.
+- Caracteres no permitidos: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>Pasos siguientes
