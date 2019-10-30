@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379809"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587954"
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -30,7 +31,9 @@ ms.locfileid: "72379809"
 
 Como administrador de Intune, puede crear y administrar las restricciones de inscripción que definen los dispositivos que se pueden inscribir en la administración con Intune, lo que incluye:
 - El número de dispositivos
-- Los sistemas operativos y versiones. Puede crear varias restricciones y aplicarlas a diferentes grupos de usuarios. Puede establecer el [orden de prioridad](#change-enrollment-restriction-priority) para las distintas restricciones.
+- Los sistemas operativos y sus versiones
+
+Puede crear varias restricciones y aplicarlas a diferentes grupos de usuarios. Puede establecer el [orden de prioridad](#change-enrollment-restriction-priority) para las distintas restricciones.
 
 >[!NOTE]
 >Las restricciones de inscripción no son características de seguridad. Los dispositivos en peligro pueden falsificar su carácter. Estas restricciones son un obstáculo al mejor esfuerzo para los usuarios no malintencionados.
@@ -69,8 +72,17 @@ Las restricciones predeterminadas se proporcionan automáticamente para las rest
     - El administrador de dispositivos Android y el perfil de trabajo de Android Enterprise admiten major.minor.rev.build.
     - iOS admite major.minor.rev. Las versiones de sistema operativo no son relevantes en dispositivos Apple que se inscriban en el Programa de inscripción de dispositivos, Apple School Manager ni la aplicación Apple Configurator.
     - Windows admite major.minor.build.rev únicamente para Windows 10.
-    > [!Note]
-    > Windows 10 no proporciona el número de rev durante la inscripción; por lo tanto, si, por ejemplo, escribe 10.0.17134.100 y el dispositivo coincide con 10.0.17134.174, durante la inscripción este se bloqueará.
+    
+    > [!IMPORTANT]
+    > Las plataformas del administrador de dispositivos Android y de Android Enterprise (perfil de trabajo) tienen el siguiente comportamiento:
+    > - Si ambas plataformas están permitidas en el mismo grupo, los usuarios se inscribirán con un perfil de trabajo si el dispositivo lo admite; si no, se inscribirán como administradores de dispositivos. 
+    > - Si ambas plataformas están permitidas en el grupo y se han refinado para versiones específicas y no superpuestas, los usuarios recibirán el flujo de inscripción definido para su versión del sistema operativo. 
+    > - Si ambas plataformas se permiten, pero están bloqueadas en las mismas versiones, los usuarios de los dispositivos con las versiones bloqueadas se desconectarán del flujo de inscripción de administrador de dispositivos Android, se bloquearán de la inscripción y se les pedirá que cierren sesión. 
+    >
+    > Merece la pena mencionar que ni el perfil de trabajo ni la inscripción del administrador de dispositivos funcionarán a menos que se hayan completado los requisitos previos adecuados en la inscripción de Android. 
+    
+   > [!Note]
+   > Windows 10 no proporciona el número de rev durante la inscripción; por lo tanto, si, por ejemplo, escribe 10.0.17134.100 y el dispositivo coincide con 10.0.17134.174, durante la inscripción este se bloqueará.
 
 8. En **Propiedad personal**, elija **Permitir** para las plataformas que quiera permitir como dispositivos de propiedad personal.
 9. Elija **Siguiente** para ir a la página **Asignaciones**.

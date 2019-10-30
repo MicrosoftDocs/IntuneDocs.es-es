@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9306c7429adbe4a5159879ccbe7cb0f13e65ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725574"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785687"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Borrado de los datos mediante acciones de inicio condicional de la directiva de protección de aplicaciones en Intune
 
@@ -59,6 +60,7 @@ Para iOS, podrá configurar las acciones de las siguientes opciones desde el men
 - Versión mínima de la aplicación
 - Versión mínima del SDK
 - Modelos de dispositivos
+- Nivel máximo de amenazas de dispositivo permitido
 
 Para usar el valor de configuración **Modelos de dispositivo**, indique una lista de identificadores de modelos de iOS separados por punto y coma. Puede encontrar un identificador de modelo de iOS en la columna Tipo de dispositivo en la [documentación de soporte técnico de HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Entrada de ejemplo: *iPhone5,2;iPhone5,3*
@@ -83,6 +85,7 @@ Para Android, podrá configurar las acciones de las siguientes opciones desde el
 - Fabricantes de dispositivos
 - Atestación de dispositivo SafetyNet
 - Examen de amenazas en las aplicaciones
+- Nivel máximo de amenazas de dispositivo permitido
 
 Para usar el valor de configuración **Fabricantes de dispositivos**, indique una lista de fabricantes de Android separados por punto y coma. Puede encontrar el fabricante de Android de un dispositivo en la configuración del dispositivo.<br>
 Entrada de ejemplo: *Fabricante A; Fabricante B* 

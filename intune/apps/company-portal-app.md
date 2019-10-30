@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350003"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585001"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -128,6 +129,14 @@ En **Personalización del Portal de empresa** > **Mensaje de administración de 
 - Aceptar el **Valor predeterminado** para usar la lista tal y como se muestra, o bien
 - Elegir **Personalizar** para personalizar la lista de elementos que su organización no puede ver o realizar en los dispositivos iOS administrados. Puede usar [markdown](https://daringfireball.net/projects/markdown/) para agregar viñetas, negritas, cursivas y vínculos.
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>Credenciales derivadas de Portal de empresa para dispositivos iOS
+Intune admite las credenciales derivadas de tarjeta de verificación de identidad personal (PIV) o de tarjeta de acceso común (CAC) en colaboración con los proveedores de credenciales DISA Purebred, Entrust Datacard e Intercede. Los usuarios finales deberán realizar más pasos tras inscribir su dispositivo iOS para verificar sus identidades en la aplicación Portal de empresa. Para que las credenciales derivadas se habiliten para los usuarios, primero se configurará un proveedor de credenciales para el inquilino y, seguidamente, se establecerá como destino un perfil que use credenciales derivadas para usuarios o dispositivos.
+
+> [!NOTE]
+> El usuario verá instrucciones sobre las credenciales derivadas según el vínculo que se haya especificado a través de Intune.
+
+Para más información sobre las credenciales derivadas de dispositivos iOS, vea [Usar credenciales derivadas en Microsoft Intune](~/protect/derived-credentials.md).
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Métodos abreviados de teclado del Portal de empresa de Windows
 
 Los usuarios finales pueden desencadenar acciones de navegación, aplicación y dispositivo en el Portal de empresa de Windows mediante métodos abreviados de teclado (aceleradores).
@@ -171,21 +180,25 @@ Los usuarios pueden realizar acciones en sus dispositivos locales o remotos a tr
 
 Algunas plataformas y configuraciones no realizar permiten acciones de autoservicio en el dispositivo. En la tabla siguiente se ofrecen más detalles sobre las acciones de autoservicio:
 
-|     Plataforma    |    Retirar    |    Eliminación de datos     |    Cambiar nombre<sup>(4)</sup>    |    Sincronización    |    Bloqueo remoto    |    Restablecer el código de acceso    |    Recuperación de clave    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    Disponible<sup>(1)</sup>    |    Available    |    Available    |    Available    |    Solo en Windows Phone    |    Solo en Windows Phone    |    N/D    |
-|    iOS<sup>(3)</sup>    |    Available    |    Available    |    Available    |    Available    |    Available    |    Available    |    N/D    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Available    |    N/D    |    Available    |    Available    |    Available    |    N/D    |    Disponible<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    Disponible<sup>(7)</sup>    |    Disponible<sup>(7)</sup>    |    Available    |    Available    |    Available    |    Disponible<sup>(6)</sup>    |    N/D    |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| Retirar | Disponible<sup>(1)</sup> | Disponible<sup>(8)</sup> | Available | Disponible<sup>(7)</sup> |
+| Eliminación de datos | Available | Available | N/D | Disponible<sup>(7)</sup> |
+| Cambiar nombre<sup>(4)</sup> | Available | Disponible<sup>(8)</sup> | Available | Available |
+| Sincronización | Available | Available | Available | Available |
+| Bloqueo remoto | Solo en Windows Phone | Available | Available | Available |
+| Restablecer el código de acceso | Solo en Windows Phone | Available | N/D | Disponible<sup>(6)</sup> |
+| Recuperación de clave | N/D | N/D | Disponible<sup>(2)</sup> | N/D |
+| Modo oscuro | N/D | Available | N/D | N/D |
 
-
-<sup>(1) </sup> La función Retirar siempre está bloqueada en dispositivos Windows unidos a Azure AD.<br>
-<sup>(2)</sup> La recuperación de clave personal para MacOS solo está disponible a través del sitio web Portal de empresa.<br> 
-<sup>(3)</sup> Todas las acciones remotas se deshabilitan si se usa una inscripción del administrador de inscripción de dispositivos.<br>
-<sup>(4) </sup> Rename solo cambia el nombre del dispositivo en la aplicación o el sitio web Portal de empresa, no en el dispositivo.<br>
-<sup>(5) </sup> el borrado remoto no está disponible en los dispositivos MacOS.<br>
-<sup>(6)</sup> En algunas configuraciones de Android Enterprise no se admite el restablecimiento del código de acceso. Para más información, consulte [Restablecimiento o eliminación del código de acceso de un dispositivo en Intune](../remote-actions/device-passcode-reset.md).<br>
-<sup>(7)</sup> Las funciones Retirar y Borrar no están disponibles en escenarios de Propietario del dispositivo Android Enterprise (COPE, COBO, COSU).<br> 
+<sup>(1)</sup> La función **Retirar** siempre está bloqueada en los dispositivos Windows unidos a Azure AD.<br>
+<sup>(2)</sup> **Recuperación de clave** para MacOS solo está disponible a través del portal web.<br>
+<sup>(3) </sup> Todas las acciones remotas se deshabilitan si se usa una inscripción del administrador de inscripción de dispositivos.<br>
+<sup>(4)</sup> **Cambiar nombre** solo cambia el nombre del dispositivo en la aplicación o el sitio web Portal de empresa, no en el dispositivo.<br>
+<sup>(5)</sup> **Borrar** no está disponible en los dispositivos MacOS.<br>
+<sup>(6)</sup> **Restablecer el código de acceso** no se admite en algunas configuraciones de Android y Android Enterprise. Para más información, consulte [Restablecimiento o eliminación del código de acceso de un dispositivo en Intune](../remote-actions/device-passcode-reset.md).<br>
+<sup>(7)</sup> **Retirar** y **Borrar** no están disponibles en escenarios de propietario del dispositivo Android Enterprise (COPE, COBO, COSU).<br> 
+<sup>(8)</sup> **Retirar** (quitar el dispositivo) y **Cambiar nombre** están disponibles en todos los tipos de inscripción. Otras acciones no tienen cabida en la inscripción de usuario.<br> 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -2,29 +2,28 @@
 title: Directivas de cumplimiento de dispositivos en Microsoft Intune - Azure | Microsoft Docs
 description: Introducción al uso de directivas de cumplimiento de dispositivos, información general de los estados y los niveles de gravedad, uso del estado InGracePeriod, trabajo con el acceso condicional, control de los dispositivos sin una directiva asignada y diferencias de cumplimiento en Azure Portal y el portal clásico en Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a743bb3b2003b1dbdf8088aca19bce898c8e40a8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721427"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749172"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Establecimiento de reglas en los dispositivos para permitir el acceso a recursos de su organización con Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Muchas soluciones de administración de dispositivos móviles (MDM) ayudan a proteger los datos de la organización exigiendo a los usuarios y dispositivos que cumplan algunos requisitos. En Intune, esta característica se denomina "directivas de cumplimiento". Las directivas de cumplimiento definen las reglas y la configuración que los usuarios y los dispositivos deben cumplir para ser conformes. Cuando se combinan con el acceso condicional, los administradores pueden bloquear a los usuarios y dispositivos que no cumplan las reglas.
 
@@ -89,7 +88,7 @@ Intune también incluye un conjunto de configuraciones de directivas de cumplimi
 
 - **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**: esta propiedad tiene dos valores:
 
-  - **Compatible** (valor predeterminado): característica de seguridad desactivada
+  - **Compatible** (*valor predeterminado*): característica de seguridad desactivada
   - **No compatible**: característica de seguridad activada
 
   Si un dispositivo no tiene asignada una directiva de cumplimiento, se considerará compatible de forma predeterminada. Si se usa el acceso condicional con directivas de cumplimiento, se recomienda cambiar la configuración predeterminada a **No compatible**. Si un usuario final no es compatible porque no se asignó ninguna directiva, en la [aplicación Portal de empresa de Intune](../apps/company-portal-app.md) se muestra `No compliance policies have been assigned`.
@@ -115,13 +114,13 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 |**Configuración de directiva**| **Plataforma** |
 | --- | ----|
-| **Configuración de PIN o contraseña** | - **Android 4.0 y versiones posteriores**: En cuarentena</br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena</br>- **Android Enterprise**: En cuarentena</br></br>- **iOS 8.0 y versiones posteriores**: Corregido</br>- **macOS 10.11 y versiones posteriores**: Corregido</br></br>- **Windows 8.1 y versiones posteriores**: Corregido</br>- **Windows Phone 8.1 y versiones posteriores**: Corregido|
-| **Cifrado del dispositivo** | - **Android 4.0 y versiones posteriores**: En cuarentena</br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena</br>- **Android Enterprise**: En cuarentena</br></br>- **iOS 8.0 y versiones posteriores**: Corregido (estableciendo PIN)</br>- **macOS 10.11 y versiones posteriores**: Corregido (estableciendo PIN)</br></br>- **Windows 8.1 y versiones posteriores**: No disponible</br>- **Windows Phone 8.1 y versiones posteriores**: Corregido |
-| **Dispositivo liberado o modificado** | - **Android 4.0 y versiones posteriores**: En cuarentena (no es una configuración)</br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena (no es una configuración)</br>- **Android Enterprise**: En cuarentena (no es una configuración)</br></br>- **iOS 8.0 y versiones posteriores**: En cuarentena (no es una configuración)</br>- **macOS 10.11 y versiones posteriores**: No disponible</br></br>- **Windows 8.1 y versiones posteriores**: No disponible</br>- **Windows Phone 8.1 y versiones posteriores**: No disponible |
-| **Perfil de correo electrónico** | - **Android 4.0 y versiones posteriores**: No disponible</br>- **Samsung Knox Standard 4.0 y versiones posteriores**: No disponible</br>- **Android Enterprise**: No disponible</br></br>- **iOS 8.0 y versiones posteriores**: En cuarentena</br>- **macOS 10.11 y versiones posteriores**: En cuarentena</br></br>- **Windows 8.1 y versiones posteriores**: No disponible</br>- **Windows Phone 8.1 y versiones posteriores**: No disponible |
-| **Versión de SO mínima** | - **Android 4.0 y versiones posteriores**: En cuarentena</br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena</br>- **Android Enterprise**: En cuarentena</br></br>- **iOS 8.0 y versiones posteriores**: En cuarentena</br>- **macOS 10.11 y versiones posteriores**: En cuarentena</br></br>- **Windows 8.1 y versiones posteriores**: En cuarentena</br>- **Windows Phone 8.1 y versiones posteriores**: En cuarentena |
-| **Versión de SO máxima** | - **Android 4.0 y versiones posteriores**: En cuarentena</br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena</br>- **Android Enterprise**: En cuarentena</br></br>- **iOS 8.0 y versiones posteriores**: En cuarentena</br>- **macOS 10.11 y versiones posteriores**: En cuarentena</br></br>- **Windows 8.1 y versiones posteriores**: En cuarentena</br>- **Windows Phone 8.1 y versiones posteriores**: En cuarentena |
-| **Atestación de estado de Windows** | - **Android 4.0 y versiones posteriores**: No disponible</br>- **Samsung Knox Standard 4.0 y versiones posteriores**: No disponible</br>- **Android Enterprise**: No disponible</br></br>- **iOS 8.0 y versiones posteriores**: No disponible</br>- **macOS 10.11 y versiones posteriores**: No disponible</br></br>- **Windows 10 y Windows 10 Mobile**: En cuarentena</br>- **Windows 8.1 y versiones posteriores**: En cuarentena</br>- **Windows Phone 8.1 y versiones posteriores**: No disponible |
+| **Configuración de PIN o contraseña** | - **Android 4.0 y versiones posteriores**: En cuarentena<br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena<br>- **Android Enterprise**: En cuarentena  <br>  <br>- **iOS 8.0 y versiones posteriores**: Corregido<br>- **macOS 10.11 y versiones posteriores**: Corregido  <br>  <br>- **Windows 8.1 y versiones posteriores**: Corregido<br>- **Windows Phone 8.1 y versiones posteriores**: Corregido|
+| **Cifrado del dispositivo** | - **Android 4.0 y versiones posteriores**: En cuarentena<br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena<br>- **Android Enterprise**: En cuarentena<br><br>- **iOS 8.0 y versiones posteriores**: Corregido (estableciendo PIN)<br>- **macOS 10.11 y versiones posteriores**: Corregido (estableciendo PIN)<br><br>- **Windows 8.1 y versiones posteriores**: No disponible<br>- **Windows Phone 8.1 y versiones posteriores**: Corregido |
+| **Dispositivo liberado o modificado** | - **Android 4.0 y versiones posteriores**: En cuarentena (no es una configuración)<br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena (no es una configuración)<br>- **Android Enterprise**: En cuarentena (no es una configuración)<br><br>- **iOS 8.0 y versiones posteriores**: En cuarentena (no es una configuración)<br>- **macOS 10.11 y versiones posteriores**: No disponible<br><br>- **Windows 8.1 y versiones posteriores**: No disponible<br>- **Windows Phone 8.1 y versiones posteriores**: No disponible |
+| **Perfil de correo electrónico** | - **Android 4.0 y versiones posteriores**: No disponible<br>- **Samsung Knox Standard 4.0 y versiones posteriores**: No disponible<br>- **Android Enterprise**: No disponible<br><br>- **iOS 8.0 y versiones posteriores**: En cuarentena<br>- **macOS 10.11 y versiones posteriores**: En cuarentena<br><br>- **Windows 8.1 y versiones posteriores**: No disponible<br>- **Windows Phone 8.1 y versiones posteriores**: No disponible |
+| **Versión de SO mínima** | - **Android 4.0 y versiones posteriores**: En cuarentena<br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena<br>- **Android Enterprise**: En cuarentena<br><br>- **iOS 8.0 y versiones posteriores**: En cuarentena<br>- **macOS 10.11 y versiones posteriores**: En cuarentena<br><br>- **Windows 8.1 y versiones posteriores**: En cuarentena<br>- **Windows Phone 8.1 y versiones posteriores**: En cuarentena |
+| **Versión de SO máxima** | - **Android 4.0 y versiones posteriores**: En cuarentena<br>- **Samsung Knox Standard 4.0 y versiones posteriores**: En cuarentena<br>- **Android Enterprise**: En cuarentena<br><br>- **iOS 8.0 y versiones posteriores**: En cuarentena<br>- **macOS 10.11 y versiones posteriores**: En cuarentena<br><br>- **Windows 8.1 y versiones posteriores**: En cuarentena<br>- **Windows Phone 8.1 y versiones posteriores**: En cuarentena |
+| **Atestación de estado de Windows** | - **Android 4.0 y versiones posteriores**: No disponible<br>- **Samsung Knox Standard 4.0 y versiones posteriores**: No disponible<br>- **Android Enterprise**: No disponible<br><br>- **iOS 8.0 y versiones posteriores**: No disponible<br>- **macOS 10.11 y versiones posteriores**: No disponible<br><br>- **Windows 10 y Windows 10 Mobile**: En cuarentena<br>- **Windows 8.1 y versiones posteriores**: En cuarentena<br>- **Windows Phone 8.1 y versiones posteriores**: No disponible |
 
 ---------------------------
 
@@ -156,8 +155,9 @@ Para usar las características relacionadas con el cumplimiento de dispositivos 
   - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows 10 y versiones posteriores](compliance-policy-create-windows.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
-  - [Windows 8.1 y Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows 8.1 y versiones posteriores](compliance-policy-create-windows-8-1.md)
+  - [Windows 10 y versiones posteriores](compliance-policy-create-windows.md)
 
 - En [Referencia de entidades de directivas](../reports-ref-policy.md) se brinda información sobre las entidades de directivas de almacenamiento de datos de Intune.

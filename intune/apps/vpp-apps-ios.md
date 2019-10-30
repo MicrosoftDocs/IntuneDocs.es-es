@@ -1,7 +1,7 @@
 ---
 title: Administración de aplicaciones de Apple compradas por volumen
 titleSuffix: Microsoft Intune
-description: Obtenga información sobre cómo puede sincronizar las aplicaciones compradas por volumen en la App Store de iOS y macOS en Microsoft Intune y luego administrar y realizar el seguimiento de su uso.
+description: Conozca cómo puede sincronizar las aplicaciones compradas por volumen en la App Store de iOS y macOS en Microsoft Intune y luego administrar y realizar el seguimiento de su uso.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dac7069e30c173d80f15977ba2f06fcabcb7179b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724443"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785533"
 ---
-# <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Administración de aplicaciones de iOS y macOS compradas a través de un Programa de Compras por Volumen de Apple con Microsoft Intune
+# <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Administración de aplicaciones de iOS y macOS compradas a través del Programa de Compras por Volumen de Apple con Microsoft Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -47,7 +48,7 @@ Cuando asigna aplicaciones compradas por volumen a un dispositivo, el usuario fi
 
 ## <a name="user-licensing"></a>Licencias de usuario
 
-Cuando asigna una aplicación a un usuario, se usa una licencia de aplicación para el usuario y se asocia con este. La aplicación se puede ejecutar en un máximo de 5 dispositivos propiedad del usuario (el límite de dispositivos lo controla Apple).
+Cuando asigna una aplicación a un usuario, se usa una licencia de aplicación para el usuario y se asocia con este. La aplicación se puede ejecutar en hasta cinco dispositivos propiedad del usuario (el límite de dispositivos lo controla Apple).
 
 Cuando asigne una aplicación comprada por volumen a los usuarios, cada usuario final debe tener un ID de Apple válido y único para acceder al App Store.
 
@@ -59,9 +60,9 @@ Además, puede sincronizar, administrar y asignar los libros que haya adquirido 
 
 Compre varias licencias para aplicaciones iOS y macOS mediante el [Programa de Compras por Volumen de Apple para empresas](https://www.apple.com/business/vpp/) o el [Programa de Compras por Volumen de Apple para educación](https://volume.itunes.apple.com/us/store). Este proceso implica configurar una cuenta de VPP de Apple en el sitio web de Apple y cargar el token de VPP de Apple en Intune.  De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de aplicaciones compradas por volumen.
 
-### <a name="supports-business-to-business-volume-purchased-apps"></a>Admite las aplicaciones compradas por volumen de negocio a negocio
+### <a name="supports-business-to-business-volume-purchased-apps"></a>Admite las aplicaciones de negocio a negocio compradas por volumen.
 
-Además, los desarrolladores de terceros también pueden distribuir aplicaciones de forma privada a miembros autorizados del Programa de Compras por Volumen para Empresas, especificados en App Store Connect. Estos miembros pueden iniciar sesión en la tienda de aplicaciones del Programa de Compras por Volumen y comprar aplicaciones. Las aplicaciones del VPP para empresas que haya comprado el usuario final se sincronizarán con sus inquilinos de Intune.
+Además, los desarrolladores de terceros también pueden distribuir aplicaciones de forma privada a miembros autorizados del Programa de Compras por Volumen para la Empresa, especificados en App Store Connect. Estos miembros pueden iniciar sesión en la tienda de aplicaciones del Programa de Compras por Volumen y comprar aplicaciones. Las aplicaciones del VPP para empresas que haya comprado el usuario final se sincronizarán con sus inquilinos de Intune.
 
 ## <a name="before-you-start"></a>Antes de empezar
 Antes de empezar, necesita obtener un token de VPP de Apple y cargarlo en la cuenta de Intune. Además, debe comprender los siguientes criterios:
@@ -90,13 +91,13 @@ Antes de empezar, necesita obtener un token de VPP de Apple y cargarlo en la cue
     - **Id. de Apple**: escriba el identificador de Apple de la cuenta asociada con el programa de compras por volumen.
     - **País o región**: seleccione el país o la región de la tienda del VPP.  Intune sincroniza las aplicaciones de VPP para todas las configuraciones regionales desde la instancia de App Store del país o la región de VPP especificada.
         > [!WARNING]  
-        > Al cambiar el país o la región, los metadatos de las aplicaciones se actualizarán y almacenarán la dirección URL en la siguiente sincronización con el servicio de Apple para las aplicaciones creadas con ese token. La aplicación no se actualizará si no existe en la tienda del nuevo país o de la nueva región.
+        > Al cambiar el país o la región, se actualizarán los metadatos de las aplicaciones y almacenarán la dirección URL en la siguiente sincronización con el servicio de Apple de las aplicaciones creadas con ese token. La aplicación no se actualizará si no existe en la tienda del nuevo país o región.
 
     - **Tipo de cuenta de VPP**: elija **Empresa** o **Educación**.
-    - **Actualizaciones automáticas de la aplicación**: elija entre **activar** o **desactivar** las actualizaciones automáticas. Cuando se habilite, Intune detectará las actualizaciones de la aplicación de VPP dentro de la App Store y las insertará automáticamente en el dispositivo cuando este se registre. Las actualizaciones automáticas de la aplicación para aplicaciones del PCV de Apple actualizarán automáticamente solo las aplicaciones implementadas con la intención de instalación **Obligatorio**. En el caso de las aplicaciones implementadas con la intención de instalación **Disponible**, la actualización automática genera una notificación automáticamente (dirigida al administrador) en la que le informa de que hay disponible una versión nueva de la aplicación. Además, el usuario verá la aplicación como no instalada en el Portal de empresa, incluso si se instala una versión anterior de la aplicación. En este caso, el usuario puede volver a instalar la aplicación si hace clic en **Instalar** en la pantalla de detalles de la aplicación del Portal de empresa para instalar la versión más reciente de la aplicación.
+    - **Actualizaciones automáticas de la aplicación**: elija entre **activar** o **desactivar** las actualizaciones automáticas. Cuando se habilite, Intune detectará las actualizaciones de la aplicación de VPP dentro de la App Store y las insertará automáticamente en el dispositivo cuando este se registre. Las actualizaciones automáticas de la aplicación para aplicaciones del PCV de Apple actualizarán automáticamente solo las aplicaciones implementadas con la intención de instalación **Obligatorio**. En el caso de aplicaciones implementadas con la intención de instalación **Disponible**, la actualización automática genera un mensaje de estado dirigido al administrador en el que le informa de que hay disponible una versión nueva de la aplicación. Para ver este mensaje de estado, hay que seleccionar la aplicación, seleccionar la opción Estado de instalación del dispositivo y, finalmente, consultar Detalles del estado. Además, el usuario verá la aplicación como no instalada en el Portal de empresa, incluso si se instala una versión anterior de la aplicación. En este caso, el usuario puede volver a instalar la aplicación con un clic en **Instalar** en la pantalla de detalles de la aplicación del Portal de empresa para instalar la versión más reciente de la aplicación.
 
         > [!NOTE]
-        > Las actualizaciones de aplicaciones automáticas funcionan para las aplicaciones con licencia de dispositivo y usuario para la versión 11.0 de iOS y versiones posteriores o para la versión 10.12 de macOS y versiones posteriores.
+        > Las actualizaciones de aplicaciones automáticas funcionan en las aplicaciones con licencia de dispositivo y usuario de iOS 11.0 y versiones posteriores o de macOS 10.12 y versiones posteriores.
 6. Cuando haya terminado, seleccione **Crear**.
 
 El token se muestra en el panel de la lista de tokens.
@@ -135,21 +136,21 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 > [!Note]  
 > No se recomienda asignar aplicaciones de VPP a dispositivos en modo de pantalla completa que usen licencias de usuario de VPP.
 
-## <a name="revoking-app-licenses"></a>Revocación de licencias de aplicación
+## <a name="revoking-app-licenses"></a>Revocación de las licencias de aplicación
 
-Puede revocar todas las licencias de aplicaciones del Programa de Compras por Volumen (VPP) de iOS o macOS asociadas según un dispositivo, usuario o aplicación determinado,  pero hay algunas diferencias entre las plataformas iOS y macOS. 
+Puede revocar todas las licencias de aplicación del Programa de Compras por Volumen (VPP) de iOS o macOS asociadas en función de un dispositivo, usuario o aplicación determinados,  pero hay algunas diferencias entre las plataformas iOS y macOS. 
 
 ### <a name="revoking-app-licenses-on-ios"></a>Revocación de licencias de aplicación en iOS
-Puede notificar a los usuarios cuando una aplicación ya no esté asignada a ellos. Pero revocar una licencia de aplicación no desinstalará la aplicación VPP desde el dispositivo. Para desinstalar una aplicación de VPP y reclamar una licencia de aplicación asignada a un usuario o a un dispositivo, debe cambiar la acción de asignación a **Desinstalar**. Si quita una aplicación que estaba asignada a un usuario, Intune reclama la licencia de usuario o dispositivo y desinstala la aplicación del dispositivo. El número de licencias reclamadas se indicará en el nodo **Aplicaciones con licencia** en la carga de trabajo **Aplicación** de Intune. Una vez que se ha desinstalado una aplicación de VPP y se ha reclamado la licencia de aplicación, puede decidir asignar esa licencia de aplicación a otro usuario o dispositivo.
+Puede notificar a los usuarios cuando una aplicación ya no esté asignada a ellos. Sin embargo, al revocar una licencia de aplicación no se desinstalará la aplicación VPP del dispositivo. Para desinstalar una aplicación de VPP y reclamar una licencia de aplicación asignada a un usuario o a un dispositivo, debe cambiar la acción de asignación a **Desinstalar**. Si quita una aplicación que estaba asignada a un usuario, Intune reclama la licencia de usuario o dispositivo y desinstala la aplicación del dispositivo. El número de licencias reclamadas se indicará en el nodo **Aplicaciones con licencia** en la carga de trabajo **Aplicación** de Intune. Después de haber desinstalado una aplicación de VPP y de haber reclamado la licencia de aplicación, puede decidir asignar esa licencia de aplicación a otro usuario o dispositivo.
 
 
 ### <a name="revoking-app-licenses-on-macos"></a>Revocación de licencias de aplicación en macOS
-Pero revocar una licencia de aplicación no desinstala la aplicación VPP del dispositivo. Al revocar una licencia de aplicación que se asignó a un usuario, Intune reclama la licencia de usuario o dispositivo. La aplicación macOS a la que se le revocó la licencia se puede seguir usando en el dispositivo, pero no se puede actualizar hasta que se vuelva a asignar una licencia al usuario o dispositivo. Según Apple, estas aplicaciones se quitan después de un período de gracia de 30 días. Sin embargo, Apple no proporciona un medio para que Intune quite la aplicación mediante la acción de asignación **Uninstall** (Desinstalar), pero sí se puede optar por asignar la licencia de la aplicación reclamada a otro usuario o dispositivo.
+Sin embargo, al revocar una licencia de aplicación no se desinstala la aplicación VPP del dispositivo. Al revocar una licencia de aplicación que se asignó a un usuario, Intune reclama la licencia de usuario o dispositivo. La aplicación macOS a la que se le revocó la licencia se puede seguir usando en el dispositivo, pero no se puede actualizar hasta que se vuelva a asignar una licencia al usuario o al dispositivo. Según Apple, estas aplicaciones se quitan después de un período de gracia de 30 días. Sin embargo, Apple no proporciona un medio para que Intune quite la aplicación mediante la acción de asignación **Desinstalar**, pero sí se puede optar por asignar la licencia de la aplicación reclamada a otro usuario o dispositivo.
 
 >[!NOTE]
->Cuando un empleado abandone la empresa y deja de formar parte de los grupos de AAD, Intune recuperará las licencias de aplicaciones de VPP de iOS y de macOS con licencia de usuario.
+>Cuando un empleado abandone la empresa y deje de formar parte de los grupos de AAD, Intune recuperará las licencias de aplicación de VPP de iOS y de macOS con licencia de usuario.
 
-## <a name="deleting-vpp-tokens"></a>Eliminación de tokens de PCV
+## <a name="deleting-vpp-tokens"></a>Eliminación de tokens de VPP
 <!-- 820879 -->  
 Puede eliminar un token del Programa de Compras por Volumen (VPP) de Apple con la consola. Esto puede resultar necesario cuando tiene instancias duplicadas de un token de VPP. Si elimina un token, también se eliminarán la asignación y las aplicaciones asociadas. En cambio, si elimina un token, no se revocan las licencias de aplicación ni se desinstalan aplicaciones. 
 
@@ -171,8 +172,8 @@ En estos momentos, no se puede eliminar una aplicación VPP de iOS de Microsoft 
 
 El acceso a los tokens de VPP de Apple y a las aplicaciones de VPP se puede controlar de manera independiente mediante los permisos asignados a los roles de administrador personalizados en Intune.
 
-* Para permitir que un rol personalizado de Intune administre los tokens de VPP de Apple en **Aplicaciones cliente** > **Tokens de VPP de Apple**, asigne los permisos para las **Aplicaciones administradas**.
-* Para permitir que un rol personalizado de Intune administre las aplicaciones compradas con tokens de VPP de iOS en **Aplicaciones cliente** > **Aplicaciones**, asigne los permisos para las**Aplicaciones móviles**. 
+* Para permitir que un rol personalizado de Intune administre los tokens de VPP de Apple, en **Aplicaciones cliente** > **Tokens de VPP de Apple**, asigne permisos para **Aplicaciones administradas**.
+* Para permitir que un rol personalizado de Intune administre las aplicaciones compradas con tokens de VPP de iOS, en **Aplicaciones cliente** > **Aplicaciones**, asigne permisos para **Aplicaciones móviles**. 
 
 ## <a name="additional-information"></a>Información adicional
 

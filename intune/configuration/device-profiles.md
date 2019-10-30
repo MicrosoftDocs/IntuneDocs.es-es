@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036453"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749350"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicación de la configuración y características en dispositivos con perfiles de dispositivos Microsoft Intune
 
@@ -48,7 +49,7 @@ Estas plantillas proporcionan a los administradores una vista simplificada de la
 
 Esta característica es compatible con:
 
-- Windows 10 y versiones posteriores
+- Windows 10 1809 y versiones posteriores en firmware compatible.
 
 ## <a name="certificates"></a>Certificados
 
@@ -66,7 +67,7 @@ Esta característica es compatible con:
 
 ## <a name="custom-profile"></a>Perfil personalizado
 
-La [configuración personalizada](../custom-settings-configure.md) permite que los administradores asignen la configuración del dispositivo que no está integrada en Intune. En dispositivos Android, puede escribir valores de OMA-URI. Para dispositivos iOS, puede importar un archivo de configuración creado Apple Configurator.
+La [configuración personalizada](custom-settings-configure.md) permite que los administradores asignen la configuración del dispositivo que no está integrada en Intune. En dispositivos Android, puede escribir valores de OMA-URI. Para dispositivos iOS, puede importar un archivo de configuración creado Apple Configurator.
 
 Esta característica es compatible con:
 
@@ -78,7 +79,7 @@ Esta característica es compatible con:
 
 ## <a name="delivery-optimization"></a>Optimización de entrega
 
-[Optimización de distribución](../delivery-optimization-windows.md) proporciona una mejor experiencia para distribuir las actualizaciones de software. Esta configuración reemplaza la configuración **Actualizaciones de software** > **Círculo de actualizaciones de Windows 10**.
+[Optimización de distribución](delivery-optimization-windows.md) proporciona una mejor experiencia para distribuir las actualizaciones de software. Esta configuración reemplaza la configuración **Actualizaciones de software** > **Círculo de actualizaciones de Windows 10**.
 
 Use estas opciones para controlar cómo se descargan las actualizaciones de software a los dispositivos de la organización. Por ejemplo, puede permitir que los usuarios obtengan sus propias actualizaciones u obtengan actualizaciones a través de los servicios en la nube de Optimización de distribución en un perfil de dispositivo.
 
@@ -88,12 +89,20 @@ Esta característica es compatible con:
 
 ## <a name="device-features"></a>Características del dispositivo
 
-Las [características del dispositivo](../device-features-configure.md) controlan las características de dispositivos iOS y macOS, como AirPrint, notificaciones y mensajes de la pantalla de bloqueo.
+Las [características del dispositivo](device-features-configure.md) controlan las características de dispositivos iOS y macOS, como AirPrint, notificaciones y mensajes de la pantalla de bloqueo.
 
 Esta característica es compatible con:
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>Device firmware configuration interface (Interfaz de configuración de firmware de dispositivos)
+
+[Device firmware configuration interface](device-firmware-configuration-interface-windows.md) (DFCI) permite a los administradores habilitar o deshabilitar valores de UEFI (BIOS) mediante Intune. Use estos valores para mejorar la seguridad en el nivel de firmware, que normalmente es más resistente a los ataques malintencionados.
+
+Esta característica es compatible con:
+
+- Windows 10 y versiones posteriores
 
 ## <a name="device-restrictions"></a>Restricciones de dispositivos
 
@@ -210,9 +219,9 @@ Esta característica es compatible con:
 
 ## <a name="update-policies"></a>Directivas de actualización
 
-En [Configurar directivas de actualización de iOS en Microsoft Intune](../software-updates-ios.md) se muestra cómo crear y asignar directivas de iOS para instalar actualizaciones de software en dispositivos iOS. También puede revisar el estado de la instalación.
+En [Configurar directivas de actualización de iOS en Microsoft Intune](../protect/software-updates-ios.md) se muestra cómo crear y asignar directivas de iOS para instalar actualizaciones de software en dispositivos iOS. También puede revisar el estado de la instalación.
 
-Para actualizar las directivas en dispositivos con Windows, vea [Optimización de entrega](../delivery-optimization-windows.md). 
+Para actualizar las directivas en dispositivos con Windows, vea [Optimización de entrega](delivery-optimization-windows.md). 
 
 Esta característica es compatible con:
 
@@ -265,7 +274,7 @@ Esta característica es compatible con:
 
 ## <a name="manage-and-troubleshoot"></a>Supervisión y solución de problemas
 
-[Administre los perfiles](../device-profile-monitor.md) para comprobar el estado de los dispositivos y los perfiles asignados. También ayudan a resolver conflictos mediante la visualización de la configuración que provoca un conflicto y los perfiles que incluyen esta configuración. El artículo [Problemas comunes y sus soluciones](device-profile-troubleshoot.md) ayuda a los administradores a trabajar con los perfiles. Describe lo que sucede cuando se elimina un perfil, lo que hace que se envíen notificaciones a los dispositivos y mucho más.
+[Administre los perfiles](device-profile-monitor.md) para comprobar el estado de los dispositivos y los perfiles asignados. También ayudan a resolver conflictos mediante la visualización de la configuración que provoca un conflicto y los perfiles que incluyen esta configuración. El artículo [Problemas comunes y sus soluciones](device-profile-troubleshoot.md) ayuda a los administradores a trabajar con los perfiles. Describe lo que sucede cuando se elimina un perfil, lo que hace que se envíen notificaciones a los dispositivos y mucho más.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

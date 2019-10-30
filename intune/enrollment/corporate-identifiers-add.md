@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314679"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503304"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -121,7 +122,7 @@ Para obtener especificaciones detalladas sobre identificadores internacionales d
 
 ## <a name="change-device-ownership"></a>Cambiar la propiedad del dispositivo
 
-Las propiedades del dispositivo muestran **Propiedad** en los registros de Intune para cada dispositivo. Como administrador, puede especificar un dispositivo como **Personal** o **Corporativo**.
+Las propiedades del dispositivo muestran **Propiedad** en los registros de Intune para cada dispositivo. Como administrador, puede especificar un dispositivo como **Personal** o **Corporativo**. Cuando se cambia el tipo de propiedad de un dispositivo de Personal a Corporativa, Intune elimina toda la información de la aplicación previamente recopilada de ese dispositivo en un plazo de siete días. Si es necesario, Intune también eliminará el número de teléfono registrado. 
 
 **Para cambiar la propiedad del dispositivo:**
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), vaya a **Dispositivos** y elija el dispositivo.

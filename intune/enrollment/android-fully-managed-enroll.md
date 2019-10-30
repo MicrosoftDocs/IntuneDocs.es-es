@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abf391ddbdb1f7087cd06ed1865b3da8b155178
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723585"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505595"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Configuración de la inscripción en Intune de dispositivos Android Enterprise totalmente administrados 
 
@@ -61,7 +62,7 @@ Para configurar la administración de dispositivos Android Enterprise totalmente
 > [!NOTE]
 > Si tiene definida una directiva de acceso condicional de Azure AD que use el control de *requerir que un dispositivo se marque como compatible* y se aplique a **Todas las aplicaciones en la nube**, **Android** y **Exploradores**, debe excluir la aplicación en la nube **Microsoft Intune** de esta directiva. Esto es así porque los procesos de instalación de Android usan una pestaña de Chrome para autenticar a los usuarios durante la inscripción. Para más información, vea [Documentación sobre el acceso condicional de Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
-Cuando esta opción se establece en **Sí**, proporciona un token de inscripción (una cadena aleatoria) y un código QR para el inquilino de Intune. Este token de inscripción único es válido para todos los usuarios y no expira. Según el sistema operativo Android y la versión del dispositivo, puede usar el token o un código QR para inscribir el dispositivo de quiosco multimedia.
+Cuando esta opción se establece en **Sí**, proporciona un token de inscripción (una cadena aleatoria) y un código QR para el inquilino de Intune. Este token de inscripción único es válido para todos los usuarios y no expira. Según el sistema operativo Android y la versión del dispositivo, puede usar el token o un código QR para inscribir el dispositivo.
 
 ## <a name="enroll-the-fully-managed-devices"></a>Inscribir dispositivos totalmente administrados
 Ya puede [inscribir sus dispositivos totalmente administrados](android-dedicated-devices-fully-managed-enroll.md).

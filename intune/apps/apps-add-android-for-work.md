@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc777cc6d8b803c502d847114ef7cff04ceb26
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725340"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584952"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adición de aplicaciones de Google Play administrado a dispositivos Android Enterprise con Intune
 
@@ -48,9 +49,9 @@ Para facilitarle la configuración y el uso de la administración de Android Ent
 ## <a name="managed-google-play-app-types"></a>Tipos de aplicación de Google Play administrado
 Hay tres tipos de aplicaciones que están disponibles con Google Play administrado:
 
-* **Aplicación de Google Play Store administrado**: aplicaciones públicas que están disponibles con carácter general en Play Store. Para administrar estas aplicaciones en Intune, busque las aplicaciones que quiera administrar, apruébelas y, después, sincronícelas en Intune.
-* **Aplicación privada de Google Play administrado**: son aplicaciones de línea de negocio publicadas en Google Play administrado por administradores de Intune.  Estas aplicaciones son privadas y solo están disponibles para el inquilino de Intune. Así es cómo se administran e implementan las aplicaciones de línea de negocio con Google Play administrado y Android Enterprise.
-* **Vínculo web de Google Play administrado**: vínculos web con iconos definidos por el administrador de TI que se pueden implementar en dispositivos Android Enterprise. Aparecen en los dispositivos de la lista de aplicaciones del dispositivo, al igual que las aplicaciones normales.
+- **Aplicación de Google Play Store administrado**: aplicaciones públicas que están disponibles con carácter general en Play Store. Para administrar estas aplicaciones en Intune, busque las aplicaciones que quiera administrar, apruébelas y, después, sincronícelas en Intune.
+- **Aplicación privada de Google Play administrado**: son aplicaciones de línea de negocio publicadas en Google Play administrado por administradores de Intune.  Estas aplicaciones son privadas y solo están disponibles para el inquilino de Intune. Así es cómo se administran e implementan las aplicaciones de línea de negocio con Google Play administrado y Android Enterprise.
+- **Vínculo web de Google Play administrado**: vínculos web con iconos definidos por el administrador de TI que se pueden implementar en dispositivos Android Enterprise. Aparecen en los dispositivos de la lista de aplicaciones del dispositivo, al igual que las aplicaciones normales.
 
 ## <a name="managed-google-play-store-apps"></a>Aplicaciones de Google Play Store administrado
 Hay dos maneras de examinar y aprobar las aplicaciones de Google Play Store administrado con Intune:
@@ -209,8 +210,7 @@ Como alternativa, puede configurar Google Play para que vuelva a aprobar automá
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Otros informes de aplicaciones de Google Play administrado para dispositivos de perfil de trabajo de Android Enterprise
 
-Para aplicaciones de Google Play administrado implementadas en dispositivos de perfil de trabajo de Android Enterprise, puede ver el número de versión específica de la aplicación instalada en un dispositivo. Esto se aplica solo a las aplicaciones necesarias. 
-
+En las aplicaciones de Google Play administrado implementadas en dispositivos de perfil de trabajo de Android Enterprise, puede usar Intune para ver el estado y el número de versión de la aplicación instalada en un dispositivo. 
 
 ## <a name="delete-managed-google-play-apps"></a>Eliminación de aplicaciones de Google Play administrado
 Cuando sea necesario, podrá eliminar aplicaciones de Google Play administrado desde Microsoft Intune. Para eliminar una aplicación de Google Play administrado, abra Microsoft Intune en Azure Portal y seleccione **Aplicaciones cliente** > **Aplicaciones**. En la lista de aplicaciones, seleccione los puntos suspensivos (...) a la derecha de la aplicación de Google Play administrado y luego seleccione **Eliminar** en la lista que aparece. Cuando se elimina una aplicación de Google Play administrada de la lista de aplicaciones, automáticamente se desactiva la aprobación de la aplicación administrada de Google Play.

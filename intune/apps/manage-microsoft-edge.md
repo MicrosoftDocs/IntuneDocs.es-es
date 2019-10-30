@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724781"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593690"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Administración del acceso web mediante Microsoft Edge con Microsoft Intune
 
@@ -204,7 +205,7 @@ Para facilitar el acceso, puede configurar los marcadores que quiera que los usu
 
 Estos son algunos detalles:
 
-- Los usuarios solo verán estos marcadores cuando usen el modo de empresa de Microsoft Edge. 
+- Los usuarios solo verán estos marcadores cuando usen el [modo de empresa](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser) de Microsoft Edge. 
 - Los usuarios no pueden eliminar ni modificar estos marcadores.
 - Aparecen en la parte superior de la lista. Los marcadores creados por los usuarios aparecen debajo de estos marcadores.
 - Si ha habilitado el redireccionamiento del proxy de aplicación, puede agregar aplicaciones web de proxy de aplicación mediante su dirección URL interna o externa.

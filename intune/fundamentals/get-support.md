@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726523"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585293"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Cómo obtener asistencia para Microsoft Intune  
 
@@ -82,7 +83,7 @@ Para acceder a Ayuda y soporte técnico, use estas opciones:
   4. Seleccione el vínculo de la página de ayuda y soporte técnico de Intune.
 
 > [!NOTE]  
-> Si su instancia de Intune se hospeda en la nube Government Compute Cloud (GCC), también conocida como una nube soberana del tipo Azure Government, consulte el soporte técnico de Intune para Government Compute Cloud, más adelante en este artículo. La experiencia de *Ayuda y soporte técnico* de Intune estará disponible en GCC más adelante este mismo año. 
+> Si la instancia de Intune se hospeda en la nube privada de entidades públicas, también conocida como una nube soberana del tipo Azure Government, vea [Soporte técnico de Intune para nubes privadas de organismos públicos](#intune-support-for-private-cloud-for-government), más adelante en este artículo. La experiencia de *Ayuda y soporte técnico* de Intune estará disponible en la nube privada para organismos públicos más adelante este mismo año. 
 
 
 Al abrir *Ayuda y soporte técnico*, el portal muestra una vista u otra en función de si tiene o no incidentes de soporte técnico activos y, en caso de tener soporte técnico Premier, aparecerán también algunos elementos y opciones adicionales:
@@ -162,20 +163,20 @@ Seleccione el botón del historial para ver los incidentes de soporte técnico q
 
 Cuando usa el panel de navegación izquierdo **Ayuda y soporte técnico** o usa el icono **?** de la esquina superior derecha de Azure Portal, se abre la experiencia de ayuda y soporte técnico de Azure, que es distinta de la experiencia de ayuda y soporte técnico de Intune.  
 
-A partir de abril de 2019, no se puede acceder a la experiencia de *Ayuda y soporte técnico* de Azure para obtener ayuda con Intune, a menos que la suscripción esté en Government Compute Cloud (GCC).  
+A partir de abril de 2019, no se puede acceder a la experiencia de *Ayuda y soporte técnico* de Azure para obtener ayuda con Intune, a menos que la suscripción esté en una nube privada para organismos públicos.  
 
-Si la instancia de Intune no se ejecuta en GCC, al navegar a *Ayuda y soporte técnico* de Azure se le redirigirá a la experiencia de *Ayuda y soporte técnico* de Intune para crear y administrar incidentes de soporte técnico.  
+Si la instancia de Intune no se ejecuta en una nube privada para organismos públicos, al navegar a *Ayuda y soporte técnico* de Azure se le redirigirá a la experiencia de *Ayuda y soporte técnico* de Intune para crear y administrar incidentes de soporte técnico.  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>Compatibilidad de Intune con Government Compute Cloud  
+## <a name="intune-support-for-private-cloud-for-government"></a>Compatibilidad de Intune con la nube privada para organismos públicos  
 
-Con la suscripción de Intune hospedada en Government Compute Cloud (GCC), que también se conoce como nube soberana del tipo Azure Government, todavía no tiene acceso a la nueva experiencia de ayuda y soporte técnico de Intune.  En su lugar, use la siguiente información para obtener soporte técnico de Intune. 
+Con la suscripción de Intune hospedada en la nube privada para organismos públicos, que también se conoce como nube soberana del tipo Azure Government, todavía no tiene acceso a la nueva experiencia de ayuda y soporte técnico de Intune.  En su lugar, use la siguiente información para obtener soporte técnico de Intune. 
 
 
 ### <a name="create-an-online-support-ticket"></a>Creación de un vale de soporte en línea 
 
 >[!IMPORTANT]    
-> Como *Ayuda y soporte técnico* pasa a un nuevo sistema que todavía no está disponible para GCC, cuando se crea un incidente de soporte técnico, el portal identifica un caso de soporte técnico que utiliza un número de identificación de 15 dígitos. Cuando se crea el caso de 15 dígitos, se crea un reflejo de ese caso para que lo use el Soporte técnico de Microsoft. Este caso reflejado se crea en un nuevo sistema de soporte técnico, utiliza un identificador de caso de 8 dígitos y lo usan los servicios de soporte técnico para realizar el seguimiento de todos los trabajos y las comunicaciones de su incidente de soporte técnico. Poco después de crear el caso de 15 dígitos, recibirá un correo electrónico que identifica el número de 8 dígitos del caso de soporte reflejado que usan los servicios de soporte técnico.  
+> En la transición de *Ayuda y soporte técnico* a un nuevo sistema que todavía no está disponible para la nube privada para organismos públicos, cuando se crea un incidente de soporte técnico, el portal identifica un caso de soporte técnico en el que se usa un número de identificación de 15 dígitos. Cuando se crea el caso de 15 dígitos, se crea un reflejo de ese caso para que lo use el Soporte técnico de Microsoft. Este caso reflejado se crea en un nuevo sistema de soporte técnico, utiliza un identificador de caso de 8 dígitos y lo usan los servicios de soporte técnico para realizar el seguimiento de todos los trabajos y las comunicaciones de su incidente de soporte técnico. Poco después de crear el caso de 15 dígitos, recibirá un correo electrónico que identifica el número de 8 dígitos del caso de soporte reflejado que usan los servicios de soporte técnico.  
 > 
 > Apoye el trabajo personal y comuníquese con el caso de soporte técnico de 8 dígitos, y use solo el caso de soporte de 8 dígitos para registrar las comunicaciones y realizar un seguimiento del progreso de los incidentes. De este modo, recibirá actualizaciones por correo electrónico de ese caso de soporte técnico de 8 dígitos que sirven como registro de seguimiento del trabajo en el caso. No se registran detalles en el incidente de soporte técnico de 15 dígitos. Cuando concluye el soporte técnico y se cierra el caso de soporte de 8 dígitos, este estado se refleja en el caso de soporte técnico de 15 dígitos que puede ver desde Azure Portal.  No se deben esperar otras actualizaciones ni cambios de estado para el caso de soporte técnico de 15 dígitos.  
 > 
@@ -223,7 +224,7 @@ Puede ver sus solicitudes de soporte técnico desde Azure Portal. Sin embargo, n
 2. En la página **Ayuda y soporte técnico** puede ver la lista **Solicitudes de soporte técnico recientes**.
 
    > [!IMPORTANT]  
-   > Los clientes de Government Compute Cloud solo pueden ver el número de caso de soporte técnico de 15 dígitos y el estado de los incidentes. Todas las comunicaciones de casos y el seguimiento de trabajos o alertas se envían por correo electrónico y hacen referencia al número de caso de soporte técnico de 8 dígitos que se crea como un reflejo del caso de soporte abierto desde la consola de Intune.   
+   > Las nubes privadas para organismos públicos solo pueden ver el número de caso de soporte técnico de 15 y el estado de los incidentes. Todas las comunicaciones de casos y el seguimiento de trabajos o alertas se envían por correo electrónico y hacen referencia al número de caso de soporte técnico de 8 dígitos que se crea como un reflejo del caso de soporte abierto desde la consola de Intune.   
 
 ## <a name="additional-resources"></a>Recursos adicionales  
 

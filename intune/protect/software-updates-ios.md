@@ -1,23 +1,24 @@
 ---
 title: 'Configuración de directivas de actualización de software de iOS en Microsoft Intune: Azure | Microsoft Docs'
-description: En Microsoft Intune, cree o agregue una directiva de configuración para restringir cuándo se instalan automáticamente las actualizaciones de software en los dispositivos iOS administrados o supervisados por Intune. Puede elegir la fecha y hora en la que no se instalarán las actualizaciones. También puede asignar esta directiva a grupos, usuarios o dispositivos y comprobar si hay errores de instalación.
+description: En Microsoft Intune, cree o agregue una directiva de configuración para restringir cuándo se van a instalar automáticamente actualizaciones de software en los dispositivos iOS. Puede elegir la fecha y hora en la que no se instalarán las actualizaciones. También puede asignar esta directiva a grupos, usuarios o dispositivos y comprobar si hay errores de instalación.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 10/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54e6cc0b3df95c74abf4b4ef1b827f8e121e3645
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726666"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681354"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adición de directivas de actualización de software de iOS en Intune
 
@@ -27,69 +28,65 @@ Esta característica se aplica a:
 
 - iOS 10.3 y versiones posteriores (supervisado)
 
-El dispositivo se registra con Intune aproximadamente cada ocho horas. Si hay una actualización disponible, fuera de un período restringido, el dispositivo descarga e instala la actualización de sistema operativo más reciente. No se necesita ninguna interacción del usuario para actualizar el dispositivo. La directiva no impide que un usuario actualice el sistema operativo de forma manual.
+El dispositivo se registra con Intune aproximadamente cada ocho horas. Si hay disponible una actualización, el dispositivo la descarga e instala, excepto en los tiempos restringidos. No se necesita ninguna interacción del usuario para actualizar el dispositivo. La directiva no impide que un usuario actualice el sistema operativo de forma manual.
 
 ## <a name="configure-the-policy"></a>Configurar la directiva
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Seleccione **Actualizaciones de software** > **Directivas de actualización para iOS** > **Crear**.
-3. Escriba los valores siguientes:
+3. En la pestaña **Datos básicos**, indique un nombre para la directiva y una descripción (opcional) y, después, seleccione **Siguiente**.
 
-    - **Nombre**: Escriba un nombre para la directiva de actualizaciones de software. Por ejemplo, escriba `iOS restricted update times`.
-    - **Descripción**: Escriba una descripción para la directiva. Esta configuración es opcional pero recomendada.
+   ![Pestaña Datos básicos](./media/software-updates-ios/basics-tab.png) 
 
-4. Seleccione **Configuración > Configurar**. Escriba los valores siguientes:
+4. En la pestaña **Actualizar configuración de directiva**, especifique un período de tiempo limitado cuando las actualizaciones no se instalan forzosamente.  
+   - No se admiten los bloqueos nocturnos y podrían no funcionar. Por ejemplo, no configure una directiva con una *Hora de inicio* de 20:00 y una *Hora de finalización* de 6:00.
+   - Una directiva que empieza a las 12:00 y termina a las 12:00 se evalúa como 0 horas en vez de 24 horas. Esta configuración no aplica ninguna restricción.
 
-    - **Seleccionar las horas en las que se impide la instalación de actualizaciones**: Especifique un período de tiempo limitado cuando las actualizaciones no se instalan forzosamente.
-      - No se admiten los bloqueos nocturnos y podrían no funcionar. Por ejemplo, no configure una directiva con una *Hora de inicio* de 20:00 y una *Hora de finalización* de 6:00.
-      - Una directiva que empieza a las 12:00 y termina a las 12:00 se evalúa como 0 horas en vez de 24 horas, por lo que no se aplica ninguna restricción.
+   Al establecer el período de tiempo limitado, especifique los detalles siguientes:
 
-      Al establecer el período de tiempo limitado, especifique los detalles siguientes:
+   - **Días**: elija los días de la semana en los que no se instalarán actualizaciones. Por ejemplo, marque el lunes, el miércoles y el viernes para impedir que las actualizaciones se instalen en estos días.
+   - **Zona horaria**: elija una zona horaria.
+   - **Hora de inicio**: elija la hora de inicio del período de tiempo restringido. Por ejemplo, escriba 5:00 para que las actualizaciones no se instalen a partir de las 5:00.
+   - **Hora de finalización**: elija la hora de finalización del período de tiempo restringido. Por ejemplo, escriba 1:00 para que las actualizaciones no se instalen a partir de la 1:00.
+  
+   > [!IMPORTANT]  
+   > Una directiva que tiene una *Hora de inicio* y una *Hora de finalización* establecida en las 12:00 se evalúa como 0 horas en vez de 24 horas. El resultado es que no se aplica ninguna restricción.  
+    
+   Para retrasar la visibilidad de las actualizaciones de software durante un período de tiempo específico en sus dispositivos iOS supervisados, establezca esta configuración en [Restricciones de dispositivos](../configuration/device-restrictions-ios.md#general). Las directivas de actualización de software invalidan cualquier restricción de dispositivo. Cuando se establece una restricción y una directiva de actualización de software para retrasar la visibilidad de las actualizaciones de software, el dispositivo fuerza una actualización de software de acuerdo con la directiva. La restricción se aplica para que los usuarios no vean la opción para actualizar ellos mismos el dispositivo, y la actualización se inserta en el primer período de tiempo definido por la directiva de actualización de iOS.
 
-      - **Días**: elija los días de la semana en los que no se instalarán actualizaciones. Por ejemplo, marque el lunes, el miércoles y el viernes para impedir que las actualizaciones se instalen en estos días.
-      - **Zona horaria**: elija una zona horaria.
-      - **Hora de inicio**: elija la hora de inicio del período de tiempo restringido. Por ejemplo, escriba 5:00 para que las actualizaciones no se instalen a partir de las 5:00.
-      - **Hora de finalización**: elija la hora de finalización del período de tiempo restringido. Por ejemplo, escriba 1:00 para que las actualizaciones no se instalen a partir de la 1:00.
+   Después de configurar *Actualizar configuración de directiva*, seleccione **Siguiente**. 
 
-    - **Retrasar la visibilidad de las actualizaciones de software para los usuarios finales sin cambios en las actualizaciones programadas en la directiva de actualización de software (días)** : 
+5. En la pestaña **Etiquetas de ámbito**, seleccione **+ Seleccionar etiquetas de ámbito** para abrir el panel *Seleccionar etiquetas* si quiere aplicarlas a la directiva de actualización.
+   
+   - En el panel **Seleccionar etiquetas**, elija una o más etiquetas y, después, haga clic en **Seleccionar** para agregarlas a la directiva y volver al panel *Etiquetas de ámbito*.  
 
-      **Si desea retrasar la visibilidad de las actualizaciones de software durante un período de tiempo específico en sus dispositivos iOS supervisados, establezca esta configuración en [Restricciones de dispositivos](../configuration/device-restrictions-ios.md#general). Las directivas de actualización de software invalidan cualquier restricción de dispositivo. Si tiene establecidas ambas directivas, siempre tendrá prioridad la directiva de actualización de software.
+   Cuando esté listo, seleccione **Siguiente** para avanzar a *Asignaciones*.
 
-      > [!IMPORTANT]  
-      > Una directiva que tiene una *Hora de inicio* y una *Hora de finalización* establecida en las 12:00 se evalúa como 0 horas en vez de 24 horas. El resultado es que no se aplica ninguna restricción.  
+6. En la pestaña **Asignaciones**, seleccione **+ Seleccionar grupos para incluir** y, después, asigne la directiva de actualización a uno o varios grupos. Use **+ Seleccionar grupos para excluir** para ajustar la asignación. Cuando esté listo, seleccione **Siguiente** para continuar. 
 
-5. Seleccione **Aceptar** > **Crear** para guardar los cambios y crear la directiva.
+   Se evalúa la comprobación de actualizaciones por parte de los dispositivos usados por los usuarios a los que se destina la directiva. Esta directiva también es compatible con los dispositivos sin usuario.
 
-El perfil se crea y se muestra en la lista de directivas.
+7. En la pestaña **Revisar y crear**, revise la configuración y seleccione **Crear** cuando esté listo para guardar la directiva de actualización de iOS. La nueva directiva se muestra en la lista de directivas de actualización de iOS.
+
 
 Para obtener instrucciones del equipo de soporte técnico de Intune, vea [Delay visibility of software updates in Intune for supervised devices](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753) (Retrasar la visibilidad de las actualizaciones de software en Intune para dispositivos supervisados).
 
 > [!NOTE]
 > MDM de Apple no permite forzar a un dispositivo a instalar las actualizaciones en una hora o fecha determinada.
 
-## <a name="change-the-restricted-times-for-the-policy"></a>Cambio de los períodos restringidos de la directiva
+## <a name="edit-a-policy"></a>Editar una directiva
+Puede editar una directiva existente, incluso cambiar los tiempos restringidos:
 
-1. En **Actualizaciones de Software**, seleccione **Directivas de actualización para iOS**.
-2. Elija una directiva existente > **Propiedades**.
-3. Actualice la hora restringida:
+1. En **Actualizaciones de software**, seleccione **Directivas de actualización para iOS** y, después, seleccione la directiva que quiera editar.
 
-    1. Seleccione los días de la semana.
-    2. Elija la zona horaria en la que se aplica esta directiva.
-    3. Escriba la hora de inicio y de finalización de las horas incluidas en la lista de bloqueados.
+2. Mientras ve las **Propiedades** de las directivas, seleccione la opción **Editar** de la página de directiva que quiera modificar.  
+   ![Editar una directiva](./media/software-updates-ios/edit-policy.png)   
 
-    > [!NOTE]
-    > Si tanto la **Hora de inicio** como la **Hora de finalización** se establecen a las 12:00, Intune no comprueba las restricciones sobre cuándo instalar las actualizaciones. Esto significa que se omitirá cualquier configuración que tenga para **Seleccionar las horas en las que se impide la instalación de actualizaciones** y podrá instalar actualizaciones en cualquier momento.  
+3. Después de introducir un cambio, seleccione **Revisar + guardar** > **Guardar** para guardar las modificaciones y vuelva a las *Propiedades* de las directivas.  
+ 
+> [!NOTE]
+> Si tanto la **Hora de inicio** como la **Hora de finalización** se establecen a las 12:00, Intune no comprueba las restricciones sobre cuándo instalar las actualizaciones. Esto significa que se omitirá cualquier configuración que tenga para **Seleccionar las horas en las que se impide la instalación de actualizaciones** y podrá instalar actualizaciones en cualquier momento.  
 
-## <a name="assign-the-policy-to-users"></a>Asignar la directiva a los usuarios
-
-Las directivas existentes se asignan a grupos, usuarios o dispositivos. Cuando se asigna, la directiva se aplica.
-
-1. En **Actualizaciones de Software**, seleccione **Directivas de actualización para iOS**.
-2. Elija una directiva existente > **Asignaciones**.
-3. Seleccione los grupos, usuarios o dispositivos de Azure Active Directory que se van a incluir o excluir de la directiva.
-4. Haga clic en **Guardar** para implementar la directiva en los usuarios.
-
-Se evalúa la comprobación de actualizaciones por parte de los dispositivos usados por los usuarios a los que se destina la directiva. Esta directiva también es compatible con los dispositivos sin usuario.
 
 ## <a name="monitor-device-installation-failures"></a>Supervisión de errores de instalación de dispositivos
 <!-- 1352223 -->
@@ -97,4 +94,4 @@ En **Actualizaciones de software** > **Errores de instalación para dispositivos
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Asigne el perfil](../configuration/device-profile-assign.md) y [supervise el estado](../configuration/device-profile-monitor.md).
+[Supervise el estado](../configuration/device-profile-monitor.md).

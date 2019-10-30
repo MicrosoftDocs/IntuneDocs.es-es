@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036405"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785664"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configuración de directivas de protección de aplicaciones Android en Microsoft Intune
 En este artículo se describe la configuración de directivas de protección de aplicaciones para dispositivos Android. La configuración de directivas que se describe puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** de Azure Portal.
@@ -126,3 +127,4 @@ De forma predeterminada, se proporcionan varias opciones de configuración con a
 | **Fabricantes de dispositivos** | Especifique una lista de fabricantes separada por puntos y comas. Evite los espacios en las listas de varios valores. Estos valores no distinguen entre mayúsculas y minúsculas. Las *acciones* incluyen: <br><ul><li>**Permitir especificados (bloquear no especificados)** : solo los dispositivos que coincidan con el fabricante especificado pueden usar la aplicación. El resto de dispositivos se bloquean. </li></ul> <ul><li>**Permitir especificados (borrar no especificados)** : la cuenta de usuario que está asociada con la aplicación se borra del dispositivo. </li></ul> Para más información sobre el uso de esta configuración, consulte [Acciones de inicio condicional](app-protection-policies-access-actions.md#android-policy-settings). |
 | **Atestación de dispositivo SafetyNet** | Las directivas de protección de aplicaciones admiten algunas de las API de Google Play Protect. En concreto, este valor configura la atestación de SafetyNet de Google en dispositivos de usuarios finales. Especifique **Integridad básica** o **Integridad básica y dispositivos certificados**. **Integridad básica** muestra información sobre la integridad general del dispositivo. Por ejemplo, dispositivos manipulados por rooting, emuladores, dispositivos virtuales y cualquier otro dispositivo con signos de error de integridad básica por manipulación. **Integridad básica y dispositivos certificados** ofrece información sobre la compatibilidad del dispositivo con los servicios de Google. Solo superan esta comprobación aquellos dispositivos que no se han manipulado y están certificados por Google. Las *acciones* incluyen: <br><ul><li>**Advertir**: el usuario ve una notificación si el dispositivo no supera el examen de atestación de SafetyNet de Google según el valor configurado. Se puede descartar esta notificación. </li></ul><ul><li>**Bloquear acceso**: se bloquea el acceso al usuario si el dispositivo no supera el examen de atestación de SafetyNet de Google según el valor configurado. </li></ul> <ul><li>**Borrar datos**: la cuenta de usuario que está asociada con la aplicación se borra del dispositivo. </li></ul> </li></ul> Para ver las preguntas más frecuentes relacionadas con esta configuración, vea [Preguntas más frecuentes sobre MAM y la protección de la aplicación](mam-faq.md#app-experience-on-android). |
 | **Examen de amenazas en las aplicaciones** | Las directivas de protección de aplicaciones admiten algunas de las API de Google Play Protect. En concreto, este valor garantiza que el examen de verificación de aplicaciones de Google está activado para los dispositivos de usuarios finales. Si se ha configurado, se bloqueará el acceso al usuario hasta que se active el examen de aplicaciones de Google en su dispositivo Android. Las *acciones* incluyen: <br><ul><li>**Advertir**: se muestra una notificación al usuario si el examen de verificación de aplicaciones de Google no está activado en el dispositivo. Se puede descartar esta notificación. </li></ul><ul><li>**Bloquear acceso**: se bloquea el acceso al usuario si el examen de verificación de aplicaciones de Google no está activado en el dispositivo. </li></ul></li></ul> Los resultados del examen de verificación de aplicaciones de Google se muestran en el informe **Aplicaciones potencialmente dañinas** en la consola. |
+| **Nivel máximo de amenazas de dispositivo permitido** | Las directivas de protección de aplicaciones pueden aprovechar el conector de MTD de Intune. Especifique un nivel de amenaza máximo aceptable para usar esta aplicación. Las amenazas vienen determinadas por la aplicación de proveedor de Mobile Threat Defense (MTD) que se haya seleccionado en el dispositivo del usuario final. Especifique *Protegido*, *Bajo*, *Medio* o *Alto*. El nivel *Protegido* no requiere ninguna amenaza en el dispositivo y es el valor configurable más restrictivo, mientras que *Alto* requiere básicamente una conexión activa de Intune a MTD. Las *acciones* incluyen: <br><ul><li>**Bloquear acceso**: se impedirá el acceso del usuario si el nivel de amenaza determinado por la aplicación de proveedor de Mobile Threat Defense (MTD) seleccionada en el dispositivo del usuario final no cumple este requisito.</li></ul> <ul><li>**Borrar datos**: la cuenta de usuario que está asociada con la aplicación se borra del dispositivo.</li></ul>Para más información sobre cómo usar esta configuración, vea (##Configuración de Intune para MTD en dispositivos no inscritos). |

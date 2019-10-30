@@ -5,9 +5,10 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237207"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550809"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -33,6 +34,10 @@ En este artículo se muestra cómo asignar un perfil y se incluye información s
 
 > [!NOTE]  
 > Cuando se quita una directiva o deja de estar asignada a un dispositivo, el parámetro puede mantener el valor existente. La configuración no se revierte a un valor predeterminado. Para cambiar el parámetro a un valor diferente, cree una nueva directiva y asígnela.
+
+## <a name="before-you-begin"></a>Antes de comenzar
+
+Asegúrese de que tiene el rol adecuado para asignar directivas. Para más información, vea [Control de acceso basado en rol (RBAC) con Microsoft Intune](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Asignar un perfil de dispositivo
 

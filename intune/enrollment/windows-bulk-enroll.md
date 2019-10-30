@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
@@ -16,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed71676b434dfe30c7591ad3a3391d2252c3275d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722337"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585276"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
@@ -89,6 +90,8 @@ El aprovisionamiento está diseñado para usarlo en dispositivos Windows nuevos.
 
 - Un paquete de aprovisionamiento que intenta unirse a un dominio de Active Directory o a un inquilino de Azure Active Directory que no crea una cuenta local podría generar que el dispositivo no sea accesible si el proceso de unión al dominio presenta un error debido a la falta de conectividad de red.
 - Los scripts ejecutados por el paquete de aprovisionamiento se ejecutan en el contexto del sistema. Los scripts pueden realizar cambios arbitrarios en el sistema de archivos del dispositivo y las configuraciones. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se borra el dispositivo.
+
+Puede comprobar si la configuración del paquete se ha realizado correctamente o no en el registro de administración **Provisioning-Diagnostics-Provider** en el Visor de eventos.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Inscripción masiva mediante Wi-Fi 
 

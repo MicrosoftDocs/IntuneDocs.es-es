@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e27997b45f0a68f6eb9247c69fafc363787fb457
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722597"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681380"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creación de una directiva de acceso condicional basado en dispositivos
 
@@ -61,7 +62,7 @@ Una directiva de acceso condicional especifica la aplicación o los servicios qu
 
     - **Seleccionar aplicaciones**: seleccione esta opción, elija **Seleccionar** y luego use la lista de aplicaciones para buscar y seleccionar las aplicaciones o los servicios que desea proteger.
     
-      ![Creación de una directiva de acceso condicional](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![Configurar asignaciones de directiva de acceso condicional](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. Seleccione **Listo**.
 8. En **Asignaciones**, seleccione **Condiciones**.
@@ -71,7 +72,7 @@ Una directiva de acceso condicional especifica la aplicación o los servicios qu
     - **Aplicaciones cliente**: elija **Sí** para especificar si la directiva se debe aplicar a aplicaciones de explorador, a aplicaciones móviles y a clientes de escritorio. También puede seleccionar **Clientes de autenticación moderna** (como Outlook para iOS o Outlook para Android) y **Clientes de Exchange ActiveSync**.
     - **Estado del dispositivo**: la directiva de acceso condicional se aplicará a todos los estados de dispositivo a menos que elija Sí y excluya específicamente los estados Unido a Azure AD híbrido de dispositivo o Dispositivo marcado como compatible (o ambos).
     
-      ![Creación de una directiva de acceso condicional](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![Establecer las condiciones de una directiva de acceso condicional](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > Si desea proteger tanto los clientes de **autenticación moderna** como los **clientes de Exchange ActiveSync**, cree dos directivas de acceso condicional independientes, una para cada tipo de cliente. Aunque Exchange ActiveSync admita autenticación moderna, la única condición que Exchange ActiveSync admite es la plataforma. Otras condiciones, incluida la autenticación multifactor, no se admiten. Para proteger eficazmente el acceso a Exchange Online desde Exchange ActiveSync, cree una directiva de acceso condicional que especifique la aplicación en la nube de Office 365 Exchange Online y la aplicación cliente Exchange ActiveSync con la directiva Aplicar solo a las plataformas admitidas seleccionadas.

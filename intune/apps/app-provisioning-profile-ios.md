@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624c6cec2a887396cb6ef6508ab26a16d72f8f7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725327"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584921"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uso de perfiles de aprovisionamiento de aplicaciones para iOS para evitar que las aplicaciones expiren
 
@@ -44,14 +45,22 @@ Como administrador, puede incluir y excluir grupos de seguridad para asignar la 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Creación de un perfil de aprovisionamiento de aplicaciones móviles iOS
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-1. En la carga de trabajo **Aplicaciones cliente**, elija **Administrar** > **Perfiles de aprovisionamiento de aplicaciones para iOS**.
-2. En la hoja de lista de perfiles, elija **Crear perfil**.
-3. En el panel **Crear perfil**, configure los siguientes valores:
+2. En el panel de **Intune**, elija **Aplicaciones cliente** > **Perfiles de aprovisionamiento de aplicaciones de iOS** > **Crear perfil**.
+3. En la página **Datos básicos**, agregue los siguientes valores:
     - **Nombre**: proporcione un nombre para este perfil de aprovisionamiento móvil.
     - **Descripción**: opcionalmente, especifique una descripción de la directiva.
     - **Archivo de perfil de carga:** elija el icono **Abrir** y, luego, elija un archivo de perfil de configuración móvil de Apple (con la extensión `.mobileprovision`) que descargó del [sitio web para desarrolladores de Apple](https://developer.apple.com/).
-4. Cuando termine, elija **Crear**.
+
+   La **Fecha de expiración** se rellenará a partir de un valor en el archivo del perfil de configuración móvil de Apple que se agregó anteriormente.<br>
+
+   <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
+
+4. Haga clic en **Siguiente: Etiquetas de ámbito**.<br>
+   En la página **Etiquetas de ámbito** puede configurar opcionalmente etiquetas de ámbito para determinar quién puede ver el perfil de aprovisionamiento de aplicaciones de iOS en Intune. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida).
+5. Haga clic en **Siguiente: Asignaciones**.<br>
+   En la página **Asignaciones** puede asignar el perfil a usuarios y dispositivos. Es importante saber que un perfil se puede asignar a un dispositivo independientemente de si dicho dispositivo está administrado o no por Intune.
+6. Haga clic en **Siguiente: Revisar + crear** para revisar los valores especificados en el perfil.
+7. Cuando termine, haga clic en **Crear** para crear el perfil de aprovisionamiento de aplicaciones de iOS en Intune. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

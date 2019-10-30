@@ -2,12 +2,13 @@
 title: Creación de directivas de cumplimiento de dispositivos en Microsoft Intune - Azure | Microsoft Docs
 description: Creación de directivas de cumplimiento de dispositivos, información general de los estados y los niveles de gravedad, uso del estado En período de gracia, trabajar con el acceso condicional, control de los dispositivos sin una directiva asignada y diferencias de cumplimiento en Azure Portal y el portal clásico en Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306581"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786077"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creación de una directiva de cumplimiento en Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Las directivas de cumplimiento de dispositivos son una característica clave cuando se usa Intune para proteger los recursos de su organización. En Intune, puede crear reglas y opciones de configuración que los dispositivos deben cumplir para que se consideren conformes, por ejemplo, una versión de SO mínima. Si el dispositivo no las cumple, puede bloquear el acceso a datos y recursos mediante el [acceso condicional](conditional-access.md).
 
@@ -48,10 +47,10 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
 - Use una plataforma compatible:
 
-  - Android
+  - Administrador de dispositivos Android
   - Android Enterprise
   - iOS
-  - macOS (versión preliminar)
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8,1
@@ -72,26 +71,40 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
 3. Seleccione **Directivas** > **Crear directiva**. Escriba las propiedades siguientes:
 
-    - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Marcar los dispositivos iOS liberados como no compatibles**.
-    - **Descripción**: escriba una descripción para la directiva. Esta configuración es opcional pero recomendada.
-    - **Plataforma**: seleccione la plataforma de los dispositivos. Las opciones son:  
+   - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Marcar los dispositivos iOS liberados como no compatibles**.  
 
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 y versiones posteriores**
-       - **Windows 10 y versiones posteriores**
+   - **Descripción**: escriba una descripción para la directiva. Esta configuración es opcional pero recomendada.  
 
-    - **Configuración**: En los artículos siguientes se muestran y describen los valores de cada plataforma:
+   - **Plataforma**: seleccione la plataforma de los dispositivos. Las opciones son:
+     - **Administrador de dispositivos Android**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 y versiones posteriores**
+     - **Windows 10 y versiones posteriores**
 
-        - [Android](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 y versiones posteriores](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 y versiones posteriores](compliance-policy-create-windows.md)
+     En *Android Enterprise*, debe seleccionar un **Tipo de perfil**:
+     - **Propietario del dispositivo**
+     - **Perfil de trabajo**
+
+   - **Configuración**: En los artículos siguientes se muestran y describen los valores de cada plataforma:
+     - [Administrador de dispositivos Android](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1, Windows 8.1 y versiones posteriores](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 y versiones posteriores](compliance-policy-create-windows.md)  
+
+   - **Ubicaciones** *(administrador de dispositivos Android)* : En la directiva, puede forzar el cumplimiento según la ubicación del dispositivo. Elija entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se ofrecen algunas instrucciones.  
+
+   - **Acciones en caso de incumplimiento**: En el caso de los dispositivos que no cumplen con las directivas de cumplimiento, puede agregar una secuencia de acciones para aplicar de manera automática. Puede cambiar la programación cuando el dispositivo se marca como no conforme, por ejemplo, después de un día. También puede configurar una segunda acción que envía un correo electrónico al usuario cuando el dispositivo es no conforme.
+    
+     En [Adición de acciones en caso de incumplimiento](actions-for-noncompliance.md) se proporciona más información, por ejemplo, cómo crear un correo electrónico para notificar a los usuarios.
+
+     Por ejemplo, se usa la característica Ubicaciones y se agrega una ubicación en una directiva de cumplimiento. La acción predeterminada en caso de incumplimiento se aplica cuando se selecciona al menos una ubicación. Si el dispositivo no está conectado a las ubicaciones seleccionadas, se considera de inmediato como no conforme. Puede dar a los usuarios un período de gracia, por ejemplo, un día.
+
+   - **Ámbito (etiquetas)** : Las etiquetas de ámbito son una excelente forma de asignar y filtrar directivas a grupos específicos, como Ventas, RR. HH., Todos los empleados de Carolina del Norte en EE. UU., etc. Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito a las directivas de cumplimiento. [Uso de etiquetas de ámbito para filtrar directivas](../fundamentals/scope-tags.md) es un recurso útil.
 
 4. Cuando termine, seleccione **Aceptar** > **Crear** para guardar los cambios. La directiva se crea y se muestra en la lista. A continuación, asigne la directiva a los grupos.
 
@@ -114,17 +127,18 @@ Cuando asigna la directiva, también puede **evaluar** cuántos usuarios se ver�
 
 Si el botón **Evaluar** está atenuado, asegúrese de que la directiva se asignó a uno o más grupos.
 
-## <a name="actions-for-noncompliance"></a>Acciones en caso de incumplimiento
+<!-- ## Actions for noncompliance
 
-En el caso de los dispositivos que no cumplen con las directivas de cumplimiento, puede agregar una secuencia de acciones para aplicar de manera automática. Puede cambiar la programación cuando el dispositivo se marca como no conforme, por ejemplo, después de un día. También puede configurar una segunda acción que envía un correo electrónico al usuario cuando el dispositivo es no conforme.
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-En [Adición de acciones en caso de incumplimiento](actions-for-noncompliance.md) se proporciona más información, por ejemplo, cómo crear un correo electrónico para notificar a los usuarios.
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-Por ejemplo, se usa la característica Ubicaciones y se agrega una ubicación en una directiva de cumplimiento. La acción predeterminada en caso de incumplimiento se aplica cuando se selecciona al menos una ubicación. Si el dispositivo no está conectado a las ubicaciones seleccionadas, se considera de inmediato como no conforme. Puede dar a los usuarios un período de gracia, por ejemplo, un día.
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>Etiquetas de ámbito
+## Scope tags
 
-Las etiquetas de ámbito son una excelente forma de asignar y filtrar directivas a grupos específicos, como Ventas, RR. HH., Todos los empleados de Carolina del Norte en EE. UU., etc. Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito a las directivas de cumplimiento. [Uso de etiquetas de ámbito para filtrar directivas](../fundamentals/scope-tags.md) es un recurso útil.
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>Tiempos de ciclo de actualización
 
