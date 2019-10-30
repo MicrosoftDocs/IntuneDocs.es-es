@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507580"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813484"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configuración de la aplicación Managed Home Screen de Microsoft para Android Enterprise
 
@@ -60,25 +60,15 @@ En la tabla siguiente se enumeran las claves de configuración disponibles de Ma
 | Clave de configuración | Tipo de valor | Valor predeterminado | Descripción |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Definir tamaño de la cuadrícula | cadena | Automático | Permite establecer el tamaño de la cuadrícula para las aplicaciones que se van a colocar en la pantalla principal administrada. Puede establecer el número de filas y columnas de la aplicación para definir el tamaño de la cuadrícula en el formato siguiente, `columns;rows`. Si define el tamaño de la cuadrícula, el número máximo de aplicaciones que se mostrarán en una fila de la pantalla principal será el número de filas que establezca, y el número máximo de aplicaciones que se mostrarán en una columna de la pantalla principal será el número de columnas que establezca. |
-| Habilitar el encabezado de pantalla | bool | TRUE | Habilita el encabezado superior para las distintas vistas que ofrece la pantalla principal administrada, como la fuente o las tarjetas de fuente. Si habilita esta opción, los usuarios del dispositivo verán el encabezado. |
-| Habilitar la barra de estado del dispositivo | bool | TRUE | Habilita la barra de estado de la pantalla principal (la barra superior en la que se muestran las conexiones actuales como Wi-Fi, etc.). Si habilita esta clave de configuración, el usuario final podrá ver en la barra de estado los iconos que representan las conexiones y las aplicaciones activas. |
 | Habilitar la señal de notificaciones | bool | FALSE | Permite la señal de notificación para los iconos de aplicación que muestra el número de notificaciones nuevas en la aplicación. Si habilita esta opción, los usuarios finales verán señales de notificación en las aplicaciones que tienen notificaciones sin leer. Si mantiene deshabilitada esta configuración clave, el usuario final no verá ninguna notificación señalada para las aplicaciones que podrían tener notificaciones sin leer. |
 | Bloquear la pantalla de inicio | bool | TRUE | Impide al usuario final mover los iconos de las aplicaciones en la pantalla principal. Si habilita esta clave de configuración, se bloquearán los iconos de las aplicaciones en la pantalla principal y el usuario final no podrá arrastrarlos y colocarlos en otras posiciones de la cuadrícula de la pantalla principal. Si se establece en `false`, los usuarios finales podrán mover los iconos de las aplicaciones y los vínculos web en Managed Home Screen.  |
 | Establecer el fondo de pantalla del dispositivo | cadena | Default | Le permite establecer el fondo de pantalla que elija si escribe la dirección URL de la imagen que quiera establecer como fondo de pantalla. |
 | Establecer el tamaño del icono de la aplicación | integer | 2 | Le permite establecer el tamaño de icono para las aplicaciones que se muestran en la pantalla principal. Puede elegir los valores siguientes en esta configuración para diferentes tamaños: 0 (el más pequeño), 1 (pequeño), 2 (estándar), 3 (grande) y 4 (el más grande). |
 | Establecer el icono de la carpeta de aplicación | integer | 0 | Le permite definir la apariencia de las carpetas de aplicación en la pantalla principal. Puede elegir la apariencia entre los valores siguientes: Dark Square(0); Dark Circle(1); Light Square(2); Light Circle(3). |
-| Habilitar gestos | bool | FALSE | Habilita la capacidad del usuario final de asignar acciones a diferentes gestos, como deslizarse hacia arriba o hacia abajo. Si deshabilita esta clave de configuración, los usuarios finales solo podrán deslizar a la derecha si hay una segunda página y volver a la página principal. |
-| Habilitar desplazamiento vertical | bool | FALSE | Habilita el desplazamiento vertical en la pantalla principal administrada. Si habilita esta clave de configuración, el usuario final solo podrá navegar verticalmente a otras páginas, en lugar de deslizar horizontalmente. |
-| Establecer tema de la pantalla principal | cadena | Theme.Light.Blue | Le permite elegir el tema de la pantalla principal a partir de un conjunto predefinido de temas con colores diferentes. Puede elegir los temas siguientes si escribe el valor de cadena en el formato siguiente.   Theme.Light.Green. Donde Light se puede reemplazar por Dark para un tema oscuro y Green (verde) se puede reemplazar por Blue, Yellow, Pink, Red, Orange y Purple (azul, amarillo, rosa, rojo, naranja y púrpura). |
-| Habilitar acoplamiento | bool | FALSE | Habilita la sección de acoplamiento de aplicaciones en la parte inferior de la pantalla principal en la que se muestran las aplicaciones persistentes y el punto de entrada de todas las aplicaciones instaladas. Si habilita esta clave de configuración, el usuario final podrá acceder a las aplicaciones acopladas y también a la sección de todas las aplicaciones para ir a la lista de todas las aplicaciones instaladas en los dispositivos, con independencia de que se hayan agregado o no a la lista de permitidas. |
 | Establecer la orientación de la pantalla | integer | 1 | Le permite establecer la orientación de la pantalla principal en modo vertical, horizontal o permitir el giro automático. Puede establecer la orientación si escribe los valores 1 (para el modo vertical), 2 (para el modo horizontal), 3 (para Girar automáticamente). |
-| Habilitar la fuente de la pantalla principal | bool | FALSE | Habilita la fuente de la pantalla principal, que se puede ver si se desliza hacia la izquierda. Esta fuente muestra otro tipo de contenido, como noticias, el calendario, las aplicaciones de uso frecuente, la tarjeta del asistente de voz de Cortana, etc. Si lo habilita, el usuario final podrá deslizar hacia la izquierda en la pantalla principal para ir a la fuente. |
-| Habilitar el modo de introducción | bool | FALSE | Permite a los usuarios finales agregar o quitar otras páginas en la pantalla principal a las que se puede acceder si se desliza el dedo hacia la derecha desde la pantalla predeterminada. Si habilita esta opción, el usuario final podrá agregar páginas a la derecha de la página predeterminada de la pantalla principal, también podrá cambiar la página predeterminada y acceder a la configuración de Managed Home Screen. |
 | Habilitar la telemetría de dispositivo | bool | FALSE | Habilita toda la telemetría que se captura para la pantalla principal administrada. Si habilita esta opción, Microsoft podrá capturar la telemetría de uso del dispositivo, como el número de veces que se inicia una aplicación determinada en este dispositivo. |
 | Establecer aplicaciones permitidas | bundleArray | FALSE | Le permite definir el conjunto de aplicaciones visibles en la pantalla principal de entre las instaladas en el dispositivo. Para definir las aplicaciones, escriba el nombre del paquete de aplicación de las aplicaciones que le gustaría hacer visibles; por ejemplo, com.microsoft.emmx hará que se pueda acceder a la configuración desde la pantalla principal. Las aplicaciones que incluya en la lista de permitidas en esta sección ya deben estar instaladas en el dispositivo para que se vean en la pantalla principal. |
 | Establecer vínculos web anclados | bundleArray | FALSE | Le permite anclar sitios web como iconos de inicio rápido en la pantalla principal. Con esta configuración, puede definir la dirección URL y agregarla a la pantalla principal para que el usuario final inicie el explorador con un solo toque. |
-| Habilitar la barra de búsqueda | bool | FALSE | Habilita la barra de búsqueda en la pantalla principal. Si habilita esta opción, los usuarios del dispositivo verán la barra de búsqueda en la pantalla principal, donde podrán escribir todo lo que quieran buscar en la Web. |
-| Deshabilitar la aplicación de configuración | bool | FALSE | Deshabilita la página de configuración de Managed Home Screen. Si deshabilita esta opción, el usuario final del dispositivo no podrá acceder a la configuración de Managed Home Screen. |
 | Habilitar protector de pantalla | bool | FALSE | Para habilitar o no el modo de protector de pantalla. Si se establece en true, puede configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** y **media_detect_screen_saver**. |
 | Imagen del protector de pantalla | cadena |   | Establezca la dirección URL de la imagen del protector de pantalla. Si no se establece ninguna dirección URL, los dispositivos mostrarán la imagen del protector de pantalla predeterminada cuando se active el protector de pantalla. La imagen predeterminada muestra el icono de la aplicación Managed Home Screen.  |
 | Mostrar hora del protector de pantalla | integer | 0 | Ofrece la opción de establecer la cantidad de tiempo en segundos que el dispositivo mostrará el protector de pantalla durante el modo de protector de pantalla. Si se establece en 0, el protector de pantalla se mostrará en modo de protector de pantalla indefinidamente hasta que el dispositivo se active.  |
@@ -116,18 +106,6 @@ Este es un ejemplo de script JSON con todas las claves de configuración disponi
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ Este es un ejemplo de script JSON con todas las claves de configuración disponi
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ Este es un ejemplo de script JSON con todas las claves de configuración disponi
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",

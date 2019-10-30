@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507444"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889587"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ Puede buscar un solo usuario y examinar su estado de cumplimiento. En el panel *
 - **Última sincronización**: hora de la última sincronización de la aplicación con Intune. 
 
 >[!NOTE]
-> La columna **Última sincronización** representa el mismo valor tanto en el informe de estado de usuario de la consola como en el [informe .csv exportable](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) de la directiva de protección de aplicaciones. La diferencia es un pequeño retraso en la sincronización entre el valor de los dos informes. 
+> La columna **Última sincronización** representa el mismo valor tanto en el informe de estado de usuario de la consola como en el [informe .csv exportable](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities) de la directiva de protección de aplicaciones. La diferencia es un pequeño retraso en la sincronización entre el valor de los dos informes. 
 >
 > La hora de Última sincronización hace referencia a la última vez que Intune vio la instancia de la aplicación. Cuando un usuario inicia una aplicación, esta puede comunicarse con el servicio de Intune App Protection en el momento del inicio, en función de cuándo se sincronizara por última vez. Vea [las horas del intervalo de reintentos para la sincronización de la directiva de protección de aplicaciones](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Por lo tanto, si un usuario final no ha usado esa aplicación concreta en el último intervalo de sincronización (que suele ser de 30 minutos para el uso activo) e inicia la aplicación, entonces:
 >
