@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506729"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057641"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Configuración de dispositivos iOS e IPadOS para usar las características comunes de iOS en Intune
 
@@ -266,7 +266,7 @@ Esta característica se aplica a:
   - **Solo sitios web específicos** (solo para el explorador web Safari): estas direcciones URL se agregan a los marcadores del explorador Safari. El usuario **solo** tiene permiso para visitar estos sitios; no pueden abrir otros sitios. Use esta opción solo si conoce la lista exacta de direcciones URL a las que pueden acceder los usuarios.
 
     - **URL**: escriba la dirección URL del sitio web que quiere permitir. Por ejemplo, escriba `https://www.contoso.com`.
-    - **Ruta de acceso de marcador**: escriba la ruta de acceso para almacenar el marcador. Por ejemplo, escriba `/Contoso/Business Apps`. Si no agrega una ruta de acceso, el marcador se agregará a la carpeta predeterminada de marcadores del dispositivo.
+    - **Ruta de acceso del marcador**: Apple cambió esta configuración. Todos los marcadores van a la carpeta **sitios aprobados** . Los marcadores no entran en la ruta de acceso del marcador que especifique.
     - **Título**: escriba un título descriptivo para el marcador.
 
     Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder a ningún sitio web, excepto `microsoft.com`, `microsoft.net` y `apple.com`. Intune permite automáticamente estas direcciones URL.
@@ -280,7 +280,7 @@ Esta característica se aplica a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
 
-- **Tipo de extensión de aplicación de SSO**: elija el tipo de extensión de aplicación SSO de credenciales. Al guardar el perfil de extensión de aplicación de SSO, no se puede cambiar el tipo de extensión de aplicación de SSO. Las opciones son:
+- **Tipo de extensión de aplicación de SSO**: elija el tipo de extensión de aplicación SSO de credenciales. Las opciones son:
 
   - **No configurado**: no se usan las extensiones de aplicación. Para deshabilitar una extensión de aplicación, puede cambiar el tipo de extensión de aplicación de SSO de **Kerberos** o **credencial** a **no configurado**.
   - **Credential**: Use una extensión de aplicación de credenciales genérica y personalizable para realizar el inicio de sesión único. Asegúrese de que conoce el identificador de la extensión de la aplicación SSO de su organización.

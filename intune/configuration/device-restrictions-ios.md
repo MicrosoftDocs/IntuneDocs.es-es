@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785520"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414690"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -167,7 +167,33 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
   iOS tiene una seguridad integrada que puede afectar a esta configuración. Por ejemplo, iOS puede retrasar la activación de la Directiva en función del número de errores de inicio de sesión. También puede considerar la posibilidad de escribir repetidamente el mismo código de acceso como un intento. La [Guía de seguridad de iOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) de Apple (abre el sitio web de Apple) es un buen recurso y proporciona detalles más específicos sobre los códigos de acceso.
   
 - **Máximo de minutos tras el bloqueo de la pantalla antes de solicitar la contraseña**<sup>1</sup>: escriba cuánto tiempo el dispositivo permanece inactivo antes de que el usuario deba volver a escribir la contraseña. Si escribe un tiempo mayor al que está establecido actualmente en el dispositivo, este pasará por alto el tiempo que escribió. Compatible en dispositivos iOS 8.0 y más recientes.
-- **Máximo de minutos de inactividad hasta que se bloquea la pantalla**<sup>1</sup>: escriba el número máximo de minutos de inactividad que se permiten en el dispositivo hasta que se bloquea la pantalla. Si escribe un tiempo mayor al que está establecido actualmente en el dispositivo, este pasará por alto el tiempo que escribió. Cuando se establece en **inmediatamente**, la pantalla se bloquea en función de la hora mínima del dispositivo. En iPhone, es de 30 segundos. En iPad, es de dos minutos.
+
+- **Máximo de minutos de inactividad hasta que se bloquea la pantalla**<sup>1</sup>: escriba el número máximo de minutos de inactividad que se permiten en el dispositivo hasta que se bloquea la pantalla.
+
+  **Opciones de iOS**:  
+
+  - **No configurado** (valor predeterminado): Intune no toca esta configuración.
+  - **Inmediatamente**: la pantalla se bloquea después de 30 segundos de inactividad.
+  - **1**: la pantalla se bloquea después de un minuto de inactividad.
+  - **2**: la pantalla se bloquea después de 2 minutos de inactividad.
+  - **3**: la pantalla se bloquea después de 3 minutos de inactividad.
+  - **4**: se bloquea la pantalla después de 4 minutos de inactividad.
+  - **5**: se bloquea la pantalla después de 5 minutos de inactividad.
+    
+  **Opciones de ipados**:  
+
+  - **No configurado** (valor predeterminado): Intune no toca esta configuración.
+  - **Inmediatamente**: la pantalla se bloquea después de 2 minutos de inactividad.
+  - **2**: la pantalla se bloquea después de 2 minutos de inactividad.
+  - **5**: se bloquea la pantalla después de 5 minutos de inactividad.
+  - **10**: bloqueos de pantalla después de 10 minutos de inactividad.
+  - **15**: bloqueos de pantalla después de 15 minutos de inactividad.
+
+  Si un valor no se aplica a iOS o iPados, Apple usa el valor *más bajo* más cercano. Por ejemplo, si especifica `4` minutos, los dispositivos de iPados usan `2` minutos. Si escribe `10` minutos, los dispositivos iOS usan `5` minutos. Se trata de una limitación de Apple.
+  
+  > [!NOTE]
+  > La interfaz de usuario de Intune para esta configuración no separa los valores admitidos de iOS y iPad. La interfaz de usuario podría actualizarse en una versión futura.
+
 - **Caducidad de la contraseña (días)** : escriba el número de días antes de que se deba cambiar la contraseña del dispositivo.
 - **Impedir la reutilización de contraseñas anteriores**: escriba el número de contraseñas nuevas que se deben usar antes de poder reutilizar una antigua.
 - **Desbloqueo de Touch ID y facial ID**: elija **bloquear** para evitar el uso de una huella digital o una superficie para desbloquear el dispositivo. **No configurado** permite que el usuario desbloquee el dispositivo con estos métodos.

@@ -249,6 +249,8 @@
               href: security-baseline-settings-mdm-all.md
             - name: Configuración de línea base de ATP de Microsoft Defender
               href: security-baseline-settings-defender-atp.md
+            - name: "Configuración de línea base de Microsoft\_Edge"
+              href: security-baseline-settings-edge.md
         - name: Configuración de Windows Update
           href: windows-update-settings.md
         - name: Configuración de directivas de cumplimiento (Android)

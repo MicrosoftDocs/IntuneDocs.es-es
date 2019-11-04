@@ -64,8 +64,14 @@
 ## [Uso de dispositivos iOS](using-your-iOS-device-with-intune.md)
 ### [Efectos del restablecimiento del dispositivo iOS](effects-of-device-reset-company-portal-ios.md)
 ### [Instalación e inicio de sesión en el Portal de empresa](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-### [Inscripción de dispositivos iOS](enroll-your-device-in-intune-ios.md)
-### [Inscripción de un dispositivo iOS proporcionado por la organización](enroll-your-device-dep-ios.md)
+### Inscribir el dispositivo
+#### [Inscripción de dispositivos iOS](enroll-your-device-in-intune-ios.md)
+#### [Inscripción de un dispositivo iOS proporcionado por la organización](enroll-your-device-dep-ios.md)
+#### Inscripción con credenciales derivadas
+##### [Inscripción con Entrust Datacard](enroll-ios-device-entrust-datacard.md)
+##### [Inscripción con Intercede](enroll-ios-device-intercede.md)
+##### [Inscripción con DISA Purebred](enroll-ios-device-disa-purebred.md)
+
 
 ### [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 ### [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)

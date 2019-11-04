@@ -17,20 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490822"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413810"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
-
-[!INCLUDE[both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Puede habilitar las aplicaciones para que usen directivas de protección de aplicaciones mediante la herramienta de ajuste de aplicaciones de Intune o el SDK para aplicaciones de Intune. Use esta información para conocer sobre estos dos métodos y cuándo usarlos.
 
 ## <a name="intune-app-wrapping-tool"></a>Herramienta de ajuste de aplicaciones de Intune
+
 La Herramienta de ajuste de aplicaciones se usa principalmente para aplicaciones **internas** de línea de negocio (LOB). Esta herramienta es una aplicación de línea de comandos que crea un contenedor en torno a la aplicación que luego permite administrarla mediante una directiva de protección de aplicaciones de Intune. Al proteger una aplicación proporcionada por un fabricante de software independiente, es importante aclarar si este proveedor seguirá admitiendo la aplicación ajustada.
 
 No se necesita el código fuente para usar la herramienta, pero se necesitan credenciales de firma. Para obtener más información sobre las credenciales de firma, vea el [blog de Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obtener documentación sobre la herramienta de ajuste de aplicaciones, consulte [Herramienta de ajuste de aplicaciones para Android](app-wrapper-prepare-android.md) y [Herramienta de ajuste de aplicaciones para iOS](app-wrapper-prepare-ios.md).
@@ -40,6 +39,7 @@ La herramienta de ajuste de aplicaciones **no** admite aplicaciones de App Store
 Para obtener más información sobre la herramienta de ajuste de aplicaciones para directivas de protección de aplicaciones en dispositivos que no están inscritos en Intune, consulte [Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune](../apps/apps-add.md).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Razones para usar la herramienta de ajuste de aplicaciones
+
 * La aplicación no tiene funciones de protección de datos integradas.
 * La aplicación es sencilla.
 * La aplicación se implementa internamente.
@@ -55,11 +55,13 @@ Para obtener más información sobre la herramienta de ajuste de aplicaciones pa
 |**Android**|No: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|Sí|
 
 ## <a name="intune-app-sdk"></a>SDK para aplicaciones de Intune
+
 El SDK de aplicaciones está diseñado principalmente para clientes que tienen aplicaciones en App Store de Apple o Google Play Store y quieren administrar las aplicaciones con Intune. Pero cualquier aplicación puede aprovechar la integración del SDK, incluso las aplicaciones de línea de negocio.
 
 Para obtener más información sobre el SDK, consulte la [Introducción](app-sdk.md). Para empezar a usar el SDK, consulte [Introducción al SDK para aplicaciones de Microsoft Intune](app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>Razones para usar el SDK
+
 * La aplicación no tiene funciones de protección de datos integradas.
 * La aplicación es compleja y contiene muchas experiencias.
 * La aplicación se implementa en una tienda de aplicaciones pública como Google Play o el App Store de Apple.
@@ -74,10 +76,12 @@ Para obtener más información sobre el SDK, consulte la [Introducción](app-sdk
 |**iOS**|Sí: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|No|
 |**Android**| Sí: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|No|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>¿No usa una plataforma de desarrollo de aplicaciones mencionada anteriormente? 
+### <a name="not-using-an-app-development-platform-listed-above"></a>¿No usa una plataforma de desarrollo de aplicaciones mencionada anteriormente?
+
 El equipo de desarrollo del SDK de Intune comprueba y mantiene de forma activa la compatibilidad con las aplicaciones creadas con las plataformas nativas de Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms y Cordova. Aunque algunos clientes han podido integrar con éxito el SDK de Intune con otras plataformas como React Native y NativeScript, no proporcionamos instrucciones explícitas o complementos para desarrolladores de aplicaciones que no utilicen nuestras plataformas compatibles. 
 
 ## <a name="feature-comparison"></a>Comparación de características
+
 En la siguiente tabla se enumeran los valores que puede usarse para el SDK para aplicaciones y la herramienta de ajuste de aplicaciones.
 
 > [!NOTE]
