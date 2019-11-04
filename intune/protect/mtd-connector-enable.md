@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504430"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810292"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Habilitar el conector Mobile Threat Defense en Intune
 
@@ -44,7 +44,7 @@ Directivas de acceso condicional clásicas para aplicaciones de MTD:
 Para ver las directivas de acceso condicional clásicas, en [Azure](https://portal.azure.com/#home), vaya a **Azure Active Directory** > **Acceso condicional** > **Directivas clásicas**.
 
 
-## <a name="to-enable-the-mtd-connector"></a>Para habilitar el conector de MTD
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>Para habilitar el conector Mobile Threat Defense
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
@@ -58,20 +58,23 @@ Para ver las directivas de acceso condicional clásicas, en [Azure](https://port
 
 7. Habilite las opciones de alternancia según los requisitos de su organización. Las opciones de alternancia visibles variarán en función del asociado de MTD.
 
-## <a name="mtd-toggle-options"></a>Opciones de alternancia de MTD
+## <a name="mobile-threat-defense-toggle-options"></a>Opciones de alternancia de Mobile Threat Defense
 
-Las opciones de alternancia de MTD que habilite dependerán de los requisitos de su organización. A continuación, puede ver más detalles:
+Puede decidir qué opciones de alternancia de Mobile Threat Defense necesita habilitar según los requisitos de su organización. A continuación, puede ver más detalles:
 
-- **Connect Android 4.1+ devices to [MTD partner name] for Work MTD** (Conectar dispositivos Android 4.1+ con MTD de [nombre de partner de MTD] for Work): cuando habilita esta opción, puede hacer que los dispositivos Android 4.1+ informen de un riesgo de seguridad a Intune.
-  - **Mark as non compliant if no data is received** (Marcar como no conforme si no se reciben datos): si Intune no recibe datos sobre un dispositivo en esta plataforma por parte del asociado de MTD, considere que el dispositivo no es conforme.
-<br></br>
-- **Connect iOS 8.0+ devices to [MTD partner name] for Work MTD** (Conectar dispositivos iOS 8.0+ con MTD de [nombre de partner de MTD] for Work): cuando se habilita esta opción, los dispositivos iOS 8.0+ pueden informar a Intune de los riesgos para la seguridad.
-  - **Mark as non compliant if no data is received** (Marcar como no conforme si no se reciben datos): si Intune no recibe datos sobre un dispositivo en esta plataforma por parte del asociado de MTD, considere que el dispositivo no es conforme.
-<br></br>
+**Configuración de directivas de cumplimiento de MDM**
+- **Connect Android 4.1+ devices to *\<MTD partner name>***: (Conectar dispositivos Android 4.1+ con *[nombre de asociado de MTD]***:) cuando habilita esta opción, puede hacer que los dispositivos Android 4.1+ informen de un riesgo de seguridad a Intune.
+- **Connect iOS 8.0+ devices to *\<MTD partner name>***: (Conectar dispositivos iOS 8.0+ con *[nombre de asociado de MTD]***:) cuando se habilita esta opción, los dispositivos iOS 8.0+ pueden informar a Intune de los riesgos para la seguridad.
 - **Enable App Sync for iOS Devices** (Habilitar la sincronización de aplicaciones de dispositivos iOS): permite que este partner de Mobile Threat Defense solicite los metadatos de las aplicaciones iOS a Intune para usarlos con el fin de analizar las amenazas.
-
 - **Block unsupported OS versions** (Bloquear versiones de SO no compatibles): bloquear si el dispositivo ejecuta un sistema operativo inferior a la versión mínima compatible.
 
+**Configuración de directivas de protección de aplicaciones**
+- **Conecte dispositivos Android de la versión 4.1 y posteriores a *\<Nombre del asociado de MTD >* para la evaluación de la directiva de protección de aplicaciones**: Al habilitar esta opción, las directivas de protección de aplicaciones que usan la regla Nivel de amenaza de dispositivo evaluarán los dispositivos, incluidos los datos de este conector.
+- **Conecte dispositivos iOS de la versión 8.0 y posteriores a *\<Nombre del asociado de MTD >* para la evaluación de la directiva de protección de aplicaciones**: Al habilitar esta opción, las directivas de protección de aplicaciones que usan la regla Nivel de amenaza de dispositivo evaluarán los dispositivos, incluidos los datos de este conector.
+
+Para obtener más información sobre el uso de los conectores Mobile Threat Defense para la evaluación de directivas de Intune App Protection, consulte [Configuración de Mobile Threat Defense para dispositivos no inscritos](~/protect/mtd-enable-unenrolled-devices.md).
+
+**Configuración compartida común**
 - **Number of days until partner is unresponsive** (Número de días hasta que el asociado no responda): número de días de inactividad antes de que Intune considere que el asociado no responde porque se perdió la conexión. Intune omite el estado de cumplimiento de los asociados de MTD que no responden.
 
 > [!IMPORTANT] 

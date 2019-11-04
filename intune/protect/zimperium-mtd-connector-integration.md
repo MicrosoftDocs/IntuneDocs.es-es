@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ba94a649f9d7b49437d5d97bb621b0b0a94466c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508691"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810301"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar Zimperium con Intune
 
@@ -31,8 +31,7 @@ Complete estos pasos para integrar la solución Zimperium Mobile Threat Defense 
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-> [!NOTE]
-> Los pasos siguientes debe completarlos en la [consola Zimperium MTD](https://www.zimperium.com/platform).
+Los pasos siguientes se realizan en la [consola de Zimperium MTD](https://www.zimperium.com/platform) y habilitarán una conexión con el servicio de Lookout tanto para los dispositivos inscritos en Intune (mediante el cumplimiento de dispositivos) como para los dispositivos no inscritos (mediante directivas de protección de aplicaciones).
 
 Antes de iniciar el proceso de integración de Zimperium con Intune, asegúrese de que tiene las siguientes credenciales y suscripción:
 
@@ -90,4 +89,5 @@ Para obtener más información sobre el consentimiento y las aplicaciones de Azu
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Configurar aplicaciones Zimperium](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configuración de aplicaciones Zimperium para dispositivos inscritos](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configuración de aplicaciones Zimperium para dispositivos no inscritos](~/protect/mtd-add-apps-unenrolled-devices.md)

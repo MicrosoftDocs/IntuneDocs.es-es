@@ -7,14 +7,28 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749364"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415072"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune.
+
+### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Plan de cambio: La configuración del "registro del lado servidor para comandos Siri" se quitará de la consola de Intune. <!-- 5468501-->
+
+Tenemos previsto quitar la configuración del "registro del lado servidor para comandos Siri" de la consola de Intune con la actualización de noviembre del servicio de Intune. Este cambio se alinea con Apple, que ya ha quitado la configuración en su lado.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Cuando la actualización de noviembre o 1911 se implemente aproximadamente a mediados de noviembre, verá que esta configuración se ha quitado del menú Restricciones de dispositivos (aplicaciones integradas) para los perfiles de configuración de iOS, en la consola de Intune. Puede aparecer en las directivas y en el perfil de administración del dispositivo de destino, pero la configuración no tiene ningún efecto en el dispositivo. No se prevé mucho impacto en la funcionalidad, ya que actualmente no funciona en los dispositivos, aunque la vea en el perfil de administración.
+
+Puede elegir una de las dos vías:
+- Si desea eliminar esta configuración de las directivas, puede ir al perfil que tiene esta configuración, realizar una edición secundaria y guardar la directiva. La directiva volverá a calcularse en el back-end y la configuración se eliminará de la directiva.
+- Si decide no realizar esta acción, los usuarios finales verán esta configuración en el perfil de administración del dispositivo, pero la configuración no tendrá ningún efecto.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
+Puede realizar una acción según la sección anterior o dejar la directiva tal cual. Cuando se realice este cambio, actualizaremos nuestra página de novedades y la documentación correspondiente.
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Fin de la compatibilidad con la administración heredada de equipos
 
@@ -71,8 +85,8 @@ No es necesario realizar ninguna acción, pero puede considerar la posibilidad d
 #### <a name="additional-information"></a>Información adicional 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Plan de cambio: Intune App SDK y las directivas de protección de aplicaciones de Android van a pasar a ser compatible con Android 5.0 y versiones posteriores en octubre <!--4911065 -->
-Intune pasará a ser compatible con Android 5.x (Lollipop) y versiones posteriores en octubre. Actualice las aplicaciones encapsuladas con la instancia de Intune App SDK más reciente y actualice los dispositivos.
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Plan de cambio: Intune App SDK y las directivas de protección de aplicaciones de Android van a ser compatibles con Android 5.0 y posterior en una próxima versión. <!--4911065 -->
+Intune pasará a ser compatible con Android 5.x (Lollipop) y posterior en una próxima versión. Actualice las aplicaciones encapsuladas con la instancia de Intune App SDK más reciente y actualice los dispositivos.
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 Si no va a usar, ni tiene pensado usar, el SDK o la aplicación para Android, este cambio no le afectará. Si va a usar Intune App SDK, asegúrese de actualizarse a la versión más reciente y también actualice los dispositivos a Android 5.x y versiones posteriores. Si no realiza la actualización, las aplicaciones no recibirán actualizaciones y la calidad de su experiencia empeorará con el tiempo.
@@ -91,7 +105,7 @@ A continuación, encontrará una lista de dispositivos comunes inscritos en Intu
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
 Encapsule las aplicaciones con la versión más reciente de Intune App SDK. También puede establecer la configuración de inicio condicional "Requerir versión mínima del sistema operativo (solo advertencia)" para notificar a los usuarios finales los dispositivos personales que se van a actualizar.
 
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Plan de cambio de Intune: Se aproxima el final del soporte técnico de Windows 7 <!-- 3042987 -->
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Plan de cambio de Intune: Se aproxima el final del soporte técnico de Windows 7<!-- 3042987 -->
 Tal y como informamos en el mensaje MC148476, con fecha de septiembre de 2018, y de nuevo en el mensaje MC176794, de marzo de 2019, Windows 7 llegará al final del soporte técnico extendido el 14 de enero de 2020. En ese momento, Intune retirará la compatibilidad con los dispositivos que ejecutan Windows 7. Así podremos centrar nuestra inversión en respaldar las tecnologías más recientes y en ofrecer nuevas y excelentes experiencias de usuario final. Después de esa fecha, la asistencia técnica y las actualizaciones automáticas que ayudan a proteger los equipo con Windows 7 ya no estarán disponibles a través de Intune. Microsoft recomienda encarecidamente que actualice a Windows 10 antes de enero de 2020, para evitar que pueda necesitar servicios o soporte técnico que ya no estén disponibles. Obtenga más información sobre el ciclo de vida de soporte técnico de Windows [aquí](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?

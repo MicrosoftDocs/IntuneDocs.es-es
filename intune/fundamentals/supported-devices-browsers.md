@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9fec08511303c15a7197014fd80834d95948191
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504888"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999676"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Exploradores y sistemas operativos compatibles en Intune
 
@@ -89,6 +89,15 @@ Los modelos de dispositivos Samsung siguientes no admiten Knox. Se inscriben com
 ### <a name="windows-pc-software-client"></a>Cliente de software de PC Windows
 
 Un [cliente de software Intune](../manage-windows-pcs-with-microsoft-intune.md) se puede implementar e instalar en PC Windows como método de inscripción alternativo. Esta funcionalidad solo está disponible en el portal clásico de Intune. Puede usar el cliente de software de Intune para administrar equipos con Windows 7 y versiones posteriores, con la excepción de Windows 10 Home Edition.
+
+> [!Note]
+> Microsoft anunció que el soporte técnico para Windows 7 terminará el 14 de enero de 2020. En esta fecha, Intune también retirará la compatibilidad con dispositivos que ejecutan Windows 7.
+
+> Para más información, consulte [Plan de cambio de Intune: aproximación de la finalización del ciclo de vida de soporte técnico de Windows 7](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+
+> Microsoft Intune retirará la compatibilidad con la consola de Intune basada en Silverlight el 15 de octubre de 2020. Esta retirada incluye la compatibilidad final para el cliente de software de equipo configurado en la consola de Silverlight (también conocido como agente de equipo).
+
+> Para más información, consulte [Compatibilidad final de Microsoft Intune con la consola de administración basada en Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249).
 
 <!--  ### Exchange ActiveSync management
 
