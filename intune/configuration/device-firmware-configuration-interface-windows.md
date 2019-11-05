@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f34e321476ea634030a5e602bc362d409eee8f5
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785549"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889568"
 ---
-# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune"></a>Uso de perfiles de Device Firmware Configuration Interface en dispositivos Windows en Microsoft Intune
+# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Uso de perfiles de Device Firmware Configuration Interface en dispositivos Windows en Microsoft Intune (versión preliminar pública)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+> [!Note]
+> El lanzamiento de cada [actualización mensual](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) puede tardar varios días. Algunas características pueden lanzarse a lo largo de varias semanas y pueden no estar disponibles para todos los clientes inmediatamente.
 
 Cuando se usa Intune para administrar dispositivos Autopilot, puede administrar la configuración de UEFI (BIOS) una vez inscritos, mediante Device Firmware Configuration Interface (DFCI). Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Introducción a DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
@@ -167,15 +170,9 @@ Ya está listo para borrar el dispositivo. Una vez que se ha borrado el disposit
 
 ### <a name="recover"></a>Recuperación
 
-Si borra un dispositivo y elimina el registro de Autopilot antes de desbloquear los menús de UEFI (BIOS), los menús permanecen bloqueados. Intune no puede enviar actualizaciones de perfil para desbloquearlo. Para desbloquear el dispositivo, puede hacer lo siguiente:
+Si borra un dispositivo y elimina el registro de Autopilot antes de desbloquear los menús de UEFI (BIOS), los menús permanecen bloqueados. Intune no puede enviar actualizaciones de perfil para desbloquearlo.
 
-- **Opción 1**: Pida al CSP o proveedor de dispositivos de OEM directo que vuelva a registrar el dispositivo con Autopilot. Vuelva a inscribirlo en Intune para aplicar de nuevo los perfiles de Autopilot y DFCI.
-
-  Después, desbloquee los menús de UEFI mediante los pasos descritos en [Retirada del dispositivo](#retire) (en este artículo).
-
-- **Opción 2**: abra el menú de UEFI (BIOS) y seleccione una opción de recuperación. Confirme que el dispositivo no está registrado para la administración de DFCI y desbloquee el menú. Las opciones de recuperación dejan todas las configuraciones de UEFI (BIOS) en los valores del último perfil de DFCI de Intune.
-
-  Después, desbloquee los menús de UEFI mediante los pasos descritos en [Retirada del dispositivo](#retire) (en este artículo).
+Para desbloquear el dispositivo, abra el menú UEFI (BIOS) y actualice la administración desde la red. La recuperación desbloquea los menús, pero deja toda la configuración de UEFI (BIOS) establecida en los valores del perfil de DFCI de Intune anterior.
 
 ## <a name="end-user-impact"></a>Impacto en el usuario final
 

@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550809"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892628"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -69,19 +69,28 @@ En los dispositivos Windows 10, puede agregar reglas **de aplicabilidad** para 
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Excluir grupos de una asignación de perfil
 
-Los perfiles de configuración de dispositivo de Intune permiten excluir grupos de una asignación de directiva.
+Los perfiles de configuración de dispositivos de Intune permiten incluir y excluir grupos de una asignación de directiva.
 
-Intune no contempla las relaciones entre grupos de usuarios y dispositivos. Es posible que la inclusión de grupos de usuarios a la vez que se excluyen grupos de dispositivos no genere los resultados que espera. En los escenarios de grupo de usuarios a grupo de usuarios y de grupo de dispositivos a grupo de dispositivos, la exclusión tiene prioridad sobre la inclusión.
+Como procedimiento recomendado, cree y asigne directivas específicamente para sus grupos de usuarios. Además, cree y asigne directivas diferentes específicamente para los grupos de dispositivos. Para más información sobre los grupos, consulte [Agregar grupos para organizar usuarios y dispositivos](../fundamentals/groups-add.md).
 
-Por ejemplo, se asigna un perfil de dispositivo al grupo de usuarios **Todos los usuarios corporativos**, pero se excluye a los miembros del grupo de usuarios **Personal de administración sénior**. Puesto que ambos grupos son grupos de usuarios, todos los miembros del **Personal de administración sénior** se excluyen de la directiva, aunque sean miembros del grupo de inclusión **Todos los usuarios corporativos**.
+Cuando asigne directivas, use la tabla siguiente al incluir y excluir grupos. Una marca de verificación significa que se admite la asignación:
 
-La inclusión tiene prioridad sobre la exclusión cuando se utilizan grupos mixtos, como grupo de usuarios a grupo de dispositivos o grupo de dispositivos a grupo de usuarios.
+![Las opciones admitidas incluyen o excluyen grupos de una asignación de perfil](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-Por ejemplo, quiere asignar un perfil de dispositivo a todos los dispositivos de la organización, excepto los de pantalla completa. Incluye el grupo **Todos los usuarios**, pero excluye al grupo **Todos los dispositivos**. En este caso, todos los usuarios y sus dispositivos obtienen la directiva, incluso si el dispositivo del usuario se encuentre en el grupo **Todos los dispositivos**.
+### <a name="what-you-should-know"></a>Qué debe saber
 
-La exclusión solo considera a los miembros directos del grupo. No incluye los dispositivos asociados con un usuario. En cambio, los dispositivos que no tienen un usuario no obtienen la directiva. Este comportamiento se produce porque los dispositivos sin usuarios no tienen ninguna relación con el grupo **Todos los usuarios**.
+- La exclusión tiene prioridad sobre la inclusión en los siguientes escenarios de tipos de grupos:
 
-Si incluye **Todos los dispositivos** y excluye **Todos los usuarios**, todos los dispositivos reciben la directiva. En este escenario, la intención es excluir aquellos dispositivos que tienen un usuario asociado de esta directiva. En cambio, no se excluyen los dispositivos porque la exclusión solo compara miembros de grupo directos.
+  - Inclusión y exclusión de grupos de usuarios
+  - Inclusión y exclusión de grupos de dispositivos
+
+  Por ejemplo, se asigna un perfil de dispositivo al grupo de usuarios **Todos los usuarios corporativos**, pero se excluye a los miembros del grupo de usuarios **Personal de administración sénior**. Puesto que ambos grupos son grupos de usuarios, **todos los usuarios corporativos** excepto el **personal de administración ejecutiva** obtienen la directiva.
+
+- Intune no evalúa las relaciones entre grupos de usuarios y dispositivos. Si asigna directivas a grupos mixtos, es posible que los resultados no sean los deseados o esperados.
+
+  Por ejemplo, puede asignar un perfil de dispositivo al grupo de usuarios **Todos los usuarios**, pero excluir un grupo de dispositivos **Todos los dispositivos personales**. En esta asignación de directiva de grupo mixta, **Todos los usuarios** obtienen la directiva. La exclusión no se aplica.
+
+  Como resultado, no se recomienda asignar directivas a grupos mixtos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

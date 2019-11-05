@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786126"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057637"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -54,20 +54,90 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>Semana del 28 de octubre de 2019
 
+### <a name="app-management"></a>Administración de aplicaciones 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>Modo oscuro para el Portal de empresa de iOS <!-- 4911422 -->
+El modo oscuro está disponible para el Portal de empresa de iOS. Los usuarios pueden descargar aplicaciones de empresa, administrar sus dispositivos y obtener soporte técnico de TI en la combinación de colores de su elección en función de la configuración del dispositivo. El Portal de empresa de iOS hará coincidir automáticamente la configuración del dispositivo del usuario final con el modo oscuro o claro. Para más información, consulte [Introducción al modo oscuro en el Portal de empresa de Microsoft Intune para iOS](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). Para más información sobre el Portal de empresa de iOS, consulte [Configuración de la aplicación Portal de empresa de Microsoft Intune](~/apps/company-portal-app.md).
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>Versión mínima de la aplicación aplicada por el Portal de empresa de Android <!-- 2378776 -->
+Con la opción **Min Company Portal version** (Versión mínima del Portal de empresa) de una directiva de protección de aplicaciones, puede especificar una versión definida mínima determinada del Portal de empresa que se aplique a un dispositivos de usuario final. Esta configuración de inicio condicional permite **bloquear el acceso**, **borrar datos** o **advertir** como posibles acciones cuando no se cumple el valor. Los posibles formatos de este valor siguen el patrón *[Principal].[Secundaria]* , *[Principal].[Secundaria].[Compilación]* o *[Principal].[Secundaria].[Compilación].[Revisión]* . 
+
+La opción **Min Company Portal version** (Versión mínima del Portal de empresa), si está configurada, afectará a cualquier usuario final que obtenga la versión 5.0.4560.0 del Portal de empresa y todas sus versiones futuras. Esta configuración no afectará a los usuarios que usen una versión del Portal de empresa anterior a la versión con la que se publique esta característica. Los usuarios finales que usen actualizaciones automáticas de aplicaciones en su dispositivo probablemente no verán ningún cuadro de diálogo de esta característica, dado que es posible que estén en la versión más reciente del Portal de empresa. Esta opción es solo para Android con la protección de aplicaciones para dispositivos inscritos y no inscritos. Para más información, consulte [Configuración de directivas de protección de aplicaciones de Android: inicio condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+
+### <a name="microsoft-365-device-management"></a>Administración de dispositivos de Microsoft 365
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>Introducción al nodo Seguridad del punto de conexión en Administración de dispositivos de Microsoft 365    <!-- 5630102 -->
+
+El nodo **Seguridad del punto de conexión** está ahora disponible con carácter general en el área de trabajo de especialistas de Administración de dispositivos de Microsoft 365 en https://devicemanagement.microsoft.com, que agrupa las funcionalidades para proteger los puntos de conexión como:
+
+- Líneas de base de seguridad:  grupo preconfigurado de valores de configuración que le ayudan a aplicar un grupo conocido de valores de configuración y valores predeterminados que recomienda Microsoft.
+
+- Tareas de seguridad: aproveche las ventajas de la administración de amenazas y vulnerabilidades (TVM) de Microsoft Defender ATP y use Intune para corregir las debilidades del punto de conexión.
+
+- ATP de Microsoft Defender: integración de Microsoft Defender Advanced Threat Protection (ATP) para ayudar a evitar infracciones de seguridad en dispositivos móviles.
+
+Esta configuración seguirá siendo accesible desde otros nodos aplicables, como los dispositivos, y el estado configurado actual será el mismo, sin importar dónde tenga acceso a estas funcionalidades y las habilite.
+
+Para más información sobre estas mejoras, consulte la [entrada de blog sobre el éxito de clientes de Intune](https://aka.ms/Endpoint_security_node) en el sitio web de la comunidad tecnológica de Microsoft.
+
+### <a name="device-management"></a>Administración de dispositivos
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>Intune admite iOS 11 y posterior <!-- 4665324  -->
+
+La inscripción en Intune y el Portal de empresa ahora admiten las versiones de iOS 11 y posteriores. No se admiten versiones anteriores.
+
+### <a name="monitor-and-troubleshoot"></a>Supervisión y solución de problemas
+
+#### <a name="updated-support-experience------5012398---"></a>Experiencia de soporte técnico actualizada   <!-- 5012398 -->
+
+La experiencia en la consola para [obtener ayuda y soporte técnico para Intune](get-support.md) se actualiza y simplifica.  Se ha mejorado la búsqueda en la consola, los comentarios de incidencias comunes y el flujo de trabajo que se usa para ponerse en contacto con el servicio de soporte técnico. Al abrir una incidencia de soporte técnico, verá estimaciones en tiempo real de cuándo pueda esperar una devolución de llamada o una respuesta por correo electrónico; los clientes de soporte técnico Premier y Unified pueden especificar fácilmente la gravedad de su incidencia con el fin de obtener soporte técnico más rápido.
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>Semana del 21 de octubre de 2019
 
-### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Nuevo perfil de interfaz de configuración de firmware de dispositivo para dispositivos con Windows 10 y versiones posteriores <!-- 2266073 idready wnready -->
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="microsoft-365-device-management"></a>Administración de dispositivos de Microsoft 365
 
-En Windows 10 y versiones posteriores, puede crear un perfil de configuración de dispositivo para controlar la configuración y las características (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** como plataforma). En esta actualización, existe un nuevo tipo de perfil de interfaz de configuración de firmware de dispositivo que permite a Intune administrar la configuración de UEFI (BIOS).
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Experiencia de administración mejorada en Administración de dispositivos de Microsoft 365
+
+Existe ahora una experiencia de administración actualizada y optimizada que está disponible con carácter general en el área de trabajo de especialistas de Administración de dispositivos de Microsoft 365 en [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com), por ejemplo:
+
+- **Navegación actualizada**: encontrará una navegación de primer nivel simplificada que agrupa las características de manera lógica.
+- **Nuevos filtros de plataforma**: puede seleccionar una sola plataforma, que muestra solo las directivas y las aplicaciones de la plataforma seleccionada, en las páginas Dispositivos y Aplicaciones.
+- **Nueva página principal**: vea rápidamente el estado del servicio, el estado de su inquilino, noticias, etc., en la nueva página principal.
+
+Para más información sobre estas mejoras, consulte la [entrada de blog de Enterprise Mobility + Security](https://go.microsoft.com/fwlink/?linkid=2109094) en el sitio web de la comunidad tecnológica de Microsoft.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Administración de aplicaciones
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>Incorporación de aplicaciones de Mobile Threat Defense a dispositivos no inscritos <!-- 3005337 -->
+Puede crear una directiva de protección de aplicaciones de Intune que puede bloquear o borrar de forma selectiva los datos corporativos de los usuarios en función del estado de un dispositivo. El estado del dispositivo se determina mediante la solución Mobile Threat Defense (MTD) seleccionada. Esta funcionalidad existe en la actualidad con los dispositivos inscritos en Intune como una configuración de cumplimiento de dispositivos. Con esta nueva característica, ampliamos la detección de amenazas de un proveedor de Mobile Threat Defense para que funcione en dispositivos no inscritos. En Android, esta característica requiere la versión más reciente de Portal de empresa. En iOS, esta característica se podrá usar cuando las aplicaciones integren el SDK de Intune más reciente (v 12.0.15 +). Se actualizará el tema Novedades cuando la primera aplicación adopte el SDK de Intune más reciente. El resto de aplicaciones irán estando disponibles de manera gradual. Para más información, consulte [Creación de una directiva de protección de aplicaciones de Mobile Threat Defense con Intune](~/protect/mtd-app-protection-policy.md).
+
+### <a name="device-configuration"></a>Configuración de los dispositivos
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Nuevo perfil de interfaz de configuración de firmware de dispositivo para dispositivos con Windows 10 y versiones posteriores <!-- 2266073  -->
+
+En Windows 10 y versiones posteriores, puede crear un perfil de configuración de dispositivo para controlar la configuración y las características (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** como plataforma). En esta actualización, existe un nuevo tipo de perfil de interfaz de configuración de firmware de dispositivo que permite a Intune administrar la configuración de UEFI (BIOS). Estamos en proceso de implementar esta característica para todos los clientes, y se espera que el proceso finalice al término de la semana próxima.
 
 Para más información sobre esta característica, vea [Uso de perfiles de DFCI en dispositivos Windows en Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
 
 Se aplica a:
-
 - Windows 10 RS5 (1809) y versiones más recientes en firmware compatible
 
+### <a name="device-enrollment"></a>Inscripción de dispositivos
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>Cambiar a mostrar solo la página Estado de inscripción en los dispositivos aprovisionados mediante la configuración rápida (OOBE) <!--3959566-->
+Ahora puede elegir mostrar solo la página Estado de inscripción en los dispositivos aprovisionados mediante OOBE de Autopilot.
+
+Para ver el nuevo control de alternancia, elija **Intune** > **Inscripción de dispositivos** > **Inscripción de Windows** > **página Estado de inscripción** > **Crear perfil** > **Configuración** > **Mostrar solo la página en los dispositivos aprovisionados por la configuración rápida (OOBE)** .
+
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>Semana del 14 de octubre de 2019
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -77,7 +147,12 @@ Se aplica a:
 En las instalaciones de aplicaciones disponibles en dispositivos dedicados, totalmente administrados y de perfil de trabajo de Android Enterprise, puede ver el estado de instalación de la aplicación, así como la versión instalada de aplicaciones administradas de Google Play. Para obtener más información, vea [Supervisión de las directivas de protección de aplicaciones](~/apps/app-protection-policies-monitor.md), [Administrar dispositivos de perfil de trabajo Android con Intune](~/enrollment/android-enterprise-overview.md) y [Tipo de aplicación de Google Play administrado](~/apps/apps-add-android-for-work.md#managed-google-play-app-types).
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Microsoft Edge versión 77 y posteriores para Windows 10 y macOS (versión preliminar pública) <!-- 3872025, 4678761  -->
-Microsoft Edge versión 77 y posteriores ya está disponible para su implementación en equipos que ejecutan Windows 10 y macOS. La versión preliminar pública ofrece los canales **Dev** y **Beta** para Windows 10 y un canal **Beta** para macOS. La implementación solo está en inglés (EN), pero los usuarios finales pueden cambiar el idioma para mostrar en el explorador, en **Configuración** > **Idiomas**. Microsoft Edge es una aplicación Win32 que se instala en el contexto del sistema y en arquitecturas similares (aplicación x86 en sistemas operativos x86 y aplicación x64 en sistemas operativos x64). Además, las actualizaciones automáticas del explorador están **Activadas** de forma predeterminada, y Microsoft Edge no se puede desinstalar. Para más información, vea [Adición de Microsoft Edge para Windows 10 a Microsoft Intune](~/apps/apps-windows-edge.md) y la [documentación de Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823).
+Microsoft Edge versión 77 y posteriores ya está disponible para implementarlo en equipos que ejecutan Windows 10 y macOS. 
+
+>[!NOTE]
+>La implementación de esta característica se ha retrasado hasta finales de este mes.
+
+La versión preliminar pública ofrece los canales **Dev** y **Beta** para Windows 10 y un canal **Beta** para macOS. La implementación solo está en inglés (EN), pero los usuarios finales pueden cambiar el idioma para mostrar en el explorador, en **Configuración** > **Idiomas**. Microsoft Edge es una aplicación Win32 que se instala en el contexto del sistema y en arquitecturas similares (aplicación x86 en sistemas operativos x86 y aplicación x64 en sistemas operativos x64). Además, las actualizaciones automáticas del explorador están **Activadas** de forma predeterminada, y Microsoft Edge no se puede desinstalar. Para más información, vea [Adición de Microsoft Edge para Windows 10 a Microsoft Intune](~/apps/apps-windows-edge.md) y la [documentación de Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823).
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>Actualización de la interfaz de usuario de protección de aplicaciones y de la interfaz de usuario de aprovisionamiento de aplicaciones de iOS <!-- 4102027, 4102029   -->
 La interfaz de usuario para crear y editar directivas de protección de aplicaciones y perfiles de aprovisionamiento de aplicaciones de iOS en Intune se ha actualizado. Los cambios de la UI son:

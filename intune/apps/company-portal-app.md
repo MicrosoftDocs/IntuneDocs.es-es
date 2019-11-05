@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585001"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999538"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -137,6 +137,10 @@ Intune admite las credenciales derivadas de tarjeta de verificación de identida
 
 Para más información sobre las credenciales derivadas de dispositivos iOS, vea [Usar credenciales derivadas en Microsoft Intune](~/protect/derived-credentials.md).
 
+## <a name="dark-mode-for-ios-company-portal"></a>Modo oscuro para el Portal de empresa de iOS
+
+El modo oscuro está disponible para el Portal de empresa de iOS. Los usuarios pueden descargar aplicaciones de empresa, administrar sus dispositivos y obtener soporte técnico de TI en la combinación de colores de su elección en función de la configuración del dispositivo. El Portal de empresa de iOS hará coincidir automáticamente la configuración del dispositivo del usuario final con el modo oscuro o claro. 
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Métodos abreviados de teclado del Portal de empresa de Windows
 
 Los usuarios finales pueden desencadenar acciones de navegación, aplicación y dispositivo en el Portal de empresa de Windows mediante métodos abreviados de teclado (aceleradores).
@@ -180,25 +184,24 @@ Los usuarios pueden realizar acciones en sus dispositivos locales o remotos a tr
 
 Algunas plataformas y configuraciones no realizar permiten acciones de autoservicio en el dispositivo. En la tabla siguiente se ofrecen más detalles sobre las acciones de autoservicio:
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Retirar | Disponible<sup>(1)</sup> | Disponible<sup>(8)</sup> | Available | Disponible<sup>(7)</sup> |
-| Eliminación de datos | Available | Available | N/D | Disponible<sup>(7)</sup> |
-| Cambiar nombre<sup>(4)</sup> | Available | Disponible<sup>(8)</sup> | Available | Available |
+| Retirar | Disponible<sup>(1)</sup> | Available | Available | Disponible<sup>(7)</sup> |
+| Eliminación de datos | Available | Disponible<sup>(5)</sup> | N/D | Disponible<sup>(7)</sup> |
+| Cambiar nombre<sup>(4)</sup> | Available | Available | Available | Available |
 | Sincronización | Available | Available | Available | Available |
 | Bloqueo remoto | Solo en Windows Phone | Available | Available | Available |
-| Restablecer el código de acceso | Solo en Windows Phone | Available | N/D | Disponible<sup>(6)</sup> |
+| Restablecer el código de acceso | Solo en Windows Phone | Disponible<sup>(8)</sup> | N/D | Disponible<sup>(6)</sup> |
 | Recuperación de clave | N/D | N/D | Disponible<sup>(2)</sup> | N/D |
-| Modo oscuro | N/D | Available | N/D | N/D |
 
 <sup>(1)</sup> La función **Retirar** siempre está bloqueada en los dispositivos Windows unidos a Azure AD.<br>
 <sup>(2)</sup> **Recuperación de clave** para MacOS solo está disponible a través del portal web.<br>
 <sup>(3) </sup> Todas las acciones remotas se deshabilitan si se usa una inscripción del administrador de inscripción de dispositivos.<br>
-<sup>(4)</sup> **Cambiar nombre** solo cambia el nombre del dispositivo en la aplicación o el sitio web Portal de empresa, no en el dispositivo.<br>
-<sup>(5)</sup> **Borrar** no está disponible en los dispositivos MacOS.<br>
+<sup>(4)</sup> **Cambiar nombre** solo cambia el nombre del dispositivo en la aplicación Portal de empresa o en el portal web, no en el dispositivo.<br>
+<sup>(5)</sup> **Borrar** no está disponible en los dispositivos iOS inscritos por el usuario.<br>
 <sup>(6)</sup> **Restablecer el código de acceso** no se admite en algunas configuraciones de Android y Android Enterprise. Para más información, consulte [Restablecimiento o eliminación del código de acceso de un dispositivo en Intune](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> **Retirar** y **Borrar** no están disponibles en escenarios de propietario del dispositivo Android Enterprise (COPE, COBO, COSU).<br> 
-<sup>(8)</sup> **Retirar** (quitar el dispositivo) y **Cambiar nombre** están disponibles en todos los tipos de inscripción. Otras acciones no tienen cabida en la inscripción de usuario.<br> 
+<sup>(8)</sup> **Restablecer contraseña** no se admite en dispositivos iOS inscritos por el usuario.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

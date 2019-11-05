@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585610"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892566"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Adición de Microsoft Edge para Windows 10 a Microsoft Intune
 
@@ -48,14 +48,14 @@ Puede agregar una instancia de Microsoft Edge versión 77 y posteriores a Intun
 3. En la lista **Tipo de aplicación** en **Microsoft Edge, versión 77 y posteriores**, seleccione **Windows 10**.
 
 ## <a name="configure-app-information"></a>Configuración de información de la aplicación
-En este paso, proporcionará información sobre la implementación de esta aplicación. Esta información ayuda a identificar la aplicación en Intune y ayuda a los usuarios a encontrarla en el portal de empresa.
+En este paso, proporcionará información sobre la implementación de esta aplicación. Esta información ayuda a identificar la aplicación en Intune y sirve para que los usuarios la encuentren en el Portal de empresa.
 
 1. Haga clic en **Información de la aplicación** para mostrar la hoja **Información de la aplicación**.
-2. En la hoja **Información de la aplicación**, proporcione información sobre la implementación de esta aplicación. Esta información ayuda a identificar la aplicación en Intune y ayuda a los usuarios a encontrarla en el portal de empresa.
-    - **Nombre**: Escriba el nombre de la aplicación tal como se mostrará en el portal de empresa. Asegúrese de que todos los nombres sean únicos. Si el mismo nombre de aplicación existe dos veces, solo se muestra a los usuarios una de las aplicaciones en el portal de empresa.
+2. En la hoja **Información de la aplicación**, proporcione información sobre la implementación de esta aplicación. Esta información ayuda a identificar la aplicación en Intune y sirve para que los usuarios la encuentren en el Portal de empresa.
+    - **Nombre**: Escriba el nombre de la aplicación tal como se mostrará en el portal de empresa. Asegúrese de que todos los nombres son únicos. Si el mismo nombre de aplicación existe dos veces, solo se muestra a los usuarios una de las aplicaciones en el portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. Por ejemplo, podría enumerar los usuarios de destino en la descripción.
     - **Publicador**: Microsoft aparece como publicador.
-    - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren la aplicación cuando exploren el portal de empresa.
+    - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren la aplicación cuando exploren el Portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar la aplicación de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
     - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
@@ -78,7 +78,7 @@ En este paso, configure las opciones de instalación para la aplicación.
 3.  Seleccione **Aceptar**.
 
 ## <a name="select-scope-tags-optional"></a>Selección de Etiquetas de ámbito (opcional)
-Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para obtener más información sobre las etiquetas de ámbito, vea Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida.
+Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para más información sobre las etiquetas de ámbito, vea Uso del control de acceso basado en rol y de las etiquetas de ámbito para la TI distribuida.
 1.  Seleccione **Ámbito (Etiquetas)**  > **Agregar**.
 2.  Use el cuadro **Seleccionar** para buscar las etiquetas de ámbito.
 3.  Seleccione la casilla de verificación situada junto a las etiquetas de ámbito que desea asignar a esta aplicación.
@@ -94,7 +94,7 @@ La aplicación que ha creado aparece en la lista de aplicaciones, donde puede as
 
 ## <a name="troubleshooting"></a>Solucionar problemas
 **Microsoft Edge versión 77 y posteriores para Windows 10:**<br>
-Intune usa la extensión de administración de Intune para descargar e implementar el instalador de Microsoft Edge en los dispositivos Windows 10 asignados y, después, comunica la configuración de implementación al instalador de Microsoft Edge, que descarga e instala el explorador Microsoft Edge directamente desde la red CDN. Consulte los [requisitos previos de la extensión de administración de Intune](~/apps/intune-management-extension.md#prerequisites) y los procedimientos recomendados que se describen en el acceso al servicio de actualización de Azure y la red CDN para asegurarse de que la configuración de red permite que los dispositivos Windows 10 accedan a estas ubicaciones.
+Intune usa la extensión de administración de Intune para descargar e implementar el instalador de Microsoft Edge en los dispositivos Windows 10 asignados y, después, comunica la configuración de implementación al instalador de Microsoft Edge, que descarga e instala el explorador Microsoft Edge directamente desde la red CDN. Consulte los [requisitos previos de la extensión de administración de Intune](~/apps/intune-management-extension.md#prerequisites) y los procedimientos recomendados que se describen en el acceso al servicio de actualización de Azure y la red CDN para asegurarse de que la configuración de red permite que los dispositivos Windows 10 accedan a estas ubicaciones. Además, para permitir el acceso a los archivos de instalación desde una red CDN para instalar el explorador, debe permitir el acceso a los puntos de conexión de Windows Update. Para más información, consulte [Administrar los puntos de conexión para Windows 10, versión 1809: Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update) y [Puntos de conexión de red para Microsoft Intune](~/fundamentals/intune-endpoints.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Asignar aplicaciones a grupos](~/apps/apps-deploy.md)
