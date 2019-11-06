@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503032"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143177"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configuración de una página de estado de inscripción
  
@@ -191,7 +191,6 @@ A continuación se muestran los problemas conocidos.
 - Al deshabilitar el perfil de ESP no se quita la directiva de ESP de los dispositivos, y los usuarios siguen viendo la ESP cuando inician sesión en el dispositivo por primera vez. La directiva no se quita cuando se deshabilita el perfil de ESP. Debe implementar OMA-URI para deshabilitar la ESP. Consulte anteriormente las instrucciones para deshabilitar ESP mediante OMA-URI. 
 - Un reinicio pendiente siempre producirá un tiempo de expiración. El tiempo de expiración se agota porque el dispositivo debe reiniciarse. El reinicio es necesario para dar tiempo a que finalice el elemento cuyo seguimiento se realiza en la página de estado de la inscripción. Un reinicio provocará que se cierre la página de estado de la inscripción y, tras el reinicio, el dispositivo no accederá a ella mientras se configura la cuenta.  Considere la posibilidad de no exigir un reinicio durante la instalación de la aplicación, 
 - ya que obligará al usuario a escribir sus credenciales antes de pasar a la fase de configuración de la cuenta. Las credenciales de usuario no se conservan durante el reinicio. Haga que el usuario escriba sus credenciales; de este modo, la página de estado de la inscripción puede continuar. 
-- Los certificados SCEP con directivas de Windows Hello para empresas provocarán que se agote el tiempo de expiración porque el usuario no puede terminar de configurar el PIN de Hello para permitir que finalice la instalación de certificados SCEP.  no hay solución alternativa. El tiempo estimado de llegada de la corrección es el verano de 2019. 
 - La página de estado de la inscripción siempre agotará el tiempo de expiración durante una inscripción mediante la opción para agregar una cuenta profesional o educativa en versiones de Windows 10 inferiores a la 1903. La página de estado de la inscripción espera a que finalice el registro de Azure AD. El problema se corrigió en Windows 10 versión 1903 y posteriores.  
 - La implementación de Autopilot de Azure AD híbrido con ESP tarda más tiempo que la duración del tiempo de expiración definida en el perfil de ESP. En implementaciones de Autopilot de Azure AD híbrido, ESP tardará 40 minutos más que el valor establecido en el perfil de ESP. Este retraso proporciona tiempo para que el conector de AD local cree el registro del dispositivo en Azure AD. 
 - La página de inicio de sesión de Windows no se rellena previamente con el nombre de usuario en el modo controlado por el usuario de Autopilot. Si se ha producido un reinicio durante la fase de instalación del dispositivo de ESP:

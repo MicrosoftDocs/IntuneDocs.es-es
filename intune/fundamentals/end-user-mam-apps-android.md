@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe0aa4797de32936e2be7def4aeb670c78a4945
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502905"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414056"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación Android está administrada por directivas de protección de aplicaciones
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 En este artículo se describe la experiencia del usuario con aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto laboral, por ejemplo, cuando el usuario accede a las aplicaciones con una cuenta profesional o a archivos que están almacenados en una ubicación de OneDrive para la Empresa.
 
@@ -37,7 +35,6 @@ La aplicación Portal de empresa se necesita en todas las aplicaciones que está
 En el caso de los dispositivos que no están inscritos en Intune, la aplicación Portal de empresa debe instalarse en el dispositivo. En cambio, el usuario no tiene que iniciar la aplicación Portal de empresa ni iniciar sesión en ella para poder usar aplicaciones administradas por directivas de protección de aplicaciones.
 
 La aplicación Portal de empresa es una manera de que Intune pueda compartir datos en una ubicación protegida. Por lo tanto, la aplicación Portal de empresa es un requisito para todas las aplicaciones asociadas con las directivas de protección de aplicaciones, incluso si el dispositivo no está inscrito en Intune.
-
 
 ## <a name="use-apps-with-multi-identity-support"></a>Uso de aplicaciones con compatibilidad con varias identidades
 
@@ -50,19 +47,24 @@ Por ejemplo, el usuario obtiene una solicitud de PIN al obtener acceso a los dat
 Las aplicaciones de varias identidades permiten a los usuarios agregar varias cuentas.  Intune App solo admite una cuenta administrada.  Intune App no limita el número de cuentas no administradas.
 
 Cuando hay una cuenta administrada en una aplicación:
+
 * Si un usuario intenta agregar una segunda cuenta administrada, se le pide que seleccione cuál quiere usar.  La otra cuenta se quita.
 * Si el administrador de TI agrega una directiva a una segunda cuenta existente, se pide al usuario que seleccione qué cuenta administrada quiere usar.  La otra cuenta se quita.
 
 Consulte el siguiente escenario de ejemplo para profundizar aún más en cómo se tratan varias cuentas de usuario.
 
 El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional para cada empresa y en ambas se usa Intune para implementar directivas de protección de aplicaciones. La **Compañía X** implementa directivas de protección de aplicaciones **antes que** la **Compañía Y**. La cuenta que está asociada a la **empresa X** obtiene la directiva de protección de aplicaciones, pero no la cuenta asociada a la empresa Y. Si quiere que la cuenta de usuario asociada a la empresa Y se administre mediante las directivas de protección de aplicaciones, deberá quitar la cuenta de usuario asociada a la empresa X y agregar la cuenta de usuario que esté asociada a la empresa Y.
+
 ### <a name="add-a-second-account"></a>Incorporación de una segunda cuenta
+
 #### <a name="android"></a>Android
+
 Si usa un dispositivo Android, podría aparecer un mensaje de bloqueo con instrucciones para quitar la cuenta existente y agregar una nueva.  Para quitar la cuenta existente, vaya a **Configuración &gt;General &gt; Administrador de aplicaciones &gt;Portal de empresa**. Luego, elija **Borrar datos**.
 
 ![Captura de pantalla del mensajes de error e instrucciones para quitar la cuenta](./media/end-user-mam-apps-android/Android_SwitchUser.png)
 
 ## <a name="view-media-files-with-the-azure-information-protection-app"></a>Visualización de archivos multimedia con la aplicación de Azure Information Protection
+
 Para ver archivos de imagen, AV y PDF de la empresa en dispositivos Android, use la [aplicación Azure Information Protection](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (conocida anteriormente como la aplicación Rights Management sharing).
 
 Descargue esta aplicación de Google Play Store.  
@@ -73,7 +75,6 @@ Se admiten los siguientes tipos de archivos:
 * **Vídeo:** H.263, H.264 AVC, MPEG-4 SP, VP8
 * **Imagen:** .jpg, .pjpg, .png, .ppng, .bmp, .pbmp, .gif, .pgif, .jpeg, .pjpeg
 * **Documentos:** PDF, PPDF
-
 
 |**pfile**|
 |----|

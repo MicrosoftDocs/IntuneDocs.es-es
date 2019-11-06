@@ -16,24 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f09f4ba58e3da5821eea06fcfec6e55c9c007d44
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502707"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414084"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Tanto si quiere agregar usuarios manualmente como si quiere sincronizar desde Active Directory local, debe asignar primero a cada usuario una licencia de Intune para que los usuarios puedan inscribir sus dispositivos en Intune. Para obtener una lista de licencias, vea [Licencias que incluyen Intune](../licenses.md).
 
 ## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Asignación de una licencia de Intune en el Centro de administración de Microsoft 365
 
-Puede usar el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure AD.
+Puede usar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure AD.
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) con las credenciales de administrador de inquilinos y luego elija **Usuarios** > **Usuarios activos**.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) con las credenciales de administrador de inquilinos y luego elija **Usuarios** > **Usuarios activos**.
 
 2. Seleccione la cuenta de usuario a la que quiere asignar una licencia de usuario de Intune y luego elija **Licencias de producto** > **Editar**.
 
@@ -51,6 +49,7 @@ Puede usar el [Centro de administración de Microsoft 365](http://go.microsoft.
 También puede asignar licencias de Intune a los usuarios a través de Azure Active Directory. Para más información, consulte el artículo [Licencia de usuarios en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Uso de School Data Sync para asignar licencias a los usuarios de Intune for Education
+
 Si se trata de una organización educativa, puede utilizar School Data Sync (SDS) para asignar licencias de Intune for Education a los usuarios sincronizados. Active la casilla de Intune for Education al configurar el perfil de SDS.  
 
 ![Captura de pantalla de la configuración del perfil de SDS](./media/licenses-assign/i4e-sds-profile-setup-setting.png)
@@ -62,6 +61,7 @@ Al asignar una licencia de Intune for Education, asegúrese de que también se a
 Vea la [información general de School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) para obtener más información sobre SDS.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Cómo las licencias de usuario y dispositivo afectan el acceso a los servicios
+
 * Cada **usuario** al que asigna una licencia de software de usuario puede acceder a los servicios en línea y al software relacionado (incluido software de System Center) y usarlos para administrar las aplicaciones y hasta 15 dispositivos MDM. El agente de equipo de Intune permite una licencia de 5 máquinas físicas y 1 máquina virtual por usuario.
 * Puede comprar licencias para cualquier dispositivo por separado de las licencias de usuario. No es necesario que las licencias de dispositivo se asignen a los dispositivos. Cada dispositivo que accede y utiliza los servicios en línea y el software relacionado (incluido el software System Center) debe tener una licencia de dispositivo.
 * Si más de un usuario usa un dispositivo, cada uno de ellos debe tener una licencia de software de dispositivos, o bien todos los usuarios deben tener una licencia de software de usuario.
@@ -73,9 +73,6 @@ El modo en el que haya adquirido Intune determina la información de la suscripc
 - Si ha adquirido Intune a través de un Contrato Enterprise, encontrará la información de suscripción en el portal de licencias por volumen, en **Suscripciones**.
 - Si ha adquirido Intune a través de un Proveedor de soluciones en la nube, acuda a su distribuidor.
 - Si ha adquirido Intune con una tarjeta de crédito o con factura, las licencias se basarán en el usuario.
-
-
-
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Usar PowerShell para administrar de forma selectiva las licencias de usuario de EMS
 Las organizaciones que usan Microsoft Enterprise Mobility + Security (anteriormente denominado Enterprise Mobility Suite) pueden tener usuarios que solo necesiten Azure Active Directory Premium o los servicios de Intune en el paquete de EMS. Puede asignar un servicio o un subconjunto de servicios mediante los [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
@@ -97,7 +94,6 @@ Cree un nuevo usuario en la línea de comandos y asigne una licencia de EMS sin 
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
-
 
 Realice la comprobación con lo siguiente:
 

@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc298691ea3df923d1804005be61217325f52112
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510273"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413994"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de iOS
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Lea esta información para comprender cómo y dónde obtienen los usuarios finales las aplicaciones que se distribuyen a través de Microsoft Intune.
 
@@ -48,12 +46,12 @@ Los usuarios inscritos obtienen sus aplicaciones tocando en los iconos siguiente
 
 - **Categorías** apunta a la pestaña CATEGORÍAS del sitio web del Portal de empresa.
 
-
 ![Pantalla de aplicaciones del Portal de empresa de iOS](./media/end-user-apps-ios/ios-cp-app-main-apps-screen.png)
 
 Para más información sobre cómo agregar aplicaciones, vea [Agregar una aplicación a Microsoft Intune](../apps/apps-add.md).
 
 ## <a name="see-also"></a>Consulte también
+
 [Cómo obtienen sus aplicaciones los usuarios de Android](end-user-apps-android.md)
 
 [Cómo obtienen sus aplicaciones los usuarios de Windows](end-user-apps-windows.md)

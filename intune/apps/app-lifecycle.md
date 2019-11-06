@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499710"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414736"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Información general sobre el ciclo de vida de la aplicación en Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 El ciclo de vida de la aplicación de Microsoft Intune empieza cuando se agrega una aplicación, se extiende a través de otras fases y termina cuando se quita. Al comprender estas fases, tendrá los detalles que necesita para empezar a trabajar con la administración de aplicaciones de Intune.
 
@@ -34,7 +32,7 @@ El ciclo de vida de la aplicación de Microsoft Intune empieza cuando se agrega 
 
 ## <a name="add"></a>Agregar
 
-El primer paso en la implementación de la aplicación es agregar a Intune las aplicaciones que quiere administrar y asignar. Aunque hay muchos tipos diferentes de aplicaciones con las que puede trabajar, los procedimientos básicos son los mismos. Con Intune puede agregar tipos diferentes de aplicaciones, incluidas aplicaciones escritas internamente (línea de negocio), aplicaciones de la tienda, aplicaciones integradas y aplicaciones en la web. Para obtener más información sobre estos tipos de aplicaciones, consulte [Agregar una aplicación a Microsoft Intune](apps-add.md). 
+El primer paso en la implementación de la aplicación es agregar a Intune las aplicaciones que quiere administrar y asignar. Aunque hay muchos tipos diferentes de aplicaciones con las que puede trabajar, los procedimientos básicos son los mismos. Con Intune puede agregar tipos diferentes de aplicaciones, incluidas aplicaciones escritas internamente (línea de negocio), aplicaciones de la tienda, aplicaciones integradas y aplicaciones en la web. Para obtener más información sobre estos tipos de aplicaciones, consulte [Agregar una aplicación a Microsoft Intune](apps-add.md).
 
 ## <a name="deploy"></a>Implementar
 
@@ -43,12 +41,14 @@ Después de agregar la aplicación a Intune, puede [asignarla a usuarios y dispo
 ## <a name="configure"></a>Configurar
 
 Como parte del ciclo de vida de la aplicación, periódicamente se publican nuevas versiones de aplicaciones. Intune proporciona herramientas para [actualizar aplicaciones](apps-add.md) que haya implementado en una versión más reciente con facilidad. Además, puede configurar funcionalidad adicional para algunas aplicaciones, como:
+
 - Las [directivas de configuración de aplicaciones iOS](app-configuration-policies-use-ios.md) proporcionan valores para aplicaciones iOS compatibles que se usan cuando se ejecuta la aplicación. Por ejemplo, es posible que una aplicación necesite una configuración de marca concreta o el nombre de un servidor al que se debe conectar.
 - Las [directivas de explorador administrado](app-configuration-managed-browser.md) ayudan a configurar los valores del explorador administrado de Intune que reemplaza al explorador de dispositivos predeterminado y que permite restringir los sitios web que pueden visitar los usuarios.
 
 ## <a name="protect"></a>Proteger
 
 Intune ofrece muchas maneras de ayudar a proteger los datos de las aplicaciones. Los métodos principales son:
+
 - El [acceso condicional](../protect/conditional-access.md), que controla el acceso al correo electrónico y otros servicios en función de las condiciones que especifique. Dichas condiciones incluyen tipos de dispositivos o el cumplimiento de una [directiva de cumplimiento de dispositivos](../protect/device-compliance-get-started.md) que haya implementado.
 - Las [directivas de protección de aplicaciones](app-protection-policy.md) funcionan con aplicaciones individuales para ayudar a proteger los datos empresariales que usan. Por ejemplo, puede restringir la copia de datos entre las aplicaciones no administradas y las aplicaciones que administre o evitar que las aplicaciones se ejecuten en dispositivos con jailbreak o rooting.
 

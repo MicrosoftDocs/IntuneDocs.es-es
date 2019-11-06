@@ -17,16 +17,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a9fb3e006489603a04039e0810684a6fef152dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510292"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414068"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 > [!NOTE]
 > La siguiente información se aplica solo a dispositivos con Android 6.0 y versiones posteriores y iOS 10 y versiones posteriores.
@@ -42,9 +40,11 @@ Comprenda los distintos mensajes de la aplicación que los usuarios finales pued
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>¿Permitir que Portal de empresa realice y administre llamadas telefónicas?
 
 ### <a name="where-it-appears"></a>Dónde aparece
+
 El mensaje **¿Permitir que Portal de empresa realice y administre llamadas telefónicas?** aparece cuando los usuarios pulsan **Inscribir** en la aplicación Portal de empresa mientras inscriben su dispositivo.
 
 ### <a name="what-it-means"></a>Significado
+
 Al aceptar este aviso, los usuarios permiten que se envíen los números de teléfono y de IMEI del dispositivo al servicio Intune. Aparecerán en la consola de administración en la página __Hardware__.
 
 > [!NOTE]
@@ -53,6 +53,7 @@ Al aceptar este aviso, los usuarios permiten que se envíen los números de tel�
 Para ver la página **Hardware**, debe ir a **Grupos** > **All mobile devices (Todos los dispositivos móviles)**  > **Dispositivos**. Seleccione el dispositivo del usuario y vaya a **Ver propiedades** > **Hardware**.
 
 ### <a name="what-happens-if-users-deny-access"></a>Qué sucede si los usuarios deniegan el acceso
+
 Si los usuarios deniegan el acceso, pueden seguir usando la aplicación de Portal de empresa e inscribir su dispositivo. Sin embargo, el número de teléfono y el IMEI del dispositivo estarán en blanco en la página de __hardware__ de la consola de administración. La segunda vez que los usuarios inician sesión en la aplicación Portal de empresa después de denegar el acceso, el mensaje muestra una casilla de verificación **Never ask again** (No volver a preguntar) que los usuarios pueden marcar para detener el aviso.
 
 Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparecerá la próxima vez que los usuarios inicien sesión en la aplicación Portal de empresa después de la inscripción.
@@ -60,20 +61,24 @@ Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparecer�
 Si los usuarios más adelante deciden permitir el acceso, pueden ir a **Configuración** > **Aplicaciones** > **Portal de empresa** > **Permisos** > **Teléfono** y activarlo.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Cómo explicar esto a los usuarios
+
 Envíe a los usuarios a [Inscribir el dispositivo Android en Intune](/intune-user-help/enroll-device-android-company-portal) para más información.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Allow Company Portal to access your contacts? (¿Permitir que el portal de empresa tenga acceso a los contactos?)
 
 ### <a name="where-it-appears"></a>Dónde aparece
+
 El mensaje **¿Permitir que el portal de empresa tenga acceso a los contactos?** aparece cuando los usuarios pulsan **Inscribir** en la aplicación Portal de empresa mientras inscriben el dispositivo.
 
 ### <a name="what-it-means"></a>Significado
+
 Al aceptar este aviso, los usuarios permiten a Intune crear su cuenta de trabajo y administrar la identidad de Azure Active Directory registrada para el usuario en ese dispositivo.
 
 > [!NOTE]
 > **Microsoft nunca accede a los contactos.** Google controla el texto del mensaje y no se puede cambiar.
 
 ### <a name="what-happens-if-users-deny-access"></a>Qué sucede si los usuarios deniegan el acceso
+
 Si los usuarios deniegan el acceso, el dispositivo no se inscribirá en Intune ni se podrá administrar. La segunda vez que los usuarios inician sesión en la aplicación Portal de empresa después de denegar el acceso, el mensaje muestra una casilla **No volver a preguntar** que los usuarios pueden seleccionar para detener el aviso.
 
 Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparece la próxima vez que los usuarios inicien sesión en la aplicación Portal de empresa después de la inscripción.
@@ -81,31 +86,37 @@ Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparece l
 Si los usuarios más adelante deciden permitir el acceso, pueden ir a **Configuración** > **Aplicaciones** > **Portal de empresa** > **Permisos** > **Teléfono** y activarlo.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Cómo explicar esto a los usuarios
+
 Envíe a los usuarios a [Inscribir el dispositivo Android en Intune](/intune-user-help/enroll-device-android-company-portal) para más información.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?
 
 ### <a name="where-it-appears"></a>Dónde aparece
+
 El mensaje **¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?** aparece cuando los usuarios pulsan **Enviar datos** para enviar registros a su administrador de TI.
 
 ### <a name="what-it-means"></a>Significado
+
 Al aceptar este aviso, los usuarios permiten que su dispositivo escriba registros de datos en la tarjeta SD de este. Esto también permite que esos registros se trasladen mediante un cable USB.   
 
 > [!NOTE]
 > **La aplicación Portal de empresa nunca tiene acceso a las fotos, elementos multimedia ni archivos de los usuarios.** Google controla el texto del mensaje y no se puede cambiar.
 
 ### <a name="what-happens-if-users-deny-access"></a>Qué sucede si los usuarios deniegan el acceso
+
 Si los usuarios deniegan el acceso, podrán enviar registros de datos por correo electrónico, pero los registros no se copiarán en la tarjeta SD del dispositivo.
 
 La segunda vez que los usuarios inician sesión en la aplicación Portal de empresa después de denegar el acceso, el mensaje muestra una casilla **No volver a preguntar** que los usuarios pueden seleccionar para que el mensaje no se vuelva a mostrar. Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparece la próxima vez que los usuarios intenten enviar registros. No obstante, si los usuarios más adelante deciden permitir el acceso, pueden ir a **Configuración** > **Aplicaciones** > **Portal de empresa** > **Permisos** > **Almacenamiento** y activar el permiso.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>Cómo explicar esto a los usuarios
+
 Envíe a sus usuarios a [Enviar registros al administrador de TI mediante correo electrónico](/intune-user-help/send-logs-to-your-it-admin-by-email-android). 
 
 ## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>El servicio de soporte técnico de su empresa debe concederle acceso a sus recursos
 
 ### <a name="where-it-appears"></a>Dónde aparece
+
 Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** y un usuario intenta iniciar sesión, se producirá un error en el inicio de sesión. Se mostrará el siguiente mensaje:
 
 > **El servicio de soporte técnico de su empresa debe concederle acceso a sus recursos**  
@@ -118,11 +129,13 @@ Agregue Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicacio
 ## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprobación de una aplicación de empresa iOS (aplicación de línea de negocio) en un dispositivo iOS 
 
 ### <a name="where-it-appears"></a>Dónde aparece
+
 De manera predeterminada, su dispositivo no confía en las aplicaciones iOS que desarrolla su organización que no están disponibles en App Store. Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia la aplicación, se muestra este mensaje:
 
 ![Mensaje de la aplicación iOS: Desarrollador empresarial no confiable](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
 ### <a name="what-it-means"></a>Significado
+
 Este mensaje significa que deberá modificar la configuración del dispositivo iOS para aprobar e instalar una aplicación desarrollada por su empresa en el dispositivo iOS.
 
 Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia la aplicación, siga estos pasos para aprobar la aplicación después de descargarla:

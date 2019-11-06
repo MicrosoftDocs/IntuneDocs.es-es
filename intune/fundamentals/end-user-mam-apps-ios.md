@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502852"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414573"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
  En este tema se describe la experiencia del usuario cuando se usan aplicaciones con directivas de protección de aplicaciones aplicadas. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto laboral: por ejemplo, cuando el usuario obtiene acceso a las aplicaciones con la cuenta profesional o a archivos que están almacenados en la ubicación de OneDrive para la Empresa.
 
@@ -35,7 +33,6 @@ ms.locfileid: "72502852"
 Si el dispositivo **no está inscrito en Intune**, al usuario final se le pide que reinicie la aplicación cuando la use por primera vez. Se requiere un reinicio para poder aplicar directivas de protección de aplicaciones a la aplicación.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
-
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
@@ -56,8 +53,9 @@ Las directivas de protección de aplicaciones solo se aplican en el contexto lab
 Las aplicaciones de varias identidades permiten a los usuarios agregar varias cuentas.  Intune App solo admite una cuenta administrada.  Intune App no limita el número de cuentas no administradas.
 
 Cuando hay una cuenta administrada en una aplicación:
-* Si un usuario intenta agregar una segunda cuenta administrada, se le pide que seleccione cuál quiere usar.  La otra cuenta se quita.
-* Si el administrador de TI agrega una directiva a una segunda cuenta existente, se pide al usuario que seleccione qué cuenta administrada quiere usar.  La otra cuenta se quita.
+
+- Si un usuario intenta agregar una segunda cuenta administrada, se le pide que seleccione cuál quiere usar.  La otra cuenta se quita.
+- Si el administrador de TI agrega una directiva a una segunda cuenta existente, se pide al usuario que seleccione qué cuenta administrada quiere usar.  La otra cuenta se quita.
 
 Consulte el siguiente escenario de ejemplo para profundizar aún más en cómo se tratan varias cuentas de usuario.
 
@@ -68,4 +66,5 @@ El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El 
 Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta agregar una segunda cuenta profesional en ese dispositivo. Se muestran las cuentas y, luego, puede elegir la que quiera quitar.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 [What to expect when your Android app is managed by app protection policies](end-user-mam-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)

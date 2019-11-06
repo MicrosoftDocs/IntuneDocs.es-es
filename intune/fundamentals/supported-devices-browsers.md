@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999676"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415064"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Exploradores y sistemas operativos compatibles en Intune
 
@@ -37,14 +37,14 @@ Para más información sobre la compatibilidad con proveedores de servicios de c
 
 Puede administrar los dispositivos que ejecuten los siguientes sistemas operativos:
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung Knox Standard admitidos
 
 Para evitar errores de activación de Knox que impidan la inscripción de MDM, la aplicación Portal de empresa solo intenta llevar a cabo la activación de Samsung Knox durante la inscripción de MDM si el dispositivo aparece en la [lista de dispositivos Knox admitidos](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Los dispositivos que no admiten la activación de Samsung Knox se inscriben como dispositivos Android estándares. Un dispositivo Samsung podría tener algunos números de modelo que admitan Knox, mientras que otros no. Compruebe la compatibilidad de KNOX con el distribuidor de su dispositivo antes de adquirir e implementar dispositivos Samsung.
 
 > [!NOTE]
-> La inscripción de dispositivos Samsung Knox puede requerir que [habilite el acceso a servidores de Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+> La inscripción de dispositivos Samsung Knox puede requerir que [habilite el acceso a servidores de Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers).
 
 Los modelos de dispositivos Samsung siguientes no admiten Knox. Se inscriben como dispositivos Android nativos mediante la aplicación Portal de empresa para Android:
 
@@ -85,18 +85,17 @@ Los modelos de dispositivos Samsung siguientes no admiten Knox. Se inscriben com
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Cliente de software de PC Windows
 
-Un [cliente de software Intune](../manage-windows-pcs-with-microsoft-intune.md) se puede implementar e instalar en PC Windows como método de inscripción alternativo. Esta funcionalidad solo está disponible en el portal clásico de Intune. Puede usar el cliente de software de Intune para administrar equipos con Windows 7 y versiones posteriores, con la excepción de Windows 10 Home Edition.
+Un [cliente de software Intune](manage-windows-pcs-with-microsoft-intune.md) se puede implementar e instalar en PC Windows como método de inscripción alternativo. Esta funcionalidad solo está disponible en el portal clásico de Intune. Puede usar el cliente de software de Intune para administrar equipos con Windows 7 y versiones posteriores, con la excepción de Windows 10 Home Edition.
 
 > [!Note]
 > Microsoft anunció que el soporte técnico para Windows 7 terminará el 14 de enero de 2020. En esta fecha, Intune también retirará la compatibilidad con dispositivos que ejecutan Windows 7.
-
-> Para más información, consulte [Plan de cambio de Intune: aproximación de la finalización del ciclo de vida de soporte técnico de Windows 7](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7).
-
+>
+> Para más información, consulte [Plan de cambio de Intune: aproximación de la finalización del ciclo de vida de soporte técnico de Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+>
 > Microsoft Intune retirará la compatibilidad con la consola de Intune basada en Silverlight el 15 de octubre de 2020. Esta retirada incluye la compatibilidad final para el cliente de software de equipo configurado en la consola de Silverlight (también conocido como agente de equipo).
-
+>
 > Para más información, consulte [Compatibilidad final de Microsoft Intune con la consola de administración basada en Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249).
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 Las diferentes tareas administrativas requieren que use uno de los siguientes sitios web de administración.
 
-- [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Portal de Azure](https://portal.azure.com/)
 
 Estos portales son compatibles con los siguientes exploradores:
+
 - Microsoft Edge (última versión)
 - Microsoft Internet Explorer 11
 - Safari (solo en Mac, última versión)
 - Chrome (última versión)
 - Firefox (última versión)
 
-
-
-
 ### <a name="intune-classic-portal"></a>Portal de Intune clásico
 
 El portal de Intune clásico solo se usa para administrar dispositivos inscritos con el cliente de software de equipos de Intune (https://manage.microsoft.com) ). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
 
 Los siguientes exploradores Silverlight admiten la consola de Intune:
+
 - Internet Explorer 10 o posterior
 - Google Chrome (las versiones anteriores a la 42)
 - Mozilla Firefox con Silverlight habilitado (versiones anteriores a la 56)

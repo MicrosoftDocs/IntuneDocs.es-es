@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505233"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415110"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Ancho de banda y requisitos de configuración de red de Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Puede usar esta información para comprender los requisitos de ancho de banda de las implementaciones de Intune.
 
 ## <a name="average-network-traffic"></a>Tráfico de red medio
+
 En la tabla siguiente se muestra el tamaño aproximado y la frecuencia de contenido común que pasa a través de la red de cada cliente.
 
 > [!NOTE]
@@ -53,9 +52,11 @@ En la tabla siguiente se muestra el tamaño aproximado y la frecuencia de conten
 |Distribución de software|Variable<br /><br />El tamaño depende del software implementado.|**Variable**<br /><br />Depende de cuándo se implementa el software.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>Formas de reducir el uso de ancho de banda de red
+
 Puede usar uno o varios de los métodos siguientes para reducir el uso de ancho de banda de red de clientes de Intune.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Utilizar un servidor proxy para almacenar en caché solicitudes de contenido
+
 Un servidor proxy puede almacenar en caché contenido para reducir las descargas duplicadas y disminuir el ancho de banda de red del contenido de Internet.
 
 Un servidor proxy de almacenamiento en caché que recibe solicitudes de contenido de los clientes puede recuperar dicho contenido y almacenar en caché tanto las respuestas web como las descargas. El servidor usa los datos almacenados en caché para responder solicitudes subsiguientes de los clientes.
@@ -74,6 +75,7 @@ A continuación, se indica la configuración típica que se utiliza para un serv
 Para obtener información sobre el uso de un servidor proxy para almacenar contenido en caché, consulte la documentación de la solución de servidor proxy.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Uso del Servicio de transferencia inteligente en segundo plano (BITS) en los equipos
+
 Durante las horas que configuró, puede usar BITS en un equipo con Windows para disminuir el ancho de banda de red. Puede configurar la directiva para BITS en la página **Ancho de banda de red** de la directiva de agente de Intune.
 
 > [!NOTE]
@@ -82,14 +84,15 @@ Durante las horas que configuró, puede usar BITS en un equipo con Windows para 
 Para obtener más información sobre BITS y equipos Windows, consulte [Servicio de transferencia inteligente en segundo plano](https://technet.microsoft.com/library/bb968799.aspx) en la biblioteca TechNet.
 
 ### <a name="delivery-optimization"></a>Optimización de entrega
+
 La optimización de entrega le permite usar Intune para reducir el consumo de ancho de banda cuando los dispositivos Windows 10 descargan aplicaciones y actualizaciones. Mediante el uso de una memoria caché distribuida de organización automática, las descargas pueden extraerse de servidores tradicionales y orígenes alternativos (como elementos del mismo nivel de red).
 
 Para ver la lista completa de las versiones de Windows 10 y los tipos de contenido admitidos por la optimización de entrega, consulte el [artículo sobre la optimización de entrega para actualizaciones de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements).
 
 Puede [configurar la optimización de entrega](../configuration/delivery-optimization-settings.md) como parte de los perfiles de configuración del dispositivo.
 
-
 ### <a name="use-branchcache-on-computers"></a>Usar BranchCache en los equipos
+
 Los clientes de Intune pueden utilizar BranchCache para reducir el tráfico de la red de área extensa (WAN). Los siguientes sistemas operativos admiten BranchCache:
 
 - Windows 7
