@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506586"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755008"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemas comunes y resoluciones con perfiles de correo electrónico en Microsoft Intune
 
@@ -32,7 +32,6 @@ Revise algunos problemas comunes relacionados con los perfiles de correo electr�
 ## <a name="what-you-need-to-know"></a>Aspectos que debe saber
 
 - Los perfiles de correo electrónico se implementan para el usuario que ha inscrito el dispositivo. Para configurar el perfil de correo electrónico, Intune usa las propiedades de Azure Active Directory (AD) en el perfil de correo electrónico del usuario durante la inscripción. [Agregar configuración de correo electrónico a los dispositivos](email-settings-configure.md) puede ser un buen recurso.
-- Después de migrar de Configuration Manager híbrido a Intune independiente, el perfil de correo electrónico de Configuration Manager híbrido permanece en el dispositivo durante 7 días. Este comportamiento es normal. Si necesita que el perfil de correo electrónico se quite antes, póngase en contacto [con el soporte técnico de Intune](../fundamentals/get-support.md).
 - Para Android Enterprise, implemente gmail o nueve for work mediante el Google Play Store administrado. En [agregar aplicaciones de Google Play administrados](../apps/apps-add-android-for-work.md) se enumeran los pasos.
 - Microsoft Outlook para iOS y Android no es compatible con los perfiles de correo electrónico. En su lugar, implemente una directiva de configuración de aplicaciones. Para obtener más información, vea configuración de [Outlook](../apps/app-configuration-policies-outlook.md).
 - Es posible que los perfiles de correo electrónico dirigidos a grupos de dispositivos (no a grupos de usuarios) no se entreguen al dispositivo. Cuando el dispositivo tiene un usuario primario, debe funcionar el destino del dispositivo. Si el perfil de correo electrónico incluye certificados de usuario, asegúrese de que los grupos de usuarios son de destino.
@@ -62,22 +61,10 @@ Revise la configuración de su perfil EAS de Samsung KNOX y la directiva de orig
 
 Los usuarios que tienen cuentas de correo electrónico configuradas automáticamente no pueden enviar imágenes ni fotos desde sus dispositivos. Esto puede ocurrir si no está habilitada la opción **Allow e-mail to be sent from third-party applications** (Permitir que se envíe correo electrónico desde aplicaciones de terceros).
 
-### <a name="intune-solution"></a>Solución de Intune
-
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Device Configuration** > **Profiles** (Configuración del dispositivo > Perfiles).
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **dispositivos** > **perfiles de configuración**.
 3. Seleccione el perfil de correo electrónico > **propiedades**  > **configuración**.
 4. Active la opción permitir que el **correo electrónico se envíe desde aplicaciones de terceros** a **Habilitar**.
-
-### <a name="configuration-manager-hybrid"></a>Configuration Manager híbrido
-
-1. Abra la consola de Configuration Manager > **Recursos y cumplimiento**.
-
-2. Expanda **Introducción** > **Configuración de cumplimiento** > **Acceso a los recursos de la compañía** y seleccione **Perfiles de correo electrónico**.
-
-3. Haga clic con el botón derecho en el perfil de correo electrónico y abra **Propiedades**.
-
-4. En la pestaña **Configuración de sincronización**, seleccione **Permitir el envío de correo electrónico desde aplicaciones de terceros**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413873"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713477"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -44,7 +44,7 @@ Antes de ejecutar la herramienta de ajuste de aplicaciones, necesita cumplir alg
 
   * El archivo de aplicación de entrada debe tener la extensión **.ipa** o **.app**.
 
-  * La aplicación de entrada debe compilarse para iOS 10 o posterior.
+  * La aplicación de entrada debe compilarse para iOS 11 o posterior.
 
   * La aplicación de entrada no puede cifrarse.
 
@@ -289,26 +289,27 @@ Si la herramienta de ajuste de aplicaciones no se completa correctamente, se mos
 |La aplicación de entrada especificada ya se ajustó y se encuentra en la última versión de la plantilla de directiva.|La herramienta de ajuste de aplicaciones no ajustará una aplicación ajustada existente con la última versión de la plantilla de directiva.|
 |ADVERTENCIA: no ha especificado un hash de certificado SHA1. Asegúrese de que la aplicación ajustada se firme antes de implementarla.|Asegúrese de especificar un valor de hash SHA1 válido después de la marca de línea de comandos –c. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>Archivos de registro de la herramienta de ajuste de aplicaciones
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Recopilación de registros para las aplicaciones ajustadas desde el dispositivo
+Siga estos pasos para obtener registros para las aplicaciones ajustadas durante la solución de problemas.
 
-Las aplicaciones que se ajustaron mediante la herramienta de ajuste de aplicaciones generan los registros que se escriben en la consola del dispositivo cliente de iOS. Esta información resulta útil cuando se tienen problemas con la aplicación y es necesario determinar si el problema está relacionado con la herramienta de ajuste de aplicaciones. Para resolver este problema, use los siguientes pasos:
+1. Vaya a la aplicación de configuración de iOS en el dispositivo y seleccione la aplicación LOB.
+2. Cambie la **Consola de diagnóstico** a **Activado**.
+3. Inicie la aplicación de LOB.
+4. Haga clic en el vínculo "Comenzar".
+5. Ahora puede copiar los registros a través del correo electrónico o copiarlos en una ubicación de OneDrive.
+
+> [!NOTE]
+> La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
+
+### <a name="collecting-crash-logs-from-the-system"></a>Recopilación de registros de bloqueo del sistema
+
+Es posible que la aplicación registre información útil en la consola del dispositivo cliente de iOS. Esta información resulta útil cuando se tienen problemas con la aplicación y es necesario determinar si el problema está relacionado con la herramienta de ajuste de aplicaciones. Para resolver este problema, use los siguientes pasos:
 
 1. Reproduzca el problema ejecutando la aplicación.
 
 2. Recopile la salida de consola siguiendo las instrucciones de [Depuración de aplicaciones iOS implementadas](https://developer.apple.com/library/ios/qa/qa1747/_index.html)de Apple.
 
-3. Filtre los registros guardados para la salida de restricciones de la aplicación especificando el siguiente script en la consola:
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    Puede enviar los registros filtrados a Microsoft.
-
-    > [!NOTE]
-    > En el archivo de registro, el elemento "versión" representa la versión de compilación de Xcode.
-
-    Las aplicaciones ajustadas también ofrecen a los usuarios la opción de enviar registros directamente desde el dispositivo a través de correo electrónico después de que la aplicación se bloquea. Los usuarios pueden enviarle los registros para que los examine y los reenvíe a Microsoft si es necesario.
+Las aplicaciones ajustadas también ofrecen a los usuarios la opción de enviar registros directamente desde el dispositivo a través de correo electrónico después de que la aplicación se bloquea. Los usuarios pueden enviarle los registros para que los examine y los reenvíe a Microsoft si es necesario.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Requisitos de autenticación, perfil de aprovisionamiento y certificados
 
@@ -442,19 +443,6 @@ Simplemente ejecute el comando de ajuste de aplicaciones general con la marca `-
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>Obtención de registros para las aplicaciones ajustadas
-
-Siga estos pasos para obtener registros para las aplicaciones ajustadas durante la solución de problemas.
-
-1. Vaya a la aplicación de configuración de iOS en el dispositivo y seleccione la aplicación LOB.
-2. Cambie la **Consola de diagnóstico** a **Activado**.
-3. Inicie la aplicación de LOB.
-4. Haga clic en el vínculo "Comenzar".
-5. Ahora puede copiar los registros a través del correo electrónico o copiarlos en una ubicación de OneDrive.
-
-> [!NOTE]
-> La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
 
 ## <a name="see-also"></a>Consulte también
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413810"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635328"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -110,7 +110,7 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Borrado completo de datos de aplicaciones|X|X|
 |Borrado selectivo de datos profesionales y educativos en escenarios de identidades múltiples <br><br>**Nota**: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
 |Impedir "Guardar como"|X||
-|Configuración de la aplicación de destino (o configuración de la aplicación a través del "canal de MAM")|X|X|
+|Configuración de la aplicación de destino (o configuración de la aplicación a través del "canal de MAM")|X||
 |Compatibilidad con aplicaciones de identidades múltiples|X||
 |Estilo personalizable |X|||
 |Conexiones VPN de aplicación a petición con Citrix mVPN|X|X| 

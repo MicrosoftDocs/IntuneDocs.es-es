@@ -19,12 +19,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56982c6ce10f74617471307acd176a0506655398
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501230"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754987"
 ---
 # <a name="enable-code-integrity"></a>Habilitación de la integridad de código
 
@@ -36,7 +36,7 @@ Si se identifica como un usuario de dispositivo avanzado y desea probar los paso
 
 ## <a name="additional-resources-for-it-administrators"></a>Recursos adicionales para los administradores de ti
 
-Si es administrador de Intune y desea obtener más información sobre la configuración de cumplimiento de estado de los dispositivos de Intune, consulte [incorporación de una directiva de cumplimiento de dispositivos para dispositivos Windows 10 en Intune](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows.md). Para ver una visión detallada de las acciones de cumplimiento que puede realizar en Intune, consulte el [CSP de HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Si es administrador de Intune y desea obtener más información sobre la configuración de cumplimiento de estado de los dispositivos de Intune, consulte [incorporación de una directiva de cumplimiento de dispositivos para dispositivos Windows 10 en Intune](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows). Para ver una visión detallada de las acciones de cumplimiento que puede realizar en Intune, consulte el [CSP de HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Pasos siguientes
 

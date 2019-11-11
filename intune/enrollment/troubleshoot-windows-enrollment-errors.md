@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892537"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712855"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos Windows en Microsoft Intune
 
@@ -60,7 +60,7 @@ Error 80180003: "Se ha producido un problema. Este usuario no está autorizado p
 Hay varias posibles soluciones a este problema:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Quitar los dispositivos inscritos
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).    
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).    
 2. Vaya a **usuarios**  > **todos los usuarios**.    
 3. Seleccione la cuenta de usuario afectada y, a continuación, haga clic en **dispositivos**.    
 4. Seleccione los dispositivos no usados o no deseados y, a continuación, haga clic en **eliminar**. 
@@ -70,12 +70,12 @@ Hay varias posibles soluciones a este problema:
 > [!NOTE]
 > Este método aumenta el límite de inscripción de dispositivos para todos los usuarios, no solo el usuario afectado.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Vaya a **inscripción de dispositivos**  > **restricciones de inscripción**y, a continuación, seleccione restricciones de **límite de dispositivo**.    
 3. Aumente el valor de **límite de dispositivos**. 
 
 ##### <a name="check-device-type-restrictions"></a>Comprobar las restricciones de tipo de dispositivo
-1. Inicie sesión en el [Portal de Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) con una cuenta de administrador global.
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con una cuenta de administrador global.
 2. Vaya a **inscripción de dispositivos**  > **restricciones de inscripción**y, a continuación, seleccione la restricción **predeterminada** en restricciones de **tipo de dispositivo**.    
 3. Seleccione **plataformas**y, a continuación, seleccione **permitir** para **Windows (MDM)** .
 
@@ -219,7 +219,7 @@ Para corregir este problema en MDM híbrida con Intune y Configuration Manager, 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Error de instalación durante la inscripción masiva.
 
-**Causa:** Los Azure AD cuentas de usuario del paquete de cuentas (Package_GUID) para el paquete de aprovisionamiento correspondiente no pueden unir dispositivos a Azure AD. Estas cuentas de Azure AD se crean automáticamente al configurar un paquete de aprovisionamiento con el diseñador de configuración de Windows (WCD) o la aplicación configurar equipos escolares, y estas cuentas se usan para unir los dispositivos a Azure AD.
+**Causa:** Los Azure AD cuentas de usuario del paquete de cuenta (Package_GUID) para el paquete de aprovisionamiento correspondiente no pueden unir dispositivos a Azure AD. Estas cuentas de Azure AD se crean automáticamente al configurar un paquete de aprovisionamiento con el diseñador de configuración de Windows (WCD) o la aplicación configurar equipos escolares, y estas cuentas se usan para unir los dispositivos a Azure AD.
 
 #### <a name="resolution"></a>Solución
 1. Inicie sesión en [Azure Portal](https://portal.azure.com/) como administrador.    
