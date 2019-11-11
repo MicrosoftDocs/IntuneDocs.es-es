@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MTE75
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496042"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182865"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Usar y administrar dispositivos Zebra con extensiones de movilidad de Zebra en Microsoft Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496042"
 
 Intune incluye un amplio conjunto de características, incluidas la administración de aplicaciones y la configuración de los ajustes del dispositivo. Estas características y ajustes integrados administran dispositivos Android fabricados por Zebra Technologies, también conocidos como "dispositivos Zebra".
 
-En dispositivos Android, use perfiles de **extensiones de movilidad (MX)** para personalizar o agregar más ajustes específicos de Zebra.
+En dispositivos Android, use perfiles de **extensiones de movilidad (MX)** de Zebra para personalizar o agregar más ajustes específicos de Zebra.
 
 Este artículo muestra cómo usar las extensiones de movilidad (MX) de Zebra en dispositivos Zebra en Microsoft Intune.
 
@@ -52,6 +52,7 @@ Con Intune, puede inscribir dispositivos Zebra para implementar en los dispositi
 - Asegúrese de que tiene la versión más reciente de la aplicación de escritorio StageNow de Zebra Technologies.
 - No olvide consultar la [matriz de características de MX completa de Zebra](http://techdocs.zebra.com/mx/compatibility) (abre el sitio web de Zebra) para confirmar que los perfiles creados son compatibles con la versión del sistema operativo, versión de MX y modelo del dispositivo.
 - Ciertos dispositivos, como TC20/25, no admiten todas las características disponibles de MX en StageNow. No olvide consultar la [matriz de características de Zebra](http://techdocs.zebra.com/mx/tc2x/) (abre el sitio web de Zebra) para obtener información de compatibilidad actualizada.
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>Paso 1: instalar la aplicación Portal de empresa más reciente.
 

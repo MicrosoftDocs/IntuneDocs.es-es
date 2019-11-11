@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efff117ca79e4fa9a00fd8d9a4be792e246f1a86
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: 8efb9dcf9129375252b5d9a7d1e6255dce39625c
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810164"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801407"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Android para marcar dispositivos como compatibles o no compatibles con Intune
 
@@ -40,12 +40,14 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 ## <a name="device-health"></a>Estado de dispositivos
 
-- **Dispositivos raíz**: 
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Bloquear**: marcar los dispositivos raíz (con jailbreak) como no conformes. 
+- **Dispositivos raíz**:
 
-- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**:  
-  Use esta opción para realizar la evaluación de riesgos de un servicio de Mobile Threat Defense conectado como una condición de cumplimiento. 
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Bloquear**: marcar los dispositivos raíz (con jailbreak) como no conformes.
+
+- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**:
+
+  Use esta opción para realizar la evaluación de riesgos de un servicio de Mobile Threat Defense conectado como una condición de cumplimiento.
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración. 
   - **Protegido**: esta opción es la más segura y el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
   - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
@@ -54,23 +56,30 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 ### <a name="google-play-protect"></a>Google Play Protect
 
-- **Google Play Services está configurado**:  
+- **Google Play Services está configurado**:
+
   Google Play Services permite actualizaciones de seguridad y es una dependencia de nivel base para muchas características de seguridad en los dispositivos de Google certificados.
+
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.  
   - **Requerir**: se requiere que la aplicación Google Play Services esté instalada y habilitada.  
 
-- **Proveedor de seguridad actualizada**: 
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.  
-  - **Requerir**: se requiere que un proveedor de seguridad actualizado pueda proteger un dispositivo frente a vulnerabilidades conocidas. 
+- **Proveedor de seguridad actualizada**:
 
-- **Examen de amenazas en las aplicaciones**:  
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.  
-  - **Requerir**: se requiere que la característica **Verificar aplicaciones** de Android esté habilitada.  
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Requerir**: se requiere que un proveedor de seguridad actualizado pueda proteger un dispositivo frente a vulnerabilidades conocidas.
+
+- **Examen de amenazas en las aplicaciones**:
+
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Requerir**: se requiere que la característica **Verificar aplicaciones** de Android esté habilitada.
+
   > [!NOTE]
   > En la plataforma Android heredada, esta característica es una configuración de cumplimiento. Intune solo puede comprobar si esta configuración está habilitada en el nivel de dispositivo.
 
-- **Atestación de dispositivo SafetyNet**:  
+- **Atestación de dispositivo SafetyNet**:
+
   especifique el nivel de [atestación de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que se debe cumplir. Las opciones son:
+
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
   - **Comprobar integridad básica**
   - **Comprobar integridad básica y dispositivos certificados**
@@ -82,12 +91,14 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 ### <a name="operating-system-version"></a>Versión de sistema operativo 
 
-- **Versión mínima del sistema operativo**:  
+- **Versión mínima del sistema operativo**:
+
   cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no conforme. Se muestra un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo y luego acceder a los recursos de la empresa.
 
-   *De forma predeterminada, no hay ninguna versión configurada*.
+  *De forma predeterminada, no hay ninguna versión configurada*.
 
-- **Versión máxima de SO**:  
+- **Versión máxima de SO**:
+
   cuando un dispositivo usa una versión de SO posterior a la de la especificada en la regla, se bloquea el acceso a los recursos de la empresa. Se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, el dispositivo no podrá acceder a los recursos de la empresa.
 
   *De forma predeterminada, no hay ninguna versión configurada*.
@@ -95,7 +106,9 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 ## <a name="system-security"></a>Seguridad del sistema
 
 ### <a name="password"></a>Contraseña
-<!-- - **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.   
+
+<!-- Removed
+- **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.   
 
 
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
@@ -106,58 +119,66 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 -->
 
-- **Requerir una contraseña para desbloquear dispositivos móviles**: 
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Requerir**: los usuarios deben introducir una contraseña para poder acceder al dispositivo.  
+- **Requerir una contraseña para desbloquear dispositivos móviles**:
 
-- **Tipo de contraseña requerida**:  
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Requerir**: los usuarios deben introducir una contraseña para poder acceder al dispositivo.
+
+- **Tipo de contraseña requerida**:
+
   elija si una contraseña debe incluir solo caracteres numéricos o una combinación de números y otros caracteres. Las opciones son:
+
   - **Dispositivo predeterminado** : para evaluar la compatibilidad con contraseñas, asegúrese de seleccionar una seguridad de contraseña distinta de la **predeterminada del dispositivo**.
   - **Biométrico de seguridad baja**
-  - **Al menos numérica** 
+  - **Al menos numérica**
   - **Numérica compleja**: no se permiten números consecutivos ni repetidos (como `1111` o `1234`).
-  - **Al menos alfabética** 
+  - **Al menos alfabética**
   - **Al menos alfanumérica**
   - **Al menos alfanumérica con símbolos**
-
 
 ### <a name="encryption"></a>Cifrado
 
 - **Cifrado de almacenamiento de datos en un dispositivo**:  
-  *Compatible con Android 4,0 y versiones posteriores, o KNOX 4,0 y versiones posteriores.*  
-  <br>
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración. 
-  - **Requerir** : Cifre el almacenamiento de datos en los dispositivos. Los dispositivos se cifran al elegir la opción **Requerir una contraseña para desbloquear dispositivos móviles**.  
+  *Compatible con Android 4,0 y versiones posteriores, o KNOX 4,0 y versiones posteriores.*
+
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Requerir** : Cifre el almacenamiento de datos en los dispositivos. Los dispositivos se cifran al elegir la opción **Requerir una contraseña para desbloquear dispositivos móviles**.
 
 ### <a name="device-security"></a>Seguridad de dispositivos
 
-- **Bloquear aplicaciones de orígenes desconocidos**:  
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Bloquee** los dispositivos con **seguridad > orígenes desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores*).  
+- **Bloquear aplicaciones de orígenes desconocidos**:
 
-  Para realizar instalaciones de prueba de las aplicaciones, se deben permitir los orígenes desconocidos. Si no realiza instalaciones de prueba de las aplicaciones Android, establezca esta característica en **Bloquear** para habilitar esta directiva de cumplimiento. 
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Bloquee** los dispositivos con **seguridad > orígenes desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores).
+
+  Para realizar instalaciones de prueba de las aplicaciones, se deben permitir los orígenes desconocidos. Si no realiza instalaciones de prueba de las aplicaciones Android, establezca esta característica en **Bloquear** para habilitar esta directiva de cumplimiento.
 
   > [!IMPORTANT]
   > Las aplicaciones de instalación de prueba requieren que se habilite la opción **Bloquear aplicaciones de orígenes desconocidos**. Aplique esta directiva de cumplimiento solo si no realiza instalaciones de prueba de las aplicaciones Android en dispositivos.
 
-- **Integridad en tiempo de ejecución de la aplicación Portal de empresa**:  
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.  
+- **Integridad en tiempo de ejecución de la aplicación Portal de empresa**:
+
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
   - **Requerir**: elija *Requerir* para confirmar que la aplicación Portal de empresa cumple los siguientes requisitos:
+
     - Tiene instalado el entorno de tiempo de ejecución predeterminado.
     - Está firmada correctamente.
     - No se encuentra en modo de depuración.
     - Se ha instalado desde un origen conocido.
 
-- **Bloquear depuración USB en el dispositivo** *(Android 4,2 o posterior)* :  
-  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Bloquear**: evita que los dispositivos usen la característica de depuración USB.  
+- **Bloquear depuración USB en el dispositivo** *(Android 4,2 o posterior)* :
 
-- **Nivel mínimo de revisión de seguridad** *(Android 6,0 o posterior)* :  
+  - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
+  - **Bloquear**: evita que los dispositivos usen la característica de depuración USB.
+
+- **Nivel mínimo de revisión de seguridad** *(Android 6,0 o posterior)* :
+
   seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. Los dispositivos que no estén al menos en este nivel de revisión se consideran no conformes. La fecha debe especificarse en el formato `YYYY-MM-DD`.
 
   *De forma predeterminada, no se configura ninguna fecha*.
 
-- **Aplicaciones restringidas**:  
+- **Aplicaciones restringidas**:
+
   escriba la información pertinente en **Nombre de la aplicación** e **Identificador de lote de aplicaciones** para las aplicaciones que deben estar restringidas y luego seleccione **Agregar**. Un dispositivo con al menos una aplicación restringida instalada se marca como no conforme.
 
 ## <a name="next-steps"></a>Pasos siguientes
