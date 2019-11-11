@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: jieyan
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
-ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
-ms.translationtype: HT
+ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182865"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756731"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Usar y administrar dispositivos Zebra con extensiones de movilidad de Zebra en Microsoft Intune
 
@@ -52,7 +52,6 @@ Con Intune, puede inscribir dispositivos Zebra para implementar en los dispositi
 - Asegúrese de que tiene la versión más reciente de la aplicación de escritorio StageNow de Zebra Technologies.
 - No olvide consultar la [matriz de características de MX completa de Zebra](http://techdocs.zebra.com/mx/compatibility) (abre el sitio web de Zebra) para confirmar que los perfiles creados son compatibles con la versión del sistema operativo, versión de MX y modelo del dispositivo.
 - Ciertos dispositivos, como TC20/25, no admiten todas las características disponibles de MX en StageNow. No olvide consultar la [matriz de características de Zebra](http://techdocs.zebra.com/mx/tc2x/) (abre el sitio web de Zebra) para obtener información de compatibilidad actualizada.
-
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>Paso 1: instalar la aplicación Portal de empresa más reciente.
 
@@ -134,8 +133,8 @@ Después de probar el archivo, el siguiente paso es implementar el perfil en dis
 
 En Intune, cree un perfil de configuración de dispositivo:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **dispositivos** > **perfiles de configuración** > **crear perfil**.
 3. Escriba las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.

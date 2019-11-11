@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f4e56340d871ea5e0bcec7e541a418c32d021d0
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
-ms.translationtype: HT
+ms.openlocfilehash: c75029c60609b0383e2f647e5b94144d4186248c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415651"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754868"
 ---
 # <a name="microsoft-edge-baseline-settings-for-intune"></a>Configuración de línea de base de Microsoft Edge para Intune
 
@@ -68,7 +68,7 @@ Vea la configuración de línea de base del explorador Web de Microsoft Edge com
 
 - **Configuración predeterminada de Adobe Flash**  
   **Valor predeterminado**: Habilitado  
-  CSP de Microsoft Edge: [Browser/AllowFlash](https://docs.microsoft.coms/windows/client-management/mdm/policy-csp-browser#browser-allowflash)y [Browser/AllowFlashClickToRun](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)  
+  CSP de Microsoft Edge: [Browser/AllowFlash](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflash)y [Browser/AllowFlashClickToRun](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)  
 
   Determina si los sitios web que no están incluidos en "PluginsAllowedForUrls" o "PluginsBlockedForUrls" pueden ejecutar automáticamente el complemento de Adobe Flash. 
 
