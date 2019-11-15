@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505401"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445299"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Acciones y opciones de Intune compatibles con la inscripción de usuarios de Apple
 
 La inscripción de usuarios admite un subconjunto de opciones de administración de dispositivos. Si se aplica un perfil de configuración existente a un dispositivo de inscripción de usuarios, solo se aplicarán a ese dispositivo los valores de configuración admitidos por la inscripción de usuarios.
+
+> [!NOTE]
+> La compatibilidad con la inscripción de usuario de Apple en Intune se encuentra actualmente en versión preliminar.
 
 ## <a name="password-settings"></a>Configuración de contraseña
 
@@ -97,6 +100,19 @@ Las siguientes opciones no se admiten en los dispositivos inscritos con la inscr
 - Control MDM de aplicaciones fuera del volumen APFS administrado.
 - Las directivas de protección de aplicaciones se seguirán aplicando a estas aplicaciones. Sin embargo, no podrá asumir la administración ni implementar una versión administrada de estas aplicaciones a menos que el usuario las elimine de su dispositivo.
 - Acciones, configuraciones, ajustes y comandos que requieren supervisión. 
+
+## <a name="options-not-supported-in-preview"></a>Opciones no admitidas en la versión preliminar
+- Restricciones de tipo de dispositivo de inscripción para permitir o bloquear dispositivos personales 
+
+## <a name="known-issues-in-preview"></a>Problemas conocidos de la versión preliminar
+- Revocación de licencia de VPP: No aparece una notificación de que la licencia se ha revocado. El comportamiento actual es que la revocación se realiza correctamente, pero no se notifica al usuario final. 
+- Informes de aplicaciones de VPP: En el informe ubicado en Aplicaciones cliente > Aplicaciones > [nombre de la aplicación] > Estado de instalación del dispositivo, las aplicaciones VPP implementadas en los dispositivos inscritos por el usuario se notifican como "con errores", incluso cuando la aplicación se implementa correctamente en el dispositivo. 
+- Informes de aplicaciones: En el caso de los tipos de aplicaciones no compatibles con la inscripción de usuarios, los informes pueden proporcionar mensajes de error irrelevantes. 
+- Experiencia de las aplicaciones del Portal de empresa: Los usuarios ven todas las aplicaciones destinadas a ellos, independientemente de si se admiten para dispositivos inscritos por el usuario. 
+- Experiencia de las aplicaciones del Portal de empresa: Los usuarios ven el mismo texto que indica lo que las organizaciones pueden y no pueden ver para el registro de usuarios y dispositivos.
+- Si el usuario selecciona que la organización es propietaria del dispositivo durante la inscripción, el dispositivo todavía se identifica como personal en Intune, a menos que se modifique en la consola de administración o mediante Graph. 
+- Destinatarios de inscripción: iPadOS no aparece en el selector de plataforma. iPadOS se admite en la versión preliminar, pero no se indica explícitamente en la consola de administración. 
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: fae163cbcd97feb4f333d8ddfd44f2202dd343d6
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810292"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627696"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Habilitar el conector Mobile Threat Defense en Intune
 
@@ -63,8 +63,8 @@ Para ver las directivas de acceso condicional clásicas, en [Azure](https://port
 Puede decidir qué opciones de alternancia de Mobile Threat Defense necesita habilitar según los requisitos de su organización. A continuación, puede ver más detalles:
 
 **Configuración de directivas de cumplimiento de MDM**
-- **Connect Android 4.1+ devices to *\<MTD partner name>***: (Conectar dispositivos Android 4.1+ con *[nombre de asociado de MTD]***:) cuando habilita esta opción, puede hacer que los dispositivos Android 4.1+ informen de un riesgo de seguridad a Intune.
-- **Connect iOS 8.0+ devices to *\<MTD partner name>***: (Conectar dispositivos iOS 8.0+ con *[nombre de asociado de MTD]***:) cuando se habilita esta opción, los dispositivos iOS 8.0+ pueden informar a Intune de los riesgos para la seguridad.
+- **Conectar dispositivos Android 4.1+ a _\<nombre del asociado de MTD>_** : cuando habilita esta opción, puede hacer que los dispositivos Android 4.1+ informen de un riesgo de seguridad a Intune.
+- **Conectar dispositivos iOS 8.0+ a _\<nombre del asociado de MTD>_** : cuando se habilita esta opción, los dispositivos iOS 8.0+ pueden informar a Intune de los riesgos para la seguridad.
 - **Enable App Sync for iOS Devices** (Habilitar la sincronización de aplicaciones de dispositivos iOS): permite que este partner de Mobile Threat Defense solicite los metadatos de las aplicaciones iOS a Intune para usarlos con el fin de analizar las amenazas.
 - **Block unsupported OS versions** (Bloquear versiones de SO no compatibles): bloquear si el dispositivo ejecuta un sistema operativo inferior a la versión mínima compatible.
 

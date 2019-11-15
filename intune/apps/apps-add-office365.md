@@ -1,12 +1,12 @@
 ---
-title: Asignación de aplicaciones de Office 365 a dispositivos Windows 10 mediante el uso de Microsoft Intune
+title: Adición de aplicaciones de Office 365 a dispositivos Windows 10 mediante Microsoft Intune
 titleSuffix: ''
 description: Obtenga información sobre cómo usar Microsoft Intune para instalar aplicaciones de Office 365 en dispositivos Windows 10.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507316"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635396"
 ---
-# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
+# <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adición de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
 Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agregarlas a Intune. Uno de los [tipos de aplicaciones](apps-add.md#app-types-in-microsoft-intune) disponibles son las aplicaciones de Office 365 para dispositivos Windows 10. Al seleccionar este tipo de aplicación en Intune, puede asignar e instalar aplicaciones de Office 365 en los dispositivos que administra y que ejecutan Windows 10. También puede asignar e instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Online Plan 2, si posee sus licencias. Las aplicaciones de Office 365 disponibles se muestran como una única entrada en la lista de aplicaciones de la consola de Intune en Azure.
 
@@ -43,7 +43,7 @@ Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agr
 - Este método de instalación no se admite en dispositivos Windows Home, Windows Team, Windows Holographic o Windows Holographic for Business.
 - Intune no admite la instalación de aplicaciones de escritorio de Office 365 desde Microsoft Store (estas aplicaciones se conocen como Office Centennial) en un dispositivo al que ya haya implementado aplicaciones de Office 365 con Intune. Si instala esta configuración, puede provocar daños o la pérdida de datos.
 - Las diferentes asignaciones de aplicaciones requeridas o disponibles no son acumulativas. Cualquier asignación de aplicación que se haga más adelante sustituirá las asignaciones de aplicaciones instaladas previamente. Por ejemplo, si el primer conjunto de aplicaciones de Office contiene Word y el más reciente no, Word se desinstala. Esta condición no se aplica a ninguna aplicación de Visio ni de Project.
-- Actualmente no se admiten las implementaciones de varios Office 365. Solo se entregará una implementación al dispositivo.
+- Actualmente no se admiten las implementaciones de varias instancias de Office 365. Solo se entregará una implementación al dispositivo.
 - **Versión de Office**: elija si quiere asignar la versión de 32 o 64 bits de Office. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
 - **Remove MSI from end-user devices** (Quitar MSI de los dispositivos de usuario final): elija si quiere quitar las aplicaciones .MSI preexistentes de Office de los dispositivos de usuario final. La instalación no funcionará si hay aplicaciones .MSI preexistentes en los dispositivos de usuario final. Las aplicaciones que se deben desinstalar no se limitan a las seleccionadas para la instalación en **Configure App Suite** (Configurar App Suite), ya que quitarán todas las aplicaciones de Office (MSI) del dispositivo del usuario final. Para obtener más información, vea [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (Quitar las versiones de MSI de Office al actualizar a Office 365 ProPlus). Cuando Intune reinstala Office en los equipos de los usuarios finales, estos recibirán automáticamente los mismos paquetes de idioma que tenían con las instalaciones de Office .MSI anteriores.
 
@@ -142,12 +142,60 @@ Si ha seleccionado la opción **Especificar datos XML** en el cuadro desplegable
 
 ## <a name="finish-up"></a>Finalizar
 
-Cuando haya terminado, en el panel **Agregar aplicación**, seleccione **Agregar**. La aplicación que ha creado aparece en la lista de aplicaciones.
+Cuando haya terminado, en el panel **Agregar aplicación**, seleccione **Agregar**. La aplicación que ha creado aparece en la lista de aplicaciones. El siguiente paso consiste en asignar las aplicaciones a los grupos que elija. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](~/apps/apps-deploy.md).
+
+## <a name="deployment-details"></a>Detalles de implementación
+
+Cuando la directiva de implementación de Intune está asignada a los equipos de destino mediante el [proveedor de servicios de configuración (CSP) de Office](https://docs.microsoft.com/windows/client-management/mdm/office-csp), el dispositivo final descargará automáticamente el paquete de instalación desde la ubicación *officecdn.microsoft.com*. Verá dos directorios que aparecen en el directorio *Archivos de programa*:
+
+![Paquetes de instalación de Office en el directorio Archivos de programa](./media/apps-add-office365/office-folder.png)
+
+En el directorio *Microsoft Office*, se crea una nueva carpeta donde se almacenan los archivos de instalación:
+
+![Nueva carpeta creada en el directorio Microsoft Office](./media/apps-add-office365/created-folder.png)
+
+En el directorio *Microsoft Office 15*, se almacenan los archivos del iniciador de instalación de Hacer clic y ejecutar de Office. La instalación se iniciará automáticamente si se requiere el tipo de asignación:
+
+![Archivos del iniciador de instalación de hacer clic y ejecutar](./media/apps-add-office365/clicktorun-files.png)
+
+La instalación se realizará en modo silencioso si la asignación del conjunto de O365 se configura según sea necesario. Los archivos de instalación descargados se eliminarán una vez que la instalación se haya realizado correctamente. Si la asignación se configura como **disponible**, las aplicaciones de Office aparecerán en la aplicación Portal de empresa para que los usuarios finales puedan desencadenar la instalación manualmente.
 
 ## <a name="troubleshooting"></a>Solucionar problemas
 Intune utiliza la [Herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) para descargar e implementar Office 365 ProPlus en los equipos cliente mediante la red [CDN de Office 365](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Consulte los procedimientos recomendados que se describen en [Administración de puntos de conexión de Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) para asegurarse de que la configuración de red permite a los clientes tener acceso a la red CDN directamente en lugar de enrutar el tráfico de la red CDN a través de servidores proxy centrales para evitar la introducción de una latencia innecesaria.
 
 Ejecute el [Asistente de soporte y recuperación para Office 365 de Microsoft](https://diagnostics.office.com) en un dispositivo específico si tiene problemas de instalación o de ejecución.
+
+### <a name="additional-troubleshooting-details"></a>Detalles adicionales de solución de problemas
+
+Si no puede instalar las aplicaciones de O365 en un dispositivo, debe identificar si el problema está relacionado con Intune o con Office o sistema operativo. Si puede ver las dos carpetas *Microsoft Office* y *Microsoft Office 15* aparecen en el directorio *Archivos de programa* del dispositivo, puede confirmar que Intune ha iniciado la implementación correctamente. Si no puede ver las dos carpetas en *Archivos de programa*, debe confirmar los casos siguientes:
+
+- El dispositivo está inscrito correctamente en Microsoft Intune. 
+- Hay una conexión de red activa en el dispositivo. Si el dispositivo está en modo avión, está desactivado o se encuentra en una ubicación sin servicio, la directiva no se aplicará hasta que se establezca la conectividad de red.
+- Se cumplen los requisitos de red de Intune y Office 365 y se puede obtener acceso a los intervalos de IP relacionados en función de los siguientes artículos:
+
+  - [Ancho de banda y requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Intervalos de direcciones IP y URL de Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+
+- A los grupos correctos se les ha asignado el conjunto de aplicaciones de O365. 
+
+Además, supervise el tamaño del directorio *C:\Archivos de programa\Microsoft Office\Updates\Download*. El paquete de instalación descargado de la nube de Intune se almacenará en esta ubicación. Si el tamaño no aumenta o solo aumenta muy lentamente, se recomienda comprobar la conectividad de red y el ancho de banda.
+
+Cuando pueda concluir que tanto Intune como la infraestructura de red funcionan según lo previsto, debe analizar aún más el problema desde la perspectiva del sistema operativo. Considere las condiciones siguientes:
+
+- El dispositivo de destino debe ejecutarse en Windows 10 Creators Update o posterior.
+- No se abre ninguna aplicación de Office existente mientras Intune implementa las aplicaciones.
+- Las versiones existentes de MSI de Office se han quitado correctamente del dispositivo. Intune emplea Hacer clic y ejecutar de Office, que no es compatible con MSI de Office. Este comportamiento se menciona en este documento:<br>
+  [No se admite en el mismo equipo Office instalado con Hacer clic y ejecutar y Windows Installer](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd).
+- El usuario de inicio de sesión debe tener permiso para instalar aplicaciones en el dispositivo.
+- Confirme que no hay ningún problema basado en **Registros de Windows** -> **Aplicaciones** del registro del Visor de eventos de Windows.
+- Capture los registros detallados de la instalación de Office durante la instalación. Para ello, siga estos pasos:<br>
+    1. Active el registro detallado para la instalación de Office en las máquinas de destino. Para ello, ejecute el siguiente comando para modificar el registro:<br>
+        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
+    2. Vuelva a implementar el conjunto de Office 365 en los dispositivos de destino.<br>
+    3. Espere aproximadamente de 15 a 20 minutos y vaya a la carpeta **%temp%** y la carpeta **%windir%\temp**, ordene por la **fecha de modificación**, seleccione los archivos *{nombre de la máquina}-{TimeStamp}.log* que se modifican según el tiempo de reproducción.<br>
+    4. Ejecute el siguiente comando para deshabilitar el registro detallado:<br>
+        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`<br>
+        Los registros detallados pueden proporcionar información más detallada sobre el proceso de instalación.
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Errores durante la instalación del conjunto de aplicaciones
 

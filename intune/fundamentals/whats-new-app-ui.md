@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509982"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801775"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 
@@ -36,6 +36,23 @@ Si es un empleado o un alumno, asegúrese de consultar las capturas de pantalla 
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>Semana del 28 de octubre de 2019  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Diseño de la lista de comprobación mejorado en la aplicación Portal de empresa para Android <!-- 5550857 -->  
+La lista de comprobación de configuración de la aplicación Portal de empresa para Android se ha actualizado con un diseño ligero y nuevos iconos. Los cambios se alinean con las actualizaciones recientes realizadas en la aplicación Portal de empresa para iOS. Para ver los pasos de inscripción actualizados, consulte [Inscripción con el perfil de trabajo Android](/intune-user-help/enroll-device-android-work-profile) e [Inscripción de su dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
+
+En las pantallas siguientes se muestra la lista de comprobación actualizada para la inscripción del perfil de trabajo de Android:
+
+|Actualizado|Anterior|  
+|---|---|  
+|![Imagen de ejemplo de la configuración del perfil de trabajo en Portal de empresa, que muestra una lista de comprobación simplificada y nuevos iconos.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Imagen de ejemplo de la configuración del perfil de trabajo anterior en Portal de empresa, que muestra una lista de comprobación más ocupada.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+En las pantallas siguientes se muestra la lista de comprobación actualizada para la inscripción del administrador de dispositivos Android:  
+
+|Actualizado|Anterior|  
+|---|---|  
+|![Imagen de ejemplo de la configuración del administrador de dispositivos Android en Portal de empresa, que muestra una lista de comprobación simplificada y nuevos iconos.](./media/whats-new-app-ui/android-checklist-1911.png)|![Imagen de ejemplo de la configuración de administración anterior de dispositivos Android en Portal de empresa, que muestra una lista de comprobación más ocupada.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>Semana del 9 de septiembre de 2019
 
@@ -572,6 +589,6 @@ Estos son los planes para mejorar la experiencia del usuario mediante la actuali
 
 
 ## <a name="see-also"></a>Consulte también
-* [Blog de Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Blog de Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guía básica de Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novedades de Intune](../whats-new.md)
+* [Novedades de Intune](whats-new.md)

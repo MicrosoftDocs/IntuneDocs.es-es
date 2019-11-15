@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c88366ea64182ccf8d45bc3e890a2579df20f1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585649"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635358"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Introducción a los escenarios guiados de Intune 
 
@@ -46,7 +46,7 @@ Los escenarios guiados ofrecen una funcionalidad específica. Los siguientes det
 
 ### <a name="launching"></a>Inicio  
 
-Todos los escenarios guiados están disponibles en el **[portal de administración de dispositivos](https://devicemanagement.microsoft.com)**  > **Solución de problemas + ayuda** > **Escenarios guiados**. 
+Todos los escenarios guiados están disponibles en el **[portal de administración de dispositivos](https://devicemanagement.microsoft.com)**  > **Solución de problemas + soporte técnico** > **Escenarios guiados**. 
 
 El escenario guiado comienza con una introducción en la que se explica el propósito del escenario y los requisitos previos necesarios para completar la configuración. En ese momento, se comprueban sus permisos de administrador para corroborar que tiene todos los privilegios necesarios para completar el escenario.  
 

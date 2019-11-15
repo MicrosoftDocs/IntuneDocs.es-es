@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507574"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592091"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Administración del acceso web con un explorador protegido por directiva de Microsoft Intune
 
@@ -179,7 +179,7 @@ Mediante el procedimiento anterior para crear una configuración de la aplicaci�
 > [!NOTE]
 > En la directiva de protección de aplicaciones que administra Microsoft Edge y las aplicaciones asociadas especificadas en la configuración de la aplicación, asegúrese de que se establece la siguiente configuración de directiva de protección de datos:
 > - Envíe datos de la organización a otras aplicaciones: **Aplicaciones administradas por directivas**
-> - Comparta contenido web con exploradores administrados por directivas: **Requerir**
+> - Restrinja la transferencia de contenido web con otras aplicaciones: **Exploradores administrados por directivas**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Configuración del proxy de aplicación para exploradores protegidos
 

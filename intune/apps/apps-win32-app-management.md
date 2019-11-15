@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d6fb5a703aad09592bfac3b5a16390389059d33
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498035"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143205"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -139,7 +139,7 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
 
 ### <a name="step-4-configure-app-installation-details"></a>Paso 4: Configuración de los detalles de instalación de la aplicación
 1. En el panel **Agregar aplicación**, seleccione **Programa** para configurar los comandos de instalación y desinstalación de aplicaciones para la aplicación.
-2. Para instalar la aplicación, agregue la línea de comandos para completar la instalación. 
+2. Para configurar el **comando de instalación**, agregue la línea de comandos de instalación completa para instalar la aplicación. 
 
     Por ejemplo, si el nombre de archivo de la aplicación es **MyApp123**, agregue lo siguiente:<br>
     `msiexec /p “MyApp123.msp”`<p>
@@ -148,9 +148,11 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     en el comando anterior, el paquete `ApplicationName.exe` admite el argumento de comando `/quiet`.<p> 
     Para los argumentos específicos compatibles con el paquete de aplicación, póngase en contacto con su proveedor de aplicaciones.
 
-3. Agregar la línea de comandos de desinstalación completa para desinstalar la aplicación a partir del GUID de la aplicación. 
+3. Para configurar el **comando de desinstalación**, agregue la línea de comandos de desinstalación completa para desinstalar la aplicación según GUID de la aplicación. 
 
     Por ejemplo:  `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+4. Establezca **Comportamiento de instalación** en **Sistema** o **Usuario**.
 
     > [!NOTE]
     > Puede configurar una aplicación Win32 para instalarla en un contexto de **usuario** o **sistema**. El contexto de **usuario** hace referencia a un único usuario determinado. El contexto de **sistema** hace referencia a todos los usuarios de un dispositivo Windows 10.
@@ -159,7 +161,13 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     > 
     > La instalación y desinstalación de las aplicaciones Win32 se ejecutará bajo el privilegio de administración (de manera predeterminada) cuando la aplicación esté establecida para iniciarse en el contexto del usuario y el usuario final del dispositivo tenga privilegios de administración.
 
-4. Cuando haya terminado, seleccione **Aceptar**.
+5. Para configurar **Comportamiento de reinicio de dispositivo**, seleccione una de las siguientes opciones:
+    - **Determinar comportamiento en función de códigos de retorno**: elija esta opción para reiniciar el dispositivo en función de los ajustes de la configuración de [códigos de retorno](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes).
+    - **Ninguna acción específica**: elija esta opción para suprimir los reinicios de dispositivos durante la instalación de aplicaciones basadas en MSI.
+    - **La instalación de la aplicación puede forzar un reinicio del dispositivo**: elija esta opción para permitir que la instalación de la aplicación se complete sin suprimir los reinicios.
+    - **Intune forzará un reinicio obligatorio del dispositivo**: elija esta opción para reiniciar siempre el dispositivo después de una instalación correcta de la aplicación.
+
+6. Cuando haya terminado, seleccione **Aceptar**.
 
 ### <a name="step-5-configure-app-requirements"></a>Paso 5: Configuración de los requisitos de la aplicación
 
@@ -279,10 +287,11 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     - **Requerido**: la aplicación se instala en los dispositivos de los grupos seleccionados.
     - **Desinstalar**: la aplicación se desinstala de dispositivos de los grupos seleccionados.
 4. Seleccione **Grupos incluidos** y asigne los grupos que usarán esta aplicación.
-5. En el panel **Asignar**, seleccione **Aceptar** para completar la selección de grupos incluidos.
-6. Si quiere excluir algún grupo de usuarios para que no se vea afectado por esta asignación de aplicaciones, seleccione **Excluir grupos**.
-7. En el panel **Agregar grupo**, seleccione **Aceptar**.
-8. En el panel **Asignaciones** de la aplicación, seleccione **Guardar**.
+5. En el panel **Asignar**, seleccione asignar en función de los usuarios o los dispositivos. Al elegir las asignaciones, también puede elegir la **experiencia del usuario final**. La **experiencia del usuario final** le permite establecer las **notificaciones para los usuarios finales**, el **período de gracia de reinicio**, la **disponibilidad** y la **fecha límite de instalación**. Para más información, consulte **Establecimiento de la disponibilidad y las notificaciones de las aplicaciones Win32**.
+6. Seleccione **Aceptar** para completar la selección de grupos incluidos.
+7. Si quiere excluir algún grupo de usuarios para que no se vea afectado por esta asignación de aplicaciones, seleccione **Excluir grupos**.
+8. En el panel **Agregar grupo**, seleccione **Aceptar**.
+9. En el panel **Asignaciones** de la aplicación, seleccione **Guardar**.
 
 Ya ha completado los pasos para agregar una aplicación Win32 a Intune. Para obtener información sobre la supervisión y la asignación de aplicaciones, vea [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md) y [Supervisión de información y asignaciones de aplicaciones con Microsoft Intune](apps-monitor.md).
 
@@ -328,6 +337,36 @@ El usuario final verá las notificaciones del sistema de Windows en las instalac
 La siguiente imagen notifica al usuario final que se están realizando cambios de la aplicación en el dispositivo.
 
 ![Captura de pantalla que notifica al usuario que se están realizando cambios en la aplicación](./media/apps-win32-app-management/apps-win32-app-09.png)    
+
+## <a name="set-win32-app-availability-and-notifications"></a>Establecimiento de la disponibilidad y las notificaciones de las aplicaciones Win32
+Puede configurar la hora de inicio y la hora de la fecha límite para una aplicación Win32. A la hora de inicio, la extensión de administración de Intune iniciará la descarga del contenido de la aplicación y la almacenará en caché para la intención necesaria. La aplicación se instalará a la hora de la fecha límite. Para las aplicaciones disponibles, la hora de inicio determinará cuando la aplicación esté visible en Portal de empresa y se descargará el contenido cuando el usuario final solicite la aplicación desde Portal de empresa. Además, puede habilitar un período de gracia de reinicio. 
+
+Establezca la disponibilidad de la aplicación en función de la fecha y la hora de una aplicación necesaria mediante los pasos siguientes:
+
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones**.
+3. Seleccione una **aplicación de Windows (Win32)** existente en la lista. 
+4. En la hoja de la aplicación, seleccione **Asignaciones** > **Agregar grupo**. 
+5. Establezca **Tipo de asignación** en **Obligatoria**. Tenga en cuenta que la disponibilidad de la aplicación se puede establecer en función del tipo de asignación. El **tipo de asignación** puede tener los valores **Requerido**, **Disponible para dispositivos inscritos** o **Desinstalar**.
+6. Seleccione **Grupos incluidos** para determinar a qué grupo de usuarios se asignará la aplicación. Se mostrará la hoja **Asignar**.
+7. Establezca **Hacer que esta aplicación sea obligatoria para todos los usuarios** en **Sí**.
+
+    > [!NOTE]
+    > Las opciones de **Tipo de asignación** incluyen las siguientes:<br>
+    > - **Requerido**: Puede elegir entre **Hacer que esta aplicación sea obligatoria para todos los usuarios** o **Hacer que esta aplicación sea obligatoria en todos los dispositivos**.<br>
+    > - **Disponible para dispositivos inscritos**: Puede elegir **hacer que esta aplicación esté disponible para todos los usuarios con dispositivos inscritos**.<br>
+    > - **Desinstalar**: Puede optar por ***desinstalar esta aplicación para todos los usuarios** o **desinstalar esta aplicación para todos los dispositivos**.
+
+8. Para modificar las opciones de la **experiencia del usuario final**, seleccione **Editar**.
+9. En la hoja **Editar asignación**, establezca las **notificaciones de usuario final** en **Mostrar todas las notificaciones del sistema**. Tenga en cuenta que puede establecer **Notificaciones de usuario final** en **Mostrar todas las notificaciones del sistema**, **Mostrar notificaciones del sistema para reinicios de equipo** o en **Ocultar todas las notificaciones del sistema**.
+10. Establezca la **disponibilidad de la aplicación** en **Fecha y hora específicas** y seleccione la fecha y hora. Esta fecha y hora especifican cuándo se descarga la aplicación en el dispositivo de los usuarios finales. 
+11. Establezca la **fecha límite de instalación de la aplicación** en **Fecha y hora específicas** y seleccione la fecha y hora. Esta fecha y hora especifica cuándo se instala la aplicación en el dispositivo de los usuarios finales. Cuando se realiza más de una asignación para el mismo usuario o dispositivo, la hora de la fecha límite de instalación de la aplicación se elige en función de la fecha más temprana posible.
+12. Haga clic en **Habilitado** junto al **período de gracia de reinicio**. El período de gracia de reinicio se inicia en cuanto se complete la instalación de la aplicación en el dispositivo. Cuando se deshabilita, el dispositivo puede reiniciarse sin advertencia. <br>Puede personalizar las opciones siguientes:
+    - **Periodo de gracia de reinicio del dispositivo (minutos)** : El valor predeterminado es 1440 minutos (24 horas). Este valor puede ser un máximo de dos semanas.
+    - **Seleccionar cuándo debe mostrarse el cuadro de diálogo de cuenta regresiva de reinicio antes de producirse el reinicio (minutos)** : El valor predeterminado es 15 minutos.
+    - **Permitir al usuario posponer la notificación de reinicio**: Puede elegir entre **Sí** o **No**.
+        - **Seleccionar la duración del aplazamiento (minutos)** : El valor predeterminado es 240 minutos (4 horas). El valor del aplazamiento no puede ser mayor que el período de gracia de reinicio.
+13. Haga clic en **Aceptar** > **Aceptar** > **Aceptar** > **Guardar** para agregar la asignación.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notificaciones del sistema para aplicaciones Win32 
 Si es necesario, puede suprimir notificaciones del sistema para el usuario final por asignación de aplicaciones. En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** > seleccione la aplicación > **Asignaciones** > **Incluir grupos**. 
