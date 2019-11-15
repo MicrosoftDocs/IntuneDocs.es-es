@@ -185,7 +185,7 @@
     - name: Solución de problemas
       items:
         - name: Ayuda para los usuarios para solucionar problemas
-          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Solucionar problemas de instalación de aplicaciones
           href: troubleshoot-app-install.md
         - name: Solucionar problemas de la administración de aplicaciones móviles
