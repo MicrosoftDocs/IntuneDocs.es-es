@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709750"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984121"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -447,11 +447,20 @@ Para agregar aplicaciones, puede:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos, inscripción de dispositivo automatizada (supervisado)
 
+Nota necesaria para la itinerancia de datos (sugerencia o Nota importante para ayudar con la confusión del cliente): esta configuración no se mostrará en el perfil de administración del dispositivo de destino. Esto se debe a que esta configuración se trata como una acción de dispositivo remoto y cada vez que se cambia el estado de itinerancia de datos en el dispositivo, el servicio de Intune volverá a bloquearlo. Aunque no esté en el perfil de administración, funcionará si se muestra como correcto desde los informes en la consola de administración. 
 - **Itinerancia de datos**: elija **Bloquear** para evitar la itinerancia de datos a través de la red de telefonía móvil. **No configurado** (valor predeterminado) permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.
+
+  > [!IMPORTANT]
+  > Esta configuración se trata como una acción de dispositivo remoto. Por lo tanto, esta configuración no se muestra en el perfil de administración del dispositivo. Cada vez que cambia el estado de itinerancia de datos en el dispositivo, el servicio de Intune bloquea los **datos móviles** . En Intune, si el estado de los informes muestra un éxito, sepa que funciona, aunque la configuración no se muestra en el perfil de administración del dispositivo.
+
 - **Captura de fondo global durante la itinerancia**: **Bloquear** impide usar la característica de captura de fondo global durante la itinerancia a través de la red de telefonía móvil. **No configurado** (valor predeterminado) permite que el dispositivo capture datos, como el correo electrónico, durante la itinerancia en una red de telefonía móvil.
 - **Marcación por voz**: elija **Bloquear** para impedir que los usuarios usen la característica de marcación por voz en el dispositivo. **No configurado** (valor predeterminado) permite la marcación por voz en el dispositivo.
 - **Itinerancia de voz**: elija **Bloquear** para evitar la itinerancia de voz a través de la red de telefonía móvil. **No configurado** (valor predeterminado) permite la itinerancia de voz cuando el dispositivo está en una red de telefonía móvil.
 - **Punto de acceso personal**: **Bloquear** desactiva el punto de acceso personal en el dispositivo del usuario con la sincronización de cada dispositivo. Esta opción puede que no sea compatible con algunos operadores. **Sin configurar** (valor predeterminado) mantiene la configuración de punto de acceso personal como el valor predeterminado establecido por el usuario.
+
+  > [!IMPORTANT]
+  > Esta configuración se trata como una acción de dispositivo remoto. Por lo tanto, esta configuración no se muestra en el perfil de administración del dispositivo. Cada vez que cambia el estado de la zona activa personal en el dispositivo, el servicio de Intune bloquea la **zona activa personal** . En Intune, si el estado de los informes muestra un éxito, sepa que funciona, aunque la configuración no se muestra en el perfil de administración del dispositivo.
+
 - **Reglas de uso de datos móviles (solo aplicaciones )** : defina los tipos de datos que las aplicaciones administradas pueden usar cuando están en redes de telefonía móvil. Las opciones son:
   - **Bloquear el uso de datos móviles**: bloquee el uso de los datos móviles en **Todas las aplicaciones administradas** o **Elegir aplicaciones específicas**.
   - **Bloquear el uso de datos móviles en itinerancia**: bloquee el uso de datos móviles en itinerancia en **Todas las aplicaciones administradas** o **Elegir aplicaciones específicas**.

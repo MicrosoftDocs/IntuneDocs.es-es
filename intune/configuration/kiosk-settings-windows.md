@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506683"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059342"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para ejecutarse como una pantalla completa en Intune
 
@@ -40,6 +40,8 @@ Para más información sobre la característica de pantalla completa de Windows 
 
   1. Cree este perfil de pantalla completa para ejecutar el dispositivo en pantalla completa.
   2. Cree el [perfil de restricciones de dispositivo](device-restrictions-windows-10.md#microsoft-edge-browser) y configure opciones y características específicas que se permiten en Microsoft Edge.
+
+- Asegúrese de que todos los archivos, scripts y accesos directos estén en el sistema local. Para obtener más información, incluidos otros requisitos de Windows, vea [personalizar y exportar el diseño de inicio](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout).
 
 > [!IMPORTANT]
 > Asegúrese de asignar este perfil de pantalla completa a los mismos dispositivos que su [perfil de Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
@@ -194,3 +196,5 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 [Asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
 También puede crear perfiles de pantalla completa para dispositivos [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) y [Windows Holographic for Business](kiosk-settings-holographic.md).
+
+Consulte también [configuración de un quiosco de una sola aplicación](https://docs.microsoft.com/windows/configuration/kiosk-single-app) o [configuración de un quiosco de varias aplicaciones](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps) en la guía de Windows.

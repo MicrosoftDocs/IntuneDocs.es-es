@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,18 +19,18 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 2b26717e2e8beed2e92f47dca17cbea0ec47a82b
+ms.sourcegitcommit: 244a75622f9cebaaaf5b33aadd8931407a2e2e48
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754987"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74096757"
 ---
 # <a name="enable-code-integrity"></a>Habilitación de la integridad de código
 
 Su organización puede requerir que el equipo esté habilitado con una característica de protección contra amenazas denominada *integridad de código*. La integridad de código comprueba los controladores y los archivos del sistema del dispositivo en busca de indicios de daños o software malintencionado. Para que la integridad del código funcione en el dispositivo, también debe estar habilitada otra característica de seguridad denominada [*arranque seguro*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) .
 
-Si el equipo no es compatible porque la integridad del código está deshabilitada, debe ponerse en contacto con el equipo de soporte técnico de TI de su organización. Le ayudarán a habilitar el arranque seguro, que desencadenará la integridad del código la próxima vez que inicie el dispositivo.
+Si el equipo no es compatible porque la integridad del código está deshabilitada, póngase en contacto con el personal de soporte técnico de TI de su organización. El personal de soporte técnico le ayudará a habilitar el arranque seguro, que desencadenará la integridad del código la próxima vez que inicie el dispositivo. 
 
 Si se identifica como un usuario de dispositivo avanzado y desea probar los pasos por su cuenta, consulte [volver a habilitar el arranque seguro](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 

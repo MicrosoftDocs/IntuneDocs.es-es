@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/13/2018
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510052"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059193"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparación de la administración de equipos con Windows como dispositivos móviles o equipos
 
@@ -42,8 +42,8 @@ Las organizaciones pueden usar Microsoft Intune para administrar equipos con Win
 |**Administración de actualizaciones de software**| Actualizaciones de Windows y actualizaciones de aplicaciones de Microsoft<br>[Mantener los equipos Windows al día con las actualizaciones de software](../keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|Tienda Microsoft para Empresas para actualizaciones de aplicaciones de Windows 10 y Microsoft<br> [Configurar Windows Update para empresas](../protect/windows-update-for-business-configure.md) |
 |**Administración de licencias de software**|Available <br>[Administrar contratos de licencia de software de equipos Windows](../manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|Tienda Microsoft para Empresas (solo aplicaciones .appx)<br>[Administración de aplicaciones adquiridas a través de la Tienda Microsoft para Empresas](../apps/windows-store-for-business.md)|
 |**Inventario**|Available <br>[Visualización del inventario de software y hardware para equipos Windows](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Available <br>[Supervisión de la información de las aplicaciones](../apps/apps-monitor.md)<br>[What is device management](../remote-actions/device-management.md) (¿Qué es la administración de dispositivos?)|
-|**Directiva de Firewall de Windows**|Available <br>[Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Available <br>[Firewall de Windows Defender](../protect/endpoint-protection-windows-10.md#windows-defender-firewall)|
-|**Protección antimalware**|Endpoint Protection<br>[Ayudar a proteger los equipos de Windows con Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Habilitar Windows Defender](../protect/advanced-threat-protection.md)|
+|**Directiva de Firewall de Windows**|Available <br>[Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Available <br>[Firewall de Microsoft defender](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
+|**Protección antimalware**|Endpoint Protection<br>[Ayudar a proteger los equipos de Windows con Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Habilitación de Microsoft defender](../protect/advanced-threat-protection.md)|
 |**Asistencia remota** |TeamViewer<br>[Solicitar y proporcionar asistencia remota para equipos con Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Uso de TeamViewer para administrar dispositivos de Intune de forma remota](../remote-actions/teamviewer-support.md) |
 |**Implementación de aplicaciones** | No está disponible para la Tienda Microsoft para Empresas. Solo para<br>.exe, .appx, y varios archivos .msi<br>[Agregar aplicaciones para PC Windows que ejecutan el software cliente de Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)|Disponible para aplicaciones de la Tienda Microsoft y de línea de negocio<br>[Adición de aplicaciones de la Tienda Windows](../apps/store-apps-windows.md)<br>[Adición de aplicaciones de línea de negocio (LOB) de Windows](../apps/lob-apps-windows.md)|
 |**Protección de aplicaciones**|No disponible|Available <br>[¿Qué son las directivas de protección de aplicaciones?](../apps/app-protection-policy.md)|

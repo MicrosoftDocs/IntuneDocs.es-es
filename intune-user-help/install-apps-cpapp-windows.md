@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506115"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126199"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar y compartir aplicaciones en el dispositivo
 
@@ -41,7 +41,7 @@ Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa pa
     * **Mostrar todo**: en la sección **página Inicio** > **Aplicaciones**, haga clic en **Mostrar todo** para ver todas las aplicaciones disponibles.  
     * **Todas las aplicaciones**: seleccione esta página en el panel de navegación para ver todas las aplicaciones disponibles, incluyendo las instaladas y las destacadas. Ver, ordenar y filtrar las aplicaciones. Los resultados de búsqueda se ordenan automáticamente por relevancia.  
     * **Categorías de aplicaciones**: Seleccione esta página en el panel de navegación para elegir aplicaciones basadas en el tipo o la función. Las aplicaciones se ordenan en categorías como **destacado**, **educación**y **productividad**.  
-    * **Buscar aplicaciones**: hay una barra de búsqueda estática en el panel de navegación de la aplicación.  Para buscar las aplicaciones disponibles, busque por el nombre de la aplicación o del publicador.  
+    * **Buscar aplicaciones**: hay una barra de búsqueda estática en el panel de navegación de la aplicación. Para buscar las aplicaciones disponibles, busque por el nombre de la aplicación o del publicador.  
 
 3. Seleccione una aplicación.   
 4. En la página de detalles de las aplicaciones, haga clic en **Instalar**. Una vez que esté lista la instalación, verá un estado **Instalado**.  
@@ -69,10 +69,10 @@ Comparta y recomiende las aplicaciones a sus contactos profesionales o de instit
 
 Después de compartir, el destinatario recibirá un vínculo y un mensaje para ver los detalles de la aplicación. El vínculo abre la página **Detalles de la aplicación** de Portal de empresa. 
 
-## <a name="available-and-required-apps"></a>Aplicaciones disponibles y necesarias
-Las aplicaciones las asigna su organización y se etiquetan en Portal de empresa como **disponibles** o **necesarias**. 
+## <a name="optional-and-required-apps"></a>Aplicaciones opcionales y obligatorias
+La organización les asigna aplicaciones. La organización necesitará tener algunas aplicaciones y hará que otras aplicaciones sean opcionales. Para averiguar qué aplicaciones son obligatorias y opcionales, vaya a **aplicaciones instaladas** y mire en la columna que **requiere su organización**.  
 
-* Aplicaciones disponibles: la organización selecciona estas aplicaciones y son adecuadas y útiles para el trabajo o la escuela. Son opcionales para instalar y son las únicas aplicaciones que encontrará en el Portal de empresa para instalar. 
+* Aplicaciones opcionales: su organización selecciona estas aplicaciones y son adecuadas y útiles para el trabajo o la escuela. Están disponibles para usted, pero depende de usted si desea instalarlas. Estos son los únicos tipos de aplicaciones que encontrará en el Portal de empresa para instalar. 
 
 * Aplicaciones necesarias: estas aplicaciones son necesarias para el trabajo y la escuela y se implementan directamente en el dispositivo. Estas aplicaciones se instalan automáticamente sin intervención. 
 
@@ -86,15 +86,13 @@ Si necesita una aplicación, pero no la ve en el Portal de empresa, solicítela.
 ## <a name="view-installed-apps"></a>Visualización de las aplicaciones instaladas  
 Vea una lista de todas las aplicaciones instaladas en el dispositivo. En la página **aplicaciones instaladas** se muestran los detalles siguientes sobre cada aplicación:
 
-* Nombre: nombre de la aplicación. Las aplicaciones disponibles incluyen un vínculo a la página de detalles de la **aplicación** .
+* Nombre: nombre de la aplicación. Las aplicaciones opcionales incluyen un vínculo a la página de detalles de la **aplicación** .
 * Tipo de asignación: cómo se asigna y pone a disposición la aplicación. 
 * Publicador: el nombre del desarrollador o la compañía que distribuyó la aplicación. Un publicador suele ser un proveedor de software o su organización.  
 * Fecha de publicación: la fecha en la que la aplicación estuvo disponible para su descarga. La fecha de publicación podría mostrar la versión inicial de una aplicación o la actualización más reciente de la aplicación.
 * Estado: el estado de la instalación actual de la aplicación en el dispositivo. Las aplicaciones pueden mostrar como error de instalación, instalación e instalación. Las aplicaciones requeridas pueden tardar hasta 10 minutos en mostrar un estado actualizado. Vea la nota en [instalar aplicaciones](#install-apps) para obtener detalles importantes sobre la instalación de una aplicación requerida. 
 
-Para acceder a esta página, vaya al menú de navegación y seleccione **aplicaciones instaladas**. 
-
-  ![Captura de pantalla de ejemplo de la aplicación Portal de empresa para Windows 10, página Aplicaciones instaladas. ](./media/installed-apps-cp-1906.png)  
+Para acceder a esta página, vaya al menú de navegación y seleccione **aplicaciones instaladas**.  
 
 
 Use **ordenar por** para reorganizar el tipo de asignación de aplicaciones, el publicador, alfabéticamente por nombre, o cronológicamente por fecha de publicación. Use **filtrar por** para limitar las aplicaciones que ve según el estado de la instalación.  Si no hay ninguna aplicación disponible, verá un mensaje que indica que no se ha instalado ninguna aplicación de empresa.  

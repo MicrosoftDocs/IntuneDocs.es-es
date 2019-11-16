@@ -3,8 +3,8 @@ title: Reducir los costos del departamento de soporte técnico
 titleSuffix: Microsoft Intune
 description: Reducir los costos del departamento de soporte técnico mediante el autoservicio de restablecimiento de contraseña
 keywords: Restablecer la contraseña de SSPR de Azure Active Directory
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -15,16 +15,17 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1da1758dcc1743087191f69bd4d57bc113774d81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08dc14a3abed634721b39fedaae840e2b18c151b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509301"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058111"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reducir los costos del departamento de soporte técnico mediante el autoservicio de restablecimiento de contraseña
 
 Puede permitir que los empleados restablezcan la contraseña de cuentas profesionales o educativas sin la ayuda del departamento de soporte técnico. Este tipo de autoservicio de restablecimiento de contraseña se recomienda en las situaciones siguientes:
+
 * La empresa o el centro educativo usa Azure Active Directory para las cuentas profesionales o educativas.
 * Los empleados y los estudiantes pueden acceder a Internet.
 * Quiere reducir los costos del departamento de soporte técnico.
@@ -39,6 +40,7 @@ Puede permitir que los empleados restablezcan la contraseña de cuentas profesio
 ## <a name="next-steps"></a>Pasos siguientes
 
 Obtenga más información sobre los artículos siguientes:
+
 * [Prácticas recomendadas para contraseñas](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Licencias de autoservicio de establecimiento de contraseña](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
