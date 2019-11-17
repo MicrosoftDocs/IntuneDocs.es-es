@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509231"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126155"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos iOS en Microsoft Intune
 
@@ -84,6 +84,8 @@ Recopile la siguiente información acerca del problema:
 1. Quite la aplicación Portal de empresa del dispositivo.
 2. Descargue e instale la aplicación **Portal de empresa de Microsoft Intune** en el **App Store**.
 3. Vuelva a inscribir el dispositivo.
+ > [!NOTE]
+    > Este error también puede producirse si el usuario intenta inscribir más dispositivos que la inscripción de dispositivos configurada para permitir. Siga los pasos de resolución del **límite de dispositivos** que se alcanza a continuación si estos pasos no resuelven el problema.
 
 ### <a name="device-cap-reached"></a>Se alcanzó el límite de dispositivos
 
@@ -184,7 +186,7 @@ Al activar un dispositivo administrado por DEP que tiene asignado un perfil de i
 #### <a name="resolution"></a>Solución
 
 1. Edite el perfil de inscripción. Puede hacer cualquier cambio en el perfil. El propósito es actualizar la hora de modificación del perfil.
-2. Sincronizar dispositivos administrados por DEP: Abra el portal de Intune > **Admin**   >  **Mobile administración de dispositivos**   >  **iOS**   >  **Device programa de inscripción**  > **Sync**. Se envía una solicitud de sincronización a Apple.
+2. Sincronizar dispositivos administrados por DEP: Abra el portal de **Intune > administración**  > **Administración de dispositivos móviles**  > **iOS**  > **programa de inscripción de dispositivos** **sincronizar ahora**. Se envía una solicitud de sincronización a Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Inscripción de DEP atascada en el inicio de sesión de usuario
 Al activar un dispositivo administrado por DEP que tiene asignado un perfil de inscripción, el programa de instalación inicial se adhiere después de escribir las credenciales.
