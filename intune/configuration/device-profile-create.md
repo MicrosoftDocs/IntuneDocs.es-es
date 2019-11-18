@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681458"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755313"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
@@ -39,16 +39,16 @@ En este artículo:
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Seleccione **Configuración del dispositivo**. Dispone de las siguientes opciones:
+2. Seleccione **Dispositivos** > **Perfiles de configuración**. Dispone de las siguientes opciones:
 
     - **Información general**: muestra el estado de los perfiles y proporciona detalles adicionales sobre los perfiles que ha asignado a usuarios y dispositivos.
     - **Administrar**: cree perfiles de dispositivo, cargue [scripts de PowerShell](../apps/intune-management-extension.md) personalizados para ejecutarlos en el perfil y agregue planes de datos a los dispositivos con [eSIM](esim-device-configuration.md).
     - **Supervisión**: compruebe si el estado de un perfil es correcto o erróneo, y consulte registros sobre los perfiles.
     - **Configuración**: agregue una entidad de certificación SCEP o PFX, o bien habilite la [Administración de gastos de telecomunicaciones](telecom-expenses-monitor.md) en el perfil.
 
-3. Seleccione **Perfiles** > **Crear perfil**. Escriba las propiedades siguientes:
+3. Seleccione **Crear perfil**. Escriba las propiedades siguientes:
 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil. Asígnele un nombre a los perfiles para que pueda identificarlos de manera sencilla más adelante. Por ejemplo, un buen nombre de perfil sería **Perfil de correo electrónico de WP para toda la empresa**.
    - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.

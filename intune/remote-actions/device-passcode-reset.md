@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508586"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713124"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Restablecimiento o eliminación del código de acceso de un dispositivo en Intune
 
@@ -57,10 +57,9 @@ Para crear un nuevo código de acceso del perfil de trabajo, use la acción Rest
 ## <a name="reset-a-passcode"></a>Restablecer un código de acceso
 
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com) con cualquiera de los siguientes roles: Administrador global de Azure Active Directory, administrador del servicio de Intune de Azure Active Directory, operador del departamento de soporte técnico o administrador de roles.
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
-4. En la lista de dispositivos que administra, seleccione un dispositivo y seleccione **...Más**. Luego, elija la acción remota de dispositivo **Quitar código de acceso**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) con uno de los siguientes roles: Administrador global de Azure Active Directory, administrador del servicio de Intune de Azure Active Directory, operador del departamento de soporte técnico o administrador de roles.
+2. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
+3. En la lista de dispositivos que administra, seleccione un dispositivo y seleccione **...Más**. Luego, elija la acción remota de dispositivo **Quitar código de acceso**.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Restablecer códigos de acceso de perfil de trabajo Android
 

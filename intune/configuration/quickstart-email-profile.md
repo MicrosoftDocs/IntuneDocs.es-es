@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 11/07/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4890410f5948cdc9bd1c6e3d85125d8e0713d9b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1929e58d3b22e4cb5bc5f6ad2121f2b6f903d023
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492316"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755149"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Inicio rápido: Crear un perfil de dispositivo de correo para iOS
 
@@ -33,39 +33,40 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 
-Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador global o administrador de servicios de Intune. Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
+Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como administrador global o administrador de servicios de Intune. Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
 
 ## <a name="create-an-ios-email-profile"></a>Crear un perfil de correo electrónico para iOS
-1. En Intune, seleccione **Configuración del dispositivo** y **Perfiles**.
-2. Seleccione **Crear perfil**.
-   
+
+1. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
+
    ![Crear un perfil de correo electrónico para iOS](./media/quickstart-email-profile/ios-create-profile.png)
 
-3. En **Nombre**, escriba un nombre descriptivo para el nuevo perfil. En este ejemplo, escriba **iOS necesita correo electrónico de trabajo**.
-4. Escriba esta información de perfil:
-   - Para **Descripción**, escriba **Requiere que los dispositivos iOS usen correo electrónico del trabajo**.
-   - Para **Plataforma**, seleccione **iOS**.
-   - Para **Tipo de perfil**, seleccione **Correo electrónico**.
-    
-     ![Crear un perfil de correo electrónico para usarlo en iOS](./media/quickstart-email-profile/ios-email-profile-name.png)
+2. En **Nombre**, escriba un nombre descriptivo para el nuevo perfil. En este ejemplo, escriba **iOS necesita correo electrónico de trabajo**.
+3. Escriba esta información de perfil:
+    - Para **Descripción**, escriba **Requiere que los dispositivos iOS usen correo electrónico del trabajo**.
+    - Para **Plataforma**, seleccione **iOS**.
+    - Para **Tipo de perfil**, seleccione **Correo electrónico**.
 
-5. Seleccione **Configuración** y configure estos valores (deje los demás valores predeterminados):
+        ![Crear un perfil de correo electrónico para usarlo en iOS](./media/quickstart-email-profile/ios-email-profile-name.png)
+
+4. Seleccione **Configuración** y configure estos valores (deje los demás valores predeterminados):
    - **Servidor de correo electrónico**: para este inicio rápido, escriba **outlook.office365.com**. Esta configuración especifica la ubicación de Exchange (URL) del servidor de correo electrónico que usará la aplicación de correo electrónico de iOS para conectarse al correo electrónico.
    - **Nombre de la cuenta**: Escriba el **Correo electrónico de la empresa**.
    - **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (Azure AD). Intune usa este nombre para generar dinámicamente el nombre de usuario para este perfil. Para este inicio rápido, suponemos que queremos que **Nombre principal de usuario** se use como nombre de usuario para el perfil (por ejemplo, user1@contoso.com).
    - **Atributo de dirección de correo electrónico de AAD**: esta configuración es la dirección de correo electrónico de Azure AD que se usará para iniciar sesión en Exchange. Para este inicio rápido, seleccione **Nombre principal de usuario**.
    - **Método de autenticación**: para este inicio rápido, seleccione **Nombre de usuario y contraseña**. (También puede elegir **Certificado** si ya ha configurado un certificado para Intune.)
-    
-     ![Crear un perfil de correo electrónico para usarlo en iOS](./media/quickstart-email-profile/ios-email-profile.png)
 
-6. Seleccione **Aceptar**.
-7. Seleccione **Crear**. El nuevo perfil aparece en la lista de perfiles con el panel mostrado para que pueda supervisar cómo se asignó el perfil a los dispositivos iOS y los usuarios de iOS.
-8. Seleccione **Asignaciones**.
-9. Seleccione la pestaña **Incluir** y, luego, seleccione **Todos los usuarios y dispositivos**. 
-10. Seleccione **Guardar**.
+        ![Crear un perfil de correo electrónico para usarlo en iOS](./media/quickstart-email-profile/ios-email-profile.png)
+
+5. Haga clic en **Aceptar** > **Crear**. El nuevo perfil aparece en la lista de perfiles con el panel mostrado para que pueda supervisar cómo se asignó el perfil a los dispositivos iOS y los usuarios de iOS.
+6. Seleccione **Asignaciones**.
+7. Seleccione la pestaña **Incluir** y, luego, seleccione **Todos los usuarios y dispositivos**. 
+8. Seleccione **Guardar**.
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
+
 Si no piensa usar el perfil que creó para otros tutoriales o pruebas, puede eliminarlo ahora.
+
 1. En Intune, seleccione **Configuración del dispositivo** y **Perfiles**.
 2. Seleccione el perfil de prueba que creó, **iOS necesita correo electrónico de trabajo**.
 3. Seleccione los puntos suspensivos ( **...** ) junto al perfil y elija **Eliminar**.

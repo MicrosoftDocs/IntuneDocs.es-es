@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83a9467065bb5c1d1cde2035df936541bb804ddc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503086"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709704"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Uso de las características de inscripción de dispositivos corporativos de Apple en Apple Business Manager (ABM) para inscribir dispositivos iOS en Intune
 Las características de inscripción de dispositivos de Apple Business Manager simplifican la inscripción de dispositivos. Intune también admite el antiguo portal Programa de inscripción de dispositivos (DEP) de Apple, pero se recomienda empezar desde cero con Apple Business Manager. Con Microsoft Intune y la inscripción de dispositivos corporativos de Apple, los dispositivos se inscriben de forma automática y segura la primera vez que el usuario activa el dispositivo. Por tanto, puede proporcionar dispositivos a muchos usuarios sin tener que configurar cada uno de forma individual. 
@@ -44,7 +44,7 @@ Antes de inscribir dispositivos iOS con las características de inscripción cor
 
 Para crear un token de inscripción de dispositivos se usa el portal de ABM o DEP. Los portales también se usan para asignar dispositivos a Intune para la administración.
 
-1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > **Agregar**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > **Agregar**.
 
 2. Conceda a Microsoft permiso para enviar información de usuario y dispositivo a Apple al seleccionar **Acepto**.
 
@@ -80,7 +80,7 @@ Para crear un token de inscripción de dispositivos se usa el portal de ABM o DE
 ## <a name="create-an-apple-enrollment-profile"></a>Creación de un perfil de inscripción de Apple
 Ahora que ha instalado el token, puede crear un perfil de inscripción para los dispositivos iOS de propiedad corporativa. Un perfil de inscripción de dispositivos define la configuración que se aplica a un grupo de dispositivos durante la inscripción.
 
-1. En Intune en Azure Portal, elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**.
 
 2. Haga clic en el token que acaba de instalar y seleccione **Perfiles** > **Crear perfil**.
 
@@ -118,13 +118,13 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para los 
 
 Después de configurar un token del programa de inscripción con el portal de ABM, ASM o DEP, y asignar los dispositivos al servidor MDM, puede esperar a que se sincronicen con el servicio de Intune, o bien insertar manualmente una sincronización. Sin una sincronización manual, los dispositivos pueden tardar hasta 24 horas en aparecer en Azure Portal.
 
-1. En Intune en Azure Portal, seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > Elija un token de la lista > **Dispositivos** > **Sincronizar**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**, elija un token de la lista y seleccione **Dispositivos** > **Sincronizar**.
 
 ## <a name="assign-an-enrollment-profile-to-ios-devices"></a>Asignar un perfil de inscripción a los dispositivos iOS
 
 Debe asignar un perfil del Programa de inscripción a los dispositivos para poder inscribirlos. Estos dispositivos se sincronizan con Intune desde Apple y se les debe asignar el token de servidor MDM correcto en el portal de ABM, ASM o DEP.
 
-1. En Intune en Azure Portal, seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > Elija el token de la lista.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** y elija un token de la lista.
 2. Elija **Dispositivos** > Elija los dispositivos de la lista > **Asignar perfil**.
 3. En **Asignar perfil**, elija un perfil para los dispositivos y seleccione **Asignar**.
 

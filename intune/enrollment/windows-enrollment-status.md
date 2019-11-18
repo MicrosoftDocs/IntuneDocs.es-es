@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143177"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709323"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configuración de una página de estado de inscripción
  
@@ -64,14 +64,14 @@ También puede establecer el orden de prioridad de cada perfil para tener en cue
 
 Para activar la página de estado de la inscripción, siga estos pasos.
  
-1. En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
 2. En la hoja **Página de estado de inscripción**, elija **Predeterminado** > **Configuración**.
 3. Para **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil), elija **Sí**.
 4. Elija las demás opciones de configuración que desee activar y seleccione **Guardar**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Creación de un perfil de la página de estado de la inscripción y asignación a un grupo
 
-1. En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción** > **Crear perfil**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción** > **Crear perfil**.
 2. Proporcione un **Nombre** y una **Descripción**.
 3. Elija **Crear**.
 4. Elija el nuevo perfil en la lista **Página de estado de inscripción**.
@@ -82,7 +82,7 @@ Para activar la página de estado de la inscripción, siga estos pasos.
 
 Un usuario puede estar en muchos grupos y tener muchos perfiles de página de estado de la inscripción. Para resolver estos conflictos, puede establecer las prioridades de cada perfil. Durante la inscripción, si alguien tiene más de un perfil de página de estado de la inscripción, solo se aplica el perfil de prioridad más alta al dispositivo de inscripción.
 
-1. En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
 2. Mantenga el mouse sobre el perfil en la lista.
 3. Use los tres puntos verticales para arrastrar el perfil a la posición que quiera en la lista.
 
@@ -90,7 +90,7 @@ Un usuario puede estar en muchos grupos y tener muchos perfiles de página de es
 
 Puede especificar qué aplicaciones deben estar instaladas antes de que el usuario pueda acceder al escritorio.
 
-1. En Intune, elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
 2. Elija un perfil > **Configuración**.
 3. Elija **Sí** en **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil).
 4. Elija **Sí** en **Block device use until all apps and profiles are installed** (Bloquear dispositivo hasta que todas estas aplicaciones y perfiles estén instalados).

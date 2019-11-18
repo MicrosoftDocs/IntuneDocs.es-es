@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 645cb2c920d3da56bb0267073c1951d0b72d73de
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3a62a048ebb15bac620ad9aad57ed3903e9568cf
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505646"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712974"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configuración de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -48,7 +48,7 @@ Antes de poder inscribir dispositivos iOS corporativos en Apple School Manager, 
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>Paso 1. Descargue el certificado de clave pública de Intune necesario para crear un token de Apple
 
-1. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > **Agregar**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > **Agregar**.
 
    ![Obtenga un token del programa de inscripción.](./media/apple-school-manager-set-up-ios/image01.png)
 
@@ -71,7 +71,7 @@ Antes de poder inscribir dispositivos iOS corporativos en Apple School Manager, 
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3: Guarde el identificador de Apple usado para crear este token
 
-En Intune en Azure Portal, proporcione el id. de Apple para futuras referencias.
+En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), proporcione el identificador de Apple como referencia futura.
 
 ![Captura de pantalla sobre cómo especificar el identificador de Apple que se ha usado para crear y buscar el token del Programa de inscripción.](./media/apple-school-manager-set-up-ios/image03.png)
 
@@ -81,7 +81,7 @@ En el cuadro **Token de Apple**, vaya al archivo de certificado (.pem), seleccio
 ## <a name="create-an-apple-enrollment-profile"></a>Creación de un perfil de inscripción de Apple
 Ahora que ha instalado el token, puede crear un perfil de inscripción para dispositivos de Apple School. Un perfil de inscripción de dispositivos define la configuración que se aplica a un grupo de dispositivos durante la inscripción.
 
-1. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**.
 2. Seleccione un token, elija **Perfiles** y después **Crear perfil**.
 
 3. En **Crear perfil**, escriba un **nombre** y una **descripción** para el perfil con fines administrativos. Los usuarios no ven estos detalles. Puede usar este campo de **nombre** para crear un grupo dinámico en Azure Active Directory. Use el nombre de perfil para definir el parámetro enrollmentProfileName para asignar dispositivos con este perfil de inscripción. Obtenga más información sobre los [grupos dinámicos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices).
@@ -155,7 +155,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 ## <a name="connect-school-data-sync"></a>Conectar con School Data Sync
 (Opcional) Apple School Manager admite la sincronización de datos de lista de clase con Azure Active Directory (AD) mediante Microsoft School Data Sync (SDS). Solo puede sincronizar un token con SDS. Si configura otro token con School Data Sync, SDS se quitará del token que lo tenía anteriormente. Una nueva conexión reemplazará el token actual. Complete los pasos siguientes para usar SDS para sincronizar los datos educativos.
 
-1. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**.
 2. Seleccione un token de Apple School Manager y elija **School Data Sync**.
 3. En **School Data Sync**, elija **Permitir**. Esta configuración permite a Intune conectarse con SDS en Office 365.
 4. Para habilitar una conexión entre Apple School Manager y Azure AD, elija **Configurar Microsoft School Data Sync**. Obtenga más información sobre [cómo configurar School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
@@ -165,7 +165,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 
 Una vez que se ha concedido permiso a Intune para administrar los dispositivos de Apple School Manager, sincronice Intune con el servicio de Apple para ver los dispositivos administrados en Intune.
 
-En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > Elija un token de la lista > **Dispositivos** > **Sincronizar**. ![Captura de pantalla del nodo Dispositivos del Programa de inscripción seleccionado y el vínculo Sincronizar.](./media/apple-school-manager-set-up-ios/image06.png)
+En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**, elija un token de la lista y seleccione **Dispositivos** > **Sincronizar**. ![Captura de pantalla del nodo Dispositivos del Programa de inscripción seleccionado y el vínculo Sincronizar.](./media/apple-school-manager-set-up-ios/image06.png)
 
 Para cumplir con los términos de Apple relativos a un tráfico del programa de inscripción aceptable, Intune impone las restricciones siguientes:
 - Una sincronización completa no se puede ejecutar más de una vez cada siete días. Durante una sincronización completa, Intune actualiza todos los números de serie de Apple asignados a Intune. Si se intenta efectuar una sincronización completa sin que hayan pasado siete días desde la última sincronización completa, Intune solo actualizará los números de serie que aún no aparezcan en Intune.
@@ -178,7 +178,7 @@ Para cumplir con los términos de Apple relativos a un tráfico del programa de 
 ## <a name="assign-a-profile-to-devices"></a>Asignar un perfil a los dispositivos
 Los dispositivos de Apple School Manager administrados por Intune deben tener un perfil de inscripción asignado antes de la inscripción.
 
-1. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > Elija un token de la lista.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** y elija un token de la lista.
 2. Elija **Dispositivos** > Elija los dispositivos de la lista > **Asignar perfil**.
 3. En **Asignar perfil**, elija un perfil para los dispositivos y después seleccione **Asignar**.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492867"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755198"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Agregar la configuración de correo electrónico a dispositivos que usan Intune
 
@@ -39,8 +39,8 @@ En este artículo se explica cómo crear un perfil de correo electrónico en Mic
 
 ## <a name="create-a-device-profile"></a>Creación del perfil de un dispositivo
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Configuración de correo electrónico para todos los dispositivos Windows**.
@@ -71,7 +71,7 @@ Después de escribir la configuración y crear el perfil, el perfil se muestra e
 
 Los perfiles de correo electrónico se asignan a grupos de dispositivos, no a grupos de usuarios. Hay varias maneras de eliminar un perfil de correo electrónico de un dispositivo, incluso cuando hay un solo perfil de este tipo en el dispositivo:
 
-- **Opción 1**: abra el perfil de correo electrónico (**Configuración del dispositivo** > **Perfiles**) y seleccione **Asignaciones**. En la pestaña **Incluir** se muestran los grupos que están asignados al perfil. Haga clic con el botón derecho en el grupo > **Quitar**. Asegúrese de **Guardar** los cambios.
+- **Opción 1**: abra el perfil de correo electrónico (**Dispositivos** > **Perfiles de configuración**, seleccione su perfil y elija **Asignaciones**. En la pestaña **Incluir** se muestran los grupos que están asignados al perfil. Haga clic con el botón derecho en el grupo > **Quitar**. Asegúrese de **Guardar** los cambios.
 
 - **Opción 2**: [borre o retire el dispositivo](../remote-actions/devices-wipe.md). Puede usar estas acciones para quitar datos y configuraciones de forma selectiva o por completo.
 
@@ -103,4 +103,4 @@ Si hace cambios en el perfil de correo electrónico que asignó anteriormente, p
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Se crea el perfil, pero todavía no hace nada. A continuación, [asigne el perfil a algunos dispositivos](../device-profile-assign.md).
+Se crea el perfil, pero todavía no hace nada. Después, [asigne el perfil](../device-profile-assign.md).

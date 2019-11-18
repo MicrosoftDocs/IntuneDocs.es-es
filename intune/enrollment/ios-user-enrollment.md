@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f201cdac0f881ce03863704dd80d8635de52074a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e538204306ce80d6a13739fc981edf2748a622de
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505465"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713457"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configuración de la inscripción de usuarios de iOS y iPadOS (versión preliminar)
 
@@ -43,7 +43,7 @@ Para obtener más información acerca de las opciones disponibles con la inscrip
 
 Un perfil de inscripción define la configuración que se aplica a un grupo de dispositivos durante la inscripción. 
 
-1. En el portal de Intune, elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tipos de inscripción (versión preliminar)**  > **Crear perfil** > **iOS**. En este perfil se indicará la experiencia de inscripción que tendrán los usuarios finales de iOS y iPadOS en los dispositivos no inscritos a través de un método corporativo de Apple. Si desea realizar cambios, puede editar este perfil después de haberlo creado.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tipos de inscripción (vista previa)**  > **Crear perfil** > **iOS**. En este perfil se indicará la experiencia de inscripción que tendrán los usuarios finales de iOS y iPadOS en los dispositivos no inscritos a través de un método corporativo de Apple. Si desea realizar cambios, puede editar este perfil después de haberlo creado.
 
     ![Creación de un perfil de inscripción de Apple](./media/ios-user-enrollment/create-profile.png)
 
@@ -88,7 +88,7 @@ Un perfil de inscripción define la configuración que se aplica a un grupo de d
 
 Después de crear más de un perfil de tipo de inscripción, puede cambiar el orden de prioridad en el que se aplican.
 
-1. En Intune en Azure Portal, elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tipos de inscripción (versión preliminar)** .
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tipos de inscripción (vista previa)** .
 2. Arrastre y coloque los perfiles en la lista en el orden en el que desea que se apliquen.
 
 En caso de que se produzcan conflictos entre los perfiles de cualquier usuario, se aplicará el perfil de mayor prioridad para el usuario.

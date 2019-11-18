@@ -1,7 +1,7 @@
 ---
 title: Excepciones de la directiva de transferencia de datos para aplicaciones
 titleSuffix: Microsoft Intune
-description: Cree excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune.
+description: Cree excepciones a la directiva de transferencia de datos de la directiva de Intune App Protection (APP).
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813332"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984074"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Cómo crear excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Creación de excepciones a la directiva de transferencia de datos de la directiva de Intune App Protection (APP)
 
-Como administrador, puede crear excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune. Una excepción le permite elegir de manera específica qué aplicaciones no administradas pueden transferir datos hacia y desde aplicaciones administradas. El departamento de TI debe confiar en las aplicaciones no administradas que incluya en la lista de excepciones. 
+Como administrador, puede crear excepciones a la directiva de transferencia de datos de la directiva de Intune App Protection (APP). Una excepción le permite elegir de manera específica qué aplicaciones no administradas pueden transferir datos hacia y desde aplicaciones administradas. El departamento de TI debe confiar en las aplicaciones no administradas que incluya en la lista de excepciones. 
 
 >[!WARNING] 
 > Usted es el responsable de realizar cambios en la directiva de excepciones de transferencia de datos. Las adiciones a esta directiva permiten que las aplicaciones no administradas (aplicaciones que no administra Intune) accedan a datos protegidos por las aplicaciones administradas. Este acceso a datos protegidos puede dar lugar a pérdidas de seguridad de datos. Agregue excepciones de transferencia de datos únicamente a las aplicaciones que su organización deba usar, pero que no admitan APP (directivas de protección de aplicaciones) de Intune. Además, agregue solo excepciones a las aplicaciones que no considere que sean riesgos de pérdida de datos.
@@ -65,6 +65,8 @@ Si agrega el paquete **Webex** como una excepción a la directiva de transferenc
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Ejemplo de **Instalador del certificado** de Android: Para excluir la aplicación nativa **Instalador del certificado** de modo que Outlook para Android pueda instalar un certificado S/MIME (entregado como datos adjuntos de correo electrónico) en el almacén de claves Android, debe agregar la excepción de transferencia de datos para la cadena siguiente: <code>com.android.certinstaller</code>. Para más información, consulte [Etiquetado de sensibilidad y protección en Outlook para iOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

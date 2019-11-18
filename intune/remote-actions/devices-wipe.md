@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508572"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712194"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -53,7 +53,7 @@ Un borrado es útil para restablecer un dispositivo antes de dárselo a otro usu
 
 ### <a name="wiping-a-device"></a>Borrado de un dispositivo
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Dispositivos** > **Todos los dispositivos**.
 4. Seleccione el nombre del dispositivo que quiere borrar.
 5. En el panel en el que se muestra el nombre del dispositivo, haga clic en **Borrar**.
@@ -146,7 +146,7 @@ Solo se pueden borrar dispositivos de quiosco. Los dispositivos de quiosco de An
 
 ### <a name="retire"></a>Retirar
 
-1. Inicie sesión en [Intune en Azure Portal](https://aka.ms/intuneportal).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. En el panel **Dispositivos**, seleccione **Todos los dispositivos**.
 3. Seleccione el nombre del dispositivo que quiere retirar.
 4. En el panel en el que se muestra el nombre del dispositivo, haga clic en **Retirar**. Para confirmar, seleccione **Sí**.
@@ -157,12 +157,12 @@ Si el dispositivo está encendido y conectado, la acción **Retirar** se propaga
 
 Si quiere quitar dispositivos del portal de Intune, puede eliminarlos desde el panel de dispositivos específico. La próxima vez que el dispositivo se registra, se quitan los datos de la compañía que contiene.
 
-1. Inicie sesión en [Intune en Azure Portal](https://aka.ms/intuneportal).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Elija **Dispositivos** > **Todos los dispositivos** > elija los dispositivos que quiere eliminar > **Eliminar**.
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>Eliminar dispositivos automáticamente con reglas de limpieza
 Puede configurar Intune para eliminar automáticamente los dispositivos que parecen estar inactivos, obsoletos o que no responden. Estas reglas de limpieza supervisan constantemente el inventario de dispositivos para que los registros de dispositivos se mantengan al día. Los dispositivos eliminados de esta forma se quitan de la administración de Intune.
-1. Inicie sesión en [Intune en Azure Portal](https://aka.ms/intuneportal).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Elija **Dispositivos** > **Reglas de limpieza de dispositivos** > **Sí**.
 3. En el cuadro **Eliminar los dispositivos que no se hayan registrado durante el siguiente número de días**, escriba un número entre 30 y 270.
 4. Elija **Guardar**.
@@ -185,7 +185,7 @@ Es posible que deba eliminar dispositivos de Azure AD si se producen problemas d
 
 Si quiere quitar completamente un dispositivo DEP de Apple de la administración mediante Intune, siga estos pasos:
 
-1. Inicie sesión en [Intune en Azure Portal](https://aka.ms/intuneportal).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Elija **Dispositivos** > **Todos los dispositivos** > elija el dispositivo > **Retirar**.
 ![Captura de pantalla de Retirar](./media/devices-wipe/retire.png)
 3. Visite [deploy.apple.com](http://deploy.apple.com) y busque el dispositivo por su número de serie.

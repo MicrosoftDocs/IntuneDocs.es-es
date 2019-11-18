@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509273"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713495"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos en Microsoft Intune
 
@@ -64,9 +64,9 @@ Los siguientes problemas pueden producirse en cualquiera de las plataformas de d
 
 Compruebe que el usuario no tiene asignados más del número máximo de dispositivos con estos pasos:
 
-1. En Intune, elija **Inscripción de dispositivos** > **Restricciones de inscripción** > **Restricciones de límite de dispositivos**. Anote el valor de la columna **Límite de dispositivos**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Restricciones de inscripción** > **Restricciones de límite de dispositivos**. Anote el valor de la columna **Límite de dispositivos**.
 
-2. En Intune, elija **Usuarios** > **Todos los usuarios** > seleccione el usuario > **Dispositivos**. Anote el número de dispositivos.
+2. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Usuarios** > **Todos los usuarios**, seleccione el usuario y haga clic en **Dispositivos**. Anote el número de dispositivos.
 
 3. Si el número de dispositivos inscritos del usuario ya es igual a la restricción de límite de dispositivos, no se pueden inscribir más hasta que:
     - [Se quiten dispositivos existentes](../remote-actions/devices-wipe.md), o

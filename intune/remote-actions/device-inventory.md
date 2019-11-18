@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509494"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713198"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -33,7 +33,7 @@ En este artículo se explica cómo se pueden ver todos los dispositivos y sus pr
 
 ## <a name="view-the-device-details"></a>Ver los detalles del dispositivo
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Dispositivos** > **Todos los dispositivos** > seleccione uno de los dispositivos que aparecen para que se muestren los detalles correspondientes:
 
    - En **Información general** se indica el nombre del dispositivo y algunas propiedades clave del dispositivo., como, por ejemplo, si se trata de un dispositivo Bring Your Own Device (BYOD), hora de entrada, etc. Puede realizar lo siguiente en el dispositivo:

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 50b91251572e45669f197df7ac4e5ff94caf47a1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892628"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755338"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -41,8 +41,8 @@ Asegúrese de que tiene el rol adecuado para asignar directivas. Para más infor
 
 ## <a name="assign-a-device-profile"></a>Asignar un perfil de dispositivo
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles**. Se muestran todos los perfiles.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Perfiles de configuración**. Se muestran todos los perfiles.
 3. Seleccione el perfil que quiere asignar > **Asignaciones**.
 4. Elija **Incluir** grupos o **Excluir** grupos y, luego, seleccione los grupos. Al seleccionar los grupos, se elige un grupo de Azure AD. Para seleccionar varios grupos, mantenga presionada la tecla **Ctrl** y seleccione los grupos.
 
@@ -54,7 +54,7 @@ Asegúrese de que tiene el rol adecuado para asignar directivas. Para más infor
 
 Cuando asigna el perfil, también puede **evaluar** cuántos usuarios se verán afectados. Esta característica calcula los usuarios, no los dispositivos.
 
-1. En Intune, seleccione **Configuración del dispositivo** > **Perfiles**.
+1. En el Centro de administración, seleccione **Dispositivos** > **Perfiles de configuración**.
 2. Seleccione un perfil > **Asignaciones** > **Evaluar**. Un mensaje muestra a cuántos usuarios se aplica este perfil.
 
 Si el botón **Evaluar** está atenuado, asegúrese de que el perfil se asignó a uno o más grupos.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492357"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755169"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Configuración de dispositivos con Windows 10 y Windows Holographic for Business para ejecutarse como una pantalla completa dedicada con Intune
 
@@ -39,8 +39,8 @@ En este artículo se muestra cómo crear un perfil de configuración de disposit
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
@@ -60,7 +60,7 @@ En este artículo se muestra cómo crear un perfil de configuración de disposit
       - [Configuración de pantalla completa en Windows 10](kiosk-settings-windows.md)
       - [Configuración de pantalla completa en Windows Holographic for Business](kiosk-settings-holographic.md)
 
-5. Cuando haya terminado, seleccione **Aceptar** > **Crear** para guardar los cambios. 
+5. Cuando haya terminado, seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 El perfil se crea y se muestra en la lista de perfiles. Después, [asigne](device-profile-assign.md) el perfil.
 

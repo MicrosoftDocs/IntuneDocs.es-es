@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057526"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712233"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Habilitar el modo perdido en dispositivos iOS con Intune
 
@@ -41,7 +41,7 @@ Esta característica no se admite en los siguientes sistemas operativos:
 
 ## <a name="enable-lost-mode"></a>Habilitar el modo perdido
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
 4. En la lista de dispositivos que administra, elija un dispositivo iOS y luego elija **Modo Perdido (solo supervisado)** .
 5. En **Modo Perdido**, seleccione **Habilitar**.

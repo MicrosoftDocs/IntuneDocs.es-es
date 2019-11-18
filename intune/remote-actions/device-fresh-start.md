@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff1dc2565ef52f81619abe8f14e78c58da0fce7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 294f06b078b06cfba9376ba6db0eb42cb884e141
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508623"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712323"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Uso de Empezar de cero para restablecer dispositivos Windows 10 con Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72508623"
 
 La acción de dispositivo **Comienzo de cero** quita las aplicaciones que están instaladas en un equipo que ejecuta Windows 10, versión 1703 o posterior. Comienzo de cero ayuda a eliminar las aplicaciones preinstaladas (OEM) que normalmente se instalan con un nuevo equipo. 
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com) y vaya a > **Microsoft Intune** > **Dispositivos** > **Todos los dispositivos**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Dispositivos** > **Todos los dispositivos**.
 2. En la lista de dispositivos que administra, elija un dispositivo de escritorio de Windows 10.
 3. Haga clic en **Comienzo de cero**. 
 4. Seleccione **Conservar los datos de usuario en este dispositivo** para:

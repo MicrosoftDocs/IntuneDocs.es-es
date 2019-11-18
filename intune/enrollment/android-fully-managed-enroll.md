@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 44e757be5f109b81772daa6ff59505ccc0f033f8
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505595"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709431"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Configuración de la inscripción en Intune de dispositivos Android Enterprise totalmente administrados 
 
@@ -56,7 +56,7 @@ Para configurar la administración de dispositivos Android Enterprise totalmente
 
 ### <a name="enable-corporate-owned-user-devices"></a>Permitir dispositivos de usuario de propiedad corporativa
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y elija **Inscripción de dispositivos** > **Inscripción de Android** > **Corporate-owned, fully managed user devices** (Dispositivos de usuario totalmente administrados de propiedad corporativa).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y elija **inscripción de dispositivos** > **Inscripción de Android** > **Dispositivos de usuario totalmente administrados de propiedad corporativa**.
 2. En **Allow users to enroll corporate-owned user devices** (Permitir a los usuarios inscribir dispositivos de usuario de propiedad corporativa), elija **Sí**.
 
 > [!NOTE]

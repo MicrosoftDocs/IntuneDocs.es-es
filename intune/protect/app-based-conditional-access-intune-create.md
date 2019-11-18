@@ -1,57 +1,70 @@
 ---
-title: Configuración de una directiva de acceso condicional basado en aplicación con Intune
+title: Configuración de una directiva de acceso condicional basada en la aplicación con Intune
 titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo crear una directiva de acceso condicional basado en la aplicación con Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94e9fcc77f8260c4a63150b5d0aef033677c524a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 465f8b0001e5e2a049a3ffe12469bdb5057854ec
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509679"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712832"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configuración de directivas de acceso condicional basado en la aplicación con Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
 Configure directivas de acceso condicional basado en la aplicación para aplicaciones que forman parte de la lista de aplicaciones aprobadas. La lista de aplicaciones aprobadas consta de aplicaciones que Microsoft ha probado.
+
+Antes de usar directivas de acceso condicional basadas en la aplicación, debe haber aplicado [directivas de protección de aplicaciones de Intune](../apps/app-protection-policies.md) a las aplicaciones.
 
 > [!IMPORTANT]
 > En este artículo se describen los pasos necesarios para agregar una directiva de acceso condicional basado en la aplicación. Puede usar los mismos pasos al agregar aplicaciones como SharePoint Online, Microsoft Teams y Microsoft Exchange Online desde la lista de aplicaciones aprobadas.
 
 ## <a name="create-app-based-conditional-access-policies"></a>Creación de directivas de acceso condicional basado en la aplicación
-Acceso condicional es una tecnología de Azure Active Directory (Azure AD). El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*. Esto significa que no es necesario cambiar entre Intune y Azure AD para configurar las directivas.
 
-> [!IMPORTANT]
-> Para crear directivas de acceso condicional desde el portal de Intune, debe disponer de una licencia de Azure AD Premium.
+Acceso condicional es una tecnología de Azure Active Directory (Azure AD). El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*. Por lo tanto, no es necesario cambiar entre Intune y Azure AD para configurar las directivas.
+
+Para poder crear directivas de acceso condicional desde el Centro de administración del Administrador de puntos de conexión de Microsoft, debe tener una licencia de Azure AD Premium.
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>Para crear una directiva de acceso condicional basado en la aplicación
 
-> [!IMPORTANT]
-> Tiene que haber aplicado [directivas de protección de aplicaciones de Intune](../apps/app-protection-policies.md) a sus aplicaciones antes de usar las directivas de acceso condicional basado en la aplicación.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. En el **panel de Intune**, seleccione **Acceso condicional**.
+2. Seleccione **Endpoint security** (Seguridad del punto de conexión)  > **Acceso condicional** > **Nueva directiva**.
 
-2. En el panel **Directivas**, elija **Nueva directiva** para crear la directiva de acceso condicional basado en la aplicación.
+3. En **Nombre**, escriba un nombre de directiva y, en *Asignaciones*, seleccione **Usuarios y grupos**. Utilice las opciones Incluir o Excluir para agregar los grupos para la directiva y seleccione **Listo**.
 
-4. Tras escribir un nombre de directiva y configurar las opciones disponibles en la sección **Asignaciones**, elija **Conceder** en **Controles de acceso**.
+4. Seleccione **Aplicaciones en la nube o acciones** y elija las aplicaciones que quiere proteger. Por ejemplo, elija **Seleccionar aplicaciones** y seleccione **Office 365 SharePoint Online** y **Office 365 Exchange Online**.
 
-5. Elija **Requerir aplicación cliente aprobada**, **Seleccionar** y **Crear** para guardar la directiva nueva.
+   Haga clic en **Listo** para guardar los cambios.
+
+5. Seleccione **Condiciones** > **Aplicaciones cliente** para aplicar la directiva a las aplicaciones y los exploradores. Por ejemplo, seleccione **Sí** y habilite **Explorador** y **Aplicaciones móviles y aplicaciones de escritorio**.
+
+   Haga clic en **Listo** para guardar los cambios.
+
+6. En *Controles de acceso*, seleccione **Conceder** para aplicar el acceso condicional según el cumplimiento del dispositivo. Por ejemplo, seleccione **Conceder acceso** > **requieren que el dispositivo se marquen como compatibles**.
+
+   Elija **Seleccionar** para guardar los cambios.
+
+7. En **Habilitar directiva**, seleccione **Activar** y, luego, seleccione **Crear** para guardar los cambios.
+
+
+
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Bloqueo de aplicaciones que no usan la autenticación moderna](app-modern-authentication-block.md)

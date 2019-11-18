@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 7d94a2c7e47b3cfcc9f4592faf0a4c2a09a24ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 908319c588fe2a1bf55a376d3f02a03db780a3ad
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495247"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755408"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configuración de la opción Optimización de distribución en Microsoft Intune
 
@@ -32,27 +32,25 @@ Para obtener una lista de las opciones de configuración de Optimización de dis
 
 Para obtener más información sobre la opción Optimización de distribución en Windows 10, consulte [Actualizaciones de optimización de Windows 10 de distribución](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) en la documentación de Windows.  
 
-
 > [!NOTE]
-> **Actualizaciones de software: los círculos de actualizaciones de Windows 10** los reemplaza la configuración **Optimización de distribución**. Los círculos de actualizaciones existentes se pueden cambiar para usar la configuración **Optimización de distribución**. [Traslado de los anillos de actualizaciones existentes a la optimización de distribución](#move-existing-update-rings-to-delivery-optimization) (en este artículo) 
+> **Actualizaciones de software: los círculos de actualizaciones de Windows 10** los reemplaza la configuración **Optimización de distribución**. Los círculos de actualizaciones existentes se pueden cambiar para usar la configuración **Optimización de distribución**. [Traslado de los anillos de actualizaciones existentes a la optimización de distribución](#move-existing-update-rings-to-delivery-optimization) (en este artículo)
+
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
 3. Escriba las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
     - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
-    - **Plataforma**: seleccione la plataforma:  
-
-        - **Windows 10 y versiones posteriores**
-
+    - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
     - **Tipo de perfil**: seleccione **Optimización de distribución**.
-    - **Configuración**: configure los valores que definen cómo quiere que se descarguen las actualizaciones y aplicaciones. Para obtener más información sobre las opciones de configuración disponibles, consulte [Delivery optimization settings for Intune](../delivery-optimization-settings.md) (Configuración de la opción Optimización de distribución de Intune).
 
-4. Cuando termine, seleccione **Aceptar** > **Crear** para guardar los cambios.
+4. Elija **Configuración** > **Configurar** y defina cómo quiere que se descarguen las actualizaciones y las aplicaciones. Para obtener más información sobre las opciones de configuración disponibles, consulte [Delivery optimization settings for Intune](../delivery-optimization-settings.md) (Configuración de la opción Optimización de distribución de Intune).
+
+5. Cuando termine, seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 El perfil se crea y se muestra en la lista. Después, [asigne el perfil](device-profile-assign.md) y [supervise su estado](device-profile-monitor.md).
 
@@ -62,7 +60,7 @@ La configuración **Optimización de distribución** reemplaza las **actualizaci
 
 1. Cree un perfil de configuración de optimización de distribución:
 
-    1. En Intune, seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+    1. En el Centro de administración del Administrador de puntos de conexión de Microsoft, seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
     2. Escriba las propiedades siguientes:
 
         - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
@@ -78,10 +76,11 @@ La configuración **Optimización de distribución** reemplaza las **actualizaci
             - **Modo de descarga sencillo sin emparejamiento**
             - **Modo de omisión**
     3. Configure las opciones adicionales que pueda querer administrar.
-1. Asigne este perfil nuevo a los mismos dispositivos y usuarios que el círculo de actualizaciones de software existente. [Asignar el perfil](device-profile-assign.md) muestra los pasos.
+
+2. Asigne este perfil nuevo a los mismos dispositivos y usuarios que el círculo de actualizaciones de software existente. [Asignar el perfil](device-profile-assign.md) muestra los pasos.
 
 3. Quite la configuración del círculo de actualizaciones de software existente:
-    1. En Intune, vaya a **Actualizaciones de software** > Círculos de actualizaciones de Windows 10.
+    1. En el Centro de administración del Administrador de puntos de conexión de Microsoft, vaya a **Actualizaciones de software** > Anillos de actualización de Windows 10.
     2. En la lista, seleccione el círculo de actualizaciones.
     3. En la configuración, establezca **Modo de descarga de optimización de distribución** en **No configurado**.
     4. **Aceptar** > **Guardar** los cambios.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8dfab31d770c012acf88eb3775313634c3c14cc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7fa8fb95579d887228dc6ec8f241d157169450b7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492305"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755072"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Control del acceso, las cuentas y las características de energía en dispositivos con varios usuarios o equipos compartidos mediante Intune
 
@@ -42,8 +42,8 @@ Al crear el perfil en Intune, se implementa o asigna el perfil a grupos de dispo
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.

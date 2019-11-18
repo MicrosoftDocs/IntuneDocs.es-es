@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 002989bd61167d6f0d20e2c5cb3fa80a4051a99c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508680"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713240"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Envío de notificaciones personalizadas en Intune  
 
@@ -69,7 +69,7 @@ Los mensajes de notificación personalizados incluyen un título corto y un cuer
 
 ## <a name="send-a-custom-notification-to-groups"></a>Envío de una notificación personalizada a grupos  
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) con una cuenta que tenga permisos para crear y enviar notificaciones, y vaya a **Dispositivos** > **Enviar notificaciones personalizadas**.  
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) con una cuenta que tenga permisos para crear y enviar notificaciones, y vaya a **Dispositivos** > **Enviar notificaciones personalizadas**.  
 
 2. En la pestaña Datos básicos, especifique lo siguiente y, después, seleccione **Siguiente** para continuar.  
    - **Título**: especifique un título para esta notificación. Los títulos están limitados a 50 caracteres.  
@@ -89,7 +89,7 @@ Intune no realiza un seguimiento de las notificaciones personalizadas que envía
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Envío de una notificación personalizada a un solo dispositivo  
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) con una cuenta que tenga permisos para crear y enviar notificaciones, y vaya a **Dispositivos** > **Todos los dispositivos**.  
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) con una cuenta que tenga permisos para crear y enviar notificaciones y vaya a **Dispositivos** > **Todos los dispositivos**.  
 
 2. Seleccione el dispositivo al que desea enviar una notificación.  
 
