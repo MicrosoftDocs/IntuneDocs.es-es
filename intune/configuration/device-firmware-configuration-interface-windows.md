@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432527"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755353"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Uso de perfiles de Device Firmware Configuration Interface en dispositivos Windows en Microsoft Intune (versión preliminar pública)
 
@@ -77,8 +77,8 @@ Este perfil garantiza que los dispositivos se comprueban y se habilitan para DFC
 
 Este perfil incluye los valores de DFCI que configure.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para el nuevo perfil. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de perfil es **Windows: Configuración de valores de DFCI en dispositivos Windows**.
@@ -127,9 +127,11 @@ Este perfil incluye los valores de DFCI que configure.
 
 Una vez creados los perfiles, están [listos para asignarlos](../configuration/device-profile-assign.md). Asegúrese de asignar los perfiles a los grupos de seguridad de Azure AD que incluyan los dispositivos DFCI.
 
-La próxima vez que se sincronice el dispositivo o se reinicie, se aplicará la configuración del perfil de DFCI. Una vez que se aplique la directiva, reinicie el dispositivo.
+Cuando el dispositivo ejecuta Windows Autopilot, durante la página de estado de inscripción, DFCI puede forzar un reinicio. Este primer reinicio inscribe UEFI en Intune. 
 
-Cuando el dispositivo ejecuta el programa de instalación de dispositivos de Windows, DFCI puede forzar un reinicio durante la página de estado de inscripción. Una vez que ha finalizado la instalación, puede confirmar que la configuración de DFCI está activa si reinicia el dispositivo. Después, use las instrucciones del fabricante del dispositivo para abrir el menú de UEFI.
+Si quiere confirmar que el dispositivo está inscrito, puede reiniciar el dispositivo de nuevo, pero no es necesario. Siga las instrucciones del fabricante del dispositivo para abrir el menú de UEFI y confirme que UEFI está ahora administrado.
+
+La próxima vez que el dispositivo se sincronice con Intune, Windows recibirá la configuración de DFCI. Reinicie el dispositivo. Este tercer reinicio es necesario para que UEFI reciba la configuración de DFCI de Windows.
 
 ## <a name="update-existing-dfci-settings"></a>Actualización de la configuración existente de DFCI
 
@@ -156,7 +158,7 @@ Después de borrar el dispositivo, mueva el dispositivo al grupo asignado a los 
 
 Cuando esté listo para retirar el dispositivo y liberarlo de la administración, actualice el perfil de DFCI a la configuración de UEFI (BIOS) que quiera en el estado de salida. Normalmente, querrá habilitar todas las opciones. Por ejemplo:
 
-1. Abra el perfil de DFCI (**Configuración del dispositivo** > **Perfiles**).
+1. Abra el perfil de DFCI (**Dispositivos** > **Perfiles de configuración**).
 2. Cambie **Allow local user to change UEFI (BIOS) settings** (Permitir que el usuario local cambie la configuración de UEFI (BIOS)) a **Solo valores no configurados**.
 3. Establezca el resto de los valores en **No configurado**.
 4. Guarde la configuración.

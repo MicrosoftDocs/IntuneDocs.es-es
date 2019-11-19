@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/12/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510213"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059679"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
 
@@ -189,7 +189,7 @@ Intune puede mostrar las rutas de acceso de hasta 10 de las instancias de malwar
 4. Haga clic con el botón derecho en un encabezado de columna. Aparece una lista de las columnas disponibles. Active la casilla **Rutas de acceso de detección recientes** de la lista. La columna **Rutas de acceso de detección recientes** aparece y muestra hasta 10 de las instancias de malware supervisadas más recientemente en el dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Ejecutar un examen de malware o actualizar las definiciones de malware en un equipo
-Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint Protection o Windows Defender en un equipo administrado de forma remota que tenga instalado el cliente de Intune.
+Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint Protection o Microsoft Defender en un equipo administrado de forma remota que tenga instalado el cliente de Intune.
 
 1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), vaya a **Grupos** > **Información general** > **Todos los dispositivos** > **Todos los equipos** y seleccione el equipo de destino.
 

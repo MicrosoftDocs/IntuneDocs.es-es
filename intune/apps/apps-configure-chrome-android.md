@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635491"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801660"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Configuración de Google Chrome para dispositivos Android con Intune 
 
@@ -63,7 +63,7 @@ Para obtener más información sobre cómo agregar una aplicación de Google Pla
 
     A continuación se muestra un ejemplo con las opciones de configuración habituales:
     - **Bloquear el acceso a una lista de direcciones URL** : `["*"]`
-    - **Permitir el acceso a una lista de direcciones URL** : `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **Permitir el acceso a una lista de direcciones URL** : `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **Marcadores administrados**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Disponibilidad del modo incógnito**: `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ Para obtener más información sobre cómo agregar una aplicación de Google Pla
 
     ![Configuración común](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    La configuración anterior crea marcadores y permite el acceso a todos los sitios web, excepto `baidu.com`, `yahoo.com` y `chrome://`.
+    La configuración anterior crea marcadores y bloquea el acceso a todas las direcciones URL, excepto `baidu.com`, `yahoo.com`, `chromium.org` y `chrome://`.
 
 5. Haga clic en **Aceptar** y **Agregar** para agregar la directiva de configuración a Intune.
 6. Asigne esta directiva de configuración a un grupo de usuarios. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](~/apps/apps-deploy.md). 

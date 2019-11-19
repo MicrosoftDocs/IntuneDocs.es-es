@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754962"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059269"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solución de problemas de directivas y perfiles en Intune
 
@@ -103,7 +103,7 @@ Compruebe el [Estado del inquilino](../fundamentals/tenant-status.md) y confirme
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>No está seguro de si se ha aplicado correctamente un perfil
 
-1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Dispositivos** > **Todos los dispositivos** > seleccione el dispositivo > **Configuración del dispositivo**. 
 
     Todos los dispositivos enumeran sus perfiles. Cada perfil tiene un **estado**. El estado se aplica cuando todos los perfiles asignados, incluidos los requisitos y las restricciones de hardware y del sistema operativo, se consideran de forma conjunta. Entre los estados posibles se incluyen los siguientes:

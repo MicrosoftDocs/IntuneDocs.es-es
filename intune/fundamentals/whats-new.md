@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635353"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882489"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -53,12 +53,20 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>Semana del 4 de noviembre de 2019
+
+### <a name="device-security"></a>Seguridad de dispositivos
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Las líneas de base de seguridad se admiten en Microsoft Azure Government<!-- 4062552 -->
+
+Las instancias de Intune que se hospedan en *Microsoft Azure Government* ahora pueden usar [líneas base de seguridad](../protect/security-baselines.md) para ayudarle a proteger sus usuarios y dispositivos.
+
 ## <a name="week-of-october-28-2019"></a>Semana del 28 de octubre de 2019
 
 ### <a name="app-management"></a>Administración de aplicaciones
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Diseño de la lista de comprobación mejorado en la aplicación Portal de empresa para Android<!-- 5550857 -->  
-La lista de comprobación de configuración de la aplicación Portal de empresa para Android se ha actualizado con un diseño ligero y nuevos iconos. Los cambios se alinean con las actualizaciones recientes realizadas en la aplicación Portal de empresa para iOS. Estamos en proceso de implementar estas actualizaciones para todos los clientes, que se espera que finalicen a finales de la semana próxima. Para una comparación en paralelo de los cambios, consulte [Novedades de la interfaz de usuario de aplicaciones](whats-new-app-ui.md). Para ver los pasos de inscripción actualizados, consulte [Inscripción con el perfil de trabajo Android](/intune-user-help/enroll-device-android-work-profile) e [Inscripción de su dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
+La lista de comprobación de configuración de la aplicación Portal de empresa para Android se ha actualizado con un diseño ligero y nuevos iconos. Los cambios se alinean con las actualizaciones recientes realizadas en la aplicación Portal de empresa para iOS. Para una comparación en paralelo de los cambios, consulte [Novedades de la interfaz de usuario de aplicaciones](whats-new-app-ui.md). Para ver los pasos de inscripción actualizados, consulte [Inscripción con el perfil de trabajo Android](/intune-user-help/enroll-device-android-work-profile) e [Inscripción de su dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Aplicaciones Win32 en dispositivos de modo Windows 10 S<!-- 3747604 --> 
 Puede instalar y ejecutar aplicaciones Win32 en dispositivos administrados en modo Windows 10 S. Para ello, puede crear una o varias directivas complementarias para el modo S mediante las herramientas de PowerShell de Control de aplicaciones de Windows Defender (WDAC). Firme las directivas complementarias con el portal de firma de Device Guard y, después, cargue y distribuya las directivas mediante Intune. En Intune, encontrará esta funcionalidad seleccionando **Aplicaciones cliente** > **Directivas complementarias de Windows 10 S**. Para más información, consulte [Habilitación de aplicaciones Win32 en modo S](~/apps/apps-win32-s-mode.md).

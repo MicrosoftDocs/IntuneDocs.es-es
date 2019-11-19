@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise incluye Microsoft Intune. Vea cómo Intune
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa7e34d19465eb43b5eb9cd68b7513545938fa8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504779"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058521"
 ---
 # <a name="device-management-overview"></a>Información general sobre la administración de dispositivos
 
@@ -84,7 +84,7 @@ Al configurar Intune, también elige si trabaja solo en el portal de Azure para 
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Simplificación de las tareas de TI mediante el centro de administración de Administración de dispositivos
 
-El [centro de administración de Administración de dispositivos](https://devicemanagement.microsoft.com/) es un punto centralizado donde se pueden administrar y completar tareas para los dispositivos móviles. Esta área de trabajo incluye los servicios usados para la administración de dispositivos, incluido Intune y Azure Active Directory, y también para administrar aplicaciones cliente.
+El [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) es un punto centralizado donde se pueden administrar y completar tareas para los dispositivos móviles. Esta área de trabajo incluye los servicios usados para la administración de dispositivos, incluido Intune y Azure Active Directory, y también para administrar aplicaciones cliente.
 
 En el centro de administración de dispositivos, puede:
 

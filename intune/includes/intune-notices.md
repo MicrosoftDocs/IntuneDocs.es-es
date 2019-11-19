@@ -7,14 +7,48 @@ ms.topic: include
 ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612166"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74125600"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune.
+
+### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Plan de cambio de Intune: fin de la compatibilidad del Portal de empresa en la versión 1703 de Windows 10<!--5026679-->
+La versión 1703 de Windows 10 (también conocida como Windows 10, RS2) se ha quedado sin servicio el 8 de octubre de 2019 para las ediciones Enterprise y EDU. Intune pondrá fin la compatibilidad con la aplicación de Portal de empresa correspondiente para RS2/RS1 a partir del 26 de diciembre de 2019.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+En adelante, no verá las nuevas características de la versión específica de la aplicación Portal de empresa, aunque seguiremos admitiendo esta versión de la aplicación Portal de empresa hasta el 26 de diciembre de 2019, incluida la provisión de las actualizaciones de seguridad a la aplicación Portal de empresa según se requiera. Sin embargo, como la versión 1703 de Windows 10 no recibirá ninguna actualización de seguridad una vez que se excluya del servicio, le recomendamos encarecidamente que actualice los dispositivos Windows a una versión más reciente de Windows y que se asegure de que tiene la aplicación Portal de empresa más reciente para que seguir recibiendo nuevas características y funcionalidad adicional.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+Los pasos que debe adoptar dependerán de cómo esté configurado el entorno. Sin embargo, en general, debe identificar los dispositivos que tienen la versión anterior del sistema operativo o el Portal de empresa instalado y actualizarlos. Para configurar los anillos de actualización de Windows 10, inicie sesión en Intune-> actualizaciones de software - Anillos de actualización de Windows 10. La versión más reciente del Portal de empresa es 10.3.5601.0. Pida a los usuarios que la adquieran en Microsoft Store para mantenerse al día con versiones futuras. También puede usar Intune para instalar la versión más reciente en los dispositivos Windows a través de [Microsoft Store para Empresas](https://docs.microsoft.com/intune/windows-store-for-business).
+
+#### <a name="additional-information"></a>Información adicional
+[Adición manual de la aplicación Portal de empresa para Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+
+
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Realizar acción: uso de Microsoft Edge para la experiencia de explorador de Intune protegida<!--5728447-->
+Como hemos venido anunciando en este último año, Microsoft Edge para dispositivos móviles admite el mismo conjunto de características de administración que Managed Browser, proporcionando al mismo tiempo una experiencia de usuario final mucho mejor. Para dar paso a las sólidas experiencias que proporciona Microsoft Edge, retiraremos Intune Managed Browser. A partir del 27 de enero de 2020, Intune ya no será compatible con Intune Managed Browser.  
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto? 
+A partir del 1 de febrero de 2020, Intune Managed Browser ya no estará disponible en Google Play Store o ni en la App Store de iOS. En este punto, aún podrá dirigir nuevas políticas de protección de aplicaciones a Intune Managed Browser, aunque los nuevos usuarios no podrán descargar la aplicación Intune Managed Browser. Además, en iOS, los nuevos clips de web que se inserten en el dispositivo inscrito en MDM se abrirán en Microsoft Edge en lugar de hacerlo en Intune Managed Browser.  
+
+El 31 de marzo de 2020, Intune Managed Browser se quitará de la consola de Azure. Esto significa que ya no podrá crear nuevas directivas para Intune Managed Browser. Las directivas de Intune Managed Browser que tenga actualmente no se verán afectadas. Intune Managed Browser se mostrará en la consola como una aplicación LOB sin icono, y las directivas existentes se seguirán dirigiendo a la aplicación. En este punto, también se quitará la opción de redirigir el contenido web a Intune Managed Browser en la sección Protección de datos de las directivas de protección de aplicaciones.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio? 
+Para garantizar una transición fluida de Intune Managed Browser a Microsoft Edge, se recomienda realizar los siguientes pasos de forma proactiva: 
+
+1. Dirija la directiva de protección de aplicaciones (también conocida como MAM) y los parámetros de configuración de la aplicación a Microsoft Edge para iOS y Android. Puede reutilizar las directivas de Intune Managed Browser para Microsoft Edge simplemente destinando tales directivas también a Microsoft Edge.  
+2. Asegúrese de que todas las aplicaciones protegidas por MAM del entorno tienen la opción de la directiva de protección de aplicaciones "Restringir la transferencia de contenido web con otras aplicaciones" establecida en "Exploradores administrados por directivas". 
+3. Diríjase a todas las aplicaciones protegidas por MAM con el parámetro de configuración "com.microsoft.intune.useEdge" establecido en true. A partir del próximo mes, con la versión 1911, podrá llevar a cabo los pasos 2 y 3 simplemente configurando la opción "Restringir la transferencia de contenido web con otras aplicaciones" de manera que tenga "Microsoft Edge" seleccionado en la sección Protección de datos de las directivas de protección de aplicaciones. 
+
+La compatibilidad con los clips de web en iOS y Android estará próximamente disponible. Cuando se publique esta versión, tendrá que cambiar el destino de los clips de web preexistentes para asegurarse de que se abren en Microsoft Edge en lugar de en Managed Browser. 
+
+#### <a name="additional-information"></a>Información adicional
+Visite nuestros documentos sobre [el uso de Microsoft Edge con directivas de protección de aplicaciones](../apps/manage-microsoft-edge.md) para obtener más información, o consulte nuestra [entrada de blog sobre soporte técnico](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
+
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Plan de cambio: Experiencia actualizada al inscribir dispositivos dedicados de Android Enterprise en Intune<!--5198878-->
 Con la versión de noviembre o 1911 de Intune, agregamos compatibilidad con la implementación de certificados de dispositivo SCEP en dispositivos Android Enterprise dedicados para permitir el acceso basado en certificados a los perfiles de Wi-Fi. Este cambio también implica algunos cambios secundarios en el flujo al inscribir dispositivos de Android Enterprise dedicados.

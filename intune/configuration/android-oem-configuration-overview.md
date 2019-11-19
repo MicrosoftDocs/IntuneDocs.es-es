@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756765"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059642"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usar y administrar dispositivos empresariales Android con OEMConfig en Microsoft Intune
 
@@ -80,8 +80,8 @@ Asegúrese de que el dispositivo es compatible con OEMConfig, que se ha agregado
 
 ## <a name="create-an-oemconfig-profile"></a>Creación de un perfil de OEMConfig
 
-1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Seleccione **dispositivos** > **perfiles de configuración** > **crear perfil**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
@@ -141,7 +141,7 @@ En comparación con las aplicaciones estándar, las aplicaciones de OEMConfig ex
 
 | OEM | Identificador de lote | Documentación de OEM (si está disponible) |
 | --- | --- | ---|
-| Samsung | com. Samsung. Android. Knox. KPU | [Guía de administración del complemento del servicio Knox](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | com. Samsung. Android. Knox. KPU | [Guía de administración del complemento del servicio Knox](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | Tecnologías Zebra | com. Zebra. oemconfig. Common | [Información general de Zebra OEMConfig](http://techdocs.zebra.com/oemconfig ) |
 | Lógica de los | com. oemconfig | [Documentación de usuario para OEMConfig de la lógica de los usuarios](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |
