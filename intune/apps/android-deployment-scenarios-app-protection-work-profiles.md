@@ -2,8 +2,8 @@
 title: Directivas de protección de aplicaciones y perfiles de trabajo de Microsoft Intune (Azure) | Microsoft Docs
 description: Al decidir usar directivas de protección de aplicaciones o perfiles de trabajo para dispositivos personales o BYOD de Android Enterprise en Microsoft Intune, es necesario examinar las diferencias y las ventajas o desventajas. Compare las diferencias y características que se obtienen con las directivas de protección de aplicaciones sin inscripción (APP-WE) y los perfiles de trabajo de Android Enterprise.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a2c71e04cf842fda7b16fb8ad4a05668ccbfaa84
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507602"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059792"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Directivas de protección de aplicaciones y perfiles de trabajo en dispositivos de Android Enterprise en Intune
 

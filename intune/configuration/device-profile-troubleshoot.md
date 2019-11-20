@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7779e265680ded1b5d5d5b670bcf694376ee8016
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494403"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199186"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune
 
@@ -73,10 +73,6 @@ Si el dispositivo se inscribió recientemente, la sincronización de cumplimient
 | Windows 8.1 | Cada 5 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
 
 En cualquier momento, los usuarios pueden abrir la aplicación Portal de empresa. **Configuración** > **Sincronizar** para comprobar de inmediato las actualizaciones de la directiva o del perfil.
-
-En los dispositivos sin afinidad de usuario, la frecuencia de sincronización inmediatamente después de la inscripción puede variar de horas a un día o más. Intune envía solicitudes a diferentes intervalos para que un dispositivo se conecte con Intune. En cambio, la inserción en el repositorio depende del dispositivo. Después de la inscripción inicial, el tiempo que un dispositivo tarda en completar la inserción en el repositorio es imprevisible. También depende del tipo de inscripción de dispositivo y de las directivas y perfiles asignados a un dispositivo. Una vez que se inscribe el dispositivo y se aplican todas las directivas y perfiles iniciales, busca nuevas directivas y perfiles cada 6 u 8 horas, en función de la hora en que el dispositivo se inscribe en Intune.
-
-Como procedimiento recomendado, asegúrese de que los dispositivos estén en línea durante al menos ocho horas consecutivas para obtener los mejores resultados.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>¿Qué acciones provocan que Intune envíe inmediatamente una notificación a un dispositivo?
 
