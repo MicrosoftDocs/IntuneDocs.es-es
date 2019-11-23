@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984121"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390855"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -130,9 +130,6 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
     - iOS 11.3 y versiones más recientes
 
 ## <a name="password"></a>Contraseña
-
-> [!NOTE]
-> En una versión futura, esta configuración de contraseña en la interfaz de usuario de Intune se está actualizando para coincidir con el tipo de inscripción.
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
 
@@ -266,7 +263,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Requerir la contraseña de iTunes Store para todas las compras**: **requiere** que el usuario escriba la contraseña del ID de Apple para cada una de las compras desde la aplicación o iTunes. **No configurado** (valor predeterminado) permite compras sin pedir una contraseña cada vez.
 - **Compras desde la aplicación**: elija **Bloquear** para impedir las compras en la tienda desde la aplicación. **No configurado** (valor predeterminado) permite las compras en la tienda dentro de una aplicación en ejecución.
 - **Descargar contenido marcado como "Erótico" en iBooks Store**: elija **Bloquear** para impedir que los usuarios descarguen archivos multimedia de iBooks Store marcados como eróticos. **No configurado** (valor predeterminado) permite que el usuario descargue libros con la categoría "Erotismo".
-- **Permitir a las aplicaciones administradas escribir contactos en cuentas de contactos no administradas**: cuando se establece en **permitir**, las aplicaciones administradas, como la aplicación móvil de Outlook, pueden guardar o sincronizar la información de contacto, incluidos los contactos corporativos y empresariales, con los contactos de iOS integrados. aplicaciones. Cuando se establece en **no configurado** (valor predeterminado), las aplicaciones administradas no pueden guardar ni sincronizar la información de contacto en la aplicación integrada de contactos de iOS en el dispositivo.
+- **Permitir a las aplicaciones administradas escribir contactos en cuentas de contactos no administradas**: cuando se establece en **permitir**, las aplicaciones administradas, como la aplicación móvil de Outlook, pueden guardar o sincronizar la información de contacto, incluidos los contactos corporativos y empresariales, en la aplicación de contactos de iOS integrada. Cuando se establece en **no configurado** (valor predeterminado), las aplicaciones administradas no pueden guardar ni sincronizar la información de contacto en la aplicación integrada de contactos de iOS en el dispositivo.
   
   Para usar este valor, establezca la opción **Visualización de documentos corporativos en aplicaciones no administradas** en **Bloquear**.
 
@@ -321,16 +318,6 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **JavaScript de Safari**: **Bloquear** impide que los scripts de Java del explorador se ejecuten en el dispositivo. **No configurado** (valor predeterminado) permite scripts de Java.
 
 - **Elementos emergentes de Safari**: **Bloquear** para deshabilitar el bloqueador de elementos emergentes del explorador web. **No configurado** (valor predeterminado) permite el bloqueador de elementos emergentes.
-
-- **Registro del lado servidor para comandos Siri**: cuando se establece en **Disable**, el registro Siri del lado servidor está desactivado. También puede impedir el registro de solicitudes de usuario en servidores de Siri. **No configurado** (valor predeterminado) registra los comandos Siri en el lado servidor. Esta configuración no depende de la configuración de Siri que se esté bloqueando o no esté configurada.
-
-  Esta característica se aplica a:  
-  - iOS 12.2 y versiones más recientes
-
-  > [!NOTE]
-  > Apple ha dejado de usar el valor **de configuración de registro del lado servidor para comandos Siri** . En una próxima versión, esta configuración se quita de la consola de Intune.
-  >
-  > Actualmente, esta configuración no tiene ningún efecto en los dispositivos, aunque el valor se muestra en perfiles de administración. Para eliminar esta configuración de cualquier directiva, abra la Directiva, realice un cambio menor y, a continuación, guarde la Directiva. La Directiva se actualiza y la configuración se elimina de los dispositivos.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
