@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983976"
+ms.locfileid: "74059776"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configuración de directivas de protección de aplicaciones Android en Microsoft Intune
 En este artículo se describe la configuración de directivas de protección de aplicaciones para dispositivos Android. La configuración de directivas que se describe puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** de Azure Portal.
@@ -45,7 +45,7 @@ Hay tres categorías de configuración de directiva: configuración de protecci�
 | **Restringir cortar, copiar y pegar entre otras aplicaciones** | Especifique cuándo pueden usarse las acciones de cortar, copiar y pegar con esta aplicación. Elija de entre las siguientes opciones: <ul><li>**Bloqueado**:  no permite las acciones de cortar, copiar y pegar entre esta aplicación y cualquier otra.</li><li>**Aplicaciones administradas por directivas**: permite las acciones de cortar, copiar y pegar entre esta aplicación y otras aplicaciones administradas por directivas.</li><li>**Aplicaciones administradas por directivas con pegar**: permite cortar o copiar entre esta aplicación y otras aplicaciones administradas por directivas. Permite que los datos de cualquier aplicación se peguen en esta aplicación.</li><li>**Cualquier aplicación**: no se aplican restricciones a las acciones de cortar, copiar y pegar en esta aplicación y desde ella. | **Cualquier aplicación** |
 | <ul><ui>**Límite de caracteres para cortar y copiar en cualquier aplicación** | Especifique el número de caracteres que se pueden cortar o copiar de las cuentas y los datos de la organización.  Esto permitirá compartir el número especificado de caracteres en cualquier aplicación, independientemente de la opción "Restringir cortar, copiar y pegar con otras aplicaciones".<p>Valor predeterminado = 0<p>**Nota**: se necesita Portal de empresa de Intune, versión 5.0.4364.0 o posterior.  | **0** |
 | **Captura de pantalla y Asistente de Google** | Seleccione **Deshabilitar** para bloquear las características de captura de pantalla y **Asistente de Google** del dispositivo cuando se usa esta aplicación. Al elegir **Deshabilitar** también se desenfocará la imagen de vista previa de las últimas aplicaciones si se usa esta aplicación con una cuenta profesional o educativa.| **Habilitar** |
-
+| **Notificaciones de datos de la organización** | Especifique la cantidad de datos de la organización que se comparten a través de las notificaciones del sistema operativo de las cuentas de organización. Esta configuración de directiva afectará al dispositivo local y a todos los dispositivos conectados, como ponibles y altavoces inteligentes. Las aplicaciones pueden proporcionar controles adicionales para personalizar el comportamiento de las notificaciones o pueden optar por no respetar todos los valores. Seleccione: <ul><li>**Bloquear**:  no se comparten las notificaciones.</li><ul><li>Si la aplicación no lo admite, se permiten las notificaciones.</li></ul><li>**Bloquear datos de la organización**: no se comparten datos de la organización en las notificaciones. Por ejemplo, "Tiene correo nuevo"; "Tiene una reunión".</li><UL><li>Si la aplicación no admite esta opción, se bloquearán las notificaciones.</li></ul><li>**Permitir**: se comparten los datos de la organización en las notificaciones.</li><li>**Cualquier aplicación**: no se aplican restricciones a las acciones de cortar, copiar y pegar en esta aplicación y desde ella.</ul> <p>**Nota**: *Esta configuración requiere que la aplicación sea compatible. En este momento, la versión 4.75.0 o posterior de Outlook para Android, admite esta configuración, que se espera que se publique la semana del 16 de diciembre de 2019.* | **Permitir**   |
   
 ### <a name="encryption"></a>Cifrado
 | Setting | Cómo se usa | Valor predeterminado |

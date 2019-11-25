@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 997cf043f8ea61133d6e61f4584ad9349aedbf73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592050"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060040"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Agregar aplicaciones web a Microsoft Intune
 
@@ -33,10 +33,10 @@ Intune admite diversos tipos de aplicación, incluidas aplicaciones web. Una apl
 
 Antes de poder administrar y asignar aplicaciones a los usuarios, agregue la aplicación a Intune. 
 
-Intune crea un acceso directo a la aplicación web en el dispositivo del usuario. En el caso de dispositivos iOS, se agrega un acceso directo a la aplicación web a la pantalla principal. En el caso de los dispositivos Android, se agrega un acceso directo a la aplicación web en el widget del portal de empresa de Intune, que el usuario debe anclar manualmente. En el caso de los dispositivos Windows, se coloca un acceso directo a la aplicación web en el menú Inicio.
+Intune crea un acceso directo a la aplicación web en el dispositivo del usuario. En el caso de dispositivos iOS, se agrega un acceso directo a la aplicación web en la pantalla principal. En el caso de los dispositivos Android, se agrega un acceso directo a la aplicación web en el widget del portal de empresa de Intune, que el usuario debe anclar manualmente. En el caso de los dispositivos Windows, se coloca un acceso directo a la aplicación web en el menú Inicio.
 
 > [!Note]
-> Para poder iniciar aplicaciones web, debe haber un explorador instalado en el dispositivo del usuario.
+> Para poder iniciar aplicaciones web, debe haber un explorador instalado en el dispositivo del usuario. 
 
 ## <a name="add-a-web-app-to-intune"></a>Agregar una aplicación web a Intune
 Para agregar una aplicación a Intune como acceso directo a una aplicación de Internet, haga lo siguiente:
@@ -67,6 +67,8 @@ Para agregar una aplicación a Intune como acceso directo a una aplicación de I
 > Los usuarios deben agregar el widget de Intune a su pantalla de inicio para mostrar las aplicaciones web asignadas a dispositivos Android.
 >
 > Actualmente, la implementación de aplicaciones web de Intune para dispositivos iOS está asociada al perfil de administración y no se puede quitar manualmente. Puede cambiar el tipo de implementación a **Desinstalar** en el portal de Intune; en este momento, puede quitar automáticamente la aplicación web. Sin embargo, si quita la implementación antes de cambiar la intención de asignación de aplicaciones a **Desinstalar**, la aplicación web estará de forma permanente en su sitio en el dispositivo hasta que se cancele la suscripción de este desde Intune.
+
+Los usuarios finales pueden iniciar aplicaciones web directamente desde la aplicación Portal de empresa de Windows seleccionando la aplicación web y eligiendo la opción **Abrir en el explorador**. La dirección URL web publicada se abre directamente en un explorador web. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

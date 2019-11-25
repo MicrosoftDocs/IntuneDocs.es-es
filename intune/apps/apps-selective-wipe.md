@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498320"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199244"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Borrado solo de datos corporativos de aplicaciones administradas por Intune
 
@@ -44,23 +44,12 @@ Las directivas de Windows Information Protection (WIP) se pueden implementar sin
 
 ## <a name="create-a-wipe-request"></a>Crear una solicitud de borrado
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-
-2. Elija **Todos los servicios**, escriba **Intune** en el cuadro de texto de filtro y seleccione **Intune**. En el panel de Intune que se abre, haga clic en el panel **Aplicaciones cliente**.
-
-    ![Captura de pantalla del panel de Microsoft Intune](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. En el **panel Aplicaciones cliente**, haga clic en **Borrado selectivo de aplicaciones**.
-
-4. Elija **Nueva solicitud de borrado**. Se abrirá el panel **Nueva solicitud de borrado**.
-
-    ![Captura de pantalla del panel Nueva solicitud de borrado](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. Seleccione un usuario y después elija **Seleccionar** para seleccionar el usuario cuyos datos de aplicación quiera borrar.
-
-6. Luego, elija **Dispositivo** en el panel **Nueva solicitud de borrado**. Se abre el panel **Seleccionar dispositivo**, en el que muestran todos los dispositivos asociados al usuario seleccionado. También se proporcionan dos columnas: el nombre del dispositivo, que es un nombre descriptivo definido por el usuario, y el tipo de dispositivo, que indica la plataforma. Seleccione el dispositivo que desea borrar.
-
-7. Ahora está de nuevo en el panel **Nueva solicitud de borrado**. Seleccione **Aceptar** para realizar una solicitud de borrado.
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. En el panel Intune, seleccione **Aplicaciones cliente** > **Borrado selectivo de aplicaciones** > **Crear solicitud de borrado**.<br>
+   Se muestra el panel **Crear solicitud de borrado**.
+3. Haga clic en **Seleccione el usuario**, elija el usuario cuyos datos de aplicación desea borrar y haga clic en **Seleccionar** en la parte inferior del panel **Usuario**.
+4. Haga clic en **Seleccione el dispositivo**, elija el dispositivo y haga clic en **Seleccionar** en la parte inferior del panel **Seleccionar dispositivo**.
+5. Haga clic en **Crear** para realizar una solicitud de borrado.
 
 El servicio crea y realiza el seguimiento de una solicitud de borrado independiente para cada aplicación protegida en el dispositivo, y del usuario asociado a la solicitud de borrado.
 

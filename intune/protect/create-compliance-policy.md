@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786077"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188262"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creación de una directiva de cumplimiento en Microsoft Intune
 
@@ -61,19 +61,15 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
 ## <a name="create-the-policy"></a>Creación de la directiva
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Cumplimiento del dispositivo**. Dispone de las siguientes opciones:
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Información general**: muestra un resumen y el número de dispositivos que están en cumplimiento, no evaluados, etc. También se muestran las directivas y la configuración individual de las directivas. [Supervisión de las directivas de cumplimiento de dispositivos Intune](compliance-policy-monitor.md) proporciona información relevante.
-    - **Administrar**: cree directivas de dispositivos, envíe [notificaciones](quickstart-send-notification.md) a dispositivos que no están en cumplimiento y habilite la [limitación de red](use-network-locations.md).
-    - **Supervisión**: Compruebe el estado de cumplimiento de los dispositivos y en el nivel de configuración y directiva. [Supervisión de las directivas de cumplimiento de dispositivos Intune](compliance-policy-monitor.md) es un recurso útil. También permite ver los registros y comprobar el estado del agente de amenazas de los dispositivos.
-    - **Configuración**: Use las [directivas de cumplimiento integradas](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), habilite [Advanced Threat Protection (ATP) de Microsoft Defender](advanced-threat-protection.md), agregue un [conector Mobile Threat Defense](mobile-threat-defense.md) y use [Jamf](conditional-access-integrate-jamf.md).
+2. Seleccione **Dispositivos** > **Directivas de cumplimiento** > **Crear directiva**.
 
-3. Seleccione **Directivas** > **Crear directiva**. Escriba las propiedades siguientes:
+3. Especifique las siguientes propiedades:
 
-   - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Marcar los dispositivos iOS liberados como no compatibles**.  
+   - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Marcar los dispositivos iOS liberados como no compatibles**.
 
-   - **Descripción**: escriba una descripción para la directiva. Esta configuración es opcional pero recomendada.  
+   - **Descripción**: escriba una descripción para la directiva. Esta configuración es opcional pero recomendada.
 
    - **Plataforma**: seleccione la plataforma de los dispositivos. Las opciones son:
      - **Administrador de dispositivos Android**
@@ -99,7 +95,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
    - **Ubicaciones** *(administrador de dispositivos Android)* : En la directiva, puede forzar el cumplimiento según la ubicación del dispositivo. Elija entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se ofrecen algunas instrucciones.  
 
    - **Acciones en caso de incumplimiento**: En el caso de los dispositivos que no cumplen con las directivas de cumplimiento, puede agregar una secuencia de acciones para aplicar de manera automática. Puede cambiar la programación cuando el dispositivo se marca como no conforme, por ejemplo, después de un día. También puede configurar una segunda acción que envía un correo electrónico al usuario cuando el dispositivo es no conforme.
-    
+
      En [Adición de acciones en caso de incumplimiento](actions-for-noncompliance.md) se proporciona más información, por ejemplo, cómo crear un correo electrónico para notificar a los usuarios.
 
      Por ejemplo, se usa la característica Ubicaciones y se agrega una ubicación en una directiva de cumplimiento. La acción predeterminada en caso de incumplimiento se aplica cuando se selecciona al menos una ubicación. Si el dispositivo no está conectado a las ubicaciones seleccionadas, se considera de inmediato como no conforme. Puede dar a los usuarios un período de gracia, por ejemplo, un día.
@@ -112,8 +108,10 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
 Una vez que se crea una directiva, el paso siguiente es asignar la directiva a los grupos:
 
-1. Elija una directiva que haya creado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
-2. Seleccione la directiva > **Asignaciones**. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
+1. Elija una directiva que haya creado. Las directivas existentes están en **Dispositivos** > **Directivas de cumplimiento** > **Directivas**.
+
+2. Seleccione la *directiva* > **Asignaciones**. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
+
 3. Elija **Grupos seleccionados** para ver los grupos de seguridad de Azure AD. Seleccione los grupos a los que quiere aplicar esta directiva > Elija **Guardar** para implementar la directiva.
 
 Los usuarios o dispositivos de destino de la directiva se evalúan para comprobar su compatibilidad cuando se registran en Intune.
@@ -122,8 +120,9 @@ Los usuarios o dispositivos de destino de la directiva se evalúan para comproba
 
 Cuando asigna la directiva, también puede **evaluar** cuántos usuarios se verán afectados. Esta característica calcula los usuarios, no los dispositivos.
 
-1. En Intune, seleccione **Cumplimiento de dispositivos** > **Directivas**.
-2. Seleccione una directiva > **Asignaciones** > **Evaluar**. Un mensaje muestra a cuántos usuarios se aplica esta directiva.
+1. En Intune, seleccione **Dispositivos** > **Directivas de cumplimiento** > **Directivas**.
+
+2. Seleccione una *directiva > * **Asignaciones** > **Evaluar**. Un mensaje muestra a cuántos usuarios se aplica esta directiva.
 
 Si el botón **Evaluar** está atenuado, asegúrese de que la directiva se asignó a uno o más grupos.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749323"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164564"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Escenario guiado: Escritorio moderno administrado en la nube
 
-Escritorio moderno es la plataforma de productividad de vanguardia para el trabajador de la información. Office 365 ProPlus y Windows 10 son los componentes principales de Escritorio moderno junto con las líneas de base de seguridad más recientes para Windows 10 y Protección contra amenazas avanzada de Windows Defender. 
+Escritorio moderno es la plataforma de productividad de vanguardia para el trabajador de la información. Offic 365 ProPlus y Windows 10 son los componentes principales de Escritorio moderno junto con las líneas de base de seguridad más recientes para Windows 10 y Protección contra amenazas avanzada de Microsoft Defender. 
 
 La administración de Escritorio moderno desde la nube aporta la ventaja adicional de las acciones remotas en toda Internet. La administración en la nube emplea las directivas de Administración de dispositivos móviles integradas de Windows y quita las dependencias de la directiva de grupo de Active Directory local. 
 
@@ -33,7 +33,7 @@ Si quiere evaluar un escritorio moderno administrado en la nube en su propia org
 
 ## <a name="prerequisites"></a>Requisitos previos
 - [Establecer la entidad de MDM en Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune): la configuración de la entidad de administración de dispositivos móviles (MDM) determina cómo se administran los dispositivos. Como administrador de TI, debe establecer una entidad de MDM antes de que los usuarios puedan inscribir dispositivos para la administración.
-- M356 E3 como mínimo (o M365 E5 para mayor seguridad)
+- M365 E3 como mínimo (o M365 E5 para mayor seguridad)
 - Dispositivo Windows 10 1903 (registrado con Windows Autopilot para la experiencia óptima del usuario final)
 - Permisos de administrador de Intune necesarios para completar este escenario guiado:
   - Configuración del dispositivo, Leer, Crear, Eliminar, Asignar y Actualizar
@@ -76,7 +76,7 @@ Los usuarios instalarán e inscribirán de forma manual los dispositivos nuevos 
 El último paso permite revisar un resumen de los valores que ha configurado. Una vez que haya revisado las opciones, haga clic en **Implementar** para completar el escenario guiado. Una vez completado el escenario guiado, se mostrará una tabla de recursos. Puede editar estos recursos más adelante, pero una vez que salga de la vista de resumen, la tabla no se guardará.
 
 > [!IMPORTANT]
-> Cuando se haya completado el escenario guiado, se mostrará un resumen. Puede modificar los recursos enumerados en el resumen más adelante, pero la tabla en la que se muestran estos recursos no se guardará.
+> Cuando el escenario guiado se complete, se mostrará un resumen. Puede modificar los recursos enumerados en el resumen más adelante, pero la tabla en la que se muestran estos recursos no se guardará.
 
 ### <a name="verification"></a>Comprobación
 1. Compruebe que al usuario seleccionado se le ha asignado el ámbito de usuario de MDM.

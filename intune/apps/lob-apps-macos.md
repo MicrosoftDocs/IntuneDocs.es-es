@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9802b85a9674535cea62ae28f135153352ef76c
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813272"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117884"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Adición de aplicaciones de línea de negocio (LOB) de macOS a Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Use la información de este artículo para agregar aplicaciones de línea de negocio de macOS a Microsoft Intune. Debe descargar una herramienta externa para procesar previamente los archivos *.pkg* antes de poder cargar el archivo de línea de negocio en Microsoft Intune. El procesamiento previo de los archivos *.pkg* debe realizarse en un dispositivo macOS.
+
+> [!NOTE]
+> A partir de la versión de macOS Catalina 10.15, antes de agregar las aplicaciones a Intune, asegúrese de que las aplicaciones de LOB de macOS están validadas. Si los desarrolladores de las aplicaciones de LOB no validaron sus aplicaciones, estas no podrán ejecutarse en los dispositivos macOS de los usuarios. Para obtener más información sobre cómo comprobar si una aplicación está validada, visite [Validación de aplicaciones macOS para prepararse para macOS Catalina](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579).
 
 > [!NOTE]
 > Si bien los usuarios de dispositivos macOS pueden quitar algunas de las aplicaciones macOS integradas, como Bolsa y Mapas, no pueden usar Intune para volver a implementar esas aplicaciones. Si los usuarios finales eliminan estas aplicaciones, deben ir a la tienda de aplicaciones y reinstalarlas manualmente.

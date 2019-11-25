@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709323"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059701"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configuración de una página de estado de inscripción
  
@@ -197,7 +197,7 @@ A continuación se muestran los problemas conocidos.
     - No se conservan las credenciales de usuario.
     - El usuario debe volver a escribir las credenciales antes de pasar de la fase de instalación del dispositivo a la fase de configuración de la cuenta.
 - ESP se queda bloqueado durante mucho tiempo o nunca completa la fase de identificación. Intune calcula las directivas de ESP durante la fase de identificación. Puede que un dispositivo no complete nunca las directivas de ESP si el usuario actual no tiene asignada una licencia de Intune.  
-- La configuración de Windows Defender Application Control provoca que se reinicie el sistema durante la fase de Autopilot. La configuración de Windows Defender Application Control (CSP de AppLocker) requiere un reinicio. Cuando se configura esta directiva, es posible que el dispositivo se reinicie durante la fase de Autopilot. Actualmente, no hay ninguna manera de suprimir o posponer el reinicio.
+- La configuración de Microsoft Defender Application Control provoca que se reinicie el sistema durante la fase de Autopilot. La configuración de Microsoft Defender Application Control (CSP de AppLocker) requiere un reinicio. Cuando se configura esta directiva, es posible que el dispositivo se reinicie durante la fase de Autopilot. Actualmente, no hay ninguna manera de suprimir o posponer el reinicio.
 - Cuando la directiva DeviceLock (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) ) está habilitada como parte de un perfil de ESP, la configuración rápida del sistema (OOBE) o el inicio de sesión automático en el escritorio del usuario podrían producir un error inesperado por dos motivos.
   - Si el dispositivo no se reinició antes de salir de la fase de instalación del dispositivo de ESP, es posible que se le pida al usuario que escriba sus credenciales de Azure AD. Este mensaje se muestra en lugar de un inicio de sesión automático correcto en el que el usuario ve la animación del primer inicio de sesión de Windows.
   - El inicio de sesión automático no se realizará correctamente si el dispositivo se reinicia después de que el usuario haya escrito sus credenciales de Azure AD, pero antes de salir de la fase de instalación del dispositivo de ESP. Este error se produce porque la fase de instalación del dispositivo de ESP nunca se ha completado. La solución alternativa es restablecer el dispositivo.

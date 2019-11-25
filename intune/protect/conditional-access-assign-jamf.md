@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502452"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161599"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
 
@@ -37,12 +37,11 @@ Los procedimientos descritos en este artículo requieren acceso tanto a las cons
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Configuración de las directivas de cumplimiento de dispositivos en Intune
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccione **Cumplimiento de dispositivo** > **Directivas**. 
-2. Si usa una directiva creada anteriormente, selecciónela en la consola y vaya luego al paso siguiente de este procedimiento.  
-   
-   Seleccione **Crear directiva** y, a continuación, especifique los detalles de una directiva con una *Plataforma* de **macOS**. Ajuste la *Configuración* y las *Acciones en caso de incumplimiento* para que coincidan con los requisitos de su organización y a continuación, seleccione **Crear** para guardar la directiva.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-3. En el panel *Información general* de las directivas, seleccione **Asignaciones**. Use las opciones disponibles para configurar los usuarios y los grupos de seguridad de Azure Active Directory (Azure AD) que reciben esta directiva. La integración de Jamf con Intune no es compatible con las directivas de cumplimiento que tienen como destino grupos de dispositivos. 
+2. Seleccione **Dispositivos** > **Directivas de cumplimiento**. Si usa una directiva creada anteriormente, selecciónela en la consola y vaya luego al paso siguiente de este procedimiento. Para crear una nueva directiva, seleccione **Crear directiva** y, a continuación, especifique los detalles de una directiva con una *Plataforma* de **macOS**. Ajuste la *Configuración* y las *Acciones en caso de incumplimiento* para que coincidan con los requisitos de su organización y a continuación, seleccione **Crear** para guardar la directiva.
+
+3. En el panel *Información general* de las directivas, seleccione **Asignaciones**. Use las opciones disponibles para configurar los usuarios y los grupos de seguridad de Azure Active Directory (Azure AD) que reciben esta directiva. La integración de Jamf con Intune no es compatible con las directivas de cumplimiento que tienen como destino grupos de dispositivos.
 
 4. Al seleccionar **Guardar**, la directiva se implementa en los usuarios.  
 
@@ -103,7 +102,7 @@ El registro de dispositivos requiere que el usuario de un dispositivo seleccione
 
 Use la consola de Jamf Pro para confirmar que la comunicación entre Jamf Pro y Microsoft Intune se realiza correctamente. 
 
-- En Jamf Pro, vaya a **Settings**(Configuración) > **Global Management**(Administración global) > **Microsoft Intune Integration** (Integración de Microsoft Intune) y luego seleccione **Test** (Probar). 
+- En Jamf Pro, vaya a **Settings**(Configuración) > **Global Management**(Administración global) > **Microsoft Intune Integration** (Integración de Microsoft Intune) y luego seleccione **Test** (Probar).
 
     La consola muestra un mensaje que indica si la conexión se ha realizado correctamente o no.  
 
@@ -112,7 +111,7 @@ Si se produce un error en la prueba de conexión de la consola de Jamf Pro, revi
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Eliminación de un dispositivo administrado por Jamf de Intune
 
-Puede quitar un dispositivo administrado por Jamf de la consola de Intune si selecciona **Eliminar** en la vista **Todos los dispositivos**. La eliminación de dispositivos de forma masiva puede habilitarse si se seleccionan varios dispositivos y se hace clic en **Eliminar**.
+Para quitar un dispositivo administrado por Jamf, abra el centro de administración del Administrador de puntos de conexión de Microsoft y seleccione **Dispositivos** > **Todos los dispositivos**, seleccione el dispositivo y, a continuación, seleccione **Eliminar**.  La eliminación de dispositivos de forma masiva puede habilitarse si se seleccionan varios dispositivos y se hace clic en **Eliminar**.
 
 Obtenga información sobre cómo [quitar un dispositivo administrado por Jamf en los documentos de Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). También puede presentar una incidencia de soporte técnico al [soporte técnico de Jamf](https://www.jamf.com/support/) para obtener más ayuda. 
 

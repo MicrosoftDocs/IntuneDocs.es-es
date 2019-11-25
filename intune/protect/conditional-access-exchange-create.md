@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
-ms.reviewer: stama
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504621"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188465"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creación de una directiva de acceso condicional para Exchange local y en el entorno de Exchange Online dedicado heredado
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 En este artículo se muestra cómo configurar el acceso condicional para Exchange local en función del cumplimiento del dispositivo.
 
@@ -46,7 +44,7 @@ Antes de configurar el acceso condicional, compruebe que existen las siguientes 
 
 - El conector para una organización de Exchange local puede instalarse en cualquier máquina, siempre que esta pueda comunicarse con el servidor Exchange.
 
-- El conector es compatible con el **entorno de CAS de Exchange**. Intune admite la instalación del conector en el servidor CAS de Exchange directamente, pero le recomendamos que lo instale en un equipo independiente debido a la carga adicional que pone el conector en el servidor. Al configurar el conector, debe permitir que se comunique con uno de los servidores CAS de Exchange.
+- El conector es compatible con el **entorno de CAS de Exchange**. Intune admite la instalación directa del conector en el servidor CAS de Exchange. Se recomienda instalarlo en un equipo independiente debido a la carga adicional que el conector supone para el servidor. Al configurar el conector, debe permitir que se comunique con uno de los servidores CAS de Exchange.
 
 - **Exchange ActiveSync** se debe configurar con autenticación basada en certificados o con la entrada de credenciales de usuario.
 
@@ -60,7 +58,7 @@ Antes de configurar el acceso condicional, compruebe que existen las siguientes 
 
 - Si el dispositivo no cumple la configuración de acceso condicional, cuando el usuario inicie sesión verá uno de los siguientes mensajes:
   - Si el dispositivo no está inscrito en Intune o no está registrado en Azure Active Directory, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación Portal de empresa, inscribir el dispositivo y activar el correo electrónico. Este proceso también asocia el identificador de Exchange ActiveSync del dispositivo con el registro del dispositivo en Azure Active Directory.
-  - Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario al sitio web Portal de empresa de Intune o a la aplicación Portal de empresa, donde podrá encontrar información sobre el problema y cómo resolverlo.
+  - Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario al sitio web del Portal de empresa de Intune o a la aplicación Portal de empresa. En el portal de empresa pueden encontrar información sobre el problema y sobre cómo resolverlo.
 
 ### <a name="support-for-mobile-devices"></a>Compatibilidad con dispositivos móviles
 
@@ -70,7 +68,7 @@ Antes de configurar el acceso condicional, compruebe que existen las siguientes 
 - **Dispositivos del perfil de trabajo Android** de clientes de correo EAS: solo se admiten las aplicaciones **Gmail** y **Nine Work for Android Enterprise** en el **perfil de trabajo** en los dispositivos de perfil de trabajo Android. Para que el acceso condicional funcione con perfiles de trabajo Android, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work for Android Enterprise, y también implementar esas aplicaciones como una instalación necesaria.
 
 > [!NOTE]
-> No se admite Microsoft Outlook para iOS y Android a través del conector local de Exchange. Si desea aprovechar las directivas de acceso condicional de Azure Active Directory y las directivas de Intune App Protection con Outlook para iOS y Android en los buzones locales, vea la página sobre [uso de autenticación moderna híbrida con Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
+> No se admite Microsoft Outlook para iOS y Android a través del conector local de Exchange. Si desea aprovechar las directivas de acceso condicional de Azure Active Directory y las directivas de Intune App Protection con Outlook para iOS y Android en los buzones locales, vea la página sobre [uso de autenticación moderna híbrida con Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ### <a name="support-for-pcs"></a>Compatibilidad para equipos
 
@@ -80,19 +78,19 @@ La aplicación **Correo** nativa en Windows 8.1 y versiones posteriores (cuando 
 
 Para poder usar el siguiente procedimiento para configurar el control de acceso local a Exchange, debe instalar y configurar al menos una instancia de [Intune On-Premises Exchange Connector](exchange-connector-install.md) para Exchange local.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Vaya a **Acceso de Exchange** y seleccione **Acceso local a Exchange**. 
+2. Vaya a **Administración de inquilinos** > **Acceso de Exchange** y **seleccione Acceso local a Exchange**.
 
 3. En el panel **Acceso local a Exchange**, elija **Sí** para *habilitar el control de acceso local a Exchange*.
 
-4. En **Asignación**, elija **Seleccionar grupos para incluir** y, a continuación, seleccione uno o varios grupos para configurar el acceso. 
+4. En **Asignación**, elija **Seleccionar grupos para incluir** y, a continuación, seleccione uno o varios grupos para configurar el acceso.
 
    Los miembros de los grupos que seleccione tendrán aplicada la directiva de acceso condicional para el acceso local a Exchange. Los usuarios que reciben esta directiva deben inscribir sus dispositivos en Intune y ser compatibles con los perfiles de cumplimiento para poder tener acceso a Exchange local.
 
 5. Para excluir grupos, elija **Seleccionar grupos para excluir** y, a continuación, seleccione uno o varios grupos que estén exentos de los requisitos para inscribir dispositivos y sean compatibles con los perfiles de cumplimiento para tener acceso a Exchange local. 
 
-6. A continuación, configure las opciones de Intune On-Premises Exchange Connector.  En **Configuración**, en el **panel Acceso de Exchange**, seleccione **Exchange ActiveSync Connector local** y, luego, seleccione el conector para la organización de Exchange que quiere configurar.
+6. A continuación, configure las opciones de Intune On-Premises Exchange Connector.  En **Configuración**, en la ventana *Acceso local a Exchange*, seleccione **Exchange ActiveSync Connector local** y, luego, seleccione el conector para la organización de Exchange que quiere configurar.
 
 7. En **Configuración**, elija **Notificaciones de usuario** para modificar el mensaje de correo electrónico predeterminado que se envía a los usuarios si su dispositivo no es compatible y quieren tener acceso a Exchange local. La plantilla de mensaje usa lenguaje de marcado.  También puede ver la vista previa del mensaje mientras escribe.
    > [!TIP]
@@ -120,6 +118,6 @@ Para poder usar el siguiente procedimiento para configurar el control de acceso 
 
 A continuación, cree una directiva de cumplimiento y asígnela a los usuarios para que Intune evalúe sus dispositivos móviles. Consulte [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="next-steps"></a>Pasos siguientes
 
-[Solución de problemas de Intune On-Premises Exchange Connector en Microsoft Intune](https://support.microsoft.com/help/4471887)
+[Solución de problemas de Intune Exchange Connector local en Microsoft Intune](https://support.microsoft.com/help/4471887)
