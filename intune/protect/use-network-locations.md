@@ -2,10 +2,10 @@
 title: 'Enlazar dispositivos Android por ubicación de red en Microsoft Intune: Azure | Microsoft Docs'
 description: Cree o configure las ubicaciones de red en Microsoft Intune para dispositivos Android. Puede marcar dispositivos como no conformes en función de la ubicación de red del dispositivo. Si el dispositivo está fuera de la ubicación de red, puede bloquear el acceso a los recursos de la empresa.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749446"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058149"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usar ubicaciones (límite de red) en Intune
 
@@ -50,7 +50,7 @@ Para crear una directiva de cumplimiento basadas en ubicación:
 
 ## <a name="create-a-location"></a>Crear una ubicación
 
-1. En Intune, seleccione **Conformidad de dispositivos** > **Ubicaciones** > **Crear**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Dispositivos** > **Directivas de cumplimiento** > **Ubicaciones** > **Crear**.
 
 2. Escriba las propiedades siguientes:  
 
@@ -69,8 +69,7 @@ Para crear una directiva de cumplimiento basadas en ubicación:
 
 ## <a name="create-the-location-compliance-policy"></a>Crear la directiva de cumplimiento de ubicación
 
-Cuando [cree la directiva de cumplimiento](create-compliance-policy.md), seleccione **Android** en **Plataforma**. En **Ubicaciones**, puede elegir una o varias de las ubicaciones de red que ha agregado. Estas ubicaciones forman parte de los límites de red que se van a crear para los dispositivos. 
-
+Cuando [cree la directiva de cumplimiento](create-compliance-policy.md), seleccione **Android** en **Plataforma**. En **Ubicaciones**, puede elegir una o varias de las ubicaciones de red que ha agregado. Estas ubicaciones forman parte de los límites de red que se van a crear para los dispositivos.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Configurar las acciones de no conformidad
 
@@ -83,5 +82,6 @@ En [Automatización del correo electrónico y adición de acciones para disposit
 Cuando el dispositivo está conectado a sus ubicaciones, el dispositivo se muestra como que es conforme en la aplicación Portal de empresa. Cuando el dispositivo no está conectado a una de las ubicaciones, el dispositivo se muestra como no conforme.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 [Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)  
 [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md)

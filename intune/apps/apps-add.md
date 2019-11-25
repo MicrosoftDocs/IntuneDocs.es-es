@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498979"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164715"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune 
 
@@ -151,7 +151,7 @@ Los requisitos de espacio de almacenamiento en nube son los siguientes:
 - El tamaño máximo de archivo de cualquier archivo que se cargue es de 8 GB.
 
   > [!NOTE]
-  > Las aplicaciones de línea de negocio (LOB) de Windows tienen un límite de tamaño máximo de 8 GB por aplicación. Las aplicaciones LOB de iOS tienen un límite de tamaño máximo de 4 GB por aplicación.
+  > Las aplicaciones de línea de negocio (LOB) de Windows, como Win32, Windows Universal AppX, la agrupación Windows Universal AppX, Windows Universal MSI X y la agrupación Windows Universal MSI X tienen un límite de tamaño máximo de 8 GB por aplicación. El resto de aplicaciones de LOB, incluidas las aplicaciones de LOB de iOS, tienen un límite de tamaño máximo de 2 GB por aplicación.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Creación y edición de categorías de aplicaciones
 

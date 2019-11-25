@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbdef7cffa76beeb158c47ab3651d438de2d6ccc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503160"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098207"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configuración de la inscripción de dispositivos macOS en Intune
 
@@ -42,15 +42,16 @@ Complete los siguientes requisitos previos antes de configurar la inscripción d
 - [Establecer la entidad de MDM](../fundamentals/mdm-authority-set.md)
 - [Crear grupos](../fundamentals/groups-add.md)
 - [Configurar el Portal de empresa](../apps/company-portal-app.md)
-- Asignación de licencias de usuario en el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- Asignación de licencias de usuario en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obtener un certificado push MDM de Apple](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>Dispositivos macOS propiedad del usuario (BYOD)
 
-Puede permitir que los usuarios inscriban sus dispositivos personales para la administración de Intune. Esto se conoce como "Bring Your Own Device" o BYOD. Una vez completados los requisitos previos y asignadas las licencias a los usuarios, estos pueden inscribir sus dispositivos de estas maneras:
+Puede permitir que los usuarios inscriban sus propios dispositivos personales en la administración de Intune. Esto se conoce como "bring your own device" o BYOD. Una vez completados los requisitos previos y asignadas las licencias a los usuarios, estos pueden inscribir sus dispositivos de estas maneras:
 - visitando el [sitio web Portal de empresa](https://portal.manage.microsoft.com) o
-- descargando la aplicación de Portal de empresa.
-También puede enviarles un vínculo sobre los pasos de inscripción en línea: [Inscriba el dispositivo macOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+- descargando Portal de empresa de Mac en [aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac).
+
+También puede enviar a los usuarios un vínculo sobre los pasos de inscripción en línea: [Inscriba el dispositivo macOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Para más información acerca de otras tareas de usuario final, consulte estos artículos:
 
@@ -77,12 +78,17 @@ Si se usa Parallels Desktop, hay que indicar el tipo de hardware y el número de
 En el caso de VMware Fusion, hay que [editar el archivo .vmx](https://kb.vmware.com/s/article/1014782) para establecer el modelo de hardware y el número de serie de la máquina virtual. Es recomendable que el tipo de hardware del dispositivo donde se ejecutan las máquinas virtuales y el tipo de hardware de las máquinas virtuales que vaya a crear sea el mismo. El tipo de hardware se encuentra en **menú Apple** > **Acerca de este Mac** > **Información del Sistema** > **Identificador del modelo**. 
 
 ## <a name="user-approved-enrollment"></a>Inscripción aprobada por el usuario
-
 La inscripción de MDM aprobada por el usuario es un tipo de inscripción de macOS que se puede usar para administrar cierta configuración relacionada con la seguridad. Para más información, consulte la [documentación de soporte técnico de Apple](https://support.apple.com/HT208019).
 
-Para ser aprobado por el usuario, el usuario final debe, tras inscribirse con el Portal de empresa de macOS, proporcionar manualmente aprobación mediante Preferencias del sistema. En el Portal de empresa de macOS se explica cómo hacerlo para usuarios con macOS 10.13.2 y posterior.
+A partir de noviembre de 2019, todas las nuevas inscripciones de macOS propiedad del usuario serán aprobadas por el usuario, ya que el usuario debe instalar manualmente el perfil de administración para inscribirse correctamente. Durante el [proceso de inscripción](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp), el usuario instalará el perfil de administración de Apple en **Preferencias del sistema** > **Perfiles**.  Las instrucciones para instalar el perfil de administración están disponibles en la aplicación Portal de empresa de macOS.
 
-Para averiguar si un dispositivo es aprobado por el usuario, vaya al portal de Intune y, a continuación, elija **Dispositivos** > **Todos los dispositivos**> elija el dispositivo > **Hardware**. Compruebe el campo **Aprobado por usuario**.
+Los dispositivos inscritos antes de noviembre de 2019 podrían no ser aprobados por el usuario si el usuario no aprobó el perfil de administración manualmente. Sin embargo, los usuarios pueden volver atrás y aprobar el perfil de administración; basta con ir a **Preferencias del sistema** > **Perfiles** > elija el **Perfil de administración** > **Aprobar**.
+
+### <a name="find-out-if-a-device-is-user-approved"></a>Determinación de si un dispositivo está aprobado por el usuario
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Elija **Dispositivos** > **Todos los dispositivos** > elija el dispositivo > **Hardware**.
+3. Compruebe el campo **Inscripción de usuario aprobada**.
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

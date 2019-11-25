@@ -1,7 +1,7 @@
 ---
 title: Acceso condicional con Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Obtenga más información sobre cómo definir las condiciones que deben cumplir los usuarios, los dispositivos y las aplicaciones para acceder a los recursos de la empresa en Microsoft Intune.
+description: Obtenga más información sobre cómo definir las condiciones que deben cumplir los usuarios, los dispositivos y las aplicaciones para acceder a los recursos de la empresa en Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504564"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188272"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>Más información sobre el acceso condicional e Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+Con el acceso condicional, puede controlar los dispositivos y las aplicaciones que pueden conectarse a los recursos del correo electrónico y la empresa. 
 
-El acceso condicional hace referencia a las formas en que puede controlar los dispositivos y las aplicaciones que pueden conectarse a los recursos del correo electrónico y la empresa. En este tema, obtendrá información sobre el acceso condicional basado en el dispositivo y en la aplicación, y encontrará escenarios comunes para usar el acceso condicional con Intune.
-
-El acceso condicional de Enterprise Mobility + Security (EMS) no es un producto independiente; es una solución que forma parte de todos los servicios y productos que constituyen EMS. Ofrece un control de acceso granular para mantener seguros los datos corporativos y proporciona a los usuarios una experiencia que les permite trabajar desde cualquier dispositivo en cualquier parte.
+Enterprise Mobility + Security (EMS) no es un producto independiente. Se trata de una solución incluida en todos los servicios y productos que forman parte de EMS. El acceso condicional ofrece un control de acceso granular para mantener seguros los datos corporativos y proporciona a los usuarios una experiencia que les permite trabajar desde cualquier dispositivo en cualquier parte.
 
 Puede definir las condiciones que regulan el acceso a los datos corporativos en función de la ubicación, el dispositivo, el estado del usuario y la confidencialidad de la aplicación.
 
-> [!NOTE] 
+> [!NOTE]
 > El acceso condicional también extiende sus funcionalidades a los [servicios de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access).
 
-![Diagrama de la arquitectura del acceso condicional](./media/conditional-access/ca-diagram-1.png)
+![Diagrama del acceso condicional](./media/conditional-access/ca-diagram-1.png)
 
 ## <a name="use-conditional-access-with-intune"></a>Uso del acceso condicional con Intune
 
