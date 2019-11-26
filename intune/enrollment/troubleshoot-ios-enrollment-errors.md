@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 11/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126155"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199265"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos iOS en Microsoft Intune
 
@@ -38,7 +38,7 @@ Recopile la siguiente información acerca del problema:
 - ¿Dónde ve el mensaje de error?
 - ¿Cuándo empezó el problema? ¿Alguna vez ha funcionado la inscripción?
 - ¿Qué plataforma (Android, iOS, Windows) tiene el problema?
-- ¿Cuántos usuarios se ven afectados? ¿Todos los usuarios están afectados o solo algunos?
+- ¿Cuántos usuarios están afectados? ¿Todos los usuarios están afectados o solo algunos?
 - ¿Cuántos dispositivos se ven afectados? ¿Todos los dispositivos se ven afectados o solo algunos?
 - ¿Qué es la entidad de MDM? Si System Center Configuration Manager, ¿qué versión de Configuration Manager usa?
 - ¿Cómo se realiza la inscripción? ¿Es "traiga su propio dispositivo" (BYOD) o Apple Programa de inscripción de dispositivos (DEP) con perfiles de inscripción?
@@ -63,11 +63,55 @@ Recopile la siguiente información acerca del problema:
 1. Inicie sesión en Azure Portal.
 2. Seleccione **Más servicios**, busque Intune y, luego, seleccione **Intune**.
 3. Seleccione **Inscripción de dispositivos** > **Restricciones de inscripción**.
-4. En **restricciones de tipo de dispositivo**, seleccione la restricción que desea establecer > **propiedades**  > **Seleccione plataformas** > seleccione **permitir** para **iOS**y, a continuación, haga clic en **Aceptar**.
+4. En **restricciones de tipo de dispositivo**, seleccione la restricción que desea establecer > **propiedades** > **Seleccione plataformas** > seleccione **permitir** para **iOS**y, a continuación, haga clic en **Aceptar**.
 5. Seleccione **configurar plataformas**, seleccione **permitir** dispositivos iOS de propiedad personal y, a continuación, haga clic en **Aceptar**.
 6. Vuelva a inscribir el dispositivo.
 
-### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Este servicio no es compatible. No hay ninguna directiva de inscripción.
+**Causa:** Los registros CNAME necesarios en DNS no existen.
+
+#### <a name="resolution"></a>Solución
+Cree registros de recursos DNS CNAME para el dominio de su empresa. Por ejemplo, si el dominio de la empresa es contoso.com, cree un CNAME en DNS que redirija EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com.
+
+Aunque la creación de entradas DNS CNAME es opcional, los registros CNAME facilitan la inscripción para los usuarios. Si no se encuentra ningún registro CNAME de inscripción, se pedirá a los usuarios que escriban de forma manual el nombre del servidor MDM (enrollment.manage.microsoft.com).
+
+Si hay más de un dominio comprobado, debe crear un registro CNAME para cada dominio. Los registros de recursos CNAME deben contener la siguiente información:
+
+|TYPE|Nombre de host|Apunta a|TTL|
+|------|------|------|------|
+|CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 Hr|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Hr|
+
+Si su organización usa varios dominios para las credenciales de usuario, cree registros CNAME para cada dominio.
+
+> [!NOTE]
+> Los cambios en los registros DNS pueden tardar hasta 72 horas en propagarse. No se puede comprobar el cambio de DNS en Intune hasta que el registro DNS se propague.
+
+**Causa:** Inscribe un dispositivo que se inscribió previamente con una cuenta de usuario diferente y el usuario anterior no se quitó correctamente de Intune.
+
+#### <a name="resolution"></a>Solución
+1. Cancele cualquier instalación de perfil actual.
+2. Abra [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) en Safari.
+3. Vuelva a inscribir el dispositivo.
+
+> [!NOTE]
+> Si todavía se produce un error en la inscripción, quite las cookies en Safari (no bloquee las cookies) y, a continuación, vuelva a inscribir el dispositivo.
+
+**Causa:** El dispositivo ya está inscrito con otro proveedor de MDM.
+
+#### <a name="resolution"></a>Solución
+1. Abra **configuración** en el dispositivo iOS, vaya a **General > administración de dispositivos**.
+2. Quite cualquier perfil de administración existente.
+3. Vuelva a inscribir el dispositivo.
+
+**Causa:** El usuario que está intentando inscribir el dispositivo no tiene una licencia de Microsoft Intune.
+
+#### <a name="resolution"></a>Solución
+1. Vaya al [centro de administración de Office 365](https://portal.office.com/adminportal/home#/homepage)y, a continuación, elija **usuarios > usuarios activos**.
+2. Seleccione la cuenta de usuario a la que quiere asignar una licencia de usuario de Intune y luego elija **Licencias de producto > Editar**.
+3. Cambie la alternancia a la posición **activada** para la licencia que desea asignar a este usuario y, a continuación, elija **Guardar**.
+4. Vuelva a inscribir el dispositivo.
+
+### <a name="this-service-is-not-supported-no-enrollment-policy"></a>No se admite este servicio. No hay ninguna directiva de inscripción.
 
 **Causa**: un certificado de extracción MDM de Apple no está configurado en Intune o el certificado no es válido. 
 
@@ -92,10 +136,10 @@ Recopile la siguiente información acerca del problema:
 **Causa:** El usuario intenta inscribir más dispositivos que el límite de inscripción de dispositivos.
 
 #### <a name="resolution"></a>Solución
-1. Abra el [portal de administración de Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)  > **dispositivos**  > **todos los dispositivos**y compruebe el número de dispositivos que el usuario ha inscrito.
+1. Abra el [portal de administración de Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **dispositivos** > **todos los dispositivos**y compruebe el número de dispositivos que el usuario ha inscrito.
     > [!NOTE]
     > También debe tener el inicio de sesión de usuario afectado en el [portal de usuarios de Intune](https://portal.manage.microsoft.com/) y comprobar los dispositivos que se han inscrito. Puede haber dispositivos que aparecen en el [portal de usuarios de Intune](https://portal.manage.microsoft.com/) , pero no en el [portal de administración de Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview), estos dispositivos también cuentan para el límite de inscripción de dispositivos.
-2. Vaya a **administración**  > **Administración de dispositivos móviles**  > **reglas de inscripción** > Compruebe el límite de inscripción de dispositivos. De forma predeterminada, el límite es 15. 
+2. Vaya a **administración** > **Administración de dispositivos móviles** > **reglas de inscripción** > Compruebe el límite de inscripción de dispositivos. De forma predeterminada, el límite es 15. 
 3. Si el número de dispositivos inscritos ha alcanzado el límite, quite los dispositivos innecesarios o aumente el límite de inscripción de dispositivos. Dado que todos los dispositivos inscritos consumen una licencia de Intune, se recomienda quitar siempre los dispositivos innecesarios primero.
 4. Vuelva a inscribir el dispositivo.
 
@@ -113,8 +157,8 @@ Recopile la siguiente información acerca del problema:
 **Causa:** El usuario que está intentando inscribir el dispositivo no tiene una licencia válida de Intune.
 
 #### <a name="resolution"></a>Solución
-1. Vaya al [centro de administración de Microsoft 365](https://portal.office.com/adminportal/home#/homepage)y, a continuación, elija **usuarios**  > **usuarios activos**.
-2. Seleccione la cuenta de usuario afectada > **licencias de producto**  > **Editar**.
+1. Vaya al [centro de administración de Microsoft 365](https://portal.office.com/adminportal/home#/homepage)y, a continuación, elija **usuarios** > **usuarios activos**.
+2. Seleccione la cuenta de usuario afectada > **licencias de producto** > **Editar**.
 3. Compruebe que se ha asignado una licencia de Intune válida a este usuario.
 4. Vuelva a inscribir el dispositivo.
 
@@ -122,8 +166,8 @@ Recopile la siguiente información acerca del problema:
 
 **Causa:** El usuario que está intentando inscribir el dispositivo no tiene una licencia válida de Intune.
 
-1. Vaya al [centro de administración de Microsoft 365](https://portal.office.com/adminportal/home#/homepage)y, a continuación, elija **usuarios**  > **usuarios activos**.
-2. Seleccione la cuenta de usuario afectada y, a continuación, elija **licencias de producto**  > **Editar**.
+1. Vaya al [centro de administración de Microsoft 365](https://portal.office.com/adminportal/home#/homepage)y, a continuación, elija **usuarios** > **usuarios activos**.
+2. Seleccione la cuenta de usuario afectada y, a continuación, elija **licencias de producto** > **Editar**.
 3. Compruebe que se ha asignado una licencia de Intune válida a este usuario.
 4. Vuelva a inscribir el dispositivo.
 
@@ -133,7 +177,7 @@ Recopile la siguiente información acerca del problema:
 
 #### <a name="resolution"></a>Solución
 
-1. Abra **configuración** en el dispositivo iOS > **General**  > **Administración de dispositivos**.
+1. Abra **configuración** en el dispositivo iOS > **General** > **Administración de dispositivos**.
 2. Puntee en el perfil de administración existente y en **quitar administración**.
 3. Vuelva a inscribir el dispositivo.
 
@@ -186,7 +230,7 @@ Al activar un dispositivo administrado por DEP que tiene asignado un perfil de i
 #### <a name="resolution"></a>Solución
 
 1. Edite el perfil de inscripción. Puede hacer cualquier cambio en el perfil. El propósito es actualizar la hora de modificación del perfil.
-2. Sincronizar dispositivos administrados por DEP: Abra el portal de **Intune > administración**  > **Administración de dispositivos móviles**  > **iOS**  > **programa de inscripción de dispositivos** **sincronizar ahora**. Se envía una solicitud de sincronización a Apple.
+2. Sincronizar dispositivos administrados por DEP: Abra el portal de **Intune > administración** > **Administración de dispositivos móviles** > **iOS** > **programa de inscripción de dispositivos** **sincronizar ahora**. Se envía una solicitud de sincronización a Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Inscripción de DEP atascada en el inicio de sesión de usuario
 Al activar un dispositivo administrado por DEP que tiene asignado un perfil de inscripción, el programa de instalación inicial se adhiere después de escribir las credenciales.
