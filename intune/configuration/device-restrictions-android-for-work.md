@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143046"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390920"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -72,7 +72,7 @@ En este artículo se enumeran y describen los diferentes valores de configuraci�
   - **Ventana de mantenimiento**: instala las actualizaciones automáticamente durante una ventana de mantenimiento diaria configurada en Intune. La instalación se intenta diariamente durante 30 días y pueden producirse errores si los niveles de batería o espacio no son suficientes. Después del período de 30 días, Android le solicitará al usuario que realice la instalación. La ventana también se usa para instalar actualizaciones de aplicaciones de Google Play. Use esta opción para dispositivos dedicados, como pantallas completas, ya que las aplicaciones de primer plano de dispositivos dedicados de una sola aplicación se pueden actualizar.
 
 - **Ventanas de notificación**: cuando se establecen en **Deshabilitar**, las notificaciones de ventana, incluidas las notificaciones del sistema, las llamadas entrantes, las llamadas salientes, las alertas del sistema y los errores del sistema no se muestran en el dispositivo. Cuando se establecen en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar las notificaciones.
-- **Omitir sugerencias al usar por primera vez**: elija **Habilitar** para ocultar u omitir las sugerencias de las aplicaciones de realizar los tutoriales o leer las sugerencias introductorias cuando se inicia la aplicación. Si se establece en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar estas sugerencias cuando se inicia la aplicación.
+- **Omitir primero las sugerencias de uso**: **Habilitar** ocultas u omitir sugerencias de aplicaciones que recorren los tutoriales, o sugerencias cuando se inicia la aplicación. Si se establece en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar estas sugerencias cuando se inicia la aplicación.
 
 ### <a name="system-security-settings"></a>Configuración de seguridad del sistema
 
@@ -150,13 +150,16 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
     Cuando está habilitada, configure también:
 
-    - **Establecer imagen personalizada del protector de pantalla**: escriba la dirección URL de una imagen personalizada. Por ejemplo, escriba:
+    - **Establecer imagen personalizada del protector de pantalla**: escriba la dirección URL de un archivo PNG, JPG, JPEG, GIF, BMP, WebP o ICOimage personalizado. Por ejemplo, escriba:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
       Si no especifica una dirección URL, se usa la imagen predeterminada del dispositivo, si hay una imagen predeterminada.
+      
+      > [!TIP]
+      > Se admite cualquier dirección URL de recurso de archivo que se pueda convertir en un mapa de bits.
 
     - **Número de segundos que el dispositivo muestra el protector de pantalla antes de desactivar la pantalla**: elija cuánto tiempo el dispositivo muestra el protector de pantalla. Especifique un valor entre 0 y 9999999 segundos. El valor predeterminado es `0`segundos. Cuando se deja en blanco o se establece en cero (`0`), el protector de pantalla está activo hasta que un usuario interactúa con el dispositivo.
     - **Número de segundos que el dispositivo está inactivo antes de mostrar el protector de pantalla**: elija cuánto tiempo está inactivo el dispositivo antes de mostrar el protector de pantalla. Especifique un valor entre 1 y 9999999 segundos. El valor predeterminado es `30` segundos. Debe especificar un número mayor que cero (`0`).
@@ -199,12 +202,14 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
 ### <a name="users-and-accounts-settings"></a>Configuración de cuentas y usuarios
 
-- **Agregar nuevos usuarios**: elija **Bloquear** para impedir que los usuarios agreguen nuevos usuarios. Cada usuario tiene un espacio personal en el dispositivo para pantallas principales, cuentas, aplicaciones y configuraciones personalizadas. **No configurado** permite que los usuarios agreguen a otros usuarios al dispositivo.
-- **Eliminación de usuarios**: elija **Bloquear** para impedir que los usuarios quiten usuarios. **No configurado** permite que los usuarios quiten a otros usuarios del dispositivos.
-- **Cambios de la cuenta**: elija **Bloquear** para impedir que los usuarios modifiquen las cuentas. **No configurado** permite que los usuarios actualicen las cuentas de usuario del dispositivo.
+- **Agregar nuevos usuarios**: elija **Bloquear** para impedir que los usuarios agreguen nuevos usuarios. Cada usuario tiene un espacio personal en el dispositivo para pantallas principales, cuentas, aplicaciones y configuraciones personalizadas. **No configurado** (valor predeterminado) permite que los usuarios agreguen a otros usuarios al dispositivo.
+- **Eliminación de usuarios**: elija **Bloquear** para impedir que los usuarios quiten usuarios. **No configurado** (valor predeterminado) permite que los usuarios quiten otros usuarios del dispositivo.
+- **Cambios de cuenta** (solo dispositivos dedicados): elija **bloquear** para impedir que los usuarios modifiquen cuentas. **No configurado** (valor predeterminado) permite que los usuarios actualicen las cuentas de usuario del dispositivo.
 
   > [!NOTE]
   > Esta configuración no se aplica a los dispositivos del propietario del dispositivo (totalmente administrados). Si configura esta opción, se omitirá la configuración y no se verá afectada.
+
+- **Cuentas personales de Google**: **bloquear** impide que los usuarios agreguen su cuenta de Google personal al dispositivo. **No configurado** (valor predeterminado) permite a los usuarios agregar su cuenta de Google personal.
 
 ### <a name="applications"></a>Aplicaciones
 
@@ -314,7 +319,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   - **Al menos alfanumérica con símbolos**
 - **Prevent reuse of previous passwords** (Impedir la reutilización de contraseñas anteriores): escriba la cantidad de contraseñas nuevas que se deben usar antes de que se pueda reutilizar una antigua (de **1**-**24**).
 - **Desbloqueo con huella digital**: elija **Bloquear** para impedir que los usuarios finales usen el escáner de huella digital del dispositivo para desbloquearlo. **No configurado** permite que los usuarios desbloqueen los dispositivos con una huella digital en el perfil de trabajo.
-- **Smart Lock y otros agentes de confianza**: elija **Bloquear** para impedir que Smart Lock u otros agentes de confianza ajusten la configuración de la pantalla de bloqueo en dispositivos compatibles. Esta característica, conocida a veces como agente de confianza, permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza. Por ejemplo, se puede omitir la contraseña de perfil de trabajo cuando el dispositivo está conectado a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC. Use esta opción para impedir que los usuarios configuren Smart Lock.
+- **Smart Lock y otros agentes de confianza**: elija **Bloquear** para impedir que Smart Lock u otros agentes de confianza ajusten la configuración de la pantalla de bloqueo en dispositivos compatibles. Esta característica, conocida también como agente de confianza, permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza. Por ejemplo, se puede omitir la contraseña de perfil de trabajo cuando el dispositivo está conectado a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC. Use esta opción para impedir que los usuarios configuren Smart Lock.
 
 ### <a name="device-password"></a>Contraseña del dispositivo
 
@@ -335,14 +340,14 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
   - **Al menos alfanumérica con símbolos**
 - **Prevent reuse of previous passwords** (Impedir la reutilización de contraseñas anteriores): escriba la cantidad de contraseñas nuevas que se deben usar antes de que se pueda reutilizar una antigua (de **1**-**24**).
 - **Desbloqueo con huella digital**: elija **Bloquear** para impedir que el usuario final use el escáner de huella digital del dispositivo para desbloquearlo. **No configurado** permite que el usuario desbloquee el dispositivo con la huella digital.
-- **Smart Lock y otros agentes de confianza**: elija **Bloquear** para impedir que Smart Lock u otros agentes de confianza ajusten la configuración de la pantalla de bloqueo en dispositivos compatibles. Esta característica, conocida a veces como agente de confianza, permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza. Por ejemplo, se puede omitir la contraseña de perfil de trabajo cuando el dispositivo está conectado a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC. Use esta opción para impedir que los usuarios configuren Smart Lock.
+- **Smart Lock y otros agentes de confianza**: elija **Bloquear** para impedir que Smart Lock u otros agentes de confianza ajusten la configuración de la pantalla de bloqueo en dispositivos compatibles. Esta característica, conocida también como agente de confianza, permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza. Por ejemplo, se puede omitir la contraseña de perfil de trabajo cuando el dispositivo está conectado a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC. Use esta opción para impedir que los usuarios configuren Smart Lock.
 
 ### <a name="system-security"></a>Seguridad del sistema
 
 - **Análisis de amenazas en las aplicaciones**: **Requerir** exige que la configuración **Verificar aplicaciones** esté activada para los perfiles personales y profesionales.
 
    > [!Note]
-   > Esta configuración solo sirve para dispositivos Android O y posteriores.
+   > Esta configuración solo sirve para dispositivos Android 8 (Oreo) y posteriores.
 
 - **Impedir las instalaciones de aplicaciones de orígenes desconocidos en el perfil personal**: por diseño, los dispositivos de Perfil de trabajo empresarial de Android no pueden instalar aplicaciones desde orígenes distintos de los Play Store. Por naturaleza, los dispositivos de Perfil de trabajo están diseñados para ser de dos perfiles:
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cbf9c29a1e694726b1b42f7072eea859f812751
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 73de0ac94ff02e43fe73ca6357f6008ba71e3b93
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593809"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390815"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Incorporación de la configuración de correo electrónico para dispositivos iOS en Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 En Microsoft Intune, puede crear y configurar el correo electrónico para conectarse a un servidor de correo electrónico, elegir cómo se autentican los usuarios, usar S/MIME para el cifrado, etc.
 
@@ -37,27 +35,32 @@ En este artículo se enumeran y se describen todas las opciones de correo electr
 > [!NOTE]
 > Estas opciones están disponibles para todos los tipos de inscripción. Para obtener más información sobre los tipos de inscripción, consulte [inscripción de iOS](../ios-enroll.md).
 
-## <a name="email-settings"></a>Configuración de correo electrónico
+## <a name="exchange-activesync-account-settings"></a>Configuración de la cuenta de Exchange ActiveSync
 
 - **Servidor de correo electrónico**: indique el nombre de host del servidor Exchange.
 - **Nombre de la cuenta**: indique el nombre para mostrar en la cuenta de correo electrónico. Este nombre se muestra en los dispositivos de los usuarios.
 - **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (AAD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Las opciones son:
   - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`.
   - **Dirección SMTP principal**: obtiene el nombre en formato de dirección de correo electrónico, como `user1@contoso.com`.
-  - **Nombre de la cuenta sAM**: requiere el dominio, como `domain\user1`.
-
-    Indique también:  
+  - **Nombre de la cuenta sAM**: requiere el dominio, como `domain\user1`. Indique también:  
     - **Origen del nombre de dominio de usuario**: elija **AAD** (Azure Active Directory) o **Personalizar**.
+      - **AAD**: obtener los atributos de Azure ad. Indique también:
+        - **Atributo de nombre de dominio de usuario de AAD**: elija si quiere obtener el atributo **Nombre de dominio completo** (`contoso.com`) o **Nombre de NetBIOS** (`contoso`) del usuario.
 
-      Si quiere obtener los atributos de **AAD**, escriba:
-      - **Atributo de nombre de dominio de usuario de AAD**: elija si quiere obtener el atributo **Nombre de dominio completo** o **Nombre de NetBIOS** del usuario
+      - **Personalizado**: obtener los atributos de un nombre de dominio personalizado. Indique también:
+        - **Nombre de dominio personalizado que quiere usar**: escriba un valor que Intune use como nombre de dominio, como `contoso.com` o `contoso`.
 
-      Si quiere usar los atributos **Personalizados**, escriba:
-      - **Nombre de dominio personalizado que quiere usar**: escriba un valor que Intune use como nombre de dominio, como `contoso.com` o `contoso`.
+- **Atributo Dirección de correo electrónico de AAD**: elija cómo se genera la dirección de correo electrónico para el usuario. Las opciones son:
+  - **Nombre principal de usuario**: use el nombre principal completo como dirección de correo electrónico, por ejemplo, `user1@contoso.com` o `user1`.
+  - **Dirección SMTP principal**: use la dirección SMTP principal para iniciar sesión en Exchange, como `user1@contoso.com`.
+- **Método de autenticación**: elija cómo se autentican los usuarios en el servidor de correo electrónico. Las opciones son:
+  - **Certificado**: seleccione un perfil de certificado PKCS o SCEP de cliente que haya creado anteriormente para autenticar la conexión de Exchange. Esta opción proporciona la experiencia más segura y sin problemas a los usuarios.
+  - **Nombre de usuario y contraseña**: se pide a los usuarios que escriban su nombre de usuario y contraseña.
+  - **Credencial derivada**: Use un certificado que se derive de la tarjeta inteligente de un usuario. Para obtener más información, vea [usar credenciales derivadas en Microsoft Intune](../protect/derived-credentials.md).
 
-- **Atributo Dirección de correo electrónico de AAD**: elija cómo se genera la dirección de correo electrónico para el usuario. Seleccione **Nombre principal de usuario** (`user1@contoso.com` o `user1`) para usar el nombre principal completo como dirección de correo electrónico. Seleccione **Dirección SMTP principal** (`user1@contoso.com`) para usar la dirección SMTP principal para iniciar sesión en Exchange.
-- **Método de autenticación**: seleccione **Nombre de usuario y contraseña**, **Certificados** o **Credencial derivada** como método de autenticación que usa el perfil de correo electrónico. La autenticación multifactor de Azure no es compatible.
-  - Si seleccionó **Certificado**, seleccione un SCEP cliente o un perfil de certificado PKCS creados anteriormente, que se usará para autenticar la conexión de Exchange.
+  >[!NOTE]
+  > La autenticación multifactor de Azure no es compatible.
+  
 - **SSL**: la opción **Habilitar** usa la comunicación de Capa de sockets seguros (SSL) al enviar y recibir correos electrónicos y comunicarse con el servidor de Exchange.
 - **OAuth**: la opción **Habilitar** usa la comunicación Open Authorization (OAuth) al enviar y recibir correos electrónicos y comunicarse con Exchange. Si su servidor OAuth usa la autenticación de certificado, elija **Certificado** como **método de autenticación** e incluya el certificado con el perfil. Si no, elija **Nombre de usuario y contraseña** como **método de autenticación**. Al utilizar OAuth, no olvide:
 
@@ -76,29 +79,84 @@ En este artículo se enumeran y se describen todas las opciones de correo electr
   > 1. Se emite un perfil nuevo para los dispositivos que ya estén seleccionados como destino.
   > 2. A los usuarios finales se les vuelve a pedir que escriban sus credenciales.
 
-- **S/MIME**: **Habilitar S/MIME** para permitir a los usuarios firmar o cifrar el correo electrónico en la aplicación de correo electrónico nativa de iOS. 
+## <a name="exchange-activesync-profile-configuration"></a>Configuración de Perfil de Exchange ActiveSync
 
-  Cuando se usa S/MIME con un mensaje de correo electrónico, se confirma la autenticidad del remitente y la integridad y la confidencialidad del mensaje.
+> [!IMPORTANT]
+> La configuración de estas opciones implementa un nuevo perfil en el dispositivo, incluso cuando se actualiza un perfil de correo electrónico existente para incluir esta configuración. Se solicitará a los usuarios que escriban la contraseña de su cuenta de Exchange ActiveSync. Esta configuración surte efecto cuando se escribe la contraseña.
 
-  - **Firma S/MIME habilitada**: elija **Habilitar** para permitir a los usuarios firmar digitalmente el correo electrónico saliente de la cuenta especificada. La firma ayuda a los usuarios que reciben mensajes a estar seguros de que el mensaje procede del remitente específico y no de alguien que pretende ser el remitente. **Deshabilitar** no permite a los usuarios firmar digitalmente el mensaje.
-    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el comportamiento de firma S/MIME. **Deshabilitar** evita que los usuarios cambien la opción de firma S/MIME configurada. Disponible en iOS 12 y versiones más recientes.
+- **Intercambiar datos para sincronizar**: cuando se usa Exchange ActiveSync, elija los servicios de Exchange que se sincronizan en el dispositivo: calendario, contactos, recordatorios, notas y correo electrónico. Las opciones son:
+  - **Todos los datos** (valor predeterminado): la sincronización está habilitada para todos los servicios.
+  - **Solo correo electrónico**: la sincronización está habilitada solo para correo electrónico. La sincronización está deshabilitada para los otros servicios.
+  - **Solo calendario**: la sincronización solo está habilitada para el calendario. La sincronización está deshabilitada para los otros servicios.
+  - **Solo calendario y contactos**: la sincronización solo está habilitada para el calendario y los contactos. La sincronización está deshabilitada para los otros servicios.
+  - **Solo contactos**: la sincronización está habilitada solo para contactos. La sincronización está deshabilitada para los otros servicios.
 
-  - **Certificado de firma S/MIME**: seleccione un perfil de certificado PKCS o SCEP existente que se usa para firmar los mensajes de correo electrónico.
-    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el certificado de firma. **Deshabilitar** evita que los usuarios cambien el certificado de firma y los obliga a usar el certificado configurado. Disponible en iOS 12 y versiones más recientes.
+  Esta característica se aplica a:  
+  - iOS 13.0 y versiones más recientes
+  - IPadOS 13.0 y versiones más recientes
 
-  - **Cifrar de forma predeterminada**: **Habilitar** cifra todos los mensajes como comportamiento predeterminado. **Deshabilitar** no cifra todos los mensajes como comportamiento predeterminado.
-    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el comportamiento de cifrado predeterminado. **Deshabilitar** evita que los usuarios cambien el comportamiento predeterminado de cifrado y los obliga a usar la opción configurada. Disponible en iOS 12 y versiones más recientes.
+- **Permitir a los usuarios cambiar la configuración de sincronización**: elija si los usuarios pueden cambiar la configuración de Exchange ActiveSync para los servicios de Exchange en el dispositivo: calendario, contactos, recordatorios, notas y correo electrónico. Las opciones son:
 
-  - **Forzar cifrado por mensaje**: el cifrado por mensaje permite a los usuarios elegir qué mensajes se cifran antes de enviarse. Elija **Habilitar** para mostrar la opción de cifrado por mensaje al crear un nuevo correo electrónico. Luego los usuarios pueden optar por activar o no el cifrado por mensaje. **Deshabilitar** evita que aparezca la opción de cifrado por mensaje.
+  - **Sí** (valor predeterminado): los usuarios pueden cambiar el comportamiento de sincronización de todos los servicios. Si elige **sí** , se permitirán los cambios en *todos los* servicios.
+  - **No**: los usuarios no pueden cambiar la configuración de sincronización de todos los servicios. La elección de **no** bloquea los cambios en *todos los* servicios.
 
-    Si la opción **Cifrar de forma predeterminada** está habilitada, la habilitación del cifrado por mensaje permite a los usuarios anular el cifrado por mensaje. Si la opción **Cifrar de forma predeterminada** está deshabilitada, la habilitación del cifrado por mensaje permite a los usuarios optar por el cifrado por mensaje.
+  > [!TIP]
+  > Si configuró la configuración de **intercambiar datos para sincronizar** solo algunos servicios, recomendamos que seleccione **no** para esta configuración. Al elegir **no** se impide que los usuarios cambien el servicio de Exchange que está sincronizado.
 
-  - **Certificado de cifrado S/MIME**: seleccione un perfil de certificado PKCS o SCEP existente que se usa para cifrar los mensajes de correo electrónico.
-    - **Permitir que el usuario cambie la configuración**: elija **Habilitar** para permitir a los usuarios cambiar el certificado de cifrado. **Deshabilitar** evita que los usuarios cambien el certificado de cifrado y los obliga a usar el certificado configurado. Disponible en iOS 12 y versiones más recientes.
+  Esta característica se aplica a:  
+  - iOS 13.0 y versiones más recientes
+  - IPadOS 13.0 y versiones más recientes
+
+## <a name="exchange-activesync-email-settings"></a>Configuración de correo electrónico de Exchange ActiveSync
+
+- **S/MIME**: s/MIME usa certificados de correo electrónico que proporcionan seguridad adicional a las comunicaciones de correo electrónico mediante la firma, el cifrado y el descifrado. Cuando se usa S/MIME con un mensaje de correo electrónico, se confirma la autenticidad del remitente y la integridad y la confidencialidad del mensaje.
+
+  Las opciones son:
+
+  - **Deshabilitar S/MIME** (valor predeterminado): no usa un certificado de correo electrónico s/MIME para firmar, cifrar o descifrar los correos electrónicos.
+  - **Habilitar S/MIME**: permite a los usuarios firmar o cifrar el correo electrónico en la aplicación de correo electrónico nativa de iOS. Indique también:
+
+    - **Firma S/MIME habilitada**: **deshabilitar** (valor predeterminado) no permite que los usuarios firmen digitalmente el mensaje. La opción **Habilitar** permite a los usuarios firmar digitalmente el correo electrónico saliente de la cuenta especificada. La firma ayuda a los usuarios que reciben mensajes a estar seguros de que el mensaje procede del remitente específico y no de alguien que pretende ser el remitente.
+      - **Permitir al usuario cambiar la configuración**: **Habilitar** permite a los usuarios cambiar las opciones de firma. **Deshabilitar** (valor predeterminado) impide que los usuarios cambien la firma y obliga a los usuarios a usar la firma configurada.
+      - **Tipo de certificado de firma**: sus opciones:
+        - **No configurado**: Intune no actualiza ni cambia esta configuración.
+        - **Ninguno**: como administrador, no se fuerza un certificado específico. Seleccione esta opción para que los usuarios puedan elegir su propio certificado.
+        - **Credencial derivada**: Use un certificado que se derive de la tarjeta inteligente de un usuario. Para obtener más información, vea [usar credenciales derivadas en Microsoft Intune](../protect/derived-credentials.md).
+        - **Certificados**: seleccione un perfil de certificado PKCS o SCEP existente que se usa para firmar los mensajes de correo electrónico.
+      - **Permitir al usuario cambiar la configuración**: **Habilitar** permite a los usuarios cambiar el certificado de firma. La opción **Deshabilitar** (predeterminada) evita que los usuarios cambien el certificado de firma y los obliga a usar el certificado configurado.
+
+        Esta característica se aplica a:  
+        - iOS 12 y versiones más recientes
+        - IPadOS 12 y versiones más recientes
+
+    - **Cifrar de forma predeterminada**: **Habilitar** cifra todos los mensajes como comportamiento predeterminado. La opción **Deshabilitar** (predeterminada) no cifra todos los mensajes como comportamiento predeterminado.
+      - **Permitir que el usuario cambie la configuración**: la opción **Habilitar** permite a los usuarios cambiar el comportamiento de cifrado predeterminado. La opción **Deshabilitar** evita que los usuarios cambien el comportamiento predeterminado de cifrado y los obliga a usar el cifrado configurado.
+
+        Esta característica se aplica a:  
+        - iOS 12 y versiones más recientes
+        - IPadOS 12 y versiones más recientes
+
+    - **Forzar cifrado por mensaje**: el cifrado por mensaje permite a los usuarios elegir qué mensajes se cifran antes de enviarse.
+
+      La opción **Habilitar** muestra la opción de cifrado por mensaje al crear un nuevo correo electrónico. Luego los usuarios pueden optar por activar o no el cifrado por mensaje. Si la opción **Cifrar de forma predeterminada** está también habilitada, la habilitación del cifrado por mensaje permite a los usuarios anular el cifrado por mensaje.
+
+      La opción **Deshabilitar** (predeterminada) evita que aparezca la opción de cifrado por mensaje. Si la opción **Cifrar de forma predeterminada** está también deshabilitada, la habilitación del cifrado por mensaje permite a los usuarios optar por el cifrado por mensaje.
+
+      - **Tipo de certificado de cifrado**: las opciones:
+        - **No configurado**: Intune no actualiza ni cambia esta configuración.
+        - **Ninguno**: como administrador, no se fuerza un certificado específico. Seleccione esta opción para que los usuarios puedan elegir su propio certificado.
+        - **Credencial derivada**: Use un certificado que se derive de la tarjeta inteligente de un usuario. Para obtener más información, vea [usar credenciales derivadas en Microsoft Intune](../protect/derived-credentials.md).
+        - **Certificados**: seleccione un perfil de certificado PKCS o SCEP existente que se usa para firmar los mensajes de correo electrónico.
+      - **Permitir que el usuario cambie la configuración**: la opción **Habilitar** permite a los usuarios cambiar el certificado de cifrado. La opción **Deshabilitar** (predeterminada) evita que los usuarios cambien el certificado de cifrado y los obliga a usar el certificado configurado.
+
+        Esta característica se aplica a:  
+        - iOS 12 y versiones más recientes
+        - IPadOS 12 y versiones más recientes
+
 - **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar. También puede seleccionar **Ilimitado** para sincronizar todo el correo electrónico disponible.
-- **Permitir a los mensajes moverse a otras cuentas de correo electrónico**: la opción **Habilitar** permite a los usuarios mover los mensajes de correo electrónico entre distintas cuentas que hayan configurado los usuarios en sus dispositivos.
-- **Permitir que el correo electrónico se envíe desde aplicaciones de terceros**: la opción **Habilitar** permite a los usuarios seleccionar este perfil como cuenta predeterminada para enviar mensajes de correo electrónico. Permite que otras aplicaciones de terceros puedan abrir el correo en la aplicación de correo electrónico nativa (por ejemplo, para adjuntar archivos a los mensajes).
-- **Sincronizar direcciones de correo electrónico usadas recientemente**: **Habilitar** permite a los usuarios sincronizar con el servidor la lista de direcciones de correo electrónico que se han usado recientemente en el dispositivo.
+- **Permitir a los mensajes moverse a otras cuentas de correo electrónico**: la opción **Habilitar** (predeterminada) permite a los usuarios mover los mensajes de correo electrónico entre distintas cuentas que hayan configurado los usuarios en sus dispositivos.
+- **Permitir que el correo electrónico se envíe desde aplicaciones de terceros**: la opción **Habilitar** (predeterminada) permite a los usuarios seleccionar este perfil como cuenta predeterminada para enviar mensajes de correo electrónico. Permite que otras aplicaciones de terceros puedan abrir el correo en la aplicación de correo electrónico nativa (por ejemplo, para adjuntar archivos a los mensajes).
+- **Sincronizar direcciones de correo electrónico usadas recientemente**: la opción **Habilitar** (predeterminada) permite a los usuarios sincronizar con el servidor la lista de direcciones de correo electrónico que se han usado recientemente en el dispositivo.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

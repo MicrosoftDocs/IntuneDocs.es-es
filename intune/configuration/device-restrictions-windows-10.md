@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059477"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188158"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -213,9 +213,11 @@ Estas opciones de configuración usan [experience policy CSP](https://docs.micro
 
   La configuración se hace efectiva la próxima vez que se borra o restablece el dispositivo. Al igual que cualquier otra configuración de Intune, el dispositivo debe estar inscrito y administrado por Intune para recibir la configuración. Pero, una vez que se ha inscrito y recibe las directivas, al restablecer el dispositivo se fuerza la configuración durante la siguiente configuración de Windows.
 
+  [CSP TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
+
 - **Acceso directo a memoria**: **Bloquear** impide el acceso directo a memoria (DMA) a todos los puertos de bajada PCI de conexión instantánea hasta que un usuario inicia sesión en Windows. **Habilitado** (valor predeterminado) permite el acceso a DMA, incluso cuando un usuario no ha iniciado sesión.
 
-  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+  [DataProtection/AllowDirectMemoryAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **Finalizar procesos desde el Administrador de tareas**: esta configuración determina si los usuarios que no son administradores pueden usar el Administrador de tareas para finalizar tareas. Si selecciona **Bloquear**, se impide que los usuarios estándar (no administradores) usen el Administrador de tareas para finalizar un proceso o una tarea en el dispositivo. Si selecciona **Sin configurar** (valor predeterminado), se permite que los usuarios estándar finalicen un proceso o una tarea mediante el Administrador de tareas.
 
