@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498610"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540749"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -94,35 +94,23 @@ La información de la tabla siguiente puede ayudarle a comprender la intención 
 | Intención del grupo 1 | Intención del grupo 2 | Intención resultante |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Usuario Requerido|Usuario disponible|Requerido y Disponible|
-|Usuario Requerido|Usuario no disponible|Requerido|
 |Usuario Requerido|Desinstalar usuario|Requerido|
-|Usuario disponible|Usuario no disponible|No disponible|
 |Usuario disponible|Desinstalar usuario|Desinstalar|
-|Usuario no disponible|Desinstalar usuario|Desinstalar
 |Usuario Requerido|Dispositivo Requerido|Ambos existen, Intune trata los Requeridos
 |Usuario Requerido|Desinstalar dispositivo|Ambos existen, Intune resuelve los Requeridos
 |Usuario disponible|Dispositivo Requerido|Ambos existen, Intune resuelve los Requeridos (Requeridos y Disponibles)
 |Usuario disponible|Desinstalar dispositivo|Ambos existen, Intune resuelve los Disponibles.<br><br>La aplicación se muestra en el Portal de empresa.<br><br>Si la aplicación ya está instalada (como una aplicación requerida con la intención anterior), entonces la aplicación se desinstala.<br><br>Si el usuario selecciona **Install from the Company Portal** (Instalar desde el Portal de empresa), la aplicación se instala y la intención de desinstalación no se respeta.|
-|Usuario no disponible|Dispositivo Requerido|Requerido|
-|Usuario no disponible|Desinstalar dispositivo|Desinstalar|
 |Desinstalar usuario|Dispositivo Requerido|Ambos existen, Intune resuelve los Requeridos|
 |Desinstalar usuario|Desinstalar dispositivo|Ambos existen, se necesita resolver Intune como Desinstalar|
 |Dispositivo Requerido|Desinstalar dispositivo|Requerido|
 |Usuario Requerido y Disponible|Usuario disponible|Requerido y Disponible|
 |Usuario Requerido y Disponible|Desinstalar usuario|Requerido y Disponible|
-|Usuario Requerido y Disponible|Usuario no disponible|Requerido y Disponible|
 |Usuario Requerido y Disponible|Dispositivo Requerido|Ambas existen, Requeridas y Disponibles
-|Usuario Requerido y Disponible|Dispositivo no disponible|Requerido y Disponible|
 |Usuario Requerido y Disponible|Desinstalar dispositivo|Ambos existen, Intune resuelve los Requeridos (Requeridos y Disponibles)
-|Usuario no disponible|Dispositivo no disponible|No disponible|
-|Usuario disponible|Dispositivo no disponible|Available|
-|Usuario Requerido|Dispositivo no disponible|Requerido|
 |Usuario disponible sin inscripción|Usuario Requerido y Disponible|Requerido y Disponible
 |Usuario disponible sin inscripción|Usuario Requerido|Requerido
-|Usuario disponible sin inscripción|Usuario no disponible|No disponible
 |Usuario disponible sin inscripción|Usuario disponible|Available|
 |Usuario disponible sin inscripción|Dispositivo Requerido|Requerido y Disponible sin inscripción|
-|Usuario disponible sin inscripción|Dispositivo no disponible|Disponible sin inscripción|
 |Usuario disponible sin inscripción|Desinstalar dispositivo|Desinstalar y Disponible sin inscripción.<br><br>Si el usuario no ha instalado la aplicación desde el Portal de empresa, entonces se respeta la desinstalación.<br><br>Si el usuario instala la aplicación desde el Portal de empresa, entonces la instalación tiene prioridad sobre la desinstalación.|
 
 > [!NOTE]
