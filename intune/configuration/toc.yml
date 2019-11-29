@@ -14,7 +14,11 @@
     - name: Creación de un perfil
       href: device-profile-create.md
     - name: Plantillas administrativas en Windows
-      href: administrative-templates-windows.md
+      items:
+        - name: Plantillas administrativas en Windows
+          href: administrative-templates-windows.md
+        - name: Actualización de Office mediante las plantillas administrativas
+          href: administrative-templates-update-office.md
     - name: Características de dispositivos en iOS y macOS
       href: device-features-configure.md
     - name: Restricción de las características y la configuración de dispositivo
@@ -47,6 +51,8 @@
       items:
         - name: Wi-Fi con una clave precompartida
           href: wi-fi-profile-shared-key.md
+        - name: Solución de problemas de Wi-Fi
+          href: troubleshoot-wi-fi-profiles.md
     - name: Extensiones en macOS
       href: kernel-extensions-overview-macos.md
     - name: Aplicación educativa Hacer un examen
