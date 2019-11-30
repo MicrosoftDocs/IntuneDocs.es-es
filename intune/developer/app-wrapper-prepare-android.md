@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490757"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465705"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -55,8 +55,9 @@ Antes de ejecutar la herramienta, lea [Consideraciones de seguridad para ejecuta
     > La Herramienta de ajuste de aplicaciones de Intune no admite los esquemas de firma de la versión 2 ni la próxima versión 3 para la firma de aplicaciones. Una vez se ha ajustado el archivo .apk con la Herramienta de ajuste de aplicaciones de Intune, se recomienda utilizar [la herramienta Apksigner que proporciona Google]( https://developer.android.com/studio/command-line/apksigner). Así se asegurará de que una vez que la aplicación llegue a los dispositivos del usuario final, se podrá iniciar correctamente por los estándares de Android. 
 
 - (Opcional) A veces, una aplicación puede alcanzar el límite de tamaño de archivo ejecutable Dalvik (DEX) debido a las clases del SDK de MAM de Intune que se agregan durante el ajuste. Los archivos DEX forman parte de la compilación de una aplicación Android. Intune App Wrapping Tool controla automáticamente el desbordamiento del archivo DEX durante el ajuste de aplicaciones con un mínimo de API de nivel de 21 o superior (como de [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). En el caso de las aplicaciones con un nivel de API mínimo de < 21, el procedimiento recomendado sería aumentar el nivel de API min mediante la marca de `-UseMinAPILevelForNativeMultiDex` del contenedor. Para los clientes que no pueden aumentar el nivel mínimo de API de la aplicación, están disponibles las siguientes soluciones de desbordamiento de DEX. En algunas organizaciones, esto podría requerir trabajar con la persona que compile la aplicación (es decir, el equipo de compilación de aplicaciones):
-* Use ProGuard para eliminar las referencias de clase no utilizadas del archivo DEX principal de la aplicación.
-* Para los clientes que usan v 3.1.0 o una versión posterior del complemento de Gradle de Android, deshabilite la [Dexer D8](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
+
+  - Use ProGuard para eliminar las referencias de clase no utilizadas del archivo DEX principal de la aplicación.
+  - Para los clientes que usan v 3.1.0 o una versión posterior del complemento de Gradle de Android, deshabilite la [Dexer D8](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar la herramienta de ajuste de aplicaciones
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199336"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540735"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>En desarrollo para Microsoft Intune: diciembre de 2019
 
@@ -181,34 +181,12 @@ Se aplica a:
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>Administración de dispositivos
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>Editar el valor de nombre de dispositivo para dispositivos AutoPilot<!-- 2640074  -->
-Podrá editar el valor de nombre de dispositivo para los dispositivos AutoPilot Azure AD Unidos. Para ello, vaya a **Intune** > **inscripción de dispositivos** > la **inscripción de windows** > **Windows AutoPilot** > **dispositivos** > elija el dispositivo > cambiar el valor del **nombre del dispositivo** en el panel derecho. > **Guardar**.
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>Editar el valor de la etiqueta de grupo para dispositivos AutoPilot<!-- 4816775 -->
-Podrá editar el valor de etiqueta de **Grupo** para dispositivos AutoPilot:
-
-1. Seleccione **Intune** > **inscripción de dispositivos** > la **inscripción de windows** > **Windows AutoPilot** > **dispositivos**.
-1. Elija el dispositivo.
-1. En el panel de la derecha, cambie el valor de **etiqueta de grupo** .
-1. Seleccione **Guardar**.
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>Dirigirse a los grupos de usuarios de macOS para requerir la administración de Jamf<!-- 4061739 -->
-Podrá dirigirse a grupos específicos de usuarios para que los dispositivos de macOS puedan ser administrados por Jamf. Este destino le permitirá aplicar la integración de cumplimiento de Jamf a un subconjunto de dispositivos macOS mientras que otros dispositivos siguen siendo administrados por Intune. Los destinatarios también le permitirán migrar gradualmente los dispositivos de los usuarios de un sistema de administración de dispositivos móviles (MDM) al otro.
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Aplicaciones de Intune
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>Experiencia mejorada de inscripción de macOS en Portal de empresa<!-- 5074349  -->
-La experiencia de inscripción de Portal de empresa para macOS tendrá un proceso de inscripción más sencillo que se alineará más estrechamente con la Portal de empresa para la experiencia de inscripción de iOS. Los usuarios del dispositivo verán:  
-
-* Una interfaz de usuario más elegante.  
-* Una lista de comprobación de inscripción mejorada.  
-* Instrucciones más claras sobre cómo inscribir sus dispositivos.  
-* Opciones de solución de problemas mejoradas.  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>Supervisión y solución de problemas
@@ -217,10 +195,8 @@ La experiencia de inscripción de Portal de empresa para macOS tendrá un proces
 Una nueva experiencia de registro de auditoría centralizada recopilará los registros de auditoría de todas las categorías en una sola página. You'l puede filtrar los registros para obtener los datos que está buscando. Para ver los registros de auditoría, vaya a **Administración de inquilinos** > **registros de auditoría**. Para obtener más información, consulte [próximos cambios en los registros de auditoría en Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858).
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>Control de acceso basado en roles
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>Duplicar roles personalizados o integrados<!-- 1081938 -->
-Podrá copiar los roles integrados y personalizados. Para ello, vaya a **Intune** > **roles** > **todos los roles** > elija un rol en la lista > **duplicar**. Asegúrese de escribir un nuevo nombre que sea único.
 
 <!-- ***********************************************-->
 

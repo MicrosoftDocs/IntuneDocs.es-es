@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390855"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465659"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -244,6 +244,10 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 ### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
 
 - **Visualización de documentos corporativos en aplicaciones no administradas**: **Bloquear** impide la visualización de documentos corporativos en aplicaciones no administradas. **No configurado** (valor predeterminado) permite ver los documentos corporativos en cualquier aplicación. Por ejemplo, se quiere evitar que los usuarios guarden archivos de la aplicación OneDrive en Dropbox. Configure este valor como **Bloquear**. Después de que el dispositivo recibe la directiva (por ejemplo, después de un reinicio), ya no le permite guardar.
+
+
+  > [!NOTE]
+  > Cuando esta configuración está bloqueada, también se bloquean los teclados de terceros instalados desde la tienda de aplicaciones.
 
   - **Permitir que las aplicaciones no administradas lean desde cuentas de contactos administradas**: cuando se establece en **permitir**, las aplicaciones no administradas, como la aplicación integrada contactos de iOS, pueden leer y acceder a la información de contacto desde aplicaciones administradas, incluida la aplicación móvil de Outlook. **Sin configurar** (valor predeterminado) evita la lectura, incluso la eliminación de duplicados, en la aplicación de contactos integrada en el dispositivo.  
   
