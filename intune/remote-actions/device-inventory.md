@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713198"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564377"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -84,7 +84,7 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |ICCID|Identificador de tarjeta de circuitos integrados, que es el número de identificación único de una tarjeta SIM.|Windows, iOS, Android|
 |Fecha de inscripción|Fecha y hora en que el dispositivo se inscribió en Intune.|Windows, iOS, Android|
 |Último contacto|Fecha y hora en que el dispositivo se conectó a Intune por última vez.|Windows, iOS, Android|
-|Código de omisión del bloqueo de activación|Código que se puede usar para omitir el bloqueo de activación.|Windows, iOS, Android|
+|Código de omisión del bloqueo de activación|Código que se puede usar para omitir el bloqueo de activación.|iOS|
 |Registrado en Azure AD|Si se establece en **Sí**, el dispositivo se registra en Azure Directory.|Windows, iOS, Android|
 |Registrado en Intune|Si se establece en **Sí**, el dispositivo se registra en Intune.|Windows, iOS, Android|
 |Cumplimiento|Estado de cumplimiento del dispositivo.|Windows, iOS, Android|
