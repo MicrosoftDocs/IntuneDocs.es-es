@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: Tutoriales
   items:
+    - name: Tutorial de Intune en el Administrador de puntos de conexión de Microsoft
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: Tutorial en Intune en Azure Portal
       href: tutorial-walkthrough-intune-portal.md
 - name: Conceptos
