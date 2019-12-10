@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507466"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564360"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -76,14 +76,14 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 
 ## <a name="get-started"></a>Introducción
 
-Puede encontrar la mayoría de la información relacionada con las aplicaciones en la carga de trabajo **Aplicaciones cliente**, a la que puede acceder haciendo lo siguiente:
+Puede encontrar la mayoría de la información relacionada con las aplicaciones en la carga de trabajo **Aplicaciones**, a la que puede acceder haciendo lo siguiente:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Microsoft Intune**, seleccione **Aplicaciones cliente**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Seleccione **Aplicaciones**.
 
-    ![Panel de carga de trabajo "Aplicaciones cliente"](./media/app-management/apps-workload.png)
+    ![Panel de carga de trabajo Aplicaciones](./media/app-management/apps-workload.png)
 
-Las cuatro secciones siguientes describen las opciones disponibles en el panel **Aplicaciones cliente**.
+Las cuatro secciones siguientes describen las opciones disponibles en el panel **Aplicaciones**.
 
 ### <a name="manage"></a>Administrar
 - **Aplicaciones**: seleccione esta opción para agregar, ver, asignar y supervisar las aplicaciones que usan los trabajadores. Para obtener más información, vea:

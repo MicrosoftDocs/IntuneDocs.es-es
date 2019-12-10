@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813484"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564220"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configuración de la aplicación Managed Home Screen de Microsoft para Android Enterprise
 
@@ -31,12 +31,12 @@ Managed Home Screen es la aplicación que se usa para dispositivos Android Enter
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Cuándo configurar la aplicación Managed Home Screen de Microsoft
 
-Normalmente, si las opciones están disponibles a través de Configuración del dispositivo, configúrelas ahí. De esta forma ahorra tiempo, minimiza los errores y obtendrá una mejor experiencia de soporte técnico de Intune. Sin embargo, actualmente algunas de las opciones de Managed Home Screen solo están disponibles a través de la hoja **Directivas de configuración de aplicaciones** de la consola de Intune. Use este documento para obtener información sobre cómo configurar las distintas opciones mediante el Diseñador de configuraciones o un script JSON. 
+Normalmente, si las opciones están disponibles a través de Configuración del dispositivo, configúrelas ahí. De esta forma ahorra tiempo, minimiza los errores y obtendrá una mejor experiencia de soporte técnico de Intune. Sin embargo, actualmente algunas de las opciones de Managed Home Screen solo están disponibles a través del panel **Directivas de configuración de aplicaciones** de la consola de Intune. Use este documento para obtener información sobre cómo configurar las distintas opciones mediante el Diseñador de configuraciones o un script JSON. 
 
 > [!NOTE]
-> Actualmente es posible, y recomendable, establecer las aplicaciones permitidas y los vínculos web anclados a través de **Aplicaciones cliente** y **Configuración del dispositivo**. Para obtener la lista completa de opciones disponibles en **Configuración del dispositivo** que afectan a Managed Home Screen, vea [ Configuración del dispositivo dedicado](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
+> Actualmente es posible, y recomendable, establecer las aplicaciones permitidas y los vínculos web anclados a través de **Aplicaciones** y **Configuración del dispositivo**. Para obtener la lista completa de opciones disponibles en **Configuración del dispositivo** que afectan a Managed Home Screen, vea [ Configuración del dispositivo dedicado](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-En primer lugar, vaya a la consola de Intune en Azure Portal y seleccione **Aplicaciones cliente** > **Directivas de configuración de aplicaciones**. Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Managed Home Screen** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Managed Home Screen. 
+En primer lugar, vaya al [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones**. Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Managed Home Screen** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Managed Home Screen. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Selección de un formato de opciones de configuración
 

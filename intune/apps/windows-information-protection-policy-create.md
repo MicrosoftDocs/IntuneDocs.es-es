@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a2575c0d4e6cdcfdffe09e37880f56647bc835
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496438"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563773"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -71,53 +71,51 @@ Una vez configurado Intune en su organización, puede crear una directiva espec�
 > Si quiere saber más sobre cómo crear directivas de WIP para Intune, incluidos los valores disponibles y cómo configurarlos, vea [Crear una directiva Windows Information Protection (WIP) con MAM usando Azure Portal de Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) en la biblioteca de documentación de Seguridad de Windows. 
 
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**.
-3. Seleccione **Aplicaciones cliente** en la hoja **Microsoft Intune**.
-4. Seleccione **Directivas de protección de aplicaciones** en la hoja **Aplicaciones cliente**.
-5. Seleccione **Agregar directiva** para que se muestre la hoja **Agregar directiva**.
-6. Agregue los siguientes valores:
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. En **Aplicaciones** > **Directivas de protección de aplicaciones** > **Crear directiva**.
+3. Agregue los siguientes valores:
     - **Nombre:** escriba un nombre (necesario) para la nueva directiva.
     - **Descripción:** (opcional) escriba una descripción.
     - **Plataforma:** elija **Windows 10** como plataforma admitida para la directiva de protección de aplicaciones.
     - **Estado de inscripción:** elija **Sin inscripción** como estado de inscripción para la directiva.
-7. Elija **Crear**. La directiva se crea y aparece en la tabla de la hoja **Directivas de protección de aplicaciones**.
+4. Elija **Crear**. La directiva se crea y aparece en la tabla del panel **Directivas de protección de aplicaciones**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Para agregar aplicaciones recomendadas a la lista de aplicaciones protegidas
 
-1. Seleccione **Aplicaciones cliente** en la hoja **Microsoft Intune**.
-2. Seleccione **Directivas de protección de aplicaciones** en la hoja **Aplicaciones cliente**.
-3. En la hoja **Directivas de protección de aplicaciones**, seleccione la directiva que quiera modificar. Se muestra la hoja **Intune App Protection**.
-4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
-5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Directivas de protección de aplicaciones**.
+3. En el panel **Directivas de protección de aplicaciones**, seleccione la directiva que desea modificar. Se muestra el panel **Protección de aplicaciones de Intune**.
+4. Elija **Aplicaciones protegidas** en el panel **Intune App Protection**. Se abre el panel **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
+5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior del panel le permite cambiar el filtro de la lista.
 6. Seleccione cada una de las aplicaciones a las que quiera dar permiso para acceder a sus datos corporativos.
-7. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
+7. Haga clic en **Aceptar**. El panel **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
 8. Haga clic en **Guardar**.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Agregar una aplicación de la Tienda a la lista de aplicaciones protegidas
 
 **Para agregar una aplicación de la Tienda**
-1. Seleccione **Aplicaciones cliente** en la hoja **Microsoft Intune**.
-2. Seleccione **Directivas de protección de aplicaciones** en la hoja **Aplicaciones cliente**.
-3. En la hoja **Directivas de protección de aplicaciones**, seleccione la directiva que quiera modificar. Se muestra la hoja **Intune App Protection**.
-4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
-5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
+
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Directivas de protección de aplicaciones**.
+3. En el panel **Directivas de protección de aplicaciones**, seleccione la directiva que desea modificar. Se muestra el panel **Protección de aplicaciones de Intune**.
+4. Elija **Aplicaciones protegidas** en el panel **Intune App Protection**. Se abre el panel **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
+5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior del panel le permite cambiar el filtro de la lista.
 6. En la lista, seleccione **Aplicaciones de la Tienda**.
 7. Especifique los valores para **Nombre**, **Editor**, **Nombre de producto** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
-9. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
+9. Haga clic en **Aceptar**. El panel **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
 10. Haga clic en **Guardar**.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Agregar una aplicación de escritorio a la lista de aplicaciones protegidas
 
 **Para agregar una aplicación de escritorio**
-1. Seleccione **Aplicaciones cliente** en la hoja **Microsoft Intune**.
-2. Seleccione **Directivas de protección de aplicaciones** en la hoja **Aplicaciones cliente**.
-3. En la hoja **Directivas de protección de aplicaciones**, seleccione la directiva que quiera modificar. Se muestra la hoja **Intune App Protection**.
-4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
-5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Directivas de protección de aplicaciones**.
+3. En el panel **Directivas de protección de aplicaciones**, seleccione la directiva que desea modificar. Se muestra el panel **Protección de aplicaciones de Intune**.
+4. Elija **Aplicaciones protegidas** en el panel **Intune App Protection**. Se abre el panel **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
+5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior del panel le permite cambiar el filtro de la lista.
 6. En la lista, seleccione **Aplicaciones de escritorio**.
 7. Escriba valores para **Nombre**, **Editor**, **Nombre de producto**, **Archivo**, **Versión mínima**, **Versión máxima** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
-9. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
+9. Haga clic en **Aceptar**. El panel **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
 10. Haga clic en **Guardar**.
 
 ## <a name="wip-learning"></a>Aprendizaje de WIP
@@ -150,7 +148,7 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
 
 ### <a name="add-a-protection-mode"></a>Agregar un modo de protección
 
-1. En la hoja **Directiva de aplicaciones**, seleccione el nombre de la directiva y elija **Valores obligatorios**.
+1. En el panel **Directiva de aplicaciones**, seleccione el nombre de la directiva y elija **Valores obligatorios**.
 
     ![Captura de pantalla del panel de modo de aprendizaje](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
@@ -160,7 +158,7 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
 
 1. Abra [Azure Portal](https://portal.azure.com). Elija **Todos los servicios**. Escriba **Intune** en el filtro del cuadro de texto.
 
-3. Seleccione **Intune** > **Aplicaciones cliente**.
+3. Elija **Intune** > **Aplicaciones**.
 
 4. Elija **Estado de protección de la aplicación** > **Informes** > **Aprendizaje de Windows Information Protection**.  
 
@@ -188,9 +186,9 @@ Además de establecer la opción **Permitir que el indizador de Windows Search b
 
 Después de crear la directiva de protección de aplicaciones de WIP, debe implementarla en su organización mediante MAM.
 
-1. En la hoja **Directiva de aplicaciones**, seleccione la directiva de protección de aplicaciones recién creada y elija **Grupos de usuarios** > **Agregar grupo de usuarios**.
+1. En el panel **Directiva de aplicaciones**, elija la directiva de protección de aplicaciones recién creada y elija **Grupos de usuarios** > **Agregar grupo de usuarios**.
 
-    Se abre una lista de grupos de usuarios, que consta de todos los grupos de seguridad de Azure Active Directory, en la hoja **Agregar grupo de usuarios**.
+    Se abre una lista de grupos de usuarios, que consta de todos los grupos de seguridad de Azure Active Directory, en el panel **Agregar grupo de usuarios**.
 
 2. Seleccione el grupo al que quiere que se aplique la directiva y, después, elija **Seleccionar** para implementar la directiva.
 

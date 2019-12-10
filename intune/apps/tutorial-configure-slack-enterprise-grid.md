@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496724"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563395"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configuración de Slack para usar Intune para EMM y la configuración de aplicaciones
 
@@ -55,7 +55,7 @@ Agregue la aplicación Slack para EMM de iOS al inquilino de Intune y cree una d
 
 ### <a name="add-slack-for-emm-to-intune"></a>Incorporación de Slack para EMM a Intune
 Agregue Slack para EMM como una aplicación iOS administrada en Intune y asigne sus usuarios de Slack. Las aplicaciones son específicas para una plataforma, por lo que deberá agregar una aplicación de Intune distinta para los usuarios de Slack en dispositivos Android.
-1. En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
+1. En Intune, seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 2. En Tipo de aplicación, seleccione **Store app - iOS** (Aplicación de la tienda: iOS).
 3. Seleccione **Buscar en App Store**. Escriba el término de búsqueda "Slack para EMM" y seleccione la aplicación.
 4. Seleccione **App information** (Información de la aplicación) y configure los cambios que considere necesarios.
@@ -107,7 +107,7 @@ Agregue la aplicación administrada de Google Play Slack al inquilino de Intune 
 
 ### <a name="add-slack-to-intune"></a>Incorporación de Slack a Intune
 Agregue Slack como aplicación administrada de Google Play en Intune y asigne sus usuarios de Slack. Las aplicaciones son específicas para una plataforma, por lo que deberá agregar una aplicación de Intune distinta para los usuarios de Slack en dispositivos iOS.
-1. En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
+1. En Intune, seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 2. En Tipo de aplicación, seleccione **Store app – Managed Google Play** (Aplicación de la tienda: administrada de Google Play).
 3. Seleccione **Managed Google Play - Approve** (Administrada de Google Play: aprobar). Escriba el término de búsqueda "Slack para EMM" y seleccione la aplicación.
 4. Seleccione **Aprobar**.

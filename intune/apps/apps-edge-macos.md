@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754841"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563584"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Adición de Microsoft Edge a dispositivos macOS con Microsoft Intune
 
@@ -40,15 +40,15 @@ Para poder implementar, configurar, supervisar o proteger aplicaciones, antes de
 ## <a name="add-microsoft-edge-to-intune"></a>Adición de Microsoft Edge a Intune
 Puede agregar a Intune una instancia de Microsoft Edge versión 77 y posteriores haciendo lo siguiente:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 3. En la lista **Tipo de aplicación** en **Microsoft Edge, versión 77 y posteriores**, seleccione **macOS**.
 
 ## <a name="configure-app-information"></a>Configuración de información de la aplicación
 En este paso, proporcionará información sobre la implementación de esta aplicación. Esta información ayuda a identificar la aplicación en Intune y sirve para que los usuarios la encuentren en el Portal de empresa.
 
-1. Haga clic en **Información de la aplicación** para mostrar la hoja **Información de la aplicación**.
-2. En la hoja **Información de la aplicación**, proporcione información sobre la implementación de esta aplicación. Esta información ayuda a identificar la aplicación en Intune y sirve para que los usuarios la encuentren en el Portal de empresa.
+1. Haga clic en **Información de la aplicación** para mostrar el panel **Información de la aplicación**.
+2. En el panel **Información de la aplicación**, proporcione información sobre la implementación de esta aplicación. Esta información ayuda a identificar la aplicación en Intune y sirve para que los usuarios la encuentren en el Portal de empresa.
     - **Nombre**: Escriba el nombre de la aplicación tal como se mostrará en el portal de empresa. Asegúrese de que todos los nombres son únicos. Si el mismo nombre de aplicación existe dos veces, solo se muestra a los usuarios una de las aplicaciones en el portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. Por ejemplo, podría enumerar los usuarios de destino en la descripción.
     - **Publicador**: Microsoft aparece como publicador.
@@ -64,8 +64,8 @@ En este paso, proporcionará información sobre la implementación de esta aplic
 ## <a name="configure-microsoft-edge-settings"></a>Configuración de las opciones de Microsoft Edge
 En este paso, configure las opciones de instalación de la aplicación.
 
-1. En la hoja **Agregar aplicación**, seleccione **Configuración de la aplicación**.
-2. En la hoja **Configuración de la aplicación**, el canal **Beta** está seleccionado automáticamente y no se puede cambiar.
+1. En el panel **Agregar aplicación**, seleccione **Configuración de la aplicación**.
+2. En el panel **Configuración de la aplicación**, el canal **Beta** está seleccionado automáticamente y no se puede cambiar.
     - El canal **Beta** es la experiencia de versión preliminar de Microsoft Edge más estable y la mejor opción para una prueba piloto completa dentro de la organización. Con actualizaciones importantes cada seis semanas.
 
     > [!NOTE]
@@ -80,7 +80,7 @@ Puede usar las etiquetas de ámbito para determinar quién puede ver informació
 4.  Haga clic en **Seleccionar** > **Aceptar**.
 
 ## <a name="add-the-app"></a>Agregar la aplicación
-Cuando acabe de configurar, seleccione **Agregar** en la hoja **Agregar aplicación**. 
+Cuando acabe de configurar, seleccione **Agregar** en el panel **Agregar aplicación**. 
 
 La aplicación que ha creado aparece en la lista de aplicaciones, donde puede asignarla a los grupos que seleccione. 
 

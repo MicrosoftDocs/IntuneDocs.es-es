@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059768"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563620"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Habilitación de aplicaciones de Win32 en dispositivos en modo S
 
@@ -58,7 +58,7 @@ Los pasos para permitir que las aplicaciones Win32 se ejecuten en un dispositivo
 Para crear una directiva complementaria del modo Windows 10 S, siga estos pasos:
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el panel de **Intune**, seleccione **Aplicaciones cliente** > **Directivas complementarias del modo S** > **Crear directiva**.
+2. Seleccione **Aplicaciones** > **Directivas complementarias del modo S** > **Crear directiva**.
 3. Antes de agregar el **archivo de directiva**, debe crearlo y firmarlo. Para obtener más información, vea:
     - [Creación de una directiva WDAC mediante herramientas de PowerShell y convertirla a un formato binario](https://go.microsoft.com/fwlink/?linkid=2095387)
     - [Firma con el servicio de firma de Device Guard](https://go.microsoft.com/fwlink/?linkid=2095629) **(recomendado)**

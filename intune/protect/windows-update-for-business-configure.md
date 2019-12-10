@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199329"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291094"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Administración de actualizaciones de software de Windows 10 en Intune
 
@@ -208,13 +208,18 @@ Cuando un dispositivo recibe una directiva de actualizaciones de característica
 
 - A diferencia de *Pausar* un anillo de actualización, que expira después de 35 días, la directiva de actualizaciones de características de Windows 10 permanece en vigor. Los dispositivos no instalarán una nueva versión de Windows hasta que modifique o quite la directiva de actualizaciones de características de Windows 10. Si edita la directiva para especificar una versión más reciente, los dispositivos pueden instalar las características desde esa versión de Windows.
 
-> [!IMPORTANT]
-> Cuando implemente una directiva de *actualización de características de Windows 10* y de *anillo de actualización de Windows 10* en el mismo dispositivo, revise el anillo de actualización para las siguientes configuraciones:
->
-> - El **Período de aplazamiento de actualizaciones de características (días)** debe establecerse en **0**.
-> - Las actualizaciones de características para el anillo de actualización deben estar *en ejecución*. No se deben pausar.
+### <a name="limitations-for-windows-10-feature-updates"></a>Limitaciones de las actualizaciones de características de Windows 10
 
-Las actualizaciones de características de Windows 10 no se admiten con Windows Autopilot.
+- Cuando implemente una directiva de *actualización de características de Windows 10* en un dispositivo que también recibe una directiva de *anillo de actualización de Windows 10*, revise que el anillo de actualización incluya las siguientes configuraciones:
+  - El **período de aplazamiento de actualizaciones de características (días)** se debe establecer en **0**.
+  - Las actualizaciones de características para el anillo de actualización deben estar *en ejecución*. No se deben pausar.
+
+- No se admite la directiva de *actualizaciones de características de Windows 10* con Autopilot. Intune no implementará la directiva en:
+  - Dispositivos aprovisionados por Autopilot.
+  - Dispositivos previamente aprovisionados con Autopilot.
+
+  Esta limitación está bajo examen para ver si se puede admitir en el futuro.
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Creación y asignación de actualizaciones de características de Windows 10
 

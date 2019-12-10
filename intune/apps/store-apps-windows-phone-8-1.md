@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12218ec20f8cc00ebcf2294387f711ea39d79256
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3168d517ebbb59dc9d6fe5a9c262ad8e1c909619
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507068"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563807"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de la Tienda de Windows Phone 8.1 a Microsoft Intune
 
@@ -34,12 +34,10 @@ Antes de asignar una aplicación a un dispositivo o a un grupo de usuarios, prim
 ## <a name="add-an-app-to-intune"></a>Agregar una aplicación a Intune
 Puede agregar una aplicación de la Tienda de Windows Phone 8.1 a Intune desde Azure Portal si hace lo siguiente:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Administrar**, seleccione **Aplicaciones**.
-5. En el panel **Aplicaciones**, seleccione **Agregar**.
-6. En el panel **Agregar aplicación**, seleccione un **Tipo de aplicación** **Windows Phone 8.1** y luego seleccione **Información de la aplicación**.
-7. En el panel **Información de la aplicación**, agregue la información de la aplicación. Según la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
+3. En el panel **Agregar aplicación**, seleccione un **Tipo de aplicación** **Windows Phone 8.1** y luego seleccione **Información de la aplicación**.
+4. En el panel **Información de la aplicación**, agregue la información de la aplicación. Según la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
     - **Nombre**: escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. Asegúrese de que cualquier nombre de aplicación que use sea exclusivo. Si hay un nombre de aplicación duplicado, solo se muestra uno a los usuarios del Portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
     - **Publicador**: Escriba el nombre del publicador de la aplicación.
@@ -52,8 +50,8 @@ Puede agregar una aplicación de la Tienda de Windows Phone 8.1 a Intune desde A
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, *Departamento de Recursos Humanos*.
     - **Notas**: opcionalmente, escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: opcionalmente, cargue un icono que se asociará con la aplicación. Este icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
-8. Seleccione **Aceptar**.
-9. Seleccione **Agregar**.
+5. Seleccione **Aceptar**.
+6. Seleccione **Agregar**.
 
 La aplicación que ha creado aparece en la lista de aplicaciones, donde puede asignarla a los grupos que seleccione.
 

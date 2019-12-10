@@ -6,31 +6,31 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
-ms.reviewer: heenamac
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42500618c5ec753fcabf72b03f175b823c3337d4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 504c77fb56918cf97312e70f50b38356f9f7efef
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504392"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409697"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
-> [!NOTE] 
-> Este tema se aplica a todos los partners de Mobile Threat Defense.
-
 Intune con MTD le ayuda a detectar amenazas y a evaluar el riesgo en dispositivos móviles. Puede crear una regla de directivas de cumplimiento de dispositivos de Intune que evalúe el riesgo para determinar si el dispositivo cumple con la directiva o no lo hace. Luego puede usar una [directiva de acceso condicional](create-conditional-access-intune.md) para bloquear el acceso a servicios en función del cumplimiento del dispositivo.
+
+> [!NOTE]
+> Este tema se aplica a todos los partners de Mobile Threat Defense.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -42,44 +42,41 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>Creación de una directiva de cumplimiento de dispositivos de MTD
 
-1. Vaya a [Azure Portal](https://portal.azure.com/) e inicie sesión con sus credenciales de Intune.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. En el **panel de Azure**, elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
+2. Seleccione **Dispositivos** > **Directivas de cumplimiento** > **Crear directiva**.
 
-3. Pulse **Intune** y se abrirá el **panel de Intune**.
+3. Especifique los valores de **Nombre** y **Descripción** de una directiva de cumplimiento de dispositivos, seleccione el valor de **Plataforma** y, luego, seleccione **Configurar** en la sección **Configuración**.
 
-4. En el **panel de Intune**, seleccione **Cumplimiento de dispositivos** y, luego, seleccione **Directivas** en la sección **Administrar**.
+4. En el panel **Directiva de cumplimiento**, seleccione **Estado de dispositivos**.
 
-5. Pulse **Crear directiva**, escriba el **nombre** y la **descripción** de cumplimiento del dispositivo, seleccione la **Plataforma** y, después, seleccione **Configurar** en la sección **Configuración**.
+5. En el panel **Estado del dispositivo**, elija el nivel de Mobile Threat en la lista desplegable **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**.
 
-6. En el panel **Directiva de cumplimiento**, seleccione **Estado de dispositivos**.
+   - **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
 
-7. En el panel **Estado de dispositivos**, pulse el nivel de Mobile Threat en la lista desplegable en **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**.
+   - **Baja**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
 
-    a.  **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
+   - **Media**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
 
-    b.  **Baja**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
+   - **Alta**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
 
-    c.  **Media**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
-
-    d.  **Alta**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
-
-8. Haga clic en **Aceptar** dos veces, después seleccione **Crear**.
+6. Seleccione **Aceptar** dos veces y, luego, seleccione **Crear** para crear la directiva.
 
 > [!IMPORTANT]
 > Si crea directivas de acceso condicional para Office 365 u otros servicios, se efectuará esta evaluación de cumplimiento de dispositivo y se bloqueará el acceso de los dispositivos no conformes a los recursos corporativos hasta que se resuelva la amenaza en el dispositivo.
 
 ## <a name="to-assign-an-mtd-device-compliance-policy"></a>Asignación de una directiva de cumplimiento de dispositivos de MTD
 
-Para asignar una directiva de cumplimiento de dispositivos a los usuarios, seleccione una directiva que haya configurado anteriormente. Las directivas existentes se pueden encontrar en el panel **Device compliance - Policies** (Conformidad de dispositivos: directivas).
+Para asignar una directiva de cumplimiento de dispositivos a los usuarios:
 
-1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Con esta acción se abre el panel donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Elija **Seleccionar grupos que incluir** para que se abra la página que muestra los grupos de seguridad de Azure AD.  Al elegir **Seleccionar** la directiva se implementa para los usuarios.
+2. Seleccione **Dispositivo** > **Directivas de cumplimiento**.
 
-    > [!NOTE] 
-    > Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
+3. Seleccione la directiva que quiere asignar a los usuarios y, luego, seleccione **Asignaciones**. Use las opciones disponibles para *Incluir* y *Excluir* los grupos que recibirán esta directiva.  
+
+4. Seleccione Guardar para completar la asignación. Al guardar la asignación, la directiva se implementa en los usuarios seleccionados y se evalúa el cumplimiento de sus dispositivos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Habilitar MTD con Intune](mtd-connector-enable.md)
+[Habilitar MTD con Intune](mtd-connector-enable.md)

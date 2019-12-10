@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea2d51b82f0f47ee4bfabc94c2e971e4cb666d4
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801741"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410195"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Uso de certificados para la autenticación en Microsoft Intune
 
@@ -36,18 +36,44 @@ Use certificados con Intune para autenticar a los usuarios en las aplicaciones y
 | PKCS#12 (o PFX)    | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |  |
 | Protocolo de inscripción de certificados simple (SCEP)  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | |
 
-Para implementar estos certificados, debe crear y asignar perfiles de certificado a los dispositivos.  
+Para implementar estos certificados, debe crear y asignar perfiles de certificado a los dispositivos.
 
 Cada perfil de certificado individual que cree es compatible con una sola plataforma. Por ejemplo, si usa certificados PKCS, creará un perfil de certificado PKCS para Android y un perfil de certificado PKCS independiente para iOS. Si también usa certificados SCEP para esas dos plataformas, tendrá que crear un perfil de certificado SCEP para Android y otro para iOS.
 
-**Consideraciones generales**:
-- Si no tiene una entidad de certificación (CA) empresarial, debe crearla o usar una de [uno de los asociados admitidos](certificate-authority-add-scep-overview.md#third-party-certification-authority-partners).
-- Si usa perfiles de certificado SCEP con Servicios de certificados de Active Directory de Microsoft, configurará un servidor de Servicio de inscripción de dispositivos de red (NDES).
-- Si usa SCEP con uno de nuestros asociados de entidad de certificación, tendrá que [integrarlo con Intune](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).
-- Los perfiles de certificado SCEP y PKCS requieren que descargue, instale y configure Microsoft Intune Certificate Connector.
-- Los certificados PKCS importados requieren que descargue, instale y configure el Conector de certificado PFX para Microsoft Intune.
-- Los certificados PKCS importados requieren que exporte los certificados desde la entidad de certificación y los importe en Microsoft Intune. Consulte [el proyecto PFXImport de PowerShell](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
-- Para que un dispositivo use perfiles de certificado SCEP, PKCS o PKCS importados, ese dispositivo debe confiar en la entidad de certificación raíz. Un *perfil de certificado de confianza* se usa para implementar el certificado de entidad de certificación raíz de confianza en los dispositivos.
+### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Consideraciones generales al usar una entidad de certificación de Microsoft
+
+Cuando se usa una entidad de certificación (CA) de Microsoft:
+
+- Para usar perfiles de certificado SCEP, debe [configurar un servidor de servicio de inscripción de dispositivos de red (NDES)](certificates-scep-configure.md#set-up-ndes) para su uso con Intune.
+- Para usar los siguientes tipos de perfiles de certificado, debe [instalar Microsoft Intune Certificate Connector](certificates-scep-configure.md#install-the-intune-certificate-connector):
+  - Perfil de certificación de SCEP
+  - Perfil de certificado PKCS
+
+- Para usar certificados PKCS importados:
+  - [Instale el conector de certificado PFX para Microsoft Intune](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
+  - Exporte los certificados de la entidad de certificación y, luego, impórtelos en Microsoft Intune. Consulte [el proyecto PFXImport de PowerShell](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
+
+- Implemente certificados mediante los siguientes mecanismos:
+  - [Perfiles de certificado de confianza](certificates-configure.md#create-trusted-certificate-profiles) para implementar en los dispositivos el certificado de CA raíz de confianza de la entidad de certificación raíz o intermedia (emisora).
+  - Perfiles de certificados de SCEP
+  - Perfiles de certificado PKCS
+  - Perfiles de certificados PKCS importados
+
+### <a name="general-considerations-when-you-use-a-third-party-certification-authority"></a>Consideraciones generales al usar una entidad de certificación de terceros
+
+Cuando se usa una entidad de certificación (CA) de terceros (que no es de Microsoft):
+
+- Para usar perfiles de certificado SCEP:
+  - Configure la integración con una entidad de certificación de terceros de [uno de nuestros asociados admitidos](certificate-authority-add-scep-overview.md#third-party-certification-authority-partners). La configuración incluye las siguientes instrucciones de la entidad de certificación de terceros para completar la integración de su CA con Intune.
+  - [Cree una aplicación en Azure AD](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration) que delegue derechos en Intune para realizar la validación del desafío de certificado SCEP.
+
+- Los certificados PKCS importados requieren que [instale el conector de certificado PFX para Microsoft Intune](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
+
+- Implemente certificados mediante los siguientes mecanismos:
+  - [Perfiles de certificado de confianza](certificates-configure.md#create-trusted-certificate-profiles) para implementar en los dispositivos el certificado de CA raíz de confianza de la entidad de certificación raíz o intermedia (emisora).
+  - Perfiles de certificados de SCEP
+  - Perfiles de certificado PKCS *(solo se admite con la [plataforma de PKI de Digicert ](certificates-digicert-configure.md))*
+  - Perfiles de certificados PKCS importados
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>Plataformas compatibles y perfiles de certificado
 
@@ -55,7 +81,7 @@ Cada perfil de certificado individual que cree es compatible con una sola plataf
 |--|--|--|--|---|
 | Administrador de dispositivos Android | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png)|  ![Compatible.](./media/certificates-configure/green-check.png) |
 | Android Enterprise <br> - Totalmente administrado (propietario del dispositivo)   | ![Compatible.](./media/certificates-configure/green-check.png) |   | ![Compatible.](./media/certificates-configure/green-check.png) |   |
-| Android Enterprise <br> - Dedicado (propietario del dispositivo)   |  |   |  |   |
+| Android Enterprise <br> - Dedicado (propietario del dispositivo)   | ![Compatible.](./media/certificates-configure/green-check.png)  |   | ![Compatible.](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> - Perfil de trabajo    | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Compatible.](./media/certificates-configure/green-check.png) |  ![Compatible.](./media/certificates-configure/green-check.png) |![Compatible.](./media/certificates-configure/green-check.png)|![Compatible.](./media/certificates-configure/green-check.png)|
@@ -65,7 +91,7 @@ Cada perfil de certificado individual que cree es compatible con una sola plataf
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>Exportación del certificado de entidad de certificación raíz de confianza
 
-Para usar certificados PKCS, SCEP y PKCS importados, los dispositivos deben confiar en la entidad de certificación raíz. Para establecer la confianza, exporte el certificado de entidad de certificación (CA) raíz de confianza y cualquier certificado de entidad de certificación intermedia o emisora, como un certificado público (.cer). Puede obtener estos certificados de la entidad de certificación emisora o desde cualquier dispositivo que confíe en ella.
+Para usar certificados PKCS, SCEP y PKCS importados, los dispositivos deben confiar en la entidad de certificación raíz. Para establecer la confianza, exporte el certificado de la entidad de certificación raíz de confianza y cualquier certificado de entidad de certificación intermedia o emisora, como un certificado público (.cer). Puede obtener estos certificados de la entidad de certificación emisora o desde cualquier dispositivo que confíe en ella.
 
 Para exportar el certificado, consulte la documentación de la entidad de certificación. Tendrá que exportar el certificado público como un archivo .cer.  No exporte la clave privada, un archivo .pfx.
 
@@ -73,12 +99,11 @@ Usará este archivo .cer al [crear perfiles de certificado de confianza](#create
 
 ## <a name="create-trusted-certificate-profiles"></a>creación de perfiles de certificado de confianza
 
-Cree un perfil de certificado de confianza antes de poder crear un perfil de certificado SCEP, PKCS o PKCS importado. La implementación de un perfil de certificado de confianza garantiza que cada dispositivo reconozca la legitimidad de la entidad de certificación. Los perfiles de certificado SCEP hacen referencia directamente a un perfil de certificado de confianza. Los perfiles de certificado PKCS no hacen referencia directamente al perfil de certificado de confianza, pero sí al servidor en el que se hospeda la entidad de certificación. Los perfiles de certificado PKCS importados no hacen referencia directamente al perfil de certificado de confianza, pero pueden usarlo en el dispositivo. La implementación de un perfil de certificado de confianza en los dispositivos garantiza que se establece esta confianza. Cuando un dispositivo no confía en la entidad de certificación raíz, se producirá un error en la directiva de perfil de certificado SCEP o PKCS.  
+Cree un perfil de certificado de confianza antes de poder crear un perfil de certificado SCEP, PKCS o PKCS importado. La implementación de un perfil de certificado de confianza garantiza que cada dispositivo reconozca la legitimidad de la entidad de certificación. Los perfiles de certificado SCEP hacen referencia directamente a un perfil de certificado de confianza. Los perfiles de certificado PKCS no hacen referencia directamente al perfil de certificado de confianza, pero sí al servidor en el que se hospeda la entidad de certificación. Los perfiles de certificado PKCS importados no hacen referencia directamente al perfil de certificado de confianza, pero pueden usarlo en el dispositivo. La implementación de un perfil de certificado de confianza en los dispositivos garantiza que se establece esta confianza. Cuando un dispositivo no confía en la entidad de certificación raíz, se producirá un error en la directiva de perfil de certificado SCEP o PKCS.
 
-Cree un perfil de certificado de confianza independiente para cada plataforma de dispositivo que quiera admitir, como lo haría con los perfiles de certificado SCEP, PKCS y PKCS importados.  
+Cree un perfil de certificado de confianza independiente para cada plataforma de dispositivo que quiera admitir, como lo haría con los perfiles de certificado SCEP, PKCS y PKCS importados.
 
-
-### <a name="to-create-a-trusted-certificate-profile"></a>Para crear un perfil de certificado de confianza  
+### <a name="to-create-a-trusted-certificate-profile"></a>Para crear un perfil de certificado de confianza
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -95,17 +120,18 @@ Cree un perfil de certificado de confianza independiente para cada plataforma de
 
 4. Seleccione **Configuración** y busque el archivo .cer del certificado de entidad de certificación raíz de confianza que ha exportado para usar con este perfil de certificado y, después, seleccione **Aceptar**.
 
-5. Solo para dispositivos Windows 8.1 y Windows 10, seleccione el **almacén de destino** del certificado de confianza. Las opciones son:  
+5. Solo para dispositivos Windows 8.1 y Windows 10, seleccione el **almacén de destino** del certificado de confianza. Las opciones son:
+
    - **Almacén de certificados de equipo - Raíz**
    - **Almacén de certificados de equipo - Intermedio**
    - **Almacén de certificados de usuario - Intermedio**
 
 6. Cuando haya terminado, elija **Aceptar**, vuelva al panel **Crear perfil** y seleccione **Crear**.
 
-El perfil aparece en la lista de perfiles de la ventana *Dispositivos - Perfiles de configuración*, con un tipo de perfil de **Certificado de confianza**.  Asegúrese de asignar este perfil a los dispositivos que vayan a usar certificados SCEP o PKCS. Para asignar el perfil a grupos, vea [Asignación de perfiles de dispositivo](../configuration/device-profile-assign.md).
+El perfil aparece en la lista de perfiles de la ventana *Dispositivos - Perfiles de configuración*, con un tipo de perfil de **Certificado de confianza**. Asegúrese de asignar este perfil a los dispositivos que vayan a usar certificados SCEP o PKCS. Para asignar el perfil a grupos, vea [Asignación de perfiles de dispositivo](../configuration/device-profile-assign.md).
 
-> [!NOTE]  
-> Es posible que los dispositivos Android muestren un mensaje que indica que un tercero ha instalado un certificado de confianza.  
+> [!NOTE]
+> Es posible que los dispositivos Android muestren un mensaje que indica que un tercero ha instalado un certificado de confianza.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
@@ -115,7 +141,8 @@ El perfil aparece en la lista de perfiles de la ventana *Dispositivos - Perfiles
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Cree perfiles de certificado SCEP, PKCS o PKCS importados para cada plataforma que quiera usar. Para continuar, vea los artículos siguientes:  
+Cree perfiles de certificado SCEP, PKCS o PKCS importados para cada plataforma que quiera usar. Para continuar, vea los artículos siguientes:
+
 - [Configuración de la infraestructura para admitir certificados SCEP con Intune](certificates-scep-configure.md)  
 - [Configuración y administración de certificados PKCS con Intune](certficates-pfx-configure.md)  
-- [Creación de un perfil de certificado PKCS importado](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [Creación de un perfil de certificado PKCS importado](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)

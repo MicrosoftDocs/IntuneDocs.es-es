@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566180"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564163"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
@@ -51,8 +51,7 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 ## <a name="create-an-app-configuration-policy"></a>Crear una directiva de configuración de aplicaciones
 
 1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Elija la carga de trabajo **Aplicaciones cliente**.
-4. En el grupo **Administrar**, elija **Directivas de configuración de aplicaciones** y **Agregar**.
+3. Elija **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar**.
 5. Especifique los siguientes detalles:
     - **Nombre**: nombre del perfil que aparece en Azure Portal.
     - **Descripción**: descripción del perfil que aparece en Azure Portal.
@@ -74,7 +73,7 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 13. Seleccione la pestaña **Excluir**. 
 14. Haga clic en **Seleccionar grupos para excluir** para mostrar el panel relacionado.
 
-    ![Captura de pantalla de la hoja Seleccionar grupos para excluir de la página Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![Captura de pantalla del panel Seleccionar grupos para excluir de la página Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. Seleccione los grupos que quiera excluir y después haga clic en **Seleccionar**.
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Además, Intune admite los siguientes tipos de token en la lista de propiedades:
 
 Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no son compatibles con la versión de App Store de la aplicación Portal de empresa. Sin embargo, puede configurar la aplicación Portal de empresa para que admita dispositivos iOS DEP mediante los pasos siguientes.
 
-1. En Intune en Azure Portal:
-    - Agregue el Portal de empresa de Intune si es necesario; para ello, vaya a **Intune** > **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
-    - Vaya a **Aplicaciones cliente** > **Directivas de configuración de aplicaciones** para crear una directiva de configuración de aplicaciones para la aplicación Portal de empresa.
-2. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Adición de directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md) o, para MDM híbrida, [Aplicación de la configuración a aplicaciones iOS con directivas de configuración de System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+1. En Intune, agregue la aplicación Portal de empresa de Intune si es necesario; para ello, vaya a **Intune** > **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
+2. Vaya a **Aplicaciones** > **Directivas de configuración de aplicaciones** para crear una directiva de configuración de aplicaciones para la aplicación Portal de empresa.
+3. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Adición de directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md) o, para MDM híbrida, [Aplicación de la configuración a aplicaciones iOS con directivas de configuración de System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no 
 4. Indique a los usuarios finales que inicien sesión en la aplicación Portal de empresa cuando se instale automáticamente.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Supervisar el estado de configuración de aplicaciones iOS por dispositivo 
-Una vez que se ha asignado una directiva de configuración, puede supervisar el estado de configuración de aplicaciones iOS de cada dispositivo administrado. Desde **Microsoft Intune** en Azure Portal, seleccione **Dispositivos** > **Todos los dispositivos**. En la lista de dispositivos administrados, seleccione un dispositivo específico para mostrar una hoja para el dispositivo. En la hoja del dispositivo, seleccione **Configuración de aplicaciones**.  
+Una vez que se ha asignado una directiva de configuración, puede supervisar el estado de configuración de aplicaciones iOS de cada dispositivo administrado. Desde **Microsoft Intune** en Azure Portal, seleccione **Dispositivos** > **Todos los dispositivos**. En la lista de dispositivos administrados, seleccione un dispositivo específico para mostrar un panel para el dispositivo. En el panel del dispositivo, seleccione **Configuración de aplicaciones**.  
 
 ## <a name="additional-information"></a>Información adicional
 

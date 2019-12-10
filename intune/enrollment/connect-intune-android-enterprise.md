@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a89b94f098292bf44122d6d2d144c7f35967cd32
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709444"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563840"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Conexión de una cuenta de Intune a una cuenta de Google Play administrado
 
@@ -42,7 +42,7 @@ Para facilitarle la configuración y el uso de la administración de Android En
 > Debido a la interacción entre los dominios de Google y Microsoft, es posible que para este paso deba ajustar la configuración del explorador.  Asegúrese de que "portal.azure.com" y "play.google.com" estén en la misma zona de seguridad en su explorador.
 
 1. Si aún no lo ha hecho, prepárese para la administración de dispositivos móviles. Para ello, [defina la entidad de administración de dispositivos móviles](../fundamentals/mdm-authority-set.md) como **Microsoft Intune**.
-2. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Android** > **Google Play administrado**.  Si usas un rol de administrador de Intune personalizado, para el acceso se requieren permisos de actualización y lectura de la organización.
+2. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **Android** > **Inscripción de Android** > **Google Play administrado**.  Si usas un rol de administrador de Intune personalizado, para el acceso se requieren permisos de actualización y lectura de la organización.
    
    ![Pantalla de inscripción de Android Enterprise](./media/connect-intune-android-enterprise/android-work-bind.png)
 
@@ -64,7 +64,7 @@ Para facilitarle la configuración y el uso de la administración de Android En
 Puede desactivar la inscripción y administración de Android Enterprise. Para ello, debe retirar primero la inscripción de cualquier dispositivo Android Enterprise, incluidos los dispositivos de perfil de trabajo, los dispositivos dedicados y los dispositivos totalmente administrados. Después, elija **Desconectar** en la consola de administración de Intune para retirar la inscripción de todos los dispositivos del perfil de trabajo, los dispositivos dedicados y los dispositivos totalmente administrados de Android Enterprise que se hayan inscrito. Esto también quita la relación entre la cuenta de Google Play administrado e Intune.
 
 1. Como administrador de Intune, inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Elija **Inscripción de dispositivos** > **Inscripción de Android** > **Google Play administrado** > **Desconectar**.
+2. Choose **Dispositivos** > **Android** > **Inscripción de Android** > **Google Play administrado** > **Desconectar**.
 3. Elija **Sí** para desconectarse y anular la inscripción de todos los dispositivos Android Enterprise de Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes

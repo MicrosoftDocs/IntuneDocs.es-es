@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059892"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694954"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicación de la configuración y características en dispositivos con perfiles de dispositivos Microsoft Intune
 
@@ -49,7 +49,7 @@ Estas plantillas proporcionan a los administradores una vista simplificada de la
 
 Esta característica es compatible con:
 
-- Windows 10 1809 y versiones posteriores en firmware compatible.
+- Windows 10 y versiones posteriores
 
 ## <a name="certificates"></a>Certificados
 
@@ -102,7 +102,7 @@ Esta característica es compatible con:
 
 Esta característica es compatible con:
 
-- Windows 10 y versiones posteriores
+- Windows 10 1809 y versiones posteriores en firmware compatible
 
 ## <a name="device-restrictions"></a>Restricciones de dispositivos
 

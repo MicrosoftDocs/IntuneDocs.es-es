@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592091"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564312"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Administración del acceso web con un explorador protegido por directiva de Microsoft Intune
 
@@ -91,29 +91,28 @@ Para limitar las aplicaciones web conectadas a Azure AD al uso de Intune Manag
 > [!TIP]  
 > Acceso condicional es una tecnología de Azure Active Directory (Azure AD). El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
 
-
-1. En el portal de Intune, seleccione **Acceso condicional** > **Nueva directiva**. 
-2. Luego, seleccione **Conceder** en la sección **Controles de acceso** de la hoja. 
-3. Haga clic en **Requerir aplicación cliente aprobada**. 
-4. Haga clic en **Seleccionar** en la hoja **Conceder**. Esta directiva se debe asignar a las aplicaciones en la nube que quiera que estén accesibles a únicamente la aplicación Intune Managed Browser.
-
-    ![Azure AD: Directiva de acceso condicional de Managed Browser](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. En la sección **Asignaciones**, seleccione **Condiciones** > **Aplicaciones cliente**. Aparece la hoja **Aplicaciones cliente**.
-6. Haga clic en **Sí** en **Configurar** para aplicar la directiva a aplicaciones cliente específicas.
-7. Compruebe que **Explorador** está seleccionado como aplicación cliente.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Acceso condicional** > **Nueva directiva**.
+3. En **Nombre** agregue el nombre de la directiva. 
+4. En la sección **Asignaciones**, seleccione **Condiciones** > **Aplicaciones cliente**. Aparecerá el panel **Aplicaciones cliente**.
+5. Haga clic en **Sí** en **Configurar** para aplicar la directiva a aplicaciones cliente específicas.
+6. Compruebe que **Explorador** está seleccionado como aplicación cliente.
 
     ![Azure AD - Managed Browser - Selección de aplicaciones cliente](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > Si quiere restringir qué aplicaciones nativas (aplicaciones que no son de explorador) pueden tener acceso a estas aplicaciones en la nube, también puede seleccionar **Aplicaciones móviles y aplicaciones de escritorio**.
 
-8. En la sección **Asignaciones**, seleccione **Usuarios y grupos** y, después, elija los usuarios o grupos a los que quiera asignar esta directiva. 
+7. Haga clic en **Listo** > **Listo**.
+8. En la sección **Asignaciones**, seleccione **Usuarios y grupos** y elija los usuarios o grupos a los que quiera asignar esta directiva. Haga clic en **Listo** para cerrar el panel.
+9. En la sección **Asignaciones**, seleccione **Aplicaciones en la nube o acciones** para elegir las aplicaciones que se van a proteger con esta directiva. Haga clic en **Listo** para cerrar el panel.
+10. Seleccione **Conceder** en la sección **Controles de acceso** del panel. 
+11. Haga clic en **Conceder acceso** y luego en **Requerir aplicación cliente aprobada**. 
+12. Haga clic en **Seleccionar** en el panel **Conceder**. Esta directiva se debe asignar a las aplicaciones en la nube que quiera que estén accesibles a únicamente la aplicación Intune Managed Browser.
 
-    > [!NOTE]
-    > A los usuarios también se les deben asignar directivas de Intune App Protection para recibir directivas de configuración de aplicaciones. Para obtener más información sobre cómo crear directivas de Intune App Protection, vea [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md)
+    ![Azure AD: Directiva de acceso condicional de Managed Browser](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. En la sección **Asignaciones**, seleccione **Aplicaciones en la nube** para elegir las aplicaciones que se van a proteger con esta directiva.
+
 
 Una vez configurada la directiva, los usuarios deberán usar inexorablemente Intune Managed Browser para tener acceso a las aplicaciones web conectadas a Azure AD que estén protegidas con dicha directiva. Si los usuarios intentan usar un explorador no administrado en este escenario, aparecerá un aviso que les indica que deben usar Intune Managed Browser en su lugar.
 
@@ -133,27 +132,28 @@ Para el inicio de sesión único hace falta que el dispositivo esté registrado 
 >[!IMPORTANT]
 >Para que se apliquen las configuraciones de aplicaciones, el explorador protegido del usuario u otra aplicación del dispositivo ya deben estar administrados mediante [directivas de aplicación de Intune]( ../app-protection-policy.md)
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En la hoja **Aplicaciones cliente** de la lista Administrar, elija **Directivas de configuración de aplicaciones**.
-4. En la hoja **Directivas de configuración de aplicaciones**, elija **Agregar**.
-5. En la hoja **Agregar directiva de configuración**, escriba un **nombre** y una **descripción** opcional para las opciones de configuración de aplicaciones.
-6. En **Tipo de inscripción del dispositivo**, elija **Aplicaciones administradas**.
-7. Elija **Seleccionar la aplicación requerida** y, después, en la hoja **Aplicaciones de destino**, elija **Managed Browser** o **Edge** para iOS, para Android o para ambos.
-8. Elija **Aceptar** para volver a la hoja **Agregar directiva de configuración**.
-9. Elija **Opciones de configuración**. En la hoja **Configuración**, defina los pares de clave y valor para proporcionar configuraciones para Managed Browser. Use las secciones posteriores de este artículo para obtener información sobre los diferentes pares de clave y valor que puede definir.
-10. Cuando termine, elija **Aceptar**.
-11. En la hoja **Agregar directiva de configuración**, elija **Agregar**.
-12. Se crea la nueva configuración y se muestra en la hoja **Configuración de aplicación**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Aplicaciones administradas**.
+3. En la página **Aspectos básicos** del panel **Crear una directiva de configuración de aplicaciones**, escriba un **nombre** y una **descripción** opcional para las opciones de configuración de aplicaciones.
+4. Elija **Seleccionar la aplicación pública** y elija **Managed Browser** o **Edge** para iOS, para Android o para ambos.
+5. Haga clic en **Seleccionar** para volver al panel **Crear una directiva de configuración de aplicaciones**.
+6. Haga clic en **Siguiente** para abrir la página **Configuración**.
+7. En la página **Configuración**, defina los pares de clave y valor para proporcionar configuraciones para la aplicación. Use las secciones posteriores de este artículo para obtener información sobre los diferentes pares de clave y valor que puede definir.
+8. Haga clic en **Siguiente** para mostrar la página **Asignación** y luego haga clic en **Seleccionar grupos para incluir** o **Seleccionar grupos para excluir**.
+9. Elija **Siguiente** para mostrar la página **Revisar y crear**.
+10. Haga clic en **Crear** después de haber revisado la directiva de configuración de la aplicación.
+
+Se crea la configuración y se muestra en el panel **Directiva de configuración de la aplicación**.
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Asignación de las opciones de configuración creadas
 
 Debe asignar la configuración a los grupos de usuarios de Azure AD. Si ese usuario tiene instalada la aplicación de explorador protegido, esta se administra mediante la configuración especificada.
 
-1. En la hoja **Aplicaciones cliente** del panel de administración de aplicaciones móviles de Intune, elija **Directivas de configuración de aplicaciones**.
+1. En el panel **Aplicaciones** del panel de administración de aplicaciones móviles de Intune, elija **Directiva de configuración de aplicaciones**.
 2. En la lista de configuraciones de aplicación, seleccione la que desea asignar.
-3. En la siguiente hoja, elija **Asignaciones**.
-4. En la hoja **Asignaciones**, seleccione el grupo de Azure AD al que quiere asignar la configuración de aplicación y después elija **Aceptar**.
+3. En el siguiente panel, elija **Asignaciones**.
+4. En el panel **Asignaciones**, seleccione el grupo de Azure AD al que quiere asignar la configuración de aplicación y después elija **Aceptar**.
 
 ## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>Establecimiento de Microsoft Edge como explorador protegido para la organización
 
@@ -170,7 +170,7 @@ Si este valor se establece en "false":
 - Si los usuarios tienen **o bien** Managed Browser **o** Microsoft Edge descargado, se iniciará la aplicación del explorador. 
 - Si los usuarios no tienen una aplicación de explorador descargada, se les pedirá que descarguen Managed Browser.
 
-Mediante el procedimiento anterior para crear una configuración de la aplicación Microsoft Edge. Proporcione el siguiente par de clave y valor al seleccionar **Opciones de configuración** en la hoja **Configuración** (paso 9):
+Mediante el procedimiento anterior para crear una configuración de la aplicación Microsoft Edge. Proporcione el siguiente par de clave y valor al seleccionar **Opciones de configuración** en el panel **Configuración** (paso 9):
 
 | Key                              |  Valor   |
 |----------------------------------|----------|
@@ -309,7 +309,7 @@ Aplicando el procedimiento para crear una configuración de aplicaciones de Micr
 
 | Key                                                                | Valor                                                 |
 |--------------------------------------------------------------------|-------------------------------------------------------|
-| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | Un valor de **false** impide que se produzcan estas transiciones suaves. |
+| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | Un valor de **false** impide que se produzcan estas transiciones suaves |
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Cómo tener acceso a los registros de aplicación administrada con Managed Browser en iOS
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cec7395fc766f6a937e6c43ef3a32fb21610be
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059987"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547988"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usar plantillas de Windows 10 para configurar opciones de directiva de grupo en Microsoft Intune
 
@@ -101,3 +101,5 @@ Hay cientos de valores disponibles en estas plantillas. Para que sea más fácil
 ## <a name="next-steps"></a>Pasos siguientes
 
 Se crea la plantilla, pero todavía no hace nada. A continuación, [asigne la plantilla, también denominada perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
+
+[Actualización de Office 365 mediante las plantillas administrativas](administrative-templates-update-office.md).

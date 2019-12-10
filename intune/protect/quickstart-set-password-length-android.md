@@ -1,12 +1,12 @@
 ---
 title: 'Inicio rápido: Directiva de cumplimiento de contraseñas para dispositivos Android'
 titleSuffix: Microsoft Intune
-description: En este tutorial de inicio rápido usará Microsoft Intune para establecer la longitud de la contraseña necesaria para los dispositivos Android.
+description: En este inicio rápido se usará Microsoft Intune para establecer la longitud de la contraseña que se exige en dispositivos Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/21/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f73bc84be46252cb99a47966b480e585545dde12
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 61fdf91d57ce5d187a0c43153f317b0b42c6b46c
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504174"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409779"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Inicio rápido: Crear una directiva de cumplimiento de contraseñas para dispositivos Android
 
-En este tutorial, usará Microsoft Intune para exigir a los usuarios de sus recursos Android que escriban una contraseña de una longitud específica antes de concederles acceso a información en sus dispositivos Android. 
+En este inicio rápido, usará Microsoft Intune para exigir a los usuarios de Android de sus recursos que escriban una contraseña de una longitud determinada que les permita acceder a la información de sus dispositivos Android.
 
 Una directiva de cumplimiento de dispositivos de Intune especifica las reglas y la configuración que deben cumplir los dispositivos para que se consideren compatibles. Puede usar directivas de cumplimiento con acceso condicional para permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento.
 
@@ -38,25 +38,33 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 
-Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador global o administrador de servicios de Intune. 
+Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como [administrador global](../fundamentals/users-add.md#types-of-administrators) o [administrador de servicios](../fundamentals/users-add.md#types-of-administrators) de Intune.
 
 ## <a name="create-a-device-compliance-policy"></a>Crear una directiva de cumplimiento de dispositivos
 
-En este tutorial de inicio rápido usará Intune para exigir a los usuarios de sus recursos Android que escriban una contraseña de una longitud específica antes de concederles acceso a información en sus dispositivos Android.
+Cree una directiva de cumplimiento de dispositivos para exigir a los usuarios de Android de los recursos que escriban una contraseña de una longitud determinada que les permita acceder a la información de sus dispositivos Android.
 
-1. En Intune, seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
+1. Seleccione **Dispositivos** > **Directivas de cumplimiento** > **Crear directiva**.
+
 2. Agregue **Cumplimiento de Android** como **Nombre**. Agregue también una **Descripción**.
-3. Para **Plataforma**, seleccione **Android**. 
-4. Seleccione **Configuración** > **Seguridad del sistema** para mostrar la hoja **Seguridad del sistema** de Android.
-5. Haga clic en **Requerir** junto a **Requerir una contraseña para desbloquear dispositivos móviles**.
-6. Seleccione **Al menos numérica** junto a **Tipo de contraseña requerida**.
-7. Indique **6** junto a **Longitud mínima de la contraseña**. 
+
+3. Para **Plataforma**, seleccione **Android Enterprise**.
+
+4. En **Tipo de perfil**, seleccione **Perfil de trabajo**.
+
+5. Seleccione **Configuración** > **Seguridad del sistema** para mostrar la hoja **Seguridad del sistema** de Android.
+
+6. En **Requerir una contraseña para desbloquear dispositivos móviles**, seleccione **Requerir**.
+
+7. En **Tipo de contraseña requerida**, seleccione **Al menos numérica**.
+
+8. En **Longitud mínima de contraseña**, escriba **6**.
 
     ![Captura de pantalla de creación de un grupo en Microsoft Intune](./media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. Cuando haya terminado, haga clic en **Aceptar** > **Aceptar** > **Crear** para crear la directiva.
+9. Cuando haya terminado, seleccione **Aceptar** > **Aceptar** > **Crear** para crear la directiva.
 
-Cuando haya creado la directiva correctamente, aparecerá en su lista de directivas de cumplimiento de dispositivos. 
+Una vez que la directiva se ha creado correctamente, aparece en la lista de directivas de cumplimiento de dispositivos.
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 

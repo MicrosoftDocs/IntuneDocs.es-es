@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164715"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784245"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune 
 
@@ -56,8 +56,10 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 | Aplicaciones de la Tienda Windows Phone 8.1  | Aplicación de la tienda  | Seleccione **Windows Phone 8.1** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
 | Aplicaciones de Microsoft Store  | Aplicación de la tienda  | Seleccione **Windows** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
 | Aplicaciones administradas de Google Play | Aplicación de la tienda  | Seleccione **Google Play administrado** para **Tipo de aplicación**, busque la aplicación y selecciónela en Intune. |
-| Aplicaciones de Office 365 para Windows 10  | Aplicación de la tienda (Office 365) | Seleccione **Windows 10** en el **conjunto de aplicaciones de Office 365** como el **tipo de aplicación** y después seleccione la aplicación de Office 365 que quiera instalar.  |
-| Aplicaciones de Office 365 para macOS | Aplicación de la tienda (Office 365) | Seleccione **macOS** en el **conjunto de aplicaciones de Office 365** como el **tipo de aplicación** y después seleccione el paquete de aplicación de Office 365. |
+| Aplicaciones de Office 365 para Windows 10  | Aplicación de la tienda (Office 365) | Seleccione **Windows 10** en **Conjunto de aplicaciones Office 365**  como el **tipo de aplicación** y después seleccione la aplicación de Office 365 que quiera instalar.  |
+| Aplicaciones de Office 365 para macOS | Aplicación de la tienda (Office 365) | Seleccione **macOS** en **Conjunto de aplicaciones Office 365** como el **tipo de aplicación** y después seleccione el paquete de aplicación de Office 365. |
+| Microsoft Edge versión 77 y posteriores para Windows 10 | Aplicación de la tienda | Seleccione **Windows 10** en **Microsoft Edge, versión 77 y posteriores**, como el **tipo de aplicación**. |
+| Microsoft Edge versión 77 y posteriores para macOS | Aplicación de la tienda | Seleccione **macOS** en **Microsoft Edge, versión 77 y posteriores**, como el **tipo de aplicación**. |
 | Aplicaciones de línea de negocio (LOB) Android | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de Android con la extensión **.apk** .  |
 | Aplicaciones de LOB para iOS | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de iOS con la extensión **.ipa**.  |
 | Aplicaciones de LOB para Windows Phone | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo del paquete de aplicaciones** y, después, indique un archivo de instalación de Windows Phone con la extensión **.xap**.  |
@@ -72,7 +74,7 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 
 <sup>1</sup> Para obtener más información sobre los perfiles de trabajo de Android Enterprise y Android, consulte [Información sobre el uso de aplicaciones con licencia](apps-add.md#understanding-licensed-apps) a continuación.
 
-Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación** y podrá seleccionar el **tipo de aplicación**. 
+Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación** y podrá seleccionar el **tipo de aplicación**. 
 
 >[!TIP]
 > Una aplicación de línea de negocio es aquella que se agrega desde un archivo de instalación de la aplicación. Por ejemplo, para instalar una aplicación de línea de negocio de iOS, agregue la aplicación seleccionando **Aplicación de línea de negocio** como el **Tipo de aplicación** en el panel **Agregar aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .ipa). Estos tipos de aplicaciones normalmente se han escrito internamente.
@@ -159,9 +161,8 @@ Se pueden usar categorías de aplicaciones para ordenar las aplicaciones de form
 
 Al agregar una aplicación a Intune, tiene la opción de seleccionar la categoría que quiera. Use los temas específicos de la plataforma para agregar una aplicación y asignar categorías. Para crear y editar sus propias categorías, use el procedimiento siguiente:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Configuración**, elija **Categorías de aplicaciones**.  
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Seleccione **Aplicaciones** > **Categorías de aplicación**.  
     El panel **Categorías de aplicaciones** muestra una lista de las categorías actuales. 
 5. Realice alguna de las acciones siguientes:
     - Para agregar una categoría, en el panel **Crear categoría**, seleccione **Agregar** y escriba un nombre para la categoría.  
@@ -206,6 +207,8 @@ Para información sobre cómo agregar aplicaciones para cada plataforma a Intune
 - [Aplicación de línea de negocio de Windows](lob-apps-windows.md)
 - [Aplicaciones de Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicaciones de Office 365 para macOS](apps-add-office365-macos.md)
+- [Microsoft Edge para Windows 10](apps-windows-edge.md)
+- [Microsoft Edge para macOS](apps-edge-macos.md)
 - [Aplicaciones integradas](apps-add-built-in.md)
 - [Aplicaciones del sistema de Android Enterprise](apps-ae-system.md)
 - [Aplicaciones Win32](app-management.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ce24081eae1808d3db0c5078026b306fd209d5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507242"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563937"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementación de aplicaciones Windows 10 con Microsoft Intune 
 
@@ -51,9 +51,10 @@ Las aplicaciones de Microsoft Store para Empresas son aplicaciones modernas que 
 ### <a name="categorize-microsoft-store-for-business-apps"></a>Categorización de aplicaciones de Microsoft Store para Empresas 
 Para categorizar aplicaciones de Microsoft Store para Empresas: 
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Aplicaciones cliente** > **Aplicaciones**. Seleccione una aplicación de Microsoft Store para Empresas. A continuación, seleccione **Información de la aplicación** > **Categoría**. 
-3. Seleccione una categoría.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones**. 
+3. Seleccione una aplicación de Microsoft Store para Empresas. A continuación, seleccione **Propiedades** > **Información de la aplicación** > **Categoría**. 
+4. Seleccione una categoría.
 
 ## <a name="install-apps-on-windows-10-devices"></a>Instalación de aplicaciones en dispositivos Windows 10
 Según el tipo de aplicación, puede instalar la aplicación en un dispositivo Windows 10 de una de dos maneras:

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98976403d58c33f22f7ceeabec1d38f076f9bbe7
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592068"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563721"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -44,9 +44,9 @@ Para obtener información acerca de cómo agregar aplicaciones de línea de nego
 Cuando se crea una directiva de protección de aplicaciones para aplicaciones de iOS/iPadOS y Android, se lleva a cabo un moderno flujo de proceso de Intune que da como resultado una directiva de protección de aplicaciones nueva.
 
 ### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Crear una directiva de protección de aplicaciones para aplicaciones de iOS/iPadOS o Android
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el portal de Intune, seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
-3. Seleccione **Crear directiva** y, luego, **iOS/iPadOS** o **Android**. Se abre la hoja **Crear directiva**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. En el portal de Intune, elija **Aplicaciones** > **Directivas de protección de aplicaciones**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
+3. Seleccione **Crear directiva** y, luego, **iOS/iPadOS** o **Android**. Se abre el panel **Crear directiva**.
 4. En la página **Datos básicos**, agregue los siguientes valores:
 
     | Valor | Descripción |
@@ -57,7 +57,7 @@ Cuando se crea una directiva de protección de aplicaciones para aplicaciones de
 
     El valor de **Plataforma** se establece en función de la elección anterior.
 
-    ![Captura de pantalla de la pestaña Datos básicos de la hoja Crear directiva](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+    ![Captura de pantalla de la pestaña Datos básicos del panel Crear directiva](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
 
 5. Haga clic en **Siguiente** para abrir la página **Aplicaciones**.<br>
     La página **Aplicaciones** permite elegir cómo se quiere aplicar esta directiva a las aplicaciones en distintos dispositivos. Debe agregar al menos una aplicación.<p>

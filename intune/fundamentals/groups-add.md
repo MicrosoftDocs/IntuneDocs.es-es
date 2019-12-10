@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,52 +18,92 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0702eebdd3899c6da527af0078e5e7d47cf95194
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510239"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261571"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Agregar grupos para organizar usuarios y dispositivos
-Intune usa grupos de Azure Active Directory (AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar los grupos de modo que satisfagan sus necesidades organizativas. Cree grupos para organizar a los usuarios o dispositivos por ubicación geográfica, departamento o características de hardware. Use los grupos para administrar tareas a escala. Por ejemplo, puede establecer directivas para muchos usuarios o implementar aplicaciones para un conjunto de dispositivos.
+
+Intune usa grupos de Azure Active Directory (AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar los grupos de modo que satisfagan sus necesidades organizativas. Cree grupos para organizar a los usuarios o dispositivos por ubicación geográfica, departamento o características de hardware. Use los grupos para administrar tareas a escala. Por ejemplo, puede establecer directivas para muchos usuarios o implementar aplicaciones para un conjunto de dispositivos.
 
 Puede agregar los siguientes tipos de grupos:
-- **Grupos asignados**: se agregan usuarios o dispositivos manualmente a un grupo estático
-- **Grupos dinámicos**: (Con Azure Active Directory Premium) permiten crear de forma dinámica grupos de usuarios o dispositivos definidos con reglas simples o avanzadas
+
+- **Grupos asignados**: agregue manualmente usuarios o dispositivos a un grupo estático. 
+- **Grupos dinámicos** (requiere Azure AD Premium): agregue automáticamente usuarios o dispositivos a grupos de usuarios o grupos de dispositivos en función de una expresión que cree.
+
+  Por ejemplo, cuando se agrega un usuario con el título de administrador, el usuario se agrega automáticamente a un grupo de usuarios **Todos los administradores**. O bien, cuando un dispositivo tiene el tipo de sistema operativo para dispositivos iOS, el dispositivo se agrega automáticamente a un grupo de dispositivos **Todos los dispositivos iOS**.
 
 ## <a name="add-a-new-group"></a>Agregar un grupo nuevo
 
 Use los siguientes pasos para crear un grupo.
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel de **Intune**, vaya a **Grupos** y luego elija **Nuevo grupo** en el panel **Todos los grupos**.
+
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Grupos** > **Nuevo grupo**:
+
    ![Captura de pantalla de Azure Portal con la opción Nuevo grupo seleccionada](./media/groups-add/groups-add-new.png)
-4. En **Tipo de grupo**, elija una de las opciones siguientes:
-    - **Seguridad**: Los grupos de seguridad son un buen recurso para rellenar grupos de usuarios. Puesto que los grupos de seguridad definen quién puede acceder a qué recursos, se pueden convertir perfectamente en grupos de usuarios de Intune. Los grupos de seguridad que se sincronizan de Active Directory a Azure Active Directory, o que se crean directamente en Azure Active Directory a través del Centro de administración de Microsoft 365 o Azure Portal, están disponibles al crear grupos de usuarios en Intune.
-    - **Office 365**
 
-5. Escriba un **nombre** y una **descripción** para el grupo nuevo. Estas propiedades solo aparecen en el portal de administración y no se muestran a los usuarios.
+3. En **Tipo de grupo**, elija una de las opciones siguientes:
 
-6. Elija **Tipo de pertenencia**:
-   - **Asignado** para crear un grupo con miembros asignados de forma manual. Más información sobre [grupos asignados de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
-   - **Usuario dinámico** para crear un grupo de usuarios definido con una **consulta dinámica**.
-   - **Dispositivo dinámico** para crear un grupo de dispositivos definido con una **consulta dinámica**.
+    - **Seguridad**: los grupos de seguridad definen quién puede acceder a los recursos, y se recomiendan para los grupos de Intune. Por ejemplo, puede crear grupos para usuarios, como **Todos los empleados de Charlotte** o **Todas las mujeres de Contoso**. O bien, puede crear grupos para dispositivos, como **Todos los dispositivos iOS** o **Todos los dispositivos de alumnos de Windows 10**.
 
-   ![Captura de pantalla de las propiedades del grupo de Intune](./media/groups-add/groups-add-properties.png)
+        > [!TIP]
+        > Los usuarios y los grupos creados también pueden verse en el [Centro de administración de Microsoft 365](https://admin.microsoft.com), el centro de administración de Azure Active Directory y [Microsoft Intune en Azure Portal](https://go.microsoft.com/fwlink/?linkid=2090973). En el inquilino de la organización, puede crear y administrar grupos en todas estas áreas.
+        >
+        > Si su rol principal es la administración de dispositivos, se recomienda usar el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-   Azure AD permite crear grupos dinámicos basados en reglas que definen la pertenencia. Más información para [crear grupos dinámicos basados en atributos](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+    - **Office 365**: estos grupos están diseñados para controlar el acceso a los recursos de Office 365 y compartirlos. Por ejemplo, puede crear un grupo de Office 365 para compartir una bandeja de entrada o un calendario de Outlook. Para más información, consulte [Más información sobre los grupos de Office 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-7. Puede seleccionar **¿Quiere habilitar las características de Office?** para dar acceso a los miembros del grupo de usuarios a aplicaciones compartidas de Office 365. Obtenga más información sobre [Grupos de Office 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
-8. Elija **Crear** para agregar el nuevo grupo.
+4. Escriba los valores para **Nombre del grupo** y **Descripción del grupo** del nuevo grupo. Sea concreto e incluya información que permita a que otros usuarios saber para qué sirve el grupo.
+
+    Por ejemplo, escriba **Todos los dispositivos de los alumnos de Windows 10** como nombre del grupo y **Todos los dispositivos de Windows 10 que usan los alumnos de secundaria de Contoso de los niveles 9-12** como descripción del grupo.
+
+5. Especifique el valor de **Tipo de pertenencia**. Las opciones son:
+
+    - **Asignados**: los administradores asignan manualmente usuarios o dispositivos a este grupo y quitan manualmente usuarios o dispositivos.
+    - **Usuario dinámico**: los administradores crean reglas de pertenencia para agregar y quitar miembros automáticamente.
+    - **Dispositivo dinámico**: los administradores crean reglas de grupo dinámicas para agregar y quitar dispositivos automáticamente.
+
+        ![Captura de pantalla de las propiedades del grupo de Intune](./media/groups-add/groups-add-properties.png)
+
+    Para más información sobre estos tipos de pertenencia y la creación de expresiones dinámicas, consulte:
+
+    - [Creación de un grupo básico e incorporación de miembros con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+    - [Reglas de pertenencia dinámica a grupos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)
+
+    > [!NOTE]
+    > En este centro de administración, al crear usuarios o grupos, es posible que no vea la personalización de marca de **Azure Active Directory**. Sin embargo, eso es lo que está usando.
+
+6. Elija **Crear** para agregar el nuevo grupo. El grupo se muestra en la lista.
+
+> [!TIP]
+> Tenga en cuenta algunos de los otros grupos de dispositivos y usuarios dinámicos que puede crear, por ejemplo:
+>
+> - Todos los estudiantes de secundaria de Contoso
+> - Todos los dispositivos Android Enterprise
+> - Todos los dispositivos iOS 11 y anteriores
+> - Marketing
+> - Recursos Humanos
+> - Todos los empleados de Charlotte
+> - Todos los empleados de WA
 
 ## <a name="groups-and-policies"></a>Grupos y directivas
 
-Al crear grupos, tenga en cuenta cómo aplicará las [directivas](../protect/device-compliance-get-started.md). Por ejemplo, puede tener directivas específicas del sistema operativo de un dispositivo o directivas específicas de diferentes roles de la organización, o de unidades organizativas que ya ha definido en Active Directory. Podría resultar útil disponer de grupos de dispositivos separados para iOS, Android y Windows, así como de un grupo de usuarios para cada rol organizativo.
+El acceso a los recursos de su organización está controlado por los usuarios y grupos que se creen.
 
-Además, probablemente quiera crear una directiva predeterminada que se aplique a todos los grupos y dispositivos para establecer los requisitos de cumplimiento básicos de la organización. Luego puede crear directivas más específicas para las categorías más amplias de usuarios y dispositivos. Por ejemplo, puede crear directivas de correo electrónico para cada uno de los sistemas operativos de dispositivos.
+Al crear grupos, tenga en cuenta cómo se aplicarán las [directivas de cumplimiento](../protect/device-compliance-get-started.md) y los [perfiles de configuración](../configuration/device-profiles.md). Por ejemplo, puede tener:
 
+- Directivas que son específicas de un sistema operativo de dispositivo.
+- Directivas que son específicas de los distintos roles de su organización.
+- Directivas que son específicas de las unidades organizativas definidas en Active Directory.
 
+Para crear los requisitos básicos de cumplimiento de la organización, puede crear una directiva predeterminada que se aplique a todos los grupos y dispositivos. Luego, puede crear directivas más específicas para las categorías más amplias de usuarios y dispositivos. Por ejemplo, puede crear directivas de correo electrónico para cada uno de los sistemas operativos de dispositivos.
+
+Para instrucciones y recomendaciones sobre los perfiles de configuración, consulte [Asignación de perfiles de dispositivo en Microsoft Intune](../configuration/device-profile-assign.md#user-groups-vs-device-groups) y [Recomendaciones de perfiles](../configuration/device-profile-create.md#recommendations).
 
 ## <a name="see-also"></a>Consulte también
-- [Administración del acceso a los recursos con grupos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-- [Grupos clásicos de Intune en Azure Portal](groups-get-started.md)
+
+- [Control de acceso basado en rol (RBAC) con Microsoft Intune](role-based-access-control.md)
+- [Administración del acceso a recursos y aplicaciones con grupos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

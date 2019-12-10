@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445299"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562409"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Acciones y opciones de Intune compatibles con la inscripción de usuarios de Apple
 
@@ -57,13 +57,18 @@ En los dispositivos de inscripción de usuarios, los usuarios finales pueden rea
 - Bloqueo remoto
 - Comprobar estado.
 
+## <a name="app-deployment-options"></a>Opciones de implementación de aplicaciones
+Los siguientes tipos de aplicaciones se pueden implementar en dispositivos de Inscripción de usuario:
+- Aplicaciones del plan de compras por volumen con licencia de usuario (VPP), incluidas las aplicaciones personalizadas
+- Aplicaciones de línea de negocio (LOB)
+- Aplicaciones web
+
 ## <a name="other-supported-options"></a>Otras opciones admitidas
 
 Las siguientes opciones se admiten en Intune para dispositivos inscritos mediante la inscripción de usuarios de Apple:
 - VPN por aplicación. Esta compatibilidad excluye los dominios de Safari, ya que la inscripción de usuarios no admite la configuración de Safari.
 - Wi-Fi 
 - Eliminación de la aplicación corporativa tras la anulación de la inscripción
-- Implementación de aplicaciones a través del plan de compras por volumen con licencia de usuario (VPP)
 - Detección de jailbreak
 
 Se admiten las siguientes restricciones:
@@ -94,9 +99,10 @@ Las siguientes opciones no se admiten en los dispositivos inscritos con la inscr
 - Recopilar UDID y otros identificadores de dispositivo persistentes.
 - La inscripción de usuarios admite un identificador de inscripción único para cada dispositivo inscrito, pero este identificador no se conserva después de la anulación de la inscripción.
 - No se admiten las siguientes características de Intune debido a esta limitación:
-- Perfiles de usuario de SCEP con formato de nombre del sujeto de número e serie.
+- Perfiles de usuario de SCEP con formato de nombre del sujeto de número de serie.
 - VPN de nivel de dispositivo.
 - Implementación de aplicaciones VPP con licencia de dispositivos.
+- Instalar aplicaciones de App Store como aplicaciones administradas.
 - Control MDM de aplicaciones fuera del volumen APFS administrado.
 - Las directivas de protección de aplicaciones se seguirán aplicando a estas aplicaciones. Sin embargo, no podrá asumir la administración ni implementar una versión administrada de estas aplicaciones a menos que el usuario las elimine de su dispositivo.
 - Acciones, configuraciones, ajustes y comandos que requieren supervisión. 

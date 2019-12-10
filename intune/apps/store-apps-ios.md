@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497548"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563447"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Incorporación de aplicaciones de la tienda iOS a Microsoft Intune
 
@@ -41,18 +41,16 @@ Puede asignar aplicaciones mediante este método solo si son gratuitas en la App
 >[!NOTE]
 >Cuando trabaja con Microsoft Intune, se recomienda usar el explorador Microsoft Edge o Google Chrome.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Administrar**, seleccione **Aplicaciones**.
-5. En el panel **Aplicaciones**, seleccione **Agregar**.
-6. En la lista **Tipo de aplicación**, en los tipos de **Aplicación de la Tienda**, seleccione **iOS**.
-7. Seleccione **Buscar en App Store**.
-8. En el panel **Buscar en App Store**, seleccione la configuración regional del país de la App Store.
-9. En el cuadro de **búsqueda**, escriba el nombre (o parte del nombre) de la aplicación.  
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
+3. En la lista **Tipo de aplicación**, en los tipos de **Aplicación de la Tienda**, seleccione **iOS**.
+4. Seleccione **Buscar en App Store**.
+5. En el panel **Buscar en App Store**, seleccione la configuración regional del país de la App Store.
+6. En el cuadro de **búsqueda**, escriba el nombre (o parte del nombre) de la aplicación.  
     Intune busca en la tienda y devuelve una lista de resultados pertinentes.
-10. En la lista de resultados, seleccione la aplicación que desee y, luego, **Seleccionar**.
-11. En el panel **Agregar aplicación**, seleccione **Información de la aplicación** para configurar la aplicación.
-12. En el panel **Información de la aplicación**, agregue la información de la aplicación. Según la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
+7. En la lista de resultados, seleccione la aplicación que desee y, luego, **Seleccionar**.
+8. En el panel **Agregar aplicación**, seleccione **Información de la aplicación** para configurar la aplicación.
+9. En el panel **Información de la aplicación**, agregue la información de la aplicación. Según la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
     - **Nombre**: escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. Asegúrese de que cualquier nombre de aplicación que use sea exclusivo. Si hay un nombre de aplicación duplicado, solo se muestra uno a los usuarios del Portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
     - **Publicador**: Escriba el nombre del publicador de la aplicación.
@@ -67,8 +65,8 @@ Puede asignar aplicaciones mediante este método solo si son gratuitas en la App
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, *Departamento de Recursos Humanos*. Este campo solo es visible para los administradores y no para los usuarios.
     - **Notas**: opcionalmente, escriba las notas que desea asociar a esta aplicación. Este campo solo lo podrán ver los administradores, pero no los usuarios finales.
     - **Logotipo**: opcionalmente, cargue un icono que se asociará con la aplicación. Este icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
-13. Seleccione **Aceptar**.
-14. Seleccione **Agregar**.
+10. Seleccione **Aceptar**.
+11. Seleccione **Agregar**.
 
 La aplicación que ha creado aparece en la lista de aplicaciones, donde puede asignarla a los grupos que seleccione.
 

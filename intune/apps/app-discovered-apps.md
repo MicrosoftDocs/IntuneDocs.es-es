@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813372"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564240"
 ---
 # <a name="intune-discovered-apps"></a>Aplicaciones descubiertas de Intune
 
@@ -33,18 +33,18 @@ Las **aplicaciones descubiertas** de Intune es una lista de aplicaciones detecta
 
 Intune proporciona una lista agregada de aplicaciones detectadas en los dispositivos inscritos en Intune del inquilino.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones descubiertas**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Supervisar** > **Aplicaciones detectadas**.
 
 >[!NOTE]
->Puede exportar la lista de aplicaciones descubiertas a un archivo .csv seleccionando **Exportar** en la hoja **Aplicaciones descubiertas**.
+>Puede exportar la lista de aplicaciones descubiertas a un archivo .csv seleccionando **Exportar** en el panel **Aplicaciones detectadas**.
 >
 >Para las aplicaciones Win32 detectadas, no hay actualmente ningún recuento agregado. Este tipo de datos solo se puede ver en cada dispositivo.
 
 Intune también proporciona la lista de aplicaciones detectadas de cada dispositivo del inquilino.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el panel de Intune, seleccione **Dispositivos** > **Todos los dispositivos**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Todos los dispositivos**.
 3. Seleccione un dispositivo.
 4. Para ver las aplicaciones detectadas de este dispositivo , seleccione **Aplicaciones detectadas** en la sección **Supervisión**.
 
@@ -69,7 +69,7 @@ En la lista siguiente se proporciona el tipo de plataforma de aplicaciones, las 
 
 El número de aplicaciones detectadas puede no coincidir con el recuento del estado de instalación de la aplicación. Estas son las posibles incoherencias:
 
-- Un cambio de orientación de una aplicación administrada instalada puede hacer que el recuento de instalación en la hoja de estado disminuya, pero se mantenga presente en las aplicaciones detectadas.
+- Un cambio de orientación de una aplicación administrada instalada puede hacer que el recuento de instalación en el panel de estado disminuya, pero se mantenga presente en las aplicaciones detectadas.
 - Dirigir varias instancias de la misma aplicación a un inquilino dará lugar a recuentos diferentes debido a la posible superposición de usuarios o dispositivos. Cada instancia de la aplicación contará los usuarios que se superponen, pero las aplicaciones detectadas tendrán recuentos duplicados.
 - Las aplicaciones detectadas y los estados de la aplicación se recopilan en intervalos de tiempo diferentes, lo que podría provocar una discrepancia en los recuentos de la aplicación.
 

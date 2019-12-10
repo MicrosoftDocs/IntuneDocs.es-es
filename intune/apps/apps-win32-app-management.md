@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143205"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564019"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -101,17 +101,17 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 4. En el panel de aplicaciones **Agregar**, seleccione **Aplicación Windows (Win32)** en la lista desplegable.
 
-    ![Captura de pantalla de la hoja Agregar aplicación - Cuadro de lista desplegable Agregar tipo](./media/apps-win32-app-management/apps-win32-app-01.png)
+    ![Captura de pantalla del panel Agregar aplicación - Cuadro de lista desplegable Agregar tipo](./media/apps-win32-app-management/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Paso 2: Carga del archivo de paquete de aplicaciones
 
 1. En el panel **Agregar aplicación**, seleccione **Archivo del paquete de aplicaciones** para seleccionar un archivo. Se mostrará el panel del archivo del paquete de aplicaciones.
 
-    ![Captura de pantalla de la hoja del archivo del paquete de aplicaciones](./media/apps-win32-app-management/apps-win32-app-02.png)
+    ![Captura de pantalla del panel Archivo del paquete de aplicaciones](./media/apps-win32-app-management/apps-win32-app-02.png)
 
 2. En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. Después seleccione un archivo de instalación de Windows con la extensión *.intunewin*.
 
@@ -180,7 +180,7 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     - **Número mínimo de procesadores lógicos necesarios**: también puede agregar el número mínimo de procesadores lógicos necesarios para instalar la aplicación.
     - **Velocidad de CPU mínima requerida (MHz)** : opcionalmente, puede agregar la velocidad de CPU mínima necesaria para instalar la aplicación.
 
-3. Haga clic en **Agregar** para mostrar la hoja **Agregar una regla de requisitos** y configurar las reglas de requisitos adicionales. Seleccione el **Tipo de requisito** para elegir el tipo de regla que se va a utilizar para determinar cómo se valida un requisito. Las reglas de requisitos se pueden basar en la información del sistema de archivos, los valores del Registro o los scripts de PowerShell. 
+3. Haga clic en **Agregar** para mostrar el panel **Agregar una regla de requisitos** y configurar las reglas de requisitos adicionales. Seleccione el **Tipo de requisito** para elegir el tipo de regla que se va a utilizar para determinar cómo se valida un requisito. Las reglas de requisitos se pueden basar en la información del sistema de archivos, los valores del Registro o los scripts de PowerShell. 
     - **Archivo**: cuando se elige **Archivo** como **Tipo de requisito**, la regla de requisitos debe detectar un archivo o carpeta, fecha, versión o tamaño. 
         - **Ruta de acceso**: la ruta de acceso completa de la carpeta que contiene el archivo o la carpeta que se tiene que detectar.
         - **Archivo o carpeta**: el archivo o la carpeta que se va a detectar.
@@ -297,7 +297,7 @@ Ya ha completado los pasos para agregar una aplicación Win32 a Intune. Para obt
 
 ## <a name="app-dependencies"></a>Dependencias de aplicaciones
 
-Las dependencias de aplicaciones son aplicaciones que se deben instalar antes de que se puede instalar la aplicación Win32. Se puede requerir que otras aplicaciones estén instaladas como dependencias. En concreto, el dispositivo debe instalar las aplicaciones dependientes antes de que se instale la aplicación Win32. Hay un máximo de 100 dependencias, que incluye las dependencias de cualquier dependencia incluida, así como la propia aplicación. Se pueden agregar las dependencias de aplicaciones Win32 solo después de que se haya agregado y cargado la aplicación Win32 en Intune. Una vez agregada la aplicación Win32, verá la opción **Dependencias** en la hoja de la aplicación Win32. 
+Las dependencias de aplicaciones son aplicaciones que se deben instalar antes de que se puede instalar la aplicación Win32. Se puede requerir que otras aplicaciones estén instaladas como dependencias. En concreto, el dispositivo debe instalar las aplicaciones dependientes antes de que se instale la aplicación Win32. Hay un máximo de 100 dependencias, que incluye las dependencias de cualquier dependencia incluida, así como la propia aplicación. Se pueden agregar las dependencias de aplicaciones Win32 solo después de que se haya agregado y cargado la aplicación Win32 en Intune. Una vez agregada la aplicación Win32, verá la opción **Dependencias** en el panel de la aplicación Win32. 
 
 Cualquier dependencia de la aplicación Win32 debe ser también una aplicación Win32. No se admite en función de otros tipos de aplicaciones, como aplicaciones de línea de negocio de MSI únicas o aplicaciones de la Tienda.
 
@@ -307,7 +307,7 @@ Puede elegir si quiere instalar de forma automática o no cada aplicación depen
 
 Para agregar una dependencia de aplicación a la aplicación Win32, siga estos pasos:
 
-1. En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** para ver la lista de las aplicaciones cliente agregadas. 
+1. En Intune, seleccione **Aplicaciones cliente** > **Todas las aplicaciones** para ver la lista de las aplicaciones cliente agregadas. 
 2. Seleccione una **Aplicación de Windows (Win32)** agregada. 
 3. Seleccione **Dependencias** para agregar las aplicaciones dependientes que se deben instalar antes de poder instalar la aplicación Win32. 
 4. Haga clic en **Agregar** para agregar una dependencia de aplicación.
@@ -343,12 +343,12 @@ Puede configurar la hora de inicio y la hora de la fecha límite para una aplica
 
 Establezca la disponibilidad de la aplicación en función de la fecha y la hora de una aplicación necesaria mediante los pasos siguientes:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones**.
 3. Seleccione una **aplicación de Windows (Win32)** existente en la lista. 
-4. En la hoja de la aplicación, seleccione **Asignaciones** > **Agregar grupo**. 
+4. En el panel de la aplicación, seleccione **Asignaciones** > **Agregar grupo**. 
 5. Establezca **Tipo de asignación** en **Obligatoria**. Tenga en cuenta que la disponibilidad de la aplicación se puede establecer en función del tipo de asignación. El **tipo de asignación** puede tener los valores **Requerido**, **Disponible para dispositivos inscritos** o **Desinstalar**.
-6. Seleccione **Grupos incluidos** para determinar a qué grupo de usuarios se asignará la aplicación. Se mostrará la hoja **Asignar**.
+6. Seleccione **Grupos incluidos** para determinar a qué grupo de usuarios se asignará la aplicación. Se mostrará el panel **Asignar**.
 7. Establezca **Hacer que esta aplicación sea obligatoria para todos los usuarios** en **Sí**.
 
     > [!NOTE]
@@ -358,7 +358,7 @@ Establezca la disponibilidad de la aplicación en función de la fecha y la hora
     > - **Desinstalar**: Puede optar por ***desinstalar esta aplicación para todos los usuarios** o **desinstalar esta aplicación para todos los dispositivos**.
 
 8. Para modificar las opciones de la **experiencia del usuario final**, seleccione **Editar**.
-9. En la hoja **Editar asignación**, establezca las **notificaciones de usuario final** en **Mostrar todas las notificaciones del sistema**. Tenga en cuenta que puede establecer **Notificaciones de usuario final** en **Mostrar todas las notificaciones del sistema**, **Mostrar notificaciones del sistema para reinicios de equipo** o en **Ocultar todas las notificaciones del sistema**.
+9. En el panel **Editar asignación**, para **Notificaciones del usuario final**, establezca **Mostrar todas las notificaciones del sistema**. Tenga en cuenta que puede establecer **Notificaciones de usuario final** en **Mostrar todas las notificaciones del sistema**, **Mostrar notificaciones del sistema para reinicios de equipo** o en **Ocultar todas las notificaciones del sistema**.
 10. Establezca la **disponibilidad de la aplicación** en **Fecha y hora específicas** y seleccione la fecha y hora. Esta fecha y hora especifican cuándo se descarga la aplicación en el dispositivo de los usuarios finales. 
 11. Establezca la **fecha límite de instalación de la aplicación** en **Fecha y hora específicas** y seleccione la fecha y hora. Esta fecha y hora especifica cuándo se instala la aplicación en el dispositivo de los usuarios finales. Cuando se realiza más de una asignación para el mismo usuario o dispositivo, la hora de la fecha límite de instalación de la aplicación se elige en función de la fecha más temprana posible.
 12. Haga clic en **Habilitado** junto al **período de gracia de reinicio**. El período de gracia de reinicio se inicia en cuanto se complete la instalación de la aplicación en el dispositivo. Cuando se deshabilita, el dispositivo puede reiniciarse sin advertencia. <br>Puede personalizar las opciones siguientes:
@@ -369,7 +369,7 @@ Establezca la disponibilidad de la aplicación en función de la fecha y la hora
 13. Haga clic en **Aceptar** > **Aceptar** > **Aceptar** > **Guardar** para agregar la asignación.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notificaciones del sistema para aplicaciones Win32 
-Si es necesario, puede suprimir notificaciones del sistema para el usuario final por asignación de aplicaciones. En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** > seleccione la aplicación > **Asignaciones** > **Incluir grupos**. 
+Si es necesario, puede suprimir notificaciones del sistema para el usuario final por asignación de aplicaciones. En Intune, seleccione **Aplicaciones** > **Todas las aplicaciones** > seleccione la aplicación > **Asignaciones** > **Incluir grupos**. 
 
 > [!NOTE]
 > Las aplicaciones Win32 instaladas en la extensión de administración de Intune no serán dispositivos desinstalados o no inscritos. Los administradores pueden aprovechar la exclusión de asignación para no ofrecer las aplicaciones Win32 en los dispositivos BYOD.

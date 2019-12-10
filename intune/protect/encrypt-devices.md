@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,14 +17,14 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ce5db670f0084626f1c053b64679623ccf28eb21
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164645"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390339"
 ---
-# <a name="use-device-encryption-with-intune"></a>Uso del cifrado de dispositivos con Intune  
+# <a name="use-device-encryption-with-intune"></a>Uso del cifrado de dispositivos con Intune
 
 Use Intune para administrar un cifrado integrado de disco o de unidad de dispositivos para proteger los datos de estos.
 
@@ -68,7 +68,7 @@ Para obtener más información sobre la configuración de FileVault que puede ad
 
    Considere la posibilidad de agregar un mensaje con el fin de guiar a los usuarios finales sobre cómo recuperar la clave de recuperación de su dispositivo. Esta información puede ser útil para los usuarios finales cuando se usa la configuración de Giro de clave de recuperación personal, que puede generar automáticamente una nueva clave de recuperación para un dispositivo de forma periódica.
 
-   Por ejemplo: para recuperar una clave de recuperación perdida o girada recientemente, inicie sesión en el sitio web Portal de empresa de Intune desde cualquier dispositivo. En el portal, vaya a *Dispositivos*, seleccione el dispositivo que tiene habilitado FileVault y, después, seleccione *Obtener clave de recuperación*. Se muestra la clave de recuperación actual.  
+   Por ejemplo: para recuperar una clave de recuperación perdida o girada recientemente, inicie sesión en el sitio web Portal de empresa de Intune desde cualquier dispositivo. En el portal, vaya a *Dispositivos*, seleccione el dispositivo que tiene habilitado FileVault y, después, seleccione *Obtener clave de recuperación*. Se muestra la clave de recuperación actual.
 
 7. Configure el resto de [valores de FileVault](endpoint-protection-macos.md#filevault) para cumplir con sus necesidades empresariales y luego seleccione **Aceptar**.
 
@@ -114,13 +114,37 @@ Configure BitLocker cuando cree un [perfil de configuración de dispositivo](../
 
 6. Complete la configuración de valores adicionales y luego guarde el perfil.
 
-### <a name="manage-bitlocker"></a>Administración de BitLocker  
+### <a name="manage-bitlocker"></a>Administración de BitLocker
 
 Después de que Intune cifre un dispositivo Windows 10 con BitLocker, podrá ver y recuperar las claves de recuperación de BitLocker cuando vea el [informe de cifrado](encryption-monitor.md) de Intune.
 
+### <a name="rotate-bitlocker-recovery-keys"></a>Rotación de claves de recuperación de BitLocker
+
+Puede usar una acción de dispositivo de Intune para rotar de forma remota la clave de recuperación de BitLocker de un dispositivo que ejecuta la versión 1909 o posterior de Windows 10.
+
+#### <a name="prerequisites"></a>Requisitos previos
+
+Los dispositivos deben cumplir los siguientes requisitos previos para admitir la rotación de la clave de recuperación de BitLocker:
+
+- Deben ejecutar Windows 10, versión 1909 o posterior.
+
+- Los dispositivos unidos a Azure AD o híbridos deben tener habilitada la compatibilidad con la rotación de claves:
+
+  - **Rotación de contraseña de recuperación controlada por el cliente**
+
+  Esta configuración se encuentra en *Cifrado de Windows* como parte de una directiva de configuración de dispositivos para Windows 10 Endpoint Protection.
+  
+#### <a name="to-rotate-the-bitlocker-recovery-key"></a>Para rotar la clave de recuperación de BitLocker:
+
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Seleccione **Dispositivos** > **Todos los dispositivos**.
+
+3. En la lista de dispositivos que administra, seleccione un dispositivo, seleccione **Más** y, luego, seleccione la acción remota de dispositivo **Rotación de clave BitLocker**.
+
 ## <a name="next-steps"></a>Pasos siguientes
 
-Crear una directiva de [cumplimiento de dispositivos](compliance-policy-create-windows.md)
+Cree una directiva de [cumplimiento de dispositivos](compliance-policy-create-windows.md).
 
 Use el informe de cifrado para administrar lo siguiente:
 

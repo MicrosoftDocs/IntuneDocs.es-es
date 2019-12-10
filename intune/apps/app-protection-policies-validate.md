@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9dda9a1aa1e81b46533c1c15d996807984193d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712936"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563732"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Validación de la configuración de la directiva de protección de aplicaciones en Microsoft Intune
 
@@ -43,8 +43,8 @@ Si las pruebas muestran que el comportamiento de la directiva de protección de 
 - ¿El estado de protección de cada una de las aplicaciones de los usuarios no es el esperado? Los estados posibles de las aplicaciones son **Protegido** y **No protegido**.
 
 ### <a name="user-app-protection-status"></a>Estado de protección de las aplicaciones de los usuarios
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Seleccione **Aplicaciones cliente** >  **Estado de protección de la aplicación** y seleccione el icono **Usuarios asignados**. 
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Seleccione **Aplicaciones** >  **Estado de protección de la aplicación** y seleccione el icono **Usuarios asignados**. 
 4. En la página **Informes de aplicaciones**, seleccione **Seleccionar usuario** para abrir una lista de usuarios y grupos. 
 5. Busque y seleccione un usuario de la lista y luego elija **Seleccionar usuario**. En la parte superior del panel **Informes de aplicaciones**, verá si el usuario tiene licencia para la protección de aplicaciones. También puede consultar si el usuario tiene licencia para Office 365, así como el estado de la aplicación para todos los dispositivos del usuario.
 

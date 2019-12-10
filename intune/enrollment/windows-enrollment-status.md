@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059701"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548012"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configuración de una página de estado de inscripción
  
@@ -64,14 +64,14 @@ También puede establecer el orden de prioridad de cada perfil para tener en cue
 
 Para activar la página de estado de la inscripción, siga estos pasos.
  
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **Windows** > **Inscripción de Windows** > **Página de estado de la inscripción**.
 2. En la hoja **Página de estado de inscripción**, elija **Predeterminado** > **Configuración**.
 3. Para **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil), elija **Sí**.
 4. Elija las demás opciones de configuración que desee activar y seleccione **Guardar**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Creación de un perfil de la página de estado de la inscripción y asignación a un grupo
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción** > **Crear perfil**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **Windows** > **Inscripción de Windows** > **Página de estado de la inscripción** > **Crear perfil**.
 2. Proporcione un **Nombre** y una **Descripción**.
 3. Elija **Crear**.
 4. Elija el nuevo perfil en la lista **Página de estado de inscripción**.
@@ -82,7 +82,7 @@ Para activar la página de estado de la inscripción, siga estos pasos.
 
 Un usuario puede estar en muchos grupos y tener muchos perfiles de página de estado de la inscripción. Para resolver estos conflictos, puede establecer las prioridades de cada perfil. Durante la inscripción, si alguien tiene más de un perfil de página de estado de la inscripción, solo se aplica el perfil de prioridad más alta al dispositivo de inscripción.
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **Windows** > **Inscripción de Windows** > **Página de estado de la inscripción**.
 2. Mantenga el mouse sobre el perfil en la lista.
 3. Use los tres puntos verticales para arrastrar el perfil a la posición que quiera en la lista.
 
@@ -90,7 +90,7 @@ Un usuario puede estar en muchos grupos y tener muchos perfiles de página de es
 
 Puede especificar qué aplicaciones deben estar instaladas antes de que el usuario pueda acceder al escritorio.
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **Windows** > **Inscripción de Windows** > **Página de estado de la inscripción**.
 2. Elija un perfil > **Configuración**.
 3. Elija **Sí** en **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil).
 4. Elija **Sí** en **Block device use until all apps and profiles are installed** (Bloquear dispositivo hasta que todas estas aplicaciones y perfiles estén instalados).

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6a9c6b824f8d6369f7bf2d06b44fa8a20417d1c
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713149"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691795"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Configuración de la inscripción de dispositivos iOS con Apple Configurator
 
@@ -48,7 +48,7 @@ No se pueden usar los métodos de inscripción de Apple Configurator con el [adm
 
 Un perfil de inscripción de dispositivo define la configuración que se aplica durante la inscripción. Esta configuración se aplica una sola vez. Siga estos pasos para crear un perfil de inscripción para inscribir dispositivos iOS con Apple Configurator.
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Apple Configurator** > **Perfiles** > **Crear**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Apple Configurator**  > **Perfiles** > **Crear**.
 
     ![Creación de un perfil de Apple Configurator](./media/apple-configurator-enroll-ios/apple-config-create-profile.png)
 
@@ -88,7 +88,7 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
     DLXQPCWVGHMJ,detalles de dispositivo
 
    Obtenga información sobre [cómo buscar el número de serie de un dispositivo iOS](https://support.apple.com/HT204073).
-2. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Apple Configurator** > **Dispositivos** > **Agregar**.
+2. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Apple Configurator**  > **Dispositivos** > **Agregar**.
 
 5. Seleccione un **perfil de inscripción** para aplicarlo a los números de serie que se van a importar. Si desea que los detalles nuevos de número de serie sobrescriban los detalles existentes, elija **Sobrescribir detalles de identificadores existentes**.
 6. En **Dispositivos de importación**, desplácese hasta el archivo .csv de los números de serie y seleccione **Agregar**.
@@ -100,18 +100,18 @@ Puede asignar un perfil de inscripción al importar los números de serie de iOS
 - **Perfiles de AC**
 
 #### <a name="assign-from-apple-configurator-devices"></a>Asignación desde dispositivos de Apple Configurator
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Apple Configurator** > **Dispositivos** > elija los números de serie > **Asignar perfiles**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Apple Configurator** > **Dispositivos** > elija los números de serie > **Asignar perfiles**.
 2. En **Asignar perfil**, elija el **Nuevo perfil** que quiera asignar y luego **Asignar**.
 
 #### <a name="assign-from-profiles"></a>Asignación desde perfiles
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Apple Configurator** > **Perfiles** y elija un perfil.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Apple Configurator** > **Perfiles** y elija un perfil.
 2. En el perfil, elija **Dispositivos asignados** y después elija **Asignar**.
 3. Filtre para buscar los números de serie del dispositivo que quiera asignar al perfil, seleccione los dispositivos y elija **Asignar**.
 
 ### <a name="export-the-profile"></a>Exportación del perfil
 Después de crear el perfil y asignar números de serie, debe exportar el perfil desde Intune como una dirección URL. Después, impórtelo en Apple Configurator en un equipo Mac para su implementación en dispositivos.
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Apple Configurator** > **Perfiles** y elija el perfil que se va a exportar.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Apple Configurator** > **Perfiles** y elija el perfil para exportar.
 2. En el perfil, seleccione **Exportar perfil**.
 3. Copie la **dirección URL del perfil**. Puede agregarla a Apple Configurator para definir el perfil de Intune usado por los dispositivos iOS.
 
@@ -147,7 +147,7 @@ Las aplicaciones que requieren la afiliación de un usuario no se pueden instala
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Exportación del perfil como .mobileconfig a dispositivos iOS
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Apple Configurator** > **Perfiles**, elija el perfil que se va a exportar y seleccione **Exportar perfil**.
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Apple Configurator** > **Perfiles** > elija el perfil para exportar > **Exportar perfil**.
 2. En **Inscripción directa**, elija **Descargar perfil** y guarde el archivo. Un archivo de perfil de inscripción solo es válido durante dos semanas, momento en el que se debe volver a crear.
 3. Transfiera el archivo a un equipo Mac en el que se ejecute [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para poder transferir archivos directamente como un perfil de administración a dispositivos iOS.
 4. Prepare el dispositivo con Apple Configurator mediante los pasos siguientes:

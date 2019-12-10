@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47ecc2363244634cb355fdeaeb51074417322e4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507296"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547961"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
 
@@ -31,9 +31,20 @@ Con Intune, puede determinar quién tiene acceso a una aplicación mediante la a
 
 Para establecer la disponibilidad de una aplicación, la inclusión y exclusión de asignaciones de aplicaciones en un grupo de usuarios o dispositivos se realiza mediante una combinación de asignaciones de grupo de inclusión y exclusión. Esta capacidad puede serle útil en el momento de hacer que la aplicación esté disponible mediante la inclusión de un grupo grande, para después restringir los usuarios seleccionados excluyendo un grupo más reducido. El grupo más pequeño podría ser un grupo de prueba o un grupo ejecutivo. 
 
-Al excluir grupos de una asignación de aplicaciones, solo se deben excluir grupos de usuarios o grupos de dispositivos. No se puede excluir una combinación de grupos de usuarios y de dispositivos. 
+Como procedimiento recomendado, cree y asigne aplicaciones específicas para los grupos de usuarios y por separado para los grupos de dispositivos. Para más información sobre los grupos, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md).  
 
-Intune no tiene en cuenta la asociación de usuarios y dispositivos al excluir grupos. La inclusión de grupos de usuarios a la vez que se excluyen grupos de dispositivos no es probable que genere los resultados que necesita. La inclusión tiene prioridad sobre la exclusión. Por ejemplo, si una aplicación iOS tiene como destino **All Users** (Todos los usuarios) y excluye **All iPads** (Todos los iPad), el resultado neto será que cualquier usuario de iPad tendrá acceso a la aplicación. Si, en cambio, la aplicación iOS tiene como destino **All Devices** (Todos los dispositivos) y excluye **All iPads** (Todos los iPad), la implementación se realizará correctamente.  
+Existen casos importantes al incluir o excluir asignaciones de aplicaciones:
+
+- La exclusión tiene prioridad sobre la inclusión en los siguientes escenarios de tipos de grupos:
+    - Inclusión y exclusión de grupos de usuarios al asignar aplicaciones.
+    - Inclusión y exclusión de grupos de dispositivos al asignar aplicaciones.
+
+    Por ejemplo, si asigna un grupo de dispositivos al grupo **Todos los usuarios corporativos**, pero excluye los miembros del grupo de usuarios **Personal de administración ejecutiva**, **Todos los usuarios corporativos** excepto el **Personal de administración ejecutiva** obtienen la asignación, ya que ambos son grupos de usuarios.
+- Intune no evalúa las relaciones entre grupos de usuarios y dispositivos. Si asigna aplicaciones a grupos mixtos, puede que los resultados no sean los deseados o esperados.
+
+    Este sería el caso si asigna un grupo de dispositivos al grupo de usuarios **Todos los usuarios**, pero excluye un grupo de dispositivos **Todos los dispositivos personales**. En esta asignación de aplicaciones de grupo mixto, **Todos los usuarios** obtienen la aplicación. La exclusión no se aplica.
+
+Como resultado, no se recomienda asignar aplicaciones a grupos mixtos.
 
 > [!NOTE]
 > Al establecer una asignación de grupo para una aplicación, el tipo **Not Applicable** (No es aplicable) queda en desuso y se reemplaza por la funcionalidad de exclusión de grupos. 
@@ -41,7 +52,6 @@ Intune no tiene en cuenta la asociación de usuarios y dispositivos al excluir g
 > Intune proporciona grupos **Todos los usuarios** y **Todos los dispositivos** ya creados en la consola. De forma práctica, los grupos llevan incorporadas optimizaciones. Es muy recomendable usar estos grupos para dirigirse a todos los usuarios y todos los dispositivos en lugar de a cualquier grupo "todos los usuarios" o "todos los dispositivos" que haya podido crear usted mismo.  
 >
 > Android Enterprise admite grupos incluidos y excluidos. Puede aprovechar los grupos integrados **Todos los usuarios** y **Todos los dispositivos** para la asignación de aplicaciones de Android Enterprise. 
-
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Inclusión y exclusión de grupos al asignar aplicaciones 
 Para asignar una aplicación a grupos mediante la asignación de inclusión y exclusión, siga estos pasos:

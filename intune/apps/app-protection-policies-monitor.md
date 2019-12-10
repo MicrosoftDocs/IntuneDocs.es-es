@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 26972bb034ea4cb65f1bf64c61c20395cf94dc36
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889587"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564186"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -42,9 +42,8 @@ El período de retención de los datos de protección de la aplicación es de 90
 
 ## <a name="summary-view"></a>Vista Resumen
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. Para ver la vista de resumen, en la carga de trabajo **Aplicaciones cliente**, en **Supervisar**, elija **Estado de protección de la aplicación**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Seleccione **Aplicaciones** > **Supervisar** > **Estado de protección de la aplicación**.
 
    ![Captura de pantalla del icono Resumen en el panel de administración de aplicaciones móviles de Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
@@ -78,7 +77,7 @@ Puede buscar un solo usuario y examinar su estado de cumplimiento. En el panel *
 >[!NOTE]
 > La columna **Última sincronización** representa el mismo valor tanto en el informe de estado de usuario de la consola como en el [informe .csv exportable](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities) de la directiva de protección de aplicaciones. La diferencia es un pequeño retraso en la sincronización entre el valor de los dos informes. 
 >
-> La hora de Última sincronización hace referencia a la última vez que Intune vio la instancia de la aplicación. Cuando un usuario inicia una aplicación, esta puede comunicarse con el servicio de Intune App Protection en el momento del inicio, en función de cuándo se sincronizara por última vez. Vea [las horas del intervalo de reintentos para la sincronización de la directiva de protección de aplicaciones](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Por lo tanto, si un usuario final no ha usado esa aplicación concreta en el último intervalo de sincronización (que suele ser de 30 minutos para el uso activo) e inicia la aplicación, entonces:
+> La hora de Última sincronización hace referencia a la última vez que Intune vio la instancia de la aplicación. Cuando un usuario inicia una aplicación, esta puede comunicarse con el servicio de Intune App Protection en el momento del inicio, en función de cuándo se sincronizara por última vez. Vea [las horas del intervalo de reintentos para la sincronización de la directiva de protección de aplicaciones](~/apps/app-protection-policy-delivery.md). Por lo tanto, si un usuario final no ha usado esa aplicación concreta en el último intervalo de sincronización (que suele ser de 30 minutos para el uso activo) e inicia la aplicación, entonces:
 >
 > - El informe .csv exportable de la directiva de protección de aplicaciones tiene la hora más reciente, desde 1 minuto (mínimo) a 30 minutos (máximo).
 > - El informe de estado de usuario tiene la hora más reciente al instante.
@@ -104,7 +103,7 @@ Para ver los informes sobre un usuario, siga estos pasos:
 > Si el usuario que ha buscado no tiene la directiva de MAM implementada, aparecerá un mensaje informándole de que el usuario no es objeto de ninguna directiva de MAM.
 
 ### <a name="flagged-users"></a>Usuarios marcados
-La vista detallada muestra el mensaje de error, la aplicación a la que se obtuvo acceso cuando se produjo el error, la plataforma del sistema operativo del dispositivo afectada y una marca de hora. El error suele ser para dispositivos liberados (iOS) o modificados (Android). Además, aquí se notifican los usuarios con dispositivos marcados por la comprobación de inicio condicional "atestación de dispositivo SafetyNet" con el motivo indicado por Google. Para que se quite un usuario del informe, es necesario que el estado del propio dispositivo haya cambiado, lo que sucede después de la siguiente comprobación de la detección de modificación (o cuando ocurra la comprobación de dispositivo liberado/SafetyNet), que debe informar de un resultado positivo. Si el dispositivo se corrige realmente, la actualización del informe de usuarios marcados se producirá cuando se vuelva a cargar la hoja.
+La vista detallada muestra el mensaje de error, la aplicación a la que se obtuvo acceso cuando se produjo el error, la plataforma del sistema operativo del dispositivo afectada y una marca de hora. El error suele ser para dispositivos liberados (iOS) o modificados (Android). Además, aquí se notifican los usuarios con dispositivos marcados por la comprobación de inicio condicional "atestación de dispositivo SafetyNet" con el motivo indicado por Google. Para que se quite un usuario del informe, es necesario que el estado del propio dispositivo haya cambiado, lo que sucede después de la siguiente comprobación de la detección de modificación (o cuando ocurra la comprobación de dispositivo liberado/SafetyNet), que debe informar de un resultado positivo. Si el dispositivo se corrige realmente, la actualización del informe de usuarios marcados se producirá cuando se vuelva a cargar el panel.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Usuarios con aplicaciones potencialmente perjudiciales
 La vista detallada muestra:
@@ -121,14 +120,14 @@ Aquí se notifican los usuarios con dispositivos marcados por la comprobación d
 
 ## <a name="reporting-view"></a>Generación de informes
 
-Puede encontrar los mismos informes en la parte superior de la hoja **Estado de protección de la aplicación**.
+Puede encontrar los mismos informes en la parte superior del panel **Estado de protección de la aplicación**.
 
 > [!NOTE]
-> Intune proporciona campos adicionales con información sobre el dispositivo, como el identificador de registro de aplicación, el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, se accede a estos campos seleccionando **Aplicaciones cliente** > **Estado de protección de aplicaciones** > **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudan a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
+> Intune proporciona campos adicionales con información sobre el dispositivo, como el identificador de registro de aplicación, el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, se accede a estos campos seleccionando **Aplicaciones** > **Estado de protección de aplicaciones** > **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudan a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
 
-Hay informes adicionales disponibles que le ayudarán con el estado de cumplimiento de directivas MAM. Para ver estos informes, seleccione **Aplicaciones cliente** > **Estado protección de la aplicación** > **Informes**. 
+Hay informes adicionales disponibles que le ayudarán con el estado de cumplimiento de directivas MAM. Para ver estos informes, seleccione **Aplicaciones** > **Estado protección de la aplicación** > **Informes**. 
 
-En la hoja **Informes** se proporcionan varios informes basados en el usuario y la aplicación, incluidos los siguientes:
+En el panel **Informes** se proporcionan varios informes basados en el usuario y la aplicación, incluidos los siguientes:
 
 - **Informe de usuario**: en este informe, se describe la misma información que puede encontrar en el informe **Estado del usuario** de la sección [Vista detallada](app-protection-policies-monitor.md#detailed-view) anterior.
 
@@ -139,7 +138,7 @@ En la hoja **Informes** se proporcionan varios informes basados en el usuario y 
     - Estas aplicaciones están siendo utilizadas por un usuario o una aplicación que no está destinada actualmente mediante una directiva MAM.
     - Todas las aplicaciones están registradas, pero no reciben ninguna directiva MAM.
 
-    ![Captura de pantalla de la hoja Informes de aplicaciones de un usuario con detalles de tres aplicaciones](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![Captura de pantalla del panel Informes de aplicaciones de un usuario con detalles de tres aplicaciones](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **Informe de configuración del usuario**: según un usuario seleccionado, en este informe se proporcionan detalles sobre cualquier configuración de aplicación que haya recibido el usuario.
 - **Informe de configuración de la aplicación**: según una aplicación y plataforma seleccionada, en este informe se proporcionan detalles sobre qué usuarios han recibido configuraciones para la aplicación seleccionada.

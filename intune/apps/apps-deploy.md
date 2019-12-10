@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540749"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563993"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -55,13 +55,12 @@ En esta tabla se muestran las diversas opciones para asignar aplicaciones a usua
 
 ## <a name="assign-an-app"></a>Asignación de una aplicación
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En la sección **Administrar** del menú, seleccione **Aplicaciones**.
-5. En el panel **Aplicaciones**, seleccione la aplicación que quiere asignar.
-6. En la sección **Administrar** del menú, seleccione **Asignaciones**.
-7. Seleccione **Agregar grupo** para abrir el panel **Agregar grupo** que está relacionado con la aplicación.
-8. Para la aplicación específica, seleccione un **tipo de asignación**:
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones**.
+3. En el panel **Aplicaciones**, seleccione la aplicación que quiere asignar.
+4. En la sección **Administrar** del menú, seleccione **Asignaciones**.
+5. Seleccione **Agregar grupo** para abrir el panel **Agregar grupo** que está relacionado con la aplicación.
+6. Para la aplicación específica, seleccione un **tipo de asignación**:
    - **Disponible para dispositivos inscritos**: se asigna la aplicación a grupos de usuarios que pueden instalar la aplicación desde la aplicación o el sitio web Portal de empresa.
    - **Disponible con o sin inscripción**: se asigna esta aplicación a grupos de usuarios cuyos dispositivos no se han inscrito en Intune. Se debe asignar a los usuarios una licencia de Intune; consulte [Licencias que incluyen Intune](../fundamentals/licenses.md).
    - **Requerido**: la aplicación se instala en los dispositivos de los grupos seleccionados. Algunas plataformas pueden tener mensajes adicionales para el usuario final para confirmar antes de que comience la instalación de la aplicación.
@@ -76,19 +75,19 @@ En esta tabla se muestran las diversas opciones para asignar aplicaciones a usua
      >
      > En **Disponible para dispositivos inscritos**: La aplicación solo se muestra como disponible si el usuario que inició sesión en el Portal de empresa es el usuario primario que inscribió el dispositivo y la aplicación es aplicable al dispositivo.
 
-9. Para seleccionar los grupos de usuarios que resultan afectados por esta asignación de aplicaciones, seleccione **Grupos incluidos**.
-10. Después de haber seleccionado uno o varios grupos para incluir, seleccione **Seleccionar**.
-11. En el panel **Asignar**, seleccione **Aceptar** para completar la selección de grupos incluidos.
-12. Si quiere excluir algún grupo de usuarios para que no se vea afectado por esta asignación de aplicaciones, seleccione **Excluir grupos**.
-13. Si ha elegido excluir algún grupo, en **Seleccionar grupos**, seleccione **Seleccionar**.
-14. En el panel **Agregar grupo**, seleccione **Aceptar**.
-15. En el panel **Asignaciones** de la aplicación, seleccione **Guardar**.
+7. Para seleccionar los grupos de usuarios que resultan afectados por esta asignación de aplicaciones, seleccione **Grupos incluidos**.
+8. Después de haber seleccionado uno o varios grupos para incluir, seleccione **Seleccionar**.
+9. En el panel **Asignar**, seleccione **Aceptar** para completar la selección de grupos incluidos.
+10. Si quiere excluir algún grupo de usuarios para que no se vea afectado por esta asignación de aplicaciones, seleccione **Excluir grupos**.
+11. Si ha elegido excluir algún grupo, en **Seleccionar grupos**, seleccione **Seleccionar**.
+12. En el panel **Agregar grupo**, seleccione **Aceptar**.
+13. En el panel **Asignaciones** de la aplicación, seleccione **Guardar**.
 
 La aplicación ahora se asigna a los grupos que ha seleccionado. Para obtener más información sobre cómo incluir y excluir asignaciones de aplicaciones, vea [Inclusión y exclusión de asignaciones de aplicaciones](apps-inc-exl-assignments.md).
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Cómo se resuelven los conflictos entre las intenciones de aplicación
 
-Se evita que un solo grupo se convierta en objetivo de múltiples intenciones de asignación de aplicaciones, pero si un usuario o un dispositivo es miembro de múltiples grupos a los que se les asignan diferentes intentos, se producirá un conflicto. No se recomienda crear conflictos de asignación entre aplicaciones.
+Se evita que un solo grupo se convierta en objetivo de múltiples intenciones de asignación de aplicaciones, pero si un usuario o un dispositivo es miembro de varios grupos a los que se les asignan diferentes intentos, se producirá un conflicto. No se recomienda crear conflictos de asignación entre aplicaciones.
 La información de la tabla siguiente puede ayudarle a comprender la intención resultante cuando esto sucede:
 
 | Intención del grupo 1 | Intención del grupo 2 | Intención resultante |

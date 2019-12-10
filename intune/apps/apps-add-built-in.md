@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712925"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563598"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Incorporación de aplicaciones integradas a Microsoft Intune
 
@@ -37,24 +37,20 @@ En versiones anteriores de la consola de Intune, Intune ofrecía varias aplicaci
 ## <a name="add-a-built-in-app"></a>Incorporación de una aplicación integrada
 
 Para agregar una aplicación integrada a las aplicaciones que tiene disponibles en Microsoft Intune, haga lo siguiente:
-1. Inicie sesión en Azure Portal.
-2. Para mostrar el panel de Microsoft Intune, seleccione **Más servicios** > **Supervisión y administración** > **Intune**.
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En el panel **Aplicaciones cliente**, en **Administrar** seleccione **Aplicaciones**.
-5. Seleccione **Agregar**.
-6. En el panel de aplicaciones **Agregar**, en la lista **Tipo de aplicación**, seleccione **Aplicación integrada**.
-7. Seleccione **Seleccionar aplicación**.
-8. En el panel **Aplicación integrada**, seleccione las aplicaciones que desea incluir.
-9. Luego, en el panel **Agregar aplicación**, seleccione **Agregar**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
+3. En el panel de aplicaciones **Agregar**, en la lista **Tipo de aplicación**, seleccione **Aplicación integrada**.
+4. Seleccione **Seleccionar aplicación**.
+5. En el panel **Aplicación integrada**, seleccione las aplicaciones que desea incluir.
+6. Luego, en el panel **Agregar aplicación**, seleccione **Agregar**.
 
 
 ## <a name="configure-app-information"></a>Configuración de información de la aplicación
 
 Puede modificar la información sobre la aplicación integrada. Esta información le ayuda a identificar la aplicación en Intune y ayuda a los usuarios a encontrar la aplicación en el portal de empresa.
-1. En el panel **Aplicaciones cliente - Aplicaciones**, seleccione la aplicación integrada que quiera modificar.  
-    Se muestra un panel de la aplicación integrada.
-2. En **Administrar**, seleccione la opción **Propiedades**.
-3. Para modificar la información de la aplicación integrada, seleccione la opción **Configurar**.
+1. Seleccione **Aplicaciones** > **Todas las aplicaciones** y seleccione la aplicación integrada que quiera modificar.  
+   Se muestra un panel de la aplicación integrada.
+2. Seleccione **Propiedades** > **Configurar**.
 4. En el panel **Información de la aplicación**, puede modificar la información siguiente:
     - **Nombre**: Escriba el nombre de la aplicación integrada tal como se muestra en el portal de empresa. Asegúrese de que todos los nombres que use sean únicos. Si el mismo nombre de aplicación existe dos veces, solo se muestra a los usuarios una de las aplicaciones en el portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. 

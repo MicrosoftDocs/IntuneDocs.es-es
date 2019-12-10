@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635396"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563676"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adición de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -49,11 +49,9 @@ Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agr
 
 ## <a name="get-started"></a>Introducción
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Administrar**, seleccione **Aplicaciones**.
-5. Seleccione **Agregar**.
-6. En el panel **Agregar aplicaciones**, en la lista **Tipo de aplicación**, vaya a **Office 365 Suite** y seleccione **Windows 10**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
+3. En el panel **Agregar aplicaciones**, en la lista **Tipo de aplicación**, vaya a **Office 365 Suite** y seleccione **Windows 10**.
 
 ## <a name="select-settings-format"></a>Selección del formato de configuración
 
@@ -61,13 +59,13 @@ Si quiere elegir un método para configurar la configuración de la aplicación,
 - Diseñador de configuraciones
 - Especificar datos XML
 
-Cuando se elige el **Diseñador de configuraciones**, la hoja **Agregar aplicación** cambiará para ofrecer otras dos opciones de configuración:
+Cuando se elige el **Diseñador de configuraciones**, el panel **Agregar aplicación** cambiará para ofrecer otras dos opciones de configuración:
 - Configurar conjunto de aplicaciones
 - Configuración del conjunto de aplicaciones
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-Cuando se elige **Especificar datos XML**, la hoja **Agregar aplicación** mostrará la opción **Especificar datos XML**. Selecciónela para mostrar la hoja **Archivo de configuración**. 
+Cuando se elige **Especificar datos XML**, el panel **Agregar aplicación** mostrará la opción **Especificar datos XML**. Selecciónela para mostrar el panel **Archivo de configuración**. 
 
 ![Diseñador de configuraciones para agregar Office 365](./media/apps-add-office365/apps-add-office365-01.png)
     
@@ -94,7 +92,7 @@ En este paso, proporcionará información sobre el conjunto de aplicaciones. Est
 
 ## <a name="configure-app-suite"></a>Configurar conjunto de aplicaciones
 
-Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configurar conjunto de aplicaciones** en la hoja **Agregar aplicación**. Seleccione las aplicaciones de Office que quiere asignar a los dispositivos.
+Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configurar conjunto de aplicaciones** en el panel **Agregar aplicación**. Seleccione las aplicaciones de Office que quiere asignar a los dispositivos.
 
 1. En el panel **Agregar aplicación**, seleccione **Configure App Suite** (Configurar conjunto de aplicaciones).
 2. En el panel **Configure App Suite** (Configurar conjunto de aplicaciones), elija las aplicaciones de Office estándar que quiere asignar a los dispositivos.  
@@ -103,7 +101,7 @@ Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro des
 
 ## <a name="configure-app-suite-settings"></a>Configuración del conjunto de aplicaciones
 
-Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configuración del conjunto de aplicaciones** en la hoja **Agregar aplicación**. En este paso, configure las opciones de instalación para el conjunto de aplicaciones. La configuración se aplica a todas las aplicaciones que agregó al conjunto.
+Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configuración del conjunto de aplicaciones** en el panel **Agregar aplicación**. En este paso, configure las opciones de instalación para el conjunto de aplicaciones. La configuración se aplica a todas las aplicaciones que agregó al conjunto.
 
 1. En el panel **Agregar aplicación**, seleccione **App Suite Settings** (Configuración del conjunto de aplicaciones).
 2. En el panel **App Suite Settings** (Configuración del conjunto de aplicaciones), haga lo siguiente:
@@ -126,7 +124,7 @@ Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro des
     - **Aceptar automáticamente el contrato de licencia para el usuario final de la aplicación**: seleccione esta opción si no necesita que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
     - **Usar activación en equipos compartidos**: seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones. <p></p>
-    Puede implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** de la hoja **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en la hoja **Configuración del conjunto de aplicaciones**. Para más información, vea [Información general acerca de la implementación de idiomas en Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+    Puede implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** del panel **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en el panel **Configuración del conjunto de aplicaciones**. Para más información, vea [Información general acerca de la implementación de idiomas en Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
 ## <a name="select-scope-tags-optional"></a>Selección de Etiquetas de ámbito (opcional)
 Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida).
@@ -138,7 +136,7 @@ Puede usar las etiquetas de ámbito para determinar quién puede ver informació
 
 ## <a name="enter-xml-format"></a>Especificar formato XML
 
-Si ha seleccionado la opción **Especificar datos XML** en el cuadro desplegable **Formato de configuración**, verá la opción **Enter XML format** (Especificar formato XML) en la hoja **Agregar aplicación**. Para obtener más información, vea [Opciones de configuración de la Herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+Si ha seleccionado la opción **Especificar datos XML** en el cuadro desplegable **Formato de configuración**, verá la opción **Enter XML format** (Especificar formato XML) en el panel **Agregar aplicación**. Para obtener más información, vea [Opciones de configuración de la Herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Finalizar
 

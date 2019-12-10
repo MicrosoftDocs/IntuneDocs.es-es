@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199309"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390760"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Cómo obtener asistencia para Microsoft Intune
 
@@ -39,7 +39,7 @@ Como administrador de Intune, puede usar la opción **Ayuda y soporte técnico**
 
 ## <a name="help-and-support-experience"></a>Experiencia de ayuda y soporte técnico
 
-La experiencia de ayuda y soporte técnico de Intune está disponible en el [portal de administración de dispositivos de Microsoft 365](https://devicemanagement.microsoft.com) y en todas las hojas (o páginas) en Intune, en Azure Portal.
+La experiencia de ayuda y soporte técnico de Intune está disponible en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y en todas las hojas (o páginas) de Intune, en Azure Portal.
 
 La experiencia de *Ayuda y soporte técnico* es similar a la observada en el [centro de administración de Microsoft 365](https://admin.microsoft.com/) y reemplaza a la experiencia anterior de *Ayuda y soporte técnico*, que permanece vigente para otros servicios en Azure.
 
@@ -48,16 +48,27 @@ La experiencia de *Ayuda y soporte técnico* es similar a la observada en el [ce
 
 ### <a name="options-to-access-help-and-support"></a>Opciones para obtener acceso a ayuda y soporte técnico
 
-- **En Azure Portal:**
+Cuando se usa un inquilino recién creado con Intune, es posible que no pueda abrirse la experiencia *Ayuda y soporte técnico* y que se devuelva el siguiente mensaje:
+
+- *We encountered an unknown problem. Please refresh the page but if the problem persists, please create a case through [M365 Admin Center](https://admin.microsoft.com) and reference the session ID provided.* (Se encontró un problema desconocido. Actualice la página; si el problema persiste, cree un caso en el Centro de administración de M365 y haga referencia al identificador de sesión proporcionado).
+
+Los detalles del error incluyen un *identificador de sesión*, la *extensión*, etc. 
+ 
+Este problema se produce cuando todavía no se ha autenticado la nueva cuenta del inquilino en el **Centro de administración de M365** en https://admin.microsoft.com o en el **portal de Office 365** en https://portal.office.com. Para resolver este problema, seleccione el vínculo del *Centro de administración de M365* en el mensaje, o bien, visite https://portal.office.com e inicie sesión. Tras la autenticación en uno de estos sitios, la experiencia *Ayuda y soporte técnico* para Intune se vuelve accesible.
+
+
+**Acceso a Ayuda y soporte técnico**:
+
+- **En Azure Portal**
 
   - Seleccione **Ayuda y soporte técnico** desde cualquier hoja o página de Intune.
 
   > [!NOTE]  
   > Si la instancia de Intune se hospeda en la nube privada de organismos públicos, también conocida como nube soberana de tipo Azure Government, consulte [Compatibilidad de Intune con la nube privada para organismos públicos](#intune-support-for-private-cloud-for-government), más adelante en este artículo. La experiencia de *Ayuda y soporte técnico* de Intune no estará disponible en la nube privada para organismos públicos hasta el próximo año.
 
-- **En el panel de administración de dispositivos:**
+- **Desde el Centro de administración del Administrador de puntos de conexión de Microsoft**
   - Después de seleccionar un área de características para Intune, seleccione la opción de **Ayuda y soporte técnico**.
-  - En cualquier nodo del portal de administración de dispositivos, seleccione el icono **?** en la esquina superior derecha del portal y, a continuación, use la lista desplegable para seleccionar el servicio con el que desea ayuda. El icono **?** del portal de administración de dispositivos es compatible con varios servicios, y debe seleccionar el servicio específico para el que desea obtener ayuda.  
+  - Desde cualquier nodo del Centro de administración del Administrador de puntos de conexión de Microsoft, seleccione el icono **?** en la esquina superior derecha del portal y, a continuación, use la lista desplegable para seleccionar el servicio con el que desea ayuda. El icono **?** del Centro de administración del Administrador de puntos de conexión de Microsoft admite varios servicios, y debe seleccionar el servicio específico con el que necesita ayuda.  
 
     ![Selección del servicio](./media/get-support/select-a-service.png)
 

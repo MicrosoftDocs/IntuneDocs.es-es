@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497963"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563966"
 ---
 # <a name="configure-microsoft-launcher"></a>Configuración de Microsoft Launcher
 
@@ -33,7 +33,7 @@ En dispositivos Android Enterprise totalmente administrados, Launcher permite a 
 
 ## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Configuración de la aplicación Managed Home Screen de Microsoft 
 
-Vaya a la consola de Intune en Azure Portal y seleccione **Aplicaciones cliente** > **Directivas de configuración de aplicaciones**. Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Microsoft Launcher** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Managed Home Screen. 
+Vaya al [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** . Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Microsoft Launcher** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Managed Home Screen. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Selección de un formato de opciones de configuración 
 
