@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547961"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563979"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
 
@@ -55,34 +55,34 @@ Como resultado, no se recomienda asignar aplicaciones a grupos mixtos.
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Inclusión y exclusión de grupos al asignar aplicaciones 
 Para asignar una aplicación a grupos mediante la asignación de inclusión y exclusión, siga estos pasos:
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En el panel **Aplicaciones cliente**, seleccione **Aplicaciones**. Se muestra la lista de aplicaciones agregadas.
-5. Seleccione la aplicación que quiera asignar. Un panel muestra información sobre la aplicación. 
-6. En la sección **Administrar** del menú, seleccione **Asignaciones**. 
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Todas las aplicaciones**. Se muestra la lista de aplicaciones agregadas.
+3. Seleccione la aplicación que quiera asignar. Un panel muestra información sobre la aplicación. 
+4. En la sección **Administrar** del menú, seleccione **Asignaciones**. 
 
     ![Inclusión de las asignaciones de aplicaciones al asignar aplicaciones](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. Seleccione **Agregar grupo** para agregar los grupos de usuarios que están asignados a la aplicación. 
-8. Seleccione un **tipo de asignación** entre los disponibles en el panel **Agregar grupo**.
-9. Seleccione **Available with or without enrollment** (Disponible con o sin inscripción) como tipo de asignación.
+
+5. Seleccione **Agregar grupo** para agregar los grupos de usuarios que están asignados a la aplicación. 
+6. Seleccione un **tipo de asignación** entre los disponibles en el panel **Agregar grupo**.
+7. Seleccione **Available with or without enrollment** (Disponible con o sin inscripción) como tipo de asignación.
 
     ![Asignaciones de aplicaciones de Intune: agregar un grupo](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. Seleccione **Grupos incluidos** para seleccionar el grupo de usuarios para los que estará disponible esta aplicación.
+8. Seleccione **Grupos incluidos** para seleccionar el grupo de usuarios para los que estará disponible esta aplicación.
 
     > [!NOTE]
     > Al agregar un grupo, si ningún otro grupo se ha incluido para un tipo de asignación específica, la aplicación se preselecciona y no se puede modificar para otros tipos de asignación de inclusión. El grupo que se ha usado no se puede utilizar como un grupo incluido.
 
-11. Seleccione **Sí** para que esta aplicación esté disponible para todos los usuarios.
+9. Seleccione **Sí** para que esta aplicación esté disponible para todos los usuarios.
 
     ![Asignaciones de aplicaciones de Intune: incluir grupos](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. Haga clic en **Aceptar** para establecer el grupo que quiere incluir.
-13. Seleccione **Grupos excluidos** para seleccionar los grupos de usuarios para los que no estará disponible esta aplicación. 
-14. Seleccione los grupos para excluir. A continuación, esta aplicación deja de estar disponible para esos grupos.
+10. Haga clic en **Aceptar** para establecer el grupo que quiere incluir.
+11. Seleccione **Grupos excluidos** para seleccionar los grupos de usuarios para los que no estará disponible esta aplicación. 
+12. Seleccione los grupos para excluir. A continuación, esta aplicación deja de estar disponible para esos grupos.
 
     ![Asignaciones de la aplicaciones de Intune: excluir grupos](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. Haga clic en **Seleccionar** para completar la selección de grupos.
-16. En el panel **Agregar grupo**, seleccione **Aceptar**. Aparece la lista de **asignaciones** de aplicaciones.
-17. Haga clic en **Guardar** para activar las asignaciones de grupo para la aplicación.
+13. Haga clic en **Seleccionar** para completar la selección de grupos.
+14. En el panel **Agregar grupo**, seleccione **Aceptar**. Aparece la lista de **asignaciones** de aplicaciones.
+15. Haga clic en **Guardar** para activar las asignaciones de grupo para la aplicación.
 
 Cuando se realizan asignaciones de grupos, los grupos que se han asignado ya no están disponibles para modificarse. Si quiere seleccionar un grupo que actualmente no está disponible, quite primero la aplicación de lista asignada de aplicaciones. 
 
