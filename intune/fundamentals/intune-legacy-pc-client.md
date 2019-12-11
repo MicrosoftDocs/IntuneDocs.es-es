@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510192"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Consola de Intune en Azure y cliente de equipo de Intune heredado
@@ -63,7 +63,7 @@ Para una comparación detallada entre las funcionalidades del cliente de equipo 
 Para pasar de administrar los dispositivos Windows 10 con el cliente de equipo de Intune a administrarlos con MDM, siga estos pasos:
 
 1. En la consola de Silverlight, realice una **eliminación de datos selectiva** para cancelar la inscripción del dispositivo desde el cliente de equipo.
-  ![Warning ventana emergente con el botón de radio "borrar de forma selectiva el dispositivo" seleccionado ](./media/intune-legacy-pc-client/image02.png)
+  ![cuadro emergente de advertencia con el botón de radio "borrar de forma selectiva el dispositivo" seleccionado](./media/intune-legacy-pc-client/image02.png)
 2. Vuelva a inscribir el dispositivo con [MDM (o con combinación de Azure AD)](../enrollment/windows-enroll.md).
 
 ## <a name="next-steps"></a>Pasos siguientes

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72489794"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Configuración de restricciones de dispositivos Windows Phone 8.1 de Microsoft Intune

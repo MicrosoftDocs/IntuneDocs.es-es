@@ -5,7 +5,7 @@ description: Configuración de la línea de base de seguridad compatible con Int
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060067"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882336"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configuración de la línea de base de Advanced Threat Protection de Microsoft Defender
 
@@ -593,8 +593,18 @@ Para más información, vea [PassportForWork CSP](https://docs.microsoft.com/win
 - **Configurar Windows Hello para empresas** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello para empresas es un método alternativo para iniciar sesión en dispositivos Windows mediante la sustitución de contraseñas, tarjetas inteligentes y tarjetas inteligentes virtuales.  
 
-  - Cuando se establece en *sí*, se habilita esta directiva y el dispositivo aprovisiona Windows Hello para empresas.  
-  - Cuando se establece en *no configurado*, la línea de base no afecta a la configuración de la Directiva del dispositivo. Esto significa que si Windows Hello para empresas está deshabilitado en un dispositivo, permanece deshabilitado. Si está habilitada, permanece habilitada. 
+
+  > [!IMPORTANT]
+  > Las opciones de esta configuración se invierten de su significado implícito. Mientras se invierte, el valor *sí* no habilita Windows Hello y, en su lugar, se trata como *no configurado*. Cuando esta opción se establece en *no configurado*, Windows Hello está habilitado en los dispositivos que reciben esta línea de base.
+  >
+  > Las siguientes descripciones se han revisado para reflejar este comportamiento. La inversión de la configuración se corregirá en una actualización futura de esta línea de base de seguridad.
+
+  - Cuando se establece en *no configurado*, Windows Hello está habilitado y el dispositivo aprovisiona Windows Hello para empresas.
+  - Cuando se establece en *sí*, la línea de base no afecta a la configuración de la Directiva del dispositivo. Esto significa que si Windows Hello para empresas está deshabilitado en un dispositivo, permanece deshabilitado. Si está habilitada, permanece habilitada.
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   No se puede deshabilitar Windows Hello para empresas a través de esta línea base. Puede deshabilitar Windows Hello para empresas al configurar la [inscripción de Windows](windows-hello.md)o como parte de un perfil de configuración de dispositivo para la [protección de identidades](identity-protection-configure.md).  
 

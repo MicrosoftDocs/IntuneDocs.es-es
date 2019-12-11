@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465659"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992920"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 En este artículo se enumeran y describen los diferentes valores de configuración que se pueden controlar en los dispositivos iOS e iPadOS. Como parte de la solución de administración de dispositivos móviles (MDM), use estos valores para habilitar o deshabilitar características, establecer reglas de contraseña, permitir o restringir determinadas aplicaciones, etc.
 
@@ -52,7 +50,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos, inscripción de dispositivo automatizada (supervisado)
 
 - **Certificados TLS que no son de confianza**: elija **Bloquear** para evitar en el dispositivo los certificados de Seguridad de la capa de transporte (TLS) que no son de confianza. **Sin configurar** (valor predeterminado) permite certificados TLS.
-- **Permitir actualizaciones de PKI de manera inalámbrica**: con la opción **Permitir**, los usuarios reciben actualizaciones de software sin tener que conectar los dispositivos a un equipo.
+- **Bloquear actualizaciones de PKI por aire** **: impide** que los usuarios reciban actualizaciones de software sin necesidad de conectar sus dispositivos a un equipo. **No configurado** (valor predeterminado) no actualiza esta configuración en el dispositivo.
 - **Limitar el seguimiento de publicidad**: elija **Limitar** para deshabilitar el identificador de publicidad del dispositivo. **Sin configurar** (valor predeterminado) lo mantiene habilitado.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
@@ -95,7 +93,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Cambios en el perfil de configuración**: **Bloquear** impide los cambios en el perfil de configuración del dispositivo. **No configurado** (valor predeterminado) permite que el usuario instale perfiles de configuración.
 - **Bloqueo de activación**: elija **Permitir** para habilitar Bloqueo de activación en dispositivos iOS supervisados. Bloqueo de activación dificulta que un dispositivo robado o perdido pueda reactivarse.
 - **Bloqueo de la eliminación de aplicaciones**: elija **Bloquear** para impedir que los usuarios quiten aplicaciones. **No configurado** (valor predeterminado) permite que los usuarios quiten aplicaciones del dispositivo.
-- **Bloqueo del modo restringido de USB**: elija **Bloquear** para deshabilitar el modo restringido de USB en los dispositivos supervisados. El modo restringido de USB impide que los accesorios USB intercambien datos con un dispositivo bloqueado durante más de una hora. **Sin configurar** (valor predeterminado) permite el modo restringido de USB.
+- **Permitir accesorios USB mientras el dispositivo está bloqueado**: permite **que** los accesorios USB intercambien datos con un dispositivo que se ha bloqueado durante más de una hora. **No configurado** (valor predeterminado) no actualiza el modo restringido USB en el dispositivo.
 - **Forzar fecha y hora automática**: **Requerir** fuerza los dispositivos supervisados para que establezcan fecha y hora automáticamente. La zona horaria del dispositivo se actualiza cuando el dispositivo tiene conexiones móviles o tiene Wi-Fi con servicios de ubicación habilitados.
 - **Requerir que los alumnos pidan permiso para dejar un curso de Aula**: **Requerir** obliga a los alumnos inscritos en un curso no administrado con la aplicación Aula a pedir permiso al profesor para dejar el curso. **No configurado** (valor predeterminado) no obliga al alumno a pedir permiso.
 

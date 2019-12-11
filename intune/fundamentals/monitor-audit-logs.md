@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585239"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991977"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Uso de registros de auditoría para realizar un seguimiento y supervisar eventos en Microsoft Intune
 
@@ -40,9 +40,14 @@ Los usuarios con los siguientes permisos pueden revisar los registros de auditor
 
 Puede revisar los registros de auditoría en el grupo de supervisión para cada carga de trabajo de Intune:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Elija la carga de trabajo cuyos registros de auditoría quiere revisar. Por ejemplo, seleccione **Dispositivos**.
-3. En **Supervisión**, elija **Registros de auditoría**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Administración de inquilinos** > **registros de auditoría**.
+3. Para filtrar los resultados, seleccione **filtrar** y perfeccione los resultados con las siguientes opciones.
+    - **Categoría**: como el **cumplimiento**, el **dispositivo**y el **rol**.
+    - **Actividad**: las opciones que se enumeran aquí están restringidas por la opción elegida en **categoría**.
+    - **Intervalo de fechas**: puede elegir registros para el mes, semana o día anterior.
+4. Elija **Aplicar**.
+4. Seleccione un elemento de la lista para ver los detalles de la actividad.
 
 ## <a name="route-logs-to-azure-monitor"></a>Enrutamiento de registros a Azure Monitor
 
@@ -53,32 +58,10 @@ También se pueden enrutar registros de auditoría y registros operativos a Azur
 > [!NOTE]
 > Para más información sobre esta característica y para revisar los requisitos previos para usarla, consulte [envío de datos de registro a Storage, Event hubs o log Analytics](review-logs-using-azure-monitor.md).
 
-## <a name="review-audit-events"></a>Revisión de eventos de auditoría
-
-![Elegir registros de auditoría en Intune para ver las acciones y las fechas en que se produjeron los eventos](./media/monitor-audit-logs/monitor-audit-logs.png "Registros de auditoría")
-
-Un registro de auditoría tiene una vista de lista predeterminada que muestra los elementos siguientes:
-
-- Fecha y hora en que se produjo el evento
-- Iniciado por (actor)
-- Nombre de aplicación
-- Actividad
-- Destinos
-- Category
-- Estado
-
-Para ver información más específica sobre un evento, seleccione un elemento de la lista:
-
-![Obtener información más específica sobre quiénes hicieron qué en registro de auditoría de Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > **Iniciado por (actor)** incluye información sobre quién ejecutó la tarea y sobre dónde se ejecutó. Por ejemplo, si ejecuta la actividad en Intune en Azure Portal, como **Aplicación** siempre figura **Extensión del portal de Microsoft Intune** y como **Id. de aplicación** siempre se usa el mismo GUID.
 >
 > La sección **Destinos** muestra varios destinos y las propiedades que cambiaron.  
-
-## <a name="filter-audit-events"></a>Filtrado de eventos de auditoría
-
-Cada carga de trabajo tiene un elemento de menú que filtra previamente la categoría de eventos de auditoría asociados a ese panel. Una opción de filtro independiente le permite cambiar a distintas categorías, y se detalla una acción de evento dentro de esa categoría. Puede buscar por UPN, como el usuario que realizó la acción. Un filtro de intervalo de fechas permite opciones de 24 horas, 7 días o 30 días. De forma predeterminada, se muestran los últimos 30 días de eventos de auditoría.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Uso de API Graph para recuperar eventos de auditoría
 

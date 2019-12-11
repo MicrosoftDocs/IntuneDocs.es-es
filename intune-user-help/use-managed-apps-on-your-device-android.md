@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501885"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781216"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usar aplicaciones administradas en el dispositivo Android
 Las aplicaciones administradas están configuradas para cumplir los requisitos de seguridad de la organización y proteger los datos profesionales y educativos. Estas aplicaciones están disponibles en el dispositivo para instalarlas o usarlas automáticamente. 
@@ -39,9 +39,7 @@ Para maximizar la protección de datos, la organización podría configurar vari
 Las organizaciones pueden requerir el uso de una aplicación administrada para realizar una acción, como abrir un archivo de trabajo o tener acceso a un vínculo web. Si no dispone de la aplicación, es posible que no pueda continuar con la tarea. Algunas aplicaciones administradas están disponibles para su instalación, pero no son necesarias.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>¿Cómo puedo saber si estoy usando una aplicación administrada?
-La primera vez que tenga acceso a datos profesionales o educativos en una aplicación administrada, recibirá un mensaje similar al que se muestra en la siguiente captura de pantalla de ejemplo. El mensaje le pedirá que reinicie la aplicación para continuar.
-
-![Captura de pantalla del mensaje que aparece cuando un usuario abre una aplicación administrada en su dispositivo. El mensaje indicará lo siguiente: "Your organization is now protecting its data in this app. You need to restart the app to continue" (Ahora su organización está protegiendo sus datos en esta aplicación. Debe reiniciar la aplicación para continuar) seguido del botón Aceptar.](./media/managed-apps-message.png)
+Al intentar obtener acceso a los datos profesionales o educativos en una aplicación administrada, recibirá un mensaje en pantalla que le indica que la aplicación está protegida por su organización. 
 
 ## <a name="commonly-managed-apps"></a>Aplicaciones administradas frecuentemente  
 A continuación se indican algunos ejemplos de aplicaciones administradas que suelen ser necesarias o estar disponibles en escuelas y en empresas:

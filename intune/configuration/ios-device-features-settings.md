@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117900"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992945"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Configuración de dispositivos iOS e IPadOS para usar las características comunes de iOS en Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune incluye algunas configuraciones integradas para permitir a los usuarios de iOS usar diferentes características de Apple en sus dispositivos. Por ejemplo, los administradores pueden controlar cómo los usuarios de iOS usan impresoras AirPrint, agregan aplicaciones y carpetas a la base y páginas en la pantalla principal, muestran las notificaciones de aplicación, muestran detalles de etiqueta de recursos en la pantalla de bloqueo, usan la autenticación de inicio de sesión único y autentican usuarios con certificados.
 
@@ -280,36 +278,43 @@ Esta característica se aplica a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
 
-- **Tipo de extensión de aplicación de SSO**: elija el tipo de extensión de aplicación SSO de credenciales. Las opciones son:
+- **Tipo de extensión de aplicación de SSO**: elija el tipo de extensión de aplicación de SSO. Las opciones son:
 
-  - **No configurado**: no se usan las extensiones de aplicación. Para deshabilitar una extensión de aplicación, puede cambiar el tipo de extensión de aplicación de SSO de **Kerberos** o **credencial** a **no configurado**.
-  - **Credential**: Use una extensión de aplicación de credenciales genérica y personalizable para realizar el inicio de sesión único. Asegúrese de que conoce el identificador de la extensión de la aplicación SSO de su organización.
+  - **No configurado**: no se usan las extensiones de aplicación. Para deshabilitar una extensión de aplicación, puede cambiar el tipo de extensión de aplicación de SSO a **no configurado**.
+  - **Redirigir**: Use una extensión de aplicación de redireccionamiento genérica y personalizable para realizar el inicio de sesión único con flujos de autenticación modernos. Asegúrese de que conoce el identificador de la extensión de la aplicación de su organización.
+  - **Credential**: Use una extensión de aplicación de credenciales genérica y personalizable para realizar el inicio de sesión único con flujos de autenticación de desafío y respuesta. Asegúrese de que conoce el identificador de la extensión de la aplicación de su organización.
   - **Kerberos**: Use la extensión integrada de Kerberos de Apple, que se incluye en iOS 13,0 (y versiones más recientes) y en ipados 13,0 (y versiones más recientes). Esta opción es una versión específica de Kerberos de la extensión de la aplicación de **credenciales** .
 
   > [!TIP]
-  > Con el tipo de **credencial** , se agregan sus propios valores de configuración para pasar a través de la extensión. En su lugar, considere la posibilidad de usar las opciones de configuración integradas proporcionadas por Apple en el tipo de **Kerberos** .
+  > Con los tipos de **credenciales** y **redireccionamiento** , agregue sus propios valores de configuración para pasar a través de la extensión. Si utiliza **credenciales**, considere la posibilidad de usar las opciones de configuración integradas proporcionadas por Apple en el tipo de **Kerberos** .
 
-- **Identificador de extensión** (solo credencial): escriba el identificador de paquete que identifica la extensión de la aplicación de SSO, como `com.apple.extensiblesso`.
-- **Identificador de equipo** (solo credencial): escriba el identificador de equipo de la extensión de la aplicación de SSO. Un identificador de equipo es una cadena alfanumérica de 10 caracteres (números y letras) que genera Apple, como `ABCDE12345`. No es necesario el identificador del equipo.
+- **Identificador de extensión** (redirección y credencial): escriba el identificador de paquete que identifica la extensión de la aplicación de SSO, como `com.apple.extensiblesso`.
+
+- **Identificador de equipo** (redirección y credencial): escriba el identificador de equipo de la extensión de la aplicación de SSO. Un identificador de equipo es una cadena alfanumérica de 10 caracteres (números y letras) que genera Apple, como `ABCDE12345`. No es necesario el identificador del equipo.
 
   [Busque el identificador de su equipo](https://help.apple.com/developer-account/#/dev55c3c710c) (abre el sitio web de Apple) para obtener más información.
 
-- **Territorio**: escriba el nombre del dominio Kerberos. El nombre de dominio Kerberos debe escribirse en mayúsculas, como `CONTOSO.COM`. Normalmente, el nombre de dominio Kerberos es el mismo que el nombre de dominio DNS, pero en mayúsculas.
+- **Dominio** Kerberos (credencial y Kerberos): escriba el nombre del dominio Kerberos de autenticación. El nombre de dominio Kerberos debe escribirse en mayúsculas, como `CONTOSO.COM`. Normalmente, el nombre de dominio Kerberos es el mismo que el nombre de dominio DNS, pero en mayúsculas.
 
-- **Dominios**: escriba los nombres de dominio o de host de los sitios que pueden autenticarse a través de SSO. Por ejemplo, si el sitio web es `mysite.contoso.com`, `mysite` es el nombre de host y `contoso.com` es el nombre de dominio. Cuando los usuarios se conectan a cualquiera de estos sitios, la extensión de la aplicación controla el desafío de autenticación. Esta autenticación permite a los usuarios usar el ID. de la persona, Touch ID o pincode/PASSCODE de Apple para iniciar sesión.
+- **Dominios** (credenciales y Kerberos): escriba los nombres de dominio o de host de los sitios que pueden autenticarse a través de SSO. Por ejemplo, si el sitio web es `mysite.contoso.com`, `mysite` es el nombre de host y `contoso.com` es el nombre de dominio. Cuando los usuarios se conectan a cualquiera de estos sitios, la extensión de la aplicación controla el desafío de autenticación. Esta autenticación permite a los usuarios usar el ID. de la persona, Touch ID o pincode/PASSCODE de Apple para iniciar sesión.
 
   - Todos los dominios de la extensión de aplicación de inicio de sesión único perfiles de Intune deben ser únicos. No se puede repetir un dominio en ningún perfil de extensión de aplicación de inicio de sesión, aunque se usen distintos tipos de extensiones de aplicación de SSO.
   - Estos dominios no distinguen mayúsculas de minúsculas.
 
-- **Configuración adicional** (solo credencial): escriba datos adicionales específicos de la extensión para pasarlos a la extensión de la aplicación de SSO:
-  - **Clave de configuración**: escriba el nombre del elemento que desea agregar, como `user name`.
-  - **Tipo de valor**: escriba el tipo de datos. Las opciones son:
+- **Direcciones URL** (solo redireccionamiento): escriba los prefijos de dirección URL de los proveedores de identidades en cuyo nombre la extensión de aplicación de redireccionamiento realiza SSO. Cuando un usuario se redirige a estas direcciones URL, la extensión de la aplicación SSO intervendrá y solicitará SSO.
+
+  - Todas las direcciones URL de los perfiles de extensión de aplicación de inicio de sesión único de Intune deben ser únicas. No se puede repetir un dominio en ningún perfil de extensión de aplicación de SSO, aunque se usen distintos tipos de extensiones de aplicación de SSO.
+  - Las direcciones URL deben comenzar por http://o https://.
+
+- **Configuración adicional** (redirección y credencial): escriba datos adicionales específicos de la extensión para pasarlos a la extensión de la aplicación de SSO:
+  - **Clave**: escriba el nombre del elemento que desea agregar, como `user name`.
+  - **Tipo**: escriba el tipo de datos. Las opciones son:
 
     - String
     - Booleano: en **valor de configuración**, escriba `True` o `False`.
     - Entero: en **valor de configuración**, escriba un número.
     
-  - **Valor de configuración**: escriba los datos.
+  - **Valor**: escriba los datos.
 
   - **Agregar**: Seleccione esta configuración para agregar las claves de configuración.
 
@@ -323,11 +328,16 @@ Esta característica se aplica a:
   > - Si solo tiene un dominio Kerberos, déjelo como **no configurado** (valor predeterminado).
 
 - **Nombre principal** (solo Kerberos): escriba el nombre de usuario de la entidad de seguridad de Kerberos. No es necesario incluir el nombre de dominio Kerberos. Por ejemplo, en `user@contoso.com`, `user` es el nombre principal y `contoso.com` es el nombre de dominio Kerberos.
+
+  > [!TIP]
+  > - También puede usar variables en el nombre de la entidad de seguridad si escribe llaves `{{ }}`. Por ejemplo, para mostrar el nombre de usuario, escriba `Username: {{username}}`. 
+  > - Sin embargo, tenga cuidado con la sustitución de variables porque las variables no se validan en la interfaz de usuario y distinguen mayúsculas de minúsculas. Asegúrese de escribir la información correcta.
+
 - **Código de sitio de Active Directory** (solo Kerberos): escriba el nombre del sitio Active Directory que debe usar la extensión de Kerberos. Es posible que no necesite cambiar este valor, ya que la extensión de Kerberos puede encontrar automáticamente el código del sitio Active Directory.
 - **Nombre de caché** (solo Kerberos): escriba el nombre de los servicios de seguridad genéricos (GSS) de la memoria caché de Kerberos. Lo más probable es que no tenga que establecer este valor.
 - **Identificadores de lote de aplicaciones** (solo Kerberos): **agregue** los identificadores de lote de aplicaciones que deben usar el inicio de sesión único en los dispositivos. A estas aplicaciones se les concede acceso al vale de concesión de vales de Kerberos, el vale de autenticación y autenticar a los usuarios en los servicios a los que están autorizados para obtener acceso.
 - **Asignación de dominio Kerberos** (solo Kerberos): **agregue** los sufijos DNS de dominio que deben asignarse a su dominio Kerberos. Use esta opción cuando los nombres DNS de los hosts no coincidan con el nombre de dominio Kerberos. Lo más probable es que no tenga que crear esta asignación personalizada de dominio a dominio Kerberos.
-- **Certificado PKINIT** (solo Kerberos): **Seleccione** el certificado de criptografía de clave pública para la autenticación inicial (PKINIT) que se puede usar para renovar la credencial de Kerberos sin interacción del usuario. El certificado debe ser un certificado PKCS o SCEP que haya agregado anteriormente a Intune.
+- **Certificado PKINIT** (solo Kerberos): **Seleccione** el certificado de criptografía de clave pública para la autenticación inicial (PKINIT) que se puede usar para la autenticación Kerberos. Puede elegir entre los certificados [PKCS](../protect/certficates-pfx-configure.md) o [SCEP](../protect/certificates-scep-configure.md) que ha agregado en Intune. Para obtener más información sobre los certificados, consulte [usar certificados para la autenticación en Microsoft Intune](../protect/certificates-configure.md).
 
 ## <a name="wallpaper"></a>Fondo de pantalla
 

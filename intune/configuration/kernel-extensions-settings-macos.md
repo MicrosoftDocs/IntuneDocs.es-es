@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506700"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>configuración de dispositivos macOS para configurar y usar las extensiones de kernel en Intune
@@ -63,7 +63,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
   > [!TIP]
   > Para obtener el identificador de paquete de una extensión de kernel (kext) en un dispositivo macOS, puede:
   >
-  > 1. En el terminal, ejecute `kextstat | grep -v com.apple` y anote el resultado. Instale el software o kext que desee. Vuelva a ejecutar `kextstat | grep -v com.apple` y busque los cambios.
+  > 1. En el terminal, ejecute `kextstat | grep -v com.apple`y anote el resultado. Instale el software o kext que desee. Vuelva a ejecutar `kextstat | grep -v com.apple` y busque los cambios.
   >
   >    En el terminal, `kextstat` enumera todas las extensiones de kernel del sistema operativo. 
   >

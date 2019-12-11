@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592020"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899399"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -164,7 +164,7 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
 
   * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Centro de administración de Microsoft 365. Para más información, vea [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](../fundamentals/licenses-assign.md).
 
-* **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](../apps/app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](../apps/app-protection-policy-settings-android.md). Si su aplicación ha integrado el SDK de Intune, pero aún no figura en Azure Portal como una aplicación específica, puede orientarla con una directiva seleccionando la opción "+ Más aplicaciones" y proporcionando el id. del paquete (iOS) o el nombre del paquete. (Android) en el cuadro de texto.
+* **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](../apps/app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](../apps/app-protection-policy-settings-android.md). Si la aplicación ha integrado el SDK de Intune, pero no aparece en la lista de aplicaciones de destino, puede especificar el identificador de lote de la aplicación (iOS) o el nombre del paquete (Android) en el cuadro de texto al seleccionar "aplicaciones personalizadas". 
 
 * **Solución de problemas**: si encuentra algún problema al probar manualmente la experiencia de usuario de instalación de la aplicación, vea la [solución de problemas de instalación de aplicaciones](../apps/troubleshoot-app-install.md). 
 

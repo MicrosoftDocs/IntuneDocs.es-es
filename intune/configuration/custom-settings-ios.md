@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfe795a812572fa92c51a23b9e15b7fe48254174
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a167fa4f0ddc9832ea70b4281a42b5c0aae5bb81
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495772"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74694937"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Usar una configuración personalizada para dispositivos iOS en Microsoft Intune
 
@@ -57,7 +57,7 @@ En este artículo se proporcionan instrucciones sobre el uso de Apple Configurat
 ## <a name="custom-configuration-profile-settings"></a>Ajustes de perfiles de configuración personalizados
 
 - **Nombre del perfil de configuración personalizado**: escriba un nombre para la directiva. Este nombre se muestra en el dispositivo y en el estado de Intune.
-- **Archivo del perfil de configuración**: vaya al perfil de configuración que ha creado mediante Apple Configurator o Apple Profile Manager. El archivo importado se muestra en el área **Contenido del archivo**.
+- **Archivo del perfil de configuración**: vaya al perfil de configuración que ha creado mediante Apple Configurator o Apple Profile Manager. El tamaño máximo de archivo es de 1 millón bytes (justo en MB). El archivo importado se muestra en el área **Contenido del archivo**.
 
   También puede Agregar tokens de dispositivo a los archivos de configuración personalizados. Los tokens de dispositivo se usan para agregar información específica del dispositivo. Por ejemplo, para que se muestre el número de serie, escriba `{{serialnumber}}`. En el dispositivo, el texto se muestra de forma similar a `123456789ABC` que es único para cada dispositivo. Al especificar variables, no olvide usar llaves: `{{ }}`. En los [tokens de configuración de aplicación](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) podrá ver una lista de las variables que puede usar. También puede usar `deviceid` o cualquier otro valor específico del dispositivo.
 

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8eef3af9a82e7a61bc5200bf45143657072d6db7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508374"
 ---
 # <a name="upload-and-email-logs"></a>Carga y envío por correo electrónico de registros  
@@ -38,7 +38,7 @@ La información del error real se conserva en su dispositivo en un documento esp
 ## <a name="upload-and-email-logs-from-company-portal"></a>Cargar y enviar registros de correo electrónico desde Portal de empresa  
 
 1. En la aplicación Portal de empresa, hay dos maneras de iniciar la compatibilidad con el correo electrónico.
-    * En la pantalla principal: Pulse **menú**  > **ayuda**  > **soporte técnico por correo electrónico**.  
+    * En la pantalla principal: Pulse **menú** > **ayuda** > **soporte técnico por correo electrónico**.  
     * En un mensaje de error: Pulse en **ayuda** o en **enviar información**, si está disponible.  
 
     > [!NOTE]
@@ -52,7 +52,7 @@ La información del error real se conserva en su dispositivo en un documento esp
 ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Cargar registros y correo electrónico desde Microsoft Intune aplicación   
 
 1. En la aplicación Microsoft Intune, hay dos maneras de iniciar la compatibilidad con el correo electrónico.  
-    * En la pantalla principal: Pulse **menú**  > **ayuda**  > **obtener soporte técnico**.  
+    * En la pantalla principal: Pulse **menú** > **ayuda** > **obtener soporte técnico**.  
     * En un mensaje de error: Pulse en **ayuda** o en **enviar información**, si está disponible.  
 
     > [!NOTE]

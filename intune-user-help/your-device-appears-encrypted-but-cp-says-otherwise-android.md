@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507671"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo cifrado, pero las aplicaciones dicen lo contrario
@@ -32,7 +32,7 @@ Si Portal de empresa o la aplicación Microsoft Intune decir que el dispositivo 
 
 ## <a name="add-a-startup-pin"></a>Agregar un PIN de inicio
 
-Ciertos dispositivos Android le exigen que cree un PIN de inicio para garantizar que el dispositivo sea seguro. La ubicación de esta configuración estará en la aplicación de **configuración** del dispositivo. El nombre y la ubicación de la configuración pueden variar. Por ejemplo, en Samsung Galaxy S7, la configuración se denomina **Inicio seguro**. Para habilitarlo y crear un código de acceso, vaya a **configuración**  > **pantalla de bloqueo y seguridad**  > **Inicio seguro**.  
+Ciertos dispositivos Android le exigen que cree un PIN de inicio para garantizar que el dispositivo sea seguro. La ubicación de esta configuración estará en la aplicación de **configuración** del dispositivo. El nombre y la ubicación de la configuración pueden variar. Por ejemplo, en Samsung Galaxy S7, la configuración se denomina **Inicio seguro**. Para habilitarlo y crear un código de acceso, vaya a **configuración** > **pantalla de bloqueo y seguridad** > **Inicio seguro**.  
 
 ## <a name="encrypt-the-entire-device"></a>Cifrado de todo el dispositivo
 
@@ -56,7 +56,7 @@ Para obtener una lista no exhaustiva de los dispositivos Android compatibles, co
 > [!Note]
 > Microsoft trabaja junto con los fabricantes para abordar cualquier problema que se encuentre durante las pruebas o que los usuarios informen. Este artículo se actualiza cada vez que hay nueva información disponible.
 
-## <a name="update-devices"></a>Actualizar dispositivos
+## <a name="update-devices"></a>Actualización de los dispositivos
 
 Si no ha actualizado el dispositivo a la versión más reciente de Android, vaya a la aplicación de **configuración** del dispositivo y seleccione **Actualizar**.  
 

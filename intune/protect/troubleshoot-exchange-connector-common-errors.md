@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508862"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Solución de errores comunes de Intune Exchange Connector
@@ -77,7 +77,7 @@ Al intentar configurar el Microsoft Intune Exchange Connector, recibirá el mens
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Este error puede producirse si se usa un servidor proxy para conectarse a Internet y está bloqueando el tráfico al servicio de Intune. Para determinar si un proxy está en uso, vaya al **Panel de Control**  > **Opciones de Internet**, seleccione la pestaña **conexión** y, a continuación, haga clic en **configuración de LAN**.
+Este error puede producirse si se usa un servidor proxy para conectarse a Internet y está bloqueando el tráfico al servicio de Intune. Para determinar si un proxy está en uso, vaya al **Panel de Control** > **Opciones de Internet**, seleccione la pestaña **conexión** y, a continuación, haga clic en **configuración de LAN**.
 
 **Solución**:  
 
@@ -126,17 +126,17 @@ Un dispositivo iOS no se inscribe en Intune y genera uno de los siguientes mensa
 Este problema puede producirse si la cuenta **WIEC_User** no tiene el derecho de usuario **iniciar sesión como servicio** en la directiva local.
 
 **Solución**:  
-En el equipo que ejecuta Intune Exchange Connector, asigne el derecho de usuario **iniciar sesión como servicio** a la cuenta de servicio **WIEC_User** . Si el equipo es un nodo de un clúster, asegúrese de asignar el derecho de usuario *iniciar sesión como servicio* a la cuenta de servicio de clúster en todos los nodos del clúster.  
+En el equipo que ejecuta Intune Exchange Connector, asigne el derecho de usuario **iniciar sesión como servicio** a la cuenta de servicio de **WIEC_User** . Si el equipo es un nodo de un clúster, asegúrese de asignar el derecho de usuario *iniciar sesión como servicio* a la cuenta de servicio de clúster en todos los nodos del clúster.  
 
-Para asignar el derecho de usuario **iniciar sesión como servicio** a la cuenta de servicio **WIEC_User** en el equipo, siga estos pasos:
+Para asignar el derecho de usuario **iniciar sesión como servicio** a la cuenta de servicio de **WIEC_User** en el equipo, siga estos pasos:
 
 1. Inicie sesión en el equipo como administrador o como miembro del grupo administradores.
 2. Ejecute **SECPOL. msc** para abrir la Directiva de seguridad local.
-3. Vaya a **configuración de seguridad**  > **Directivas locales**y seleccione **asignación de derechos de usuario**.
+3. Vaya a **configuración de seguridad** > **Directivas locales**y seleccione **asignación de derechos de usuario**.
 4. En el panel derecho, haga doble clic en **Iniciar sesión como servicio**.
 5. Seleccione **Agregar usuario o grupo**, agregue **WIEC_USER** a la Directiva y, a continuación, seleccione **Aceptar** dos veces.
 
-Si el derecho de usuario **iniciar sesión como servicio** se asignó a **WIEC_User** pero se quitó posteriormente, póngase en contacto con el administrador del dominio para determinar si un valor de directiva de grupo lo está sobrescribiendo.  
+Si el derecho de usuario **iniciar sesión como servicio** se asignó a **WIEC_User** pero se quitó posteriormente, póngase en contacto con el administrador del dominio para determinar si un valor Directiva de grupo lo está sobrescribiendo.  
 
 ## <a name="next-steps"></a>Pasos siguientes  
 

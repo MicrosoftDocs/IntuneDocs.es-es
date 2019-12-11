@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 239dd8630eb361da8609e3a34eb2c9346a64dab0
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508499"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907192"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas de acciones de dispositivo en Intune
 
@@ -54,7 +54,7 @@ No. Y no es necesario escribir los guiones.
 ## <a name="remove-devices-action"></a>Acción quitar dispositivos
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Cómo ¿qué inició una retirada/borrado?
-Vaya a **Intune**  > **dispositivos**  > **acciones de dispositivo** > Compruebe la columna **Iniciado por** .
+En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Administración de inquilinos** > **registros de auditoría** > Compruebe la columna **Iniciado por** .
 Si no ve ninguna entrada, lo más probable es que la persona que ha iniciado la acción sea el usuario del dispositivo. Probablemente usaban la aplicación Portal de empresa o portal.manage.microsoft.com.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>¿Por qué no se desinstaló la aplicación después de usar retirar?
@@ -69,7 +69,7 @@ Este comportamiento es normal. Google no permite el restablecimiento de fábrica
 Dado que la retirada de un dispositivo no revoca los tokens de acceso. Puede usar las directivas de acceso condicional para mitigar esta situación.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>¿Cómo se puede supervisar una acción de retirada/borrado después de su emisión?
-Vaya a **Intune**  > **dispositivos**  > **acciones de dispositivo**.
+En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **Administración de inquilinos** > **registros de auditoría**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>¿Por qué algunas veces los borradores aparecen como pendientes indefinidamente?
 Los dispositivos no siempre notifican su estado al servicio de Intune antes de que se iniciara el restablecimiento. Por lo tanto, la acción se muestra como pendiente. Si ha confirmado que la acción se ha realizado correctamente, elimine el dispositivo del servicio.
