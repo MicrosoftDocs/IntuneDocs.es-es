@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390435"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564016"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Borrado solo de datos corporativos de aplicaciones administradas por Intune
 
@@ -44,8 +44,8 @@ Las directivas de Windows Information Protection (WIP) se pueden implementar sin
 
 ## <a name="create-a-wipe-request"></a>Crear una solicitud de borrado
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el panel Intune, seleccione **Aplicaciones cliente** > **Borrado selectivo de aplicaciones** > **Crear solicitud de borrado**.<br>
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Aplicaciones** > **Borrado selectivo de aplicaciones** > **Crear solicitud de borrado**.<br>
    Se muestra el panel **Crear solicitud de borrado**.
 3. Haga clic en **Seleccionar usuario**, elija el usuario cuyos datos de aplicación quiere borrar y haga clic en **Seleccionar** en la parte inferior del panel **Seleccionar usuario**.
 
@@ -65,7 +65,7 @@ El servicio crea y realiza el seguimiento de una solicitud de borrado independie
 
 Puede tener un informe resumido que muestre el estado general de la solicitud de borrado y que incluya el número de solicitudes pendientes y errores. Para obtener más información, siga estos pasos:
 
-1. En el panel **Aplicaciones cliente** > **Borrado selectivo de aplicaciones**, puede ver la lista de solicitudes agrupadas por usuarios. Debido a que el sistema crea una solicitud de borrado para cada aplicación protegida que se ejecuta en el dispositivo, puede que vea varias solicitudes para un mismo usuario. Este estado indica si una solicitud de borrado está **pendiente**, ha provocado un **error** o si es **correcta**.
+1. En el panel **Aplicaciones** > **Borrado selectivo de aplicaciones**, puede ver la lista de solicitudes agrupadas por usuarios. Debido a que el sistema crea una solicitud de borrado para cada aplicación protegida que se ejecuta en el dispositivo, puede que vea varias solicitudes para un mismo usuario. Este estado indica si una solicitud de borrado está **pendiente**, ha provocado un **error** o si es **correcta**.
 
     ![Captura de pantalla del estado de la solicitud de borrado en el panel Borrado selectivo de aplicaciones](./media/apps-selective-wipe/wipe-request-status-1.png)
 

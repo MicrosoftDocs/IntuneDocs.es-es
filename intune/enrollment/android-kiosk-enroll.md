@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390721"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563874"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configuración de la inscripción en Intune de dispositivos dedicados de Android Enterprise
 
@@ -59,7 +59,7 @@ Para configurar la administración de dispositivos dedicados de Android Enterpr
 
 Debe crear un perfil de inscripción para poder inscribir los dispositivos dedicados. Al crear el perfil, obtiene un token de inscripción (cadena aleatoria) y un código QR. Según el sistema operativo Android y la versión del dispositivo, puede usar el token o un código QR para [inscribir el dispositivo dedicado](#enroll-the-dedicated-devices).
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y elija **Inscripción de dispositivos** > **Inscripción de Android** > **Dispositivos dedicados de propiedad corporativa**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y elija **Dispositivos** > **Android** > **Inscripción de Android** >  **dedicados de propiedad corporativa**.
 2. Elija **Crear** y rellene los campos obligatorios.
     - **Nombre**: escriba el nombre que va a usar al asignar el perfil al grupo de dispositivos dinámicos.
     - **Fecha de expiración del token**: la fecha en que caduca el token. Google exige un máximo de 90 días.
@@ -92,7 +92,7 @@ Puede dirigir las aplicaciones y directivas a grupos de dispositivos dinámicos 
 
 El reemplazo o la revocación de un código QR o token no tendrán ningún efecto en los dispositivos que ya estén inscritos.
 
-1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y elija **Inscripción de dispositivos** > **Inscripción de Android** > **Dispositivos dedicados de propiedad corporativa**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y elija **Dispositivos** > **Android** > **Inscripción de Android** >  **dedicados de propiedad corporativa**.
 2. Elija el perfil con el que quiera trabajar.
 3. Elija **Token**.
 4. Para reemplazar el token, elija **Reemplazar el token**.

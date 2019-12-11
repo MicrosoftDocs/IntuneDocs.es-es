@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291094"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691771"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Administración de actualizaciones de software de Windows 10 en Intune
 
@@ -214,9 +214,7 @@ Cuando un dispositivo recibe una directiva de actualizaciones de característica
   - El **período de aplazamiento de actualizaciones de características (días)** se debe establecer en **0**.
   - Las actualizaciones de características para el anillo de actualización deben estar *en ejecución*. No se deben pausar.
 
-- No se admite la directiva de *actualizaciones de características de Windows 10* con Autopilot. Intune no implementará la directiva en:
-  - Dispositivos aprovisionados por Autopilot.
-  - Dispositivos previamente aprovisionados con Autopilot.
+- Las directivas de actualización de características de Windows 10 no se pueden aplicar durante la configuración rápida (OOBE) y solo se aplican en el primer análisis de Windows Update una vez que el dispositivo haya finalizado el aprovisionamiento (que suele ser un día). Además, los dispositivos aprovisionados con AutoPilot no recibirán la directiva.
 
   Esta limitación está bajo examen para ver si se puede admitir en el futuro.
 
