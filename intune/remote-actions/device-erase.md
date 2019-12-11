@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428b4040eb0d91b7fe32fcf71842ce5bd1910013
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 6bc2ba86ddb36355bca8328b9c205047abf1b4ff
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713215"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907277"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Borrar todos los datos de un dispositivo macOS
 
@@ -32,7 +32,6 @@ ms.locfileid: "73713215"
 Puede borrar todos los datos de un dispositivo macOS, incluido el sistema operativo. El dispositivo también se eliminará de la administración de Intune. No se proporcionará ninguna advertencia al usuario final.
 
 1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **Todos los dispositivos** y seleccione el dispositivo que quiere borrar.
-![Captura de pantalla](./media/device-erase/choosedevice.png)
 2. Haga clic en **Más** > **Borrar** > proporcione un número de 6 dígitos para el **PIN de recuperación**. Este es el PIN que debe proporcionar al usuario para que pueda volver a instalar el sistema operativo en su dispositivo. No olvide anotar este PIN porque no podrá verlo una vez completada la acción de borrado.
 ![Captura de pantalla](./media/device-erase/providepin.png)
 3. Haga clic en **Aceptar** para borrar el dispositivo.

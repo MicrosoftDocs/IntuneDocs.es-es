@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9937fc25ffa3dc32c1addbf0acc2516000b055b
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: b957857702de10e10c581364f2c34c869026810d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390896"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819748"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>¿Qué es la administración de dispositivos de Microsoft Intune?
 
@@ -69,6 +69,7 @@ Las acciones disponibles dependen de la plataforma y la configuración del dispo
   - [Restablecimiento del PIN de Windows 10](device-windows-pin-reset.md)
   - [Control remoto en Android](teamviewer-support.md)
   - [Sincronización del dispositivo](device-sync.md)
+  - [Cambio de nombre de un dispositivo](device-rename.md)
   - [Envío de notificaciones personalizadas](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
   - [Rotación de claves de BitLocker](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (solo Windows)
 

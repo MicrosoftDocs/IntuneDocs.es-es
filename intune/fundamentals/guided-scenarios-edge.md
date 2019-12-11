@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e86f3a469169e7a805cb3f56e570ba4d3a90e925
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585701"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>Escenario guiado: Implementación de Microsoft Edge para dispositivos móviles 
@@ -84,7 +84,7 @@ El último paso permite revisar un resumen de los valores que ha configurado. Un
 > Edge puede tardar hasta 12 horas en recibir la configuración. Para obtener más información, vea [Directivas de configuración de aplicaciones para Microsoft Intune](~/apps/app-configuration-policies-overview.md).
 
 > [!IMPORTANT]
-> Cuando se haya completado el escenario guiado, se mostrará un resumen. Puede modificar los recursos enumerados en el resumen más adelante, pero la tabla en la que se muestran estos recursos no se guardará.
+> Cuando se haya completado el escenario guiado, se mostrará un resumen. Los recursos mencionados en este resumen se pueden modificar más adelante, pero la tabla en la que se muestran estos recursos no se guardará.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
