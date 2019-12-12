@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506367"
 ---
 # <a name="encrypting-your-android-device"></a>Cifrado del dispositivo Android
@@ -45,7 +45,7 @@ Si Portal de empresa o la aplicación Microsoft Intune le pide que cifre el disp
     c. Siga las instrucciones en pantalla para configurar el bloqueo de pantalla.  
 
 2. Vuelva a la **pantalla de bloqueo y seguridad** y seleccione **Inicio seguro**.
-3. Elija **requerir PIN cuando el dispositivo se active**  > **Aceptar**.
+3. Elija **requerir PIN cuando el dispositivo se active** > **Aceptar**.
 4. Escriba el PIN para confirmar y cifrar el dispositivo.
 5. Abra la aplicación Portal de empresa o Microsoft Intune.
     * Usuarios de Portal de empresa: seleccione el dispositivo y pulse **Comprobar configuración del dispositivo**. 
@@ -53,9 +53,9 @@ Si Portal de empresa o la aplicación Microsoft Intune le pide que cifre el disp
 
 Los dispositivos que ejecutan Android 4,4 y versiones anteriores podrían no tener la opción de **Inicio seguro** . En ese caso, complete los pasos siguientes para cifrar el dispositivo.
 
-1. Vaya a **configuración**  > **seguridad**  > **cifrar el dispositivo**. Las etiquetas en pantalla varían entre dispositivos Android. Si no ve la opción **cifrar dispositivo** , proteja:
-    * **Cifrado** de **almacenamiento  >  Storage**
-    * **Pantalla de bloqueo de**  >  **de almacenamiento y seguridad**  > **otra configuración de seguridad** 
+1. Vaya a **configuración** > **seguridad** > **cifrar el dispositivo**. Las etiquetas en pantalla varían entre dispositivos Android. Si no ve la opción **cifrar dispositivo** , proteja:
+    * **Cifrado** de **almacenamiento > Storage**
+    * **** **Pantalla de bloqueo de > de almacenamiento y seguridad** > **otra configuración de seguridad** 
 
 2. Siga las instrucciones en pantalla. Durante el cifrado, es posible que el dispositivo se reinicie varias veces.
 3. Abra la aplicación Portal de empresa o Microsoft Intune.
