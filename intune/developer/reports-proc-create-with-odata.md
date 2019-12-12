@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490476"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784279"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe de Intune desde la fuente de OData con Power BI
 
@@ -58,7 +58,7 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 2. Abra el panel **Almacenamiento de datos de Intune** seleccionando el vínculo Almacenamiento de datos en **Otras tareas** que se encuentra al lado derecho de la hoja de **información general de Microsoft Intune**.
 3. Copie la dirección URL de la fuente personalizada. Por ejemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Abra Power BI Desktop.
-5. En la barra de menús, seleccione **archivo**  > **obtener datos**  > **fuente de oData**.
+5. En la barra de menús, seleccione **archivo** > **obtener datos** > **fuente de oData**.
 6. Pegue la dirección URL de la fuente personalizada, que copió del paso anterior, en el cuadro Dirección URL de la ventana **fuente OData** .
 7. Seleccione **Básica**.
 
@@ -111,7 +111,7 @@ Puede agregar un filtro al gráfico de rectángulos para poder responder a pregu
 3. Expanda la tabla `ownerTypes` y seleccione el campo datos de `ownerTypeName`.
 4. Arrastre el campo de datos `onwerTypeName` desde la tabla `ownerTypes` hasta el panel **Filtros** y colóquelo en la sección **Filtros de esta página** en el cuadro llamado **Agregar campos de datos aquí**.  
 
-   En la tabla `OwnerTypes`, hay un campo de datos denominado `OwnerTypeKey`that contiene datos sobre si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla `ownerTypes` y arrastre el **ownerTypeName** a la segmentación. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
+   En la tabla `OwnerTypes`, hay un campo de datos denominado `OwnerTypeKey`que contiene datos sobre si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla `ownerTypes` y arrastre el **ownerTypeName** a la segmentación. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
 
 ![Gráfico de rectángulos con filtro: compatible con las relaciones entre tablas](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 
