@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810239"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de iOS para marcar dispositivos como compatibles o no compatibles con Intune
@@ -100,7 +100,7 @@ Para más información sobre los perfiles de correo, vea [Configurar el acceso a
   especifique el número mínimo de dígitos o caracteres que debe tener la contraseña.  
 
 - **Tipo de contraseña requerida**:  
-  elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
+  elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (alfanuméricos).
 
 - **Número de caracteres no alfanuméricos en la contraseña**:  
   escriba el número mínimo de caracteres especiales, como `&`, `#`, `%`, `!`, etc., que se deben incluir en la contraseña. 

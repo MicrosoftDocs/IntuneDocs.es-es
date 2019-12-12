@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: de365312a7d293527c3c83fbbd84ab55de41d530
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74547669"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Resolver problemas comunes con Intune Exchange Connector
@@ -84,7 +84,7 @@ Si se produce un error en la detección automática, realice los pasos siguiente
 
    1. Determine la dirección URL de EWS. La dirección URL de EWS predeterminada para Exchange es `https://<mailServerFQDN>/ews/exchange.asmx`, pero su dirección URL puede ser diferente. Póngase en contacto con el administrador de Exchange para comprobar la dirección URL correcta para su entorno.
 
-   2. Edite el archivo *OnPremisesExchangeConnectorServiceConfiguration.xml*. De forma predeterminada, el archivo se encuentra en *%ProgramData%\Microsoft\Windows Intune Exchange Connector* en el equipo que ejecuta el conector de Exchange. Abra el archivo en un editor de texto y, a continuación, cambie la siguiente línea para que refleje la dirección URL de EWS para su entorno: `<ExchangeWebServiceURL>https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
+   2. Edite el archivo *OnPremisesExchangeConnectorServiceConfiguration.xml*. De forma predeterminada, el archivo se encuentra en *%ProgramData%\Microsoft\Windows Intune Exchange Connector* en el equipo que ejecuta el conector de Exchange. Abra el archivo en un editor de texto y, a continuación, cambie la siguiente línea para que refleje la dirección URL de EWS para su entorno: `<ExchangeWebServiceURL> https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
 
 3. Guarde el archivo y, después, reinicie el equipo o el servicio Microsoft Intune Exchange Connector.
 

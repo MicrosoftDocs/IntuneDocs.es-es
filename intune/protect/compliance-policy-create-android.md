@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8efb9dcf9129375252b5d9a7d1e6255dce39625c
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801407"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Android para marcar dispositivos como compatibles o no compatibles con Intune
@@ -149,7 +149,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 - **Bloquear aplicaciones de orígenes desconocidos**:
 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Bloquee** los dispositivos con **seguridad > orígenes desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores).
+  - **Bloquee** los dispositivos con **seguridad > orígenes desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores*).
 
   Para realizar instalaciones de prueba de las aplicaciones, se deben permitir los orígenes desconocidos. Si no realiza instalaciones de prueba de las aplicaciones Android, establezca esta característica en **Bloquear** para habilitar esta directiva de cumplimiento.
 
