@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74411364"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000421"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Configuración de S/MIME con Outlook para iOS
 
 Las extensiones seguras y multipropósito de correo Internet (S/MIME) ofrecen una capa de seguridad adicional para el correo electrónico que se envía a y desde una cuenta de Exchange ActiveSync (EAS). [Microsoft Outlook](https://aka.ms/omsmime) puede usar S/MIME para permitir que los usuarios cifren mensajes salientes y datos adjuntos, lo que garantiza que solo el destinatario previsto pueda leer el contenido del mensaje y acceder a este al usar cuentas de Office 365. Los usuarios también pueden firmar digitalmente un mensaje, lo que permite a los destinatarios comprobar la identidad del remitente y confirmar que el mensaje no se ha alterado. Esta funcionalidad es posible mediante el uso de certificados. Para más información, consulte [Uso de S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
+
+> [!NOTE]
+> Esta característica se ha retrasado, pero se publicará pronto.
 
 > [!NOTE]
 > En este tema se describe cómo implementar certificados raíz de confianza mediante el [Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). El Administrador de puntos de conexión de Microsoft es una plataforma de administración de puntos de conexión única e integrada para la administración de todos los puntos de conexión. Este Centro de administración del Administrador de puntos de conexión de Microsoft integra ConfigMgr y Microsoft Intune.
@@ -62,14 +65,14 @@ Outlook para iOS admite dos maneras de entregar certificados en los dispositivos
 Para configurar S/MIME de Outlook para iOS en el Administrador de puntos de conexión, incluida la entrega automática de certificados S/MIME que puede usar Outlook para iOS, siga estos pasos:
 
 ### <a name="add-the-microsoft-outlook-app"></a>Adición de la aplicación Microsoft Outlook
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Agregue la aplicación Microsoft Outlook para iOS de la App Store al Administrador de puntos de conexión o sincronice Outlook para iOS desde el Programa de Compras por Volumen de Apple. Para más información, consulte [Incorporación de aplicaciones de la tienda iOS a Microsoft Intune](~/apps/store-apps-ios.md) o [Administración de aplicaciones de iOS y macOS compradas a través del Programa de Compras por Volumen de Apple con Microsoft Intune](~/apps/vpp-apps-ios.md).
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>Creación de la directiva de configuración de S/MIME de Outlook para iOS
 
 Los pasos siguientes le permiten crear y configurar la directiva de S/MIME de Outlook para iOS en el Administrador de puntos de conexión. Esta configuración proporciona la entrega automatizada de los certificados de firma y cifrado.
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar**.<br>
+1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar**.<br>
 Se mostrará el panel **Agregar directiva de configuración**.
 2. Rellene los campos **Nombre** y **Descripción** de la directiva de configuración.
 3. En **Tipo de inscripción del dispositivo**, seleccione **Dispositivos administrados**.
@@ -78,9 +81,6 @@ Se mostrará el panel **Agregar directiva de configuración**.
 6. Haga clic en **Opciones de configuración** para agregar las opciones de configuración. 
     - Seleccione **Usar diseñador de configuraciones** junto a **Formato de opciones de configuración** y acepte los valores predeterminados. Para más información, vea [Opciones de configuración de Microsoft Outlook](~/apps/app-configuration-policies-outlook.md).
 7. Haga clic en **S/MIME** para mostrar **Configuración de S/MIME de Outlook**.
-
-    ![Captura de pantalla de la configuración de S/MIME de Outlook para iOS](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. Establezca **Habilitar S/MIME** en **Sí**.
 9. Establezca **Implementar certificados S/MIME desde Intune** en **Sí**.
 10. En **Certificados de firma** junto a **Tipo de perfil de certificado**, elija una de las siguientes opciones:
