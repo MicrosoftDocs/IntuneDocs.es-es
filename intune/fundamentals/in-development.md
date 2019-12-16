@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540735"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>En desarrollo para Microsoft Intune: diciembre de 2019
@@ -138,7 +138,7 @@ Se aplica a:
 Podrá especificar una lista de teclados aprobados para su uso en aplicaciones Android administradas. Desde la aplicación administrada, se solicitará al usuario que cambie a uno de los teclados aprobados que ya están instalados en el dispositivo o, si es necesario, se le dirigirá al Google Play Store para descargar y configurar uno de los teclados aprobados. El usuario solo podrá editar los campos de texto en una aplicación administrada si su teclado activo es uno de los teclados aprobados.
 
 ### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>Uso de certificados PKCS con perfiles de Wi-Fi en dispositivos Windows 10 y versiones posteriores<!-- 3246388  -->
-Actualmente, puede autenticar los perfiles de Wi-Fi de Windows con certificados SCEP (**configuración de dispositivos** > **perfiles** > **crear un perfil** > **Windows 10 y versiones posteriores** para la plataforma > **Wi-Fi** para tipo de perfil > **tipo de EAP**de > **empresarial** ). Podrá usar certificados PKCS con los perfiles de Wi-Fi de Windows. Esta característica permite a los usuarios autenticar perfiles de Wi-Fi mediante perfiles de certificado PKCS nuevos o existentes en el inquilino. 
+Actualmente, puede autenticar los perfiles de Wi-Fi de Windows con certificados SCEP (**configuración de dispositivo** > **perfiles** > **crear perfil** > **Windows 10 y versiones posteriores** para la plataforma > **Wi-Fi** para el tipo de perfil > **Enterprise** > **tipo EAP**). Podrá usar certificados PKCS con los perfiles de Wi-Fi de Windows. Esta característica permite a los usuarios autenticar perfiles de Wi-Fi mediante perfiles de certificado PKCS nuevos o existentes en el inquilino. 
 
 Para obtener más información sobre los perfiles de Wi-Fi, consulte [Agregar configuración de Wi-Fi para dispositivos Windows 10 y versiones posteriores en Intune](../configuration/wi-fi-settings-windows.md).
 
@@ -146,11 +146,11 @@ Se aplica a:
 - Windows 10 y versiones posteriores
 
 ### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Nueva configuración de ExchangeActiveSync al crear un perfil de configuración de dispositivo de correo electrónico en dispositivos iOS<!-- 4892824  --> 
-En dispositivos iOS/iPados, puede configurar la conectividad de correo electrónico en un perfil de configuración de dispositivo (**configuración de dispositivo** > **perfiles** > **crear perfil** > **iOS/ipad** para el **correo electrónico** de plataforma > para el tipo de perfil). 
+En dispositivos iOS/iPadOS, puede configurar la conectividad del correo electrónico en un perfil de configuración de dispositivos (**Configuración de dispositivos** > **Perfiles** > **Crear perfil** > **iOS/iPadOS** como plataforma > **Correo electrónico** para tipo de perfil). 
 
 Habrá nuevas opciones de configuración de ExchangeActiveSync disponibles, entre las que se incluyen:
 - Elija los servicios que desea sincronizar (o bloquear la sincronización), como correo electrónico, calendario y contactos.
-- Permita (o bloquee) a los usuarios cambiar la configuración de sincronización para estos servicios en sus dispositivos. 
+- permita (o impida) a los usuarios cambiar la configuración de sincronización para estos servicios en sus dispositivos. 
 
 Para ver la configuración actual, vaya a [configuración de Perfil de correo electrónico para dispositivos iOS en Intune](../configuration/email-settings-ios.md).
 
@@ -158,8 +158,8 @@ Se aplica a:
 - iOS 13.0 y versiones más recientes
 - IPadOS 13.0 y versiones más recientes
 
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Impedir que los usuarios agreguen cuentas personales de Google al propietario del dispositivo de Android y a los dispositivos dedicados<!-- 5353228  -->
-Podrá evitar que los usuarios creen cuentas personales de Google en el propietario del dispositivo de Android Enterprise y en los dispositivos dedicados (**configuración del dispositivo** > **perfiles** > **crear un perfil** > **Android Enterprise** para la plataforma > **propietario del dispositivo solo > restricciones de dispositivo** para el tipo de perfil > la configuración de **usuarios y cuentas**).
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Evitación de que los usuarios agreguen cuentas personales de Google a dispositivos Android Enterprise dedicados y propietarios del dispositivo<!-- 5353228  -->
+Podrá impedir que los usuarios creen cuentas de Google personales en dispositivos Android Enterprise dedicados y propietarios del dispositivo (**Configuración de dispositivos** > **Perfiles** > **Crear perfil** > **Android Enterprise** para plataforma > **Solo el propietario del dispositivo > Restricciones de dispositivos** para tipo de perfil > **configuración de Usuarios y cuentas**).
 
 Para ver los valores actuales que puede configurar, vaya a [Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune](../configuration/device-restrictions-android-for-work.md).
 
@@ -167,8 +167,8 @@ Se aplica a:
 - Propietario del dispositivo Android Enterprise
 - Dispositivos Android Enterprise dedicados
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Se ha quitado el valor de registro del lado servidor para comandos Siri en el perfil de restricciones de dispositivos iOS<!-- 5468501  -->
-En los dispositivos iOS, puede crear perfiles de restricciones de dispositivo que configure el registro del lado servidor para los comandos de Siri (**configuración del dispositivo** > **perfiles** > **crear perfil** > **iOS/ipados** para la plataforma > **Restricciones de dispositivo** para el tipo de perfil > **aplicaciones integradas**). Se quitará el valor **de configuración de registro del lado servidor para comandos Siri** .
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Eliminación del parámetro de registro del servidor para los comandos de Siri en el perfil de restricciones de dispositivos de iOS<!-- 5468501  -->
+En los dispositivos iOS, puede crear perfiles de restricciones de dispositivo que configure el registro del lado servidor para los comandos de Siri (**configuración del dispositivo** > **perfiles** > **crear perfil** > **iOS/iPad** para las **restricciones de dispositivos** > de plataforma para el tipo de perfil > **aplicaciones integradas**). Se quitará el valor **de configuración de registro del lado servidor para comandos Siri** .
 
 Esta configuración se quitará de la consola de administración de Intune. Esta configuración no tiene ningún efecto en el dispositivo, aunque las directivas existentes que tienen configurada esta configuración seguirán mostrando el valor. Si desea quitar la configuración de las directivas existentes, vaya a la Directiva, haga una edición menor, guárdela y la Directiva se actualizará.
 

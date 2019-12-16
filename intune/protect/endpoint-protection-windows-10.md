@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058423"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configuración de Windows 10 (y versiones posteriores) para proteger dispositivos mediante Intune
@@ -36,7 +36,7 @@ Para configurar el Antivirus de Microsoft Defender, vea [Restricciones de dispos
 
 Para obtener más información sobre los proveedores de servicios de configuración (CSP), consulte [Referencia del proveedor de servicios de configuración](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).  
 
-## <a name="microsoft-defender-application-guard"></a>Protección de aplicaciones de Microsoft defender  
+## <a name="microsoft-defender-application-guard"></a>Protección de aplicaciones de Microsoft Defender  
 
 Al utilizar Microsoft Edge, Protección de aplicaciones de Microsoft Defender protege su entorno de sitios que no son de confianza para su organización. Cuando los usuarios visitan sitios que no aparecen en el límite de red aislada, estos se abren en una sesión de exploración virtual de Hyper-V. Los sitios de confianza se definen mediante un límite de red, que puede configurarse en Configuración de dispositivos.  
 
@@ -636,7 +636,7 @@ Esta configuración se aplica específicamente a las unidades de datos de sistem
     - **Realizar copia de seguridad de contraseñas de recuperación y paquetes de claves**  
     - **Realizar copia de seguridad solo de contraseñas de recuperación**  
 
-  - **Rotación de contraseñas de recuperación controlada por el cliente**  
+  - **Rotación de contraseña de recuperación controlada por el cliente**  
     **Valor predeterminado**: rotación de claves habilitada para dispositivos unidos a Azure ad  
     CSP de BitLocker: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -733,7 +733,7 @@ Esta configuración se aplica específicamente a las unidades de datos fijas.
     - **Realizar copia de seguridad de contraseñas de recuperación y paquetes de claves**  
     - **Realizar copia de seguridad solo de contraseñas de recuperación**  
 
-  - **Rotación de contraseñas de recuperación controlada por el cliente**  
+  - **Rotación de contraseña de recuperación controlada por el cliente**  
     **Valor predeterminado**: rotación de claves habilitada para dispositivos unidos a Azure ad  
     CSP de BitLocker: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     

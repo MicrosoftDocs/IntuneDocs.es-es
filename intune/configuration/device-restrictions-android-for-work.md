@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390920"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946666"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -31,6 +31,8 @@ En este artículo se enumeran y describen los diferentes valores de configuraci�
 [Cree un perfil de configuración de dispositivo](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Solo el propietario del dispositivo
+
+Esta configuración se aplica a los tipos de inscripción Enterprise de Android en los que Intune controla todo el dispositivo, como los dispositivos de Android Enterprise o dedicados totalmente administrados.
 
 ### <a name="general-settings"></a>Configuración general
 
@@ -242,6 +244,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   > [!IMPORTANT]
   > - El cliente VPN que elija debe instalarse en el dispositivo y debe admitir VPN por aplicación en los perfiles de trabajo. De lo contrario, se produce un error. 
   > - Necesita aprobar la aplicación de cliente VPN en **Google Play Store administrado**, sincronizar la aplicación en Intune e implementar la aplicación en el dispositivo. Una vez hecho esto, la aplicación queda instalada en el perfil de trabajo del usuario.
+  > - Todavía debe configurar el cliente VPN con un perfil de [VPN](vpn-settings-android-enterprise.md)o a través de un [Perfil de configuración](../apps/app-configuration-policies-use-android.md)de la aplicación.
   > - Existen problemas conocidos al usar VPN por aplicación con F5 Access para Android 3.0.4. Para más información, consulte las [notas de la versión de F5 Access para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
 - **Modo de bloqueo**: seleccione **Habilitar** para forzar que todo el tráfico de red use el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
@@ -264,6 +267,8 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
     Para obtener más información sobre los archivos PAC, consulte [archivo de configuración automática de proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre un sitio que no es de Microsoft).
 
 ## <a name="work-profile-only"></a>Solo perfil de trabajo
+
+Esta configuración se aplica a los tipos de inscripción empresarial de Android donde Intune controla solo el perfil de trabajo, como la inscripción de Perfil de trabajo de Android Enterprise en un dispositivo personal o de traiga su propio (BYOD).
 
 ### <a name="work-profile-settings"></a>Configuración de perfil de trabajo
 

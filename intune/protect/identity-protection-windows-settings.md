@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502227"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Configuración de dispositivos Windows 10 para habilitar Windows Hello para empresas en Intune
@@ -129,7 +129,7 @@ Para más información sobre los perfiles de Windows Hello para empresas en Intu
 
   **Valor predeterminado**: No configurado
 
-- **Usar claves de seguridad para el inicio de sesión**  
+- **Utilice las claves de seguridad para el inicio de sesión**  
   Esta opción está disponible para los dispositivos que ejecutan Windows 10 versión 1903 o posterior. Úselo para administrar la compatibilidad con el uso de las claves de seguridad de Windows Hello para iniciar sesión.  
 
   - **Habilitado** : los usuarios pueden usar una clave de seguridad de Windows Hello como credencial de inicio de sesión para los equipos destinados a esta Directiva. 

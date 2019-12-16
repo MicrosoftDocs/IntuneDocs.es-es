@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199265"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832573"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos iOS en Microsoft Intune
 
@@ -136,10 +136,10 @@ Si su organización usa varios dominios para las credenciales de usuario, cree r
 **Causa:** El usuario intenta inscribir más dispositivos que el límite de inscripción de dispositivos.
 
 #### <a name="resolution"></a>Solución
-1. Abra el [portal de administración de Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **dispositivos** > **todos los dispositivos**y compruebe el número de dispositivos que el usuario ha inscrito.
+1. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), elija **dispositivos** > **todos los dispositivos**y compruebe el número de dispositivos que el usuario ha inscrito.
     > [!NOTE]
     > También debe tener el inicio de sesión de usuario afectado en el [portal de usuarios de Intune](https://portal.manage.microsoft.com/) y comprobar los dispositivos que se han inscrito. Puede haber dispositivos que aparecen en el [portal de usuarios de Intune](https://portal.manage.microsoft.com/) , pero no en el [portal de administración de Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview), estos dispositivos también cuentan para el límite de inscripción de dispositivos.
-2. Vaya a **administración** > **Administración de dispositivos móviles** > **reglas de inscripción** > Compruebe el límite de inscripción de dispositivos. De forma predeterminada, el límite es 15. 
+2. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), elija **dispositivos** > **restricciones de inscripción** > Compruebe el límite de inscripción de dispositivos. De forma predeterminada, el límite es 15. 
 3. Si el número de dispositivos inscritos ha alcanzado el límite, quite los dispositivos innecesarios o aumente el límite de inscripción de dispositivos. Dado que todos los dispositivos inscritos consumen una licencia de Intune, se recomienda quitar siempre los dispositivos innecesarios primero.
 4. Vuelva a inscribir el dispositivo.
 
@@ -230,7 +230,7 @@ Al activar un dispositivo administrado por DEP que tiene asignado un perfil de i
 #### <a name="resolution"></a>Solución
 
 1. Edite el perfil de inscripción. Puede hacer cualquier cambio en el perfil. El propósito es actualizar la hora de modificación del perfil.
-2. Sincronizar dispositivos administrados por DEP: Abra el portal de **Intune > administración** > **Administración de dispositivos móviles** > **iOS** > **programa de inscripción de dispositivos** **sincronizar ahora**. Se envía una solicitud de sincronización a Apple.
+2. Sincronizar los dispositivos administrados por DEP: en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Tokens del programa de inscripción** > elija un token de la lista > **Sincronizar ahora**. Se envía una solicitud de sincronización a Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Inscripción de DEP atascada en el inicio de sesión de usuario
 Al activar un dispositivo administrado por DEP que tiene asignado un perfil de inscripción, el programa de instalación inicial se adhiere después de escribir las credenciales.
@@ -244,5 +244,5 @@ Deshabilite MFA y, a continuación, vuelva a inscribir el dispositivo.
 
 - [Solucionar problemas con la inscripción de dispositivos en Intune](../troubleshoot-device-enrollment-in-intune.md)
 - [Formule una pregunta en el foro de Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Consultar el blog del equipo de soporte técnico de Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Consulte el blog de Microsoft Enterprise Mobility and Security](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Revise el blog del equipo de soporte técnico de Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Revise el blog de Enterprise Mobility and Security de Microsoft](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)

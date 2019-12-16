@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713477"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
@@ -44,7 +44,7 @@ Antes de ejecutar la herramienta de ajuste de aplicaciones, necesita cumplir alg
 
   * El archivo de aplicación de entrada debe tener la extensión **.ipa** o **.app**.
 
-  * La aplicación de entrada debe compilarse para iOS 11 o posterior.
+  * La aplicación de entrada debe compilarse para iOS 11 o posterior.
 
   * La aplicación de entrada no puede cifrarse.
 
@@ -303,7 +303,7 @@ Siga estos pasos para obtener registros para las aplicaciones ajustadas durante 
 
 ### <a name="collecting-crash-logs-from-the-system"></a>Recopilación de registros de bloqueo del sistema
 
-Es posible que la aplicación registre información útil en la consola del dispositivo cliente de iOS. Esta información resulta útil cuando se tienen problemas con la aplicación y es necesario determinar si el problema está relacionado con la herramienta de ajuste de aplicaciones. Para resolver este problema, use los siguientes pasos:
+Es posible que la aplicación registre información útil en la consola del dispositivo cliente de iOS. Esta información resulta útil cuando se tienen problemas con la aplicación y es necesario determinar si el problema está relacionado con la herramienta de ajuste de aplicaciones o la aplicación misma. Para resolver este problema, use los siguientes pasos:
 
 1. Reproduzca el problema ejecutando la aplicación.
 
