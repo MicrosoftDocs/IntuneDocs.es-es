@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549506"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74828875"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune.
 
@@ -119,8 +119,8 @@ El administrador de dispositivos Android (que a veces se conoce como "administra
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 Debido a estos cambios de Google, los usuarios de Intune se verán afectados de las siguientes maneras:  
-- Intune solo podrá proporcionar compatibilidad con dispositivos Android administrados por el administrador de dispositivos que ejecuten Android 10 y versiones posteriores (también conocido como "Android Q") hasta el verano 2020. Es en esta fecha cuando se espera que se lance la versión principal de Android.   
-- Los dispositivos administrados por el administrador de dispositivos que ejecutan Android 10 o posterior después del verano de 2020 ya no se podrán administrar por completo.       
+- Intune solo podrá proporcionar compatibilidad completa con dispositivos Android administrados por el administrador de dispositivos que ejecuten Android 10 y versiones posteriores hasta el segundo trimestre de 2020. Los dispositivos administrados por el administrador de dispositivos que ejecuten Android 10 o versiones posteriores después de este periodo ya no se podrán administrar por completo. En concreto, los dispositivos afectados no recibirán nuevos requisitos de contraseña.
+    - Los dispositivos Samsung Knox no se verán afectados en este período de tiempo porque el soporte extendido se proporciona a través de la integración de Intune con la plataforma Knox. Esto le proporciona más tiempo para planear la transición desde la administración del administrador de dispositivos.    
 - Los dispositivos Android administrados por el administrador de dispositivos que permanezcan en versiones de Android inferiores a Android 10 no se verán afectados y se podrán seguir administrando por completo con el administrador de dispositivos.    
 - En todos los dispositivos Android 10 y versiones posteriores, Google ha restringido a los agentes de administración del administrador de dispositivos, como el Portal de empresa, el acceso a la información de identificación del dispositivo. Esta restricción afecta a las siguientes características de Intune después de que un dispositivo se actualice a Android 10 o una versión posterior:  
     - El control de acceso a la red de VPN dejará de funcionar.   
@@ -130,7 +130,7 @@ Debido a estos cambios de Google, los usuarios de Intune se verán afectados de 
         > Esta situación solo afecta a los dispositivos administrados por el administrador de dispositivos en Android 10 y versiones posteriores; no a los administrados con Android Enterprise. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
-Para evitar la reducción de la funcionalidad que tendrá lugar en el verano de 2020, siga estas recomendaciones:
+Para evitar la reducción de la funcionalidad que tendrá lugar en el tercer trimestre de 2020, siga estas recomendaciones:
 - No incorpore nuevos dispositivos a la administración del administrador de dispositivos.
 - Si está previsto que un dispositivo reciba una actualización de Android 10, mígrelo de la administración del administrador de dispositivos a la administración de Android Enterprise o a las directivas de protección de aplicaciones.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199186"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832614"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune
 
@@ -50,7 +50,9 @@ Algunas recomendaciones adicionales:
 
 Intune notifica al dispositivo que se sincronice con el servicio de Intune. Los tiempos de notificación varían y van desde inmediatamente hasta unas horas. Estos tiempos de notificación también varían según la plataforma.
 
-Si un dispositivo no se sincroniza para recibir la directiva o el perfil después de la primera notificación, Intune hace tres intentos más. Es posible que un dispositivo sin conexión, como apagado o no conectado a una red, no reciba las notificaciones. En ese caso, el dispositivo obtiene la directiva o el perfil en la próxima sincronización programada con el servicio Intune, que **se estima** en:
+Si un dispositivo no se sincroniza para recibir la directiva o el perfil después de la primera notificación, Intune hace tres intentos más. Es posible que un dispositivo sin conexión, como apagado o no conectado a una red, no reciba las notificaciones. En ese caso, el dispositivo obtiene la directiva o el perfil en la próxima sincronización programada con el servicio Intune. Lo mismo se aplica a las comprobaciones de no cumplimiento, incluidos los dispositivos que pasan de un estado compatible a un estado de no cumplimiento.
+
+Frecuencias **estimadas**:
 
 | Plataforma | Ciclo de actualización|
 | --- | --- |
@@ -61,7 +63,7 @@ Si un dispositivo no se sincroniza para recibir la directiva o el perfil despué
 | Windows Phone | Aproximadamente cada 8 horas |
 | Windows 8.1 | Aproximadamente cada 8 horas |
 
-Si el dispositivo se inscribió recientemente, la sincronización de cumplimiento y configuración se ejecuta con más frecuencia y **se estima** en:
+Si el dispositivo se ha inscrito recientemente, la comprobación de cumplimiento, no cumplimiento y configuración se ejecuta con más frecuencia y **se estima** en:
 
 | Plataforma | Frecuencia |
 | --- | --- |

@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50dbbb19cca9b5c46f0ba8b9d4e16c499534b536
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503114"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955395"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Requerir la autenticación multifactor para las inscripciones de dispositivos de Intune
 
@@ -50,18 +50,17 @@ Para requerir MFA cuando se inscribe un dispositivo, siga estos pasos:
 >[!Important]
 >No configure **reglas de acceso basadas en dispositivos** para la inscripción a Microsoft Intune.
 
-1. Inicie sesión en [Microsoft Azure Portal](https://portal.azure.com) con sus credenciales.
-2. En el portal, vaya a **Intune** y elija **Acceso condicional**. El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.
-4. Pulse **Nueva directiva**.
-5. En **Directiva nueva**, escriba un nombre descriptivo para la directiva.
-6. En la sección **Asignaciones**, seleccione **Usuarios y grupos**. 
-7. En **Usuarios y grupos**, elija **Seleccionar usuarios o grupos** y marque **Usuarios y grupos**. Después, seleccione los usuarios o grupos que recibirán esta directiva y seleccione **Listo**.
-8. En la sección **Asignaciones**, elija **Aplicaciones en la nube**.
-9. En la pestaña **Incluir** de **Aplicaciones en la nube**, elija **Seleccionar aplicaciones**, **Seleccionar** > **Inscripción a Microsoft Intune** y, luego, **Listo**. Al elegir la **inscripción a Microsoft Intune**, la autenticación MFA de acceso condicional se aplica solo a la inscripción del dispositivo (solicitud única de MFA).
-10. En la sección **Asignaciones**, en **Condiciones** no es necesario configurar ninguna opción para MFA.
-11. En la sección **Controles de acceso**, elija **Conceder**.
-12. En **Conceder**, seleccione **Conceder acceso** y, luego, **Requerir autenticación multifactor**. No seleccione **Requerir que el dispositivo esté marcado como compatible**, puesto que el cumplimiento normativo de un dispositivo no puede evaluarse hasta que esté inscrito. Luego, elija **Seleccionar**.
-13. En **Directiva nueva**, elija **Habilitar directiva** > **Activado** y después elija **Crear**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Dispositivos** > **Acceso condicional**. El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.
+2. Pulse **Nueva directiva**.
+3. En **Directiva nueva**, escriba un nombre descriptivo para la directiva.
+4. En la sección **Asignaciones**, seleccione **Usuarios y grupos**. 
+5. En **Usuarios y grupos**, elija **Seleccionar usuarios o grupos** y marque **Usuarios y grupos**. Después, seleccione los usuarios o grupos que recibirán esta directiva y seleccione **Listo**.
+6. En la sección **Asignaciones**, elija **Aplicaciones en la nube**.
+7. En la pestaña **Incluir** de **Aplicaciones en la nube**, elija **Seleccionar aplicaciones**, **Seleccionar** > **Inscripción a Microsoft Intune** y, luego, **Listo**. Al elegir la **inscripción a Microsoft Intune**, la autenticación MFA de acceso condicional se aplica solo a la inscripción del dispositivo (solicitud única de MFA).
+8. En la sección **Asignaciones**, en **Condiciones** no es necesario configurar ninguna opción para MFA.
+9. En la sección **Controles de acceso**, elija **Conceder**.
+10. En **Conceder**, seleccione **Conceder acceso** y, luego, **Requerir autenticación multifactor**. No seleccione **Requerir que el dispositivo esté marcado como compatible**, puesto que el cumplimiento normativo de un dispositivo no puede evaluarse hasta que esté inscrito. Luego, elija **Seleccionar**.
+11. En **Directiva nueva**, elija **Habilitar directiva** > **Activado** y después elija **Crear**.
 
 
 

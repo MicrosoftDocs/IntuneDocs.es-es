@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02188e6dd6cea6048731d119f8f307224810dd9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059944"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992928"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Agregar la configuración de características de dispositivos iOS o Mac OS en Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune incluye muchas características y configuraciones que ayudan a los administradores a controlar dispositivos iOS y macOS. Por ejemplo, los administradores pueden:
 
@@ -113,7 +111,7 @@ Se aplica a:
 
 ## <a name="login-items"></a>Elementos de inicio de sesión
 
-Use esta característica para elegir las aplicaciones, las aplicaciones personalizadas, los archivos y las carpetas que se abren cuando los usuarios inician sesión en los dispositivos. 
+Use esta característica para elegir las aplicaciones, las aplicaciones personalizadas, los archivos y las carpetas que se abren cuando los usuarios inician sesión en los dispositivos.
 
 Para una lista de los valores que puede configurar en Intune, consulte [Elementos de inicio de sesión en macOS](macos-device-features-settings.md#login-items).
 
@@ -153,22 +151,29 @@ Se aplica a:
 
 Estas opciones configuran una extensión de aplicación que habilita el inicio de sesión único (SSO) para los dispositivos iOS, iPados y macOS. La mayoría de las aplicaciones de línea de negocio (LOB) y sitios web de la organización necesitan cierto nivel de autenticación de usuario segura. En muchos casos, la autenticación requiere que los usuarios escriban las mismas credenciales varias veces. El inicio de sesión único proporciona a los usuarios acceso a las aplicaciones y los sitios web después de escribir sus credenciales una vez. Después de iniciar sesión, los usuarios pueden acceder a aplicaciones y sitios web de forma automática, o bien usar Face ID, Touch ID o el código de acceso de Apple para obtener acceso.
 
-En Intune, use esta configuración para definir la extensión de Kerberos integrada de Apple o para configurar una extensión de aplicación de inicio de sesión único creada por su organización. La extensión de la aplicación de inicio de sesión único controla la autenticación de los usuarios. Estas opciones configuran las extensiones de aplicación de inicio de sesión único de tipo credencial, que están diseñadas para flujos de autenticación de desafío y respuesta. Puede elegir entre una extensión de credenciales específicas de Kerberos proporcionada por Apple y una extensión de credenciales genérica.
+En Intune, use estas opciones para configurar una extensión de aplicación de inicio de sesión único creada por la organización, proveedor de identidades o Apple. La extensión de la aplicación de inicio de sesión único controla la autenticación de los usuarios. Estas opciones configuran las extensiones de aplicación de inicio de sesión único de tipo credencial y redirección.
+
+- El tipo de redirección está diseñado para protocolos de autenticación modernos como OAuth y SAML2.
+- El tipo de credencial está diseñado para flujos de autenticación de desafío y respuesta. Puede elegir entre una extensión de credenciales específicas de Kerberos proporcionada por Apple y una extensión de credenciales genérica.
 
 Para una lista de las opciones que puede configurar en Intune, consulte la [extensión de la aplicación de inicio de sesión único de iOS](ios-device-features-settings.md#single-sign-on-app-extension) y la [extensión de la aplicación de inicio de sesión único de macOS](macos-device-features-settings.md#single-sign-on-app-extension).
 
-Para más información sobre cómo desarrollar una extensión de aplicación de inicio de sesión único, consulte [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) en el sitio web de Apple.
+Para más información sobre cómo desarrollar una extensión de aplicación de inicio de sesión único, consulte [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) en el sitio web de Apple. Para leer la descripción de Apple de la característica, visite [Ajustes de carga "Exten. inicio sesión único"](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
 > [!NOTE]
 > La característica de **extensión de la aplicación de inicio de sesión único** es diferente de la característica **Inicio de sesión único**:
 >
-> - La configuración de la **extensión de la aplicación de inicio de sesión único** se aplica a los dispositivos iPad 13.0 (y versiones más recientes) e iOS 13.0 (y versiones más recientes). La configuración del **inicio de sesión único** se aplica a los dispositivos iPad 13.0 (y versiones más recientes) e iOS 7.0 y versiones más recientes.
-> - Una **extensión de la aplicación de inicio de sesión única** controla la autenticación con el sistema operativo. En el **inicio de sesión único**, una aplicación específica controla la autenticación.
-> - Al usar la **extensión de la aplicación de inicio de sesión único**, los usuarios inician sesión en aplicaciones y sitios web de forma silenciosa, o con Face ID, Touch ID o el código PIN o el código de acceso de Apple. Cuando se usa el **inicio de sesión único**, los usuarios inician sesión en aplicaciones y sitios web con otra aplicación.
+> - La configuración de la **extensión de aplicación de inicio de sesión único** se aplica a los dispositivos iPadOS 13.0 (y versiones más recientes), iOS 13.0 (y versiones más recientes) y macOS 10.15 (y versiones más recientes). La configuración del **inicio de sesión único** se aplica a los dispositivos iPad 13.0 (y versiones más recientes) e iOS 7.0 y versiones más recientes.
 >
->    La **extensión de la aplicación de inicio de sesión único** usa el sistema operativo Apple para autenticarse. Por lo tanto, puede proporcionar una mejor experiencia de usuario final.
+> - La configuración de la **extensión de aplicación de inicio de sesión único** define las extensiones que usan los proveedores de identidades o las organizaciones para ofrecer una experiencia de inicio de sesión empresarial sin problemas. La configuración **Inicio de sesión único** define la información de la cuenta de Kerberos para cuando los usuarios acceden a servidores o aplicaciones.
 >
-> - Desde la perspectiva del desarrollo, la **extensión de la aplicación de inicio de sesión única** puede usar cualquier tipo de autenticación de inicio de sesión único de credenciales. Con el **inicio de sesión único**, solo puede usar la autenticación de inicio de sesión único de Kerberos.  
+> - La **extensión de la aplicación de inicio de sesión único** usa el sistema operativo Apple para autenticarse. Por tanto, podría proporcionar una experiencia de usuario final mejor que la del **inicio de sesión único**.
+>
+> - Desde la perspectiva del desarrollo, con la **extensión de aplicación de inicio de sesión único** puede usar cualquier tipo de redirección o autenticación de inicio de sesión único de credenciales. Con el **inicio de sesión único**, solo puede usar la autenticación de inicio de sesión único de Kerberos.
+>
+> - La **extensión de aplicación de inicio de sesión único** de Kerberos fue desarrollada por Apple y está integrada en las plataformas iOS 13.0+ y macOS 10.15+. La extensión integrada de Kerberos se puede usar para registrar usuarios en aplicaciones nativas y sitios web que admitan la autenticación Kerberos. **Inicio de sesión único** no es una implementación de Apple de Kerberos.
+>
+> - La **extensión de aplicación de inicio de sesión único** integrada de Kerberos controla los desafíos de Kerberos para las aplicaciones y páginas web al igual que el **inicio de sesión único**. Pero la extensión integrada de Kerberos admite cambios de contraseña y se comporta mejor en redes empresariales. Al decidir entre la **extensión de aplicación de inicio de sesión único** de Kerberos y el **inicio de sesión único**, se recomienda usar la extensión ya que ofrece un rendimiento y una funcionalidad mejorados.
 
 Se aplica a:
 

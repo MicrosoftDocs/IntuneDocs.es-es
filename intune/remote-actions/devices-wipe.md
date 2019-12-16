@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712194"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991771"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -47,6 +47,8 @@ La acción **Borrar** restaura un dispositivo a su configuración de fábrica pr
 
 La opción **Conservar el estado de inscripción y la cuenta de usuario** solo está disponible para Windows 10 versión 1709 o posterior.
 
+La opción **Realizar borrado protegido** garantiza que no se pueda eludir la acción de borrado mediante la desactivación del dispositivo. Un borrado protegido seguirá intentando restablecer el dispositivo hasta que se complete de forma correcta. En algunas configuraciones, esta acción puede hacer que el dispositivo no se pueda reiniciar.
+
 Las directivas de MDM se volverán a aplicar la próxima vez que el dispositivo se conecte a Intune.
 
 Un borrado es útil para restablecer un dispositivo antes de dárselo a otro usuario o en el caso de que el dispositivo se haya perdido o lo hayan robado. Tenga cuidado al seleccionar **Borrar**. Los datos del dispositivo no se pueden recuperar.
@@ -57,7 +59,7 @@ Un borrado es útil para restablecer un dispositivo antes de dárselo a otro usu
 3. Seleccione **Dispositivos** > **Todos los dispositivos**.
 4. Seleccione el nombre del dispositivo que quiere borrar.
 5. En el panel en el que se muestra el nombre del dispositivo, haga clic en **Borrar**.
-6. Para Windows 10 versión 1709 y versiones posteriores, también tiene la opción **Conservar el estado de inscripción y la cuenta de usuario**. 
+6. Para Windows 10 versión 1709 y posteriores, también tiene la opción **Borrar el dispositivo, pero mantener el estado de inscripción y la cuenta de usuario asociada**. 
     
     |Se conserva durante un borrado |No se conserva|
     | -------------|------------|

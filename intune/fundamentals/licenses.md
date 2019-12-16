@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346960d8d1d79afc4494064570d1a03e83b8a302
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d7b8d96ae1582b5cb434c80d44ef55a31c4781b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510146"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882293"
 ---
 # <a name="microsoft-intune-licensing"></a>Licencias de Microsoft Intune
 Microsoft Intune está disponible para las distintas necesidades de los clientes y los diversos tamaños de las organizaciones, desde una experiencia de administración fácil de usar para escuelas y pequeñas empresas a funcionalidades más avanzadas requeridas por los clientes empresariales. La mayoría de las licencias que incluyen Microsoft Intune también conceden los derechos a usar System Center Configuration Manager, siempre y cuando la suscripción permanezca activa. 
@@ -35,8 +35,8 @@ Intune se incluye en las licencias siguientes:
 - Enterprise Mobility + Security E3
 - Microsoft 365 Empresa
 - Microsoft 365 F1
-
-
+- Microsoft 365 Administración Pública G5
+- Microsoft 365 Administración Pública G3
 
 ## <a name="microsoft-intune-for-education"></a>Microsoft Intune for Education
 Intune for Education se incluye en las licencias siguientes:
@@ -46,7 +46,7 @@ Intune for Education se incluye en las licencias siguientes:
 
 ## <a name="additional-information"></a>Información adicional
 - Una suscripción de dispositivos y del usuario de Microsoft Intune está disponible como independiente, además de las agrupaciones indicadas arriba.
-- Una suscripción solo de dispositivos de Microsoft Intune está disponible para escenarios de tipo quiosco donde no se usa ninguna característica con afinidad de usuario.
+- Una suscripción solo de dispositivos de Microsoft Intune está disponible para administrar quioscos, dispositivos dedicados, dispositivos de sala de teléfono, IoT y otros dispositivos de uso único que no requieren características de seguridad y administración basadas en el usuario.
 - La licencia de Microsoft Intune adecuada es necesaria si un usuario o dispositivo se beneficia de forma directa o indirecta del servicio de Microsoft Intune, incluido el acceso a dicho servicio a través de una [API de Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 - Intune no se incluye en las licencias que no figuran en las tablas anteriores.
 

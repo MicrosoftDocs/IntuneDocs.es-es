@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261688"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860322"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -61,7 +61,7 @@ Si el botón **Evaluar** está atenuado, asegúrese de que el perfil se asignó 
 
 Cuando crea o actualiza un perfil, puede agregar también etiquetas de ámbito al perfil.
 
-Las **etiquetas de ámbito** son una excelente forma de asignar y filtrar perfiles para grupos específicos, como Recursos Humanos o todos los empleados de Carolina del Norte en EE. UU. En el artículo sobre [el uso de RBAC y las etiquetas de ámbito para TI distribuida](../fundamentals/scope-tags.md) tiene más información.
+Las **etiquetas de ámbito** son una excelente manera de filtrar los perfiles por grupos específicos, como `US-NC IT Team` o `JohnGlenn_ITDepartment`. En el artículo sobre [el uso de RBAC y las etiquetas de ámbito para TI distribuida](../fundamentals/scope-tags.md) tiene más información.
 
 En los dispositivos Windows 10, puede agregar reglas **de aplicabilidad** para que el perfil solo se aplique a una versión específica del sistema operativo o a una edición específica de Windows. En el artículo sobre [reglas de aplicabilidad](device-profile-create.md#applicability-rules) se incluye más información.
 

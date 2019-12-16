@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390457"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946689"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integración de Jamf Pro con Intune para cumplimiento
 
@@ -90,13 +90,21 @@ Para conectar Intune con Jamf Pro:
    > [!IMPORTANT]
    > Antes de salir de la página, copie el valor del secreto de cliente y anótelo para usarlo más adelante. Lo necesitará en procedimientos posteriores. Este valor no vuelve a estar disponible sin volver a crear el registro de la aplicación.
 
-6. Seleccione **Permisos de API** en **Administrar**. Seleccione los permisos existentes y, luego, seleccione **Quitar permiso** para eliminar todos esos permisos. Quitar todos los permisos existentes es necesario, ya que agregará un nuevo permiso y la aplicación solo funciona si tiene un único permiso necesario.
+6. Seleccione **Permisos de API** en **Administrar**. 
 
-7. Para asignar un permiso nuevo, seleccione **Agregar un permiso**. En la página **Request API permissions** (Solicitar permisos de API), seleccione **Intune** y, luego, **Permisos de aplicación**. Active solo la casilla para **update_device_attributes**.
+7. En la página de permisos de API, seleccione **Agregar un permiso** para agregar un permiso nuevo. En la página **Request API permissions** (Solicitar permisos de API), seleccione **Intune** y, luego, **Permisos de aplicación**. Active solo la casilla para **update_device_attributes**.
 
-   Seleccione **Agregar permiso** para guardar esta configuración.
+8. Espere unos minutos para que el nuevo permiso surta efecto. Después, seleccione **Conceder consentimiento del administrador para _\<su inquilino>_**. Autentique la cuenta en la nueva ventana y siga las indicaciones para conceder acceso a la aplicación.  
 
-8. En la página **Permisos de API**, seleccione **Conceder consentimiento del administrador para _\<su inquilino>_** y, luego, seleccione **Sí**.  Una vez que la aplicación se haya registrado correctamente, los permisos de la API deben aparecer de la siguiente manera:
+9. Es posible que tenga que esperar unos minutos para que el consentimiento del administrador surta efecto.
+
+10. Para actualizar la página, haga clic en el botón **Actualizar** de la parte superior de la página. Confirme que se ha concedido el consentimiento del administrador para el permiso **update_device_attributes**. 
+
+11. Quite el consentimiento de administrador del permiso **User.Read**. Para ello, seleccione el menú **...** y después **Revocar consentimiento del administrador**.
+
+12. También tendrá que quitar el permiso **User.Read**. Seleccione el menú **...** de **User.Read** y seleccione **Quitar permiso**. 
+
+8. Una vez que la aplicación se haya registrado correctamente, los permisos de API solo deben contener un permiso llamado **update_device_attributes** y deben aparecer de la siguiente manera:
 
    ![Permisos correctos](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

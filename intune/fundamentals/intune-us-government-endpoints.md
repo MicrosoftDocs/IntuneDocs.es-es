@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502686"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000404"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Puntos de conexión del Gobierno de EE. UU. de Microsoft Intune
 
@@ -31,7 +31,7 @@ En esta página se enumeran los puntos de conexión del Gobierno de EE. UU. nec
 
 Para administrar dispositivos que se encuentren detrás de firewalls y servidores proxy, debe habilitar la comunicación para Intune.
 
-- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)** , ya que los clientes de Intune usan ambos protocolos.
+- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)**, ya que los clientes de Intune usan ambos protocolos.
 - Para algunas tareas (como descargar actualizaciones de software), Intune necesita acceso de un servidor proxy no autenticado a manage.microsoft.com.
 
 Puede modificar la configuración del servidor proxy en equipos cliente individuales. También puede usar la opción de directiva de grupo para cambiar la configuración de todos los equipos cliente que se encuentran detrás de un servidor proxy especificado.
@@ -57,3 +57,25 @@ En las siguientes tablas se enumeran los puertos y los servicios a los que acced
 - AAD Graph: https:\//directory.microsoftazure.us y https:\//graph.microsoftazure.us
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
+
+## <a name="windows-push-notification-services"></a>Servicios de notificaciones de inserción de Windows
+En los dispositivos de Windows administrados por Intune que se administran mediante administración de dispositivos móviles (MDM), las acciones de dispositivos y otras actividades inmediatas requieren Servicios de notificaciones de inserción de Windows (WNS). Para más información, vea [Configuraciones de firewall y proxy de empresa para admitir el tráfico de WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).
+
+## <a name="apple-device-network-information"></a>Información de red de dispositivos de Apple
+
+|**Se usa para**|**Nombre de host (dirección IP/subred)**|**Protocolo**|**Puerto**|
+|------------|-----------|------------|-----------|
+|Recuperación y visualización de contenido de los servidores de Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|Comunicación con servidores APNS|#-courier.push.apple.com<br>"#" es un número aleatorio entre 0 y 50.|TCP|5223 y 443|
+|Distintas funciones, como acceso a Internet, iTunes Store, App Store de macOS, iCloud, mensajería, etc.|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 o 443|
+
+Para obtener más información, vea:
+
+- [Puertos TCP y UDP usados por los productos de software de Apple](https://support.apple.com/HT202944)
+- [Acerca de los procesos en segundo plano de iTunes y las conexiones del host para el servidor de iTunes, iOS y macOS](https://support.apple.com/HT201999)
+- [Si tus clientes macOS e iOS no reciben notificaciones push de Apple](https://support.apple.com/HT203609)
+
+## <a name="next-steps"></a>Pasos siguientes
+[Puntos de conexión de red de Microsoft Intune](intune-endpoints.md)
+
+[Inscripción automática y registro de dispositivos Windows 10](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

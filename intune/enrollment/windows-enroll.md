@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558210"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000438"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configuración de la inscripción de dispositivos Windows
 
@@ -126,6 +126,15 @@ Azure Active Directory tiene un CNAME diferente que usa para el registro de disp
 | NOMBRE | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 hora|
 
 Para obtener más información sobre el registro de dispositivos, consulte [Administración de identidades de dispositivos con Azure Portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal).
+
+## <a name="windows-10-auto-enrollment-and-device-registration"></a>Inscripción automática y registro de dispositivos Windows 10
+Aunque la creación de entradas DNS CNAME es opcional, los registros CNAME facilitan la inscripción para los usuarios. Si no se encuentra ningún registro CNAME de inscripción, se pedirá a los usuarios que escriban de forma manual el nombre del servidor MDM (enrollment.manage.microsoft.us).
+
+| Tipo | Nombre de host | Apunta a | TTL |
+| --- | --- | --- | --- |
+| CNAME | EnterpriseEnrollment.company_domain.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hora|
+|CNAME | EnterpriseRegistration.company_domain.com | EnterpriseRegistration.windows.net | 1 hora |
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

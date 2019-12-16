@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390866"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860390"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
@@ -93,13 +93,13 @@ En este artículo:
 
 ## <a name="scope-tags"></a>Etiquetas de ámbito
 
-Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito al perfil. Las etiquetas de ámbito asignan y filtrar las directivas a grupos específicos, como Recursos Humanos o Todos los empleados de Carolina del Norte en EE. UU.
+Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito al perfil. Las etiquetas de ámbito filtran los perfiles a grupos de TI específicos, como `US-NC IT Team` o `JohnGlenn_ITDepartment`.
 
 Para más información sobre las etiquetas de ámbito y lo que puede hacer el usuario, consulte el artículo sobre [el uso de RBAC y las etiquetas de ámbito para TI distribuida](../fundamentals/scope-tags.md).
 
 ### <a name="add-a-scope-tag"></a>Incorporación de una etiqueta de ámbito
 
-1. Seleccione **Ámbito (etiquetas)** .
+1. Seleccione **Ámbito (etiquetas)**.
 2. Seleccione **Agregar** para crear una etiqueta de ámbito. O seleccione una etiqueta de ámbito existente en la lista.
 3. Haga clic en **Aceptar** para guardar los cambios.
 
@@ -180,11 +180,13 @@ Al crear perfiles, tenga en cuenta las siguientes recomendaciones:
 
 - Separe las directivas de usuario de las directivas de dispositivo.
 
-  Por ejemplo, las [plantillas administrativas en Intune](administrative-templates-windows.md) tienen cientos de valores de configuración de ADMX. Esta plantilla muestra si un valor de configuración se aplica a usuarios o dispositivos. Al crear plantillas de administración, asigne la configuración de usuario a un grupo de usuarios y la configuración de dispositivo a un grupo de dispositivos.
+  Por ejemplo, las [plantillas administrativas en Intune](administrative-templates-windows.md) tienen cientos de valores de configuración de ADMX. Estas plantillas muestran si un valor de configuración se aplica a usuarios o dispositivos. Al crear plantillas de administración, asigne la configuración de usuario a un grupo de usuarios y la configuración de dispositivo a un grupo de dispositivos.
 
   En la imagen siguiente se muestra un ejemplo de un valor de configuración que se puede aplicar a los usuarios o a los dispositivos:
 
   ![Plantilla de administración de Intune que se aplica a usuarios y dispositivos](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- Cada vez que cree una directiva restrictiva, comunique este cambios a los usuarios. Por ejemplo, si va a cambiar el requisito de código de acceso de 4 a 6 caracteres, informe a los usuarios antes de asignar la directiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

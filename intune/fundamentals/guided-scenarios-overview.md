@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635358"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899137"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Introducción a los escenarios guiados de Intune 
 
@@ -33,7 +33,7 @@ Los escenarios guiados no son un espacio de administración distinto de los fluj
 
 ## <a name="types-of-guided-scenarios"></a>Tipos de escenarios guiados 
 
-Por motivos de simplicidad, en todos los escenarios guiados se omiten características de ámbito complejas, como las etiquetas de ámbito<link>, los grupos de exclusión y las asignaciones de grupo virtual<link>. Todos los recursos creados en un escenario guiado heredarán todas las etiquetas de ámbito del administrador que complete el escenario. Algunos escenarios ofrecen cierto nivel de personalización de la configuración común para cubrir escenarios que están estrechamente relacionados. En estos escenarios solo se permite la asignación de grupos a grupos de inclusión. En otros escenarios guiados, todo el escenario garantiza una experiencia coherente al no ofrecer ninguna personalización, y se genera automáticamente un nuevo grupo para recibir todas las asignaciones. Una vez completado el escenario guiado, se pueden usar asignaciones más sofisticadas directamente a través de las cargas de trabajo de directivas, aplicaciones y perfiles existentes.  
+Por motivos de simplicidad, en todos los escenarios guiados se omiten características de ámbito complejas, como las etiquetas de ámbito, los grupos de exclusión y las asignaciones de grupo virtual. Todos los recursos creados en un escenario guiado heredarán todas las etiquetas de ámbito del administrador que complete el escenario. Algunos escenarios ofrecen cierto nivel de personalización de la configuración común para cubrir escenarios que están estrechamente relacionados. En estos escenarios solo se permite la asignación de grupos a grupos de inclusión. En otros escenarios guiados, todo el escenario garantiza una experiencia coherente al no ofrecer ninguna personalización, y se genera automáticamente un nuevo grupo para recibir todas las asignaciones. Una vez completado el escenario guiado, se pueden usar asignaciones más sofisticadas directamente a través de las cargas de trabajo de directivas, aplicaciones y perfiles existentes.  
 
 Los siguientes escenarios son escenarios guiados: 
 - Implementar Microsoft Edge para aplicaciones móviles 
@@ -46,7 +46,7 @@ Los escenarios guiados ofrecen una funcionalidad específica. Los siguientes det
 
 ### <a name="launching"></a>Inicio  
 
-Todos los escenarios guiados están disponibles en el **[portal de administración de dispositivos](https://devicemanagement.microsoft.com)**  > **Solución de problemas + soporte técnico** > **Escenarios guiados**. 
+Todos los escenarios guiados están disponibles en el **[portal de administración de dispositivos](https://devicemanagement.microsoft.com)** > **Solución de problemas + soporte técnico** > **Escenarios guiados**. 
 
 El escenario guiado comienza con una introducción en la que se explica el propósito del escenario y los requisitos previos necesarios para completar la configuración. En ese momento, se comprueban sus permisos de administrador para corroborar que tiene todos los privilegios necesarios para completar el escenario.  
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0718fae09228b9359b073901f3a344a09a6176e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3fb5818609763753878fec7a84fd8c19eb154f88
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509249"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955446"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Términos y condiciones para el acceso de los usuarios
 
@@ -46,31 +46,30 @@ Para saber qué método es el más adecuado para usted, revise la entrada de blo
 ## <a name="create-terms-and-conditions"></a>Creación de términos y condiciones
 Complete estos pasos para crear los términos y condiciones. El nombre para mostrar y la descripción son para uso administrativo mientras las propiedades de términos se muestran a los usuarios en el Portal de empresa.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En el panel **Intune**, elija **Inscripción de dispositivos** > **Términos y condiciones**.
-3. Elija **Crear**.
-4. En la página **Aspectos básicos**, especifique la información siguiente:
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Administración de inquilinos** > **Términos y condiciones**.
+2. Elija **Crear**.
+3. En la página **Aspectos básicos**, especifique la información siguiente:
 
    - **Nombre**: nombre de los términos en Azure Portal. Los usuarios no ven este nombre.
    - **Descripción**: detalles opcionales que le ayudan a identificar este conjunto de términos en Azure Portal.
 
     ![Captura de pantalla de Azure Portal que muestra la página Aspectos básicos de los términos y condiciones](./media/terms-and-conditions-create/terms-basics-page.png)
 
-5. Elija **Siguiente** para ir a la página **Términos** y escriba la información siguiente:
+4. Elija **Siguiente** para ir a la página **Términos** y escriba la información siguiente:
 
    - **Título**: el nombre de los términos que los usuarios ven en Portal de empresa sobre el **resumen**.
    - **Términos y condiciones**: los términos y condiciones que los usuarios ven y deben aceptar o rechazar.
    - **Resumen de términos**: texto que explica lo que significa que los usuarios acepten los términos. Por ejemplo, "Al inscribir el dispositivo, acepta los términos de uso establecidos por Contoso. Lea los términos detenidamente antes de continuar".
 
-6. Elija **Siguiente** para ir a la página **Etiquetas de ámbito**.
+5. Elija **Siguiente** para ir a la página **Etiquetas de ámbito**.
 
-7. Elija **Seleccionar etiquetas de ámbito**, seleccione las etiquetas de ámbito que quiere asignar a estos términos y condiciones y, luego, elija **Seleccionar**. 
+6. Elija **Seleccionar etiquetas de ámbito**, seleccione las etiquetas de ámbito que quiere asignar a estos términos y condiciones y, luego, elija **Seleccionar**. 
 
-8. Elija **Siguiente** para ir a la página **Asignaciones** y elija una de las opciones siguientes **Asignar a**:
+7. Elija **Siguiente** para ir a la página **Asignaciones** y elija una de las opciones siguientes **Asignar a**:
     - **Todos los usuarios**: elija esta opción para asignar estos términos y condiciones a todos los usuarios.
     - **Seleccionar grupos**: elija esta opción para asignar estos términos y condiciones a todos los miembros de los grupos que identifique al elegir **Seleccionar grupos para incluir**.
 
-9. Elija **Siguiente** > **Crear**.
+8. Elija **Siguiente** > **Crear**.
 
 ## <a name="see-how-terms-are-displayed-to-your-users"></a>Cómo los usuarios ven los términos
 El ejemplo siguiente muestra el **título** y el **resumen de términos** en la consola de administración y Portal de empresa de Intune.
@@ -84,8 +83,7 @@ Los ejemplos siguientes muestran los términos y condiciones en la consola de ad
 
 ## <a name="monitor-terms-and-conditions"></a>Supervisión de términos y condiciones
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
-1. En el panel Intune, elija **Inscripción de dispositivos** > **Términos y condiciones**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Administración de inquilinos** > **Términos y condiciones**.
 2. En la lista de términos y condiciones, elija los términos para los que quiere ver la aceptación > **Informes de aceptación**.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Trabajar con varias versiones de los términos y las condiciones
@@ -95,12 +93,10 @@ Puede editar los términos y condiciones y administrar sus versiones. Cada vez q
 
 Si va a corregir errores tipográficos o cambiar el formato, por ejemplo, mantenga el número de versión actual.
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Administración de inquilinos** > **Términos y condiciones** > elija los términos y condiciones que quiera modificar > **Propiedades**.
 
-2. En el panel Intune, elija **Inscripción de dispositivos** > **Términos y condiciones** > elija los términos y condiciones que quiera modificar > **Propiedades**.
+2. En el panel **Propiedades**, elija **Términos y condiciones** y, luego, modifique el **Título**, el **Resumen de los términos** y los **Términos y condiciones**, según corresponda. Si los cambios hacen que los usuarios tengan que volver a aceptar los términos nuevos, elija **Solicite a los usuarios que acepten de nuevo los términos e incremente el número de versión a**.
 
-4. En el panel **Propiedades**, elija **Términos y condiciones** y, luego, modifique el **Título**, el **Resumen de los términos** y los **Términos y condiciones**, según corresponda. Si los cambios hacen que los usuarios tengan que volver a aceptar los términos nuevos, elija **Solicite a los usuarios que acepten de nuevo los términos e incremente el número de versión a**.
-
-4. Elija **Aceptar** > **Guardar**.
+3. Elija **Aceptar** > **Guardar**.
 
 Los usuarios solo deben aceptar una vez los términos y condiciones actualizados. No es necesarios que los usuarios con varios dispositivos acepten los términos y condiciones en cada uno de los dispositivos.

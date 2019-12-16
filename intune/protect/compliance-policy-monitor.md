@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/14/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410163"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992985"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -98,8 +98,7 @@ En el gráfico **Estado de cumplimiento del dispositivo**, seleccione un estado.
 
 ![Selección del estado No conforme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Esta acción abre la ventana **Conformidad de dispositivos**, que muestra los dispositivos en un gráfico **Estado del dispositivo**. En este gráfico se muestran más detalles sobre los dispositivos que tienen ese estado, como la plataforma del sistema operativo, la fecha de la última inserción en el repositorio y mucho más. 
-
+Esta acción abre la ventana **Conformidad de dispositivos**, que muestra los dispositivos en un gráfico **Estado del dispositivo**. En este gráfico se muestran más detalles sobre los dispositivos que tienen ese estado, como la plataforma del sistema operativo, la fecha de la última inserción en el repositorio y mucho más.
 ![Imagen del panel en la que se muestran más detalles sobre el dispositivo en ese estado específico](./media/compliance-policy-monitor/drill-down-details.png)
 
 Si quiere ver todos los dispositivos de un usuario específico, también puede filtrar el informe de gráfico escribiendo el correo electrónico del usuario.
@@ -132,7 +131,7 @@ Al hacer clic en el icono, se muestran todos los dispositivos sin una directiva 
 
 - Con la opción de seguridad **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**, es importante identificar los dispositivos sin una directiva de cumplimiento. Posteriormente podrá asignarles al menos una directiva de cumplimiento.
 
-  La opción de seguridad se puede configurar en el portal de Intune. Vaya a **Dispositivos** > **Directivas de cumplimiento** > **Configuración de directivas de cumplimiento**. Después, establezca **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como** en **Compatible** o **No compatible**. 
+  La opción de seguridad se puede configurar en el portal de Intune. Vaya a **Dispositivos** > **Directivas de cumplimiento** > **Configuración de directivas de cumplimiento**. Después, establezca **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como** en **Compatible** o **No compatible**.
 
   Obtenga más información sobre esta [mejora de la seguridad en el servicio de Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
@@ -140,7 +139,7 @@ Al hacer clic en el icono, se muestran todos los dispositivos sin una directiva 
 
 ### <a name="per-policy-device-compliance"></a>Cumplimiento de dispositivos por directiva
 
-En el gráfico **Cumplimiento de directivas** se muestran las directivas y el número de dispositivos que son compatibles y no compatibles. 
+En el gráfico **Cumplimiento de directivas** se muestran las directivas y el número de dispositivos que son compatibles y no compatibles.
 
 ![Visualización de una lista de la directiva y la diferencia entre dispositivos conformes y no conformes para esa directiva](./media/compliance-policy-monitor/idc-8.png)
 
@@ -149,11 +148,6 @@ En el gráfico **Cumplimiento de directivas** se muestran las directivas y el n�
 En el gráfico **Configurando cumplimiento** se muestra la configuración de todas las directivas de cumplimiento de los dispositivos, las plataformas a las que se aplica la configuración de directivas y el número de dispositivos no conformes.
 
 ![Visualización de una lista de todas las configuraciones de las distintas directivas](./media/compliance-policy-monitor/idc-10.png)
-
-> [!NOTE]
-> Se puede asignar una directiva a un dispositivo y a un usuario de ese mismo dispositivo. En algunos escenarios, un dispositivo puede sincronizarse antes de que el usuario inicie sesión, por ejemplo, cuando se reinicie el dispositivo. El cumplimiento puede evaluar a este usuario y mostrar el dispositivo como no conforme. Este comportamiento también puede mostrar la cuenta del sistema como un usuario no compatible.
->
-> Se trata de un problema conocido con dispositivos Windows 10 de varios usuarios. Cualquier cambio o actualización en este comportamiento se anuncia en [En desarrollo para Microsoft Intune: agosto de 2019](../fundamentals/in-development.md) o [Novedades de Microsoft Intune](../fundamentals/whats-new.md).
 
 ## <a name="view-compliance-reports"></a>Visualización de informes de cumplimiento
 
@@ -183,14 +177,15 @@ Esta característica aparece reflejada en el informe de estado del dispositivo:
 2. Seleccione una directiva > **Información general**. En esta vista, la asignación de directiva engloba los siguientes estados:
 
     - **Correcto**: se aplica la directiva.
-    - **Error**: no se ha podido aplicar la directiva. El mensaje se suele mostrar con un código de error vinculado a una explicación. 
+    - **Error**: no se ha podido aplicar la directiva. El mensaje se suele mostrar con un código de error vinculado a una explicación.
     - **Conflicto**: se aplican dos configuraciones al mismo dispositivo, e Intune no puede solucionar el conflicto. Un administrador debe encargarse de revisar.
-    - **Pendiente**: el dispositivo no se ha registrado aún con Intune para recibir la directiva. 
-    - **No aplicable**: el dispositivo no puede recibir la directiva. Por ejemplo, la directiva actualiza una configuración específica de iOS 11.1, pero el dispositivo usa iOS 10. 
+    - **Pendiente**: el dispositivo no se ha registrado aún con Intune para recibir la directiva.
+    - **No aplicable**: el dispositivo no puede recibir la directiva. Por ejemplo, la directiva actualiza una configuración específica de iOS 11.1, pero el dispositivo usa iOS 10.
 
 3. Para ver detalles sobre los dispositivos que usan esta directiva, seleccione uno de los estados. Por ejemplo, seleccione **Correcto**. En la siguiente ventana se muestran detalles concretos del dispositivo, como el nombre del dispositivo y el estado de la implementación.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Cómo Intune resuelve los conflictos de directivas
+
 Pueden producirse conflictos entre directivas de Intune cuando se aplican varias de ellas a un dispositivo. Si las configuraciones de directivas se solapan, Intune resuelve los conflictos siguiendo estas reglas:
 
 - Si las configuraciones en conflicto proceden de una directiva de configuración de Intune y una directiva de cumplimiento, la configuración de la directiva de cumplimiento tiene preferencia sobre la configuración de la directiva de configuración. Esto es así incluso si la configuración de la directiva de configuración es más segura.

@@ -1,11 +1,11 @@
 ---
 title: Directivas de cumplimiento de dispositivos en Microsoft Intune - Azure | Microsoft Docs
-description: Introducción al uso de directivas de cumplimiento de dispositivos, información general de los estados y los niveles de gravedad, uso del estado InGracePeriod, trabajo con el acceso condicional, control de los dispositivos sin una directiva asignada y diferencias de cumplimiento en Azure Portal y el portal clásico en Microsoft Intune
+description: Introducción al uso de directivas de cumplimiento de dispositivos, información general de los estados y los niveles de gravedad, uso del estado InGracePeriod, trabajo con el acceso condicional y control de los dispositivos sin una directiva asignada.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749172"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860302"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Establecimiento de reglas en los dispositivos para permitir el acceso a recursos de su organización con Intune
 
@@ -100,7 +100,7 @@ Intune también incluye un conjunto de configuraciones de directivas de cumplimi
   - Permitir que el Portal de empresa use los servicios de ubicación.
   - Evaluar y notificar su estado de jailbreak a Intune al menos una vez cada 72 horas. En caso contrario, el dispositivo se marcará como no compatible. La evaluación se desencadena al abrir la aplicación Portal de empresa de Intune o al mover físicamente los 500 medidores o más del dispositivo. Si el dispositivo no se mueve 500 metros en 72 horas, el usuario tiene que abrir la aplicación Portal de empresa para la evaluación de jailbreak mejorada.
 
-- **Período de validez del estado de cumplimiento (días)** : especifique el período en que los dispositivos informan del estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
+- **Período de validez del estado de cumplimiento (días)**: especifique el período en que los dispositivos informan del estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
 
 Puede usar estas directivas integradas para supervisar estas configuraciones. Intune también [se actualiza o comprueba si hay actualizaciones](create-compliance-policy.md#refresh-cycle-times) en distintos intervalos, dependiendo de la plataforma del dispositivo. [Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune](../configuration/device-profile-troubleshoot.md) es un recurso útil.
 
@@ -130,21 +130,6 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 - El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
 - La aplicación Portal de empresa de Intune notifica al usuario sobre cualquier problema de cumplimiento.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Portal clásico de Azure y Portal de Azure
-
-La diferencia principal al usar las directivas de cumplimiento de dispositivos en Azure Portal es la siguiente:
-
-- En Azure Portal, las directivas de cumplimiento se crean por separado para cada plataforma compatible
-- En el portal clásico de Azure hay una directiva de cumplimiento de dispositivos común a todas las plataformas compatibles
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-Las directivas de cumplimiento de dispositivos creadas en el [portal clásico](https://manage.microsoft.com) no aparecen en [Azure Portal](https://portal.azure.com). Pero todavía se destinan a los usuarios y pueden administrarse mediante el portal clásico.
-
-Para usar las características relacionadas con el cumplimiento de dispositivos en Azure Portal, debe crear directivas de cumplimiento de dispositivos en Azure Portal. Si asigna una directiva de cumplimiento de dispositivos en Azure Portal a un usuario al que también se ha asignado una directiva de cumplimiento de dispositivos desde el portal clásico, las directivas de cumplimiento de dispositivos de Azure Portal tendrán prioridad sobre las directivas creadas en el portal clásico.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

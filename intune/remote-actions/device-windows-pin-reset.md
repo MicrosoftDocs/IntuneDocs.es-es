@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713105"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907226"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Restablecimiento del código de acceso en dispositivos Windows con Intune
 
@@ -66,7 +66,7 @@ Establezca el valor de este CSP en **True**.
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). 
 2. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
-3. Seleccione el dispositivo en el que quiere restablecer el código de acceso. En las propiedades del dispositivo, seleccione **Nuevo código de acceso**.
+3. Seleccione el dispositivo en el que quiere restablecer el código de acceso. En las propiedades del dispositivo, seleccione **Restablecer código de acceso**.
 4. Seleccione **Sí** para confirmar. El código de acceso se genera y se muestra en el portal durante los próximos siete días.
 
 ## <a name="next-step"></a>Paso siguiente

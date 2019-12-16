@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564377"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819776"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -77,7 +77,7 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |MEID|Identificador de equipo móvil del dispositivo.|Windows, iOS, Android|
 |Fabricante|Fabricante del dispositivo.|Windows, iOS, Android|
 |Modelo|Modelo del dispositivo.|Windows, iOS, Android|
-|Número de teléfono|Número de teléfono asignado al perfil.|Windows, iOS, Android|
+|Número de teléfono|Número de teléfono asignado al perfil.|Windows, iOS, Android*|
 |Operador del suscriptor|Operador de red inalámbrica del dispositivo.|Windows, iOS, Android|
 |Tecnología de datos móviles|Sistema de radio usado en el dispositivo.|Windows, iOS, Android|
 |MAC Wi-Fi|Dirección de Media Access Control del dispositivo.|Windows, iOS, Android|
@@ -93,7 +93,7 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |Supervisado|Si se establece en **Sí**, los administradores han mejorado el control sobre el dispositivo.|Windows, iOS, Android|
 |Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|Windows, iOS, Android|
 
-
+\* No está disponible en Android con el administrador de directivas de Google, como los dispositivos totalmente administrados y dedicados
 
 ## <a name="next-steps"></a>Pasos siguientes
 Vea qué más puede hacer para [administrar sus dispositivos](device-management.md) con Intune.

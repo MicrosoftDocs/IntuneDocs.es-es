@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564240"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899407"
 ---
 # <a name="intune-discovered-apps"></a>Aplicaciones descubiertas de Intune
 
@@ -60,12 +60,13 @@ En la lista siguiente se proporciona el tipo de plataforma de aplicaciones, las 
 | Windows Phone 8 | Solo aplicaciones administradas | Solo aplicaciones administradas | Cada 7 días a partir de la inscripción de dispositivos |
 | Windows RT | Solo aplicaciones administradas | Solo aplicaciones administradas | Cada 7 días a partir de la inscripción de dispositivos |
 | iOS | Solo aplicaciones administradas | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
-| macOS | Todas las aplicaciones instaladas en el dispositivo | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
+| macOS | Solo aplicaciones administradas | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
 | Android | Solo aplicaciones administradas | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
 | Android Enterprise | Solo aplicaciones administradas | Solo aplicaciones instaladas en el perfil de trabajo | Cada 7 días a partir de la inscripción de dispositivos |
 
 > [!NOTE]
-> Los dispositivos Windows 10 unidos a Azure AD híbrido, como se muestra en la carga de trabajo de administración de aplicaciones en Configuration Manager, no recopilan actualmente el inventario de aplicaciones a través de la extensión de administración de Intune (IME) según la programación anterior. Para mitigar este problema, la carga de trabajo de administración de aplicaciones en Configuration Manager debe cambiarse a Intune para que el IME se instale en el dispositivo (se requiere el IME para el inventario de Win32 y la implementación de PowerShell). Tenga en cuenta que cualquier cambio o actualización en este comportamiento se anuncia en las secciones [en desarrollo p](../fundamentals/in-development.md) o [Novedades](../fundamentals/whats-new.md).
+> - Los dispositivos Windows 10 unidos a Azure AD híbrido, como se muestra en la carga de trabajo de administración de aplicaciones en Configuration Manager, no recopilan actualmente el inventario de aplicaciones a través de la extensión de administración de Intune (IME) según la programación anterior. Para mitigar este problema, la carga de trabajo de administración de aplicaciones en Configuration Manager debe cambiarse a Intune para que el IME se instale en el dispositivo (se requiere el IME para el inventario de Win32 y la implementación de PowerShell). Tenga en cuenta que cualquier cambio o actualización en este comportamiento se anuncia en las secciones [en desarrollo p](../fundamentals/in-development.md) o [Novedades](../fundamentals/whats-new.md).
+> - Es posible que los dispositivos macOS de propiedad personal inscritos antes de noviembre de 2019 sigan mostrando todas las aplicaciones instaladas en el dispositivo hasta que los dispositivos se vuelvan a inscribir.
 
 El número de aplicaciones detectadas puede no coincidir con el recuento del estado de instalación de la aplicación. Estas son las posibles incoherencias:
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 59ba9ab5fb0ddeb527ed852de042568920cf38e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509183"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819712"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de inscripción de Intune para dispositivos Windows
 
@@ -42,7 +42,7 @@ Los usuarios pueden inscribir automáticamente sus dispositivos Windows mediante
 Si un administrador ha configurado la inscripción automática (disponible con suscripciones premium de Azure AD), el usuario solo tiene que escribir sus credenciales una sola vez. En caso contrario, tendrán que inscribirse por separado a través de la inscripción solo MDM y volver a escribir sus credenciales.  
 - La **inscripción solo MDM** permite a los usuarios inscribirse en un grupo de trabajo existente, Active Directory o PC unido a Azure Active Directory en Intune. Los usuarios se inscriben desde Configuración en el equipo Windows existente. Este método no se recomienda, ya que no registra el dispositivo en Azure Active Directory. Además, impide el uso de características como el acceso condicional.
 - [Unión a Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network): une el dispositivo con Azure Active Directory y permite que los usuarios inicien sesión en Windows con sus credenciales de Azure AD. Si está habilitada la inscripción automática, el dispositivo se inscribe automáticamente en Intune. La ventaja de la inscripción automática es que consiste en un proceso de un solo paso para el usuario. En caso contrario, tendrán que inscribirse por separado a través de la inscripción solo MDM y volver a escribir sus credenciales. Los usuarios se inscriben de esta manera durante la configuración rápida de Windows o desde Configuración. El dispositivo se marca como corporativo en Intune.
-- [Autopilot](enrollment-autopilot.md): automatiza la unión a Azure AD e inscribe nuevos dispositivos corporativos en Intune. Este método simplifica la experiencia de configuración rápida y elimina la necesidad de aplicar imágenes de sistema operativo personalizadas en los dispositivos. Cuando los administradores usan Intune para administrar dispositivos Autopilot, pueden administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos.  Hay cuatro tipos de implementación de Autopilot: el [modo de implementación automática](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (para quioscos multimedia, señalización digital o un dispositivo compartido), el [modo controlado por el usuario](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (para usuarios tradicionales), [Preferencial] (https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) que permite que los asociados o el personal de TI aprovisione de manera previa un equipo con Windows 10 totalmente configurado y listo para el negocio y [Autopilot para dispositivos existentes] (https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) que permite implementar fácilmente la versión más reciente de Windows 10 en los dispositivos existentes.
+- [Autopilot](enrollment-autopilot.md): automatiza la unión a Azure AD e inscribe nuevos dispositivos corporativos en Intune. Este método simplifica la experiencia de configuración rápida y elimina la necesidad de aplicar imágenes de sistema operativo personalizadas en los dispositivos. Cuando los administradores usan Intune para administrar dispositivos Autopilot, pueden administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos.  Hay cuatro tipos de implementación de Autopilot: el [modo de implementación automática](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (para quioscos multimedia, señalización digital o un dispositivo compartido), el [modo controlado por el usuario](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (para usuarios tradicionales), [Preferencial](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que los asociados o el personal de TI aprovisione de manera previa un equipo con Windows 10 totalmente configurado y listo para el negocio y [Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) que permite implementar fácilmente la versión más reciente de Windows 10 en los dispositivos existentes.
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Inscripción basada en administrador en Intune
 
