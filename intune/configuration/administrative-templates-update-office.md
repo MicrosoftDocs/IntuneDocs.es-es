@@ -103,7 +103,7 @@ En este momento, la directiva de Intune se aplica correctamente al dispositivo.
 
     Este ejemplo significa que la directiva aún no se ha aplicado, ya que todavía está establecida en **mensual**, en lugar de **semestral**.
 
-Esta clave del registro se actualiza cuando se ejecuta **Programador de tareas** > **	Actualizaciones automáticas de Office 2.0**, o cuando un usuario inicia sesión en el dispositivo. Para confirmarlo, abra la tarea **Actualizaciones automáticas de Office 2.0**  > **Desencadenadores**. En función de los desencadenadores, la clave del registro `UpdateChannel` puede tardar al menos un día o incluso más en actualizarse.
+Esta clave del registro se actualiza cuando se ejecuta **Programador de tareas** > **Actualizaciones automáticas de Office 2.0** , o cuando un usuario inicia sesión en el dispositivo. Para confirmarlo, abra la tarea **Actualizaciones automáticas de Office 2.0** > **Desencadenadores**. En función de los desencadenadores, la clave del registro `UpdateChannel` puede tardar al menos un día o incluso más en actualizarse.
 
 ## <a name="force-office-automatic-updates-to-run"></a>Forzado de la ejecución de actualizaciones automáticas de Office
 
@@ -169,7 +169,7 @@ Considere la posibilidad de usar estos pasos para probar la directiva antes de i
 
           ![Comprobación de la sección de versión del archivo XML de Office del descriptor de versión](./media/administrative-templates-update-office/office-version-descriptor-xml-example.png)
 
-4. Una vez instalada la actualización, la aplicación de Office debería mostrar la nueva versión (por ejemplo, en el menú  **Cuenta**).
+4. Una vez instalada la actualización, la aplicación de Office debería mostrar la nueva versión (por ejemplo, en el menú **Cuenta**).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
