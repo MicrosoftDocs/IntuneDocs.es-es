@@ -92,7 +92,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
      - [Windows Phone 8.1, Windows 8.1 y versiones posteriores](compliance-policy-create-windows-8-1.md)
      - [Windows 10 y versiones posteriores](compliance-policy-create-windows.md)  
 
-   - **Ubicaciones** *(administrador de dispositivos Android)*: En la directiva, puede forzar el cumplimiento según la ubicación del dispositivo. Elija entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se ofrecen algunas instrucciones.  
+   - **Ubicaciones** *(administrador de dispositivos Android)* : En la directiva, puede forzar el cumplimiento según la ubicación del dispositivo. Elija entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se ofrecen algunas instrucciones.  
 
    - **Acciones en caso de incumplimiento**: En el caso de los dispositivos que no cumplen con las directivas de cumplimiento, puede agregar una secuencia de acciones para aplicar de manera automática. Puede cambiar la programación cuando el dispositivo se marca como no conforme, por ejemplo, después de un día. También puede configurar una segunda acción que envía un correo electrónico al usuario cuando el dispositivo es no conforme.
 
@@ -100,7 +100,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
      Por ejemplo, se usa la característica Ubicaciones y se agrega una ubicación en una directiva de cumplimiento. La acción predeterminada en caso de incumplimiento se aplica cuando se selecciona al menos una ubicación. Si el dispositivo no está conectado a las ubicaciones seleccionadas, se considera de inmediato como no conforme. Puede dar a los usuarios un período de gracia, por ejemplo, un día.
 
-   - **Ámbito (etiquetas)**: Las etiquetas de ámbito son una excelente manera de filtrar las directivas por grupos específicos, como `US-NC IT Team` o `JohnGlenn_ITDepartment`. Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito a las directivas de cumplimiento. [Uso de etiquetas de ámbito para filtrar directivas](../fundamentals/scope-tags.md) es un recurso útil.
+   - **Ámbito (etiquetas)** : Las etiquetas de ámbito son una excelente manera de filtrar las directivas por grupos específicos, como `US-NC IT Team` o `JohnGlenn_ITDepartment`. Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito a las directivas de cumplimiento. [Uso de etiquetas de ámbito para filtrar directivas](../fundamentals/scope-tags.md) es un recurso útil.
 
 4. Cuando termine, seleccione **Aceptar** > **Crear** para guardar los cambios. La directiva se crea y se muestra en la lista. A continuación, asigne la directiva a los grupos.
 
@@ -122,7 +122,7 @@ Cuando asigna la directiva, también puede **evaluar** cuántos usuarios se ver�
 
 1. En Intune, seleccione **Dispositivos** > **Directivas de cumplimiento** > **Directivas**.
 
-2. Seleccione una *directiva > ***Asignaciones** > **Evaluar**. Un mensaje muestra a cuántos usuarios se aplica esta directiva.
+2. Seleccione una *directiva* > **Asignaciones** > **Evaluar**. Un mensaje muestra a cuántos usuarios se aplica esta directiva.
 
 Si el botón **Evaluar** está atenuado, asegúrese de que la directiva se asignó a uno o más grupos.
 
