@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6cc64c3a65af72fd74bc58ed7c06a214797510
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b3485a87120cbf565a275cefb38cfe3549ee31d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059462"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206455"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Uso de la aplicación Hacer un examen en dispositivos Windows 10 en Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Los perfiles de educación en Intune están diseñados para que los alumnos realicen una prueba o un examen en dispositivos. Esta característica incluye la aplicación **Hacer un examen** y la configuración para agregar una dirección URL de examen, elegir cómo los usuarios finales inician sesión en el examen, etc. Esta característica es compatible con la siguiente plataforma:
 

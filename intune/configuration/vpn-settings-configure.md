@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059306"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206285"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Creación de perfiles de VPN para conectarse a servidores VPN en Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Las redes privadas virtuales (VPN) ofrecen a los usuarios acceso remoto seguro a la red de la empresa. Los dispositivos usan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Los **perfiles de VPN** de Microsoft Intune asignan la configuración de VPN a los usuarios y dispositivos de la organización, para que puedan conectarse de forma fácil y segura a la red de la empresa.
 
@@ -49,7 +49,7 @@ Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 |Automático|Windows 10|
 |Check Point Capsule VPN|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Cisco AnyConnect|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS<br/>- macOS|
-|Cisco (IPSec)|iOS|
+|Cisco (IPsec)|iOS|
 |SSO de Citrix|- Android<br/>- Perfiles de trabajo de Android Enterprise: uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado): uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |VPN personalizada|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|

@@ -3,10 +3,10 @@ title: Transferencia local de aplicaciones de Windows y Windows Phone
 titleSuffix: Microsoft Intune
 description: Aprenda a firmar aplicaciones de línea de negocios de modo que pueda usar Intune para implementarlas.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/24/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,12 +16,12 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414702"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691841"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firma de aplicaciones de línea de negocio para que se puedan implementar en dispositivos Windows con Intune
 
@@ -67,7 +67,7 @@ El certificado usado para implementar aplicaciones móviles de Windows Phone 8
 
 ## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>Instalación del certificado actualizado para aplicaciones de línea de negocio (LOB)
 
-Windows Phone 8,1
+Windows Phone 8.1
 
 El servicio Intune ya no puede implementar aplicaciones de LOB para esta plataforma una vez que expire el certificado de firma de código de Symantec Mobile Enterprise existente. Todavía será posible realizar la instalación de prueba de archivos XAP/APPX sin firmar mediante una tarjeta SD o descargando el archivo en el dispositivo. Para obtener más información consulte [Instalación de archivos XAP en Windows Phone](https://answers.microsoft.com/en-us/mobiledevices/forum/mdlumia-mdapps/how-to-install-xap-file-in-windows-phone-8/da09ee72-51ae-407c-9b85-bc148df89280).
 

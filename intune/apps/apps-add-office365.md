@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563676"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205979"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adición de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -158,7 +158,7 @@ En el directorio *Microsoft Office 15*, se almacenan los archivos del iniciador
 
 La instalación se realizará en modo silencioso si la asignación del conjunto de O365 se configura según sea necesario. Los archivos de instalación descargados se eliminarán una vez que la instalación se haya realizado correctamente. Si la asignación se configura como **disponible**, las aplicaciones de Office aparecerán en la aplicación Portal de empresa para que los usuarios finales puedan desencadenar la instalación manualmente.
 
-## <a name="troubleshooting"></a>Solucionar problemas
+## <a name="troubleshooting"></a>Solución de problemas
 Intune utiliza la [Herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) para descargar e implementar Office 365 ProPlus en los equipos cliente mediante la red [CDN de Office 365](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Consulte los procedimientos recomendados que se describen en [Administración de puntos de conexión de Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) para asegurarse de que la configuración de red permite a los clientes tener acceso a la red CDN directamente en lugar de enrutar el tráfico de la red CDN a través de servidores proxy centrales para evitar la introducción de una latencia innecesaria.
 
 Ejecute el [Asistente de soporte y recuperación para Office 365 de Microsoft](https://diagnostics.office.com) en un dispositivo específico si tiene problemas de instalación o de ejecución.
@@ -197,7 +197,7 @@ Cuando pueda concluir que tanto Intune como la infraestructura de red funcionan 
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Errores durante la instalación del conjunto de aplicaciones
 
-Consulte [How to enable Office 365 ProPlus ULS logging](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) (Habilitación del registro de ULS de Office 365 ProPlus) para obtener información sobre cómo ver los registros de instalación detallados.
+Consulte [How to enable Office 365 ProPlus ULS logging](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging) (Habilitación del registro de ULS de Office 365 ProPlus) para obtener información sobre cómo ver los registros de instalación detallados.
 
 En la tabla siguiente se muestran los códigos de error comunes que podría encontrar y su significado.
 

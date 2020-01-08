@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059514"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206948"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Actualización de las ediciones de Windows 10 o desactivación del modo S en dispositivos con Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Como parte de su solución de administración de dispositivos móviles (MDM), puede que le interese actualizar sus dispositivos Windows 10. Por ejemplo, puede actualizar los dispositivos Windows 10 Professional a Windows 10 Enterprise. O bien, quiere que el dispositivo desactive el modo S.
 
@@ -61,18 +61,18 @@ En la siguiente tabla, se muestran las rutas de actualización admitidas para el
 
 | Actualización de | Actualización a |
 |---|---|
-| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
+| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
 | Edición Windows 10 Pro N | Edición Windows 10 Education N <br/>Edición Windows 10 Enterprise N <br/>Edición Windows 10 Pro Education N | 
 | Windows 10 Pro Education | Windows 10 Education | 
 | Edición Windows 10 Pro Education N | Edición Windows 10 Education N |
-| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
+| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
 | Edición Windows 10 Cloud N | Edición Windows 10 Education N <br/>Edición Windows 10 Enterprise N <br/>Edición Windows 10 Pro N <br/>Edición Windows 10 Pro Education N | 
-| Windows 10 Enterprise | Windows 10 Education | 
+| Windows 10 Enterprise | Windows 10 Education | 
 | Edición Windows 10 Enterprise N | Edición Windows 10 Education N | 
-| Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
+| Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
 | Edición Windows 10 Core N | Edición Windows 10 Education N <br/>Edición Windows 10 Enterprise N <br/>Edición Windows 10 Pro Education N | 
 | Windows 10 Holographic | Windows 10 Holographic for Business |
-| Windows 10 Mobile | Windows 10 Mobile Enterprise |
+| Windows 10 Mobile | Windows 10 Mobile Enterprise |
 
 <!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
 

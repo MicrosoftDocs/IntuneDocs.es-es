@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860390"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206676"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
@@ -99,7 +99,7 @@ Para más información sobre las etiquetas de ámbito y lo que puede hacer el us
 
 ### <a name="add-a-scope-tag"></a>Incorporación de una etiqueta de ámbito
 
-1. Seleccione **Ámbito (etiquetas)**.
+1. Seleccione **Ámbito (etiquetas)** .
 2. Seleccione **Agregar** para crear una etiqueta de ámbito. O seleccione una etiqueta de ámbito existente en la lista.
 3. Haga clic en **Aceptar** para guardar los cambios.
 

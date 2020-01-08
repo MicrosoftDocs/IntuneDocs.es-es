@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562409"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324872"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Acciones y opciones de Intune compatibles con la inscripción de usuarios de Apple
 
@@ -38,7 +38,7 @@ En los dispositivos de inscripción de usuarios, si configura cualquier opción 
 
 Por ejemplo, configura el valor **Caducidad de la contraseña** e inserta esta directiva en dispositivos con usuarios inscritos. En los dispositivos, ocurre lo siguiente:
 - Se omite el valor de **Caducidad de la contraseña**.
-- No se permiten contraseñas sencillas, como `1111` o `1234`.
+- No se permiten contraseñas sencillas, como `111111` o `123456`.
 - Se aplica un PIN de 6 dígitos.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Opciones y acciones de dispositivo remoto de administrador

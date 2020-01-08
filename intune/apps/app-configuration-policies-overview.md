@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d17c15a2a32f828c5715dfad51f34c5e531e76
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507553"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692188"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
@@ -164,7 +164,7 @@ Para recopilar registros de un dispositivo Android, usted o el usuario final deb
 
 Puede usar Graph API para realizar tareas de configuración de aplicaciones. Para obtener más información, consulte la [referencia sobre Graph API para la configuración de destino de MAM](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
-## <a name="troubleshooting"></a>Solucionar problemas
+## <a name="troubleshooting"></a>Solución de problemas
 
 ### <a name="using-logs-to-show-a-configuration-parameter"></a>Uso de registros para mostrar un parámetro de configuración
 Cuando los registros muestran un parámetro de configuración que se confirma que se está aplicando pero parece no funcionar, es posible que haya un problema con la implementación de la configuración por parte del desarrollador de la aplicación. Ponerse en contacto primero con el desarrollador de la aplicación, o bien comprobar su base de conocimiento, puede ahorrarle una llamada al servicio de soporte técnico de Microsoft. Si se trata de un problema con la forma de controlar la configuración en una aplicación, tendría que solucionarse en una futura versión actualizada de esa aplicación.

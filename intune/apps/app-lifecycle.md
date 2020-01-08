@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 97e70191ed133d9427a3c8565d1dbf03573b628b
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414736"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692229"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Información general sobre el ciclo de vida de la aplicación en Microsoft Intune
 
@@ -45,7 +45,7 @@ Como parte del ciclo de vida de la aplicación, periódicamente se publican nuev
 - Las [directivas de configuración de aplicaciones iOS](app-configuration-policies-use-ios.md) proporcionan valores para aplicaciones iOS compatibles que se usan cuando se ejecuta la aplicación. Por ejemplo, es posible que una aplicación necesite una configuración de marca concreta o el nombre de un servidor al que se debe conectar.
 - Las [directivas de explorador administrado](app-configuration-managed-browser.md) ayudan a configurar los valores del explorador administrado de Intune que reemplaza al explorador de dispositivos predeterminado y que permite restringir los sitios web que pueden visitar los usuarios.
 
-## <a name="protect"></a>Proteger
+## <a name="protect"></a>Protección
 
 Intune ofrece muchas maneras de ayudar a proteger los datos de las aplicaciones. Los métodos principales son:
 

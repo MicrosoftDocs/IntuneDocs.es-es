@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d24d1c7dbae12fb33ec277419b1bbfd47b46b07
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504768"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548061"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune es un proveedor de MDM y MAM para los dispositivos.
 
@@ -34,7 +34,7 @@ Vea una [versión ampliada](./media/what-is-intune/intunearchitecture.svg) del d
 
 Intune permite:
 
-- Elegir estar al 100 % en una nube con Intune, o aplicar una [administración conjunta](https://docs.microsoft.com/sccm/comanage/overview) con Configuration Manager e Intune.
+- Elegir estar al 100 % en una nube con Intune, o aplicar una [administración conjunta](https://docs.microsoft.com/configmgr/comanage/overview) con Configuration Manager e Intune.
 - Establecer reglas y configurar los valores de los dispositivos personales y de la organización para tener acceso a los datos y las redes.
 - Implementar y autenticar aplicaciones en dispositivos, tanto locales como móviles.
 - Proteger la información de su empresa controlando el modo en que los usuarios acceden a la información y la comparten.

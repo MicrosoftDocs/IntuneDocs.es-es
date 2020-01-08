@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899407"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205537"
 ---
 # <a name="intune-discovered-apps"></a>Aplicaciones descubiertas de Intune
 
@@ -54,11 +54,11 @@ En la lista siguiente se proporciona el tipo de plataforma de aplicaciones, las 
 
 | Plataforma | Para dispositivos personales | Para dispositivos propiedad de la empresa | Ciclo de actualización |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Nota de Windows 10 (aplicaciones Win32): [Requiere la Extensión de administración de Intune](intune-management-extension.md) en el dispositivo | No aplicable | Todas las aplicaciones Win32 encontradas en la lista Agregar o quitar programas | Cada 24 horas a partir de la inscripción del dispositivo |
+| Nota de Windows 10 (aplicaciones Win32): [Requiere la Extensión de administración de Intune](intune-management-extension.md) en el dispositivo | No aplicable | Solo aplicaciones administradas | Cada 24 horas a partir de la inscripción del dispositivo |
 | Windows 10 (aplicaciones modernas) | Solo aplicaciones modernas administradas | Todas las aplicaciones modernas instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
 | Windows 8.1 | Solo aplicaciones administradas | Solo aplicaciones administradas | Cada 7 días a partir de la inscripción de dispositivos |
-| Windows Phone 8 | Solo aplicaciones administradas | Solo aplicaciones administradas | Cada 7 días a partir de la inscripción de dispositivos |
-| Windows RT | Solo aplicaciones administradas | Solo aplicaciones administradas | Cada 7 días a partir de la inscripción de dispositivos |
+| Windows Phone 8 | Solo aplicaciones administradas | Solo aplicaciones administradas | Cada 7 días a partir de la inscripción de dispositivos |
+| Windows RT | Solo aplicaciones administradas | Solo aplicaciones administradas | Cada 7 días a partir de la inscripción de dispositivos |
 | iOS | Solo aplicaciones administradas | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
 | macOS | Solo aplicaciones administradas | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |
 | Android | Solo aplicaciones administradas | Todas las aplicaciones instaladas en el dispositivo | Cada 7 días a partir de la inscripción de dispositivos |

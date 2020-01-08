@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059825"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206234"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Uso de un perfil de dispositivo personalizado para crear un perfil Wi-Fi con una clave precompartida en Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Las claves precompartidas se suelen usar para autenticar a los usuarios en redes Wi-Fi o en redes LAN inalámbricas. Con Intune, puede crear un perfil de Wi-Fi con una clave precompartida. Para crear el perfil, utilice la característica **Personalizar perfiles de dispositivo** en Intune. En este artículo también se incluyen algunos ejemplos de cómo crear un perfil de Wi-Fi basado en EAP.
 
