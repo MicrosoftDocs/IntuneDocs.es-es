@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059943"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207118"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configuración de un servicio de administración de gastos de telecomunicaciones en Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Con Intune, puede administrar gastos de telecomunicaciones a partir del uso de datos en los dispositivos móviles propiedad de la organización. Intune se integra con el servicio de [administración de gastos de telecomunicaciones Datalert](http://datalert.biz/get-started) de Saaswedo. Datalert es una solución de administración de gastos de telecomunicaciones en tiempo real que le permite administrar el uso de datos de telecomunicaciones. Esta solución puede ayudarlo a evitar costosos e inesperados cargos por datos e itinerancia en sus dispositivos administrados por Intune.
 
