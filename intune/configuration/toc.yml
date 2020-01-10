@@ -5,11 +5,15 @@
   items:
     - name: Información general sobre la configuración de dispositivo
       href: device-profiles.md
-- name: Inicios rápidos
+- name: Guías de inicios rápidos
   items:
     - name: Crear un perfil de dispositivo de correo
       href: quickstart-email-profile.md
-- name: Guías paso a paso
+- name: Tutoriales
+  items:
+    - name: Creación de una plantilla administrativa
+      href: tutorial-walkthrough-administrative-templates.md
+- name: Guías de procedimientos
   items:
     - name: Creación de un perfil
       href: device-profile-create.md
@@ -27,7 +31,7 @@
     - name: Configuración del BIOS en Windows
       href: device-firmware-configuration-interface-windows.md
       displayName: 'DFCI, firmware'
-    - name: Updates
+    - name: Actualizaciones
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
     - name: Actualización de ediciones y modo S
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: Red cableada
-              href: wired-network-settings-macos.md
             - name: Personalizada
               href: custom-settings-macos.md
         - name: Windows 10 y versiones posteriores
@@ -197,7 +199,7 @@
               href: vpn-settings-windows-8-1.md
             - name: Importación de Wi-Fi
               href: wi-fi-settings-import-windows-8-1.md
-        - name: 'Windows Phone 8,1'
+        - name: Windows Phone 8.1
           items:
             - name: Restricciones de dispositivos
               href: device-restrictions-windows-phone-8-1.md
