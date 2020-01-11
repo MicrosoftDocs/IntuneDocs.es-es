@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c0809f4ed50af4a7417e8237296f657669f3300
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fa3d400174079a0b187d7906c3d39ebeb0022022
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508044"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857492"
 ---
 # <a name="install-lookout-for-work"></a>Instalación de Lookout for Work
 
@@ -32,13 +32,13 @@ Si tiene problemas con la instalación, pruebe los pasos de solución de problem
 
 ## <a name="what-you-need-to-do"></a>Haga lo siguiente
 
-1. Arrastre hacia abajo desde la parte superior de la pantalla para abrir la barra de notificaciones y, después, pulse **Aplicación requerida: instalar Lookout for Work desde Play Store**.
+1. Arrastre hacia abajo en la parte superior de la pantalla para abrir la barra de Notificaciones y, a continuación, seleccione **Aplicación requerida: instale Lookout for Work desde la Play Store**.
 
    ![necesita instalar Lookout for Work](./media/lookout-required-app-install-android.png)
 
 2. Se le dirigirá a la página de instalación de Lookout for Work en Play Store. Instale Lookout for Work y, después, pulse **Aceptar** para permitir que Lookout for Work tenga acceso a su dispositivo.
 
-   ![pulse Aceptar para permitir que Lookout for Work tenga acceso a su dispositivo](./media/lookout-accept-store-permissions-android.png)
+   ![seleccione Aceptar para permitir el acceso de Lookout for Work a su dispositivo](./media/lookout-accept-store-permissions-android.png)
 
 3. Abra Lookout for Work y, después, pulse **ACTIVAR**.
 
@@ -79,5 +79,5 @@ Si tiene problemas con la instalación, pruebe los pasos de solución de problem
 A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, pruebe a instalar Lookout for Work [manualmente desde Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 

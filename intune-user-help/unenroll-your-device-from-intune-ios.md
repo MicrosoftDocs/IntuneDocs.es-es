@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb8aa6213585af89c20c45f38e885644f65eab51
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: bd5384945158f3d0ef3035eaf9bc2f8375d8b153
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508098"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859022"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Quitar un dispositivo iOS de Intune
 
@@ -76,4 +76,4 @@ El Portal de empresa almacena los datos locales en tres ubicaciones del disposit
 - **Cadena de claves**: el dispositivo almacena en la cadena de claves las contraseñas y otra información que se usa para inicios de sesión. Las aplicaciones de Microsoft comparten la información de inicio de sesión con todas las aplicaciones desarrolladas por Microsoft que haya en el dispositivo, como Microsoft Outlook y Microsoft Authenticator. Al igual que con el análisis de Apple, la única manera de quitar esta información es restablecer el dispositivo a la configuración de fábrica. Esto borrará toda la información personal en el dispositivo. Para ello, abra **Ajustes** > **General** > **Restablecer** > **Borrar contenidos y ajustes**.
 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce4d5e12b051c519864a918df0f8157af8a1a35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: a13659fab04c4324cd7c6434dab002201e9e8aea
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505903"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857526"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Necesita identificar el dispositivo cuando está intentando la inscripción
 
@@ -34,4 +34,4 @@ Si intenta inscribir el dispositivo iOS en Intune y ve una pantalla que le pide 
 2. Pulse **continuar**.
 3. Escriba los cuatro últimos caracteres del número de serie del dispositivo para ayudar a Intune a confirmar que el dispositivo está inscrito. Para encontrar el número de serie, vea [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md) (¿Cómo se puede encontrar el número de serie de un dispositivo?).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

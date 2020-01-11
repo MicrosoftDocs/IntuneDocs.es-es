@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2319fb0d1198289398912793e52482bf66d87173
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506988"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206846"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Solucionar problemas y ver los posibles problemas en los dispositivos Android Zebra en Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 En Microsoft Intune, puede usar [las extensiones de movilidad Zebra (mx) para administrar dispositivos Android Zebra](android-zebra-mx-overview.md). Cuando se usan dispositivos Zebra, se crean perfiles en StageNow para administrar la configuración y cargarlos en Intune. Intune usa la aplicación StageNow para aplicar la configuración en los dispositivos. La aplicación StageNow también crea un archivo de registro detallado en el dispositivo que se usa para solucionar problemas.
 
