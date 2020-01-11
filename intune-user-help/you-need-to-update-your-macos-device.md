@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa96feb14e2aa35b8b0426702ce7b4ef89fae99
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 19648b23e0e65064e822aab15acd121d77a5a355
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507705"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857194"
 ---
 # <a name="your-macos-device-doesnt-have-the-required-minimum-operating-system-version"></a>El dispositivo macOS no tiene la versión necesaria mínima del sistema operativo
 
@@ -32,4 +32,4 @@ ms.locfileid: "72507705"
 
 Actualice el dispositivo macOS al hacer clic en **App Store** > **Actualizaciones**. Seleccione la actualización más reciente de macOS que haya disponible y luego haga clic en el botón **Actualizar**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

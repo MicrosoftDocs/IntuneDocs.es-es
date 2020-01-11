@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b8da85deae3113995e2836d6af924c5e8938e6ec
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508006"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858954"
 ---
 # <a name="configure-logging-settings"></a>Configurar opciones de registro
 
@@ -37,7 +37,7 @@ Configure las opciones de registro para permitir que las aplicaciones Portal de 
 El registro detallado registra todas las acciones que se realizan en la aplicación Portal de empresa. Está habilitado en el dispositivo de forma predeterminada. Para desactivar el registro detallado en Portal de empresa:  
 
 1. Inicie sesión en la aplicación Portal de empresa.
-2. Puntee en **configuración**.
+2. Pulse **Configuración**.
 3. Junto a **registro detallado**, gire el conmutador a **desactivado**.
 
 ## <a name="configure-microsoft-intune-app-logging"></a>Configurar el registro de Microsoft Intune aplicación
@@ -49,4 +49,4 @@ En la aplicación Microsoft Intune, puede configurar el nivel de detalles de reg
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

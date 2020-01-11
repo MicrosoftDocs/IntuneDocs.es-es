@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: coferro
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68f67d50c05d2ec6bb819c507f2374eec69a961c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 85e35707af0ea47169a5d075bfc4844ebaa87c5c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508437"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858194"
 ---
 # <a name="reset-device-from-company-portal-website"></a>Restablecer dispositivo desde Portal de empresa sitio web
 
@@ -51,4 +51,4 @@ El restablecimiento del dispositivo en el Portal de empresa no está disponible 
 
 4. Un mensaje le advierte de que está a punto de borrar todo el contenido del dispositivo. Pulse **Restablecer** para confirmar.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

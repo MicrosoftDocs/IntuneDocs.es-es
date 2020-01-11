@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 574e5beec2b3eff67b44ba56c0d0a4bd25df7615
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 00d86de430d37e1f646fa103c78512bc46c47ab3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505737"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854264"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Cómo instalar la red privada virtual (VPN) de la empresa
 
@@ -37,4 +37,4 @@ Si el equipo de soporte técnico de su empresa ha configurado una aplicación de
 3. Pulse en **Install corporate VPN profile** (Instalar el perfil de VPN corporativo) y siga las indicaciones. Los pasos de instalación pueden variar un poco, en función del proveedor de VPN que use su empresa.
 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

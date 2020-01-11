@@ -18,16 +18,16 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4aca6fde21419d6ae1ca95d5a9aac5ab7f83d99
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f6ac3399a4de4fe7372eca20f20eda61aa0dd23e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505834"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854949"
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Cómo volver a conectar un dispositivo Android en riesgo
 
 El equipo de soporte técnico de su empresa ha detectado que está usando un dispositivo desbloqueado. Por "descifrado" se entiende que el dispositivo se ha cambiado para permitir el acceso al sistema operativo, lo que puede poner en riesgo la seguridad y podría ser una amenaza para los recursos de la empresa. Cuando esto sucede, el dispositivo ya no puede obtener acceso a los recursos de la empresa.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.
+¿Aún necesita ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.

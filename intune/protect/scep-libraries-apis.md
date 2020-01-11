@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058232"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206982"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Uso de API para agregar entidades de certificación de terceros para SCEP en Intune
 
@@ -202,7 +202,7 @@ Parámetros:
 
     - transactionId           Id. de transacción de SCEP
     - certificateRequest     Cadena codificada en Base64 de solicitud de certificado PKCS #10 con codificación DER
-    - certThumprint          Huella digital del certificado aprovisionado
+    - certThumprint hash SHA1 de la huella digital del certificado aprovisionado
     - certSerialNumber       Número de serie del certificado aprovisionado
     - certExpirationDate     Fecha de expiración del certificado aprovisionado La cadena de fecha y hora debe tener el formato web de hora UTC (AAAA-MM-DDThh:mm:ss.sssTZD) ISO 8601.
     - certIssuingAuthority    Nombre de la entidad que ha emitido el certificado
@@ -300,7 +300,7 @@ Es obligatorio validar y comprobar que la solución se integra correctamente con
 12. Confirme que las propiedades de los certificados instalados coinciden con las propiedades establecidas en el perfil SCEP.
 13. Confirme que los certificados emitidos aparecen correctamente en la consola de Intune.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general para agregar entidades de certificación de terceros](certificate-authority-add-scep-overview.md)
 - [Configuración de Intune](../fundamentals/setup-steps.md)

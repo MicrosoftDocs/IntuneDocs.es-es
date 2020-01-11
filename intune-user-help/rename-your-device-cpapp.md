@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fab7a0a544a3dafc08ff1e635e49407825fb67d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: d9c7ea229e531e70d64b20f22834c4084eb695ea
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502152"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858280"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Cambio de nombre del dispositivo desde la aplicación Portal de empresa para Windows
 Cambie el nombre de un dispositivo para que sea más fácil de reconocer entre otros dispositivos. La aplicación Portal de empresa para Windows permite cambiar el nombre de los siguientes tipos de dispositivos conectados:  
@@ -60,5 +60,5 @@ Realice el paso siguiente para quitar un dispositivo mediante las acciones del [
 
      ![Captura de pantalla de ejemplo de la página principal de la aplicación Portal de empresa para Windows. El campo emergente Cambiar nombre aparece sobre el dispositivo. Allí, el usuario puede escribir un nombre nuevo y hacer clic en Cambiar nombre o Cancelar.](./media/1808_RenameApp_Popup.png)  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 

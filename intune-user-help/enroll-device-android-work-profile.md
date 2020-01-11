@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210eb94cf77ac703076611d2c0c06c60a12cb0ed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: ced722fd671826e828b4dd79956a7dad1010bd84
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414952"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856758"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Inscribir dispositivos con perfil profesional Android
 
@@ -83,4 +83,4 @@ Puede encontrar más información sobre [¿Qué ocurre cuando se crea un perfil 
 
 Ahora que el dispositivo está inscrito, puede instalar las aplicaciones escolares o de trabajo en el dispositivo. Vaya al almacén de Google Play administrado para buscar e instalar estas aplicaciones. 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309672805b89275e3a9aef7fae6b20754a923916
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc7d9b3127f5a6424ab31652f7bdfa8e6488f6ff
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500719"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858645"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver una amenaza detectada por Lookout for Work  
 
@@ -54,5 +54,5 @@ Si instala una aplicación que Lookout for Work identifica como una amenaza, rec
 ![Captura de pantalla de ejemplo en la que se muestra una lista de amenazas de aplicación Activas y Resueltas detectadas por Lookout for Work.](./media/ios-lfw-threat-example.png)    
 Seleccione el nombre de la aplicación que se muestra en la parte superior de la pantalla. Después, siga las instrucciones para quitar y desinstalar la aplicación. Mientras la aplicación esté en el dispositivo, no podrá acceder a los recursos de la empresa.    
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    
+¿Aún necesita ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    
 
