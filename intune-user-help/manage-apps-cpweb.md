@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e9258b151c868c0f01b419631dbfcc5fc4d6b144
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506100"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854284"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Administrar aplicaciones desde el sitio web del Portal de empresa 
 Visite el [sitio web de portal de empresa](https://portal.manage.microsoft.com) para ver y administrar aplicaciones de su organización. 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7674366cc0332afd8eba2a4f145f47e40d5472e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 4cca8d649dbd64b0334dfbc83bbd75f2a0e36f3d
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508460"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858263"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Cambiar el nombre de un dispositivo desde el sitio web del Portal de empresa
 
@@ -44,4 +44,4 @@ Cambie el nombre del dispositivo administrado inscrito desde el sitio web del Po
 
 4. En el cuadro donde aparece el nombre del dispositivo, escriba el nombre nuevo. Después, pulse el botón **Cambiar nombre**. El dispositivo aparece ahora con el nuevo nombre.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547701"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653944"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -105,7 +105,7 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Bloquear captura de pantalla (solo Android)|X|X|
 |Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
 |Borrado completo de datos de aplicaciones|X|X|
-|Borrado selectivo de datos profesionales y educativos en escenarios de identidades múltiples <br><br>**Nota**: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
+|Borrado selectivo de datos profesionales y educativos en escenarios de identidades múltiples <br><br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
 |Impedir "Guardar como"|X||
 |Configuración de la aplicación de destino (o configuración de la aplicación a través del "canal de MAM")|X||
 |Compatibilidad con aplicaciones de identidades múltiples|X||

@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92d81e383a9964aaecbdd151397879236ffcb726
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72493561"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206438"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configuración del dispositivo Android Enterprise para definir el correo electrónico, la autenticación y la sincronización en Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 En este artículo se enumeran y describen las diferentes opciones de configuración de correo electrónico que puede controlar en los dispositivos Android Enterprise. Como parte de su solución de administración de dispositivos móviles (MDM), use estos valores de configuración para configurar un servidor de correo electrónico, usar SSL para cifrar correos electrónicos y mucho más.
 
@@ -43,18 +43,18 @@ Cree un [Perfil de configuración de dispositivo](email-settings-configure.md#cr
 - **Servidor de correo electrónico**: el nombre de host del servidor de Exchange. Por ejemplo, escriba `outlook.office365.com`.
 - **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (Azure AD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Las opciones son:
 
-  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`.
+  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`
   - **Nombre de usuario**: obtiene solo el nombre, como `user1`.
 
-- **Atributo de dirección de correo electrónico de AAD**: este nombre es el atributo de correo electrónico que Intune obtiene de Azure Active AD. Intune genera dinámicamente la dirección de correo electrónico que este perfil usa. Las opciones son:
-  - **Nombre principal de usuario**: usa el nombre principal completo, como `user1@contoso.com` o `user1`, como dirección de correo electrónico.
-  - **Dirección SMTP principal**: usa la dirección SMTP principal, como `user1@contoso.com`, para iniciar sesión en Exchange.
+- **Atributo de dirección de correo electrónico de AAD**: este nombre es el atributo de correo electrónico que Intune obtiene de Azure AD. Intune genera dinámicamente la dirección de correo electrónico que este perfil usa. Las opciones son:
+  - **Nombre principal de usuario**:  usa el nombre principal completo, como `user1@contoso.com` o `user1`, como dirección de correo electrónico.
+  - **Dirección SMTP principal**: use la dirección SMTP principal, como `user1@contoso.com`, para iniciar sesión en Exchange.
 
-- **Método de autenticación**: seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico.
+- **Método de autenticación**: Seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que el perfil de correo electrónico usa.
   - Si seleccionó **Certificado**, seleccione un SCEP cliente o un perfil de certificado PKCS que haya creado anteriormente para autenticar la conexión de Exchange.
-- **SSL**: elija **Habilitar** para usar la comunicación de Capa de sockets seguros (SSL) al enviar y recibir correos electrónicos, y comunicarse con el servidor Exchange.
-- **Cantidad de correo electrónico para sincronizar**: elija la cantidad de tiempo de correo electrónico que quiere sincronizar. También puede seleccionar **Ilimitado** para sincronizar todo el correo electrónico disponible.
-- **Tipo de contenido para sincronizar** (solo Nine Work): elija qué datos quiere sincronizar en los dispositivos. Las opciones son:
+- **SSL**: elija **Habilitar** para usar la comunicación de Capa de sockets seguros (SSL) al enviar y recibir correos electrónicos y comunicarse con el servidor Exchange.
+- **Cantidad de correo electrónico para sincronizar**: elija la cantidad de tiempo de correo electrónico que desea sincronizar. También puede seleccionar **Ilimitado** para sincronizar todo el correo electrónico disponible.
+- **Tipo de contenido para sincronizar** (solo Nine Work): elija qué datos desea sincronizar en los dispositivos. Las opciones son:
   - **Contactos**: elija **Habilitar** para permitir que los usuarios finales sincronicen contactos con sus dispositivos.
   - **Calendario**: elija **Habilitar** para permitir que los usuarios finales sincronicen el calendario con sus dispositivos.
   - **Tareas**: elija **Habilitar** para permitir que los usuarios finales sincronicen todas las tareas con sus dispositivos.

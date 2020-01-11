@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18a4a0bc5f61953dba2e0eae79e2aadf9cd8251
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 32ad2a4f2371bff6d40ef224f0723fedb316aa37
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506095"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855380"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente encontrado
 
@@ -47,4 +47,4 @@ Estos pasos garantizarán que el dispositivo cumple los requisitos de seguridad 
 
 6. Inicie sesión con su cuenta de correo electrónico profesional o educativa.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, consulte el [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

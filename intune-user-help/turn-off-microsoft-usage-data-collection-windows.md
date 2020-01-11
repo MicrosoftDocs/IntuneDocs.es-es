@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d95ed9c7e468c397c28b82e21163e78e2e48e60
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: df5c26e3465c7f7734b311aac45ea56f681901ea
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508165"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857717"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Cómo desactivar la recopilación de datos de Microsoft
 
@@ -32,4 +32,4 @@ Microsoft recopila automáticamente determinados datos sobre nuestros productos 
 
 Si quiere desactivar la recopilación de datos en el dispositivo Windows, busque la opción de configuración **Datos de uso** en la aplicación de portal de empresa.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

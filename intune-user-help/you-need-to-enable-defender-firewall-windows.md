@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e812966118ed694e3f764b56ce1759f157e8db83
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 07d879e6485a8303152dd17794d1207cb71d3500
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507873"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857383"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Activar el Firewall de Windows Defender
 
@@ -34,4 +34,4 @@ Su empresa o centro educativo quiere asegurarse de que los dispositivos que tien
 2. Abra **Sistema y seguridad** > **Firewall de Windows Defender**.
 3. Elija **Personalizar configuración** > **Activar o desactivar Firewall de Windows** para redes públicas, privadas y de dominio.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, consulte el [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

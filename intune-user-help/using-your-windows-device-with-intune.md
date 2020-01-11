@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5accdf3699770444b7aafeb39d431755f9d3ba9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: a7eaf8e1cf17624491824ddf3f8911757eea9080
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501823"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857578"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Uso del dispositivo Windows con Portal de empresa de Intune
 
@@ -35,7 +35,7 @@ El Portal de empresa está disponible en la versión de sitio web y también com
 
 Vea [¿Cómo puedo iniciar sesión en la aplicación Portal de empresa?](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) para conocer los pasos detallados y ver capturas de pantalla.
 
-## <a name="supported-versions"></a>Versiones compatibles
+## <a name="supported-versions"></a>Versiones admitidas
 
 El Portal de empresa actualmente admite dispositivos que ejecutan estas versiones de Windows:
 

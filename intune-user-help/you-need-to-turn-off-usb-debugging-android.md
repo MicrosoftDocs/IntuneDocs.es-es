@@ -17,13 +17,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 397244755457e784899438d307053bdf6f754fd0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: a0e02e2f539c24665cb326ea7d6d4f9aadb5d57e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500469"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858480"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>Tiene que desactivar la depuración USB
 
@@ -33,4 +33,4 @@ Puede desactivar la depuración USB dirigiéndose a **Configuración** > **Opcio
 
 Después de desactivar **Depuración USB**, espere unos minutos para poder seguir usando el dispositivo Android para acceder a los datos profesionales o educativos como de costumbre.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

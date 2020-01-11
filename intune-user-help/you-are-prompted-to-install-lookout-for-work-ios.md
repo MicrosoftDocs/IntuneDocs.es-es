@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06004989a092da79c7f3b929e55386565712a68a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 83e593b225674e46cf2607058bb313ceb0aa8427
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501684"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858750"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Instalación de Lookout for Work en su dispositivo iOS
 
@@ -58,5 +58,5 @@ Para poder obtener acceso a su trabajo, su empresa necesita que instale la aplic
 
 A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, pruebe a instalar Lookout for Work [manualmente desde el App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 

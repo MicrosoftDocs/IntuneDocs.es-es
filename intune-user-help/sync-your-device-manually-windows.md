@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 289d99603314be7c1097d54d59d4a0e90cae0bed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 81a284b686ebfddcc89336e4a98060fb63666390
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508335"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857919"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronización manual del dispositivo Windows
 
@@ -136,7 +136,7 @@ Estas instrucciones se aplican a los dispositivos HoloLens que ejecutan la Actua
 
 3. Seleccione la cuenta conectada > **Sincronizar**.  ![Captura de pantalla de la aplicación de configuración de HoloLens, con el botón de sincronización resaltado](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
-### <a name="windows-phone-81"></a>Windows Phone 8,1
+### <a name="windows-phone-81"></a>Windows Phone 8.1
 
 1. Vaya a **Todas las aplicaciones** > **Configuración** > **Área de trabajo**.
 
@@ -150,4 +150,4 @@ Estas instrucciones se aplican a los dispositivos HoloLens que ejecutan la Actua
 
     ![Elección del icono Sincronizar](./media/wp81-3-sync-tap-sync-button.png)
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

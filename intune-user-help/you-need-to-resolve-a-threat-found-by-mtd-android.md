@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9df7b5e1386b5731b9c2bc82e70a1bc7c8dfa744
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 065f1e23d2c49d8ae7fd0c22924cb6c21c2891b0
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507797"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857330"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Resolver una amenaza detectada por una aplicación de Mobile Threat Defense
 
@@ -43,6 +43,6 @@ A continuación se muestran los servicios de Mobile Threat Defense específicos 
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)  
 
-  ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, vaya al [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+  ¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, vaya al [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bcc4821047068ed836d41c0e69e7aa53ea42efd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 46ffbc8aa4e2155be19fe7b9aa8c4494e9f0f92c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505943"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857561"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>¿Qué ocurre cuando se crea un perfil de trabajo?
 
@@ -47,4 +47,4 @@ Cuando se crea un perfil de trabajo:
 
 Para ver los pasos necesarios para crear un perfil de trabajo, consulte [Creación de un perfil de trabajo e inscripción del dispositivo](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

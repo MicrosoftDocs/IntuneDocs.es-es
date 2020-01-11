@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2a49db70d6b29167184e50f3499985a46a48fda1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501855"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857629"
 ---
 # <a name="what-is-device-enrollment"></a>¿Qué es la inscripción de dispositivos?
 Para obtener acceso a recursos profesionales o educativos desde el dispositivo, deberá inscribir el dispositivo con la aplicación Portal de empresa de Intune o Microsoft Intune aplicación. 
@@ -63,7 +63,7 @@ Puede inscribir los siguientes dispositivos con Portal de empresa:
 - Dispositivos Windows
   - Windows 10 Mobile
   - Windows 10 Escritorio
-  - Windows Phone 8,1
+  - Windows Phone 8.1
   - Windows 8.1
 - Dispositivos de Apple
     - iOS

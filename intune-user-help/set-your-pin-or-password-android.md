@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8336ef763619eb8b167134f44f5da5d231338aed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b026f786234b7468008200caa5a3da5c0ca810b6
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501995"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857845"
 ---
 # <a name="set-your-pin-or-password"></a>Establecimiento del PIN o la contraseña
 
@@ -38,4 +38,4 @@ Para establecer un PIN o una contraseña, use los siguientes pasos.
 
 En ciertos dispositivos, es posible que necesite establecer un PIN de inicio además de la contraseña de pantalla. Para intentar corregir este problema, encuentre una ubicación en la aplicación de configuración para habilitar esta opción. Por ejemplo, en el Samsung Galaxy S7, habilita el inicio seguro en **Configuración** > **Pantalla de bloqueo y seguridad** > **Inicio seguro**. Puede descubrir más [aquí](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f523e78df09716b94143c4efbba24ee8492ab7bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 7536de20a949a2df047f32679baceacc131bc684
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501035"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858611"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Necesita habilitar el arranque seguro
 
@@ -34,4 +34,4 @@ Habilitar el arranque seguro es una tarea avanzada. Si usa un dispositivo móvil
 
 Si usa un equipo de escritorio, puede ponerse en contacto con el equipo de soporte técnico de su empresa o consultar la sección "Para volver a habilitar el arranque seguro" en la página [Deshabilitar el arranque seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para intentar habilitarlo usted mismo.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

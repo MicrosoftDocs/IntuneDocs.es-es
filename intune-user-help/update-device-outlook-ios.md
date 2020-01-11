@@ -19,23 +19,23 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ff648357c4a787367dc30951fdcdd0dc9203e35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 09ae1911069f55ee2afbf1620ebdd886db8c138a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508054"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858971"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>Debe actualizar el dispositivo iOS para instalar la aplicación Outlook
 
 La aplicación Outlook ayuda a millones de usuarios a conectar todas sus cuentas de correo, todos sus calendarios y todos sus archivos en un lugar conveniente para los dispositivos [iOS](https://itunes.apple.com/app/microsoft-outlook-email-calendar/id951937596).
 
 >[!NOTE]
-> ¿Busca las instrucciones para dispositivos Android? [Más información](update-device-outlook-android.md).
+> ¿Busca las instrucciones para dispositivos Android? [Obtenga más información](update-device-outlook-android.md).
 
 A veces, se puede producir un error durante la instalación de una aplicación, especialmente si el dispositivo no está actualizado. 
 
 Para llevar a cabo la actualización, pulse **Configuración** > **General** > **Actualización de software**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a0ffebe7472666ce9ccd53a47460ab5f0a9b34d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e70ef0a31b2503944fb86356f96f81f375205cb7
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508321"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858010"
 ---
 # <a name="upload-and-email-logs-using-a-usb-cable"></a>Carga y correo electrónico de registros con un cable USB
 
@@ -41,4 +41,4 @@ Soporte técnico de la compañía de correo electrónico sobre un problema exper
 
 4. Seleccione los archivos y adjúntelos a un correo electrónico. Envíe este correo electrónico al equipo de soporte técnico de su empresa.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

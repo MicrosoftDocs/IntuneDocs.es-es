@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a5c979f19a2761d596cd48cfc7d88e003bfcb99
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 386afdf91995f3e38eced269375e5e49ef6044d0
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500903"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858571"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Resolver una amenaza detectada por SandBlast Mobile Protect
 
@@ -52,4 +52,4 @@ Si instala una aplicación que se considera una amenaza para el dispositivo, rec
 
 Para resolverlo, seleccione la aplicación en la lista de amenazas de SandBlast Mobile Protect. Después, siga las instrucciones para quitar y desinstalar la aplicación.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

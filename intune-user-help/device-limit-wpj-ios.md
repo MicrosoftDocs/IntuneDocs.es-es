@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7c49fb11155cbe65c6e1e01eec550c1a7da94cb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 8fb452fc9af9ad7a99163b1f7acc870ef4a1f6b5
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490016"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856976"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Límite de dispositivos que se pueden registrar alcanzado
 
@@ -34,4 +34,4 @@ Cada empresa establece un límite sobre el número de dispositivos que cada pers
 2. Quitar uno de los dispositivos del [portal MyApps](https://myapps.microsoft.com) y seleccionar **Perfil** en el extremo superior derecho de la página. 
 3. Póngase en contacto con el servicio de soporte técnico de su empresa para ver si ellos pueden aumentar el número de dispositivos que puede registrar. 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

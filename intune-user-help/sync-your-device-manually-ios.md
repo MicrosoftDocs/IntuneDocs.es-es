@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: deb39845e66f73503af93b3ff68d6a64f1d3472e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2e7fe131ebfa48c181fb1d81615df3e1d68b00a4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508252"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857827"
 ---
 # <a name="sync-your-ios-device-manually"></a>Sincronización manual del dispositivo iOS
 
@@ -42,5 +42,5 @@ A veces, una aplicación puede tardar más tiempo en descargarse desde el Portal
 
    ![Captura de pantalla con los detalles del dispositivo y con la barra de carga después de que el usuario hace clic en Comprobar comprobación.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38862db505878099ae6a04bb152d56a11363d575
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 37452f01fbd89daab56ef9b9632993af5bc6ecf2
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507730"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858463"
 ---
 # <a name="update-your-windows-10-device"></a>Actualizar el dispositivo Windows 10
 
@@ -36,4 +36,4 @@ Su empresa o centro educativo quiere asegurarse de que los dispositivos que tien
 
 Si su versión de Windows es más reciente que la que se admite en la empresa, deberá [probar con otros pasos para corregir el problema](your-windows-version-isnt-yet-supported.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, consulte el [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

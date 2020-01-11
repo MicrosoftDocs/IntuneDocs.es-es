@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9181510dad2640fcc8ea84ce2db2856bd02cbaf5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 9691b971f028223c76ebd37496cff1dc1b72a9f8
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502180"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858316"
 ---
 # <a name="device-password-requirements-for-enrolled-devices"></a>Requisitos de contraseña de dispositivo para dispositivos inscritos
 
@@ -97,6 +97,6 @@ Consulte los artículos siguientes para crear o cambiar la contraseña, el códi
 - [Establecimiento del código de acceso del dispositivo iOS](set-or-change-your-passcode-ios.md)  
 - [Establecer el PIN o contraseña del dispositivo Android](set-your-pin-or-password-android.md)  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el personal de soporte técnico. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el personal de soporte técnico. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 
