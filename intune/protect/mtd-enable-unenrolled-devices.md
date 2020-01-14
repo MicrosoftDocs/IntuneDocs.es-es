@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478929"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545945"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Habilitación del conector Mobile Threat Defense en Intune para dispositivos no inscritos
 
 Durante la configuración de Mobile Threat Defense (MTD), ha configurado una directiva para clasificar amenazas en la consola del asociado de MTD y ha creado la directiva de protección de aplicaciones en Intune. Si ya ha configurado el conector de Intune en la consola del asociado de MTD, ya puede habilitar la conexión de MTD para las aplicaciones de asociados de MTD.
 
 > [!NOTE]
-> Este artículo se aplica a todos los asociados de Mobile Threat Defense que admiten directivas de protección de aplicaciones: Better Mobile (Android), Zimperium (iOS) y Lookout for Work (Android/iOS).
+> Este artículo se aplica a todos los asociados de Mobile Threat Defense que admiten directivas de protección de aplicaciones: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>Directivas de acceso condicional clásicas para aplicaciones de MTD
 
@@ -56,17 +56,17 @@ Para ver las directivas de acceso condicional clásicas, en [Azure](https://port
 
 2. Seleccione **Administración de inquilinos** > **Conectores y tokens** > **Mobile Threat Defense**.
 
-3. En el panel **Mobile Threat Defense**, elija **Agregar**.
+3. En el panel **Mobile Threat Defense**, seleccione **Agregar**.
 
 4. Seleccione su solución de MTD como el **conector para Mobile Threat Defense a configurar** en la lista desplegable.
 
     <!-- ![MTD setup in Intune](PLACEHOLDER, need a new screenshot of this page) -->
 
-5. Habilite las opciones de alternancia según los requisitos de su organización. Las opciones de alternancia visibles variarán en función del asociado de MTD.
+5. Habilite las opciones de alternancia de acuerdo con los requisitos de su organización. Las opciones de alternancia visibles variarán en función del asociado de MTD.
 
 ## <a name="mobile-threat-defense-toggle-options"></a>Opciones de alternancia de Mobile Threat Defense
 
-Puede decidir qué opciones de alternancia de MTD necesita habilitar según los requisitos de su organización. A continuación, puede ver más detalles:
+Las opciones de alternancia de MTD que habilite dependerán de los requisitos de su organización. A continuación tiene más detalles:
 
 **Configuración de directivas de protección de aplicaciones**
 

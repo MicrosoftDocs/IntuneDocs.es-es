@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984195"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207492"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adición de directivas de actualización de software de iOS en Intune
 
@@ -30,10 +30,10 @@ Esta característica se aplica a:
 
 El dispositivo se registra con Intune aproximadamente cada ocho horas. Si hay disponible una actualización, el dispositivo la descarga e instala, excepto en los tiempos restringidos. Aunque el proceso de actualización no implica normalmente ninguna interacción del usuario, si el dispositivo tiene un código de acceso, el usuario deberá escribirlo para iniciar una actualización de software. Esto se aplica a iOS 10.3 y versiones posteriores. La directiva no impide que un usuario actualice el sistema operativo de forma manual.
 
-## <a name="configure-the-policy"></a>Configurar la directiva
+## <a name="configure-the-policy"></a>Configuración de la directiva
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Actualizaciones de software** > **Directivas de actualización para iOS** > **Crear**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Directivas de actualización para iOS** > **Crear**.
 3. En la pestaña **Datos básicos**, indique un nombre para la directiva y una descripción (opcional) y, después, seleccione **Siguiente**.
 
    ![Pestaña Datos básicos](./media/software-updates-ios/basics-tab.png) 
@@ -77,10 +77,10 @@ Para obtener instrucciones del equipo de soporte técnico de Intune, vea [Delay 
 ## <a name="edit-a-policy"></a>Editar una directiva
 Puede editar una directiva existente, incluso cambiar los tiempos restringidos:
 
-1. En **Actualizaciones de software**, seleccione **Directivas de actualización para iOS** y, después, seleccione la directiva que quiera editar.
+1. Seleccione **Dispositivos** > **Directivas de actualización para iOS**. Seleccione la directiva que quiere editar.
 
 2. Mientras ve las **Propiedades** de las directivas, seleccione la opción **Editar** de la página de directiva que quiera modificar.  
-   ![Editar una directiva](./media/software-updates-ios/edit-policy.png)   
+   ![Edición de una directiva](./media/software-updates-ios/edit-policy.png)   
 
 3. Después de introducir un cambio, seleccione **Revisar + guardar** > **Guardar** para guardar las modificaciones y vuelva a las *Propiedades* de las directivas.  
  

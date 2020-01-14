@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992985"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206081"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -36,9 +36,9 @@ Los informes de cumplimiento ayudan a revisar el cumplimiento de los dispositivo
 
 Abra el **panel de Cumplimiento de dispositivos de Intune**:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Seleccione **Cumplimiento del dispositivo** > **Información general**. Se abre el **panel de cumplimiento de dispositivos**.
+2. Seleccione la pestaña **Dispositivos** > **Información general** > **Estado de cumplimiento**.
 
 > [!IMPORTANT]
 > Los dispositivos deben inscribirse en Intune para recibir las directivas de cumplimiento de dispositivos.
@@ -151,7 +151,7 @@ En el gráfico **Configurando cumplimiento** se muestra la configuración de tod
 
 ## <a name="view-compliance-reports"></a>Visualización de informes de cumplimiento
 
-Además de usar los gráficos de *Estado de cumplimiento*, puede ver los informes de cumplimiento en la página *Monitor* del Centro de administración.
+Además de usar los gráficos en *Estado de cumplimiento*, puede ir a **Informes** > **Cumplimiento de dispositivos**.
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -191,3 +191,7 @@ Pueden producirse conflictos entre directivas de Intune cuando se aplican varias
 - Si las configuraciones en conflicto proceden de una directiva de configuración de Intune y una directiva de cumplimiento, la configuración de la directiva de cumplimiento tiene preferencia sobre la configuración de la directiva de configuración. Esto es así incluso si la configuración de la directiva de configuración es más segura.
 
 - Si ha implementado varias directivas de cumplimiento, Intune usa la más segura de ellas.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+[Información general de directivas de cumplimiento](device-compliance-get-started.md)

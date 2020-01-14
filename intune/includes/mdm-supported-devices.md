@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 4669d02f149e7f815ff94b4daa85c4c539c26c96
+ms.sourcegitcommit: 90369aef160945171435b03d82bae395609c7a62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74284158"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75500168"
 ---
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "74284158"
 - Windows 10 Teams (Surface Hub)
 
    Para obtener más información sobre la administración de dispositivos que ejecutan Windows 10 Teams, vea [Administrar la configuración con un proveedor de MDM (Surface Hub)](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub).
-- Windows Phone 8.1, Windows 8.1 RT y equipos con Windows 8.1 (modo de mantenimiento)
+- Windows 10 1709 (RS3) y versiones posteriores, Windows Phone 8.1, Windows 8.1 RT, equipos con Windows 8.1 (modo de mantenimiento)
 
 > [!NOTE]
 > No todas las ediciones de Windows admiten todas las características de sistema operativo disponibles que se configuran mediante MDM. Vea los [documentos de referencia de los proveedores de servicios de configuración (CSP) de Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Cada CSP destaca las ediciones de Windows que se admiten.

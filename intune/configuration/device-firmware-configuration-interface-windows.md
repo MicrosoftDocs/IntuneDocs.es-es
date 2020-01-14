@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1d07066bcd599dc0cdbaf8fcf90ac1ee76be45fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059599"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206693"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Uso de perfiles de Device Firmware Configuration Interface en dispositivos Windows en Microsoft Intune (versión preliminar pública)
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Cuando se usa Intune para administrar dispositivos Autopilot, puede administrar la configuración de UEFI (BIOS) una vez inscritos, mediante Device Firmware Configuration Interface (DFCI). Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Introducción a DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
@@ -99,15 +99,15 @@ Este perfil incluye los valores de DFCI que configure.
     - **Cámaras**: Las opciones son:
         - **No configurado**: Intune no cambia esta característica y deja los valores sin modificar.
         - **Habilitada**: se habilitan todas las cámaras integradas administradas directamente mediante UEFI (BIOS). Los periféricos, como las cámaras USB, no se ven afectados.
-        - **Deshabilitado**: se deshabilitan todas las cámaras integradas administradas directamente mediante UEFI (BIOS). Los periféricos, como las cámaras USB, no se ven afectados.
+        - **Disabled**: se deshabilitan todas las cámaras integradas administradas directamente mediante UEFI (BIOS). Los periféricos, como las cámaras USB, no se ven afectados.
     - **Micrófonos y altavoces**:  Las opciones son:
         - **No configurado**: Intune no cambia esta característica y deja los valores sin modificar.
         - **Habilitada**: se habilitan todos los micrófonos y altavoces integrados administrados directamente mediante UEFI (BIOS). Los periféricos, como los dispositivos USB, no se ven afectados.
-        - **Deshabilitado**: se deshabilitan todos los micrófonos y altavoces integrados administrados directamente mediante UEFI (BIOS). Los periféricos, como los dispositivos USB, no se ven afectados.
+        - **Disabled**: se deshabilitan todos los micrófonos y altavoces integrados administrados directamente mediante UEFI (BIOS). Los periféricos, como los dispositivos USB, no se ven afectados.
     - **Señales de radio (Bluetooth, Wi-Fi, NFC, etc.)** : Las opciones son:
         - **No configurado**: Intune no cambia esta característica y deja los valores sin modificar.
         - **Habilitada**: se habilitan todas las señales de radio administradas directamente mediante UEFI (BIOS). Los periféricos, como los dispositivos USB, no se ven afectados.
-        - **Deshabilitado**: se deshabilitan todas las señales de radio administradas directamente mediante UEFI (BIOS). Los periféricos, como los dispositivos USB, no se ven afectados.
+        - **Disabled**: se deshabilitan todas las señales de radio administradas directamente mediante UEFI (BIOS). Los periféricos, como los dispositivos USB, no se ven afectados.
 
         > [!WARNING]
         > Si deshabilita el valor **Señales de radio**, el dispositivo requiere una conexión de red por cable. De lo contrario, es posible que el dispositivo no se pueda administrar.
@@ -115,11 +115,11 @@ Este perfil incluye los valores de DFCI que configure.
     - **Arrancar desde medio externo (USB, SD)** : Las opciones son:
         - **No configurado**: Intune no cambia esta característica y deja los valores sin modificar.
         - **Habilitada**: UEFI (BIOS) permite el arranque desde almacenamiento que no sea un disco duro.
-        - **Deshabilitado**: UEFI (BIOS) no permite el arranque desde almacenamiento que no sea un disco duro.
+        - **Disabled**: UEFI (BIOS) no permite el arranque desde almacenamiento que no sea un disco duro.
     - **Arrancar desde adaptadores de red**:  Las opciones son:
         - **No configurado**: Intune no cambia esta característica y deja los valores sin modificar.
         - **Habilitada**: UEFI (BIOS) permite el arranque desde interfaces de red integradas.
-        - **Deshabilitado**: UEFI (BIOS) no permite el arranque desde interfaces de red integradas.
+        - **Disabled**: UEFI (BIOS) no permite el arranque desde interfaces de red integradas.
 
 5. Cuando haya terminado, seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y se muestra en la lista.
 

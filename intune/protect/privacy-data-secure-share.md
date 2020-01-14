@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cfa2c5366d1b38cf819cfc68840a29fad9002979
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504332"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548103"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Uso compartido y seguridad de datos en Intune
 
@@ -68,11 +68,11 @@ Para obtener más información sobre los datos compartidos con terceros determin
 - [Datos que Google manda a Intune](data-google-sends-to-intune.md)
 - [Datos que Jamf Pro manda a Intune](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>Uso compartido de datos de System Center Configuration Manager
+### <a name="microsoft-endpoint-configuration-manager-data-sharing"></a>Uso compartido de los datos de Microsoft Endpoint Configuration Manager
 
-Microsoft Intune no comparte ningún dato con System Center Configuration Manager. System Center Configuration Manager es un producto local implementado, administrado y operado directamente por el cliente. Los datos de uso y diagnóstico recopilados por Configuration Manager solo son para mejorar la experiencia de instalación, la calidad y la seguridad de las versiones futuras.
+Microsoft Intune no comparte ningún dato con Configuration Manager. Configuration Manager es un producto local implementado, administrado y operado directamente por el cliente. Los datos de uso y diagnóstico recopilados por Configuration Manager solo son para mejorar la experiencia de instalación, la calidad y la seguridad de las versiones futuras.
 
-Para obtener más información, vea [Diagnostics and usage data for SCCM](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data) (Diagnósticos y datos de uso para SCCM). 
+Para más información, consulte [Diagnósticos y datos de uso para Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data). 
 
 
 ## <a name="next-steps"></a>Pasos siguientes

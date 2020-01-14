@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390298"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547078"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Creación y asignación de perfiles de certificado SCEP en Intune
 
@@ -275,7 +275,7 @@ Los perfiles de certificado SCEP se asignan de la misma manera que [se implement
 
 - Para publicar rápidamente un certificado en un dispositivo una vez inscrito el dispositivo, asigne el perfil de certificado en un grupo de usuarios (no en un grupo de dispositivos). Si lo asigna en un grupo de dispositivos, deberá efectuar un registro completo del dispositivo para que el dispositivo reciba directivas.
 
-- Si usa la administración conjunta para Intune y Configuration Manager, en Configuration Manager, [establezca el control deslizante de la carga de trabajo](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) de la directiva de acceso a los recursos en **Intune** o **Intune piloto**. Esta configuración permite que los clientes de Windows 10 inicien el proceso de solicitar el certificado.
+- Si usa la administración conjunta para Intune y Configuration Manager, en Configuration Manager, [establezca el control deslizante de la carga de trabajo](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) de las directivas de acceso a los recursos en **Intune** o **Intune piloto**. Esta configuración permite que los clientes de Windows 10 inicien el proceso de solicitar el certificado.
 
 - Aunque cree y asigne el perfil de certificado de confianza y el perfil de certificado SCEP por separado, los dos se deben asignar. Si no están instalados en un dispositivo, se produce un error en la directiva de certificado SCEP. Asegúrese de que los perfiles de certificado raíz de confianza también se implementan en los mismos grupos que el perfil SCEP.
 

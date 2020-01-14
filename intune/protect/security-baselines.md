@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409995"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548148"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Uso de líneas de base de seguridad para configurar dispositivos Windows 10 en Intune
 
@@ -192,9 +192,9 @@ Otros procesos que podrían cambiar la configuración del dispositivo posteriorm
 
 ## <a name="co-managed-devices"></a>Dispositivos administrados conjuntamente
 
-Las líneas de base de seguridad en dispositivos administrados por Intune son similares a los dispositivos administrados conjuntamente con Configuration Manager. Los dispositivos administrados conjuntamente usan System Center Configuration Manager y Microsoft Intune para administrar los dispositivos Windows 10 al mismo tiempo. Le permite conectar a la nube su inversión existente de Configuration Manager a las ventajas de Intune. La [introducción a la administración conjunta](https://docs.microsoft.com/sccm/comanage/overview) es un excelente recurso si usa Configuration Manager y también quiere las ventajas de la nube.
+Las líneas de base de seguridad en dispositivos administrados por Intune son similares a los dispositivos administrados conjuntamente con Configuration Manager. Los dispositivos administrados conjuntamente usan Configuration Manager y Microsoft Intune para administrar los dispositivos Windows 10 al mismo tiempo. Le permite conectar a la nube su inversión existente de Configuration Manager a las ventajas de Intune. La [introducción a la administración conjunta](https://docs.microsoft.com/configmgr/comanage/overview) es un excelente recurso si usa Configuration Manager y también quiere las ventajas de la nube.
 
-Cuando se usen dispositivos administrados conjuntamente, debe cambiar la carga de trabajo de la **configuración del dispositivo** (su configuración) a Intune. [Las cargas de trabajo de configuración de dispositivo](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) proporcionan más información.
+Cuando se usen dispositivos administrados conjuntamente, debe cambiar la carga de trabajo de la **configuración del dispositivo** (su configuración) a Intune. [Las cargas de trabajo de configuración de dispositivo](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration) proporcionan más información.
 
 ## <a name="q--a"></a>Q & A
 

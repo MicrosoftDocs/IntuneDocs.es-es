@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564163"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547990"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
@@ -50,35 +50,35 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 
 ## <a name="create-an-app-configuration-policy"></a>Crear una directiva de configuración de aplicaciones
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Elija **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar**.
-5. Especifique los siguientes detalles:
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Elija **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Dispositivos administrados**.
+3. Especifique los siguientes detalles:
     - **Nombre**: nombre del perfil que aparece en Azure Portal.
     - **Descripción**: descripción del perfil que aparece en Azure Portal.
-    - **Tipo de inscripción del dispositivo**: elija **Dispositivos administrados** para los dispositivos que se han inscrito en Intune.
-6. En **Plataforma**, seleccione **iOS**.
-7. Elija **Aplicación asociada**. Luego, en el panel **Aplicación asociada**, elija la aplicación administrada a la que quiera aplicar la configuración y seleccione **Aceptar**.
-8. En el panel **Agregar directiva de configuración**, elija **Opciones de configuración**.
-9. Seleccione **Formato de opciones de configuración**. Seleccione uno de los métodos siguientes para agregar información de la configuración:
+    - **Tipo de inscripción del dispositivo**: esta configuración está establecida en **Dispositivos administrados**.
+4. En **Plataforma**, seleccione **iOS**.
+5. Elija **Aplicación asociada**. Luego, en el panel **Aplicación asociada**, elija la aplicación administrada a la que quiera aplicar la configuración y seleccione **Aceptar**.
+6. Elija **Opciones de configuración** para mostrar el panel **Opciones de configuración**.
+7. Seleccione **Formato de opciones de configuración**. Seleccione uno de los métodos siguientes para agregar información de la configuración:
     - **Uso del Diseñador de configuración**
     - **Especificar datos XML**<br><br>
     Para obtener más detalles sobre cómo usar el diseñador de configuraciones, vea [Uso del Diseñador de configuración](#use-configuration-designer). Para obtener más detalles sobre cómo escribir datos XML, vea [Especificar datos XML](#enter-xml-data). 
-10. Cuando haya agregado la información de configuración, elija **Aceptar** y, después, **Agregar** para agregar la directiva de configuración. Se muestra el panel de introducción de la directiva de configuración.
-11. Seleccione **Asignaciones** para mostrar las opciones de inclusión y exclusión. 
+8. Cuando haya agregado la información de configuración, elija **Aceptar** y, después, **Agregar** para agregar la directiva de configuración. Se muestra el panel de introducción de la directiva de configuración.
+9. Seleccione **Asignaciones** para mostrar las opciones de inclusión y exclusión. 
 
     ![Captura de pantalla de la pestaña Incluir de la hoja Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. Seleccione **Todos los usuarios** en la pestaña **Incluir**.
+10. Seleccione **Todos los usuarios** en la pestaña **Incluir**.
 
     ![Captura de pantalla de la opción Todos los usuarios de la lista desplegable de la hoja Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. Seleccione la pestaña **Excluir**. 
-14. Haga clic en **Seleccionar grupos para excluir** para mostrar el panel relacionado.
+11. Seleccione la pestaña **Excluir**. 
+12. Haga clic en **Seleccionar grupos para excluir** para mostrar el panel relacionado.
 
     ![Captura de pantalla del panel Seleccionar grupos para excluir de la página Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. Seleccione los grupos que quiera excluir y después haga clic en **Seleccionar**.
+13. Seleccione los grupos que quiera excluir y después haga clic en **Seleccionar**.
 
     >[!NOTE]
     >Al agregar un grupo, si ya se ha incluido otro a un tipo de asignación determinado, este se preselecciona y no se puede cambiar por otros tipos de asignación de inclusión. Por lo tanto, ese grupo que se ha usado no se puede usar como un grupo de exclusión.
-16. Haga clic en **Guardar**.
+14. Haga clic en **Guardar**.
 
 ## <a name="use-configuration-designer"></a>Uso del Diseñador de configuración
 
@@ -182,7 +182,7 @@ Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no 
 
 1. En Intune, agregue la aplicación Portal de empresa de Intune si es necesario; para ello, vaya a **Intune** > **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 2. Vaya a **Aplicaciones** > **Directivas de configuración de aplicaciones** para crear una directiva de configuración de aplicaciones para la aplicación Portal de empresa.
-3. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Adición de directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md) o, para MDM híbrida, [Aplicación de la configuración a aplicaciones iOS con directivas de configuración de System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md) o, para MDM híbrida, [Aplicación de la configuración a aplicaciones iOS con directivas de configuración de Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>

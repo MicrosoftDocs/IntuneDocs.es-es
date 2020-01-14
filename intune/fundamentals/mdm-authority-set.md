@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a01b6643de2dd75c41aec0806b97df6154d99a7a
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502637"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547772"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -34,7 +34,7 @@ Las configuraciones posibles son:
 
 - **Intune independiente**: administración solo en la nube, que se configura mediante el portal de Azure. Incluye el conjunto completo de funcionalidades que ofrece Intune. [Establecer la entidad de MDM en la consola de Intune](#set-mdm-authority-to-intune).
 
-- **Administración conjunta de Intune**: integración de la solución de nube de Intune con System Center Configuration Manager para dispositivos Windows 10. Intune se configura mediante la consola de Configuration Manager. [Configuración de la inscripción automática de dispositivos en Intune](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
+- **Administración conjunta de Intune**: integración de la solución de nube de Intune con Configuration Manager para dispositivos Windows 10. Intune se configura mediante la consola de Configuration Manager. [Configuración de la inscripción automática de dispositivos en Intune](https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
     >La incorporación de nuevos clientes MDM híbridos está en desuso. Para obtener más información, vea la entrada de blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Transición de la administración de dispositivos móviles híbrida a Intune en Azure).
@@ -45,9 +45,9 @@ Las configuraciones posibles son:
 
 ## <a name="set-mdm-authority-to-intune"></a>Establecimiento de la entidad de MDM en Intune
 
-Haga lo siguiente si aún no ha establecido la entidad de MDM. Para cambiar desde SCCM, consulte [Migración de dispositivos y usuarios de MDM híbrida a Intune independiente](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
+Haga lo siguiente si aún no ha establecido la entidad de MDM. Para cambiar desde SCCM, consulte [Migración de dispositivos y usuarios de MDM híbrida a Intune independiente](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
-1. En [Intune en Azure Portal](https://aka.ms/intuneportal), seleccione el banner de color naranja para abrir la opción **Entidad de administración de dispositivos móviles**. El banner naranja aparece únicamente si aún no ha establecido la entidad de MDM.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione el banner naranjo para abrir la configuración **Entidad de administración de dispositivos móviles**. El banner naranja aparece únicamente si aún no ha establecido la entidad de MDM.
 2. En **Entidad de administración de dispositivos móviles**, elija la entidad de MDM entre las opciones siguientes:
    - **Entidad de MDM de Intune**
    - **Ninguno**

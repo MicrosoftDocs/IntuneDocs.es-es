@@ -1,5 +1,5 @@
 ---
-title: Configurar Microsoft Intune
+title: Configuración de Microsoft Intune
 description: Condiciones y requisitos previos para comenzar a usar su suscripción de Intune
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a45160fc0e728b4c53590455a2bd0b5d904ddb1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2a300070e06725e165316172bf10ca079861f56f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504900"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547570"
 ---
 # <a name="set-up-intune"></a>Configurar Intune
 
@@ -30,7 +30,7 @@ Estos pasos de configuración le ayudarán a habilitar la administración de dis
 
 Algunos pasos, como la configuración de una suscripción a Intune y de la entidad de MDM, son necesarios para la mayoría de los escenarios. Otros pasos, tales como configurar un dominio personalizado o agregar aplicaciones, son opcionales según cuáles sean las necesidades de su empresa.
 
-Si actualmente usa Microsoft System Center Configuration Manager para administrar equipos y servidores, puede [conectar Configuration Manager a la nube con administración conjunta](https://docs.microsoft.com/sccm/comanage/overview).
+Si actualmente usa Microsoft Endpoint Configuration Manager para administrar equipos y servidores, puede [conectar Configuration Manager a la nube con administración conjunta](https://docs.microsoft.com/configmgr/comanage/overview).
 
 >[!TIP]
 >Si adquiere un mínimo de 150 licencias de Intune en un plan válido, puede usar el *Beneficio del centro de FastTrack*. Con este servicio, los especialistas de Microsoft trabajan con usted para preparar su entorno para Intune. Consulte [Programa FastTrack para Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).

@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410124"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556409"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Supervisión de la línea base de seguridad y los perfiles en Microsoft Intune
 
@@ -42,10 +42,14 @@ El panel de **Información general** proporciona dos métodos para supervisar el
 - **Vista de dispositivo**: resumen de cuántos dispositivos están en cada categoría de estado para la línea base.
 - **Por categoría**: vista que muestra cada categoría en la línea base e incluye el porcentaje de dispositivos por cada grupo de estado y por cada categoría de línea base.
 
-Cada dispositivo se representa mediante uno de los siguientes estados, que se usan tanto en la vista de *dispositivo* como en las vistas *por categoría*:
+Cada dispositivo se representa mediante uno de los siguientes estados (que se usan tanto en la vista de *dispositivo* como en las vistas *por categoría*):
 
 - **Coincide con la línea de base**: todas las configuraciones de la línea base coinciden con la configuración recomendada.
 - **No coincide con la línea de base**: al menos un valor de configuración de la línea base no coincide con la configuración recomendada.
+
+  > [!NOTE]
+  > Al crear o editar un perfil de base de referencia, cualquier cambio que se realice en un valor predeterminado o en un valor de configuración genera el estado "No coincide con la línea de base". Si necesita ayuda para determinar la configuración que se cambió, póngase en contacto con Soporte técnico de Microsoft. 
+
 - **Configuración errónea**: al menos un valor de configuración no está configurado correctamente. Este estado significa que la configuración está en un estado de conflicto, error o pendiente.
 - **No aplicable**: al menos un valor de configuración no es aplicable.
 

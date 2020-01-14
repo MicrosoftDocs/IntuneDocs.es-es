@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547988"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731531"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usar plantillas de Windows 10 para configurar opciones de directiva de grupo en Microsoft Intune
 
@@ -41,7 +41,7 @@ En este artículo se enumeran los pasos para crear una plantilla para dispositiv
 
 - La configuración de Windows usa los [CSP de directivas de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies). El CSP funciona en diferentes ediciones de Windows, como por ejemplo, Home, Professional, Enterprise, etcétera. Para ver si un CSP funciona en una edición específica, vaya a [CSP de directivas de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies).
 
-## <a name="create-a-template"></a>Crear una plantilla
+## <a name="create-a-template"></a>Creación de una plantilla
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
@@ -52,16 +52,10 @@ En este artículo se enumeran los pasos para crear una plantilla para dispositiv
     - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
     - **Tipo de perfil**: seleccione **Plantillas administrativas**.
 
-4. Seleccione **Crear**. En la nueva ventana, seleccione **Configuración**. Se enumeran todos los valores y puede usar las flechas Anterior y Siguiente para ver más:
+4. Seleccione **Crear**. En la ventana nueva, seleccione la lista desplegable y seleccione **Todos los productos**. Desde la lista, también puede filtrar la configuración para que solo muestre la configuración de **Windows**, la de **Office** o la de la **versión 77 de Microsoft Edge o posteriores**:
 
-    ![Lista de ejemplo de valores y uso de los botones Anterior y Siguiente](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > La configuración de Windows en Intune se correlaciona con la ruta de acceso de la directiva de grupo local que se ve en el Editor de directivas de grupo local (`gpedit`).
-
-5. En la lista desplegable, seleccione **Todos los productos**. Desde la lista, también puede filtrar la configuración para que solo muestre la configuración de **Windows**, la de **Office** o la de la **versión 77 de Microsoft Edge o posteriores**:
-
-    ![Filtrado de la lista para mostrar todas las configuraciones de Windows o de Office en las plantillas administrativas de Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![Filtrado de la lista para mostrar todas las configuraciones de Windows o de Office en las plantillas administrativas de Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > La configuración de Microsoft Edge se aplica a:
@@ -70,6 +64,14 @@ En este artículo se enumeran los pasos para crear una plantilla para dispositiv
     > - Windows 10 RS4 y versiones más recientes con [KB 4512509](https://support.microsoft.com/kb/4512509) instalado
     > - Windows 10 RS5 y versiones más recientes con [KB 4512534](https://support.microsoft.com/kb/4512534) instalado
     > - Windows 10 19H1 y versiones más recientes con [KB 4512941](https://support.microsoft.com/kb/4512941) instalado
+
+5. Se enumeran todos los valores y puede usar las flechas Anterior y Siguiente para ver más:
+
+    > [!div class="mx-imgBorder"]
+    > ![Lista de ejemplo de valores y uso de los botones Anterior y Siguiente](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > La configuración de Windows en Intune se correlaciona con la ruta de acceso de la directiva de grupo local que se ve en el Editor de directivas de grupo local (`gpedit`).
 
 6. Seleccione cualquier valor. Por ejemplo, filtre por **Office** y seleccione **Activar exploración restringida**. Se muestra una descripción detallada del valor. Elija **Habilitado**, **Deshabilitado** o bien deje el valor como **Sin configurar** (valor predeterminado). La descripción detallada también explica lo que sucede cuando se elige **Habilitado**, **Deshabilitado** o **Sin configurar**.
 7. Haga clic en **Aceptar** para guardar los cambios.
@@ -88,13 +90,15 @@ Siga examinando la lista de valores y configure los que quiera en el entorno. Es
 
 Hay cientos de valores disponibles en estas plantillas. Para que sea más fácil encontrar un valor concreto, use las características integradas:
 
-- En la plantilla, seleccione las columnas **Configuración**, **Estado**, **Tipo de configuración** o **Ruta** para ordenar la lista. Por ejemplo, seleccione la columna **Ruta** para ver todos los valores de la ruta de acceso de `Microsoft Excel`:
+- En la plantilla, seleccione las columnas **Configuración**, **Estado**, **Tipo de configuración** o **Ruta** para ordenar la lista. Por ejemplo, seleccione la columna **Ruta de acceso** y use la flecha siguiente para ver la configuración en la ruta de acceso `Microsoft Excel`:
 
-  ![Haga clic en la ruta de acceso para mostrar todas las configuraciones agrupadas por la directiva de grupo o la ruta de acceso de ADMX en las plantillas administrativas de Intune.](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![Haga clic en la ruta de acceso para mostrar todas las configuraciones agrupadas por la directiva de grupo o la ruta de acceso de ADMX en las plantillas administrativas de Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- En la plantilla, use el cuadro **Buscar** para buscar valores específicos. Puede buscar por título de configuración o por la ruta de acceso. Por ejemplo, busque `copy`. Aparecen todos los valores con `copy`:
+- En la plantilla, use el cuadro **Buscar** para buscar valores específicos. Puede buscar por configuración o por la ruta de acceso. Por ejemplo, busque `copy`. Aparecen todos los valores con `copy`:
 
-  ![Búsqueda de copia para mostrar las configuraciones de Windows y Office en las plantillas administrativas de Intune](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![Búsqueda de copia para mostrar las configuraciones de Windows y Office en las plantillas administrativas de Intune](./media/administrative-templates-windows/search-copy-settings.png) 
 
   En otro ejemplo, busque `microsoft word`. Ve todos los valores que puede establecer para el programa Microsoft Word. Busque `explorer` para ver todos los valores de Internet Explorer que puede agregar a la plantilla.
 
@@ -103,3 +107,5 @@ Hay cientos de valores disponibles en estas plantillas. Para que sea más fácil
 Se crea la plantilla, pero todavía no hace nada. A continuación, [asigne la plantilla, también denominada perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
 [Actualización de Office 365 mediante las plantillas administrativas](administrative-templates-update-office.md).
+
+[Tutorial: Usar la nube para configurar una directiva de grupo en dispositivos de Windows 10 con plantillas ADMX y Microsoft Intune](tutorial-walkthrough-administrative-templates.md)

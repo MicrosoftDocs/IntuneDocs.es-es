@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955514"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547811"
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -142,9 +142,9 @@ Los métodos siguientes se consideran como autorizados como una inscripción cor
 - El usuario que se inscribe usa una [cuenta de administrador de inscripción de dispositivos]( device-enrollment-manager-enroll.md).
 - El dispositivo se inscribe a través de [Windows AutoPilot](enrollment-autopilot.md).
 - El dispositivo está registrado con Windows Autopilot, pero no es la única opción de inscripción de MDM que encontrará en la configuración de Windows.
-- El número IMEI del dispositivo aparece en **Inscripción del dispositivo** > **[Identificadores de dispositivo corporativos](corporate-identifiers-add.md)**. (No se admite para Windows Phone 8.1).
+- El número IMEI del dispositivo aparece en **Inscripción del dispositivo** >  **[Identificadores de dispositivo corporativos](corporate-identifiers-add.md)** . (No se admite para Windows Phone 8.1).
 - El dispositivo se inscribe a través de un [paquete de aprovisionamiento en masa](windows-bulk-enroll.md).
-- El dispositivo se inscribe a través de GPO, o la [inscripción automática de SCCM para la administración conjunta](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1).
+- El dispositivo se inscribe a través de GPO, o la [inscripción automática de Configuration Manager para la administración conjunta](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1).
  
 Intune marcó como corporativas las inscripciones siguientes. Pero se bloquearán porque no ofrecen control por dispositivo del administrador de Intune:
 - [Inscripción automática de MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con [combinación de Azure Active Directory durante la instalación de Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.

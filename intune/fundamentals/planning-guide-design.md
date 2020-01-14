@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505197"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547554"
 ---
 # <a name="create-a-design"></a>Creación de un diseño
 
@@ -84,7 +84,7 @@ El entorno actual puede influir en las decisiones de diseño, y debe documentars
 
   - ¿Cómo está administrando su PC y el entorno del servidor?
 
-  - ¿Usa System Center Configuration Manager? ¿Está usando una plataforma de administración de sistemas de terceros?
+  - ¿Está usando Microsoft Endpoint Configuration Manager? ¿Está usando una plataforma de administración de sistemas de terceros?
 
 - **Solución de VPN**
 
@@ -101,7 +101,7 @@ Asegúrese de anotar cualquier proyecto o cualquier otro plan que podría afecta
 | **SharePoint** | SharePoint local | Ningún plan para moverse a SharePoint Online |  
 | **MDM actual** | Exchange ActiveSync |  |
 | **Solución de certificado** | Microsoft Server 2012 R2, Servicios de certificado de AD | Solo se usa PKI en servidores de sitio web |
-| **Administración de sistemas** | System Center Configuration Manager CB 1606 | Le gustaría investigar una solución híbrida de Intune |
+| **Administración de sistemas** | Configuration Manager CB 1606 | Le gustaría investigar una solución híbrida de Intune |
 | **Solución de VPN** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.mic
 
 ## <a name="choose-an-intune-deployment-option"></a>Elegir una opción de implementación de Intune
 
-Intune ofrece dos opciones de implementación: independiente e híbrida. Independiente se refiere al servicio de Intune que se ejecuta en la nube, híbrida se refiere a la integración de Intune con System Center Configuration Manager. Esta guía está destinada principalmente al uso de la opción independiente. [Decida qué opción se adapta a los requisitos de su empresa](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Intune ofrece dos opciones de implementación: independiente e híbrida. Independiente se refiere al servicio de Intune que se ejecuta en la nube, híbrida se refiere a la integración de Intune con Configuration Manager. Esta guía está destinada principalmente al uso de la opción independiente. [Decida qué opción se adapta a los requisitos de su empresa](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >La incorporación de nuevos clientes MDM híbridos está en desuso. Para obtener más información, vea la entrada de blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Transición de la administración de dispositivos móviles híbrida a Intune en Azure).
@@ -353,7 +353,7 @@ Puede usar Intune para proporcionar las aplicaciones a los usuarios o a los disp
 
 - [Programa de Compras por Volumen (VPP) de iOS para empresas](../apps/vpp-apps-ios.md)
 
-- [Tienda Microsoft para aplicaciones empresariales](../apps/windows-store-for-business.md)
+- [Aplicaciones de la Tienda Microsoft para Empresas](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Requisitos del tipo de aplicación
 
@@ -378,8 +378,8 @@ Las directivas de protección de aplicaciones minimizan la pérdida de datos def
 
 | **Aplicación** | **Finalidad** | **Plataformas** | **Caso de uso** | **Directiva de protección de aplicaciones** |
 |:---:|:---:|:---:|:---:|:---:|
-| Outlook Mobile  | Available | iOS | Corporativo: ejecutivos | No puede descodificarse, archivos cifrados |                                                         
-| Word | Available | iOS, Android - Samsung Knox, no-Knox, Windows 10 Mobile | Corporativo, BYOD | No puede descodificarse, archivos cifrados |                                                         
+| Outlook Mobile  | Disponible | iOS | Corporativo: ejecutivos | No puede descodificarse, archivos cifrados |                                                         
+| Word | Disponible | iOS, Android - Samsung Knox, no-Knox, Windows 10 Mobile | Corporativo, BYOD | No puede descodificarse, archivos cifrados |                                                         
 
 
 Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar los requisitos de la directiva de protección de aplicaciones.

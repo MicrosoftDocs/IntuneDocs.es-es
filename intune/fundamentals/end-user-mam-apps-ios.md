@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
+ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414573"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "75606628"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
 
- En este tema se describe la experiencia del usuario cuando se usan aplicaciones con directivas de protección de aplicaciones aplicadas. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto laboral: por ejemplo, cuando el usuario obtiene acceso a las aplicaciones con la cuenta profesional o a archivos que están almacenados en la ubicación de OneDrive para la Empresa.
+Las directivas de protección de aplicaciones de Intune se aplican a las aplicaciones que se usan para el trabajo o la escuela. Esto significa que, cuando los empleados y los alumnos usan sus aplicaciones en un contexto personal, es posible que no noten ninguna diferencia en su experiencia. Sin embargo, en el contexto profesional o educativo, pueden recibir mensajes para tomar decisiones con respecto a la cuenta, actualizar su configuración o ponerse en contacto con usted para obtener ayuda. Use este artículo para obtener información sobre lo que experimentan los usuarios cuando intentan acceder a aplicaciones protegidas por Intune y usarlas.  
 
 ## <a name="access-apps"></a>Acceso a las aplicaciones
 
@@ -40,30 +40,29 @@ En los dispositivos que **están inscritos para la administración en Intune**, 
 
 ## <a name="use-apps-with-multi-identity-support"></a>Uso de aplicaciones con compatibilidad con varias identidades
 
-Las aplicaciones que admiten varias identidades permiten usar diferentes cuentas (profesionales y personales) para obtener acceso a las mismas aplicaciones, aunque las directivas de protección de aplicaciones se aplican solo cuando las aplicaciones se usen en el contexto laboral.  
+Las aplicaciones que admiten varias identidades permiten usar diferentes cuentas de trabajo y personales para tener acceso a las mismas aplicaciones. Las directivas de protección de aplicaciones, como escribir un PIN de dispositivo, se activan cuando los usuarios acceden a estas aplicaciones en un contexto profesional o educativo.   
 
-Por ejemplo, el usuario obtiene una solicitud de PIN al obtener acceso a los datos de trabajo. En la **aplicación Outlook**, al usuario se le pide un PIN al iniciar la aplicación. En la **aplicación OneDrive**, al usuario se le pide un PIN cuando escribe la cuenta profesional.  En Microsoft **Word**, **PowerPoint** y **Excel**, al usuario se le pide un PIN cuando obtiene acceso a documentos que se encuentran almacenados en la ubicación OneDrive para la Empresa.
+Los usuarios pueden experimentar la solicitud de PIN de manera diferente en todas sus aplicaciones, en función de cómo configure las directivas.  Por ejemplo, puede configurar las directivas para que:       
+* Microsoft Outlook solicite al usuario un PIN cuando inicie la aplicación. 
+* OneDrive solicite al usuario un PIN cuando inicie sesión en su cuenta profesional.  
+* Microsoft Word, PowerPoint y Excel soliciten un PIN al usuario cuando acceda a documentos almacenados en la ubicación de OneDrive para la Empresa.  
 
-- Obtenga más información sobre las aplicaciones que admiten [protección de aplicaciones y varias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) con Intune.
+- Obtenga más información sobre las aplicaciones que admiten [protección de aplicaciones y varias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) con Intune.  
 
-Las directivas de protección de aplicaciones solo se aplican en el contexto laboral. Por lo tanto, la aplicación podría comportarse de manera distinta si el contexto es laboral o personal.
+## <a name="manage-user-accounts-on-the-device"></a>Administración de cuentas de usuario en el dispositivo  
 
-## <a name="manage-user-accounts-on-the-device"></a>Administración de cuentas de usuario en el dispositivo
+Las directivas de protección de aplicaciones de Intune limitan a los usuarios a una cuenta profesional o educativa administrada por aplicación. Las directivas de protección de aplicaciones no limitan el número de cuentas no administradas que un usuario puede agregar.   
 
-Las aplicaciones de varias identidades permiten a los usuarios agregar varias cuentas.  Intune App solo admite una cuenta administrada.  Intune App no limita el número de cuentas no administradas.
+- Si un usuario intenta agregar una segunda cuenta administrada, se le pide que seleccione cuál quiere usar. Si el usuario agrega la segunda cuenta, se quita la primera.
+- Si agrega directivas de protección a otra de las cuentas del usuario, se le pedirá al usuario que seleccione la cuenta administrada que se va a usar. La otra cuenta se quita. 
 
-Cuando hay una cuenta administrada en una aplicación:
+Algunos usuarios no tendrán la opción de cambiar o seleccionar entre cuentas administradas. La opción no está disponible en los dispositivos que:
+* Administra Intune  
+* Los administran soluciones de Enterprise Mobility Management y se configuran con el valor IntuneMAMUPN 
 
-- Si un usuario intenta agregar una segunda cuenta administrada, se le pide que seleccione cuál quiere usar.  La otra cuenta se quita.
-- Si el administrador de TI agrega una directiva a una segunda cuenta existente, se pide al usuario que seleccione qué cuenta administrada quiere usar.  La otra cuenta se quita.
+En el escenario de ejemplo siguiente se describe cómo se tratan varias cuentas de usuario:  
 
-Consulte el siguiente escenario de ejemplo para profundizar aún más en cómo se tratan varias cuentas de usuario.
-
-El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional para cada empresa y en ambas se usa Intune para implementar directivas de protección de aplicaciones. La **Compañía X** implementa directivas de protección de aplicaciones **antes que** la **Compañía Y**. La cuenta que está asociada a la **empresa X** obtiene la directiva de protección de aplicaciones en primer lugar. Si quiere que la cuenta de usuario asociada a la empresa Y se administre mediante las directivas de protección de aplicaciones, deberá quitar la cuenta de usuario asociada a la empresa X y agregar la cuenta de usuario que esté asociada a la empresa Y.
-
-### <a name="add-a-second-account"></a>Incorporación de una segunda cuenta
-
-Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta agregar una segunda cuenta profesional en ese dispositivo. Se muestran las cuentas y, luego, puede elegir la que quiera quitar.
+El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional para cada empresa y en ambas se usa Intune para implementar directivas de protección de aplicaciones. La **Empresa X** implementa directivas de protección de aplicaciones **antes que** la **Empresa Y**. La cuenta que está asociada a la **empresa X** obtiene la directiva de protección de aplicaciones en primer lugar. Si quiere que la cuenta de usuario asociada a la empresa Y se administre mediante las directivas de protección de aplicaciones, deberá quitar la cuenta de usuario asociada a la empresa X y agregar la cuenta de usuario que esté asociada a la empresa Y.  
 
 ## <a name="next-steps"></a>Pasos siguientes
 

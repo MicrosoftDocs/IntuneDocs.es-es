@@ -1,20 +1,36 @@
 ---
 title: archivo include
-description: archivo include
+description: Archivo de inclusión
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74828875"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323095"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune.
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Característica actualizada: Nuevo rol RBAC en Intune<!--4253397-->
+En la actualización del servicio de enero de Intune, tenemos previsto lanzar un nuevo rol de seguridad en Intune. Verá este rol como "Administrador de seguridad de puntos de conexión" en Intune y el rol es una expansión del rol "Administrador de seguridad" de Azure AD.
+ 
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+En la actualidad hay tres roles disponibles en Azure AD para los profesionales de seguridad:
+- El rol Lector de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
+- El rol Operador de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
+- Administrador de seguridad de Azure AD. Cuando Intune envía la actualización de enero, junto con los permisos de solo lectura a Intune, los nuevos permisos proporcionados por el rol Administrador de seguridad de puntos de conexión son los siguientes:
+    - Leer, Crear, Actualizar, Eliminar y Asignar directivas de cumplimiento de dispositivos
+    - Leer, Eliminar y Actualizar dispositivos administrados
+    - Leer, Crear, Actualizar, Eliminar y Asignar bases de referencia de seguridad
+    - Leer y Actualizar tareas de seguridad
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
+Revise los roles RBAC de Intune hoy mismo. Si actualmente solo tiene administradores globales como roles, no es necesario realizar ningún cambio. Si usa roles y desea la granularidad que proporciona el Administrador de seguridad de puntos de conexión, asigne ese rol cuando esté disponible. Consulte la página [Novedades](../fundamentals/whats-new.md) de Intune para información sobre la versión de Intune actualizada. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Actualizada la instrucción de soporte técnico para la aplicación móvil de Adobe Acrobat Reader para Intune<!--5746776-->
 A finales de agosto, publicamos en MC188653 que la aplicación móvil de Adobe Acrobat Reader para Intune llegaría al final de su vida útil el 1 de diciembre de 2019 y que Adobe planeaba admitir las directivas de protección de aplicaciones de Intune dentro de su aplicación principal Acrobat Reader. Desde entonces, recibimos comentarios de los clientes solicitando más tiempo para permitir a los administradores de TI dirigirse a Adobe Acrobat Reader para Intune y a los usuarios finales empezar a utilizarlo. Dado el alto uso de Adobe Acrobat Reader para Intune en los dispositivos de los usuarios finales y su importancia en escenarios empresariales, queremos asegurarnos de que cualquier experiencia cumpla las necesidades de protección de las aplicaciones de su organización. 
@@ -24,7 +40,7 @@ Aunque seguimos recomendando establecer como destino la aplicación móvil de Ac
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 Está recibiendo este mensaje porque nuestros informes señalan que una o más directivas de la organización tienen como destino la aplicación Adobe Acrobat Reader para Intune o bien ha recibido nuestra comunicación de EOL anterior. 
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 Informe a los usuarios finales y el departamento de soporte técnico sobre este cambio. Puede usar la [funcionalidad de la información de soporte técnico del Portal de empresa](../apps/company-portal-app.md#support-information) para establecer un canal para preguntas relacionadas con Intune.
 
 #### <a name="additional-information"></a>Información adicional
@@ -37,27 +53,8 @@ El soporte estándar de Microsoft para Windows Phone 8.1 finalizó en julio de
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 Después del 20 de febrero de 2020 estos dispositivos no recibirán ninguna actualización de seguridad y no podrá inscribir ningún dispositivo nuevo. Los dispositivos Windows Phone 8.1 existentes permanecerán inscritos (directiva, aplicaciones e informes), pero tenga en cuenta que después de esa fecha no se podrán solucionar problemas de inscripciones existentes, ya que muchos componentes, como los certificados de terceros, ya no son compatibles con la plataforma. Intune detendrá las pruebas de compatibilidad con Intune y Windows Phone 8.1.
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 Puede comprobar los informes de Intune para ver qué dispositivos o usuarios pueden verse afectados. Vaya a Dispositivos > Todos los dispositivos y filtre por el sistema operativo. Puede agregar columnas adicionales para ayudar a identificar qué usuarios de su organización tienen dispositivos que ejecutan Windows Phone 8.1. Pida a los usuarios finales que actualicen sus dispositivos a una versión del sistema operativo compatible.
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Actualización de las directivas de protección de aplicaciones (APP) de Outlook en Intune<!--2576686-->
-Es posible que tenga que tomar medidas si ha recibido MC195618 en el centro de mensajes. Como se compartía en los identificadores de características de la hoja de ruta de Microsoft 365: 56325 y 56326, Intune y Outlook para iOS y Android están implementando la compatibilidad para limitar la información confidencial en las notificaciones de correo electrónico y los recordatorios de calendario. Como resultado de estas mejoras, Outlook para iOS y Android quitará la compatibilidad con varias claves de configuración de aplicaciones de protección de datos que actualmente está empleando para administrar las notificaciones.
-
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-Aunque las nuevas características aún no se han publicado, tan pronto estén disponibles las siguientes claves de configuración de aplicaciones dejarán de funcionar en Outlook para iOS y Android:
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
-Le recomendamos que configure la opción de protección de datos de la directiva de Intune App Protection "Notificaciones de datos de la organización" en la opción "Bloquear datos de la organización" para prepararse ante esta nueva característica. A partir del 16 de diciembre de 2019, Outlook para iOS y Android aceptará la configuración de protección de datos "Notificaciones de datos de la organización" y ya no admitirá las claves mencionadas anteriormente. La configuración de este nuevo parámetro garantizará que los datos confidenciales no se filtren cuando las claves de configuración anteriores ya no se admitan. Además, Outlook proporciona granularidad adicional cuando la opción de protección de datos "Notificaciones de datos de la organización" esté establecida en "Bloquear datos de la organización" con una opción de configuración de aplicación adicional, "Notificaciones de calendario". La combinación de la configuración de la directiva de protección de aplicaciones y esta opción de configuración de las aplicaciones limita la información confidencial en las notificaciones de correo, a la vez que expone información confidencial en las notificaciones de calendario para que los usuarios puedan acceder a sus reuniones echando un vistazo rápido a la notificación o al centro de notificaciones.
-
-#### <a name="additional-information"></a>Información adicional
-Para obtener más información sobre la configuración de la aplicación y la configuración de Outlook, consulte:
-- [Configuración de directivas de protección de aplicaciones de Android](../apps/app-protection-policy-settings-android.md)
-- [Configuración de directivas de protección de aplicaciones de iOS](../apps/app-protection-policy-settings-ios.md)
-- [Implementación de las opciones de configuración de la aplicación de Outlook para iOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Plan de cambio de Intune: fin de la compatibilidad del Portal de empresa en la versión 1703 de Windows 10<!--5026679-->
@@ -66,7 +63,7 @@ La versión 1703 de Windows 10 (también conocida como Windows 10, RS2) se ha 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 En adelante, no verá las nuevas características de la versión específica de la aplicación Portal de empresa, aunque seguiremos admitiendo esta versión de la aplicación Portal de empresa hasta el 26 de diciembre de 2019, incluida la provisión de las actualizaciones de seguridad a la aplicación Portal de empresa según se requiera. Sin embargo, como la versión 1703 de Windows 10 no recibirá ninguna actualización de seguridad una vez que se excluya del servicio, le recomendamos encarecidamente que actualice los dispositivos Windows a una versión más reciente de Windows y que se asegure de que tiene la aplicación Portal de empresa más reciente para que seguir recibiendo nuevas características y funcionalidad adicional.
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 Los pasos que debe adoptar dependerán de cómo esté configurado el entorno. Sin embargo, en general, debe identificar los dispositivos que tienen la versión anterior del sistema operativo o el Portal de empresa instalado y actualizarlos. Para configurar los anillos de actualización de Windows 10, inicie sesión en Intune-> actualizaciones de software - Anillos de actualización de Windows 10. La versión más reciente del Portal de empresa es 10.3.5601.0. Pida a los usuarios que la adquieran en Microsoft Store para mantenerse al día con versiones futuras. También puede usar Intune para instalar la versión más reciente en los dispositivos Windows a través de [Microsoft Store para Empresas](https://docs.microsoft.com/intune/windows-store-for-business).
 
 #### <a name="additional-information"></a>Información adicional
@@ -81,7 +78,7 @@ A partir del 1 de febrero de 2020, Intune Managed Browser ya no estará disponib
 
 El 31 de marzo de 2020, Intune Managed Browser se quitará de la consola de Azure. Esto significa que ya no podrá crear nuevas directivas para Intune Managed Browser. Las directivas de Intune Managed Browser que tenga actualmente no se verán afectadas. Intune Managed Browser se mostrará en la consola como una aplicación LOB sin icono, y las directivas existentes se seguirán dirigiendo a la aplicación. En este punto, también se quitará la opción de redirigir el contenido web a Intune Managed Browser en la sección Protección de datos de las directivas de protección de aplicaciones.  
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio? 
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio? 
 Para garantizar una transición fluida de Intune Managed Browser a Microsoft Edge, se recomienda realizar los siguientes pasos de forma proactiva: 
 
 1. Dirija la directiva de protección de aplicaciones (también conocida como MAM) y los parámetros de configuración de la aplicación a Microsoft Edge para iOS y Android. Puede reutilizar las directivas de Intune Managed Browser para Microsoft Edge destinando tales directivas también a Microsoft Edge.  
@@ -112,7 +109,7 @@ Debe planear la actualización de las instrucciones para el usuario final y deja
 
 La administración heredada de equipos dejará de ser compatible el 15 de octubre de 2020. Actualice los dispositivos a Windows 10 y vuelva a inscribirlos como dispositivos de administración de dispositivos móviles (MDM) para administrarlos por Intune.
 
-[Más información](https://go.microsoft.com/fwlink/?linkid=2107122)
+[Más información](https://go.microsoft.com/fwlink/?linkid=2107122).
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Reducción de la compatibilidad con el administrador de dispositivos Android 
 El administrador de dispositivos Android (que a veces se conoce como "administración de Android heredada" y publicada con Android 2.2) es una manera de administrar dispositivos Android. Sin embargo, ahora hay una funcionalidad de administración mejorada disponible con [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (publicada con Android 5.0). Con el fin de realizar la transición a la administración de dispositivos moderna, más completa y segura, Google va a reducir la compatibilidad con el administrador de dispositivos en las nuevas versiones de Android.
@@ -129,7 +126,7 @@ Debido a estos cambios de Google, los usuarios de Intune se verán afectados de 
         > [!NOTE]
         > Esta situación solo afecta a los dispositivos administrados por el administrador de dispositivos en Android 10 y versiones posteriores; no a los administrados con Android Enterprise. 
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 Para evitar la reducción de la funcionalidad que tendrá lugar en el tercer trimestre de 2020, siga estas recomendaciones:
 - No incorpore nuevos dispositivos a la administración del administrador de dispositivos.
 - Si está previsto que un dispositivo reciba una actualización de Android 10, mígrelo de la administración del administrador de dispositivos a la administración de Android Enterprise o a las directivas de protección de aplicaciones.
@@ -155,7 +152,7 @@ A continuación, encontrará una lista de dispositivos comunes inscritos en Intu
 - Samsung GT-I9305
 - Samsung SM-T231
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 Encapsule las aplicaciones con la versión más reciente de Intune App SDK. También puede establecer la configuración de inicio condicional "Requerir versión mínima del sistema operativo (solo advertencia)" para notificar a los usuarios finales los dispositivos personales que se van a actualizar.
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Plan de cambio de Intune: Se aproxima el final del soporte técnico de Windows 7<!-- 3042987 -->
@@ -166,7 +163,7 @@ Le hemos enviado este mensaje porque actualmente está administrando equipos con
 
 Las funcionalidades de administración de equipos se crean directamente en el sistema operativo Windows 10 y ya no es necesario instalar un agente cliente, como el cliente de software Intune para Windows 7. A partir de Windows 8.1, Microsoft utiliza la arquitectura de administración de dispositivos móviles (MDM) para aprovisionar, configurar, actualizar y administrar equipos con Windows. Una vez que haya configurado Intune, puede simplificar el proceso de inscripción de Windows [inscribiendo los equipos con Windows 10 en Intune](..\windows-enroll.md) a través del canal MDM. Recomendamos usar esta solución de administración de MDM "sin agente" para administrar los equipos con Windows 10.
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 Recomendamos que en su organización se tenga en cuenta inmediatamente este plan de acción:
 
 - Planee y actualice la flota de Windows 7 a Windows 10 antes del 14 de enero de 2020.

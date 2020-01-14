@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188494"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545963"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Creación de una directiva de protección de aplicaciones de Mobile Threat Defense con Intune
 
@@ -34,7 +34,7 @@ Intune con Mobile Threat Defense (MTD) le ayuda a detectar amenazas y a evaluar 
 > Este artículo se aplica a todos los asociados de Mobile Threat Defense que admiten directivas de protección de aplicaciones:
 >
 > - Better Mobile (Android)
-> - Zimperium (iOS)
+> - Zimperium (Android, iOS)
 > - Lookout for Work (Android, iOS).
 
 ## <a name="before-you-begin"></a>Antes de comenzar
@@ -55,7 +55,7 @@ Use el procedimiento para [crear una directiva de protección de aplicaciones pa
   Opciones para el **Valor** del nivel de amenaza:
 
   - **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
-  - **Baja**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
+  - **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
   - **Media**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
   - **Alta**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
 

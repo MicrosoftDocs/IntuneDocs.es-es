@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261571"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303073"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Agregar grupos para organizar usuarios y dispositivos
 
@@ -47,7 +47,7 @@ Use los siguientes pasos para crear un grupo.
 
 3. En **Tipo de grupo**, elija una de las opciones siguientes:
 
-    - **Seguridad**: los grupos de seguridad definen quién puede acceder a los recursos, y se recomiendan para los grupos de Intune. Por ejemplo, puede crear grupos para usuarios, como **Todos los empleados de Charlotte** o **Todas las mujeres de Contoso**. O bien, puede crear grupos para dispositivos, como **Todos los dispositivos iOS** o **Todos los dispositivos de alumnos de Windows 10**.
+    - **Seguridad**: los grupos de seguridad definen quién puede acceder a los recursos, y se recomiendan para los grupos de Intune. Por ejemplo, puede crear grupos para usuarios, como **Todos los empleados de Charlotte** o **Trabajadores remotos**. O bien, puede crear grupos para dispositivos, como **Todos los dispositivos iOS** o **Todos los dispositivos de alumnos de Windows 10**.
 
         > [!TIP]
         > Los usuarios y los grupos creados también pueden verse en el [Centro de administración de Microsoft 365](https://admin.microsoft.com), el centro de administración de Azure Active Directory y [Microsoft Intune en Azure Portal](https://go.microsoft.com/fwlink/?linkid=2090973). En el inquilino de la organización, puede crear y administrar grupos en todas estas áreas.
@@ -85,7 +85,7 @@ Use los siguientes pasos para crear un grupo.
 > - Todos los dispositivos Android Enterprise
 > - Todos los dispositivos iOS 11 y anteriores
 > - Marketing
-> - Recursos Humanos
+> - Recursos humanos
 > - Todos los empleados de Charlotte
 > - Todos los empleados de WA
 
@@ -103,7 +103,7 @@ Para crear los requisitos básicos de cumplimiento de la organización, puede cr
 
 Para instrucciones y recomendaciones sobre los perfiles de configuración, consulte [Asignación de perfiles de dispositivo en Microsoft Intune](../configuration/device-profile-assign.md#user-groups-vs-device-groups) y [Recomendaciones de perfiles](../configuration/device-profile-create.md#recommendations).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Control de acceso basado en rol (RBAC) con Microsoft Intune](role-based-access-control.md)
 - [Administración del acceso a recursos y aplicaciones con grupos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77f5787509438ec3280f29be8449d78979806042
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74542668"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547965"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Solución de problemas de perfiles de configuración de dispositivos de Wi-Fi en Microsoft Intune
 
@@ -236,7 +236,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   - Confirme que todos los certificados necesarios en toda la cadena de certificados están en el dispositivo Android. De lo contrario, no se podrá instalar el perfil de Wi-Fi en el dispositivo. Para obtener más información, vea [Falta de autoridad de certificación intermedia](https://developer.android.com/training/articles/security-ssl#MissingCa) (se abre el sitio web de Android).
   - Filtre Omadmlog con palabras clave para buscar información, como qué certificado se usa en el perfil de Wi-Fi y si el perfil se aplicó correctamente.
 
-    Por ejemplo, use [CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace) para leer los registros. Use la cadena de búsqueda para filtrar "wifimgr":
+    Por ejemplo, use [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) para leer los registros. Use la cadena de búsqueda para filtrar "wifimgr":
 
     > [!div class="mx-imgBorder"]
     > ![Filtrado de CMTrace para buscar perfiles de configuración de WiFiMgr en dispositivos Android](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)

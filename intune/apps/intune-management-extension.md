@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563461"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548018"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Uso de scripts de PowerShell para dispositivos Windows 10 en Intune
 
@@ -64,9 +64,9 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
 
   - Dispositivos administrados conjuntamente que usan Configuration Manager e Intune. Asegúrese de que la carga de trabajo **Aplicaciones** esté establecida en **Piloto de Intune** o **Intune**. Consulte los artículos siguientes para obtener instrucciones: 
   
-    - [¿Qué es la administración conjunta?](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [Carga de trabajo de aplicaciones cliente](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Cambio de las cargas de trabajo de Configuration Manager a Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [¿Qué es la administración conjunta?](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [Carga de trabajo de aplicaciones cliente](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Cambio de las cargas de trabajo de Configuration Manager a Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Asegúrese de que los dispositivos estén [unidos](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) a Azure AD. Los dispositivos que solo están [registrados](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) en Azure AD no recibirán los scripts.
@@ -134,7 +134,7 @@ En **Scripts de PowerShell**, seleccione el script que quiere supervisar y, desp
 
 ## <a name="intune-management-extension-logs"></a>Registros de extensión de administración de Intune
 
-Habitualmente, los registros de agente en la máquina cliente se encuentran en `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Puede usar [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) para ver estos archivos de registro. 
+Habitualmente, los registros de agente en la máquina cliente se encuentran en `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Puede usar [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) para ver estos archivos de registro.
 
 ![Captura de pantalla o registros de agente de CMTrace de muestra en Microsoft Intune](./media/apps-win32-app-management/apps-win32-app-10.png)  
 

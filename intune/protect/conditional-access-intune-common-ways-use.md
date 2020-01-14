@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9795ca8a585fd926cc269d493760b37aa7666eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74051970"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547057"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>¿Cuáles son las formas habituales de usar el acceso condicional con Intune?
 
@@ -52,10 +52,10 @@ Las directivas de acceso condicional basado en dispositivos para Exchange Onlin
 
 > [!NOTE]
 > En los dispositivos Android, al habilitar el acceso basado en dispositivos para SharePoint Online o el acceso basado en explorador para Exchange Online, los usuarios deben activar la opción **Habilitar acceso al explorador** en el dispositivo inscrito tal y como se indica aquí:
-> 1. Inicie la **aplicación de portal de empresa**.
+> 1. Abra la **aplicación del portal de empresa**.
 > 2. Vaya a la página **Configuración** desde los tres puntos (...) o el botón de menú de hardware.
 > 3. Presione el botón **Habilitar acceso al explorador** . 
-> 4. En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.
+> 4. En el Explorador de Chrome, cierre sesión en Office 365 y reinicie Chrome.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Acceso condicional basado en el control de acceso a redes
 
@@ -83,11 +83,11 @@ El acceso condicional para equipos proporciona funcionalidades similares a las d
 
 #### <a name="corporate-owned"></a>Propiedad corporativa
 
-- **Unidos a un dominio de AD local:** esta opción se usa habitualmente por las organizaciones que están razonablemente cómodas con la manera en que ya se están administrando sus equipos mediante directivas de grupo de AD o con System Center Configuration Manager.
+- **Unidos a un dominio de AD local:** esta opción se usa habitualmente por las organizaciones que están razonablemente cómodas con la manera en que ya se están administrando sus equipos mediante directivas de grupo de AD o con Configuration Manager.
 
 - **Unidos a un dominio de Azure AD y administración de Intune:** este escenario es para aquellas organizaciones que desean priorizar la nube (es decir, usar principalmente servicios en la nube, con el objetivo de reducir el uso de una infraestructura local) o darle exclusividad (sin infraestructura local). Unión a Azure AD funciona bien en un entorno híbrido, al permitir el acceso a aplicaciones y recursos en la nube y locales. El dispositivo se une a Azure AD y se inscribe en Intune, lo que puede usarse como criterios de acceso condicional al acceder a recursos corporativos.
 
-- **Unidos a un dominio de AD y System Center Configuration Manager:** a partir de la rama actual, System Center Configuration Manager proporciona funcionalidades de acceso condicional que pueden evaluar determinados criterios de cumplimiento, además de los de un equipo unido a un dominio:
+- **Unidos a un dominio de AD y Configuration Manager:** a partir de la rama actual, Configuration Manager proporciona funcionalidades de acceso condicional que pueden evaluar determinados criterios de cumplimiento, además de los de un equipo unido a un dominio:
 
   - ¿Está cifrado el equipo?
 

@@ -1,6 +1,6 @@
 ---
 title: 'Configuración y características de dispositivos en Microsoft Intune: Azure | Microsoft Docs'
-description: Información general de los distintos perfiles de dispositivo de Microsoft Intune. Obtenga información de las características, restricciones, correo electrónico, Wi-Fi, VPN, educación, certificados, actualización de Windows 10, BitLocker y Microsoft Defender, Windows Information Protection, plantillas administrativas y opciones de configuración de dispositivos personalizada en Azure Portal. Use estos perfiles para administrar y proteger los datos y los dispositivos de su compañía.
+description: Información general de los distintos perfiles de dispositivo de Microsoft Intune. Obtenga información de las características, restricciones, correo electrónico, Wi-Fi, VPN, educación, certificados, actualización de Windows 10, BitLocker y Microsoft Defender, Windows Information Protection, plantillas administrativas y opciones de configuración de dispositivos personalizada en el Centro de administración de Microsoft Endpoint Manager. Use estos perfiles para administrar y proteger los datos y los dispositivos de su compañía.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74694954"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206625"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicación de la configuración y características en dispositivos con perfiles de dispositivos Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune incluye valores de configuración y características que puede habilitar o deshabilitar en distintos dispositivos dentro de su organización. Estas características y opciones de configuración se agregan a los "perfiles de configuración". Puede crear perfiles para diferentes dispositivos y plataformas, incluidas iOS, Android y Windows. Luego, use Intune para aplicar o "asignar" el perfil a los dispositivos.
 
@@ -61,7 +61,7 @@ Esta característica es compatible con:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8,1
+- Windows Phone 8.1
 - Windows 8.1
 - Windows 10 y versiones posteriores
 
@@ -75,7 +75,7 @@ Esta característica es compatible con:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8,1
+- Windows Phone 8.1
 
 ## <a name="delivery-optimization"></a>Optimización de entrega
 
@@ -140,7 +140,7 @@ Esta característica es compatible con:
 - Android
 - Android Enterprise
 - iOS/iPadOS
-- Windows Phone 8,1
+- Windows Phone 8.1
 - Windows 10 y versiones posteriores
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
@@ -239,7 +239,7 @@ Esta característica es compatible con:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8,1
+- Windows Phone 8.1
 - Windows 8.1
 - Windows 10 y versiones posteriores
 

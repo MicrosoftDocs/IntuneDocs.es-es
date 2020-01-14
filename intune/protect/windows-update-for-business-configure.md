@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691771"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207458"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Administración de actualizaciones de software de Windows 10 en Intune
 
@@ -68,9 +68,6 @@ Deben cumplirse los requisitos previos siguientes para usar las actualizaciones 
   Puede configurar la opción *Datos de diagnóstico y uso* de los dispositivos Windows 10 de manera manual o usar un perfil de restricción de dispositivos Intune para Windows 10 o versiones posteriores. Si usa un perfil de restricción de dispositivos, establezca la [configuración de restricción de dispositivos](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) de **Compartir los datos de uso** al menos en **Básico**. Esta configuración se encuentra en la categoría **Informes y telemetría** cuando se configura una directiva de restricción de dispositivos para Windows 10 o versiones posteriores.
 
   Para obtener más información sobre los perfiles de dispositivo, vea [Configuración de restricciones de dispositivos en Microsoft Intune](../configuration/device-restrictions-configure.md).
-
-- Si usa el Portal de Azure clásico, [migre la configuración a Azure Portal](#migrate-update-settings-to-the-azure-portal).
-
 
 ## <a name="windows-10-update-rings"></a>Anillos de actualización de Windows 10
 
@@ -227,7 +224,7 @@ Cuando un dispositivo recibe una directiva de actualizaciones de característica
 
 3. En **Datos básicos**, especifique un nombre, una descripción (opcional) y, para **Actualización de características para implementar**, seleccione la versión de Windows con el conjunto de características que desee y, a continuación, seleccione **Siguiente**.
 
-4. En **Asignaciones**, seleccione **+ Seleccionar grupos para incluir** y, después, asigne el anillo de actualización a uno o varios grupos. Seleccione **Siguiente** para continuar.
+4. En **Asignaciones**, seleccione **+ Seleccionar grupos para incluir** y, después, asigne la implementación de actualizaciones de características a uno o varios grupos. Seleccione **Siguiente** para continuar.
 
 5. En **Revisar + crear**, revise la configuración y seleccione **Crear** cuando esté listo para guardar la directiva de actualizaciones de características de Windows 10.  
 
@@ -240,17 +237,6 @@ Desde este panel, podrá:
 - Seleccionar **Eliminar** para eliminar la directiva de Intune y quitarla de los dispositivos.
 - Seleccione **Propiedades** para modificar la implementación.  En el panel *Propiedades*, seleccione **Editar** para abrir las *asignaciones o la configuración de la implementación*, donde podrá modificar la implementación.
 - Seleccione **Estado de actualización del usuario final** para ver información acerca de la directiva.
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Migración de la configuración de actualización a Azure Portal
-
-El portal clásico de Azure también tiene un número limitado de otras opciones de actualizaciones de Windows 10 en el perfil de configuración de dispositivo. Si tiene alguna de estas opciones configuradas al migrar a Azure Portal, le recomendamos encarecidamente que lleve a cabo las acciones siguientes:
-
-1. Cree anillos de actualización de Windows 10 en Azure Portal con la configuración que necesite. La opción **Permitir características de versión preliminar** no es compatible con Azure Portal porque ya no se puede emplear en las compilaciones más recientes de Windows 10. Al crear los anillos de configuración, puede configurar las otras tres opciones, así como las otras opciones de actualizaciones de Windows 10.
-
-   > [!NOTE]
-   > La configuración de actualizaciones de Windows 10 creada en el portal clásico no se muestra en Azure Portal después de la migración. Pero se aplica esta configuración. Si migra cualquiera de estas opciones y edita la directiva migrada desde Azure Portal, esta configuración se quitará de la directiva.
-
-2. Elimine la configuración de actualización en el portal clásico. Después de migrar a Azure Portal y agregar la misma configuración a un anillo de actualización, debe eliminar la configuración en el portal clásico para evitar posibles conflictos entre directivas. Por ejemplo, si una misma opción está configurada con distintos valores, se produce un conflicto. No hay ninguna manera fácil de saberlo porque la configuración establecida en el portal clásico no se muestra en Azure Portal.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

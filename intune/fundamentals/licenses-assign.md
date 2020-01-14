@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414084"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207370"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune
 
 Tanto si quiere agregar usuarios manualmente como si quiere sincronizar desde Active Directory local, debe asignar primero a cada usuario una licencia de Intune para que los usuarios puedan inscribir sus dispositivos en Intune. Para obtener una lista de licencias, vea [Licencias que incluyen Intune](../licenses.md).
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Asignación de una licencia de Intune en el Centro de administración de Microsoft 365
+> [!NOTE]
+> Los usuarios que tienen asignada la directiva de protección de aplicaciones de Intune y no inscriben sus dispositivos en Microsoft Intune también necesitarán una licencia de Intune para recibir la directiva. 
 
-Puede usar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure AD.
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Asignación de una licencia de Intune en el Centro de administración de Microsoft Endpoint Manager
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) con las credenciales de administrador de inquilinos y luego elija **Usuarios** > **Usuarios activos**.
+Puede usar el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure AD.
 
-2. Seleccione la cuenta de usuario a la que quiere asignar una licencia de usuario de Intune y luego elija **Licencias de producto** > **Editar**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Usuarios** > **Todos los usuarios** > elija un usuario > **Licencias** > **Asignaciones**.
 
-3. Alterne entre **Intune** o **Enterprise Mobility + Security** en **Activado** y elija **Guardar**.
+2. Elija el cuadro para **Intune** > **Guardar**.
 
-   ![Captura de pantalla de la sección de licencias de productos del Centro de administración de Microsoft 365.](./media/licenses-assign/office-assign-license.png)
+   ![Captura de pantalla de la sección de licencias de productos del Centro de administración de Microsoft 365.](./media/licenses-assign/mem-assign-license.png)
 
-4. Ahora, la cuenta de usuario tiene los permisos necesarios para usar el servicio e inscribir dispositivos en la administración.
+3. Ahora, la cuenta de usuario tiene los permisos necesarios para usar el servicio e inscribir dispositivos en la administración.
 
 > [!NOTE]
 > Los usuarios aparecerán en el portal de Intune clásico solo después de que hayan inscrito un dispositivo mediante el cliente de equipo de Intune. Además, puede seleccionar un grupo de usuarios para editarlos a la vez, ya sea seleccionando agregar o reemplazar una licencia para todos los usuarios seleccionados.

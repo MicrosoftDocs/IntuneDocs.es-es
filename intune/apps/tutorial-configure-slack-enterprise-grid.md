@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563395"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206914"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configuración de Slack para usar Intune para EMM y la configuración de aplicaciones
 
@@ -48,32 +48,31 @@ También necesitará un plan de [Slack Enterprise Grid](https://get.slack.help/h
 Para activar EMM para el plan de Slack Enterprise Grid, siga las [instrucciones de Slack](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) y [conecte Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) como el proveedor de identidades (IDP) del plan de Grid.
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
-Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) como administrador global o administrador de servicios de Intune. Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
+Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como administrador global o administrador de servicios de Intune. Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Configuración de Slack para EMM en dispositivos iOS
 Agregue la aplicación Slack para EMM de iOS al inquilino de Intune y cree una directiva de configuración de aplicaciones para permitir que los usuarios de iOS de las organizaciones tengan acceso a Slack con Intune como proveedor de EMM.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Incorporación de Slack para EMM a Intune
 Agregue Slack para EMM como una aplicación iOS administrada en Intune y asigne sus usuarios de Slack. Las aplicaciones son específicas para una plataforma, por lo que deberá agregar una aplicación de Intune distinta para los usuarios de Slack en dispositivos Android.
-1. En Intune, seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-2. En Tipo de aplicación, seleccione **Store app - iOS** (Aplicación de la tienda: iOS).
-3. Seleccione **Buscar en App Store**. Escriba el término de búsqueda "Slack para EMM" y seleccione la aplicación.
-4. Seleccione **App information** (Información de la aplicación) y configure los cambios que considere necesarios.
-5. Seleccione **Agregar**.
-6. En la barra de búsqueda, escriba "Slack para EMM" y seleccione la aplicación que acaba de agregar.
-7. En Administrar, seleccione **Asignaciones**.
-8. Seleccione **Agregar grupo**. En función de quién haya elegido que se vea afectado al activar EMM para Slack, en **Tipo de asignación**, es posible que quiera seleccionar:
+1. En el centro de administración, seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
+2. En **Tipo de aplicación**, seleccione la aplicación de la tienda **iOS**.
+3. Seleccione **Buscar en App Store**. Escriba el término de búsqueda "Slack para EMM" y seleccione la aplicación. Haga clic en **Seleccionar** en el panel **Buscar en App Store**.
+4. Seleccione **App information** (Información de la aplicación) y configure los cambios que considere necesarios. Seleccione **Aceptar** para establecer la información de la aplicación.
+5. Haga clic en **Agregar**.
+6. Seleccione **Asignaciones**.
+7. Haga clic en **Agregar grupo**. En función de quién haya elegido que se vea afectado al activar EMM para Slack, en **Tipo de asignación**, es posible que quiera seleccionar:
     - **Disponible para dispositivos inscritos** si eligió "All members (including guests)"(Todos los miembros [incluidos los invitados]) O BIEN,
     - **Disponible con o sin inscripción** si eligió "All members (excluding guests)" (Todos los miembros [excepto los invitados]) u "Optional" (Opcional).
-9. Seleccione **Grupos incluidos** y seleccione **Sí** en Make this app available to all users (Hacer que esta aplicación esté disponible para todos los usuarios).
-10. Haga clic en **Aceptar** y, luego, vuelva a hacer clic en **Aceptar**.
-11. Haga clic en **Guardar**.
+8. Seleccione **Grupos incluidos** y, en **Hacer que esta aplicación esté disponible para todos los usuarios**, seleccione **Sí**.
+9. Haga clic en **Aceptar** y, luego, vuelva a hacer clic en **Aceptar** para agregar el grupo.
+10. Haga clic en **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Incorporación de una directiva de configuración de aplicaciones de Slack para EMM
 Agregue una directiva de configuración de aplicaciones de Slack para EMM de iOS. Las directivas de configuración de aplicaciones para los dispositivos administrados son específicas para una plataforma, por lo que deberá agregar una directiva distinta para los usuarios de Slack en dispositivos Android.
-1. En Intune, seleccione **Aplicaciones cliente** > **Directivas de configuración de aplicaciones** > **Agregar**.
-2. En Nombre, escriba Prueba de la directiva de configuración de aplicaciones de Slack.
-3. En Tipo de inscripción del dispositivo, seleccione **Dispositivos administrados**.
+1. En el centro de administración, seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Dispositivos administrados**.
+2. En Nombre, escriba "Prueba de la directiva de configuración de aplicaciones de Slack".
+3. En Tipo de inscripción del dispositivo, confirme que **Dispositivos administrados** esté habilitado.
 4. En Plataforma, seleccione **iOS**.
 5. Seleccione **Aplicación asociada**.
 6. En la barra de búsqueda, escriba "Slack para EMM" y seleccione la aplicación.
@@ -86,7 +85,7 @@ Agregue una directiva de configuración de aplicaciones de Slack para EMM de iOS
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Opcional) Creación de una directiva de cumplimiento de dispositivos iOS
 Configure una directiva de cumplimiento para dispositivos Intune para establecer las condiciones que debe cumplir un dispositivo para que se considere compatible. Para este tutorial, se creará una directiva de cumplimiento para dispositivos iOS. Las directivas de cumplimiento son específicas para una plataforma, por lo que deberá crear una directiva distinta para los usuarios de Slack en dispositivos Android.
-1. En Intune, seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
+1. En el centro de administración, seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
 2. En Nombre, escriba "Prueba de directiva de cumplimiento de iOS".
 3. En Descripción, escriba "Prueba de directiva de cumplimiento de iOS".
 4. En Plataforma, seleccione **iOS**.

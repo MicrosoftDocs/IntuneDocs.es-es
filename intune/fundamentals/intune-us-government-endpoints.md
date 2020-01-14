@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000404"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207390"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Puntos de conexión del Gobierno de EE. UU. de Microsoft Intune
 
@@ -31,12 +31,14 @@ En esta página se enumeran los puntos de conexión del Gobierno de EE. UU. nec
 
 Para administrar dispositivos que se encuentren detrás de firewalls y servidores proxy, debe habilitar la comunicación para Intune.
 
-- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)**, ya que los clientes de Intune usan ambos protocolos.
+- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)** , ya que los clientes de Intune usan ambos protocolos.
 - Para algunas tareas (como descargar actualizaciones de software), Intune necesita acceso de un servidor proxy no autenticado a manage.microsoft.com.
 
 Puede modificar la configuración del servidor proxy en equipos cliente individuales. También puede usar la opción de directiva de grupo para cambiar la configuración de todos los equipos cliente que se encuentran detrás de un servidor proxy especificado.
 
 Los dispositivos administrados requieren configuraciones que dejen acceder a **Todos los usuarios** a los servicios a través de firewalls.
+
+Para más información sobre la inscripción automática de Windows 10 y el registro de dispositivos para clientes de la administración pública de Estados Unidos, consulte [Configuración de la inscripción para dispositivos Windows](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration).
 
 En las siguientes tablas se enumeran los puertos y los servicios a los que accede el cliente de Intune:
 
@@ -78,4 +80,3 @@ Para obtener más información, vea:
 ## <a name="next-steps"></a>Pasos siguientes
 [Puntos de conexión de red de Microsoft Intune](intune-endpoints.md)
 
-[Inscripción automática y registro de dispositivos Windows 10](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

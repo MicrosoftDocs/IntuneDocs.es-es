@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899426"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692123"
 ---
 # <a name="app-protection-policies-overview"></a>Introducción general a las directivas de protección de aplicaciones
 
@@ -36,7 +36,7 @@ Las directivas de protección de aplicaciones de Administración de aplicaciones
 ## <a name="how-you-can-protect-app-data"></a>Cómo puede proteger los datos de la aplicación
 Los empleados usan dispositivos móviles para tareas personales y de trabajo. Mientras se asegura de que los empleados pueden ser productivos, puede evitar la pérdida de datos, ya sea intencional o involuntaria. También conviene proteger los datos de empresa que son accesibles desde dispositivos que no están administrados por usted.
 
-Puede usar directivas de protección de aplicaciones de Intune **independientemente de cualquier otra solución de administración de dispositivos móviles (MDM)**. Esta independencia le ayuda a proteger los datos de su empresa con o sin inscripción de dispositivos en una solución de administración de dispositivos. Mediante la implementación de **directivas de nivel de aplicación**, puede restringir el acceso a los recursos de la empresa y mantener los datos dentro del ámbito del departamento de TI.
+Puede usar directivas de protección de aplicaciones de Intune **independientemente de cualquier otra solución de administración de dispositivos móviles (MDM)** . Esta independencia le ayuda a proteger los datos de su empresa con o sin inscripción de dispositivos en una solución de administración de dispositivos. Mediante la implementación de **directivas de nivel de aplicación**, puede restringir el acceso a los recursos de la empresa y mantener los datos dentro del ámbito del departamento de TI.
 
 ### <a name="app-protection-policies-on-devices"></a>Directivas de protección de aplicaciones en dispositivos
 
@@ -95,7 +95,7 @@ Cuando se usan aplicaciones sin restricciones, se pueden entremezclar los datos 
 ### <a name="data-protection-with-app-protection-policies-app"></a>Protección de datos con directivas de protección de aplicaciones (APP)
 
 Puede usar directivas de protección de aplicaciones para evitar que los datos de empresa se guarden en el almacenamiento local del dispositivo (consulte la imagen a continuación). También puede restringir el movimiento de datos a otras aplicaciones que no estén protegidas por directivas de protección. La configuración de directivas de protección de aplicaciones incluyen:
-- Directivas de reubicación de datos como **Impedir "Guardar como"**, **Restringir cortar, copiar y pegar**.
+- Las directivas de reubicación de datos como **Guardar copias de los datos de la organización** y **Restringir funciones Cortar, Copiar y Pegar**.
 - Opciones de directivas de acceso como **Requerir PIN sencillo para el acceso**, **Bloquear las aplicaciones administradas para que no se ejecuten en dispositivos con jailbreak o rooting**.
 
 ![Imagen conceptual que muestra la datos de la compañía protegidos por directivas](./media/app-protection-policy/apps-with-protection-policies.png)
@@ -169,7 +169,7 @@ Entre los requisitos adicionales para usar las aplicaciones [Word, Excel y Power
 
 - El usuario final debe tener una licencia de [Office 365 Empresa o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) asignada a su cuenta de Azure Active Directory. La suscripción debe incluir las aplicaciones de Office en dispositivos móviles y puede incluir una cuenta de almacenamiento en la nube con [OneDrive para la Empresa](https://onedrive.live.com/about/business/). Las licencias de Office 365 se pueden asignar en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) siguiendo estas [instrucciones](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-- El usuario final debe tener una ubicación administrada configurada con la funcionalidad pormenorizada Guardar como en la configuración de directiva de protección de aplicaciones "Impedir Guardar como". Por ejemplo, si la ubicación administrada es OneDrive, la aplicación [OneDrive](https://onedrive.live.com/about/) debe estar configurada en la aplicación Word, Excel o PowerPoint del usuario final.
+- El usuario final debe tener una ubicación administrada configurada con la funcionalidad pormenorizada Guardar como en la configuración de directiva de protección de aplicaciones "Guardar copias de los datos de la organización". Por ejemplo, si la ubicación administrada es OneDrive, la aplicación [OneDrive](https://onedrive.live.com/about/) debe estar configurada en la aplicación Word, Excel o PowerPoint del usuario final.
 
 - Si la ubicación administrada es OneDrive, la directiva de protección de aplicaciones implementada para el usuario final debe tener como destino la aplicación.
 
@@ -228,7 +228,7 @@ Para los dispositivos iOS, incluso si el PIN se comparte entre aplicaciones de d
   > Para comprobar los requisitos de acceso del usuario más a menudo, por ejemplo, la solicitud del PIN, en particular en el caso de las aplicaciones utilizadas más a menudo, se recomienda reducir el valor de la opción "Volver a comprobar los requisitos de acceso tras (minutos)".
 
 **PIN de aplicación integrados para Outlook y OneDrive**<br>
-El PIN de Intune funciona en base a un temporizador basado en inactividad (el valor de **Volver a comprobar los requisitos de acceso tras [minutos]**). Por lo tanto, las solicitudes del PIN de Intune se muestran independientemente de las solicitudes de PIN de aplicación integrado para Outlook y OneDrive, que a menudo están vinculados al inicio de la aplicación de forma predeterminada. Si el usuario recibe ambas solicitudes de PIN al mismo tiempo, el comportamiento esperado debería ser que el PIN de Intune tiene prioridad.
+El PIN de Intune funciona en base a un temporizador basado en inactividad (el valor de **Volver a comprobar los requisitos de acceso tras [minutos]** ). Por lo tanto, las solicitudes del PIN de Intune se muestran independientemente de las solicitudes de PIN de aplicación integrado para Outlook y OneDrive, que a menudo están vinculados al inicio de la aplicación de forma predeterminada. Si el usuario recibe ambas solicitudes de PIN al mismo tiempo, el comportamiento esperado debería ser que el PIN de Intune tiene prioridad.
 
 **Seguridad de PIN de Intune**<br>
 El PIN sirve para permitir que solo el usuario correcto disponga de acceso a los datos de su organización en la aplicación. Por lo tanto, el usuario debe iniciar sesión con su cuenta profesional o educativa para poder establecer o restablecer el PIN de la aplicación de Intune. Esta autenticación se controla mediante Azure Active Directory a través del intercambio de token seguros y no es transparente para [Intune App SDK](../developer/app-sdk.md). Desde una perspectiva de seguridad, la mejor manera de proteger los datos profesionales o educativos es cifrarlos. El cifrado no está relacionado con el PIN de la aplicación, pero tiene su propia directiva de protección de aplicaciones.
@@ -297,10 +297,10 @@ Para obtener más información sobre ejemplos de directivas de protección de ap
 ### <a name="device-fingerprint-or-face-ids"></a>Identificadores de cara o huella digital del dispositivo 
 Las directivas de protección de aplicaciones de Intune permiten limitar el acceso a solo los usuarios con licencia de Intune. Una de las maneras de controlar el acceso a la aplicación es exigir Touch ID o Face ID de Apple en dispositivos admitidos. Intune implementa un comportamiento donde si hay algún cambio en la base de datos biométrica del dispositivo, Intune solicita al usuario un PIN cuando se alcanza el siguiente valor de tiempo de espera de inactividad. Los cambios realizados en los datos biométricos incluyen la incorporación o eliminación de una cara o una huella digital. Si el usuario de Intune no tiene establecido un PIN, se le lleva por los pasos para configurar uno.
  
-La finalidad de este proceso es seguir manteniendo los datos de la organización dentro de la aplicación seguros y protegidos en el nivel de aplicación. Esta característica solo está disponible para iOS y requiere la participación de aplicaciones que integran Intune APP SDK para iOS, versión 9.0.1 o posterior. La integración del SDK es necesaria para que se pueda aplicar el comportamiento en las aplicaciones de destino. Esta integración ocurre de manera gradual y depende de los equipos de la aplicación específica. Algunas de las aplicaciones que participan son WXP, Outlook, Managed Browser y Yammer.
+La finalidad de este proceso es seguir manteniendo los datos de la organización dentro de la aplicación seguros y protegidos en el nivel de aplicación. Esta característica solo está disponible para iOS y requiere la participación de aplicaciones que integran Intune APP SDK para iOS, versión 9.0.1 o posterior. La integración del SDK es necesaria para poder aplicar el comportamiento en las aplicaciones de destino. Esta integración ocurre de manera gradual y depende de los equipos de la aplicación específica. Algunas aplicaciones participantes incluyen WXP, Outlook, Managed Browser y Yammer.
   
 ### <a name="ios-share-extension"></a>Extensión de recursos compartidos de iOS
-Puede usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en **solo aplicaciones administradas** o **ninguna aplicación**. La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_. Puede validar este comportamiento de cifrado intentando abrir un archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
+Puede usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en **solo aplicaciones administradas** o **ninguna aplicación**. La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_ . Puede validar este comportamiento de cifrado intentando abrir un archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
 
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>Varias configuraciones de acceso de protección de aplicaciones de Intune para el mismo conjunto de aplicaciones y usuarios
 Las directivas de protección de aplicaciones de Intune para el acceso se aplicarán en un orden específico en los dispositivos de usuario final cuando intenten obtener acceso a una aplicación de destino desde su cuenta corporativa. En general, tendría prioridad un borrado, seguido de un bloqueo y, después, una advertencia descartable. Por ejemplo, si es aplicable a la aplicación o usuario específico, una configuración de sistema operativo mínima de iOS que advierte al usuario de actualizar la versión de iOS se aplicará después de la configuración de sistema operativo mínima de iOS que bloquea el acceso del usuario. Por tanto, en el caso en que el administrador de TI configure el sistema operativo mínimo de iOS en 11.0.0.0 y el sistema operativo mínimo de iOS (solo advertencia) en 11.1.0.0, mientras el dispositivo que intenta obtener acceso a la aplicación esté en iOS 10, se bloquearía al usuario final en función del valor más restrictivo para la versión de sistema operativo de iOS mínima que provoque el bloqueo del acceso.
@@ -345,5 +345,5 @@ La configuración de directivas de protección de aplicaciones que utilicen las 
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 Las aplicaciones de terceros, como la aplicación móvil de Salesforce, funcionan con Intune de formas específicas para proteger los datos corporativos. Para más información sobre cómo la aplicación de Salesforce funciona con Intune en particular (incluida la configuración de la aplicación de MDM), vea [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) (Aplicación de Salesforce y Microsoft Intune).

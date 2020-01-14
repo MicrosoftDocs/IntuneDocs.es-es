@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f4c7b5e3cca06a3ec10ea1b3dfc5e45546c841f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 0d7a166e97cb9161df7c6d024e200adec0974715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563905"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204976"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Windows a Microsoft Intune
 
@@ -97,3 +97,5 @@ Esta capacidad resulta útil para evitar que se produzca una condición de carre
 - Obtenga más información sobre los métodos disponibles para supervisar las propiedades y la asignación de la aplicación. Consulte [Supervisión de información de aplicación y asignaciones con Microsoft Intune](apps-monitor.md).
 
 - Obtenga más información sobre el contexto de la aplicación en Intune. Consulte [Información general sobre el ciclo de vida de la aplicación en Microsoft Intune](app-lifecycle.md).
+
+- Más información sobre las aplicaciones Win32. Consulte [Administración de aplicaciones Win32](~/apps/apps-win32-app-management.md).

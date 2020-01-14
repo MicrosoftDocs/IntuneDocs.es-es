@@ -1,11 +1,11 @@
 ---
 title: Asignación de perfiles de dispositivo en Microsoft Intune - Azure | Microsoft Docs
-description: Use Azure Portal para asignar perfiles de dispositivo y directivas a los usuarios y a los dispositivos. Aprenda a excluir grupos de una asignación de perfil en Microsoft Intune.
+description: Use el centro de administración de Microsoft Endpoint Manager para asignar perfiles de dispositivo y directivas a usuarios y dispositivos. Aprenda a excluir grupos de una asignación de perfil en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860322"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206710"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 

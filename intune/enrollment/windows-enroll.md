@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000438"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207441"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configuración de la inscripción de dispositivos Windows
 
@@ -111,12 +111,12 @@ Indique a los usuarios cómo inscribir sus dispositivos Windows y qué esperar c
 > [!NOTE]
 > Los usuarios finales deben tener acceso al sitio web Portal de empresa a través de Microsoft Edge para ver las aplicaciones de Windows que haya asignado para versiones específicas de Windows. Otros exploradores (incluidos Google Chrome, Mozilla Firefox e Internet Explorer) no admiten este tipo de filtrado.
 
-Para obtener instrucciones de inscripción del usuario final, consulte [Inscribir el dispositivo Windows en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). También puede indicar a los usuarios que revisen [¿Qué información puede ver mi administrador de TI cuando inscribo mi dispositivo en Intune?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+Para instrucciones sobre inscripción del usuario final, consulte [Inscriba el dispositivo Windows en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). También puede indicar a los usuarios que revisen [¿Qué información puede ver mi administrador de TI cuando inscribo mi dispositivo en Intune?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 >[!IMPORTANT]
 > Si no tiene habilitada la inscripción de MDM automática, pero tiene dispositivos Windows 10 unidos a Azure AD, verá dos registros en la consola de Intune tras la inscripción. Esto se puede evitar; para ello, asegúrese de que los usuarios con dispositivos unidos a Azure AD se dirigen a **Cuentas** > **Obtener acceso a trabajo o escuela** y usan **Conectar** para conectarse con la misma cuenta. 
 
-Para más información sobre las tareas del usuario final, vea [Recursos sobre la experiencia del usuario final con Microsoft Intune](../fundamentals/end-user-educate.md).
+Para más información sobre las tareas del usuario final, consulte [Cómo presentar Microsoft Intune a los usuarios finales](../fundamentals/end-user-educate.md).
 
 ## <a name="registration-and-enrollment-cnames"></a>CNAME de registro e inscripción
 Azure Active Directory tiene un CNAME diferente que usa para el registro de dispositivos iOS, Android y Windows. El acceso condicional de Intune requiere el registro de dispositivos, en una acción denominada también "unirse al área de trabajo". Si piensa usar el acceso condicional, también debe configurar el CNAME EnterpriseRegistration para cada nombre de empresa que tenga.
@@ -128,6 +128,9 @@ Azure Active Directory tiene un CNAME diferente que usa para el registro de disp
 Para obtener más información sobre el registro de dispositivos, consulte [Administración de identidades de dispositivos con Azure Portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal).
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Inscripción automática y registro de dispositivos Windows 10
+
+Esta sección se aplica a los clientes de la nube de la administración pública de Estados Unidos.
+
 Aunque la creación de entradas DNS CNAME es opcional, los registros CNAME facilitan la inscripción para los usuarios. Si no se encuentra ningún registro CNAME de inscripción, se pedirá a los usuarios que escriban de forma manual el nombre del servidor MDM (enrollment.manage.microsoft.us).
 
 | Tipo | Nombre de host | Apunta a | TTL |

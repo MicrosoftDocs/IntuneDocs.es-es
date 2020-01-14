@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d0ef42e301efe2c323ea98265272ba71596a8083
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059372"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206404"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfiles de telefonía móvil eSIM en Intune: versión preliminar pública
 
@@ -91,11 +91,11 @@ Cuando trabaje con el archivo .csv con los códigos de activación, asegúrese d
 2. La segunda fila y todas las posteriores son códigos de activación únicos de un solo uso que incluyen dos valores:
 
     1. La primera columna es el ICCID (identificador del chip SIM) único.
-    2. La segunda columna es el identificador de coincidencia con solo una coma de separación (no hay coma al final). Vea el ejemplo siguiente:
+    2. La segunda columna es el identificador de coincidencia con solo una coma de separación (no hay coma al final). Consulte el ejemplo siguiente:
 
         ![Archivo .csv de ejemplo de código de activación de operador de telefonía móvil](./media/esim-device-configuration/url-activation-code-examples.png)
 
-3. El nombre del archivo .csv se convierte en el nombre del grupo de suscripción de telefonía móvil en Azure Portal. En la imagen anterior, el nombre de archivo es `UnlimitedDataSkynet.csv`. Por tanto, Intune asigna el nombre `UnlimitedDataSkynet.csv` al grupo de suscripciones:
+3. El nombre del archivo .csv se convierte en el nombre del grupo de suscripción de telefonía móvil en el Centro de administración de Endpoint Manager. En la imagen anterior, el nombre de archivo es `UnlimitedDataSkynet.csv`. Por tanto, Intune asigna el nombre `UnlimitedDataSkynet.csv` al grupo de suscripciones:
 
     ![El grupo de suscripciones de telefonía móvil se denomina con el nombre del archivo .csv de código de activación de ejemplo](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 

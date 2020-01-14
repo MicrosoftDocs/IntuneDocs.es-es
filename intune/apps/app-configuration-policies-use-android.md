@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564269"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205044"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adición de directivas de configuración de aplicaciones para dispositivos Android Enterprise administrados
 
@@ -34,15 +34,15 @@ Las directivas de configuración de aplicaciones en Microsoft Intune proporcion
 > [!NOTE]  
 > No todas las aplicaciones admiten la configuración de aplicaciones. Póngase en contacto con el desarrollador de la aplicación para comprobar si la aplicación admite directivas de configuración de aplicaciones.
 
-1. En [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), seleccione **Aplicaciones cliente** > **Directivas de configuración de aplicaciones** >  **Agregar**.
-2. Escriba las propiedades siguientes:
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** >  **Agregar** > **Dispositivos administrados**.
+2. Agregue las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Directiva de la aplicación Nine Work de Android Enterprise para toda la compañía**.
     - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
-    - **Tipo de inscripción del dispositivo**: Seleccione **Dispositivos administrados**.
+    - **Tipo de inscripción del dispositivo**: Esta opción se establece en **Dispositivos administrados**.
     - **Plataforma**: Seleccione **Android**.
 
-3. Seleccione **Aplicación asociada**. Elija la aplicación para la que quiere definir una directiva de configuración de aplicaciones. Selecciónela en la lista de aplicaciones de Google Play administrado que ha aprobado y sincronizado con Intune.
+3. Seleccione **Aplicación asociada**. Elija la aplicación Android a la que se asociará esta directiva de configuración de aplicaciones. Selecciónela en la lista de [aplicaciones de Google Play administrado que ha aprobado y sincronizado con Intune](~/apps/apps-add-android-for-work.md).
 4. Seleccione **Permisos**. Las configuraciones se pueden establecer con lo siguiente:
 
     - [Diseñador de configuraciones](#use-the-configuration-designer)
@@ -110,12 +110,12 @@ También puede preconfigurar permisos para que las aplicaciones accedan a las ca
 
 Por ejemplo, una aplicación usa el micrófono del dispositivo. Se solicita al usuario que conceda el permiso de aplicación para usar el micrófono.
 
-1. En [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), seleccione **Aplicaciones cliente** > **Directivas de configuración de aplicaciones** >  **Agregar**.
-2. Escriba las propiedades siguientes:
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** >  **Agregar** > **Dispositivos administrados**.
+2. Agregue las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Directiva de la aplicación sobre solicitud de permisos de Android Enterprise para toda la compañía**.
     - **Descripción**. escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
-    - **Tipo de inscripción del dispositivo**: Seleccione **Dispositivos administrados**.
+    - **Tipo de inscripción del dispositivo**: Esta opción se establece en **Dispositivos administrados**.
     - **Plataforma**: Seleccione **Android**.
 
 3. Seleccione **Aplicación asociada**. Elija la aplicación para la que quiere definir una directiva de configuración. Seleccione una de la lista de aplicaciones de perfil de trabajo Android que ha aprobado y sincronizado con Intune.

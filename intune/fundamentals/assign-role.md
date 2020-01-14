@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503014"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207169"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Asignación de un rol a un usuario de Intune
 
@@ -32,27 +32,23 @@ Para crear, editar o asignar roles, la cuenta debe tener uno de los siguientes p
 - **Administrador global**
 - **Administrador del servicio de Intune**
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Roles** > **Todos los roles**.
 
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. En la hoja **Roles de Intune: Todos los roles**, elija el rol integrado que quiera asignar.
 
-3. En la hoja **Intune**, seleccione **Roles** > **Todos los roles**.
+3. En la hoja <*nombre del rol*> - **Información general**, elija **Administrar** > **Asignaciones**.
 
-4. En la hoja **Roles de Intune: Todos los roles**, elija el rol integrado que quiera asignar.
+4. En la hoja de roles personalizados, elija **Asignar**.
 
-5. En la hoja <*nombre del rol*> - **Información general**, elija **Administrar** > **Asignaciones**.
+5. En la hoja **Asignaciones de roles**, escriba un **nombre de asignación** y una **descripción** opcional para la asignación.
 
-6. En la hoja de roles personalizados, elija **Asignar**.
+6. En **Miembros (grupos)** , elija un grupo que contenga el usuario al que quiere conceder los permisos.
 
-7. En la hoja **Asignaciones de roles**, escriba un **nombre de asignación** y una **descripción** opcional para la asignación.
+7. En **Ámbito (grupos)** , elija un grupo que contenga los usuarios o los dispositivos que el miembro anterior tendrá permiso para administrar.
 
-8. En **Miembros (grupos)** , elija un grupo que contenga el usuario al que quiere conceder los permisos.
+8. En **Ámbito (etiquetas)** , elija las etiquetas donde se aplicará esta asignación de roles.
 
-9. En **Ámbito (grupos)** , elija un grupo que contenga los usuarios o los dispositivos que el miembro anterior tendrá permiso para administrar.
-
-10. En **Ámbito (etiquetas)** , elija las etiquetas donde se aplicará esta asignación de roles.
-
-11. Cuando haya terminado, seleccione **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
+9. Cuando haya terminado, seleccione **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
 
 
 ## <a name="next-steps"></a>Pasos siguientes

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390339"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654267"
 ---
 # <a name="use-device-encryption-with-intune"></a>Uso del cifrado de dispositivos con Intune
 
@@ -86,6 +86,10 @@ Para obtener más información sobre la configuración de FileVault que puede ad
 Después de que Intune cifre un dispositivo macOS con FileVault, podrá ver y administrar las claves de recuperación de FileVault cuando vea el [informe de cifrado](encryption-monitor.md) de Intune.
 
 Una vez que Intune cifra un dispositivo macOS con FileVault, puede ver la clave de recuperación personal de dicho dispositivo en el Portal de empresa en cualquier dispositivo. Una vez en el Portal de empresa web, elija el dispositivo macOS cifrado y, a continuación, elija "Obtener clave de recuperación" como acción de dispositivos remotos.
+
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Recuperación de una clave de recuperación personal desde dispositivos macOS con cifrado de MEM
+
+Los usuarios finales podrán recuperar su clave de recuperación personal (clave de FileVault) mediante la aplicación Portal de empresa de iOS. El dispositivo que tiene la clave de recuperación personal se debe inscribir en Intune y cifrar con FileVault a través de Intune. Con la aplicación Portal de empresa de iOS, el usuario final puede abrir una página web que incluya la clave de recuperación personal de FileVault. También puede recuperar la clave de recuperación en Intune si selecciona **Dispositivos** > *el dispositivos macOS cifrado e inscrito* > **Obtener clave de recuperación**. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>Cifrado de BitLocker en Windows 10
 

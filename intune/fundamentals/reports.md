@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05258c5363b43398dee1815bb91c50878803e426
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 3ae06ae3f9f76d86a792721d45f8319bfe6491fd
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391947"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654233"
 ---
 # <a name="intune-reports"></a>Informes de Intune
 Los informes de Microsoft Intune le permiten supervisar de forma más eficaz y proactiva el estado y la actividad de los puntos de conexión de toda la organización, además de proporcionar otros datos de informes en Intune. Por ejemplo, podrá ver informes sobre el cumplimiento, el estado y las tendencias de los dispositivos. Además, puede crear informes personalizados para obtener datos más específicos. 
@@ -53,16 +53,19 @@ El informe de dispositivos no conformes muestra los datos que suelen usar los ro
 
 Puede ver el informe **Dispositivos no conformes** mediante los pasos siguientes:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Cumplimiento del dispositivo** > **Dispositivos no conformes**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Monitor** > **Dispositivos no conformes**.
 
     ![Informe de dispositivos no conformes](./media/intune-reports/intune-reports-02.png)
+
+    > [!TIP]
+    > Si ya ha usado Intune en Azure Portal antes, encontraría los detalles anteriores en Azure Portal al iniciar sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccionar **Cumplimiento de dispositivos** > **Dispositivos no compatibles**.
 
 ## <a name="device-compliance-report-organizational"></a>Informe de cumplimiento de dispositivos (organizativo)
 Los informes de cumplimiento de dispositivos son generales por naturaleza y proporcionan una vista más tradicional de los datos de informes para identificar las métricas agregadas. Este informe está diseñado para trabajar con grandes conjuntos de datos a fin de obtener una imagen completa del cumplimiento de los dispositivos. Por ejemplo, el informe de cumplimiento de dispositivos muestra todos los estados de cumplimiento de los dispositivos, de modo que se proporciona una vista más amplia de los datos, con independencia del tamaño del conjunto de datos. Este informe muestra el desglose completo de los registros, además de una visualización adecuada de las métricas agregadas. Para generarlo, se le pueden aplicar filtros y seleccionar el botón "Generar informe". Los datos se actualizan para mostrar el estado más reciente con la posibilidad de ver los registros individuales que componen los datos agregados. Al igual que la mayoría de los informes de la nueva plataforma, estos registros son susceptibles de ordenación y búsqueda para centrarse en la información que necesita. 
 
 Para ver un informe generado del estado de un dispositivo, puede seguir estos pasos:
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Informes** para ver el resumen de informes.
 3. Seleccione **Cumplimiento del dispositivo**.
 4. Seleccione los filtros **Estado de cumplimiento**, **OS** y **Propiedad** para refinar el informe.
@@ -79,7 +82,7 @@ Para ver información relacionada, consulte acerca de la [aplicación del cumpli
 
 El informe de cumplimiento de dispositivos está disponible como informe de resumen en la carga de trabajo **Informes**. Use los pasos siguientes para ver el informe de cumplimiento de dispositivos:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Informes** para ver el resumen de informes.
 
     ![Resumen de informes de Intune](./media/intune-reports/intune-reports-01.png)
@@ -91,7 +94,7 @@ Un informe de tendencias de cumplimiento de dispositivos puede mostrar la tenden
 
 Para ver el informe de **Tendencias**, siga estos pasos:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Informes** > **Tendencias** para ver el cumplimiento de los dispositivos durante una tendencia de 60 días.
 
     ![Informe de tendencias de Intune](./media/intune-reports/intune-reports-03.png)
@@ -106,7 +109,7 @@ Un informe especialista de ejemplo crearía una correlación entre los datos de 
 
 Para crear y ver informes personalizados, siga estos pasos:
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Informes** > **Configuración de diagnóstico** y agregue una [configuración de diagnóstico](reports.md#diagnostic-settings).
 
     ![Resumen de informes de Intune](./media/intune-reports/intune-reports-04.png)
@@ -143,7 +146,7 @@ Log Analytics es la herramienta principal de Azure Portal para escribir consulta
 ### <a name="workbooks"></a>Libros
 Los libros combinan texto, consultas de análisis, métricas de Azure y parámetros en informes interactivos enriquecidos. Los libros son editables por cualquier otro miembro del equipo que tenga acceso a los mismos recursos de Azure. Para más información sobre los libros, consulte [Libros de Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Además, puede trabajar con las plantillas de libro y contribuir a ellas. Para más información, consulte [Plantillas de libro de Azure Monitor](https://go.microsoft.com/fwlink/?linkid=867045).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes 
 
 Conozca más sobre las siguientes tecnologías:
 - [Blog: Plataforma de informes de Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
