@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505571"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692163"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscripción automática de dispositivos Android mediante Knox Mobile Enrollment de Samsung
 
@@ -68,14 +68,14 @@ Cuando la empresa esté registrada correctamente, puede crear su perfil de MDM p
 |Descripción        | No        |Escriba texto que describa el perfil. 
 |MDM Agent APK      | Sí       |https://aka.ms/intune_kme_deviceowner 
 |Habilitar esta aplicación como un propietario del dispositivo de Google | Sí | Elija esta opción para inscribirse en Android Enterprise. 
-|MDM admitido      | Sí       |Microsoft Intune 
+|MDM admitido      | Sí       |Microsoft Intune 
 |Deje todas las aplicaciones de sistema habilitadas | No | Elija esta opción para asegurarse de que todas las aplicaciones están habilitadas y disponibles para el perfil. Si no se selecciona esta opción, solo se mostrará un conjunto limitado de aplicaciones del sistema en la bandeja de aplicaciones del dispositivo. Algunas aplicaciones, como la aplicación Correo electrónico, permanecen ocultas. 
 |Custom JSON        | No        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Enter Intune enrollment token string"}. Obtenga más información sobre cómo [crear un perfil de inscripción](android-kiosk-enroll.md). 
 | Agregar contratos legales | No | Déjelo en blanco. 
 
 ### <a name="for-android"></a>Para Android
 
-Para una guía detallada, consulte las instrucciones del [Asistente para crear perfiles de Samsung Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm).
+Para instrucciones paso a paso, consulte las instrucciones para [crear un perfil de Samsung](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm).
 
 | Campos del perfil de MDM| ¿Necesario? | Valores |
 |-------------------|-----------|-------|
@@ -114,11 +114,11 @@ En el caso de los dispositivos inscritos en Intune mediante KME para Android, pu
 >En el caso de los dispositivos Android Enterprise totalmente administrados, incluso si se define la asociación de usuarios, no se pasará al dispositivo ni conectará el dispositivo al usuario.
 >
 
-## <a name="distribute-devices"></a>Distribuir los dispositivos
+## <a name="distribute-devices"></a>Distribución de los dispositivos
 
 Después de crear y asignar un perfil de MDM, asociar un nombre de usuario e identificar los dispositivos como corporativos en Intune, puede distribuir los dispositivos a los usuarios.
 
-¿Sigue necesitando ayuda? Consulte la [guía de usuario de KME](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm) completa.
+¿Aún necesita ayuda? Consulte la [guía de usuario de KME](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm) completa.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585714"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691818"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Escenario guiado: Aplicaciones móviles seguras de Microsoft Office 
 
@@ -46,7 +46,7 @@ Las aplicaciones móviles de Office, así como Microsoft Edge para dispositivos
 Las [directivas de protección de aplicaciones de Intune](~/apps/app-protection-policy.md) ayudan a proteger los archivos de trabajo almacenados en dispositivos inscritos en Intune. También puede usar directivas de protección de aplicaciones en dispositivos que poseen los empleados que no están inscritos para administración en Intune. En este caso, aunque la empresa no administre el dispositivo, deberá asegurarse de que los archivos de trabajo y los recursos de la empresa están protegidos.
 
 Puede usar directivas de protección de aplicaciones para impedir a los usuarios que guarden archivos de trabajo en ubicaciones desprotegidas. También puede restringir el movimiento de datos a otras aplicaciones que no estén protegidas por directivas de protección. La configuración de directivas de protección de aplicaciones incluyen:
-- Directivas de reubicación de datos como Impedir "Guardar como" o Restringir cortar, copiar y pegar
+- Las directivas de reubicación de datos como **Guardar copias de los datos de la organización** y **Restringir funciones Cortar, Copiar y Pegar**.
 - Opciones de directivas de acceso para requerir un PIN sencillo para el acceso o bloquear las aplicaciones administradas para que no se ejecuten en dispositivos con jailbreak o rooting
 
 El acceso condicional basado en aplicación y la administración de aplicaciones cliente agregan una capa de seguridad al garantizar que solo las aplicaciones cliente que admiten las directivas de protección de aplicaciones de Intune pueden tener acceso a Exchange Online y a otros servicios de Office 365.

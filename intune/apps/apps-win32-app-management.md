@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564019"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622518"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -328,6 +328,9 @@ Cada dependencia se ajusta a la lógica de reintento de aplicación de Intune Wi
 
 Los clientes Windows 10 1709 y versiones posteriores descargarán contenido de aplicaciones Win32 de Intune mediante un componente de optimización de distribución del cliente Windows 10. La Optimización de distribución proporciona la funcionalidad punto a punto está activada de manera predeterminada. La opción Optimización de distribución se puede configurar por directiva de grupo y a través de la Configuración de dispositivo de Intune. Para más información, consulte el artículo sobre la [Optimización de distribución para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
+> [!NOTE]
+> También puede instalar un servidor de caché con conexión de Microsoft en los puntos de distribución de Configuration Manager para almacenar en caché el contenido de la aplicación Win32 de Intune. Para más información, consulte [Caché con conexión de Microsoft en Configuration Manager - Compatibilidad con aplicaciones Win32 de Intune](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune).
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Instalar aplicaciones obligatorias y disponibles en dispositivos
 
 El usuario final verá las notificaciones del sistema de Windows en las instalaciones de aplicaciones obligatorias y disponibles. En la siguiente imagen se muestra una notificación del sistema de ejemplo donde la instalación de la aplicación no finaliza hasta que se reinicia el dispositivo. 
@@ -375,7 +378,7 @@ Si es necesario, puede suprimir notificaciones del sistema para el usuario final
 > Las aplicaciones Win32 instaladas en la extensión de administración de Intune no serán dispositivos desinstalados o no inscritos. Los administradores pueden aprovechar la exclusión de asignación para no ofrecer las aplicaciones Win32 en los dispositivos BYOD.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Solucionar los problemas de aplicaciones Win32
-Normalmente los registros de agente en el equipo cliente se encuentran en `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Puede aprovechar `CMTrace.exe` para ver estos archivos de registro. *CMTrace.exe* se puede descargar en las [herramientas de cliente de Configuration Manager](https://docs.microsoft.com/sccm/core/support/tools). 
+Normalmente los registros de agente en el equipo cliente se encuentran en `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Puede aprovechar `CMTrace.exe` para ver estos archivos de registro. Para obtener más información, vea [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace).
 
 ![Captura de pantalla de los registros del agente en el equipo cliente](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

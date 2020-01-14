@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 01c95e1961871f33a3d8ed8c0b6c22502faca3a9
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563823"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654029"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Administración de aplicaciones de iOS y macOS compradas a través del Programa de Compras por Volumen de Apple con Microsoft Intune
 
@@ -95,7 +95,7 @@ Antes de empezar, necesita obtener un token de VPP de Apple y cargarlo en la cue
         > Al cambiar el país o la región, se actualizarán los metadatos de las aplicaciones y almacenarán la dirección URL en la siguiente sincronización con el servicio de Apple de las aplicaciones creadas con ese token. La aplicación no se actualizará si no existe en la tienda del nuevo país o región.
 
     - **Tipo de cuenta de VPP**: elija **Empresa** o **Educación**.
-    - **Actualizaciones automáticas de la aplicación**: elija entre **activar** o **desactivar** las actualizaciones automáticas. Cuando se habilite, Intune detectará las actualizaciones de la aplicación de VPP dentro de la App Store y las insertará automáticamente en el dispositivo cuando este se registre. Las actualizaciones automáticas de la aplicación para aplicaciones del PCV de Apple actualizarán automáticamente solo las aplicaciones implementadas con la intención de instalación **Obligatorio**. En el caso de aplicaciones implementadas con la intención de instalación **Disponible**, la actualización automática genera un mensaje de estado dirigido al administrador en el que le informa de que hay disponible una versión nueva de la aplicación. Para ver este mensaje de estado, hay que seleccionar la aplicación, seleccionar la opción Estado de instalación del dispositivo y, finalmente, consultar Detalles del estado. Además, el usuario verá la aplicación como no instalada en el Portal de empresa, incluso si se instala una versión anterior de la aplicación. En este caso, el usuario puede volver a instalar la aplicación con un clic en **Instalar** en la pantalla de detalles de la aplicación del Portal de empresa para instalar la versión más reciente de la aplicación.
+    - **Actualizaciones automáticas de la aplicación**: elija entre **activar** o **desactivar** las actualizaciones automáticas. Cuando se habilite, Intune detectará las actualizaciones de la aplicación de VPP dentro de la App Store y las insertará automáticamente en el dispositivo cuando este se registre. Las actualizaciones automáticas de la aplicación para aplicaciones del PCV de Apple actualizarán automáticamente solo las aplicaciones implementadas con la intención de instalación **Obligatorio**. En el caso de las aplicaciones implementadas con la intención de instalación **Disponible**, el usuario verá que la aplicación no está instalada en el Portal de empresa, aunque se haya instalado una versión anterior de la aplicación. En este caso, el usuario puede volver a instalar la aplicación con un clic en **Instalar** en la pantalla de detalles de la aplicación del Portal de empresa para instalar la versión más reciente de la aplicación. Tenga en cuenta que para los dispositivos iOS inscritos por el usuario, los usuarios finales seguirán viendo todas las aplicaciones de VPP con licencia de usuario en el Portal de empresa. 
 
         > [!NOTE]
         > Las actualizaciones de aplicaciones automáticas funcionan en las aplicaciones con licencia de dispositivo y usuario de iOS 11.0 y versiones posteriores o de macOS 10.12 y versiones posteriores.

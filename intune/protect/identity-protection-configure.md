@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188244"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683806"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Uso de Windows Hello para empresas en dispositivos Windows 10 que tienen Microsoft Intune
 
@@ -59,7 +59,7 @@ En este artículo se muestra cómo crear un perfil de configuración de disposit
 
      - **Sin configurar** (valor predeterminado): [aprovisiona Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) en el dispositivo. Al asignar perfiles de protección de identidad solo a los usuarios, el contexto de dispositivo tiene como valor predeterminado **Sin configurar**.
 
-     - **Deshabilitado**: si no quiere usar Windows Hello para empresas, seleccione esta opción. Esta opción deshabilita Windows Hello para empresas para todos los usuarios.
+     - **Disabled**: si no quiere usar Windows Hello para empresas, seleccione esta opción. Esta opción deshabilita Windows Hello para empresas para todos los usuarios.
 
      - **Habilitada**: elija esta opción para [aprovisionar](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) y configurar Windows Hello para empresas en Intune. especifique la configuración que desee definir. Para obtener una lista de todas las configuraciones y saber para qué sirve cada una, consulte [Configuración de dispositivos Windows 10 para habilitar Windows Hello para empresas](identity-protection-windows-settings.md).
 
@@ -71,6 +71,9 @@ En este artículo se muestra cómo crear un perfil de configuración de disposit
 5. Cuando haya terminado, seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 El perfil se crea y aparece en la lista de perfiles. Después, [asigne](../configuration/device-profile-assign.md) este perfil a grupos de usuarios y dispositivos para satisfacer sus necesidades.
+
+> [!IMPORTANT]
+> Para permitir el aprovisionamiento de varios usuarios a un dispositivo, especifique que la directiva de Windows Hello para empresas se aplique a los dispositivos. Si la directiva se aplica solo a los usuarios, solo se puede aprovisionar un usuario a un dispositivo.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
