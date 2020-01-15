@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563721"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885757"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -93,9 +93,6 @@ Cuando se crea una directiva de protección de aplicaciones para aplicaciones de
 
 9. Haga clic en **Siguiente** para abrir la página **Asignaciones**.<br>
    La página **Asignaciones** permite asignar la directiva de protección de aplicaciones a grupos de usuarios.
-   
-    >[!IMPORTANT]
-    > Si usa Intune con Administrador de configuración para administrar los dispositivos, la directiva solo se aplicará a los usuarios que estén directamente en el grupo seleccionado. Los miembros de grupos secundarios anidados en el grupo seleccionado no se verán afectados.
 
 10. Haga clic en **Siguiente: Revisar + crear** para revisar los valores y la configuración especificados para esta directiva de protección de aplicaciones.
 
@@ -192,7 +189,7 @@ Para iOS, se requieren ajustes adicionales en la configuración de la aplicació
 > [!NOTE]
 > Para obtener información específica de compatibilidad con iOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [MAM protection policies targeted based on management state](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state) (Directivas de protección MAM destinadas según el estado de administración).
 
-## <a name="policy-settings"></a>Configuraciones de directiva
+## <a name="policy-settings"></a>Configuración de la directiva
 Para ver una lista completa de las configuraciones de directivas para iOS y Android, seleccione uno de los siguientes vínculos:
 
 - [Directivas de iOS](app-protection-policy-settings-ios.md)
@@ -201,6 +198,6 @@ Para ver una lista completa de las configuraciones de directivas para iOS y Andr
 ## <a name="next-steps"></a>Pasos siguientes
 [Supervisar el estado del cumplimiento y del usuario](app-protection-policies-monitor.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 * [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](../fundamentals/end-user-mam-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)

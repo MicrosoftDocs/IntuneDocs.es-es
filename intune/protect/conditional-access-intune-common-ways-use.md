@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547057"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885994"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>¿Cuáles son las formas habituales de usar el acceso condicional con Intune?
 
@@ -86,14 +86,6 @@ El acceso condicional para equipos proporciona funcionalidades similares a las d
 - **Unidos a un dominio de AD local:** esta opción se usa habitualmente por las organizaciones que están razonablemente cómodas con la manera en que ya se están administrando sus equipos mediante directivas de grupo de AD o con Configuration Manager.
 
 - **Unidos a un dominio de Azure AD y administración de Intune:** este escenario es para aquellas organizaciones que desean priorizar la nube (es decir, usar principalmente servicios en la nube, con el objetivo de reducir el uso de una infraestructura local) o darle exclusividad (sin infraestructura local). Unión a Azure AD funciona bien en un entorno híbrido, al permitir el acceso a aplicaciones y recursos en la nube y locales. El dispositivo se une a Azure AD y se inscribe en Intune, lo que puede usarse como criterios de acceso condicional al acceder a recursos corporativos.
-
-- **Unidos a un dominio de AD y Configuration Manager:** a partir de la rama actual, Configuration Manager proporciona funcionalidades de acceso condicional que pueden evaluar determinados criterios de cumplimiento, además de los de un equipo unido a un dominio:
-
-  - ¿Está cifrado el equipo?
-
-  - ¿Hay antimalware instalado? ¿Está actualizado?
-
-  - ¿Está el dispositivo liberado o modificado?
 
 #### <a name="bring-your-own-device-byod"></a>Bring your own device (BYOD)
 

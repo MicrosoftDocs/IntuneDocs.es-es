@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810227"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956351"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Configuración de la integración de Lookout Mobile Endpoint Security con Intune
 Con un entorno que cumple con los [requisitos previos](lookout-mobile-threat-defense-connector.md#prerequisites), es posible integrar Lookout Mobile Endpoint Security con Intune. La información de este artículo lo guiará en la configuración de la integración y de los ajustes importantes de Lookout para usarlo con Intune.  
 
 > [!IMPORTANT]
-> No se puede usar un inquilino de Lookout Mobile Endpoint Security existente que no esté asociado ya a su inquilino de Azure AD para la integración con Azure AD e Intune. Póngase en contacto con el servicio de soporte técnico de Lookout para obtener un nuevo inquilino de Lookout Mobile Endpoint Security. Use el nuevo inquilino para incorporar sus nuevos usuarios de Azure AD.
+> No puede usarse un inquilino de Lookout Mobile Endpoint Security existente que ya no esté asociado con su inquilino de Azure AD para la integración con Azure AD e Intune. Póngase en contacto con el soporte técnico de Lookout para crear un nuevo inquilino de Lookout Mobile Endpoint Security. Use el nuevo inquilino para incorporar sus nuevos usuarios de Azure AD.
 
 ## <a name="collect-azure-ad-information"></a>Recopilar información de Azure AD  
 Para integrar Lookout con Intune, asocie su inquilino de Lookout Mobility Endpoint Security con la suscripción de Azure Active Directory (AD).
@@ -45,7 +45,7 @@ Para habilitar la integración de la suscripción de Lookout Mobile Endpoint Sec
   Puede crear este grupo de usuarios opcional en Azure AD para contener los usuarios que no deberían tener acceso a varios módulos de la consola de Lookout relacionados con la configuración y la inscripción. En su lugar, estos usuarios tienen acceso de solo lectura al módulo **Directiva de seguridad** de la consola de Lookout. Para iniciar sesión en la consola de Lookout, los usuarios deben ser miembros de este grupo opcional o del grupo obligatorio con *acceso total*.
 
  > [!TIP] 
- > Para obtener más información sobre los permisos, lea [este artículo](https://personal.support.lookout.com/hc/articles/114094105653) en el sitio web de Lookout.
+ > Para obtener más detalles sobre los permisos, lea [este artículo](https://personal.support.lookout.com/hc/articles/114094105653) en el sitio web de Lookout.
 
 ### <a name="collect-information-from-azure-ad"></a>Recopilación de información desde Azure AD 
 
@@ -77,7 +77,7 @@ Una vez que el soporte técnico de Lookout cree su cuenta de empresa de Lookout,
 ### <a name="initial-sign-in"></a>Inicio de sesión inicial  
 Cuando se inicia sesión por primera vez en la consola de Lookout MES aparece una página de consentimiento (https://aad.lookout.com/les?action=consent). Un administrador global de Azure AD simplemente inicia la sesión y **acepta**. En los inicios de sesión subsiguientes no será necesario que el usuario tenga este nivel de privilegio de Azure AD. 
 
- Se muestra una página de consentimiento. Elija **Aceptar** para completar el registro. 
+ Se muestra una página de consentimiento. Pulse **Aceptar** para completar el registro. 
    ![captura de pantalla de la página del primer inicio de sesión en la consola de Lookout](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
 Cuando haya aceptado y dado su consentimiento, se le redirigirá a la consola de Lookout.
@@ -113,7 +113,7 @@ En el procedimiento siguiente se da por supuesto que anteriormente se creó un g
 6. Seleccione **Crear conector** para completar la configuración del conector. Más adelante, cuando esté satisfecho con los resultados, puede ampliar la inscripción a grupos de usuarios adicionales.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Configuración de Intune para usar Lookout como proveedor de Mobile Threat Defense
-Después de configurar Lookout MES, debe configurar una conexión a [Lookout en Intune](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable).  
+Después de configurar Lookout MES, debe configurar una conexión a [Lookout en Intune](~/protect/mtd-connector-enable.md).  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Opciones adicionales de la consola de Lookout MES
 Las siguientes son opciones adicionales que se pueden configurar en la consola de Lookout MES.  
@@ -144,7 +144,7 @@ Para información sobre las clasificaciones de los niveles de amenaza y cómo ad
 >[!IMPORTANT]
 > Los niveles de riesgo son un aspecto importante de Mobile Endpoint Security, ya que la integración de Intune calcula el cumplimiento del dispositivo según estos niveles de riesgo en tiempo de ejecución.  
 > 
-> El administrador de Intune establece una regla en la directiva para identificar un dispositivo como no conforme si dicho dispositivo presenta una amenaza activa con un nivel mínimo de **Alto**, **Medio** o **Bajo**. La directiva de clasificación de amenazas de Lookout Mobile Endpoint Security determina directamente el cálculo del cumplimiento del dispositivo en Intune.  
+> El administrador de Intune establece una regla en la directiva para identificar un dispositivo como no conforme si este tiene una amenaza activa con un nivel mínimo de: **alto**, **medio** o **bajo**. La directiva de clasificación de amenazas de Lookout Mobile Endpoint Security determina directamente el cálculo del cumplimiento del dispositivo en Intune.  
 
 ## <a name="monitor-enrollment"></a>Supervisión de la inscripción
 Una vez que se completa la configuración, Lookout Mobile Endpoint Security empieza a sondear Azure AD en busca de dispositivos que se correspondan con los grupos de inscripción especificados.  Para encontrar información sobre los dispositivos inscritos, puede ir a **Dispositivos** en la consola de Lookout MES.  

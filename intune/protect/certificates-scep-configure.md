@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801578"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886013"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configuración de la infraestructura para admitir SCEP con Intune
 
@@ -373,8 +373,7 @@ Microsoft Intune Certificate Connector se instala en el servidor en el que se ej
 
    2. Ejecute el instalador (**NDESConnectorSetup.exe**). El instalador también instala el módulo de directivas para NDES y el servicio web Punto de Registro de certificado (CRP) de IIS. El servicio web CRP *CertificateRegistrationSvc*, se ejecuta como una aplicación en IIS.
 
-      - Cuando instala NDES para Intune independiente, el servicio de CRP se instala automáticamente con Certificate Connector.
-      - Al usar Intune con Configuration Manager, se instala el Punto de Registro de certificado como un rol de sistema de sitio de Configuration Manager.
+      Cuando instala NDES para Intune independiente, el servicio de CRP se instala automáticamente con Certificate Connector.
 
 5. Cuando se le solicite el certificado de cliente para Certificate Connector, elija **Seleccionar** y seleccione el certificado de **autenticación del cliente** que ha instalado en el servidor NDES durante el paso 3 del procedimiento [Instalación y enlace de certificados en el servidor en el que se hospeda NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) anteriormente en este artículo.
 
@@ -386,7 +385,7 @@ Microsoft Intune Certificate Connector se instala en el servidor en el que se ej
 
    *<ruta_de_acceso_de_instalación>\NDESConnectorUI\NDESConnectorUI.exe*
 
-7. En la IU **Conector de certificado** :
+7. En la interfaz de usuario **Conector de certificado**:
 
    1. Seleccione **Iniciar sesión** y escriba sus credenciales de administrador de servicio de Intune o las credenciales de un administrador de inquilinos con permiso de administración global.
 

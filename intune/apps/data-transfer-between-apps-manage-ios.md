@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414633"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839306"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune
 
@@ -74,7 +74,7 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 
    |Proveedor de MDM externo| Configuration Key | Tipo de valor | Valor de configuración|
    | ------- | ---- | ---- | ---- |
-   |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
+   |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
    |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
@@ -124,5 +124,5 @@ Por ejemplo, la configuración de directivas **Require app PIN** (Requerir el PI
 Primero, [cree y asigne una directiva de protección de aplicaciones](app-protection-policies.md) para la aplicación iOS. Para obtener más información sobre cómo probar la directiva de protección de aplicaciones, vea [Validación de la configuración de la directiva de protección de aplicaciones](app-protection-policies-validate.md).
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 [¿Qué es la directiva de protección de aplicaciones de Intune?](app-protection-policy.md)

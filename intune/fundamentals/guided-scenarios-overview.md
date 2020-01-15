@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: b833e5265387637a35bfcdf79f4ae5f37558de61
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899137"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839133"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Introducción a los escenarios guiados de Intune 
 
@@ -46,7 +46,7 @@ Los escenarios guiados ofrecen una funcionalidad específica. Los siguientes det
 
 ### <a name="launching"></a>Inicio  
 
-Todos los escenarios guiados están disponibles en el **[portal de administración de dispositivos](https://devicemanagement.microsoft.com)** > **Solución de problemas + soporte técnico** > **Escenarios guiados**. 
+Todos los escenarios guiados están disponibles en el **[portal de administración de dispositivos](https://devicemanagement.microsoft.com)**  > **Solución de problemas + soporte técnico** > **Escenarios guiados**. 
 
 El escenario guiado comienza con una introducción en la que se explica el propósito del escenario y los requisitos previos necesarios para completar la configuración. En ese momento, se comprueban sus permisos de administrador para corroborar que tiene todos los privilegios necesarios para completar el escenario.  
 
@@ -64,7 +64,7 @@ Si se produce un error al implementar el escenario, se revertirán todos los cam
 
 Los escenarios guiados no se pueden usar para editar los recursos existentes. Una vez creados, todos los recursos, grupos y asignaciones se deben editar con las cargas de trabajo existentes.
 
-### <a name="monitoring"></a>Seguimiento 
+### <a name="monitoring"></a>monitoring 
 
 Los escenarios guiados no se pueden usar para supervisar los recursos existentes aparte del proceso de creación inicial. Una vez creados, todos los recursos, grupos y asignaciones se deben supervisar con las cargas de trabajo existentes. 
 
