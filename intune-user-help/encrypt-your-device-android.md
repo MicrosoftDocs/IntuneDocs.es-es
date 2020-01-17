@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2774a4f4c571b8a965c9ec47376a671df2dbf006
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506367"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856689"
 ---
 # <a name="encrypting-your-android-device"></a>Cifrado del dispositivo Android
 
@@ -48,18 +48,18 @@ Si Portal de empresa o la aplicación Microsoft Intune le pide que cifre el disp
 3. Elija **requerir PIN cuando el dispositivo se active** > **Aceptar**.
 4. Escriba el PIN para confirmar y cifrar el dispositivo.
 5. Abra la aplicación Portal de empresa o Microsoft Intune.
-    * Usuarios de Portal de empresa: seleccione el dispositivo y pulse **Comprobar configuración del dispositivo**. 
+    * Usuarios se Portal de empresa: seleccione el dispositivo y pulse en **Comprobar configuración del dispositivo**. 
     * Microsoft Intune usuarios: tendrá que esperar hasta que se actualice la página, pero cuando lo haga, el estado de cifrado debe cambiar a compatible.  
 
 Los dispositivos que ejecutan Android 4,4 y versiones anteriores podrían no tener la opción de **Inicio seguro** . En ese caso, complete los pasos siguientes para cifrar el dispositivo.
 
 1. Vaya a **configuración** > **seguridad** > **cifrar el dispositivo**. Las etiquetas en pantalla varían entre dispositivos Android. Si no ve la opción **cifrar dispositivo** , proteja:
-    * **Cifrado** de **almacenamiento > Storage**
-    * **** **Pantalla de bloqueo de > de almacenamiento y seguridad** > **otra configuración de seguridad** 
+    * **Cifrado** > **de almacenamiento Storage**
+    * **Pantalla de bloqueo** de > **de almacenamiento y seguridad** > **otra configuración de seguridad** 
 
 2. Siga las instrucciones en pantalla. Durante el cifrado, es posible que el dispositivo se reinicie varias veces.
 3. Abra la aplicación Portal de empresa o Microsoft Intune.
-    * Usuarios de Portal de empresa: seleccione el dispositivo y pulse **Comprobar configuración del dispositivo**.  
+    * Usuarios se Portal de empresa: seleccione el dispositivo y pulse en **Comprobar configuración del dispositivo**.  
     * Microsoft Intune usuarios: tendrá que esperar hasta que se actualice la página, pero cuando lo haga, el estado de cifrado debe cambiar a compatible.
 
 ## <a name="troubleshoot"></a>Solución de problemas  
@@ -74,4 +74,4 @@ Los dispositivos que ejecutan Android 4,4 y versiones anteriores podrían no ten
 - Asegúrese de que el dispositivo está cargado y conectado.  
 - Asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.  
+¿Aún necesita ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.  
