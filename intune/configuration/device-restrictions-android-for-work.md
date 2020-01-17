@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: b6afd80517df3496e0c1402fc0c76f3fc24969fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946666"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206608"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -36,7 +36,7 @@ Esta configuración se aplica a los tipos de inscripción Enterprise de Android 
 
 ### <a name="general-settings"></a>Configuración general
 
-- **Captura de pantalla**: elija **Bloquear** para evitar que se hagan capturas de pantalla en el dispositivo. Además evita que el contenido se muestre en los dispositivos de pantalla que no tengan una salida de vídeo segura. **No configurado** permite que el usuario capture el contenido de la pantalla como imagen.
+- **Captura de pantalla**: elija **Bloquear** para impedir que se hagan capturas de pantalla en el dispositivo. Además evita que el contenido se muestre en los dispositivos de pantalla que no tengan una salida de vídeo segura. **No configurado** permite que el usuario capture el contenido de la pantalla como imagen.
 - **Cámara**: elija **Bloquear** para impedir el acceso a la cámara del dispositivo. **No requerido** permite el acceso a la cámara del dispositivo.
 - **Directiva de permisos predeterminada**: con esta opción se define la directiva de permisos predeterminada para las solicitudes de permisos en tiempo de ejecución. Los valores posibles incluyen:
   - **Valor predeterminado del dispositivo**: use la configuración predeterminada del dispositivo.
@@ -45,22 +45,22 @@ Esta configuración se aplica a los tipos de inscripción Enterprise de Android 
   - **Denegación automática**: los permisos se deniegan automáticamente.
 - **Cambios de fecha y hora**: elija **Bloquear** para evitar que los usuarios configuren manualmente la fecha y hora. **No configurado** permite que los usuarios configuren la fecha y hora del dispositivo.
 - **Cambios de volumen**: el **bloqueo** impide que los usuarios cambien el volumen del dispositivo y silencia el volumen maestro. **No configurado** permite usar la configuración de volumen del dispositivo.
-- **Restablecimiento de fábrica**: elija **Bloquear** para impedir que los usuarios utilicen la opción de restablecimiento de fábrica en la configuración del dispositivo. **No configurado** permite que los usuarios utilice esta configuración en el dispositivo.
+- **Restablecimiento de la configuración de fábrica**: elija **Bloquear** para impedir que los usuarios usen la opción de restablecimiento de fábrica en la configuración del dispositivo. **No configurado** permite que los usuarios utilice esta configuración en el dispositivo.
 - **Arranque seguro**: elija **Bloquear** para impedir que los usuarios reinicien el dispositivo en modo seguro. **No configurado** permite que los usuarios reinicie el dispositivo en modo seguro.
 - **Barra de estado**: elija **Bloquear** para impedir el acceso a la barra de estado, incluidas las notificaciones y las opciones de configuración rápida. **No configurado** permite que los usuarios accedan a la barra de estado.
-- **Servicios de itinerancia de datos**: elija **Bloquear** para evitar la itinerancia de datos a través de la red de telefonía móvil. **No configurado** permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.
-- **Cambios de configuración de la Wi-Fi**: elija **Bloquear** para impedir que los usuarios cambien las configuraciones de Wi-Fi creadas por el propietario del dispositivo. Los usuarios pueden crear sus propias configuraciones de Wi-Fi. **No configurado** permite a los usuarios cambiar la configuración de Wi-Fi del dispositivo.
-- **Configuración del punto de acceso Wi-Fi**: elija **Bloquear** para impedir que los usuarios creen o cambien las configuraciones de Wi-Fi. **No configurado** permite a los usuarios cambiar la configuración de Wi-Fi del dispositivo.
+- **Servicios de datos de itinerancia**: elija **Bloquear** para impedir la itinerancia de datos a través de la red de telefonía móvil. **No configurado** permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.
+- **Cambios en la configuración de Wi-Fi**: elija **Bloquear** para impedir que los usuarios cambien la configuración de Wi-Fi creada por el propietario del dispositivo. Los usuarios pueden crear sus propias configuraciones de Wi-Fi. **No configurado** permite a los usuarios cambiar la configuración de Wi-Fi del dispositivo.
+- **Configuración de punto de acceso Wi-Fi**: elija **Bloquear** para impedir que los usuarios creen o cambien las configuraciones de Wi-Fi. **No configurado** permite a los usuarios cambiar la configuración de Wi-Fi del dispositivo.
 - **Configuración de Bluetooth**: elija **Bloquear** para impedir que los usuarios configuren Bluetooth en el dispositivo. **No configurado** permite usar Bluetooth en el dispositivo.
-- **Tethering and access to hotspots** (Tethering y acceso a zonas activas): elija **Bloquear** para impedir tethering y acceso a zonas activas portátiles. **No configurado** permite tethering y acceso a zonas activas portátiles.
+- **Tethering and access to hotspots** (Acceso a zonas y tethering): elija **Bloquear** para impedir tethering y acceso a zonas portátiles. **No configurado** permite tethering y acceso a zonas activas portátiles.
 - **Almacenamiento USB**: elija **Permitir** para acceder al almacenamiento USB en el dispositivo. **No configurado** impide el acceso al almacenamiento USB.
-- **USB file transfer** (Transferencia de archivos USB): elija **Bloquear** para impedir la transferencia de archivos mediante USB. **No configurado** permite la transferencia de archivos.
-- **Medios externos**: elija **Bloquear** para impedir usar o conectar cualquier medio externo en el dispositivo. **No configurado** permite los medios externos en el dispositivo.
+- **USB file transfer** (Transferencia de archivos USB): elija **Bloquear** para impedir la transferencia de archivos a través de USB. **No configurado** permite la transferencia de archivos.
+- **External media** (Medios externos): elija **Bloquear** para impedir usar o conectar cualquier medio externo en el dispositivo. **No configurado** permite los medios externos en el dispositivo.
 - **Beam data using NFC** (Transferir datos mediante NFC): elija **Bloquear** para impedir el uso de la tecnología Transmisión de datos en proximidad (NFC) para transferir datos desde las aplicaciones. **No configurado** permite usar NFC para compartir datos entre los dispositivos.
 - **Características de depuración**: elija **Permitir** para permitir que los usuarios usen las características de depuración en el dispositivo. **No configurado** impide que los usuarios utilicen las características de depuración en el dispositivo.
-- **Ajuste del micrófono**: elija **Bloquear** para impedir que los usuarios silencien el micrófono y ajusten el volumen del mismo. **No configurado** permite que el usuario utilice y ajuste el volumen del micrófono en el dispositivo.
-- **Correos electrónicos de protección ante el restablecimiento de fábrica**: elija **Direcciones de correo electrónico de la cuenta de Google**. Escriba las direcciones de correo electrónico del dispositivo que los administradores pueden desbloquear una vez que se eliminan los datos del dispositivo. Asegúrese de separar las direcciones de correo electrónico con punto y coma, como en `admin1@gmail.com;admin2@gmail.com`. Si no se especificó ningún correo electrónico, cualquier usuario puede desbloquear el dispositivo una vez que se restaura la configuración de fábrica. Estos mensajes de correo electrónico solo se aplican cuando se ejecuta un restablecimiento de fábrica que no es de usuario, como la ejecución de un restablecimiento de fábrica mediante el menú recuperación.
-- **Ruta de escape de red**: elija **Habilitar** para permitir que los usuarios activen la característica de ruta de escape de red. Si no se realiza una conexión de red cuando se inicia el dispositivo, la ruta de escape pide conectarse de manera temporal a una red y actualizar la directiva del dispositivo. Después de aplicar la directiva, la red temporal se olvida y el dispositivo sigue arrancando. Esta característica conecta dispositivos a una red si:
+- **Ajuste del micrófono**: elija **Bloquear** para impedir que los usuarios silencien el micrófono y ajusten su volumen. **No configurado** permite que el usuario utilice y ajuste el volumen del micrófono en el dispositivo.
+- **Correos electrónicos de protección frente al restablecimiento de fábrica**: elija **Direcciones de correo electrónico de la cuenta de Google**. Escriba las direcciones de correo electrónico del dispositivo que los administradores pueden desbloquear una vez que se eliminan los datos del dispositivo. Asegúrese de separar las direcciones de correo electrónico con punto y coma, como en `admin1@gmail.com;admin2@gmail.com`. Si no se especificó ningún correo electrónico, cualquier usuario puede desbloquear el dispositivo una vez que se restaura la configuración de fábrica. Estos mensajes de correo electrónico solo se aplican cuando se ejecuta un restablecimiento de fábrica que no es de usuario, como la ejecución de un restablecimiento de fábrica mediante el menú recuperación.
+- **Trampilla de escape de red**: elija **Habilitar** para permitir que los usuarios activen la característica de trampilla de escape de red. Si no se realiza una conexión de red cuando se inicia el dispositivo, la ruta de escape pide conectarse de manera temporal a una red y actualizar la directiva del dispositivo. Después de aplicar la directiva, la red temporal se olvida y el dispositivo sigue arrancando. Esta característica conecta dispositivos a una red si:
   - No hay ninguna red adecuada en la última directiva.
   - El dispositivo se inicia en una aplicación en modo de bloqueo de tareas.
   - El usuario no puede llegar a la configuración del dispositivo.
@@ -71,9 +71,9 @@ Esta configuración se aplica a los tipos de inscripción Enterprise de Android 
   - **Valor predeterminado del dispositivo**: use la configuración predeterminada del dispositivo.
   - **Automática**: las actualizaciones se instalan automáticamente sin intervención del usuario. Si se configura esta directiva se instalarán inmediatamente las actualizaciones pendientes.
   - **Pospuesta**: las actualizaciones se posponen durante 30 días. Cuando termine el período de 30 días, Android le pedirá al usuario que instale la actualización. Es posible que los fabricantes de dispositivos o los transportistas impidan que se pospongan actualizaciones de seguridad importantes (es decir, que las declaren como exentas). Una actualización exenta muestra al usuario una notificación en el dispositivo.
-  - **Ventana de mantenimiento**: instala las actualizaciones automáticamente durante una ventana de mantenimiento diaria configurada en Intune. La instalación se intenta diariamente durante 30 días y pueden producirse errores si los niveles de batería o espacio no son suficientes. Después del período de 30 días, Android le solicitará al usuario que realice la instalación. La ventana también se usa para instalar actualizaciones de aplicaciones de Google Play. Use esta opción para dispositivos dedicados, como pantallas completas, ya que las aplicaciones de primer plano de dispositivos dedicados de una sola aplicación se pueden actualizar.
+  - **Ventana de mantenimiento**: instala las actualizaciones automáticamente durante una ventana de mantenimiento diario configurada en Intune. La instalación se intenta diariamente durante 30 días y pueden producirse errores si los niveles de batería o espacio no son suficientes. Después del período de 30 días, Android le solicitará al usuario que realice la instalación. La ventana también se usa para instalar actualizaciones de aplicaciones de Google Play. Use esta opción para dispositivos dedicados, como pantallas completas, ya que las aplicaciones de primer plano de dispositivos dedicados de una sola aplicación se pueden actualizar.
 
-- **Ventanas de notificación**: cuando se establecen en **Deshabilitar**, las notificaciones de ventana, incluidas las notificaciones del sistema, las llamadas entrantes, las llamadas salientes, las alertas del sistema y los errores del sistema no se muestran en el dispositivo. Cuando se establecen en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar las notificaciones.
+- **Ventanas de notificación**: cuando se establece en **Deshabilitar**, las notificaciones de ventana, incluidas las notificaciones del sistema, las llamadas entrantes, las llamadas salientes, las alertas del sistema y los errores del sistema no se muestran en el dispositivo. Cuando se establecen en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar las notificaciones.
 - **Omitir primero las sugerencias de uso**: **Habilitar** ocultas u omitir sugerencias de aplicaciones que recorren los tutoriales, o sugerencias cuando se inicia la aplicación. Si se establece en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar estas sugerencias cuando se inicia la aplicación.
 
 ### <a name="system-security-settings"></a>Configuración de seguridad del sistema
@@ -84,11 +84,11 @@ Esta configuración se aplica a los tipos de inscripción Enterprise de Android 
 
 Use estas opciones para configurar una experiencia de tipo pantalla completa de los dispositivos dedicados. Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando un dispositivo se establece con pantalla completa, solo están disponibles las aplicaciones que agregue. Esta configuración se aplica a dispositivos dedicados de Android Enterprise. No se aplica a dispositivos Android Enterprise totalmente administrados.
 
-**Pantalla completa**: elija si el dispositivo ejecuta una aplicación o varias aplicaciones.
+**Pantalla completa**: elija si el dispositivo ejecuta una aplicación o varias.
 
-- **Una sola aplicación**: los usuarios solo pueden acceder a una aplicación en el dispositivo. Cuando se inicia el dispositivo, solo se inicia la aplicación específica. los usuarios no pueden abrir nuevas aplicaciones ni modificar la aplicación en ejecución.
+- **Aplicación única**: los usuarios solo pueden acceder a una aplicación. Cuando se inicia el dispositivo, solo se inicia la aplicación específica. los usuarios no pueden abrir nuevas aplicaciones ni modificar la aplicación en ejecución.
 
-  - **Seleccione una aplicación administrada**: seleccione la aplicación de Google Play administrada en la lista.
+  - **Seleccionar una aplicación administrada**: seleccione la aplicación administrada de Google Play en la lista.
 
     Si no aparece ninguna aplicación, [agregue algunas aplicaciones Android](../apps/apps-add-android-for-work.md) al dispositivo. No olvide [asignar la aplicación al grupo de dispositivos creado para los dispositivos dedicados](../apps/apps-deploy.md).
 
@@ -118,7 +118,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
     - **Deslizar rápidamente**: un botón Inicio muestra cuando un usuario se desliza rápidamente hacia arriba en el dispositivo.
     - **Flotante**: muestra un botón de inicio flotante persistente en el dispositivo.
 
-  - **Leave kiosk mode** (Salir de pantalla completa): elija **Habilitar** para permitir que los administradores pausen de manera temporal la pantalla completa para actualizar el servicio. Para usar esta característica, el administrador hace lo siguiente:
+  - **Salir del modo de pantalla completa**: elija **Habilitar** para permitir que los administradores pausen temporalmente el modo de pantalla completa para actualizar el dispositivo. Para usar esta característica, el administrador hace lo siguiente:
   
     1. Continúa y hace clic en el botón de retroceso hasta que aparece el botón **Exit Kiosk** (Salir de pantalla completa). 
     2. Selecciona el botón **Exit kiosk** (Salir de pantalla completa) y escribe el PIN de **Leave kiosk mode code** (Código para salir del modo de pantalla completa).
@@ -126,7 +126,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
       Cuando se establece en **no configurado**, los administradores no pueden pausar el modo de quiosco. Si el administrador sigue haciendo clic en el botón de retroceso y hace clic en el botón **Exit Kiosk** (Salir de pantalla completa), aparece un mensaje que indica que se requiere un código de acceso.
 
-    - **Leave kiosk mode code** (Código para salir de pantalla completa): escriba un PIN numérico de entre 4 y 6 dígitos. El administrador usa este PIN para pausar de manera temporal la pantalla completa.
+    - **Código para salir del modo de pantalla completa**: escriba un PIN numérico que tenga entre 4 y 6 dígitos. El administrador usa este PIN para pausar de manera temporal la pantalla completa.
 
   - **Establecer fondo personalizado de la dirección URL**: escriba una dirección URL para personalizar la pantalla de fondo del dispositivo dedicado.
 
@@ -134,7 +134,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
     > Para la mayoría de los casos, se recomienda partir de imágenes cuyo tamaño es, al menos el siguiente:
     >
     > - Teléfono: 1080 x 1920 px
-    > - Tablet: 1920 x 1080 px
+    > - Tableta: 1920 x 1080 px
     >
     > Para obtener la mejor experiencia y detalles nítidos, se recomienda crear activos de imagen por dispositivo con las especificaciones de pantalla.
     >
@@ -169,54 +169,55 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
 ### <a name="device-password-settings"></a>Configuración de la contraseña del dispositivo
 
-- **Deshabilitar pantalla de bloqueo**: elija **Deshabilitar** para impedir que los usuarios usen la característica de bloqueo de pantalla Keyguard en el dispositivo. **No configurado** permite que el usuario utilice las características Keyguard.
-- **Características de la pantalla de bloqueo deshabilitada**: Si KeyGuard está habilitado en el dispositivo, elija las características que quiere deshabilitar. Por ejemplo, si **Secure Camera** está activado, la característica de cámara se deshabilita en el dispositivo. Las características no activadas están habilitadas en el dispositivo.
+- **Deshabilitar la pantalla de bloqueo**: elija **Deshabilitar** para evitar que los usuarios usen la característica de bloqueo del teclado en el dispositivo. **No configurado** permite que el usuario utilice las características Keyguard.
+- **Características deshabilitadas en la pantalla de bloqueo**: Si KeyGuard está habilitado en el dispositivo, elija las características que quiere deshabilitar. Por ejemplo, si **Secure Camera** está activado, la característica de cámara se deshabilita en el dispositivo. Las características no activadas están habilitadas en el dispositivo.
 
   Estas características están disponibles para los usuarios cuando el dispositivo está bloqueado. Los usuarios no podrán ver ni acceder a las características que están activadas.
 
-- **Tipo de contraseña requerida**: define el tipo de contraseña necesaria para el dispositivo. Las opciones son:
+- **Tipo de contraseña requerida**: defina el tipo de contraseña necesaria para el dispositivo. Las opciones son:
   - **Valor predeterminado de dispositivo**
   - **Contraseña necesaria, sin restricciones**
-  - **Biométrica deficiente**: [Biométricas eficientes frente a deficientes](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre el sitio web de Android).
-  - **Numérica**: la contraseña solo debe contener números, por ejemplo: `123456789`. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
-  - **Complejo numérico**: no se permiten números repetidos ni consecutivos, como "1111" o "1234". Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Biométrica deficiente**: [Biométricas eficientes frente a deficientes](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre el sitio web de Android)
+  - **Numérica**: la contraseña solo debe contener números, por ejemplo, `123456789`. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Numérica compleja**: no se permiten números repetidos ni consecutivos, como "1111" o "1234". Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
   - **Alfabética**: son necesarias letras del alfabeto. No son necesarios números ni símbolos. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
   - **Alfanumérica**: incluye letras mayúsculas, minúsculas y caracteres numéricos. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
   - **Alfanumérica con símbolos**: incluye letras mayúsculas, minúsculas, caracteres numéricos, signos de puntuación y símbolos. Indique también:
 
     - **Longitud mínima de la contraseña**: escriba la longitud mínima que debe tener la contraseña, entre 4 y 16 caracteres.
-    - **Número de caracteres necesarios**: escriba el número de caracteres que debe tener la contraseña, entre 0 y 16 caracteres.
-    - **Número de caracteres en minúscula necesarios**: escriba el número de caracteres en minúscula que debe tener la contraseña, entre 0 y 16 caracteres.
-    - **Número de caracteres en mayúscula necesarios**: escriba el número de caracteres en mayúscula que debe tener la contraseña, entre 0 y 16 caracteres.
-    - **Número de caracteres que no sean una letra necesarios**: escriba el número de caracteres que no son letras del alfabeto que debe tener la contraseña, entre 0 y 16 caracteres.
-    - **Número de caracteres numéricos necesarios**: escriba el número de caracteres numéricos (`1`, `2`, `3`, etc.) que debe tener la contraseña, entre 0 y 16 caracteres.
-    - **Número de caracteres de símbolos necesarios**: escriba el número de caracteres de símbolos (`&`, `#`, `%`, etc.) que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres requeridos**: escriba el número de caracteres que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres en minúscula requeridos**: escriba el número de caracteres en minúscula que debe tener la contraseña, entre 0 y 16.
+    - **Número de caracteres en mayúscula requeridos**: escriba el número de caracteres en mayúscula que debe tener la contraseña, entre 0 y 16.
+    - **Número de caracteres que no sean letras requeridos**: escriba el número de caracteres que no son letras del alfabeto que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres numéricos requeridos**: escriba el número de caracteres numéricos (`1`, `2`, `3`, etc.) que debe tener la contraseña, entre 0 y 16.
+    - **Número de caracteres de símbolo requeridos**: escriba el número de caracteres de símbolo (`&`, `#`, `%`, etc.) que debe tener la contraseña, entre 0 y 16.
 
-- **Número de días hasta que expira la contraseña**: escriba el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
-- **Número de contraseñas necesarias antes de que un usuario pueda volver a usar una contraseña**: escriba el número de contraseñas recientes que no se pueden volver a usar, entre 1 y 24. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.
-- **Número de errores de inicio de sesión antes de borrar el contenido del dispositivo**: escriba el número permitido de errores de inicio de sesión antes de borrar el contenido del dispositivo (entre 4 y 11).
+- **Número de días hasta que expire la contraseña**: especifique el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
+- **Número de contraseñas requeridas antes de que el usuario pueda reusar una contraseña**: indique el número de contraseñas recientes que no se pueden volver a usar, entre 1 y 24. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.
+- **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba el número, entre 4 y 11, de errores de inicio de sesión que se permiten antes de que se borre el dispositivo.
 
 ### <a name="power-settings"></a>Configuración de energía
 
 - **Hora de bloqueo de la pantalla**: especifique el tiempo máximo que un usuario puede establecer hasta que el dispositivo se bloquee. Por ejemplo, si establece esta opción en **10 minutos**, los usuarios pueden establecer el tiempo desde 15 segundos hasta 10 minutos. Cuando se establece en **no configurado** (valor predeterminado), Intune no cambia ni controla esta configuración.
 
-- **Pantalla activada mientras el dispositivo está conectado**: elija qué fuentes de alimentación provocan que la pantalla del dispositivo permanezca activa cuando está conectado.
+- **Pantalla activada mientras el dispositivo está conectado**: elija qué fuentes de alimentación hacen que la pantalla del dispositivo permanezca encendida cuando está conectado a la corriente alterna.
 
 ### <a name="users-and-accounts-settings"></a>Configuración de cuentas y usuarios
 
 - **Agregar nuevos usuarios**: elija **Bloquear** para impedir que los usuarios agreguen nuevos usuarios. Cada usuario tiene un espacio personal en el dispositivo para pantallas principales, cuentas, aplicaciones y configuraciones personalizadas. **No configurado** (valor predeterminado) permite que los usuarios agreguen a otros usuarios al dispositivo.
-- **Eliminación de usuarios**: elija **Bloquear** para impedir que los usuarios quiten usuarios. **No configurado** (valor predeterminado) permite que los usuarios quiten otros usuarios del dispositivo.
+- **Eliminación de usuario**: elija **Bloquear** para impedir que los usuarios quiten usuarios. **No configurado** (valor predeterminado) permite que los usuarios quiten otros usuarios del dispositivo.
 - **Cambios de cuenta** (solo dispositivos dedicados): elija **bloquear** para impedir que los usuarios modifiquen cuentas. **No configurado** (valor predeterminado) permite que los usuarios actualicen las cuentas de usuario del dispositivo.
 
   > [!NOTE]
   > Esta configuración no se aplica a los dispositivos del propietario del dispositivo (totalmente administrados). Si configura esta opción, se omitirá la configuración y no se verá afectada.
 
+- El **usuario puede configurar las credenciales**: **bloquear** impide que los usuarios configuren certificados asignados a dispositivos, incluso los dispositivos que no están asociados a una cuenta de usuario. **No configurado** podría permitir que los usuarios configuren o cambien sus credenciales cuando accedan a ellas en el almacén de claves. 
 - **Cuentas personales de Google**: **bloquear** impide que los usuarios agreguen su cuenta de Google personal al dispositivo. **No configurado** (valor predeterminado) permite a los usuarios agregar su cuenta de Google personal.
 
 ### <a name="applications"></a>Aplicaciones
 
-- **Permitir la instalación desde orígenes desconocidos**: elija **Permitir** para que los usuarios puedan activar **Orígenes desconocidos**. Esta configuración permite que se instalen aplicaciones desde orígenes desconocidos, incluidos los orígenes que no sean Google Play Store. **No configurado** impide que los usuarios activen los **orígenes desconocidos**.
-- **Permitir el acceso a todas las aplicaciones en Google Play Store**: cuando se establece en **Permitir**, los usuarios obtienen acceso a todas las aplicaciones de Google Play Store. No obtienen acceso a las aplicaciones que el administrador bloquee en [las aplicaciones cliente](../apps/apps-add-android-for-work.md). **No configurado** obliga a los usuarios acceder solo a las aplicaciones que el administrador ponga disponibles en Google Play Store o las aplicaciones necesarias en [las aplicaciones cliente](../apps/apps-add-android-for-work.md).
+- **Permitir la instalación desde orígenes desconocidos**: elija **Permitir** para que los usuarios puedan activar los **orígenes desconocidos**. Esta configuración permite que se instalen aplicaciones desde orígenes desconocidos, incluidos los orígenes que no sean Google Play Store. **No configurado** impide que los usuarios activen los **orígenes desconocidos**.
+- **Permitir el acceso a todas las aplicaciones en Google Play Store**: si se establece en **Permitir**, los usuarios obtienen acceso a todas las aplicaciones de Google Play Store. No obtienen acceso a las aplicaciones que el administrador bloquee en [las aplicaciones cliente](../apps/apps-add-android-for-work.md). **No configurado** obliga a los usuarios acceder solo a las aplicaciones que el administrador ponga disponibles en Google Play Store o las aplicaciones necesarias en [las aplicaciones cliente](../apps/apps-add-android-for-work.md).
 - **App auto-updates** (Actualizaciones automáticas de las aplicaciones): elija el momento de instalar las actualizaciones automáticas. Las opciones son:
   - **No configurado**.
   - **Elección del usuario**
@@ -247,7 +248,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
   > - Todavía debe configurar el cliente VPN con un perfil de [VPN](vpn-settings-android-enterprise.md)o a través de un [Perfil de configuración](../apps/app-configuration-policies-use-android.md)de la aplicación.
   > - Existen problemas conocidos al usar VPN por aplicación con F5 Access para Android 3.0.4. Para más información, consulte las [notas de la versión de F5 Access para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
-- **Modo de bloqueo**: seleccione **Habilitar** para forzar que todo el tráfico de red use el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
+- **Modo de bloqueo**: Elija **Habilitar** para obligar a todo el tráfico de red a usar el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
 
   Elija **No configurado** para permitir que el tráfico fluya a través del túnel VPN o a través de la red móvil.
 
@@ -259,7 +260,7 @@ Use estas opciones para configurar una experiencia de tipo pantalla completa de 
 
   - **Directo**: elija esta opción para especificar manualmente los detalles del servidor proxy, incluidos:
     - **Host**: escriba el nombre de host o la dirección IP del servidor proxy. Por ejemplo, escriba `proxy.contoso.com` o `127.0.0.1`.
-    - **Número de puerto**: escriba el número de puerto TCP utilizado por el servidor proxy. Por ejemplo, escriba `8080`.
+    - **Número de puerto**: escriba el número de puerto TCP usado por el servidor proxy. Por ejemplo, escriba `8080`.
     - **Hosts excluidos**: especifique una lista de nombres de host o direcciones IP que no usarán el proxy. Esta lista puede incluir un carácter comodín de asterisco (`*`) y varios hosts separados por punto y coma (`;`) sin espacios. Por ejemplo, escriba `127.0.0.1;web.contoso.com;*.microsoft.com`.
 
   - **Configuración automática de proxy**: escriba la **dirección URL de PAC** para un script de configuración automática de proxy. Por ejemplo, escriba `https://proxy.contoso.com/proxy.pac`.
@@ -274,15 +275,15 @@ Esta configuración se aplica a los tipos de inscripción empresarial de Android
 
 #### <a name="general"></a>General
 
-- **Copiar y pegar entre el perfil de trabajo y el perfil personal**: elija **Bloquear** para impedir la acción de copiar y pegar entre aplicaciones de trabajo y aplicaciones personales. **No configurado** permite que los usuarios compartan datos mediante copiar y pegar con aplicaciones en el perfil personal. 
-- **Uso compartido de datos entre el perfil de trabajo y el perfil personal**: elija si las aplicaciones del perfil de trabajo pueden compartir con las aplicaciones del perfil personal. Por ejemplo, puede controlar las acciones de uso compartido dentro de las aplicaciones, como la opción **Compartir…** en la aplicación del explorador Chrome. Esta configuración no se aplica al comportamiento del Portapapeles de copiar y pegar. Las opciones de uso compartido son:
+- **Copiar y pegar entre perfiles personales y de trabajo**: elija **Bloquear** para impedir copiar y pegar entre aplicaciones personales y de trabajo. **No configurado** permite que los usuarios compartan datos mediante copiar y pegar con aplicaciones en el perfil personal. 
+- **Uso compartido de datos entre el perfil profesional y el personal**: elija si las aplicaciones del perfil de trabajo pueden compartirse con aplicaciones del perfil personal. Por ejemplo, puede controlar las acciones de uso compartido dentro de las aplicaciones, como la opción **Compartir…** en la aplicación del explorador Chrome. Esta configuración no se aplica al comportamiento del Portapapeles de copiar y pegar. Las opciones de uso compartido son:
   - **Valor predeterminado del dispositivo**: el comportamiento predeterminado del uso compartido del dispositivo, que varía según la versión de Android. De manera predeterminada, se permite el uso compartido desde el perfil personal hasta el perfil de trabajo. También de manera predeterminada, el uso compartido desde el perfil de trabajo hasta el perfil personal está bloqueado. Esta opción evita que se compartan datos desde el perfil de trabajo hasta el perfil personal. En dispositivos que ejecutan versiones 6.0 y posteriores, Google no bloquea el uso compartido desde el perfil personal hacia el perfil de trabajo.
-  - **Apps in work profile can handle sharing request from personal profile** (Las aplicaciones de un perfil de trabajo pueden controlar la solicitud de uso compartido desde un perfil personal): habilita la característica de Android integrada que permite el uso compartido desde el perfil personal al perfil de trabajo. Cuando esta opción está habilitada, una solicitud de uso compartido que se inicia en una aplicación del perfil personal se podrá compartir con las aplicaciones del perfil de trabajo. Esta opción es el comportamiento predeterminado de los dispositivos Android que ejecutan versiones anteriores a 6.0.
+  - **Las aplicaciones del perfil profesional pueden controlar una solicitud de uso compartido del perfil personal**: habilita la característica de Android integrada que permite el uso compartido del perfil personal al perfil de trabajo. Cuando esta opción está habilitada, una solicitud de uso compartido que se inicia en una aplicación del perfil personal se podrá compartir con las aplicaciones del perfil de trabajo. Esta opción es el comportamiento predeterminado de los dispositivos Android que ejecutan versiones anteriores a 6.0.
   - **Impedir el uso compartido entre límites**: impide el uso compartido entre perfiles de trabajo y de personal.
   - **No hay restricciones en el uso compartido**: permite el uso compartido a través del límite del perfil de trabajo en ambas direcciones. Cuando selecciona esta configuración, las aplicaciones del perfil de trabajo pueden compartir datos con aplicaciones no administradas del perfil personal. Esta configuración permite administrar aplicaciones en el perfil de trabajo para compartirlas con aplicaciones del lado sin administrar del dispositivo. Por lo tanto, use esta configuración con precaución.
 
 - **Notificaciones del perfil profesional con dispositivo bloqueado**: controla si las aplicaciones del perfil de trabajo pueden mostrar datos en las notificaciones cuando el dispositivo está bloqueado. **Bloquear** no muestra los datos. **No configurado** muestra los datos.
-- **Permisos de aplicación predeterminados**: establece la directiva de permisos predeterminada para todas las aplicaciones del perfil de trabajo. A partir de Android 6, se solicita al usuario que conceda determinados permisos que requieren las aplicaciones cuando se inician. Esta configuración de directiva permite decidir si se pedirá a los usuarios que concedan permisos para todas las aplicaciones del perfil de trabajo. Por ejemplo, suponga que asigna una aplicación al perfil de trabajo que requiere acceso mediante la ubicación. Normalmente, esa aplicación pide al usuario que apruebe o deniegue el acceso a la aplicación mediante la ubicación. Use esta directiva para conceder permisos y denegar permisos automáticamente sin preguntar al usuario o dejar que el usuario final decida. Elija de entre las siguientes opciones:
+- **Permisos de aplicación predeterminados**: Establece la directiva de permisos predeterminada para todas las aplicaciones del perfil de trabajo. A partir de Android 6, se solicita al usuario que conceda determinados permisos que requieren las aplicaciones cuando se inician. Esta configuración de directiva permite decidir si se pedirá a los usuarios que concedan permisos para todas las aplicaciones del perfil de trabajo. Por ejemplo, suponga que asigna una aplicación al perfil de trabajo que requiere acceso mediante la ubicación. Normalmente, esa aplicación pide al usuario que apruebe o deniegue el acceso a la aplicación mediante la ubicación. Use esta directiva para conceder permisos y denegar permisos automáticamente sin preguntar al usuario o dejar que el usuario final decida. Elija de entre las siguientes opciones:
   - **Valor predeterminado de dispositivo**
   - **Aviso**
   - **Concesión automática**
@@ -290,15 +291,18 @@ Esta configuración se aplica a los tipos de inscripción empresarial de Android
 
   También puede usar una directiva de configuración de aplicaciones para conceder permisos para aplicaciones individuales (**Aplicaciones cliente** > **Directivas de configuración de aplicaciones**).
 
-- **Agregar y quitar cuentas**: elija **Bloquear** para impedir que los usuarios finales agreguen o quiten manualmente las cuentas del perfil de trabajo. Por ejemplo, cuando implemente la aplicación de Gmail en un perfil de trabajo Android, podrá impedir que los usuarios finales agreguen o quiten cuentas en este perfil de trabajo. **No configurado** permite agregar cuentas en el perfil de trabajo.  
+- **Agregar y quitar cuentas**: elija **Bloquear** para impedir que los usuarios finales agreguen o quiten manualmente cuentas del perfil de trabajo. Por ejemplo, cuando implemente la aplicación de Gmail en un perfil de trabajo Android, podrá impedir que los usuarios finales agreguen o quiten cuentas en este perfil de trabajo. **No configurado** permite agregar cuentas en el perfil de trabajo.  
 
-- **Uso compartido de contactos a través de Bluetooth**: permite el acceso a los contactos de trabajo desde otro dispositivo (por ejemplo, un automóvil) que se empareja con Bluetooth. De forma predeterminada, esta opción no está configurada y los contactos de perfil de trabajo no se muestran. Seleccione **Habilitar** para permitir este uso compartido y para que se muestren los contactos de perfil de trabajo. Esta configuración se aplica a dispositivos de perfil de trabajo Android con la versión de SO Android 6.0 y versiones más recientes. Si se habilita, puede permitir que ciertos dispositivos Bluetooth almacenen en caché los contactos de trabajo en la primera conexión. Si se deshabilita esta directiva después de un emparejamiento o una sincronización inicial no puede eliminar los contactos de trabajo desde un dispositivo Bluetooth.
+  > [!NOTE]
+  > Las cuentas de Google no se pueden agregar a un perfil de trabajo.
 
-- **Captura de pantalla**: elija **Bloquear** para evitar que se hagan capturas de pantalla en el dispositivo en el perfil de trabajo. Además evita que el contenido se muestre en los dispositivos de pantalla que no tengan una salida de vídeo segura. **No configurado** permite obtener capturas de pantalla.
+- **Uso compartido de contactos a través de Bluetooth**: permite el acceso a los contactos de trabajo desde otro dispositivo (por ejemplo, un automóvil) que está emparejado con Bluetooth. De forma predeterminada, esta opción no está configurada y los contactos de perfil de trabajo no se muestran. Seleccione **Habilitar** para permitir este uso compartido y para que se muestren los contactos de perfil de trabajo. Esta configuración se aplica a dispositivos de perfil de trabajo Android con la versión de SO Android 6.0 y versiones más recientes. Si se habilita, puede permitir que ciertos dispositivos Bluetooth almacenen en caché los contactos de trabajo en la primera conexión. Si se deshabilita esta directiva después de un emparejamiento o una sincronización inicial no puede eliminar los contactos de trabajo desde un dispositivo Bluetooth.
+
+- **Captura de pantalla**: elija **Bloquear** para impedir capturas de pantalla en el dispositivo en el perfil de trabajo. Además evita que el contenido se muestre en los dispositivos de pantalla que no tengan una salida de vídeo segura. **No configurado** permite obtener capturas de pantalla.
 
 - **Mostrar el identificador de llamada de contacto profesional en el perfil personal**: cuando se habilita (**sin configurar**), se muestran los detalles del autor de la llamada del contacto en el perfil personal. Cuando se establece en **Bloquear**, no se muestra el número del autor de la llamada del contacto en el perfil personal. Se aplica a las versiones del sistema operativo Android v6.0 y posteriores.
 
-- **Search work contacts from personal profile** (Buscar contactos de trabajo desde el perfil personal): elija **Bloquear** para impedir que los usuarios busquen contactos de trabajo en aplicaciones del perfil personal. **No requerido** permite buscar contactos de trabajo en el perfil personal.
+- **Buscar contactos profesionales del perfil personal**: elija **Bloquear** para impedir que los usuarios busquen contactos de trabajo en las aplicaciones del perfil personal. **No requerido** permite buscar contactos de trabajo en el perfil personal.
 
 - **Cámara**: elija **Bloquear** para impedir el acceso a la cámara del dispositivo en el perfil de trabajo. La configuración no afecta a la cámara en el perfil personal. **No requerido** permite el acceso a la cámara en el perfil de trabajo.
 
@@ -308,11 +312,11 @@ Esta configuración se aplica a los tipos de inscripción empresarial de Android
 
 #### <a name="work-profile-password"></a>Contraseña del perfil de trabajo
 
-- **Requerir contraseña del perfil de trabajo**: se aplica a Android 7.0 y versiones posteriores que tengan habilitado el perfil de trabajo. Elija **Requerir** para escribir una directiva de código de acceso que se aplique únicamente a las aplicaciones del perfil de trabajo. De forma predeterminada, el usuario final puede usar los dos PIN definidos por separado o bien puede optar por combinarlos en el más seguro de ellos. **No configurado** permite que el usuario use aplicaciones de trabajo, sin escribir ninguna contraseña.
-- **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe tener la contraseña del usuario (de **4**-**16**).
-- **Maximum minutes of inactivity until work profile locks** (Máximo de minutos de inactividad hasta que se bloquea el perfil de trabajo): seleccione la cantidad de tiempo antes de que se bloquee el perfil de trabajo. El usuario deberá especificar sus credenciales para volver a obtener acceso.
-- **Number of sign-in failures before wiping device** (Número de errores de inicio de sesión antes de borrar el dispositivo): escriba la cantidad de veces que se puede escribir una contraseña incorrecta antes de que se borre el perfil de trabajo del dispositivo.
-- **Expiración de la contraseña (días)** : escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**).
+- **Requerir contraseña del perfil de trabajo**: se aplica a Android 7.0 y versiones posteriores con el perfil de trabajo habilitado. Elija **Requerir** para escribir una directiva de código de acceso que se aplique únicamente a las aplicaciones del perfil de trabajo. De forma predeterminada, el usuario final puede usar los dos PIN definidos por separado o bien puede optar por combinarlos en el más seguro de ellos. **No configurado** permite que el usuario use aplicaciones de trabajo, sin escribir ninguna contraseña.
+- **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe tener la contraseña del usuario (**4**-**16**).
+- **Cantidad máxima de minutos de inactividad hasta que el perfil de trabajo se bloquea**: seleccione la cantidad de tiempo antes de que se bloquee el perfil de trabajo. El usuario deberá especificar sus credenciales para volver a obtener acceso.
+- **Número de errores de inicio de sesión antes de borrar el dispositivo**: especifique el número de veces que se puede escribir una contraseña incorrecta antes de que el perfil de trabajo se borre del dispositivo.
+- **Expiración de la contraseña (días)** : escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (**1**-**255**).
 - **Tipo de contraseña requerida**: seleccione el tipo de contraseña que se debe establecer en el dispositivo. Elija de entre las siguientes opciones:
   - **Valor predeterminado del dispositivo**
   - **Biométrico de seguridad baja**
@@ -322,7 +326,7 @@ Esta configuración se aplica a los tipos de inscripción empresarial de Android
   - **Al menos alfabética**
   - **Al menos alfanumérica**
   - **Al menos alfanumérica con símbolos**
-- **Prevent reuse of previous passwords** (Impedir la reutilización de contraseñas anteriores): escriba la cantidad de contraseñas nuevas que se deben usar antes de que se pueda reutilizar una antigua (de **1**-**24**).
+- **Impedir la reutilización de contraseñas anteriores**: escriba la cantidad de contraseñas nuevas que se deben usar antes de que se pueda reutilizar una antigua (**1**-**24**).
 - **Desbloqueo con huella digital**: elija **Bloquear** para impedir que los usuarios finales usen el escáner de huella digital del dispositivo para desbloquearlo. **No configurado** permite que los usuarios desbloqueen los dispositivos con una huella digital en el perfil de trabajo.
 - **Smart Lock y otros agentes de confianza**: elija **Bloquear** para impedir que Smart Lock u otros agentes de confianza ajusten la configuración de la pantalla de bloqueo en dispositivos compatibles. Esta característica, conocida también como agente de confianza, permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza. Por ejemplo, se puede omitir la contraseña de perfil de trabajo cuando el dispositivo está conectado a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC. Use esta opción para impedir que los usuarios configuren Smart Lock.
 
@@ -330,26 +334,26 @@ Esta configuración se aplica a los tipos de inscripción empresarial de Android
 
 Esta configuración de contraseña se aplica a los perfiles personales de los dispositivos que usan un perfil de trabajo.
 
-- **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe tener la contraseña del usuario (de **4**-**14**).
-- **Maximum minutes of inactivity until screen locks** (Máximo de minutos de inactividad hasta que se bloquea la pantalla): seleccione el tiempo antes de que un dispositivo inactivo se bloquee de forma automática.
-- **Number of sign-in failures before wiping device** (Número de errores de inicio de sesión antes de borrar el dispositivo): escriba la cantidad de veces que se puede escribir una contraseña incorrecta antes de que se borren todos los datos del dispositivo
-- **Expiración de la contraseña (días)** : escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**)
+- **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe tener la contraseña del usuario (**4**-**14**).
+- **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: seleccione la cantidad de tiempo antes de que un dispositivo inactivo se bloquee automáticamente.
+- **Número de errores de inicio de sesión antes de borrar el dispositivo**: especifica el número de veces que se puede escribir una contraseña incorrecta antes de que todos los datos se borren del dispositivo.
+- **Expiración de la contraseña (días)** : escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (**1**-**255**).
 - **Tipo de contraseña requerida**: seleccione el tipo de contraseña que se debe establecer en el dispositivo. Elija de entre las siguientes opciones:
   - **Valor predeterminado del dispositivo**
   - **Biométrico de seguridad baja**
   - **Requerido**
   - **Al menos numérica**
-  - **Numérica compleja**: no se permiten números consecutivos ni repetidos, como "1111" o "1234"
+  - **Numérica compleja**: no se permiten números consecutivos ni repetidos, como "1111" o "1234".
   - **Al menos alfabética**
   - **Al menos alfanumérica**
   - **Al menos alfanumérica con símbolos**
-- **Prevent reuse of previous passwords** (Impedir la reutilización de contraseñas anteriores): escriba la cantidad de contraseñas nuevas que se deben usar antes de que se pueda reutilizar una antigua (de **1**-**24**).
+- **Impedir la reutilización de contraseñas anteriores**: escriba la cantidad de contraseñas nuevas que se deben usar antes de que se pueda reutilizar una antigua (**1**-**24**).
 - **Desbloqueo con huella digital**: elija **Bloquear** para impedir que el usuario final use el escáner de huella digital del dispositivo para desbloquearlo. **No configurado** permite que el usuario desbloquee el dispositivo con la huella digital.
 - **Smart Lock y otros agentes de confianza**: elija **Bloquear** para impedir que Smart Lock u otros agentes de confianza ajusten la configuración de la pantalla de bloqueo en dispositivos compatibles. Esta característica, conocida también como agente de confianza, permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza. Por ejemplo, se puede omitir la contraseña de perfil de trabajo cuando el dispositivo está conectado a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC. Use esta opción para impedir que los usuarios configuren Smart Lock.
 
 ### <a name="system-security"></a>Seguridad del sistema
 
-- **Análisis de amenazas en las aplicaciones**: **Requerir** exige que la configuración **Verificar aplicaciones** esté activada para los perfiles personales y profesionales.
+- **Examen de amenazas en las aplicaciones**: **Requerir** exige que la configuración **Verificar aplicaciones** esté habilitada para los perfiles personales y profesionales.
 
    > [!Note]
    > Esta configuración solo sirve para dispositivos Android 8 (Oreo) y posteriores.
@@ -383,7 +387,7 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
   > - Necesita aprobar la aplicación de cliente VPN en **Google Play Store administrado**, sincronizar la aplicación en Intune e implementar la aplicación en el dispositivo. Una vez hecho esto, la aplicación queda instalada en el perfil de trabajo del usuario.
   > - Existen problemas conocidos al usar VPN por aplicación con F5 Access para Android 3.0.4. Para más información, consulte las [notas de la versión de F5 Access para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
-- **Modo de bloqueo**: seleccione **Habilitar** para forzar que todo el tráfico de red use el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
+- **Modo de bloqueo**: Elija **Habilitar** para obligar a todo el tráfico de red a usar el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
 
   Elija **No configurado** para permitir que el tráfico fluya a través del túnel VPN o a través de la red móvil.
 
@@ -393,6 +397,6 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
 
 También puede crear perfiles de pantalla completa de dispositivo dedicado para dispositivos [Android](device-restrictions-android.md#kiosk) y [Windows 10](kiosk-settings.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Configuring and troubleshooting Android enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974) (Configuración y solución de problemas de dispositivos empresariales Android en Microsoft Intune)

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961c081b17d380bd00965708b6acd57b8059b2e0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fbe2c7933d0d012a7c85df4e9c5b6e8e94fc9805
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506312"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856809"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Inscripción de dispositivos macOS proporcionados por la organización en la administración
 
@@ -52,11 +52,11 @@ Complete los siguientes pasos para inscribir un dispositivo macOS en la administ
 4. Seleccione la red Wi-Fi. Debe disponer de conexión a Internet para continuar con la configuración. Si no ve la red o necesita conectarse mediante cable, haga clic en **Otras opciones de red**. Cuando termine, haga clic en **Continuar**.  
 
    ![Captura de la pantalla de selección de red Wi-Fi del asistente de configuración de dispositivos macOS en la que se muestra una lista de redes disponibles. También se muestran los botones Otras opciones de red, Atrás y Continuar.](./media/macos-dep-wifi-1808.png)  
-5. Tras conectarse a la red Wi-Fi, aparecerá la pantalla **Administración remota**. Esto permite al administrador de la organización configurar de forma remota el dispositivo con cuentas, opciones de configuración, aplicaciones y redes requeridas por la empresa. Lea toda la explicación sobre administración remota para comprender mejor cómo se administra el dispositivo. Después, haga clic en **Continuar**.  
+5. Tras conectarse a la red Wi-Fi, aparecerá la pantalla **Administración remota**. Esto permite al administrador de la organización configurar de forma remota el dispositivo con cuentas, opciones de configuración, aplicaciones y redes requeridas por la empresa. Lea toda la explicación sobre administración remota para comprender mejor cómo se administra el dispositivo. Luego haga clic en **Continuar**.  
 
    ![Captura de la pantalla de administración remota del asistente de configuración de dispositivos macOS con un texto en el que se explica la administración remota y un vínculo a documentación para obtener más información. También se muestran los botones Atrás y Continuar.](./media/macos-dep-remote-management-1-1808.png)  
 6. Cuando se le solicite, inicie sesión con su cuenta profesional o educativa. Tras autenticarse, el dispositivo instalará un perfil de administración. Este configurará y habilitará el acceso a los recursos de su organización.  
-7. Obtenga información sobre las condiciones de privacidad y datos de Apple para posteriormente poder identificar cuándo se está recopilando información personal. Después, haga clic en **Continuar**.  
+7. Obtenga información sobre las condiciones de privacidad y datos de Apple para posteriormente poder identificar cuándo se está recopilando información personal. Luego haga clic en **Continuar**.  
 
    ![Captura de la pantalla de datos y privacidad del asistente de configuración de dispositivos macOS en la que se muestra una ilustración de dos personas dándose la mano y en la que se describe el uso que hace Apple de la información personal. También se muestran los botones Atrás y Continuar.](./media/macos-dep-apple-data-privacy-1808.png)  
 8. Tras haber inscrito el dispositivo, es posible que deba completar algún paso más. Los pasos dependerán de si su organización ha personalizado la experiencia de configuración. Podría tener que hacer lo siguiente:
@@ -78,4 +78,4 @@ Descargue la aplicación Portal de empresa de Intune para macOS en el dispositiv
 6. Busque el dispositivo y haga clic en **Registrar**.
 7. Haga clic en **Continuar** > **Listo**. El dispositivo debería aparecer ahora en la aplicación Portal de empresa como un dispositivo corporativo compatible.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

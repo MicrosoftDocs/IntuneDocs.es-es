@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f056b44301c1d0f94dde2dbb6202ed7c78e90fbf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507828"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857366"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver una amenaza detectada por Lookout for Work  
 
@@ -52,8 +52,8 @@ Recupere el acceso a los recursos de la empresa cuando la aplicación Lookout fo
 
 Si instala una aplicación que Lookout for Work identifica como una amenaza, recibirá un mensaje similar al que se muestra en la captura de pantalla siguiente.  
 
-![Captura de pantalla de ejemplo en la que se muestra un mensaje de alerta de virus de Lookout sobre la interfaz de la aplicación Lookout for Work. Se muestran tres botones: "Cerrar", "Más información" y "Desinstalar".](./media/lookout-virus-alert-android.png)  
+![Captura de pantalla de ejemplo en la que se muestra un mensaje de alerta de virus de Lookout sobre la interfaz de la aplicación Lookout for Work. Muestra tres botones: "Cerrar", "Más información" y "Desinstalar".](./media/lookout-virus-alert-android.png)  
 
 Para recuperar el acceso que ha perdido al correo electrónico y los datos de la empresa, desinstale la aplicación cuestionable. Mientras la aplicación esté en el dispositivo, no podrá acceder a los recursos de la empresa.    
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

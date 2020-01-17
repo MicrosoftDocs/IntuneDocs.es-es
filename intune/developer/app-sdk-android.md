@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2e4c96cefef9f535d68ed8da20dfcaeb0deffbe1
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503493"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653927"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -37,14 +37,14 @@ El SDK para aplicaciones de Microsoft Intune para Android permite incorporar dir
 El SDK para aplicaciones de Intune consta de los siguientes archivos:
 
 * **Microsoft.Intune.MAM.SDK.aar**: los componentes del SDK, excepto los archivos JAR de la biblioteca de compatibilidad.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v4.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v7.
+* **Microsoft.Intune.MAM.SDK.Suppot.v4.jar**: interfaces necesarias para habilitar MAM en aplicaciones que aprovechan la biblioteca de compatibilidad de Android v4.
+* **Microsoft.Intune.MAM.SDK.Suppot.v7.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v7.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v17. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan clases de la biblioteca de compatibilidad de Android en el paquete `android.support.text`.
-* **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**: este archivo .aar contiene códigos auxiliares para las clases del sistema de Android que solo están presentes en los dispositivos nuevos, pero a las que se hace referencia mediante métodos en `MAMActivity`. Los dispositivos más recientes ignorarán estas clases de código auxiliar. Este archivo .aar solo es necesario si la aplicación realiza la reflexión en clases derivadas de `MAMActivity` y en la mayoría de las aplicaciones no es necesario incluirlo. AAR contiene reglas de ProGuard para excluir todas sus clases.
+* **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**: este archivo AAR contiene códigos auxiliares para las clases del sistema de Android que solo están presentes en dispositivos más recientes, pero a las que se hace referencia mediante métodos en `MAMActivity`. Los dispositivos más recientes ignorarán estas clases de código auxiliar. Este archivo .aar solo es necesario si la aplicación realiza la reflexión en clases derivadas de `MAMActivity` y en la mayoría de las aplicaciones no es necesario incluirlo. AAR contiene reglas de ProGuard para excluir todas sus clases.
 * **com.microsoft.intune.mam.build.jar**: un complemento de Gradle que [ayuda a integrar el SDK](#build-tooling).
 * **CHANGELOG.txt**: proporciona un registro de los cambios hechos en cada versión del SDK.
-* **THIRDPARTYNOTICES. TXT**: es un aviso de atribución que reconoce el código de terceros o de OSS que se compilará en la aplicación.
+* **THIRDPARTYNOTICES.TXT**:  aviso de atribución que reconoce el código de terceros o de OSS que se compilará en la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -155,7 +155,7 @@ Esto tendría los siguientes efectos:
 * `:product:FooLib` no se reescribe porque está incluido en `excludeProjects`
 * `:product:foo-project` se reescribe, excepto para `com.contoso.SplashActivity`, que se omite porque se encuentra en `excludeClasses`
 * `bar.jar` se reescribe porque está incluido en `includeExternalLibraries`
-* `zap.jar` **no** se reescribe porque no es un proyecto y no se incluye en `includeExternalLibraries`
+* `zap.jar`**no** se reescribe porque no es un proyecto y no se incluye en `includeExternalLibraries`
 * `com.contoso.foo:zap-artifact:1.0.0` se reescribe porque está incluido en `includeExternalLibraries`
 * `com.microsoft.bar:baz:1.0.0` se reescribe porque está incluido en `includeExternalLibraries` mediante un carácter comodín (`com.microsoft.*`).
 * `com.microsoft.qux:foo:2.0` no se reescribe aunque coincida con el mismo carácter comodín que el elemento anterior porque se excluye explícitamente mediante un patrón de negación.
@@ -247,8 +247,8 @@ Esto tendría los siguientes efectos:
 
 * el directorio `product-foo-project` se reescribe como `mam-build\product-foo-project`
 * `bar.jar` se reescribe como `mam-build\libs\bar.jar`
-* `zap.jar` **no** se reescribe porque solo está incluido en `--classpath`
-* La clase `com.contoso.SplashActivity` **no** se reescribe aunque esté en `--input`
+* `zap.jar`**no** se reescribe porque solo está incluido en `--classpath`
+* La clase `com.contoso.SplashActivity`**no** se reescribe aunque esté en `--input`
 
 > [!NOTE] 
 > La herramienta de compilación no admite archivos aar actualmente. Si el sistema de compilación ya no extrae `classes.jar` cuando trabaja con archivos aar, deberá hacerlo antes de invocar la herramienta de compilación.
@@ -539,7 +539,7 @@ String toString();
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` siempre devolverá una directiva de aplicaciones no nula, aunque el dispositivo o la aplicación no estén dentro de una directiva de administración de Intune.
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Ejemplo: determine si se requiere un PIN para la aplicación
+### <a name="example-determine-if-pin-is-required-for-the-app"></a>Ejemplo: Determinar si se requiere un PIN para la aplicación
 
 Si la aplicación tiene su propia experiencia de usuario de PIN, es posible que desee deshabilitarla si el administrador de TI configuró el SDK para solicitar un PIN de aplicación. Con el fin de determinar si el administrador de TI implementó la directiva de PIN de esta aplicación para el usuario final actual, llame al método siguiente:
 
@@ -548,7 +548,7 @@ Si la aplicación tiene su propia experiencia de usuario de PIN, es posible que 
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-the-primary-intune-user"></a>Ejemplo: determine el usuario primario de Intune
+### <a name="example-determine-the-primary-intune-user"></a>Ejemplo: Determinar el usuario primario de Intune
 
 Además de las API expuestas en AppPolicy, el nombre principal de usuario (**UPN**) también lo expone la API `getPrimaryUser()` definida dentro de la interfaz `MAMUserInfo`. Para obtener el UPN, llame a lo siguiente:
 
@@ -573,7 +573,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>Ejemplo: determine si se permite guardar en un dispositivo o en almacenamiento en nube
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>Ejemplo: Determinar si se permite guardar en un dispositivo o en almacenamiento en la nube
 
 Muchas aplicaciones implementan características que permiten al usuario final guardar archivos de forma local o en un servicio de almacenamiento en la nube. El SDK para aplicaciones de Intune permite a los administradores de TI proteger contra la pérdida de datos mediante la aplicación de restricciones de directivas en su organización, según lo consideren oportuno.  Una de las directivas que pueden controlar es si el usuario final puede guardar en un almacén de datos personal no administrado. Esto incluye guardar datos en una ubicación local, en una tarjeta SD o en servicios de copia de seguridad de terceros.
 
@@ -677,9 +677,9 @@ Las siguientes notificaciones se envían a la aplicación y es posible que algun
 
 * **WIPE_USER_AUXILIARY_DATA**: las aplicaciones pueden registrarse para esta notificación si quieren que el SDK para aplicaciones de Intune realice el comportamiento predeterminado de eliminación selectiva, pero les gustaría quitar algunos datos auxiliares cuando se produzca la eliminación. Esta notificación no está disponible para aplicaciones de identidad única; solo se enviará a las aplicaciones de varias identidades. Esta notificación nunca se enviará en el subproceso de la interfaz de usuario.
 
-* **REFRESH_POLICY**: esta notificación se envía en `MAMUserNotification`. Cuando se recibe esta notificación, se deben invalidar y actualizar las decisiones de directiva de Intune almacenadas en caché. Si la aplicación no almacena supuestos de directiva, no tiene que registrarse para recibir esta notificación. No se garantiza el número de subprocesos en los que se enviará esta notificación.
+* **REFRESH_POLICY**: esta notificación se envía en una clase `MAMUserNotification`. Cuando se recibe esta notificación, se deben invalidar y actualizar las decisiones de directiva de Intune almacenadas en caché. Si la aplicación no almacena supuestos de directiva, no tiene que registrarse para recibir esta notificación. No se garantiza el número de subprocesos en los que se enviará esta notificación.
 
-* **REFRESH_APP_CONFIG**: esta notificación se envía en `MAMUserNotification`. Cuando se recibe esta notificación, se deben invalidar y actualizar los datos de configuración de la aplicación almacenados en caché. No se garantiza el número de subprocesos en los que se enviará esta notificación.
+* **REFRESH_APP_CONFIG**: esta notificación se envía en una clase `MAMUserNotification`. Cuando se recibe esta notificación, se deben invalidar y actualizar los datos de configuración de la aplicación almacenados en caché. No se garantiza el número de subprocesos en los que se enviará esta notificación.
 
 * **MANAGEMENT_REMOVED**: esta notificación se envía en `MAMUserNotification` e informa a la aplicación que está a punto de dejar de estar administrada. Cuando deja de estar administrada, ya no podrá leer archivos cifrados, leer datos cifrados con MAMDataProtectionManager, interactuar con el portapapeles cifrado o participar de cualquier otro modo en el ecosistema de aplicaciones administradas. Ver más detalles a continuación. Esta notificación nunca se enviará en el subproceso de la interfaz de usuario.
 
@@ -789,7 +789,7 @@ El acceso condicional (CA) es una [característica](https://docs.microsoft.com/a
 5. Una vez que la aplicación haya enviado la integración con el SDK para aplicaciones de Intune, póngase en contacto con msintuneappsdk@microsoft.com para que se agregue a la lista de aplicaciones aprobadas para el [acceso condicional basado en aplicación](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
 6. Cuando la aplicación se haya agregado a la lista aprobada, realice la validación [configurando el CA basado en aplicación](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) y asegurándose de que el inicio de sesión en la aplicación se completa correctamente.
 
-## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin la inscripción de dispositivos
+## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin inscripción de dispositivos
 
 ### <a name="overview"></a>Introducción
 La directiva de protección de aplicaciones de Intune sin inscripción de dispositivos, también conocida como APP-WE o MAM-WE, permite a las aplicaciones ser administradas mediante Intune sin necesidad de que el dispositivo esté inscrito en MDM de Intune. APP-WE funciona con o sin inscripción de dispositivos. De todos modos, es necesario que Portal de empresa esté instalado en el dispositivo, pero no es necesario que el usuario inicie sesión en él e inscriba el dispositivo.
@@ -915,7 +915,7 @@ Result getRegisteredAccountStatus(String upn);
 3. Para anular el registro de una cuenta desde la administración de Intune, la aplicación debe llamar a `unregisterAccountForMAM()`. Si la cuenta se registró correctamente y está administrada, el SDK anulará la inscripción de la cuenta y borrará sus datos. Se detendrán los reintentos de inscripción periódicos de la cuenta. El SDK proporciona el estado de la solicitud no inscrita de manera asincrónica a través de notificaciones.
 
 ### <a name="sovereign-cloud-registration"></a>Registro de nube soberana
-Las aplicaciones con [reconocimiento de nube soberana](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud) **deben** proporcionar el elemento `authority` a `registerAccountForMAM()`.  Esto puede obtenerse proporcionando `instance_aware=true` en acquireToken extraQueryParameters de ADAL [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) e invocando luego `getAuthority()` en AuthenticationCallback AuthenticationResult.
+Las aplicaciones con [reconocimiento de nube soberana](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud) **deben** proporcionar `authority` a `registerAccountForMAM()`.  Esto puede obtenerse proporcionando `instance_aware=true` en acquireToken extraQueryParameters de ADAL [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) e invocando luego `getAuthority()` en AuthenticationCallback AuthenticationResult.
 
 ```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
@@ -1154,7 +1154,7 @@ Intune le permite utilizar todas las [características de copia de seguridad aut
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **Ejemplo 2**: si desea que la aplicación use su propio BackupAgent personalizado y no haga copias de seguridad automáticas completas que sean compatibles con la directiva de Intune, debe establecer el atributo y la etiqueta de metadatos en **false**:
+    **Ejemplo 2:** : si desea que la aplicación use su propio BackupAgent personalizado y no haga copias de seguridad automáticas completas que sean compatibles con la directiva de Intune, debe establecer el atributo y la etiqueta de metadatos en **false**:
 
     ```xml
     android:fullBackupContent="false"
@@ -1253,7 +1253,7 @@ Si la aplicación usa el contexto `Application` para adquirir servicios del sist
 
 Para controlar casos especiales al actualizar la identidad de la interfaz de usuario con `setUIPolicyIdentity` o `switchMAMIdentity`, se puede pasar un conjunto de valores `IdentitySwitchOption` a ambos métodos.
 
-* `IGNORE_INTENT`: se usa si se solicita un cambio de identidad que debe ignorar la intención asociada a la actividad actual.
+* `IGNORE_INTENT`: se usa si se solicita un cambio de identidad que debe pasar por alto la intención asociada a la actividad actual.
   Por ejemplo:
 
   1. La aplicación recibe una intención de una identidad administrada que contiene un documento administrado, y la aplicación muestra el documento.
@@ -1352,7 +1352,7 @@ Además de la posibilidad de que la aplicación establezca la identidad, un subp
 
     Además, la interacción del usuario con una actividad puede provocar un cambio de identidad implícita.
 
-    **Ejemplo**: la cancelación por un usuario de un mensaje de autorización durante `Resume` dará como resultado un cambio implícito a una identidad vacía.
+    **Ejemplo:** la cancelación por un usuario de un mensaje de autorización durante `Resume` dará como resultado un cambio implícito a una identidad vacía.
 
     La aplicación tiene la oportunidad de enterarse de esos cambios y puede prohibirlos, si debe hacerlo. `MAMService` y `MAMContentProvider` exponen el siguiente método que las subclases pueden reemplazar:
 
@@ -1396,7 +1396,7 @@ Al método `onMAMIdentitySwitchRequired` se le llama para todos los cambios de i
 
   * Si se bloquea un cambio de identidad, el resultado es el mismo que si la configuración de uso compartido `Receive` hubiera prohibido la entrada de datos.
 
-  * Si un servicio se ejecuta en el subproceso principal, se **debe** llamar a `reportIdentitySwitchResult` de forma sincrónica o se bloqueará el subproceso de IU.
+  * Si un servicio se ejecuta en el subproceso principal, se **debe** llamar a `reportIdentitySwitchResult` de forma sincrónica o se bloquea el subproceso de IU.
 
   * Para la creación de **`Activity`** , se llamará a `onMAMIdentitySwitchRequired` antes que a `onMAMCreate`. Si la aplicación debe mostrar la interfaz de usuario para determinar si se permite el cambio de identidad, esa interfaz de usuario se debe mostrar mediante una actividad *diferente*.
 
@@ -1655,7 +1655,7 @@ Si la aplicación proporciona datos corporativos distintos de `ParcelFileDescrip
 Si no hereda `MAMContentProvider` explícitamente y en su lugar permite que la herramienta de compilación realice ese cambio, puede llamar a una versión estática del mismo método: `MAMContentProvider.isProvideContentAllowed(provider,
 contentIdentity)`.
 
-### <a name="selective-wipe"></a>Eliminación selectiva
+### <a name="selective-wipe"></a>eliminación selectiva
 Si una aplicación de varias identidades se registra para la notificación `WIPE_USER_DATA`, es responsabilidad de la aplicación quitar todos los datos del usuario que se va a eliminar, incluidos todos los archivos con etiquetas de identidad que indiquen su pertenencia a dicho usuario. Si la aplicación quita datos de usuario de un archivo, pero desea dejar otros datos en el archivo, *debe* cambiar la identidad del archivo (mediante `MAMFileProtectionManager.protect` a un usuario personal o la identidad vacía). Si la directiva de cifrado está en uso, los archivos restantes que pertenezcan al usuario que se vaya a borrar no se descifrarán y la aplicación no podrá acceder a ellos tras el borrado.
 
 Las aplicaciones que se registren para `WIPE_USER_DATA` no recibirán la ventaja del comportamiento de borrado selectivo predeterminado del SDK. En el caso de aplicaciones compatibles con varias identidades, esta pérdida puede tener un impacto más considerable dado que la eliminación selectiva predeterminada de MAM solo eliminará los archivos cuya identidad sea el destino de una eliminación. Si una aplicación compatible con varias identidades desea que se realice una eliminación selectiva predeterminada de MAM _**y**_ también desea realizar sus propias acciones en la eliminación, se debe registrar para recibir notificaciones `WIPE_USER_AUXILIARY_DATA`. El SDK enviará inmediatamente esta notificación antes de que realice la eliminación selectiva predeterminada de MAM. Una aplicación nunca debe registrarse para `WIPE_USER_DATA` y `WIPE_USER_AUXILIARY_DATA`.

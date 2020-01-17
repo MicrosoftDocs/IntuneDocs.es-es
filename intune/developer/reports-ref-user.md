@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996e28f9dceff88637c93e667597e3364215b965
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 202d9e53ff21e5677a212012d37b0e909cc8c562
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505635"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654097"
 ---
 # <a name="reference-for-user-entity"></a>Referencia de la entidad de usuario
 
@@ -41,7 +41,7 @@ La colección de entidades **user** contiene los datos de usuario. Dichos regist
 | userId                     | Identificador único del usuario. Se parece a UserKey, pero es una clave natural.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | userEmail                  | Dirección de correo electrónico del usuario.                                                                                                                                                                                                     | John@constoso.com                    |
 | userPrincipalName                        | Nombre principal del usuario.                                                                                                                                                                                               | John@constoso.com                    |
-| displayName                | Nombre para mostrar del usuario.                                                                                                                                                                                                      | Juan                                 |
+| DisplayName                | Nombre para mostrar del usuario.                                                                                                                                                                                                      | Juan                                 |
 | intuneLicensed             | Especifica si este usuario tiene licencia de Intune o no.                                                                                                                                                                              | Verdadero/Falso                           |
 | isDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero/Falso                           |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se modificó por última vez el registro en el almacenamiento de datos                                                                                                                                                 | 23/11/2016 0:00                      |

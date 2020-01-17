@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2019
 ms.article: article
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54c38bac5ddf9eee1dd5f1dc6d544de3fa2395ab
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d986097f4f3dda0278d767c911b8c1e957e9c010
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506906"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206744"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Uso de la configuración personalizada para dispositivos Windows Holographic for Business en Intune
 
@@ -37,21 +37,21 @@ En este artículo se muestra cómo crear un perfil personalizado para dispositiv
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba los valores siguientes:
 
-    - **Nombre**: escriba un nombre para el perfil, como `hololens custom profile`.
-    - **Descripción**: escriba una descripción para el perfil
+    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil. Asígnele un nombre a los perfiles para que pueda identificarlos de manera sencilla más adelante. Por ejemplo, un buen nombre de perfil es el **perfil personalizado de Hololens**.
+    - **Descripción**: escriba una descripción con información general sobre la configuración y otros detalles importantes.
     - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
-    - **Tipo de perfil**: elija **Personalizado**.
+    - **Tipo de perfil**: seleccione **personalizado**.
 
 4. En **Configuración OMA-URI personalizada**, seleccione **Agregar**. Escriba los valores siguientes:
 
-    - **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
+    - **Nombre**: Escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
     - **Descripción**: escriba una descripción con información general sobre la configuración y otros detalles importantes.
     - **OMA-URI** (distingue mayúsculas de minúsculas): escriba la configuración OMA-URI que quiere usar.
-    - **Tipo de datos**: elija el tipo de datos que se usará para esta configuración OMA-URI. Las opciones son:
+    - **Tipo de datos**: seleccione el tipo de datos que se va a usar para esta configuración OMA-URI. Las opciones son:
 
         - String
         - Cadena (archivo XML)
@@ -61,12 +61,12 @@ En este artículo se muestra cómo crear un perfil personalizado para dispositiv
         - Boolean
         - Base64 (archivo)
 
-    - **Valor**: escriba el valor de datos que quiere asociar con la configuración OMA-URI especificada. El valor depende del tipo de datos que ha seleccionado. Por ejemplo, si elige **Fecha y hora**, debe seleccionar el valor en un selector de fecha.
+    - **Valor**: escriba el valor de datos que quiere asociar con la configuración OMA-URI especificada. El valor depende del tipo de datos que ha seleccionado. Por ejemplo, si selecciona **Fecha y hora**, seleccione el valor en un selector de fecha.
 
     Después de agregar algunos valores de configuración, puede seleccionar **Exportar**. Haga clic en **Exportar** para crear una lista de todos los valores agregados en un archivo de valores separados por comas (.csv).
 
 5. Haga clic en **Aceptar** para guardar los cambios. Continúe agregando más valores según sea necesario.
-6. Cuando termine, seleccione **Aceptar** > **Crear** para crear el perfil de Intune. Una vez que se haya completado, el perfil se mostrará en la lista **Configuración del dispositivo - Perfiles**.
+6. Cuando termine, seleccione **Aceptar** > **Crear** para crear el perfil de Intune. Una vez hecho, el perfil aparece en la lista **Dispositivos - Perfiles de configuración**.
 
 ## <a name="recommended-custom-settings"></a>Configuración personalizada recomendada
 
@@ -77,28 +77,28 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Entero<br/>0: no permitido<br/>1: permitido (valor predeterminado)|
+> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Integer<br/>0: no permitido<br/>1: permitido (valor predeterminado)|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Entero<br/>0: no se permite el servicio de actualización <br/>1: se permite el servicio de actualización (valor predeterminado).|
+> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Integer<br/>0: no se permite el servicio de actualización <br/>1: se permite el servicio de actualización (valor predeterminado).|
 
 ### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Entero<br/>0: no permitido<br/>1: permitido (valor predeterminado)|
+> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Integer<br/>0: no permitido<br/>1: permitido (valor predeterminado)|
 
 ### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Entero<br/>0: no configurado. El dispositivo instala todas las actualizaciones aplicables.<br/>1: el dispositivo solo instala las actualizaciones que son aplicables y que están en la lista Actualizaciones aprobadas. Establezca esta directiva en 1 si el departamento de TI quiere controlar la implementación de actualizaciones en dispositivos, por ejemplo, cuando es necesario realizar pruebas antes de la implementación.|
+> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Integer<br/>0: no configurado. El dispositivo instala todas las actualizaciones aplicables.<br/>1: el dispositivo solo instala las actualizaciones que son aplicables y que están en la lista Actualizaciones aprobadas. Establezca esta directiva en 1 si el departamento de TI quiere controlar la implementación de actualizaciones en dispositivos, por ejemplo, cuando es necesario realizar pruebas antes de la implementación.|
 
 ### <a name="scheduledinstalltimehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-scheduledinstalltime"></a>[ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
 
@@ -133,7 +133,7 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Entero<br/>0 - eliminar inmediatamente cuando el dispositivo vuelva a un estado sin usuarios activos<br/>1 - eliminar cuando se alcance el umbral de capacidad de almacenamiento (valor predeterminado)<br/>2 - eliminar cuando se alcancen el umbral de capacidad de almacenamiento y el umbral de inactividad de perfil|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|Integer<br/>0 - eliminar inmediatamente cuando el dispositivo vuelva a un estado sin usuarios activos<br/>1 - eliminar cuando se alcance el umbral de capacidad de almacenamiento (valor predeterminado)<br/>2 - eliminar cuando se alcancen el umbral de capacidad de almacenamiento y el umbral de inactividad de perfil|
 
 ### <a name="enableprofilemanagerhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
@@ -147,7 +147,7 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|Entero<br/>El valor predeterminado es 30.|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|Integer<br/>El valor predeterminado es 30.|
 
 
 ### <a name="storagecapacitystartdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStartDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
@@ -155,14 +155,14 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|Entero<br/>El valor predeterminado es 25.|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|Integer<br/>El valor predeterminado es 25.|
 
 ### <a name="storagecapacitystopdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStopDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|Entero<br/>El valor predeterminado es 50.|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|Integer<br/>El valor predeterminado es 50.|
 
 ## <a name="find-the-policies-you-can-configure"></a>Buscar las directivas que se pueden configurar
 
@@ -172,6 +172,6 @@ Además, Intune no admite todas las configuraciones que aparecen en [CSPs suppor
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Se crea el perfil, pero todavía no hace nada. Después, [asigne el perfil](device-profile-assign.md).
+Se crea el perfil, pero todavía no hace nada. Después, [asigne el perfil](../device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
-Vea cómo crear un perfil personalizado en [Dispositivos Windows 10](../custom-settings-windows-10.md).
+Cree un [perfil personalizado en dispositivos Windows 10](../custom-settings-windows-10.md).

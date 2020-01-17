@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 20228277e496ca6f594859d40836e50609d05a8a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506153"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855448"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscribir el dispositivo Windows Phone 8.1 en Intune  
 
@@ -44,7 +44,7 @@ Siga estos pasos si puede instalar la aplicación del Portal de empresa desde Mi
 
     ![Resultados de búsqueda del portal de empresa](./media/WP81-1-CP-search-store-v2.png)  
 
-4. Pulse en **Portal de empresa**  &gt; **Instalar** .  
+4. Pulse en **Portal de empresa** &gt; **Instalar**.  
 
 
     ![Instalar el portal de empresa](./media/WP81-2-CP-install-v2.png)  
@@ -73,7 +73,7 @@ Inscriba su dispositivo:
 
     ![Pantalla Configuración de área de trabajo](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7. Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción. Ahora debería aparecer su cuenta de área de trabajo en la página **Configuración** &gt; **Área de trabajo**.  
+7. Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción. Ahora debería aparecer la cuenta del área de trabajo en la página **Configuración** &gt; **Área de trabajo**.  
 
 
     ![Pantalla de cuenta agregada](./media/WP81-enroll-4-account-added.png)  
@@ -91,4 +91,4 @@ Siga estos pasos si no puede acceder a Microsoft Store desde su dispositivo Wind
 
 Si el equipo de soporte técnico de su empresa configuró el Portal de empresa para que se instale durante la inscripción, lo verá en la lista de aplicaciones.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, consulte el [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -1,12 +1,12 @@
 ---
-title: Configuración de restricciones de dispositivos de Microsoft Intune para dispositivos que ejecutan Windows 8.1
+title: 'Configuración de restricciones de dispositivos Windows 8.1 en Microsoft Intune: Azure | Microsoft Docs'
 titleSuffix: ''
 description: Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows 8.1.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489836"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302961"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Configuración de restricciones de Microsoft Intune de dispositivos Windows 8.1 y versiones posteriores
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Configuración de restricciones de dispositivos Windows 8.1 de Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-En este artículo, se muestran las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 8.1 y versiones posteriores.
-
+En este artículo se muestra la configuración de restricciones de dispositivos de Microsoft Intune que se puede aplicar a los dispositivos con Windows 8.1.
 
 ## <a name="general"></a>General
 
@@ -48,8 +45,6 @@ En este artículo, se muestran las opciones de configuración de restricciones d
 Si habilita esta configuración para dispositivos Windows 8.1, todos los usuarios del dispositivo deben tener una cuenta de Microsoft.
 Para que el cifrado funcione, el dispositivo debe cumplir los requisitos de certificación de hardware de [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97).
 Al exigir el cifrado en un dispositivo, solo se puede obtener acceso a la clave de recuperación desde la cuenta Microsoft de los usuarios, a la que se obtiene acceso desde su cuenta de OneDrive. No se puede recuperar esta clave en nombre de un usuario. 
-
-
 
 ## <a name="browser"></a>Explorador
 - **Autofill (Rellenar automáticamente)** : permite a los usuarios cambiar la configuración de Autocompletar en el explorador.
@@ -75,3 +70,7 @@ Si selecciona esta opción, también puede especificar una **Ubicación de infor
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 - **Dirección URL de carpetas de trabajo**: establece la dirección URL de la carpeta de trabajo para permitir que los documentos se sincronicen en todos los dispositivos.
 - **Acceso a la aplicación Correo de Windows sin una cuenta Microsoft**: permite el acceso a la aplicación Windows Mail sin una cuenta Microsoft.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Cree un perfil de restricciones de dispositivos en [Windows 10 y versiones más recientes](device-restrictions-windows-10.md).

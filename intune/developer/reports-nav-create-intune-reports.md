@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899335"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547909"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Usar Data Warehouse de Microsoft Intune
 
@@ -43,7 +43,7 @@ El Almacenamiento de datos proporciona acceso a más información sobre el entor
 - Un modelo de datos mediante el estándar OData
 
 > [!Note]
-> Si usa administración conjunta de dispositivos móviles (MDM) con System Center Configuration Manager y Microsoft Intune, tendrá que recuperar los datos de Configuration Manager. El Almacenamiento de datos de Intune solo contiene datos de Intune. Puede usar un panel de Configuration Manager Power BI para los informes personalizados. Para más información, vea "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (Presentación de la plantilla de solución de Power BI para System Center Configuration Manager) y "[Contenido de Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
+> Si usa administración de dispositivos móviles (MDM) administrados conjuntamente con Microsoft Endpoint Configuration Manager y Microsoft Intune, tiene que recuperar los datos de Configuration Manager. El Almacenamiento de datos de Intune solo contiene datos de Intune. Puede usar un panel de Power BI de Configuration Manager para los informes personalizados. Para obtener más información, vea "[Presentación de la plantilla de solución de Power BI para Configuration Manager](https://powerbi.microsoft.com/blog/sccm-solution-template)" y "[Contenido de Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
 
 > [!Important]  
 > Ahora puede usar la versión v1.0 del almacenamiento de datos de Intune mediante la configuración del parámetro de consulta  `api-version=v1.0`. Las actualizaciones de las colecciones en el almacenamiento de datos son aditivas por naturaleza y no interrumpen los escenarios existentes.<br><br>

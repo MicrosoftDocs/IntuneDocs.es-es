@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899240"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547922"
 ---
 # <a name="intune-data-warehouse-collections"></a>Colecciones de almacenamiento de datos de Intune
 
@@ -85,7 +85,7 @@ En la tabla siguiente se resume el estado de asignación de directivas de cumpli
 | DateKey       | Clave de fecha del momento en el que se creó el resumen de la directiva de cumplimiento.                                                                                                                   | 20161204 |
 | Unknown       | Número de dispositivos sin conexión o que no se pudieron comunicar con Intune o Azure AD por otros motivos.                                                                           | 5        |
 | No aplicable | Número de dispositivos a los que no se aplican las directivas de cumplimiento de dispositivos asignadas por el administrador.                                                                                     | 201      |
-| Conforme     | Número de dispositivos con una o varias directivas de cumplimiento de dispositivos asignadas por el administrador aplicadas correctamente.                                                                        | 4083     |
+| conforme     | Número de dispositivos con una o varias directivas de cumplimiento de dispositivos asignadas por el administrador aplicadas correctamente.                                                                        | 4083     |
 | En período de gracia | Número de dispositivos que no son conformes, pero que se encuentran en el período de gracia definido por el administrador.                                                                                  | 57       |
 | No conforme  | Número de dispositivos a los que no se pudo aplicar una o varias directivas de cumplimiento de dispositivos asignadas por el administrador o en los que el usuario no ha cumplido las directivas asignadas por el administrador. | 43       |
 |    Error      |    Número de dispositivos que no se pudieron comunicar con Intune o Azure AD y devolvieron un mensaje de error.                                                                          |    3     |
@@ -100,7 +100,7 @@ La siguiente tabla resume el estado de asignación de directivas de cumplimiento
 | PolicyPlatformKey | Clave del tipo de plataforma de la directiva de cumplimiento para la que se ha creado el resumen.                                                                                            | 5        |
 | Unknown           | Número de dispositivos sin conexión o que no se pudieron comunicar con Intune o Azure AD por otros motivos.                                                                           | 13       |
 | No aplicable     | Número de dispositivos a los que no se aplican las directivas de cumplimiento de dispositivos asignadas por el administrador.                                                                                     | 3        |
-| Conforme         | Número de dispositivos con una o varias directivas de cumplimiento de dispositivos asignadas por el administrador aplicadas correctamente.                                                                        | 45       |
+| conforme         | Número de dispositivos con una o varias directivas de cumplimiento de dispositivos asignadas por el administrador aplicadas correctamente.                                                                        | 45       |
 | En período de gracia     | Número de dispositivos que no son conformes, pero que se encuentran en el período de gracia definido por el administrador.                                                                                  | 3        |
 | No conforme      | Número de dispositivos a los que no se pudo aplicar una o varias directivas de cumplimiento de dispositivos asignadas por el administrador o en los que el usuario no ha cumplido las directivas asignadas por el administrador. | 7        |
 | Error             | Número de dispositivos que no se pudieron comunicar con Intune o Azure AD y devolvieron un mensaje de error.                                                                             | 3        |
@@ -117,7 +117,7 @@ La siguiente tabla resume el estado de asignación de directivas de cumplimiento
 |  complianceStatus  |                       Descripción                      |
 |:------------------:|:------------------------------------------------------:|
 |    Unknown         |    Desconocido.                                                                        |
-|    Conforme       |    Conforme.                                                                      |
+|    conforme       |    Conforme.                                                                      |
 |    No conforme    |       Dispositivo no conforme y con acceso bloqueado a los recursos corporativos.             |
 |    Conflicto        |    Conflicto con otras reglas.                                                      |
 |    Error           |       Error.                                                                       |
@@ -203,7 +203,7 @@ La entidad **DeviceRegistrationState** representa el tipo de registro al que hac
 | deviceRegistrationStateName | Estado de registro.                                                                  |
 |    NotRegistered                     |    No registrado.                                                                                                                                                                  |
 |    Registrado                        |       Registrado                                                                                                                                                                   |
-|    Revoked                           |       El estado significa que el administrador de TI ha bloqueado al cliente y el cliente se puede desbloquear. Un dispositivo también puede encontrarse en estado revocado después de que se haya borrado o retirado.        |
+|    Revocado                           |       El estado significa que el administrador de TI ha bloqueado al cliente y el cliente se puede desbloquear. Un dispositivo también puede encontrarse en estado revocado después de que se haya borrado o retirado.        |
 |    KeyConflict                       |    Conflicto de clave.                                                                                                                                                                    |
 |    ApprovalPending                   |    Pendiente de aprobación.                                                                                                                                                                |
 |    CertificateReset                  |    Certificado establecido.                                                                                                                                                               |
@@ -230,7 +230,7 @@ La entidad **device** muestra todos los dispositivos inscritos en administració
 | DeviceCategoryKey          | Clave de la categoría asociada a este dispositivo.                                                                                                                                     |
 | DeviceEnrollmentType       | Clave del tipo de inscripción asociada a este dispositivo, que indica el método de inscripción.                                                                                             |
 | ComplianceStateKey         | Clave del estado de cumplimiento de normas asociada a este dispositivo.                                                                                                                             |
-| OSVersion                  | Versión de sistema operativo del dispositivo                                                                                                                                                |
+| OSVersion                  | Versión del sistema operativo del dispositivo.                                                                                                                                                |
 | EasDeviceId                | Identificador de Exchange ActiveSync del dispositivo.                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | Identificador único para el usuario asociado al dispositivo.                                                                                                                           |
@@ -504,7 +504,7 @@ La entidad **MamPlatform** muestra nombres y tipos de plataforma en los que se h
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Identificador único de la plataforma en el almacenamiento de datos. Clave suplente.      |                           123                           |
 |          Plataforma          | Identificador único de la plataforma. Se parece a PlatformKey, pero es una clave natural. |                           123                           |
-|        PlatformName        |                                   Nombre de la plataforma.                                   | No disponible <br>Ninguno <br>Windows <br>iOS <br>Android. |
+|        PlatformName        |                                   Nombre de la plataforma.                                   | No disponible <br>Ninguno <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Fecha y hora en formato UTC en que se ha modificado por última vez esta plataforma en el almacenamiento de datos.  |                 23/11/2016 12:00:00 AM                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
@@ -525,7 +525,7 @@ La entidad **managementAgentTypes** representa los agentes usados para administr
 | 3                     | EasMdm                            | El dispositivo se administra mediante Exchange Active Sync y un agente MDM        |
 | 4                     | IntuneClient                      | El dispositivo se administra mediante el agente del equipo de Intune                               |
 | 5                     | EasIntuneClient                   | El dispositivo se administra mediante Exchange Active Sync y el agente del equipo de Intune |
-| 8                     | ConfigManagerClient               | El dispositivo se administra mediante el agente de System Center Configuration Manager     |
+| 8                     | ConfigManagerClient               | El dispositivo se administra mediante el agente de Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | El dispositivo se administra mediante Configuration Manager y MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | El dispositivo se administra mediante Configuration Manager, MDM y Exchange Active Sync.               |
 | 16                    | Unknown                           | Tipo de agente de administración desconocido                                              |
@@ -586,7 +586,7 @@ La entidad **ownerType** indica si un dispositivo es corporativo, personal o des
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Identificador único del tipo de propietario.                                                                                                                                               |                            |
 | ownerTypeKey  | Identificador único del tipo de propietario en el almacenamiento de datos. Clave suplente.                                                                                                       |                            |
-| ownerTypeName | Representa el tipo de propietario de los dispositivos: Corporativo: el dispositivo es propiedad de la empresa.  Personal: el dispositivo es de propiedad personal (BYOD).   Desconocido: no hay información sobre este dispositivo. | Empresa Personal Desconocido |
+| ownerTypeName | Representa el tipo de propietario de los dispositivos:  Empresa: el dispositivo es propiedad de una empresa.  Personal: el dispositivo es de propiedad personal (BYOD).   Desconocido: no hay información sobre este dispositivo. | Empresa Personal Desconocido |
 
 > [!Note]  
 > Para el filtro `ownerTypeName` en Azure AD al crear grupos dinámicos para los dispositivos, deberá establecer el valor `deviceOwnership` como `Company`. Para más información, vea [Reglas de dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 

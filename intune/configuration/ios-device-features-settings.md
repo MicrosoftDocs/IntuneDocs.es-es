@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 85fc8bf002a4d5d00d2163c0b75c49d11dcd9b61
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992945"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206370"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Configuración de dispositivos iOS e IPadOS para usar las características comunes de iOS en Intune
 
@@ -46,7 +46,7 @@ En este artículo se enumeran estas opciones de configuración y se describe lo 
 > Asegúrese de agregar todas las impresoras al mismo perfil. Apple evita que varios perfiles de impresión de destino tengan el mismo dispositivo.
 
 - **Dirección IP**: escriba la dirección IPv4 o IPv6 de la impresora. Si usa nombres de host para identificar impresoras, puede obtener la dirección IP haciendo ping a la impresora en el terminal. En la sección Obtención de la dirección IP y la ruta de acceso (en este artículo) se proporcionan más detalles.
-- **Ruta de acceso**: la ruta de acceso suele ser `ipp/print` para las impresoras de la red. En la sección Obtención de la dirección IP y la ruta de acceso (en este artículo) se proporcionan más detalles.
+- **Ruta de acceso**: La ruta de acceso suele ser `ipp/print` para las impresoras de la red. En la sección Obtención de la dirección IP y la ruta de acceso (en este artículo) se proporcionan más detalles.
 - **Puerto**: escriba el puerto de escucha del destino de AirPrint. Si se deja esta propiedad en blanco, AirPrint usa el puerto predeterminado. Disponible en iOS 11.0 y versiones posteriores.
 - **TLS**: elija **Habilitar** para proteger las conexiones AirPrint con Seguridad de la capa de transporte (TLS). Disponible en iOS 11.0 y versiones posteriores.
 
@@ -84,24 +84,24 @@ Use la configuración **Acoplar**, para agregar hasta seis elementos o carpetas 
 
 Puede agregar hasta **seis** elementos (aplicaciones y carpetas combinadas) para la base del dispositivo.
 
-- **Agregar**: agregue aplicaciones o carpetas a la base del dispositivo.
-- **Tipo**: agregue una **aplicación** o una **carpeta**:
+- **Agregar**: agrega aplicaciones o carpetas a la base del dispositivo.
+- **Tipo**: agregue una **Aplicación** o una **Carpeta**:
 
-  - **Aplicación**: elija esta opción para agregar aplicaciones a la base en la pantalla. Introduzca:
+  - **Aplicación**: elija esta opción para agregar aplicaciones a la base en la pantalla. Especifique:
 
-    - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-    - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
+    - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo iOS.
+    - **Identificador de lote de aplicaciones**: escriba el identificador de lote de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
   - **Carpeta**: elija esta opción para agregar una carpeta a la base en la pantalla.
 
     Las aplicaciones que agrega a una página en una carpeta se organizan de izquierda a derecha y en el mismo orden que en la lista. Si agrega más aplicaciones de las que pueden caber en una página, se mueven a otra página.
 
     - **Nombre de la carpeta**: escriba el nombre de la carpeta. Este nombre se muestra en los dispositivos de los usuarios.
-    - **Lista de páginas**: **agregue** una página y escriba las propiedades siguientes:
+    - **Lista de páginas**: **agregue** una página y escriba las siguientes propiedades:
 
-      - **Nombre de la página**: especifique un nombre para la página. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-      - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-      - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
+      - **Nombre de la página**: escriba un nombre para la página. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo iOS.
+      - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo iOS.
+      - **Identificador de lote de aplicaciones**: escriba el identificador de lote de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
       Puede agregar hasta **20** páginas para base del dispositivo.
 
@@ -127,31 +127,31 @@ Agregue las páginas que quiere que aparezcan en la pantalla principal y las apl
 
 Puede agregar hasta **40** páginas en un dispositivo.
 
-- **Lista de páginas**: **agregue** una página y escriba las propiedades siguientes:
+- **Lista de páginas**: **agregue** una página y escriba las siguientes propiedades:
 
-  - **Nombre de la página**: especifique un nombre para la página. Este nombre se usa como referencia en Azure Portal y *no* se muestra en el dispositivo iOS.
+  - **Nombre de la página**: escriba un nombre para la página. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager y *no* se muestra en el dispositivo iOS.
 
   Puede agregar hasta **60** elementos (aplicaciones y carpetas combinadas) en un dispositivo.
 
-  - **Agregar**: agrega aplicaciones o carpetas a una página en el dispositivo.
+  - **Agregar**: agrega aplicaciones o carpetas a una página del dispositivo.
 
-    - **Tipo**: agregue una **aplicación** o una **carpeta**:
+    - **Tipo**: agregue una **Aplicación** o una **Carpeta**:
 
       - **Aplicación**: elija esta opción para agregar aplicaciones a una página en la pantalla. Indique también:
 
-        - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-        - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
+        - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo iOS.
+        - **Identificador de lote de aplicaciones**: escriba el identificador de lote de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
       - **Carpeta**: elija esta opción para agregar una carpeta a la base en la pantalla.
 
         Las aplicaciones que agrega a una página en una carpeta se organizan de izquierda a derecha y en el mismo orden que en la lista. Si agrega más aplicaciones de las que pueden caber en una página, se mueven a otra página.
 
         - **Nombre de la carpeta**: escriba un nombre para la carpeta. Este nombre se muestra en los dispositivos de los usuarios.
-        - **Agregar**: agrega las páginas a la carpeta. Además, escriba las propiedades siguientes:
+        - **Agregar**: agrega páginas a la carpeta. Además, escriba las propiedades siguientes:
 
-          - **Nombre de la página**: especifique un nombre para la página. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-          - **Nombre de la aplicación**: especifique un nombre para la aplicación. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo iOS.
-          - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
+          - **Nombre de la página**: escriba un nombre para la página. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo iOS.
+          - **Nombre de la aplicación**: escriba un nombre para la aplicación. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo iOS.
+          - **Identificador de lote de aplicaciones**: escriba el identificador de lote de la aplicación. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
 
 #### <a name="example"></a>Ejemplo
 
@@ -171,11 +171,11 @@ Cuando asigna la directiva a un iPhone, la página tiene un aspecto similar al d
 
     ![Agregar una notificación de aplicación en el perfil de iOS en Intune](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
-  - **Identificador de lote de aplicaciones**: escriba el **identificador de lote de aplicaciones** de la aplicación que quiere agregar. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
-  - **Nombre de la aplicación**: escriba el nombre de la aplicación que quiera agregar. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo.
-  - **Publicador**: escriba el publicador de la aplicación que se va a agregar. Este nombre se usa como referencia en Azure Portal. *No* se muestra en el dispositivo.
-  - **Notificaciones**: **habilite** o **deshabilite** el envío de notificaciones de la aplicación al dispositivo.
-    - **Mostrar en Centro de notificaciones**: **Habilitar** permite que la aplicación muestre notificaciones en el Centro de notificaciones del dispositivo. **Deshabilitar** impide a la aplicación mostrar notificaciones en el centro de notificaciones.
+  - **Identificador de lote de aplicaciones**: escriba un identificador en **Identificador del lote de aplicaciones** para la aplicación que desea agregar. Consulte [Identificadores de lote para aplicaciones iOS integradas](bundle-ids-built-in-ios-apps.md) para ver algunos ejemplos.
+  - **Nombre de la aplicación**: escriba el nombre de la aplicación que desea agregar. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo.
+  - **Publicador**: escriba el publicador de la aplicación que está agregando. Este nombre se usa como referencia en el centro de administración de Microsoft Endpoint Manager. *No* se muestra en el dispositivo.
+  - **Notificaciones**: puede seleccionar **Habilitar** o **Deshabilitar** para que la aplicación envíe o no, respectivamente, notificaciones al dispositivo.
+    - **Mostrar en Centro de notificaciones**: **Habilitar** permite a la aplicación mostrar notificaciones en el centro de notificaciones del dispositivo. **Deshabilitar** impide a la aplicación mostrar notificaciones en el centro de notificaciones.
     - **Mostrar en pantalla de bloqueo**: seleccione **Habilitar** para ver las notificaciones de la aplicación en la pantalla de bloqueo del dispositivo. **Deshabilitar** impide a la aplicación mostrar notificaciones en la pantalla de bloqueo.
     - **Tipo de alerta**: cuando el dispositivo está desbloqueado, elija cómo se muestra la notificación. Las opciones son:
       - **Ninguna**: no se muestra ninguna notificación.
@@ -196,7 +196,7 @@ Esta característica se aplica a:
 
   El texto que escriba se mostrará en la ventana de inicio de sesión y en la pantalla de bloqueo del dispositivo.
 
-- **Nota al pie de pantalla de bloqueo**: si el dispositivo se pierde o se lo roban, escriba una nota que pueda ayudar a que se lo devuelvan. Puede escribir el texto que quiera. Por ejemplo, escriba algo parecido a `If found, call Contoso at ...`.
+- **Nota al pie de pantalla de bloqueo**: si pierde el dispositivo o se lo roban, escriba una nota que pueda ayudar a que se lo devuelvan. Puede escribir el texto que quiera. Por ejemplo, escriba algo parecido a `If found, call Contoso at ...`.
 
   Los tokens de dispositivo también se pueden usar para agregar información específica sobre el dispositivo a estos campos. Por ejemplo, para que se muestre el número de serie, escriba `Serial Number: {{serialnumber}}`. En la pantalla de bloqueo, el texto tendrá un aspecto similar a este: `Serial Number 123456789ABC`. Al especificar variables, no olvide usar llaves: `{{ }}`. En los [tokens de configuración de aplicación](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) podrá ver una lista de las variables que puede usar. También puede usar `deviceName` o cualquier otro valor específico del dispositivo.
 
@@ -207,7 +207,7 @@ Esta característica se aplica a:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos, inscripción de dispositivo automatizada (supervisado)
 
-- **Username attribute from AAD** (Atributo de nombre de usuario de AAD): Intune busca este atributo para cada usuario de Azure AD. Después, Intune rellena el campo correspondiente (como UPN) antes de generar el código XML que se instala en el dispositivo. Las opciones son:
+- **Atributo de nombre de usuario de AAD**: Intune busca este atributo para cada usuario de Azure AD. Después, Intune rellena el campo correspondiente (como UPN) antes de generar el código XML que se instala en el dispositivo. Las opciones son:
 
   - **Nombre principal de usuario**: se analiza el UPN de la manera siguiente:
 
@@ -217,7 +217,7 @@ Esta característica se aplica a:
 
     Por ejemplo, Contoso tiene varias regiones, incluidas Europa, Asia y Norteamérica. Contoso desea que los usuarios de Asia usen el inicio de sesión único y la aplicación requiere UPN con el formato `username@asia.contoso.com`. Si selecciona **Nombre principal de usuario**, el dominio kerberos de cada usuario se toma de Azure AD, que es `contoso.com`. Por tato, para los usuarios de Asia, seleccione **Nombre principal de usuario** y escriba `asia.contoso.com`. El UPN del usuario final se convierte en `username@asia.contoso.com` y no en `username@contoso.com`.
 
-  - **Identificador de dispositivo de Intune**: Intune selecciona de forma automática el identificador de dispositivo de Intune.
+  - **Identificador de dispositivo de Intune** : Intune selecciona automáticamente el identificador de dispositivo de Intune.
 
     De forma predeterminada, las aplicaciones solo tienen que usar el identificador de dispositivo. Pero si la aplicación usa el dominio kerberos y el identificador de dispositivo, puede escribir dicho dominio en el cuadro de texto Dominio kerberos.
 
@@ -227,7 +227,7 @@ Esta característica se aplica a:
   - **Id. de dispositivo de Azure AD**
 
 - **Dominio kerberos**: escriba la parte del dominio de la dirección URL. Por ejemplo, escriba `contoso.com`.
-- **URL prefixes that will use Single Sign On** (Prefijos de dirección URL que usarán el inicio de sesión único): **agregue** cualquier dirección URL de la organización que exija la autenticación de inicio de sesión único.
+- **Prefijos de dirección URL que usarán el inicio de sesión único**: **Agregue** cualquier dirección URL de la organización que exija la autenticación de inicio de sesión único de usuario.
 
   Por ejemplo, cuando un usuario se conecta a alguno de estos sitios, el dispositivo iOS usa las credenciales de inicio de sesión único. El usuario no tiene que escribir otras credenciales. Si la autenticación multifactor está habilitada, los usuarios tienen que escribir la segunda autenticación.
 
@@ -238,7 +238,7 @@ Esta característica se aplica a:
 
   Los patrones `http://.com` y `https://.com` coinciden con todas las direcciones URL HTTP y HTTPS, respectivamente.
 
-- **Apps that will use Single Sign On** (Aplicaciones que usarán el inicio de sesión único): **agregue** las aplicaciones de los dispositivos de los usuarios finales que pueden usar el inicio de sesión único.
+- **Aplicaciones que usarán el inicio de sesión único:** **agregue** las aplicaciones de los dispositivos de los usuarios finales que pueden usar el inicio de sesión único.
 
   La matriz `AppIdentifierMatches` debe incluir cadenas que coincidan con los identificadores del lote de aplicaciones. Estas cadenas pueden ser coincidencias exactas, como `com.contoso.myapp`, o pueden especificar una coincidencia de prefijo en el identificador de lote mediante el carácter comodín \*. El carácter comodín debe aparecer después de un carácter de punto (.) y solo puede hacerlo una vez, al final de la cadena, como `com.contoso.*`. Cuando se incluye un carácter comodín, se concede acceso a la cuenta a cualquier aplicación cuyo identificador de lote empiece por el prefijo.
 
@@ -252,18 +252,18 @@ Esta característica se aplica a:
 
 - **Tipo de filtro**: seleccione esta opción para permitir sitios web específicos. Las opciones son:
 
-  - **Configurar direcciones URL**: use el filtro web integrado de Apple que busca términos para adultos, incluido lenguaje obsceno y sexualmente explícito. Esta característica evalúa cada página web cuando se carga e identifica y bloquea contenido inadecuado. También puede agregar direcciones URL que no desea que el filtro compruebe. O bien, puede bloquear direcciones URL específicas, independientemente de la configuración del filtro de Apple.
+  - **Configurar URL**: use el filtro web integrado de Apple que busca términos para adultos, incluido lenguaje obsceno y sexualmente explícito. Esta característica evalúa cada página web cuando se carga e identifica y bloquea contenido inadecuado. También puede agregar direcciones URL que no desea que el filtro compruebe. O bien, puede bloquear direcciones URL específicas, independientemente de la configuración del filtro de Apple.
 
-    - **URL permitidas**: **agregue** las URL que quiera permitir. Estas direcciones URL no son capturadas por el filtro web de Apple.
+    - **URL permitidas**: **agregue** las direcciones URL que desea permitir. Estas direcciones URL no son capturadas por el filtro web de Apple.
 
         > [!NOTE]
         > Las direcciones URL que especifique son las direcciones URL que no desea que el filtro web de Apple evalúe. Estas direcciones URL no son una lista de sitios web permitidos. Para crear una lista de sitios web permitidos, establezca **Tipo de filtro** en **Solo sitios web específicos**.
 
-    - **URL bloqueadas**: **agregue** las direcciones URL que quiera impedir que se abran, independientemente de la configuración del filtro web de Apple.
+    - **URL bloqueadas**: **agregue** las direcciones URL que desea impedir que se abran, independientemente de la configuración de filtro web de Apple.
 
   - **Solo sitios web específicos** (solo para el explorador web Safari): estas direcciones URL se agregan a los marcadores del explorador Safari. El usuario **solo** tiene permiso para visitar estos sitios; no pueden abrir otros sitios. Use esta opción solo si conoce la lista exacta de direcciones URL a las que pueden acceder los usuarios.
 
-    - **URL**: escriba la dirección URL del sitio web que quiere permitir. Por ejemplo, escriba `https://www.contoso.com`.
+    - **Dirección URL**: escriba la dirección URL del sitio web que quiere permitir. Por ejemplo, escriba `https://www.contoso.com`.
     - **Ruta de acceso del marcador**: Apple cambió esta configuración. Todos los marcadores van a la carpeta **sitios aprobados** . Los marcadores no entran en la ruta de acceso del marcador que especifique.
     - **Título**: escriba un título descriptivo para el marcador.
 
@@ -274,7 +274,7 @@ Esta característica se aplica a:
 Esta característica se aplica a:
 
 - iOS 13.0 y versiones posteriores
-- iPados 13,0 y versiones posteriores
+- iPadOS 13.0 y versiones posteriores
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: todos los tipos de inscripción
 
@@ -346,11 +346,11 @@ Puede experimentar un comportamiento inesperado cuando un perfil sin imagen se a
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: inscripción de dispositivos automatizada (supervisado)
 
 - **Ubicación de presentación del fondo de pantalla**: elija una ubicación en el dispositivo para mostrar la imagen. Las opciones son:
-  - **Sin configurar**: no se agrega una imagen personalizada al dispositivo. El dispositivo usa la configuración predeterminada del sistema operativo.
+  - **No configurado**: no se agrega una imagen personalizada al dispositivo. El dispositivo usa la configuración predeterminada del sistema operativo.
   - **Pantalla de bloqueo**: agrega la imagen a la pantalla de bloqueo.
   - **Pantalla de inicio**: agrega la imagen a la pantalla de inicio.
   - **Pantalla de bloqueo y pantalla de inicio**: usa la misma imagen en la pantalla de bloqueo y en la pantalla de inicio.
-- **Imagen de fondo de pantalla**: cargue una imagen .png, .jpg o .jpeg existente que quiera usar. Asegúrese de que el tamaño del archivo es inferior a 750 KB. También puede **quitar** una imagen que ha agregado.
+- **Imagen de fondo de pantalla**: cargue una imagen .png, .jpg o .jpeg existente que desee usar. Asegúrese de que el tamaño del archivo es inferior a 750 KB. También puede **quitar** una imagen que ha agregado.
 
 > [!TIP]
 > Para mostrar diferentes imágenes en la pantalla de bloqueo y en la pantalla de inicio, cree un perfil con la imagen de la pantalla de bloqueo. Cree otro perfil con la imagen de la pantalla de inicio. Asigne ambos perfiles a los grupos de usuarios o dispositivos de iOS.

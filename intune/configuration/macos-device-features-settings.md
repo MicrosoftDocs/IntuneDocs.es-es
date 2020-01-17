@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992902"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206353"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configuración de características de dispositivos macOS en Intune
 
@@ -44,8 +44,8 @@ En este artículo se enumeran estas opciones de configuración y se describe lo 
 
 - **Dirección IP**: escriba la dirección IPv4 o IPv6 de la impresora. Si usa nombres de host para identificar las impresoras, puede obtener la dirección IP haciendo ping a la impresora en la aplicación Terminal. En la sección [Obtención de la dirección IP y la ruta de acceso](#get-the-ip-address-and-path) (en este artículo) se proporcionan más detalles.
 - **Ruta de acceso**: escriba la ruta de acceso de la impresora. La ruta de acceso suele ser `ipp/print` para las impresoras de la red. En la sección [Obtención de la dirección IP y la ruta de acceso](#get-the-ip-address-and-path) (en este artículo) se proporcionan más detalles.
-- **Puerto** (iOS 11.0 y versiones posteriores) escriba el puerto de escucha del destino de AirPrint. Si se deja esta propiedad en blanco, AirPrint usa el puerto predeterminado.
-- **TLS** (iOS 11.0 y versiones posteriores): elija **Habilitar** para proteger las conexiones AirPrint con Seguridad de la capa de transporte (TLS).
+- **Puerto** (iOS 11.0 y versiones posteriores): escriba el puerto de escucha del destino de AirPrint. Si se deja esta propiedad en blanco, AirPrint usa el puerto predeterminado.
+- **TLS** (iOS 11.0 y versiones posteriores): seleccione **Habilitar** para proteger las conexiones AirPrint con Seguridad de la capa de transporte (TLS).
 
 - **Agregue** el servidor de AirPrint. Puede agregar varios servidores AirPrint.
 
@@ -88,14 +88,14 @@ Para agregar servidores AirPrinter, necesita la dirección IP de la impresora, l
 #### <a name="window-layout"></a>Diseño de ventana
 
 - **Mostrar información adicional en la barra de menús**: cuando se selecciona el área de tiempo en la barra de menús, **Permitir** muestra el nombre de host y la versión de macOS. **No configurado** (valor predeterminado) no muestra esta información en la barra de menús.
-- **Banner**: escriba un mensaje que se mostrará en la pantalla de inicio de sesión del dispositivo. Por ejemplo, escriba la información de su organización, un mensaje de bienvenida, información de objetos perdidos, etc.
-- **Elegir formato de inicio de sesión**: elija cómo inician sesión en el dispositivo los usuarios. Las opciones son:
-  - **Solicitar nombre de usuario y contraseña** (valor predeterminado): los usuarios deben escribir un nombre de usuario y una contraseña.
-  - **Enumerar todos los usuarios, solicitar contraseña**: los usuarios deben seleccionar su nombre de usuario de una lista de usuarios y, después, escribir su contraseña. Configure también:
+- **Banner**: escriba un mensaje que se muestre en la pantalla de inicio de sesión del dispositivo. Por ejemplo, escriba la información de su organización, un mensaje de bienvenida, información de objetos perdidos, etc.
+- **Elegir el formato de inicio de sesión**: elija cómo inician sesión los usuarios en el dispositivo. Las opciones son:
+  - **Solicitar nombre de usuario y contraseña** (valor predeterminado): exige que los usuarios escriban un nombre de usuario y una contraseña.
+  - **Enumerar todos los usuarios, solicitar contraseña**: exige que los usuarios seleccionen su nombre de usuario en una lista de usuarios y luego escriban su contraseña. Configure también:
 
     - **Usuarios locales**: **Ocultar** no muestra las cuentas de usuarios locales en la lista de usuarios, que puede incluir las cuentas de administrador y estándar. Se muestran únicamente las cuentas de usuario de red y del sistema. **No configurado** (valor predeterminado) muestra las cuentas de usuarios locales en la lista de usuarios.
     - **Cuentas móviles**: **Ocultar** no muestra las cuentas móviles en la lista de usuarios. **No configurado** (valor predeterminado) muestra las cuentas móviles en la lista de usuarios. Algunas cuentas móviles pueden aparecer como usuarios de red.
-    - **Usuarios de red**: seleccione **Mostrar** para enumerar los usuarios de red en la lista de usuarios. **No configurado** (valor predeterminado) no muestra las cuentas de usuarios de red en la lista de usuarios.
+    - **Usuarios de la red**: seleccione **Mostrar** para enumerar los usuarios de la red en la lista de usuarios. **No configurado** (valor predeterminado) no muestra las cuentas de usuarios de red en la lista de usuarios.
     - **Usuarios administradores**: **Ocultar** no muestra las cuentas de usuarios administradores en la lista de usuarios. **No configurado** (valor predeterminado) muestra las cuentas de usuarios administradores en la lista de usuarios.
     - **Otros usuarios**: seleccione **Mostrar** para enumerar los usuarios de **Otros...** en la lista de usuarios. **No configurado** (valor predeterminado) no muestra las cuentas de otros usuarios en la lista de usuarios.
 
@@ -113,11 +113,11 @@ Para agregar servidores AirPrinter, necesita la dirección IP de la impresora, l
 
 Después de que los usuarios inicien sesión en los dispositivos, la siguiente configuración afecta a lo que puede hacer.
 
-- **Deshabilitar Apagar**: **Deshabilitar** impide que los usuarios seleccionen la opción **Apagado** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Apagado** en el dispositivo.
-- **Deshabilitar Reiniciar**: **Deshabilitar** impide que los usuarios seleccionen la opción **Reiniciar** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Reiniciar** en el dispositivo.
-- **Deshabilitar Desconectar**: **Deshabilitar** impide que los usuarios seleccionen la opción **Desconectar** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Desconectar** en el dispositivo.
-- **Deshabilitar Cerrar sesión** (macOS 10.13 y versiones posteriores): **Deshabilitar** impide que los usuarios seleccionen la opción **Cerrar sesión** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Cerrar sesión** en el dispositivo.
-- **Deshabilitar pantalla de bloqueo** (macOS 10.13 y versiones posteriores): **Deshabilitar** impide que los usuarios seleccionen la opción **Pantalla de bloqueo** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Pantalla de bloqueo** en el dispositivo.
+- **Deshabilitar Apagar**: **Deshabilitar** evita que los usuarios seleccionen la opción **Apagado** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Apagado** en el dispositivo.
+- **Deshabilitar Reiniciar**: **Deshabilitar** evita que los usuarios seleccionen la opción **Reiniciar** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Reiniciar** en el dispositivo.
+- **Deshabilitar Desconectar**: **Deshabilitar** evita que los usuarios seleccionen la opción **Desconectar** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Desconectar** en el dispositivo.
+- **Deshabilitar Cerrar sesión** (macOS 10.13 y versiones posteriores): **Deshabilitar** evita que los usuarios seleccionen la opción **Cerrar sesión** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Cerrar sesión** en el dispositivo.
+- **Deshabilitar bloqueo de pantalla** (macOS 10.13 y versiones posteriores): **Deshabilitar** evita que los usuarios seleccionen la opción **Bloquear pantalla** después de que el usuario inicie sesión. **No configurado** (valor predeterminado) permite que los usuarios seleccionen el elemento de menú **Pantalla de bloqueo** en el dispositivo.
 
 ## <a name="single-sign-on-app-extension"></a>Extensión de aplicación de inicio de sesión único
 
@@ -135,7 +135,7 @@ Esta característica se aplica a:
   - **Kerberos**: Use la extensión integrada de Kerberos de Apple, que se incluye en macOS Catalina 10,15 y versiones más recientes. Esta opción es una versión específica de Kerberos de la extensión de la aplicación de **credenciales** .
 
   > [!TIP]
-  > Con los tipos de **credenciales** y **redireccionamiento** , agregue sus propios valores de configuración para pasar a través de la extensión. Si usa la **credencial**, considere la posibilidad de usar las opciones de configuración integradas proporcionadas por Apple en el tipo de **Kerberos** .
+  > Con los tipos de **credenciales** y **redireccionamiento** , agregue sus propios valores de configuración para pasar a través de la extensión. Si utiliza **credenciales**, considere la posibilidad de usar las opciones de configuración integradas proporcionadas por Apple en el tipo de **Kerberos** .
 
 - **Identificador de extensión** (redirección y credencial): escriba el identificador de paquete que identifica la extensión de la aplicación de SSO, como `com.apple.ssoexample`.
 - **Identificador de equipo** (redirección y credencial): escriba el identificador de equipo de la extensión de la aplicación de SSO. Un identificador de equipo es una cadena alfanumérica de 10 caracteres (números y letras) que genera Apple, como `ABCDE12345`. 
@@ -183,7 +183,7 @@ Esta característica se aplica a:
 - **Límite de reutilización de contraseñas** (solo Kerberos): escriba el número de contraseñas nuevas, de 1-24, que deben usarse hasta que se pueda reutilizar una contraseña anterior en el dominio. **No configurado** (valor predeterminado) no impone un límite de reutilización de contraseñas.
 - **Vigencia mínima** de la contraseña (solo Kerberos): especifique el número de días que se debe usar una contraseña en el dominio para que un usuario pueda cambiarla. **No configurado** (valor predeterminado) no aplica una antigüedad mínima para las contraseñas antes de que se puedan cambiar.
 - **Notificación de expiración de contraseña** (solo Kerberos): escriba el número de días antes de que una contraseña expire para que los usuarios reciban una notificación de que la contraseña expirará. **No configurado** (valor predeterminado) utiliza `15` días.
-- **Expiración de la contraseña** (solo Kerberos): escriba el número de días antes de que se deba cambiar la contraseña del dispositivo. **No configurado** (valor predeterminado) significa que las contraseñas de usuario nunca expiran.
+- **Caducidad de la contraseña** (solo Kerberos): Especifique el número de días antes de que se deba cambiar la contraseña del dispositivo. **No configurado** (valor predeterminado) significa que las contraseñas de usuario nunca expiran.
 - **URL de cambio de contraseña** (solo Kerberos): escriba la dirección URL que se inicia cuando el usuario inicia un cambio de contraseña de Kerberos.
 - **Nombre principal** (solo Kerberos): escriba el nombre de usuario de la entidad de seguridad de Kerberos. No es necesario incluir el nombre de dominio Kerberos. Por ejemplo, en `user@contoso.com`, `user` es el nombre principal y `contoso.com` es el nombre de dominio Kerberos.
 
@@ -219,13 +219,13 @@ Esta característica se aplica a:
 
   `osascript -e 'id of app "ExampleApp"'`
 
-- **Dominio**: escriba el dominio del sitio web que se va a asociar a una aplicación. El dominio incluye un tipo de servicio y un nombre de host completo, como `webcredentials:www.contoso.com`.
+- **Dominio**: escriba el dominio del sitio web que se va a asociar a una aplicación. El dominio incluye un tipo de servicio y un nombre de host completo, como `webcredentials: www.contoso.com`.
 
   Puede hacer coincidir todos los subdominios de un dominio asociado escribiendo `*.` (un carácter comodín de asterisco y un punto) antes del principio del dominio. El período es obligatorio. Los dominios exactos tienen una prioridad más alta que los dominios comodín. Por lo tanto, los patrones de los dominios primarios coinciden *si* no se encuentra ninguna coincidencia en el subdominio completo.
 
   El tipo de servicio puede ser:
 
-  - **authsrv**: extensión de aplicación de inicio de sesión único
+  - **authsrv**: Extensión de aplicación de inicio de sesión único
   - **applink**: vínculo universal
   - **webcredentials**: contraseña Autorrellenar
 

@@ -18,20 +18,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce0736845b1aca2f70b5c8802e726995ca18159b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 749bc2e7015bd43a811fae8de55169a3cfcc2999
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508266"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857937"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Cómo establecer el período de tiempo antes de que se bloquee el dispositivo
 
 Para proteger los datos del dispositivo Android, el equipo de soporte técnico de su empresa puede establecer una directiva que requiere que se establezca el período de tiempo que el dispositivo puede estar inactivo antes de que se bloquee automáticamente. Siga estos pasos para establecer el período de tiempo antes de que el dispositivo se bloquee.
 
-1. En el dispositivo, en **Configuración**, haga clic en **Seguridad** &gt; **Bloqueo automático** (aparece como **Bloquear teléfono tras** en algunos dispositivos).
+1. En **Configuración**, en el dispositivo, haga clic en **Seguridad** &gt; **Bloqueo automático** (aparece como **Bloquear teléfono tras** en algunos dispositivos).
 
 2. Especifique el valor de tiempo de espera de la contraseña.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

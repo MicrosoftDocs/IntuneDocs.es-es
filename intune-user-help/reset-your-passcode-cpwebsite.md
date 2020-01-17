@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2056d37b00f5e2ae7b36c6e1c02f20dc244eb290
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 0cf9b886733c117df0fca38bc94a601d1e9dd8fb
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502134"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858140"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
 
@@ -74,12 +74,12 @@ El restablecimiento del código de acceso no está disponible para los dispositi
 
 En esta sección se describe el restablecimiento del código de acceso y el comportamiento de la contraseña temporal para cada plataforma de dispositivo.  
 
-**Android**: quita el código de acceso existente y crea un código de acceso temporal compuesto de letras y números.
+**Android**: quita el código de acceso existente y crea uno temporal compuesto de letras y números.
 
-**iOS**: quita el código de acceso existente y no crea un código de acceso temporal. Si usa Touch ID para abrir el dispositivo o realizar compras, debe configurarlo de nuevo.  
+**iOS**: quita el código de acceso existente y no crea ninguno temporal. Si usa Touch ID para abrir el dispositivo o realizar compras, debe configurarlo de nuevo.  
 
-**Windows 10 Mobile**: quita el código de acceso existente y crea un código de acceso temporal compuesto de letras y números. Si está configurado, el reconocimiento facial de Windows Hello seguirá funcionando con el dispositivo.
+**Windows 10 Mobile**: quita el código de acceso existente y crea uno temporal compuesto de letras y números. Si está configurado, el reconocimiento facial de Windows Hello seguirá funcionando con el dispositivo.
 
-**Windows Phone 8.1**: quita el código de acceso existente y crea un código de acceso temporal compuesto de letras y números.  
+**Windows Phone 8.1**: quita el código de acceso existente y crea uno temporal compuesto de números.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

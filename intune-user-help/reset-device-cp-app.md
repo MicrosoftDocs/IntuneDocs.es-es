@@ -18,15 +18,15 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc36e2d53282b8f40f0250f40cb2f01ec920d936
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502104"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858219"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>Restablecimiento del dispositivo desde la aplicación Portal de empresa  
+# <a name="reset-device-from-the-company-portal-app"></a>Restablecimiento de un dispositivo desde la aplicación Portal de empresa  
 
 Restablezca un dispositivo usado, perdido o robado a los valores de fábrica desde la aplicación Portal de empresa.  
 
@@ -50,4 +50,4 @@ Después de restablecer un dispositivo, ya no aparecerá en Portal de empresa. S
 
      ![Captura de pantalla de ejemplo de la aplicación de Portal de empresa, restablecer el mensaje de confirmación, resaltar el botón Restablecer. ](./media/1802-cp-app-windows-reset-confirm.png)  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

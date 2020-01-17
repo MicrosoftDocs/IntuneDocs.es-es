@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 01/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
+ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810263"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75722613"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Android Enterprise para marcar dispositivos como compatibles o no compatibles con Intune
 
@@ -43,7 +43,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 ## <a name="device-owner"></a>Propietario del dispositivo
 
-### <a name="device-health"></a>Estado de dispositivos
+### <a name="device-health"></a>Estado del dispositivo
 
 - **Requerir que el dispositivo esté en el nivel de amenaza del dispositivo**: seleccione el nivel de amenaza de dispositivo máximo permitido evaluado por el [servicio de Mobile Threat Defense](mobile-threat-defense.md). Los dispositivos que superan este nivel de amenaza se marcan como no compatibles. Para usar esta configuración, elija el nivel de amenaza permitido:
 
@@ -54,13 +54,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
   - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
   
 > [!NOTE] 
-> Los siguientes proveedores de Mobile Threat Threat (MTD) admiten implementaciones de propietarios de dispositivos empresariales de Android mediante la configuración de la aplicación:
-> - Better Mobile 
-> - Pradeo
-> - Sophos Mobile
-> - Zimperium 
->  
->  Consulte con su proveedor de MTD la configuración exacta necesaria para admitir las plataformas de propietarios de dispositivos empresariales de Android en Intune. Esta lista se actualiza a medida que los titulares de MTD admiten escenarios de propietario de dispositivos empresariales de Android. 
+> Todos los proveedores de Mobile Threat Defense (MTD) se admiten en las implementaciones de propietarios de dispositivos empresariales de Android mediante la configuración de la aplicación. Consulte con su proveedor de MTD la configuración exacta necesaria para admitir las plataformas de propietarios de dispositivos empresariales de Android en Intune.
 
 #### <a name="google-play-protect"></a>Google Play Protect
 
@@ -73,15 +67,15 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 #### <a name="operating-system-version"></a>Versión de sistema operativo
 
-- **Versión mínima del sistema operativo**: cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y, a continuación, tener acceso a los recursos de la organización.
+- **Versión mínima del sistema operativo**: Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y, a continuación, tener acceso a los recursos de la organización.
 
   *De forma predeterminada, no hay ninguna versión configurada*.
 
-- **Versión máxima de SO**: cuando un dispositivo usa una versión de SO posterior a la de la regla, se bloquea el acceso a los recursos de la organización. Se pide al usuario que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no se cambie la regla para permitir la versión de sistema operativo.
+- **Versión máxima de SO**: si un dispositivo usa una versión del sistema operativo posterior a la de la regla, se bloquea el acceso a los recursos de la organización. Se pide al usuario que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no se cambie la regla para permitir la versión de sistema operativo.
 
   *De forma predeterminada, no hay ninguna versión configurada*.
 
-- **Nivel mínimo de revisión de seguridad**: seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. Los dispositivos que no estén al menos en este nivel de revisión se consideran no conformes. La fecha debe especificarse en el formato AAAA-MM-DD.
+- **Nivel mínimo de revisión de seguridad**:  seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. Los dispositivos que no estén al menos en este nivel de revisión se consideran no conformes. La fecha debe especificarse en el formato AAAA-MM-DD.
 
   *De forma predeterminada, no se configura ninguna fecha*.
 
@@ -98,7 +92,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
     - **Dispositivo predeterminado** : para evaluar la compatibilidad con contraseñas, asegúrese de seleccionar una seguridad de contraseña distinta de la **predeterminada del dispositivo**.  
     - **Contraseña necesaria, sin restricciones**
     - **Biométrica deficiente** - [Biométricas eficientes frente a deficientes](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre el sitio web de Android).
-    - **Numérica** (*valor predeterminado*): la contraseña solo debe contener números, por ejemplo: `123456789`. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+    - **Numérica** (*valor predeterminado*): la contraseña solo debe contener números, por ejemplo, `123456789`. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
     - **Complejo numérico**: no se permiten números repetidos ni consecutivos, como "1111" o "1234". Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
     - **Alfabético**: son necesarias letras del alfabeto. No son necesarios números ni símbolos. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
     - **Alfanumérica**: incluye letras mayúsculas, minúsculas y caracteres numéricos. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
@@ -107,25 +101,25 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
     Según el tipo de *contraseña* que seleccione, está disponible la siguiente configuración:  
     - **Longitud mínima de la contraseña**: escriba la longitud mínima que debe tener la contraseña, entre 4 y 16 caracteres.  
 
-    - **Número de caracteres necesarios**: escriba el número de caracteres que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres requeridos**: escriba el número de caracteres que debe tener la contraseña, entre 0 y 16 caracteres.
 
-    - **Número de caracteres en minúscula necesarios**: escriba el número de caracteres en minúscula que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres en minúscula requeridos**: escriba el número de caracteres en minúscula que debe tener la contraseña, entre 0 y 16.
 
-    - **Número de caracteres en mayúscula necesarios**: escriba el número de caracteres en mayúscula que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres en mayúscula requeridos**: escriba el número de caracteres en mayúscula que debe tener la contraseña, entre 0 y 16.
 
-    - **Número de caracteres que no sean una letra necesarios**: escriba el número de caracteres que no son letras del alfabeto que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres que no sean letras requeridos**: escriba el número de caracteres que no son letras del alfabeto que debe tener la contraseña, entre 0 y 16 caracteres.
 
-    - **Número de caracteres numéricos necesarios**: escriba el número de caracteres numéricos (`1`, `2`, `3`, etc.) que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres numéricos requeridos**: escriba el número de caracteres numéricos (`1`, `2`, `3`, etc.) que debe tener la contraseña, entre 0 y 16.
     
-    - **Número de caracteres de símbolos necesarios**: escriba el número de caracteres de símbolos (`&`, `#`, `%`, etc.) que debe tener la contraseña, entre 0 y 16 caracteres.
+    - **Número de caracteres de símbolo requeridos**: escriba el número de caracteres de símbolo (`&`, `#`, `%`, etc.) que debe tener la contraseña, entre 0 y 16.
  
-- **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado de *no configurado*y de *1 minuto* a *8 horas*.
+- **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado de *no configurado*y de *1 minuto* a *8 horas*.
 
-- **Número de días hasta que expira la contraseña**: escriba el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
+- **Número de días hasta que expire la contraseña**: especifique el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
 
    *De forma predeterminada, no se configura ningún valor*.
 
-- **Número de contraseñas necesarias antes de que un usuario pueda volver a usar una contraseña**: escriba el número de contraseñas recientes que no se pueden volver a usar, entre 1 y 24. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.  
+- **Número de contraseñas requeridas antes de que el usuario pueda reusar una**: indique el número de contraseñas recientes que no se pueden volver a usar, entre 1 y 24. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.  
 
     *De forma predeterminada, no hay ninguna versión configurada*.
 
@@ -139,7 +133,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 ## <a name="work-profile"></a>Perfil de trabajo
 
-### <a name="device-health"></a>Estado de dispositivos
+### <a name="device-health"></a>Estado del dispositivo
 
 - **Dispositivos raíz**: 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
@@ -175,11 +169,11 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 #### <a name="operating-system-version"></a>Versión de sistema operativo
 
-- **Versión mínima del sistema operativo**: cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y, a continuación, tener acceso a los recursos de la organización.
+- **Versión mínima del sistema operativo**: Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y, a continuación, tener acceso a los recursos de la organización.
 
   *De forma predeterminada, no hay ninguna versión configurada*.
 
-- **Versión máxima de SO**: cuando un dispositivo usa una versión de SO posterior a la de la regla, se bloquea el acceso a los recursos de la organización. Se pide al usuario que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no se cambie la regla para permitir la versión de sistema operativo.
+- **Versión máxima de SO**: si un dispositivo usa una versión del sistema operativo posterior a la de la regla, se bloquea el acceso a los recursos de la organización. Se pide al usuario que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no se cambie la regla para permitir la versión de sistema operativo.
 
   *De forma predeterminada, no hay ninguna versión configurada*.
 
@@ -194,16 +188,16 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 - **Tipo de contraseña requerida**: elija si una contraseña debe incluir solo caracteres numéricos o una combinación de números y otros caracteres. Las opciones son:
   - **Valor predeterminado del dispositivo**
   - **Biométrico de seguridad baja**
-  - **Al menos numérica** (*valor predeterminado*): escriba la **longitud mínima de la contraseña** que un usuario debe escribir (entre 4 y 16 caracteres).
-  - **Numérica compleja** (valor predeterminado): escriba la **longitud mínima de la contraseña** que un usuario debe escribir (entre 4 y 16 caracteres).
-  - **Al menos alfabética** (valor predeterminado): escriba la **longitud mínima de la contraseña** que un usuario debe escribir (entre 4 y 16 caracteres).
-  - **Al menos alfanumérica** (valor predeterminado): escriba la **longitud mínima de la contraseña** que un usuario debe escribir (entre 4 y 16 caracteres).
-  - **Al menos alfanumérica con símbolos**: escriba la **longitud mínima de la contraseña** que un usuario debe escribir (entre 4 y 16 caracteres).
+  - **Al menos numérica** (*valor predeterminado*): Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Numérica compleja**: Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Al menos alfabética**: Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Al menos alfanumérica**: Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
+  - **Al menos alfanumérica con símbolos**: Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
 
   Según el tipo de *contraseña* que seleccione, está disponible la siguiente configuración:  
-  - **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado de *no configurado*y de *1 minuto* a *8 horas*.
+  - **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado de *no configurado*y de *1 minuto* a *8 horas*.
 
-  - **Número de días hasta que expira la contraseña**: escriba el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
+  - **Número de días hasta que expire la contraseña**: especifique el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
 
   - **Longitud mínima de la contraseña**: escriba la longitud mínima que debe tener la contraseña, entre 4 y 16 caracteres. 
   
@@ -221,7 +215,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 - **Bloquear aplicaciones de orígenes desconocidos**: 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Bloquee** los dispositivos con **seguridad** > orígenes **desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores*).  
+  - **Bloquee** los dispositivos con **seguridad** > orígenes **desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores).  
 
   Para realizar instalaciones de prueba de las aplicaciones, se deben permitir los orígenes desconocidos. Si no realiza instalaciones de prueba de las aplicaciones Android, establezca esta característica en **Bloquear** para habilitar esta directiva de cumplimiento.
 
@@ -244,7 +238,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
   No es necesario configurar esta opción porque la depuración USB ya está deshabilitada en los dispositivos Android Enterprise.
 
-- **Nivel mínimo de revisión de seguridad**: seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. Los dispositivos que no estén al menos en este nivel de revisión se consideran no conformes. La fecha debe especificarse en el formato AAAA-MM-DD.
+- **Nivel mínimo de revisión de seguridad**:  seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. Los dispositivos que no estén al menos en este nivel de revisión se consideran no conformes. La fecha debe especificarse en el formato AAAA-MM-DD.
 
   *De forma predeterminada, no se configura ninguna fecha*.
 

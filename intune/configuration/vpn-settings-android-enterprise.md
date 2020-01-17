@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946638"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206319"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Configuración de dispositivos empresariales de Android para configurar VPN en Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 En este artículo se enumeran y describen las distintas configuraciones de conexión de VPN que puede controlar en los dispositivos Android Enterprise. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para crear una conexión VPN, elija cómo se autentica la VPN, seleccione un tipo de servidor VPN, etc.
 
@@ -47,7 +47,7 @@ Para más información sobre los perfiles de VPN en Intune, consulte [perfiles d
   - **Método de autenticación**: elija cómo se autenticarán los dispositivos en el servidor VPN. Las opciones son:
   
     - **Certificados**: seleccione un perfil de certificado SCEP o PKCS existente para autenticar la conexión. [Configurar certificados](../protect/certificates-configure.md): se enumeran los pasos para crear un perfil de certificado.
-    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se le pedirá a los usuarios finales que escriban su nombre de usuario y una contraseña.
+    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se pide a los usuarios finales que escriban su nombre de usuario y contraseña.
 
 - **Tipo de conexión**: seleccione el tipo de conexión VPN. Las opciones son:
 
@@ -63,7 +63,7 @@ Para más información sobre los perfiles de VPN en Intune, consulte [perfiles d
   - **Método de autenticación**: elija cómo se autenticarán los dispositivos en el servidor VPN. Las opciones son:
   
     - **Certificados**: seleccione un perfil de certificado SCEP o PKCS existente para autenticar la conexión. [Configurar certificados](../protect/certificates-configure.md): se enumeran los pasos para crear un perfil de certificado.
-    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se le pedirá a los usuarios finales que escriban su nombre de usuario y una contraseña.
+    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se pide a los usuarios finales que escriban su nombre de usuario y contraseña.
 
 - **Tipo de conexión**: seleccione el tipo de conexión VPN. Las opciones son:
 

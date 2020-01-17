@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bfafa4f35d0b8f1255d66a70c3f7cd0acf01a889
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b976e9a47a56c7af1e754f5b5b0162410e278025
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415768"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856399"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-entrust-datacard"></a>Configuración de dispositivos iOS o iPad con Portal de empresa y Entrust Datacard
 
@@ -56,7 +56,7 @@ Las credenciales derivadas son una implementación de las directrices del Nation
 
 * Su tarjeta inteligente académica o proporcionada por el trabajo
 * Acceso a un equipo o quiosco donde puede iniciar sesión con su tarjeta inteligente
-* Su dispositivo móvil
+* El dispositivo móvil
 * La aplicación Portal de empresa de Intune para iOS y iPados instalados en el dispositivo  
 
 
@@ -115,4 +115,4 @@ Una vez completada la inscripción, tendrá acceso a los recursos de trabajo, co
 * [Administrar aplicaciones desde el sitio web del Portal de empresa](manage-apps-cpweb.md)  
 * [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

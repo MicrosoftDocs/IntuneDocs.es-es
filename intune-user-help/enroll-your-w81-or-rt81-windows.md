@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085ec1f329eb9b423797a110ada53eb7693edf6f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6fb6c1295947b9f51ef861b1fcc6582c6690137f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506141"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855431"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Cómo inscribir el dispositivo Windows 8.1 o Windows RT 8.1 en Intune  
 
@@ -69,4 +69,4 @@ También se recomienda instalar la aplicación Portal de empresa, que le permiti
 
 4. Pulse en **Instalar** o **Gratis**. La opción que se muestra dependerá de cómo la empresa haya configurado la aplicación.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, consulte el [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e0a2297509d6077d6508adaab96ae6eb3cf9b28f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414850"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856741"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Inscribir dispositivos con Portal de empresa  
 Inscriba el dispositivo corporativo o personal Android para obtener acceso seguro al correo electrónico, las aplicaciones y los datos corporativos. Portal de empresa admite dispositivos Android, incluido Samsung Knox, con Android 4.4 y posterior.  
@@ -91,11 +91,11 @@ Durante la inscripción, es posible que se le pida que elija la categoría que m
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
-Antes de intentar instalar una aplicación educativa o de trabajo, vaya a **configuración** > **seguridad**y Active **orígenes desconocidos**. Si no activa esta opción, verá el mensaje siguiente al intentar instalar una aplicación: "Instalación bloqueada. Por motivos de seguridad, el dispositivo está configurado para bloquear las instalaciones de aplicaciones procedentes de orígenes desconocidos". Puede pulsar **configuración** en el mensaje para ir directamente a **orígenes desconocidos**.  
+Antes de intentar instalar una aplicación educativa o de trabajo, vaya a **configuración** > **seguridad**y Active **orígenes desconocidos**. Si no activa esta opción, aparece el mensaje siguiente al intentar instalar una aplicación: "Instalación bloqueada. Por motivos de seguridad, el dispositivo está configurado para bloquear las instalaciones de aplicaciones procedentes de orígenes desconocidos". Puede pulsar **configuración** en el mensaje para ir directamente a **orígenes desconocidos**.  
 
 > [!Note]
 > Si su organización usa software de administración de gastos de telecomunicaciones, deberá completar algunos pasos adicionales antes de que el dispositivo esté completamente inscrito. Descubra más [aquí](enroll-your-device-with-telecom-expense-management-android.md).
 
 Si aparece un error al intentar inscribir el dispositivo en Intune, puede [Enviar registros al equipo de soporte técnico de su empresa por correo electrónico](send-logs-to-your-it-admin-by-email-android.md).  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

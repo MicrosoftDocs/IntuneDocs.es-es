@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946671"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547032"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Windows 10 y versiones posteriores para marcar dispositivos como compatibles o no compatibles con Intune
 
@@ -39,12 +39,12 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 [Crear una directiva de cumplimiento](create-compliance-policy.md#create-the-policy). En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
 
-## <a name="device-health"></a>Estado de dispositivos
+## <a name="device-health"></a>Estado del dispositivo
 
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Reglas de evaluación del servicio de atestación de estado de Windows
 
 - **Requerir BitLocker**:  
-   La característica Cifrado de unidad BitLocker de Windows cifra todos los datos almacenados en el volumen del sistema operativo Windows. BitLocker usa el Módulo de plataforma segura (TPM) para ayudar a proteger el sistema operativo Windows y los datos de usuario. También ayuda a confirmar que un equipo no se manipule, incluso si se deja desatendido, se pierde o se lo roban. Si el equipo incluye un TPM compatible, BitLocker lo usa para bloquear las claves de cifrado que protegen los datos. Como resultado, las claves no son accesibles hasta que el TPM comprueba el estado del equipo.  
+   La característica Cifrado de unidad BitLocker de Windows cifra todos los datos almacenados en el volumen del sistema operativo Windows. BitLocker usa el Módulo de plataforma segura (TPM) para ayudar a proteger el sistema operativo Windows y los datos de usuario. También ayuda a confirmar que un equipo no se manipule, incluso si se deja desatendido, se pierde o se lo roban. Si el equipo está equipado con un TPM compatible, BitLocker usa este para bloquear las claves de cifrado que protegen los datos. Como resultado, las claves no son accesibles hasta que el TPM comprueba el estado del equipo.  
 
    - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
    - **Requerir**: el dispositivo puede proteger los datos almacenados en la unidad contra el acceso no autorizado cuando el sistema está apagado o hibernando.  
@@ -65,7 +65,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 Más recursos:
 
 - Para obtener más información sobre cómo funciona el servicio de atestación de estado, consulte [CSP de atestación de estado](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
-- [Sugerencia de soporte técnico: Uso de la configuración de atestación de estado de dispositivo como parte de la directiva de cumplimiento de Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643).
+- [Sugerencia de soporte: Uso de la configuración de atestación de estado de dispositivo como parte de la directiva de cumplimiento de Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643).
 
 ## <a name="device-properties"></a>Propiedades de dispositivos
 
@@ -102,9 +102,9 @@ Más recursos:
 
 Solo se aplica a dispositivos administrados conjuntamente en los que se ejecuta Windows 10 y versiones posteriores. Los dispositivos solo de Intune devuelven un estado de no disponible.
 
-- **Requerir cumplimiento del dispositivo de System Center Configuration Manager**:  
+- **Requerir el cumplimiento del dispositivo desde Configuration Manager**:  
   - **Sin configurar** (*valor predeterminado*): Intune no comprueba ninguna configuración de Configuration Manager para el cumplimiento.
-  - **Requerir**: requerir que todas las configuraciones (elementos de configuración) de System Center Configuration Manager sean compatibles.  
+  - **Requerir**: exija que toda la configuración (elementos de configuración) de Configuration Manager sea compatible.  
 
     Por ejemplo, exige que todas las actualizaciones de software se instalen en los dispositivos. En Configuration Manager, este requisito tiene el estado “Instalado”. Si algún programa del dispositivo se encuentra en un estado desconocido, dicho dispositivo no será conforme en Intune.
 
@@ -197,7 +197,7 @@ Solo se aplica a dispositivos administrados conjuntamente en los que se ejecuta 
 
 *La siguiente configuración de cumplimiento es compatible con Windows 10 escritorio.*
 
-- **Antimalware de Microsoft defender**:  
+- **Antimalware de Microsoft Defender**:  
   - **No configurado** (*valor predeterminado*): Intune no controla el servicio ni cambia la configuración existente.
   - **Requerir** : activar el servicio antimalware de Microsoft defender y evitar que los usuarios lo desactiven.
 

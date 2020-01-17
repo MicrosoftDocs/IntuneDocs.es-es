@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a1d025620e37009ce283510fc8f71b6fb90993f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 12b8fcc5c8514dbcc4c649d1c1113dca0ea51d64
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500197"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858369"
 ---
 # <a name="your-computer-is-already-enrolled"></a>El equipo ya está inscrito
 
@@ -40,4 +40,4 @@ Para vincular el equipo:
 
 Si prefiere anular la inscripción del dispositivo, siga las instrucciones correspondientes a su tipo de dispositivo: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) o [Windows](unenroll-your-device-from-intune-windows.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

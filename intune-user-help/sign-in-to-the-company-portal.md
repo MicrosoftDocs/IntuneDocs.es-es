@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 12/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f82549cfbdd3c987b2f51f4d90b9c18cce8c25be
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508294"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857810"
 ---
 # <a name="sign-in-to-company-portal"></a>Iniciar sesión en Portal de empresa  
 
@@ -56,6 +56,7 @@ En los pasos siguientes se muestran capturas de pantallas del Portal de empresa 
    ![Después del proceso de autenticación, la aplicación Portal de empresa inicia sesión, lo que se indica con una barra de carga.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## <a name="sign-in-with-certificate-based-authentication"></a>Inicio de sesión con autenticación basada en certificado
+Solo verá esta opción de inicio de sesión si su organización permite la autenticación basada en certificados y tiene un certificado disponible para su uso.  
 
 1. Abra la aplicación Portal de empresa en el dispositivo.  
 
@@ -95,4 +96,4 @@ Si su empresa usa tarjetas inteligentes para tener acceso a los equipos, es prob
 
    ![Después del proceso de autenticación, la aplicación de portal de empresa inicia sesión e indica su proceso con una barra de carga.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713477"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653672"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -287,7 +287,7 @@ Si la herramienta de ajuste de aplicaciones no se completa correctamente, se mos
 |La aplicación de entrada especificada no está firmada. Especifique una aplicación firmada válida.|La herramienta de ajuste de aplicaciones requiere que las aplicaciones estén firmadas. Consulte la documentación para desarrolladores para aprender a firmar una aplicación ajustada.|
 |La aplicación de entrada especificada debe tener formato .ipa o .app.|La herramienta de ajuste de aplicaciones solo acepta aplicaciones con las extensiones .app e .ipa. Asegúrese de que el archivo de entrada tenga una extensión válida y se haya compilado como archivo .app o .ipa.|
 |La aplicación de entrada especificada ya se ajustó y se encuentra en la última versión de la plantilla de directiva.|La herramienta de ajuste de aplicaciones no ajustará una aplicación ajustada existente con la última versión de la plantilla de directiva.|
-|ADVERTENCIA: no ha especificado un hash de certificado SHA1. Asegúrese de que la aplicación ajustada se firme antes de implementarla.|Asegúrese de especificar un valor de hash SHA1 válido después de la marca de línea de comandos –c. |
+|WARNING: No ha especificado un hash de certificado SHA1. Asegúrese de que la aplicación ajustada se firme antes de implementarla.|Asegúrese de especificar un valor de hash SHA1 válido después de la marca de línea de comandos –c. |
 
 ### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Recopilación de registros para las aplicaciones ajustadas desde el dispositivo
 Siga estos pasos para obtener registros para las aplicaciones ajustadas durante la solución de problemas.
@@ -444,7 +444,7 @@ Simplemente ejecute el comando de ajuste de aplicaciones general con la marca `-
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)
 - [Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos](../configuration/device-profile-troubleshoot.md)

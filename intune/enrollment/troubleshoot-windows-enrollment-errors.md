@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991806"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885889"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos Windows en Microsoft Intune
 
@@ -40,7 +40,7 @@ Recopile la siguiente información acerca del problema:
 - ¿Qué plataforma (Android, iOS, Windows) tiene el problema?
 - ¿Cuántos usuarios están afectados? ¿Todos los usuarios están afectados o solo algunos?
 - ¿Cuántos dispositivos se ven afectados? ¿Todos los dispositivos se ven afectados o solo algunos?
-- ¿Qué es la entidad de MDM? Si System Center Configuration Manager, ¿qué versión de Configuration Manager usa?
+- ¿Qué es la entidad de MDM?
 - ¿Cómo se realiza la inscripción? ¿Es "traiga su propio dispositivo" (BYOD) o Apple Programa de inscripción de dispositivos (DEP) con perfiles de inscripción?
 
 ## <a name="error-messages"></a>Mensajes de error
@@ -105,9 +105,8 @@ Error 0x801c0003: "no se permite la inscripción de este usuario. Puede intentar
 
 Error 8018000a: "se ha producido un problema. El dispositivo ya está inscrito.  Puede ponerse en contacto con el administrador del sistema con el código de error 8018000a ".
 
-**Causa**: se cumplen una o varias de las condiciones siguientes:
+**Causa:** Se cumple alguna de las siguientes condiciones:
 - Otro usuario ya ha inscrito el dispositivo en Intune o ha unido el dispositivo a Azure AD. Para determinar si este es el caso, vaya a **configuración** > **cuentas** > el **acceso al trabajo**. Busque un mensaje similar al siguiente: "otro usuario del sistema ya está conectado a un trabajo o escuela. Quite esa conexión profesional o educativa e inténtelo de nuevo ".    
-- El agente cliente de Configuration Manager está instalado en el equipo.    
 
 #### <a name="resolution"></a>Solución
 
@@ -118,9 +117,6 @@ Utilice uno de los métodos siguientes para resolver el error:
 2. Vaya a **configuración** > **cuentas** > el **acceso al trabajo**y, a continuación, quite la cuenta profesional o educativa.
 3. Cierre la sesión de Windows y, a continuación, inicie sesión con su cuenta.    
 4. Inscribir el dispositivo en Intune o unir el dispositivo a Azure AD. 
-
-##### <a name="remove-the-configuration-manager-client"></a>Quitar el cliente de Configuration Manager
-Quite el cliente de Configuration Manager y, a continuación, vuelva a inscribir el dispositivo.
 
 
 
@@ -136,13 +132,13 @@ Asigne una licencia válida de Intune al usuario y, a continuación, inscriba el
 
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>Parece que el punto de conexión de términos de uso de MDM no está configurado correctamente.
 
-**Causa**: se cumplen una o varias de las condiciones siguientes: 
+**Causa:** Se cumple alguna de las siguientes condiciones: 
  - Usa la administración de dispositivos móviles (MDM) para Office 365 e Intune en el inquilino, y el usuario que intenta inscribir el dispositivo no tiene una licencia válida de Intune o una licencia de Office 365.     
 - Los términos y condiciones de MDM en Azure AD están en blanco o no contienen la dirección URL correcta.    
 
 #### <a name="resolution"></a>Solución
 
-Para corregir este problema, use uno de los métodos siguientes: 
+Para solucionar este problema, use alguno de los métodos siguientes: 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>Asignar una licencia válida al usuario
 Vaya al [centro de administración de Microsoft 365](https://portal.office.com/adminportal/home)y, a continuación, asigne una licencia de Intune o Office 365 al usuario.
@@ -160,18 +156,18 @@ Error 80180026: "Se ha producido un problema. Confirme que está usando la infor
 
 **Causa:** Este error puede producirse al intentar unir un equipo Windows 10 a Azure AD y se cumplen las dos condiciones siguientes: 
 - La inscripción automática de MDM está habilitada en Azure.    
-- El cliente de equipo de Intune (agente de PC de Intune) o el agente de cliente de Configuration Manager está instalado en el equipo con Windows 10.
+- El cliente de equipo de Intune (agente de PC de Intune) está instalado en el equipo con Windows 10.
 
 #### <a name="resolution"></a>Solución
 Utilice uno de los métodos siguientes para resolver esta incidencia:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Deshabilite la inscripción automática de MDM en Azure.
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com/).    
+1. Inicie sesión en [Azure Portal](https://portal.azure.com/).    
 2. Vaya a **Azure Active Directory** > **de movilidad (MDM y MAM)**  > **Microsoft Intune**.    
 3. Establezca el **ámbito de usuario de MDM** en **ninguno**y, a continuación, haga clic en **Guardar**.    
      
 ##### <a name="uninstall"></a>Desinstalar
-Desinstale el cliente de equipo de Intune o Configuration Manager agente cliente del equipo.    
+Desinstale el agente de cliente de equipo de Intune del equipo.    
 
 ### <a name="the-software-cannot-be-installed"></a>El software no se puede instalar.
 
@@ -187,7 +183,7 @@ Error: "no se puede instalar el software, 0x80cf4017".
 
 ### <a name="the-account-certificate-is-not-valid-and-may-be-expired"></a>El certificado de cuenta no es válido y puede que haya expirado.
 
-Error: "El certificado de cuenta no es válido y puede que haya expirado, 0x80cf4017".
+Error: "El certificado de cuenta no es válido, puede que haya expirado, 0x80cf4017".
 
 **Causa:** El software cliente no está actualizado.
 
@@ -208,13 +204,6 @@ Para corregir este problema en un entorno de Intune independiente, siga estos pa
 1. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), elija **dispositivos** > **restricciones de inscripción** > Elija una restricción de tipo de dispositivo.    
 2. Elija **propiedades** > **Editar** (junto a **configuración de plataforma**) > **permitir** para **Windows (MDM)** .    
 3. Haga clic en **revisar y guardar**.    
- 
-Para corregir este problema en MDM híbrida con Intune y Configuration Manager, siga estos pasos: 
-1. Abra la consola de Configuration Manager.    
-2. Seleccione **Administración**y, a continuación, seleccione **Cloud Services**.    
-3. Haga clic con el botón secundario en **Microsoft Intune suscripción**y, a continuación, seleccione **configurar plataformas > Windows**.    
-4. Active **Habilitar inscripción de Windows** > **aplicar** > **Aceptar**.  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Error de instalación durante la inscripción masiva.
 
@@ -244,7 +233,7 @@ Al intentar inscribir un dispositivo de Windows 10 automáticamente mediante dir
     Level: Error
     Description: Auto MDM Enroll: Failed (Unknown Win32 Error code: 0x80180002b)
     ```
-**Causa**: se cumplen una o varias de las condiciones siguientes: 
+**Causa:** Se cumple alguna de las siguientes condiciones: 
 - El UPN contiene un dominio no comprobado o no enrutable, como. local (como joe@contoso.local).    
 - El **ámbito de usuario de MDM** está establecido en **ninguno**. 
 
@@ -389,4 +378,4 @@ Este problema se debe normalmente a la delegación incorrecta de los permisos en
 - [Revise el blog del equipo de soporte técnico de Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Revise el blog de Enterprise Mobility and Security de Microsoft](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Cómo obtener asistencia para Microsoft Intune](../fundamentals/get-support.md)
-- [Buscar errores de inscripción de administración conjunta](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [Buscar errores de inscripción de administración conjunta](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)

@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c87d9b423eeb96acbc984040ef49e44c1853a18
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74290945"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654250"
 ---
 # <a name="reference-for-application-entities"></a>Referencia de entidades de aplicaciones
 
@@ -114,7 +114,7 @@ La entidad **applicationInventory** muestra las aplicaciones que se encuentran e
 |---------|------------|
 | deviceKey | Se trata de una referencia a la tabla de dispositivos que contiene el identificador de dispositivo de Intune. |
 | dateKey | Referencia a la tabla de fechas que indica el día del inventario. |
-| applicationName | El nombre de la aplicación. |
+| applicationName | Nombre de la aplicación. |
 | applicationVersion | Versión de la aplicación. |
 | bundleSize | El tamaño de la aplicación en bytes. |
 

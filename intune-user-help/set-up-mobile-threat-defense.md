@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980363"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857881"
 ---
 # <a name="install-mobile-threat-defense"></a>Instalación de Mobile Threat Defense   
 
@@ -38,9 +38,9 @@ Hay una gran variedad de aplicaciones de proveedor de MTD disponibles para insta
 Su organización no puede ver ningún dato, como textos, correos electrónicos e imágenes, en sus aplicaciones personales. La aplicación MTD informa de la información sobre las aplicaciones, como el nombre y la versión, a su organización. La información real que se notifique dependerá del proveedor de MTD que use su empresa. Es posible que su organización vea lo siguiente:   
 
 * Nombre de la aplicación  
-* Id. de aplicación: el nombre único que identifica la aplicación en Google Play.  
-* Versión de la aplicación y número abreviado de la versión: los números de la versión específica de una aplicación.  
-* Grupo de aplicaciones y tamaño dinámico: la cantidad de espacio que usa una aplicación en el dispositivo. 
+* Id. de aplicación: nombre único que identifica a la aplicación en Google Play.  
+* Versión de la aplicación y número de versión corto: números de versión específicos de una aplicación.  
+* Lote de aplicaciones y tamaño dinámico: cantidad de espacio que usa una aplicación en el dispositivo. 
 
 
 ## <a name="install-app"></a>Instalar aplicación    
@@ -93,5 +93,5 @@ Para resolver una amenaza y recuperar el acceso, abra la aplicación MTD en el d
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 

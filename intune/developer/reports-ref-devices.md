@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503421"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654080"
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -218,7 +218,7 @@ La entidad **managementAgentType** representa los agentes usados para administra
 | 3 |EasMdm | El dispositivo se administra mediante Exchange Active Sync y un agente MDM. |
 | 4 |IntuneClient | El dispositivo se administra mediante el agente del equipo de Intune. |
 | 5 |EasIntuneClient | El dispositivo se administra mediante Exchange Active Sync y el agente del equipo de Intune. |
-| 8 |ConfigManagerClient | El dispositivo se administra mediante el agente de System Center Configuration Manager. |
+| 8 |ConfigManagerClient | El dispositivo se administra mediante el agente de Configuration Manager |
 | 16 |Unknown | Tipo de agente de administración desconocido. |
 
 ## <a name="devices"></a>dispositivos
@@ -242,7 +242,7 @@ La entidad **devices** muestra todos los dispositivos inscritos en la administra
 | deviceCategoryKey          | Clave de la categoría asociada a este dispositivo.                                                                                                                                     |
 | deviceEnrollmentType       | Clave del tipo de inscripción asociada a este dispositivo, que indica el método de inscripción.                                                                                             |
 | complianceStateKey         | Clave del estado de cumplimiento de normas asociada a este dispositivo.                                                                                                                             |
-| osVersion                  | Versión de sistema operativo del dispositivo                                                                                                                                                |
+| osVersion                  | Versión del sistema operativo del dispositivo.                                                                                                                                                |
 | easDeviceId                | Identificador de Exchange ActiveSync del dispositivo.                                                                                                                                                  |
 | serialNumber               | SerialNumber                                                                                                                                                                           |
 | userId                     | Identificador único para el usuario asociado al dispositivo.                                                                                                                           |

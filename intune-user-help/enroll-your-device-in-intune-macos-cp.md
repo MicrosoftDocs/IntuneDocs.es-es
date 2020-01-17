@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098158"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855483"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Inscripción del dispositivo macOS mediante la aplicación Portal de empresa  
 
@@ -67,18 +67,17 @@ Siga estos pasos para inscribir su dispositivo macOS con su organización. El di
 
 1. Inicie sesión en el Portal de empresa con su cuenta profesional o educativa.  
 2. Cuando se abra la aplicación, seleccione **comenzar**.  
-3. Revise [lo que su organización puede y no puede ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) en el dispositivo inscrito. Luego, seleccione **Continue** (Continuar).  
-4. En la pantalla **instalar el perfil de administración** , seleccione **Descargar perfil**.   
+3. Revise lo que su organización puede y no puede ver en el dispositivo inscrito. Luego, seleccione **Continue** (Continuar).
+4.  Si se le solicita, escriba la contraseña del dispositivo en la pantalla **instalar el perfil de administración** .
 
-    ![Captura de pantalla de ejemplo de Portal de empresa, instalar la pantalla de Perfil de administración, resaltando el botón "Descargar perfil".](./media/install-mgmt-profile-mac-1911.PNG)   
-5. Se abrirán las preferencias del sistema del dispositivo. Seleccione **instalar** y, a continuación, seleccione **instalar** de nuevo. Si se le solicita, escriba la contraseña del dispositivo.  
+    ![Captura de pantalla de ejemplo de Portal de empresa, instalar la pantalla de Perfil de administración, resaltando la solicitud de contraseña.](./media/install-management-profile-macos-1912.PNG)   
+5. En la pantalla **confirmar la administración de dispositivos** , seleccione **abrir preferencias del sistema**.  
 
-    ![Captura de pantalla de ejemplo de preferencias del sistema de macOS, solicitud de instalación, resaltando el botón "instalar".](./media/system-preference-install-1911.PNG)  
-6. Una vez instalado el perfil, aparecerá en la lista de perfiles en **Perfil de administración.**  
-
-   ![Captura de pantalla de ejemplo de preferencias del sistema de macOS, pantalla de perfiles, resaltando el perfil de Administración instalado.](./media/system-preference-verify-1911.PNG)   
-7. Vuelva a Portal de empresa.   
-8. Su organización podría requerir que actualice la configuración del dispositivo. Cuando haya terminado de actualizar la configuración, seleccione **Comprobar configuración**.  
+    ![Captura de pantalla de ejemplo de la pantalla confirmar la administración de dispositivos, resaltando el botón "abrir preferencias del sistema".](./media/confirm-device-management-macos-1912.PNG)  
+6. Se abrirán las preferencias del sistema del dispositivo. Seleccione **Perfil de administración** en la lista perfiles de dispositivo y, a continuación, seleccione **aprobar** > **aprobar**.  
+    ![captura de pantalla de ejemplo de preferencias del sistema, pantalla de Perfil de administración, resaltando el botón "aprobar".](./media/management-profile-approve-macos-1912.PNG)   
+1. Vuelva a Portal de empresa y seleccione **continuar**.    
+2. Su organización podría requerir que actualice la configuración del dispositivo. Cuando haya terminado de actualizar la configuración, seleccione **Comprobar configuración**.  
 
     ![Captura de pantalla de ejemplo de Portal de empresa, actualizar la pantalla de configuración del dispositivo, resaltando el botón "Comprobar configuración".](./media/update-settings-mac-1911.PNG)  
 9. Una vez finalizada la instalación, seleccione **listo**.  
@@ -88,7 +87,7 @@ Siga estos pasos para inscribir su dispositivo macOS con su organización. El di
 
 Si surgen problemas durante la inscripción, vaya a **ayuda** > **Enviar informe de diagnóstico** para informar del problema a los desarrolladores de aplicaciones de Microsoft. Esta información se usa para ayudar a mejorar la aplicación. También usarán esta información para ayudar a resolver el problema si el personal de soporte técnico de ti llega a ellos para obtener ayuda.  
 
-Después de notificar el problema a Microsoft, puede enviar los detalles de su experiencia al personal de soporte técnico de ti. Seleccione los **detalles del correo electrónico**. Escriba lo que experimentó en el cuerpo del mensaje de correo electrónico. Para encontrar la dirección de correo electrónico del personal de soporte técnico, vaya a la Portal de empresa aplicación > **contacto**. O bien, consulte el [sitio web portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Después de notificar el problema a Microsoft, puede enviar los detalles de su experiencia al personal de soporte técnico de ti. Seleccione los **detalles del correo electrónico**. Escriba lo que experimentó en el cuerpo del mensaje de correo electrónico. Para encontrar la dirección de correo electrónico del personal de soporte técnico, vaya a la Portal de empresa aplicación > **contacto**. O bien compruebe el [sitio web Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
  
 
 Además, el equipo de Portal de empresa de Microsoft Intune le encantaría oír sus comentarios. Vaya a **ayuda** > **Enviar comentarios** para compartir sus ideas e ideas.  
@@ -103,6 +102,6 @@ El perfil de administración es lo que define la conexión del canal de MDM. Mie
 La actualización de la aplicación del Portal de empresa se realiza del mismo modo que la de cualquier otra aplicación de Office, a través de Microsoft AutoUpdate para macOS. Obtenga más información sobre cómo [actualizar aplicaciones de Microsoft para macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
 
 ## <a name="next-steps"></a>Pasos siguientes  
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 

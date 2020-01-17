@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d9fefc2413e2dafbf5d0ad67ea15f5f8406cc1c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 458c38e4cce7022d7a56e86cc171365f1496741e
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506545"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206302"
 ---
 # <a name="android-device-settings-to-configure-vpn-in-intune"></a>Configuración de dispositivos Android para configurar VPN en Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 En este artículo se enumeran y describen las distintas configuraciones de conexión de VPN que puede controlar en los dispositivos Android y Android Enterprise. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para crear una conexión VPN, elija cómo se autentica la VPN, seleccione un tipo de servidor VPN, etc.
 
@@ -44,7 +44,7 @@ Para más información sobre los perfiles de VPN en Intune, consulte [perfiles d
   - **Método de autenticación**: elija cómo se autenticarán los dispositivos en el servidor VPN. Las opciones son:
 
     - **Certificados**: seleccione un perfil de certificado SCEP o PKCS existente para autenticar la conexión. [Configurar certificados](../protect/certificates-configure.md): se enumeran los pasos para crear un perfil de certificado.
-    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se le pedirá a los usuarios finales que escriban su nombre de usuario y una contraseña.
+    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se pide a los usuarios finales que escriban su nombre de usuario y contraseña.
 
 - **Tipo de conexión**: seleccione el tipo de conexión VPN. Las opciones son:
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504947"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548127"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida
 
@@ -39,14 +39,15 @@ Por ejemplo, imagine que un administrador de la sucursal regional de Seattle tie
 ## <a name="default-scope-tag"></a>Etiquetas de ámbito predeterminadas
 La etiqueta de ámbito predeterminada se agrega automáticamente a todos los objetos sin etiqueta que admiten etiquetas de ámbito.
 
-Esta característica es similar a la característica de ámbitos de seguridad de System Center Configuration Manager. 
+Esta característica es similar a la característica de ámbitos de seguridad de Microsoft Endpoint Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Para crear una etiqueta de ámbito
 
-1. En Intune, seleccione **Roles** > **Ámbito (etiquetas)**  > **Crear**.
+1. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Administración de inquilinos** > **roles** > **ámbito (etiquetas)**  > **crear**.
 
     ![Captura de pantalla de la creación de una etiqueta de ámbito.](./media/scope-tags/create-scope-tag.png)
 
+2. Proporcione un **Nombre** y una **Descripción** opcional.
 3. Si quiere que todos los dispositivos estén en grupos específicos, elija **asignar etiqueta de ámbito a todos los dispositivos de los grupos seleccionados**.
     1. En la página **seleccionar grupos que se van a incluir** , elija los grupos que contengan los dispositivos a los que desea asignar esta etiqueta de ámbito.
     2. Elija **Seleccionar**.
@@ -54,10 +55,7 @@ Esta característica es similar a la característica de ámbitos de seguridad de
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para asignar una etiqueta de ámbito a un rol
 
-1. En Intune, seleccione **Roles** > **Todos los roles** > elija un rol > **Asignaciones** > **Asignar**.
-
-    ![Captura de pantalla de la asignación de un ámbito a un rol.](./media/scope-tags/assign-scope-to-role.png)
-
+1. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Administración de inquilinos** > **roles** > **todos los roles** > elegir un rol > **asignaciones** > **asignar**.
 2. Proporcione un **Nombre de asignación** y una **Descripción**.
 3. Seleccione **Miembros (grupos)**  > **Agregar** > elija los grupos que quiera como parte de esta asignación > **Seleccionar** > **Aceptar**. Los usuarios de este grupo tendrán permisos para administrar usuarios y dispositivos en el ámbito (grupos).
 
@@ -81,9 +79,7 @@ Esta característica es similar a la característica de ámbitos de seguridad de
 
 En el caso de los objetos que admiten etiquetas de ámbito, las etiquetas de ámbito suelen aparecer en **propiedades**. Por ejemplo, para asignar una etiqueta de ámbito a un perfil de configuración, siga estos pasos:
 
-1. En Intune, seleccione **Configuración del dispositivo** > **Perfiles** > elija un perfil.
-
-    ![Captura de pantalla de la selección de perfil.](./media/scope-tags/choose-profile.png)
+1. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), elija **dispositivos** > **perfiles de configuración** > elegir un perfil.
 
 2. Seleccione **Propiedades** > **Ámbito (etiquetas)**  > **Agregar**.
 

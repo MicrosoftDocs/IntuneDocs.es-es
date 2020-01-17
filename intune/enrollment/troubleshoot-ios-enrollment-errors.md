@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832573"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885917"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos iOS en Microsoft Intune
 
@@ -40,7 +40,7 @@ Recopile la siguiente información acerca del problema:
 - ¿Qué plataforma (Android, iOS, Windows) tiene el problema?
 - ¿Cuántos usuarios están afectados? ¿Todos los usuarios están afectados o solo algunos?
 - ¿Cuántos dispositivos se ven afectados? ¿Todos los dispositivos se ven afectados o solo algunos?
-- ¿Qué es la entidad de MDM? Si System Center Configuration Manager, ¿qué versión de Configuration Manager usa?
+- ¿Qué es la entidad de MDM?
 - ¿Cómo se realiza la inscripción? ¿Es "traiga su propio dispositivo" (BYOD) o Apple Programa de inscripción de dispositivos (DEP) con perfiles de inscripción?
 
 ## <a name="error-messages"></a>Mensajes de error
@@ -186,7 +186,7 @@ Si su organización usa varios dominios para las credenciales de usuario, cree r
 **Causa:** Falta el certificado de Apple Push Notification Service (APNs), no es válido o ha expirado.
 
 #### <a name="resolution"></a>Solución
-Compruebe que se ha agregado un certificado de APNs válido a Intune. Para más información, consulte [Configurar la administración de dispositivos iOS y Mac](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
+Compruebe que se ha agregado un certificado de APNs válido a Intune. Para obtener más información, consulte Configuración de la [inscripción de iOS](ios-enroll.md).
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ Renueve el certificado de APNs y, a continuación, vuelva a inscribir el disposi
 > Asegúrese de renovar el certificado de APNs. No reemplace el certificado de APNs. Si reemplaza el certificado, tendrá que volver a inscribir todos los dispositivos iOS en Intune. 
 
 - Para renovar el certificado de APNs en Intune independiente, consulte [renovar el certificado Push MDM de Apple](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- Para renovar el certificado de APNs en Intune híbrido con Configuration Manager, consulte Configuración de la [Administración de dispositivos híbridos de iOS con System Center Configuration Manager y Microsoft Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Para renovar el certificado de APNs en Office 365, consulte [crear un certificado de APNs para dispositivos iOS](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
 ### <a name="xpc_type_error-connection-invalid"></a>Conexión XPC_TYPE_ERROR no válida
@@ -230,7 +229,7 @@ Al activar un dispositivo administrado por DEP que tiene asignado un perfil de i
 #### <a name="resolution"></a>Solución
 
 1. Edite el perfil de inscripción. Puede hacer cualquier cambio en el perfil. El propósito es actualizar la hora de modificación del perfil.
-2. Sincronizar los dispositivos administrados por DEP: en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **iOS** > **Inscripción de iOS** > **Tokens del programa de inscripción** > elija un token de la lista > **Sincronizar ahora**. Se envía una solicitud de sincronización a Apple.
+2. Sincronizar dispositivos administrados por DEP: En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Dispositivos** > **iOS** > **Inscripción de iOS** > **Tokens del programa de inscripción** > seleccione un token > **Sincronizar ahora**. Se envía una solicitud de sincronización a Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Inscripción de DEP atascada en el inicio de sesión de usuario
 Al activar un dispositivo administrado por DEP que tiene asignado un perfil de inscripción, el programa de instalación inicial se adhiere después de escribir las credenciales.

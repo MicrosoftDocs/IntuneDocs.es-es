@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059615"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206829"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Usar y administrar dispositivos Zebra con extensiones de movilidad de Zebra en Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune incluye un amplio conjunto de características, incluidas la administración de aplicaciones y la configuración de los ajustes del dispositivo. Estas características y ajustes integrados administran dispositivos Android fabricados por Zebra Technologies, también conocidos como "dispositivos Zebra".
 
@@ -53,7 +53,7 @@ Con Intune, puede inscribir dispositivos Zebra para implementar en los dispositi
 - No olvide consultar la [matriz de características de MX completa de Zebra](http://techdocs.zebra.com/mx/compatibility) (abre el sitio web de Zebra) para confirmar que los perfiles creados son compatibles con la versión del sistema operativo, versión de MX y modelo del dispositivo.
 - Ciertos dispositivos, como TC20/25, no admiten todas las características disponibles de MX en StageNow. No olvide consultar la [matriz de características de Zebra](http://techdocs.zebra.com/mx/tc2x/) (abre el sitio web de Zebra) para obtener información de compatibilidad actualizada.
 
-## <a name="step-1-install-the-latest-company-portal-app"></a>Paso 1: instalar la aplicación Portal de empresa más reciente.
+## <a name="step-1-install-the-latest-company-portal-app"></a>Paso 1: instalar la aplicación Portal de empresa más reciente
 
 En el dispositivo, abra el almacén de Google Play. Descargue e instale la aplicación Portal de empresa de Intune de Microsoft. Cuando se instala desde Google Play, la aplicación del Portal de empresa obtiene actualizaciones y correcciones automáticamente.
 
@@ -79,7 +79,7 @@ Vaya a publicar en el perfil de publicación y personalícelo con StageNow en el
 > [!TIP]
 > Para obtener más información sobre StageNow y lo que hace, consulte [StageNow Android device staging](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html) (Almacenamiento provisional de dispositivos Android Stage Now) (abre el sitio web de Zebra).
 
-## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Paso 2: confirmar que la aplicación Portal de empresa tiene un rol de administrador de dispositivos.
+## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Paso 2: confirmar que la aplicación Portal de empresa tiene el rol de administrador de dispositivos
 
 La aplicación de Portal de empresa requiere un administrador de dispositivos para administrar dispositivos Android. Para activar el rol de administrador de dispositivos, algunos dispositivos Zebra incluyen una interfaz de usuario (IU) en el dispositivo. Si el dispositivo incluye una interfaz de usuario, la aplicación de Portal de empresa le pide al usuario final que proporcione un administrador de dispositivos durante la [inscripción](#step-3-enroll-the-device-in-to-intune) (en este artículo).
 
@@ -96,13 +96,13 @@ Los pasos siguientes proporcionan una visión general. Para obtener información
 
 Vaya a publicar en el perfil de publicación y personalícelo con StageNow en el dispositivo. La aplicación Portal de empresa tiene un rol de administrador de dispositivos.
 
-## <a name="step-3-enroll-the-device-in-to-intune"></a>Paso 3: Inscribir el dispositivo en Intune
+## <a name="step-3-enroll-the-device-in-to-intune"></a>Paso 3: inscribir el dispositivo en Intune
 
 Después de completar los dos primeros pasos, la aplicación Portal de empresa está instalada en el dispositivo. Ya puede inscribir el dispositivo en Intune.
 
 [Inscribir dispositivos Android](../enrollment/android-enroll.md) se enumeran los pasos. Si tiene muchos dispositivos Zebra, puede que quiera usar una [cuenta de administrador de inscripciones de dispositivos (DEM)](../enrollment/device-enrollment-manager-enroll.md). Usar una cuenta DEM también quita la opción para anular la inscripción desde la aplicación de Portal de empresa, para que los usuarios no puedan anular la inscripción del dispositivo tan fácilmente.
 
-## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Paso 4: Crear un perfil de administración de dispositivos en StageNow
+## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Paso 4: crear un perfil de administración de dispositivos en StageNow
 
 Use StageNow para crear un perfil que configure las opciones que quiere administrar en el dispositivo. Para obtener información detallada, consulte la documentación de Zebra. [Perfiles](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (abre el sitio web de Zebra) puede ser un buen recurso.
 
@@ -138,9 +138,9 @@ En Intune, cree un perfil de configuración de dispositivo:
 3. Escriba las propiedades siguientes:
 
     - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
-    - **Descripción**: escriba una descripción para el perfil Esta configuración es opcional pero recomendada.
-    - **Plataforma**: seleccione **Android**.
-    - **Tipo de perfil**: seleccione **perfil de MX (solo Zebra)** .
+    - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
+    - **Plataforma**: Seleccione **Android**.
+    - **Tipo de perfil**: Seleccione **Perfil de MX (solo Zebra)** .
 
 4. En **Perfil de MX en formato .xml**, agregue el archivo de perfil XML que [exportó desde StageNow](#step-4-create-a-device-management-profile-in-stagenow) (en este artículo).
 5. Seleccione **Aceptar** > **Crear** para guardar los cambios. La directiva se crea y se muestra en la lista.

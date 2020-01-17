@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 256fe3e193e5ab3959c6f9712df8b62246377c6d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465705"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653961"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -65,7 +65,7 @@ Antes de ejecutar la herramienta, lea [Consideraciones de seguridad para ejecuta
 
 2. Acepte el contrato de licencia y finalice la instalación.
 
-Tome nota de la carpeta donde instala la herramienta. La ubicación predeterminada es C:\Archivos de programa (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
+Tome nota de la carpeta donde instala la herramienta. La ubicación predeterminada es: C:\Archivos de programa (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
 ## <a name="run-the-app-wrapping-tool"></a>Ejecutar la herramienta de ajuste de aplicaciones
 
@@ -155,7 +155,7 @@ Para evitar posibles suplantaciones de identidad, la divulgación de informació
 
 - Proteja el directorio de salida que contiene la aplicación ajustada. Considere el uso de un directorio de nivel de usuario para la salida.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](../developer/apps-prepare-mobile-application-management.md)
 
 - [Guía para desarrolladores sobre el SDK de aplicaciones de Microsoft Intune para Android](../developer/app-sdk-android.md)
