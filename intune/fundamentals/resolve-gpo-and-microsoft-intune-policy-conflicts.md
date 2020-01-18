@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 745534f2c65bc9585ab4639f9d5a6d101638c5f9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a44f26c15a93f9384bb85b65da5a6c1ecaff0564
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509851"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036551"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflictos de directivas de Microsoft Intune y objetos de directiva de grupo (GPO)
 
@@ -111,7 +111,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
     - For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
-For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
+For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](https://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
 Puede aplicar los GPO únicamente a los grupos de seguridad especificados en el área **Filtrado de seguridad** de la Consola de administración de directivas de grupo para un GPO seleccionado. De forma predeterminada, los GPO se aplican a *usuarios autenticados*.
@@ -124,5 +124,5 @@ Puede aplicar los GPO únicamente a los grupos de seguridad especificados en el 
 
 El nuevo grupo de seguridad debe mantenerse inscrito en los cambios del servicio de Intune.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 [Administrar equipos Windows con Microsoft Intune](../manage-windows-pcs-with-microsoft-intune.md)
