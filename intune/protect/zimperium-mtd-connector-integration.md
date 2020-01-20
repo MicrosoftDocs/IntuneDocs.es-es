@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a6f57783b0878cd25e6c7eacdf4b32e462790916
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810301"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925808"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar Zimperium con Intune
 
@@ -31,7 +31,7 @@ Complete estos pasos para integrar la solución Zimperium Mobile Threat Defense 
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-Los pasos siguientes se realizan en la [consola de Zimperium MTD](https://www.zimperium.com/platform) y habilitarán una conexión con el servicio de Lookout tanto para los dispositivos inscritos en Intune (mediante el cumplimiento de dispositivos) como para los dispositivos no inscritos (mediante directivas de protección de aplicaciones).
+Los pasos siguientes se realizan en la [consola de Zimperium MTD](https://www.zimperium.com/platform) y habilitarán una conexión con el servicio de Zimperium tanto para los dispositivos inscritos en Intune (mediante el cumplimiento de dispositivos) como para los dispositivos no inscritos (mediante directivas de protección de aplicaciones).
 
 Antes de iniciar el proceso de integración de Zimperium con Intune, asegúrese de que tiene las siguientes credenciales y suscripción:
 
@@ -39,7 +39,7 @@ Antes de iniciar el proceso de integración de Zimperium con Intune, asegúrese 
 
 - Credenciales de administrador de Administrador global de Azure Active Directory para conceder los permisos siguientes:
 
-  - Iniciar sesión y leer el perfil del usuario
+  - Iniciar sesión y leer el perfil de usuario
 
   - Obtener acceso al directorio con el usuario que tiene la sesión iniciada
 

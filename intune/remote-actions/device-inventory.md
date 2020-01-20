@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819776"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756020"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -38,7 +38,7 @@ En este artículo se explica cómo se pueden ver todos los dispositivos y sus pr
 
    - En **Información general** se indica el nombre del dispositivo y algunas propiedades clave del dispositivo., como, por ejemplo, si se trata de un dispositivo Bring Your Own Device (BYOD), hora de entrada, etc. Puede realizar lo siguiente en el dispositivo:
       - [Retirar](devices-wipe.md#retire)
-      - [Eliminación de datos](devices-wipe.md#wipe)
+      - [Borrar](devices-wipe.md#wipe)
       - [Bloqueo remoto](device-remote-lock.md)
       - [Sincronización del dispositivo](device-sync.md)
       - [Restablecer el código de acceso](device-passcode-reset.md)
@@ -67,7 +67,7 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |Dispositivo compartido|Si se establece en **Sí**, el dispositivo se comparte con más de un usuario.|Windows, iOS|
 |Inscripción de usuario aprobada|Si se establece en **Sí**, el dispositivo dispondrá de una inscripción de usuario aprobada que permite a los administradores administrar determinadas opciones de seguridad en el dispositivo.|Windows, iOS|
 |Sistema operativo|Sistema operativo usado en el dispositivo.|Windows, iOS|
-|Versión del sistema operativo|Versión del sistema operativo del dispositivo.|Windows, iOS|
+|Versión del sistema operativo|La versión del sistema operativo en el dispositivo.|Windows, iOS|
 |Idioma del sistema operativo|Idioma configurado en el sistema operativo del dispositivo.|Windows, iOS|
 |Número de compilación|Número de compilación del sistema operativo.|Android|
 |Nivel de revisión de seguridad|Nivel de revisión de seguridad del dispositivo.|Android|
@@ -94,6 +94,9 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|Windows, iOS, Android|
 
 \* No está disponible en Android con el administrador de directivas de Google, como los dispositivos totalmente administrados y dedicados
+
+> [!Note]  
+> El número de teléfono no está inventariado en dispositivos Android Enterprise dedicados o totalmente administrados.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Vea qué más puede hacer para [administrar sus dispositivos](device-management.md) con Intune.

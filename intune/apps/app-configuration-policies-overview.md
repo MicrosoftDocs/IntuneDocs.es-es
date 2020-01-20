@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692188"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885809"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
@@ -93,7 +93,7 @@ Puede validar la directiva de configuración de aplicaciones mediante los tres m
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>Configuración de iOS en dispositivos no administrados
 
-Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos no administrados para la configuración de aplicaciones administradas.
+Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos no administrados para la configuración de aplicaciones administradas. Además de los pasos siguientes, puede acceder a los registros de aplicaciones administradas con Microsoft Edge. Para obtener más información, consulte [Uso de Microsoft Edge en iOS para acceder a los registros de aplicaciones administradas](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
 1. Si aún no está instalado en el dispositivo, descargue e instale **Intune Managed Browser** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
 2. Inicie **Intune Managed Browser** y seleccione **acerca de** > **intunehelp** en la barra de navegación.
@@ -162,7 +162,7 @@ Para recopilar registros de un dispositivo Android, usted o el usuario final deb
     
 ## <a name="graph-api-support-for-app-configuration"></a>Compatibilidad de Graph API para la configuración de aplicaciones
 
-Puede usar Graph API para realizar tareas de configuración de aplicaciones. Para obtener más información, consulte la [referencia sobre Graph API para la configuración de destino de MAM](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
+Puede usar Graph API para realizar tareas de configuración de aplicaciones. Para obtener más información, consulte la [referencia sobre Graph API para la configuración de destino de MAM](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta). Para obtener más información sobre Intune y Graph, consulte [Trabajar con Intune en Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
 
 ## <a name="troubleshooting"></a>Solución de problemas
 

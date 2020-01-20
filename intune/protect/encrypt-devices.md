@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654267"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756009"
 ---
 # <a name="use-device-encryption-with-intune"></a>Uso del cifrado de dispositivos con Intune
 
@@ -38,6 +38,8 @@ Intune también proporciona un [informe de cifrado](encryption-monitor.md) integ
 ## <a name="filevault-encryption-for-macos"></a>Cifrado de FileVault para macOS
 
 Use Intune para configurar el cifrado de discos de FileVault en los dispositivos que ejecutan macOS. Después, use el informe de cifrado de Intune para ver los detalles de cifrado de esos dispositivos y administrar las claves de recuperación de los dispositivos cifrados de FileVault.
+
+Tenga en cuenta que la inscripción de dispositivos aprobados por el usuario es necesaria para que FileVault funcione en el dispositivo. El usuario debe aprobar manualmente el perfil de administración en las preferencias del sistema para que la inscripción se considere aprobada por el usuario. 
 
 FileVault es un programa de cifrado de disco completo que se incluye con macOS. Puede usar Intune para configurar FileVault en dispositivos que ejecuten **macOS 10.13 o versiones posteriores**.
 
@@ -72,14 +74,7 @@ Para obtener más información sobre la configuración de FileVault que puede ad
 
 7. Configure el resto de [valores de FileVault](endpoint-protection-macos.md#filevault) para cumplir con sus necesidades empresariales y luego seleccione **Aceptar**.
 
-   > [!IMPORTANT]
-   > Hay un problema conocido cuando el valor **Deshabilitar mensaje al cierre de sesión** se establece en *habilitado*. Cuando se establece en *habilitado*, el valor de **número de veces que se puede omitir** se debe establecer en un valor y no debe establecerse como *no configurado*. Si se establece en *Sin configurar*, el perfil producirá un error en el dispositivo. En este escenario, el dispositivo informa de que se trata de un **Resumen de estado del perfil** como **Error** sin detalles adicionales.
-   >
-   > Cuando **Deshabilitar mensaje al cierre de sesión** se establece en *Sin configurar*, **Número de veces que se permite omitir** puede estar *Sin configurar* o tener un valor.
-   >
-   > Esta incidencia se resolverá en una actualización futura.
-
-8. Complete la configuración de valores adicionales y luego guarde el perfil.  
+  8. Complete la configuración de valores adicionales y luego guarde el perfil.  
 
 ### <a name="manage-filevault"></a>Administración de FileVault
 

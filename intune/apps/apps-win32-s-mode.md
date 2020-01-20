@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: a3074b30921a4daba7469e670a17ad29ee1edc00
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204908"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827809"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Habilitación de aplicaciones de Win32 en dispositivos en modo S
 
@@ -45,7 +45,7 @@ Los pasos para permitir que las aplicaciones Win32 se ejecuten en un dispositivo
    - La directiva complementaria firmada se carga en Intune mediante la creación de una directiva complementaria del modo Windows 10 S (consulte a continuación).
 3. Se pueden permitir catálogos de aplicaciones Win32 mediante Intune:
    - Puede crear archivos de catálogo (uno para cada aplicación) y firmarlos con DGSS u otra infraestructura de certificados.
-   - El catálogo firmado se empaqueta en el archivo *.intunewin* mediante la [herramienta de preparación de contenido de Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730). Para más información, consulte [Administración de aplicaciones Win32: Preparar el contenido de la aplicación Win32 para la carga](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload).
+   - El catálogo firmado se empaqueta en el archivo *.intunewin* mediante la [herramienta de preparación de contenido de Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730). No hay restricciones de nomenclatura al crear un archivo de catálogo con la [herramienta de preparación de contenido de Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730). Al generar el archivo *.intunewin* desde la carpeta de origen especificada y el archivo de instalación, puede proporcionar una carpeta independiente que contenga solo archivos de catálogo mediante la opción-a cmdline. Para más información, consulte [Administración de aplicaciones Win32: Preparar el contenido de la aplicación Win32 para la carga](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload).
    - Intune aplica el catálogo de aplicaciones firmadas para instalar la aplicación Win32 en el dispositivo del modo S con la [extensión de administración de Intune](~/apps/intune-management-extension.md).
 
 > [!NOTE]

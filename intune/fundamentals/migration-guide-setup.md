@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510021"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885852"
 ---
 # <a name="basic-setup"></a>Configuración básica
 
@@ -74,9 +74,9 @@ Para poder migrar a Intune, necesita primero una suscripción a Intune.
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarea 3: Establecer Intune como entidad de MDM
 
-Intune puede administrarse mediante el portal de Azure o la consola de la rama actual de Configuration Manager. Salvo que tenga que integrar Intune con una implementación de la rama actual de Configuration Manager, le recomendamos que administre Intune desde [Azure Portal](https://portal.azure.com).
+Se recomienda que administre Intune mediante el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-Establezca **Intune** como entidad de MDM para habilitar el portal de Intune Azure. El uso de otra entidad de MDM permite a Intune transferir la administración de MDM a consolas de administración de Microsoft alternativas. Estos casos no son frecuentes.
+Establezca **Intune** como entidad de MDM. El uso de otra entidad de MDM permite a Intune transferir la administración de MDM a consolas de administración de Microsoft alternativas. Estos casos no son frecuentes.
 
 > [!IMPORTANT]
 > Si va a transferir la administración de dispositivos móviles a Intune por primera vez, debe establecer Intune como entidad de MDM.

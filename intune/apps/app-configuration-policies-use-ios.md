@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547990"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885771"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
@@ -182,7 +182,7 @@ Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no 
 
 1. En Intune, agregue la aplicación Portal de empresa de Intune si es necesario; para ello, vaya a **Intune** > **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 2. Vaya a **Aplicaciones** > **Directivas de configuración de aplicaciones** para crear una directiva de configuración de aplicaciones para la aplicación Portal de empresa.
-3. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md) o, para MDM híbrida, [Aplicación de la configuración a aplicaciones iOS con directivas de configuración de Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>

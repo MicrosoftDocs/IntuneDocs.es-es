@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784245"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956203"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune 
 
@@ -37,7 +37,7 @@ Los usuarios de aplicaciones y dispositivos de su empresa (empleados de su empre
 
 Intune admite una gran variedad de tipos de aplicaciones. Las opciones disponibles varían para cada tipo de aplicación. Intune permite agregar y asignar los siguientes tipos de aplicación:
 
-| Tipos de aplicación | Instalación | Updates |
+| Tipos de aplicación | Instalación | Actualizaciones |
 |---|---|---|
 | Aplicaciones de la tienda (aplicaciones de la tienda) | Intune instala la aplicación en el dispositivo.  | Las actualizaciones de aplicaciones son automáticas. |
 | Aplicaciones escritas internamente (línea de negocio) | Intune instala la aplicación en el dispositivo (el usuario proporciona el archivo de instalación). | Debe actualizar la aplicación. |
@@ -147,7 +147,7 @@ Antes de empezar a agregar y asignar aplicaciones, considere los puntos siguient
 ## <a name="cloud-storage-space"></a>Espacio de almacenamiento en nube
 Todas las aplicaciones que cree mediante el tipo de instalación del instalador de software (por ejemplo, una aplicación de línea de negocio) se empaquetan y cargan en el almacenamiento en la nube de Intune. Una suscripción de prueba de Intune incluye 2 gigabytes (GB) de almacenamiento en nube que sirve para almacenar actualizaciones y aplicaciones administradas. Una suscripción completa no limita la cantidad total de espacio de almacenamiento.
 
-Los requisitos de espacio de almacenamiento en nube son los siguientes:
+Estos son los requisitos de espacio de almacenamiento en la nube:
 
 - Todos los archivos de instalación deben encontrarse en la misma carpeta.
 - El tamaño máximo de archivo de cualquier archivo que se cargue es de 8 GB.
@@ -164,7 +164,7 @@ Al agregar una aplicación a Intune, tiene la opción de seleccionar la categor�
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Aplicaciones** > **Categorías de aplicación**.  
     El panel **Categorías de aplicaciones** muestra una lista de las categorías actuales. 
-5. Realice alguna de las acciones siguientes:
+5. Realice cualquiera de las siguientes acciones:
     - Para agregar una categoría, en el panel **Crear categoría**, seleccione **Agregar** y escriba un nombre para la categoría.  
     Los nombres solo pueden escribirse en un solo idioma e Intune no los traduce.
     - Para editar una categoría, seleccione los puntos suspensivos ( **...** ) situados junto a la categoría y luego seleccione **Anclar al panel** o **Eliminar**.
@@ -189,7 +189,7 @@ Intune reinstala, actualiza o quita automáticamente una aplicación necesaria e
 
 ## <a name="app-installation-errors"></a>Errores de instalación de la aplicación
 
-Para obtener más información acerca de errores de instalación de aplicaciones de Intune, consulte [App installation errors](troubleshoot-app-install.md#app-installation-errors) (Errores de instalación de aplicaciones).
+Para obtener más información acerca de errores de instalación de aplicaciones de Intune, consulte [App installation errors](troubleshoot-app-install.md) (Errores de instalación de aplicaciones).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -201,7 +201,7 @@ Para información sobre cómo agregar aplicaciones para cada plataforma a Intune
 - [Aplicaciones LOB para iOS](lob-apps-ios.md)
 - [Aplicaciones de LOB para macOS](lob-apps-macos.md)
 - [Aplicaciones web (para todas las plataformas)](web-app.md)
-- [Aplicaciones de la Tienda de Windows Phone 8.1](store-apps-windows-phone-8-1.md)
+- [Aplicaciones de la Tienda Windows Phone 8.1](store-apps-windows-phone-8-1.md)
 - [Aplicaciones de línea de negocio de Windows Phone](lob-apps-windows-phone.md)
 - [Aplicaciones de Microsoft Store](store-apps-windows.md)
 - [Aplicación de línea de negocio de Windows](lob-apps-windows.md)
@@ -211,4 +211,4 @@ Para información sobre cómo agregar aplicaciones para cada plataforma a Intune
 - [Microsoft Edge para macOS](apps-edge-macos.md)
 - [Aplicaciones integradas](apps-add-built-in.md)
 - [Aplicaciones del sistema de Android Enterprise](apps-ae-system.md)
-- [Aplicaciones Win32](app-management.md)
+- [Aplicaciones Win32](~/apps/apps-win32-app-management.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562379"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885930"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Configuración de la inscripción en Intune de dispositivos Android Enterprise totalmente administrados 
 
@@ -36,7 +36,7 @@ Con Intune es más fácil instalar aplicaciones y aplicar una configuración a l
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-Debe tener un inquilino independiente de Intune para administrar dispositivos Android Enterprise totalmente administrados. La administración de dispositivos totalmente administrados no está disponible en modo híbrido (conectado a Configuration Manager) ni en la consola de administración heredada de Silverlight.
+Debe tener un inquilino independiente de Intune para administrar dispositivos Android Enterprise totalmente administrados. La administración de dispositivos totalmente administrados no está disponible en la consola de administración heredada de Silverlight.
 
 Los dispositivos deben cumplir estos requisitos para administrarse como dispositivo Android Enterprise totalmente administrados:
 
