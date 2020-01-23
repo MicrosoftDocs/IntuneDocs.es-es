@@ -5,7 +5,7 @@
   items:
     - name: Introducción a la administración de aplicaciones
       href: app-management.md
-- name: Inicios rápidos
+- name: Guías de inicios rápidos
   items:
     - name: Adición y asignación de una aplicación
       href: quickstart-add-assign-app.md
@@ -26,7 +26,7 @@
       displayName: app-we; without; without enrollment
     - name: PREGUNTAS MÁS FRECUENTES DE MAM
       href: mam-faq.md
-- name: Guías paso a paso
+- name: Guías de procedimientos
   items:
     - name: Agregar aplicaciones
       items:
@@ -45,7 +45,7 @@
               href: store-apps-windows-phone-8-1.md
             - name: Aplicaciones de Windows
               href: store-apps-windows.md
-            - name: Aplicaciones de Tienda Microsoft para Empresas
+            - name: Aplicaciones de la Tienda Microsoft para Empresas
               href: windows-store-for-business.md
             - name: Aplicaciones administradas de Google Play
               href: apps-add-android-for-work.md
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: Configurar Outlook
               href: app-configuration-policies-outlook.md
-            - name: Configuración de S/MIME para Outlook
-              href: app-configuration-policies-outlook-smime.md
             - name: "Configuración de Google\_Chrome para Android"
               href: apps-configure-chrome-android.md
         - name: Aplicaciones y libros comprados por volumen
@@ -190,6 +188,8 @@
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Solucionar problemas de instalación de aplicaciones
           href: troubleshoot-app-install.md
+        - name: Referencia de errores de instalación de aplicaciones
+          href: app-install-error-codes.md
         - name: Solucionar problemas de la administración de aplicaciones móviles
           href: troubleshoot-mam.md
         - name: Revisión de los registros de protección de aplicaciones
