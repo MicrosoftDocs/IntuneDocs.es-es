@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558181"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125317"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot
 Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory (Azure AD) híbrido. Para ello, siga los pasos de este artículo.
@@ -46,7 +46,7 @@ Los dispositivos que se inscriban también deben:
 
    ![Azure Portal](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
-1. Seleccione **Movilidad (MDM y MAM)** .
+1. Seleccione **Movilidad (MDM y MAM)**.
 
    ![El panel Azure Active Directory](./media/windows-autopilot-hybrid/auto-enroll-mdm.png)
 
@@ -70,7 +70,7 @@ La unidad organizativa a la que se conceden los derechos para crear equipos debe
 - la unidad organizativa especificada en el perfil Unión a dominio.
 - Si no se ha seleccionado ningún perfil, el nombre de dominio del equipo para el dominio.
 
-1. Abra **Usuarios y equipos de Active Directory (DSA.msc)** .
+1. Abra **Usuarios y equipos de Active Directory (DSA.msc)**.
 
 1. Haga clic con el botón derecho en la unidad organizativa que se va a usar para crear equipos unidos a Azure AD híbrido y, después, seleccione **Delegar control**.
 
@@ -90,7 +90,7 @@ La unidad organizativa a la que se conceden los derechos para crear equipos debe
 
 1. Haga clic en **Crear una tarea personalizada para delegar** > **Siguiente**.
 
-1. Active la casilla **Solo los siguientes objetos en la carpeta** y, después, active las casillas **Objetos de equipo**, **Crear los objetos seleccionados en esta carpeta** y  **Eliminar los objetos seleccionados en esta carpeta**.
+1. Active la casilla **Solo los siguientes objetos en la carpeta** y, después, active las casillas **Objetos de equipo**, **Crear los objetos seleccionados en esta carpeta** y **Eliminar los objetos seleccionados en esta carpeta**.
 
     ![El panel Tipo de objeto de Active Directory](./media/windows-autopilot-hybrid/only-following-objects.png)
     
@@ -177,7 +177,7 @@ Después de *inscribir* los dispositivos Autopilot, se muestran en cuatro lugare
 - El panel **Todos los dispositivos de Azure AD** en Azure Active Directory en Azure Portal. Seleccione **Dispositivos** > **Todos los dispositivos**.
 - El panel **Todos los dispositivos** de Intune en Azure Portal. Seleccione **Dispositivos** > **Todos los dispositivos**.
 
-Una vez que se hayan inscrito los dispositivos Autopilot, sus nombres se convierten en el nombre de host del dispositivo. De forma predeterminada, el nombre de host comienza con *DESKTOP-* .
+Una vez que se hayan inscrito los dispositivos Autopilot, sus nombres se convierten en el nombre de host del dispositivo. De forma predeterminada, el nombre de host comienza con *DESKTOP-*.
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Creación y asignación de un perfil de implementación de Autopilot
@@ -187,9 +187,9 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
 2. En la página de los **datos básicos**, escriba un **nombre** y, opcionalmente, una **descripción**.
 3. Si quiere que todos los dispositivos en los grupos asignados se conviertan automáticamente en Autopilot, establezca **Convertir todos los dispositivos de destino a Autopilot** en **Sí**. Todos los dispositivos propiedad de la empresa que no sean Autopilot en grupos asignados se registrarán con el servicio de implementación de Autopilot. Los dispositivos de propiedad personal no se convertirán en Autopilot. Permita un plazo de 48 horas para que se procese el registro. Cuando se anule la inscripción del dispositivo y este se restablezca, Autopilot lo inscribirá. Una vez registrado un dispositivo de este modo, si deshabilita esta opción o quitar la asignación de perfil, el dispositivo no se quitará desde el servicio de implementación de Autopilot, sino que deberá [quitar el dispositivo directamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. Seleccione **Siguiente**.
-5. En la página **Configuración rápida (OOBE)** , para **Modo de implementación**, seleccione **Controlado por el usuario**.
+5. En la página **Configuración rápida (OOBE)**, para **Modo de implementación**, seleccione **Controlado por el usuario**.
 6. En el cuadro **Unirse a Azure AD como**, seleccione **Unidos a Azure AD híbrido**.
-7. Configure las opciones restantes en la página **Configuración rápida (OOBE)** , según sea necesario.
+7. Configure las opciones restantes en la página **Configuración rápida (OOBE)**, según sea necesario.
 8. Seleccione **Siguiente**.
 9. En la página **Etiquetas de ámbito**, seleccione las [etiquetas de ámbito](../fundamentals/scope-tags.md) para este perfil.
 10. Seleccione **Siguiente**.
@@ -209,17 +209,30 @@ El cambio de estado del perfil de dispositivo de *No asignado* a *Asignando* y, 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Creación y asignación de un perfil Unión a un dominio
 
 1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
-1. Escriba las propiedades siguientes:
+2. Escriba las propiedades siguientes:
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
    - **Descripción**: escriba una descripción para el perfil.
    - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
-   - **Tipo de perfil**: seleccione **Unión a un dominio (vista previa)** .
-1. Haga clic en **Configuración** y, después, proporcione un **Prefijo de nombre de equipo**, un **Nombre de dominio** y, opcionalmente, una **Unidad organizativa** en [Formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
+   - **Tipo de perfil**: seleccione **Unión a un dominio (vista previa)**.
+3. Seleccione **Configuración** y, luego, proporcione valores para **Prefijo del nombre de equipo** y **Nombre de dominio**.
+4. (Opcional) Proporcione una **unidad organizativa** (OU) en [Formato de DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). Existen varias opciones:
+   - Proporcionar una unidad organizativa en la que haya delegado el control en el dispositivo de Windows 2016 que ejecuta el conector de Intune.
+   - Proporcionar una unidad organizativa en la que haya delegado el control a los equipos raíz de Active Directory local.
+   - Si deja este valor en blanco, el objeto de equipo se creará en el contenedor predeterminado de Active Directory (CN=Computers si nunca [lo ha cambiado](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)).
+   
+   Estos son algunos ejemplos válidos:
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   Estos son algunos ejemplos que no son válidos:
+   - CN=Computers,DC=contoso,DC=com (no puede especificar un contenedor, en su lugar deje el valor en blanco para usar el predeterminado para el dominio)
+   - OU=Mine (debe especificar el dominio mediante los atributos DC=)
+     
    > [!NOTE]
    > No utilice comillas alrededor del valor de **Unidad organizativa**.
-1. Haga clic en **Aceptar** > **Crear**.  
+5. Haga clic en **Aceptar** > **Crear**.  
     El perfil se crea y se muestra en la lista.
-1. Para asignar el perfil, siga los pasos descritos en [Asignación de un perfil de dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) y asigne el perfil al mismo grupo que se usa en este paso [Creación de un grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
+6. Para asignar el perfil, siga los pasos descritos en [Asignación de un perfil de dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) y asigne el perfil al mismo grupo que se usa en este paso [Creación de un grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
    - Implementación de varios perfiles Unión a un dominio
    
      a. Cree un grupo dinámico que incluya todos los dispositivos Autopilot con un perfil de implementación de Autopilot específico, escriba (device.enrollmentProfileName -eq "Nombre de perfil de Autopilot"). 

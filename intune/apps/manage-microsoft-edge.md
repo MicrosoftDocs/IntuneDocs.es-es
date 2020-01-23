@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547999"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258502"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Administración del acceso web mediante Microsoft Edge con Microsoft Intune
 
@@ -181,7 +181,7 @@ Use el siguiente par clave-valor para configurar un acceso directo en la página
 
 |    Key    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique una dirección URL válida. Las direcciones URL incorrectas se bloquean como medida de seguridad.<br>**Ejemplo:**  <`https://www.bing.com`>
+|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique una dirección URL válida. Las direcciones URL incorrectas se bloquean como medida de seguridad.<br>**Ejemplo:** <`https://www.bing.com`>
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configuración del color de marca y del logotipo de la organización para nuevas páginas de pestañas en Microsoft Edge
 
@@ -205,7 +205,7 @@ Puede configurar la experiencia de las páginas Nueva pestaña en Microsoft Edg
 
 |    Key    |    Valor    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    "com.microsoft.intune.SohwIndustryNews"    |    **True** mostrará las noticias del sector en la página Nueva pestaña de Microsoft Edge para dispositivos móviles.<p>**False** (valor predeterminado) ocultará las noticias del sector en la página Nueva pestaña.    |
+|    com.microsoft.intune.ShowIndustryNews    |    **True** mostrará las noticias del sector en la página Nueva pestaña de Microsoft Edge para dispositivos móviles.<p>**False** (valor predeterminado) ocultará las noticias del sector en la página Nueva pestaña.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configuración de marcadores administrados para Microsoft Edge
 
@@ -217,6 +217,7 @@ Estos son algunos detalles:
 - Los usuarios no pueden eliminar ni modificar estos marcadores.
 - Aparecen en la parte superior de la lista. Los marcadores creados por los usuarios aparecen debajo de estos marcadores.
 - Si ha habilitado el redireccionamiento del proxy de aplicación, puede agregar aplicaciones web de proxy de aplicación mediante su dirección URL interna o externa.
+- Asegúrese de anteponer **http://** o **https://** a todas las direcciones URL al introducirlas en la lista.
 
 Use el siguiente par clave-valor para configurar marcadores administrados:
 
@@ -243,7 +244,7 @@ Use los siguientes pares clave-valor para configurar una lista de sitios permiti
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>Formatos de URL para la lista de sitios permitidos y bloqueados 
 Puede usar diferentes formatos de URL para crear listas de sitios permitidos o bloqueados. Estos patrones permitidos se detallan en la tabla siguiente. Algunas notas antes de empezar: 
-- Asegúrese de anteponer **http** o **https** a todas las direcciones URL al introducirlas en la lista.
+- Asegúrese de anteponer **http://** o **https://** a todas las direcciones URL al introducirlas en la lista.
 - Puede usar el carácter comodín (\*) según las reglas de la siguiente lista de patrones permitidos.
 - Un carácter comodín solo puede coincidir con un componente entero del nombre de host (separado por puntos) o partes completas de la ruta de acceso (separadas por barras diagonales). Por ejemplo, `http://*contoso.com`**no** es compatible.
 - Puede especificar números de puerto en la dirección. Si no especifica un número de puerto, los valores usados son:
@@ -313,7 +314,7 @@ Las siguientes son consideraciones de seguridad y privacidad adicionales para Mi
 - Microsoft Edge no utiliza la configuración establecida por los usuarios para el explorador nativo en sus dispositivos, porque Microsoft Edge no puede acceder a esta configuración.
 - Puede configurar la opción **Requerir PIN sencillo para el acceso** o **Requerir credenciales corporativas para el acceso** en una directiva de protección de aplicaciones asociada a Microsoft Edge. Si un usuario selecciona el vínculo de ayuda en la página de autenticación, podrá navegar a cualquier sitio de Internet, independientemente de si este se ha agregado o no a una lista de bloqueados en la directiva.
 - Microsoft Edge puede bloquear el acceso a sitios solo cuando se accede a estos directamente. No bloquea el acceso cuando los usuarios usan servicios intermedios (por ejemplo, un servicio de traducción) para acceder al sitio.
-- Para permitir la autenticación y acceder a la documentación de Intune, * **.microsoft.com** está exento de la configuración de permitidos o bloqueados. Se permite siempre.
+- Para permitir la autenticación y acceder a la documentación de Intune, ***.microsoft.com** está exento de la configuración de permitidos o bloqueados. Se permite siempre.
 - Los usuarios pueden desactivar la recopilación de datos. Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso de Managed Browser para mejorar sus productos y servicios. Los usuarios pueden usar en sus dispositivos la configuración de **Datos de uso** para desactivar la recopilación de datos. No tiene ningún control sobre la recopilación de estos datos. En dispositivos iOS, no se pueden abrir los sitios web que visitan los usuarios y que tienen un certificado expirado o que no es de confianza.
 
 ## <a name="next-steps"></a>Pasos siguientes

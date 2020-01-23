@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907294"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036616"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Envío de notificaciones personalizadas en Intune  
 
@@ -38,7 +38,7 @@ Los mensajes de notificación personalizados incluyen un título corto y un cuer
 
 ## <a name="considerations-for-using-custom-notifications"></a>Consideraciones sobre el uso de notificaciones personalizadas
 
-**Configuración de dispositivos** 
+**Configuración del dispositivo** 
 
 - Los dispositivos deben tener la aplicación Portal de empresa o la de Microsoft Intune instalada para que los usuarios puedan recibir notificaciones personalizadas. También deben tener permisos configurados para permitir que la aplicación Portal de empresa o la de Microsoft Intune envíe notificaciones push. En caso necesario, la aplicación Portal de empresa y la de Microsoft Intune pueden pedir a los usuarios que permitan las notificaciones.  
 - En Android, Google Play Services es una dependencia necesaria.  
@@ -89,13 +89,13 @@ Intune no realiza un seguimiento de las notificaciones personalizadas que envía
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Envío de una notificación personalizada a un solo dispositivo  
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) con una cuenta que tenga permisos para crear y enviar notificaciones y vaya a **Dispositivos** > **Todos los dispositivos**.  
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) con una cuenta que tenga permisos para crear y enviar notificaciones y vaya a **Dispositivos** > **Todos los dispositivos**.
 
-2. Seleccione el dispositivo al que desea enviar una notificación.  
+2. Haga doble clic en el nombre del dispositivo administrado al que quiere enviar una notificación para abrir la página *Información general* de esos dispositivos.
 
-3. En la página **Información general** de los dispositivos, seleccione la opción **...** (puntos suspensivos) en el lateral superior derecho de la página.  
+3. En la página **Información general** de los dispositivos, seleccione la acción de dispositivo **Enviar notificación personalizada** para abrir el panel *Enviar notificación personalizada*. Si esta opción no está disponible, seleccione los puntos suspensivos (**...**) en la parte superior derecha de la página y, luego, seleccione **Enviar notificación personalizada**.
 
-4. Seleccione la acción de dispositivo **Envío de una notificación personalizada** para abrir el panel *Envío de una notificación personalizada*, donde puede especificar los siguientes detalles del mensaje:  
+4. En el panel **Enviar notificación personalizada**, especifique los siguientes detalles del mensaje:  
 
    - **Título**: especifique un título para esta notificación. Los títulos están limitados a 50 caracteres.  
    - **Cuerpo**: especifique el mensaje. Los mensajes están limitados a 500 caracteres.  

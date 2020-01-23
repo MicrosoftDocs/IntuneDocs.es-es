@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdd97e69c97df5a266e147381d94b3d4419bab34
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509888"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036571"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Inicio rápido: Creación de un usuario en Intune y asignación de una licencia
 
@@ -33,7 +33,7 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 Inicie sesión en [Intune](https://aka.ms/intuneportal) como [administrador global o administrador de servicios de Intune](users-add.md#types-of-administrators). Si ha creado una suscripción de prueba de Intune, la cuenta con la que la haya creado es el administrador global.
 
-## <a name="create-a-user"></a>Crear un usuario
+## <a name="create-a-user"></a>Creación de un usuario
 
 Los usuarios deben tener una cuenta de usuario para poder inscribirse en la administración de dispositivos de Intune. Para crear un usuario:
 
@@ -50,11 +50,11 @@ Los usuarios deben tener una cuenta de usuario para poder inscribirse en la admi
 
 ## <a name="assign-a-license-to-the-user"></a>Asignar una licencia a un usuario
 
-Después de crear un usuario, debe usar el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para asignarle una licencia de Intune. Si no se le asigna una licencia al usuario, no podrá inscribir su dispositivo en Intune. 
+Después de crear un usuario, debe usar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para asignarle una licencia de Intune. Si no se le asigna una licencia al usuario, no podrá inscribir su dispositivo en Intune. 
 
 Para asignar una licencia de Intune a un usuario:
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) con las mismas credenciales que ha usado para iniciar sesión en Intune.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) con las mismas credenciales que ha usado para iniciar sesión en Intune.
 2. Elija **Usuarios** > **Usuarios activos** > y elija el usuario que acaba de crear.
 3. Junto a **Licencias de productos**, seleccione **Editar**.
 4. En **Ubicación**, elija una ubicación para el usuario.
@@ -68,7 +68,7 @@ Ahora el nuevo usuario activo de Intune mostrará que está usando una licencia 
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 
-Si ya no necesita este usuario, puede eliminarlo desde el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Allí, elija **Usuarios** > **Usuarios activos** > *elija el usuario en la lista* > **Eliminar usuario** > **Eliminar usuario** > **Confirmar cambios** > **Cerrar**.
+Si ya no necesita este usuario, puede eliminarlo desde el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854). Allí, elija **Usuarios** > **Usuarios activos** > *elija el usuario en la lista* > **Eliminar usuario** > **Eliminar usuario** > **Confirmar cambios** > **Cerrar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
