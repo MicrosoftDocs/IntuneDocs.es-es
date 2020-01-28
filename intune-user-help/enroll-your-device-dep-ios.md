@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855517"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951454"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Inscripción de dispositivos iOS proporcionados por la organización en la administración
 
@@ -44,11 +44,7 @@ Si usa un dispositivo iOS propio, que la organización no le haya proporcionado,
 
 1. Encienda el dispositivo iOS.
 2. Una vez seleccionado el **idioma**, conecte el dispositivo a la red Wi-Fi.
-3. En la pantalla de **configuración del dispositivo iOS**, elija lo que quiera hacer:
-   - **Set Up as New device** (Configurar como un nuevo dispositivo)
-   - **Restore from iCloud Backup** (Restaurar desde la copia de seguridad de iCloud)
-   - **Restore from iTunes Backup** (Restaurar desde la copia de seguridad de iTunes)
-
+3. En la pantalla **Set up iOS device** (Configurar dispositivo iOS), seleccione **Set up as new device** (Configurar como nuevo dispositivo).  
 4. Una vez que se haya conectado a la red Wi-Fi, aparecerá la pantalla **Configuración**, donde se le indicará que **[su empresa] configurará automáticamente su dispositivo.**
 
    **La configuración permite que [su empresa] administre este dispositivo de forma inalámbrica. Un administrador puede ayudarle a configurar las cuentas de red y correo electrónico, instalar y configurar aplicaciones y administrar la configuración de manera remota. Un administrador puede deshabilitar características, instalar y quitar aplicaciones, supervisar y restringir el tráfico de Internet y borrar de manera remota este dispositivo.**

@@ -5,7 +5,7 @@
   items:
     - name: Información general sobre la administración de dispositivos
       href: device-management.md
-- name: Guías paso a paso
+- name: Guías de procedimientos
   items:
     - name: Bloqueos y contraseñas
       items:
@@ -33,13 +33,13 @@
           href: device-supervised-mode.md
         - name: Borrar el contenido de un dispositivo macOS
           href: device-erase.md
-        - name: Omitir el bloqueo de activación
-          href: device-activation-lock-bypass.md
+        - name: Deshabilitación del bloqueo de activación
+          href: device-activation-lock-disable.md
     - name: Acciones del usuario
       items:
         - name: Cierre de sesión del usuario actual
           href: device-logout-user.md
-        - name: Quitar usuario
+        - name: Eliminación de usuario
           href: device-remove-user.md
         - name: Buscar usuario principal
           href: find-primary-user.md
@@ -55,7 +55,7 @@
           href: device-sync.md
         - name: Examen del inventario de dispositivos
           href: device-inventory.md
-    - name: Solucionar problemas
+    - name: Solución de problemas
       items:
         - name: Solución de problemas de acciones de dispositivos
           href: troubleshoot-device-actions.md

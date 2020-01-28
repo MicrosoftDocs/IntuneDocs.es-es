@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 831a22dfb6eebfe74b9886a1c83560f68a11c04e
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502659"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036596"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Administrar contratos de licencia de software de equipos Windows en Microsoft Intune
 
@@ -51,7 +51,7 @@ Asimismo, puede generar informes que muestran recuentos de instalaciones y de li
 > El área de trabajo **Licencias** no se muestra en la consola de administrador hasta que administre al menos un equipo Windows con el cliente para PC Windows de Intune.
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Agregar contratos de licencias por volumen de Microsoft
-Los contratos de licencias por volumen de Intune proporcionan información de licencias del software adquirido a través de contratos de licencias por volumen de Microsoft. Puede agregar contratos de licencias por volumen de Microsoft a Intune mediante pares coincidentes de números de contrato. Los números de autorización o contrato deben coincidir con los números de inscripción o licencia correctos. Los pares de números de contrato se obtienen al adquirir los contratos de licencia del [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
+Los contratos de licencias por volumen de Intune proporcionan información de licencias del software adquirido a través de contratos de licencias por volumen de Microsoft. Puede agregar contratos de licencias por volumen de Microsoft a Intune mediante pares coincidentes de números de contrato. Los números de autorización o contrato deben coincidir con los números de inscripción o licencia correctos. Los pares de números de contrato se obtienen al adquirir los contratos de licencia del [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842).
 
 1. En la [consola de administrador de Microsoft Intune](https://admin.manage.microsoft.com/), elija **Licencias**.
 
@@ -67,7 +67,7 @@ Los contratos de licencias por volumen de Intune proporcionan información de li
 
         - Únicamente se admiten caracteres ASCII.
 
-        - No se admiten los siguientes caracteres en el nombre del contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Se permiten espacios en el nombre.
+        - No se permiten los siguientes caracteres en el nombre del contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Se permiten espacios en el nombre.
 
         - El nombre de archivo no debe tener más de 128 caracteres.
 
@@ -93,7 +93,7 @@ Los contratos de licencias por volumen de Intune proporcionan información de li
 
         - **Nombre del contrato**: especifique un nombre único para el contrato.
 
-            El nombre del contrato puede tener 256 caracteres como máximo y no puede contener los caracteres siguientes: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Se permiten espacios en el nombre.
+            El nombre del contrato puede tener 256 caracteres como máximo y no puede contener los caracteres siguientes: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Se permiten espacios en el nombre.
 
         - **Número de autorización/contrato**: especifique el número de autorización/contrato del par de licencia.
 
@@ -116,7 +116,7 @@ Los contratos de licencias por volumen de Intune proporcionan información de li
 
 Se muestra la vista **Todos los contratos** e Intune se conecta al VLSC de Microsoft para validar los pares de números de contrato proporcionados.
 
-Para actualizar la información de licencias por volumen después de haber agregado contratos de licencias a Intune, en la página **Información general sobre licencias**, elija **Actualizar ahora**. Esta acción permite recuperar la información actual de las licencias del [Microsoft Volume Licensing Service Center (VLSC) (Centro de servicios de licencias por volumen (VLSC) de Microsoft)](http://go.microsoft.com/fwlink/?LinkId=223842).
+Para actualizar la información de licencias por volumen después de haber agregado contratos de licencias a Intune, en la página **Información general sobre licencias**, elija **Actualizar ahora**. Esta acción permite recuperar la información actual de las licencias del [Microsoft Volume Licensing Service Center (VLSC) (Centro de servicios de licencias por volumen (VLSC) de Microsoft)](https://go.microsoft.com/fwlink/?LinkId=223842).
 
 > [!IMPORTANT]
 > Hasta que actualice la información de licencias por volumen, es posible que vea una información diferente en la lista de contratos y en la información de derechos de la página **Información general sobre contratos** .
@@ -146,7 +146,7 @@ También puede agregar otros tipos de contratos de licencias a Intune, además d
 
 4. En el área **Agregar detalles del contrato** , especifique lo siguiente:
 
-    - **Agreement name** (obligatorio). El nombre del contrato puede tener 256 caracteres como máximo y no puede contener los caracteres siguientes: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Se permiten espacios en el nombre.
+    - **Agreement name** (obligatorio). El nombre del contrato puede tener 256 caracteres como máximo y no puede contener los caracteres siguientes: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Se permiten espacios en el nombre.
 
     - **Publicador** (obligatorio). Cuando empiece a escribir el nombre de un publicador, el servicio recupera todos los nombres de publicador que contienen las letras que escribe. Por ejemplo, si escribe "soft", el servicio recupera todos los nombres de editor que contienen "soft" como parte del nombre, tal como "Microsoft" y "Microsoft Research". Los nombres de publicador se recuperan del catálogo de activos de software. Debe seleccionar el publicador para poder especificar el título del producto.
 
@@ -182,8 +182,8 @@ Los contratos de licencias de software pueden agregarse a grupos de licencias. P
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            Tarea            |                                                                                                                                                                                 Detalles                                                                                                                                                                                  |
-|   Crear un grupo de licencias   |                                                            En la página <strong>Información general</strong> del área de trabajo <strong>Licencias</strong>, elija <strong>Crear grupo de licencias</strong> en el menú <strong>Tareas</strong>. <strong>Nota:</strong> Puede crear como máximo 500 grupos de licencias.                                                             |
+|   Crear un grupo de licencias   |                                                            En la página <strong>Información general</strong> del área de trabajo <strong>Licencias</strong>, elija <strong>Crear grupo de licencias</strong> en el menú <strong>Tareas</strong>. <strong>Nota:</strong> Puede crear como máximo 500 grupos de licencias.                                                             |
 |   Cambiar el nombre de un grupo de licencias   |                                                                                                      En el área de trabajo <strong>Licencias</strong>, elija un grupo de licencias y, después, elija <strong>Editar grupo de licencias</strong> en el menú <strong>Tareas</strong>.                                                                                                       |
-|   Eliminar un grupo de licencias   |                                 En el área de trabajo <strong>Licencias</strong>, elija un grupo de licencias y, después, elija <strong>Eliminar grupo de licencias</strong> en el menú <strong>Tareas</strong>. <strong>Sugerencia:</strong> Todas las licencias que se encontraban en el grupo eliminado se llevan al grupo de licencias <strong>Contratos sin asignar</strong>.                                 |
-| Eliminar un contrato de licencia | En el área de trabajo <strong>Licencias</strong>, elija un contrato y, después, elija <strong>Eliminar</strong>. <strong>Sugerencia:</strong> Después de eliminar los contratos de licencias por volumen, para actualizar la información de licencia, elija <strong>Actualizar ahora</strong> en la página <strong>Información general sobre licencias</strong> o en la pestaña <strong>General</strong> para un grupo de licencias determinado. |
+|   Eliminar un grupo de licencias   |                                 En el área de trabajo <strong>Licencias</strong>, elija un grupo de licencias y, después, elija <strong>Eliminar grupo de licencias</strong> en el menú <strong>Tareas</strong>. <strong>Sugerencia</strong>: Todas las licencias del grupo eliminado se mueven al grupo de licencias <strong>Acuerdos sin asignar</strong>.                                 |
+| Eliminar un contrato de licencia | En el área de trabajo <strong>Licencias</strong>, elija un contrato y, después, elija <strong>Eliminar</strong>. <strong>Sugerencia</strong>: Después de eliminar los contratos de licencias por volumen, para actualizar la información de licencia, seleccione <strong>Actualizar ahora</strong> en la página <strong>Información general sobre licencias</strong> o en la pestaña <strong>General</strong> de un grupo de licencias determinado. |
 
