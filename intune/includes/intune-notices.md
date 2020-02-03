@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760980"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912646"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune.
 
@@ -21,8 +21,8 @@ En la actualización del servicio de enero de Intune, tenemos previsto lanzar un
  
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
 En la actualidad hay tres roles disponibles en Azure AD para los profesionales de seguridad:
-- El rol Lector de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
-- El rol Operador de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
+- Rol Lector de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
+- Rol Operador de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
 - Administrador de seguridad de Azure AD. Cuando Intune envía la actualización de enero, junto con los permisos de solo lectura a Intune, los nuevos permisos proporcionados por el rol Administrador de seguridad de puntos de conexión son los siguientes:
     - Leer, Crear, Actualizar, Eliminar y Asignar directivas de cumplimiento de dispositivos
     - Leer, Eliminar y Actualizar dispositivos administrados
@@ -51,7 +51,7 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 El soporte estándar de Microsoft para Windows Phone 8.1 finalizó en julio de 2017, y el soporte ampliado finalizó en junio de 2019. La aplicación Portal de empresa para Windows Phone 8.1 está en modo de mantenimiento desde octubre de 2017. Microsoft Intune pondrá ahora fin al soporte técnico el 20 de febrero de 2020 para Windows Phone 8.1.
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-Después del 20 de febrero de 2020 estos dispositivos no recibirán ninguna actualización de seguridad y no podrá inscribir ningún dispositivo nuevo. Los dispositivos Windows Phone 8.1 existentes permanecerán inscritos (directiva, aplicaciones e informes), pero tenga en cuenta que después de esa fecha no se podrán solucionar problemas de inscripciones existentes, ya que muchos componentes, como los certificados de terceros, ya no son compatibles con la plataforma. Intune detendrá las pruebas de compatibilidad con Intune y Windows Phone 8.1.
+Después del 20 de febrero de 2020 estos dispositivos no recibirán ninguna actualización de seguridad y no podrá inscribir ningún dispositivo nuevo. Los dispositivos con Windows Phone 8.1 existentes permanecerán inscritos (directiva, aplicaciones e informes), pero tenga en cuenta que, después de esa fecha, no se podrán solucionar problemas de inscripciones existentes, ya que muchos componentes, como los certificados de terceros, ya no son compatibles con la plataforma. Intune detendrá las pruebas de compatibilidad con Intune y Windows Phone 8.1.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
 Puede comprobar los informes de Intune para ver qué dispositivos o usuarios pueden verse afectados. Vaya a Dispositivos > Todos los dispositivos y filtre por el sistema operativo. Puede agregar columnas adicionales para ayudar a identificar qué usuarios de su organización tienen dispositivos que ejecutan Windows Phone 8.1. Pida a los usuarios finales que actualicen sus dispositivos a una versión del sistema operativo compatible.
@@ -72,25 +72,11 @@ Para garantizar una transición fluida de Intune Managed Browser a Microsoft Ed
 2. Asegúrese de que todas las aplicaciones protegidas por MAM del entorno tienen la opción de la directiva de protección de aplicaciones "Restringir la transferencia de contenido web con otras aplicaciones" establecida en "Exploradores administrados por directivas". 
 3. Diríjase a todas las aplicaciones protegidas por MAM con el parámetro de configuración "com.microsoft.intune.useEdge" establecido en true. A partir del próximo mes, con la versión 1911, podrá llevar a cabo los pasos 2 y 3 simplemente configurando la opción "Restringir la transferencia de contenido web con otras aplicaciones" de manera que tenga "Microsoft Edge" seleccionado en la sección Protección de datos de las directivas de protección de aplicaciones. 
 
-La compatibilidad con los clips de web en iOS y Android estará próximamente disponible. Cuando se publique esta versión, tendrá que cambiar el destino de los clips de web preexistentes para asegurarse de que se abren en Microsoft Edge en lugar de en Managed Browser. 
+La compatibilidad con los clips de web en iOS y Android estará próximamente disponible. Cuando se publique esta versión, tendrá que cambiar el destino de los clips de web preexistentes para asegurarse de que se abren en Microsoft Edge, en lugar de en Managed Browser. 
 
 #### <a name="additional-information"></a>Información adicional
-Visite nuestros documentos sobre [el uso de Microsoft Edge con directivas de protección de aplicaciones](../apps/manage-microsoft-edge.md) para obtener más información, o consulte nuestra [entrada de blog sobre soporte técnico](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
+Consulte la documentación sobre el [uso de Microsoft Edge con directivas de protección de aplicaciones](../apps/manage-microsoft-edge.md) para obtener más información. También puede leer nuestra [entrada de blog sobre el soporte técnico](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Plan de cambio: Experiencia actualizada al inscribir dispositivos dedicados de Android Enterprise en Intune<!--5198878-->
-Con la versión de noviembre o 1911 de Intune, agregamos compatibilidad con la implementación de certificados de dispositivo SCEP en dispositivos Android Enterprise dedicados para permitir el acceso basado en certificados a los perfiles de Wi-Fi. Este cambio también implica algunos cambios secundarios en el flujo al inscribir dispositivos de Android Enterprise dedicados.
-
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-Si administra dispositivos dedicados de Android Enterprise en su entorno, comenzará a ver que la implementación de algunos cambios en noviembre.
-
-- Para nuevas inscripciones de dispositivos dedicados de Android Enterprise: Los usuarios finales verán un conjunto diferente de pasos en los dispositivos durante la inscripción. La inscripción comenzará de la misma manera que hoy (con QR, NFC, Zero-Touch o identificador de dispositivo), pero después de la versión de servicio de noviembre, habrá un paso de instalación de la aplicación obligatorio.
-- Para los dispositivos Android existentes inscritos como dispositivos dedicados: Intune comenzará a instalar automáticamente la aplicación de Microsoft Intune en dispositivos a partir de principios de noviembre. No es necesario hacer nada. La aplicación se descargará e instalará automáticamente en los dispositivos. 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
-Debe planear la actualización de las instrucciones para el usuario final y dejar que el departamento de soporte técnico se entere de este cambio. Haga clic en Información adicional para obtener más información y capturas de pantallas. Actualizaremos esta página de novedades cuando se implante este cambio.
-
-#### <a name="additional-information"></a>Información adicional
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Fin de la compatibilidad con la administración heredada de equipos
 
@@ -158,6 +144,6 @@ Recomendamos que en su organización se tenga en cuenta inmediatamente este plan
 - Revise la oferta de [Asesoría de aplicaciones de escritorio](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) a través de FastTrack, que ayudará a que se cumpla la promesa de Microsoft en cuanto a la compatibilidad de las aplicaciones.
 - Realice la transición de los dispositivos administrados del cliente de software Intune heredado a la solución recomendada de Microsoft para administrar Windows 10 mediante la administración de MDM. Inscriba todos los nuevos equipos con Windows 10 mediante la administración de MDM para Intune en Azure Portal.
 
-Vea la [entrada de blog publicada aquí](https://aka.ms/Windows7_Intune) para obtener más información.
+Para obtener más información, consulte [esta entrada del blog](https://aka.ms/Windows7_Intune).
 
 

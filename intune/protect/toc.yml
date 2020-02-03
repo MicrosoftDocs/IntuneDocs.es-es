@@ -6,7 +6,7 @@
     - name: Información general sobre la protección de dispositivos
       href: device-protect.md
       displayName: compliant; noncompliant; mfa
-- name: Inicios rápidos
+- name: Guías de inicios rápidos
   items:
     - name: Crear una directiva de cumplimiento de dispositivos
       href: quickstart-set-password-length-android.md
@@ -46,17 +46,17 @@
           href: privacy-data-audit-export-delete.md
         - name: Windows Information Protection
           href: windows-information-protection-configure.md
-- name: Guías paso a paso
+- name: Guías de procedimientos
   items:
     - name: Establecimiento de reglas en dispositivos para permitir el acceso a los recursos
       items:
         - name: Información general sobre el cumplimiento
           href: device-compliance-get-started.md
-        - name: Crear una directiva
+        - name: Creación de una directiva
           href: create-compliance-policy.md
         - name: Cumplimiento basado en la ubicación
           href: use-network-locations.md
-        - name: Acciones en caso de incumplimiento
+        - name: Acciones de no cumplimiento
           href: actions-for-noncompliance.md
         - name: Supervisión del cumplimiento del dispositivo
           href: compliance-policy-monitor.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Solución de problemas del conector de certificados
           href: troubleshoot-certificate-connector-events.md
+        - name: Solución de problemas de los perfiles de certificado SCEP
+          items:
+            - name: Solución de problemas de los perfiles de certificado SCEP
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: Implementación del perfil en los dispositivos
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: Comunicación entre el dispositivo y NDES
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: Operaciones NDES
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: Entrega de certificados en los dispositivos
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: Informes para la implementación de certificados
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Solucionar problemas de Exchange Connector
           items:
             - name: Solucionar problemas de Exchange Connector
