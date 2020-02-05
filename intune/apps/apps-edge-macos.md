@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6ebcb81cd0f186a3fd23e0701d12ea871eab129a
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563584"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912580"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Adición de Microsoft Edge a dispositivos macOS con Microsoft Intune
 
@@ -65,11 +65,15 @@ En este paso, proporcionará información sobre la implementación de esta aplic
 En este paso, configure las opciones de instalación de la aplicación.
 
 1. En el panel **Agregar aplicación**, seleccione **Configuración de la aplicación**.
-2. En el panel **Configuración de la aplicación**, el canal **Beta** está seleccionado automáticamente y no se puede cambiar.
-    - El canal **Beta** es la experiencia de versión preliminar de Microsoft Edge más estable y la mejor opción para una prueba piloto completa dentro de la organización. Con actualizaciones importantes cada seis semanas.
+2. En el panel **Configuración de la aplicación**, seleccione **Estable**, **Beta** o **Desarrollo** en la lista **Canal** para determinar desde qué canal de Edge se implementará la aplicación.
+
+    - El canal **estable** es el canal recomendado para la implementación en general en entornos empresariales. Se actualiza cada seis semanas y cada versión incorpora mejoras del canal beta.
+    - El canal **beta** es la experiencia de versión preliminar de Microsoft Edge más estable y la mejor opción para tener una prueba piloto completa dentro de la organización. Con actualizaciones principales cada seis semanas, cada versión incorpora los aprendizajes y las mejoras del canal de desarrollo.
+    - El canal de **desarrollo** está listo para los comentarios empresariales en Windows, Windows Server y macOS. Se actualiza cada semana y contiene las mejoras y correcciones más recientes.
 
     > [!NOTE]
-    > El logotipo del explorador Microsoft Edge aparece junto con la aplicación cuando los usuarios examinan el Portal de empresa.
+    > El logotipo del explorador Microsoft Edge se muestra con la aplicación cuando los usuarios examinan el Portal de empresa.
+
 3.  Seleccione **Aceptar**.
 
 ## <a name="select-scope-tags-optional"></a>Selección de Etiquetas de ámbito (opcional)

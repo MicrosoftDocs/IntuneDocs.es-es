@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036624"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517463"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Conector Wandera Mobile Threat Defense con Intune  
 
@@ -48,7 +48,7 @@ Las siguientes plataformas son compatibles con Wandera cuando se inscriben en In
 - Android 5.0 y versiones posteriores  
 - iOS 10.2 y versiones posteriores  
 
-Para obtener más información sobre la plataforma y el dispositivo, consulte el [sitio web de Wandera](https://www.wandera.com/classic-help-center/).
+Para obtener más información sobre la plataforma y el dispositivo, consulte el [sitio web de Wandera](https://www.wandera.com/mobile-threat-defense/).
 
 ## <a name="prerequisites"></a>Requisitos previos  
 

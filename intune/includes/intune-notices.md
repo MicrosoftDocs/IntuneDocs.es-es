@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912646"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966372"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune.
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Característica actualizada: Nuevo rol RBAC en Intune<!--4253397-->
-En la actualización del servicio de enero de Intune, tenemos previsto lanzar un nuevo rol de seguridad en Intune. Verá este rol como "Administrador de seguridad de puntos de conexión" en Intune y el rol es una expansión del rol "Administrador de seguridad" de Azure AD.
- 
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-En la actualidad hay tres roles disponibles en Azure AD para los profesionales de seguridad:
-- Rol Lector de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
-- Rol Operador de seguridad de Azure AD, que proporciona acceso de solo lectura a Intune.
-- Administrador de seguridad de Azure AD. Cuando Intune envía la actualización de enero, junto con los permisos de solo lectura a Intune, los nuevos permisos proporcionados por el rol Administrador de seguridad de puntos de conexión son los siguientes:
-    - Leer, Crear, Actualizar, Eliminar y Asignar directivas de cumplimiento de dispositivos
-    - Leer, Eliminar y Actualizar dispositivos administrados
-    - Leer, Crear, Actualizar, Eliminar y Asignar bases de referencia de seguridad
-    - Leer y Actualizar tareas de seguridad
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
-Revise los roles RBAC de Intune hoy mismo. Si actualmente solo tiene administradores globales como roles, no es necesario realizar ningún cambio. Si usa roles y desea la granularidad que proporciona el Administrador de seguridad de puntos de conexión, asigne ese rol cuando esté disponible. Consulte la página [Novedades](../fundamentals/whats-new.md) de Intune para información sobre la versión de Intune actualizada. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Actualizada la instrucción de soporte técnico para la aplicación móvil de Adobe Acrobat Reader para Intune<!--5746776-->
 A finales de agosto, publicamos en MC188653 que la aplicación móvil de Adobe Acrobat Reader para Intune llegaría al final de su vida útil el 1 de diciembre de 2019 y que Adobe planeaba admitir las directivas de protección de aplicaciones de Intune dentro de su aplicación principal Acrobat Reader. Desde entonces, recibimos comentarios de los clientes solicitando más tiempo para permitir a los administradores de TI dirigirse a Adobe Acrobat Reader para Intune y a los usuarios finales empezar a utilizarlo. Dado el alto uso de Adobe Acrobat Reader para Intune en los dispositivos de los usuarios finales y su importancia en escenarios empresariales, queremos asegurarnos de que cualquier experiencia cumpla las necesidades de protección de las aplicaciones de su organización. 

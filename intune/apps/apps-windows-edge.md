@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2020
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
-ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
+ms.openlocfilehash: fa0156d059513a2586eb7d8866d23508be0af10c
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "76294802"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886685"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Adición de Microsoft Edge para Windows 10 a Microsoft Intune
 
@@ -80,7 +80,7 @@ En este paso, configure las opciones de instalación de la aplicación.
 
 ## <a name="select-scope-tags-optional"></a>Selección de Etiquetas de ámbito (opcional)
 Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para más información sobre las etiquetas de ámbito, vea Uso del control de acceso basado en rol y de las etiquetas de ámbito para la TI distribuida.
-1.  Seleccione **Ámbito (Etiquetas)** > **Agregar**.
+1.  Seleccione **Ámbito (Etiquetas)**  > **Agregar**.
 2.  Use el cuadro **Seleccionar** para buscar las etiquetas de ámbito.
 3.  Seleccione la casilla de verificación situada junto a las etiquetas de ámbito que desea asignar a esta aplicación.
 4.  Haga clic en **Seleccionar** > **Aceptar**.
