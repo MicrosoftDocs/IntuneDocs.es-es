@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: HT
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541866"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812435"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referencia de errores de instalación de aplicaciones de Intune
 
@@ -57,7 +57,7 @@ Los siguientes mensajes de error y descripciones proporcionan detalles sobre los
 
 | Código de error (Hex) | Código de error (Dec) | Mensaje o código de error | Descripción/Sugerencias de solución de problemas |
 |--------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x87D12906 | -2016335610 | Error del agente MDM de Apple: error del comando de instalación de la aplicación sin el motivo del error especificado. Vuelva a intentar instalar la aplicación. | El agente MDM de Apple ha devuelto que no se puede ejecutar el comando de instalación. |
+| 0x87D12906 | -2016335610 | Error del agente MDM de Apple: error del comando de instalación de la aplicación sin ningún motivo de error especificado. Vuelva a intentar instalar la aplicación. | El agente MDM de Apple ha devuelto que no se puede ejecutar el comando de instalación. |
 | 0x87D1313C | -2016333508 | Se perdió o se interrumpió la conexión de red en el cliente. Los intentos posteriores no deberían tener problemas en un entorno de red mejor. | Se perdió la conexión de red mientras se enviaba la dirección URL del servicio de descarga actualizada al dispositivo. En concreto, no se encontró un servidor con el nombre de host especificado. |
 | 0x87D11388 | -2016341112 | El dispositivo iOS está ocupado actualmente.  | El dispositivo iOS estaba ocupado, lo que provocó un error. El dispositivo estaba bloqueado. El usuario debe desbloquear el dispositivo para instalar la aplicación. |
 | 0x87D13B64 | -2016330908 | Error al instalar la aplicación.  | Se ha producido un error de instalación de la aplicación. Para solucionar este error se necesitan los registros de la consola de iOS. |
@@ -90,9 +90,7 @@ Los siguientes mensajes de error y descripciones proporcionan detalles sobre los
 | 0x87D13B72 | -2016330894 | Se ha perdido la conexión a Internet.  | Error de validación del manifiesto de la aplicación debido a la conectividad de red (pérdida de conexión). |
 | 0x87D13B73 | -2016330893 | Se ha perdido la conexión a Internet.  | Error de validación del manifiesto de la aplicación debido a la conectividad de red (no hay conexión a Internet). |
 | 0x87D13B77 | -2016330889 | Error de conexión segura.  | Error de validación del manifiesto de la aplicación debido a la conectividad de red (error de conexión segura) |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError | Error en la instalación de la aplicación debido a un error al conectarse a iTunes Store. |
-| 0x87D13B6E | -2016330898 |   | Error de validación del manifiesto de la aplicación debido a la conectividad de red (desconocido). |
 | 0x87D13B9F  | -2016330849 | Hay una actualización disponible para la aplicación VPP. | Este código se devuelve cuando se instala una aplicación VPP pero hay una versión más reciente disponible. |
 
 ## <a name="other-installation-errors"></a>Otros errores de instalación

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653944"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912682"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -41,7 +41,6 @@ Para obtener más información sobre la herramienta de ajuste de aplicaciones pa
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Razones para usar la herramienta de ajuste de aplicaciones
 
 * La aplicación no tiene funciones de protección de datos integradas.
-* La aplicación es sencilla.
 * La aplicación se implementa internamente.
 * No tiene acceso al código fuente de la aplicación
 * No ha desarrollado la aplicación.
@@ -63,7 +62,6 @@ Para obtener más información sobre el SDK, consulte la [Introducción](app-sdk
 ### <a name="reasons-to-use-the-sdk"></a>Razones para usar el SDK
 
 * La aplicación no tiene funciones de protección de datos integradas.
-* La aplicación es compleja y contiene muchas experiencias.
 * La aplicación se implementa en una tienda de aplicaciones pública como Google Play o el App Store de Apple.
 * Es un desarrollador de aplicaciones y tiene la experiencia técnica para usar el SDK.
 * La aplicación tiene otras integraciones de SDK.
@@ -76,13 +74,13 @@ Para obtener más información sobre el SDK, consulte la [Introducción](app-sdk
 |**iOS**|Sí: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|No|
 |**Android**| Sí: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|No|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>¿No usa una plataforma de desarrollo de aplicaciones mencionada anteriormente?
+## <a name="not-using-an-app-development-platform-listed-above"></a>¿No usa una plataforma de desarrollo de aplicaciones de entre las indicadas arriba?
 
 El equipo de desarrollo del SDK de Intune comprueba y mantiene de forma activa la compatibilidad con las aplicaciones creadas con las plataformas nativas de Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms y Cordova. Aunque algunos clientes han podido integrar con éxito el SDK de Intune con otras plataformas como React Native y NativeScript, no proporcionamos instrucciones explícitas o complementos para desarrolladores de aplicaciones que no utilicen nuestras plataformas compatibles. 
 
 ## <a name="feature-comparison"></a>Comparación de características
 
-En la siguiente tabla se enumeran los valores que puede usarse para el SDK para aplicaciones y la herramienta de ajuste de aplicaciones.
+En esta tabla se indican los valores que se habilitan si una aplicación usa App SDK o App Wrapping Tool. Algunas características exigen que los desarrolladores de aplicaciones apliquen cierta lógica fuera de la integración básica con Intune SDK y, por eso, no se habilitan si la aplicación usa App Wrapping Tool. 
 
 |Característica|SDK para aplicaciones|Herramienta de ajuste de aplicaciones|
 |-----------|---------------------|-----------|
@@ -105,9 +103,9 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Bloquear captura de pantalla (solo Android)|X|X|
 |Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
 |Borrado completo de datos de aplicaciones|X|X|
-|Borrado selectivo de datos profesionales y educativos en escenarios de identidades múltiples <br><br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
+|Borrado selectivo de datos profesionales y educativos en escenarios de varias identidades <br><br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
 |Impedir "Guardar como"|X||
-|Configuración de la aplicación de destino (o configuración de la aplicación a través del "canal de MAM")|X||
+|Configuración de aplicación de destino (o configuración de aplicación a través del "canal de MAM")|X|X|
 |Compatibilidad con aplicaciones de identidades múltiples|X||
 |Estilo personalizable |X|||
 |Conexiones VPN de aplicación a petición con Citrix mVPN|X|X| 
@@ -119,6 +117,11 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Requerir el SDK de Intune mínimo para iOS (solo iOS)|X|X|
 |Atestación de dispositivo SafetyNet (solo Android)|X|X|
 |Examen de amenazas en las aplicaciones (solo Android)|X|X|
+|Requerir nivel de riesgo máximo y mínimo de dispositivo de proveedor de Mobile Threat Defense|X||
+|Configuración del contenido de las notificaciones de una aplicación para las cuentas de organización|X|X|
+|Requerir uso de teclados aprobados (solo Android)|X|X|
+|Requerir directiva de protección de aplicaciones (acceso condicional)|X||
+|Requerir aplicación cliente aprobada (acceso condicional)|X||
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39978043428f6ad912832007f60628815d6549a6
-ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
-ms.translationtype: HT
+ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75920076"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754582"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -41,19 +41,19 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="general"></a>General
 
-### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: Todos los tipos de inscripción
+### <a name="settings-apply-to-all-enrollment-types"></a>Las opciones se aplican a: Todos los tipos de inscripción
 
 - **Compartir los datos de uso**: Elija **Bloquear** para evitar que el dispositivo envíe a Apple datos de diagnóstico y uso. **No configurado** (valor predeterminado) permite que se envíen estos datos.
 
 - **Captura de pantalla**: elija **Bloquear** para impedir que se hagan capturas de pantalla en el dispositivo. En iOS 9.0 y versiones más recientes, también bloquea las grabaciones de pantalla. **No configurado** (valor predeterminado) permite que el usuario capture el contenido de la pantalla como imagen o como vídeo.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 - **Certificados TLS que no son de confianza**: Elija **Bloquear** para evitar en el dispositivo los certificados de Seguridad de la capa de transporte (TLS) que no son de confianza. **Sin configurar** (valor predeterminado) permite certificados TLS.
 - **Bloquear actualizaciones móviles de PKI**: **Bloquear** impide que los usuarios reciban actualizaciones de software, a menos que el dispositivo esté conectado a un equipo. **No configurado** (valor predeterminado): permite que un dispositivo reciba actualizaciones de software sin estar conectado a un equipo.
 - **Limitar el seguimiento de publicidad**: Elija **Limitar** para deshabilitar el identificador de publicidad del dispositivo. **Sin configurar** (valor predeterminado) lo mantiene habilitado.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Modificación de la configuración del envío de diagnósticos**: **Bloquear** evita que el usuario cambie la configuración de análisis de aplicación y envío de diagnóstico en **Datos de diagnóstico y uso** (configuración del dispositivo). **No configurado** (valor predeterminado) permite que el usuario cambie esta configuración del dispositivo.
 
@@ -93,7 +93,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Cambios en el perfil de configuración**: **Bloquear** evita los cambios del perfil de configuración en el dispositivo. **No configurado** (valor predeterminado) permite que el usuario instale perfiles de configuración.
 - **Bloqueo de activación**: Elija **Permitir** para habilitar Bloqueo de activación en dispositivos iOS supervisados. Bloqueo de activación dificulta que un dispositivo robado o perdido pueda reactivarse.
 - **Bloquear la eliminación de aplicaciones**: Elija **Bloquear** para evitar que los usuarios quiten aplicaciones. **No configurado** (valor predeterminado) permite que los usuarios quiten aplicaciones del dispositivo.
-- **Permitir accesorios USB con el dispositivo bloqueado**: **Permitir** permite que los accesorios USB intercambien datos con un dispositivo bloqueado durante más de una hora. **No configurado** (valor predeterminado) no actualiza el modo restringido de USB en el dispositivo y los accesorios USB no podrán transferir datos del dispositivo si están bloqueados durante más de una hora.
+- **Permitir accesorios USB con el dispositivo bloqueado**: **Permitir** permite que los accesorios USB intercambien datos con un dispositivo que ha estado bloqueado durante más de una hora. **No configurado** (valor predeterminado) no actualiza el modo restringido de USB en el dispositivo y los accesorios USB no podrán transferir datos del dispositivo si están bloqueados durante más de una hora.
 - **Forzar fecha y hora automáticas**: **Requerir** obliga a los dispositivos supervisados a establecer la fecha y la hora automáticamente. La zona horaria del dispositivo se actualiza cuando el dispositivo tiene conexiones móviles o tiene Wi-Fi con servicios de ubicación habilitados.
 - **Requerir que los estudiantes soliciten permiso para dejar el curso de Classroom**: **Requerir** obliga a los alumnos inscritos en un curso no administrado con la aplicación Aula a pedir permiso al profesor para dejar el curso. **No configurado** (valor predeterminado) no obliga al alumno a pedir permiso.
 
@@ -129,11 +129,11 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="password"></a>Contraseña
 
-### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: Todos los tipos de inscripción
+### <a name="settings-apply-to-all-enrollment-types"></a>Las opciones se aplican a: Todos los tipos de inscripción
 
 - **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **No configurado** (valor predeterminado) permite que los usuarios accedan al dispositivo sin tener que escribir una contraseña.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 > [!IMPORTANT]
 > En los dispositivos inscritos por usuarios, si configura cualquier opción de contraseña, la configuración de **Contraseñas sencillas** se establece automáticamente en **Bloquear** y se aplica un PIN de 6 dígitos.
@@ -167,7 +167,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
   **Opciones de iOS**:  
 
-  - **Sin configurar** (valor predeterminado): Intune no toca esta configuración.
+  - **Sin configurar** (valor predeterminado): Intune no modifica este valor.
   - **Inmediatamente**: la pantalla se bloquea tras 30 segundos de inactividad.
   - **1**: la pantalla se bloquea tras 1 minuto de inactividad.
   - **2**: la pantalla se bloquea tras 2 minutos de inactividad.
@@ -177,7 +177,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
     
   **Opciones de iPadOS**:  
 
-  - **Sin configurar** (valor predeterminado): Intune no toca esta configuración.
+  - **Sin configurar** (valor predeterminado): Intune no modifica este valor.
   - **Inmediatamente**: la pantalla se bloquea tras 2 minutos de inactividad.
   - **2**: la pantalla se bloquea tras 2 minutos de inactividad.
   - **5**: la pantalla se bloquea tras 5 minutos de inactividad.
@@ -191,18 +191,18 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 - **Expiración de la contraseña (días)** : Especifique el número de días antes de que se deba cambiar la contraseña del dispositivo.
 - **Impedir la reutilización de contraseñas anteriores**: Escriba el número de contraseñas nuevas que se deben usar antes de poder reutilizar una antigua.
-- **Desbloqueo de Touch ID y Face ID**: seleccione **Bloquear** para evitar el uso de una huella digital o una cara para desbloquear el dispositivo. **No configurado** permite que el usuario desbloquee el dispositivo con estos métodos.
+- **Desbloqueo de Touch ID y Face ID**: elija **Bloquear** para impedir el uso de una huella digital o una cara para desbloquear el dispositivo. **No configurado** permite que el usuario desbloquee el dispositivo con estos métodos.
 
   El bloqueo de esta configuración también evita el uso de la autenticación de FaceID para desbloquear el dispositivo.
 
   Face ID se aplica a:  
   - iOS 11.0 y versiones más recientes
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Modificación del código de acceso**: Elija **Bloquear** para evitar que se cambie, se agregue o se quite el código de acceso. En los dispositivos supervisados, los cambios en las restricciones del código de acceso se pasan por alto después de bloquear esta característica. **No configurado** (valor predeterminado) permite agregar, cambiar o quitar códigos de acceso.
 
-  - **Modificación de Touch ID y Face ID**: **Bloquear** evita que el usuario cambie, agregue o quite huellas digitales de TouchID y Face ID. **No configurado** (valor predeterminado) permite que el usuario actualice las huellas digitales de TouchID y de Face ID del dispositivo.
+  - **Modificación de Touch ID y Face ID**: la opción **Bloquear** impide que el usuario cambie, agregue o quite huellas digitales de Touch ID y Face ID. **No configurado** (valor predeterminado) permite que el usuario actualice las huellas digitales de TouchID y de Face ID del dispositivo.
 
     El bloqueo de esta configuración también evita que el usuario cambie, agregue o quite la autenticación de FaceID.
 
@@ -223,23 +223,23 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
   Esta característica se aplica a:  
   - iOS 11.0 y versiones más recientes
   
-<sup>1</sup>Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras el bloqueo de la pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, a pantalla se apaga automáticamente transcurridos cinco minutos y el dispositivo se bloquea después de cinco minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apaga la pantalla, el dispositivo se bloquea cinco minutos más tarde.
+<sup>1</sup> Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, a pantalla se apaga automáticamente transcurridos cinco minutos y el dispositivo se bloquea después de cinco minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apaga la pantalla, el dispositivo se bloquea cinco minutos más tarde.
 
 ## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
 
-### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: Todos los tipos de inscripción
+### <a name="settings-apply-to-all-enrollment-types"></a>Las opciones se aplican a: Todos los tipos de inscripción
 
 - **Acceso a Centro de control con dispositivo bloqueado**: Elija **Bloquear** para evitar el acceso a la aplicación Centro de control cuando el dispositivo está bloqueado. **No configurado** (valor predeterminado) permite que los usuarios accedan a la aplicación Centro de control cuando el dispositivo está bloqueado.
 - **Notificaciones con dispositivo bloqueado**: **Bloquear** evita el acceso a las notificaciones cuando el dispositivo está bloqueado. **No configurado** (valor predeterminado) permite que el usuario acceda a las notificaciones sin que sea necesario desbloquear el dispositivo.
 - **Vista Hoy con dispositivo bloqueado**: **Bloquear** evita el acceso a la vista Hoy cuando el dispositivo está bloqueado. **No configurado** (valor predeterminado) permite que el usuario vea la vista Hoy cuando el dispositivo está bloqueado.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 - **Notificaciones de Wallet con dispositivo bloqueado**: **Bloquear** evita el acceso a la aplicación Wallet cuando el dispositivo está bloqueado. **No configurado** (valor predeterminado) permite que el usuario acceda a la aplicación Wallet mientras el dispositivo está bloqueado.
 
 ## <a name="app-store-doc-viewing-gaming"></a>Tienda de aplicaciones, presentación de documentos, juegos
 
-### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: Todos los tipos de inscripción
+### <a name="settings-apply-to-all-enrollment-types"></a>Las opciones se aplican a: Todos los tipos de inscripción
 
 - **Visualización de documentos corporativos en aplicaciones no administradas**: **Bloquear** evita la visualización de documentos corporativos en aplicaciones no administradas. **No configurado** (valor predeterminado) permite ver los documentos corporativos en cualquier aplicación. Por ejemplo, se quiere evitar que los usuarios guarden archivos de la aplicación OneDrive en Dropbox. Configure este valor como **Bloquear**. Después de que el dispositivo recibe la directiva (por ejemplo, después de un reinicio), ya no le permite guardar.
 
@@ -247,31 +247,31 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
   > [!NOTE]
   > Cuando esta configuración está bloqueada, también se bloquean los teclados de terceros instalados desde App Store.
 
-  - **Permitir a las aplicaciones no administradas leer en cuentas de contactos administradas**: cuando se establece en **Permitir**, las aplicaciones no administradas, como la aplicación integrada Contactos de iOS, pueden leer información de contacto y acceder a ella desde aplicaciones administradas, incluida la aplicación móvil Outlook. **Sin configurar** (valor predeterminado) evita la lectura, incluso la eliminación de duplicados, en la aplicación de contactos integrada en el dispositivo.  
+  - **Permitir que las aplicaciones no administradas lean en cuentas de contactos administradas**: cuando se establece en **Permitir**, las aplicaciones no administradas, como la aplicación integrada Contactos de iOS, pueden leer información de contacto y acceder a ella desde aplicaciones administradas, incluida la aplicación móvil Outlook. **Sin configurar** (valor predeterminado) evita la lectura, incluso la eliminación de duplicados, en la aplicación de contactos integrada en el dispositivo.  
   
     Esta configuración permite o evita la lectura de información de contacto. No controla la sincronización de contactos entre las aplicaciones.
   
     Para usar este valor, establezca la opción **Visualización de documentos corporativos en aplicaciones no administradas** en **Bloquear**.
 
-  Para obtener más información sobre estas dos configuraciones y su impacto en Outlook para la sincronización de exportación de contactos de iOS, vea [Sugerencia de soporte técnico: uso de la configuración de perfil personalizada de Intune con la aplicación Contactos nativa de iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  Para obtener más información sobre estos dos valores y su impacto en Outlook para la sincronización de exportación de contactos de iOS, vea [Sugerencia de soporte técnico: uso de la configuración de perfil personalizada de Intune con la aplicación Contactos nativa de iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
 - **Tratar AirDrop como destino no administrado**: **Requerir** obliga a que se considere a Airdrop un destino para colocar no administrado. Impide que las aplicaciones administradas envíen datos mediante AirDrop. 
 - **Visualización de documentos no corporativos en aplicaciones corporativas**: **Bloquear** evita la visualización de documentos no corporativos en aplicaciones corporativas. **No configurado** (valor predeterminado) permite ver cualquier documento en aplicaciones administradas corporativas.
 
   Su establecimiento en **Bloquear** también evita la sincronización de exportación de contactos en Outlook para iOS. Para obtener más información, vea [Sugerencia de soporte técnico: habilitación de la sincronización de contactos entre Outlook e iOS con controles de MDM de iOS12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
-- **Requerir contraseña de iTunes Store para todas las compras**: **Requerir** exige al usuario escribir la contraseña del id. de Apple para cada compra desde la aplicación o iTunes. **Sin configurar** (valor predeterminado) permite compras sin pedir una contraseña cada vez.
+- **Requerir contraseña de iTunes Store para todas las compras**: **Requerir** exige al usuario escribir la contraseña del id. de Apple para cada compra en la aplicación o iTunes. **Sin configurar** (valor predeterminado) permite compras sin pedir una contraseña cada vez.
 - **Compras desde la aplicación**: Elija **Bloquear** para evitar las compras en la tienda desde la aplicación. **No configurado** (valor predeterminado) permite las compras en la tienda dentro de una aplicación en ejecución.
 - **Descargar contenido marcado como "Erótico" en iBooks Store**: Elija **Bloquear** para evitar que los usuarios descarguen archivos multimedia de iBooks Store marcados como eróticos. **No configurado** (valor predeterminado) permite que el usuario descargue libros con la categoría "Erotismo".
-- **Permitir a las aplicaciones administradas escribir contactos en cuentas de contactos no administradas**: cuando se establece en **Permitir**, las aplicaciones administradas, como la aplicación móvil Outlook, pueden guardar o sincronizar información de contacto, incluidos contactos corporativos y empresariales, en la aplicación Contactos integrada de iOS. Cuando se establece en **Sin configurar** (valor predeterminado), las aplicaciones administradas no pueden guardar ni sincronizar información de contacto en la aplicación Contactos integrada de iOS en el dispositivo.
+- **Permitir que las aplicaciones administradas escriban contactos en cuentas de contactos no administradas**: cuando se establece en **Permitir**, las aplicaciones administradas, como la aplicación móvil Outlook, pueden guardar o sincronizar información de contacto, incluidos contactos corporativos y empresariales, en la aplicación Contactos integrada de iOS. Cuando se establece en **Sin configurar** (valor predeterminado), las aplicaciones administradas no pueden guardar ni sincronizar información de contacto en la aplicación Contactos integrada de iOS en el dispositivo.
   
   Para usar este valor, establezca la opción **Visualización de documentos corporativos en aplicaciones no administradas** en **Bloquear**.
 
 - **Región de clasificaciones**: Elija la región de clasificaciones que quiere usar para las descargas permitidas. Luego elija las clasificaciones permitidas para **Películas**, **Programas de TV** y **Aplicaciones**.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Tienda de aplicaciones**: **Bloquear** evita el acceso a la tienda de aplicaciones en dispositivos supervisados. **Sin configurar** (valor predeterminado) permite el acceso.
 
@@ -289,7 +289,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
   A partir de iOS 13.0, esta configuración requiere dispositivos supervisados.
 
 - **Game Center**: **Bloquear** evita el uso de la aplicación Game Center. **No configurado** (valor predeterminado) permite usar la aplicación Game Center en el dispositivo.
-- **Juegos multijugador**: seleccione **Bloquear** para evitar juegos multijugador. **No configurado** (valor predeterminado) permite que el usuario disfrute juegos multijugador en el dispositivo.
+- **Juegos multijugador**: Elija **Bloquear** para evitar los juegos multijugador. **No configurado** (valor predeterminado) permite que el usuario disfrute juegos multijugador en el dispositivo.
 
   A partir de iOS 13.0, esta configuración requiere dispositivos supervisados.
 
@@ -300,14 +300,14 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="built-in-apps"></a>Aplicaciones integradas
 
-### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: Todos los tipos de inscripción
+### <a name="settings-apply-to-all-enrollment-types"></a>Las opciones se aplican a: Todos los tipos de inscripción
 
 - **Siri**: **Bloquear** evita el acceso a Siri. **No configurado** (valor predeterminado) permite usar el asistente de voz Siri en el dispositivo.
   - **Siri con dispositivo bloqueado**: Elija **Bloquear** para evitar el acceso a Siri cuando el dispositivo está bloqueado. **No configurado** (valor predeterminado) permite usar el asistente de voz Siri en el dispositivo cuando está bloqueado.
 
 - **Advertencias de fraude de Safari**: **Requerir** que las advertencias de fraude se muestren en el explorador web en el dispositivo. **No configurado** (valor predeterminado) deshabilita esta característica.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 - **Búsqueda de Spotlight para devolver resultados de Internet**: **Bloquear** evita que Spotlight devuelva resultados de una búsqueda en Internet. **No configurado** (valor predeterminado) permite que la búsqueda de Spotlight se conecte a Internet para proporcionar resultados de la búsqueda.
 
@@ -321,7 +321,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 - **Ventanas emergentes de Safari**: **Bloquear** para deshabilitar el bloqueador de elementos emergentes del explorador web. **Sin configurar** (valor predeterminado) permite el bloqueador de elementos emergentes.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Cámara**: elija **Bloquear** para impedir el acceso a la cámara del dispositivo. **No configurado** (valor predeterminado) permite el acceso a la cámara del dispositivo.
 
@@ -341,7 +341,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 - **Apple News**: Elija **Bloquear** para evitar el acceso a la aplicación Apple News en el dispositivo. **Sin configurar** (valor predeterminado) permite usar la aplicación Apple News.
 - **iBooks Store**: **Bloquear** evita el acceso a la tienda de iBooks. **Sin configurar** (valor predeterminado) permite que los usuarios examinen y compren libros en iBooks Store.
-- **Aplicación Mensajes del dispositivo**: **Bloquear** evita que los usuarios usen la aplicación Mensajes para iMessage. Si el dispositivo admite la mensajería de texto, el usuario puede seguir enviando y recibiendo mensajes de texto mediante SMS. **Sin configurar** (valor predeterminado) permite el uso de la aplicación Mensajes para enviar y leer mensajes mediante Internet.
+- **Aplicación Mensajes del dispositivo**: **Bloquear** impide que los usuarios usen la aplicación Mensajes para iMessage. Si el dispositivo admite la mensajería de texto, el usuario puede seguir enviando y recibiendo mensajes de texto mediante SMS. **Sin configurar** (valor predeterminado) permite el uso de la aplicación Mensajes para enviar y leer mensajes mediante Internet.
 - **Podcasts**: **Bloquear** evita que los usuarios usen la aplicación Podcasts. **Sin configurar** (valor predeterminado) permite usar la aplicación Podcasts.
 - **Servicio de música**: **Bloquear** revierte la aplicación Música al modo clásico y deshabilita el servicio Música. **No configurado** (valor predeterminado) permite usar la aplicación Apple Music.
 - **Servicio Radio de iTunes**: **Bloquear** evita que los usuarios usen la aplicación iTunes Radio. **Sin configurar** (valor predeterminado) permite usar la aplicación iTunes Radio.
@@ -376,7 +376,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="restricted-apps"></a>Aplicaciones restringidas
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 - **Tipo de lista de aplicaciones restringidas**: cree una lista de aplicaciones que los usuarios no pueden instalar ni usar. Las opciones son:
 
@@ -401,7 +401,7 @@ Para agregar aplicaciones a estas listas, puede:
 
 Se aplica a dispositivos con iOS 9.3 o versiones más recientes.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Tipo de lista de aplicaciones**: cree una lista de aplicaciones para mostrar u ocultar. Puede mostrar u ocultar aplicaciones integradas y aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094). Las opciones son:
 
@@ -429,14 +429,14 @@ Se aplica a dispositivos con iOS 9.3 o versiones más recientes.
 
 Para agregar aplicaciones, puede:
 
-- **Agregar**: seleccione esta opción para crear la lista de aplicaciones.
+- **Agregar**: seleccione para crear la lista de aplicaciones.
 - **Importe** un archivo .csv con detalles sobre la aplicación, incluida la dirección URL. Use el formato `<app url>, <app name>, <app publisher>`. O bien, **Exportar** para crear una lista de las aplicaciones restringidas que ha agregado, en el mismo formato.
 
 ## <a name="wireless"></a>Inalámbrico
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
-Nota necesaria para la itinerancia de datos (sugerencia o nota importante para evitar la confusión del cliente): Esta configuración no se muestra en el perfil de administración del dispositivo de destino. Esto se debe a que esta configuración se trata como una acción de dispositivo remoto y cada vez que se cambia el estado de la itinerancia de datos en el dispositivo, el servicio Intune vuelve a bloquearla. Aunque no esté en el perfil de administración, funciona si aparece como correcto en las notificaciones de la consola de administración. 
+Nota necesaria para la itinerancia de datos (sugerencia o nota importante para ayudar a aclarar la confusión del cliente): Este valor no se muestra en el perfil de administración del dispositivo de destino. Esto se debe a que esta configuración se trata como una acción de dispositivo remoto y cada vez que se cambia el estado de la itinerancia de datos en el dispositivo, el servicio Intune vuelve a bloquearla. Aunque no esté en el perfil de administración, funciona si aparece como correcto en las notificaciones de la consola de administración. 
 - **Itinerancia de datos**: elija **Bloquear** para impedir la itinerancia de datos a través de la red de telefonía móvil. **No configurado** (valor predeterminado) permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.
 
   > [!IMPORTANT]
@@ -454,7 +454,7 @@ Nota necesaria para la itinerancia de datos (sugerencia o nota importante para e
   - **Bloquear el uso de datos móviles**: Bloquee el uso de los datos móviles en **Todas las aplicaciones administradas** o **Elegir aplicaciones específicas**.
   - **Bloquear uso de datos móviles en itinerancia**: Bloquee el uso de los datos móviles en itinerancia en **Todas las aplicaciones administradas** o **Elegir aplicaciones específicas**.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Cambios en la configuración de uso de datos móviles de la aplicación**: Elija **Bloquear** para evitar los cambios en la configuración de uso de datos móviles de la aplicación. **No configurado** (valor predeterminado) permite que el usuario controle qué aplicaciones pueden usar datos móviles.
 - **Cambios en la configuración del plan de red de telefonía móvil**: **Bloquear** evita que los usuarios cambien cualquier configuración en el plan de telefonía móvil. **Sin configurar** (valor predeterminado) permite que los usuarios realicen cambios.
@@ -462,7 +462,7 @@ Nota necesaria para la itinerancia de datos (sugerencia o nota importante para e
   Esta característica se aplica a:  
   - iOS 11.0 y versiones más recientes
 
-- **Modificación por el usuario del punto de acceso personal**: cuando se establece en **Bloquear**, el usuario no puede cambiar la configuración del punto de acceso personal. **Sin configurar** (valor predeterminado) permite a los usuarios finales habilitar o deshabilitar su punto de acceso personal.
+- **Modificación por el usuario del punto de acceso personal**: cuando se establece en **Bloquear**, el usuario no puede cambiar el valor del punto de acceso personal. **Sin configurar** (valor predeterminado) permite a los usuarios finales habilitar o deshabilitar su punto de acceso personal.
 
   Si bloquea esta configuración y también **Punto de acceso personal**, se desactiva el punto de acceso personal.
 
@@ -475,7 +475,7 @@ Nota necesaria para la itinerancia de datos (sugerencia o nota importante para e
   
   Si no se puede conectar, anule la inscripción del dispositivo y vuelva a inscribirlo con un perfil de Wi-Fi. Luego establezca esta opción en **Requerir** en un perfil de restricciones de dispositivos y asigne el perfil al dispositivo.
 
-- **Conexión Wi-Fi siempre activada**: cuando se establece en **Requerir**, la Wi-Fi está activada en la aplicación Configuración. No se puede desactivar en Configuración ni en el centro de control, aun cuando el dispositivo esté en modo avión. **Sin configurar** (valor predeterminado) permite al usuario controlar la activación o desactivación de la conexión Wi-Fi.
+- **Conexión Wi-Fi siempre activada**: cuando se establece en **Requerir**, la conexión Wi-Fi está activada en la aplicación Configuración. No se puede desactivar en Configuración ni en el centro de control, aun cuando el dispositivo esté en modo avión. **Sin configurar** (valor predeterminado) permite al usuario controlar la activación o desactivación de la conexión Wi-Fi.
 
   La configuración de esta opción no evita que los usuarios seleccionen una red Wi-Fi.
 
@@ -484,18 +484,18 @@ Nota necesaria para la itinerancia de datos (sugerencia o nota importante para e
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
-### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: Todos los tipos de inscripción
+### <a name="settings-apply-to-all-enrollment-types"></a>Las opciones se aplican a: Todos los tipos de inscripción
 
 - **Detección de muñeca para Apple Watch enlazados**: **Requerir** fuerza a los dispositivos Apple Watch emparejados a usar la detección de muñeca. Cuando se requiere, el dispositivo Apple Watch no mostrará notificaciones si no se lleva puesto. 
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 - **Requerir contraseña de emparejamiento para solicitudes salientes de AirPlay**: **Requerir** exige una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos de Apple. **No configurado** (valor predeterminado) permite que el usuario transmita contenido mediante AirPlay sin tener que escribir una contraseña.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **AirDrop**: **Bloquear** evita el uso de AirDrop en el dispositivo. **No configurado** (valor predeterminado) permite usar la característica AirDrop para intercambiar contenido con dispositivos cercanos.
-- **Enlace con Apple Watch**: **Bloquear** evita el emparejamiento con un dispositivo Apple Watch. **No configurado** (valor predeterminado) permite el emparejamiento del dispositivo con Apple Watch.
+- **Enlace con Apple Watch**: **Bloquear** evita el emparejamiento con Apple Watch. **No configurado** (valor predeterminado) permite el emparejamiento del dispositivo con Apple Watch.
 - **Modificación de Bluetooth**: **Bloquear** evita que el usuario final cambie la configuración de Bluetooth en el dispositivo. **No configurado** (valor predeterminado) permite que el usuario cambie esta configuración.
 - **Emparejamiento de host para controlar los dispositivos con los que se puede emparejar un dispositivo iOS**: **Sin configurar** (valor predeterminado) deja que el emparejamiento de host permita al administrador controlar con qué dispositivos se puede emparejar un dispositivo iOS. **Bloquear** impide el emparejamiento de host.
 - **Bloquear AirPrint**: Elija **Bloquear** para evitar el uso de la característica AirPrint en el dispositivo. **No configurado** (valor predeterminado) permite que el usuario use AirPrint.
@@ -507,43 +507,43 @@ Nota necesaria para la itinerancia de datos (sugerencia o nota importante para e
   Esta característica se aplica a:  
   - iOS 11.0 y versiones más recientes
 
-- **Acceso a los archivos de la unidad USB**: los dispositivos pueden conectarse a una unidad USB y abrir archivos. **Deshabilitar** evita el acceso del dispositivo a la unidad USB en la aplicación Files cuando hay un USB conectado al dispositivo. Al deshabilitar esta característica también se evita que los usuarios finales transfieran archivos a una unidad USB conectada a un dispositivo iPad. **Sin configurar** (valor predeterminado) permite el acceso a una unidad USB en la aplicación Files.
+- **Acceso a los archivos de la unidad USB**: los dispositivos pueden conectarse a una unidad USB y abrir los archivos que contiene. **Deshabilitar** evita el acceso del dispositivo a la unidad USB en la aplicación Files cuando hay un USB conectado al dispositivo. Al deshabilitar esta característica también se evita que los usuarios finales transfieran archivos a una unidad USB conectada a un dispositivo iPad. **Sin configurar** (valor predeterminado) permite el acceso a una unidad USB en la aplicación Files.
 
   Esta característica se aplica a:  
   - iOS e iPadOS 13.0 y versiones más recientes
 
 ## <a name="keyboard-and-dictionary"></a>Teclado y diccionario
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Búsqueda de definiciones de palabras**: **Bloquear** evita que el usuario resalte una palabra y luego busque su definición en el dispositivo. **No configurado** (valor predeterminado) permite el acceso a la característica de búsqueda de definiciones.
 - **Teclados predictivos**: **No configurado** (valor predeterminado) permite usar teclados predictivos para sugerir las palabras que pueda querer el usuario. **Bloquear** impide esta característica.
 - **Autocorrección**: **No configurado** (valor predeterminado) permite que el dispositivo corrija automáticamente las palabras mal escritas. **Bloquear** impide usar la autocorrección.
 - **Revisión ortográfica de teclado**: **Sin configurar** (valor predeterminado) permite usar el corrector ortográfico en el dispositivo. **Bloquear** permite el corrector ortográfico.
-- **Métodos abreviados de teclado**: **Sin configurar** (valor predeterminado) permite el uso de métodos abreviados de teclado en el dispositivo. **Bloquear** impide que el usuario use los métodos abreviados de teclado.
+- **Métodos abreviados de teclado**: **Sin configurar** (valor predeterminado) permite usar métodos abreviados de teclado en el dispositivo. **Bloquear** impide que el usuario use los métodos abreviados de teclado.
 - **Dictado**: **Bloquear** evita que el usuario use la entrada de voz para escribir texto. **No configurado** (valor predeterminado) permite que el usuario use la entrada de dictado.
-- **QuickPath**: **Sin configurar** (valor predeterminado) permite a los usuarios usar QuickPath, que permite una entrada continua en el teclado del dispositivo. Los usuarios pueden escribir al deslizar el dedo por las teclas para crear palabras. **Bloquear** evita que los usuarios usen QuickPath. 
+- **QuickPath**: **Sin configurar** (valor predeterminado) deja a los usuarios usar QuickPath, que permite una entrada continua en el teclado del dispositivo. Los usuarios pueden escribir al deslizar el dedo por las teclas para crear palabras. **Bloquear** evita que los usuarios usen QuickPath. 
 
   Esta característica se aplica a:  
   - iOS 13.0 e iPadOS 13.0 y versiones más recientes
 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
-### <a name="settings-apply-to-all-enrollment-types"></a>La configuración se aplica a: Todos los tipos de inscripción
+### <a name="settings-apply-to-all-enrollment-types"></a>Las opciones se aplican a: Todos los tipos de inscripción
 
 - **Copia de seguridad cifrada**: **Requerir** obliga a que las copias de seguridad del dispositivo se cifren.
 - **Sincronización de aplicaciones administradas con la nube**: **No configurado** (valor predeterminado) permite que Intune administre las aplicaciones para sincronizar los datos con la cuenta de iCloud del usuario. **Bloquear** impide que estos datos se sincronicen con iCloud.
 - **Bloquear la copia de seguridad de libros empresariales**: Elija **Bloquear** para evitar que los usuarios hagan copias de seguridad de libros empresariales. **No configurado** (valor predeterminado) permite que los usuarios hagan una copia de seguridad de estos libros.
 - **Bloquear la sincronización de metadatos de libros empresariales (notas y eventos destacados)** : **Bloquear** evita la sincronización de notas y eventos destacados de libros empresariales. **Sin configurar** (valor predeterminado) permite la sincronización.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 - **Sincronización de Photo Stream en iCloud**: **No configurado** (valor predeterminado) permite que los usuarios habiliten **My Photo Stream** en su dispositivo para sincronizar en iCloud y que las fotos estén disponibles en todos los dispositivos del usuario. **Bloquear** impide la sincronización de Photo Stream en iCloud. El bloqueo de esta característica puede provocar una pérdida de datos. 
 - **Fototeca de iCloud**: Establezca en **Bloquear** para deshabilitar el uso de la Fototeca de iCloud para almacenar fotos y vídeos en la nube. Las fotos que no se hayan descargado de la Fototeca de iCloud en el dispositivo se quitarán del dispositivo. **No configurado** (valor predeterminado) permite usar la Fototeca de iCloud.
 - **Fotos en streaming compartidas**: Elija **Bloquear** para deshabilitar **Fotos compartidas en iCloud** en el dispositivo. **No configurado** (valor predeterminado) permite las fotos compartidas.
-- **Handoff**: **Sin configurar** (valor predeterminado) permite a los usuarios empezar a trabajar en un dispositivo iOS y luego seguir con el trabajo que han iniciado en otro dispositivo iOS o macOS. **Bloquear** impide esta entrega.
+- **Handoff**: **Sin configurar** (valor predeterminado) permite a los usuarios empezar a trabajar en un dispositivo iOS y, luego, seguir con el trabajo que han iniciado en otro dispositivo iOS o macOS. **Bloquear** impide esta entrega.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Copia de seguridad en iCloud**: **No configurado** (valor predeterminado) permite que el usuario realice una copia de seguridad del dispositivo en iCloud. **Bloquear** impide que el usuario cree una copia de seguridad del dispositivo en iCloud.
 
@@ -561,17 +561,17 @@ Nota necesaria para la itinerancia de datos (sugerencia o nota importante para e
 
 Use estos valores para configurar los dispositivos iOS de modo que ejecuten aplicaciones específicas en modo de aplicación única autónoma. Cuando se configura este modo y se ejecuta la aplicación, el dispositivo se bloquea. Solo puede ejecutar esa aplicación. Por ejemplo, agregue una aplicación que permita que los usuarios hagan una prueba en el dispositivo. Cuando se completan las acciones de la aplicación o quita esta directiva, el dispositivo vuelve a su estado normal.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Nombre de la aplicación**: escriba el nombre de la aplicación que quiere.
 - **Identificador de lote de aplicaciones**: escriba el [identificador del lote](bundle-ids-built-in-ios-apps.md) de la aplicación que quiere.
-- **Agregar**: seleccione esta opción para crear la lista de aplicaciones.
+- **Agregar**: seleccione para crear la lista de aplicaciones.
 
 También puede **importar** un archivo .csv con la lista de nombres de aplicaciones y sus identificadores de lote. O bien puede **Exportar** una lista existente que incluya las aplicaciones.
 
 ## <a name="kiosk"></a>Pantalla completa
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Aplicación para ejecutar en modo de pantalla completa**: Elija el tipo de aplicaciones que quiere que se ejecuten en pantalla completa. Las opciones son:
   - **Sin configurar** (valor predeterminado): no se aplica la configuración de pantalla completa. El dispositivo no se ejecuta en modo de pantalla completa.
@@ -593,16 +593,16 @@ También puede **importar** un archivo .csv con la lista de nombres de aplicacio
 
 - **VoiceOver**: **Requerir** que la configuración de accesibilidad VoiceOver esté establecida en el dispositivo para leer en voz alta el texto en pantalla. **No configurado** no ejecuta ni permite esta característica en pantalla completa.
 - **Zoom**: **Requerir** que la configuración Zoom esté establecida en el dispositivo para que los usuarios usen un toque para acercar en la pantalla. **No configurado** no ejecuta ni permite esta característica en pantalla completa.
-- **Bloqueo automático**: **Bloquear** evita el bloqueo automático del dispositivo. **No configurado** permite esta característica Administrador de contraseñas de Microsoft Edge.
+- **Bloqueo automático**: **Bloquear** impide el bloqueo automático del dispositivo. **No configurado** permite esta característica Administrador de contraseñas de Microsoft Edge.
 - **Cambio de timbre**: **Bloquear** deshabilita el conmutador de timbre (silencio) en el dispositivo. **No configurado** permite esta característica Administrador de contraseñas de Microsoft Edge.
 - **Rotación de pantalla**: **Bloquear** evita cambiar la orientación de la pantalla cuando el usuario gira el dispositivo. **No configurado** permite esta característica Administrador de contraseñas de Microsoft Edge.
 - **Botón de suspensión de pantalla**: seleccione **Bloquear** para deshabilitar el botón de reactivación de suspensión de pantalla en el dispositivo. **No configurado** permite esta característica Administrador de contraseñas de Microsoft Edge.
 - **Toque**: **Bloquear** deshabilita la pantalla táctil en el dispositivo. **No configurado** permite que el usuario use la pantalla táctil.
-- **Botones de volumen**: **Bloquear** evita el uso de los botones de volumen en el dispositivo. **Sin configurar** permite los botones de volumen.
+- **Botones de volumen**: **Bloquear** impide el uso de los botones de volumen en el dispositivo. **Sin configurar** permite los botones de volumen.
 - **Control de AssistiveTouch**: **Permitir** permite que los usuarios usen la función AssistiveTouch. **No configurado** deshabilita esta característica.
 - **Control Invertir colores**: **Permitir** invierte los cambios de color para que los usuarios puedan ajustar la función Invertir colores. **No configurado** deshabilita esta característica.
 - **Leer el texto seleccionado**: **Permitir** que la configuración de accesibilidad Reproducir selección esté establecida en el dispositivo. Esta característica lee en voz alta el texto seleccionado por el usuario. **No configurado** deshabilita esta característica.
-- **Modificación del control de voz**: **Permitir** deja a los usuarios cambiar el estado del control de voz en sus dispositivos. **Sin configurar** evita que los usuarios cambien el estado del control de voz en sus dispositivos.
+- **Modificación del control de voz**: **Permitir** deja a los usuarios cambiar el estado del control de voz en los dispositivos. **Sin configurar** evita que los usuarios cambien el estado del control de voz en sus dispositivos.
 
   Esta configuración solo es aplicable a:  
   - iOS 13.0 y versiones más recientes
@@ -617,13 +617,13 @@ También puede **importar** un archivo .csv con la lista de nombres de aplicacio
 
 ## <a name="domains"></a>Dominios
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivos, Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivos, también en el caso de la inscripción automatizada (con supervisión)
 
 - **Dominios de correo electrónico no marcados** > **URL de dominio de correo electrónico**: agregue una o más direcciones URL a la lista. Cuando los usuarios finales reciben un correo electrónico de un dominio distinto de los dominios que especifica, el correo electrónico se marca como correo electrónico no de confianza en la aplicación Mail de iOS.
 
 - **Dominios web administrados** > **URL de dominio web**: agregue una o varias URL a la lista. Los documentos que se descargan de los dominios que especifica se consideran administrados. Esta configuración solo se aplica a los documentos que se descargan con el explorador Safari.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>La configuración se aplica a: Inscripción de dispositivo automatizada (supervisado)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 
 - **Dominios de relleno automático de contraseña de Safari** > **URL de dominio**: agregue una o más direcciones URL a la lista. Los usuarios solo pueden guardar contraseñas web de las direcciones URL que aparecen en esta lista. Esta configuración solo se aplica al explorador Safari y a dispositivos en modo supervisado. Si no escribe ninguna dirección URL, se podrán guardar contraseñas de todos los sitios web.
 
@@ -636,7 +636,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 
 - Bloqueo de aplicaciones (modo de aplicación única) 
 - Proxy HTTP global 
-- Bypass del bloqueo de activación 
+- Deshabilitación del bloqueo de activación 
 - Modo de aplicación única autónoma 
 - Filtro de contenido web 
 - Establecer la pantalla de fondo y la pantalla de bloqueo 

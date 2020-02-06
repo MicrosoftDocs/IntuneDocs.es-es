@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517565"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812329"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -39,8 +39,11 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 Estas opciones de configuración usan [ApplicationManagement policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) (CSP de directiva de ApplicationManagement), que también indica las ediciones de Windows compatibles.
 
-- **Tienda de aplicaciones** (solo móvil): **Sin configurar** (valor predeterminado), permite a los usuarios finales acceder a la tienda de aplicaciones en dispositivos móviles. **Bloquear** evita el uso de la tienda de aplicaciones.
-- **Actualizar automáticamente las aplicaciones de la tienda**: **Sin configurar** (valor predeterminado), permite que las aplicaciones instaladas desde Microsoft Store se actualicen automáticamente. **Bloquear** evita que las actualizaciones se instalen automáticamente.
+- **Tienda de aplicaciones** (solo móvil): **Bloquear** impide que los usuarios finales accedan a la tienda de aplicaciones en dispositivos móviles. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir a los usuarios finales acceder a la tienda de aplicaciones.
+- **Actualizar automáticamente aplicaciones de la tienda**: **Bloquear** impide que las actualizaciones se instalen automáticamente desde Microsoft Store. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir que las aplicaciones instaladas desde Microsoft Store se actualicen automáticamente.
+
+  [CSP de ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **Instalación de aplicaciones de confianza**: elija si se pueden instalar aplicaciones que no sean de Microsoft Store, lo que también se conoce como transferencia local. La transferencia local consiste en instalar y luego ejecutar o probar una aplicación no certificada por Microsoft Store. Por ejemplo, una aplicación interna solo para la empresa. Las opciones son:
   - **Sin configurar** (valor predeterminado): Intune no cambia ni actualiza esta configuración.
   - **Bloquear**: evita la transferencia local. No se pueden instalar aplicaciones que no sean de Microsoft Store.
@@ -51,16 +54,36 @@ Estas opciones de configuración usan [ApplicationManagement policy CSP](https:/
   - **Permitir**: permite el modo de desarrollador y la transferencia local de aplicaciones.
 
   [Habilitar el dispositivo para el desarrollo](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) contiene más información sobre esta característica.
+  
+  [CSP de ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **Datos de aplicación compartidos entre usuarios**: seleccione **Permitir** para compartir datos de aplicación entre distintos usuarios en el mismo dispositivo y con otras instancias de esa aplicación. **Sin configurar** (valor predeterminado) evita que se compartan datos con otros usuarios y otras instancias de la misma aplicación.
-- **Usar solo una tienda privada**: **Permitir** solo permite que se descarguen aplicaciones de una tienda privada y no de la tienda pública, incluido un catálogo comercial. **Sin configurar** (valor predeterminado) permite que se descarguen aplicaciones de una tienda privada y de una pública.
-- **Inicio de aplicaciones de la tienda**: **Bloquear** deshabilita todas las aplicaciones que se han instalado previamente en el dispositivo, o bien que se han descargado de Microsoft Store. **Sin configurar** (valor predeterminado) permite abrir estas aplicaciones.
-- **Instalar los datos de aplicación en el volumen del sistema**: **Bloquear** evita que las aplicaciones almacenen datos en el volumen del sistema del dispositivo. **Sin configurar** (valor predeterminado) permite que las aplicaciones almacenen datos en el volumen de disco del sistema.
-- **Instalar las aplicaciones en la unidad del sistema**: **Bloquear** evita que las aplicaciones se instalen en la unidad del sistema del dispositivo. **Sin configurar** (valor predeterminado) permite que las aplicaciones se instalen en la unidad del sistema.
-- **Game DVR** (solo escritorio): **Bloquear** deshabilita la grabación y difusión de juegos de Windows. **Sin configurar** (valor predeterminado) permite la grabación y difusión de juegos.
+- **Datos de aplicación compartidos entre usuarios**: seleccione **Permitir** para compartir datos de aplicación entre distintos usuarios en el mismo dispositivo y con otras instancias de esa aplicación. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede impedir que se compartan datos con otros usuarios y otras instancias de la misma aplicación.
+
+  [CSP de ApplicationManagement/AllowSharedUserAppData](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **Usar solo una tienda privada**: **Permitir** solo permite que se descarguen aplicaciones de una tienda privada y no de la tienda pública, incluido un catálogo comercial. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir que se descarguen aplicaciones de una tienda privada y de una pública.
+
+  [CSP de ApplicationManagement/RequirePrivateStoreOnly](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **Inicio de aplicaciones de la tienda**: **Bloquear** deshabilita todas las aplicaciones que se han instalado previamente en el dispositivo, o bien que se han descargado de Microsoft Store. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir que se abran estas aplicaciones.
+
+  [CSP de ApplicationManagement/DisableStoreOriginatedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **Instalar los datos de aplicación en el volumen del sistema**: **Bloquear** evita que las aplicaciones almacenen datos en el volumen del sistema del dispositivo. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir que las aplicaciones almacenen datos en el volumen de disco del sistema.
+
+  [CSP de ApplicationManagement/RestrictAppDataToSystemVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **Instalar las aplicaciones en la unidad del sistema**: **Bloquear** evita que las aplicaciones se instalen en la unidad del sistema del dispositivo. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir que las aplicaciones se instalen en la unidad del sistema.
+
+  [CSP de ApplicationManagement/RestrictAppToSystemVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **Game DVR** (solo escritorio): **Bloquear** deshabilita la grabación y difusión de juegos de Windows. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir la grabación y retransmisión de juegos.
+
+  [CSP de ApplicationManagement/AllowGameDVR](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **Solo aplicaciones de la tienda**: esta opción determina la experiencia del usuario al instalar aplicaciones desde ubicaciones que no son Microsoft Store. Las opciones son:
 
-  - **Sin configurar** (valor predeterminado): permite a los usuarios finales instalar aplicaciones desde ubicaciones distintas de Microsoft Store, incluidas las aplicaciones definidas en otras configuraciones de directiva.  
+  - **Sin configurar** (valor predeterminado): Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema operativo puede permitir a los usuarios finales instalar aplicaciones desde ubicaciones distintas de Microsoft Store, incluidas las aplicaciones definidas en otras configuraciones de directiva.  
   - **Cualquier sitio**: desactiva las recomendaciones de aplicaciones y permite a los usuarios instalar aplicaciones desde cualquier ubicación.  
   - **Solo Store**: obliga a los usuarios finales a que solo instalen aplicaciones de Microsoft Store.
   - **Recomendaciones**: al instalar una aplicación desde Internet que está disponible en Microsoft Store, los usuarios ven un mensaje que recomienda descargarla de la tienda.  
@@ -68,11 +91,11 @@ Estas opciones de configuración usan [ApplicationManagement policy CSP](https:/
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Control de usuario sobre las instalaciones**: si está establecido en **Sin configurar** (valor predeterminado), Windows Installer evita que los usuarios cambien las opciones de instalación que habitualmente están reservadas para los administradores del sistema, como entrar al directorio para instalar los archivos. **Bloquear** permite que los usuarios cambien estas opciones de instalación y se omiten algunas de las características de seguridad de Windows Installer.
+- **Control de usuario sobre las instalaciones**: **Bloquear** impide que los usuarios cambien las opciones de instalación que normalmente están reservadas a los administradores del sistema, como la especificación del directorio para instalar los archivos. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, Windows Installer puede impedir que los usuarios cambien estas opciones de instalación y se omitan algunas de las características de seguridad de Windows Installer.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **Instalar aplicaciones con privilegios elevados**: si está establecido en **Sin configurar** (valor predeterminado), el sistema aplica los permisos del usuario actual cuando instala programas que un administrador del sistema no implementa ni ofrece. **Bloquear** indica a Windows Installer que use permisos elevados cuando instale cualquier programa en el sistema. Estos privilegios se extienden a todos los programas.
+- **Instalar aplicaciones con privilegios elevados**: **Bloquear** insta a Windows Installer a usar permisos elevados cuando instala cualquier programa en el sistema. Estos privilegios se extienden a todos los programas. Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. De forma predeterminada, el sistema puede aplicar los permisos del usuario actual cuando instala programas que un administrador del sistema no implementa ni ofrece. 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ Estas opciones de configuración usan [experience policy CSP](https://docs.micro
 
 - **URL de imagen de pantalla de bloqueo (solo equipos de escritorio)** : escriba la dirección URL de una imagen en formato JPG, JPEG o PNG que se usa como fondo de pantalla de la pantalla de bloqueo de Windows. Por ejemplo, escriba `https://contoso.com/image.png`. Esta opción bloquea la imagen y no se puede cambiar posteriormente.
 
-  [CSP de Personalization/LockScreenImageUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [CSP de Personalization/LockScreenImageUrl](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **Tiempo de espera de la pantalla configurable por el usuario (solo dispositivos móviles)** : **Permitir** permite a los usuarios configurar el tiempo de espera de la pantalla. **Sin configurar** (valor predeterminado) no da a los usuarios esta opción.
 
@@ -851,7 +874,7 @@ Estas opciones de configuración usan [defender policy CSP](https://docs.microso
 
 - **Enviar consentimiento de muestras**: actualmente, esta opción no tiene ningún efecto. No la use. Puede que se quite en una versión futura.
 
-- **Protección de acceso**: **Bloquear** impide el análisis de archivos a los que se ha tenido acceso o que se han descargado. Los usuarios no pueden activarlo.
+- **Protección de acceso**: **Bloquear** impide el análisis de archivos a los que se ha accedido o que se han descargado. Los usuarios no pueden activarlo.
 
   Cuando se establece en **Sin configurar** (valor predeterminado), Intune no cambia ni actualiza esta configuración. Si bloquea la opción y luego la vuelve a cambiar a **Sin configurar**, Intune la deja en el estado configurado previamente por el sistema operativo. De forma predeterminada, el sistema operativo habilita esta característica y permite a los usuarios cambiarla.
 
