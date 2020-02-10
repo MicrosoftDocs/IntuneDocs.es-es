@@ -116,7 +116,7 @@ Para autenticar un dispositivo con VPN, Wi-Fi u otros recursos, el dispositivo n
 5. En la pestaña **General**, establezca el **nombre para mostrar de la plantilla** en un nombre significativo para usted.
 
     > [!WARNING]
-    > El **nombre de la plantilla** predeterminado es el mismo que el **nombre para mostrar de la plantilla***sin espacios*. Apunte el nombre de la plantilla, lo necesitará más adelante.
+    > El **nombre de la plantilla** predeterminado es el mismo que el **nombre para mostrar de la plantilla** *sin espacios*. Apunte el nombre de la plantilla, lo necesitará más adelante.
 
 6. En **Tratamiento de la solicitud**, seleccione **Permitir que la clave privada se pueda exportar**.
 7. En **Criptografía**, confirme que el **Tamaño mínimo de clave** esté establecido en 2048.
