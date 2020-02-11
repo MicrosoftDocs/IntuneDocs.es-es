@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885809"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812477"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
@@ -95,8 +95,8 @@ Puede validar la directiva de configuración de aplicaciones mediante los tres m
 
 Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos no administrados para la configuración de aplicaciones administradas. Además de los pasos siguientes, puede acceder a los registros de aplicaciones administradas con Microsoft Edge. Para obtener más información, consulte [Uso de Microsoft Edge en iOS para acceder a los registros de aplicaciones administradas](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
-1. Si aún no está instalado en el dispositivo, descargue e instale **Intune Managed Browser** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
-2. Inicie **Intune Managed Browser** y seleccione **acerca de** > **intunehelp** en la barra de navegación.
+1. Si aún no está instalado en el dispositivo, descargue e instale **Microsoft Edge** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
+2. Inicie **Microsoft Edge** y seleccione **about** > **intunehelp** en la barra de navegación.
 3. Haga clic en **Introducción**.
 4. Haga clic en **Compartir registros**.
 5. Use la aplicación de correo que prefiera para enviarse el registro y verlo en su PC. 
@@ -139,8 +139,8 @@ Los detalles de configuración de la aplicación deben coincidir con las directi
 
 Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos administrados para la configuración de aplicaciones administradas.
 
-1. Si aún no está instalado en el dispositivo, descargue e instale **Intune Managed Browser** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
-2. Inicie **Intune Managed Browser** y seleccione **acerca de** > **intunehelp** en la barra de navegación.
+1. Si aún no está instalado en el dispositivo, descargue e instale **Microsoft Edge** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
+2. Inicie **Microsoft Edge** y seleccione **about** > **intunehelp** en la barra de navegación.
 3. Haga clic en **Introducción**.
 4. Haga clic en **Compartir registros**.
 5. Use la aplicación de correo que prefiera para enviarse el registro y verlo en su PC. 

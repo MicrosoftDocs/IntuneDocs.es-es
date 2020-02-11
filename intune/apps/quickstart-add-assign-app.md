@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563412"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755075"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Inicio rápido: Agregar y asignar una aplicación cliente
 
@@ -45,20 +45,18 @@ Se puede incluir una aplicación para que Intune pueda administrar los distintos
 
 Siga estos pasos para agregar una aplicación a Intune:
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. 
-2. Seleccione **Windows 10** en la sección **Conjunto de aplicaciones Office 365** del cuadro desplegable **Tipo de aplicación**.
-3. Seleccione **Configure conjunto de aplicaciones** para seleccionar las aplicaciones de Office que se van a asignar al usuario de Intune.
-4. Haga clic en **Aceptar** para aceptar las aplicaciones seleccionadas de forma predeterminada.
-5. Seleccione **Información del conjunto de aplicaciones**.
-6. Escriba **Conjunto de aplicaciones de Microsoft Office 365** como **nombre del conjunto**.
-7. Escriba **El conjunto de aplicaciones de Microsoft Office 365** como **Descripción del conjunto de aplicaciones**.
-8. Haga clic en **Sí** junto a **Mostrar como aplicación destacada en el Portal de empresa**.
-9. Haga clic en **Aceptar**.
-
-    ![Captura de pantalla al agregar información de la aplicación](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. Seleccione **Configuración del conjunto de aplicaciones**.
-11. En el cuadro desplegable **Canal de actualización**, seleccione **Mensual**.
-12. Haga clic en **Aceptar** > **Agregar**.
+2. Seleccione **Windows 10** en la sección **Conjunto de aplicaciones Office 365** del panel **Seleccionar tipo de aplicación**.
+3. Haga clic en **Seleccionar**. Se muestran los pasos para **Agregar aplicación**.
+4. Confirme los detalles predeterminados en la página **Información del conjunto de aplicaciones**.
+5. Haga clic en **Siguiente** para mostrar la página **Configurar conjunto de aplicaciones**.
+6. Junto a **Canal de actualización**, seleccione **Mensual** desde el cuadro desplegable.
+7. Confirme el resto de los detalles predeterminados en la página ***Configurar conjunto de aplicaciones**.
+8. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
+9. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para la aplicación. Para más información, consulte [Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida](~/fundamentals/scope-tags.md).
+10. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
+11. Seleccione las asignaciones de grupo para la aplicación. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md). 
+12. Elija **Siguiente** para mostrar la página **Revisar y crear**. Revise los valores y la configuración que especificó para la aplicación.
+13. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
 
 ## <a name="assign-the-app-to-a-group"></a>Asignar la aplicación a un grupo
 

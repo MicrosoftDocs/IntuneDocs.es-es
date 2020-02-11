@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713124"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812487"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Restablecimiento o eliminación del código de acceso de un dispositivo en Intune
 
@@ -34,7 +34,7 @@ En este documento se describe el restablecimiento del código de acceso tanto en
 | Plataforma | ¿Compatible? |
 | ---- | ---- |
 | Dispositivos Android con la versión 6 o anteriores | Sí |
-| Dispositivos Android Enterprise en modo de pantalla completa | Sí |
+| Dispositivos Android Enterprise inscritos como propietario del dispositivo | Sí |
 | Dispositivos iOS | Sí |
 | Dispositivos iOS inscritos con Inscripción de usuario | No |
 | Dispositivos Android inscritos con un perfil de trabajo | No |

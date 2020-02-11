@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860302"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812171"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Establecimiento de reglas en los dispositivos para permitir el acceso a recursos de su organización con Intune
 
@@ -93,6 +93,10 @@ Intune también incluye un conjunto de configuraciones de directivas de cumplimi
 
   Si un dispositivo no tiene asignada una directiva de cumplimiento, se considerará compatible de forma predeterminada. Si se usa el acceso condicional con directivas de cumplimiento, se recomienda cambiar la configuración predeterminada a **No compatible**. Si un usuario final no es compatible porque no se asignó ninguna directiva, en la [aplicación Portal de empresa de Intune](../apps/company-portal-app.md) se muestra `No compliance policies have been assigned`.
 
+
+> [!NOTE]
+> La detección de jailbreak mejorada para dispositivos iOS está temporalmente deshabilitada en Intune.
+
 - **Detección de jailbreak mejorada**: cuando se habilita este valor de configuración, hace que los dispositivos iOS se registren en Intune con mayor frecuencia. Para habilitar esta propiedad se usan los servicios de ubicación del dispositivo, que afectan al uso de la batería. Intune no almacena los datos de ubicación del usuario.
 
   Para habilitar esta configuración, los dispositivos deben:
@@ -100,7 +104,7 @@ Intune también incluye un conjunto de configuraciones de directivas de cumplimi
   - Permitir que el Portal de empresa use los servicios de ubicación.
   - Evaluar y notificar su estado de jailbreak a Intune al menos una vez cada 72 horas. En caso contrario, el dispositivo se marcará como no compatible. La evaluación se desencadena al abrir la aplicación Portal de empresa de Intune o al mover físicamente los 500 medidores o más del dispositivo. Si el dispositivo no se mueve 500 metros en 72 horas, el usuario tiene que abrir la aplicación Portal de empresa para la evaluación de jailbreak mejorada.
 
-- **Período de validez del estado de cumplimiento (días)**: especifique el período en que los dispositivos informan del estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
+- **Período de validez del estado de cumplimiento (días)** : especifique el período en que los dispositivos informan del estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
 
 Puede usar estas directivas integradas para supervisar estas configuraciones. Intune también [se actualiza o comprueba si hay actualizaciones](create-compliance-policy.md#refresh-cycle-times) en distintos intervalos, dependiendo de la plataforma del dispositivo. [Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune](../configuration/device-profile-troubleshoot.md) es un recurso útil.
 
@@ -124,7 +128,7 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ---------------------------
 
-**Corregido**: el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
+**Corregido**: el sistema operativo del dispositivo exige compatibilidad. Por ejemplo, se obliga al usuario a establecer un PIN.
 
 **En cuarentena**: el sistema operativo del dispositivo no exige cumplimiento. Por ejemplo, los dispositivos Android y Android Enterprise no obligan al usuario a cifrar el dispositivo. Si el dispositivo no es conforme, se emprenden las acciones siguientes:
 

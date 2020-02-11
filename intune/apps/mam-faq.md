@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7664123e31a959849ae967d7e99847e1395609c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 6a92863dc504d295d77029082b57090e55d7f743
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692207"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971847"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -197,7 +197,7 @@ Intune aprovecha las API de SafetyNet de Google Play Protect para agregarlas a l
 
 Consulte la [documentación de Google sobre la atestación de SafetyNet](https://developer.android.com/training/safetynet/attestation) para obtener detalles técnicos.
 
-**Hay dos comprobaciones similares en la sección de inicio condicional al crear una directiva de Intune App Protection para dispositivos Android. ¿Debo hacer obligatorias las opciones de configuración "Atestación de dispositivo SafetyNet" o "Dispositivos con jailbreak o rooting"?** <br><br>
+**Hay dos comprobaciones similares en la sección de inicio condicional al crear una directiva de Intune App Protection para dispositivos Android. ¿Debo hacer obligatorias las opciones de configuración "Atestación de dispositivo SafetyNet" o "Dispositivos con jailbreak o rooting"?** <br><br>
 Las comprobaciones de la API de SafetyNet de Google Play Protect requieren que el usuario final esté en línea, al menos durante la ejecución del "recorrido de ida y vuelta" para determinar los resultados de atestación. Si el usuario final está sin conexión, el administrador de TI puede esperar igualmente que se exija un resultado de la configuración "Dispositivos con jailbreak o rooting". Dicho esto, si el usuario final ha estado sin conexión demasiado tiempo, se aplica el valor "Período de gracia sin conexión". Asimismo, cuando se alcanza este valor del temporizador, todo acceso a los datos profesionales o educativos se bloquea hasta que el acceso a la red esté disponible. Activar ambas opciones de configuración permite aplicar un enfoque por capas con el fin de mantener los dispositivos del usuario final en buen estado, lo que es importante cuando los usuarios finales acceden a los datos profesionales o educativos desde dispositivos móviles. 
 
 **La configuración de directivas de protección de aplicaciones que utilicen las API de Google Play Protect requiere Google Play Services para su funcionamiento. ¿Qué ocurre si Google Play Services no se permite en la ubicación en la que se encuentre el usuario final?**<br><br>

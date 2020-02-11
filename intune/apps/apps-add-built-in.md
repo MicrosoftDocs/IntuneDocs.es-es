@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563598"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755381"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Incorporación de aplicaciones integradas a Microsoft Intune
 
@@ -39,32 +39,43 @@ En versiones anteriores de la consola de Intune, Intune ofrecía varias aplicaci
 Para agregar una aplicación integrada a las aplicaciones que tiene disponibles en Microsoft Intune, haga lo siguiente:
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-3. En el panel de aplicaciones **Agregar**, en la lista **Tipo de aplicación**, seleccione **Aplicación integrada**.
-4. Seleccione **Seleccionar aplicación**.
-5. En el panel **Aplicación integrada**, seleccione las aplicaciones que desea incluir.
-6. Luego, en el panel **Agregar aplicación**, seleccione **Agregar**.
+3. En el panel **Seleccionar tipo de aplicación**, en los tipos de **Aplicación de la Tienda** disponibles, seleccione la **Aplicación integrada**.
+4. Haga clic en **Seleccionar**. Se muestran los pasos para **Agregar aplicación**.
+5. En la página **Seleccionar aplicaciones integradas**, haga clic en **Seleccionar aplicación** para seleccionar las aplicaciones que quiere incluir.
+6. Seleccione las aplicaciones integradas que quiere incluir. 
+7. Una vez que haya seleccionado las aplicaciones, haga clic en **Seleccionar** en el panel **Seleccionar las aplicaciones integradas**.
+8. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
+9. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para la aplicación. Para más información, consulte [Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida](~/fundamentals/scope-tags.md).
+10. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
+11. Seleccione las asignaciones de grupo para la aplicación. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md). 
+12. Elija **Siguiente** para mostrar la página **Revisar y crear**. Revise los valores y la configuración que especificó para la aplicación.
+13. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
 
+    Se muestra la hoja **Información general** de la aplicación que creó.
 
 ## <a name="configure-app-information"></a>Configuración de información de la aplicación
 
 Puede modificar la información sobre la aplicación integrada. Esta información le ayuda a identificar la aplicación en Intune y ayuda a los usuarios a encontrar la aplicación en el portal de empresa.
 1. Seleccione **Aplicaciones** > **Todas las aplicaciones** y seleccione la aplicación integrada que quiera modificar.  
    Se muestra un panel de la aplicación integrada.
-2. Seleccione **Propiedades** > **Configurar**.
+2. Seleccione **Propiedades**.
+3. Seleccione **Editar** junto a **Información de la aplicación**.
 4. En el panel **Información de la aplicación**, puede modificar la información siguiente:
     - **Nombre**: Escriba el nombre de la aplicación integrada tal como se muestra en el portal de empresa. Asegúrese de que todos los nombres que use sean únicos. Si el mismo nombre de aplicación existe dos veces, solo se muestra a los usuarios una de las aplicaciones en el portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. 
     - **Publicador**: Escriba el nombre del publicador de la aplicación.
     - **Categoría**: Opcionalmente, seleccione una o varias de las categorías de aplicaciones integradas. Configurar esta opción facilita que los usuarios puedan encontrar la aplicación cuando exploren el portal de empresa.
-    - **Mostrar como aplicación destacada en el portal de empresa**: Muestra la aplicación de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
+    - **Mostrar como aplicación destacada en el Portal de empresa**: Muestra la aplicación de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
     - **Propietario**: Opcionalmente, escriba un nombre para el propietario de esta aplicación (por ejemplo, *Departamento de Recursos Humanos*).
     - **Notas**: escriba las notas que desea asociar a esta aplicación.
     - **Cargar icono**: Cargue un icono que se muestre con la aplicación cuando los usuarios examinen el portal de empresa.
-4. Seleccione **Aceptar**.
-5. En el panel **Propiedades**, seleccione **Guardar**.
+5. Haga clic en **Revisar y guardar** para mostrar la página **Revisar y guardar**. Revise los valores y la configuración que especificó para la aplicación.
+13. Cuando termine, haga clic en **Guardar** para actualizar la aplicación en Intune.
+
+    Se muestra la hoja **Información general** de la aplicación que creó.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

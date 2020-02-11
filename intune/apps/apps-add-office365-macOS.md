@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3cf4c2abb5506f297af8a4e77145abea5360381b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564076"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755364"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Asignación de Office 365 a dispositivos macOS con Microsoft Intune
 
@@ -38,47 +38,52 @@ Antes de empezar a agregar Office 365 a dispositivos macOS, debe entender la sig
 - Intune admite la adición de aplicaciones de Office que se incluyen únicamente con el conjunto de aplicaciones de Office 2016 para Mac.
 - Si alguna aplicación de Office está abierta cuando Intune instala el conjunto de aplicaciones, los usuarios podrían perder los datos de los archivos no guardados.
 
-## <a name="create-and-configure-the-app-suite"></a>Creación y configuración del conjunto de aplicaciones
+## <a name="select-the-office-365-suite-app-type"></a>Selección del tipo de aplicación Conjunto de aplicaciones Office 365
 
-Agregue Office 365 desde el panel **Aplicaciones**.
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-3. En la lista **Tipo de aplicación**, seleccione **macOS** en el grupo **Conjunto de aplicaciones Office 365**.
-4. Para obtener información sobre el conjunto de aplicaciones, seleccione **Información del conjunto de aplicaciones**.  
-    Esta información le ayuda a identificar el conjunto de aplicaciones en Intune y, además, ayuda a los usuarios finales a encontrarlo en el Portal de empresa.
-5. Escriba la información siguiente:
+3. Seleccione **macOS** en la sección **Conjunto de aplicaciones Office 365** del panel **Seleccionar tipo de aplicación**.
+4. Haga clic en **Seleccionar**. Se muestran los pasos para **agregar Conjunto de aplicaciones Office 365**.
+
+## <a name="step-1---app-suite-information"></a>Paso 1: Información del conjunto de aplicaciones
+
+En este paso, proporcionará información sobre el conjunto de aplicaciones. Esta información le ayuda a identificar el conjunto de aplicaciones en Intune y, además, ayuda a los usuarios finales a encontrarlo en el Portal de empresa.
+
+1. En la página **Información del conjunto de aplicaciones**, puede confirmar o modificar los valores predeterminados:
     - **Nombre del conjunto de aplicaciones**: escriba el nombre del conjunto tal como se muestra en el Portal de empresa. Asegúrese de que todos los nombres de conjuntos de aplicaciones que use sean únicos. Si el mismo nombre del conjunto ya existe, solo se muestra una de las aplicaciones a los usuarios en el portal de empresa.
-    - **Descripción del conjunto de aplicaciones** : escriba una descripción del conjunto de aplicaciones.
+    - **Descripción del conjunto de aplicaciones** : escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
     - **Publicador**: Microsoft aparece como publicador.
-    - **Categoría**: Seleccione una o más de las categorías de aplicaciones integradas, o una categoría que haya creado. Este valor facilita que los usuarios encuentren el conjunto de aplicaciones cuando exploren el portal de empresa.
-    - **Mostrar como aplicación destacada en el Portal de empresa** : seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
+    - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren el conjunto de aplicaciones cuando exploren el portal de empresa.
+    - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
     - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: Microsoft aparece como desarrollador.
     - **Propietario**: Microsoft aparece como propietario.
-    - **Notas**: opcionalmente, escriba las notas que desea asociar a esta aplicación.
+    - **Notas**: escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: el logotipo de Office 365 se muestra con la aplicación cuando los usuarios buscan en el Portal de empresa.
-6. Seleccione **Aceptar**.
-7. En el panel **Agregar aplicación**, seleccione **Agregar**.  
-    El conjunto aparece en la lista de aplicaciones como una sola entrada.
+2. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
 
-## <a name="configure-app-assignments"></a>Configuración de asignaciones de aplicaciones
+## <a name="step-2---select-scope-tags-optional"></a>Paso 2: Selección de Etiquetas de ámbito (opcional)
+Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida).
 
-En este paso, configure las asignaciones para el conjunto de aplicaciones. 
+1. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para el conjunto de aplicaciones. 
+2. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
 
-1. En la lista de aplicaciones, seleccione el conjunto de aplicaciones **Office 365** para mostrar la hoja de información general de **Office 365**.
-2. En el panel **Office 365**, seleccione **Asignaciones**.
-3. Para agregar un grupo que usará el conjunto de aplicaciones, seleccione **Agregar grupo**.  
-    Aparece el panel **Agregar grupo**.
-4. Establezca **Tipo de asignación** en **Obligatoria** o **Disponible**.
-5. Asigne el conjunto de aplicaciones a los grupos seleccionados. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md).
+## <a name="step-3---assignments"></a>Paso 3: Asignaciones
+
+1. Seleccione las asignaciones de grupo **Requerido**, **Disponible para dispositivos inscritos** para el conjunto de aplicaciones. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md) y [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md).
 
     >[!Note]
-    > No se puede desinstalar el conjunto de aplicaciones de Office 365 a través de Intune.
+    > No se puede desinstalar el conjunto de aplicaciones de Office 365 para macOS a través de Intune.
 
-5. En el panel **Asignar**, seleccione **Aceptar**.
-6. En el panel **Agregar grupo**, seleccione **Aceptar**.
-7. Seleccione **Guardar** para confirmar sus asignaciones.
+2. Elija **Siguiente** para mostrar la página **Revisar y crear**. 
+
+## <a name="step-4---review--create"></a>Paso 4: Revisión y creación
+
+1. Revise los valores y la configuración que especificó para el conjunto de aplicaciones.
+2. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
+
+    Se muestra la hoja **Información general** correspondiente al conjunto de aplicaciones de Office 365 para Windows 10. El conjunto aparece en la lista de aplicaciones como una sola entrada.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

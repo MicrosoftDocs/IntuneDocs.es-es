@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681319"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912614"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configuración de la integración de Symantec Endpoint Protection Mobile con Intune
 
@@ -40,7 +40,7 @@ Realice los pasos siguientes para integrar la solución Symantec Endpoint Protec
 - Para realizar la integración, la cuenta de Azure AD debe ser una cuenta de administrador global.
 ### <a name="network-setup"></a>Configuración de red
 
-Para asegurarse de que la red está configurada correctamente para la integración con el programa de instalación de SEP Mobile, consulte el artículo de Symantec [Setting up your network configuration](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016) (Configuración de red).
+Para asegurarse de que la red está configurada correctamente para la integración con el programa de instalación de SEP Mobile, consulte el artículo de Symantec [Configurar Symantec Endpoint Protection Manager después de la instalación](https://support.symantec.com/us/en/article.HOWTO80819.html).
 
 ### <a name="full-integration-vs-read-only"></a>Integración completa en comparación con Solo lectura
 
@@ -101,7 +101,7 @@ SEP Mobile sincroniza los dispositivos que ejecutan su servicio Mobile Threat De
 
 ### <a name="retrieve-the-directory-id-in-azure-ad"></a>Recuperar el identificador de directorio de Azure AD
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 
 2. Escriba "Active Directory" en el cuadro de búsqueda y, a continuación, seleccione **Azure Active Directory**.
 

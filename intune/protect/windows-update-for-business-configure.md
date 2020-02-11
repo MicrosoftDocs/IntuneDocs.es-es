@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956287"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886804"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Administración de actualizaciones de software de Windows 10 en Intune
 
@@ -71,7 +71,7 @@ Deben cumplirse los requisitos previos siguientes para usar las actualizaciones 
 
 ## <a name="windows-10-update-rings"></a>Anillos de actualización de Windows 10
 
-Cree anillos de actualización que especifican cómo y cuándo Windows como servicio actualiza los dispositivos de Windows 10 con actualizaciones de características y de calidad. A partir de Windows 10, todas las nuevas actualizaciones de calidad y de características incluyen las actualizaciones anteriores. Siempre que tenga instalada la más reciente sabrá que sus dispositivos Windows 10 están actualizados. A diferencia de las versiones anteriores de Windows, ahora debe instalar la actualización completa en lugar de una parte.
+Cree anillos de actualización que especifican cómo y cuándo Windows como servicio actualiza los dispositivos de Windows 10 con actualizaciones de características y de calidad. A partir de Windows 10, todas las nuevas actualizaciones de calidad y de características incluyen las actualizaciones anteriores. Siempre que tenga instalada la más reciente sabrá que sus dispositivos Windows 10 están actualizados. A diferencia de las versiones anteriores de Windows, ahora debe instalar la actualización completa en lugar de una parte.
 
 Los anillos de actualización de Windows 10 admiten las [etiquetas de ámbito](../fundamentals/scope-tags.md). Puede usar etiquetas de ámbito con los anillos de actualización para filtrar y administrar los conjuntos de configuraciones que usa.
 
@@ -92,7 +92,7 @@ Los anillos de actualización de Windows 10 admiten las [etiquetas de ámbito](
 
 6. En **Asignaciones**, seleccione **+ Seleccionar grupos para incluir** y, después, asigne el anillo de actualización a uno o varios grupos. Use **+ Seleccionar grupos para excluir** para ajustar la asignación. Seleccione **Siguiente** para continuar.
 
-7. En **Revisar + crear**, revise la configuración y seleccione **Crear** cuando esté listo para guardar el anillo de actualización de Windows 10. El nuevo anillo de actualización se muestra en la lista de anillos de actualización.
+7. En **Revisar y crear**, revise la configuración y seleccione **Crear** cuando esté listo para guardar el anillo de actualización de Windows 10. El nuevo anillo de actualización se muestra en la lista de anillos de actualización.
 
 ### <a name="manage-your-windows-10-update-rings"></a>Administración de los anillos de actualización de Windows 10
 
@@ -205,20 +205,22 @@ Cuando un dispositivo recibe una directiva de actualizaciones de característica
 
 - A diferencia de *Pausar* un anillo de actualización, que expira después de 35 días, la directiva de actualizaciones de características de Windows 10 permanece en vigor. Los dispositivos no instalarán una nueva versión de Windows hasta que modifique o quite la directiva de actualizaciones de características de Windows 10. Si edita la directiva para especificar una versión más reciente, los dispositivos pueden instalar las características desde esa versión de Windows.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Requisitos previos de las actualizaciones de características de Windows 10
+
+Deben cumplirse los requisitos previos siguientes para usar las actualizaciones de características de Windows 10 en Intune.
+
+- Los dispositivos deben estar inscritos en Intune MDM y unidos a Azure AD o registrados en Azure AD.
+- Para usar la directiva de actualizaciones de características con Intune, los dispositivos deben tener la telemetría activada, con un valor mínimo de [*Básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). La telemetría se configura en *Informes y telemetría* como parte de la [directiva de restricción de dispositivos](../configuration/device-restrictions-configure.md).
+  
+  Los dispositivos que reciben la directiva de actualizaciones de características y que tienen la telemetría establecida en *No configurado* (lo que significa que está desactivada), pueden instalar una versión posterior de Windows que la definida en la directiva de actualización de características. El requisito previo de requerir telemetría está en revisión, ya que esta característica está en transición hacia la disponibilidad general.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Limitaciones de las actualizaciones de características de Windows 10
 
 - Cuando implemente una directiva de *actualización de características de Windows 10* en un dispositivo que también recibe una directiva de *anillo de actualización de Windows 10*, revise que el anillo de actualización incluya las siguientes configuraciones:
   - El **período de aplazamiento de actualizaciones de características (días)** se debe establecer en **0**.
   - Las actualizaciones de características para el anillo de actualización deben estar *en ejecución*. No se deben pausar.
 
-- Las directivas de actualización de características de Windows 10 no se pueden aplicar durante la configuración rápida (OOBE) y solo se aplican en el primer análisis de Windows Update una vez que el dispositivo haya finalizado el aprovisionamiento (que suele ser un día). Además, los dispositivos aprovisionados con AutoPilot no recibirán la directiva.
-
-  Esta limitación está bajo examen para ver si se puede admitir en el futuro.
-
-> [!IMPORTANT]
-> Para usar la directiva de actualizaciones de características con Intune, los dispositivos deben tener la telemetría activada, con un valor mínimo de [*Básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). La telemetría se configura en *Informes y telemetría* como parte de la [directiva de restricción de dispositivos](../configuration/device-restrictions-configure.md).
->
-> Los dispositivos que reciben la directiva de actualizaciones de características y que tienen la telemetría establecida en *No configurado* (lo que significa que está desactivada), pueden instalar una versión posterior de Windows que la definida en la directiva de actualización de características. El requisito previo de requerir telemetría está en revisión, ya que esta característica está en transición hacia la disponibilidad general.
+- Las directivas de actualización de características de Windows 10 no se pueden aplicar durante la configuración rápida (OOBE) de Autopilot y solo se aplican en el primer análisis de Windows Update una vez que el dispositivo haya finalizado el aprovisionamiento (que suele ser un día).
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Creación y asignación de actualizaciones de características de Windows 10
 
@@ -242,10 +244,12 @@ Desde este panel, podrá:
 - Seleccione **Propiedades** para modificar la implementación.  En el panel *Propiedades*, seleccione **Editar** para abrir las *asignaciones o la configuración de la implementación*, donde podrá modificar la implementación.
 - Seleccione **Estado de actualización del usuario final** para ver información acerca de la directiva.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Validación e informes de las actualizaciones de Windows 10
+
+En el caso de los anillos de actualización de Windows 10 y de las actualizaciones de características de Windows 10, use [Informes de cumplimiento de Intune para las actualizaciones](../windows-update-compliance-reports.md) para supervisar el estado de las actualizaciones de los dispositivos. Esta solución usa [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) con la suscripción de Azure.
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 [Windows update settings supported by Intune](../windows-update-settings.md) (Configuración de Windows Update compatible con Intune)
-
-[Informes de cumplimiento de Intune para las actualizaciones](../windows-update-compliance-reports.md)
 
 [Troubleshooting Windows 10 update rings](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046) (Solución de problemas de los anillos de actualización de Windows 10)

@@ -7,7 +7,7 @@ ms.service: microsoft-intune
 ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 03/25/2019
+ms.date: 01/17/2020
 ms.author: erikje
 ms.manager: dougeby
 ms.assetid: 820fcb18-0927-4ebd-be79-dce92b51c261
@@ -16,65 +16,71 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdd97e69c97df5a266e147381d94b3d4419bab34
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: f6aa57b71e052e3fc8566fcdff8bdd9ef5d1c39e
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036571"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754497"
 ---
-# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Inicio rápido: Creación de un usuario en Intune y asignación de una licencia
+# <a name="quickstart-create-a-user-in-intune-and-assign-the-user-a-license"></a>Inicio rápido: Creación de un usuario en Intune y asignación de una licencia
 
 En este inicio rápido, creará un usuario y le asignará una licencia de Intune. Al usar Intune, toda persona que necesite tener acceso a los datos de la empresa deberá tener su propia cuenta de usuario. Los administradores de Intune pueden configurar a los usuarios más adelante para administrar el control de acceso.
 
-Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de prueba gratuita](free-trial-sign-up.md).
+## <a name="prerequisites"></a>Requisitos previos
 
-## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
+- Suscripción a Microsoft Intune. [Suscríbase para disfrutar de una cuenta de prueba gratuita](../fundamentals/free-trial-sign-up.md).
 
-Inicie sesión en [Intune](https://aka.ms/intuneportal) como [administrador global o administrador de servicios de Intune](users-add.md#types-of-administrators). Si ha creado una suscripción de prueba de Intune, la cuenta con la que la haya creado es el administrador global.
+## <a name="sign-in-to-intune-in-microsoft-endpoint-manager"></a>Inicio de sesión en Intune en el Administrador de puntos de conexión de Microsoft
+
+Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como [administrador global o administrador de servicios de Intune](users-add.md#types-of-administrators). Si ha creado una suscripción de prueba de Intune, la cuenta con la que la haya creado es el administrador global.
 
 ## <a name="create-a-user"></a>Creación de un usuario
 
-Los usuarios deben tener una cuenta de usuario para poder inscribirse en la administración de dispositivos de Intune. Para crear un usuario:
+Un usuario debe tener una cuenta de usuario para poder inscribirse en la administración de dispositivos de Intune. Para crear un usuario:
 
-1. En Intune, elija **Usuarios** > **Todos los usuarios** > **Nuevo usuario**.
-![Explorador](./media/quickstart-create-user/create-user.png)
-2. En el cuadro **Nombre**, escriba un nombre, como *Isabel Robledo*.
+1. En el Administrador de puntos de conexión de Microsoft, seleccione **Usuarios** > **Todos los usuarios** > **Nuevo usuario**:  ![En el Administrador de puntos de conexión de Microsoft, seleccione Nuevo usuario](./media/quickstart-create-user/create-user.png)
+2. En el cuadro **Nombre**, escriba un nombre, como *Isabel Robledo*:  ![Agregar detalles del usuario](./media/quickstart-create-user/create-user-02.png)
 3. En el cuadro **Nombre de usuario**, escriba un identificador de usuario, como Dewey@contoso.onmicrosoft.com.
 
     > [!NOTE]
     > Si no ha configurado el nombre de dominio del cliente, use el nombre de dominio comprobado que usó para crear la suscripción de Intune (o [evaluación gratuita](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)). 
 
-4. Elija **Mostrar contraseña** y tome nota de la contraseña generada automáticamente para que pueda iniciar sesión en un dispositivo de prueba.
-5. Elija **Crear**.
+4. Seleccione **Mostrar contraseña** y asegúrese de recordar la contraseña generada automáticamente para que pueda iniciar sesión en un dispositivo de prueba.
+5. Seleccione **Crear**.
 
 ## <a name="assign-a-license-to-the-user"></a>Asignar una licencia a un usuario
 
-Después de crear un usuario, debe usar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para asignarle una licencia de Intune. Si no se le asigna una licencia al usuario, no podrá inscribir su dispositivo en Intune. 
+Después de crear un usuario, debe usar el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para asignarle una licencia de Intune. Si no se le asigna una licencia al usuario, no podrá inscribir su dispositivo en Intune.
 
 Para asignar una licencia de Intune a un usuario:
 
 1. Inicie sesión en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) con las mismas credenciales que ha usado para iniciar sesión en Intune.
-2. Elija **Usuarios** > **Usuarios activos** > y elija el usuario que acaba de crear.
-3. Junto a **Licencias de productos**, seleccione **Editar**.
-4. En **Ubicación**, elija una ubicación para el usuario.
-5. Haga clic en **Activar** junto a la licencia de Intune (o en otra licencia que tenga y que incluya Intune). El [nombre de producto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** que se muestra se usa como plan de servicio en la administración de Azure 
+2. Seleccione **Usuarios** > **Usuarios activos** y, luego, seleccione el usuario que acaba de crear.
+3. Seleccione la pestaña **Licencias y aplicaciones**.
+4. En **Seleccionar ubicación**, seleccione una ubicación para el usuario, si todavía no se establece.
+2. Active la casilla **Intune** en la sección **Licencias**. Si otra licencia incluye Intune, puede seleccionar esa licencia. El [nombre de producto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference) que se muestra se usa como plan de servicio en la administración de Azure.
+
+    ![Selección de la ubicación y la licencia de Intune](./media/quickstart-create-user/create-user-03.png)
 
    > [!NOTE]
-   > Este valor usa una de las licencias de este usuario. Si usa un entorno de evaluación, es posible que más tarde quiera reasignar esta licencia a un usuario real en un entorno activo.
-6. Elija **Guardar** > **Cerrar**.
+   > Este valor usa una de las licencias del usuario. Si usa un entorno de evaluación, más tarde reasignará esta licencia a un usuario real en un entorno activo.
+
+6. Seleccione **Guardar cambios**.
 
 Ahora el nuevo usuario activo de Intune mostrará que está usando una licencia de **Intune**.
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 
-Si ya no necesita este usuario, puede eliminarlo desde el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854). Allí, elija **Usuarios** > **Usuarios activos** > *elija el usuario en la lista* > **Eliminar usuario** > **Eliminar usuario** > **Confirmar cambios** > **Cerrar**.
+Si ya no necesita ese usuario, puede eliminarlo en el [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854). Ahí, seleccione **Usuarios** > *el usuario* > *el icono de eliminación del usuario* > **Eliminar usuario** > **Cerrar**.
+
+   ![Seleccione el icono de eliminación](./media/quickstart-create-user/create-user-04.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 En este inicio rápido, creó un usuario y le asignó una licencia de Intune. Para obtener más información sobre cómo agregar usuarios a Intune, consulte [Adición de usuarios y concesión de permiso administrativo a Intune](users-add.md).
 
-Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
+Para seguir esta serie de inicios rápidos de Intune, vaya al siguiente:
 
 > [!div class="nextstepaction"]
 > [Inicio rápido: Crear un grupo para administrar usuarios](../quickstart-create-group.md)

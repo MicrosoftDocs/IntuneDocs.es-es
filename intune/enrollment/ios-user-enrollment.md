@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691748"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754645"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configuración de la inscripción de usuarios de iOS y iPadOS (versión preliminar)
 
@@ -54,23 +54,14 @@ Un perfil de inscripción define la configuración que se aplica a un grupo de d
 
 3. Seleccione **Siguiente**.
 
-4. En la página **Configuración**, puede elegir ofrecer a los usuarios la elección del tipo de inscripción que utilizarán. Como alternativa, puede establecer un valor predeterminado.
+4. En la página **Configuración**, seleccione una de estas opciones para el **Tipo de inscripción**:
 
     ![Página de configuración](./media/ios-user-enrollment/settings-page.png)
 
-    - Si desea que todos los usuarios de este perfil usen la inscripción de usuario, siga estos pasos:
-        1. Para **Requerir que el usuario seleccione el tipo de dispositivo**, seleccione **No configurado**.
-        2. Para **Tipo de inscripción predeterminado**, seleccione **Inscripción de usuario**.
-    - Si desea que todos los usuarios de este perfil usen la inscripción de dispositivos, siga estos pasos:
-        1. Para **Requerir que el usuario seleccione el tipo de dispositivo**, seleccione **No configurado**.
-        2. Para **Tipo de inscripción predeterminado**, seleccione **Inscripción de dispositivos**.
-    - Si desea conceder a todos los usuarios de este grupo la elección del tipo de inscripción que van a usar, seleccione **Requerido** para **Requerir que el usuario seleccione el tipo de dispositivo**. Cuando los usuarios inscriban sus dispositivos, se les ofrecerá la opción de elegir entre **Soy el propietario de este dispositivo** y **(Empresa) es el propietario de este dispositivo**. Si optan por la primera opción, el dispositivo se inscribirá mediante la inscripción de usuario. Si optan por la segunda, el dispositivo se inscribirá mediante la inscripción de dispositivos. Si el usuario elige **Soy el propietario de este dispositivo**, tendrá otra opción para proteger todo el dispositivo o solo las aplicaciones y los datos relacionados con el trabajo. La selección del usuario final de si es el propietario del dispositivo solo determina qué tipo de inscripción se implementa en su dispositivo. Esta opción de usuario no se refleja en el atributo Propiedad del dispositivo en Intune. Para obtener más información sobre la experiencia del usuario, consulte [Configuración del acceso de dispositivos iOS a los recursos de la empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
+    - **Inscripción de dispositivos**: todos los usuarios de este perfil usarán la Inscripción de dispositivos.
+    - **Inscripción de usuarios**: todos los usuarios de este perfil usarán la Inscripción de usuarios.
+    - **Determinar según la opción del usuario**: todos los usuarios de este grupo tendrán la posibilidad de elegir qué tipo de inscripción usar. Cuando los usuarios inscriban sus dispositivos, verán una opción de elegir entre **Soy el propietario de este dispositivo** y **(Empresa) es el propietario de este dispositivo**. Si optan por la segunda, el dispositivo se inscribirá mediante la inscripción de dispositivos. Si el usuario elige **Soy el propietario de este dispositivo**, tendrá otra opción para proteger todo el dispositivo o solo las aplicaciones y los datos relacionados con el trabajo. La selección del usuario final de si es el propietario del dispositivo determina qué tipo de inscripción se implementa en su dispositivo. Esta opción de usuario también se refleja en el atributo Propiedad del dispositivo en Intune. Para obtener más información sobre la experiencia del usuario, consulte [Configuración del acceso de dispositivos iOS a los recursos de la empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
     
-    > [!NOTE]
-    > El siguiente aviso no es exacto y se quitará de la interfaz de usuario.
-    > "Para que el acceso condicional funcione en dispositivos destinados a la inscripción de usuarios, debe insertar la aplicación Azure Authenticator como aplicación necesaria para que este grupo de usuarios habilite el inicio de sesión único y Workplace Join".
-    > Como administrador, no es necesario realizar ninguna acción para insertar la aplicación Authenticator para los usuarios. A los usuarios se les indicará en el Portal de empresa que instalen la aplicación Authenticator para completar el proceso de inscripción de usuarios con el fin de asegurarse de que estos escenarios funcionan correctamente.
-
 5. Seleccione **Siguiente**.
 
 6. En la página **Asignaciones**, elija los grupos de usuarios que contienen los usuarios a los que desea asignar este perfil. Puede elegir asignar el perfil a todos los usuarios o a grupos específicos. Todos los usuarios de los grupos seleccionados usarán el tipo de inscripción elegido anteriormente. Los grupos de dispositivos no se admiten en escenarios de inscripción de usuarios porque la característica se basa en las identidades de usuario y no de dispositivos. Puede elegir asignar el perfil a todos los usuarios o a grupos específicos.

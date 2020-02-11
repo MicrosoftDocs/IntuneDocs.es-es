@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036616"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517522"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Envío de notificaciones personalizadas en Intune  
 
 Use Microsoft Intune para enviar notificaciones personalizadas a los usuarios de dispositivos iOS y Android administrados. Estos mensajes aparecen como notificaciones push estándar desde la aplicación Portal de empresa y la de Microsoft Intune en el dispositivo de un usuario, tal y como se muestran las notificaciones de otras aplicaciones del dispositivo. Los dispositivos Windows y macOS no admiten las notificaciones personalizadas de Intune.   
 
 Los mensajes de notificación personalizados incluyen un título corto y un cuerpo de mensaje de 500 caracteres como máximo. Estos mensajes se pueden personalizar para cualquier propósito general de comunicación.
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>Aspecto de la notificación en un dispositivo iOS
+
+Si tiene la aplicación Portal de empresa abierta en un dispositivo iOS, la notificación es similar a la captura de pantalla siguiente:
+
+> [!div class="mx-imgBorder"]
+> ![Notificación de prueba Portal de empresa para iOS](./media/custom-notifications/105046-1.png)
+
+Si el dispositivo está bloqueado, la notificación es similar a la captura de pantalla siguiente:
+
+> [!div class="mx-imgBorder"]
+> ![Notificación de prueba Dispositivo bloqueado para iOS](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>Aspecto de la notificación en un dispositivo Android
+
+Si tiene la aplicación Portal de empresa abierta en un dispositivo Android, la notificación es similar a la captura de pantalla siguiente:
+
+> [!div class="mx-imgBorder"]
+> ![Notificación de prueba para Android](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Escenarios habituales para el envío de notificaciones personalizadas  
 
@@ -93,7 +112,7 @@ Intune no realiza un seguimiento de las notificaciones personalizadas que envía
 
 2. Haga doble clic en el nombre del dispositivo administrado al que quiere enviar una notificación para abrir la página *Información general* de esos dispositivos.
 
-3. En la página **Información general** de los dispositivos, seleccione la acción de dispositivo **Enviar notificación personalizada** para abrir el panel *Enviar notificación personalizada*. Si esta opción no está disponible, seleccione los puntos suspensivos (**...**) en la parte superior derecha de la página y, luego, seleccione **Enviar notificación personalizada**.
+3. En la página **Información general** de los dispositivos, seleccione la acción de dispositivo **Enviar notificación personalizada** para abrir el panel *Enviar notificación personalizada*. Si esta opción no está disponible, seleccione los puntos suspensivos ( **...** ) en la parte superior derecha de la página y, luego, seleccione **Enviar notificación personalizada**.
 
 4. En el panel **Enviar notificación personalizada**, especifique los siguientes detalles del mensaje:  
 

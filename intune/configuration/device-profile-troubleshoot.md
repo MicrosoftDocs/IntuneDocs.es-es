@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206642"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812357"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune
-
-
 
 Obtenga respuestas a preguntas comunes al trabajar con directivas y perfiles de dispositivo en Intune. En este artículo también se muestran los intervalos de tiempo de sincronización, se proporcionan más detalles sobre los conflictos, etc.
 
@@ -83,6 +81,8 @@ Hay distintas acciones que desencadenan una notificación, por ejemplo, cuando s
 Los dispositivos se sincronizan con Intune cuando reciben una notificación para sincronizarse o durante la sincronización programada. Cuando el destino es un dispositivo o usuario con una acción (por ejemplo, bloqueo, restablecimiento de código de acceso o asignación de aplicaciones, perfiles o directivas), Intune lo notifica inmediatamente al dispositivo para que se sincronice y reciba estas actualizaciones.
 
 Otros cambios, como la revisión de la información de contacto de la aplicación Portal de empresa, no provocan una notificación inmediata a los dispositivos.
+
+La configuración de la directiva o el perfil de aplica en toda sincronización. La [entrada de blob sobre la actualización de la directiva de Windows 10 MDM](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) puede ser útil.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Si varias directivas se asignan al mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplica?
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3168d517ebbb59dc9d6fe5a9c262ad8e1c909619
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d43e0f913020e3e2e8b0ac463d5983447d7c1fa2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563807"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754956"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de la Tienda de Windows Phone 8.1 a Microsoft Intune
 
@@ -36,8 +36,11 @@ Puede agregar una aplicación de la Tienda de Windows Phone 8.1 a Intune desde A
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-3. En el panel **Agregar aplicación**, seleccione un **Tipo de aplicación** **Windows Phone 8.1** y luego seleccione **Información de la aplicación**.
-4. En el panel **Información de la aplicación**, agregue la información de la aplicación. Según la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
+3. En el panel **Seleccionar tipo de aplicación**, en los tipos de **Aplicación de la Tienda** disponibles, seleccione **Aplicación de la Tienda Windows Phone 8.1**.
+4. Haga clic en **Seleccionar**.<br>
+   Se muestran los pasos para **Agregar aplicación**.
+5. Para configurar la **Información de la aplicación** para las aplicaciones de la Tienda de Windows Phone 8.1, vaya a [Microsoft Store](https://www.microsoft.com/store/apps/windows-phone) y busque la aplicación que quiere implementar. Muestre la página de la aplicación y tome nota de los detalles de la aplicación. 
+6. En la página **Información de la aplicación**, agregue los detalles de la aplicación:
     - **Nombre**: escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. Asegúrese de que cualquier nombre de aplicación que use sea exclusivo. Si hay un nombre de aplicación duplicado, solo se muestra uno a los usuarios del Portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
     - **Publicador**: Escriba el nombre del publicador de la aplicación.
@@ -50,8 +53,15 @@ Puede agregar una aplicación de la Tienda de Windows Phone 8.1 a Intune desde A
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, *Departamento de Recursos Humanos*.
     - **Notas**: opcionalmente, escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: opcionalmente, cargue un icono que se asociará con la aplicación. Este icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
-5. Seleccione **Aceptar**.
-6. Seleccione **Agregar**.
+7. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
+8. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para la aplicación. Para más información, consulte [Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida](~/fundamentals/scope-tags.md).
+9. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
+10. Seleccione las asignaciones de grupo para la aplicación. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md). 
+11. Elija **Siguiente** para mostrar la página **Revisar y crear**. Revise los valores y la configuración que especificó para la aplicación.
+12. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
+
+Se muestra la hoja **Información general** de la aplicación que creó.
+
 
 La aplicación que ha creado aparece en la lista de aplicaciones, donde puede asignarla a los grupos que seleccione.
 

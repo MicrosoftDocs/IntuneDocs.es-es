@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e1d3c6a427dcbd4a7946c5f3e180de56e8cb955
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563522"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755194"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de iOS a Microsoft Intune
 
@@ -36,25 +36,27 @@ Use la información de este artículo para agregar una aplicación de línea de 
 >
 >Las aplicaciones LOB de iOS tienen un límite de tamaño máximo de 4 GB por aplicación.
 
-## <a name="step-1-specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
+## <a name="select-the-app-type"></a>Selección del tipo de aplicación
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-3. En el panel **Agregar aplicación**, seleccione **Aplicación de línea de negocio** para **Tipo de aplicación**.
+3. En el panel **Seleccionar tipo de aplicación**, en los **Otros** tipos de aplicaciones, seleccione **Aplicación de línea de negocio**.
+4. Haga clic en **Seleccionar**. Se muestran los pasos para **Agregar aplicación**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Paso 2: Configuración del archivo de paquete de aplicaciones
+## <a name="step-1---app-information"></a>Paso 1: Información de la aplicación
 
-1. En el panel **Agregar aplicación**, seleccione **Archivo del paquete de aplicaciones**.
+### <a name="select-the-app-package-file"></a>Selección del archivo de paquete de aplicaciones
+
+1. En el panel **Agregar aplicación**, haga clic en **Select app package file** (Seleccionar el archivo de paquete de aplicaciones). 
 2. En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. Luego, seleccione un archivo de instalación de iOS con la extensión **.ipa**.
-3. Cuando haya terminado, seleccione **Aceptar**.
+   Se mostrarán los detalles de la aplicación.
+3. Cuando haya terminado, seleccione **Aceptar** en el panel **Archivo del paquete de aplicaciones** para agregar la aplicación.
 
+### <a name="set-app-information"></a>Establecimiento de la información de la aplicación
 
-## <a name="step-3-configure-app-information"></a>Paso 3: Configuración de información de la aplicación
-
-1. En el panel **Agregar aplicación**, seleccione **Información de la aplicación**.
-2. En el panel **Información de la aplicación**, agregue los datos de su aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de este panel podrían rellenarse automáticamente.
+1. En la página **Información de la aplicación**, agregue los datos de su aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Nombre**: escriba el nombre de la aplicación tal como aparece en el portal de empresa. Asegúrese de que todos los nombres de aplicación que usa son únicos. Si el mismo nombre de aplicación existe dos veces, solo aparece una de las aplicaciones en el portal de empresa.
-    - **Descripción**: Escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
+    - **Descripción**: escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
     - **Publicador**: Escriba el nombre del publicador de la aplicación.
     - **Versión mínima del sistema operativo**: en la lista, elija la versión mínima del sistema operativo en la que se puede instalar la aplicación. Si la aplicación se asigna a un dispositivo con un sistema operativo anterior, no se instalará.
     - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
@@ -65,12 +67,25 @@ Use la información de este artículo para agregar una aplicación de línea de 
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación. Un ejemplo es **Departamento de Recursos Humanos**.
     - **Notas**: escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: cargue un icono que esté asociado a la aplicación. Este icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
-3. Cuando haya terminado, seleccione **Aceptar**.
+2. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
 
-## <a name="step-4-finish-up"></a>Paso 4: Finalizar
+## <a name="step-2---select-scope-tags-optional"></a>Paso 2: Selección de Etiquetas de ámbito (opcional)
+Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida).
 
-1. En el panel **Agregar aplicación**, compruebe que los detalles de la aplicación son correctos.
-2. Seleccione **Agregar** para cargar la aplicación en Intune.
+1. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para la aplicación. 
+2. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
+
+## <a name="step-3---assignments"></a>Paso 3: Asignaciones
+
+1. Seleccione las asignaciones de grupo **Requerido**, **Disponible para dispositivos inscritos** o **Desinstalar** para la aplicación. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md) y [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md).
+2. Elija **Siguiente** para mostrar la página **Revisar y crear**. 
+
+## <a name="step-4---review--create"></a>Paso 4: Revisión y creación
+
+1. Revise los valores y la configuración que especificó para la aplicación.
+2. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
+
+    Se muestra la hoja **Información general** correspondiente a la aplicación de línea de negocio.
 
 La aplicación que ha creado ahora aparece en la lista de aplicaciones. En la lista, puede asignar las aplicaciones a los grupos que elija. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509810"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754310"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Control de acceso basado en rol (RBAC) con Microsoft Intune
 
@@ -52,6 +52,7 @@ Puede asignar roles integrados a los grupos sin ninguna configuración adicional
 - **Administrador de aplicaciones**: permite administrar las aplicaciones móviles y administradas, leer la información del dispositivo y ver los perfiles de configuración del dispositivo.
 - **Administrador de roles de Intune**: permite administrar los roles de Intune personalizados y agregar las asignaciones de roles de Intune integrados. Esta es la única función de Intune que permite asignar permisos a los administradores.
 - **Administrador de la escuela**: administra dispositivos Windows 10 en [Intune for Education](../introduction-intune-education.md).
+- **Administrador de seguridad de puntos de conexión**: administra las características de seguridad y cumplimiento, como las líneas de base de seguridad, el cumplimiento de dispositivos, el acceso condicional y ATP de Microsoft Defender.
 
 ### <a name="custom-roles"></a>Roles personalizados
 Puede crear sus propios roles con permisos personalizados. Para obtener más información sobre los roles personalizados, vea [Creación de un rol personalizado](create-custom-role.md).
@@ -62,7 +63,7 @@ Puede crear sus propios roles con permisos personalizados. Para obtener más inf
 | Administrador global | Lectura y escritura | Lectura y escritura |
 | Administrador del servicio de Intune | Lectura y escritura | Lectura y escritura |
 | Administrador de acceso condicional | Ninguno | Ninguno |
-| Administrador de seguridad | Solo lectura | Solo lectura |
+| Administrador de seguridad | Solo lectura (permisos administrativos completos para el nodo Seguridad de puntos de conexión) | Solo lectura |
 | Operador de seguridad | Solo lectura | Solo lectura |
 | Lector de seguridad | Solo lectura | Solo lectura |
 | Administrador de cumplimiento | Ninguno | Solo lectura |

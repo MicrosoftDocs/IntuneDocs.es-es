@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188465"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755692"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creación de una directiva de acceso condicional para Exchange local y en el entorno de Exchange Online dedicado heredado
 
@@ -84,40 +84,57 @@ Para poder usar el siguiente procedimiento para configurar el control de acceso 
 
 3. En el panel **Acceso local a Exchange**, elija **Sí** para *habilitar el control de acceso local a Exchange*.
 
+   > [!div class="mx-imgBorder"]
+   > ![Captura de pantalla de ejemplo de la pantalla de acceso local a Exchange](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. En **Asignación**, elija **Seleccionar grupos para incluir** y, a continuación, seleccione uno o varios grupos para configurar el acceso.
 
    Los miembros de los grupos que seleccione tendrán aplicada la directiva de acceso condicional para el acceso local a Exchange. Los usuarios que reciben esta directiva deben inscribir sus dispositivos en Intune y ser compatibles con los perfiles de cumplimiento para poder tener acceso a Exchange local.
 
-5. Para excluir grupos, elija **Seleccionar grupos para excluir** y, a continuación, seleccione uno o varios grupos que estén exentos de los requisitos para inscribir dispositivos y sean compatibles con los perfiles de cumplimiento para tener acceso a Exchange local. 
+   > [!div class="mx-imgBorder"]
+   > ![Seleccionar grupos para incluir](./media/conditional-access-exchange-create/select-groups.png)
 
-6. A continuación, configure las opciones de Intune On-Premises Exchange Connector.  En **Configuración**, en la ventana *Acceso local a Exchange*, seleccione **Exchange ActiveSync Connector local** y, luego, seleccione el conector para la organización de Exchange que quiere configurar.
+5. Para excluir grupos, elija **Seleccionar grupos para excluir** y, a continuación, seleccione uno o varios grupos que estén exentos de los requisitos para inscribir dispositivos y sean compatibles con los perfiles de cumplimiento para tener acceso a Exchange local.
 
-7. En **Configuración**, elija **Notificaciones de usuario** para modificar el mensaje de correo electrónico predeterminado que se envía a los usuarios si su dispositivo no es compatible y quieren tener acceso a Exchange local. La plantilla de mensaje usa lenguaje de marcado.  También puede ver la vista previa del mensaje mientras escribe.
+   Seleccione **Guardar** para guardar la configuración y vuelva al panel **Acceso a Exchange**.
+
+6. A continuación, configure las opciones de Intune On-Premises Exchange Connector. En la consola, seleccione **Administración de inquilinos** > **Acceso a Exchange**> **Exchange ActiveSync Connector local** y, luego, seleccione el conector para la organización de Exchange que quiere configurar.
+
+7. En el caso de las **Notificaciones de usuario**, seleccione **Editar** para abrir el flujo de trabajo **Editar organización**, donde puede modificar el mensaje de la *Notificación del usuario*.
+
+   > [!div class="mx-imgBorder"]
+   > ![Captura de pantalla de ejemplo del flujo de trabajo Editar organización para notificaciones](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   Modifique el mensaje de correo electrónico predeterminado que se envía a los usuarios si su dispositivo no es compatible y quieren tener acceso a Exchange local. La plantilla de mensaje usa lenguaje de marcado. También puede ver la vista previa del mensaje mientras escribe.
+
+   Seleccione **Revisar y guardar** y, luego, **Guardar** para guardar sus ediciones a fin de completar la configuración del acceso local a Exchange.
+
    > [!TIP]
    > Para más información sobre el lenguaje de marcado, consulte este [artículo](https://en.wikipedia.org/wiki/Markup_language) en Wikipedia.
- 
-   Seleccione **Aceptar** para guardar sus ediciones a fin de completar la configuración del acceso local a Exchange.
 
-8. A continuación, seleccione **Configuración avanzada de acceso a Exchange ActiveSync** para abrir el panel *Configuración avanzada de acceso a Exchange ActiveSync* donde configura las reglas de acceso de dispositivo:  
+8. A continuación, seleccione **Configuración avanzada de acceso a Exchange ActiveSync** para abrir el flujo de trabajo *Configuración avanzada de acceso a Exchange ActiveSync* donde configura las reglas de acceso de dispositivo.
+
+   > [!div class="mx-imgBorder"]
+   > ![Captura de pantalla de ejemplo del flujo de trabajo Editar organización para configuración avanzada](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - En **Acceso a dispositivos no administrados**, establezca la regla predeterminada global para el acceso desde dispositivos que no se vean afectados por el acceso condicional u otras reglas:
 
      - **Permitir acceso**: todos los dispositivos pueden tener acceso a Exchange local inmediatamente. Los dispositivos que pertenecen a los usuarios de los grupos que configuró como incluidos en el procedimiento anterior se bloquean si se evalúan posteriormente como no conformes con las directivas de cumplimiento o no inscritos en Intune.
 
-     - **Bloquear acceso** y **Cuarentena**: se bloquea inmediatamente a todos los dispositivos el acceso a Exchange local inicialmente. Los dispositivos que pertenecen a los usuarios de los grupos que configuró como incluidos en el procedimiento anterior obtienen acceso una vez que el dispositivo se inscribe en Intune y se evalúa como conforme. 
+     - **Bloquear acceso** y **Cuarentena**: se bloquea inmediatamente a todos los dispositivos el acceso a Exchange local inicialmente. Los dispositivos que pertenecen a los usuarios de los grupos que configuró como incluidos en el procedimiento anterior obtienen acceso una vez que el dispositivo se inscribe en Intune y se evalúa como conforme.
 
        Los dispositivos Android que *no* ejecutan Samsung Knox Standard no admiten esta configuración y siempre están bloqueados.
 
-   -  En **Excepciones de la plataforma de dispositivo**, seleccione **Agregar** y, a continuación, especifique detalles de la plataforma según sea necesario para su entorno. 
-   
+   - En **Excepciones de la plataforma de dispositivo**, seleccione **Agregar** y, a continuación, especifique detalles según sea necesario para su entorno.
+
       Si el valor **Acceso a dispositivos no administrados** está establecido en **Bloqueado**, se permiten los dispositivos inscritos y conformes aunque haya una excepción de plataforma para bloquearlos.  
-   
-   Seleccione **Aceptar** para guardar las ediciones.
 
-9. Seleccione **Guardar** para guardar la directiva de acceso condicional de Exchange.
+9. Seleccione **Aceptar** para guardar las ediciones.
 
-A continuación, cree una directiva de cumplimiento y asígnela a los usuarios para que Intune evalúe sus dispositivos móviles. Consulte [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
+10. Seleccione **Revisar y guardar** y, después, **Guardar** para guardar la directiva de acceso condicional de Exchange.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
+A continuación, cree una directiva de cumplimiento y asígnela a los usuarios para que Intune evalúe sus dispositivos móviles. Consulte [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
 
 [Solución de problemas de Intune Exchange Connector local en Microsoft Intune](https://support.microsoft.com/help/4471887)

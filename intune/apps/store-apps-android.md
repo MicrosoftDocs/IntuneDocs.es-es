@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec800064d109cca42878c79ade6777de9b782015
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e6b9f6a9303e53652959639193633cdcc00dfb99
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563502"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755092"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de la Tienda Android a Microsoft Intune
 
@@ -37,12 +37,15 @@ Puede agregar una aplicación de la Tienda Android a Intune desde Azure Portal s
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-3. En el panel **Agregar aplicación**, en los tipos de **Aplicaciones de la Tienda** disponibles, seleccione **Android**.
-4. Para configurar la información de la aplicación, seleccione **Configurar** y luego proporcione la siguiente información. Para aplicaciones Android, vaya a [Google Play](https://play.google.com/store) y busque la aplicación que quiera implementar. Seleccione la aplicación y anote los detalles de la aplicación. Según la aplicación que haya elegido, algunos de los valores pueden haberse rellenado automáticamente.
+3. En el panel **Seleccionar tipo de aplicación**, en los tipos de **Aplicación de la Tienda** disponibles, seleccione la **Aplicación de la tienda Android**.
+4. Haga clic en **Seleccionar**.<br>
+   Se muestran los pasos para **Agregar aplicación**.
+5. Para configurar la **Información de la aplicación** correspondiente a la aplicación Android, vaya a [Google Play Store](https://play.google.com/store) y busque la aplicación que quiere implementar. Muestre la página de la aplicación y tome nota de los detalles de la aplicación. 
+6. En la página **Información de la aplicación**, agregue los detalles de la aplicación:
     - **Nombre**: escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. Asegúrese de que cualquier nombre de aplicación que use sea exclusivo. Si hay un nombre de aplicación duplicado, solo se muestra uno a los usuarios del Portal de empresa.
     - **Descripción**: Escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
     - **Publicador**: Escriba el nombre del publicador de la aplicación.
-    - **Dirección URL de Appstore**: escriba la dirección URL de App Store de la aplicación que quiere crear.
+    - **Dirección URL de Appstore**: escriba la dirección URL de App Store de la aplicación que quiere crear. Use la dirección URL de la página de la aplicación cuando se muestren los detalles de la aplicación en el almacén. 
     - **Versión mínima del sistema operativo**: en la lista, seleccione la versión mínima del sistema operativo en la que se puede instalar la aplicación. Si la aplicación se asigna a un dispositivo con un sistema operativo anterior, no se instalará.
     - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Esto facilita que los usuarios puedan encontrar la aplicación cuando exploran el Portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones. Se aplica a las aplicaciones implementadas con intención disponible.
@@ -52,10 +55,14 @@ Puede agregar una aplicación de la Tienda Android a Intune desde Azure Portal s
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, *Departamento de Recursos Humanos*.
     - **Notas**: opcionalmente, escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: opcionalmente, cargue un icono que se asociará con la aplicación. Este icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
-5. Seleccione **Aceptar**.
-6. Seleccione **Agregar**.
+7. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
+8. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para la aplicación. Para más información, consulte [Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida](~/fundamentals/scope-tags.md).
+9. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
+10. Seleccione las asignaciones de grupo para la aplicación. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md). 
+11. Elija **Siguiente** para mostrar la página **Revisar y crear**. Revise los valores y la configuración que especificó para la aplicación.
+12. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
 
-La aplicación que ha creado aparece en la lista de aplicaciones, donde puede asignarla a los grupos que seleccione. 
+Se muestra la hoja **Información general** de la aplicación que creó.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

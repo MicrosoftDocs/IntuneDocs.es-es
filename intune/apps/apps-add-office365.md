@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 86d02ae1277ff2fd6dfce9bf206628f5dc1c2a84
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205979"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755343"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adición de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -47,100 +47,99 @@ Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agr
 - **Versión de Office**: elija si quiere asignar la versión de 32 o 64 bits de Office. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
 - **Remove MSI from end-user devices** (Quitar MSI de los dispositivos de usuario final): elija si quiere quitar las aplicaciones .MSI preexistentes de Office de los dispositivos de usuario final. La instalación no funcionará si hay aplicaciones .MSI preexistentes en los dispositivos de usuario final. Las aplicaciones que se deben desinstalar no se limitan a las seleccionadas para la instalación en **Configure App Suite** (Configurar App Suite), ya que quitarán todas las aplicaciones de Office (MSI) del dispositivo del usuario final. Para obtener más información, vea [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (Quitar las versiones de MSI de Office al actualizar a Office 365 ProPlus). Cuando Intune reinstala Office en los equipos de los usuarios finales, estos recibirán automáticamente los mismos paquetes de idioma que tenían con las instalaciones de Office .MSI anteriores.
 
-## <a name="get-started"></a>Introducción
+## <a name="select-the-office-365-suite-app-type"></a>Selección del tipo de aplicación Conjunto de aplicaciones Office 365
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-3. En el panel **Agregar aplicaciones**, en la lista **Tipo de aplicación**, vaya a **Office 365 Suite** y seleccione **Windows 10**.
+3. Seleccione **Windows 10** en la sección **Conjunto de aplicaciones Office 365** del panel **Seleccionar tipo de aplicación**.
+4. Haga clic en **Seleccionar**. Se muestran los pasos para **agregar Conjunto de aplicaciones Office 365**.
 
-## <a name="select-settings-format"></a>Selección del formato de configuración
 
-Si quiere elegir un método para configurar la configuración de la aplicación, seleccione un **formato de configuración**. Entre las opciones de formatos de configuración se incluyen las siguientes:
-- Diseñador de configuraciones
-- Especificar datos XML
-
-Cuando se elige el **Diseñador de configuraciones**, el panel **Agregar aplicación** cambiará para ofrecer otras dos opciones de configuración:
-- Configurar conjunto de aplicaciones
-- Configuración del conjunto de aplicaciones
-
-<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
-
-Cuando se elige **Especificar datos XML**, el panel **Agregar aplicación** mostrará la opción **Especificar datos XML**. Selecciónela para mostrar el panel **Archivo de configuración**. 
-
-![Diseñador de configuraciones para agregar Office 365](./media/apps-add-office365/apps-add-office365-01.png)
-    
-Para obtener más información sobre la opción **Especificar datos XML**, vea más adelante la sección [Especificar datos XML](apps-add-office365.md#enter-xml-format).
-
-## <a name="configure-app-suite-information"></a>Configuración de la información del conjunto de aplicaciones
+## <a name="step-1---app-suite-information"></a>Paso 1: Información del conjunto de aplicaciones
 
 En este paso, proporcionará información sobre el conjunto de aplicaciones. Esta información le ayuda a identificar el conjunto de aplicaciones en Intune y, además, ayuda a los usuarios finales a encontrarlo en el Portal de empresa.
 
-1. En el panel **Agregar aplicación**, seleccione **App Suite Information** (Información del conjunto de aplicaciones).
-2. En el panel **App Suite Information** (Información del conjunto de aplicaciones), haga lo siguiente:
+1. En la página **Información del conjunto de aplicaciones**, puede confirmar o modificar los valores predeterminados:
     - **Nombre del conjunto de aplicaciones**: escriba el nombre del conjunto tal como se muestra en el Portal de empresa. Asegúrese de que todos los nombres de conjuntos de aplicaciones que use sean únicos. Si el mismo nombre del conjunto ya existe, solo se muestra una de las aplicaciones a los usuarios en el portal de empresa.
     - **Descripción del conjunto de aplicaciones** : escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
     - **Publicador**: Microsoft aparece como publicador.
     - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren el conjunto de aplicaciones cuando exploren el portal de empresa.
-    - **Mostrar como aplicación destacada en el Portal de empresa** : seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
+    - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
     - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: Microsoft aparece como desarrollador.
     - **Propietario**: Microsoft aparece como propietario.
     - **Notas**: escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: el logotipo de Office 365 se muestra con la aplicación cuando los usuarios buscan en el Portal de empresa.
-3. Seleccione **Aceptar**.
+2. Haga clic en **Siguiente** para mostrar la página **Configurar conjunto de aplicaciones**.
 
-## <a name="configure-app-suite"></a>Configurar conjunto de aplicaciones
+## <a name="step-2---option-1-configure-app-suite-using-the-configuration-designer"></a>Paso 2: (**opción 1**) Configuración del conjunto de aplicaciones mediante el diseñador de configuración 
 
-Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configurar conjunto de aplicaciones** en el panel **Agregar aplicación**. Seleccione las aplicaciones de Office que quiere asignar a los dispositivos.
+Si quiere elegir un método para configurar la configuración de la aplicación, seleccione un **formato de configuración**. Entre las opciones de formatos de configuración se incluyen las siguientes:
+- Diseñador de configuraciones
+- Especificar datos XML
 
-1. En el panel **Agregar aplicación**, seleccione **Configure App Suite** (Configurar conjunto de aplicaciones).
-2. En el panel **Configure App Suite** (Configurar conjunto de aplicaciones), elija las aplicaciones de Office estándar que quiere asignar a los dispositivos.  
-    Además, puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Online Plan 2, si posee sus licencias.
-3. Seleccione **Aceptar**.
+Cuando se elige el **Diseñador de configuración**, el panel **Agregar aplicación** cambiará para ofrecer otras tres áreas de configuración:
+- Configurar conjunto de aplicaciones
+- Información del conjunto de aplicaciones
+- Propiedades
 
-## <a name="configure-app-suite-settings"></a>Configuración del conjunto de aplicaciones
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configuración del conjunto de aplicaciones** en el panel **Agregar aplicación**. En este paso, configure las opciones de instalación para el conjunto de aplicaciones. La configuración se aplica a todas las aplicaciones que agregó al conjunto.
-
-1. En el panel **Agregar aplicación**, seleccione **App Suite Settings** (Configuración del conjunto de aplicaciones).
-2. En el panel **App Suite Settings** (Configuración del conjunto de aplicaciones), haga lo siguiente:
-    - **Versión de Office**: elija si quiere asignar la versión de 32 o 64 bits de Office. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
+1. En la página **Conjunto de aplicaciones de configuración**, elija el **Diseñador de configuración**.
+   - **Seleccionar aplicaciones de Office**: para seleccionar las aplicaciones estándar de Office que quiere asignar a los dispositivos, elíjalas en la lista desplegable.
+   - **Seleccionar otras aplicaciones de Office (se necesita licencia)** : Seleccione las otras aplicaciones de Office que quiere asignar a los dispositivos y para las que tiene licencias; para ello, elija las aplicaciones en la lista desplegable. Estas aplicaciones incluyen aplicaciones con licencia, como el cliente de escritorio de Microsoft Project Online y Microsoft Visio Online Plan 2.
+   - **Arquitectura**: elija si quiere asignar la versión de **32 bits** o de **64 bits** de Office ProPlus. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
     - **Canal de actualización**: elija cómo Office se actualiza en los dispositivos. Para más información sobre los distintos canales de actualización, consulte [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Elija de entre las siguientes opciones:
         - **Mensual**
         - **Mensual (dirigido)**
         - **Semianual**
         - **Semianual (dirigido)**
 
-        Después de elegir un canal, puede seleccionar **Específico** para instalar una versión específica de Office del canal seleccionado en los dispositivos del usuario final. A continuación, seleccione la **versión específica** de Office que quiera usar.
-        
-        Las versiones disponibles cambiarán con el tiempo. Por lo tanto, al crear una nueva implementación, las versiones disponibles pueden ser más recientes y no tener determinadas versiones anteriores disponibles. Las implementaciones actuales seguirán implementando la versión anterior, pero la lista de versiones se actualizará continuamente por canal.
-        
-        En el caso de los dispositivos que actualicen su versión anclada (o cualquier otra propiedad) y se implementen a medida que estén disponibles, el estado de informe se mostrará como Instalado si han instalado la versión anterior hasta que se registre el dispositivo. Una vez que se registre, el estado cambiará de forma temporal a Desconocido. Sin embargo, este estado no se mostrará a los usuarios. Cuando un usuario inicie la instalación de la versión más reciente disponible, este verá el estado cambiado a Instalado.
-        
-        Para más información, vea [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
-
-    - **Remove MSI from end-user devices** (Quitar MSI de los dispositivos de usuario final): elija si quiere quitar las aplicaciones .MSI preexistentes de Office de los dispositivos de usuario final. La instalación no funcionará si hay aplicaciones .MSI preexistentes en los dispositivos de usuario final. Las aplicaciones que se deben desinstalar no se limitan a las seleccionadas para la instalación en **Configure App Suite** (Configurar App Suite), ya que quitarán todas las aplicaciones de Office (MSI) del dispositivo del usuario final. Para obtener más información, vea [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (Quitar las versiones de MSI de Office al actualizar a Office 365 ProPlus). Cuando Intune reinstala Office en los equipos de los usuarios finales, estos recibirán automáticamente los mismos paquetes de idioma que tenían con las instalaciones de Office .MSI anteriores. 
-    - **Aceptar automáticamente el contrato de licencia para el usuario final de la aplicación**: seleccione esta opción si no necesita que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
+        Después de elegir un canal, puede elegir lo siguiente:
+        - **Quitar otras versiones**: elija **Sí** para quitar otras versiones de Office (MSI) de los dispositivos de usuario. Elija esta opción si quiere quitar aplicaciones .MSI de Office preexistentes de los dispositivos de usuario final. La instalación no funcionará si hay aplicaciones .MSI preexistentes en los dispositivos de usuario final. Las aplicaciones que se deben desinstalar no se limitan a las seleccionadas para la instalación en **Configure App Suite** (Configurar App Suite), ya que quitarán todas las aplicaciones de Office (MSI) del dispositivo del usuario final. Para obtener más información, vea [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (Quitar las versiones de MSI de Office al actualizar a Office 365 ProPlus). Cuando Intune reinstala Office en los equipos de los usuarios finales, estos recibirán automáticamente los mismos paquetes de idioma que tenían con las instalaciones de Office .MSI anteriores. 
+        - **Versión para instalar**: elija la versión de Office que se debe instalar.
+        - **Versión específica**: si eligió **Específica** como la **Versión para instalar** en la configuración anterior, puede elegir instalar una versión específica de Office para el canal seleccionado en los dispositivos de usuario final. 
+            
+            Las versiones disponibles cambiarán con el tiempo. Por lo tanto, al crear una nueva implementación, las versiones disponibles pueden ser más recientes y no tener determinadas versiones anteriores disponibles. Las implementaciones actuales seguirán implementando la versión anterior, pero la lista de versiones se actualizará continuamente por canal.
+            
+            En el caso de los dispositivos que actualicen su versión anclada (o cualquier otra propiedad) y se implementen a medida que estén disponibles, el estado de informe se mostrará como Instalado si han instalado la versión anterior hasta que se registre el dispositivo. Una vez que se registre, el estado cambiará de forma temporal a Desconocido. Sin embargo, este estado no se mostrará a los usuarios. Cuando un usuario inicie la instalación de la versión más reciente disponible, este verá el estado cambiado a Instalado.
+            
+            Para más información, vea [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
     - **Usar activación en equipos compartidos**: seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
+    - **Aceptar automáticamente el contrato de licencia para el usuario final de la aplicación**: seleccione esta opción si no necesita que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones. <p></p>
-    Puede implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** del panel **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en el panel **Configuración del conjunto de aplicaciones**. Para más información, vea [Información general acerca de la implementación de idiomas en Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+        Puede implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** del panel **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en el panel **Configuración del conjunto de aplicaciones**. Para más información, vea [Información general acerca de la implementación de idiomas en Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+2. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
 
-## <a name="select-scope-tags-optional"></a>Selección de Etiquetas de ámbito (opcional)
+## <a name="step-2---option-2-configure-app-suite-using-xml-data"></a>Paso 2: (**opción 2**) Configuración del conjunto de aplicaciones con datos XML 
+
+Si seleccionó la opción **Especificar datos XML** en el cuadro desplegable **Formato de configuración** en la página **Configurar conjunto de aplicaciones**, puede configurar el conjunto de aplicaciones de Office con un archivo de configuración personalizado.
+
+![Diseñador de configuraciones para agregar Office 365](./media/apps-add-office365/apps-add-office365-01.png)
+
+1. Se agregó el XML de configuración.
+2. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
+
+Para más información sobre cómo especificar datos XML, consulte [Opciones de configuración de la Herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+
+## <a name="step-3---select-scope-tags-optional"></a>Paso 3: Selección de Etiquetas de ámbito (opcional)
 Puede usar las etiquetas de ámbito para determinar quién puede ver información de la aplicación cliente en Intune. Para obtener más información sobre las etiquetas de ámbito, consulte [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Uso del control de acceso basado en roles y de las etiquetas de ámbito para la TI distribuida).
 
-1. Seleccione **Ámbito (Etiquetas)**  > **Agregar**.
-2. Use el cuadro **Seleccionar** para buscar las etiquetas de ámbito.
-3. Seleccione la casilla de verificación situada junto a las etiquetas de ámbito que desea asignar a esta aplicación.
-4. Elija **Seleccionar** > **Aceptar**.
+1. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para el conjunto de aplicaciones. 
+2. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
 
-## <a name="enter-xml-format"></a>Especificar formato XML
+## <a name="step-4---assignments"></a>Paso 4: asignaciones
 
-Si ha seleccionado la opción **Especificar datos XML** en el cuadro desplegable **Formato de configuración**, verá la opción **Enter XML format** (Especificar formato XML) en el panel **Agregar aplicación**. Para obtener más información, vea [Opciones de configuración de la Herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+1. Seleccione las asignaciones de grupo **Requerido**, **Disponible para dispositivos inscritos** o **Desinstalar** para el conjunto de aplicaciones. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md) y [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md).
+2. Elija **Siguiente** para mostrar la página **Revisar y crear**. 
 
-## <a name="finish-up"></a>Finalizar
+## <a name="step-5---review--create"></a>Paso 5: revisión y creación
 
-Cuando haya terminado, en el panel **Agregar aplicación**, seleccione **Agregar**. La aplicación que ha creado aparece en la lista de aplicaciones. El siguiente paso consiste en asignar las aplicaciones a los grupos que elija. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](~/apps/apps-deploy.md).
+1. Revise los valores y la configuración que especificó para el conjunto de aplicaciones.
+2. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
+
+    Se muestra la hoja **Información general** correspondiente al conjunto de aplicaciones de Office 365 para Windows 10.
 
 ## <a name="deployment-details"></a>Detalles de implementación
 
@@ -231,4 +230,4 @@ En la tabla siguiente se muestran los códigos de error comunes que podría enco
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Para asignar las aplicaciones a los grupos que elija, consulte [Asignación de aplicaciones a grupos](/intune-azure/manage-apps/deploy-apps).
+- Para asignar el conjunto de aplicaciones a grupos adicionales, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](/intune-azure/manage-apps/deploy-apps).

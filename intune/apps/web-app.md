@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781233"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754786"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Agregar aplicaciones web a Microsoft Intune
 
@@ -46,8 +46,8 @@ Para agregar una aplicación a Intune como acceso directo a una aplicación de I
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
-3. En el panel **Agregar aplicación**, en la lista desplegable **Tipo de aplicación**, seleccione el tipo **Vínculo web**.
-4. Seleccione **Configurar**.
+3. En el panel **Seleccionar el tipo de aplicación**, en los **Otros** disponibles, seleccione **Enlace web**.
+4. Haga clic en **Seleccionar**. Se muestran los pasos para **Agregar aplicación**.
 5. En el panel **Información de aplicación**, agregue la información siguiente:
     - **Nombre**:  escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. 
 
@@ -61,8 +61,14 @@ Para agregar una aplicación a Intune como acceso directo a una aplicación de I
     - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
     - **Se necesita Managed Browser para abrir este vínculo**: seleccione esta opción para asignar a los usuarios un vínculo a un sitio web o aplicación web que puedan abrir en Intune Managed Browser. Este explorador debe instalarse en su dispositivo.
     - **Logotipo**: Cargue un icono que se asociará con la aplicación. Este icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
-6. Seleccione **Aceptar**.
-7. Luego, en el panel **Agregar aplicación**, seleccione **Agregar**.
+6. Haga clic en **Siguiente** para mostrar la página **Etiquetas de ámbito**.
+7. Si quiere, haga clic en **Seleccionar etiquetas de ámbito** para agregar etiquetas de ámbito para la aplicación. Para más información, consulte [Usar control de acceso basado en rol (RBAC) y etiquetas de ámbito para TI distribuida](~/fundamentals/scope-tags.md).
+8. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
+9. Seleccione las asignaciones de grupo para la aplicación. Para más información, consulte [Agregar grupos para organizar usuarios y dispositivos](~/fundamentals/groups-add.md). 
+10. Elija **Siguiente** para mostrar la página **Revisar y crear**. Revise los valores y la configuración que especificó para la aplicación.
+11. Cuando haya terminado, haga clic en **Crear** para agregar la aplicación a Intune.
+
+    Se muestra la hoja **Información general** de la aplicación que creó.
 
 > [!Note]
 > Actualmente, la implementación de aplicaciones web de Intune para dispositivos iOS está asociada al perfil de administración y no se puede quitar manualmente. Puede cambiar el tipo de implementación a **Desinstalar** en el portal de Intune; en este momento, puede quitar automáticamente la aplicación web. Sin embargo, si quita la implementación antes de cambiar la intención de asignación de aplicaciones a **Desinstalar**, la aplicación web estará de forma permanente en su sitio en el dispositivo hasta que se cancele la suscripción de este desde Intune.

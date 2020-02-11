@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991771"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812458"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -38,8 +38,8 @@ La acción **Borrar** restaura un dispositivo a su configuración de fábrica pr
 
 |Acción de borrado|**Conservar el estado de inscripción y la cuenta de usuario**|Quitado de la administración de Intune|Descripción|
 |:-------------:|:------------:|:------------:|------------|
-|**Eliminación de datos**| No activada | Sí | Borra todas las cuentas de usuario, los datos, las directivas de MDM y la configuración. Restablece el sistema operativo a su configuración y estado predeterminados.|
-|**Eliminación de datos**| Activada | No | Borra todas las directivas de MDM. Conserva los datos y las cuentas de usuario. Restablece la configuración del usuario a los valores predeterminados. Restablece el sistema operativo a su configuración y estado predeterminados.|
+|**Borrar**| No activada | Sí | Borra todas las cuentas de usuario, los datos, las directivas de MDM y la configuración. Restablece el sistema operativo a su configuración y estado predeterminados.|
+|**Borrar**| Activada | No | Borra todas las directivas de MDM. Conserva los datos y las cuentas de usuario. Restablece la configuración del usuario a los valores predeterminados. Restablece el sistema operativo a su configuración y estado predeterminados.|
 
 
 > [!NOTE]
@@ -88,7 +88,7 @@ En las tablas siguientes se describen los datos que se eliminan y el efecto de l
 
 |Tipo de datos|iOS|
 |-------------|-------|
-|Aplicaciones de empresa y datos asociados instalados por Intune.|**Aplicaciones instaladas mediante el Portal de empresa:** Para las aplicaciones que están ancladas al perfil de administración, se eliminan todas las aplicaciones y los datos de la aplicación. Entre estas aplicaciones se incluyen aquellas instaladas originalmente desde App Store y posteriormente administradas como aplicaciones de la empresa. <br /><br /> **Aplicaciones de Microsoft que usan la administración de aplicaciones móviles y se instalaron desde App Store:** Para las aplicaciones que no están administradas por el Portal de empresa, se quitan los datos de la aplicación de empresa que están protegidos por cifrado de la administración de aplicaciones móviles (MAM) en el almacenamiento local de la aplicación. Los datos que están protegidos mediante el cifrado de MAM fuera de la aplicación permanecen cifrados e inutilizables, pero no se quitan. No se quitarán las aplicaciones ni los datos de la aplicación personales.|
+|Aplicaciones de empresa y datos asociados instalados por Intune.|**Aplicaciones instaladas mediante el Portal de empresa:** Para las aplicaciones que están ancladas al perfil de administración, se eliminan todas las aplicaciones y los datos de la aplicación. Estas aplicaciones incluyen aplicaciones instaladas originalmente desde App Store y que posteriormente se administran como aplicaciones de empresa, a menos que la aplicación esté configurada para no desinstalarse al quitar el dispositivo. <br /><br /> **Aplicaciones de Microsoft que usan la administración de aplicaciones móviles y se instalaron desde App Store:** Para las aplicaciones que no están administradas por el Portal de empresa, se quitan los datos de la aplicación de empresa que están protegidos por cifrado de la administración de aplicaciones móviles (MAM) en el almacenamiento local de la aplicación. Los datos que están protegidos mediante el cifrado de MAM fuera de la aplicación permanecen cifrados e inutilizables, pero no se quitan. No se quitarán las aplicaciones ni los datos de la aplicación personales.|
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|
@@ -134,7 +134,7 @@ Solo se pueden borrar dispositivos de quiosco. Los dispositivos de quiosco de An
 
 ### <a name="windows"></a>Windows
 
-|Tipo de datos|Windows 8.1 (MDM) y Windows RT 8.1|Windows RT|Windows Phone 8.1 y Windows Phone 8|Windows 10|
+|Tipo de datos|Windows 8.1 (MDM) y Windows RT 8.1|Windows RT|Windows Phone 8.1 y Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Aplicaciones de empresa y datos asociados instalados por Intune.|Se revocan las claves de los archivos protegidos con EFS. El usuario no puede abrir los archivos.|No se quitan las aplicaciones de empresa.|Se desinstalan las aplicaciones instaladas originalmente a través del Portal de empresa. Se quitarán los datos de la aplicación de empresa.|Las aplicaciones se desinstalarán. Se quitan las claves de instalación de prueba.<br>Para Windows 10 versión 1703 (Creator Update) y versiones posteriores, no se quitan las aplicaciones de Office 365 ProPlus. Las aplicaciones Win32 instaladas en la extensión de administración de Intune no serán dispositivos desinstalados o no inscritos. Los administradores pueden aprovechar la exclusión de asignación para no ofrecer las aplicaciones Win32 en los dispositivos BYOD.|
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|

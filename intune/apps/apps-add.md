@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956203"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755279"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune 
 
@@ -74,10 +74,10 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 
 <sup>1</sup> Para obtener más información sobre los perfiles de trabajo de Android Enterprise y Android, consulte [Información sobre el uso de aplicaciones con licencia](apps-add.md#understanding-licensed-apps) a continuación.
 
-Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación** y podrá seleccionar el **tipo de aplicación**. 
+Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. Se mostrará el panel **Seleccionar tipo de aplicación** y podrá seleccionar el **Tipo de aplicación**. 
 
 >[!TIP]
-> Una aplicación de línea de negocio es aquella que se agrega desde un archivo de instalación de la aplicación. Por ejemplo, para instalar una aplicación de línea de negocio de iOS, agregue la aplicación seleccionando **Aplicación de línea de negocio** como el **Tipo de aplicación** en el panel **Agregar aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .ipa). Estos tipos de aplicaciones normalmente se han escrito internamente.
+> Una aplicación de línea de negocio es aquella que se agrega desde un archivo de instalación de la aplicación. Por ejemplo, para instalar una aplicación de línea de negocio de iOS, agregue la aplicación seleccionando **Aplicación de línea de negocio** como el **Tipo de aplicación** en el panel **Seleccionar tipo de aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .ipa). Estos tipos de aplicaciones normalmente se han escrito internamente.
 
 ## <a name="assess-app-requirements"></a>Acceso a los requisitos de la aplicación
 Como administrador de TI, determine qué aplicaciones debe usar el grupo, así como las capacidades necesarias para cada grupo y subgrupo. Para cada aplicación, determine las plataformas necesarias, los grupos de usuarios que necesitan la aplicación, las directivas de configuración para aplicar a todos los grupos y las directivas de protección que se aplicarán.  

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563993"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912665"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -108,7 +108,7 @@ La información de la tabla siguiente puede ayudarle a comprender la intención 
 |Usuario Requerido y Disponible|Desinstalar dispositivo|Ambos existen, Intune resuelve los Requeridos (Requeridos y Disponibles)
 |Usuario disponible sin inscripción|Usuario Requerido y Disponible|Requerido y Disponible
 |Usuario disponible sin inscripción|Usuario Requerido|Requerido
-|Usuario disponible sin inscripción|Usuario disponible|Available|
+|Usuario disponible sin inscripción|Usuario disponible|Disponible|
 |Usuario disponible sin inscripción|Dispositivo Requerido|Requerido y Disponible sin inscripción|
 |Usuario disponible sin inscripción|Desinstalar dispositivo|Desinstalar y Disponible sin inscripción.<br><br>Si el usuario no ha instalado la aplicación desde el Portal de empresa, entonces se respeta la desinstalación.<br><br>Si el usuario instala la aplicación desde el Portal de empresa, entonces la instalación tiene prioridad sobre la desinstalación.|
 
@@ -132,7 +132,7 @@ Pasos para asignar una aplicación de Google Play administrado a dispositivos no
 Cuando se emite un borrado selectivo de aplicaciones en la consola de Intune, la cuenta profesional se quita automáticamente de la aplicación Play Store y, desde ese momento, el usuario final deja de ver aplicaciones de trabajo en el catálogo de aplicaciones de Play Store. Cuando se quita la cuenta profesional de un dispositivo, las aplicaciones instaladas desde Play Store seguirán instaladas en el dispositivo y no se desinstalarán. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Configuración de desinstalación de aplicación para aplicaciones administradas de iOS
-En el caso de los dispositivos iOS, puede elegir lo que sucede con las aplicaciones administradas al anular la inscripción del dispositivo de Intune o quitar el perfil de administración con el valor de **Desinstalar al eliminar el dispositivo**. Este valor solo se aplica a las aplicaciones después de que el dispositivo se haya inscrito y las aplicaciones se hayan instalado como administradas. El valor no se puede configurar para aplicaciones web ni vínculos web. 
+En el caso de los dispositivos iOS, puede elegir lo que sucede con las aplicaciones administradas al anular la inscripción del dispositivo de Intune o quitar el perfil de administración con el valor de **Desinstalar al eliminar el dispositivo**. Este valor solo se aplica a las aplicaciones después de que el dispositivo se haya inscrito y las aplicaciones se hayan instalado como administradas. El valor no se puede configurar para aplicaciones web ni vínculos web. Solo los datos protegidos por la administración de aplicaciones móviles (MAM) se retiran después de un borrado selectivo de la aplicación.
 
 Los valores de configuración predeterminados se rellenan automáticamente para las nuevas asignaciones de la siguiente manera:
 

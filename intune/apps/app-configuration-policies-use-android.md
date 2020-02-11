@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205044"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755530"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adición de directivas de configuración de aplicaciones para dispositivos Android Enterprise administrados
 
@@ -34,21 +34,43 @@ Las directivas de configuración de aplicaciones en Microsoft Intune proporcion
 > [!NOTE]  
 > No todas las aplicaciones admiten la configuración de aplicaciones. Póngase en contacto con el desarrollador de la aplicación para comprobar si la aplicación admite directivas de configuración de aplicaciones.
 
-1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** >  **Agregar** > **Dispositivos administrados**.
-2. Agregue las propiedades siguientes:
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Elija **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Dispositivos administrados**. Observe que puede elegir entre **Dispositivos administrados** y **Aplicaciones administradas**. Para más información, consulte [Aplicaciones que admiten la configuración de aplicaciones](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
+3. En la página **Aspectos básicos**, establezca los detalles siguientes:
+    - **Nombre**: nombre del perfil que aparece en Azure Portal.
+    - **Descripción**: descripción del perfil que aparece en Azure Portal.
+    - **Tipo de inscripción del dispositivo**: esta configuración está establecida en **Dispositivos administrados**.
+4. Seleccione **Android Enterprise** como la **plataforma**.
+5. Haga clic en **Seleccionar aplicación** junto a **Aplicación de destino**. Se muestra el panel **Aplicación asociada**. 
+6. En el panel **Aplicación asociada**, elija la aplicación administrada para asociarla con la directiva de configuración y haga clic en **Aceptar**.
+7. Haga clic en **Siguiente** para abrir la página **Configuración**.
+8. Haga clic en **Agregar** para mostrar el panel **Agregar permisos**.
+9. Haga clic en los permisos que quiere invalidar. Los permisos concedidos invalidan la directiva "Permisos de aplicación predeterminados" para las aplicaciones seleccionadas.
+10. Establezca el **Estado del permiso** de cada permiso. Puede elegir entre **Solicitud**, **Concesión automática** o **Denegación automática**. Para más información sobre los permisos, consulte [Configuración de Android Enterprise para marcar dispositivos como compatibles o no compatibles con Intune](~/protect/compliance-policy-create-android-for-work.md).
+11. En el cuadro desplegable, seleccione el **Formato de opciones de configuración**. Seleccione uno de los métodos siguientes para agregar información de la configuración:
+    - **Uso del Diseñador de configuración**
+    - **Especificar datos JSON**<br><br>
+    Para obtener más detalles sobre cómo usar el diseñador de configuraciones, vea [Uso del Diseñador de configuración](#use-the-configuration-designer). Para información sobre cómo escribir datos XML, consulte [Especificar datos JSON](#enter-json-data). 
+12. Haga clic en **Siguiente** para abrir la página **Asignaciones**.
+13. En el cuadro desplegable junto a **Asignar a**, seleccione **Grupos seleccionados**, **Todos los usuarios**, **Todos los dispositivos** o **Todos los usuarios y dispositivos** a la que asignarle la directiva de configuración de aplicación.
 
-    - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Directiva de la aplicación Nine Work de Android Enterprise para toda la compañía**.
-    - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
-    - **Tipo de inscripción del dispositivo**: Esta opción se establece en **Dispositivos administrados**.
-    - **Plataforma**: Seleccione **Android**.
+    ![Captura de pantalla de la pestaña Incluir de la hoja Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. Seleccione **Aplicación asociada**. Elija la aplicación Android a la que se asociará esta directiva de configuración de aplicaciones. Selecciónela en la lista de [aplicaciones de Google Play administrado que ha aprobado y sincronizado con Intune](~/apps/apps-add-android-for-work.md).
-4. Seleccione **Permisos**. Las configuraciones se pueden establecer con lo siguiente:
+14. Seleccione **Todos los usuarios** en el cuadro desplegable.
 
-    - [Diseñador de configuraciones](#use-the-configuration-designer)
-    - [Editor JSON](#enter-the-json-editor)
+    ![Captura de pantalla de la opción Todos los usuarios de la lista desplegable de la hoja Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. Seleccione **Aceptar** > **Agregar**.
+15. Haga clic en **Seleccionar grupos para excluir** para mostrar el panel relacionado.
+
+    ![Captura de pantalla del panel Seleccionar grupos para excluir de la página Asignaciones de la directiva](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. Seleccione los grupos que quiera excluir y después haga clic en **Seleccionar**.
+
+    >[!NOTE]
+    >Al agregar un grupo, si ya se ha incluido otro a un tipo de asignación determinado, este se preselecciona y no se puede cambiar por otros tipos de asignación de inclusión. Por lo tanto, ese grupo que se ha usado no se puede usar como un grupo de exclusión.
+
+17. Elija **Siguiente** para mostrar la página **Revisar y crear**.
+18. Haga clic en **Crear** para agregar la Ddrectiva de configuración de aplicaciones a Intune.
 
 ## <a name="use-the-configuration-designer"></a>Uso del diseñador de configuración
 
@@ -92,7 +114,7 @@ Para dispositivos Android, use los siguientes pares de clave/valor:
    > Debe usar Outlook para Android 2.2.222 y versiones posteriores, Word, Excel, PowerPoint para Android 16.0.9327.1000 y versiones posteriores o OneDrive para Android 5.28 y versiones posteriores al permitir solo cuentas de organización configuradas con varias identidades.<p></p>
    > Como administrador de Microsoft Intune, puede controlar qué cuentas de usuario se agregan a las aplicaciones de Microsoft Office en dispositivos administrados. Puede limitar el acceso solo a las cuentas de usuario de la organización permitidas y bloquear las cuentas personales en los dispositivos inscritos. Las aplicaciones auxiliares procesan la configuración de la aplicación y quitan y bloquean las cuentas no aprobadas.<p></p>
 
-## <a name="enter-the-json-editor"></a>Editor de JSON
+## <a name="enter-json-data"></a>Especificar datos JSON
 
 Algunos valores de configuración de las aplicaciones (como las que tienen tipos de agrupaciones) no se pueden configurar con el Diseñador de configuración. Para esos valores, se deberá usar el editor JSON. La configuración se proporciona a las aplicaciones de forma automática cuando se instalan.
 

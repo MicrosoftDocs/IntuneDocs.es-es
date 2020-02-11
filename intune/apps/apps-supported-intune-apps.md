@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
-ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
+ms.openlocfilehash: 5c916e5cfb09da50bfcbfbe2ac4b094172357e80
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76125349"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812396"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicaciones protegidas de Microsoft Intune  
 
@@ -53,7 +53,7 @@ En las tablas siguientes se proporcionan detalles de aplicaciones de Microsoft y
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge crea una experiencia de exploración continua para los usuarios de Windows 10 a través de sus dispositivos. Sincronización perfecta de contenido y datos en segundo plano, por lo que los usuarios pueden examinar todos los dispositivos, sin perder el ritmo. Las características conocidas de Microsoft Edge, como el centro, permiten a los usuarios organizar la Web de una forma que evita el desorden, lo que facilita la búsqueda, visualización y administración de su contenido sobre la marcha. Microsoft Edge se ha diseñado para que los usuarios de Windows 10 exploren la Web de la forma que lo necesitan, independientemente de dónde se encuentren, sin interrumpir su flujo. | [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US)<br>[Vínculo de App Store (iOS)](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | Haga que las hojas de cálculo de Excel se vean mejor que nunca en la tableta y el teléfono. Confíe en que cuando edite o cree hojas de cálculo, se verán exactamente como desea en PC, Mac, tabletas y teléfonos. Póngase en marcha en poco tiempo con un aspecto y entorno de Office que le resultarán familiares, junto con una experiencia táctil intuitiva.<p><p>Esta aplicación puede usarse como aplicación de varias identidades para Android e iOS. | [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.excel)<br>[Vínculo de App Store (iOS)](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Power Automate**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | Lleve toda la potencia de Power Automate en su bolsillo. Con Power Automate, puede crear flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para agilizar su negocio, ahorrar tiempo y trabajar más eficazmente.| [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.flow)<br>[Vínculo de App Store (iOS)](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
-| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | Proporcione una solución de exploración web que el administrador de TI corporativo administra mediante directivas de administración de aplicaciones móviles de Intune. | [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser)<br>[Vínculo de App Store (iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
+| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | Proporcione una solución de exploración web que el administrador de TI corporativo administra mediante directivas de administración de aplicaciones móviles de Intune.<p>**NOTA:** Se va a retirar Intune Managed Browser. Use Microsoft Edge para la experiencia de explorador de Intune protegida. | [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser)<br>[Vínculo de App Store (iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
 | **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing facilita a las pequeñas empresas la creación de estimaciones y facturas de aspecto profesional, el pago rápido y el ahorro de tiempo. Tanto si está en su escritorio como si está de viaje, Invoicing permite crear y enviar facturas rápidamente, recibir pagos en línea y dedicar menos tiempo en papeleo controlando al mismo tiempo y en todo momento su dinero. | [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira)<br>[Vínculo de App Store (iOS)](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala es una aplicación móvil y un servicio que se ha diseñado para la administración de trabajos y comunicaciones de grupos grandes. Kaizala facilita la conexión y coordinación del trabajo con toda la cadena de valor, incluidos los empleados de campo, proveedores, asociados y clientes, independientemente del lugar en el que se encuentren. | [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer)<br>[Vínculo de App Store (iOS)](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Launcher Microsoft (anteriormente conocida como Arrow Launcher) puede personalizar el dispositivo Android para que coincida con su estilo con papeles tapiz, colores de tema, paquetes de iconos y mucho más. Con una cuenta de Microsoft o cuenta profesional o educativa, puede acceder a su calendario, documentos y actividades recientes en la fuente personalizada. Puede incluso abrir fotos, documentos y páginas web en su PC con Windows, para ser productivo en todos los dispositivos. | [Vínculo de Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  

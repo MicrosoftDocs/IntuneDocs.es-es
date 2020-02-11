@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206710"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812369"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -31,7 +31,11 @@ Puede crear un perfil e incluir toda la configuración que escribió. El paso si
 En este artículo se muestra cómo asignar un perfil y se incluye información sobre el uso de las etiquetas de ámbito en los perfiles.
 
 > [!NOTE]  
-> Cuando se quita un perfil o deja de estar asignado a un dispositivo, la configuración puede mantener el valor existente. La configuración no se revierte a un valor predeterminado. Para cambiar la configuración a un valor diferente, cree un perfil y asígnelo.
+> Cuando se quita un perfil o ya no se asigna a un dispositivo, pueden generarse diferentes acciones, dependiendo de la configuración del perfil. La configuración se basa en CSP y cada CSP puede controlar la eliminación del perfil de manera distinta. Por ejemplo, un valor de configuración podría mantener el valor existente y no volver a un valor predeterminado. Cada CSP controla el comportamiento en el sistema operativo. Para una lista de CSP de Windows, consulte la [referencia del proveedor de servicios de configuración (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+>
+> Para cambiar una configuración a otro valor, cree un perfil, establezca la configuración en **No configurado** y asigne el perfil. Una vez aplicados al dispositivo, los usuarios deben tener el control para cambiar la configuración a su valor preferido.
+>
+> Al configurar estas opciones, se recomienda implementar en un grupo piloto. Para más información sobre el lanzamiento de Intune, consulte cómo [crear un plan de lanzamiento](../fundamentals/planning-guide-rollout-plan.md).
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 

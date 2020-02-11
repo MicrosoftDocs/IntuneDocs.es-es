@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756020"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754208"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -84,7 +84,7 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |ICCID|Identificador de tarjeta de circuitos integrados, que es el número de identificación único de una tarjeta SIM.|Windows, iOS, Android|
 |Fecha de inscripción|Fecha y hora en que el dispositivo se inscribió en Intune.|Windows, iOS, Android|
 |Último contacto|Fecha y hora en que el dispositivo se conectó a Intune por última vez.|Windows, iOS, Android|
-|Código de omisión del bloqueo de activación|Código que se puede usar para omitir el bloqueo de activación.|iOS|
+|Código de omisión del bloqueo de activación|Código que se puede usar para deshabilitar el bloqueo de activación.|iOS|
 |Registrado en Azure AD|Si se establece en **Sí**, el dispositivo se registra en Azure Directory.|Windows, iOS, Android|
 |Registrado en Intune|Si se establece en **Sí**, el dispositivo se registra en Intune.|Windows, iOS, Android|
 |Cumplimiento|Estado de cumplimiento del dispositivo.|Windows, iOS, Android|
@@ -92,8 +92,6 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |Id. de activación de EAS|Identificador de Exchange ActiveSync del dispositivo.|Windows, iOS, Android|
 |Supervisado|Si se establece en **Sí**, los administradores han mejorado el control sobre el dispositivo.|Windows, iOS, Android|
 |Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|Windows, iOS, Android|
-
-\* No está disponible en Android con el administrador de directivas de Google, como los dispositivos totalmente administrados y dedicados
 
 > [!Note]  
 > El número de teléfono no está inventariado en dispositivos Android Enterprise dedicados o totalmente administrados.
