@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7ffe5a8c20aa7edd67853ff86ef9e28cf2d175
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
+ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915829"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034250"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Información general para solucionar problemas de los perfiles de certificados SCEP con Microsoft Intune
 
@@ -115,11 +115,11 @@ En la lista siguiente se incluyen consolas o registros a los que se hace referen
 
 ### <a name="logs-for-android-devices"></a>Aplicaciones para dispositivos Android
 
-En el caso de los dispositivos que ejecutan Android, use el archivo de registro de la aplicación **Portal de empresa de Android**, **OMADM.log**. Antes de recopilar y revisar registros, asegúrese de que la opción [Registro detallado](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) esté habilitada y, luego, reproduzca el problema.
+En el caso de los dispositivos que ejecutan Android, use el archivo de registro de la aplicación **Portal de empresa de Android**, **OMADM.log**. Antes de recopilar y revisar registros, asegúrese de que la opción [Registro detallado](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) esté habilitada y, luego, reproduzca el problema.
 
-Para recopilar OMADM.logs desde un dispositivo, consulte [Carga y envío por correo electrónico de los registros mediante un cable USB](/intune-user-help/send-logs-to-your-it-admin-using-cable-android.md).
+Para recopilar OMADM.logs desde un dispositivo, consulte [Carga y envío por correo electrónico de los registros mediante un cable USB](/intune-user-help/send-logs-to-your-it-admin-using-cable-android).
 
-También puede consultar la sección sobre [carga y envío por correo electrónico de los registros](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md#upload-and-email-logs-from-microsoft-intune-app) para más ayuda.
+También puede consultar la sección sobre [carga y envío por correo electrónico de los registros](/intune-user-help/send-logs-to-your-it-admin-by-email-android#upload-and-email-logs-from-microsoft-intune-app) para más ayuda.
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>Registros para dispositivos iOS e iPadOS
 

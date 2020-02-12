@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755296"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075831"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -204,7 +204,7 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
         2. Cuando haya terminado de establecer las reglas de requisitos, seleccione **Aceptar**.
 2. Haga clic en **Siguiente** para mostrar la página **Reglas de detección**.   
 
-### <a name="step-4-detection-rules"></a>Paso 4: Reglas de detección
+## <a name="step-4-detection-rules"></a>Paso 4: Reglas de detección
 
 1. En la página **Reglas de detección**, configure las reglas para detectar la presencia de la aplicación:
     
@@ -268,7 +268,7 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
 
 2. Una vez que haya agregado las reglas, seleccione **Siguiente** para mostrar la página **Dependencias**.
 
-### <a name="step-5-dependencies"></a>Paso 5: Dependencias
+## <a name="step-5-dependencies"></a>Paso 5: Dependencias
 
 Las dependencias de aplicaciones son aplicaciones que se deben instalar antes de que se puede instalar la aplicación Win32. Se puede requerir que otras aplicaciones estén instaladas como dependencias. En concreto, el dispositivo debe instalar las aplicaciones dependientes antes de que se instale la aplicación Win32. Hay un máximo de 100 dependencias, que incluye las dependencias de cualquier dependencia incluida, así como la propia aplicación. Se pueden agregar las dependencias de aplicaciones Win32 solo después de que se haya agregado y cargado la aplicación Win32 en Intune. Una vez agregada la aplicación Win32, verá la opción **Dependencias** en el panel de la aplicación Win32. 
 
