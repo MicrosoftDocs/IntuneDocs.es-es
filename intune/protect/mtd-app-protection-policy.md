@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545963"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075712"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Creación de una directiva de protección de aplicaciones de Mobile Threat Defense con Intune
 
@@ -49,7 +49,7 @@ Requisitos previos de la directiva de protección de aplicaciones con MTD:
 
 Use el procedimiento para [crear una directiva de protección de aplicaciones para iOS/iPadOS o Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps) y use la siguiente información en las páginas *Aplicaciones*, *Inicio condicional* y *Asignaciones*:
 
-- **Aplicaciones**: Seleccione la aplicación para el asociado de Mobile Threat Defense que use.
+- **Aplicaciones**: Seleccione las aplicaciones a las que quiere que se apliquen las directivas de protección de aplicaciones. Para este conjunto de características, estas aplicaciones se bloquearán o borrarán de forma selectiva en función de la evaluación de riesgos del dispositivo del proveedor de Mobile Threat Defense elegido. 
 - **Inicio condicional**:  Bajo *Condiciones del dispositivo*, use el cuadro desplegable para seleccionar el **Nivel máximo de amenazas de dispositivo permitido**.
 
   Opciones para el **Valor** del nivel de amenaza:

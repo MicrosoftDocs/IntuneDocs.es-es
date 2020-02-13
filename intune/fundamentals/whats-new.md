@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f46b8c7f0f57ab7831d6487495946aa9326b2d5
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977791"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125037"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -60,32 +60,20 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Administración de aplicaciones
 
+#### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Microsoft Edge versión 77 y posteriores en dispositivos con Windows 10<!-- 5843584 -->
+Intune ahora admite la desinstalación de la versión 77 y posteriores de Microsoft Edge en dispositivos con Windows 10. Para obtener más información, consulte [Adición de Microsoft Edge para Windows 10 a Microsoft Intune](~/apps/apps-windows-edge.md).
+
 #### <a name="company-portal-app-improved-performance---6178652---"></a>Rendimiento mejorado de la aplicación Portal de empresa<!-- 6178652 -->
 La aplicación Portal de empresa se ha actualizado para admitir un rendimiento mejorado en los dispositivos que usan procesadores ARM64, como Surface Pro X. Anteriormente, el Portal de empresa operaba en un modo ARM32 emulado. Ahora, la aplicación Portal de empresa se compila de forma nativa para ARM64. Para más información sobre la aplicación Portal de empresa, consulte [Configuración de la aplicación Portal de empresa de Microsoft Intune](~/apps/company-portal-app.md).
+
+#### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Pantalla quitada del Portal de empresa, inscripción del perfil de trabajo de Android<!--6103987 -->
+La pantalla **¿Cuál es el paso siguiente?** se ha quitado del flujo de inscripción del perfil de trabajo de Android en el Portal de empresa para simplificar la experiencia del usuario. Vaya a [Inscripción con el perfil de trabajo de Android](/intune-user-help/enroll-device-android-work-profile) para ver el flujo de inscripción del perfil de trabajo de Android actualizado.  
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>Semana del 27 de enero de 2020
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Administración de aplicaciones
-
-#### <a name="new-setting-to-remove-specific-windows-built-in-apps---6184390---"></a>Nueva configuración para quitar aplicaciones integradas de Windows específicas<!-- 6184390 -->
-Una nueva configuración de directiva de configuración de dispositivos de Windows 10 permite quitar las siguientes aplicaciones integradas de Windows:
-
-- Visor de realidad mixta
-- MSN El Tiempo
-- Instalador de aplicación
-- Recomendaciones de Microsoft
-- Mi Office
-- Microsoft Solitaire Collection 
-- Planes móviles
-- Centro de opiniones 
-- Xbox 
-- Groove Música
-- Mail
-- Calendario
-
-En el Centro de administración del Administrador de puntos de conexión de Microsoft, seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**. Seleccione **Windows 10 y versiones posteriores** como **Plataforma**. Seleccione **Restricciones de dispositivo** como **Tipo de perfil**. Seleccione **App Store** en el panel **Restricciones de dispositivos**. En la parte inferior del panel junto a **Quitar aplicaciones integradas**, seleccione **Quitar**. Para más información sobre las aplicaciones integradas, consulte[Incorporación de aplicaciones integradas a Microsoft Intune](~/apps/apps-add-built-in.md).
 
 #### <a name="intune-support-for-additional-microsoft-edge-version-77-deployment-channel-for-macos---5983950----"></a>Compatibilidad de Intune con el canal de implementación adicional de Microsoft Edge versión 77 para macOS<!-- 5983950  -->
 Microsoft Intune ahora admite el canal de implementación **estable** para la aplicación Microsoft Edge para macOS. El canal **estable** es el canal recomendado para la implementación de Microsoft Edge en general en entornos empresariales. Se actualiza cada seis semanas y cada versión incorpora mejoras del canal **beta**. Además de canales **estable** y **beta**, Intune admite un canal de **desarrollo**. La versión preliminar pública ofrece los canales estable y de desarrollo para la versión 77 y posteriores de Microsoft Edge para macOS. Las actualizaciones automáticas del explorador están activadas de forma predeterminada. Para obtener más información, consulte [Adición de Microsoft Edge a dispositivos macOS con Microsoft Intune](~/apps/apps-edge-macos.md).

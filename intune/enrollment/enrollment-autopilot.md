@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: 4f97c4c56073044e79b5251dc83c54decb5c9c55
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977808"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124850"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscripción de dispositivos Windows en Intune con Windows Autopilot  
 Windows Autopilot simplifica el proceso de inscripción de dispositivos en Intune. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
@@ -100,6 +100,9 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
     - **Implementación automática (versión preliminar)** : (Windows 10 Insider Preview, compilación 1809 o posteriores) los dispositivos con este perfil no están asociados al usuario que inscribe el dispositivo. No se necesitan credenciales de usuario para inscribir el dispositivo. Cuando un dispositivo no tiene ningún usuario asociado a él, no se le aplican directivas de cumplimiento basadas en el usuario. Al usar el modo de implementación automática, solo se aplicarán las directivas de cumplimiento que seleccionan como destino el dispositivo.
 
     ![Captura de pantalla de la página OOBE](./media/enrollment-autopilot/create-profile-outofbox.png)
+
+   > [!NOTE]
+   > Las opciones que aparecen atenuadas o sombreadas no son compatibles actualmente con el modo de implementación seleccionado.
 
 6. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 7. Configure las siguientes opciones:

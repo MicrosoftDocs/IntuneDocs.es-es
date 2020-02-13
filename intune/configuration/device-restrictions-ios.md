@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754582"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051616"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS e iPadOS para permitir o restringir características mediante Intune
 
@@ -420,8 +420,6 @@ Se aplica a dispositivos con iOS 9.3 o versiones más recientes.
   Para buscar la dirección URL de una aplicación, abra la tienda de aplicaciones de iTunes y busque la aplicación. Por ejemplo, busque `Microsoft Remote Desktop` o `Microsoft Word`. Seleccione la aplicación y copie la dirección URL.
 
   También puede usar iTunes para buscar la aplicación y luego usar la tarea **Copiar vínculo** para obtener la dirección URL de la aplicación.
-  
-  Para obtener más información sobre cómo encontrar un identificador de lote, vea [Cómo encontrar el identificador de lote de una aplicación iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
 
 - **Identificador de lote de aplicaciones**: escriba el [identificador del lote](bundle-ids-built-in-ios-apps.md) de aplicaciones de la aplicación que quiere. Puede mostrar u ocultar aplicaciones integradas y aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094).
 - **Nombre de la aplicación**: escriba el nombre de la aplicación que quiere. Puede mostrar u ocultar aplicaciones integradas y aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094).
@@ -559,7 +557,9 @@ Nota necesaria para la itinerancia de datos (sugerencia o nota importante para a
 
 ## <a name="autonomous-single-app-mode"></a>Modo de aplicación única autónoma
 
-Use estos valores para configurar los dispositivos iOS de modo que ejecuten aplicaciones específicas en modo de aplicación única autónoma. Cuando se configura este modo y se ejecuta la aplicación, el dispositivo se bloquea. Solo puede ejecutar esa aplicación. Por ejemplo, agregue una aplicación que permita que los usuarios hagan una prueba en el dispositivo. Cuando se completan las acciones de la aplicación o quita esta directiva, el dispositivo vuelve a su estado normal.
+Use estos valores para configurar los dispositivos iOS/iPadOS de modo que ejecuten aplicaciones específicas en modo de aplicación única autónoma. Si se configura este modo y el usuario inicia una de las aplicaciones configuradas, el dispositivo se bloqueará para esa aplicación. La conmutación de tareas y aplicaciones se deshabilitará hasta que el usuario salga de la aplicación permitida.
+
+Por ejemplo, en un entorno educativo o universitario, agregue una aplicación que permita que los usuarios realicen una prueba en el dispositivo. Otra opción es bloquear el dispositivo en la aplicación Portal de empresa hasta que el usuario final se autentique. Cuando el usuario complete las acciones de la aplicación o quite esta directiva, el dispositivo volverá a su estado normal.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada (supervisado)
 

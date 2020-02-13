@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9afaf2c8a63bfaed1fdb593baf42c8fa258d7893
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 486ca7eae1b1e8b016f44c735ec04a23145421a8
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74263122"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124986"
 ---
 # <a name="using-windows-10-virtual-machines-with-intune"></a>Uso de máquinas virtuales Windows 10 con Intune
 
@@ -33,7 +33,7 @@ Al administrar máquinas virtuales Windows 10 con Intune, tenga en cuenta los p
 
 ## <a name="enrollment"></a>Inscripción
 - No se recomienda administrar máquinas virtuales de host de sesión a petición con Intune. Cada máquina virtual creada debe inscribirse. Además, la eliminación periódica de máquinas virtuales dejará registros de dispositivos huérfanos en Intune hasta que se [limpien](../remote-actions/devices-wipe.md#automatically-delete-devices-with-cleanup-rules). 
-- No se admite el modo de implementación automática de Windows Autopilot porque requiere un Módulo de plataforma segura (TPM). 
+- Los tipos de implementación automática de Windows AutoPilot y White Glove no se admiten porque requieren un Módulo de plataforma segura (TPM) físico. 
 - La inscripción en la experiencia rápida (OOBE) no se admite en máquinas virtuales a las que solo se pueda acceder mediante RDP (como es el caso de las máquinas virtuales hospedadas en Azure). Esta restricción significa lo siguiente:
     - Windows Autopilot y la OOBE comercial no se admiten.
     - No se admiten las opciones de página de estado de inscripción para las directivas de contexto de dispositivo.

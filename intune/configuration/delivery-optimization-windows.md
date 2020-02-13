@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059975"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124816"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configuración de la opción Optimización de distribución en Microsoft Intune
 
-Con Intune, se puede usar la opción Optimización de distribución para los dispositivos Windows 10 con el fin de reducir el consumo de ancho de banda cuando estos dispositivos descarguen aplicaciones y actualizaciones. La opción Optimización de distribución se configura como parte de los perfiles de configuración del dispositivo.  
+Con Intune, use la opción Optimización de distribución para los dispositivos Windows 10 con el fin de reducir el consumo de ancho de banda cuando estos dispositivos descarguen aplicaciones y actualizaciones. Configure la optimización de distribución como parte de los perfiles de configuración del dispositivo.  
 
 En este artículo se describe cómo configurar las opciones de optimización de distribución como parte de un perfil de configuración de dispositivo. Después de crear un perfil, este se asigna o implementa en sus dispositivos Windows 10. 
 
-Para obtener una lista de las opciones de configuración de Optimización de distribución que admite Intune, consulte [Delivery optimization settings for Intune](../delivery-optimization-settings.md) (Configuración de la opción Optimización de distribución de Intune).  
+Para ver una lista de las opciones de optimización de distribución que admite Intune, consulte [Configuración de optimización de entrega para Intune](../delivery-optimization-settings.md).  
 
 Para obtener más información sobre la opción Optimización de distribución en Windows 10, consulte [Actualizaciones de optimización de Windows 10 de distribución](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) en la documentación de Windows.  
-
-> [!NOTE]
-> **Actualizaciones de software: los círculos de actualizaciones de Windows 10** los reemplaza la configuración **Optimización de distribución**. Los círculos de actualizaciones existentes se pueden cambiar para usar la configuración **Optimización de distribución**. [Traslado de los anillos de actualizaciones existentes a la optimización de distribución](#move-existing-update-rings-to-delivery-optimization) (en este artículo)
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
@@ -54,11 +51,16 @@ Para obtener más información sobre la opción Optimización de distribución e
 
 El perfil se crea y se muestra en la lista. Después, [asigne el perfil](device-profile-assign.md) y [supervise su estado](device-profile-monitor.md).
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>Traslado de los anillos de actualizaciones existentes a la optimización de distribución
+<!-- ## Move existing update rings to delivery optimization
 
-La configuración **Optimización de distribución** reemplaza las **actualizaciones de Windows 10 mediante anillos de actualización de software**. Los círculos de actualizaciones existentes se pueden cambiar fácilmente para usar la configuración **Optimización de distribución**. Para mantener la misma configuración al crear un perfil de optimización de distribución, use la misma opción *Modo de descarga de optimización de entrega* y, luego, establezca la misma configuración que ya use. Sin embargo, se pueden volver a configurar las opciones de optimización de distribución para aprovechar la gran variedad de opciones de configuración adicionales que puede administrar el perfil de Optimización de distribución.
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. Cree un perfil de configuración de optimización de distribución:
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>Eliminación de la optimización de entrega de los anillos de actualización de Windows 10
+
+Anteriormente, la optimización de entrega se configuraba como parte de los anillos de actualización de software. A partir de febrero de 2019, la configuración de la optimización de entrega se configura como parte de un perfil de configuración de dispositivo de optimización de entrega, que incluye opciones adicionales que afectan más que a la entrega de actualizaciones de software a los dispositivos. Si todavía no lo ha hecho, establezca *No configurado* para quitar la configuración de optimización de entrega de los anillos de actualización y, a continuación, use un perfil de optimización de distribución para administrar el mayor número de opciones disponibles.
+
+1. Cree un perfil de configuración de dispositivos de optimización de distribución:
 
     1. En el Centro de administración del Administrador de puntos de conexión de Microsoft, seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
     2. Escriba las propiedades siguientes:

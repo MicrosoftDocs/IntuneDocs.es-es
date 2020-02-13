@@ -1,11 +1,11 @@
 ---
 title: Configuración de líneas de base de seguridad de Intune para Windows 10
 titleSuffix: Microsoft Intune
-description: Revise los valores predeterminados y los valores disponibles que se encuentran en la línea de base de seguridad MDM de Windows para los dispositivos Windows 10 que administra con Intune.
+description: Revise los valores predeterminados y los disponibles que se encuentran en la línea de base de seguridad de MDM de Windows para los dispositivos con Windows 10 que administra con Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,34 +18,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d673650a26f3917fa32babba42e5e2054c87e59
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ff7d3b39dc7675a00c5fba204609848f28a64dab
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74060022"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977842"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Intune  
 
-Vea la configuración de línea de base de seguridad de MDM compatible con Microsoft Intune para dispositivos que ejecutan Windows 10 o posterior. Los valores predeterminados de la configuración de esta línea base representan la configuración recomendada para los dispositivos aplicables y es posible que no coincidan con los valores predeterminados de línea base de otras líneas de base de seguridad.  
+Vea la configuración de línea de base de seguridad de MDM que admite Microsoft Intune para dispositivos que ejecutan Windows 10 o posterior. Los valores predeterminados de la configuración de esta línea de base para los dispositivos aplicables representan la configuración recomendada y podrían no coincidir con los valores predeterminados de otras líneas de base de seguridad.  
 
-La versión de línea de base más reciente es la **línea base de seguridad de MDM para el 2019 de mayo**  
+La versión de línea de base más reciente es la **línea de base de seguridad de MDM para mayo de 2019**.  
 
-Para obtener información sobre lo que ha cambiado en la versión más reciente de esta línea de base de la versión anterior, consulte [cambios en la nueva plantilla](#whats-changed-in-the-new-template).  
+Para obtener información sobre lo que ha cambiado en la última versión de esta línea de base, vea [Cambios en la nueva plantilla](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> En junio de 2019, la versión preliminar de la línea de base de seguridad de MDM se ha reemplazado por el lanzamiento de la plantilla de la *línea de base de seguridad de MDM de mayo de 2019* , que está disponible con carácter general (no en versión preliminar) Los perfiles que se crearon antes de la disponibilidad de la *línea de base de seguridad de MDM para el 2019 de mayo* no se actualizarán para reflejar la configuración y los valores que se encuentran en la línea de base de seguridad de MDM para la versión 2019 de mayo.  Aunque no se pueden crear nuevos perfiles basados en la plantilla de vista previa, se pueden editar y seguir usando perfiles creados previamente que se basan en la plantilla de vista previa.   
+> En junio de 2019 se sustituyó la versión preliminar de la línea de base de seguridad de MDM por la plantilla de la *línea de base de seguridad de MDM para mayo de 2019*, que está disponible con carácter general (no en versión preliminar). Los perfiles que se crearon antes de la disponibilidad de la *línea de base de seguridad para mayo de 2019* no se actualizarán para reflejar la configuración ni los valores que se encuentran en la versión de la línea de base de seguridad para mayo de 2019.  Aunque no se pueden crear nuevos perfiles basados en la plantilla de la versión preliminar, se pueden editar y seguir usando los perfiles creados anteriormente que se basan en la plantilla de versión preliminar. 
   
-Para obtener información sobre el uso de las líneas de base de seguridad con Intune, consulte [uso de líneas de base de seguridad](security-baselines.md).  
+Para obtener información sobre el uso de las líneas de base de seguridad con Intune, consulte [Uso de líneas de base de seguridad](security-baselines.md).  
 
-
-   
 ## <a name="above-lock"></a>Above Lock (Por encima de la pantalla de bloqueo)  
 Para más información, vea [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) (CSP de directiva: AboveLock) en la documentación de Windows.  
 
 - **Block display of toast notifications** (Bloquear la presentación de notificaciones del sistema)  
   Esta configuración de directiva permite impedir que aparezcan notificaciones de aplicaciones en la pantalla de bloqueo. Si habilita esta configuración de directiva, no se mostrará ninguna notificación de aplicación en la pantalla de bloqueo. Si deshabilita o no establece esta configuración de directiva, los usuarios podrán elegir qué notificaciones de aplicaciones se mostrarán en la pantalla de bloqueo.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067101)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067101).  
 
   **Valor predeterminado**: Sí  
 
@@ -59,31 +57,31 @@ Para más información, vea [Policy CSP - AppRuntime](https://docs.microsoft.com
 
 - **Microsoft accounts optional for Windows Store apps** (Cuentas de Microsoft opcionales para las aplicaciones de Microsoft Store)  
   Esta configuración de directiva permite definir si las cuentas de Microsoft son opcionales para las aplicaciones de Microsoft Store que requieren una cuenta para iniciar sesión. Esta directiva solo afecta a las aplicaciones de Microsoft Store que la admiten. Si habilita esta configuración de directiva, las aplicaciones de Microsoft Store que normalmente requieren una cuenta de Microsoft para iniciar sesión permitirán a los usuarios iniciar sesión con una cuenta empresarial. Si deshabilita o no establece esta configuración de directiva, los usuarios tendrán que iniciar sesión con una cuenta de Microsoft.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067104).  
   
   **Valor predeterminado**: Habilitado  
 
 ## <a name="application-management"></a>Administración de aplicaciones   
 Para más información, vea [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) (CSP de directiva: ApplicationManagement) en la documentación de Windows.  
 
-- **Bloquear el control de usuario en las instalaciones**  
-  Esta configuración de directiva permite a los usuarios cambiar las opciones de instalación que normalmente solo están disponibles para los administradores del sistema. Si habilita esta configuración de Directiva, se omiten algunas de las características de seguridad de Windows Installer. Permite que las instalaciones se completen y, de lo contrario, se detendrían debido a una infracción de seguridad. Si deshabilita o no establece esta configuración de Directiva, las características de seguridad de Windows Installer evitar que los usuarios cambien las opciones de instalación que normalmente están reservadas para los administradores del sistema, como especificar el directorio en el que se instalan los archivos. Si Windows Installer detecta que un paquete de instalación ha permitido al usuario cambiar una opción protegida, detiene la instalación y muestra un mensaje. Estas características de seguridad solo funcionan cuando el programa de instalación se ejecuta en un contexto de seguridad con privilegios en el que tiene acceso a los directorios denegados al usuario. Esta configuración de directiva está diseñada para entornos menos restrictivos. Se puede usar para eludir los errores en un programa de instalación que impide que se instale el software.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067060)  
+- **Bloquear el control del usuario sobre las instalaciones**  
+  Esta configuración de directiva permite que los usuarios cambien las opciones de instalación que normalmente solo están disponibles para los administradores del sistema. Si habilita esta configuración de directiva, se omitirán algunas de las características de seguridad de Windows Installer. Permite que las instalaciones se completen; de lo contrario, se detendrían debido a una infracción de seguridad. Si deshabilita o no configura esta configuración de directiva, las características de seguridad de Windows Installer impedirán que los usuarios cambien las opciones de instalación que normalmente están reservadas para los administradores del sistema, como especificar el directorio en el que se instalan los archivos. Si Windows Installer detecta que un paquete de instalación ha permitido que el usuario cambie una opción protegida, detendrá la instalación y mostrará un mensaje. Estas características de seguridad solo funcionan si el programa de instalación se ejecuta en un contexto de seguridad con privilegios y tiene acceso a los directorios denegados al usuario. Esta configuración de directiva está diseñada para entornos menos restrictivos. Se puede usar para eludir los errores de un programa de instalación que impida que se instale el software.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067060).  
 
   **Valor predeterminado**: Sí
 
-- **Bloquear las instalaciones de aplicaciones MSI con privilegios elevados**  
+- **Bloquear las instalaciones de aplicaciones con privilegios elevados**  
   Esta configuración de directiva indica a Windows Installer que use permisos elevados cuando instale cualquier programa en el sistema.  
-  - *Si habilita esta configuración de directiva*, los privilegios se extienden a todos los programas. Estos privilegios normalmente se reservan para los programas que se han asignado al usuario (ofrecido en el escritorio), asignados al equipo (instalado automáticamente) en f o disponibles en Agregar o quitar programas en el panel de control. Esta configuración de perfil permite a los usuarios instalar programas que requieren acceso a directorios en los que es posible que el usuario no tenga permiso para ver o cambiar, incluidos los directorios de equipos altamente restringidos.
-  - *Si deshabilita o no establece esta configuración de directiva*, el sistema aplica los permisos del usuario actual cuando instala programas que un administrador del sistema no distribuye u ofrece. Nota: Esta configuración de directiva aparece en las carpetas Configuración del equipo y Configuración de usuario. Para que esta configuración de directiva sea efectiva, debe habilitarla en ambas carpetas. PRECAUCIÓN: los usuarios experimentados pueden aprovechar los permisos que esta configuración de directiva concede para cambiar sus privilegios y obtener acceso permanente a carpetas y archivos restringidos. Tenga en cuenta que no se garantiza que la versión de configuración de usuario de esta configuración de directiva sea segura.  
+  - *Si habilita esta configuración de directiva*, los privilegios se extenderán a todos los programas. Normalmente, estos privilegios se reservan para los programas que se han asignado al usuario (ofrecidos en el escritorio), asignados al equipo (instalados automáticamente) o que se han puesto como disponibles en Agregar o quitar programas en el Panel de control. Esta configuración de directiva permite a los usuarios instalar programas que requieren acceso a directorios en los que el usuario podría no tener permiso de visualización o modificación, incluidos los directorios de equipos con restricción alta.
+  - *Si deshabilita o no establece esta configuración de directiva*, el sistema aplicará los permisos del usuario actual al instalar programas que un administrador del sistema no distribuya u ofrezca. Nota: Esta configuración de directiva aparece en las carpetas Configuración del equipo y Configuración de usuario. Para activar esta configuración de directiva, debe habilitarla en las dos carpetas. Precaución: Los usuarios experimentados pueden aprovechar los permisos de esta configuración de directiva para modificar sus privilegios y obtener acceso permanente a carpetas y archivos de uso restringido. Tenga en cuenta que no se garantiza que la versión de Configuración de usuario de esta configuración de directiva sea segura.  
   
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067134)    
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067134).    
 
   **Valor predeterminado**: Sí
 
 - **Block game DVR (desktop only)** (Bloquear Game DVR (solo escritorio))  
   configura si se permite la grabación y difusión de los juegos.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067056)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067056).  
   
   **Valor predeterminado**: Sí  
 
@@ -92,29 +90,29 @@ Para más información, vea [Policy CSP - Autoplay](https://docs.microsoft.com/w
 
 - **Auto play default auto run behavior** (Comportamiento predeterminado de ejecución automática de la reproducción automática)  
   Esta configuración afecta al comportamiento predeterminado de los comandos de ejecución automática. Los comandos de ejecución automática se almacenan en archivos autorun.inf y pueden iniciar programas de instalación u otras rutinas. Cuando el valor es *Habilitada*, los administradores pueden cambiar el comportamiento de ejecución automática predeterminado en un dispositivo que ejecute Windows Vista o versiones posteriores. El comportamiento se puede establecer en: a) Deshabilitar completamente los comandos de ejecución automática, o bien en b) Volver al comportamiento anterior a Windows Vista de ejecutar automáticamente el comando de ejecución automática. Si se establece en *Deshabilitada* o *No configurada*, los dispositivos que ejecutan Windows Vista o versiones posteriores preguntarán al usuario si se debe ejecutar el comando de ejecución automática.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067133)       
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067133).       
   
   **Valor predeterminado**: No ejecutar  
   
 - **Modo de reproducción automática**  
   Esta configuración de directiva permite desactivar la característica Reproducción automática. Reproducción automática comienza a leer desde una unidad de disco en cuanto se inserta un medio en la unidad. Como resultado, el archivo de instalación de programas y la música en medios de audio se inician inmediatamente. Antes de Windows XP SP2, Reproducción automática estaba deshabilitada de forma predeterminada en unidades extraíbles, como la unidad de disco (pero no la unidad de CD-ROM) y en unidades de red. A partir de Windows XP SP2, Reproducción automática también está habilitada para las unidades extraíbles, como unidades Zip y algunos dispositivos de almacenamiento USB. Si habilita esta configuración de directiva, se deshabilita la característica Reproducción automática en unidades de CD-ROM y unidades de medios extraíbles, o bien en todas las unidades. Esta configuración de directiva deshabilita Reproducción automática en otros tipos de unidades. No puede usar esta opción para habilitar Reproducción automática en unidades en las que esta característica está deshabilitada de forma predeterminada. Si deshabilita o no establece esta configuración de directiva, se habilitará la característica Reproducción automática. Nota: Esta configuración de directiva aparece en las carpetas Configuración del equipo y Configuración de usuario. Si las configuraciones de directivas entran en conflicto, la configuración de directiva de Configuración del equipo tiene prioridad sobre la de Configuración de usuario.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2066793)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2066793).  
   
   **Valor predeterminado**: Deshabilitado
 
 - **Block auto play for non-volume devices** (Bloquear la reproducción automática para los dispositivos que no son volúmenes)  
   Esta configuración de directiva deshabilita la Reproducción automática para dispositivos MTP como cámaras o teléfonos. Si habilita esta configuración de directiva, Reproducción automática no se habilitará para dispositivos MTP como cámaras o teléfonos. Si deshabilita o no establece esta configuración de directiva, Reproducción automática se habilitará para dispositivos que no son de volumen.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067106)    
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067106).    
   
   **Valor predeterminado**: Habilitado  
 
 ## <a name="bitlocker"></a>BitLocker    
-Para más información, vea [Policy CSP - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
-) (CSP de directiva: Bitlocker) en la documentación de Windows.  
+Para más información, consulte [CSP de directiva: Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
+) en la documentación de Windows.  
 
-- **Bit locker removable drive policy** (Directiva de unidad extraíble de BitLocker)  
+- **Directiva de unidad extraíble de BitLocker**  
   Esta configuración de directiva se usa para controlar el método y la intensidad del cifrado. Los valores de esta directiva determinan la intensidad del cifrado que BitLocker usa para el cifrado. A las empresas les interesa controlar el nivel de cifrado para mejorar la seguridad (AES-256 es más seguro que AES-128). Si habilita esta directiva, podrá configurar un algoritmo de cifrado y la intensidad de cifrado de clave para unidades de datos fijas, unidades del sistema operativo y unidades de datos extraíbles de manera individual. Para unidades del sistema operativo y unidades fijas, se recomienda usar el algoritmo XTS-AES. Para unidades extraíbles, debe usar el cifrado AES-CBC de 128 bits o AES-CBC de 256 bits si la unidad se usa en otros dispositivos que no ejecuten Windows 10 (versión 1511 o posterior). El cambio del método de cifrado no tendrá ningún efecto si la unidad ya está cifrada o si el cifrado está en curso. En estos casos, se omite esta configuración de directiva.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067140) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067140). 
 
   Para la directiva de la unidad extraíble de BitLocker, configure las siguientes opciones:
 
@@ -127,31 +125,31 @@ Para más información, vea [Policy CSP - Browser](https://docs.microsoft.com/wi
 
 - **Require SmartScreen for Microsoft Edge** (Requerir SmartScreen para Microsoft Edge)  
   Microsoft Edge usa SmartScreen de Microsoft Defender (activado) para proteger a los usuarios de software malintencionado y posibles estafas de suplantación de identidad de forma predeterminada. Además, de forma predeterminada, los usuarios no pueden deshabilitar (desactivar) SmartScreen de Microsoft Defender. Si habilita esta directiva se desactiva SmartScreen de Microsoft Defender y se impide que los usuarios lo activen. No configure esta directiva para permitir que los usuarios puedan elegir activar o desactivar SmartScreen de Microsoft Defender.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067029)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067029).   
   
   **Valor predeterminado**: Sí  
   
 - **Block malicious site access** (Bloquear el acceso a sitios malintencionados)  
   De forma predeterminada, Microsoft Edge permite a los usuarios omitir las advertencias de SmartScreen de Microsoft Defender sobre sitios potencialmente malintencionados, lo que les permite continuar al sitio. Pero con esta directiva puede configurar Microsoft Edge para evitar que los usuarios omitan las advertencias, e impedir que continúen al sitio.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067040)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067040).   
   
   **Valor predeterminado**: Sí  
   
 - **Block unverified file download** (Bloquear la descarga de archivos no comprobados)  
   De forma predeterminada, Microsoft Edge permite a los usuarios omitir las advertencias de SmartScreen de Microsoft Defender sobre archivos potencialmente malintencionados, lo que les permite continuar con la descarga de los archivos no comprobados. Al habilitar esta directiva se impide que los usuarios omitan las advertencias, y se les impide que descarguen los archivos no comprobados.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067023)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067023).  
   
   **Valor predeterminado**: Sí  
   
 - **Block Password Manager** (Bloquear el administrador de contraseñas)  
   De forma predeterminada, Microsoft Edge usa el Administrador de contraseñas automáticamente, lo que permite a los usuarios administrar las contraseñas de forma local. Si deshabilita esta directiva, se impide que Microsoft Edge use el Administrador de contraseñas. No configure esta directiva si quiere permitir que los usuarios elijan guardar y administrar las contraseñas localmente mediante el Administrador de contraseñas.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067128)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067128).  
   
   **Valor predeterminado**: Sí  
   
 - **Prevent certificate error overrides** (Evitar las invalidaciones de error de certificado)  
   Esta configuración de directiva impide que el usuario ignore errores de certificado de Capa de sockets seguros/Seguridad de la capa de transporte (SSL/TLS) que interrumpan la navegación (errores como caducado, revocado o de coincidencia de los nombres) en Internet Explorer. Si habilita esta configuración de directiva, el usuario no puede continuar la exploración. Si deshabilita o no establece esta configuración de directiva, el usuario puede elegir ignorar los errores de certificado y continuar la exploración.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067126)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067126).  
   
   **Valor predeterminado**: Sí  
 
@@ -160,23 +158,23 @@ Para más información, vea [Policy CSP - Connectivity](https://docs.microsoft.c
 
 - **Block Internet download for web publishing and online ordering wizards** (Bloquear la descarga de Internet para los asistentes para publicación y pedidos en línea)  
   Esta configuración de directiva especifica si Windows debe descargar una lista de proveedores para los asistentes de publicación en web y pedidos en línea. Estos asistentes permiten que los usuarios seleccionen de una lista de compañías que proporcionan servicios, como almacenamiento en línea e impresión fotográfica. De manera predeterminada, Windows mostrará los proveedores descargados de un sitio web de Windows, además de los proveedores especificados en el Registro. Si habilita esta configuración de directiva, Windows no descargará ningún proveedor y solo se mostrarán los proveedores de servicios almacenados en la memoria caché en el Registro local. Si deshabilita o no establece esta configuración de directiva, se descarga una lista de proveedores cuando el usuario usa los asistentes de publicación en web y pedidos en línea. Vea la documentación sobre los asistentes mencionados para obtener más información, incluidos detalles sobre cómo especificar proveedores de servicios en el Registro.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067136)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067136).  
   
   **Valor predeterminado**: Habilitado  
 
-- **Configurar el acceso seguro a rutas UNC**  
-  Esta configuración de Directiva define el acceso seguro a las rutas UNC. Si habilita esta Directiva, Windows solo permite el acceso a las rutas UNC especificadas después de cumplir los requisitos de seguridad adicionales.
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067243) 
+- **Configurar acceso seguro a las rutas de acceso UNC**  
+  Esta configuración de directiva establece un acceso seguro a las rutas de acceso UNC. Si habilita esta directiva, Windows solo permitirá el acceso a las rutas de acceso UNC especificadas, una vez satisfechos los requisitos de seguridad adicionales.
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067243). 
 
-  **Valor predeterminado**: configurar Windows para permitir solo el acceso a las rutas UNC especificadas después de cumplir los requisitos de seguridad adicionales
+  **Valor predeterminado**: Configurar Windows para permitir el acceso solo a las rutas de acceso UNC especificadas una vez satisfechos los requisitos de seguridad adicionales.
   
-  Cuando *Configure Windows para que solo se permita el acceso a las rutas de acceso UNC especificadas después de que se cumplan los requisitos de seguridad adicionales* , puede configurar la lista de rutas de acceso UNC * LSN.
+  Cuando está seleccionado *Configurar Windows para permitir el acceso solo a las rutas de acceso UNC especificadas una vez satisfechos los requisitos de seguridad adicionales*, puede configurar la *lista de rutas de acceso UNC protegidas.
   - **Lista de rutas de acceso UNC protegidas**  
-    Seleccione **Agregar** para especificar marcas de seguridad adicionales y rutas de acceso de servidor.  
+    Seleccione **Agregar** para especificar marcas de seguridad y rutas de acceso de servidor adicionales.  
 
 - **Block downloading of print drivers over HTTP** (Bloquear la descarga de controladores de impresión a través de HTTP)  
   Esta configuración de directiva especifica si se permite que este cliente descargue paquetes de controladores de impresión a través de HTTP. Para configurar la impresión HTTP, los controladores que no vienen incluidos necesitan descargarse a través de HTTP. Nota: Esta configuración de directiva no impide que el cliente imprima en impresoras en la intranet o Internet a través de HTTP. Solo impide que se descarguen controladores no instalados localmente. Si habilita esta configuración de directiva, no se podrán descargar controladores de impresión a través de HTTP. Si deshabilita o no establece esta configuración de directiva, los usuarios podrán descargar controladores de impresión a través de HTTP.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067141)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067141).  
   
   **Valor predeterminado**: Habilitado  
 
@@ -186,7 +184,7 @@ Para más información, vea [Policy CSP - CredentialsDelegation](https://docs.mi
 
 - **Remote host delegation of non-exportable credentials** (Delegación de credenciales no exportables del host remoto)  
   El host remoto permite la delegación de credenciales no exportables. Cuando se usa la delegación de credenciales, los dispositivos proporcionan una versión exportable de credenciales para el host remoto, que expone a los usuarios al riesgo de robo de credenciales por parte de los atacantes en el host remoto. Si habilita esta configuración de directiva, el host admite el modo de administración restringida y el modo Credential Guard remoto. Si deshabilita o no establece esta configuración de directiva, no se admitirán el modo de administración restringida ni el modo Credential Guard remoto. El usuario siempre tendrá que pasar sus credenciales al host.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067103)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067103).   
   
   **Valor predeterminado**: Habilitado  
 
@@ -194,7 +192,7 @@ Para más información, vea [Policy CSP - CredentialsDelegation](https://docs.mi
 Para más información, vea [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) (CSP de directiva: CredentialsUI) en la documentación de Windows.  
 
 - **Enumerate administrators** (Enumerar administradores) Esta configuración de directiva controla si se muestran las cuentas de administrador cuando un usuario intenta elevar una aplicación en ejecución. De forma predeterminada, cuando un usuario intenta elevar una aplicación en ejecución no se muestran las cuentas de administrador. Si habilita esta configuración de directiva, se muestran todas las cuentas de administrador local en el equipo para que el usuario pueda elegir una y escribir la contraseña adecuada. Si deshabilita esta configuración de directiva, los usuarios siempre deberán escribir un nombre de usuario y una contraseña para realizar la elevación.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067021)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067021).
 
   
   **Valor predeterminado**: Deshabilitado  
@@ -205,7 +203,7 @@ Para más información, vea [Policy CSP - DataProtection](https://docs.microsoft
 
 - **Block direct memory access** (Bloquear el acceso directo a memoria)  
   Esta configuración de directiva permite bloquear el acceso directo a memoria (DMA) para todos los puertos de bajada PCI de conexión instantánea hasta que un usuario inicie sesión en Windows. Una vez que un usuario inicie sesión, Windows mostrará los dispositivos PCI conectados a los puertos PCI de conexión instantánea. Cada vez que el usuario bloquee el equipo, DMA se bloquea en los puertos PCI de conexión instantánea sin dispositivos secundarios, hasta que el usuario inicie sesión de nuevo. Los dispositivos que ya aparecían cuando se desbloqueó el equipo seguirán funcionando hasta que se desconecten. Esta configuración de directiva solo se aplica cuando está habilitado BitLocker o el cifrado de dispositivos.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067031)     
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067031).     
   
   **Valor predeterminado**: Sí  
 
@@ -215,13 +213,13 @@ Para más información, vea [Policy CSP - DeviceGuard](https://docs.microsoft.co
 
 - **Credential Guard**  
   Esta opción permite a los usuarios activar Credential Guard con seguridad basada en la virtualización para ayudar a proteger las credenciales la próxima vez que se reinicie.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067044)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067044).
    
   **Valor predeterminado**: Habilitar con bloqueo UEFI 
 
 - **Enable virtualization based security**  (Habilitar la seguridad basada en la virtualización)  
   Activa la seguridad basada en la virtualización (VBS) la próxima vez que se reinicie. La seguridad basada en la virtualización usa el hipervisor de Windows para proporcionar compatibilidad con los servicios de seguridad.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067066)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067066).  
   
   **Valor predeterminado**: Sí  
 
@@ -234,7 +232,7 @@ Para más información, vea [Policy CSP - DeviceInstallation](https://docs.micro
 
 - **Hardware device installation by device identifiers** (Instalación de dispositivos de hardware mediante identificadores de dispositivo)  
   Esta configuración de directiva le permite especificar una lista de identificadores de hardware Plug and Play e identificadores compatibles para dispositivos que Windows no puede instalar. Esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que permita a Windows instalar dispositivos. Si habilita esta configuración de directiva, Windows no podrá instalar un dispositivo cuyo identificador de hardware o identificador compatible aparezca en la lista que usted cree. Si habilita esta configuración de directiva en un servidor de escritorio remoto, esta afectará a la redirección de los dispositivos especificados desde un cliente de escritorio remoto al servidor de escritorio remoto. Si deshabilita o no establece esta configuración de directiva, se podrán instalar o actualizar dispositivos según lo permitan o impidan otras configuraciones de directiva.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2066794)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2066794).  
   
   **Valor predeterminado**: Bloquear la instalación de dispositivos de hardware  
 
@@ -252,7 +250,7 @@ Para más información, vea [Policy CSP - DeviceInstallation](https://docs.micro
   
 - **Hardware device installation by setup classes** (Instalación de dispositivos de hardware mediante clases de instalación)  
   Esta configuración de directiva permite especificar una lista de identificadores únicos globales (GUID) de clases de instalación de dispositivos para los controladores de dispositivos que no se pueden instalar en Windows. Esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que permita a Windows instalar dispositivos. Si habilita esta configuración de directiva, Windows no podrá instalar ni actualizar controladores de dispositivos cuyos GUID de clases de instalación de dispositivos aparezcan en la lista que cree. Si habilita esta configuración de directiva en un servidor de escritorio remoto, esta afectará a la redirección de los dispositivos especificados desde un cliente de escritorio remoto al servidor de escritorio remoto. Si deshabilita o no establece esta configuración de directiva, Windows puede instalar o actualizar dispositivos según lo permitan o impidan otras configuraciones de directiva.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067048)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067048).  
   
   **Valor predeterminado**: Bloquear la instalación de dispositivos de hardware  
 
@@ -272,13 +270,13 @@ Para más información, vea [Policy CSP - DeviceLock](https://docs.microsoft.com
 
 - **Impedir el uso de la cámara**  
   Deshabilita el conmutador para alternar la cámara en la pantalla de bloqueo en Configuración de PC y evita que una cámara se invoque en la pantalla de bloqueo. De forma predeterminada, los usuarios pueden habilitar la invocación de una cámara disponible en la pantalla de bloqueo. Si habilita esta configuración, los usuarios ya no podrán habilitar o deshabilitar el acceso a la cámara en la pantalla de bloqueo en Configuración de PC, y la cámara no se podrá invocar en la pantalla de bloqueo.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067052)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067052).
   
   **Valor predeterminado**: Habilitado  
 
 - **Requerir contraseña**  
   Especifica si está habilitado el bloqueo del dispositivo.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067049)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067049).  
   
   **Valor predeterminado**: Sí  
   
@@ -286,65 +284,65 @@ Para más información, vea [Policy CSP - DeviceLock](https://docs.microsoft.com
 
   - **Password minimum character set count** (Número mínimo de conjuntos de caracteres de contraseña)  
     El número de elementos complejos (letras mayúsculas y minúsculas, números y signos de puntuación) necesarios para una contraseña o PIN fuerte. El PIN aplica el comportamiento siguiente para los dispositivos móviles y de escritorios: 1 - Solo dígitos 2 - Se requieren dígitos y letras minúsculas 3 - Se requieren dígitos, letras minúsculas y letras mayúsculas. No se admite en cuentas de Microsoft de escritorio y cuentas de dominio. 4 - Se requieren dígitos, letras minúsculas, letras mayúsculas y caracteres especiales. No se admite en el escritorio. El valor predeterminado es 1.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067055).  
     
     **Valor predeterminado**: 3  
 
   - **Número de errores de inicio de sesión antes de borrar el dispositivo**  
     El número de errores de autenticación permitidos antes de que se borre el dispositivo. Un valor de 0 deshabilita la funcionalidad de borrado del dispositivo.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067030)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067030).  
       
     **Valor predeterminado**: 10  
 
-  - **Expiración de contraseña (días)**  
+  - **Expiración de la contraseña (días)**  
     La configuración de directiva Vigencia máxima de la contraseña determina cuánto tiempo (en días) se puede usar una contraseña antes de que el sistema requiera que el usuario la cambie. Puede establecer las contraseñas para que expiren después de un número de días comprendido entre 1 y 999, o bien que no expiren nunca si establece el número de días en 0. Si el valor de Vigencia máxima de la contraseña está comprendido entre 1 y 999 días, la vigencia mínima de la contraseña debe ser menor que la máxima. Si el valor de Vigencia máxima de la contraseña se establece en 0, la vigencia mínima de la contraseña puede ser cualquier valor entre 0 y 998 días.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067028).  
     
     **Valor predeterminado**: 60  
 
-  - **Tipo de contraseña obligatoria**  
+  - **Tipo de contraseña requerida**  
     Determina el tipo de PIN o contraseña requerido.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067027).  
     
     **Valor predeterminado**: Alfanumérico  
 
-  - **Longitud mínima de contraseña**  
+  - **Longitud mínima de la contraseña**  
     La configuración de directiva Longitud mínima de contraseña determina el menor número de caracteres que pueden formar una contraseña para una cuenta de usuario. Puede establecer un valor comprendido entre 1 y 14 caracteres, o bien que no se requiera ninguna contraseña si establece el número de caracteres en 0.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067024).  
     
     **Valor predeterminado**: 8  
 
   - **Bloquear contraseñas simples**  
     Especifica si se permiten números de PIN o contraseñas como "1111" o "1234". Para el escritorio, también controla el uso de contraseñas de imagen.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067127). 
     
     **Valor predeterminado**: Sí  
       *Un valor de Sí impide el uso de contraseñas simples.* 
 
   - **Impedir la reutilización de contraseñas anteriores**  
     Especifica cuántas contraseñas se pueden almacenar en el historial que no se pueden usar. El valor incluye la contraseña actual del usuario. Por ejemplo, con una configuración de *1*, el usuario no puede reutilizar la contraseña actual al elegir una contraseña nueva. Un valor de *5* significa que un usuario no puede establecer la nueva contraseña en su contraseña actual o en cualquiera de sus cuatro contraseñas anteriores.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2066795)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2066795).  
     
     **Valor predeterminado**: 24  
 
 - **Evitar la presentación con diapositivas**  
   Deshabilita la configuración de presentación en la pantalla de bloqueo en Configuración de PC y evita que se reproduzca una presentación en la pantalla de bloqueo. De forma predeterminada, los usuarios pueden habilitar una presentación que se ejecute después de bloquear el equipo. Si habilita esta configuración, los usuarios no pueden modificar la configuración de la presentación en Configuración de PC y no se puede iniciar ninguna presentación.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067105) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067105). 
   
   **Valor predeterminado**: Habilitado  
   *Una configuración de Habilitada impide que se ejecute la presentación.* 
 
 - **Password minimum age in days** (Vigencia mínima de la contraseña en días)  
   La configuración de directiva Vigencia mínima de la contraseña determina el período de tiempo (en días) que se debe usar una contraseña antes de que el usuario pueda cambiarla. Puede establecer un valor comprendido entre 1 y 998 días, o bien puede permitir los cambios de contraseña inmediatamente si establece el número de días en 0. La vigencia mínima de la contraseña debe ser menor que la máxima, a menos que la vigencia máxima de la contraseña se establezca en 0, lo que indica que la contraseña no caducará nunca. Si el valor de Vigencia máxima de la contraseña se establece en 0, la vigencia mínima de la contraseña se puede establecer en cualquier valor entre 0 y 998.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067022) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067022). 
   
   **Valor predeterminado**: 1  
 
 ## <a name="dma-guard"></a>Protección de DMA  
 Para más información, vea [Policy CSP - DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) (CSP de directiva: DmaGuard) en la documentación de Windows.
 - **Enumeración de los dispositivos externos compatibles con Kernel DMA Protection**  
-  Esta directiva está diseñada para proporcionar seguridad adicional a los dispositivos compatibles con DMA externo. Permite mayor control sobre la enumeración de dispositivos externos compatibles con DMA incompatibles con la reasignación de DMA o el aislamiento de la memoria de dispositivo y el espacio aislado. Esta directiva solo surte efecto cuando la característica Kernel DMA Protection se admite y está habilitada por el firmware del sistema. La protección de DMA de kernel es una característica de plataforma que no se puede controlar a través de una directiva o por el usuario final. Tiene que ser compatible con el sistema en el momento de fabricación. Para comprobar si el sistema admite la protección DMA de kernel, consulte el campo protección de DMA de kernel en la página Resumen de MSINFO32. exe.  
-  [Más información](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
+  Esta directiva pretende proporcionar seguridad adicional a los dispositivos que admiten DMA externo. Permite mayor control sobre la enumeración de dispositivos externos compatibles con DMA incompatibles con la reasignación de DMA o el aislamiento de la memoria de dispositivo y el espacio aislado. Esta directiva solo surte efecto cuando la característica Kernel DMA Protection se admite y está habilitada por el firmware del sistema. Kernel DMA Protection es una característica de plataforma que no se puede controlar mediante directivas ni por parte del usuario final. Tiene que ser compatible con el sistema en el momento de fabricación. Para comprobar si el sistema admite Kernel DMA Protection, revise el campo Kernel DMA Protection en la página de resumen de MSINFO32.exe.  
+  [Más información](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy).
 
   **Valor predeterminado**: Bloquear todo   
 
@@ -353,19 +351,19 @@ Para más información, vea [Policy CSP - EventLogService](https://docs.microsof
 
 - **Tamaño máximo del archivo de registro de seguridad en KB**  
   Esta configuración de directiva especifica el tamaño máximo del archivo de registro en kilobytes. Si habilita esta configuración de directiva, puede configurar el tamaño máximo del archivo de registro entre 1 megabyte (1024 KB) y 2 terabytes (2147483647 kilobytes), en incrementos de kilobytes. Si deshabilita o no establece esta configuración de directiva, el tamaño máximo del archivo de registro se establece en el valor configurado de forma local. Este valor lo puede cambiar el administrador local mediante el cuadro de diálogo Propiedades del registro y el valor predeterminado es de 20 megabytes.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067042)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067042).  
   
    **Valor predeterminado**: 196608  
 
 - **Tamaño máximo del archivo de registro del sistema en KB**  
   Esta configuración de directiva especifica el tamaño máximo del archivo de registro en kilobytes. Si habilita esta configuración de directiva, puede configurar el tamaño máximo del archivo de registro entre 1 megabyte (1024 KB) y 2 terabytes (2147483647 kilobytes), en incrementos de kilobytes. Si deshabilita o no establece esta configuración de directiva, el tamaño máximo del archivo de registro se establece en el valor configurado de forma local. Este valor lo puede cambiar el administrador local mediante el cuadro de diálogo Propiedades del registro y el valor predeterminado es de 20 megabytes.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2066798)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2066798).  
   
   **Valor predeterminado**: 32768  
 
 - **Tamaño máximo del archivo de registro de aplicaciones en KB**  
   Esta configuración de directiva especifica el tamaño máximo del archivo de registro en kilobytes. Si habilita esta configuración de directiva, puede configurar el tamaño máximo del archivo de registro entre 1 megabyte (1024 KB) y 2 terabytes (2147483647 kilobytes), en incrementos de kilobytes. Si deshabilita o no establece esta configuración de directiva, el tamaño máximo del archivo de registro se establece en el valor configurado de forma local. Este valor lo puede cambiar el administrador local mediante el cuadro de diálogo Propiedades del registro y el valor predeterminado es de 20 megabytes.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067125)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067125).  
   
   **Valor predeterminado**: 32768  
 
@@ -374,7 +372,7 @@ Para más información, vea [Policy CSP - Experience](https://docs.microsoft.com
 
 - **Bloquear el Contenido destacado de Windows**  
   Permite a los administradores de TI desactivar todas las características de Contenido destacado de Windows: Contenido destacado de Windows en la pantalla de bloqueo, sugerencias de Windows, características de consumidor de Microsoft y otras características relacionadas.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067037)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067037).  
   
   **Valor predeterminado**: Sí  
 
@@ -382,12 +380,12 @@ Para más información, vea [Policy CSP - Experience](https://docs.microsoft.com
   
   - **Bloquear sugerencias de terceros en Contenido destacado de Windows**  
     Especifica si se permiten sugerencias de contenido y aplicaciones de editores de software de terceros en características de Contenido destacado de Windows como el contenido destacado en la pantalla de bloqueo, aplicaciones sugeridas en el menú Inicio y sugerencias de Windows. Es posible que los usuarios sigan viendo sugerencias sobre características, aplicaciones y servicios de Microsoft.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067045)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067045).  
       
     **Valor predeterminado**: Sí  
   - **Block consumer specific features** (Bloquear características específicas del consumidor)  
     Permite a los administradores de TI activar experiencias que suelen ser solo para consumidores, como las sugerencias de inicio, las notificaciones de suscripción, la instalación de aplicaciones tras la Bienvenida de Windows y los iconos de redireccionamiento.  
-    [Más información](https://go.microsoft.com/fwlink/?linkid=2067054)  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067054).  
      
     **Valor predeterminado**: Sí  
 
@@ -396,7 +394,7 @@ Para más información, vea [Policy CSP - ExploitGuard](https://docs.microsoft.c
 
 - **XML de protección contra vulnerabilidades**  
   Permite a los administradores de TI enviar a todos los dispositivos de la organización una configuración que representa las opciones de mitigación deseadas del sistema y las aplicaciones. La configuración se representa por medio de XML. Protección contra vulnerabilidades ayuda a proteger los dispositivos frente al malware que usa ataques para infectar y propagar. Use la aplicación de seguridad de Windows o PowerShell para crear un conjunto de mitigaciones (conocido como una configuración). Después, puede exportar esta configuración como un archivo XML y compartirlo con varios equipos en la red para que todos tengan el mismo conjunto de opciones de mitigación. También puede convertir e importar un archivo XML de configuración EMET en un archivo XML de configuración de protección contra vulnerabilidades.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067035)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067035).  
   
   **Valor predeterminado**: *Se proporciona el código XML de ejemplo* 
  
@@ -405,13 +403,13 @@ Para más información, vea [Policy CSP - FileExplorer](https://docs.microsoft.c
 
 - **Block data execution prevention** (Bloquear la prevención de ejecución de datos)  
   Deshabilitar la prevención de ejecución de datos puede permitir que ciertas aplicaciones de complemento heredadas funcionen sin cerrar Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067043)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067043).  
   
   **Valor predeterminado**: Deshabilitado  
    
 - **Block heap termination on corruption** (Bloquear la terminación del montón al resultar dañado)  
   Si deshabilita la terminación del montón al resultar dañado, es posible que algunas aplicaciones de complemento heredadas funcionen sin terminar el Explorador inmediatamente, si bien este aún podría terminar de forma inesperada más adelante.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067107)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067107).  
   
   **Valor predeterminado**: Deshabilitado  
     
@@ -424,196 +422,196 @@ Para más información, vea [Policy CSP - InternetExplorer](https://docs.microso
   - *Si habilita esta configuración de directiva*, se permitirá al script actualizar la barra de estado.
   - *Si deshabilita o no establece esta configuración de directiva*, no se permitirá al script actualizar la barra de estado.  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067074)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067074).  
 
   **Valor predeterminado**: Deshabilitado
 
 - **Internet Explorer internet zone drag and drop or copy and paste files** (Arrastrar y colocar, o copiar y pegar archivos en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva le permite administrar si los usuarios pueden arrastrar o copiar y pegar archivos de un origen dentro de la zona. Si habilita esta configuración de directiva, los usuarios podrán automáticamente arrastrar o copiar y pegar archivos de esta zona. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren arrastrar o copiar archivos de esta zona. Si deshabilita esta configuración de directiva, se impedirá que los usuarios arrastren, copien y peguen archivos de esta zona. Si no establece esta configuración de directiva, los usuarios podrán automáticamente arrastrar o copiar y pegar archivos de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067076)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067076).  
 
   **Valor predeterminado**: Deshabilitar
 
 - **Internet Explorer restricted zone .NET Framework reliant components**   (Componentes que dependen de .NET Framework en la zona restringida de Internet Explorer)  
   Esta configuración de directiva le permite administrar si los componentes de .NET Framework firmados con Authenticode se pueden ejecutar en Internet Explorer. Entre esos componentes figuran los controles administrados a los que una etiqueta de objeto hizo referencia y los archivos ejecutables administrados a los que un vínculo hizo referencia. Si habilita esta configuración de directiva, Internet Explorer ejecutará los componentes administrados firmados. Si selecciona Preguntar en el cuadro desplegable, Internet Explorer solicitará la intervención de los usuarios para determinar si quieren ejecutar los componentes administrados firmados. Si deshabilita esta configuración de directiva, Internet Explorer no ejecutará ningún componente administrado firmado. Si no establece esta configuración de directiva, Internet Explorer no ejecutará componentes administrados sin firmar.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067077)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067077).
 
   **Valor predeterminado**: Deshabilitar
 
 
 - **Internet Explorer local machine zone do not run antimalware against Active X controls** (No ejecutar antimalware en los controles ActiveX de la zona Equipo local de Internet Explorer)  
   Esta configuración de directiva determina si Internet Explorer ejecuta programas antimalware en controles ActiveX con objeto de comprobar si es seguro cargarlos en las páginas. Si habilita esta configuración de directiva, Internet Explorer no comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Si deshabilita esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX con seguridad. Si no se establece esta configuración de directiva, Internet Explorer no comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Los usuarios pueden activar o desactivar este comportamiento por medio de las opciones de seguridad de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067152)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067152).
 
   **Valor predeterminado**: Deshabilitado
 
 - **Internet Explorer internet zone access to data sources** (Acceso a orígenes de datos de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva le permite administrar si Internet Explorer puede acceder a datos de otra zona de seguridad con Analizador XML de Microsoft (MSXML) u Objetos de datos ActiveX (ADO). Si habilita esta configuración de directiva, los usuarios podrán cargar una página en la zona que usa MSXML o ADO para acceder a datos de otro sitio en la zona. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir que una página se cargue en la zona que usa MSXML o ADO para acceder a datos de otro sitio de la zona. Si deshabilita esta configuración de directiva, los usuarios no podrán cargar ninguna página en la zona que usa MSXML o ADO para acceder a datos de otro sitio de la zona. Si no establece esta configuración de directiva, los usuarios no podrán cargar ninguna página en la zona que usa MSXML o ADO para acceder a datos de otro sitio de la zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067078)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067078).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone drag content from different domains within windows** (Arrastrar contenido de diferentes dominios desde ventanas en la zona de sitios restringidos de Internet Explorer)  
-  Esta configuración de directiva permite establecer las opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentran en la misma ventana. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios no pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no establece esta configuración de directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios no pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067079)  
+  Esta configuración de directiva le permite establecer opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios no pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no establece esta configuración de directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en la misma ventana. Los usuarios no pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067079).  
   
   **Valor predeterminado**: Deshabilitado
   
 - **Internet Explorer certificate address mismatch warning** (Advertencia de error de coincidencia de direcciones de certificado de Internet Explorer)  
   Esta configuración de directiva permite activar la advertencia de seguridad de falta de coincidencia en la dirección de los certificados. Cuando se activa esta configuración, se advierte al usuario cuando visita sitios web HTTP seguros (HTTPS) que presentan certificados emitidos para otra dirección de sitio web. Esta advertencia ayuda a prevenir ataques de suplantación de identidad. Si habilita esta configuración de directiva, aparece siempre la advertencia de falta de coincidencia en la dirección de certificados. Si deshabilita o no establece esta configuración de directiva, el usuario puede elegir si se muestra la advertencia de falta de coincidencia en la dirección de los certificados (con la página Opciones avanzadas del panel de control de Internet).  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067153)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067153).  
   
   **Valor predeterminado**: Habilitado 
   
 - **Internet Explorer restricted zone less privileged sites** (Sitios con menos privilegios de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si los sitios web de zonas con menos privilegios, como los de Internet, pueden desplazarse hacia ella. Si habilita esta configuración de directiva, los sitios web de zonas con menos privilegios podrán abrir nuevas ventanas en esta zona o desplazarse hacia ella. La zona de seguridad se ejecutará sin la capa agregada de seguridad proporcionada por la característica de seguridad Protección contra elevación de zona. Si selecciona Preguntar en el cuadro desplegable, se emitirá una advertencia al usuario que indica que se va a realizar una navegación potencialmente arriesgada. Si deshabilita esta configuración de directiva, se evitará cualquier navegación que pueda ser dañina. La característica de seguridad de Internet Explorer está activada en esta zona como lo establece el control de la característica Protección contra elevación de zona. Si no establece esta configuración de directiva, se evitará cualquier navegación que pueda ser dañina. La característica de seguridad de Internet Explorer está activada en esta zona como lo establece el control de la característica Protección contra elevación de zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067148)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067148).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone automatic prompt for file downloads** (Solicitud automática de descargas de archivos en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva determina si se solicita la intervención de los usuarios para las descargas de archivos no iniciadas por usuarios. Independientemente de esta configuración, se presentarán cuadros de diálogo de descarga de archivos a los usuarios en las descargas iniciadas por ellos. Si habilita esta configuración de directiva, se presentará un cuadro de diálogo de descarga de archivos a los usuarios cuando se intente realizar una descarga automática. Si deshabilita esta configuración o no la establece, se bloquea cualquier descarga de archivos no iniciada por usuarios y estos verán la barra de notificación en lugar del cuadro de diálogo de descarga de archivos. Los usuarios podrán hacer clic en la barra de notificación para permitir que se les solicite su intervención para descargar el archivo.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067150)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067150).  
   
   **Valor predeterminado**: Deshabilitado
   
 - **Internet Explorer internet zone .NET Framework reliant components** (Componentes que dependen de .NET Framework en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si los componentes de .NET Framework que no están firmados con Authenticode se pueden ejecutar en Internet Explorer. Entre esos componentes figuran los controles administrados a los que una etiqueta de objeto hizo referencia y los archivos ejecutables administrados a los que un vínculo hizo referencia. Si habilita esta configuración de directiva, Internet Explorer ejecutará los componentes administrados firmados. Si selecciona Preguntar en el cuadro desplegable, Internet Explorer solicitará la intervención de los usuarios para determinar si quieren ejecutar los componentes administrados firmados. Si deshabilita esta configuración de directiva, Internet Explorer no ejecutará ningún componente administrado sin firma. Si no establece esta configuración de directiva, Internet Explorer ejecutará los componentes administrados sin firma.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067073)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067073).  
   
   **Valor predeterminado**: Deshabilitar 
   
 - **Internet Explorer internet zone allow only approved domains to use Active X controls** (Permitir que solo los dominios aprobados usen controles ActiveX de TDC en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva controla si el usuario puede ejecutar el control ActiveX de TDC en sitios web. Si habilita esta configuración de directiva, el control ActiveX de TDC no se ejecutará desde los sitios web de esta zona. Si deshabilita esta configuración de directiva, el control ActiveX de TDC se ejecutará desde todos los sitios de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067151)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067151).
   
   **Valor predeterminado**: Habilitado 
   
 - **Internet Explorer restricted zone script initiated windows** (Ventanas iniciadas por scripts de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar las restricciones sobre ventanas emergentes iniciadas por scripts y sobre ventanas que incluyen la barra de título y estado. Si habilita esta directiva, la seguridad de restricciones de ventanas no se aplicará en esta zona. La zona de seguridad se ejecutará sin la capa agregada de seguridad proporcionada por esta característica. Si deshabilita esta configuración de directiva, no se podrán ejecutar las acciones potencialmente dañinas contenidas en las ventanas emergentes iniciadas por scripts y en las ventanas que incluyen la barra de título y estado. Esta característica de seguridad de Internet Explorer está activada en esta zona como lo indica el control de la característica Restricciones de seguridad de ventanas con scripts para el proceso. Si no establece esta configuración de directiva, no se podrán ejecutar las acciones posiblemente dañinas contenidas en las ventanas emergentes iniciadas por scripts y en las ventanas que incluyen la barra de título y estado. Esta característica de seguridad de Internet Explorer está activada en esta zona como lo indica el control de la característica Restricciones de seguridad de ventanas con scripts para el proceso.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067075)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067075).  
   
   **Valor predeterminado**: Deshabilitado 
   
 - **Internet Explorer internet zone include local path when uploading files to server** (Incluir la ruta de acceso local al cargar archivos al servidor en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva controla si la información de la ruta de acceso local se envía cuando el usuario carga un archivo por medio de un formulario HTML. Si se envía la información de la ruta de acceso local, es posible que parte de la información sea revelada sin querer al servidor. Por ejemplo, los archivos enviados desde el escritorio del usuario pueden contener el nombre de usuario como parte de la ruta de acceso. Si habilita esta configuración de directiva, la información de la ruta de acceso se envía cuando el usuario carga un archivo por medio de un formulario HTML. Si deshabilita esta configuración de directiva, la información de la ruta de acceso se elimina cuando el usuario carga un archivo por medio de un formulario HTML. Si no establece esta configuración de directiva, el usuario puede elegir si la información de la ruta de acceso se envía cuando carga un archivo por medio de un formulario HTML. De manera predeterminada, la información de la ruta de acceso se envía.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067072)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067072).  
   
   **Valor predeterminado**: Deshabilitado 
   
 - **Internet Explorer disable processes in enhanced protected mode** (Deshabilitar los procesos en modo protegido mejorado de Internet Explorer)  
-  Esta configuración de directiva determina si Internet Explorer 11 usa procesos de 64 bits (de cara a una mayor seguridad) o de 32 bits (de cara a una mejor compatibilidad) cuando se ejecuta el modo protegido mejorado en las versiones de 64 bits de Windows. Importante: Es posible que algunas barras de herramientas y controles ActiveX no estén disponibles cuando se usan procesos de 64 bits. Si habilita esta configuración de directiva, Internet Explorer 11 usará procesos de pestañas de 64 bits cuando se ejecute el modo protegido mejorado en las versiones de 64 bits de Windows. Si deshabilita esta configuración de directiva, Internet Explorer 11 usará procesos de pestañas de 32 bits cuando se ejecute el modo protegido mejorado en las versiones de 64 bits de Windows. Si no establece esta configuración de directiva, los usuarios pueden activar y desactivar esta característica en la configuración de Internet Explorer. Esta característica está desactivada de manera predeterminada.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067149)  
+  Esta configuración de directiva determina si Internet Explorer 11 usa procesos de 64 bits (de cara a una mayor seguridad) o de 32 bits (de cara a una mejor compatibilidad) cuando se ejecuta el modo protegido mejorado en las versiones de 64 bits de Windows. Importante: Puede que algunas barras de herramientas y controles ActiveX no estén disponibles cuando se usen procesos de 64 bits. Si habilita esta configuración de directiva, Internet Explorer 11 usará procesos de pestañas de 64 bits cuando se ejecute el modo protegido mejorado en las versiones de 64 bits de Windows. Si deshabilita esta configuración de directiva, Internet Explorer 11 usará procesos de pestañas de 32 bits cuando se ejecute el modo protegido mejorado en las versiones de 64 bits de Windows. Si no establece esta configuración de directiva, los usuarios pueden activar y desactivar esta característica en la configuración de Internet Explorer. Esta característica está desactivada de manera predeterminada.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067149).  
   
   **Valor predeterminado**: Habilitado 
   
 - **Internet Explorer ignore certificate errors** (Omitir errores de certificado de Internet Explorer)  
   Esta configuración de directiva impide que el usuario ignore errores de certificado de Capa de sockets seguros/Seguridad de la capa de transporte (SSL/TLS) que interrumpan la navegación (errores como caducado, revocado o de coincidencia de los nombres) en Internet Explorer. Si habilita esta configuración de directiva, el usuario no puede continuar la exploración. Si deshabilita o no establece esta configuración de directiva, el usuario puede elegir ignorar los errores de certificado y continuar la exploración.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067071)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067071).  
   
   **Valor predeterminado**: Deshabilitado 
   
 - **Internet Explorer internet zone loading of XAML files** (Carga de archivos XML en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar la carga de archivos de lenguaje de marcado de aplicaciones extensible (XAML). XAML es un lenguaje de marcado declarativo basado en XML que habitualmente se usa para crear interfaces de usuario y gráficos enriquecidos que aprovechan Windows Presentation Foundation. Si habilita esta configuración de directiva y establece el cuadro desplegable en Habilitar, los archivos XAML se cargan automáticamente dentro de Internet Explorer. El usuario no puede cambiar este comportamiento. Si establece el cuadro desplegable en Preguntar, se le pregunta al usuario para cargar los archivos XAML. Si deshabilita esta configuración de directiva, los archivos XAML no se cargan en Internet Explorer. El usuario no puede cambiar este comportamiento. Si no establece esta configuración de directiva, el usuario puede decidir si cargar los archivos XAML en Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067147)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067147).  
   
   **Valor predeterminado**: Deshabilitar 
   
 - **Internet Explorer internet zone automatic prompt for file downloads** (Solicitud automática de descargas de archivos en la zona Internet de Internet Explorer)  
   Esta configuración de directiva determina si se solicita la intervención de los usuarios para las descargas de archivos no iniciadas por usuarios. Independientemente de esta configuración, se presentarán cuadros de diálogo de descarga de archivos a los usuarios en las descargas iniciadas por ellos. Si habilita esta configuración de directiva, se presentará un cuadro de diálogo de descarga de archivos a los usuarios cuando se intente realizar una descarga automática. Si deshabilita esta configuración o no la establece, se bloquea cualquier descarga de archivos no iniciada por usuarios y estos verán la barra de notificación en lugar del cuadro de diálogo de descarga de archivos. Los usuarios podrán hacer clic en la barra de notificación para permitir que se les solicite su intervención para descargar el archivo.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067117)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067117).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone security warning for potentially unsafe files** (Advertencia de seguridad de la zona de sitios restringidos de Internet Explorer para archivos potencialmente no seguros)  
   Esta configuración de directiva controla si el mensaje "Abrir archivo: advertencia de seguridad" aparece cuando el usuario intenta abrir archivos ejecutables u otros archivos que puedan no ser seguros (por ejemplo, desde un recurso compartido de archivos de intranet mediante el Explorador de archivos). Si habilita esta configuración de directiva y establece el cuadro desplegable en Habilitar, estos archivos se abren sin una advertencia de seguridad. Si establece el cuadro desplegable en Preguntar, aparece una advertencia de seguridad antes de que se abra el archivo. Si deshabilita esta configuración de directiva, estos archivos no se abren. Si no establece esta configuración de directiva, el usuario puede configurar cómo controla el equipo estos archivos. De manera predeterminada, estos archivos están bloqueados en la zona Sitios restringidos, habilitados en las zonas Intranet y Equipo local, y establecidos en Preguntar en las zonas Internet y Sitios de confianza.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2066797)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2066797).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone cross site scripting filter** (Filtro de scripts de sitios de la zona de Internet de Internet Explorer)  
   Esta directiva controla si el filtro de scripts de sitios (XSS) detectará e impedirá la inserción de scripts de sitios en los sitios web de esta zona. Si habilita esta configuración de directiva, el filtro XSS se activa para los sitios de esta zona y el filtro XSS intenta bloquear las inserciones de scripts de sitios. Si deshabilita esta configuración de directiva, el filtro XSS se desactiva para los sitios de esta zona e Internet Explorer permite las inserciones de scripts de sitios.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067053) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067053). 
   
   **Valor predeterminado**: Habilitado 
   
 - **Internet Explorer fallback to SSL3** (Reserva para SSL 3.0 de Internet Explorer)  
   Esta configuración de directiva permite bloquear una reserva no segura para SSL 3.0. Cuando esté habilitada, Internet Explorer intentará conectarse a los sitios con SSL 3.0 o una versión anterior cuando se produzca un error en TLS 1.0 o una versión posterior. Se recomienda no permitir la reserva no segura con el fin de evitar un ataque de tipo "Man in the middle". Esta directiva no afecta a la selección de protocolos de seguridad habilitados. Si deshabilita esta directiva, se usan los valores predeterminados del sistema.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067118)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067118).  
   
   **Valor predeterminado**: No hay sitios  
 
-- **Compatibilidad con cifrado de Internet Explorer**  
-  Esta configuración de directiva permite desactivar la compatibilidad con la seguridad de la capa de transporte (TLS) 1,0, TLS 1,1, TLS 1,2, Capa de sockets seguros (SSL) 2,0 o SSL 3,0 en el explorador. TLS y SSL son protocolos que ayudan a proteger la comunicación entre el explorador y el servidor de destino. Cuando el explorador intenta configurar una comunicación protegida con el servidor de destino, el explorador y el servidor negocian qué protocolo y versión usar. El explorador y el servidor intentan hacer coincidir la lista de protocolos y versiones compatibles entre sí y seleccionan la coincidencia más preferida. Si habilita esta configuración de Directiva, el explorador negocia o no negocia un túnel de cifrado mediante los métodos de cifrado que seleccione en la lista desplegable. Si deshabilita o no establece esta configuración de Directiva, el usuario puede seleccionar el método de cifrado que admite el explorador.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067057)
+- **Compatibilidad de cifrado de Internet Explorer**  
+  Esta configuración de directiva le permite desactivar la compatibilidad con la seguridad de la capa de transporte (TLS) 1.0, TLS 1.1, TLS 1.2, capa de sockets seguros (SSL) 2.0 o SSL 3.0 en el explorador. TLS y SSL son protocolos que ayudan a proteger la comunicación entre el explorador y el servidor de destino. Cuando el explorador intenta establecer una comunicación protegida con el servidor de destino, el explorador y el servidor negocian qué protocolo y versión usar. El explorador y el servidor intentan hacer coincidir la lista de protocolos y versiones compatibles entre sí y seleccionan la coincidencia preferida. Si habilita esta configuración de directiva, el explorador negocia o no un túnel de cifrado mediante los métodos de cifrado que seleccione en la lista desplegable. Si deshabilita o no establece esta configuración de directiva, el usuario podrá seleccionar el método de cifrado que admita el explorador.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067057).
 
-  **Valor predeterminado**: 2 elementos: TLS v 1.1 y TLS v 1.2  
+  **Valor predeterminado**: 2 elementos, TLS v1.1 y TLS v1.2  
   *Seleccione la flecha abajo para mostrar las opciones que puede seleccionar para esta configuración.*
   
 - **Internet Explorer locked down internet zone smart screen** (Bloqueo de SmartScreen para la zona de Internet de Internet Explorer)  
-  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina las páginas de esta zona para detectar contenido malintencionado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067059)  
+  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina páginas en esta zona para detectar contenido malintencionado.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067059).  
   
   **Valor predeterminado**: Habilitado 
   
 - **Internet Explorer restricted zone launch applications and files in an iFrame** (Iniciar aplicaciones y archivos en un iFrame en la zona restringida de Internet Explorer)  
   Esta configuración de directiva permite administrar si se pueden ejecutar aplicaciones y descargar archivos de una referencia IFRAME en el código HTML de las páginas de esta zona. Si habilita esta configuración de directiva, los usuarios podrán ejecutar aplicaciones y descargar archivos desde IFRAME en las páginas de esta zona sin pedirles su intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren ejecutar aplicaciones y descargar archivos desde IFRAME en las páginas de esta zona. Si deshabilita esta configuración de directiva, se impedirá que los usuarios ejecuten aplicaciones y descarguen archivos desde IFRAME en las páginas de esta zona. Si no establece esta configuración de directiva, se impide que los usuarios ejecuten aplicaciones y descarguen archivos desde IFRAME en las páginas de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067061)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067061).  
   
   **Valor predeterminado**: Deshabilitar 
   
 - **Internet Explorer bypass smart screen warnings about uncommon files** (Omitir las advertencias de SmartScreen de Internet Explorer sobre archivos no comunes)  
   Esta configuración de directiva determina si el usuario puede omitir las advertencias del filtro SmartScreen. El filtro SmartScreen advierte al usuario sobre los archivos ejecutables que los usuarios de Internet Explorer no suelen descargar de Internet. Si habilita esta configuración de directiva, las advertencias del filtro SmartScreen bloquean al usuario. Si deshabilita o no establece esta configuración de directiva, el usuario puede omitir las advertencias del filtro SmartScreen.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067068)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067068).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer internet zone popup blocker** (Bloqueador de ventanas emergentes de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si se muestran las ventanas emergentes no deseadas. Las ventanas emergentes que se abren cuando el usuario final hace clic en un vínculo no se bloquean. Si habilita esta configuración de directiva, se impide que se muestre la mayoría de las ventanas emergentes no deseadas. Si deshabilita esta configuración de directiva, no se impide la aparición de ventanas emergentes. Si no establece esta configuración de directiva, se impide que se muestre la mayoría de las ventanas emergentes no deseadas.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067069)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067069).  
   
   **Valor predeterminado**: Habilitar  
   
 - **Internet Explorer processes consistent MIME handling** (Administración de MIME coherente para procesos de Internet Explorer)  
   Internet Explorer contiene comportamientos de binarios dinámicos: componentes que encapsulan funcionalidad específica de los elementos HTML a los que están conectados. Esta configuración de directiva controla si se impide o se permite la restricción de seguridad del comportamiento binario. Si habilita esta configuración de directiva, se impiden los comportamientos binarios en los procesos del Explorador de archivos e Internet Explorer. Si deshabilita esta configuración de directiva, se permiten los comportamientos binarios en los procesos del Explorador de archivos e Internet Explorer. Si no establece esta configuración de directiva, se impiden los comportamientos binarios en los procesos del Explorador de archivos e Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067144)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067144).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer restricted zone java permissions** (Permisos de Java en la zona restringida de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, los applets Java se deshabilitan.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067132)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067132).  
   
   **Valor predeterminado**: Deshabilitar Java  
     
   
 - **Internet Explorer Active X controls in protected mode** (Controles ActiveX en modo protegido de Internet Explorer )  
-  Esta directiva evita que los controles ActiveX se ejecuten en modo protegido cuando está habilitado el modo protegido mejorado. Cuando un usuario tiene instalado un control ActiveX que no es compatible con el modo protegido mejorado y el sitio web intenta cargar el control, Internet Explorer informa al usuario y ofrece la opción de ejecutar el sitio web en el modo protegido normal. Esta configuración de directiva deshabilita esta notificación y fuerza la ejecución de todos los sitios web en el modo protegido mejorado. El modo protegido mejorado utiliza procesos de 64 bits en versiones de Windows de 64 bits para proporcionar seguridad adicional contra los sitios web malintencionados. En equipos que ejecutan al menos Windows 8, el modo protegido mejorado también limita las ubicaciones que Internet Explorer puede leer del Registro y del sistema de archivos. Cuando el modo protegido mejorado está habilitado y un usuario encuentra un sitio web que intenta cargar un control ActiveX que no es compatible con el modo protegido mejorado, Internet Explorer informa al usuario y ofrece la opción de deshabilitar el modo protegido mejorado para ese sitio web en particular. Si habilita esta configuración de directiva, Internet Explorer no ofrecerá al usuario la opción de deshabilitar el modo protegido mejorado. Todos los sitios web en modo protegido se ejecutarán en el modo protegido mejorado. Si deshabilita o no establece esta configuración de directiva, Internet Explorer informa a los usuarios y proporciona la opción de ejecutar sitios web con controles ActiveX incompatibles en el modo protegido normal.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067145)  
+  Esta configuración de directiva impide que los controles ActiveX se ejecuten en modo protegido cuando está habilitado el modo protegido mejorado. Cuando un usuario tiene instalado un control ActiveX que no es compatible con el modo protegido mejorado y el sitio web intenta cargar el control, Internet Explorer informa al usuario y ofrece la opción de ejecutar el sitio web en el modo protegido normal. Esta configuración de directiva deshabilita esta notificación y obliga a que todos los sitios web se ejecuten en modo protegido mejorado. El modo protegido mejorado proporciona protección adicional frente a sitios web malintencionados mediante el uso de procesos de 64 bits en versiones de Windows de 64 bits. En equipos que ejecutan al menos Windows 8, el modo protegido mejorado también limita las ubicaciones que Internet Explorer puede leer del Registro y del sistema de archivos. Cuando el modo protegido mejorado está habilitado y un usuario encuentra un sitio web que intenta cargar un control ActiveX que no es compatible con el modo protegido mejorado, Internet Explorer informa al usuario y ofrece la opción de deshabilitar el modo protegido mejorado para ese sitio web en particular. Si habilita esta configuración de directiva, Internet Explorer no ofrecerá al usuario la opción de deshabilitar el modo protegido mejorado. Todos los sitios web en modo protegido se ejecutarán en modo protegido mejorado. Si deshabilita o no establece esta configuración de directiva, Internet Explorer informa a los usuarios y proporciona la opción de ejecutar sitios web con controles ActiveX incompatibles en el modo protegido normal.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067145).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone loading of XAML files** (Carga de archivos XML en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar la carga de archivos de lenguaje de marcado de aplicaciones extensible (XAML). XAML es un lenguaje de marcado declarativo basado en XML que habitualmente se usa para crear interfaces de usuario y gráficos enriquecidos que aprovechan Windows Presentation Foundation. Si habilita esta configuración de directiva y establece el cuadro desplegable en Habilitar, los archivos XAML se cargan automáticamente dentro de Internet Explorer. El usuario no puede cambiar este comportamiento. Si establece el cuadro desplegable en Preguntar, se le pregunta al usuario para cargar los archivos XAML. Si deshabilita esta configuración de directiva, los archivos XAML no se cargan en Internet Explorer. El usuario no puede cambiar este comportamiento. Si no establece esta configuración de directiva, el usuario puede decidir si cargar los archivos XAML en Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067070)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067070).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer processes scripted window security restrictions** (Restricciones de seguridad para ventanas creadas por scripts para los procesos de Internet Explorer)  
   Internet Explorer permite que los scripts, mediante programación, abran ventanas de diferentes tipos y cambien su tamaño y ubicación. La característica de seguridad Restricciones de ventanas restringe las ventanas emergentes e impide a los scripts que muestren ventanas en las que las barras de título y estado no sean visibles para el usuario u obstruyan las barras de estado y título de otras ventanas. Si habilita esta configuración de directiva, se restringirán las ventanas creadas por scripts para todos los procesos. Si deshabilita esta configuración de directiva o no la establece, no se restringirá ninguna ventana creada por scripts.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067146)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067146).  
   
   **Valor predeterminado**: Habilitado   
   
 - **Internet Explorer restricted zone run Active X controls and plugins** (Ejecutar controles ActiveX y complementos de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si los controles ActiveX y complementos se pueden ejecutar en páginas de la zona especificada. Si habilita esta configuración de directiva, los controles y complementos podrán ejecutarse sin la intervención del usuario. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la ejecución de los controles o complementos. Si deshabilita esta configuración de directiva, se impedirá que los controles y complementos se ejecuten. Si no establece esta configuración de directiva, se impedirá que los controles y complementos se ejecuten.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067114) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067114). 
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone script Active X controls marked safe for scripting** (Incluir en scripts controles ActiveX marcados como seguros para ejecutar scripts de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si un control ActiveX marcado como seguro para ejecutar scripts puede interactuar con un script. Si habilita esta configuración de directiva, la interacción con el script podrá realizarse automáticamente sin la intervención del usuario. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la interacción con el script. Si deshabilita esta configuración de directiva, se impedirá que la interacción con el script se realice. Si no establece esta configuración de directiva, se impedirá que se realice la interacción con el script.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067062)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067062).  
   
   **Valor predeterminado**: Deshabilitar  
   
@@ -625,67 +623,67 @@ Para más información, vea [Policy CSP - InternetExplorer](https://docs.microso
   - *Inicio de sesión automático con el nombre de usuario y contraseña actuales*: use esta opción para intentar el inicio de sesión mediante la Respuesta de desafío de autenticación Windows NT (conocida también como autenticación NTLM). Si el servidor es compatible con la Respuesta de desafío de autenticación Windows NT, el inicio de sesión usará el nombre de usuario y la contraseña de red del usuario para iniciar la sesión. Si el servidor no es compatible con la respuesta de desafío de Windows NT, se consultará al usuario para que proporcione el nombre de usuario y la contraseña. 
 
   Si deshabilita esta configuración de directiva, el inicio de sesión se establece en *Inicio de sesión automático solo en la zona Intranet*. Si no establece esta configuración de directiva, el inicio de sesión se establece en *Preguntar* para el nombre de usuario y la contraseña.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067110)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067110).  
   
-  **Valor predeterminado**: Anónimo  
+  **Valor predeterminado**: Anónima  
   
 - **Internet Explorer trusted zone initialize and script Active X controls not marked as safe** (Inicializar e incluir en scripts controles ActiveX no marcados como seguros en la zona de sitios de confianza de Internet Explorer)  
   Esta configuración de directiva permite administrar los controles ActiveX no marcados como seguros. Si habilita esta configuración de directiva, los controles ActiveX se ejecutarán, se cargarán con parámetros y se incluirán en scripts sin establecer la seguridad de objetos para los datos o scripts que no sean de confianza. Esta configuración no se recomienda, excepto para zonas seguras y administradas. Esta configuración hace que los controles seguros y no seguros se inicialicen y se activen los scripts, omitiendo la opción "Generar scripts de los controles ActiveX marcados como seguros para scripts". Si habilita esta configuración de directiva y selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir que el control se cargue con parámetros o se activen los scripts. Si deshabilita esta configuración de directiva, ningún control ActiveX que no pueda hacerse seguro se cargará con parámetros ni se activarán los scripts. Si no establece esta configuración de directiva, se consultará a los usuarios si se permite que el control se cargue con parámetros o se activen los scripts.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067137)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067137).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer check server certificate revocation** (Comprobar la revocación de certificados de servidor de Internet Explorer)  
   Esta configuración de directiva permite administrar si Internet Explorer comprueba el estado de revocación de los certificados de los servidores. Los certificados se revocan cuando se ponen en peligro o ya no son válidos; esta opción protege a los usuarios de enviar datos confidenciales a un sitio que pueda ser fraudulento o no seguro. Si habilita esta configuración de directiva, Internet Explorer comprobará si los certificados del servidor han sido revocados. Si deshabilita esta configuración de directiva, Internet Explorer no comprobará si los certificados del servidor han sido revocados. Si no establece esta configuración de directiva, Internet Explorer no comprobará si los certificados del servidor han sido revocados.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067046)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067046).  
   
   **Valor predeterminado**: Habilitado 
   
 - **Internet Explorer internet zone less privileged sites** (Sitios con menos privilegios de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si los sitios web de zonas con menos privilegios, como Sitios restringidos, pueden desplazarse hacia ella. Si habilita esta configuración de directiva, los sitios web de zonas con menos privilegios podrán abrir nuevas ventanas en esta zona o desplazarse hacia ella. La zona de seguridad se ejecutará sin la capa agregada de seguridad proporcionada por la característica de seguridad Protección contra elevación de zona. Si selecciona Preguntar en el cuadro desplegable, se emitirá una advertencia al usuario que indica que se va a realizar una navegación potencialmente arriesgada. Si deshabilita esta configuración de directiva, se evitará cualquier navegación que pueda ser dañina. La característica de seguridad de Internet Explorer está activada en esta zona como lo establece el control de la característica Protección contra elevación de zona. Si no establece esta configuración de directiva, los sitios web de zonas con menos privilegios podrán abrir nuevas ventanas en esta zona o desplazarse hacia ella.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067109)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067109).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone file downloads** (Descargas de archivo de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si se permite la descarga de archivos de la zona. Esta opción se determina por la zona de la página con el vínculo que ocasiona la descarga, no por la zona desde donde se entrega el archivo. Si habilita esta configuración de directiva, los archivos podrán descargarse de la zona. Si deshabilita esta configuración de directiva, se impedirá que los archivos se descarguen de la zona. Si no establece esta configuración de directiva, se impedirá que los archivos se descarguen de la zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067038)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067038).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone run .NET Framework reliant components signed with authenticode** (Ejecutar componentes que dependen de .NET Framework firmados con Authenticode en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si los componentes de .NET Framework firmados con Authenticode se pueden ejecutar en Internet Explorer. Entre esos componentes figuran los controles administrados a los que una etiqueta de objeto hizo referencia y los archivos ejecutables administrados a los que un vínculo hizo referencia. Si habilita esta configuración de directiva, Internet Explorer ejecutará los componentes administrados firmados. Si selecciona Preguntar en el cuadro desplegable, Internet Explorer solicitará la intervención de los usuarios para determinar si se quieren ejecutar los componentes administrados firmados. Si deshabilita esta configuración de directiva, Internet Explorer no ejecutará ningún componente administrado con firma. Si no establece esta configuración de directiva, Internet Explorer no ejecutará ningún componente administrado con firma.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067033)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067033).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer prevent per user installation of Active X controls** (Impedir la instalación por usuario de controles ActiveX de Internet Explorer)  
   Esta configuración de directiva permite impedir la instalación por usuario de controles ActiveX. Si habilita esta configuración de directiva, los controles ActiveX no se pueden instalar para cada usuario. Si deshabilita o no establece esta configuración de directiva, los controles ActiveX se pueden instalar por cada usuario.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067058)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067058).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer prevent managing smart screen filter** (Impedir la administración del filtro SmartScreen de Internet Explorer)  
   Esta configuración de directiva impide que el usuario administre el filtro SmartScreen, que le advierte de si el sitio web que visita es conocido por haber realizado intentos fraudulentos de reunir información personal a través de la suplantación de identidad, o si se sabe que contiene malware. Si habilita esta configuración de directiva, no se pedirá al usuario que active el filtro SmartScreen. Todas las direcciones de los sitios web que no se encuentren en la lista de sitios web permitidos del filtro se envían de forma automática a Microsoft sin solicitar la confirmación del usuario. Si deshabilita o no establece esta configuración de directiva, se pide al usuario que decida si quiere activar el filtro SmartScreen durante la primera ejecución.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067135)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067135).  
   
   **Valor predeterminado**: Habilitar  
   
 - **Internet Explorer processes MIME sniffing safety feature** (Característica de seguridad de examen de MIME de procesos de Internet Explorer)  
   Esta configuración de directiva determina si el examen de MIME de Internet Explorer impedirá la promoción del tipo de un archivo a otro tipo más peligroso. Si habilita esta configuración de directiva, el examen de MIME nunca promoverá el tipo de un archivo a otro tipo más peligroso. Si deshabilita esta configuración de directiva, los procesos de Internet Explorer permitirán que el examen de MIME promueva el tipo de un archivo a otro tipo más peligroso. Si no establece esta configuración de directiva, el examen de MIME nunca promoverá el tipo de un archivo a otro tipo más peligroso.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067124)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067124).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer restricted zone download signed Active X controls** (Descargar controles ActiveX firmados de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si los usuarios pueden descargar controles ActiveX firmados de una página en la zona. Si habilita esta directiva, los usuarios podrán descargar controles firmados sin solicitarles su intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si se pueden descargar controles firmados por editores que no son de confianza. El código firmado por editores de confianza se descarga en modo silencioso. Si deshabilita la configuración de directiva, no se podrán descargar los controles firmados. Si no establece esta configuración de directiva, se consultará con los usuarios si se pueden descargar controles firmados por editores que no son de confianza. El código firmado por editores de confianza se descarga en modo silencioso.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067120) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067120). 
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer auto complete** (Autocompletar de Internet Explorer)  
   Esta característica Autocompletar puede recordar y sugerir nombres y contraseñas de usuarios en formularios. Si habilita esta opción, el usuario no puede cambiar "Nombres de usuario y contraseñas en formularios" ni "Preguntar si se guardan las contraseñas". Se activará la característica Autocompletar para nombres de usuario y contraseñas en formularios. Debe decidir si quiere seleccionar "Preguntar si se guardan las contraseñas". Si deshabilita esta opción, el usuario no puede cambiar "Nombres de usuario y contraseñas en formularios" ni "Preguntar si se guardan las contraseñas". Se desactivará la característica Autocompletar para nombres de usuario y contraseñas en formularios. El usuario tampoco puede optar porque se le pregunte si se guardan las contraseñas. Si no establece esta configuración, los usuarios tendrán la libertad de activar Autocompletar para nombres de usuario y contraseñas en los formularios y la opción de preguntar si quieren guardar las contraseñas. Para mostrar esta opción, los usuarios deben abrir el cuadro de diálogo Opciones de Internet, hacer clic en la pestaña Contenido y hacer clic en el botón Configuración.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067122)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067122).  
   
   **Valor predeterminado**: Deshabilitado  
   
@@ -695,453 +693,453 @@ Para más información, vea [Policy CSP - InternetExplorer](https://docs.microso
   - *Preguntar*: se consultará con los empleados si quieren permitir la ejecución de VBScript en la zona. 
   - *Deshabilitar*: se impide que VBScript se ejecute en la zona. Si deshabilita o no establece esta configuración de directiva, VBScript se ejecuta en la zona especificada sin ninguna interacción.    
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067119)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067119).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone allow only approved domains to use tdc Active X controls** (Permitir que solo los dominios aprobados usen controles ActiveX de TDC en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva controla si el usuario puede ejecutar el control ActiveX de TDC en sitios web. Si habilita esta configuración de directiva, el control ActiveX de TDC no se ejecutará desde los sitios web de esta zona. Si deshabilita esta configuración de directiva, el control ActiveX de TDC se ejecutará desde todos los sitios de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067032)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067032).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer trusted zone don't run antimalware against Active X controls** (No ejecutar antimalware en los controles ActiveX de la zona de sitios de confianza de Internet Explorer)  
   Esta configuración de directiva determina si Internet Explorer ejecuta programas antimalware en controles ActiveX con objeto de comprobar si es seguro cargarlos en las páginas. Si habilita esta configuración de directiva, Internet Explorer no comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Si deshabilita esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX con seguridad. Si no se establece esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Los usuarios pueden activar o desactivar este comportamiento por medio de las opciones de seguridad de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067115)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067115).  
   
   **Valor predeterminado**: Deshabilitado 
   
 - **Internet Explorer local machine zone java permissions** (Permisos de Java de la zona Equipo local de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, el permiso se establece como Seguridad media.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067113)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067113).  
   
   **Valor predeterminado**: Deshabilitar Java 
   
 - **Internet Explorer intranet zone do not run antimalware against Active X controls** (No ejecutar antimalware en los controles ActiveX de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva determina si Internet Explorer ejecuta programas antimalware en controles ActiveX con objeto de comprobar si es seguro cargarlos en las páginas. Si habilita esta configuración de directiva, Internet Explorer no comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Si deshabilita esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX con seguridad. Si no se establece esta configuración de directiva, Internet Explorer no comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Los usuarios pueden activar o desactivar este comportamiento por medio de las opciones de seguridad de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067138)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067138).  
   
   **Valor predeterminado**: Deshabilitado  
 
 - **Scriptlets de zona de sitios restringidos de Internet Explorer**  
   Esta configuración de directiva permite administrar si el usuario puede ejecutar scriptlets. Si habilita esta configuración de directiva, el usuario puede ejecutar scriptlets. Si deshabilita esta configuración de directiva, el usuario no puede ejecutar scriptlets. Si no establece esta configuración de directiva, el usuario puede habilitar o deshabilitar los scriptlets.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067112)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067112).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer processes notification bar** (Barra de notificación para procesos de Internet Explorer)  
   Esta configuración de directiva permite administrar si se muestra la barra de notificación para procesos de Internet Explorer cuando las instalaciones de archivos o código están restringidas. De forma predeterminada, la barra de notificación se muestra para procesos de Internet Explorer. Si habilita esta configuración de directiva, la barra de notificación se muestra para Procesos de Internet Explorer. Si deshabilita esta configuración de directiva, la barra de notificación no se mostrará para procesos de Internet Explorer. Si no establece esta configuración de directiva, la barra de notificación no se muestra para procesos de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067139)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067139).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer internet zone download signed Active X controls** (Descargar controles ActiveX firmados de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si los usuarios pueden descargar controles ActiveX firmados de una página en la zona. Si habilita esta directiva, los usuarios podrán descargar controles firmados sin solicitarles su intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si se pueden descargar controles firmados por editores que no son de confianza. El código firmado por editores de confianza se descarga en modo silencioso. Si deshabilita la configuración de directiva, no se podrán descargar los controles firmados. Si no establece esta configuración de directiva, se consultará con los usuarios si se pueden descargar controles firmados por editores que no son de confianza. El código firmado por editores de confianza se descarga en modo silencioso.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067064)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067064).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone smart screen** (SmartScreen de la zona de sitios restringidos de Internet Explorer)  
-  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina las páginas de esta zona para detectar contenido malintencionado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067034)  
+  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina páginas en esta zona para detectar contenido malintencionado.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067034).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer remove run this time button for outdated Active X controls** (Quitar el botón Ejecutar esta vez para los controles ActiveX obsoletos de Internet Explorer)  
   Esta configuración de directiva permite impedir que los usuarios vean el botón "Ejecutar esta vez" y ejecuten determinados controles ActiveX obsoletos en Internet Explorer. Si habilita esta configuración de directiva, los usuarios no verán el botón "Ejecutar esta vez" en el mensaje de advertencia que aparece cuando Internet Explorer bloquea un control ActiveX obsoleto. Si deshabilita o no establece esta configuración de directiva, los usuarios verán el botón "Ejecutar esta vez" en el mensaje de advertencia que aparece cuando Internet Explorer bloquea un control ActiveX obsoleto. Este botón permite al usuario ejecutar el control ActiveX obsoleto una vez. Para más información, vea "Controles ActiveX obsoletos" en la biblioteca de TechNet de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067123)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067123).  
   
   **Valor predeterminado**: Habilitado 
   
 - **Internet Explorer internet zone launch applications and files in an iframe** (Iniciar aplicaciones y archivos en un iFrame en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si se pueden ejecutar aplicaciones y descargar archivos de una referencia IFRAME en el código HTML de las páginas de esta zona. Si habilita esta configuración de directiva, los usuarios podrán ejecutar aplicaciones y descargar archivos desde IFRAME en las páginas de esta zona sin pedirles su intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren ejecutar aplicaciones y descargar archivos desde IFRAME en las páginas de esta zona. Si deshabilita esta configuración de directiva, se impedirá que los usuarios ejecuten aplicaciones y descarguen archivos desde IFRAME en las páginas de esta zona. Si no establece esta configuración de directiva, se consultará con los usuarios si quieren ejecutar aplicaciones y descargar archivos desde elementos IFRAME en las páginas de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067020)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067020).  
   
   **Valor predeterminado**: Deshabilitar 
   
 - **Internet Explorer restricted zone navigate windows and frames across different domains** (Navegar por ventanas y marcos de diferentes dominios en la zona de sitios restringidos de Internet Explorer)  
-  Esta configuración de directiva permite establecer las opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no configura esta directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067050)  
+  Esta configuración de directiva le permite establecer opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentran en ventanas diferentes. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en ventanas diferentes. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no configura esta directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067050).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone smart screen** (SmartScreen de la zona de Internet de Internet Explorer)  
-  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina las páginas de esta zona para detectar contenido malintencionado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067047)  
+  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina páginas en esta zona para detectar contenido malintencionado.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067047).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer locked down trusted zone java permissions** (Bloqueo de permisos de Java en la zona de sitios de confianza de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, los applets Java se deshabilitan.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067142)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067142).  
   
   
   **Valor predeterminado**: Deshabilitar Java 
   
 - **Internet Explorer check signatures on downloaded programs** (Comprobar las firmas de los programas descargados de Internet Explorer)  
   Esta configuración de directiva permite administrar si Internet Explorer debe comprobar las firmas digitales (lo que sirve para identificar el editor de software firmado y comprobar que no se ha modificado ni alterado) en los equipos de los usuarios antes de descargar programas ejecutables. Si habilita esta configuración de directiva, Internet Explorer comprobará las firmas digitales de los programas ejecutables y mostrará sus identidades antes de descargarlas en los equipos de los usuarios. Si deshabilita esta configuración de directiva, Internet Explorer no comprobará las firmas digitales de los programas ejecutables ni mostrará sus identidades antes de descargarlas en los equipos de los usuarios. Si no establece esta configuración de directiva, Internet Explorer no comprobará las firmas digitales de los programas ejecutables ni mostrará sus identidades antes de descargarlas en los equipos de los usuarios.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067051)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067051).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer restricted zone scripting of web browser controls** (Scripting de controles de explorador web en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva determina si una página puede controlar los controles WebBrowser insertados mediante scripts. Si habilita esta configuración de directiva, se permite el acceso por scripts al control WebBrowser. Si deshabilita esta configuración de directiva, no se permite el acceso por scripts al control WebBrowser. Si no establece esta configuración de directiva, el usuario puede habilitar o deshabilitar el acceso por scripts al control WebBrowser. De manera predeterminada, el acceso por scripts al control WebBrowser solo se permite en las zonas Intranet y Equipo local.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067098)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067098).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone cross site scripting filter** (Filtro de scripts de sitios de la zona de sitios restringidos de Internet Explorer)  
   Esta directiva controla si el filtro de scripts de sitios (XSS) detectará e impedirá la inserción de scripts de sitios en los sitios web de esta zona. Si habilita esta configuración de directiva, el filtro XSS se activa para los sitios de esta zona y el filtro XSS intenta bloquear las inserciones de scripts de sitios. Si deshabilita esta configuración de directiva, el filtro XSS se desactiva para los sitios de esta zona e Internet Explorer permite las inserciones de scripts de sitios.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067178)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067178).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer restricted zone binary and script behaviors** (Comportamientos de binarios y scripts de la zona de sitios restringidos de Internet Explorer)  
   Esta directiva permite administrar los comportamientos de binarios y scripts dinámicos: componentes que encapsulan funcionalidad específica para elementos HTML a los que están conectados. Si habilita esta configuración de directiva, los comportamientos de binarios y scripts estarán disponibles. Si selecciona Aprobados por el administrador en el cuadro desplegable, únicamente estarán disponibles los comportamientos mostrados en Comportamientos aprobados por el administrador en la directiva Restricción de seguridad del comportamiento binario. Si deshabilita esta configuración de directiva, ningún comportamiento binario y de scripts estará disponible a menos que las aplicaciones tengan implementado un administrador de seguridad personalizado. Si no establece esta configuración de directiva, ningún comportamiento binario y de scripts estará disponible a menos que las aplicaciones tengan implementado un administrador de seguridad personalizado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067224)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067224).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer security settings check** (Comprobación de la configuración de seguridad de Internet Explorer)  
   Esta configuración de directiva desactiva la característica de comprobación de la configuración de seguridad, que comprueba la configuración de seguridad de Internet Explorer para determinar cuándo la configuración pone en peligro a Internet Explorer. Si habilita esta configuración de directiva, se desactiva la característica. Si deshabilita o no establece esta configuración de directiva, se activa la característica.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067182)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067182).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer internet zone security warning for potentially unsafe files** (Advertencia de seguridad de la zona de Internet de Internet Explorer para archivos potencialmente no seguros)  
   Esta configuración de directiva controla si el mensaje "Abrir archivo: advertencia de seguridad" aparece cuando el usuario intenta abrir archivos ejecutables u otros archivos que puedan no ser seguros (por ejemplo, desde un recurso compartido de archivos de intranet mediante el Explorador de archivos). Si habilita esta configuración de directiva y establece el cuadro desplegable en Habilitar, estos archivos se abren sin una advertencia de seguridad. Si establece el cuadro desplegable en Preguntar, aparece una advertencia de seguridad antes de que se abra el archivo. Si deshabilita esta configuración de directiva, estos archivos no se abren. Si no establece esta configuración de directiva, el usuario puede configurar cómo controla el equipo estos archivos. De manera predeterminada, estos archivos están bloqueados en la zona Sitios restringidos, habilitados en las zonas Intranet y Equipo local, y establecidos en Preguntar en las zonas Internet y Sitios de confianza.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067204)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067204).  
   
   **Valor predeterminado**: Preguntar  
   
 - **Internet Explorer intranet zone java permissions** (Permisos de Java en la zona Intranet de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, el permiso se establece como Seguridad media.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067206)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067206).  
   
   **Valor predeterminado**: Seguridad alta 
   
 - **Internet Explorer block outdated Active X controls**  (Bloqueo de controles ActiveX obsoletos de Internet Explorer)  
   Esta configuración de directiva determina si Internet Explorer bloquea determinados controles ActiveX obsoletos. Nunca se bloquean los controles ActiveX obsoletos en la zona Intranet. Si habilita esta configuración de directiva, Internet Explorer dejará de bloquear los controles ActiveX obsoletos. Si deshabilita o no establece esta configuración de directiva, Internet Explorer seguirá bloqueando determinados controles ActiveX obsoletos. Para más información, vea "Controles ActiveX obsoletos" en la biblioteca de TechNet de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067203)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067203).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer restricted zone popup blocker** (Bloqueador de ventanas emergentes de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si se muestran las ventanas emergentes no deseadas. Las ventanas emergentes que se abren cuando el usuario final hace clic en un vínculo no se bloquean. Si habilita esta configuración de directiva, se impide que se muestre la mayoría de las ventanas emergentes no deseadas. Si deshabilita esta configuración de directiva, no se impide la aparición de ventanas emergentes. Si no establece esta configuración de directiva, se impide que se muestre la mayoría de las ventanas emergentes no deseadas.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067180)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067180).  
   
   **Valor predeterminado**: Habilitar  
   
 - **Internet Explorer processes MK protocol security restriction** (Restricción de seguridad del protocolo MK de procesos de Internet Explorer)  
   La configuración de directiva Restricción de seguridad del protocolo MK reduce el área expuesta a ataques al impedir el uso del protocolo MK. Se producirá un error en los recursos hospedados en el protocolo MK. Si habilita esta configuración de directiva, se impide el uso del protocolo MK para el Explorador de archivos e Internet Explorer, y se producirá un error en los recursos hospedados en el protocolo MK. Si deshabilita esta configuración de directiva, las aplicaciones pueden usar la API del protocolo MK. Los recursos hospedados en el protocolo MK funcionarán para los procesos del Explorador de archivos e Internet Explorer. Si no establece esta configuración de directiva, se impide el uso del protocolo MK para el Explorador de archivos e Internet Explorer, y se producirá un error en los recursos hospedados en el protocolo MK.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067179)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067179).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer trusted zone java permissions**  (Permisos de Java en la zona de confianza de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, el permiso se establece como Seguridad baja.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067200).  
   
   **Valor predeterminado**: Seguridad alta  
   
 - **Internet Explorer restricted zone scripting of java applets** (Scripting de applets Java en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si los applets se exponen a scripts dentro de la zona. Si habilita esta configuración de directiva, los scripts podrán acceder a los applets automáticamente, sin la intervención del usuario. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir que los scripts accedan a los applets. Si deshabilita esta configuración de directiva, se impedirá que los scripts accedan a applets. Si no establece esta configuración de directiva, se impedirá que los scripts accedan a applets.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067202)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067202).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer locked down restricted zone java permissions**  (Bloqueo de permisos de Java en la zona restringida de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, los applets Java se deshabilitan.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067181)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067181).  
   
   **Valor predeterminado**: Deshabilitar Java 
   
 - **Internet Explorer internet zone allow only approved domains to use Active X controls**  (Permitir que solo los dominios aprobados usen controles ActiveX en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva controla si se le pide al usuario que permita la ejecución de los controles ActiveX en sitios web distintos al sitio web que ha instalado el control ActiveX. Si habilita esta configuración de directiva, el usuario debe confirmar si permite la ejecución de los controles ActiveX desde sitios web en esta zona. El usuario puede permitir que el control se ejecute desde el sitio actual, o bien desde todos los sitios. Si deshabilita esta configuración de directiva, el usuario no ve el mensaje de ActiveX por sitio, y los controles ActiveX pueden ejecutarse desde todos los sitios de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067091)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067091).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer include all network paths** (Incluir todas las rutas de acceso de red de Internet Explorer)  
   Internet Explorer incluye todas las rutas de acceso de red.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067090)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067090).  
   
   **Valor predeterminado**: Deshabilitado 
   
 - **Internet Explorer internet zone protected mode** (Modo protegido de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite activar el modo protegido. El modo protegido ayuda a proteger los puntos vulnerables y susceptibles de ataque de Internet Explorer mediante la reducción de las ubicaciones en las que Internet Explorer puede escribir en el Registro y en el sistema de archivos. Si habilita esta configuración de directiva, se activa el modo protegido. El usuario no puede desactivar el modo protegido. Si deshabilita esta configuración de directiva, se desactiva el modo protegido. El usuario no puede activar el modo protegido. Si no establece esta configuración de directiva, el usuario puede activar o desactivar el modo protegido.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067171)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067171).  
   
   **Valor predeterminado**: Habilitar 
   
 - **Internet Explorer internet zone initialize and script Active X controls not marked as safe** (Inicializar e incluir en scripts controles ActiveX no marcados como seguros en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar los controles ActiveX no marcados como seguros. Si habilita esta configuración de directiva, los controles ActiveX se ejecutarán, se cargarán con parámetros y se incluirán en scripts sin establecer la seguridad de objetos para los datos o scripts que no sean de confianza. Esta configuración no se recomienda, excepto para zonas seguras y administradas. Esta configuración hace que los controles seguros y no seguros se inicialicen y se activen los scripts, omitiendo la opción "Generar scripts de los controles ActiveX marcados como seguros para scripts". Si habilita esta configuración de directiva y selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir que el control se cargue con parámetros o se activen los scripts. Si deshabilita esta configuración de directiva, ningún control ActiveX que no pueda hacerse seguro se cargará con parámetros ni se activarán los scripts. Si no establece esta configuración de directiva, ningún control ActiveX que no pueda hacerse seguro se cargará con parámetros ni se activarán los scripts.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067170)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067170).  
   
   **Valor predeterminado**: Deshabilitar 
   
 - **Internet Explorer restricted zone smart screen**  (Bloqueo de SmartScreen en la zona restringida de Internet Explorer)  
-  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina las páginas de esta zona para detectar contenido malintencionado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067092)  
+  Esta configuración de directiva controla si el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si habilita esta configuración de directiva, el filtro SmartScreen examina las páginas de la zona para detectar contenido malintencionado. Si deshabilita esta configuración de directiva, el filtro SmartScreen no examina las páginas de la zona para detectar contenido malintencionado. Si no establece esta configuración de directiva, el usuario puede elegir si el filtro SmartScreen examina las páginas de esta zona para detectar contenido malintencionado. Nota: En Internet Explorer 7, esta configuración de directiva controla si el filtro de suplantación de identidad examina páginas en esta zona para detectar contenido malintencionado.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067092).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer crash detection** (Detección de bloqueos de Internet Explorer)  
   Esta configuración de directiva permite administrar la característica de detección de bloqueos de Administración de complementos. Si habilita esta configuración de directiva, los bloqueos en Internet Explorer tendrán el comportamiento de Windows XP Professional Service Pack 1 y versiones anteriores, que es invocar Informes de errores de Windows. Todas las configuraciones de directiva para Informes de errores de Windows se seguirán aplicando. Si deshabilita o no establece esta configuración de directiva, la característica de detección de bloqueos de Administración de complementos sigue funcionando.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067094)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067094).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer internet zone java permissions** (Permisos de Java en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, el permiso se establece como Seguridad alta.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067174)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067174).  
   
   **Valor predeterminado**: Deshabilitar Java  
   
 - **Internet Explorer restricted zone active scripting** (Activar scripting de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si se ejecuta código de script en páginas de la zona. Si habilita esta configuración de directiva, el código de script se podrá ejecutar automáticamente en páginas de la zona. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la ejecución de código de script en páginas de la zona. Si deshabilita esta configuración de directiva, se impedirá la ejecución de código de script en páginas de la zona. Si no establece esta configuración de directiva, se impedirá la ejecución de código de script en páginas de la zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067172)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067172).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone logon options** (Opciones de inicio de sesión de la zona de Internet de Internet Explorer)  
-  Esta configuración de directiva permite administrar la configuración de las opciones de inicio de sesión. Si habilita esta configuración de directiva, puede elegir una de las opciones de inicio de sesión siguientes. Inicio de sesión anónimo para deshabilitar la autenticación HTTP y usar la cuenta de invitado solo para el protocolo de Sistema de archivos de Internet común (CIFS). Preguntar por el nombre de usuario y la contraseña para consultar al usuario sobre los id. de usuario y contraseñas. Después de consultar al usuario, estos valores se pueden usar de modo silencioso en lo que resta de la sesión. Inicio de sesión automático solo en la zona Intranet para consultar al usuario sobre los id. de usuario y contraseñas en otras zonas. Después de la consulta, estos valores se pueden usar de modo silencioso en lo que resta de la sesión. Inicio de sesión automático con el nombre de usuario y contraseña actuales para intentar el inicio de sesión mediante la Respuesta de desafío de autenticación Windows NT (conocida también como autenticación NTLM). Si el servidor es compatible con la Respuesta de desafío de autenticación Windows NT, el inicio de sesión usará el nombre de usuario y la contraseña de red del usuario para iniciar la sesión. Si el servidor no es compatible con la respuesta de desafío de Windows NT, se consultará al usuario para que proporcione el nombre de usuario y la contraseña. Si deshabilita esta configuración de directiva, el inicio de sesión se establece en Inicio de sesión automático solo en la zona Intranet. Si no establece esta configuración de directiva, el inicio de sesión se establece en Inicio de sesión automático solo en la zona Intranet.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067194)  
+  Esta configuración de directiva permite administrar la configuración de las opciones de inicio de sesión. Si habilita esta configuración de directiva, puede elegir una de las opciones de inicio de sesión siguientes. Inicio de sesión anónimo para deshabilitar la autenticación HTTP y usar la cuenta de invitado solo para el protocolo de Sistema de archivos de Internet común (CIFS). Preguntar por el nombre de usuario y la contraseña para consultar al usuario sobre los id. de usuario y contraseñas. Después de la consulta, los valores pueden usarse de modo silencioso en lo que resta de la sesión. Inicio de sesión automático solo en la zona Intranet para consultar al usuario sobre los id. de usuario y contraseñas en otras zonas. Después de la consulta, estos valores se pueden usar de modo silencioso en lo que resta de la sesión. Inicio de sesión automático con el nombre de usuario y contraseña actuales para intentar el inicio de sesión mediante la Respuesta de desafío de autenticación Windows NT (conocida también como autenticación NTLM). Si el servidor es compatible con la Respuesta de desafío de autenticación Windows NT, el inicio de sesión usará el nombre de usuario y la contraseña de red del usuario para iniciar la sesión. Si el servidor no es compatible con la respuesta de desafío de Windows NT, se consultará al usuario para que proporcione el nombre de usuario y la contraseña. Si deshabilita esta configuración de directiva, el inicio de sesión se establece en Inicio de sesión automático solo en la zona Intranet. Si no establece esta configuración de directiva, el inicio de sesión se establece en Inicio de sesión automático solo en la zona Intranet.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067194).  
   
   **Valor predeterminado**: Preguntar  
   
 - **Internet Explorer restricted zone allow vbscript to run**  (Permitir que VBScript se ejecute en la zona restringida de Internet Explorer)  
   Esta configuración de directiva le permite administrar si VBScript puede ejecutarse en las páginas de la zona especificada en Internet Explorer. Si se selecciona Habilitar en el cuadro desplegable, VBScript podrá ejecutarse sin la intervención del usuario. Si se selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la ejecución de VBScript. Si se selecciona Deshabilitar en el cuadro desplegable, se impedirá que VBScript se ejecute. Si no establece o deshabilita esta configuración de directiva, VBScript no podrá ejecutarse.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067173)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067173).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone drag content from different domains across windows** (Arrastrar contenido de diferentes dominios entre ventanas a la zona de Internet de Internet Explorer)  
-  Esta configuración de directiva permite establecer las opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no configura esta directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067093)  
+  Esta configuración de directiva le permite establecer opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentran en ventanas diferentes. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en ventanas diferentes. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no configura esta directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067093).  
   
   **Valor predeterminado**: Deshabilitado 
   
 - **Internet Explorer intranet zone initialize and script Active X controls not marked as safe** (Inicializar e incluir en scripts controles ActiveX no marcados como seguros en la zona Intranet de Internet Explorer)  
   Esta configuración de directiva permite administrar los controles ActiveX no marcados como seguros. Si habilita esta configuración de directiva, los controles ActiveX se ejecutarán, se cargarán con parámetros y se incluirán en scripts sin establecer la seguridad de objetos para los datos o scripts que no sean de confianza. Esta configuración no se recomienda, excepto para zonas seguras y administradas. Esta configuración hace que los controles seguros y no seguros se inicialicen y se activen los scripts, omitiendo la opción "Generar scripts de los controles ActiveX marcados como seguros para scripts". Si habilita esta configuración de directiva y selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir que el control se cargue con parámetros o se activen los scripts. Si deshabilita esta configuración de directiva, ningún control ActiveX que no pueda hacerse seguro se cargará con parámetros ni se activarán los scripts. Si no establece esta configuración de directiva, ningún control ActiveX que no pueda hacerse seguro se cargará con parámetros ni se activarán los scripts.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067175)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067175).  
   
   **Valor predeterminado**: Deshabilitar 
   
 - **Internet Explorer download enclosures** (Descargar caracteres enmarcados de Internet Explorer)  
   Esta configuración de directiva impide que el usuario descargue caracteres enmarcados (datos adjuntos) desde una fuente al equipo del usuario. Si habilita esta configuración de directiva, el usuario no puede configurar el motor de sincronización de fuentes para que descargue caracteres enmarcados a través de la página de propiedades de fuente. Los desarrolladores no pueden cambiar la opción de descarga por medio de las API de fuentes. Si deshabilita o no establece esta configuración de directiva, el usuario puede configurar el motor de sincronización de fuentes para que descargue caracteres enmarcados a través de la página de propiedades de fuente. Los desarrolladores pueden cambiar la opción de descarga por medio de las API de fuentes.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067245)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067245).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone download unsigned Active X controls** (Descargar controles ActiveX sin firmar de la zona de sitios restringidos de Internet Explorer)  
-  Esta configuración de directiva le permite administrar si los usuarios pueden descargar controles ActiveX sin firmar de la zona. Dicho código es potencialmente dañino, más aún si proviene de una zona que no es de confianza. Si habilita esta configuración de directiva, los usuarios podrán ejecutar controles sin firmar sin solicitarles la intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la ejecución de controles sin firmar. Si deshabilita esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar. Si no establece esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067177)  
+  Esta configuración de directiva permite administrar si los usuarios pueden descargar controles ActiveX sin firmar de la zona. Dicho código es potencialmente dañino, más aún si proviene de una zona que no es de confianza. Si habilita esta configuración de directiva, los usuarios podrán ejecutar controles sin firmar sin solicitarles la intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la ejecución de controles sin firmar. Si deshabilita esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar. Si no establece esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067177).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone drag content from different domains within windows** (Arrastrar contenido de diferentes dominios de ventanas de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva le permite administrar si los usuarios pueden descargar controles ActiveX sin firmar de la zona. Dicho código es potencialmente dañino, más aún si proviene de una zona que no es de confianza. Si habilita esta configuración de directiva, los usuarios podrán ejecutar controles sin firmar sin solicitarles la intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la ejecución de controles sin firmar. Si deshabilita esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar. Si no establece esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067095)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067095).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer processes restrict Active X install**  (Restringir la instalación de ActiveX para los procesos de Internet Explorer)  
   Esta configuración de directiva permite que las aplicaciones que tienen el Control del Explorador web bloqueen la intervención automática de usuario para instalar controles ActiveX. Si habilita esta configuración de directiva, el Control del Explorador web bloqueará la intervención de usuario automática en la instalación de controles ActiveX para todos los procesos. Si deshabilita o no establece esta configuración de directiva, el Control del Explorador web no bloqueará la intervención de usuario automática en la instalación de controles ActiveX para todos los procesos.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067250)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067250).  
   
   **Valor predeterminado**: Habilitado  
   
-- **Scriptlets de zona Internet de Internet Explorer**  
+- **Scriptlets de zona de Internet de Internet Explorer**  
   Esta configuración de directiva permite administrar si el usuario puede ejecutar scriptlets. Si habilita esta configuración de directiva, el usuario puede ejecutar scriptlets. Si deshabilita esta configuración de directiva, el usuario no puede ejecutar scriptlets. Si no establece esta configuración de directiva, el usuario puede habilitar o deshabilitar los scriptlets.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067176)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067176).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone drag and drop or copy and paste files** (Arrastrar y colocar, o copiar y pegar archivos en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva le permite administrar si los usuarios pueden arrastrar o copiar y pegar archivos de un origen dentro de la zona. Si habilita esta configuración de directiva, los usuarios podrán automáticamente arrastrar o copiar y pegar archivos de esta zona. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren arrastrar o copiar archivos de esta zona. Si deshabilita esta configuración de directiva, se impedirá que los usuarios arrastren, copien y peguen archivos de esta zona. Si no establece esta configuración de directiva, se consultará con los usuarios si quieren arrastrar o copiar archivos de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067096)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067096).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer software when signature is invalid** (Software de Internet Explorer cuando la firma no es válida)  
   Esta configuración de directiva permite administrar si el usuario puede instalar o ejecutar software, como controles ActiveX y descargas de archivos, aunque la firma no sea válida. Es posible que una firma no válida indique que alguien ha manipulado el archivo. Si habilita esta configuración de directiva, se le pregunta a los usuarios si quieren instalar o ejecutar archivos con una firma no válida. Si deshabilita esta configuración de directiva, los usuarios no podrán instalar o ejecutar archivos con una firma no válida. Si no establece esta configuración de directiva, los usuarios pueden elegir si instalan o ejecutan archivos con una firma no válida.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067201)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067201).
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone copy and paste via script** (Copiar y pegar mediante scripts en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si los scripts pueden realizar operaciones del Portapapeles (por ejemplo, cortar, copiar y pegar) en una región especificada. Si habilita esta configuración de directiva, los scripts podrán realizar operaciones de Portapapeles. Si selecciona Preguntar en el cuadro desplegable, se consulta con los usuarios si se pueden realizar operaciones de Portapapeles. Si deshabilita esta configuración de directiva, ningún script podrá realizar operaciones de Portapapeles. Si no establece esta configuración de directiva, ningún script podrá realizar operaciones de Portapapeles.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067165)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067165).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone drag content from different domains across windows** (Arrastrar contenido de diferentes dominios entre ventanas en la zona de sitios restringidos de Internet Explorer)  
-  Esta configuración de directiva permite establecer las opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no configura esta directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067166)   
+  Esta configuración de directiva le permite establecer opciones para arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentran en ventanas diferentes. Si habilita esta configuración de directiva y hace clic en Habilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en ventanas diferentes. Los usuarios no pueden cambiar esta configuración. Si habilita esta configuración de directiva y hace clic en Deshabilitar, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración. En Internet Explorer 10, si deshabilita o no establece esta configuración de directiva, los usuarios no podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios pueden cambiar esta configuración en el cuadro de diálogo Opciones de Internet. En Internet Explorer 9 y versiones anteriores, si deshabilita o no configura esta directiva, los usuarios podrán arrastrar contenido entre diferentes dominios cuando el origen y el destino se encuentren en diferentes ventanas. Los usuarios no pueden cambiar esta configuración.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067166).   
 
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer users adding sites** (Los usuarios agregan sitios de Internet Explorer)  
-  Impide que los usuarios agreguen o quiten sitios de las zonas de seguridad. Una zona de seguridad es un grupo de sitios web con el mismo nivel de seguridad. Si habilita esta directiva, se deshabilitará la configuración de administración de sitios para zonas de seguridad. (Para ver la configuración de administración de sitios para zonas de seguridad, en el cuadro de diálogo de Opciones de Internet, haga clic en la pestaña Seguridad y haga clic en el botón Sitios). Si deshabilita o no establece esta directiva, los usuarios podrán agregar o quitar sitios web de las zonas de sitios de confianza y sitios restringidos, y modificar la configuración de la zona Intranet local. Esta directiva impide que los usuarios cambien la configuración de la administración de sitios para zonas de seguridad establecida por el administrador. Nota: La directiva "Deshabilitar la página Seguridad" (ubicada en \Configuración de usuario\Plantillas administrativas\Componentes de Windows\Internet Explorer\Panel de control Internet), que quita la pestaña Seguridad de la interfaz, tiene prioridad sobre esta directiva. Si está habilitada, esta directiva se omite. Además, vea también la directiva "Zonas de seguridad: usar solo la configuración del equipo".  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067167)  
+  Impide que los usuarios agreguen o quiten sitios de las zonas de seguridad. Una zona de seguridad es un grupo de sitios web con el mismo nivel de seguridad. Si habilita esta directiva, se deshabilitará la configuración de administración de sitios para zonas de seguridad. (Para ver la configuración de administración de sitios para zonas de seguridad, en el cuadro de diálogo de Opciones de Internet, haga clic en la pestaña Seguridad y haga clic en el botón Sitios). Si deshabilita o no establece esta directiva, los usuarios podrán agregar o quitar sitios web de las zonas de sitios de confianza y sitios restringidos, y modificar la configuración de la zona Intranet local. Esta directiva impide que los usuarios cambien la configuración de la administración de sitios para zonas de seguridad establecida por el administrador. Nota: La directiva "Deshabilitar la página Seguridad" (ubicada en \Configuración de usuario\Plantillas administrativas\Componentes de Windows\Internet Explorer\Panel de control Internet), que quita la pestaña Seguridad de la interfaz, tiene prioridad sobre esta directiva. Si está habilitada, esta directiva se omite. Vea también la directiva "Zonas de seguridad: usar solo la configuración del equipo".  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067167).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Ventanas iniciadas por scripts de la zona de Internet de Internet Explorer**  
   Esta configuración de directiva permite administrar las restricciones sobre ventanas emergentes iniciadas por scripts y sobre ventanas que incluyen la barra de título y estado. Si habilita esta directiva, la seguridad de restricciones de ventanas no se aplicará en esta zona. La zona de seguridad se ejecutará sin la capa agregada de seguridad proporcionada por esta característica. Si deshabilita esta configuración de directiva, no se podrán ejecutar las acciones potencialmente dañinas contenidas en las ventanas emergentes iniciadas por scripts y en las ventanas que incluyen la barra de título y estado. Esta característica de seguridad de Internet Explorer está activada en esta zona como lo indica el control de la característica Restricciones de seguridad de ventanas con scripts para el proceso. Si no establece esta configuración de directiva, no se podrán ejecutar las acciones posiblemente dañinas contenidas en las ventanas emergentes iniciadas por scripts y en las ventanas que incluyen la barra de título y estado. Esta característica de seguridad de Internet Explorer está activada en esta zona como lo indica el control de la característica Restricciones de seguridad de ventanas con scripts para el proceso.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067088)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067088).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer security zones use only machine settings** (Usar solo la configuración del equipo de zonas de seguridad de Internet Explorer)  
   Aplica la información de zona de seguridad a todos los usuarios del mismo equipo. Una zona de seguridad es un grupo de sitios web con el mismo nivel de seguridad. Si habilita esta directiva, los cambios que realice el usuario en la zona de seguridad se aplicarán a todos los usuarios del equipo. Si deshabilita esta directiva o no la configura, los usuarios del mismo equipo pueden establecer su propia configuración de zona de seguridad. Use esta directiva para garantizar que la configuración de la zona de seguridad se aplique uniformemente al mismo equipo y no varíe de un usuario a otro. Vea también la directiva "Zonas de seguridad: no permitir a los usuarios cambiar las directivas".  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067086)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067086).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer locked down local machine zone java permissions** (Bloqueo de permisos de Java en la zona Equipo local de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, los applets Java se deshabilitan.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067253) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067253). 
   
   **Valor predeterminado**: Deshabilitar Java 
   
 - **Internet Explorer restricted zone do not run antimalware against Active X controls**  (No ejecutar antimalware en los controles ActiveX de la zona restringida de Internet Explorer)  
   Esta configuración de directiva determina si Internet Explorer ejecuta programas antimalware en controles ActiveX con objeto de comprobar si es seguro cargarlos en las páginas. Si habilita esta configuración de directiva, Internet Explorer no comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Si deshabilita esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX con seguridad. Si no se establece esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Los usuarios pueden activar o desactivar este comportamiento por medio de las opciones de seguridad de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067089)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067089).
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone run .NET Framework reliant components signed with authenticode** (Ejecutar componentes que dependen de .NET Framework firmados con Authenticode en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si los componentes de .NET Framework firmados con Authenticode se pueden ejecutar en Internet Explorer. Entre esos componentes figuran los controles administrados a los que una etiqueta de objeto hizo referencia y los archivos ejecutables administrados a los que un vínculo hizo referencia. Si habilita esta configuración de directiva, Internet Explorer ejecutará los componentes administrados firmados. Si selecciona Preguntar en el cuadro desplegable, Internet Explorer solicitará la intervención de los usuarios para determinar si se quieren ejecutar los componentes administrados firmados. Si deshabilita esta configuración de directiva, Internet Explorer no ejecutará ningún componente administrado con firma. Si no establece esta configuración de directiva, Internet Explorer no ejecutará ningún componente administrado con firma.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067169)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067169).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer restricted zone access to data sources** (Acceso a orígenes de datos de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si Internet Explorer puede acceder a datos de otra zona de seguridad con Analizador XML de Microsoft (MSXML) u Objetos de datos ActiveX (ADO). Si habilita esta configuración de directiva, los usuarios podrán cargar una página en la zona que usa MSXML o ADO para acceder a datos de otro sitio en la zona. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir que una página se cargue en la zona que usa MSXML o ADO para acceder a datos de otro sitio de la zona. Si deshabilita esta configuración de directiva, los usuarios no podrán cargar ninguna página en la zona que usa MSXML o ADO para acceder a datos de otro sitio de la zona. Si no establece esta configuración de directiva, los usuarios no podrán cargar ninguna página en la zona que usa MSXML o ADO para acceder a datos de otro sitio de la zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067161)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067161).  
   
   **Valor predeterminado**: Deshabilitar 
   
 - **Internet Explorer internet zone don't run antimalware against ActiveX controls** (No ejecutar antimalware en los controles ActiveX de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva determina si Internet Explorer ejecuta programas antimalware en controles ActiveX con objeto de comprobar si es seguro cargarlos en las páginas. Si habilita esta configuración de directiva, Internet Explorer no comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Si deshabilita esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX con seguridad. Si no se establece esta configuración de directiva, Internet Explorer siempre comprobará el programa antimalware para saber si se puede crear una instancia del control ActiveX de forma segura. Los usuarios pueden activar o desactivar este comportamiento por medio de las opciones de seguridad de Internet Explorer.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067162)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067162).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer internet zone copy and paste via script** (Copiar y pegar mediante scripts en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si los scripts pueden realizar operaciones de Portapapeles (como cortar, copiar y pegar) en una zona especificada. Si habilita esta configuración de directiva, los scripts podrán realizar operaciones de Portapapeles. Si selecciona Preguntar en el cuadro desplegable, se consulta con los usuarios si se pueden realizar operaciones de Portapapeles. Si deshabilita esta configuración de directiva, ningún script podrá realizar operaciones de Portapapeles. Si no establece esta configuración de directiva, ningún script podrá realizar operaciones de Portapapeles.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067084)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067084).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer use Active X installer service** (Usar el servicio del instalador de ActiveX de Internet Explorer)  
   Esta configuración de directiva permite especificar cómo se deben instalar los controles ActiveX. Si habilita esta configuración de directiva, los controles ActiveX solamente se instalan si el servicio de instalador de ActiveX está presente y si se ha configurado para permitir la instalación de los controles ActiveX. Si deshabilita o no establece esta configuración de directiva, los controles ActiveX, incluidos los controles por usuario, se instalan mediante el proceso de instalación estándar.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067163)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067163).
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer processes protection from zone elevation** (Protección contra la elevación de zona para los procesos de Internet Explorer)  
   Internet Explorer impone restricciones cada vez que abre una página web. Las restricciones dependen de la ubicación de cada página web (zona Internet, Intranet, Equipo local, etc.). Por ejemplo, las páginas web del equipo local son las que tienen menos restricciones de seguridad y están en la zona Equipo local, lo que convierte a esta zona en el objetivo principal de los usuarios malintencionados. Si habilita esta configuración de directiva, todas las zonas podrán protegerse de la elevación de zona para todos los procesos. Si deshabilita o no establece esta configuración de directiva, los procesos que no sean de Internet Explorer o no figuren en la Lista de procesos no recibirán dicha protección.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067160)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067160).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer internet zone download unsigned Active X controls**  (Descargar controles ActiveX sin firmar de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si los usuarios pueden descargar controles ActiveX sin firmar de la zona. Dicho código es potencialmente dañino, más aún si proviene de una zona que no es de confianza. Si habilita esta configuración de directiva, los usuarios podrán ejecutar controles sin firmar sin solicitarles la intervención. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir la ejecución de controles sin firmar. Si deshabilita esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar. Si no establece esta configuración de directiva, los usuarios no podrán ejecutar controles sin firmar.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067325)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067325).
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone navigate windows and frames across different domains**  (Navegar por ventanas y marcos de diferentes dominios en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva le permite administrar la apertura de ventanas y marcos, y el acceso de aplicaciones a través de dominios distintos. Si habilita esta configuración de directiva, los usuarios podrán abrir ventanas y marcos, y acceder a aplicaciones de otros dominios. Si selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir el acceso de ventanas y marcos a aplicaciones de otros dominios. Si deshabilita esta configuración de directiva, los usuarios no podrán abrir ventanas y marcos para acceder a aplicaciones de otros dominios. Si no establece esta configuración de directiva, los usuarios podrán abrir ventanas y marcos, y acceder a aplicaciones de otros dominios.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067083)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067083).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer internet zone updates to status bar via script** (Actualizaciones de la barra de estado mediante scripts en la zona de Internet de Internet Explorer)  
   Esta configuración de directiva permite administrar si un script puede actualizar la barra de estado dentro de la zona. Si habilita esta configuración de directiva, los scripts pueden actualizar la barra de estado. Si deshabilita o no establece esta configuración de directiva, no se permite al script actualizar la barra de estado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067087)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067087).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone include local path when uploading files to server** (Incluir la ruta de acceso local al cargar archivos al servidor en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva controla si la información de la ruta de acceso local se envía cuando el usuario carga un archivo por medio de un formulario HTML. Si se envía la información de la ruta de acceso local, es posible que parte de la información sea revelada sin querer al servidor. Por ejemplo, los archivos enviados desde el escritorio del usuario pueden contener el nombre de usuario como parte de la ruta de acceso. Si habilita esta configuración de directiva, la información de la ruta de acceso se envía cuando el usuario carga un archivo por medio de un formulario HTML. Si deshabilita esta configuración de directiva, la información de la ruta de acceso se elimina cuando el usuario carga un archivo por medio de un formulario HTML. Si no establece esta configuración de directiva, el usuario puede elegir si la información de la ruta de acceso se envía cuando cargue un archivo por medio de un formulario HTML. De manera predeterminada, la información de la ruta de acceso se envía.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067085)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067085).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer processes restrict file download**  (Restringir la descarga de archivos para los procesos de Internet Explorer)  
   Esta configuración de directiva permite que las aplicaciones que tienen el Control del Explorador web bloqueen la intervención automática de usuario para la descarga de archivos no iniciada por el usuario. Si habilita esta configuración de directiva, el Control del Explorador web bloqueará la intervención de usuario automática en la descarga de archivos no iniciada por el usuario para todos los procesos. Si deshabilita esta configuración de directiva, el Control del Explorador web no bloqueará la intervención de usuario automática en la descarga de archivos no iniciada por el usuario para todos los procesos.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067164)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067164).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer restricted zone allow only approved domains to use Active X controls**  (Permitir que solo los dominios aprobados usen controles ActiveX en la zona restringida de Internet Explorer)  
   Esta configuración de directiva controla si se le pide al usuario que permita la ejecución de los controles ActiveX en sitios web distintos al sitio web que ha instalado el control ActiveX. Si habilita esta configuración de directiva, el usuario debe confirmar si permite la ejecución de los controles ActiveX desde sitios web en esta zona. El usuario puede permitir que el control se ejecute desde el sitio actual, o bien desde todos los sitios. Si deshabilita esta configuración de directiva, el usuario no ve el mensaje de ActiveX por sitio, y los controles ActiveX pueden ejecutarse desde todos los sitios de esta zona.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067233)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067233).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer restricted zone initialize and script Active X controls not marked as safe** (Inicializar e incluir en scripts controles ActiveX no marcados como seguros en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar los controles ActiveX no marcados como seguros. Si habilita esta configuración de directiva, los controles ActiveX se ejecutarán, se cargarán con parámetros y se incluirán en scripts sin establecer la seguridad de objetos para los datos o scripts que no sean de confianza. Esta configuración no se recomienda, excepto para zonas seguras y administradas. Esta configuración hace que los controles seguros y no seguros se inicialicen y se activen los scripts, omitiendo la opción "Generar scripts de los controles ActiveX marcados como seguros para scripts". Si habilita esta configuración de directiva y selecciona Preguntar en el cuadro desplegable, se consultará con los usuarios si quieren permitir que el control se cargue con parámetros o se activen los scripts. Si deshabilita esta configuración de directiva, ningún control ActiveX que no pueda hacerse seguro se cargará con parámetros ni se activarán los scripts. Si no establece esta configuración de directiva, ningún control ActiveX que no pueda hacerse seguro se cargará con parámetros ni se activarán los scripts.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067097)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067097).  
   
   **Valor predeterminado**: Deshabilitar  
   
 - **Internet Explorer users changing policies** (Directivas de cambio de usuarios de Internet Explorer)  
-  Impide que los usuarios cambien la configuración de zona de seguridad. Una zona de seguridad es un grupo de sitios web con el mismo nivel de seguridad. Si habilita esta directiva, el botón Nivel personalizado y el control deslizante de nivel de seguridad de la pestaña Seguridad del cuadro de diálogo Opciones de Internet estarán deshabilitados. Si deshabilita esta directiva o no la configura, los usuarios pueden cambiar la configuración de zona de seguridad. Esta directiva impide que los usuarios cambien la configuración de zona de seguridad establecida por el administrador. Nota: La directiva "Deshabilitar la página Seguridad" (ubicada en \Configuración de usuario\Plantillas administrativas\Componentes de Windows\Internet Explorer\Panel de control Internet), que quita la pestaña Seguridad del Panel de control de Internet Explorer, tiene prioridad sobre esta directiva. Si está habilitada, esta directiva se omite. Además, vea también la directiva "Zonas de seguridad: usar solo la configuración del equipo".  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067155)  
+  Impide que los usuarios cambien la configuración de zona de seguridad. Una zona de seguridad es un grupo de sitios web con el mismo nivel de seguridad. Si habilita esta directiva, el botón Nivel personalizado y el control deslizante de nivel de seguridad de la pestaña Seguridad del cuadro de diálogo Opciones de Internet estarán deshabilitados. Si deshabilita esta directiva o no la configura, los usuarios pueden cambiar la configuración de zona de seguridad. Esta directiva impide que los usuarios cambien la configuración de zona de seguridad establecida por el administrador. Nota: La directiva "Deshabilitar la página Seguridad" (ubicada en \Configuración de usuario\Plantillas administrativas\Componentes de Windows\Internet Explorer\Panel de control Internet), que quita la pestaña Seguridad del Panel de control de Internet Explorer, tiene prioridad sobre esta directiva. Si está habilitada, esta directiva se omite. Vea también la directiva "Zonas de seguridad: usar solo la configuración del equipo".  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067155).  
     
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone protected mode** (Modo protegido de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite activar el modo protegido. El modo protegido ayuda a proteger los puntos vulnerables y susceptibles de ataque de Internet Explorer mediante la reducción de las ubicaciones en las que Internet Explorer puede escribir en el Registro y en el sistema de archivos. Si habilita esta configuración de directiva, se activa el modo protegido. El usuario no puede desactivar el modo protegido. Si deshabilita esta configuración de directiva, se desactiva el modo protegido. El usuario no puede activar el modo protegido. Si no establece esta configuración de directiva, el usuario puede activar o desactivar el modo protegido.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067080)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067080).  
   
   **Valor predeterminado**: Habilitar  
   
 - **Internet Explorer internet zone user data persistence** (Persistencia de datos de usuario de la zona de Internet de Internet Explorer)  
   Esta configuración de directiva le permite administrar la preservación de información en el Historial del explorador, en Favoritos, en un almacén XML o directamente dentro de una página web guardada en disco. Cuando el usuario vuelva a una página persistente, el estado de dicha página podrá restaurarse si esta configuración de directiva se establece correctamente. Si habilita esta configuración de directiva, los usuarios podrán preservar información en el Historial del explorador, en Favoritos, en un almacén XML o directamente dentro de una página web guardada en disco. Si deshabilita esta configuración de directiva, los usuarios no podrán conservar información en el historial del explorador, en Favoritos, en un almacén XML ni directamente dentro de una página web guardada en disco. Si no establece esta configuración de directiva, los usuarios podrán conservar información en el historial del explorador, en Favoritos, en un almacén XML o directamente dentro de una página web guardada en disco.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067156)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067156).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer internet zone scripting of web browser controls** (Scripting de controles de explorador web en la zona de Internet de Internet Explorer)  
  
   Esta configuración de directiva determina si una página puede controlar los controles WebBrowser insertados mediante scripts. Si habilita esta configuración de directiva, se permite el acceso por scripts al control WebBrowser. Si deshabilita esta configuración de directiva, no se permite el acceso por scripts al control WebBrowser. Si no establece esta configuración de directiva, el usuario puede habilitar o deshabilitar el acceso por scripts al control WebBrowser. De manera predeterminada, el acceso por scripts al control WebBrowser solo se permite en las zonas Intranet y Equipo local.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067157)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067157).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone user data persistence** (Persistencia de datos de usuario de la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva le permite administrar la preservación de información en el Historial del explorador, en Favoritos, en un almacén XML o directamente dentro de una página web guardada en disco. Cuando el usuario vuelva a una página persistente, el estado de dicha página podrá restaurarse si esta configuración de directiva se establece correctamente. Si habilita esta configuración de directiva, los usuarios podrán preservar información en el Historial del explorador, en Favoritos, en un almacén XML o directamente dentro de una página web guardada en disco. Si deshabilita esta configuración de directiva, los usuarios no podrán conservar información en el historial del explorador, en Favoritos, en un almacén XML ni directamente dentro de una página web guardada en disco. Si no establece esta configuración de directiva, los usuarios no podrán conservar información en el historial del explorador, en Favoritos, en un almacén XML o directamente dentro de una página web guardada en disco.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067081)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067081).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer locked down intranet zone java permissions** (Bloqueo de permisos de Java en la zona Intranet de Internet Explorer)  
   Esta configuración de directiva permite administrar los permisos para applets Java. Si habilita esta configuración de directiva, podrá elegir una opción del cuadro desplegable. Personalizado, para controlar la configuración de permisos individualmente. Seguridad baja habilita a los applets para realizar todas las operaciones. Seguridad media habilita a los applets para ejecutarse en su espacio aislado (un área de memoria fuera de la cual el programa no puede hacer llamadas), además de funcionalidades como espacio de desecho (un área de almacenamiento segura en el equipo cliente) y E/S de archivos controlada por usuario. Seguridad alta habilita a los applets para ejecutarse en su espacio aislado. Deshabilite Java para impedir la ejecución de los applets. Si deshabilita esta configuración de directiva, los applets Java no se ejecutarán. Si no establece esta configuración de directiva, los applets Java se deshabilitan.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067082)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067082).  
   
   **Valor predeterminado**: Deshabilitar Java  
   
 - **Modo protegido mejorado de Internet Explorer**  
-  El modo protegido mejorado utiliza procesos de 64 bits en versiones de Windows de 64 bits para proporcionar seguridad adicional contra los sitios web malintencionados. En equipos que ejecutan al menos Windows 8, el modo protegido mejorado también limita las ubicaciones que Internet Explorer puede leer del Registro y del sistema de archivos. Si habilita esta configuración de directiva, se activa el modo protegido mejorado. Cualquier zona que tenga el modo protegido habilitado utilizará el modo protegido mejorado. Los usuarios no podrán deshabilitar el modo protegido mejorado. Si deshabilita esta configuración de directiva, se desactiva el modo protegido mejorado. Cualquier zona que tenga el modo protegido habilitado utilizará la versión del modo de protegido presentada en Internet Explorer 7 para Windows Vista. Si no configura esta directiva, los usuarios pueden activar o desactivar el modo protegido mejorado en la pestaña Opciones avanzadas del cuadro de diálogo Opciones de Internet.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067158)  
+  El modo protegido mejorado proporciona protección adicional frente a sitios web malintencionados mediante el uso de procesos de 64 bits en versiones de Windows de 64 bits. En equipos que ejecutan al menos Windows 8, el modo protegido mejorado también limita las ubicaciones que Internet Explorer puede leer del Registro y del sistema de archivos. Si habilita esta configuración de directiva, se activa el modo protegido mejorado. Cualquier zona que tenga el modo protegido habilitado utilizará el modo protegido mejorado. Los usuarios no podrán deshabilitar el modo protegido mejorado. Si deshabilita esta configuración de directiva, se desactiva el modo protegido mejorado. Cualquier zona que tenga el modo protegido habilitado usará la versión del modo protegido introducida en Internet Explorer 7 para Windows Vista. Si no configura esta directiva, los usuarios pueden activar o desactivar el modo protegido mejorado en la pestaña Opciones avanzadas del cuadro de diálogo Opciones de Internet.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067158).  
   
   **Valor predeterminado**: Habilitado  
   
 - **Internet Explorer bypass smart screen warnings** (Omitir las advertencias de SmartScreen de Internet Explorer)  
   Esta configuración de directiva determina si el usuario puede omitir las advertencias del filtro SmartScreen. El filtro SmartScreen advierte al usuario sobre los archivos ejecutables que los usuarios de Internet Explorer no suelen descargar de Internet. Si habilita esta configuración de directiva, las advertencias del filtro SmartScreen bloquean al usuario. Si deshabilita o no establece esta configuración de directiva, el usuario puede omitir las advertencias del filtro SmartScreen.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067159)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067159).  
   
   **Valor predeterminado**: Deshabilitado  
   
 - **Internet Explorer restricted zone meta refresh** (Meta Refresh en la zona de sitios restringidos de Internet Explorer)  
   Esta configuración de directiva permite administrar si el explorador de un usuario se puede redirigir a otra página web si el autor de la página web usa la opción Meta Refresh (etiqueta) para redirigir a los exploradores a otra página web. Si habilita esta configuración de directiva, el explorador de un usuario en el que se cargue una página que contenga una opción Meta Refresh activa se puede redirigir a otra página web. Si deshabilita esta configuración de directiva, el explorador de un usuario en el que se cargue una página que contenga una opción Meta Refresh activa no se puede redirigir a otra página web. Si no establece esta configuración de directiva, el explorador de un usuario en el que se cargue una página que contenga una opción Meta Refresh activa no se puede redirigir a otra página web.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067154)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067154).  
   
   **Valor predeterminado**: Deshabilitado  
   
@@ -1150,24 +1148,24 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
 
 - **Restrict anonymous access to named pipes and shares** (Restringir el acceso anónimo a las canalizaciones con nombre y los recursos compartidos)  
   Cuando se habilita, esta configuración de seguridad restringe el acceso anónimo a recursos compartidos y canalizaciones a la configuración de: (1) Canalizaciones con nombre a las que se puede acceder de forma anónima (2) Recursos compartidos a los que se puede acceder de forma anónima.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067212)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067212).  
   
   **Valor predeterminado**: Sí  
   
 - **Seguridad de sesión mínima para servidores NTLM basados en SSP**  
   Esta configuración de seguridad permite que un servidor requiera la negociación de cifrado de 128 bits o la seguridad de sesión NTLMv2. Estos valores dependen del valor de configuración de seguridad Nivel de autenticación de LAN Manager. Las opciones son: Requerir seguridad de sesión NTLMv2: se producirá un error en la conexión si no se negocia la integridad del mensaje. Requerir cifrado de 128 bits. Se producirá un error en la conexión si no se negocia el cifrado de alta seguridad (128 bits).  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067246) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067246). 
   
   **Valor predeterminado**: Requerir NTLM V2 y cifrado de 128 bits  
   
 - **Minutos de inactividad de la pantalla de bloqueo hasta que se activa el protector de pantalla**  
-  Windows detecta inactividad en una sesión de inicio de sesión y, si el tiempo de inactividad excede el límite de inactividad, se ejecutará el protector de pantalla y se bloqueará la sesión.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067210)  
+  Windows detecta inactividad en una sesión de inicio de sesión y, si el tiempo de inactividad excede el límite, se ejecutará el protector de pantalla y se bloqueará la sesión.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067210).  
   
   **Valor predeterminado**: 15
   
-- **Require client to always digitally sign communications** (Requerir que el cliente siempre firme digitalmente las comunicaciones) Esta configuración de seguridad determina si todo el tráfico de canal seguro iniciado por el miembro de dominio debe estar firmado o cifrado. Cuando un equipo se une a un dominio, se crea una cuenta de equipo. Después, cuando se inicia el sistema, este usa la contraseña de cuenta de equipo para crear un canal seguro con un controlador de dominio para su dominio. Este canal seguro se usa para realizar operaciones como la autenticación de paso a través de NTLM, la búsqueda de SID o nombre de LSA y mucho más. Esta configuración determina si todo el tráfico de canal seguro iniciado por el miembro de dominio cumple los requisitos mínimos de seguridad. En concreto, determina si todo el tráfico de canal seguro iniciado por el miembro de dominio se debe firmar o cifrar. Si esta directiva está habilitada, no se establecerá el canal seguro, a menos que se negocie la firma o el cifrado de todo el tráfico de canal seguro. Si esta directiva está deshabilitada, el cifrado y la firma de todo el tráfico de canal seguro se negocian con el controlador de dominio, en cuyo caso el nivel de firma y cifrado depende de la versión del controlador de dominio y la configuración de las dos directivas siguientes: Miembro de dominio: cifrar digitalmente datos de un canal seguro (cuando sea posible) Miembro de dominio: firmar digitalmente datos de un canal seguro (cuando sea posible).  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067187) 
+- **Require client to always digitally sign communications** (Requerir que el cliente siempre firme digitalmente las comunicaciones) Esta configuración de seguridad determina si todo el tráfico de canal seguro iniciado por el miembro de dominio debe estar firmado o cifrado. Cuando un equipo se une a un dominio, se crea una cuenta de equipo. Después, cuando se inicia el sistema, este usa la contraseña de cuenta de equipo para crear un canal seguro con un controlador de dominio para su dominio. Este canal seguro se usa para realizar operaciones como la autenticación de paso a través de NTLM, la búsqueda de SID o nombre de LSA y mucho más. Esta configuración determina si todo el tráfico de canal seguro iniciado por el miembro de dominio cumple los requisitos mínimos de seguridad. En concreto, determina si todo el tráfico de canal seguro iniciado por el miembro de dominio se debe firmar o cifrar. Si esta directiva está habilitada, no se establecerá el canal seguro, a menos que se negocie la firma o el cifrado de todo el tráfico de canal seguro. Si esta directiva está deshabilitada, el cifrado y la firma de todo el tráfico de canal seguro se negocian con el controlador de dominio, en cuyo caso el nivel de firma y cifrado depende de la versión del controlador de dominio y la configuración de las dos directivas siguientes: Miembro de dominio: Cifrar digitalmente datos de un canal seguro (cuando sea posible) Miembro de dominio: Firmar digitalmente datos de un canal seguro (cuando sea posible).  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067187). 
   
   **Valor predeterminado**: Sí
   
@@ -1180,32 +1178,32 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   - *Enviar solo respuesta NTLMv2 y rechazar LM*: los clientes usan solo la autenticación NTLMv2 y usan la seguridad de sesión NTLMv2 si el servidor la admite; los controladores de dominio rechazan LM (aceptan solo la autenticación NTLM y NTLMv2). 
   - *Enviar solo respuesta NTLMv2 y rechazar LM y NTLM*: los clientes usan solo la autenticación NTLMv2 y usan la seguridad de sesión NTLMv2 si el servidor la admite; los controladores de dominio rechazan LM y NTLM (aceptan solo la autenticación NTLMv2).  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067189)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067189).   
     
   **Valor predeterminado**: Enviar solo respuesta NTLMv2. Rechazar LM y NTLM
   
 - **Prevent clients from sending unencrypted passwords to third party SMB servers** (Impedir que los clientes envíen contraseñas sin cifrar a servidores SMB de terceros)  
   Si se habilita esta configuración de seguridad, el redirector de Bloque de mensajes de servidor (SMB) puede enviar contraseñas sin cifrar a servidores SMB que no son de Microsoft que no admiten el cifrado de contraseñas durante la autenticación. El envío de contraseñas sin cifrar es un riesgo de seguridad.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067235)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067235).  
   
   **Valor predeterminado**: Sí
   
 - **Require server digitally signing communications always** (Requerir siempre la firma digital de las comunicaciones en el servidor)  
   Esta configuración de seguridad determina si el cliente SMB intenta negociar la firma de paquetes SMB. El protocolo de bloque de mensajes del servidor (SMB) proporciona la forma de compartir impresoras y archivos de Microsoft y otras muchas operaciones de red, como la administración remota de Windows. Para evitar ataques de tipo "Man in the middle" que modifiquen los paquetes SMB en tránsito, el protocolo SMB admite la firma digital de los paquetes SMB. Esta configuración de directiva determina si el componente de cliente SMB intenta negociar la firma de paquetes SMB cuando se conecta a un servidor SMB. Si se habilita esta configuración, el cliente de red de Microsoft solicitará al servidor que realice la firma de paquetes SMB tras la configuración de la sesión. Si se ha habilitado la firma de paquetes en el servidor, esta se negocia. Si esta directiva está deshabilitada, el cliente SMB no negociará nunca la firma de paquetes SMB.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067319)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067319).  
   
   **Valor predeterminado**: Sí
   
 - **Administrator elevation prompt behavior** (Comportamiento de petición de elevación del administrador)  
   Esta configuración de directiva controla el comportamiento de la petición de elevación para los administradores. Las opciones son: 
   - *Elevar sin preguntar*: permite a las cuentas con privilegios realizar una operación que requiera elevación sin requerir consentimiento o credenciales. Nota: Use esta opción solo en los entornos más restringidos. 
-  - *Pedir credenciales en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, pide al usuario del escritorio seguro que escriba un nombre de usuario y una contraseña con privilegios. Si el usuario escribe credenciales válidas, la operación continuará con el mayor privilegio disponible del usuario. 
+  - *Pedir credenciales en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, pide al usuario del escritorio seguro que escriba un nombre de usuario y una contraseña con privilegios. Si el usuario escribe credenciales válidas, la operación continuará con el privilegio más alto disponible del usuario. 
   - *Pedir consentimiento en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, se pide al usuario del escritorio seguro que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario. 
-  - *Pedir credenciales*: cuando una operación requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continúa con el privilegio aplicable. 
+  - *Pedir credenciales*: cuando una operación requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continuará con el privilegio aplicable. 
   - *Pedir consentimiento*: cuando una operación requiere la elevación de privilegios, se pide al usuario que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario.  
   - *Pedir consentimiento para binarios que no son de Windows*: cuando una operación para una aplicación que no es de Microsoft requiere la elevación de privilegios, se pide al usuario del escritorio seguro que haga clic en Permitir o Denegar. Si el usuario selecciona Permitir, la operación continúa con el mayor privilegio disponible del usuario. 
   
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067215)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067215).   
   
   **Valor predeterminado**: Pedir consentimiento en el escritorio seguro
   
@@ -1215,7 +1213,7 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   - *Requerir cifrado de 128 bits*: se producirá un error en la conexión si no se negocia el cifrado de alta seguridad (128 bits).
   - *Requerir NTLMv2 y cifrado de 128 bits*.  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067324)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067324).  
 
   **Valor predeterminado**: Requerir cifrado NTLM V2 128
   
@@ -1226,13 +1224,13 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   - *Forzar cierre de sesión*: el usuario se desconecta automáticamente cuando se quita la tarjeta inteligente.
   - *Desconectar sesión de Escritorio remoto*: al quitar la tarjeta inteligente se desconecta la sesión sin cerrar la sesión del usuario. Esta opción permite al usuario insertar la tarjeta inteligente y reanudar la sesión más tarde o en otro equipo equipado con lector de tarjeta inteligente, sin necesidad de volver a iniciar la sesión. Si la sesión es local, esta directiva funciona de forma idéntica a Bloquear estación de trabajo.
   
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067331) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067331). 
     
   **Valor predeterminado**: Bloquear la estación de trabajo
   
 - **Block anonymous enumeration of SAM accounts and shares** (Bloquear la enumeración anónima de recursos compartidos y cuentas SAM)  
   Esta configuración de seguridad determina si se permite la enumeración anónima de cuentas y recursos compartidos SAM. Windows permite a los usuarios anónimos realizar ciertas actividades, como enumerar los nombres de cuentas de dominio y recursos compartidos de red. Esto es conveniente, por ejemplo, cuando un administrador quiere conceder acceso a usuarios en un dominio de confianza que no mantiene una confianza recíproca. Si no quiere permitir la enumeración anónima de cuentas y recursos compartidos SAM, establezca esta directiva en *Sí*.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067191)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067191).  
   
   **Valor predeterminado**: Sí
   
@@ -1242,26 +1240,26 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   *Advertencia*: En los equipos que no se encuentran en ubicaciones físicamente seguras, siempre se deben aplicar directivas de contraseña segura para todas las cuentas de usuario locales. De lo contrario, cualquiera con acceso físico al equipo puede iniciar sesión con una cuenta de usuario que no tiene una contraseña. Esto es especialmente importante para los equipos portátiles. 
 
   Si aplica esta directiva de seguridad al grupo Todos, nadie podrá iniciar sesión a través de Servicios de Escritorio remoto. Esta configuración no afecta a los inicios de sesión que usan cuentas de dominio. Las aplicaciones que usan inicios de sesión interactivos remotos pueden omitir esta configuración.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067219)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067219).  
   
   **Valor predeterminado**: Sí
   
 - **Standard user elevation prompt behavior** (Comportamiento de petición de elevación de usuarios estándar)  
   Esta configuración de directiva controla el comportamiento de la petición de elevación para los usuarios estándar. 
   - *Rechazar solicitudes de elevación automáticamente*: cuando una operación requiere la elevación de privilegios, se muestra un mensaje de error de acceso denegado configurable. Una empresa que ejecuta escritorios como usuario estándar puede elegir esta configuración para reducir las llamadas al departamento de soporte técnico. 
-  - *Pedir credenciales en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, se le pide al usuario del escritorio seguro que escriba otro nombre de usuario y contraseña. Si el usuario escribe credenciales válidas, la operación continúa con el privilegio aplicable. 
-  - *Pedir credenciales*: cuando una operación requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continúa con el privilegio aplicable.  
+  - *Pedir credenciales en el escritorio seguro*: cuando una operación requiere la elevación de privilegios, se le pide al usuario del escritorio seguro que escriba otro nombre de usuario y contraseña. Si el usuario escribe credenciales válidas, la operación continuará con el privilegio aplicable. 
+  - *Pedir credenciales*: cuando una operación requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continuará con el privilegio aplicable.  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067183)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067183).  
   
-  **Valor predeterminado**: Rechazar solicitudes de elevación automáticamente
+  **Valor predeterminado**: Denegar solicitudes de elevación automáticamente
   
 - **Require admin approval mode for administrators** (Requerir el modo de aprobación de administrador para administradores)  
-  Esta configuración de directiva controla el comportamiento de todas las configuraciones de directiva del Control de cuentas de usuario (UAC) en el equipo. Si cambia esta configuración de directiva, debe reiniciar el equipo. Las opciones son:   
-  - *Sin configurar*: se deshabilitan el Modo de aprobación de administrador y todas las configuraciones de directiva de UAC relacionadas. Nota: Si se deshabilita esta configuración de directiva, el Centro de seguridad notifica que ha disminuido la seguridad global del sistema operativo. 
+  Esta configuración de directiva controla el comportamiento de todas las configuraciones de directiva del Control de cuentas de usuario (UAC) en el equipo. Si cambia esta configuración de directiva, deberá reiniciar el equipo. Las opciones son:   
+  - *Sin configurar*: se deshabilitan el Modo de aprobación de administrador y todas las configuraciones de directiva de UAC relacionadas. Nota: Si se deshabilita esta configuración de directiva, Security Center notificará que ha disminuido la seguridad global del sistema operativo. 
   - *Sí*: se habilita el Modo de aprobación de administrador. Debe habilitarse esta directiva y las configuraciones de directiva de UAC relacionadas se deben establecer de forma apropiada para permitir que se ejecuten en Modo de aprobación de administrador la cuenta predefinida Administrador y el resto de usuarios que son miembros del grupo Administradores.  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067184)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067184).  
   
   **Valor predeterminado**: Sí
   
@@ -1270,22 +1268,22 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   - *Sí*: no se permiten las enumeraciones anónimas de cuentas SAM. Esta opción sustituye Todo por Usuarios autenticados en los permisos de seguridad para los recursos.
   - *Sin configurar*: no hay restricciones adicionales. Basar en los permisos predeterminados.  
   
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067318)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067318).  
 
   **Valor predeterminado**: Sí
   
 - **Allow remote calls to security accounts manager** (Permitir llamadas remotas al Administrador de cuentas de seguridad)  
   Esta configuración de directiva permite restringir conexiones remotas de RPC a SAM. Si no se selecciona, se usa el descriptor de seguridad predeterminado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067209)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067209).  
   
   **Valor predeterminado**: *O:BAG:BAD:(A;;RC;;;BA)*
 
 - **Usar Modo de aprobación de administrador**  
   Esta configuración de directiva controla el comportamiento del modo de aprobación de administrador para la cuenta predefinida Administrador. Las opciones son: 
-  - *Sí*: la cuenta predefinida de administrador usa el Modo de aprobación de administrador. De manera predeterminada, cualquier operación que requiera la elevación de privilegios pedirá al usuario que apruebe la operación. 
+  - *Sí*: la cuenta predefinida de administrador usa el Modo de aprobación de administrador. De forma predeterminada, cualquier operación que requiera la elevación de privilegios solicitará al usuario que apruebe la operación. 
   - *Sin configurar*: la cuenta predefinida de administrador ejecuta todas las aplicaciones con privilegios de administración completos. 
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067186)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067186).  
 
   **Valor predeterminado**: Sí
   
@@ -1294,28 +1292,28 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
   - *Sí*: los programas de UIA, incluida Asistencia remota de Windows, deshabilitan de forma automática el escritorio seguro para las peticiones de elevación. Si no deshabilita la configuración de directiva "Control de cuentas de usuario: cambiar al escritorio seguro cuando se pida confirmación de elevación", las peticiones aparecen en el escritorio del usuario interactivo en lugar del escritorio seguro. 
   - *Sin configurar*: el escritorio seguro solo lo puede deshabilitar el usuario del escritorio interactivo o si se deshabilita la configuración de directiva "Control de cuentas de usuario: cambiar al escritorio seguro cuando se pida confirmación de elevación".  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067185)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067185).  
 
   **Valor predeterminado**: Sí
 
 - **Detectar instalaciones de aplicaciones y pedir confirmación de elevación**  
   Esta configuración de directiva controla el comportamiento de la detección de instalaciones de aplicaciones en el equipo. Las opciones son: 
-  - *Habilitado*: cuando se detecta un paquete de instalación de aplicaciones que requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continúa con el privilegio aplicable. 
-  - *Deshabilitado*: los paquetes de instalación de aplicaciones no se detectan ni se pide la elevación. Las empresas que ejecuten escritorios de usuarios estándar y usen las tecnologías de instalación delegada como la Directiva de grupo de Instalación de software o Systems Management Server (SMS) deben deshabilitar esta configuración de directiva. En este caso, la detección del instalador no es necesaria.  
+  - *Habilitado*: cuando se detecta un paquete de instalación de aplicaciones que requiere la elevación de privilegios, se pide al usuario que escriba un nombre de usuario y una contraseña de administrador. Si el usuario escribe credenciales válidas, la operación continuará con el privilegio aplicable. 
+  - *Deshabilitado*: los paquetes de instalación de aplicaciones no se detectan ni se pide la elevación. Las empresas que ejecutan escritorios de usuarios estándar y usan las tecnologías de instalación delegada, como la directiva de grupo de Instalación de software o Systems Management Server (SMS), deben deshabilitar esta configuración de directiva. En este caso, la detección del instalador no es necesaria.  
   
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067208)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067208).  
 
   **Valor predeterminado**: Sí
   
 - **Prevent storing LAN manager hash value on next password change** (Impedir el almacenamiento del valor de hash de LAN Manager en el próximo cambio de contraseña)  
   Esta configuración de seguridad determina si, en el siguiente cambio de contraseña, se almacena el valor de hash de LAN Manager (LM) para la nueva contraseña. El hash de LM es relativamente poco seguro y vulnerable a ataques, si se compara con el hash de Windows NT, con mayor seguridad criptográfica. Como el hash de LM se almacena en el equipo local, en la base de datos de seguridad, las contraseñas pueden estar en peligro si la base de datos de seguridad recibe un ataque.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067213)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067213).  
   
   **Valor predeterminado**: Sí
 
 - **Virtualizar los errores de escritura de archivo y del Registro a ubicaciones por usuario**  
   Esta configuración de directiva controla si se redireccionan los errores de escritura de aplicaciones a ubicaciones definidas en el Registro y el sistema de archivos. Esta configuración de directiva mitiga las aplicaciones que se ejecutan como administrador y que escriben los datos de aplicaciones en tiempo de ejecución en *%ProgramFiles%* , *%Windir%* , *%Windir%\system32* o *HKLM\Software*.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067321)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067321).  
   
   **Valor predeterminado**: Sí
 
@@ -1323,27 +1321,27 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
 Para más información, vea [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) (CSP de directiva: MSSecurityGuide) en la documentación de Windows.  
 
 - **Apply UAC restrictions to local accounts on network logon** (Aplicar restricciones de UAC a cuentas locales en el inicio de sesión de red)  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067188)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067188).  
 
   **Valor predeterminado**: Habilitado
   
 - **SMB v1 client driver start configuration** (Configuración de inicio del controlador de cliente SMB v1)  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067214) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067214). 
  
   **Valor predeterminado**: Controlador deshabilitado
   
 - **Servidor SMB v1**  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067190)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067190).  
 
   **Valor predeterminado**: Deshabilitado
   
 - **Autenticación de texto implícita**  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067193) 
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067193). 
  
   **Valor predeterminado**: Deshabilitado
   
 - **Structured exception handling overwrite protection** (Protección contra sobrescritura de control de excepciones estructuradas)  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067217)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067217).  
 
   **Valor predeterminado**: Habilitado
   
@@ -1351,22 +1349,22 @@ Para más información, vea [Policy CSP - MSSecurityGuide](https://docs.microsof
 Para más información, vea [Policy CSP - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) (CSP de directiva: MSSLegacy) en la documentación de Windows.  
 
 - **Network IP source routing protection level** (Nivel de protección del enrutamiento de origen de IP de red)  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067220)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067220).  
   
   **Valor predeterminado**: La protección más alta  
   
 - **Network ignore NetBIOS name release requests except from WINS servers** (Omitir solicitudes de liberación de nombre NetBIOS, excepto de servidores WINS de la red)  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067218)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067218).  
  
   **Valor predeterminado**: Habilitado
   
 - **Network IPv6 source routing protection level** (Nivel de protección del enrutamiento de origen de IPv6 de red)  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067216)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067216).  
 
   **Valor predeterminado**: La protección más alta
 
 - **Network ICMP redirects override OSPF generated** (Los redireccionamientos ICMP de red invalidan los generados por OSPF)  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067326)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067326).  
 
   **Valor predeterminado**: Deshabilitado
   
@@ -1375,52 +1373,52 @@ Para más información, vea [Policy CSP - Power](https://docs.microsoft.com/wind
 
 - **Require password on wake while plugged in** (Requerir contraseña al activarse durante la conexión)  
   Esta configuración de directiva especifica si el sistema solicitará al usuario una contraseña cuando el equipo salga de la suspensión y reanude su funcionamiento. Si habilita o no establece esta configuración de directiva, el sistema solicitará una contraseña al usuario cuando el equipo salga de la suspensión y reanude su funcionamiento. Si deshabilita esta configuración de directiva, el sistema no solicitará ninguna contraseña al usuario cuando el equipo salga de la suspensión y reanude su funcionamiento.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067221)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067221).  
   
   **Valor predeterminado**: Habilitado
   
 - **Standby states when sleeping while on battery** (Estados de espera mientras el equipo está en suspensión con batería)  
   Esta configuración de directiva controla si Windows puede usar los estados de espera al poner el equipo en estado de suspensión. Si habilita o no establece esta configuración de directiva, Windows usará los estados de espera para poner el equipo en estado de suspensión. Si deshabilita esta configuración de directiva, no se permitirán los estados de espera (S1-S3).  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067195)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067195).  
   
   **Valor predeterminado**: Deshabilitado
   
 - **Standby states when sleeping while plugged in** (Estados de espera mientras el equipo está en suspensión conectado)  
   Esta configuración de directiva controla si Windows puede usar los estados de espera al poner el equipo en estado de suspensión. Si habilita o no establece esta configuración de directiva, Windows usará los estados de espera para poner el equipo en estado de suspensión. Si deshabilita esta configuración de directiva, no se permitirán los estados de espera (S1-S3).  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067196)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067196).  
   
   **Valor predeterminado**: Deshabilitado
   
 - **Require password on wake while on battery** (Requerir contraseña al activarse mientras el equipo está con batería)  
   Esta configuración de directiva especifica si el sistema solicitará al usuario una contraseña cuando el equipo salga de la suspensión y reanude su funcionamiento. Si habilita o no establece esta configuración de directiva, el sistema solicitará una contraseña al usuario cuando el equipo salga de la suspensión y reanude su funcionamiento. Si deshabilita esta configuración de directiva, el sistema no solicitará ninguna contraseña al usuario cuando el equipo salga de la suspensión y reanude su funcionamiento.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067322)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067322).  
   
   **Valor predeterminado**: Habilitado
 
 ## <a name="remote-assistance"></a>Asistencia remota
 - **Asistencia remota solicitada**  
-  Esta configuración de directiva permite activar o desactivar la asistencia remota solicitada (solicitar) en este equipo. 
-  - *Si habilita esta configuración de directiva*, los usuarios de este equipo pueden usar el correo electrónico o la transferencia de archivos para pedir ayuda a alguien. Además, los usuarios pueden usar programas de mensajería instantánea para permitir las conexiones a este equipo, y puede configurar otras opciones de asistencia remota. 
-  - *Si deshabilita esta configuración de directiva*, los usuarios de este equipo no podrán usar el correo electrónico o la transferencia de archivos para pedir ayuda a alguien. Además, los usuarios no pueden utilizar programas de mensajería instantánea para permitir las conexiones a este equipo. 
-  - *Si no establece esta configuración de directiva*, los usuarios pueden activar o desactivar la asistencia remota solicitada (solicitar) en las propiedades del sistema en el panel de control. Los usuarios también pueden configurar las opciones de asistencia remota. 
+  Esta configuración de directiva le permite activar o desactivar la asistencia remota solicitada en este equipo. 
+  - *Si habilita esta configuración de directiva*, los usuarios del equipo pueden usar el correo electrónico o la transferencia de archivos para pedir ayuda a alguien. Los usuarios también pueden usar programas de mensajería instantánea para permitir las conexiones a este equipo. Además, puede configurar otros valores de Asistencia remota. 
+  - *Si deshabilita esta configuración de directiva*, los usuarios del equipo no podrán usar el correo electrónico o la transferencia de archivos para pedir ayuda a alguien. Además, los usuarios tampoco podrán usar los programas de mensajería instantánea para permitir las conexiones al equipo. 
+  - *Si no establece esta configuración de directiva*, los usuarios podrán activar o desactivar la asistencia remota solicitada en la opción Propiedades del sistema del Panel de control. Asimismo, podrán configurar los valores de Asistencia remota. 
 
-  Si habilita esta configuración de Directiva, tiene dos maneras de permitir que los auxiliares proporcionen asistencia remota: "permitir que los ayudantes solo vean el equipo" o "permitir que los ayudantes controlen el equipo de forma remota". La configuración de directiva "tiempo máximo de vale" establece un límite en la cantidad de tiempo que una invitación de asistencia remota creada mediante correo electrónico o transferencia de archivos puede permanecer abierta. La configuración "Seleccione el método para enviar invitaciones por correo electrónico" especifica qué estándar de correo electrónico se utiliza para enviar invitaciones de asistencia remota. Según el programa de correo electrónico, puede usar el estándar mailto (el destinatario de la invitación se conecta a través de un vínculo a Internet) o el estándar SMAPI (MAPI simple) (la invitación se adjunta al mensaje de correo electrónico). Esta configuración de Directiva no está disponible en Windows Vista, ya que SMAPI es el único método admitido. Si habilita esta configuración de Directiva, también debe habilitar las excepciones de Firewall adecuadas para permitir las comunicaciones de asistencia remota.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067198)
+  Si habilita esta configuración de directiva, tiene dos formas de permitir que los ayudantes presten Asistencia remota: "Permitir que los ayudantes solo vean el equipo" o "Permitir que los ayudantes controlen el equipo de forma remota". La configuración de directiva "Validez máxima del vale" establece un límite respecto a la cantidad de tiempo que puede permanecer abierta una invitación de Asistencia remota creada mediante el correo electrónico o la transferencia de archivos. La configuración "Seleccionar método para enviar invitaciones por correo electrónico" especifica el estándar de correo electrónico que se va a usar para enviar invitaciones de Asistencia remota. Según el programa de correo electrónico, puede usar el estándar Mailto (el destinatario de la invitación se conecta a través de un vínculo de Internet) o el estándar SMAPI (Simple MAPI, la invitación se adjunta al mensaje de correo electrónico). Esta configuración de directiva no está disponible en Windows Vista, dado que SMAPI es el único método admitido. Si habilita esta configuración de directiva, también debe habilitar las excepciones apropiadas del firewall para permitir las comunicaciones de Asistencia remota.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067198).
 
-  **Valor predeterminado**: deshabilitar asistencia remota
+  **Valor predeterminado**: Deshabilitar Asistencia remota
 
-  Cuando se establece en *Habilitar asistencia remota*, configure las siguientes opciones adicionales:  
-  - **Permiso solicitado de asistencia remota**  
-    **Valor predeterminado**: Vista  
+  Si se establece en *Habilitar Asistencia remota*, configure las siguientes opciones adicionales:  
+  - **Permiso de Asistencia remota solicitado**  
+    **Valor predeterminado**: Ver  
 
   - **Valor máximo de tiempo de vale**  
-    **Valor predeterminado**: *Sin configurar*  
+    **Valor predeterminado**: *No configurado*.  
 
   - **Período máximo de tiempo de vale**  
     **Valor predeterminado**: minutos    
 
   - **Método de invitación por correo electrónico**  
-    **Valor predeterminado**: MAPI simple
+    **Valor predeterminado**: Simple MAPI
 
   
 ## <a name="remote-desktop-services"></a>Servicios de Escritorio Remoto  
@@ -1428,25 +1426,25 @@ Para más información, vea [Policy CSP - RemoteDesktopServices](https://docs.mi
 
 - **Block password saving** (Bloquear Guardar contraseñas)  
   Controla si se pueden guardar contraseñas en este equipo desde Conexión a Escritorio remoto. Si habilita esta opción, se deshabilita la casilla para guardar contraseñas en Conexión a Escritorio remoto y los usuarios no podrán guardar contraseñas. Cuando un usuario abre un archivo RDP por medio de Conexión a Escritorio remoto y guarda su configuración, se eliminan todas las contraseñas que existían con anterioridad en el archivo RDP. Si deshabilita esta opción o no la configura, el usuario puede guardar contraseñas mediante Conexión a Escritorio remoto.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067301)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067301).  
   
    **Valor predeterminado**: Habilitado
   
 - **Secure RPC communication** (Comunicación RPC segura)  
   Especifica si un servidor host de sesión de Escritorio remoto requiere comunicaciones RPC seguras con todos los clientes o permite comunicaciones no seguras. Puede usar esta opción para reforzar la seguridad de la comunicación RPC con los clientes al permitir solo peticiones autenticadas y cifradas. Si el estado se establece en Habilitado, Servicios de Escritorio remoto acepta peticiones de clientes RPC que admiten peticiones seguras y no permite la comunicación no segura con clientes que no sean de confianza. Si el estado se establece en Deshabilitado, Servicios de Escritorio remoto siempre solicita seguridad para todo el tráfico RPC. Pero se permite la comunicación no segura para los clientes RPC que no responden a la petición. Si el estado se establece en No configurado, se permite la comunicación no segura. Nota: La interfaz RPC se usa para administrar y configurar Servicios de Escritorio remoto.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067248)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067248).  
   
   **Valor predeterminado**: Habilitado
   
 - **Block drive redirection** (Bloquear la redirección de unidad)  
   Esta configuración de directiva especifica si se debe impedir la asignación de unidades cliente en una sesión de Servicios de Escritorio remoto (redirección de unidad). De forma predeterminada, el servidor host de sesión de Escritorio remoto asigna unidades cliente automáticamente al conectarse. Las unidades asignadas aparecen en el árbol de carpetas de sesión en el Explorador de archivos o en Equipo con el formato *\<letraDeUnidad>* en *\<nombreDeEquipo>* . Puede usar esta directiva para invalidar este comportamiento. Si habilita esta configuración de directiva, no se permitirá la redirección de unidades cliente en sesiones de Servicios de Escritorio remoto ni se permitirá la redirección de copias de archivos del Portapapeles en equipos que ejecuten Windows Server 2003, Windows 8 y Windows XP. Si deshabilita esta configuración de directiva, se permitirá siempre la redirección de unidades cliente. Además, la redirección de copias de archivo del Portapapeles siempre se permite si se permite la redirección del Portapapeles. Si no establece esta configuración de directiva, la redirección de unidades cliente y la redirección de copias de archivo del Portapapeles no se especificarán en el nivel de directiva de grupo.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067197)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067197).  
   
   **Valor predeterminado**: Habilitado
   
 - **Prompt for password upon connection** (Solicitar contraseña al conectarse)  
   Esta configuración de directiva especifica si Servicios de Escritorio remoto pide siempre al cliente una contraseña al conectarse. Puede usar esta opción para exigir la petición de una contraseña a los usuarios que se conecten a Servicios de Escritorio remoto, aunque ya hayan proporcionado la contraseña en el cliente de Conexión a Escritorio remoto. De forma predeterminada, Servicios de Escritorio remoto permite a los usuarios iniciar sesión de forma automática si especifican una contraseña en el cliente de Conexión a Escritorio remoto. Si habilita esta configuración de directiva, los usuarios no podrán iniciar sesión automáticamente en Servicios de Escritorio remoto mediante la especificación de su contraseña en el cliente de Conexión a Escritorio remoto. Se les pedirá una contraseña para iniciar sesión. Si deshabilita esta configuración de directiva, los usuarios podrán iniciar sesión siempre automáticamente en Servicios de Escritorio remoto mediante la especificación de su contraseña en el cliente de Conexión a Escritorio remoto. Si no establece esta configuración de directiva, el inicio de sesión automático no se especificará en el nivel de directiva de grupo.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067328)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067328).  
   
   **Valor predeterminado**: Habilitado
   
@@ -1457,7 +1455,7 @@ Para más información, vea [Policy CSP - RemoteDesktopServices](https://docs.mi
   - *Bajo*: el valor Bajo cifra únicamente los datos enviados del cliente al servidor mediante un cifrado de 56 bits.  
   
   Si deshabilita o no establece esta configuración, el nivel de cifrado que se usará en las conexiones remotas a servidores host de sesión de Escritorio remoto no se aplicará mediante la directiva de grupo. Importante: Se puede configurar la compatibilidad con FIPS a través de la opción Criptografía del sistema. Use algoritmos compatibles con FIPS para las configuraciones de cifrado, firma y operaciones hash en la directiva de grupo (en Configuración del equipo\Configuración de Windows\Configuración de seguridad\Directivas locales\Opciones de seguridad). La configuración de compatibilidad con FIPS cifra y descifra los datos enviados entre el cliente y el servidor con los algoritmos de cifrado del Estándar federal de procesamiento de información (FIPS) 140, mediante los módulos criptográficos de Microsoft. Use este nivel de cifrado cuando las comunicaciones entre clientes y servidores host de sesión de Escritorio remoto requieran el máximo nivel de cifrado.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067222)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067222).  
   
   **Valor predeterminado**: Alto
   
@@ -1466,37 +1464,37 @@ Para más información, vea [Policy CSP - RemoteManagement](https://docs.microso
 
 - **Block storing run as credentials** (Bloquear el almacenamiento de credenciales Ejecutar como)  
   Autenticación básica de cliente  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067300)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067300).  
   
   **Valor predeterminado**: Habilitado
   
 - **Autenticación básica**  
   Esta configuración de directiva permite administrar si el servicio Administración remota de Windows (WinRM) aceptará la autenticación básica de un cliente remoto. Si habilita esta configuración de directiva, el servicio WinRM aceptará la autenticación básica de un cliente remoto. Si deshabilita o no establece esta configuración de directiva, el servicio WinRM no aceptará la autenticación básica de un cliente remoto.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067223)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067223).  
   
   **Valor predeterminado**: Deshabilitado
   
 - **Block client digest authentication** (Bloquear la autenticación implícita de cliente)  
   Esta configuración de directiva permite administrar si el cliente Administración remota de Windows (WinRM) usa la autenticación implícita. Si habilita esta configuración de directiva, el cliente WinRM no usa la autenticación implícita. Si deshabilita o no establece esta configuración de directiva, el cliente WinRM usa la autenticación implícita.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067302)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067302).  
   
   **Valor predeterminado**: Habilitado
   
 - **Tráfico sin cifrar**  
   Esta configuración de directiva permite administrar si el servicio Administración remota de Windows (WinRM) envía y recibe mensajes sin cifrar a través de la red. Si habilita esta configuración de directiva, el cliente WinRM envía y recibe mensajes sin cifrar a través de la red. Si deshabilita o no establece esta configuración de directiva, el cliente WinRM envía o recibe únicamente mensajes cifrados a través de la red.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067226)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067226).  
   
   **Valor predeterminado**: Deshabilitado
   
 - **Tráfico del cliente sin cifrar**  
   Esta configuración de directiva permite administrar si el cliente de Administración remota de Windows (WinRM) envía y recibe mensajes sin cifrar a través de la red. Si habilita esta configuración de directiva, el cliente WinRM envía y recibe mensajes sin cifrar a través de la red. Si deshabilita o no establece esta configuración de directiva, el cliente WinRM envía o recibe únicamente mensajes cifrados a través de la red.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067304)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067304).  
   
   **Valor predeterminado**: Deshabilitado
   
 - **Autenticación básica de cliente**  
   Esta configuración de directiva permite administrar si el cliente Administración remota de Windows (WinRM) usa la autenticación básica. Si habilita esta configuración de directiva, el cliente WinRM usa la autenticación básica. Si WinRM está configurado para usar el transporte HTTP, el nombre de usuario y la contraseña se envían a través de la red como texto sin cifrar. Si deshabilita o no establece esta configuración de directiva, el cliente WinRM no usa la autenticación básica.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067252)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067252).  
   
   **Valor predeterminado**: Deshabilitado
   
@@ -1509,16 +1507,16 @@ Para más información, vea [Policy CSP - RemoteProcedureCall](https://docs.micr
   - *Autenticado* permite que solo los clientes de RPC autenticados (según la definición anterior) se conecten a los servidores de RPC que se ejecutan en el equipo donde se aplica la configuración de directiva. Se otorgan excepciones para las interfaces que las solicitan. 
   - *Autenticado sin excepciones* permite que solo los clientes de RPC autenticados (según la definición anterior) se conecten a los servidores de RPC que se ejecuten en el equipo donde se aplica la configuración de directiva. No se permite ninguna excepción. Nota: Esta configuración de directiva no se aplicará hasta que se reinicie el sistema.  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067225)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067225).  
 
   **Valor predeterminado**: Autenticado
 
-## <a name="search"></a>Buscar 
+## <a name="search"></a>Búsqueda 
 Para más información, vea [Policy CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) (CSP de directiva: Search) en la documentación de Windows.  
 
 - **Disable indexing encrypted items** (Deshabilitar la indexación de elementos cifrados)  
   Permite o deniega la indexación de elementos. Este modificador se aplica al indizador de Windows Search, que controla si se indexarán los elementos cifrados, como los archivos protegidos de Windows Information Protection (WIP). Cuando la directiva está habilitada, los elementos protegidos por WIP se indexan y los metadatos sobre ellos se almacenan en una ubicación sin cifrar. Los metadatos incluyen elementos tales como la ruta de acceso de archivo y la fecha de modificación. Cuando la directiva está deshabilitada, los elementos protegidos por WIP no se indexan y no se muestran en los resultados de Cortana o del explorador de archivos. También puede haber un impacto en el rendimiento de fotografías y aplicaciones de Groove si hay muchos archivos multimedia protegidos por WIP en el dispositivo.  
-  [Más información]( https://go.microsoft.com/fwlink/?linkid=2067303)  
+  [Más información]( https://go.microsoft.com/fwlink/?linkid=2067303).  
   
   **Valor predeterminado**: Sí
   
@@ -1530,13 +1528,13 @@ Para más información, vea [Policy CSP - SmartScreen](https://docs.microsoft.co
   - *No configurado*: los empleados pueden omitir las advertencias de SmartScreen y ejecutar archivos malintencionados. 
   - *Sí*: los empleados no pueden omitir las advertencias de SmartScreen y ejecutar archivos malintencionados.
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067228)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067228).  
   
   **Valor predeterminado**: Sí
 
 - **Require SmartScreen for apps and files** (Requerir SmartScreen para aplicaciones y archivos)  
   Permite que los administradores de TI configuren SmartScreen para Windows.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067168)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067168).  
 
   **Valor predeterminado**: Sí
   
@@ -1551,9 +1549,9 @@ Para más información, vea [Policy CSP - System](https://docs.microsoft.com/win
   - *Desconocido*: la aplicación de detección de malware no ha certificado este controlador y el controlador de arranque de Antimalware de inicio temprano no lo ha clasificado.  
 
   Si habilita esta configuración de directiva, puede elegir los controladores de arranque que se inicializarán la próxima vez que se arranque el equipo. Si deshabilita o no establece esta configuración de directiva, los controladores de arranque clasificados como Buenos, Desconocidos o Defectuosos pero críticos se inicializarán y se omite la inicialización de controladores clasificados como Defectuosos. Si la aplicación de detección de malware no incluye un controlador de arranque de Antimalware de inicio temprano o si dicho controlador se ha deshabilitado, esta configuración no tiene efecto y se inicializarán todos los controladores de arranque.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067307)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067307).   
   
-  **Valor predeterminado**: Bueno, Desconocido y Defectuoso pero crítico
+  **Valor predeterminado**: Buenos, desconocidos y defectuosos pero críticos
 
 
 ## <a name="wi-fi"></a>Wi-Fi  
@@ -1561,13 +1559,13 @@ Para más información, vea [Policy CSP - Wifi](https://docs.microsoft.com/windo
 
 - **Impedir el uso compartido de Internet**  
   Especifica si la conexión compartida es posible en el dispositivo.   
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067327)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067327).   
 
   **Valor predeterminado**: Sí  
 
 - **Block Automatically connecting to Wi-Fi hotspots** (Bloquear la conexión automática a zonas Wi-Fi)  
   Habilita o deshabilita la conexión automática del dispositivo a zonas Wi-Fi.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067320)   
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067320).   
 
   **Valor predeterminado**: Sí  
   
@@ -1580,7 +1578,7 @@ Para más información, vea [Policy CSP - WindowsConnectionManager](https://docs
   - Intentos de conexión manual Si el equipo ya está conectado a una red no basada en dominio o a una red basada en dominio a través de medios diferentes de Ethernet y un usuario intenta crear una conexión manual a una red adicional infringiendo esta configuración de directiva, la conexión de red existente se desconecta y se permite realizar la conexión manual. Si el equipo ya está conectado a una red no basada en dominio o a una red basada en dominio a través de Ethernet y un usuario intenta crear una conexión manual a una red adicional infringiendo esta configuración de directiva, la conexión Ethernet se mantiene y se bloquea el intento de conexión manual.  
 
   Si esta configuración de directiva está deshabilitada o no se establece, los equipos se pueden conectar de manera simultánea a ambos tipos de red: basada en dominio y no basada en dominio.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067323)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067323).  
 
   **Valor predeterminado**: Habilitado
   
@@ -1589,19 +1587,19 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
 
 - **Examinar mensajes de correo entrante**  
   Permite o impide el examen de correo electrónico.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067116)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067116).  
   
   **Valor predeterminado**: Sí  
 
 - **Office apps launch child process type** (Tipo de proceso secundario que inician las aplicaciones de Office)  
   No se permite que las aplicaciones de Office creen procesos secundarios. Esto incluye Word, Excel, PowerPoint, OneNote y Access. Se trata de un comportamiento de malware habitual, especialmente para los ataques basados en macros que intentan usar las aplicaciones de Office para iniciar o descargar archivos ejecutables malintencionados.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067121)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067121).  
   
   **Valor predeterminado**: Bloquear
   
 - **Defender sample submission consent type** (Tipo de consentimiento de envío de muestra de Windows Defender)  
   Comprueba el nivel de consentimiento del usuario en Microsoft Defender para enviar datos. Si ya se ha concedido el consentimiento requerido, Microsoft Defender los envía. En caso contrario (y si el usuario ha especificado que no se pida nunca) se inicia la interfaz de usuario para solicitar el consentimiento del usuario (cuando se permite Defender/AllowCloudProtection) antes de enviar los datos.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067131)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067131).  
   
   **Valor predeterminado**: Enviar muestras seguras automáticamente 
   
@@ -1616,14 +1614,14 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Bloquear
   
 - **Prevent credential stealing type** (Impedir el tipo de robo de credenciales)  
-  Credential Guard de Microsoft Defender usa la seguridad basada en virtualización para aislar los secretos de forma que solo el software de sistema con privilegios pueda acceder a ellos. El acceso no autorizado a estos secretos puede conducir a ataques de robo de credenciales, como pass-the-hash o pass-the-ticket. Credential Guard de Microsoft Defender impide estos ataques mediante la protección de los hash de contraseña NTLM, los vales de concesión de vales de Kerberos y las credenciales almacenadas por las aplicaciones como credenciales de dominio.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067065)  
+  Credential Guard de Microsoft Defender usa la seguridad basada en virtualización para aislar los secretos de forma que solo el software de sistema con privilegios pueda acceder a ellos. El acceso no autorizado a dichos secretos puede dar lugar a ataques de robo de credenciales, como Pass-the-Hash o Pass-the-Ticket. Credential Guard de Microsoft Defender impide estos ataques mediante la protección de los hash de contraseña NTLM, los vales de concesión de vales de Kerberos y las credenciales almacenadas por las aplicaciones como credenciales de dominio.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067065).  
   
   **Valor predeterminado**: Habilitar
 
 - **Email content execution type** (Tipo de ejecución de contenido del mensaje de correo electrónico)  
-  Esta regla impide que los siguientes tipos de archivos se ejecuten o inicien desde un correo electrónico visto en Microsoft Outlook o webmail (como Gmail.com o Outlook.com): archivos ejecutables (como .exe, .dll o .scr) archivos de script (como un archivo PowerShell.ps, VisualBasic.vbs o JavaScript.js) o archivos de almacenamiento de script.  
-  [Más información](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
+  Esta regla impide que los siguientes tipos de archivo se ejecuten o se inicien desde un correo electrónico visto en Microsoft Outlook o webmail (por ejemplo, Gmail.com o Outlook.com): archivos ejecutables (por ejemplo, .exe, .dll o .scr) o archivos de script (por ejemplo, un archivo .ps de PowerShell, .vbs de Visual Basic o .js de JavaScript).  
+  [Más información](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail). 
   
   **Valor predeterminado**: Bloquear
 
@@ -1633,7 +1631,7 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
 
 - **Tipo de protección de red**  
   Esta directiva permite activar o desactivar la protección de red (Bloquear o Auditar) en Protección contra vulnerabilidades de seguridad de Microsoft Defender. Protección de red es una característica de Protección contra vulnerabilidades de seguridad de Microsoft Defender que evita que los empleados que usan una aplicación accedan a estafas de suplantación de identidad, sitios que hospedan vulnerabilidades de seguridad y contenido malintencionado en Internet. Esto incluye impedir que exploradores de terceros se conecten a sitios peligrosos. El tipo de valor es entero. Si habilita esta configuración, se activa la protección de red y los empleados no podrán desactivarla. Este comportamiento se puede controlar mediante las opciones siguientes: Bloquear y Auditar. Si habilita esta directiva con la opción "Bloquear", se impide que usuarios y aplicaciones se conecten a dominios peligrosos. Podrá ver esta actividad en el Centro de seguridad de Microsoft Defender. Si habilita esta directiva con la opción "Auditar", no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. Pero podrá seguir viendo esta actividad en el Centro de seguridad de Microsoft Defender. Si deshabilita esta directiva, no se impedirá que los usuarios o las aplicaciones se conecten a dominios peligrosos. No verá ninguna actividad de red en el Centro de seguridad de Microsoft Defender. Si no configura esta directiva, se deshabilitará el bloqueo de la red de forma predeterminada.  
-  [Más información](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
+  [Más información](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection).  
   
   **Valor predeterminado**: Habilitar
   
@@ -1644,25 +1642,25 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   
 - **Protección que proporciona la nube**  
   Para proteger mejor el PC, Microsoft Defender enviará información a Microsoft sobre los problemas que encuentre. Microsoft analizará esa información, obtendrá detalles sobre los problemas que le afectan a usted y a otros clientes, y ofrecerá soluciones mejoradas.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067039)
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067039).
   
-  **Valor predeterminado**: Sí  
+  **Valor predeterminado**:  Sí  
 
 - **Defender potentially unwanted app action** (Acción frente a aplicaciones potencialmente no deseadas de Windows Defender)  
-  La característica de protección frente a aplicaciones potencialmente no deseadas (PUA) del Antivirus de Microsoft Defender puede identificar aplicaciones PUA e impedir que se descarguen e instalen en puntos de conexión de la red. Estas aplicaciones no se consideran virus, malware u otro tipo de amenazas, pero es posible que realicen acciones en los puntos de conexión que afecten de forma negativa a su rendimiento o uso. PUA también puede hacer referencia a las aplicaciones que se consideran que tienen una mala reputación. Incluye el comportamiento típico de las aplicaciones potencialmente no deseadas: varios tipos de paquetes de software que insertan anuncios en exploradores web, optimizadores de controladores y registros que detectan problemas y solicitan pagos para corregir los errores, pero permanecen en el punto de conexión y no realizan cambios ni optimizaciones (también conocidos como programas "antivirus fraudulentos"). Estas aplicaciones pueden aumentar el riesgo de que su red se infecte con malware, provocar que las infecciones de malware sean más difíciles de identificar y desperdiciar recursos de TI en la limpieza de las aplicaciones.  
-  [Más información](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
+  La característica de protección frente a aplicaciones potencialmente no deseadas (PUA) del Antivirus de Microsoft Defender puede identificar aplicaciones PUA e impedir que se descarguen e instalen en puntos de conexión de la red. Estas aplicaciones no se consideran virus, malware u otro tipo de amenazas, pero es posible que realicen acciones en los puntos de conexión que afecten de forma negativa a su rendimiento o uso. PUA también puede hacer referencia a las aplicaciones que se consideran que tienen una mala reputación. Entre el comportamiento típico de PUA se incluye lo siguiente: varios tipos de paquetes de software que insertan anuncios en exploradores web, optimizadores de controladores y registros que detectan problemas y solicitan pagos para corregir los errores, pero permanecen en el punto de conexión y no realizan cambios ni optimizaciones (también conocidos como programas "antivirus fraudulentos"). Estas aplicaciones pueden aumentar el riesgo de que su red se infecte con malware, provocar que las infecciones de malware sean más difíciles de identificar y desperdiciar recursos de TI en la limpieza de las aplicaciones.  
+  [Más información](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection).    
   
   **Valor predeterminado**: Bloquear  
 
 - **Script obfuscated macro code type** (Tipo de código de macro ofuscado de script)  
   El malware y otras amenazas pueden intentar ofuscar u ocultar su código malintencionado en algunos archivos de script. Esta regla impide que se ejecuten los scripts que parecen ofuscados.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067026)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067026).  
   
   **Valor predeterminado**: Bloquear
   
 - **Examinar unidades extraíbles durante un examen completo**  
   Permite que Microsoft Defender busque software malintencionado y no deseado en las unidades extraíbles (por ejemplo, unidades flash) durante un examen completo. Antivirus de Microsoft Defender examina todos los archivos en los dispositivos USB antes de la ejecución.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067036)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067036).  
   
   **Valor predeterminado**: Sí  
   
@@ -1672,8 +1670,8 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
   **Valor predeterminado**: Sí
   
 - **Supervisión de comportamiento**  
-  Permite o deniega la funcionalidad de supervisión de comportamiento de Microsoft defender. Insertados en Windows 10, estos sensores recopilan y procesan las señales de comportamiento de procesos del sistema operativo y envían estos datos de sensor a la instancia de nube privada y aislada de ATP de Microsoft Defender.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067111)  
+  Permite la funcionalidad de supervisión del comportamiento de Microsoft Defender. Insertados en Windows 10, estos sensores recopilan y procesan las señales de comportamiento de procesos del sistema operativo y envían estos datos de sensor a la instancia de nube privada y aislada de ATP de Microsoft Defender.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067111).  
   
   **Valor predeterminado**: Sí
 
@@ -1684,19 +1682,19 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
 
 - **Untrusted USB process type** (Tipo de proceso de USB que no es de confianza)  
   Con esta regla, los administradores pueden impedir que los archivos ejecutables sin firmar o que no son de confianza se ejecuten desde unidades USB extraíbles, como tarjetas SD.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067100)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067100).  
   
   **Valor predeterminado**: Bloquear
   
 - **Office apps other process injection type** (Tipo de inserción de aplicaciones de Office en otros procesos)  
   Las aplicaciones de Office, incluido Word, Excel, PowerPoint y OneNote, no podrán insertar código en otros procesos. El malware usa esto normalmente para ejecutar código malintencionado en un intento de ocultar la actividad a los motores de detección antivirus.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067019)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067019).  
   
-  **Valor predeterminado**: Bloquear
+  **Valor predeterminado**:  Bloquear
   
 - **Office macro code allow Win32 imports type** (Tipo de importaciones de Win32 desde código de macros de Office)  
   El malware puede usar el código de macros de los archivos de Office para importar y cargar archivos DLL de Win32 que, después, se pueden usar para realizar llamadas de API para permitir continuar con la infección en todo el sistema. Esta regla intenta bloquear los archivos de Office que contienen código de macro capaz de importar archivos DLL de Win32. Esto incluye Word, Excel, PowerPoint y OneNote.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067130)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067130).  
   
   **Valor predeterminado**: Bloquear  
   
@@ -1712,20 +1710,20 @@ Para más información, vea [Policy CSP - Defender](https://docs.microsoft.com/w
  
 - **Inicio de aplicaciones de comunicación de Office en un proceso secundario**  
 
-  **Valor predeterminado**: Habilitar
+  **Valor predeterminado**:  Habilitar
 
 - **Office apps executable content creation or launch type** (Tipo de inicio o creación de contenido ejecutable de las aplicaciones de Office)  
   Esta regla tiene como destino los comportamientos típicos que se usan en complementos y scripts sospechosos y malintencionados (extensiones) que crean o inician archivos ejecutables. Se trata de una técnica de malware típica. Se impide que las aplicaciones de Office usen las extensiones. Normalmente, estas extensiones usan Windows Scripting Host (archivos .wsh) para ejecutar scripts que automatizan determinadas tareas o que proporcionan características de complementos creados por el usuario.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067108)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067108).  
   
   **Valor predeterminado**: Bloquear
 
-## <a name="microsoft-defender-firewall"></a>Firewall de Microsoft defender  
+## <a name="microsoft-defender-firewall"></a>Firewall de Microsoft Defender  
 Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) en la documentación sobre los protocolos de Windows.  
 
-- **Dominio de Perfil de Firewall**  
-  Especifica los perfiles a la que pertenece la regla: dominio, privado o público. Este valor representa el perfil para las redes que están conectadas a dominios.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2066796)  
+- **Dominio de Perfil del firewall**  
+  Especifica los perfiles a la que pertenece la regla: Dominio, Privado o Público. Este valor representa el perfil para las redes que están conectadas a dominios.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2066796).  
 
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
     **Valor predeterminado**: Sí
@@ -1739,9 +1737,9 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
   - **Firewall habilitado**  
     **Valor predeterminado**: Permitido
 
-- **Perfil de Firewall público**  
-  Especifica los perfiles a la que pertenece la regla: dominio, privado o público. Este valor representa el perfil para las redes públicas. Estas redes se clasifican como públicas por los administradores en el host del servidor. La clasificación se produce la primera vez que el host se conecta a la red. Por lo general, estas redes se encuentran en aeropuertos, cafeterías y otros lugares públicos, donde otros usuarios o el administrador de la red no son de confianza.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067143)  
+- **Perfil público del firewall**  
+  Especifica los perfiles a la que pertenece la regla: Dominio, Privado o Público. Este valor representa el perfil para las redes públicas. Estas redes se clasifican como públicas por los administradores en el host del servidor. La clasificación se produce la primera vez que el host se conecta a la red. Por lo general, estas redes se encuentran en aeropuertos, cafeterías y otros lugares públicos, donde otros usuarios o el administrador de la red no son de confianza.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067143).  
 
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
     **Valor predeterminado**: Sí
@@ -1761,9 +1759,9 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
   - **Policy rules from group policy not merged** (Reglas de directiva de la directiva de grupo no combinadas)  
     **Valor predeterminado**: Sí
 
-- **Perfil de Firewall privado**  
-  Especifica los perfiles a la que pertenece la regla: dominio, privado o público. Este valor representa el perfil para las redes privadas.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067041)  
+- **Perfil privado del firewall**  
+  Especifica los perfiles a la que pertenece la regla: Dominio, Privado o Público. Este valor representa el perfil para las redes privadas.  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067041).  
 
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
     **Valor predeterminado**: Sí
@@ -1778,41 +1776,44 @@ Para obtener más información, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.
     **Valor predeterminado**: Permitido
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para empresas  
-- **Require enhanced anti-spoofing, when available** (Requerir tecnología mejorada contra la suplantación de identidad, cuando esté disponible)  
-  En caso afirmativo, los dispositivos usarán la protección mejorada contra la suplantación de identidad, cuando esté disponible. Si no es así, se bloqueará la protección contra la suplantación de identidad. No configurado respetará las configuraciones realizadas en el cliente.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067192)
 
-  **Valor predeterminado**: Sí
-
-- **Configurar Windows Hello para empresas**   
+- **Bloquear Windows Hello para empresas**  
     Windows Hello para empresas es un método alternativo para iniciar sesión en dispositivos Windows mediante la sustitución de contraseñas, tarjetas inteligentes y tarjetas inteligentes virtuales.  
+  - Si se establece en *Deshabilitar*, los dispositivos aprovisionan Windows Hello para empresas.
+  - Si se establece en *Sin configurar*, la línea de base no afecta a la configuración de la directiva del dispositivo. Esto significa que se mantiene el estado actual de Windows Hello para empresas en un dispositivo.
 
-  - Cuando se establece en *sí*, se habilita esta directiva y el dispositivo aprovisiona Windows Hello para empresas.  
-  - Cuando se establece en *no configurado*, la línea de base no afecta a la configuración de la Directiva del dispositivo. Esto significa que si Windows Hello para empresas está deshabilitado en un dispositivo, permanece deshabilitado. Si está habilitada, permanece habilitada. 
+  Puede deshabilitar Windows Hello para empresas configurando la [inscripción de Windows](windows-hello.md) o como parte de un perfil de configuración de dispositivos para la [protección de identidades](identity-protection-configure.md).  
 
-  No se puede deshabilitar Windows Hello para empresas a través de esta línea base. Puede deshabilitar Windows Hello para empresas al configurar la [inscripción de Windows](windows-hello.md)o como parte de un perfil de configuración de dispositivo para la [protección de identidades](identity-protection-configure.md).  
+  - **Valor predeterminado**: Habilitado
 
-  **Valor predeterminado**: Sí
+  La siguiente configuración está disponible cuando esta opción se establece en *Deshabilitado*.
 
-- **Requerir minúsculas en el PIN**  
-  Si es necesario, el PIN de usuario debe incluir al menos una letra minúscula.
+  - **Habilitar para usar la protección mejorada contra suplantación de identidad, cuando esté disponible**  
+    En caso afirmativo, los dispositivos usarán la protección mejorada contra suplantación de identidad, cuando esté disponible. Si no es así, se bloqueará la protección contra la suplantación de identidad. Sin configurar respetará las configuraciones realizadas en el cliente.  
+    [Más información](https://go.microsoft.com/fwlink/?linkid=2067192).
 
-  **Valor predeterminado**: Permitido
+    **Valor predeterminado**: Sí
 
-- **Requerir caracteres especiales en el PIN**  
-  Si es necesario, el PIN de usuario debe incluir al menos un carácter especial.
+  - **Letras minúsculas en el PIN**  
+    Si *se requiere*, el PIN del usuario debe incluir al menos una letra en minúsculas.
 
-  **Valor predeterminado**: Permitido
+    **Valor predeterminado**: Permitido
 
-- **Longitud mínima del PIN**  
-  La longitud mínima del PIN debe estar comprendida entre 4 y 127.
+  - **Caracteres especiales en el PIN**  
+    Si *se requiere*, el PIN del usuario debe incluir al menos un carácter especial.
 
-  **Valor predeterminado**: 6
+    **Valor predeterminado**: Permitido
 
-- **Requerir mayúsculas en el PIN**  
-  Si es necesario, el PIN de usuario debe incluir al menos una letra mayúscula.
+  - **Longitud mínima del PIN**  
+    La longitud mínima del PIN debe estar entre 4 y 127.
 
-  **Valor predeterminado**: Permitido
+    **Valor predeterminado**: 6
+
+  - **Letras mayúsculas en el PIN**  
+    Si *se requiere*, el PIN del usuario debe incluir al menos una letra en mayúsculas.
+
+    **Valor predeterminado**: Permitido
+
 
 ## <a name="windows-ink-workspace"></a>Área de trabajo de Windows Ink  
 Para más información, vea [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) (CSP de directiva: WindowsInkWorkspace) en la documentación de Windows.  
@@ -1823,7 +1824,7 @@ Para más información, vea [Policy CSP - WindowsInkWorkspace](https://docs.micr
   - *Habilitado*: la característica Área de trabajo de Windows Ink está activada, pero el usuario no puede acceder a ella por encima de la pantalla de bloqueo.
   - *No configurado*: la característica Área de trabajo de Windows Ink está activada, y el usuario puede usarla por encima de la pantalla de bloqueo.  
 
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067241)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067241).  
 
   **Valor predeterminado**: Habilitado
  
@@ -1832,1464 +1833,85 @@ Para más información, vea [Policy CSP - WindowsPowerShell](https://docs.micros
 
 - **Power shell shell script block logging** (Bloquear el registro de scripts de PowerShell)  
   Esta configuración de directiva permite el registro de todas las entradas de script de PowerShell en el registro de eventos Microsoft-Windows-PowerShell/Operational. Si habilita esta configuración de directiva, Windows PowerShell registrará el procesamiento de comandos, bloques de script, funciones y scripts, ya sea invocado de forma interactiva o mediante la automatización. Si deshabilita esta configuración de directiva, se deshabilitará el registro de entradas de script de PowerShell. Si habilita el registro de invocación de bloque de script, PowerShell también registrará los eventos cuando se inicie o se detenga la invocación de un comando, bloque de script, función o script. Si habilita el registro de invocación, se generará una gran cantidad de registros de eventos. Nota: Esta configuración de directiva se encuentra en Configuración del equipo y Configuración del usuario en el Editor de directivas de grupo. La configuración de directiva de Configuración del equipo tiene prioridad sobre la de Configuración del usuario.  
-  [Más información](https://go.microsoft.com/fwlink/?linkid=2067330)  
+  [Más información](https://go.microsoft.com/fwlink/?linkid=2067330).  
 
   **Valor predeterminado**: Habilitado
 
 ## <a name="whats-changed-in-the-new-template"></a>Cambios en la nueva plantilla
-La plantilla *de la línea de base de seguridad de MDM para el 2019 de mayo* tiene los siguientes cambios de la plantilla de *vista previa* .
+La plantilla de la *línea de base de seguridad de MDM para mayo de 2019* tiene los siguientes cambios de la plantilla de *versión preliminar*.
 
-### <a name="changes-to-the-baseline-settings"></a>Cambios en la configuración de línea de base
+### <a name="changes-to-the-baseline-settings"></a>Cambios en la configuración de la línea de base
 La configuración es alguna de las siguientes:
-- *Novedades* de esta versión más reciente de la línea base.
-- Se *quitó* de esta última versión de línea base, pero estaba presente en la versión anterior.
-- Se ha *revisado* de alguna manera de cómo aparecía la configuración en la versión anterior. 
+- Es una *novedad* en esta versión más reciente de la línea de base.
+- Se ha *eliminado* de esta última versión de línea de base, pero estaba presente en la versión anterior.
+- Se ha *revisado* de alguna manera con respecto a cómo aparecía la configuración en la versión anterior. 
 
-*[Nuevo]* [**por encima del bloqueo**](#above-lock):
+*[Novedad]* [**Above Lock**](#above-lock):
 - **Activar aplicaciones por voz desde la pantalla bloqueada**    
 
-*[Nuevo]* [**Administración de aplicaciones**](#application-management): 
-- **Bloquear el control de usuario en las instalaciones**  
+*[Novedad]* [**Administración de aplicaciones**](#application-management): 
+- **Bloquear el control del usuario sobre las instalaciones**  
 - **Bloquear las instalaciones de aplicaciones MSI con privilegios elevados**  
 
-*[Quitado]* [**BitLocker**](#bitlocker):  
-- **Método de cifrado** > de directiva de unidad extraíble del bloqueador de bits
-- **Directiva de unidad fija de bloqueo de bits** *(todas las configuraciones)*
-- **Directiva de unidad del sistema del bloqueador de bits** *(todas las configuraciones)*
+*[Eliminado]* [**BitLocker**](#bitlocker):  
+- Directiva de unidad extraíble de BitLocker > **Método de cifrado**
+- **Directiva de unidad fija de BitLocker** *(todas las configuraciones)*
+- **Directiva de unidad del sistema de BitLocker** *(todas las configuraciones)*
 
-*[Nuevo]* [**Conectividad**](#connectivity):
-- **Configurar el acceso seguro a rutas UNC**
+*[Novedad]* [**Conectividad**](#connectivity):
+- **Configurar acceso seguro a las rutas de acceso UNC**
 
-*[Nuevo]* [**Device Guard**](#device-guard):
+*[Novedad]* [**Device Guard**](#device-guard):
 - **Virtualization based security** (Seguridad basada en la virtualización)
 
-
-*[Nuevo]* [**protección de DMA**](#dma-guard):
+*[Novedad]* [**Protección de DMA**](#dma-guard):
 - **Enumeración de los dispositivos externos compatibles con Kernel DMA Protection**  
 
-*[Nuevo]* [**Internet Explorer**](#internet-explorer):
+*[Novedad]* [**Internet Explorer**](#internet-explorer):
 - **Explorer internet zone updates to status bar via script** (Actualizaciones de la barra de estado mediante scripts en la zona de Internet de Explorer)
 - **Internet Explorer internet zone drag and drop or copy and paste files** (Arrastrar y colocar, o copiar y pegar archivos en la zona de Internet de Internet Explorer)  
 - **Internet Explorer restricted zone .NET Framework reliant components** (Componentes que dependen de .NET Framework en la zona restringida de Internet Explorer)  
 - **Internet Explorer local machine zone do not run antimalware against Active X controls** (No ejecutar antimalware en los controles ActiveX de la zona Equipo local de Internet Explorer)
-- **Compatibilidad con cifrado de Internet Explorer**  
+- **Compatibilidad de cifrado de Internet Explorer**  
 
 *[Revisado]* [**Internet Explorer**](#internet-explorer):
-- **Solicitud automática de Internet Explorer Internet Zone para la descarga de archivos** > el valor predeterminado ahora está **deshabilitado**. En la vista previa, se estableció en habilitado.
+- **Solicitud automática de descargas de archivos en la zona Internet de Internet Explorer** > El valor predeterminado ahora es **Deshabilitado**. En la versión preliminar, se estableció en Habilitado.
 
-*[Nuevo]* [**Asistencia remota**](#remote-assistance):  
+*[Novedad]* [**Asistencia remota**](#remote-assistance):  
 - **Asistencia remota solicitada** 
-  - **Permiso solicitado de asistencia remota**
+  - **Permiso de Asistencia remota solicitado**
   - **Valor máximo de tiempo de vale**  
   - **Período máximo de tiempo de vale**  
   - **Método de invitación por correo electrónico**
 
 
-*[Nuevo]* [**Microsoft Defender**](#microsoft-defender):
+*[Novedad]* [**Microsoft Defender**](#microsoft-defender):
 - **Inicio de Adobe Reader en un proceso secundario**  
 - **Inicio de aplicaciones de comunicación de Office en un proceso secundario** 
 
-*[Nuevo]* [ **firewall de Microsoft defender**](#microsoft-defender-firewall)
-- **Dominio de Perfil de Firewall**  
+*[Novedad]* [**Firewall de Microsoft Defender**](#microsoft-defender-firewall)
+- **Dominio de Perfil del firewall**  
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
   - **Outbound connections required** (Conexiones salientes requeridas)  
   - **Inbound notifications blocked** (Notificaciones entrantes bloqueadas)  
   - **Firewall habilitado**  
-- **Perfil de Firewall público**  
+- **Perfil público del firewall**  
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
   - **Outbound connections required** (Conexiones salientes requeridas)  
   - **Inbound notifications blocked** (Notificaciones entrantes bloqueadas)  
   - **Firewall habilitado** 
   - **Connection security rules from group policy not merged** (Reglas de seguridad de conexión de la directiva de grupo no combinadas)   
   - **Policy rules from group policy not merged** (Reglas de directiva de la directiva de grupo no combinadas)  
-- **Perfil de Firewall privado**  
+- **Perfil privado del firewall**  
   - **Inbound connections blocked** (Conexiones entrantes bloqueadas)  
   - **Outbound connections required** (Conexiones salientes requeridas)  
   - **Inbound notifications blocked** (Notificaciones entrantes bloqueadas)  
   - **Firewall habilitado**  
 
-*[Nuevo]* [**Windows Hello para empresas**](#windows-hello-for-business):  
-- **Require enhanced anti-spoofing, when available** (Requerir tecnología mejorada contra la suplantación de identidad, cuando esté disponible)  
-- **Configurar Windows Hello para empresas**  
-- **Requerir minúsculas en el PIN** 
-- **Requerir caracteres especiales en el PIN** 
-- **Longitud mínima del PIN**  
-- **Requerir mayúsculas en el PIN** 
-
-
-
-<!-- The following settings were available in the Preview Baseline.   
-
-   
-## Above Lock  
-For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
-
-- **Block display of toast notifications**  
-  This policy setting allows you to prevent app notifications from appearing on the lock screen. If you enable this policy setting, no app notifications are displayed on the lock screen. If you disable or don't configure this policy setting, users can choose which apps display notifications on the lock screen.
-  
-  **Default**: Yes  
-
-## App Runtime    
-For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
-) in the Windows documentation.  
-
-- **Microsoft accounts optional for Windows Store apps**  
-  This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it. If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead. If you disable or don't configure this policy setting, users must sign in with a Microsoft account.  
-  
-  **Default**: Enabled  
-
-## Application Management   
-For more information, see [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) in the Windows documentation.  
-
-- **Block game DVR (desktop only)**  
-  Configures whether recording and broadcasting of games is allowed.
-  
-  **Default**: Yes  
-
-## Auto Play   
-For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) in the Windows documentation.  
-
-- **Auto play default auto run behavior**  
-  This setting affects the default behavior for Autorun commands. Autorun commands are stored in autorun.inf files and can launch installation programs or other routines. When *Enabled*, Administrators can change the default autorun behavior on a device that runs Windows Vista or later. Behavior can be set to: a) completely disable autorun commands, or b) revert back to pre-Windows Vista behavior of automatically executing the autorun command. When set to *Disabled* or *Not Configured*, devices that run Windows Vista or later prompt the user as to whether an autorun command should run.
-  
-  **Default**: Do not execute  
-  
-- **Auto play mode**  
-  This policy setting allows you to turn off the Autoplay feature. Autoplay begins reading from a drive as soon as you insert media in the drive. As a result, the setup file of programs and the music on audio media start immediately. Prior to Windows XP SP2, Autoplay is disabled by default on removable drives, such as the floppy disk drive (but not the CD-ROM drive), and on network drives. Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, including Zip drives and some USB mass storage devices. If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives. This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default. If you disable or don't configure this policy setting, AutoPlay is enabled. Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
-  
-  **Default**: Disabled
-
-- **Block auto play for non-volume devices**  
-  This policy setting disallows AutoPlay for MTP devices like cameras or phones. If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones. If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices.
-  
-  **Default**: Enabled  
-
-## Bitlocker    
-For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
-) in the Windows documentation.  
-
-- **Bit locker removable drive policy**  
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
-
-  For Bit locker removable drive policy, configure the following settings:
-
-    - **Require encryption for write access**  
-      **Default**: Yes  
-  
-    - **Encryption method**  
-      **Default**: AES 256bit CBC  
-
-- **Bit locker fixed drive policy**  
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
- 
-   For Bit locker fixed drive policy, configure the following settings: 
-   - **Encryption method**
-     **Default**: AES 256bit XTS  
-
-- **Bit locker system drive policy**  
-  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
-
-   For Bit locker system drive policy, configure the following settings:
-  - **Encryption method**  
-    **Default**: AES 256bit XTS  
-
-## Browser  
-For more information, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in the Windows documentation.  
-
-- **Require SmartScreen for Microsoft Edge**  
-  Microsoft Edge uses Microsoft Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. Also, by default, users can't disable (turn off) Microsoft Defender SmartScreen. Enabling this policy turns off Microsoft Defender SmartScreen and prevent users from turning it on. Don’t configure this policy to let users choose to turn Microsoft defender SmartScreen on or off.  
-  
-  **Default**: Yes  
-  
-- **Block malicious site access**  
-  By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious sites, allowing them to continue to the site. With this policy though, you can configure Microsoft Edge to prevent users from bypassing the warnings, blocking them from continuing to the site.
-  
-  **Default**: Yes  
-  
-- **Block unverified file download**
-  By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading the unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of the unverified file(s).
-  
-  **Default**: Yes  
-  
-- **Block Password Manager**  
-  By default, Microsoft Edge uses Password Manager automatically, allowing users to manager passwords locally. Disabling this policy restricts Microsoft Edge from using Password Manager. Don’t configure this policy if you want to let users choose to save and manage passwords locally using Password Manager.
-  
-  **Default**: Yes  
-  
-- **Prevent certificate error overrides**  
-  This policy setting prevents the user from ignoring Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate errors that interrupt browsing (such as "expired", "revoked", or "name mismatch" errors) in Internet Explorer. If you enable this policy setting, the user can't continue browsing. If you disable or don't configure this policy setting, the user can choose to ignore certificate errors and continue browsing.
-  
-  **Default**: Yes  
-
-## Connectivity  
-For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) in the Windows documentation.  
-
-- **Block Internet download for web publishing and online ordering wizards**  
-  This policy setting specifies whether Windows should download a list of providers for the web publishing and online ordering wizards. These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry. If you enable this policy setting, Windows doesn't download providers, and only the service providers that are cached in the local registry display. If you disable or don't configure this policy setting, a list of providers downloads when the user uses the web publishing or online ordering wizards. For more information that includes details on specifying service providers in the registry, see the documentation for the web publishing and online ordering wizards.  
-  
-  **Default**: Enabled  
-
-- **Block downloading of print drivers over HTTP**  
-  This policy setting specifies whether to allow this client to download print driver packages over HTTP. To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP. Note: This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that aren't already installed locally. If you enable this policy setting, print drivers can't be downloaded over HTTP. If you disable or don't configure this policy setting, users can download print drivers over HTTP.
-  
-  **Default**: Enabled  
-
-## Credentials Delegation  
-For more information, see [Policy CSP - CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
-) in the Windows documentation.  
-
-- **Remote host delegation of non-exportable credentials**  
-  Remote host allows delegation of non-exportable credentials. When using credential delegation, devices provide an exportable version of credentials to the remote host, which exposes users to the risk of credential theft from attackers on the remote host. If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode. If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.  
-
-  
-  **Default**: Enabled  
-
-## Credentials UI  
-For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) in the Windows documentation.  
-
-- **Enumerate administrators** 
-  This policy setting controls whether administrator accounts display when a user attempts to elevate a running application. By default, administrator accounts aren't displayed when the user attempts to elevate a running application. If you enable this policy setting, all local administrator accounts on the PC display so the user can choose one and enter the correct password. If you disable this policy setting, users will always be required to type a user name and password to elevate.  
-
-  
-  **Default**: Disabled  
-
-## Data Protection  
-For more information, see [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
-) in the Windows documentation.  
-
-- **Block direct memory access**  
-  This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA is blocked on hot plug PCI ports with no children devices until the user logs in again. Devices that were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.
-  
-  
-  **Default**: Yes  
-
-## Device Guard  
-For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
-) in the Windows documentation.  
-
-- **Credential Guard**  
-  This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot.
-   
-  **Default**: Enable with UEFI lock 
-
-- **Enable virtualization based security**   
-  Turns on virtualization-based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.
-  
-  **Default**: Yes  
-
-
-- **Launch system guard**    
-  **Default**: Enabled  
-
-## Device Installation  
-For more information, see [Policy CSP - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) in the Windows documentation.  
-
-- **Hardware device installation by device identifiers**  
-  This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, devices can install and update as allowed or prevented by other policy settings.
-  
-  **Default**: Block hardware device installation  
-
-    When *Block hardware device installation* is selected, the following settings are available.
-  
-    - **Remove matching hardware devices**   
-    This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes
-  
-    - **Hardware device identifiers that are blocked**  
-       This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes  
-  
-- **Hardware device installation by setup classes**  
-  This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
-  
-  **Default**: Block hardware device installation  
-
-    When *Block hardware device installation* is selected, the following settings are available.
-    - **Remove matching hardware devices**    
-    This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.  
-
-      **Default**: *No default configuration*  
-  
-    - **Hardware device identifiers that are blocked**  
-      This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
-      
-      **Default**: *No default configuration*  
-
-## Device Lock  
-For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) in the Windows documentation.  
-
-- **Prevent use of camera**  
-  Disables the lock screen camera toggle switch in PC Settings and prevents a camera from being invoked on the lock screen. By default, users can enable invocation of an available camera on the lock screen. If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera can't be invoked on the lock screen. 
-  
-  **Default**: Enabled  
-
-- **Require password**  
-  Specifies whether device lock is enabled.
-  
-  **Default**: Yes  
-  
-    When *Require password* is set to *Yes*, the following settings are available.
-
-    - **Password minimum character set count**  
-      The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1. 
-      
-      **Default**: 3  
-  
-    - **Number of sign-in failures before wiping device**  
-      The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.
-        
-      **Default**: 10  
-  
-    - **Password expiration (days)**  
-      The Maximum password age policy setting determines how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
-      
-      **Default**: 60  
-  
-    - **Required password type**  
-      Determines the type of PIN or password required.
-      
-      **Default**: Alphanumeric  
-  
-    - **Minimum password length**  
-      The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.
-      
-      **Default**: 8  
-  
-    - **Block simple passwords**  
-      Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
-      
-      **Default**: Yes  
-        *A setting of Yes prevents use of simple passwords.* 
-
-  - **Prevent reuse of previous passwords**  
-    Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. For example, with a setting of *1* the user can't reuse their current password when choosing a new password. A setting of *5* means that a user can't set their new password to their current password or any of their previous four passwords.
-    
-    **Default**: 24  
-
-- **Prevent slide show**  
-  Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen. By default, users can enable a slide show that will run after they lock the machine. If you enable this setting, users can't modify slide show settings in PC Settings, and no slide show can start.
-  
-    **Default**: Enabled  
-    *A setting of Enabled prevents slide shows from running.* 
-
-- **Password minimum age in days**  
-  The Minimum password age policy setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow password changes immediately by setting the number of days to 0. The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998.
-  
-    **Default**: 1  
-
-## Event Log Service  
-For more information, see [Policy CSP - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) in the Windows documentation.  
-
-- **Security log maximum file size in KB**  
-  This policy setting specifies the maximum size of the log file in kilobytes. If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments. If you disable or don't configure this policy setting, the maximum size of the log file is set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
-  
-   **Default**: 196608  
-
-- **System log maximum file size in KB**  
-  This policy setting specifies the maximum size of the log file in kilobytes. If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments. If you disable or don't configure this policy setting, the maximum size of the log file is set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
-  
-  **Default**: 32768  
-
-- **Application log maximum file size in KB**  
-  This policy setting specifies the maximum size of the log file in kilobytes. If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments. If you disable or don't configure this policy setting, the maximum size of the log file is set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
-  
-  **Default**: 32768  
-
-## Experience  
-For more information, see [Policy CSP - Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in the Windows documentation.  
-
-- **Block Windows Spotlight**  
-  Allows IT admins to turn off all Windows Spotlight Features - Window spotlight on lock screen, Windows Tips, Microsoft consumer features, and other related features.
-  
-  **Default**: Yes  
-
-  When *Block Windows Spotlight* is set to *Yes*, the following settings are available.
-  
-  - **Block third-party suggestions in Windows Spotlight**  
-    Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
-      
-    **Default**: Yes  
-   - **Block consumer specific features**  
-      Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install, and redirect tiles.
-      
-     **Default**: Yes  
-
-
-## Exploit Guard  
-For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Windows documentation.  
-
-- **Exploit protection XML**  
-  Enables the IT admin to push out a configuration that represents the desired system and application mitigation options to all the devices in the organization. The configuration is represented by an XML. Exploit protection helps protect devices from malware that use exploits to spread and infect. You use the Windows Security app or PowerShell to create a set of mitigations (known as a configuration). You can then export this configuration as an XML file and share it with multiple machines on your network so they all have the same set of mitigation settings. You can also convert and import an existing EMET configuration XML file into an exploit protection configuration XML.
-  
-  **Default**: *Sample xml is provided* 
- 
-## File Explorer  
-For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) in the Windows documentation.  
-
-- **Block data execution prevention**  
-  Disabling data execution prevention can allow certain legacy plug-in applications to function without terminating Explorer.
-  
-  **Default**: Disabled  
-   
-- **Block heap termination on corruption**  
-  Disabling heap termination on corruption can allow certain legacy plug-in applications to function without terminating Explorer immediately, although Explorer may still terminate unexpectedly later.
-  
-  **Default**: Disabled  
-    
-
-## Internet Explorer  
-For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
-
-
-- **Internet Explorer internet zone access to data sources**  
-  This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO). If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to load in the zone that uses MSXML or ADO to access data from another site in the zone. If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone drag content from different domains within windows**  
-  This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy setting or don't configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
-  
-  **Default**: Disabled
-  
-- **Internet Explorer certificate address mismatch warning**  
-  This policy setting allows you to turn on the certificate address mismatch security warning. When this policy setting is turned on, the user is warned when visiting Secure HTTP (HTTPS) websites that present certificates issued for a different website address. This warning helps prevent spoofing attacks. If you enable this policy setting, the certificate address mismatch warning always appears. If you disable or don't configure this policy setting, the user can choose whether the certificate address mismatch warning appears (by using the Advanced page in the Internet Control panel).
-  
-  **Default**: Enabled 
-  
-- **Internet Explorer restricted zone less privileged sites**  
-  This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone. If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur. If you disable this policy setting, possibly harmful navigation is prevented. The Internet Explorer security feature is on in this zone as set by Protection from Zone Elevation feature control. If you don't configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature is on in this zone as set by Protection from Zone Elevation feature control.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone automatic prompt for file downloads**  
-  This policy setting determines whether users are prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads. If you enable this setting, users will receive a file download dialog for automatic download attempts. If you disable or don't configure this setting, file downloads that aren't user-initiated are blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-  
-  **Default**: Disabled
-  
-- **Internet Explorer internet zone .NET Framework reliant components**  
-  This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link. If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components. If you disable this policy setting, Internet Explorer won't execute unsigned managed components. If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.
-  
-  **Default**: Disable 
-  
-- **Internet Explorer internet zone allow only approved domains to use tdc ActiveX controls**  
-  This policy setting controls if the user can run the TDC ActiveX control on websites. If you enable this policy setting, the TDC ActiveX control won't run from websites in this zone. If you disable this policy setting, the TDC Active X control will run from all sites in this zone.
-  
-  **Default**: Enabled 
-  
-- **Internet Explorer restricted zone script initiated windows**  
-  This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars. If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature. If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process. If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
-  
-  **Default**: Disabled 
-  
-- **Internet Explorer internet zone include local path when uploading files to server**  
-  This policy setting controls if local path information gets sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you don't configure this policy setting, the user can choose whether path information gets sent when they upload a file via an HTML form. By default, path information is sent.
-  
-  **Default**: Disabled 
-  
-- **Internet Explorer disable processes in enhanced protected mode**  
-  This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility) when running in Enhanced Protected Mode on 64-bit versions of Windows. Important: Some ActiveX controls and toolbars may not be available when 64-bit processes are used. If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows. If you disable this policy setting, Internet Explorer 11 will use 32-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows. If you don't configure this policy setting, users can turn this feature on or off using Internet Explorer settings. This feature is turned off by default.
-  
-  **Default**: Enabled 
-  
-- **Internet Explorer ignore certificate errors**  
-  This policy setting prevents the user from ignoring Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate errors that interrupt browsing (such as "expired", "revoked", or "name mismatch" errors) in Internet Explorer. If you enable this policy setting, the user can't continue browsing. If you disable or don't configure this policy setting, the user can choose to ignore certificate errors and continue browsing.
-  
-  **Default**: Disabled 
-  
-- **Internet Explorer internet zone loading of XAML files**  
-  This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation. If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user can't change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files. If you disable this policy setting, XAML files aren't loaded inside Internet Explorer. The user can't change this behavior. If you don't configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
-  
-  **Default**: Disable 
-  
-- **Internet Explorer internet zone automatic prompt for file downloads**  
-  This policy setting determines whether users are prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads. If you enable this setting, users will receive a file download dialog for automatic download attempts. If you disable or don't configure this setting, file downloads that aren't user-initiated are blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone security warning for potentially unsafe files**  
-  This policy setting controls if the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example). If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open. If you disable this policy setting, these files don't open. If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone cross site scripting filter**  
-  This policy controls if the Cross-Site Scripting (XSS) Filter will detect and prevent cross-site script injections into websites in this zone. If you enable this policy setting, the XSS Filter is turned on for sites in this zone, and the XSS Filter attempts to block cross-site script injections. If you disable this policy setting, the XSS Filter is turned off for sites in this zone, and Internet Explorer permits cross-site script injections.
-  
-  **Default**: Enabled 
-  
-- **Internet Explorer fallback to SSL3**  
-  This policy setting allows you to block an insecure fallback to SSL 3.0. When this policy is enabled, Internet Explorer will attempt to connect to sites using SSL 3.0 or below when TLS 1.0 or greater fails. We recommend that you don't allow insecure fallback in order to prevent a man-in-the-middle attack. This policy doesn't affect which security protocols are enabled. If you disable this policy, system defaults are used.
-  
-  **Default**: No sites 
-  
-- **Internet Explorer locked down internet zone smart screen**  
-  This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
-  
-  **Default**: Enabled 
-  
-- **Internet Explorer restricted zone launch applications and files in an iFrame**  
-  This policy setting allows you to manage whether applications may be run and files may be downloaded from an IFRAME reference in the HTML of the pages in this zone. If you enable this policy setting, users can run applications and download files from IFRAMEs on the pages in this zone without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone. If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone. If you don't configure this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
-  
-  **Default**: Disable 
-  
-- **Internet Explorer bypass smart screen warnings about uncommon files**  
-  This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users don't commonly download from the Internet. If you enable this policy setting, SmartScreen Filter warnings block the user. If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer internet zone popup blocker**  
-  This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked. If you enable this policy setting, most unwanted pop-up windows are prevented from appearing. If you disable this policy setting, pop-up windows aren't prevented from appearing. If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.
-  
-  **Default**: Enable  
-  
-- **Internet Explorer processes consistent MIME handling**  
-  Internet Explorer contains dynamic binary behaviors: components that encapsulate specific functionality for the HTML elements to which they're attached. This policy setting controls whether the Binary Behavior Security Restriction setting is prevented or allowed. If you enable this policy setting, binary behaviors are prevented for the File Explorer and Internet Explorer processes. If you disable this policy setting, binary behaviors are allowed for the File Explorer and Internet Explorer processes. If you don't configure this policy setting, binary behaviors are prevented for the File Explorer and Internet Explorer processes.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone java permissions**  
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.
-  
-  **Default**: Disable java  
-    
-  
-- **Internet Explorer Active X controls in protected mode**  
-  This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that isn't compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode. Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system. When Enhanced Protected Mode is enabled, and a user comes across a website that attempts to load an ActiveX control that isn't compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website. If you enable this policy setting, Internet Explorer won't give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode. If you disable or don't configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode.  
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone loading of XAML files**  
-  This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation. If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user can't change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files. If you disable this policy setting, XAML files aren't loaded inside Internet Explorer. The user can't change this behavior. If you don't configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer processes scripted window security restrictions**  
-  Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars aren't visible to the user or obfuscate other Windows' title and status bars. If you enable this policy setting, scripted windows are restricted for all processes. If you disable or don't configure this policy setting, scripted windows aren't restricted.
-  
-  **Default**: Enabled   
-  
-- **Internet Explorer restricted zone run Active X controls and plugins**  
-  This policy setting allows you to manage whether ActiveX controls and plug-ins can run on pages from the specified zone. If you enable this policy setting, controls and plug-ins can run without user intervention. If you selected Prompt in the drop-down box, users are asked to choose whether to allow the controls or plug-in to run. If you disable this policy setting, controls and plug-ins are prevented from running. If you don't configure this policy setting, controls and plug-ins are prevented from running.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone script Active X controls marked safe for scripting**  
-  This policy setting allows you to manage whether an ActiveX control marked safe for scripting can interact with a script. If you enable this policy setting, script interaction can occur automatically without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow script interaction. If you disable this policy setting, script interaction is prevented from occurring. If you don't configure this policy setting, script interaction is prevented from occurring.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. 
-  - *Anonymous*  - Use anonymous sign in to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. 
-  - *Prompt* - Use prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the rest of the session. 
-  - *Automatic sign in only in Intranet zone* - Use this option to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. 
-  - *Automatic sign in with current user name and password*- Use this option to attempt sign in using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for sign in. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. 
-
-  If you disable this policy setting, sign-in is set to *Automatic sign in only in Intranet zone*. If you don't configure this policy setting, sign-in is set to *Prompt* for username and password.
-  
-  **Default**: Anonymous  
-  
-- **Internet Explorer trusted zone initialize and script Active X controls not marked as safe**  
-  This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, users are queried whether to allow the control to load with parameters or scripted.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer check server certificate revocation**  
-  This policy setting allows you to manage whether Internet Explorer will check revocation status of servers' certificates. Certificates are revoked when they are compromised or no longer valid, and this option protects users from submitting confidential data to a site that may be fraudulent or not secure. If you enable this policy setting, Internet Explorer will check to see if server certificates have been revoked. If you disable this policy setting, Internet Explorer won't check server certificates to see if they have been revoked. If you don't configure this policy setting, Internet Explorer won't check server certificates to see if they have been revoked.
-  
-  **Default**: Enabled 
-  
-- **Internet Explorer internet zone less privileged sites**  
-  This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone. If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur. If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature is on in this zone as set by Protection from Zone Elevation feature control. If you don't configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone file downloads**  
-  This policy setting allows you to manage whether file downloads are permitted from the zone. This option gets determined by the zone of the page with the link causing the download, not the zone from which the file is delivered. If you enable this policy setting, files can be downloaded from the zone. If you disable this policy setting, files are prevented from being downloaded from the zone. If you don't configure this policy setting, files are prevented from being downloaded from the zone.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone run .NET Framework reliant components signed with Authenticode**  
-  This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link. If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components. If you disable this policy setting, Internet Explorer won't execute signed managed components. If you don't configure this policy setting, Internet Explorer won't execute signed managed components.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer prevent per user installation of Active X controls**  
-  This policy setting allows you to prevent the installation of ActiveX controls on a per-user basis. If you enable this policy setting, ActiveX controls can't be installed on a per-user basis. If you disable or don't configure this policy setting, ActiveX controls can be installed on a per-user basis.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer prevent managing smart screen filter**  
-  This policy setting prevents the user from managing SmartScreen Filter, which warns the user if the website they visit is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware. If you enable this policy setting, the user isn't prompted to turn on SmartScreen Filter. All website addresses that aren't on the filters allow list are sent automatically to Microsoft without prompting the user. If you disable or don't configure this policy setting, the user gets prompted to decide whether to turn on SmartScreen Filter during the first-run experience.
-  
-  **Default**: Enable  
-  
-- **Internet Explorer processes MIME sniffing safety feature**  
-  This policy setting determines whether Internet Explorer MIME sniffing will prevent promotion of a file of one type to a more dangerous file type. If you enable this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type. If you disable this policy setting, Internet Explorer processes will allow a MIME sniff promoting a file of one type to a more dangerous file type. If you don't configure this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone download signed Active X controls**  
-  This policy setting allows you to manage whether users may download signed ActiveX controls from a page in the zone. If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded. If you disable the policy setting, signed controls can't download. If you don't configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer auto complete**  
-  This Auto-Complete feature can remember and suggest User names and passwords on Forms. If you enable this setting, the user can't change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned on. You have to decide whether to select "prompt me to save passwords". If you disable this setting the user can't change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also can't opt to be prompted to save passwords. If you don't configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab, and click the Settings button.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone allow VBscript to run**  
-  This policy setting lets you decide whether VBScript can run on pages in specific Internet Explorer zones. Options include: 
-  - *Enable* - VBScript runs on pages in specific zones, without any interaction. 
-  - *Prompt* - Employees are prompted whether to allow VBScript to run in the zone. 
-  - *Disable* - VBScript is prevented from running in the zone. If you disable or don’t configure this policy setting, VBScript runs without any interaction in the specified zone. 
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone allow only approved domains to use tdc Active X controls**  
-  This policy setting controls if the user can run the TDC ActiveX control on websites. If you enable this policy setting, the TDC ActiveX control won't run from websites in this zone. If you disable this policy setting, the TDC Active X control will run from all sites in this zone.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer trusted zone don't run antimalware against Active X controls**  
-  This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
-  
-  **Default**: Disabled 
-  
-- **Internet Explorer local machine zone java permissions**  
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Medium Safety.
-  
-  **Default**: Disable java 
-  
-- **Internet Explorer intranet zone do not run antimalware against Active X controls**
-  This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
-  
-  **Default**: Disabled  
-
-- **Internet Explorer restricted zone scriptlets**  
-  This policy setting allows you to manage whether the user can run scriptlets. If you enable this policy setting, the user can run scriptlets. If you disable this policy setting, the user can't run scriptlets. If you don't configure this policy setting, the user can enable or disable scriptlets.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer processes notification bar**  
-  This policy setting allows you to manage whether the Notification bar is displayed for Internet Explorer processes when file or code installs are restricted. By default, the Notification bar is displayed for Internet Explorer processes. If you enable this policy setting, the Notification bar displays for the Internet Explorer Processes. If you disable this policy setting, the Notification bar won't be displayed for Internet Explorer processes. If you don't configure this policy setting, the Notification bar doesn't display for Internet Explorer Processes.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer internet zone download signed ActiveX controls**  
-  This policy setting allows you to manage whether users may download signed ActiveX controls from a page in the zone. If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded. If you disable the policy setting, signed controls can't download. If you don't configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone smart screen**  
-  This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer remove run this time button for outdated Active X controls**  
-  This policy setting allows you to stop users from seeing the "Run this time" button and from running specific outdated ActiveX controls in Internet Explorer. If you enable this policy setting, users won't see the "Run this time" button on the warning message that appears when Internet Explorer blocks an outdated ActiveX control. If you disable or don't configure this policy setting, users will see the "Run this time" button on the warning message that appears when Internet Explorer blocks an outdated ActiveX control. Clicking this button lets the user run the outdated ActiveX control once. For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.
-  
-  **Default**: Enabled 
-  
-- **Internet Explorer internet zone launch applications and files in an iframe**  
-  This policy setting allows you to manage whether applications may be run and files may be downloaded from an IFRAME reference in the HTML of the pages in this zone. If you enable this policy setting, users can run applications and download files from IFRAMEs on the pages in this zone without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone. If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone. If you don't configure this policy setting, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone
-  
-  **Default**: Disable 
-  
-- **Internet Explorer restricted zone navigate windows and frames across different domains**  
-  This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone smart screen**  
-  This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer locked down trusted zone java permissions**  
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.
-  
-  **Default**: Disable java 
-  
-- **Internet Explorer check signatures on downloaded programs**  
-  This policy setting allows you to manage whether Internet Explorer checks for digital signatures (which identifies the publisher of signed software and verifies it hasn't been modified or tampered with) on user computers before downloading executable programs. If you enable this policy setting, Internet Explorer will check the digital signatures of executable programs and display their identities before downloading them to user computers. If you disable this policy setting, Internet Explorer won't check the digital signatures of executable programs or display their identities before downloading them to user computers. If you don't configure this policy, Internet Explorer won't check the digital signatures of executable programs or display their identities before downloading them to user computers.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone scripting of web browser controls**  
-  This policy setting determines whether a page can control embedded WebBrowser controls via script. If you enable this policy setting, script access to the WebBrowser control is allowed. If you disable this policy setting, script access to the WebBrowser control isn't allowed. If you don't configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone cross site scripting filter**  
-  This policy controls if the Cross-Site Scripting (XSS) Filter will detect and prevent cross-site script injections into websites in this zone. If you enable this policy setting, the XSS Filter is turned on for sites in this zone, and the XSS Filter attempts to block cross-site script injections. If you disable this policy setting, the XSS Filter is turned off for sites in this zone, and Internet Explorer permits cross-site script injections.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone binary and script behaviors**  
-  This policy setting allows you to manage dynamic binary and script behaviors: components that encapsulate specific functionality for HTML elements to which they were attached. If you enable this policy setting, binary and script behaviors are available. If you select Administrator approved in the drop-down box, only behaviors listed in the Admin-approved Behaviors under Binary Behaviors Security Restriction policy are available. If you disable this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager. If you don't configure this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer security settings check**  
-  This policy setting turns off the Security Settings Check feature, which checks Internet Explorer security settings to determine when the settings put Internet Explorer at risk. If you enable this policy setting, the feature is turned off. If you disable or don't configure this policy setting, the feature is turned on.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer internet zone security warning for potentially unsafe files**  
-  This policy setting controls if the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example). If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open. If you disable this policy setting, these files don't open. If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
-  
-  **Default**: Prompt  
-  
-- **Internet Explorer intranet zone java permissions**  
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Medium Safety.
-  
-  **Default**: High safety 
-  
-- **Internet Explorer block outdated Active X controls**  
-  This policy setting determines whether Internet Explorer blocks specific outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone. If you enable this policy setting, Internet Explorer stops blocking outdated ActiveX controls. If you disable or don't configure this policy setting, Internet Explorer continues to block specific outdated ActiveX controls. For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone popup blocker**  
-  This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked. If you enable this policy setting, most unwanted pop-up windows are prevented from appearing. If you disable this policy setting, pop-up windows aren't prevented from appearing. If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.
-  
-  **Default**: Enable  
-  
-- **Internet Explorer processes MK protocol security restriction**  
-  The MK Protocol Security Restriction policy setting reduces attack surface area by preventing the MK protocol. Resources hosted on the MK protocol will fail. If you enable this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail. If you disable this policy setting, applications can use the MK protocol API. Resources hosted on the MK protocol will work for the File Explorer and Internet Explorer processes. If you don't configure this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer trusted zone java permissions**   
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Low Safety.
-  
-  **Default**: High safety  
-  
-- **Internet Explorer restricted zone scripting of java applets**  
-  This policy setting allows you to manage whether applets are exposed to scripts within the zone. If you enable this policy setting, scripts can access applets automatically without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow scripts to access applets. If you disable this policy setting, scripts are prevented from accessing applets. If you don't configure this policy setting, scripts are prevented from accessing applets.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer locked down restricted zone java permissions**   
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.
-  
-  **Default**: Disable java 
-  
-- **Internet Explorer internet zone allow only approved domains to use ActiveX controls**   
-  This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer include all network paths**  
-  Internet Explorer include all network paths
-  
-  **Default**: Disabled 
-  
-- **Internet Explorer internet zone protected mode**  
-  This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system. If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode. If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode. If you don't configure this policy setting, the user can turn on or turn off Protected Mode.
-  
-  **Default**: Enable 
-  
-- **Internet Explorer internet zone initialize and script Active X controls not marked as safe**  
-  This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
-  
-  **Default**: Disable 
-  
-- **Internet Explorer locked down restricted zone smart screen**   
-  This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer crash detection**  
-  This policy setting allows you to manage the crash detection feature of add-on Management. If you enable this policy setting, a crash in Internet Explorer will exhibit behavior found in Windows XP Professional Service Pack 1 and earlier, namely to invoke Windows Error Reporting. All policy settings for Windows Error Reporting continue to apply. If you disable or don't configure this policy setting, the crash detection feature for add-on management is functional.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer internet zone java permissions**  
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to High Safety.
-  
-  **Default**: Disable java  
-  
-- **Internet Explorer restricted zone active scripting**  
-  This policy setting allows you to manage whether script code on pages in the zone is run. If you enable this policy setting, script code on pages in the zone can run automatically. If you select Prompt in the drop-down box, users are queried to choose whether to allow script code on pages in the zone to run. If you disable this policy setting, script code on pages in the zone is prevented from running. If you don't configure this policy setting, script code on pages in the zone is prevented from running.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
-  
-  **Default**: Prompt  
-  
-- **Internet Explorer restricted zone allow vbscript to run**  
-  This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer. If you selected Enable in the drop-down box, VBScript can run without user intervention. If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run. If you selected Disable in the drop-down box, VBScript is prevented from running. If you don't configure or disable this policy setting, VBScript is prevented from running.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone drag content from different domains across windows**  
-  This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
-  
-  **Default**: Disabled 
-  
-- **Internet Explorer intranet zone initialize and script Active X controls not marked as safe**  
-  This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
-  
-  **Default**: Disable 
-  
-- **Internet Explorer download enclosures**  
-  This policy setting prevents the user from having enclosures (file attachments) downloaded from a feed to the user's computer. If you enable this policy setting, the user can't set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can't change the download setting through the Feed APIs. If you disable or don't configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone download unsigned Active X controls**   
-  This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone drag content from different domains within windows**  
-  This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer processes restrict Active X install**   
-  This policy setting enables applications hosting the Web Browser Control to block automatic prompting of ActiveX control installation. If you enable this policy setting, the Web Browser Control will block automatic prompting of ActiveX control installation for all processes. If you disable or don't configure this policy setting, the Web Browser Control won't block automatic prompting of ActiveX control installation for all processes.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer internet zone scriptlets**
-  This policy setting allows you to manage whether the user can run scriptlets. If you enable this policy setting, the user can run scriptlets. If you disable this policy setting, the user can't run scriptlets. If you don't configure this policy setting, the user can enable or disable scriptlets.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone drag and drop or copy and paste files**  
-  This policy setting allows you to manage whether users can drag files or copy and paste files from a source within the zone. If you enable this policy setting, users can drag files or copy and paste files from this zone automatically. If you select Prompt in the drop-down box, users are queried to choose whether to drag or copy files from this zone. If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone. If you don't configure this policy setting, users are queried to choose whether to drag or copy files from this zone.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer software when signature is invalid**   
-  This policy setting allows you to manage whether software, such as ActiveX controls and file downloads, can be installed or run by the user even though the signature is invalid. An invalid signature might indicate that someone has tampered with the file. If you enable this policy setting, users are prompted to install or run files with an invalid signature. If you disable this policy setting, users can't run or install files with an invalid signature. If you don't configure this policy, users can choose to run or install files with an invalid signature.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone copy and paste via script**   
-  This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can't perform a clipboard operation.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone drag content from different domains across windows**  
-  This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.   
-  **Default**: Disabled  
-  
-- **Internet Explorer users adding sites**  
-  Prevents users from adding or removing sites from security zones. A security zone is a group of Web sites with the same security level. If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.) If you disable this policy or don't configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone. This policy prevents users from changing site management settings for security zones established by the administrator. Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it's enabled, this policy is ignored. Also, see the "Security zones: Use only machine settings" policy.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer internet zone script initiated windows**  
-  This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars. If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature. If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process. If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't run. This Internet Explorer security feature is on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer security zones use only machine settings**  
-  Applies security zone information to all users of the same computer. A security zone is a group of Web sites with the same security level. If you enable this policy, changes that the user makes to a security zone will apply to all users of that computer. If you disable this policy or don't configure it, users of the same computer can establish their own security zone settings. Use this policy to ensure that security zone settings apply uniformly to the same computer and don't vary from user to user. Also, see the "Security zones: don't allow users to change policies" policy.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer locked down local machine zone java permissions**  
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled
-  
-  **Default**: Disable java 
-  
-- **Internet Explorer restricted zone do not run antimalware against Active X controls**   
-  This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone run .NET Framework reliant components signed with authenticode**  
-  This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link. If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components. If you disable this policy setting, Internet Explorer won't execute signed managed components. If you don't configure this policy setting, Internet Explorer won't execute signed managed components.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer restricted zone access to data sources**  
-  This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO). If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to load in the zone that uses MSXML or ADO to access data from another site in the zone. If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
-  
-  **Default**: Disable 
-  
-- **Internet Explorer internet zone don't run antimalware against ActiveX controls**   
-  This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer internet zone copy and paste via script**  
-  This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can perform a clipboard operation.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer use Active X installer service**   
-  This policy setting allows you to specify how ActiveX controls are installed. If you enable this policy setting, ActiveX controls are installed only if the ActiveX Installer Service is present and has been configured to allow the installation of ActiveX controls. If you disable or don't configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer processes protection from zone elevation**  
-  Internet Explorer places restrictions on each Web page it opens. The restrictions are dependent upon the location of the Web page (Internet, Intranet, Local Machine zone, and so on). For example, Web pages on the local computer have the fewest security restrictions and are in the Local Machine zone, making the Local Machine security zone a prime target for malicious users. If you enable this policy setting, any zone can be protected from zone elevation for all processes. If you disable or don't configure this policy setting, processes other than Internet Explorer or those listed in the Process List receive no such protection.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer internet zone download unsigned ActiveX controls**   
-  This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone navigate windows and frames across different domains**   
-  This policy setting allows you to manage the opening of windows and frames and access of applications across different domains. If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains. If you disable this policy setting, users can't open windows and frames to access applications from different domains. If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer internet zone updates to status bar via script**  
-  This policy setting allows you to manage whether a script can update the status bar within the zone. If you enable this policy setting, scripts can update the status bar. If you disable or don't configure this policy setting, script isn't allowed to update the status bar.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone include local path when uploading files to server**  
-  This policy setting controls if local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you don't configure this policy setting, the user can choose whether path information is sent when they are uploading a file via an HTML form. By default, path information is sent.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer processes restrict file download**   
-  This policy setting enables applications hosting the Web Browser Control to block automatic prompting of file downloads that aren't user initiated. If you enable this policy setting, the Web Browser Control will block automatic prompting of file downloads that aren't user initiated for all processes. If you disable this policy setting, the Web Browser Control won't block automatic prompting of file downloads that aren't user initiated for all processes.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone allow only approved domains to use Active X controls**   
-  This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer restricted zone initialize and script Active X controls not marked as safe**  
-  This policy setting allows you to manage ActiveX controls not marked as safe. If you enable this policy setting, ActiveX controls run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option. If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to load with parameters or scripted. If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted. If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
-  
-  **Default**: Disable  
-  
-- **Internet Explorer users changing policies**  
-    Prevents users from changing security zone settings. A security zone is a group of Web sites with the same security level. If you enable this policy, the Custom Level button and security-level slider on the Security tab in the Internet Options dialog box are disabled. If you disable this policy or don't configure it, users can change the settings for security zones. This policy prevents users from changing security zone settings established by the administrator. Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it's enabled, this policy is ignored. Also, see the "Security zones: Use only machine settings" policy.
-    
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone protected mode**  
-  This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system. If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode. If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode. If you don't configure this policy setting, the user can turn on or turn off Protected Mode.
-  
-  **Default**: Enable  
-  
-- **Internet Explorer internet zone user data persistence**  
-  This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured. If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer internet zone scripting of web browser controls**  
- 
-  This policy setting determines whether a page can control embedded WebBrowser controls via script. If you enable this policy setting, script access to the WebBrowser control is allowed. If you disable this policy setting, script access to the WebBrowser control isn't allowed. If you don't configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone user data persistence**  
-    This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured. If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. If you don't configure this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.  
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer locked down intranet zone java permissions**  
-  This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.
-  
-  **Default**: Disable java  
-  
-- **Internet Explorer enhanced protected mode**  
-  Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system. If you enable this policy setting, Enhanced Protected Mode is turned on. Any zone that has Protected Mode enabled will use Enhanced Protected Mode. Users won't be able to disable Enhanced Protected Mode. If you disable this policy setting, Enhanced Protected Mode is turned off. Any zone that has Protected Mode enabled will use the version of Protected Mode introduced in Internet Explorer 7 for Windows Vista. If you don't configure this policy, users can turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.
-  
-  **Default**: Enabled  
-  
-- **Internet Explorer bypass smart screen warnings**  
-  This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users don't commonly download from the Internet. If you enable this policy setting, SmartScreen Filter warnings block the user. If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.
-  
-  **Default**: Disabled  
-  
-- **Internet Explorer restricted zone meta refresh**  
-  This policy setting allows you to manage whether a user's browser can be redirected to another Web page if the author of the Web page uses the Meta Refresh setting (tag) to redirect browsers to another Web page. If you enable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can be redirected to another Web page. If you disable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page. If you don't configure this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page.
-  
-  **Default**: Disabled  
-  
-## Local Policies Security Options
-For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) in the Windows documentation. 
-
-- **Restrict anonymous access to named pipes and shares**  
-  When enabled, this security setting restricts anonymous access to shares and pipes to the settings for: (1) Named pipes that can be accessed anonymously (2) Shares that can be accessed anonymously
-  
-  **Default**: Yes  
-  
-- **Minimum session security for NTLM SSP based servers**  
-  This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are: Require NTLMv2 session security: The connection will fail if message integrity isn't negotiated. Require 128-bit encryption. The connection will fail if strong encryption (128-bit) isn't negotiated.
-  
-  **Default**: Require NTLM V2 and 128 bit encryption  
-  
-- **Minutes of lock screen inactivity until screen saver activates**  
-  Windows notices inactivity of a logon session, and if the amount of inactive time exceeds the inactivity limit, then the screen saver will run, locking the session.
-  
-  **Default**: 15
-  
-- **Require client to always digitally sign communications** 
-  This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup and more. This setting determines if all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic started by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel won't be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies: Domain member: Digitally encrypt secure channel data (when possible) Domain member: Digitally sign secure channel data (when possible)
-  
-  **Default**: Yes
-  
-- **Authentication level**  
-  This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:  
-  - *Send LM and NTLM responses*: Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send LM and NTLM - NTLMv2 if negotiated*: Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLM response only*: Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLMv2 response only*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLMv2 response only. Refuse LM*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication). 
-  - *Send NTLMv2 response only. Refuse LM and NTLM*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication). 
-    
-  **Default**: Send NTLMv2 response only. Refuse LM and NTLM
-  
-- **Prevent clients from sending unencrypted passwords to third party SMB servers**  
-  If this security setting is enabled, the Server Message Block (SMB) redirector can send plaintext passwords to non-Microsoft SMB servers that don't support password encryption during authentication. Sending unencrypted passwords is a security risk.
-  
-  **Default**: Yes
-  
-- **Disable server digitally signing communications always**  
-  This security setting determines whether the SMB client attempts to negotiate SMB packet signing. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server. If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing is negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing.
-  
-  **Default**: Yes
-  
-- **Administrator elevation prompt behavior**  
-  This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
-    - *Elevate without prompting*: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
-    - *Prompt for credentials on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
-    - *Prompt for consent on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
-    - *Prompt for credentials*: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-    - *Prompt for consent*: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
-    - *Prompt for consent for non-Windows binaries*: When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.   
-  
-  **Default**: Prompt for consent on the secure desktop
-  
-- **Minimum session security for NTLM SSP based clients**  
-  This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
-  - Require NTLMv2 session security: The connection will fail if NTLMv2 protocol isn't negotiated. 
-  - *Require 128-bit encryption*: The connection will fail if strong encryption (128-bit) isn't negotiated.
-  - *Require NTLMv2 and 128-bit encryption*. 
-
-  **Default**: Require NTLM V2 128 encryption
-  
-- **Smart card removal behavior**  
-    This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
-     - *No action*. 
-     - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
-     - *Force Logoff* - the user is automatically logged off when the smart card is removed.
-     - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.   
-    
-  **Default**: Lock workstation
-  
-- **Block anonymous enumeration of SAM accounts and shares**  
-  This security setting determines whether to allow anonymous enumeration of SAM accounts and shares. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. If you don't want to allow anonymous enumeration of SAM accounts and shares, then set this policy to *Yes*.
-  
-  **Default**: Yes
-  
-- **Block remote logon with blank password**  
-  This security setting determines whether local accounts that aren't password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that aren't password protected must use the computer's keyboard to log on. 
-
-  *Warning*: Computers that aren't in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that doesn't have a password. This is especially important for portable computers. 
-
-  If you apply this security policy to the Everyone group, no one can log on through Remote Desktop Services. This setting doesn't affect logons that use domain accounts. It's possible for applications that use remote interactive logons to bypass this setting.
-  
-  **Default**: Yes
-  
-- **Standard user elevation prompt behavior**  
-  This policy setting controls the behavior of the elevation prompt for standard users. 
-  - *Automatically deny elevation requests*: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls. 
-  - *Prompt for credentials on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-  - *Prompt for credentials*: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.  
-  
-  **Default**: Automatically deny elevation requests
-  
-- **Require admin approval mode for administrators**  
-  This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are:   
-  - *Not configured*: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced. 
-  - *Yes*: Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.  
-  
-  **Default**: Yes
-  
-- **Prevent anonymous enumeration of SAM accounts**  
-  This security setting determines what additional permissions are granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows: 
-  - *Yes*: Don't allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources.
-  - *Not configured*: No additional restrictions. Rely on default permissions.  
-  
-  **Default**: Yes
-  
-- **Allow remote calls to security accounts manager**  
-  This policy setting allows you to restrict remote rpc connections to SAM. If not selected, the default security descriptor is used.
-  
-  **Default**: *O:BAG:BAD:(A;;RC;;;BA)*
-
-- **Use admin approval mode**  
-  This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: 
-  - *Yes*: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. 
-  - *Not Configured*: The built-in Administrator account runs all applications with full administrative privilege.  
-
-  **Default**: Yes
-  
-- **Allow UI access applications for secure locations**  
-  This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. 
-  - *Yes*: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. 
-  - *Not Configured*: The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.  
-
-  **Default**: Yes
-
-- **Detect application installations and prompt for elevation**  
-  This policy setting controls the behavior of application installation detection for the computer. The options are: 
-  - *Enabled*: When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-  - *Disabled*: Application installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.  
-  
-  **Default**: Yes
-  
-- **Prevent storing LAN manager hash value on next password change**  
-  This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. The LM hash is relatively weak and prone to attack, as compared with the cryptographically stronger Windows NT hash. Since the LM hash is stored on the local computer in the security database the passwords can be compromised if the security database is attacked.
-  
-  **Default**: Yes
-
-- **Virtualize file and registry write failures to per user locations**  
-  This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to *%ProgramFiles%*, *%Windir%*, *%Windir%\system32*, or *HKLM\Software*.
-  
-  **Default**: Yes
-
-## MS Security Guide  
-For more information, see [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) in the Windows documentation.  
-
-- **Apply UAC restrictions to local accounts on network logon**  
-  **Default**: Enabled
-  
-- **SMB v1 client driver start configuration**  
-  **Default**: Disabled driver
-  
-- **SMB v1 server**  
-  **Default**: Disabled
-  
-- **Digest authentication**  
-  **Default**: Disabled
-  
-- **Structured exception handling overwrite protection**  
-  **Default**: Enabled
-  
-## MSS Legacy  
-For more information, see [Policy CSP - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) in the Windows documentation.  
-
-- **Network IP source routing protection level**  
-  **Default**: Highest protection  
-  
-- **Network ignore NetBIOS name release requests except from WINS servers**  
-  **Default**: Enabled
-  
-- **Network IPv6 source routing protection level**  
-  **Default**: Highest protection
-
-- **Network ICMP redirects override OSPF generated**  
-  **Default**: Disabled
-  
-## Power  
-For more information, see [Policy CSP - Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) in the Windows documentation.  
-
-- **Require password on wake while plugged in**  
-  This policy setting specifies if the user is prompted for a password when the system resumes from sleep. If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep. If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
-  
-  **Default**: Enabled
-  
-- **Standby states when sleeping while on battery**  
-  This policy setting manages if Windows can use standby states when putting the computer in a sleep state. If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state. If you disable this policy setting, standby states (S1-S3) aren't allowed.
-  
-  **Default**: Disabled
-  
-- **Standby states when sleeping while plugged in**  
-  This policy setting manages if Windows can use standby states when putting the computer in a sleep state. If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state. If you disable this policy setting, standby states (S1-S3) aren't allowed.
-  
-  **Default**: Disabled
-  
-- **Require password on wake while on battery**  
-  This policy setting specifies if the user is prompted for a password when the system resumes from sleep. If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep. If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
-  
-  **Default**: Enabled
-  
-## Remote Desktop Services  
-For more information, see [Policy CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) in the Windows documentation.  
-
-- **Block password saving**  
-  Controls whether passwords can be saved on this computer from Remote Desktop Connection. If you enable this setting the password saving checkbox in Remote Desktop Connection is disabled and users won't be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves their settings, any password that previously existed in the RDP file are deleted. If you disable this setting or leave it not configured, the user can save passwords using Remote Desktop Connection.
-  
-   **Default**: Enabled
-  
-- **Secure RPC communication**  
-  Specifies whether a Remote Desktop Session Host server requires secure RPC communication with all clients or allows unsecured communication. You can use this setting to strengthen the security of RPC communication with clients by allowing only authenticated and encrypted requests. If the status is set to Enabled, Remote Desktop Services accepts requests from RPC clients that support secure requests, and doesn't allow unsecured communication with untrusted clients. If the status is set to Disabled, Remote Desktop Services always requests security for all RPC traffic. However, unsecured communication is allowed for RPC clients that don't respond to the request. If the status is set to Not Configured, unsecured communication is allowed. Note: The RPC interface is used for administering and configuring Remote Desktop Services.
-  
-  **Default**: Enabled
-  
-- **Block drive redirection**  
-  This policy setting specifies whether to prevent the mapping of client drives in a Remote Desktop Services session (drive redirection). By default, an RD Session Host server maps client drives automatically upon connection. Mapped drives appear in the session folder tree in File Explorer or Computer in the format *\<driveletter>* on *\<computername>*. You can use this policy setting to override this behavior. If you enable this policy setting, client drive redirection isn't allowed in Remote Desktop Services sessions, and Clipboard file copy redirection isn't allowed on computers running Windows Server 2003, Windows 8, and Windows XP. If you disable this policy setting, client drive redirection is always allowed. Also, Clipboard file copy redirection is always allowed if Clipboard redirection is allowed. If you don't configure this policy setting, client drive redirection and Clipboard file copy redirection aren't specified at the Group Policy level.
-  
-  **Default**: Enabled
-  
-- **Prompt for password upon connection**  
-  This policy setting specifies whether Remote Desktop Services always prompts the client for a password upon connection. You can use this setting to enforce a password prompt for users logging on to Remote Desktop Services, even if they already provided the password in the Remote Desktop Connection client. By default, Remote Desktop Services allows users to automatically log on by entering a password in the Remote Desktop Connection client. If you enable this policy setting, users can't automatically log on to Remote Desktop Services by supplying their passwords in the Remote Desktop Connection client. they're prompted for a password to log on. If you disable this policy setting, users can always log on to Remote Desktop Services automatically by supplying their passwords in the Remote Desktop Connection client. If you don't configure this policy setting, automatic logon isn't specified at the Group Policy level. 
-  
-  **Default**: Enabled
-  
-- **Remote desktop services client connection encryption level**  
-  Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you're using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) isn't recommended. This policy doesn't apply to SSL encryption. If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:  
-  - *High*: The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that don't support this encryption level can't connect to RD Session Host servers.  
-  - *Client Compatible*: The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that don't support 128-bit encryption.  
-  - *Low*: The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.  
-  
-  If you disable or don't configure this setting, the encryption level to be used for remote connections to RD Session Host servers isn't enforced through Group Policy. Important FIPS compliance can be configured through the System cryptography. Use FIPS-compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS-compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.
-  
-  **Default**: High
-  
-## Remote Management  
-For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in the Windows documentation.  
-
-- **Block storing run as credentials**  
-  Client basic authentication
-  
-  **Default**: Enabled
-  
-- **Basic authentication**  
-  This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Basic authentication from a remote client. If you enable this policy setting, the WinRM service accepts Basic authentication from a remote client. If you disable or don't configure this policy setting, the WinRM service doesn't accept Basic authentication from a remote client.
-  
-  **Default**: Disabled
-  
-- **Block client digest authentication**  
-  This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Digest authentication. If you enable this policy setting, the WinRM client doesn't use Digest authentication. If you disable or don't configure this policy setting, the WinRM client uses Digest authentication.
-  
-  **Default**: Enabled
-  
-- **Unencrypted traffic**  
-  This policy setting allows you to manage whether the Windows Remote Management (WinRM) service sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.  
-  
-  **Default**: Disabled
-  
-- **Client unencrypted traffic**  
-  This policy setting allows you to manage whether the Windows Remote Management (WinRM) client sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
-  
-  **Default**: Disabled
-  
-- **Client basic authentication**  
-  This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Basic authentication. If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text. If you disable or don't configure this policy setting, the WinRM client doesn't use Basic authentication.
-  
-  **Default**: Disabled
-  
-
-## Remote Procedure Call  
-For more information, see [Policy CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) in the Windows documentation.  
-
-- **RPC unauthenticated client options**  
-  This policy setting controls how the RPC server runtime handles unauthenticated RPC clients connecting to RPC servers. This policy setting impacts all RPC applications. In a domain environment, use this policy setting with caution as it can impact a wide range of functionality including group policy processing itself. Reverting a change to this policy setting can require manual intervention on each affected machine. This policy setting should never be applied to a domain controller. If you disable this policy setting, the RPC server runtime uses the value of "Authenticated" on Windows Client, and the value of "None" on Windows Server versions that support this policy setting. If you don't configure this policy setting, it remains disabled. The RPC server runtime behaves as though it was enabled with the value of "Authenticated" used for Windows Client and the value of "None" used for Server SKUs that support this policy setting. If you enable this policy setting, it directs the RPC server runtime to restrict unauthenticated RPC clients connecting to RPC servers running on a machine. A client is considered an authenticated client if it uses a named pipe to communicate with the server or if it uses RPC Security. RPC Interfaces that have specifically requested to be accessible by unauthenticated clients may be exempt from this restriction, depending on the selected value for this policy setting.  
-  - *None* allows all RPC clients to connect to RPC Servers running on the machine on which the policy setting is applied. 
-  - *Authenticated* allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. Exemptions are granted to interfaces that have requested them. 
-  - *Authenticated without exceptions* allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. No exceptions are allowed. Note: This policy setting won't be applied until the system is rebooted.  
-
-  **Default**: Authenticated
-
-## Search 
-For more information, see [Policy CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) in the Windows documentation.  
-
-- **Disable indexing encrypted items**  
-  Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files. When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified. When the policy is disabled, the WIP protected items aren't indexed and don't show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are many WIP protected media files on the device.
-  
-**Default**: Yes
-  
-## Smart Screen  
-For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in the Windows documentation.  
-
-- **Block execution of unverified files**  
-  Block user from running unverified files. 
-  - *Not Configured* - Employees can ignore SmartScreen warnings and run malicious files. 
-  - *Yes* – Employees can't ignore SmartScreen warnings and run malicious files.
-
-  **Default**: Yes
-
-- **Require SmartScreen for apps and files**  
-  Allows IT Admins to configure SmartScreen for Windows.
-
-  **Default**: Yes
-  
-## System  
-For more information, see [Policy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) in the Windows documentation.  
-
-- **System boot start driver initialization**  
-  This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver: 
-  - *Good*: The driver has been signed and hasn't been tampered with.  
-  - *Bad* - The driver has been identified as malware. We recommend that you don't allow known bad drivers to be initialized. 
-  - *Bad, but required for boot*: The driver has been identified as malware, but the computer can't successfully boot without loading this driver. 
-  - *Unknown* - This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.  
-
-  If you enable this policy setting, you can choose which boot-start drivers to initialize the next time the computer is started. If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown, or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped. If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.  
-  
-  **Default**: Good unknown and bad critical
-
-
-## Wi-Fi  
-For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) in the Windows documentation.  
-
-- **Block Internet sharing**  
-  Specifies whether internet sharing is possible on the device.  
-
-  **Default**: Yes  
-
-- **Block Automatically connecting to Wi-Fi hotspots**  
-  Allow or disallow the device to automatically connect to Wi-Fi hotspots.  
-
-  **Default**: Yes  
-  
-## Windows Connection Manager  
-For more information, see [Policy CSP - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) in the Windows documentation.  
-
-- **Block connection to non-domain networks**  
-  This policy setting prevents computers from connecting to both a domain-based network and a non-domain based network at the same time. If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances: 
-  - Automatic connection attempts When the computer is already connected to a domain-based network, all automatic connection attempts to non-domain networks are blocked. When the computer is already connected to a non-domain based network, automatic connection attempts to domain-based networks are blocked. 
-  - Manual connection attempts When the computer is already connected to either a non-domain based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection disconnects and the manual connection is allowed. When the computer is already connected to either a non-domain based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.  
-
-  If this policy setting isn't configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.  
-
-  **Default**: Enabled
-  
-## Microsoft Defender  
-For more information, see [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.  
-
-- **Scan incoming mail messages**  
-  Allows or disallows scanning of email.
-  
-  **Default**: Yes  
-
-- **Office apps launch child process type**  
-  Office apps won't be allowed to create child processes. This includes Word, Excel, PowerPoint, OneNote, and Access. This is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.
-  
-  **Default**: Block
-  
-- **Defender sample submission consent type**  
-  Checks for the user consent level in WinMMicrosofticrosoftdows Defender to send data. If the required consent has already been granted, Microsoft Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
-  
-  **Default**: Send safe samples automatically 
-  
-- **Signature update interval (in hours)**  
-  Defender signature update interval in hours
-  
-  **Default**: 4
-  
-- **Script downloaded payload execution type**  
-  Defender script downloaded payload execution type
-  
-  **Default**: Block
-  
-- **Prevent credential stealing type**  
-  Microsoft Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Microsoft Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
-  
-  **Default**: Enable
-
-- **Email content execution type**  
-  This rule blocks the following file types from being run or launched from an email seen in either Microsoft Outlook or webmail (such as Gmail.com or Outlook.com): Executable files (such as .exe, .dll, or .scr) Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file) Script archive files.
-  
-  **Default**: Block
-  
-- **Network protection type**  
-  This policy allows you to turn on network protection (block/audit) or off in Microsoft Defender Exploit Guard. Network protection is a feature of Microsoft Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer. If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit. If you enable this policy with the "Block" option, users and apps are blocked from connecting to dangerous domains. You can see this activity in Microsoft Defender Security Center. If you enable this policy with the "Audit" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Microsoft Defender Security Center. If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Microsoft Defender Security Center. If you don't configure this policy, network blocking is disabled by default.
-  
-  **Default**: Enable
-  
-- **Defender schedule scan day**  
-  Defender schedule scan day.
-  
-  **Default**: Everyday
-  
-- **Cloud-delivered protection**  
-  To best protect your PC, Microsoft Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
-  
-  **Default**:  Yes  
-
-- **Defender potentially unwanted app action**  
-  The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can identify and block PUAs from downloading and installing on endpoints in your network. These applications aren't considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have a poor reputation. Typical PUA behavior includes: Various types of software bundling Ad injection into web browsers Driver and registry optimizers that detect issues, request payment to fix the errors, but remain on the endpoint and make no changes or optimizations (also known as "rogue antivirus" programs). These applications can increase the risk of your network being infected with malware, cause malware infections to be harder to identify, and can waste IT resources in cleaning up the applications.  
-  
-  **Default**: Block  
-
-- **Script obfuscated macro code type**  
-  Malware and other threats can attempt to obfuscate or hide their malicious code in some script files. This rule prevents scripts that appear to be obfuscated from running.
-  
-  **Default**: Block
-  
-- **Scan removable drives during a full scan**  
-  Allows Microsoft Defender to scan for malicious and unwanted software in removable drives (for example, flash drives) during a full scan. Microsoft Defender Antivirus scans all files on USB devices before execution.
-  
-  **Default**: Yes  
-  
-- **Scan archive files**  
-  Defender scan archive files.
-  
-  **Default**: Yes
-  
-- **Behavior monitoring**  
-  Allows or disallows Microsoft Defender Behavior Monitoring functionality.Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
-  
-  **Default**: Yes
-
-- **Scan files opened from network folders**  
-  If files are read-only, user won't be able to remove any detected malware.
-  
-  **Default**: Yes
-
-- **Untrusted USB process type**  
-  With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards.
-  
-  **Default**: Block
-  
-- **Office apps other process injection type**  
-  Office apps, including Word, Excel, PowerPoint, and OneNote, won't be able to inject code into other processes. This is typically used by malware to run malicious code in an attempt to hide the activity from antivirus scanning engines.
-  
-  **Default**:  Block
-  
-- **Office macro code allow Win32 imports type**  
-  Malware can use macro code in Office files to import and load Win32 DLLs, which can then be used to make API calls to allow further infection throughout the system. This rule attempts to block Office files that contain macro code that is capable of importing Win32 DLLs. This includes Word, Excel, PowerPoint, and OneNote.
-  
-  **Default**: Block  
-  
-- **Defender cloud block level**  
-  Defender cloud block level.
-  
-  **Default**: Not Configured
-
-- **Real-time monitoring**  
-  Defender requires real-time monitoring.
-  
-  **Default**: Yes
-  
-- **Office apps executable content creation or launch type**  
-  This rule targets typical behaviors used by suspicious and malicious add-ons and scripts (extensions) that create or launch executable files. This is a typical malware technique. Extensions are blocked from being used by Office apps. Typically these extensions use the Windows Scripting Host (.wsh files) to run scripts that automate certain tasks or provide user-created add-on features
-  
-  **Default**: Block
-
-## Windows Ink Workspace  
-For more information, see [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) in the Windows documentation.  
-
-- **Ink Workspace**  
-  Specifies whether to allow the user to access the ink workspace. 
-  - *Disabled* - access to ink workspace is disabled. The feature is turned off.
-  - *Enabled* - The Ink Workspace feature is turned on, but the user can't access it above the lock screen.
-  - *Not Configured* - The Ink Workspace feature is turned on, and the user can use it above the lock screen.  
-
-  **Default**: Enabled
- 
-## Windows PowerShell  
-For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in the Windows documentation.  
-
-- **Power shell shell script block logging**  
-  This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log. If you enable this policy setting, Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation. If you disable this policy setting, logging of PowerShell script input is disabled. If you enable the Script Block Invocation Logging, PowerShell additionally logs events when invocation of a command, script block, function, or script starts or stops. Enabling Invocation Logging generates a high volume of event logs. Note: This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
-  
-  **Default**: Enabled
- 
-
-End of PReview baseilne list  -->
+*[Novedad]* [**Windows Hello para empresas**](#windows-hello-for-business):  
+- **Bloquear Windows Hello para empresas**
+  - **Habilitar para usar la protección mejorada contra suplantación de identidad, cuando esté disponible**  
+  - **Letras minúsculas en el PIN** 
+  - **Caracteres especiales en el PIN** 
+  - **Longitud mínima del PIN**  
+  - **Letras mayúsculas en el PIN** 

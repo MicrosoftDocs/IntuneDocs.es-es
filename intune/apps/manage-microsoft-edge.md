@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258502"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125020"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Administración del acceso web mediante Microsoft Edge con Microsoft Intune
 
@@ -181,7 +181,7 @@ Use el siguiente par clave-valor para configurar un acceso directo en la página
 
 |    Key    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique una dirección URL válida. Las direcciones URL incorrectas se bloquean como medida de seguridad.<br>**Ejemplo:** <`https://www.bing.com`>
+|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique una dirección URL válida. Las direcciones URL incorrectas se bloquean como medida de seguridad.<br>**Ejemplo:**  <`https://www.bing.com`>
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configuración del color de marca y del logotipo de la organización para nuevas páginas de pestañas en Microsoft Edge
 
@@ -285,16 +285,27 @@ Use el siguiente par clave-valor para configurar si se permiten estas transicion
 
 |    Key    |    Valor    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    "com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock"    |    **True** hará que los vínculos restringidos se abran directamente en la exploración de InPrivate.<p>**False** (valor predeterminado) presentará a los usuarios una opción para abrir un vínculo restringido con la exploración de InPrivate o con su cuenta personal (MSA).    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** (valor predeterminado) permite a Microsoft Edge pasar a los usuarios a su contexto personal para que puedan abrir sitios bloqueados.<p>**False** impide que Microsoft Edge realice la transición de los usuarios. A los usuarios simplemente se les muestra un mensaje en el que se indica que el sitio al que intentan acceder está bloqueado.    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Apertura de vínculos restringidos directamente en páginas de pestañas de InPrivate
 
-Puede configurar si los vínculos restringidos deben abrirse directamente en la exploración de InPrivate, lo que proporciona a los usuarios una experiencia de exploración más fluida. Esto ahorraría a los usuarios el tener que realizar una transición a su contexto personal para ver un sitio. La exploración de InPrivate se considera no administrada, por lo que los usuarios no podrán obtener acceso al usar el modo de exploración de InPrivate. 
+Puede configurar si los vínculos restringidos deben abrirse directamente en la exploración de InPrivate, lo que proporciona a los usuarios una experiencia de exploración más fluida. Esto ahorraría a los usuarios el tener que realizar una transición a su contexto personal para ver un sitio. La exploración de InPrivate se considera no administrada, por lo que los usuarios no podrán obtener acceso al usar el modo de exploración de InPrivate.
 
 |    Key    |    Valor    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** permite a Microsoft Edge pasar a los usuarios a su contexto personal para que puedan abrir sitios bloqueados.<p>La opción **Bloquear** impide que Microsoft Edge realice la transición de los usuarios. A los usuarios simplemente se les muestra un mensaje en el que se indica que el sitio al que intentan acceder está bloqueado.    |
 
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Deshabilitación del aviso de Microsoft Edge para guardar contraseñas
+
+|    Key    |    Valor    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** hará que los vínculos restringidos se abran directamente en la exploración de InPrivate.<p>**False** (valor predeterminado) presentará a los usuarios una opción para abrir un vínculo restringido con la exploración de InPrivate o con su cuenta personal (MSA).    |
+
+De forma predeterminada, Microsoft Edge en iOS ofrece la opción de guardar las contraseñas de los usuarios en la cadena de claves. Si desea deshabilitar este aviso para su organización, configure los siguientes valores:
+
+|    Key    |    Valor    |
+|-----------|-------------|
+|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    **password** deshabilitará el aviso para guardar contraseñas.    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Uso de Microsoft Edge en iOS para acceder a los registros de aplicaciones administradas 
 
@@ -314,7 +325,7 @@ Las siguientes son consideraciones de seguridad y privacidad adicionales para Mi
 - Microsoft Edge no utiliza la configuración establecida por los usuarios para el explorador nativo en sus dispositivos, porque Microsoft Edge no puede acceder a esta configuración.
 - Puede configurar la opción **Requerir PIN sencillo para el acceso** o **Requerir credenciales corporativas para el acceso** en una directiva de protección de aplicaciones asociada a Microsoft Edge. Si un usuario selecciona el vínculo de ayuda en la página de autenticación, podrá navegar a cualquier sitio de Internet, independientemente de si este se ha agregado o no a una lista de bloqueados en la directiva.
 - Microsoft Edge puede bloquear el acceso a sitios solo cuando se accede a estos directamente. No bloquea el acceso cuando los usuarios usan servicios intermedios (por ejemplo, un servicio de traducción) para acceder al sitio.
-- Para permitir la autenticación y acceder a la documentación de Intune, ***.microsoft.com** está exento de la configuración de permitidos o bloqueados. Se permite siempre.
+- Para permitir la autenticación y acceder a la documentación de Intune, * **.microsoft.com** está exento de la configuración de permitidos o bloqueados. Se permite siempre.
 - Los usuarios pueden desactivar la recopilación de datos. Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso de Managed Browser para mejorar sus productos y servicios. Los usuarios pueden usar en sus dispositivos la configuración de **Datos de uso** para desactivar la recopilación de datos. No tiene ningún control sobre la recopilación de estos datos. En dispositivos iOS, no se pueden abrir los sitios web que visitan los usuarios y que tienen un certificado expirado o que no es de confianza.
 
 ## <a name="next-steps"></a>Pasos siguientes

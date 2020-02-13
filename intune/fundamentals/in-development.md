@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/07/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71ae3c15dddedd5d9ebfaf06fcae25af89f6b82
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: HT
+ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912645"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977757"
 ---
-# <a name="in-development-for-microsoft-intune---january-2020"></a>En desarrollo para Microsoft Intune: enero de 2020
+# <a name="in-development-for-microsoft-intune---february-2020"></a>En desarrollo para Microsoft Intune: febrero de 2020
 
 Para ayudarle con la preparación y planeación, en esta página se enumeran las actualizaciones y características de la interfaz de usuario de Intune que están en desarrollo, pero que aún no se han publicado. Además de la información de esta página: 
 
@@ -66,8 +66,22 @@ La aplicación Portal de empresa va a mostrar mensajes de estado de la instalaci
 - No se pudo instalar la aplicación. No se cumplieron las dependencias definidas por el administrador.
 
 ### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Cambio del destino de clips web a Microsoft Edge en dispositivos iOS<!-- 5455276 -->
-Los clips web, que actúan como aplicaciones web ancladas en dispositivos iOS, tienen que actualizarse. Los clips web recién implementados se van a abrir en Microsoft Edge en lugar de en Intune Managed Browser si tienen que abrirse en un explorador protegido. Debe cambiar el destino de los clips web existentes para asegurarse de que se abran en Microsoft Edge en lugar de en Managed Browser. 
+Los clips web, que actúan como aplicaciones web ancladas en dispositivos iOS, tienen que actualizarse. Los clips web recién implementados se van a abrir en Microsoft Edge en lugar de en Intune Managed Browser si tienen que abrirse en un explorador protegido. Debe cambiar el destino de los clips web existentes para asegurarse de que se abran en Microsoft Edge en lugar de en Managed Browser.
 
+### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>mejoras en la experiencia del usuario del Portal de empresa de macOS<!-- 5568987 -->
+Estamos realizando mejoras en la experiencia de inscripción de dispositivos macOS y en la aplicación Portal de empresa para Mac. Se puede esperar lo siguiente:
+- Mejora de la experiencia de Microsoft **AutoUpdate** durante la inscripción que garantizará que los usuarios tengan la versión más reciente del Portal de empresa.
+- Paso de comprobación de cumplimiento mejorado durante la inscripción.
+- Compatibilidad con los identificadores de incidentes copiados, por lo que los usuarios pueden enviar los errores más rápido desde sus dispositivos al equipo de soporte técnico de su empresa.
+
+Para obtener más información sobre la inscripción y la aplicación del Portal de empresa aplicación para Mac, consulte inscribir un dispositivo macOS con la aplicación Portal de empresa (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). 
+
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Pantalla quitada del Portal de empresa, inscripción del perfil de trabajo de Android<!--6103987 -->
+La pantalla **¿Cuál es el paso siguiente?** se quitará del flujo de inscripción del perfil de trabajo de Android en el Portal de empresa para simplificar la experiencia del usuario. Vaya a [Inscripción con el perfil de trabajo de Android]( https://docs.microsoft.com/intune-user-help/enroll-device-android-work-profile) para ver el flujo de inscripción del perfil de trabajo de Android actual.
+
+### <a name="microsoft-defender-advanced-threat-protection-atp-app-for-macos---5424518-idready---"></a>Aplicación Advanced Threat Protection (ATP) de Microsoft Defender para macOS<!-- 5424518 idready -->
+Intune proporcionará una manera sencilla de implementar la aplicación Advanced Threat Protection (ATP) de Microsoft Defender para macOS en dispositivos Mac administrados. Para obtener más información, consulte [Advanced Threat Protection de Microsoft Defender para Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac). 
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Configuración del dispositivo
@@ -104,14 +118,32 @@ Al crear o editar un perfil de OEMConfig para dispositivos Android Enterprise, s
 Esta característica se aplica a:
 - Android Enterprise 
 
+
 <!-- ***********************************************-->
 <!--## Device enrollment-->
 
 
-
 <!-- ***********************************************-->
-<!--## Device management-->
+## <a name="device-management"></a>Administración de dispositivos
 
+### <a name="change-primary-user-for-windows-devices----3794742---"></a>Cambio del usuario primario para dispositivos Windows <!-- 3794742 -->
+Podrá cambiar el usuario primario para dispositivos híbridos de Windows y unidos a Azure AD. Para ello, vaya a **Intune** > **Dispositivos** > **Todos los dispositivos** > elija un dispositivo > **Propiedades** > **Usuario primario**. 
+
+### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765---"></a>Número de serie en la página del certificado push MDM de Apple<!--5947765 -->
+La página del certificado push MDM de Apple mostrará el número de serie. El número de serie es necesario para recuperar el acceso al certificado de extracción MDM de Apple si se pierde el acceso al id. de Apple que creó el certificado. Para ver el número de serie, vaya a **Dispositivos** > **iOS** > **Inscripción de iOS** > **Certificado push MDM de Apple**.
+
+### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689---"></a>Elección de las actualizaciones de iOS/iPadOS que se van a insertar en los dispositivos inscritos<!--5879689 -->
+Podrá elegir una actualización específica de iOS/iPadOS para insertarla en los dispositivos inscritos mediante Apple Business Manager o Apple School Manager. Estos dispositivos deben tener una directiva de configuración de dispositivos establecida para retrasar la visibilidad de las actualizaciones de software durante un número determinado de días. Para ver esta característica, vaya a MEM > **Dispositivos** >  **iOS** > **Directivas de actualización para iOS/iPadOS** > **Crear perfil**.
+
+### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689--"></a>Nuevas opciones de programación de actualización para insertar actualizaciones del sistema operativo en dispositivos iOS/iPadOS inscritos<!--5879689-->
+Podrá elegir entre las siguientes opciones al programar las actualizaciones del sistema operativo para dispositivos iOS/iPadOS. Esto se aplica a los dispositivos que usaron los tipos de inscripción Apple Business Manager o Apple School Manager.
+- Actualización en la siguiente inserción
+- Actualización durante la hora programada
+- Actualización fuera de la hora programada
+
+En las dos últimas opciones, puede crear varias ventanas de tiempo.
+
+Para ver las nuevas opciones, vaya a MEM > **Dispositivos** >  **iOS** > **Directivas de actualización para iOS/iPadOS** > **Crear perfil**.
 
 
 <!-- ***********************************************-->
@@ -119,10 +151,19 @@ Esta característica se aplica a:
  
 
 <!-- ***********************************************-->
+## <a name="monitoring-and-troubleshooting"></a>Supervisión y solución de problemas
 
-<!--
-## Monitoring and troubleshooting
--->
+### <a name="improved-intune-reporting-experience---3791418-idready---"></a>Mejora de la experiencia de informes de Intune<!-- 3791418 idready -->
+Intune ahora proporciona una experiencia de informes mejorada, con nuevos tipos de informes, una mejor organización de informes, vistas más centradas y una funcionalidad de informes más eficiente, así como datos más coherentes y precisos. La experiencia de informes pasará de la versión preliminar pública a GA (disponibilidad general). Además, la versión de GA proporcionará compatibilidad para la localización, correcciones de errores, mejoras de diseño y datos de cumplimiento de dispositivos agregados en los mosaicos del [centro de administración de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+Los nuevos tipos de informe se centran en lo siguientes aspectos:
+- **Operativo**: proporciona registros nuevos con un enfoque de estado negativo. 
+- **Organizativo**: proporciona un resumen más amplio del estado general.
+- **Histórico**: proporciona patrones y tendencias a lo largo de un período de tiempo.
+- **Especialista**: le permite usar datos sin procesar para crear sus propios informes personalizados.
+
+El primer conjunto de informes nuevos se centra en el cumplimiento de los dispositivos. Para obtener más información, vea [Blog:marco de creación de informes de Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) e [Informes de Intune](~/fundamentals/reports.md).
+
 
 
 <!-- ***********************************************-->
@@ -136,7 +177,13 @@ La interfaz de usuario del [Centro de administración del Administrador de punto
 ## <a name="security"></a>Seguridad
 
 ### <a name="derived-credentials-support-on-android-cobo-devices--4839592--"></a>Compatibilidad con credenciales derivadas en dispositivos Android COBO<!--4839592-->
-Se van a poder usar credenciales derivadas en dispositivos Android Enterprise totalmente administrados. Se va a incluir compatibilidad para recuperar una credencial derivada de Entrust Datacard, Intercede y DISA Purebred. Se va a poder usar una credencial derivada para la autenticación de aplicaciones, Wi-Fi, VPN o la firma o el cifrado S/MIME en las aplicaciones que lo admitan. 
+Se van a poder usar credenciales derivadas en dispositivos Android Enterprise totalmente administrados. Se va a incluir compatibilidad para recuperar una credencial derivada de Entrust Datacard, Intercede y DISA Purebred. Se va a poder usar una credencial derivada para la autenticación de aplicaciones, Wi-Fi, VPN o la firma o el cifrado S/MIME en las aplicaciones que lo admitan.
+
+### <a name="use-antivirus-policy-to-manage-settings-for-microsoft-defender-antivirus-and-the-windows-security-experience--6131401---"></a>Uso de la directiva antivirus para administrar la configuración del antivirus de Microsoft Defender y la experiencia de Seguridad de Windows<!--6131401 -->
+En el nodo *Seguridad del punto de conexión*, podrá configurar las opciones del **antivirus**. Al configurar la directiva del antivirus, definirá la configuración de los dispositivos Windows 10 a través de dos tipos de perfil:
+
+- Antivirus de Microsoft Defender: administre la configuración de protección en la nube, exclusiones del antivirus, correcciones, opciones de análisis, etc.
+- Experiencia de Seguridad de Windows: administre el modo en que los usuarios experimentan la configuración de Seguridad de Windows en sus dispositivos. Podrá configurar lo que pueden ver los usuarios finales en el centro de seguridad de Microsoft Defender y las notificaciones que reciben. 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>Notificaciones
