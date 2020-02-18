@@ -1,7 +1,7 @@
 ---
 title: Uso de los documentos de Intune
 titleSuffix: Microsoft Intune
-description: Obtenga información sobre cómo buscar en documentos de Intune, proporcionar comentarios sobre documentos y contribuir a los documentos.
+description: Aprenda a buscar en documentos de Intune, proporcionar comentarios sobre documentos y colaborar en la documentación.
 ms.date: 09/15/2019
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -11,20 +11,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 607e1136fd3ab5661a2b054410d6fc7fce94994d
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504808"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155350"
 ---
 # <a name="using-the-intune-docs"></a>Uso de los documentos de Intune
 
-En este artículo se proporciona información para ayudarle a buscar información en los Microsoft Intune documentos, proporcionar comentarios sobre los documentos de Intune y muestra cómo puede contribuir rápida y fácilmente a los documentos.
+En este artículo se ofrece información para ayudarle a buscar información en los documentos de Microsoft Intune, proporcionar comentarios sobre los documentos de Intune y mostrar cómo puede colaborar rápida y fácilmente en la documentación.
 
-Para obtener ayuda y soporte técnico general de Intune, consulte [obtener soporte técnico para Intune](../get-support.md).
+Para obtener ayuda y soporte técnico general para Intune, consulte [Obtención de soporte técnico para Intune](../get-support.md).
 
-## <a name="search-the-docs"></a>Buscar en los documentos
+## <a name="search-the-docs"></a>Búsqueda en los documentos
 
  Usa los consejos de búsqueda siguientes para tratar de encontrar la información que necesitas:  
 
@@ -46,27 +46,27 @@ Para obtener ayuda y soporte técnico general de Intune, consulte [obtener sopor
 
 - ¿Tiene problemas para encontrar algo? [Rellene los comentarios](#provide-doc-feedback) Al rellenar el problema, indique el motor de búsqueda que está usando, las palabras clave que ha intentado y el artículo de destino. Estos comentarios ayudan a Microsoft a optimizar el contenido para que la búsqueda sea mejor.  
 
-## <a name="provide-doc-feedback"></a>Proporcionar comentarios del documento
+## <a name="provide-doc-feedback"></a>Realización de comentarios sobre documentos
 
-La sección Comentarios está en la parte inferior de cada artículo. Haga clic en el vínculo **comentarios** en la parte superior derecha de cualquier artículo para ir a esta sección. Los comentarios se integran con problemas de GitHub. Para más información sobre la integración con los problemas de GitHub, consulte la [entrada de blog de la plataforma de documentos](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+La sección Comentarios se encuentra en la parte inferior de cada artículo. Haga clic en el vínculo **Comentarios** en la parte superior derecha de cualquier artículo para ir a esta sección. Los comentarios se integran con Problemas de GitHub. Para más información sobre la integración con los problemas de GitHub, consulte la [entrada de blog de la plataforma de documentos](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-Para compartir comentarios sobre el servicio de Intune (no documentos), haga clic en **comentarios del producto**.
+Para compartir comentarios sobre el servicio de Intune (no documentos), haga clic en **Comentarios sobre el producto**.
 
 Una [cuenta de GitHub](https://github.com/join) es un requisito previo para proporcionar comentarios sobre la documentación. Una vez que inicie sesión, hay una autorización de una sola vez para MicrosoftDocs. Luego, al hacer clic en **Comentarios del contenido**, escriba un título y un comentario y seleccione **Enviar comentarios**. Esta acción registra un nuevo problema para el artículo de destino en el [repositorio de GitHub para Intune](https://github.com/MicrosoftDocs/intunedocs/issues).
 
-También verá los problemas abiertos o cerrados existentes en el artículo de destino. Si hubiera alguno, revíselo antes de enviar un nuevo problema. Si encuentra un problema relacionado, haga clic en el icono de cara para agregar una reacción o expándalo para agregar un comentario.
+También verá las incidencias abiertas o cerradas que hay en el artículo de destino. Si hubiera alguno, revíselo antes de enviar un nuevo problema. Si encuentra un problema relacionado, haga clic en el icono de cara para agregar una reacción o expándalo para agregar un comentario.
 
 ### <a name="types-of-feedback"></a>Tipos de comentarios
 
 Use Problemas de GitHub para enviar los siguientes tipos de comentarios:
 
-- Error de documento: el contenido está obsoleto, poco claro, confuso o interrumpido.
+- Error de documento: el contenido está obsoleto, es poco claro, confuso o se ha interrumpido.
 - Mejora de documento: una sugerencia para mejorar el artículo.
 - Pregunta de documento: necesita ayuda para encontrar documentación existente.
-- Idea de documento: una sugerencia de nuevo artículo. Use este método en lugar de UserVoice para los comentarios sobre la documentación.
+- Idea de documento: una sugerencia para un artículo nuevo. Use este método en lugar de UserVoice para los comentarios sobre la documentación.
 - Enhorabuena: comentarios positivos sobre un artículo útil o informativo.
 - Localización: comentarios sobre la traducción del contenido.
-- Optimización del motor de búsqueda (SEO): comentarios sobre problemas a la hora de buscar contenido. Incluya el motor de búsqueda, las palabras clave y el artículo de destino en los comentarios.
+- Optimización del motor de búsqueda (SEO): comentarios sobre problemas de búsqueda de contenido. Incluya el motor de búsqueda, las palabras clave y el artículo de destino en los comentarios.
 
 Si los problemas son sobre temas no relacionados con la documentación, como [comentarios sobre el producto](https://microsoftintune.uservoice.com/forums/291681-ideas), [preguntas sobre el producto](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod) o [solicitudes de soporte técnico](../get-support.md), estos problemas se cierran y se redirige al usuario al canal de comentarios correcto.
 
@@ -82,13 +82,13 @@ Los documentos de Intune, como la mayoría del contenido de docs.microsoft.com, 
 
 2. Para editar el archivo de origen, haga clic en el icono de lápiz.  
 
-3. Realice cambios en el origen Markdown. Para obtener más información, vea [How to use Markdown for writing Docs](https://docs.microsoft.com/contribute/how-to-write-use-markdown) (Cómo usar Markdown para escribir documentos).  
+3. Realice cambios en el origen Markdown. Para obtener más información, vea [How to use Markdown for writing Docs](https://docs.microsoft.com/contribute/contribute-how-to-write-use-markdown) (Cómo usar Markdown para escribir documentos).  
 
 4. En la sección Propose file change (Proponer cambio de archivo), escriba el comentario de confirmación público que describe *qué* ha modificado. Luego haga clic en **Propose file change** (Proponer cambio de archivo).  
 
 5. Desplácese hacia abajo y compruebe los cambios realizados. Haga clic en **Crear solicitud de incorporación de cambios** para abrir el formulario. Describa *por qué* ha realizado este cambio. Haga clic en **Crear solicitud de incorporación de cambios**.
 
-El equipo de escritura recibirá la solicitud de incorporación de cambios, asignará el elemento al escritor adecuado, revisará el texto y realizará un paso de edición rápida en él, y aprobará y combinará los cambios o se pondrá en contacto con usted para obtener más información acerca de la actualización.  
+El equipo de redacción recibirá la solicitud de incorporación de cambios, asignará el elemento al escritor adecuado, revisará el texto y realizará un paso de edición rápida en él, y aprobará y combinará los cambios o se pondrá en contacto con usted para obtener más información sobre la actualización.  
 
 ### <a name="what-to-contribute"></a>Cómo contribuir
 
@@ -105,7 +105,7 @@ Si está interesado en contribuir pero no sabe por dónde empezar, vea las sigui
 
 ### <a name="tips"></a>Sugerencias
 
-Siga estas directrices generales al contribuir a documentos de Intune:
+Siga estas directrices generales al colaborar en documentos de Intune:
 
 - No nos sorprenda con grandes solicitudes de incorporación de cambios. En su lugar, [notifique un problema](#provide-doc-feedback) e inicie una discusión. Así podremos acordar un rumbo antes de invertir una gran cantidad de tiempo.  
 

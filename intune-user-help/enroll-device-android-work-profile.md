@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: ced722fd671826e828b4dd79956a7dad1010bd84
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 003141402c1d068775caee6ca4405efc5ca7552f
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75856758"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124867"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Inscribir dispositivos con perfil profesional Android
 
@@ -40,47 +40,44 @@ Puede encontrar más información sobre [¿Qué ocurre cuando se crea un perfil 
 
 2. En la pantalla **Configuración de acceso a la empresa**, pulse **COMENZAR**.  
 
-    ![Captura de pantalla de la pantalla de configuración de acceso a la compañía](./media/access-setup-work-profile-1911.png)  
+    ![Captura de pantalla de la pantalla de configuración de acceso a la empresa](./media/access-setup-work-profile-1911.png)  
 
 3. Revise lo que su organización puede y no puede ver. Después, pulse **CONTINUAR**. 
 
-    ![Imagen de ejemplo de Portal de empresa, le interesa la pantalla de privacidad, resaltando el botón continuar.](./media/android-privacy-screen-1911.png)  
-4. Revise lo que puede esperar en los próximos pasos. A continuación, puntee en **siguiente**.  
+    ![Imagen de ejemplo de Portal de empresa, pantalla Nos preocupamos por su privacidad, con el botón Continuar resaltado.](./media/android-privacy-screen-1911.png)  
 
-    ![Imagen de ejemplo de Portal de empresa, la siguiente pantalla, resaltando el botón siguiente.](./media/android-wp-04-1908.png)  
-
-5. Revise las condiciones de Google para crear un perfil de trabajo. Luego pulse **ACEPTAR Y CONTINUAR**. La apariencia de esta pantalla variará en función de la versión de Android del dispositivo. 
+4. Revise los términos de Google para crear un perfil de trabajo. Luego pulse **ACEPTAR Y CONTINUAR**. La apariencia de esta pantalla variará en función de la versión de Android del dispositivo. 
 
     ![Captura de pantalla de los términos del perfil de trabajo de Google](./media/android-wp-05-1908.png)  
 
-6. Espere mientras se configura el perfil de trabajo.  
+5. Espere mientras se configura el perfil de trabajo.  
 
-    ![Captura de pantalla de la pantalla "configurando Perfil de trabajo".](./media/android-wp-05a-1908.png)  
+    ![Captura de pantalla de la pantalla de configuración del perfil de trabajo.](./media/android-wp-05a-1908.png)  
 
-   En función de la versión de Android, es posible que vea una pantalla adicional. Indicará que está a la mitad del programa de instalación. Si ve esta pantalla, espere unos instantes hasta que se le redirija e inicie sesión en la aplicación Portal de empresa.  
+   En función de la versión de Android, es posible que vea una pantalla adicional. Indicará que se encuentra a mitad de camino del programa de instalación. Si ve esta pantalla, espere unos instantes hasta que se le redirija e inicie sesión en la aplicación Portal de empresa.  
 
-    ![Captura de pantalla de la pantalla "está en la mitad de la página" con el mensaje de redirección.](./media/android-wp-05b-1908.png)  
+    ![Captura de pantalla de la pantalla "¡Está a medio camino!" con el mensaje de redirección.](./media/android-wp-05b-1908.png)  
 
-7. En la pantalla **configuración de acceso a la empresa** , compruebe que se ha creado el perfil de trabajo. Después, pulse **CONTINUAR**.  
+6. En la pantalla **Configuración de acceso a la empresa**, compruebe que se ha creado el perfil de trabajo. Después, pulse **CONTINUAR**.  
 
-    ![Captura de pantalla de la configuración de acceso a la empresa que muestra el perfil de trabajo.](./media/work-profile-complete-1911.png)  
+    ![Captura de pantalla de Configuración de acceso a la empresa que muestra la creación del perfil de trabajo.](./media/work-profile-complete-1911.png)  
 
-8. Compruebe que el perfil de trabajo está activo. Después, pulse **CONTINUAR**. 
+7. Compruebe que el perfil de trabajo está activo. Después, pulse **CONTINUAR**. 
 
-    ![Captura de pantalla de la configuración de acceso a la empresa que muestra el perfil de trabajo está activo.](./media/work-profile-active-1911.png)  
+    ![Captura de pantalla de la configuración de acceso a la empresa que muestra que el perfil de trabajo está activo.](./media/work-profile-active-1911.png)  
 
-9. Su organización podría requerir que actualice la configuración del dispositivo. Puntee en **resolver** para ajustar una configuración. Cuando haya terminado de actualizar la configuración, pulse **continuar**.    
+8. Es posible que su organización requiera que actualice la configuración del dispositivo. Pulse **RESOLVER** para ajustar una configuración. Cuando haya terminado de actualizar la configuración, pulse **CONTINUAR**.    
 
-    ![Imagen de ejemplo de Portal de empresa, actualizar la pantalla de configuración del dispositivo, resaltando los botones resolver y continuar.](./media/resolve-settings-1911.png) 
+    ![Imagen de ejemplo de Portal de empresa, pantalla Actualizar configuración del dispositivo, con los botones Resolver y Continuar resaltados.](./media/resolve-settings-1911.png) 
 
 
-10. Una vez finalizada la instalación, pulse **listo**.  
+9. Una vez finalizada la instalación, pulse **LISTO**.  
 
-    ![Imagen de ejemplo de Portal de empresa, pantalla de configuración de acceso a la empresa, en la que se muestra el botón completado de la instalación y resaltado.](./media/work-profile-done-1911.png)  
+    ![Imagen de ejemplo de Portal de empresa, pantalla Configuración de acceso a la empresa, en la que se muestra la configuración completa y el botón Listo resaltado.](./media/work-profile-done-1911.png)  
 
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
-Ahora que el dispositivo está inscrito, puede instalar las aplicaciones escolares o de trabajo en el dispositivo. Vaya al almacén de Google Play administrado para buscar e instalar estas aplicaciones. 
+Ahora que el dispositivo está inscrito, puede instalar aplicaciones profesionales o educativas en el dispositivo. Vaya a Google Play Store administrado para buscar e instalar estas aplicaciones. 
 
 ¿Aún necesita ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
