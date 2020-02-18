@@ -10,7 +10,7 @@
       href: device-management-capabilities.md
     - name: Opciones de inscripción
       href: enrollment-options.md
-- name: Inicios rápidos
+- name: Guías de inicios rápidos
   items:
     - name: Configurar inscripción automática
       href: quickstart-setup-auto-enrollment.md
@@ -20,7 +20,7 @@
   items:
     - name: Uso de Autopilot para la inscripción de dispositivos Windows
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: Uso de DEP para inscribir dispositivos iOS
+    - name: Uso de DEP para inscribir dispositivos iOS/iPadOS
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Conceptos
   items:
@@ -40,7 +40,7 @@
       href: device-enrollment-manager-enroll.md
     - name: Asignar dispositivos a grupos
       href: device-group-mapping.md
-- name: Guías paso a paso
+- name: Guías de procedimientos
   items:
     - name: Configuración de la inscripción de Windows
       items:
@@ -84,12 +84,12 @@
         - name: Samsung Knox Mobile Enrollment
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: Configuración de la inscripción en iOS
+    - name: Configuración de la inscripción de iOS/iPadOS
       href: ios-enroll.md
       items:
         - name: Programa de inscripción de dispositivos
           href: device-enrollment-program-enroll-ios.md
-        - name: Configuración de la inscripción de usuarios de iOS e iPadOS
+        - name: Configuración de la inscripción de usuarios de iOS/iPadOS y iPadOS
           href: ios-user-enrollment.md
         - name: Opciones y acciones admitidas para la inscripción de usuarios
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: Solucionar problemas de inscripción de dispositivos
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: Solución de problemas de inscripción de dispositivos iOS
+        - name: Solución de problemas de inscripción de dispositivos iOS/iPadOS
           href: troubleshoot-ios-enrollment-errors.md
         - name: Solución de problemas de inscripción de dispositivos Windows
           href: troubleshoot-windows-enrollment-errors.md
