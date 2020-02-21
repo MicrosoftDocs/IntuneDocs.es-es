@@ -18,12 +18,12 @@
           href: in-development.md
         - name: Avisos importantes
           href: 'whats-new.md#notices'
-- name: Inicios rápidos
+- name: Guías de inicios rápidos
   items:
     - name: Probar Intune gratis
       href: free-trial-sign-up.md
       displayName: 'tenant; trial; get started, start; help'
-    - name: Crear un usuario
+    - name: Creación de un usuario
       href: quickstart-create-user.md
     - name: Crear un grupo
       href: quickstart-create-group.md
@@ -63,11 +63,11 @@
       href: manage-os-versions.md
     - name: Administración de Windows Holographic
       href: windows-holographic-for-business.md
-- name: Guías paso a paso
+- name: Guías de procedimientos
   items:
     - name: Planeamiento de la implementación
       items:
-        - name: Planning guide (Guía de planificación)
+        - name: Guía de planeamiento
           href: planning-guide.md
           items:
             - name: Determinación de metas y objetivos
@@ -102,7 +102,7 @@
                   href: migration-guide-configure-policies.md
                 - name: Configuración de las directivas de protección de aplicaciones
                   href: migration-guide-app-protection-policies.md
-                - name: Consideraciones sobre la migración
+                - name: Consideraciones de migración
                   href: migration-guide-considerations.md
             - name: Campaña de migración
               href: migration-guide-campaign.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Obtención de aplicaciones de Android
               href: end-user-apps-android.md
-            - name: Obtención de aplicaciones de iOS
+            - name: Obtención de aplicaciones de iOS/iPadOs
               href: end-user-apps-ios.md
             - name: Obtención de aplicaciones de Windows
               href: end-user-apps-windows.md
@@ -171,7 +171,7 @@
           href: mdm-authority-set.md
         - name: Administración de roles
           items:
-            - name: Control de acceso basado en roles
+            - name: Control de acceso basado en roles.
               href: role-based-access-control.md
             - name: Asignar un rol a un usuario
               href: assign-role.md
@@ -201,18 +201,18 @@
           href: tenant-status.md
         - name: Ayuda para los usuarios para solucionar problemas
           href: help-desk-operators.md
-        - name: Registros de auditoría para actividades de Intune
-          href: monitor-audit-logs.md
-        - name: Revisión de registros con Azure Monitor
-          href: review-logs-using-azure-monitor.md
         - name: Uso de los documentos de Intune
           href: use-docs.md
         - name: Obtención de soporte técnico
           href: get-support.md
-    - name: Reports
+    - name: Informes
       items:
         - name: Informes de Intune
           href: reports.md
+        - name: Registros de auditoría para actividades de Intune
+          href: monitor-audit-logs.md
+        - name: Revisión de registros con Azure Monitor
+          href: review-logs-using-azure-monitor.md
 - name: Referencia
   items:
     - name: Códigos de error y descripciones
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Grupos de Intune clásicos
           href: groups-get-started.md
-        - name: Configuración de iOS para el entorno educativo
+        - name: Configuración de iOS/iPadOS para el entorno educativo
           items:
             - name: iPad
               href: education-settings-configure-ios.md
