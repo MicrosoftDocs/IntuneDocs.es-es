@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4301afca471d0aa56fa1a0826ad7f88bcdf23de2
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755568"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414865"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos
 
@@ -41,7 +41,7 @@ Puede usar directivas de configuración de aplicaciones con aplicaciones adminis
 5. Haga clic en **Siguiente** para abrir la página **Configuración**.
 6. En cada opción de configuración que la aplicación admita, escriba el **Nombre** y **Valor**. 
 
-   Las aplicaciones habilitadas para Intune App SDK admiten configuraciones en pares de clave y valor. Para obtener más información sobre qué configuraciones de clave y valor se admiten, consulte la documentación de cada aplicación. Tenga en cuenta que puede usar tokens que se rellenarán de forma dinámica con datos generados por la aplicación. Para más información, consulte [Valores de configuración para usar tokens](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens). Para obtener información sobre los ajustes de directivas de Outlook para la configuración de aplicaciones iOS, vea [Manage Outlook for iOS app configuration with Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx) (Administración de Outlook para la configuración de aplicaciones iOS con Microsoft Intune).
+   Las aplicaciones habilitadas para Intune App SDK admiten configuraciones en pares de clave y valor. Para obtener más información sobre qué configuraciones de clave y valor se admiten, consulte la documentación de cada aplicación. Tenga en cuenta que puede usar tokens que se rellenarán de forma dinámica con datos generados por la aplicación. Para más información, consulte [Valores de configuración para usar tokens](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens). Para obtener información sobre los ajustes de las directivas de Outlook para la configuración de aplicaciones iOS/iPadOS, vea [Administración de Outlook para la configuración de aplicaciones iOS/iPadOS con Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
 
     Para eliminar una configuración, elija los puntos suspensivos ( **...** ) y seleccione **Eliminar**.  
 

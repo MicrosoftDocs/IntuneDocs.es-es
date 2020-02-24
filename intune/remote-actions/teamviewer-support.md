@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 812b2e40c32b1442e632739c3964eb57027e6d9e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907209"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413727"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Uso de TeamViewer para administrar dispositivos de Intune de forma remota
 
@@ -29,7 +29,7 @@ Los dispositivos administrados por Intune pueden administrarse de forma remota c
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Use un dispositivo compatible. Los dispositivos Administrador de dispositivos Android, Perfil de trabajo Android, Windows, iOS y macOS administrados por Intune se pueden administrar de forma remota. Es posible que TeamViewer no sea compatible con Windows Holographic (HoloLens), Windows Team (Surface Hub) o Windows 10 S. Si tiene dudas sobre la compatibilidad, consulte [TeamViewer](https://www.teamviewer.com) para ver las actualizaciones.
+- Use un dispositivo compatible. Los dispositivos con Administrador de dispositivos Android, Perfil de trabajo Android, Windows, iOS/iPadOS y macOS administrados por Intune se pueden administrar de forma remota. Es posible que TeamViewer no sea compatible con Windows Holographic (HoloLens), Windows Team (Surface Hub) o Windows 10 S. Si tiene dudas sobre la compatibilidad, consulte [TeamViewer](https://www.teamviewer.com) para ver las actualizaciones.
 
 > [!NOTE]
 > Los dispositivos totalmente administrados y dedicados de Android no se admiten.
@@ -59,7 +59,7 @@ Una vez configurado el conector, estará listo para administrar un dispositivo d
 
 1. Vaya al [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
-3. En la lista, seleccione el dispositivo que quiere administrar de forma remota> **...** > **Nueva sesión de Asistencia remota**.
+3. En la lista, seleccione el dispositivo que quiere administrar de forma remota> **...**  > **Nueva sesión de Asistencia remota**.
 4. Cuando Intune se conecte al servicio TeamViewer, verá información sobre el dispositivo. Elija **Conectar** para iniciar la sesión remota.
 
 ![Ejemplo de uso de TeamViewer para administrar un dispositivo Android de forma remota](./media/teamviewer-support/android-teamviewer.png)

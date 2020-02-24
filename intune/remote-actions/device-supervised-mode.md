@@ -1,7 +1,7 @@
 ---
-title: Activación del modo supervisado de iOS con Microsoft Intune
+title: Activación del modo supervisado de iOS/iPadOS con Microsoft Intune
 titleSuffix: ''
-description: Obtenga más información sobre cómo activar el modo supervisado de iOS con Intune.
+description: Obtenga más información sobre cómo activar el modo supervisado de iOS/iPadOS con Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713433"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413659"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>Activación del modo supervisado de iOS
+# <a name="turn-on-iosipados-supervised-mode"></a>Activación del modo supervisado de iOS/iPadOS
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-El modo supervisado de Apple iOS ofrece a los administradores más opciones a la hora de administrar dispositivos Apple, lo que resulta útil para dispositivos corporativos implementados a escala. Por ejemplo, puede restringir AirDrop o evitar que los usuarios cambien el nombre del dispositivo. Para obtener una lista de opciones que requieren el modo supervisado, vea [Configuración de restricciones de dispositivos iOS de Microsoft Intune](../configuration/device-restrictions-ios.md).
+El modo supervisado de Apple iOS/iPadOS ofrece a los administradores más opciones a la hora de administrar dispositivos Apple, lo que resulta útil para dispositivos corporativos implementados a escala. Por ejemplo, puede restringir AirDrop o evitar que los usuarios cambien el nombre del dispositivo. Para obtener una lista de opciones que requieren el modo supervisado, vea [Configuración de restricciones de dispositivos iOS de Microsoft Intune](../configuration/device-restrictions-ios.md).
 
 Intune admite el modo supervisado como parte del [Programa de inscripción de dispositivos (DEP)](../enrollment/device-enrollment-program-enroll-ios.md) de Apple.
 
@@ -41,7 +41,7 @@ En el [Centro de administración del Administrador de puntos de conexión de Mic
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Activación del modo supervisado después de la inscripción
 
-Después de la inscripción, la única manera de activar el modo supervisado es conectar un dispositivo iOS a un equipo Mac y [usar Apple Configurator](../enrollment/apple-configurator-enroll-ios.md), lo que restablece el dispositivo. Tras la inscripción, no es posible configurar el modo supervisado para un dispositivo en Intune.
+Después de la inscripción, la única manera de activar el modo supervisado es conectar un dispositivo iOS/iPadOS a un equipo Mac y [usar Apple Configurator](../enrollment/apple-configurator-enroll-ios.md), lo que restablece el dispositivo. Tras la inscripción, no es posible configurar el modo supervisado para un dispositivo en Intune.
 
 ## <a name="identify-a-supervised-device"></a>Identificación de un dispositivo supervisado
 

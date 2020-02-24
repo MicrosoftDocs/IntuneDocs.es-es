@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712258"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413674"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Búsqueda del usuario primario de un dispositivo de Intune
 
@@ -67,8 +67,8 @@ Intune agrega automáticamente el usuario primario a los dispositivos durante la
 | Windows | Unión a Azure AD (modo de implementación automática de AutoPilot) | Ninguno | No disponible | 
 | Multiplataforma | Inscripción controlada por el usuario con la aplicación Portal de empresa | El usuario de la inscripción | Durante la inscripción |
 | Multiplataforma | Administrador de inscripción de dispositivos (DEM) | El usuario de DEM de la inscripción | Durante la inscripción |
-| iOS, macOS | Inscripción de dispositivos automatizada de Apple (DEP con afinidad entre usuario y dispositivo) | El usuario de la inscripción | Durante la inscripción |
-| iOS, macOS | Inscripción de dispositivos automatizada de Apple (DEP sin afinidad entre usuario y dispositivo) | Ninguno | No disponible |
+| iOS/iPadOS y macOS | Inscripción de dispositivos automatizada de Apple (DEP con afinidad entre usuario y dispositivo) | El usuario de la inscripción | Durante la inscripción |
+| iOS/iPadOS y macOS | Inscripción de dispositivos automatizada de Apple (DEP sin afinidad entre usuario y dispositivo) | Ninguno | No disponible |
 | Android | Dispositivos Android dedicados de propiedad corporativa | Ninguno | No disponible |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>Usuario primario y propietario del dispositivo de Azure AD

@@ -1,7 +1,7 @@
 ---
 title: Directivas de configuración de aplicaciones para Microsoft Intune
 titleSuffix: ''
-description: Obtenga información sobre cómo usar las directivas de configuración de aplicaciones en un dispositivo iOS o Android en Microsoft Intune.
+description: Obtenga información sobre cómo usar las directivas de configuración de aplicaciones en un dispositivo iOS/iPadOS o Android en Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812477"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414853"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
 Las directivas de configuración de aplicaciones pueden ayudar a eliminar problemas de configuración de aplicaciones, ya que permiten asignar opciones de configuración a una directiva que se asigna a los usuarios finales antes de que ejecuten la aplicación. La configuración se proporciona de forma automática al configurar la aplicación en el dispositivo de los usuarios finales, que no tendrán que realizar ninguna acción. Los valores de configuración son únicos para cada aplicación. 
 
-Puede crear y usar directivas de configuración de aplicaciones para proporcionar valores de configuración para aplicaciones iOS o Android. Estos valores de configuración permiten personalizar una aplicación mediante el uso de la configuración y administración de aplicaciones. Los valores de la directiva de configuración se usan cada vez que la aplicación los comprueba, que suele ser la primera vez que se ejecuta. 
+Puede crear y usar directivas de configuración de aplicaciones para proporcionar valores de configuración para aplicaciones iOS/iPadOS o Android. Estos valores de configuración permiten personalizar una aplicación mediante el uso de la configuración y administración de aplicaciones. Los valores de la directiva de configuración se usan cada vez que la aplicación los comprueba, que suele ser la primera vez que se ejecuta. 
 
 Por ejemplo, para una aplicación podría ser necesario especificar uno de estos detalles:
 
@@ -71,7 +71,7 @@ La selección de **Aplicaciones administradas** como el **Tipo de inscripción d
 ![Tipo de inscripción del dispositivo](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> En el caso de las aplicaciones de varias identidades, como Microsoft Outlook, se pueden tener en cuenta las preferencias del usuario. La Bandeja de entrada Prioritarios, por ejemplo, respetará la configuración del usuario y no la cambiará. Otros parámetros permiten controlar si un usuario puede o no cambiar la configuración. Para más información, vea [Implementación de las opciones de configuración de la aplicación de Outlook para iOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+> En el caso de las aplicaciones de varias identidades, como Microsoft Outlook, se pueden tener en cuenta las preferencias del usuario. La Bandeja de entrada Prioritarios, por ejemplo, respetará la configuración del usuario y no la cambiará. Otros parámetros permiten controlar si un usuario puede o no cambiar la configuración. Para más información, vea [Implementación de las opciones de configuración de la aplicación de Outlook para iOS/iPadOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>Validación de la directiva de configuración de aplicaciones aplicada
 
@@ -93,7 +93,7 @@ Puede validar la directiva de configuración de aplicaciones mediante los tres m
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>Configuración de iOS en dispositivos no administrados
 
-Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos no administrados para la configuración de aplicaciones administradas. Además de los pasos siguientes, puede acceder a los registros de aplicaciones administradas con Microsoft Edge. Para obtener más información, consulte [Uso de Microsoft Edge en iOS para acceder a los registros de aplicaciones administradas](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
+Puede validar la configuración de iOS/iPadOS con el **registro de diagnóstico de Intune** en dispositivos no administrados para la configuración de aplicaciones administradas. Además de los pasos siguientes, puede acceder a los registros de aplicaciones administradas con Microsoft Edge. Para más información, vea [Uso de Microsoft Edge en iOS/iPadOS para acceder a los registros de aplicaciones administradas](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
 1. Si aún no está instalado en el dispositivo, descargue e instale **Microsoft Edge** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
 2. Inicie **Microsoft Edge** y seleccione **about** > **intunehelp** en la barra de navegación.
@@ -137,7 +137,7 @@ Los detalles de configuración de la aplicación deben coincidir con las directi
 
 ### <a name="ios-configuration-on-managed-devices"></a>Configuración de iOS en dispositivos administrados
 
-Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos administrados para la configuración de aplicaciones administradas.
+Puede validar la configuración de iOS/iPadOS con el **registro de diagnóstico de Intune** en dispositivos administrados para la configuración de aplicaciones administradas.
 
 1. Si aún no está instalado en el dispositivo, descargue e instale **Microsoft Edge** desde la App Store. Para obtener más información, consulte [Aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md).
 2. Inicie **Microsoft Edge** y seleccione **about** > **intunehelp** en la barra de navegación.
@@ -149,7 +149,7 @@ Puede validar la configuración de iOS con el **registro de diagnóstico de Intu
 
 ### <a name="android-configuration-on-managed-devices"></a>Configuración de Android en dispositivos administrados
 
-Puede validar la configuración de iOS con el **registro de diagnóstico de Intune** en dispositivos administrados para la configuración de aplicaciones administradas.
+Puede validar la configuración de iOS/iPadOS con el **registro de diagnóstico de Intune** en dispositivos administrados para la configuración de aplicaciones administradas.
 
 Para recopilar registros de un dispositivo Android, usted o el usuario final deben descargar los registros del dispositivo a través de una conexión USB (o el equivalente al **Explorador de archivos** del dispositivo). Estos son los pasos:
 
@@ -173,7 +173,7 @@ Cuando los registros muestran un parámetro de configuración que se confirma qu
 
 ### <a name="managed-devices"></a>Dispositivos administrados
 
-- Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos iOS.  Consulte [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
+- Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos iOS/iPadOS.  Vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS/iPadOS administrados](app-configuration-policies-use-ios.md).
 - Obtenga información sobre cómo usar la configuración de aplicaciones con los dispositivos Android.  Vea [Agregar directivas de configuración de aplicaciones para dispositivos Android administrados](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Aplicaciones administradas

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205265"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437977"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ El período de retención de los datos de protección de la aplicación es de 90
 - **Usuarios marcados**: número de usuarios que experimentan problemas con los dispositivos. Los dispositivos liberados (iOS y Android) se notifican en **Usuarios marcados**. Además, aquí se notifican los usuarios con dispositivos marcados por la comprobación de atestación de dispositivo Google SafetyNet (si el administrador de TI la activó). 
 - **Usuarios con aplicaciones potencialmente perjudiciales**: el número de usuarios que pueden tener una aplicación perjudicial en su dispositivo Android detectado por Google Play Protect. 
 - **Estado de usuario para iOS** y **Estado del usuario para Android**: número de usuarios que han usado una aplicación que tiene una directiva asignada a ellos en un contexto profesional en la plataforma relacionada. Esta información muestra el número de usuarios que administra la directiva, así como el número de usuarios que usan una aplicación que no es el destino de ninguna directiva en un contexto profesional. Considere la posibilidad de agregar estos usuarios a la directiva.
-- **Principales aplicaciones iOS protegidas** y **Principales aplicaciones Android protegidas**: según las aplicaciones iOS y Android más usadas, esta información muestra la cantidad de aplicaciones protegidas y no protegidas por plataforma.
-- **Principales aplicaciones iOS configuradas sin inscripción** y **Principales aplicaciones Android configuradas sin inscripción**: según las aplicaciones iOS y Android más usadas para dispositivos no inscritos, esta información muestra el número de aplicaciones configuradas por plataforma (es decir, con una directiva de configuración de aplicaciones).
+- **Principales aplicaciones iOS/iPadOS protegidas** y **Principales aplicaciones Android protegidas**: según las aplicaciones iOS/iPadOS y Android más usadas, esta información muestra la cantidad de aplicaciones protegidas y no protegidas por plataforma.
+- **Principales aplicaciones iOS/iPadOS configuradas sin inscripción** y **Principales aplicaciones Android configuradas sin inscripción**: según las aplicaciones iOS/iPadOS y Android más usadas para dispositivos no inscritos, esta información muestra el número de aplicaciones configuradas por plataforma (es decir, con una directiva de configuración de aplicaciones).
 
     > [!NOTE]
     > Si tiene varias directivas por plataforma, se considerará que un usuario está administrado por una directiva cuando tenga al menos una directiva asignada.
@@ -170,9 +170,9 @@ Siga estos pasos para generar el archivo .csv de App Protection o el archivo .cs
     ![Captura de pantalla del cuadro de diálogo de confirmación de Guardar informe](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune proporciona campos adicionales con información sobre el dispositivo, como el identificador de registro de aplicación, el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, se accede a estos campos seleccionando **Aplicaciones** > **Estado de protección de aplicaciones** > **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudan a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración **Versión de la revisión de seguridad mínima de Android**.   
+> Intune proporciona campos adicionales con información sobre el dispositivo, como el identificador de registro de aplicación, el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS/iPadOS. En Intune, se accede a estos campos seleccionando **Aplicaciones** > **Estado de protección de aplicaciones** > **Informe de protección de aplicaciones: iOS/iPadOS, Android**. Además, estos parámetros lo ayudan a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración **Versión de la revisión de seguridad mínima de Android**.   
  
 ## <a name="see-also"></a>Vea también
-- [Administrar la transferencia de datos entre aplicaciones iOS](data-transfer-between-apps-manage-ios.md)
+- [Administrar la transferencia de datos entre aplicaciones iOS/iPadOS](data-transfer-between-apps-manage-ios.md)
 - [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-- [What to expect when your iOS app is managed by app protection policies](../fundamentals/end-user-mam-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
+- [Qué esperar cuando la aplicación iOS/iPadOS se administra con directivas de protección de aplicaciones](../fundamentals/end-user-mam-apps-ios.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692102"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414589"
 ---
 # <a name="protecting-application-extensions"></a>Protección de las extensiones de aplicación
 
@@ -31,7 +31,7 @@ En este artículo se describen las directivas de protección de aplicaciones par
 
 ## <a name="add-ins-for-outlook-app"></a>Complementos para la aplicación Outlook
 
-Los complementos de Outlook permiten integrar aplicaciones populares con el cliente de correo electrónico. Los complementos para Outlook están disponibles en la Web, Windows, Mac y Outlook para Android e iOS. El SDK de APP para Intune y las directivas de protección de aplicaciones de Intune no incluyen compatibilidad con la administración de complementos de Outlook, pero existen otras maneras de limitar su uso. Dado que los complementos se administran mediante Microsoft Exchange, los usuarios podrán compartir datos y mensajes entre Outlook y aplicaciones de complementos sin administrar a no ser que en Exchange los complementos estén desactivado para el usuario.
+Los complementos de Outlook permiten integrar aplicaciones populares con el cliente de correo electrónico. Los complementos para Outlook están disponibles en la Web, Windows, Mac y Outlook para Android y iOS/iPadOS. El SDK de APP para Intune y las directivas de protección de aplicaciones de Intune no incluyen compatibilidad con la administración de complementos de Outlook, pero existen otras maneras de limitar su uso. Dado que los complementos se administran mediante Microsoft Exchange, los usuarios podrán compartir datos y mensajes entre Outlook y aplicaciones de complementos sin administrar a no ser que en Exchange los complementos estén desactivado para el usuario.
 
 Si quiere que los usuarios finales dejen de acceder a complementos de Outlook e instalarlos (esto afecta a todos los clientes de Outlook), asegúrese de que existen los siguientes cambios en los roles en el centro de administración de Exchange:
 

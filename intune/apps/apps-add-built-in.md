@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755381"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414443"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Incorporación de aplicaciones integradas a Microsoft Intune
 
-Las aplicaciones *integradas* facilitan la asignación de aplicaciones administradas y seleccionadas, como aplicaciones de Office 365, a dispositivos iOS y Android. Puede asignar aplicaciones concretas para este tipo de aplicación, como Excel, OneDrive, Outlook, Skype, etc. Después de agregar una aplicación, el tipo de aplicación se muestra como *Aplicación iOS integrada* o *Aplicación Android integrada*. Con el tipo de aplicación integrada, puede elegir cuál de estas aplicaciones quiere publicar para los usuarios del dispositivo.
+Las aplicaciones *integradas* facilitan la asignación de aplicaciones administradas y seleccionadas, como aplicaciones de Office 365, a dispositivos iOS/iPadOS y Android. Puede asignar aplicaciones concretas para este tipo de aplicación, como Excel, OneDrive, Outlook, Skype, etc. Después de agregar una aplicación, el tipo de aplicación se muestra como *Aplicación iOS integrada* o *Aplicación Android integrada*. Con el tipo de aplicación integrada, puede elegir cuál de estas aplicaciones quiere publicar para los usuarios del dispositivo.
 
 En versiones anteriores de la consola de Intune, Intune ofrecía varias aplicaciones de Office 365 administradas de forma predeterminada, como Outlook y OneDrive. Los tipos de aplicación para estas aplicaciones administradas se etiquetaban como *Aplicación de la tienda iOS administrada* o *Aplicación Android de la tienda administrada*. En lugar de usar estos tipos de aplicación, se recomienda que utilice el tipo de aplicación integrada. Mediante el uso del tipo de aplicación integrada, dispone de flexibilidad adicional para editar y eliminar aplicaciones de Office 365.
 

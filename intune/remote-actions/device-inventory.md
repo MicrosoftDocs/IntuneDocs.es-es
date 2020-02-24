@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754208"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413742"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -73,25 +73,25 @@ En función del operador que usen los dispositivos, puede que no se recopilen to
 |Nivel de revisión de seguridad|Nivel de revisión de seguridad del dispositivo.|Android|
 |Espacio de almacenamiento total|Espacio de almacenamiento total del dispositivo (en gigabytes).|Windows, iOS|
 |Espacio de almacenamiento libre|Espacio de almacenamiento sin usar en el dispositivo (en gigabytes).|Windows, iOS|
-|IMEI|Identidad de equipo móvil internacional del dispositivo.|Windows, iOS, Android|
-|MEID|Identificador de equipo móvil del dispositivo.|Windows, iOS, Android|
-|Fabricante|Fabricante del dispositivo.|Windows, iOS, Android|
-|Modelo|Modelo del dispositivo.|Windows, iOS, Android|
-|Número de teléfono|Número de teléfono asignado al perfil.|Windows, iOS, Android*|
-|Operador del suscriptor|Operador de red inalámbrica del dispositivo.|Windows, iOS, Android|
-|Tecnología de datos móviles|Sistema de radio usado en el dispositivo.|Windows, iOS, Android|
-|MAC Wi-Fi|Dirección de Media Access Control del dispositivo.|Windows, iOS, Android|
-|ICCID|Identificador de tarjeta de circuitos integrados, que es el número de identificación único de una tarjeta SIM.|Windows, iOS, Android|
-|Fecha de inscripción|Fecha y hora en que el dispositivo se inscribió en Intune.|Windows, iOS, Android|
-|Último contacto|Fecha y hora en que el dispositivo se conectó a Intune por última vez.|Windows, iOS, Android|
+|IMEI|Identidad de equipo móvil internacional del dispositivo.|Windows, iOS/iPadOS y Android|
+|MEID|Identificador de equipo móvil del dispositivo.|Windows, iOS/iPadOS y Android|
+|Fabricante|Fabricante del dispositivo.|Windows, iOS/iPadOS y Android|
+|Modelo|Modelo del dispositivo.|Windows, iOS/iPadOS y Android|
+|Número de teléfono|Número de teléfono asignado al perfil.|Windows, iOS/iPadOS y Android*|
+|Operador del suscriptor|Operador de red inalámbrica del dispositivo.|Windows, iOS/iPadOS y Android|
+|Tecnología de datos móviles|Sistema de radio usado en el dispositivo.|Windows, iOS/iPadOS y Android|
+|MAC Wi-Fi|Dirección de Media Access Control del dispositivo.|Windows, iOS/iPadOS y Android|
+|ICCID|Identificador de tarjeta de circuitos integrados, que es el número de identificación único de una tarjeta SIM.|Windows, iOS/iPadOS y Android|
+|Fecha de inscripción|Fecha y hora en que el dispositivo se inscribió en Intune.|Windows, iOS/iPadOS y Android|
+|Último contacto|Fecha y hora en que el dispositivo se conectó a Intune por última vez.|Windows, iOS/iPadOS y Android|
 |Código de omisión del bloqueo de activación|Código que se puede usar para deshabilitar el bloqueo de activación.|iOS|
-|Registrado en Azure AD|Si se establece en **Sí**, el dispositivo se registra en Azure Directory.|Windows, iOS, Android|
-|Registrado en Intune|Si se establece en **Sí**, el dispositivo se registra en Intune.|Windows, iOS, Android|
-|Cumplimiento|Estado de cumplimiento del dispositivo.|Windows, iOS, Android|
-|EAS activada|Si se establece en **Sí**, el dispositivo se sincroniza con un buzón de Exchange.|Windows, iOS, Android|
-|Id. de activación de EAS|Identificador de Exchange ActiveSync del dispositivo.|Windows, iOS, Android|
-|Supervisado|Si se establece en **Sí**, los administradores han mejorado el control sobre el dispositivo.|Windows, iOS, Android|
-|Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|Windows, iOS, Android|
+|Registrado en Azure AD|Si se establece en **Sí**, el dispositivo se registra en Azure Directory.|Windows, iOS/iPadOS y Android|
+|Registrado en Intune|Si se establece en **Sí**, el dispositivo se registra en Intune.|Windows, iOS/iPadOS y Android|
+|Cumplimiento|Estado de cumplimiento del dispositivo.|Windows, iOS/iPadOS y Android|
+|EAS activada|Si se establece en **Sí**, el dispositivo se sincroniza con un buzón de Exchange.|Windows, iOS/iPadOS y Android|
+|Id. de activación de EAS|Identificador de Exchange ActiveSync del dispositivo.|Windows, iOS/iPadOS y Android|
+|Supervisado|Si se establece en **Sí**, los administradores han mejorado el control sobre el dispositivo.|Windows, iOS/iPadOS y Android|
+|Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|Windows, iOS/iPadOS y Android|
 
 > [!Note]  
 > El número de teléfono no está inventariado en dispositivos Android Enterprise dedicados o totalmente administrados.

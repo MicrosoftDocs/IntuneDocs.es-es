@@ -1,7 +1,7 @@
 ---
-title: Inscripción en el programa de Apple School Manager para dispositivos iOS
+title: Inscripción en el programa de Apple School Manager para dispositivos iOS/iPadOS
 titleSuffix: Microsoft Intune
-description: Obtenga información sobre cómo configurar la inscripción en el programa de Apple School Manager para dispositivos iOS corporativos con Intune.
+description: Obtenga información sobre cómo configurar la inscripción en el programa de Apple School Manager para dispositivos iOS/iPadOS corporativos con Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 3336ed09c414538e2879a7c50d1e3a0111f58b11
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691821"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415378"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configuración de la inscripción de dispositivos iOS con Apple School Manager
+# <a name="set-up-iosipados-device-enrollment-with-apple-school-manager"></a>Configuración de la inscripción de dispositivos iOS/iPadOS con Apple School Manager
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Puede configurar Intune para inscribir los dispositivos iOS adquiridos mediante el programa de [Apple School Manager](https://school.apple.com/). Al usar Intune con Apple School Manager, puede inscribir un gran número de dispositivos iOS sin tener que tocarlos. Cuando un estudiante o profesor activa el dispositivo, se ejecuta el Asistente para la configuración con valores preconfigurados y el dispositivo se inscribe en la administración.
+Puede configurar Intune para inscribir los dispositivos iOS/iPadOS adquiridos mediante el programa de [Apple School Manager](https://school.apple.com/). Al usar Intune con Apple School Manager, puede inscribir un gran número de dispositivos iOS/iPadOS sin tener que tocarlos. Cuando un estudiante o profesor activa el dispositivo, se ejecuta el Asistente para la configuración con valores preconfigurados y el dispositivo se inscribe en la administración.
 
 Para habilitar la inscripción de Apple School Manager, se usan los portales de Intune y de Apple School Manager. Se necesita una lista de números de serie o un número de pedido de compra, de manera que pueda asignar dispositivos a Intune para la administración. Puede crear perfiles de inscripción de DEP que contengan opciones que se apliquen a los dispositivos durante la inscripción.
 
@@ -39,12 +39,12 @@ La inscripción de Apple School Manager no se puede usar con el [Programa de ins
 - [Certificado push de administración de dispositivos móviles (MDM) de Apple](apple-mdm-push-certificate-get.md)
 - [Entidad de MDM](../fundamentals/mdm-authority-set.md)
 - [Certificado push MDM de Apple](apple-mdm-push-certificate-get.md)
-- Si se usa ADFS, la afinidad de usuario debe ser [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+- Si se usa ADFS, la afinidad de usuario debe ser [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Obtenga más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Los dispositivos tienen que haberse adquirido a través del programa de [Apple School Management](http://school.apple.com)
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Obtener un token de Apple y asignar los dispositivos
 
-Antes de poder inscribir dispositivos iOS corporativos en Apple School Manager, necesita un archivo de token (.p7m) de Apple. Este token permite a Intune sincronizar información sobre dispositivos que participan en Apple School Manager. También permite a Intune realizar cargas de perfiles de inscripción a Apple y asignar dispositivos a esos perfiles. En Azure Portal, también puede asignar números de serie a los dispositivos para su administración.
+Antes de poder inscribir dispositivos iOS/iPadOS corporativos en Apple School Manager, necesita un archivo de token (.p7m) de Apple. Este token permite a Intune sincronizar información sobre dispositivos que participan en Apple School Manager. También permite a Intune realizar cargas de perfiles de inscripción a Apple y asignar dispositivos a esos perfiles. En Azure Portal, también puede asignar números de serie a los dispositivos para su administración.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>Paso 1. Descargue el certificado de clave pública de Intune necesario para crear un token de Apple
 
@@ -69,14 +69,14 @@ Antes de poder inscribir dispositivos iOS corporativos en Apple School Manager, 
 8. Especifique cómo **Elegir dispositivos**, después proporcione información de los dispositivos y detalles.
 9. Elija **Assign to Server** (Asignar al servidor), elija el &lt;NombreDeServidor&gt; especificado para Microsoft Intune y después elija **Aceptar**.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3: Guarde el identificador de Apple usado para crear este token
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3. Guarde el identificador de Apple usado para crear este token
 
 En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), proporcione el identificador de Apple como referencia futura.
 
 ![Captura de pantalla sobre cómo especificar el identificador de Apple que se ha usado para crear y buscar el token del Programa de inscripción.](./media/apple-school-manager-set-up-ios/image03.png)
 
 ### <a name="step-4-upload-your-token"></a>Paso 4. Cargue el token
-En el cuadro **Token de Apple**, vaya al archivo de certificado (.pem), seleccione **Abrir** y después **Crear**. Con el certificado push, Intune puede inscribir y administrar dispositivos iOS insertando la directiva en los dispositivos móviles inscritos. Intune sincroniza automáticamente los dispositivos de Apple School Manager desde Apple.
+En el cuadro **Token de Apple**, vaya al archivo de certificado (.pem), seleccione **Abrir** y después **Crear**. Con el certificado push, Intune puede inscribir y administrar dispositivos iOS/iPadOS mediante la inserción de la directiva en los dispositivos móviles inscritos. Intune sincroniza automáticamente los dispositivos de Apple School Manager desde Apple.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Creación de un perfil de inscripción de Apple
 Ahora que ha instalado el token, puede crear un perfil de inscripción para dispositivos de Apple School. Un perfil de inscripción de dispositivos define la configuración que se aplica a un grupo de dispositivos durante la inscripción.
@@ -89,7 +89,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     ![Nombre y descripción del perfil.](./media/apple-school-manager-set-up-ios/image05.png)
 
 4. En **Afinidad de usuario**, elija si los dispositivos con este perfil deben inscribirse con o sin un usuario asignado.
-    - **Inscribir con afinidad de usuario**: seleccione esta opción para dispositivos que pertenezcan a usuarios y necesiten usar el portal de empresa para hacer uso de servicios, como instalar aplicaciones. Esta opción también permite a los usuarios autenticar sus dispositivos mediante el portal de empresa. Si se usa ADFS, la afinidad de usuario debe ser [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   El modo iPad compartido de Apple School Manager requiere la inscripción del usuario sin afinidad de usuario.
+    - **Inscribir con afinidad de usuario**: seleccione esta opción para dispositivos que pertenezcan a usuarios y necesiten usar el portal de empresa para hacer uso de servicios, como instalar aplicaciones. Esta opción también permite a los usuarios autenticar sus dispositivos mediante el portal de empresa. Si se usa ADFS, la afinidad de usuario debe ser [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Obtenga más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   El modo iPad compartido de Apple School Manager requiere la inscripción del usuario sin afinidad de usuario.
 
     - **Inscribir sin afinidad de usuario**: seleccione esta opción para dispositivos no afiliados con un usuario único, como un dispositivo compartido. Use esta opción para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones como la aplicación de portal de empresa no funcionan.
 
@@ -106,7 +106,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     > Estas operaciones no se admiten durante la autenticación con el asistente para configuración de Apple.
 
 6. Elija **Configuración de administración de dispositivos** y seleccione si quiere o no que se supervisen los dispositivos con este perfil.
-    Los dispositivos **supervisados** ofrecen más opciones de administración y, en este caso, el bloqueo de activación está deshabilitado de forma predeterminada. Microsoft recomienda usar el DEP como mecanismo para habilitar el modo de supervisión, sobre todo para las organizaciones que implementan un gran número de dispositivos iOS.
+    Los dispositivos **supervisados** ofrecen más opciones de administración y, en este caso, el bloqueo de activación está deshabilitado de forma predeterminada. Microsoft recomienda usar el Programa de inscripción de dispositivos como mecanismo para habilitar el modo supervisado, sobre todo para las organizaciones que implementan un gran número de dispositivos iOS/iPadOS.
 
     Los usuarios reciben notificaciones de que sus dispositivos están supervisados de dos maneras:
 
@@ -114,9 +114,9 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
    - En la pantalla **Configuración** > **General** > **Acerca de** aparece: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device" (Este iPhone está supervisado. Contoso puede supervisar el tráfico de Internet y localizar este dispositivo)
 
      > [!NOTE]
-     > Un dispositivo inscrito sin supervisión solo puede restablecerse a supervisado con Apple Configurator. Para restablecer el dispositivo de esta forma, es necesario conectar un dispositivo iOS a un Mac con un cable USB. Obtenga más información en los documentos de [Apple Configurator](http://help.apple.com/configurator/mac/2.3).
+     > Un dispositivo inscrito sin supervisión solo puede restablecerse a supervisado con Apple Configurator. Para restablecer el dispositivo de esta forma, es necesario conectar un dispositivo iOS/iPadOS a un Mac con un cable USB. Obtenga más información en los documentos de [Apple Configurator](http://help.apple.com/configurator/mac/2.3).
 
-7. Elija si desea que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de iOS que permite que el perfil de administración se quite del menú **Configuración**. Tras la inscripción del dispositivo, no se puede cambiar esta configuración sin borrar dicho dispositivo. Estos dispositivos deben tener el modo de administración **supervisado** definido en *Sí*. 
+7. Elija si desea que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de iOS/iPadOS que permite que el perfil de administración se quite del menú **Configuración**. Tras la inscripción del dispositivo, no se puede cambiar esta configuración sin borrar dicho dispositivo. Estos dispositivos deben tener el modo de administración **supervisado** definido en *Sí*. 
 
 8. Puede permitir que varios usuarios inicien sesión en dispositivos iPad inscritos mediante el uso de un identificador de Apple administrado. Para ello, elija **Sí** en **iPad compartido** (esta opción requiere **Inscribir sin afinidad de usuario** y que el modo **Supervisado** se establezca en **Sí**). Los identificadores de Apple administrados se crean en el portal de Apple School Manager. Obtenga más información sobre [Shared iPad](../fundamentals/education-settings-configure-ios-shared.md) y los [requisitos de Shared iPad de Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
@@ -135,7 +135,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Nombre de departamento</strong>     |                                                             Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación.                                                              |
     |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación.                                                          |
-    | <strong>Opciones del Asistente para la configuración</strong> |                                                     Estas opciones opcionales se pueden configurar más adelante en el menú <strong>Configuración</strong> de iOS.                                                      |
+    | <strong>Opciones del Asistente para la configuración</strong> |                                                     Estas opciones opcionales se pueden configurar más adelante en el menú <strong>Configuración</strong> de iOS/iPadOS.                                                      |
     |        <strong>Código de acceso</strong>         | Solicita el código de acceso durante la activación. Solicite siempre un código de acceso para dispositivos no protegidos a menos que el acceso esté controlado de otra manera (como el modo de quiosco que restringe el dispositivo a una aplicación). |
     |    <strong>Servicios de ubicación</strong>    |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                  |
     |         <strong>Restaurar</strong>         |                                                                Si está habilitado, el Asistente para la configuración solicitará una copia de seguridad de iCloud durante la activación.                                                                 |
@@ -184,4 +184,4 @@ Los dispositivos de Apple School Manager administrados por Intune deben tener un
 
 ## <a name="distribute-devices-to-users"></a>Distribuir los dispositivos a los usuarios
 
-Ha habilitado la administración y sincronización entre Apple e Intune, y ha asignado un perfil para permitir que sus dispositivos de Apple School se inscriban. Ahora puede distribuir los dispositivos a los usuarios. Cuando se activa un dispositivo iOS en Apple School Manager, se inscribe para que Intune lo administre. Los perfiles no se pueden aplicar a los dispositivos activados actualmente en uso hasta que se borre el dispositivo.
+Ha habilitado la administración y sincronización entre Apple e Intune, y ha asignado un perfil para permitir que sus dispositivos de Apple School se inscriban. Ahora puede distribuir los dispositivos a los usuarios. Cuando se activa un dispositivo iOS/iPadOS en Apple School Manager, se inscribe para que Intune lo administre. Los perfiles no se pueden aplicar a los dispositivos activados actualmente en uso hasta que se borre el dispositivo.

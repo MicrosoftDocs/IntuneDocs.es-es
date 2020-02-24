@@ -7,14 +7,25 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415074"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529349"
 ---
 Estos avisos proporcionan información importante que puede ayudarle a prepararse para las características y los cambios futuros de Intune.
+
+### <a name="microsoft-intune-support-for-windows-10-mobile-ending--3544938--"></a>Fin del soporte técnico de Microsoft Intune para Windows 10 Mobile<!--3544938-->
+El soporte técnico estándar de Microsoft para Windows 10 Mobile finalizó en diciembre de 2019. Como se ha mencionado en esta declaración de soporte técnico, los usuarios de Windows 10 Mobile dejarán de recibir de Microsoft nuevas actualizaciones de seguridad, revisiones no relacionadas con la seguridad, opciones gratuitas de soporte técnico asistido o actualizaciones de contenido técnico en línea. En lo referente a todo el soporte técnico del sistema operativo Mobile, el 11 de mayor de 2020 Microsoft Intune finalizará el soporte técnico del Portal de empresa de la aplicación de Windows 10 Mobile y del sistema operativo Windows 10 Mobile.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Si tiene dispositivos Windows 10 Mobile implementados en su organización, desde ahora y el 11 de mayo de 2020 puede inscribir nuevos dispositivos, agregar o quitar directivas y aplicaciones o actualizar cualquier configuración de administración. Sin embargo, a partir del 11 de mayo, se detendrán las nuevas inscripciones y, finalmente, se eliminará la administración de Windows 10 Mobile de la interfaz de usuario de Intune. Los dispositivos ya no se registrarán en el servicio de Intune y se eliminarán los datos de directivas y dispositivos.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
+Puede comprobar los informes de Intune para ver qué dispositivos o usuarios pueden verse afectados. Vaya a **Dispositivos** > **Todos los dispositivos** y filtre por sistema operativo. Puede agregar columnas adicionales para ayudar a identificar qué usuarios de su organización tienen dispositivos que ejecutan Windows 10 Mobile. Solicite a los usuarios finales que actualicen sus dispositivos o que dejen de usar los dispositivos para el acceso corporativo.
+
+
 
 ### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>Plan de cambio: Cambio de la experiencia al inscribir dispositivos dedicados de Android Enterprise en Intune<!--6114580-->
 Comunicamos que en la versión de noviembre agregábamos compatibilidad con la implementación de certificados de SCEP en dispositivos dedicados de Android Enterprise para permitir el acceso basado en certificados a los perfiles de Wi-Fi. Este cambio implicaba algunos cambios de flujo de inscripción secundarios para dispositivos dedicados de Android Enterprise. Con la próxima actualización del servicio de marzo o 2003, hay algunos cambios más que nos gustaría que conocieran.
@@ -44,16 +55,6 @@ Informe a los usuarios finales y el departamento de soporte técnico sobre este 
 
 #### <a name="additional-information"></a>Información adicional
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
-
-
-### <a name="end-support-for-windows-phone-81--3544909--"></a>Final del soporte técnico para Windows Phone 8.1<!--3544909-->
-El soporte estándar de Microsoft para Windows Phone 8.1 finalizó en julio de 2017, y el soporte ampliado finalizó en junio de 2019. La aplicación Portal de empresa para Windows Phone 8.1 está en modo de mantenimiento desde octubre de 2017. Microsoft Intune pondrá ahora fin al soporte técnico el 20 de febrero de 2020 para Windows Phone 8.1.
-
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-Después del 20 de febrero de 2020 estos dispositivos no recibirán ninguna actualización de seguridad y no podrá inscribir ningún dispositivo nuevo. Los dispositivos con Windows Phone 8.1 existentes permanecerán inscritos (directiva, aplicaciones e informes), pero tenga en cuenta que, después de esa fecha, no se podrán solucionar problemas de inscripciones existentes, ya que muchos componentes, como los certificados de terceros, ya no son compatibles con la plataforma. Intune detendrá las pruebas de compatibilidad con Intune y Windows Phone 8.1.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararme para este cambio?
-Puede comprobar los informes de Intune para ver qué dispositivos o usuarios pueden verse afectados. Vaya a Dispositivos > Todos los dispositivos y filtre por el sistema operativo. Puede agregar columnas adicionales para ayudar a identificar qué usuarios de su organización tienen dispositivos que ejecutan Windows Phone 8.1. Pida a los usuarios finales que actualicen sus dispositivos a una versión del sistema operativo compatible.
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Realizar acción: uso de Microsoft Edge para la experiencia de explorador de Intune protegida<!--5728447-->

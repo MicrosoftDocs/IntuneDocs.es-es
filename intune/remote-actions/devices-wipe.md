@@ -1,6 +1,6 @@
 ---
 title: Retirada o borrado de los dispositivos mediante Microsoft Intune - Azure | Microsoft Docs
-description: Retire o borre un dispositivo en un dispositivo Android, perfil de trabajo Android, iOS, macOS o Windows con Microsoft Intune. Elimine también un dispositivo de Azure Active Directory.
+description: Retire o borre un dispositivo en un dispositivo con Android, perfil de trabajo Android, iOS/iPadOS, macOS o Windows mediante Microsoft Intune. Elimine también un dispositivo de Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812458"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415515"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -43,7 +43,7 @@ La acción **Borrar** restaura un dispositivo a su configuración de fábrica pr
 
 
 > [!NOTE]
-> La acción de borrado no está disponible para los dispositivos iOS inscritos con la inscripción de usuario.
+> La acción de borrado no está disponible para los dispositivos iOS/iPadOS inscritos con la inscripción de usuario.
 
 La opción **Conservar el estado de inscripción y la cuenta de usuario** solo está disponible para Windows 10 versión 1709 o posterior.
 

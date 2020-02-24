@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839306"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414882"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune
 
@@ -45,7 +45,7 @@ Use directivas de protección de aplicaciones con la característica de **admini
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Configurar el valor de UPN de usuario para Microsoft Intune o para una solución EMM de terceros
 La configuración del valor de UPN de usuario es **necesaria** para los dispositivos administrados por Intune o por una solución EMM de terceros para identificar la cuenta de usuario inscrita. La configuración de UPN funciona con las directivas de protección de aplicaciones que implementa desde Intune. El procedimiento siguiente es un flujo general para la configuración del valor de UPN y la experiencia del usuario resultante:
 
-1. En [Azure Portal](https://portal.azure.com), [cree y asigne una directiva de protección de aplicaciones](app-protection-policies.md) para iOS. Configure las directivas según los requisitos de su empresa y seleccione las aplicaciones iOS que debe tener esta directiva.
+1. En [Azure Portal](https://portal.azure.com), [cree y asigne una directiva de protección de aplicaciones](app-protection-policies.md) para iOS/iPadOS. Configure las directivas según los requisitos de su empresa y seleccione las aplicaciones iOS que debe tener esta directiva.
 
 2. Implemente las aplicaciones y el perfil de correo electrónico que quiera administrar a través de Intune o de la solución MDM de terceros siguiendo los pasos generales siguientes. Esto también se aborda en el *Ejemplo 1*.
 

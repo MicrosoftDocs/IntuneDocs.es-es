@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503182"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414220"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Informe de inscripciones de usuario incompletas
 
@@ -44,7 +44,7 @@ Si un usuario decide detener la inscripción y reiniciar varias veces, se muestr
 
 ## <a name="what-does-the-report-show"></a>¿Qué muestra el informe?
 
-Los informes incluyen datos de dispositivos iOS y Android.
+Los informes incluyen datos de dispositivos iOS/iPadOS y Android.
 
 Los informes muestran datos de las dos últimas semanas, pero puede filtrar el informe para que muestre cualquier período de hasta 30 días en el pasado.
 
@@ -86,10 +86,10 @@ En estas tablas se muestra la lista de acciones del usuario que se consideran un
 
 | Nombre de acción | Pantalla o flujo | Plataforma | Acción |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | Mensaje para mostrar un perfil de configuración | iOS | **Omitir** |
-| iOSProfileLaunch | Pantalla de instalación del perfil | iOS | **Cancelar** |
-| iOSProfileLaunch | Mensaje para confiar en la fuente del perfil para inscribir el dispositivo | iOS | **Cancelar** |
-| iOSProfileLaunch | Pantalla de instalación del perfil hasta que se instala el perfil | iOS | Tardó > 30 minutos |
+| iOSProfileLaunch | Mensaje para mostrar un perfil de configuración | iOS/iPadOS | **Omitir** |
+| iOSProfileLaunch | Pantalla de instalación del perfil | iOS/iPadOS | **Cancelar** |
+| iOSProfileLaunch | Mensaje para confiar en la fuente del perfil para inscribir el dispositivo | iOS/iPadOS | **Cancelar** |
+| iOSProfileLaunch | Pantalla de instalación del perfil hasta que se instala el perfil | iOS/iPadOS | Tardó > 30 minutos |
 | AndroidPermissions | Pantalla de activación de administrador del dispositivo | Android | **Cancelar** |
 | AndroidPermissions | Desde el mensaje pidiendo aprobación para realizar y administrar llamadas telefónicas hasta **Activar** el administrador de dispositivos | Android | Tardó > 30 minutos |
 | KnoxActivation | Activación del agente KLMS (solo Samsung) | Android| **Cancelar** |

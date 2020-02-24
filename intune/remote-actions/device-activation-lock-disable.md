@@ -1,7 +1,7 @@
 ---
-title: Omisión del bloqueo de activación de iOS con Intune
+title: Omisión del Bloqueo de activación de iOS/iPadOS con Intune
 titleSuffix: Microsoft Intune
-description: Aprenda a usar Intune para omitir el bloqueo de activación de iOS a fin de acceder a los dispositivos bloqueados.
+description: Obtenga información sobre cómo usar Intune para omitir el Bloqueo de activación de iOS/iPadOS a fin de acceder a los dispositivos bloqueados.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c3847890a4871b784764a5beca46f6776d52d3f
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76761206"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438062"
 ---
-# <a name="disable-activation-lock-on-supervised-ios-devices-with-intune"></a>Deshabilitación del Bloqueo de activación en dispositivos iOS supervisados con Intune
+# <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Deshabilitación del Bloqueo de activación en dispositivos iOS/iPadOS supervisados con Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Microsoft Intune puede ayudarle a administrar el bloqueo de activación de iOS, una característica de la aplicación Buscar mi iPhone para dispositivos iOS 8.0 y posteriores. El bloqueo de activación se habilita automáticamente cuando un usuario abre la aplicación Buscar mi iPhone en un dispositivo. Tras su activación, se debe escribir el identificador y la contraseña de Apple del usuario para poder:
+Microsoft Intune puede ayudarle a administrar el Bloqueo de activación de iOS/iPadOS, una característica de la aplicación Buscar mi iPhone para dispositivos iOS/iPadOS 8.0 y versiones posteriores. El bloqueo de activación se habilita automáticamente cuando un usuario abre la aplicación Buscar mi iPhone en un dispositivo. Tras su activación, se debe escribir el identificador y la contraseña de Apple del usuario para poder:
 
 - Desactivar Buscar mi iPhone
 - Borrar el dispositivo
@@ -38,21 +38,21 @@ Microsoft Intune puede ayudarle a administrar el bloqueo de activación de iOS, 
 
 ## <a name="how-activation-lock-affects-you"></a>Cómo afecta el bloqueo de activación
 
-Aunque el bloqueo de activación ayuda a proteger los dispositivos iOS y aumenta las posibilidades de recuperar un dispositivo perdido o robado, esta funcionalidad puede suponerle una serie de desafíos como administrador de TI. Por ejemplo:
+Aunque el Bloqueo de activación ayuda a proteger los dispositivos iOS/iPadOS y aumenta las posibilidades de recuperar un dispositivo perdido o robado, esta funcionalidad puede suponerle una serie de desafíos como administrador de TI. Por ejemplo:
 
 - Un usuario establece el bloqueo de activación en un dispositivo. Luego, el usuario se va de la empresa y devuelve el dispositivo. Sin el identificador y la contraseña de Apple del usuario, no hay forma de volver a activar el dispositivo.
 - Necesita un informe de todos los dispositivos que tienen habilitado el bloqueo de activación.
 - Durante una actualización de los dispositivos de la organización, puede que quiera reasignar algunos dispositivos a un departamento diferente. Solo puede volver a asignar dispositivos que no tengan habilitado el bloqueo de activación.
 
-Para ayudar a resolver estos problemas, Apple incorporó la deshabilitación del Bloqueo de activación en iOS 7.1. La deshabilitación del Bloqueo de activación permite quitar el Bloqueo de activación de los dispositivos supervisados sin el identificador y la contraseña de Apple del usuario. Los dispositivos supervisados pueden generar un código de bypass del bloqueo de activación específico del dispositivo, que se almacena en el servidor de activación de Apple.
+Para ayudar a resolver estos problemas, Apple incorporó la deshabilitación del Bloqueo de activación en iOS/iPadOS 7.1. La deshabilitación del Bloqueo de activación permite quitar el Bloqueo de activación de los dispositivos supervisados sin el identificador y la contraseña de Apple del usuario. Los dispositivos supervisados pueden generar un código de bypass del bloqueo de activación específico del dispositivo, que se almacena en el servidor de activación de Apple.
 
 >[!TIP]
->El modo supervisado de los dispositivos iOS permite usar Apple Configurator para bloquear un dispositivo y limitar la funcionalidad para fines empresariales específicos. El modo supervisado solo se usa para los dispositivos de la empresa.
+>El modo supervisado de los dispositivos iOS/iPadOS permite usar Apple Configurator para bloquear un dispositivo y limitar la funcionalidad para fines empresariales específicos. El modo supervisado solo se usa para los dispositivos de la empresa.
 
 Puede leer más acerca de bloqueo de activación en [el sitio web de Apple](https://support.apple.com/HT201365).
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Cómo ayuda Intune a administrar el bloqueo de activación
-Intune puede solicitar el estado de bloqueo de activación de dispositivos supervisados que ejecutan iOS 8.0 y versiones posteriores. Solamente para los dispositivos supervisados, Intune puede recuperar el código de deshabilitación del Bloqueo de activación y emitirlo directamente al dispositivo. En caso de que el dispositivo se haya borrado, puede acceder directamente a él usando un nombre de usuario en blanco y el código como la contraseña.
+Intune puede solicitar el estado de Bloqueo de activación de dispositivos supervisados que ejecutan iOS/iPadOS 8.0 y versiones posteriores. Solamente para los dispositivos supervisados, Intune puede recuperar el código de deshabilitación del Bloqueo de activación y emitirlo directamente al dispositivo. En caso de que el dispositivo se haya borrado, puede acceder directamente a él usando un nombre de usuario en blanco y el código como la contraseña.
 
 **Las ventajas empresariales de usar Intune para administrar el Bloqueo de activación son las siguientes:**
 
@@ -62,7 +62,7 @@ Intune puede solicitar el estado de bloqueo de activación de dispositivos super
 ## <a name="before-you-start"></a>Antes de empezar
 Para deshabilitar el Bloqueo de activación en los dispositivos, primero debe habilitarlo. Para ello, siga estas instrucciones:
 
-1. Configure un perfil de restricción de Intune para iOS mediante la información que se describe en [Configuración de restricciones de dispositivos en Microsoft Intune](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+1. Configure un perfil de restricción de Intune para iOS/iPadOS mediante la información que se describe en [Configurar restricciones de dispositivos en Microsoft Intune](/intune-azure/configure-devices/how-to-configure-device-restrictions).
 2. En la [configuración de restricción de dispositivos para iOS](../configuration/device-restrictions-ios.md), en la sección **General**, habilite la opción **Bloqueo de activación**.
 3. Guarde el perfil y [asígnelo](../configuration/device-profile-assign.md) a los dispositivos en los que quiera administrar la deshabilitación del Bloqueo de activación.
 
@@ -72,7 +72,7 @@ Para deshabilitar el Bloqueo de activación en los dispositivos, primero debe ha
 >[!IMPORTANT]
 >Después de deshabilitar el Bloqueo de activación en un dispositivo, si se inicia la aplicación Buscar mi iPhone, se aplica automáticamente un nuevo Bloqueo de activación. Por este motivo, **para realizar este procedimiento, debe tener el dispositivo físicamente**.
 
-La acción de dispositivo remoto **Deshabilitación del Bloqueo de activación** de Intune quita el Bloqueo de activación de un dispositivo iOS sin requerir el ID de Apple y la contraseña del usuario. Después de deshabilitar el Bloqueo de activación, el dispositivo lo vuelve a activar cuando se inicia la aplicación Buscar mi iPhone. Deshabilite el bloqueo de activación solo si tiene acceso físico al dispositivo.
+La acción de dispositivo remoto **Deshabilitación del Bloqueo de activación** de Intune quita el Bloqueo de activación de un dispositivo iOS/iPadOS sin requerir el ID de Apple y la contraseña del usuario. Después de deshabilitar el Bloqueo de activación, el dispositivo lo vuelve a activar cuando se inicia la aplicación Buscar mi iPhone. Deshabilite el bloqueo de activación solo si tiene acceso físico al dispositivo.
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. En la hoja **Intune**, haga clic en **Dispositivos**.

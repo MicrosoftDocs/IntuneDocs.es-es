@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885963"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415280"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solución de problemas con la inscripción de dispositivos en Microsoft Intune
 
@@ -36,7 +36,7 @@ En este artículo se proporcionan sugerencias para solucionar problemas de [insc
 Antes de empezar a solucionar problemas, compruebe que ha configurado Intune correctamente para habilitar la inscripción. Puede leer sobre estos requisitos de configuración en:
 
 - [Preparar la inscripción de dispositivos en Microsoft Intune](../fundamentals/setup-steps.md)
-- [Configurar la administración de dispositivos iOS y Mac](../ios-enroll.md)
+- [Configurar la administración de dispositivos iOS/iPadOS y Mac](../ios-enroll.md)
 - [Configurar la administración de dispositivos Windows](windows-enroll.md)
 - [Configurar la administración de dispositivos Android](android-enroll.md). No se necesitan más pasos.
 
@@ -49,7 +49,7 @@ También puede asegurarse de que la hora y fecha en el dispositivo del usuario e
 Los usuarios de dispositivos administrados pueden recopilar registros de inscripción y diagnóstico para que usted pueda revisarlos. Aquí se proporcionan instrucciones de usuario para recopilar registros:
 
 - [Enviar errores de inscripción de Android al administrador de TI](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [Enviar errores de iOS al administrador de TI](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [Enviar errores de iOS/iPadOS al administrador de TI](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>Problemas generales de inscripción
@@ -93,7 +93,7 @@ Para evitar alcanzar los límites de dispositivos, asegúrese de quitar los regi
 
 4. Si ello produce un error, compruebe que las credenciales del usuario se han sincronizado correctamente con Azure Active Directory.
 
-5. Si el usuario inicia sesión correctamente, el dispositivo iOS le pedirá que instale la aplicación Portal de empresa de Intune y que se inscriba. En un dispositivo Android, deberá instalar manualmente la aplicación Portal de empresa de Intune y después puede volver a intentar inscribirse.
+5. Si el usuario inicia sesión correctamente, el dispositivo iOS/iPadOS le pedirá que instale la aplicación Portal de empresa de Intune y que se inscriba. En un dispositivo Android, deberá instalar manualmente la aplicación Portal de empresa de Intune y después puede volver a intentar inscribirse.
 
 ### <a name="mdm-authority-not-defined"></a>Entidad de MDM no definida
 **Problema:** un usuario recibió el error **Entidad de MDM no definida**.
@@ -244,23 +244,23 @@ Los pasos siguientes describen solo uno de los muchos métodos y herramientas qu
 Si el certificado de servidor se instaló correctamente, verá marcas de verificación en los resultados. Si existe el problema anterior, verá una X roja en las secciones "Certificate Name Matches" ("El nombre de certificado coincide") y "SSL Certificate is correctly Installed" ("El certificado SSL se instaló correctamente") del informe.
 
 
-## <a name="ios-issues"></a>Problemas de iOS
+## <a name="iosipados-issues"></a>Problemas de iOS/iPadOS
 
-### <a name="ios-enrollment-errors"></a>Errores de inscripción de iOS
-En la siguiente tabla se muestran los errores que los usuarios finales pueden encontrar durante la inscripción de los dispositivos iOS en Intune.
+### <a name="iosipados-enrollment-errors"></a>Errores de inscripción de iOS/iPadOS
+En la siguiente tabla se muestran los errores que los usuarios finales pueden encontrar durante la inscripción de los dispositivos iOS/iPadOS en Intune.
 
 |Mensaje de error|Problema|Solución|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|No se encuentra ninguna directiva de inscripción|Compruebe que todos los requisitos previos de inscripción, como el certificado Apple Push Notification Service (APNs), se han configurado y que "iOS como plataforma" está habilitado. Para obtener instrucciones, consulte [Configurar la administración de dispositivos iOS y Mac](../ios-enroll.md).|
-|DeviceCapReached|Ya hay inscritos demasiados dispositivos móviles.|El usuario debe quitar uno de los dispositivos móviles actualmente inscritos desde el Portal de empresa antes de inscribir otro. Consulte las instrucciones del tipo de dispositivo que usa: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) y [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para ponerse en contacto con dispositivos iOS inscritos. Se producirá un error de inscripción y aparecerá este mensaje si:<ul><li>No se han completado los pasos necesarios para obtener un certificado de APNs, o</li><li>El certificado de APNs ha expirado.</li></ul>Consulte la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](../fundamentals/users-add.md) y [Organizar usuarios y dispositivos](../fundamentals/groups-add.md).|
-|AccountNotOnboarded|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para ponerse en contacto con dispositivos iOS inscritos. Se producirá un error de inscripción y aparecerá este mensaje si:<ul><li>No se han completado los pasos necesarios para obtener un certificado de APNs, o</li><li>El certificado de APNs ha expirado.</li></ul>Para más información, consulte [Configurar la administración de dispositivos iOS y Mac con Microsoft Intune](../ios-enroll.md).|
-|DeviceTypeNotSupported|Es posible que el usuario haya intentado inscribirse con un dispositivo que no sea iOS. No se admite el tipo de dispositivo móvil que intenta inscribir.<br /><br />Confirme que el dispositivo ejecuta iOS versión 8.0 o posterior.<br /><br />|Compruebe que el dispositivo del usuario ejecute la versión 8.0 de iOS o una posterior.|
-|UserLicenseTypeInvalid|No se puede inscribir el dispositivo porque la cuenta del usuario todavía no es miembro de un grupo de usuarios requerido.<br /><br />|Antes de que los usuarios puedan inscribir los dispositivos, deben ser miembros del grupo de usuarios correcto. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles. Por ejemplo, verá este error si se cumplen las dos condiciones siguientes:<ol><li>Se ha establecido Intune como la entidad de administración de dispositivos móviles</li><li>usan una licencia de System Center 2012 R2 Configuration Manager.</li></ol>Vea los artículos siguientes para obtener más información:<br /><br />Consulte [Configurar la administración de iOS y Mac con Microsoft Intune](../ios-enroll.md) y la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](../fundamentals/users-add.md) y [Organizar usuarios y dispositivos](../fundamentals/groups-add.md).|
+|NoEnrollmentPolicy|No se encuentra ninguna directiva de inscripción|Compruebe que todos los requisitos previos de inscripción, como el certificado Apple Push Notification Service (APNs), se han configurado y que "iOS/iPadOS como plataforma" está habilitado. Para obtener instrucciones, vea [Configurar la administración de dispositivos iOS/iPadOS y Mac](../ios-enroll.md).|
+|DeviceCapReached|Ya hay inscritos demasiados dispositivos móviles.|El usuario debe quitar uno de los dispositivos móviles actualmente inscritos desde el Portal de empresa antes de inscribir otro. Consulte las instrucciones del tipo de dispositivo que usa: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS/iPadOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) y [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
+|APNSCertificateNotValid|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para ponerse en contacto con dispositivos iOS/iPadOS inscritos. Se producirá un error de inscripción y aparecerá este mensaje si:<ul><li>No se han completado los pasos necesarios para obtener un certificado de APNs, o</li><li>El certificado de APNs ha expirado.</li></ul>Consulte la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](../fundamentals/users-add.md) y [Organizar usuarios y dispositivos](../fundamentals/groups-add.md).|
+|AccountNotOnboarded|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para ponerse en contacto con dispositivos iOS/iPadOS inscritos. Se producirá un error de inscripción y aparecerá este mensaje si:<ul><li>No se han completado los pasos necesarios para obtener un certificado de APNs, o</li><li>El certificado de APNs ha expirado.</li></ul>Para más información, vea [Configurar la administración de dispositivos iOS/iPadOS y Mac con Microsoft Intune](../ios-enroll.md).|
+|DeviceTypeNotSupported|Es posible que el usuario haya intentado inscribirse con un dispositivo que no sea iOS. No se admite el tipo de dispositivo móvil que intenta inscribir.<br /><br />Confirme que el dispositivo ejecuta iOS/iPadOS 8.0 o una versión posterior.<br /><br />|Compruebe que el dispositivo del usuario ejecuta iOS/iPadOS 8.0 o una versión posterior.|
+|UserLicenseTypeInvalid|No se puede inscribir el dispositivo porque la cuenta del usuario todavía no es miembro de un grupo de usuarios requerido.<br /><br />|Antes de que los usuarios puedan inscribir los dispositivos, deben ser miembros del grupo de usuarios correcto. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles. Por ejemplo, verá este error si se cumplen las dos condiciones siguientes:<ol><li>Se ha establecido Intune como la entidad de administración de dispositivos móviles</li><li>usan una licencia de System Center 2012 R2 Configuration Manager.</li></ol>Vea los artículos siguientes para obtener más información:<br /><br />Consulte [Configurar la administración de iOS/iPadOS y Mac con Microsoft Intune](../ios-enroll.md) y la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](../fundamentals/users-add.md) y [Organizar usuarios y dispositivos](../fundamentals/groups-add.md).|
 |MdmAuthorityNotDefined|La entidad de administración de dispositivos móviles no se ha definido.<br /><br />|La entidad de administración de dispositivos móviles no se ha configurado en Intune.<br /><br />Elemento de revisión #1 en el "Paso 6": Inscriba dispositivos móviles e instale una sección de la aplicación en [Empezar a trabajar con una versión de prueba de 30 días de Microsoft Intune](../fundamentals/free-trial-sign-up.md).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Los dispositivos están inactivos o la consola de administración no puede comunicarse con ellos
-**Problema:** los dispositivos iOS no se están registrando con el servicio Intune. Los dispositivos deben registrarse periódicamente con el servicio para mantener el acceso a recursos corporativos protegidos. Si los servicios no se registran:
+**Problema**: los dispositivos iOS/iPadOS no se están registrando con el servicio Intune. Los dispositivos deben registrarse periódicamente con el servicio para mantener el acceso a recursos corporativos protegidos. Si los servicios no se registran:
 
 - No pueden recibir directivas, aplicaciones y comandos remotos del servicio de Intune.
 - Muestran un estado de administración de **Incorrecto** en la consola del administrador.
@@ -268,15 +268,15 @@ En la siguiente tabla se muestran los errores que los usuarios finales pueden en
 
 **Solución:** comparta las resoluciones siguientes con los usuarios finales para ayudarles a recuperar el acceso a recursos corporativos.
 
-Cuando los usuarios inician la aplicación de Portal de empresa de iOS, puede indicar si el dispositivo ha perdido el contacto con Intune. Si detecta que no hay ningún contacto, intenta automáticamente sincronizar con Intune para volver a conectar (los usuarios verán el mensaje **Intentando sincronizar…** ).
+Cuando los usuarios inician la aplicación Portal de empresa de iOS/iPadOS, puede indicar si el dispositivo ha perdido el contacto con Intune. Si detecta que no hay ningún contacto, intenta automáticamente sincronizar con Intune para volver a conectar (los usuarios verán el mensaje **Intentando sincronizar…** ).
 
   ![Notificación Intentando sincronizar](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-Si la sincronización se realiza correctamente, verá la notificación en línea **Sincronización correcta** en la aplicación del Portal de empresa, que indica que el dispositivo está en un estado correcto.
+Si la sincronización se realiza correctamente, verá la notificación en línea **Sincronización correcta** en la aplicación Portal de empresa de iOS/iPadOS, que indica que el dispositivo está en un estado correcto.
 
   ![Notificación Sincronización correcta](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-Si la sincronización es incorrecta, los usuarios verán una notificación en línea **No se puede sincronizar** en la aplicación del Portal de empresa de iOS.
+Si la sincronización es incorrecta, los usuarios verán una notificación en línea **No se puede sincronizar** en la aplicación Portal de empresa de iOS/iPadOS.
 
   ![Notificación No se puede sincronizar](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -287,7 +287,7 @@ Para corregir el problema, los usuarios deben seleccionar el botón **Configurar
 Una vez inscrito, los dispositivos vuelven a un estado correcto y recuperan el acceso a recursos de la empresa.
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>Comprobar que WS-Trust 1.3 está habilitado
-**Problema** Los dispositivos iOS del Programa de inscripción de dispositivos (DEP) no se pueden inscribir
+**Problema** Los dispositivos iOS/iPadOS del Programa de inscripción de dispositivos (DEP) no se pueden inscribir
 
 La inscripción de dispositivos DEP con afinidad de usuario precisa que el extremo WS-Trust 1.3 Username/Mixed esté habilitado para solicitar el token de usuario. Active Directory permite este punto de conexión de forma predeterminada. Para obtener una lista de puntos de conexión habilitados, use el cmdlet Get-AdfsEndpoint PowerShell y busque el extremo trust/13/UsernameMixed. Por ejemplo:
 
@@ -301,7 +301,7 @@ Para obtener más información, consulte los [procedimientos recomendados para p
 
 
 ### <a name="profile-installation-failed"></a>Error de instalación de perfil
-**Problema:** un usuario recibe un **error en la instalación del perfil** en un dispositivo iOS.
+**Problema:** un usuario recibe un **error en la instalación del perfil** en un dispositivo iOS/iPadOS.
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Pasos para solucionar problemas con la instalación del perfil
 
@@ -313,9 +313,9 @@ Para obtener más información, consulte los [procedimientos recomendados para p
 
 4. Vaya a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e intente instalar el perfil cuando se le solicite.
 
-5. Confirme que Safari para iOS es el explorador predeterminado y que las cookies están habilitadas.
+5. Confirme que Safari para iOS/iPadOS es el explorador predeterminado y que las cookies están habilitadas.
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>El dispositivo iOS del usuario está bloqueado en una pantalla de inscripción durante más de 10 minutos
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>El dispositivo iOS/iPadOS del usuario está bloqueado en una pantalla de inscripción durante más de 10 minutos
 
 **Problema**: un dispositivo que se está inscribiendo puede quedarse atascado en cualquiera de estas dos pantallas:
 - En espera de la configuración final de “Microsoft”
@@ -323,11 +323,11 @@ Para obtener más información, consulte los [procedimientos recomendados para p
 
 Este problema puede ocurrir si:
 - hay una interrupción temporal de los servicios de Apple, o
-- la inscripción de iOS está configurada para usar tokens de VPP como se muestra en la tabla, pero hay algún problema con el token de VPP.
+- la inscripción de iOS/iPadOS está configurada para usar tokens de VPP como se muestra en la tabla, pero hay algún problema con el token de VPP.
 
 | Configuración de la inscripción | Valor |
 | ---- | ---- |
-| Plataforma | iOS |
+| Plataforma | iOS/iPadOS |
 | Afinidad de usuario | Inscribir con afinidad de usuario |
 |Autenticar con el Portal de empresa en lugar del Asistente de configuración de Apple | Sí |
 | Instalar Portal de empresa con VPP | Token de uso: token de dirección |

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 7018e2ab4290219c752f44b4b391822438461e8e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125037"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415086"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -55,7 +55,11 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-february-03-2020"></a>Semana del 3 de febrero de 2020
+## <a name="week-of-february-10-2020"></a>Semana del 10 de febrero de 2020
+
+### <a name="windows-7-ends-extended-support---3042987--"></a>Finalización del soporte extendido de Windows 7 <!--3042987-->
+El 14 de enero de 2020 finalizó el soporte extendido de Windows 7. En Intune ha quedado en desuso el soporte para los dispositivos que ejecutan Windows 7 al mismo tiempo. La asistencia técnica y las actualizaciones automáticas que ayudan a proteger su equipo ya no están disponibles. Se debe actualizar a Windows 10. Para más información, vea la [entrada de blog sobre el plan de cambios](https://aka.ms/Windows7_Intune).
+
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Administración de aplicaciones
@@ -63,11 +67,11 @@ Conozca las novedades semanales de Microsoft Intune. También puede encontrar [n
 #### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Microsoft Edge versión 77 y posteriores en dispositivos con Windows 10<!-- 5843584 -->
 Intune ahora admite la desinstalación de la versión 77 y posteriores de Microsoft Edge en dispositivos con Windows 10. Para obtener más información, consulte [Adición de Microsoft Edge para Windows 10 a Microsoft Intune](~/apps/apps-windows-edge.md).
 
-#### <a name="company-portal-app-improved-performance---6178652---"></a>Rendimiento mejorado de la aplicación Portal de empresa<!-- 6178652 -->
-La aplicación Portal de empresa se ha actualizado para admitir un rendimiento mejorado en los dispositivos que usan procesadores ARM64, como Surface Pro X. Anteriormente, el Portal de empresa operaba en un modo ARM32 emulado. Ahora, la aplicación Portal de empresa se compila de forma nativa para ARM64. Para más información sobre la aplicación Portal de empresa, consulte [Configuración de la aplicación Portal de empresa de Microsoft Intune](~/apps/company-portal-app.md).
-
 #### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Pantalla quitada del Portal de empresa, inscripción del perfil de trabajo de Android<!--6103987 -->
 La pantalla **¿Cuál es el paso siguiente?** se ha quitado del flujo de inscripción del perfil de trabajo de Android en el Portal de empresa para simplificar la experiencia del usuario. Vaya a [Inscripción con el perfil de trabajo de Android](/intune-user-help/enroll-device-android-work-profile) para ver el flujo de inscripción del perfil de trabajo de Android actualizado.  
+
+#### <a name="company-portal-app-improved-performance---6178652---"></a>Rendimiento mejorado de la aplicación Portal de empresa<!-- 6178652 -->
+La aplicación Portal de empresa se ha actualizado para admitir un rendimiento mejorado en los dispositivos que usan procesadores ARM64, como Surface Pro X. Anteriormente, el Portal de empresa operaba en un modo ARM32 emulado. Ahora, en la versión 10.4.7080.0 y en versiones posteriores, la aplicación Portal de empresa se compila de forma nativa para ARM64. Para más información sobre la aplicación Portal de empresa, consulte [Configuración de la aplicación Portal de empresa de Microsoft Intune](~/apps/company-portal-app.md).
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>Semana del 27 de enero de 2020

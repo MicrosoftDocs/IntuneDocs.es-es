@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754259"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413787"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>¿Qué es la administración de dispositivos de Microsoft Intune?
 
@@ -36,7 +36,7 @@ La carga de trabajo de **Dispositivos**ofrece información sobre los dispositivo
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Dispositivos**. Esta vista muestra información detallada sobre los dispositivos individuales y lo que se puede hacer con ellos, lo que incluye:
 
-   - **Información general** muestra una instantánea visual de los dispositivos inscritos y además muestra cuántos dispositivos usan las diferentes plataformas, incluidas Android, iOS, etc.
+   - **Información general** muestra una instantánea visual de los dispositivos inscritos y además muestra cuántos dispositivos usan las diferentes plataformas, incluidas Android, iOS/iPadOS, etc.
    - **Todos los dispositivos** muestra una lista de los dispositivos inscritos que administra.
 
      Use la característica **Exportar** para crear una lista .csv de todos los dispositivos, en incrementos de 10.000 (Internet Explorer) o de 30.000 (Microsoft Edge y Chrome).
@@ -70,7 +70,7 @@ Las acciones disponibles dependen de la plataforma y la configuración del dispo
   - [Control remoto en Android](teamviewer-support.md)
   - [Sincronización del dispositivo](device-sync.md)
   - [Cambio de nombre de un dispositivo](device-rename.md)
-  - [Envío de notificaciones personalizadas](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [Envío de notificaciones personalizadas](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android y iOS/iPadOS)
   - [Rotación de claves de BitLocker](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (solo Windows)
 
 ## <a name="next-steps"></a>Pasos siguientes

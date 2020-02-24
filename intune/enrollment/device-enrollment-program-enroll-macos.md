@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832697"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414488"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos o Apple School Manager
 
@@ -78,9 +78,9 @@ Use el portal de Apple para crear un token. También puede usar el portal de App
 3. Para Apple School Manager, en el portal de Apple, elija **Servidores de MDM** > **Agregar servidor de MDM**.
 4. Escriba el **nombre del servidor MDM** y, después, elija **Siguiente**. El nombre del servidor es su referencia para identificar el servidor de administración de dispositivos móviles (MDM). No es el nombre ni la dirección URL del servidor de Microsoft Intune.
 
-5. Se abre el cuadro de diálogo **Agregar&lt;Nombre del servidor&gt;**, indicando **Cargar la clave pública**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
+5. Se abre el cuadro de diálogo **Agregar&lt;Nombre del servidor&gt;** , indicando **Cargar la clave pública**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
 
-6. Vaya a **Programa de implementación** &gt; **Programa de inscripción de dispositivos** &gt; **Administrar dispositivos**.
+6. Vaya a **Programas de implementación** &gt; **Programa de inscripción de dispositivos** &gt; **Administrar dispositivos**.
 7. En **Elegir dispositivos por**, especifique cómo se identifican los dispositivos:
     - **Número de serie**
     - **Número de pedido**
@@ -90,7 +90,7 @@ Use el portal de Apple para crear un token. También puede usar el portal de App
 
 8. En **Elegir acción**, pulse **Asignar al servidor**, seleccione el &lt;NombreDeServidor&gt; especificado para Microsoft Intune y pulse **Aceptar**. El portal de Apple asigna los dispositivos especificados al servidor de Intune para la administración y, después, muestra **Asignación completa**.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3: Guarde el identificador de Apple usado para crear este token
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3. Guarde el identificador de Apple usado para crear este token
 
 En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), proporcione el identificador de Apple como referencia futura.
 
@@ -165,7 +165,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 
 Ahora que Intune tiene permiso para administrar los dispositivos, puede sincronizar Intune con Apple para ver los dispositivos administrados en Intune en Azure Portal.
 
-1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **macOS** > **Inscripción de macOS** > **Token del programa de inscripción** > elija un token de la lista > **Dispositivos** > **Sincronizar**. ![Captura de pantalla del nodo Dispositivos del Programa de inscripción seleccionado y el vínculo Sincronizar pulsado.](./media/device-enrollment-program-enroll-macos/image06.png)
+1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Dispositivos** > **macOS** > **Inscripción de macOS** > **Tokens del programa de inscripción** > seleccione un token de la lista > **Dispositivos** > **Sincronizar**. ![Captura de pantalla del nodo Dispositivos del Programa de inscripción seleccionado y el vínculo Sincronizar pulsado.](./media/device-enrollment-program-enroll-macos/image06.png)
 
    Para cumplir con las condiciones de Apple relativas a un tráfico del programa de inscripción aceptable, Intune impone las restricciones siguientes:
    - Una sincronización completa no se puede ejecutar más de una vez cada siete días. Durante una sincronización completa, Intune captura la lista actualizada completa de números de serie asignados al servidor MDM de Apple conectado a Intune. Tras eliminar un dispositivo del Programa de inscripción desde el portal de Intune sin anular su asignación del servidor MDM de Apple, no se podrá volver a importar hasta que se ejecute la sincronización completa.   
@@ -181,12 +181,12 @@ Debe asignar un perfil del Programa de inscripción a los dispositivos para pode
 
 ### <a name="assign-a-default-profile"></a>Asignación de un perfil predeterminado
 
-Puede elegir un perfil de iOS o macOS predeterminado para aplicarlo a todos los dispositivos que se inscriben en un token específico. 
+Puede elegir un perfil de macOS y iOS/iPadOS predeterminado para aplicarlo a todos los dispositivos que se inscriben en un token específico. 
 
 1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **macOS** > **Inscripción de macOS** > **Tokens del programa de inscripción** > elija un token de la lista.
 2. Elija **Establecer perfil predeterminado**, seleccione un perfil en la lista desplegable y después seleccione **Guardar**. Este perfil se aplicará a todos los dispositivos que se inscriben en el token.
 
-## <a name="distribute-devices"></a>Distribuir los dispositivos
+## <a name="distribute-devices"></a>Distribución de los dispositivos
 
 Ha habilitado la administración y sincronización entre Apple e Intune, y ha asignado un perfil para permitir que sus dispositivos se inscriban. Ahora puede distribuir los dispositivos a los usuarios. Los dispositivos con afinidad de usuario necesitan que a cada usuario se le asigne una licencia de Intune. Los dispositivos sin afinidad de usuario necesitan una licencia de dispositivo. Un dispositivo activado no puede aplicar un perfil de inscripción hasta que se haya borrado.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564360"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414697"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -51,7 +51,7 @@ Intune MAM admite dos configuraciones:
 
 Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicaciones que necesita en los dispositivos en los que desea que se ejecuten. En la tabla siguiente se ofrece un resumen de las capacidades de administración de aplicaciones.
 
-|  | Android o Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8,1 |
+|  | Android o Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Agregar y asignar aplicaciones a dispositivos y usuarios | Sí | Sí | Sí | Sí | Sí |
 | Asignar aplicaciones a dispositivos no inscritos en Intune | Sí | Sí | No | No | No |
@@ -85,7 +85,7 @@ Puede encontrar la mayoría de la información relacionada con las aplicaciones 
 
 Las cuatro secciones siguientes describen las opciones disponibles en el panel **Aplicaciones**.
 
-### <a name="manage"></a>Administrar
+### <a name="manage"></a>Administración
 - **Aplicaciones**: seleccione esta opción para agregar, ver, asignar y supervisar las aplicaciones que usan los trabajadores. Para obtener más información, vea:
   - [Agregar aplicaciones](apps-add.md).
   - [Asignar aplicaciones](apps-deploy.md).
@@ -98,7 +98,7 @@ Las cuatro secciones siguientes describen las opciones disponibles en el panel *
   - [Directivas de protección de aplicaciones](app-protection-policies.md).
 - **Borrado selectivo de aplicaciones**: seleccione esta opción para quitar solo los datos corporativos de un dispositivo de un usuario seleccionado. Para obtener más información, vea:
   - [Borrado selectivo de aplicaciones](apps-selective-wipe.md).
-- **Perfiles de aprovisionamiento de aplicaciones de iOS**: las aplicaciones iOS incluyen un perfil y un código de aprovisionamiento que está firmado por un certificado. Cuando el certificado expira, ya no se puede ejecutar la aplicación. Intune proporciona las herramientas para asignar proactivamente una nueva directiva de perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima. Para obtener más información, vea:
+- **Perfiles de aprovisionamiento de aplicaciones iOS**: las aplicaciones iOS/iPadOS incluyen un perfil y un código de aprovisionamiento que está firmado por un certificado. Cuando el certificado expira, ya no se puede ejecutar la aplicación. Intune proporciona las herramientas para asignar proactivamente una nueva directiva de perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima. Para obtener más información, vea:
   - [Perfiles de aprovisionamiento de aplicaciones de iOS](app-provisioning-profile-ios.md).
 
 Para más información sobre esta sección, vea [Administración de aplicaciones](app-management.md).
@@ -115,7 +115,7 @@ Para más información sobre esta sección, vea [Administración de aplicaciones
 Para más información sobre esta sección, vea [Supervisión de aplicaciones](apps-monitor.md).
 
 ### <a name="set-up"></a>Configuración
-- **Tokens de VPP de iOS**: aplique y vea sus licencias del programa de compras por volumen (PCV) de iOS. Para obtener más información, vea:
+- **Tokens de VPP de iOS**: aplique y vea sus licencias del Programa de Compras por Volumen (PCV) de iOS/iPadOS. Para obtener más información, vea:
   - [Aplicaciones de iOS adquiridas por volumen](vpp-apps-ios.md)
 - **Certificado de Windows Enterprise**: aplique o vea el estado de un certificado de firma de código que se utiliza para distribuir aplicaciones de línea de negocio en los dispositivos de Windows administrados.
 - **Certificado de Symantec para Windows**: aplique o vea el estado de un certificado de firma de código de Symantec que se necesita para distribuir archivos appx de XAP y WP8.x a dispositivos Windows 10 Mobile.

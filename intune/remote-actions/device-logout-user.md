@@ -1,7 +1,7 @@
 ---
-title: Cierre de la sesión del usuario de un dispositivo iOS
+title: Cierre de la sesión del usuario de un dispositivo iOS/iPadOS
 titleSuffix: Microsoft Intune
-description: Obtenga información sobre cómo cerrar la sesión del usuario actual de un dispositivo iOS con Intune.
+description: Obtenga información sobre cómo cerrar la sesión del usuario actual de un dispositivo iOS/iPadOS con Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713181"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413700"
 ---
-# <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Cerrar la sesión del usuario actual en dispositivos iOS administrados con Intune
+# <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>Cierre de la sesión del usuario actual en dispositivos iOS/iPadOS administrados con Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,7 +35,7 @@ La acción **Cerrar sesión del usuario actual** cierra la sesión del usuario a
 
 - Windows: no compatible
 - Windows Phone: no compatible
-- iOS: compatible en iOS 9.3 y versiones posteriores (solo dispositivos iPad compartidos)
+- iOS/iPadOS: compatible con iOS/iPadOS 9.3 y versiones posteriores (solo dispositivos iPad compartidos)
 - macOS: no compatible
 - Android: no compatible
 
@@ -43,7 +43,7 @@ La acción **Cerrar sesión del usuario actual** cierra la sesión del usuario a
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Dispositivos**.
 4. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, seleccione un dispositivo iOS y, luego, seleccione la acción remota del dispositivo **Cerrar sesión del usuario actual**.
+5. En la lista de dispositivos que administra, seleccione un dispositivo iOS/iPadOS y, luego, seleccione la acción remota del dispositivo **Cerrar sesión del usuario actual**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

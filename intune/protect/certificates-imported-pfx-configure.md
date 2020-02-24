@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469ee615cd9a9f1d3a7aee40ce764b8d8100fe69
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912904"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258137"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configuración y uso de certificados PKCS importados con Intune
 
@@ -44,7 +44,7 @@ Para usar certificados PKCS importados con Intune, debe contar con esta infraest
 
   Este conector pueda actualizarse automáticamente cuando estén disponibles nuevas versiones. Para utilizar la funcionalidad de actualización, asegúrese de que los firewalls están abiertos para permitir que el conector se ponga en contacto con **autoupdate.msappproxy.net** en el puerto **443**.
 
-  Para más información sobre todos los puntos de conexión de red a los que accede el conector, consulte [Ancho de banda y requisitos de configuración de red de Intune](../fundamentals/network-bandwidth-use.md).
+  Para más información, vea [Puntos de conexión de red de Microsoft Intune](../fundamentals/intune-endpoints.md) y [Ancho de banda y requisitos de configuración de red de Intune](../fundamentals/network-bandwidth-use.md).
 
 - **Windows Server**:
 

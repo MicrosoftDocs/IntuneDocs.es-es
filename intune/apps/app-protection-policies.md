@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885757"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437909"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -65,7 +65,7 @@ Cuando se crea una directiva de protección de aplicaciones para aplicaciones de
     | Valor/opción | Descripción |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Destinar a todos los tipos de aplicaciones | Use esta opción para destinar la directiva a las aplicaciones en dispositivos que se encuentren en cualquier estado de administración. Elija **No** para destinar a aplicaciones en tipos de dispositivos específicos. Para más información, consulte [Destinar directivas de protección de aplicaciones en función del estado de administración del dispositivo](#target-app-protection-policies-based-on-device-management-state). |
-    |     Tipos de dispositivo | Use esta opción para especificar si esta directiva se aplica a dispositivos administrados por MDM o a dispositivos no administrados. En el caso de las directivas de aplicaciones de iOS, elija entre **Dispositivos no administrados** y **Dispositivos administrados**. En el caso de las directivas de aplicaciones de Android, elija entre **Dispositivos no administrados**, **Administrador de dispositivos Android** y **Android Enterprise**.  |
+    |     Tipos de dispositivo | Use esta opción para especificar si esta directiva se aplica a dispositivos administrados por MDM o a dispositivos no administrados. En el caso de las directivas de aplicaciones iOS/iPadOS, elija entre **Dispositivos no administrados** y **Dispositivos administrados**. En el caso de las directivas de aplicaciones de Android, elija entre **Dispositivos no administrados**, **Administrador de dispositivos Android** y **Android Enterprise**.  |
     | Aplicaciones públicas | Haga clic en **Seleccionar aplicaciones públicas** para elegir las aplicaciones de destino. |
     | Aplicaciones personalizadas | Haga clic en **Seleccionar aplicaciones personalizadas** para seleccionar aplicaciones personalizadas de destino en función de un identificador de paquete. |
     
@@ -103,7 +103,7 @@ Cuando se crea una directiva de protección de aplicaciones para aplicaciones de
 
 Los usuarios finales pueden descargar las aplicaciones desde App Store o Google Play. Para obtener más información, vea:
 * [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [What to expect when your iOS app is managed by app protection policies](../fundamentals/end-user-mam-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
+* [Qué esperar cuando la aplicación iOS/iPadOS se administra con directivas de protección de aplicaciones](../fundamentals/end-user-mam-apps-ios.md)
 
 ## <a name="change-existing-policies"></a>Cambiar las directivas existentes
 Puede editar una directiva existente y aplicarla a los usuarios objetivo. Sin embargo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de ocho horas.
@@ -123,7 +123,7 @@ Para ver el efecto de los cambios inmediatamente, el usuario final debe cerrar s
     | Valor/opción | Descripción |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Destinar a todos los tipos de aplicaciones | Use esta opción para destinar la directiva a las aplicaciones en dispositivos que se encuentren en cualquier estado de administración. Elija **No** para destinar a aplicaciones en tipos de dispositivos específicos. Para más información, consulte [Destinar directivas de protección de aplicaciones en función del estado de administración del dispositivo](#target-app-protection-policies-based-on-device-management-state). |
-    |     Tipos de dispositivo | Use esta opción para especificar si esta directiva se aplica a dispositivos administrados por MDM o a dispositivos no administrados. En el caso de las directivas de aplicaciones de iOS, elija entre **Dispositivos no administrados** y **Dispositivos administrados**. En el caso de las directivas de aplicaciones de Android, elija entre **Dispositivos no administrados**, **Administrador de dispositivos Android** y **Android Enterprise**.  |
+    |     Tipos de dispositivo | Use esta opción para especificar si esta directiva se aplica a dispositivos administrados por MDM o a dispositivos no administrados. En el caso de las directivas de aplicaciones iOS/iPadOS, elija entre **Dispositivos no administrados** y **Dispositivos administrados**. En el caso de las directivas de aplicaciones de Android, elija entre **Dispositivos no administrados**, **Administrador de dispositivos Android** y **Android Enterprise**.  |
     | Aplicaciones públicas | Haga clic en **Seleccionar aplicaciones públicas** para elegir las aplicaciones de destino. |
     | Aplicaciones personalizadas | Haga clic en **Seleccionar aplicaciones personalizadas** para seleccionar aplicaciones personalizadas de destino en función de un identificador de paquete. |
 
@@ -166,7 +166,7 @@ Para ver el efecto de los cambios inmediatamente, el usuario final debe cerrar s
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Destinar directivas de protección de aplicaciones en función del estado de administración del dispositivo
 En muchas organizaciones es habitual permitir que los usuarios finales puedan usar los dispositivos administrados de administración de dispositivos móviles (MDM) de Intune (como los dispositivos propiedad de las empresas) y los dispositivos no administrados que únicamente están protegidos con directivas de protección de aplicaciones de Intune. Los dispositivos no administrados a menudo se conocen como Bring Your Own Devices (BYOD).
 
-Dado que las directivas de protección de aplicaciones de Intune están destinadas a la identidad de un usuario, la configuración de protección de un usuario puede aplicarse tanto a los dispositivos inscritos (administrados con MDM) como a los dispositivos no inscritos (sin MDM). Por lo tanto, puede destinar una directiva de protección de aplicaciones de Intune a dispositivos iOS y Android inscritos y no inscritos de Intune. Puede tener una directiva de protección para los dispositivos no administrados a la que se apliquen unos controles de prevención de pérdida de datos (DLP) estrictos y una directiva de protección independiente para los dispositivos administrados con MDM en la que los controles DLP pueden ser un poco menos restrictivos. Para más información sobre cómo funciona esto en dispositivos de Android Enterprise personales, vea [Directivas de protección de aplicaciones y perfiles de trabajo](android-deployment-scenarios-app-protection-work-profiles.md).
+Dado que las directivas de protección de aplicaciones de Intune están destinadas a la identidad de un usuario, la configuración de protección de un usuario puede aplicarse tanto a los dispositivos inscritos (administrados con MDM) como a los dispositivos no inscritos (sin MDM). Por lo tanto, puede destinar una directiva de protección de aplicaciones de Intune a dispositivos iOS/iPadOS y Android inscritos y no inscritos de Intune. Puede tener una directiva de protección para los dispositivos no administrados a la que se apliquen unos controles de prevención de pérdida de datos (DLP) estrictos y una directiva de protección independiente para los dispositivos administrados con MDM en la que los controles DLP pueden ser un poco menos restrictivos. Para más información sobre cómo funciona esto en dispositivos de Android Enterprise personales, vea [Directivas de protección de aplicaciones y perfiles de trabajo](android-deployment-scenarios-app-protection-work-profiles.md).
 
 Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Crear directiva**. También puede editar una directiva de protección de aplicaciones existente. Para que la directiva de protección de aplicaciones se aplique a los dispositivos tanto administrados como no administrados, vaya a la página **Aplicaciones** y confirme que la opción **Destinar a todos los tipos de aplicaciones** está establecida en el valor predeterminado, **Sí**. Si quiere efectuar una asignación granular según el estado de administración, establezca **Destinar a todos los tipos de aplicaciones** en **No**. 
 
@@ -182,15 +182,15 @@ Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de p
 
 Para iOS, se requieren ajustes adicionales en la configuración de la aplicación para dirigir la configuración de la directiva de protección de aplicaciones (APP) a las aplicaciones en dispositivos inscritos en Intune:
 
-- **IntuneMAMUPN** debe configurarse para todas las aplicaciones administradas de MDM. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- **IntuneMAMDeviceID** debe configurarse para todas las aplicaciones administradas por MDM de línea de negocio y de terceros. **IntuneMAMDeviceID** debe configurarse en el token de identificador de dispositivo. Por ejemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para obtener más información, vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
+- **IntuneMAMUPN** debe configurarse para todas las aplicaciones administradas de MDM. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS/iPadOS en Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **IntuneMAMDeviceID** debe configurarse para todas las aplicaciones administradas por MDM de línea de negocio y de terceros. **IntuneMAMDeviceID** debe configurarse en el token de identificador de dispositivo. Por ejemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para más información, vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS/iPadOS administrados](app-configuration-policies-use-ios.md).
 - Si solo está configurado **IntuneMAMDeviceID**, la aplicación Intune considerará el dispositivo como no administrado.
 
 > [!NOTE]
-> Para obtener información específica de compatibilidad con iOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [MAM protection policies targeted based on management state](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state) (Directivas de protección MAM destinadas según el estado de administración).
+> Para obtener información específica de compatibilidad con iOS/iPadOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [Directivas de protección MAM destinadas según el estado de administración](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
 
 ## <a name="policy-settings"></a>Configuración de la directiva
-Para ver una lista completa de las configuraciones de directivas para iOS y Android, seleccione uno de los siguientes vínculos:
+Para ver una lista completa de las configuraciones de directivas para iOS/iPadOS y Android, seleccione uno de los siguientes vínculos:
 
 - [Directivas de iOS](app-protection-policy-settings-ios.md)
 - [Directivas de Android](app-protection-policy-settings-android.md)
@@ -200,4 +200,4 @@ Para ver una lista completa de las configuraciones de directivas para iOS y Andr
 
 ## <a name="see-also"></a>Vea también
 * [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [What to expect when your iOS app is managed by app protection policies](../fundamentals/end-user-mam-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
+* [Qué esperar cuando la aplicación iOS/iPadOS se administra con directivas de protección de aplicaciones](../fundamentals/end-user-mam-apps-ios.md)

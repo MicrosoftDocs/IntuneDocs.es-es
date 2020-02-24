@@ -1,7 +1,7 @@
 ---
-title: Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
+title: Agregar directivas de configuración de aplicaciones para dispositivos iOS/iPadOS administrados
 titleSuffix: Microsoft Intune
-description: Obtenga más información sobre cómo usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS cuando esta se ejecuta.
+description: Obtenga información sobre cómo usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS/iPadOS cuando esta se ejecuta.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755772"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438011"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
+# <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS/iPadOS administrados
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración personalizados para una aplicación para iOS. Estos valores de configuración permiten que una aplicación se personalice según la dirección de los proveedores de las aplicaciones. Debe obtener estos valores de configuración (claves y valores) del proveedor de la aplicación. Para configurar la aplicación, especifique la configuración, como claves y valores, o como XML que contiene las claves y valores.
+Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración personalizados para una aplicación iOS/iPadOS. Estos valores de configuración permiten que una aplicación se personalice según la dirección de los proveedores de las aplicaciones. Debe obtener estos valores de configuración (claves y valores) del proveedor de la aplicación. Para configurar la aplicación, especifique la configuración, como claves y valores, o como XML que contiene las claves y valores.
 
 Como administrador de Microsoft Intune, puede controlar qué cuentas de usuario se agregan a las aplicaciones de Microsoft Office en dispositivos administrados. Puede limitar el acceso solo a las cuentas de usuario de la organización permitidas y bloquear las cuentas personales en los dispositivos inscritos. Las aplicaciones auxiliares procesan la configuración de la aplicación y quitan y bloquean las cuentas no aprobadas. La configuración de directivas de configuración se usa cada vez que la aplicación comprueba dichas directivas, que suele ser la primera vez que se ejecuta.
 
@@ -41,7 +41,7 @@ Tras agregar una directiva de configuración de aplicación, podrá establecer l
 Una vez haya seleccionado los grupos incluidos para la directiva de configuración de la aplicación, también puede elegir los grupos específicos que quiera excluir. Para obtener más información, vea [Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
-> Este tipo de directiva está disponible solo para dispositivos con iOS 8.0 y versiones posteriores. Admite los siguientes tipos de instalación de la aplicación:
+> Este tipo de directiva está disponible solo para dispositivos con iOS/iPadOS 8.0 y versiones posteriores. Admite los siguientes tipos de instalación de la aplicación:
 >
 > - **Aplicación iOS administrada desde la tienda de aplicaciones**
 > - **Paquete de aplicación de iOS**
@@ -106,7 +106,7 @@ Los caracteres \{\{ y \}\} solo se usan para los tipos de token y no deben usars
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir solo cuentas de organización configuradas en aplicaciones de varias identidades 
 
-Para dispositivos iOS, use los siguientes pares de clave/valor:
+Para dispositivos iOS/iPadOS, use los siguientes pares clave-valor:
 
 | **Clave** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,17 +177,17 @@ Además, Intune admite los siguientes tipos de token en la lista de propiedades:
 - \{\{deviceid\}\}. Por ejemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\}. Por ejemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\}. Por ejemplo, **John Doe**
-- \{\{serialnumber\}\}. Por ejemplo, **F4KN99ZUG5V2** (en dispositivos iOS)
-- \{\{serialnumberlast4digits\}\}. Por ejemplo, **G5V2** (en dispositivos iOS)
+- \{\{serialnumber\}\}. Por ejemplo, **F4KN99ZUG5V2** (en dispositivos iOS/iPadOS)
+- \{\{serialnumberlast4digits\}\}. Por ejemplo, **G5V2** (en dispositivos iOS/iPadOS)
 - \{\{aaddeviceid\}\}: por ejemplo, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Configuración de la aplicación Portal de empresa para que admita dispositivos iOS DEP
 
-Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no son compatibles con la versión de App Store de la aplicación Portal de empresa. Sin embargo, puede configurar la aplicación Portal de empresa para que admita dispositivos iOS DEP mediante los pasos siguientes.
+Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no son compatibles con la versión de App Store de la aplicación Portal de empresa. Sin embargo, puede configurar la aplicación Portal de empresa para que admita dispositivos iOS/iPadOS con DEP mediante los pasos siguientes.
 
 1. En Intune, agregue la aplicación Portal de empresa de Intune si es necesario; para ello, vaya a **Intune** > **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 2. Vaya a **Aplicaciones** > **Directivas de configuración de aplicaciones** para crear una directiva de configuración de aplicaciones para la aplicación Portal de empresa.
-3. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](app-configuration-policies-use-ios.md).
+3. Cree una directiva de configuración de aplicaciones con el código XML siguiente. Puede encontrar más información sobre cómo crear una directiva de configuración de aplicaciones y escribir datos XML en [Agregar directivas de configuración de aplicaciones para dispositivos iOS/iPadOS administrados](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>
@@ -205,11 +205,11 @@ Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no 
 4. Indique a los usuarios finales que inicien sesión en la aplicación Portal de empresa cuando se instale automáticamente.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Supervisar el estado de configuración de aplicaciones iOS por dispositivo 
-Una vez que se ha asignado una directiva de configuración, puede supervisar el estado de configuración de aplicaciones iOS de cada dispositivo administrado. Desde **Microsoft Intune** en Azure Portal, seleccione **Dispositivos** > **Todos los dispositivos**. En la lista de dispositivos administrados, seleccione un dispositivo específico para mostrar un panel para el dispositivo. En el panel del dispositivo, seleccione **Configuración de aplicaciones**.  
+Una vez que se ha asignado una directiva de configuración, puede supervisar el estado de configuración de aplicaciones iOS/iPadOS de cada dispositivo administrado. Desde **Microsoft Intune** en Azure Portal, seleccione **Dispositivos** > **Todos los dispositivos**. En la lista de dispositivos administrados, seleccione un dispositivo específico para mostrar un panel para el dispositivo. En el panel del dispositivo, seleccione **Configuración de aplicaciones**.  
 
 ## <a name="additional-information"></a>Información adicional
 
-- [Implementación de las opciones de configuración de la aplicación de Outlook para iOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [Implementación de las opciones de configuración de la aplicación de Outlook para iOS/iPadOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

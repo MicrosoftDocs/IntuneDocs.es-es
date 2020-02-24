@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812487"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415541"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Restablecimiento o eliminación del código de acceso de un dispositivo en Intune
 
@@ -35,8 +35,8 @@ En este documento se describe el restablecimiento del código de acceso tanto en
 | ---- | ---- |
 | Dispositivos Android con la versión 6 o anteriores | Sí |
 | Dispositivos Android Enterprise inscritos como propietario del dispositivo | Sí |
-| Dispositivos iOS | Sí |
-| Dispositivos iOS inscritos con Inscripción de usuario | No |
+| Dispositivos iOS/iPadOS | Sí |
+| Dispositivos iOS/iPadOS inscritos con Inscripción de usuario | No |
 | Dispositivos Android inscritos con un perfil de trabajo | No |
 | Dispositivos Android en la versión 7.0 o posteriores | No |
 | macOS | No |
@@ -68,9 +68,9 @@ Los dispositivos compatibles Android Enterprise inscritos un con perfil de traba
 En los dispositivos Android Enterprise versión 8.x o posterior que están inscritos con un perfil de trabajo, los usuarios finales reciben una notificación para activar el restablecimiento de código de acceso una vez completada la inscripción. La notificación se muestra si hay establecida y se requiere una contraseña de perfil de trabajo. Una vez introducido el código de acceso, la notificación desaparece.
 
 
-## <a name="remove-ios-passcodes"></a>Quitar códigos de acceso de iOS
+## <a name="remove-iosipados-passcodes"></a>Quitar códigos de acceso de iOS/iPadOS
 
-En lugar de restablecerse, los códigos de acceso se quitan de los dispositivos iOS. Si hay establecida una directiva de cumplimiento de código de acceso, el dispositivo solicitará al usuario que establezca un código de acceso nuevo en Configuración.
+En lugar de restablecerse, los códigos de acceso se quitan de los dispositivos iOS/iPadOS. Si hay establecida una directiva de cumplimiento de código de acceso, el dispositivo solicitará al usuario que establezca un código de acceso nuevo en Configuración.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

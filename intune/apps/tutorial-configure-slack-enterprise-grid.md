@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206914"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415478"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configuración de Slack para usar Intune para EMM y la configuración de aplicaciones
 
@@ -69,7 +69,7 @@ Agregue Slack para EMM como una aplicación iOS administrada en Intune y asigne 
 10. Haga clic en **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Incorporación de una directiva de configuración de aplicaciones de Slack para EMM
-Agregue una directiva de configuración de aplicaciones de Slack para EMM de iOS. Las directivas de configuración de aplicaciones para los dispositivos administrados son específicas para una plataforma, por lo que deberá agregar una directiva distinta para los usuarios de Slack en dispositivos Android.
+Agregue una directiva de configuración de aplicaciones de Slack para EMM de iOS/iPadOS. Las directivas de configuración de aplicaciones para los dispositivos administrados son específicas para una plataforma, por lo que deberá agregar una directiva distinta para los usuarios de Slack en dispositivos Android.
 1. En el centro de administración, seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Dispositivos administrados**.
 2. En Nombre, escriba "Prueba de la directiva de configuración de aplicaciones de Slack".
 3. En Tipo de inscripción del dispositivo, confirme que **Dispositivos administrados** esté habilitado.

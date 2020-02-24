@@ -1,6 +1,6 @@
 ---
 title: Reiniciar dispositivos con Microsoft Intune - Azure | Microsoft Docs
-description: Reinicie dispositivos Windows e iOS con Microsoft Intune en Azure Portal con la acción de reinicio remoto.
+description: Reinicie dispositivos Windows y iOS/iPadOS con Microsoft Intune en Azure Portal con la acción de reinicio remoto.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517548"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415613"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reinicio remoto de los dispositivos con Intune
 
@@ -35,10 +35,10 @@ La acción de dispositivo **Reiniciar** permite que se reinicie el dispositivo e
 - Windows: compatible con Windows 8.1 y versiones posteriores
 - Windows Phone: compatible con Windows Phone 8.1 y versiones posteriores
 - Dispositivos de quiosco de Android: compatibles con Android 7.0 y versiones posteriores
-- iOS: compatible
+- iOS/iPados: compatible
 
     > [!Note]  
-    > Para usar este comando es necesario que el dispositivo esté supervisado y disponer del derecho de acceso **Bloqueo del dispositivo**. El dispositivo se reinicia inmediatamente. Los dispositivos iOS bloqueados con un código de acceso no se vuelven a unir a una red Wi-Fi después del reinicio. Después del reinicio, el dispositivo podría no comunicarse con el servidor.
+    > Para usar este comando es necesario que el dispositivo esté supervisado y disponer del derecho de acceso **Bloqueo del dispositivo**. El dispositivo se reinicia inmediatamente. Los dispositivos iOS/iPadOS bloqueados con un código de acceso no se vuelven a unir a una red Wi-Fi después del reinicio. Después del reinicio, el dispositivo podría no comunicarse con el servidor.
 - macOS: no compatible
 - Dispositivos Android y del perfil de trabajo Android: no compatibles
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907226"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413626"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Restablecimiento del código de acceso en dispositivos Windows con Intune
 
@@ -60,7 +60,7 @@ Reemplace *id. de inquilino* por el identificador de directorio de Azure AD, que
 Establezca el valor de este CSP en **True**.
 
 > [!TIP]
-> Después de crear la directiva, se asigna (o implementa) a un grupo. La directiva se puede asignar a grupos de usuarios o grupos de dispositivos. Si se asigna a un grupo de usuarios, es posible que el grupo incluya usuarios que tienen otros dispositivos, como iOS. Técnicamente, la directiva no se aplica, pero estos dispositivos se siguen incluyendo en los detalles del estado.
+> Después de crear la directiva, se asigna (o implementa) a un grupo. La directiva se puede asignar a grupos de usuarios o grupos de dispositivos. Si se asigna a un grupo de usuarios, es posible que el grupo incluya usuarios que tienen otros dispositivos, como iOS/iPadOS. Técnicamente, la directiva no se aplica, pero estos dispositivos se siguen incluyendo en los detalles del estado.
 
 ## <a name="reset-the-passcode"></a>Restablecimiento del código de acceso
 

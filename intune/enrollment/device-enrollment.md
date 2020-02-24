@@ -1,7 +1,7 @@
 ---
 title: ¿Qué es la inscripción de dispositivos de Microsoft Intune?
 titleSuffix: Microsoft Intune
-description: Aprenda sobre la inscripción de dispositivos iOS, Android y Windows.
+description: Obtenga información sobre la inscripción de dispositivos iOS/iPadOS, Android y Windows.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547832"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415342"
 ---
 # <a name="what-is-device-enrollment"></a>¿Qué es la inscripción de dispositivos?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -33,7 +33,7 @@ Como puede observar en las tablas siguientes, hay varias formas de inscribir los
 
 De manera predeterminada, los dispositivos de todas las plataformas pueden inscribirse en Intune. Sin embargo, puede [restringir dispositivos por plataforma](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
-## <a name="ios-enrollment-methods"></a>Métodos de inscripción de iOS
+## <a name="iosipados-enrollment-methods"></a>Métodos de inscripción de iOS/iPadOS
 
 | **Método** | **Se requiere reinicio** | [**Afinidad de usuario**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Bloqueado** | **Detalles** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -84,36 +84,36 @@ De manera predeterminada, los dispositivos de todas las plataformas pueden inscr
 Entre los dispositivos Bring Your Own Device (BYOD) se incluyen teléfonos, tabletas y equipos personales. Los usuarios instalan y ejecutan la aplicación Portal de empresa para inscribir sus dispositivos BYOD. Este programa permite a los usuarios acceder a los recursos de la compañía, como el correo electrónico.
 
 ## <a name="corporate-owned-device"></a>Dispositivo de propiedad corporativa
-Entre los [dispositivos de propiedad corporativa (COD)](corporate-identifiers-add.md) se incluyen teléfonos, tabletas y equipos propiedad de la empresa facilitados a los recursos. La inscripción de COD permite escenarios como la inscripción automática, el uso compartido de dispositivos o los requisitos de inscripción autorizada previamente. Una forma habitual de inscribir dispositivos COD es utilizar el administrador de inscripción de dispositivos (DEM) por parte de un administrador. Los dispositivos iOS se pueden inscribir directamente mediante las herramientas del Programa de inscripción de dispositivos (DEP) proporcionadas por Apple. Los dispositivos con un número IMEI también se pueden identificar y etiquetar como de propiedad corporativa.
+Entre los [dispositivos de propiedad corporativa (COD)](corporate-identifiers-add.md) se incluyen teléfonos, tabletas y equipos propiedad de la empresa facilitados a los recursos. La inscripción de COD permite escenarios como la inscripción automática, el uso compartido de dispositivos o los requisitos de inscripción autorizada previamente. Una forma habitual de inscribir dispositivos COD es utilizar el administrador de inscripción de dispositivos (DEM) por parte de un administrador. Los dispositivos iOS/iPadOS se pueden inscribir directamente mediante las herramientas del Programa de inscripción de dispositivos (DEP) proporcionadas por Apple. Los dispositivos con un número IMEI también se pueden identificar y etiquetar como de propiedad corporativa.
 
 ### <a name="device-enrollment-manager"></a>Administrador de inscripción de dispositivos
 El administrador de inscripción de dispositivos (DEM) es una cuenta especial de usuario que se usa para inscribir y administrar varios dispositivos de la empresa. Los administradores pueden instalar el portal de empresa e inscribir muchos dispositivos sin usuario. Estos tipos de dispositivos son buenos para aplicaciones de punto de venta o de utilidad, por ejemplo, pero inadecuados para usuarios que necesitan acceso al correo electrónico o a los recursos de empresa. Obtenga más información sobre [DEM](device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Programa de inscripción de dispositivos de Apple
-La administración del Programa de inscripción de dispositivos (DEP) de Apple permite crear e implementar directivas "de forma inalámbrica" para dispositivos iOS y macOS que se han adquirido y administrado con DEP. El dispositivo se inscribe cuando los usuarios lo activan por primera vez y ejecutan el asistente de configuración. Este método admite el modo supervisado de iOS, que permite configurar un dispositivo con una funcionalidad específica.
+La administración del Programa de inscripción de dispositivos (DEP) de Apple permite crear e implementar directivas "de forma inalámbrica" para dispositivos iOS/iPadOS y macOS que se han adquirido y administrado con DEP. El dispositivo se inscribe cuando los usuarios lo activan por primera vez y ejecutan el asistente de configuración. Este método admite el modo supervisado de iOS/iPadOS, que permite configurar un dispositivo con una funcionalidad específica.
 
-Más información sobre la inscripción de DEP de iOS:
+Más información sobre la inscripción de DEP para iOS/iPadOS:
 
-- [Elegir cómo inscribir los dispositivos iOS](ios-enroll.md)
-- [Enroll iOS devices using Device Enrollment Program](device-enrollment-program-enroll-ios.md) (Inscripción de dispositivos iOS mediante el Programa de inscripción de dispositivos)
+- [Inscripción de dispositivos iOS/iPadOS en Intune](ios-enroll.md)
+- [Inscripción de dispositivos iOS/iPadOS con el Programa de inscripción de dispositivos](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
 Los administradores de TI usan Apple Configurator a través de USB para preparar manualmente cada dispositivo corporativo para la inscripción mediante el Asistente de configuración. El administrador de TI crea un perfil de inscripción y lo exporta a Apple Configurator. Cuando los usuarios reciben sus dispositivos, se les solicita que ejecuten el Asistente de configuración para inscribirlos. Este método admite el modo **supervisado de iOS**, que a su vez permite las siguientes características:
 - Inscripción bloqueada
 - Modo de pantalla completa y otras configuraciones y restricciones avanzadas
 
-Más información sobre la inscripción de iOS con Apple Configurator con el Asistente de configuración:
+Más información sobre la inscripción de iOS/iPadOS con Apple Configurator con el Asistente de configuración:
 
-- [Decide how to enroll iOS devices](ios-enroll.md) (Decidir cómo inscribir dispositivos iOS)
-- [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-enroll-ios.md) (Inscripción de dispositivos iOS con el Asistente de configuración y Apple Configurator)
+- [Inscripción de dispositivos iOS/iPadOS](ios-enroll.md)
+- [Inscripción de dispositivos iOS/iPadOS con Configurator y el Asistente de configuración](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
 Para realizar una inscripción directa, el administrador debe inscribir cada dispositivo manualmente creando una directiva de inscripción y exportándola a Apple Configurator. Los dispositivos corporativos conectados por USB se inscriben directamente y no requieren un borrado. Los dispositivos se administran como dispositivos sin usuario. No se bloquean ni se supervisan y no son compatibles con el acceso condicional, la detección de jailbreak ni la administración de aplicaciones móviles.
 
-Para más información sobre la inscripción de dispositivos iOS, consulte:
+Para más información sobre la inscripción de dispositivos iOS/iPadOS, vea:
 
-- [Decide how to enroll iOS devices](ios-enroll.md) (Decidir cómo inscribir dispositivos iOS)
-- [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-enroll-ios.md) (Inscripción de dispositivos iOS con Apple Configurator y la inscripción directa)
+- [Inscripción de dispositivos iOS/iPadOS](ios-enroll.md)
+- [Inscripción de dispositivos iOS/iPadOS con Configurator y la inscripción directa](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpieza de dispositivos móviles tras la expiración del certificado MDM
 

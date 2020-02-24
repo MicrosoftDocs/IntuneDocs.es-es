@@ -1,7 +1,7 @@
 ---
 title: Envío de notificaciones personalizadas a los usuarios con Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Uso de Intune para crear y enviar notificaciones push personalizadas a los usuarios de dispositivos iOS y Android
+description: Uso de Intune para crear y enviar notificaciones push personalizadas a los usuarios de dispositivos iOS/iPadOS y Android
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517522"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413882"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Envío de notificaciones personalizadas en Intune  
 
-Use Microsoft Intune para enviar notificaciones personalizadas a los usuarios de dispositivos iOS y Android administrados. Estos mensajes aparecen como notificaciones push estándar desde la aplicación Portal de empresa y la de Microsoft Intune en el dispositivo de un usuario, tal y como se muestran las notificaciones de otras aplicaciones del dispositivo. Los dispositivos Windows y macOS no admiten las notificaciones personalizadas de Intune.   
+Use Microsoft Intune para enviar notificaciones personalizadas a los usuarios de dispositivos iOS/iPadOS y Android administrados. Estos mensajes aparecen como notificaciones push estándar desde la aplicación Portal de empresa y la de Microsoft Intune en el dispositivo de un usuario, tal y como se muestran las notificaciones de otras aplicaciones del dispositivo. Los dispositivos Windows y macOS no admiten las notificaciones personalizadas de Intune.   
 
 Los mensajes de notificación personalizados incluyen un título corto y un cuerpo de mensaje de 500 caracteres como máximo. Estos mensajes se pueden personalizar para cualquier propósito general de comunicación.
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>Aspecto de la notificación en un dispositivo iOS
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>Aspecto de la notificación en un dispositivo iOS/iPadOS
 
-Si tiene la aplicación Portal de empresa abierta en un dispositivo iOS, la notificación es similar a la captura de pantalla siguiente:
+Si tiene la aplicación Portal de empresa abierta en un dispositivo iOS/iPadOS, la notificación es similar a la que se muestra en la captura de pantalla siguiente:
 
 > [!div class="mx-imgBorder"]
-> ![Notificación de prueba Portal de empresa para iOS](./media/custom-notifications/105046-1.png)
+> ![Notificación de prueba de Portal de empresa para iOS/iPadOS](./media/custom-notifications/105046-1.png)
 
 Si el dispositivo está bloqueado, la notificación es similar a la captura de pantalla siguiente:
 
 > [!div class="mx-imgBorder"]
-> ![Notificación de prueba Dispositivo bloqueado para iOS](./media/custom-notifications/105046-2.png)
+> ![Notificación de prueba de Dispositivo bloqueado para iOS/iPadOS](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>Aspecto de la notificación en un dispositivo Android
 
@@ -75,14 +75,14 @@ Si tiene la aplicación Portal de empresa abierta en un dispositivo Android, la 
 - Al enviar mensajes a dispositivos individuales, solo puede enviar hasta 10 mensajes por hora al mismo dispositivo. 
 - Puede enviar notificaciones a varios usuarios o dispositivos asignando la notificación a los grupos. Al usar grupos, cada notificación puede destinarse directamente a 25 grupos como máximo. Los grupos anidados no cuentan para este total.  
 
-  Los grupos pueden incluir usuarios o dispositivos, pero los mensajes solo se envían a los usuarios y a los dispositivos iOS o Android que el usuario haya registrado.  
+  Los grupos pueden incluir usuarios o dispositivos, pero los mensajes solo se envían a los usuarios y a los dispositivos iOS/iPadOS o Android que el usuario haya registrado.  
 - Puede enviar notificaciones a un solo dispositivo. En lugar de usar grupos, seleccione un dispositivo y, a continuación, use una [acción de dispositivo](device-management.md#available-device-actions) remota para enviar la notificación personalizada.  
 
 **Entrega**:  
 - Intune envía mensajes a la aplicación Portal de empresa o la de Microsoft Intune de los usuarios, que después crea la notificación push. No es necesario que los usuarios inicien sesión en la aplicación para que la notificación se inserte en el dispositivo.  
 - Intune, al igual que la aplicación Portal de empresa y la de Microsoft Intune, no puede garantizar la entrega de una notificación personalizada. Las notificaciones personalizadas pueden aparecer después de varias horas de retraso, si acaso, por lo que no deben usarse para mensajes urgentes.  
-- Los mensajes de notificación personalizados de Intune aparecen en los dispositivos como notificaciones push. Si la aplicación Portal de empresa está abierta en un dispositivo iOS cuando recibe la notificación, esta se muestra en la aplicación en lugar de ser una notificación push.  
-- Las notificaciones personalizadas pueden verse en pantallas de bloqueo en dispositivos iOS y Android, en función de la configuración del dispositivo.  
+- Los mensajes de notificación personalizados de Intune aparecen en los dispositivos como notificaciones push. Si la aplicación Portal de empresa está abierta en un dispositivo iOS/iPadOS cuando recibe la notificación, esta se muestra en la aplicación en lugar de ser una notificación push.  
+- Las notificaciones personalizadas pueden verse en pantallas de bloqueo en dispositivos iOS/iPadOS y Android, en función de la configuración del dispositivo.  
 - En los dispositivos Android, es posible que otras aplicaciones tengan acceso a los datos de las notificaciones personalizadas. No las use para las comunicaciones confidenciales.  
 - Los usuarios de un dispositivo que ha anulado la inscripción recientemente o los que se han quitado de un grupo pueden seguir recibiendo una notificación personalizada, que posteriormente se envía a ese grupo.  Del mismo modo, si agrega un usuario a un grupo después de enviar una notificación personalizada al grupo, es posible que el usuario recién agregado reciba ese mensaje de notificación enviado anteriormente.  
 
@@ -127,7 +127,7 @@ Intune procesa el mensaje inmediatamente. La única confirmación de que se ha e
 
 En un dispositivo, los usuarios ven mensajes de notificación personalizados que envía Intune como una notificación push estándar desde la aplicación Portal de empresa o la de Microsoft Intune. Estas notificaciones son parecidas a las notificaciones push que reciben los usuarios de otras aplicaciones del dispositivo.  
 
-En dispositivos iOS, si la aplicación Portal de empresa está abierta cuando se recibe la notificación, esta se muestra en la aplicación en lugar de ser una notificación push.  
+En dispositivos iOS/iPadOS, si la aplicación Portal de empresa está abierta cuando se recibe la notificación, esta se muestra en la aplicación en lugar de ser una notificación push.  
 
 La notificación permanece hasta que el usuario la descarta.  
 

@@ -1,5 +1,5 @@
 ---
-title: Administración de libros electrónicos de iOS comprados por volumen
+title: Administración de libros electrónicos de iOS/iPadOS comprados por volumen
 titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo puede sincronizar libros comprados por volumen en la tienda de iOS en Intune y luego administrar y realizar el seguimiento de su uso.
 keywords: ''
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08275e2573fe8aae8c59ea25c85cdd8f7a3246ee
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: f7c2bd0603961b9d618b3f743ecb323fb7fc9823
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563759"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437875"
 ---
-# <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administración de libros electrónicos de iOS comprados a través de un programa de compras por volumen con Microsoft Intune
+# <a name="how-to-manage-iosipados-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administración de libros electrónicos de iOS/iPadOS comprados mediante un programa de compras por volumen con Microsoft Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -37,7 +37,7 @@ Microsoft Intune le ayuda a sincronizar, administrar y asignar libros comprados 
 Los procedimientos para administrar libros son similares a la [administración de aplicaciones de VPP](../vpp-apps-ios.md).
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>Administración de libros comprados por volumen para dispositivos iOS
-Puede comprar varias licencias de libros iOS mediante el [Programa de Compras por Volumen de Apple para empresas](https://www.apple.com/business/vpp/) o el [Programa de Compras por Volumen de Apple para educación](https://volume.itunes.apple.com/us/store). Este proceso implica configurar una cuenta de VPP de Apple en el sitio web de Apple y cargar el token de VPP de Apple en Intune.  De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de libros comprados por volumen.
+Puede comprar varias licencias de libros iOS/iPadOS mediante el [Programa de Compras por Volumen de Apple para empresas](https://www.apple.com/business/vpp/) o el [Programa de Compras por Volumen de Apple for Education](https://volume.itunes.apple.com/us/store). Este proceso implica configurar una cuenta de VPP de Apple en el sitio web de Apple y cargar el token de VPP de Apple en Intune.  De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de libros comprados por volumen.
 
 ## <a name="before-you-start"></a>Antes de empezar
 Antes de empezar, obtenga un token de VPP de Apple y cárguelo en la cuenta de Intune. Además:
@@ -46,7 +46,7 @@ Antes de empezar, obtenga un token de VPP de Apple y cárguelo en la cuenta de I
 * La validez de cada token es de un año.
 * De forma predeterminada, Intune se sincroniza con el servicio PCV de Apple dos veces al día. Puede iniciar una sincronización manual en cualquier momento.
 * Después de importar el token de PCV en Intune, no importe el mismo token en otra solución de administración de dispositivos. Si lo hace, podría perder la asignación de licencias y los registros de usuario.
-* Antes de empezar a usar los libros de iOS con Intune, quite todas las cuentas de usuario de VPP existentes creadas con otros proveedores de administración de dispositivos móviles (MDM). Intune no sincroniza esas cuentas de usuario en Intune como medida de seguridad. Intune solo sincroniza los datos del servicio VPP de Apple que se creó mediante Intune.
+* Antes de empezar a usar los libros de iOS/iPadOS con Intune, quite todas las cuentas de usuario de VPP existentes creadas con otros proveedores de administración de dispositivos móviles (MDM). Intune no sincroniza esas cuentas de usuario en Intune como medida de seguridad. Intune solo sincroniza los datos del servicio VPP de Apple que se creó mediante Intune.
 * Cuando asigne un libro a un dispositivo, dicho dispositivo debe tener instalada la aplicación iBooks integrada. Si no es así, el usuario final deberá volver a instalar la aplicación antes de poder leer el libro. Actualmente no puede usar Intune para restaurar aplicaciones integradas que se hayan quitado.
 * Solo se pueden asignar libros del sitio del Programa de Compras por Volumen de Apple. No puede cargar y luego asignar libros creados en la empresa.
 * Actualmente no puede asignar libros a las categorías de usuarios finales del mismo modo en que lo hace con las aplicaciones.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c980b3f9ababaf94aa7b279e533679ed74b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6941b3b79dd690c9861c8efead7f525e56e2b350
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503364"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415413"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Administrar dispositivos de perfil de trabajo Android con Intune
 
@@ -55,7 +55,7 @@ Android Enterprise proporciona una infraestructura para implementar valores de c
 
 ## <a name="email-configuration"></a>Configuración del correo electrónico
 
-Android Enterprise no proporciona una aplicación de correo electrónico predeterminada o un perfil de correo electrónico nativo como los que proporciona iOS. En su lugar, las configuraciones de correo electrónico se pueden establecer aplicando los valores de configuración a las aplicaciones de correo electrónico que los admitan. Gmail y Nine Work son dos aplicaciones cliente de Exchange ActiveSync (EAS) de Play Store que admiten la configuración con aplicaciones de Android Enterprise.
+Android Enterprise no proporciona una aplicación de correo electrónico predeterminada o un perfil de correo electrónico nativo como los que proporciona iOS/iPadOS. En su lugar, las configuraciones de correo electrónico se pueden establecer aplicando los valores de configuración a las aplicaciones de correo electrónico que los admitan. Gmail y Nine Work son dos aplicaciones cliente de Exchange ActiveSync (EAS) de Play Store que admiten la configuración con aplicaciones de Android Enterprise.
 
 Intune proporciona plantillas de configuración para aplicaciones de Gmail y Nine Work cuando se administran como aplicaciones de trabajo. Otras aplicaciones de correo electrónico que admiten perfiles de configuración de aplicaciones pueden configurarse con las directivas de configuración de aplicaciones móviles.
 

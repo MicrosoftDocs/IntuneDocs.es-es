@@ -16,17 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713428"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415530"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronización de dispositivos para obtener las directivas y las acciones más recientes con Intune
 
 
-La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a registrarse inmediatamente en Intune. Cuando un dispositivo se registra, recibe de inmediato las acciones o las directivas pendientes que se le han asignado. Esta característica puede ayudarle a validar y a solucionar problemas de directivas que se le hayan asignado inmediatamente, sin tener que esperar al siguiente registro programado.
+La acción del dispositivo **Sincronizar** obliga al dispositivo seleccionado a registrarse inmediatamente con Intune. Cuando un dispositivo se registra, recibe de inmediato las acciones o las directivas pendientes que se le han asignado. Esta característica puede ayudarle a validar y a solucionar problemas de directivas que se le hayan asignado inmediatamente, sin tener que esperar al siguiente registro programado.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
@@ -49,7 +49,7 @@ Puede encontrar las frecuencias de sincronización de directivas de Intune está
 
 ## <a name="retryable-error-codes"></a>Códigos de error que admiten reintentos
 
-Cuando un administrador ejecute la acción de dispositivo **Sincronizar**, las aplicaciones de iOS y Android que han generado un código de error que admite reintentos siguen estando disponibles para el dispositivo. En cambio, las aplicaciones que han generado un código de error que no admite reintentos deberán esperar siete días antes de estar disponibles en el dispositivo.
+Cuando un administrador ejecute la acción de dispositivo **Sincronizar**, las aplicaciones iOS/iPadOS y Android que han generado un código de error que admite reintentos siguen estando disponibles para el dispositivo. En cambio, las aplicaciones que han generado un código de error que no admite reintentos deberán esperar siete días antes de estar disponibles en el dispositivo.
 
 
 | Código de error  | Descripción sugerida | Admite reintentos |

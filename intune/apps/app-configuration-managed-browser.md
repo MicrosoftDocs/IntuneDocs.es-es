@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812512"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414901"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Administración del acceso web con un explorador protegido por directiva de Microsoft Intune
 
@@ -42,7 +42,7 @@ Mediante un explorador protegido por una directiva de Intune (Microsoft Edge o I
 
 ## <a name="microsoft-edge-support"></a>Compatibilidad de Microsoft Edge
 
-Puede usar Microsoft Edge para escenarios empresariales en dispositivos iOS y Android. Microsoft Edge admite los mismos escenarios de administración que Intune Managed Browser con la incorporación de mejoras en la experiencia del usuario final. Están disponibles las características empresariales de Microsoft Edge siguientes habilitadas por directivas de Intune:
+Puede usar Microsoft Edge para escenarios empresariales en dispositivos iOS/iPadOS y Android. Microsoft Edge admite los mismos escenarios de administración que Intune Managed Browser con la incorporación de mejoras en la experiencia del usuario final. Están disponibles las características empresariales de Microsoft Edge siguientes habilitadas por directivas de Intune:
 
 - **Identidad dual**: los usuarios pueden agregar una cuenta profesional, al igual que una cuenta personal, para realizar la exploración. Hay una separación total entre ambas identidades, que es similar a la arquitectura y experiencia existente en Office 365 y Outlook. Los administradores de Intune podrán establecer las directivas deseadas para lograr una experiencia de exploración protegida dentro de la cuenta profesional. 
 - **Integración de directivas de protección de la aplicación Intune**: los administradores ahora pueden dirigir las directivas de protección de aplicación a Microsoft Edge, incluido el control de las acciones de cortar, copiar y pegar, lo que impide las capturas de pantalla y garantiza que los vínculos seleccionados por el usuario solo se abran en otras aplicaciones administradas.
@@ -57,9 +57,9 @@ Microsoft Edge e Intune Managed Browser son aplicaciones de explorador web que u
 
 Requisitos del sistema operativo para las directivas de explorador:
 - Android 4 y versiones posteriores
-- iOS 8.0 y versiones posteriores.
+- iOS/iPadOS 8.0 y versiones posteriores
 
-Las versiones anteriores de iOS y Android podrán seguir usando Intune Managed Browser, pero no podrán instalar nuevas versiones de la aplicación y es posible que no puedan tener acceso a todas las funcionalidades de la aplicación. Le recomendamos que actualice la versión del sistema operativo de estos dispositivos a una que sea compatible.
+Las versiones anteriores de iOS/iPadOS y Android podrán seguir usando Managed Browser, pero no podrán instalar nuevas versiones de la aplicación y es posible que no puedan acceder a todas las funcionalidades de la aplicación. Le recomendamos que actualice la versión del sistema operativo de estos dispositivos a una que sea compatible.
 
 >[!NOTE]
 >Managed Browser no es compatible con el protocolo de cifrado de Capa de sockets seguros versión 3 (SSLv3).
@@ -123,9 +123,9 @@ Managed Browser no admite directivas de acceso condicional clásicas. Para obten
 
 ## <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>Inicio de sesión único en aplicaciones web conectadas a Azure AD en exploradores protegidos por directivas
 
-Microsoft Edge e Intune Managed Browser en iOS y Android pueden aprovechar el inicio de sesión único en todas las aplicaciones web (SaaS y locales) que estén conectadas a Azure AD. Si la aplicación Microsoft Authenticator está presente en iOS o la aplicación Portal de empresa de Intune lo está en Android, los usuarios de un explorador protegido por directivas podrán acceder a aplicaciones web conectadas a Azure AD sin tener que volver a escribir sus credenciales.
+Microsoft Edge e Intune Managed Browser en iOS/iPadOS y Android pueden aprovechar el inicio de sesión único en todas las aplicaciones web (SaaS y locales) que estén conectadas a Azure AD. Si la aplicación Microsoft Authenticator está presente en iOS/iPadOS o la aplicación Portal de empresa de Intune lo está en Android, los usuarios de un explorador protegido por directivas podrán acceder a aplicaciones web conectadas a Azure AD sin tener que volver a escribir sus credenciales.
 
-Para el inicio de sesión único hace falta que el dispositivo esté registrado con la aplicación Microsoft Authenticator en iOS o con el Portal de empresa de Intune en Android. Los usuarios que tengan las aplicaciones Authenticator o Portal de empresa de Intune deberán registrar su dispositivo cuando vayan a una aplicación web conectada a Azure AD en un explorador protegido por directivas, si el dispositivo aún no se ha registrado por medio de otra aplicación. Una vez que el dispositivo esté registrado con la cuenta administrada por Intune, esa cuenta tendrá habilitado el inicio de sesión único en las aplicaciones web conectadas a Azure AD. 
+Para el inicio de sesión único, hace falta que el dispositivo esté registrado con la aplicación Microsoft Authenticator en iOS/iPadOS o con el Portal de empresa de Intune en Android. Los usuarios que tengan las aplicaciones Authenticator o Portal de empresa de Intune deberán registrar su dispositivo cuando vayan a una aplicación web conectada a Azure AD en un explorador protegido por directivas, si el dispositivo aún no se ha registrado por medio de otra aplicación. Una vez que el dispositivo esté registrado con la cuenta administrada por Intune, esa cuenta tendrá habilitado el inicio de sesión único en las aplicaciones web conectadas a Azure AD. 
 
 > [!NOTE]
 > El registro de dispositivos consiste en un sencillo registro en el servicio de Azure AD. No se requiere una inscripción de dispositivo completa ni se otorga a TI ningún tipo de privilegio extra en el dispositivo.
@@ -138,7 +138,7 @@ Para el inicio de sesión único hace falta que el dispositivo esté registrado 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Aplicaciones administradas**.
 3. En la página **Aspectos básicos** del panel **Crear una directiva de configuración de aplicaciones**, escriba un **nombre** y una **descripción** opcional para las opciones de configuración de aplicaciones.
-4. Elija **Seleccionar la aplicación pública** y elija **Managed Browser** o **Edge** para iOS, para Android o para ambos.
+4. Elija **Seleccionar la aplicación pública** y elija **Managed Browser** o **Edge** para iOS/iPadOS, para Android o para ambos.
 5. Haga clic en **Seleccionar** para volver al panel **Crear una directiva de configuración de aplicaciones**.
 6. Haga clic en **Siguiente** para abrir la página **Configuración**.
 7. En la página **Configuración**, defina los pares de clave y valor para proporcionar configuraciones para la aplicación. Use las secciones posteriores de este artículo para obtener información sobre los diferentes pares de clave y valor que puede definir.
@@ -186,7 +186,7 @@ Mediante el procedimiento anterior para crear una configuración de la aplicaci�
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Configuración del proxy de aplicación para exploradores protegidos
 
-Microsoft Edge e Intune Managed Browser y [Azure Active Directory Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) pueden usarse conjuntamente para admitir los siguientes casos de usuarios de dispositivos iOS y Android:
+Microsoft Edge e Intune Managed Browser y [Azure Active Directory Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) pueden usarse conjuntamente para admitir los siguientes casos de usuarios de dispositivos iOS/iPadOS y Android:
 
 - Un usuario descarga e inicia sesión en la aplicación Microsoft Outlook. Las directivas de protección de aplicaciones de Intune se aplican automáticamente. Cifran los datos guardados e impiden que el usuario transfiera archivos corporativos a ubicaciones o aplicaciones no administradas en el dispositivo. Cuando el usuario hace clic en un vínculo a un sitio de intranet en Outlook, puede especificar que el vínculo se abra en la aplicación de explorador protegido en lugar de en otro explorador. El explorador protegido reconoce que este sitio de intranet se ha expuesto al usuario a través del proxy de aplicación. El usuario se enruta automáticamente a través del proxy de la aplicación para que se autentique con una autenticación multifactor y un acceso condicional antes de llegar al sitio de la intranet. Este sitio, que anteriormente no se podía encontrar mientras el usuario fuera remoto, ahora es accesible y el vínculo en Outlook funciona según lo previsto.
 - Un usuario remoto abre la aplicación de explorador protegido y se desplaza a un sitio de intranet con la dirección URL interna. El explorador protegido reconoce que este sitio de intranet se ha expuesto al usuario a través del proxy de aplicación. El usuario se enruta automáticamente a través del proxy de la aplicación para que se autentique con una autenticación multifactor y un acceso condicional antes de llegar al sitio de la intranet. Este sitio, que anteriormente no se podía encontrar mientras el usuario fuera remoto, ahora es accesible.
@@ -316,9 +316,9 @@ Aplicando el procedimiento para crear una configuración de aplicaciones de Micr
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Cómo tener acceso a los registros de aplicación administrada con Managed Browser en iOS
 
-Los usuarios finales que tengan Managed Browser instalado en el dispositivo iOS pueden ver el estado de administración de todas las aplicaciones publicadas de Microsoft. También pueden enviar registros para solucionar problemas con sus aplicaciones iOS administradas.
+Los usuarios finales que tengan Managed Browser instalado en el dispositivo iOS/iPadOS pueden ver el estado de administración de todas las aplicaciones publicadas de Microsoft. También pueden enviar registros para solucionar problemas con sus aplicaciones iOS/iPadOS administradas.
 
-1. Abra la **Configuración** de iOS.
+1. Abra **Configuración** en iOS/iPadOS.
 2. Seleccione la configuración de aplicación de del **explorador** administrado.
 3. Cambie a **Habilitar diagnósticos de Intune** para establecer el explorador en modo de solución de problemas.
 4. Abra el **explorador** administrado. Haga clic en **Ver estado de aplicación Intune** para revisar la configuración de directiva de aplicación individual.
@@ -345,7 +345,7 @@ Para obtener una lista de las opciones de configuración almacenadas en los regi
 ### <a name="turn-off-usage-data"></a>Desactivar los datos de uso
 Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso de Managed Browser para mejorar sus productos y servicios. Los usuarios pueden usar en sus dispositivos la configuración de **Datos de uso** para desactivar la recopilación de datos. No tiene ningún control sobre la recopilación de estos datos.
 
-- En dispositivos iOS, no se pueden abrir los sitios web que visitan los usuarios y que tienen un certificado expirado o que no es de confianza.
+- En dispositivos iOS/iPadOS, no se pueden abrir los sitios web que visitan los usuarios y que tienen un certificado expirado o que no es de confianza.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

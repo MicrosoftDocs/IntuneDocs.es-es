@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812171"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413645"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Establecimiento de reglas en los dispositivos para permitir el acceso a recursos de su organización con Intune
 
@@ -104,7 +104,9 @@ Intune también incluye un conjunto de configuraciones de directivas de cumplimi
   - Permitir que el Portal de empresa use los servicios de ubicación.
   - Evaluar y notificar su estado de jailbreak a Intune al menos una vez cada 72 horas. En caso contrario, el dispositivo se marcará como no compatible. La evaluación se desencadena al abrir la aplicación Portal de empresa de Intune o al mover físicamente los 500 medidores o más del dispositivo. Si el dispositivo no se mueve 500 metros en 72 horas, el usuario tiene que abrir la aplicación Portal de empresa para la evaluación de jailbreak mejorada.
 
-- **Período de validez del estado de cumplimiento (días)** : especifique el período en que los dispositivos informan del estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
+- **Período de validez del estado de cumplimiento (días)** : especifique el período en que los dispositivos informan del estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días. El valor mínimo es 1 día.
+
+  Esta configuración se muestra como la directiva de cumplimiento predeterminada **Activa** (**Dispositivos** > **Monitor** > **Configuración de cumplimiento**). La tarea en segundo plano para esta directiva se ejecuta una vez al día.
 
 Puede usar estas directivas integradas para supervisar estas configuraciones. Intune también [se actualiza o comprueba si hay actualizaciones](create-compliance-policy.md#refresh-cycle-times) en distintos intervalos, dependiendo de la plataforma del dispositivo. [Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune](../configuration/device-profile-troubleshoot.md) es un recurso útil.
 

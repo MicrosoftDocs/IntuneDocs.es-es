@@ -1,6 +1,6 @@
 ---
-title: Activación del modo perdido de iOS con Microsoft Intune - Azure | Microsoft Docs
-description: Active o inicie el modo perdido para personalizar un mensaje que se mostrará en la pantalla de bloqueo de un dispositivo iOS perdido o robado usando Microsoft Intune. Además, puede obtener detalles sobre la información de privacidad y seguridad al usar la acción de modo perdido.
+title: Activación del modo perdido de iOS/iPadOS con Microsoft Intune - Azure | Microsoft Docs
+description: Active o inicie el modo perdido para personalizar un mensaje que se mostrará en la pantalla de bloqueo de un dispositivo iOS/iPadOS perdido o robado mediante Microsoft Intune. Además, puede obtener detalles sobre la información de privacidad y seguridad al usar la acción de modo perdido.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712233"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415595"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Habilitar el modo perdido en dispositivos iOS con Intune
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>Habilitar el modo perdido en dispositivos iOS/iPadOS con Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-La acción de dispositivo **Modo perdido** le ayuda a habilitar el modo perdido en dispositivos iOS perdidos o robados. Este modo le permite introducir un mensaje y un número de teléfono para que se muestren en la pantalla de bloqueo del dispositivo. Para usar el modo Perdido, debe ser un dispositivo iOS de empresa con el modo supervisado.
+La acción de dispositivo **Modo perdido** le ayuda a habilitar el modo perdido en dispositivos iOS/iPadOS perdidos o robados. Este modo le permite introducir un mensaje y un número de teléfono para que se muestren en la pantalla de bloqueo del dispositivo. Para usar el modo perdido, debe ser un dispositivo iOS/iPadOS de empresa con el modo supervisado.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
-- iOS 9.3 y versiones posteriores
+- iOS/iPadOS 9.3 y versiones posteriores
 
 Esta característica no se admite en los siguientes sistemas operativos: 
 - Windows
@@ -43,7 +43,7 @@ Esta característica no se admite en los siguientes sistemas operativos:
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
-4. En la lista de dispositivos que administra, elija un dispositivo iOS y luego elija **Modo Perdido (solo supervisado)** .
+4. En la lista de dispositivos que administra, elija un dispositivo iOS/iPadOS y luego elija **Modo Perdido (solo supervisado)** .
 5. En **Modo Perdido**, seleccione **Habilitar**.
 6. En el **mensaje para mostrar en la pantalla de bloqueo**, escriba el mensaje que se mostrará en dicha pantalla del dispositivo.
 7. Opcionalmente, escriba un número de teléfono en el cuadro **Número de teléfono que se muestra**.

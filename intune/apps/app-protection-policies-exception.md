@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839389"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437858"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Creación de excepciones a la directiva de transferencia de datos de la directiva de Intune App Protection (APP)
 
@@ -38,7 +38,7 @@ Dentro de una directiva de protección de aplicaciones de Intune, el establecimi
 > Las modificaciones o adiciones a las excepciones de la directiva de transferencia de datos no afectan a otras directivas de protección de datos, como las restricciones para cortar, copiar y pegar. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Excepciones de transferencia de datos de iOS
-Para una directiva que tenga iOS como destino, puede configurar excepciones de transferencia de datos mediante el protocolo de URL. Para agregar una excepción, compruebe la documentación proporcionada por el desarrollador de la aplicación para buscar información sobre los protocolos de URL admitidos. Para obtener más información sobre las excepciones de transferencia de datos de iOS, vea [Configuración de directivas de protección de aplicaciones de iOS: Exenciones de transferencia de datos](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+Para una directiva que tenga iOS/iPadOS como destino, puede configurar excepciones de transferencia de datos mediante el protocolo de URL. Para agregar una excepción, compruebe la documentación proporcionada por el desarrollador de la aplicación para buscar información sobre los protocolos de URL admitidos. Para más información sobre las excepciones de transferencia de datos de iOS/iPadOS, vea [Configuración de directivas de protección de aplicaciones iOS: Exenciones de transferencia de datos](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > Microsoft no tiene un método para buscar manualmente el protocolo URL para crear excepciones de aplicación para aplicaciones de terceros. 
@@ -53,9 +53,9 @@ Para una directiva que tenga Android como destino, puede configurar excepciones 
 ### <a name="example"></a>Ejemplo
 Si agrega el paquete **Webex** como una excepción a la directiva de transferencia de datos de MAM, los vínculos de Webex de un mensaje de correo electrónico administrado de Outlook pueden abrirse directamente en la aplicación de Webex. Se sigue restringiendo la transferencia de datos en otras aplicaciones no administradas.
 
-- Ejemplo de **Webex** de iOS:   Para excluir la aplicación **Webex** para que se pueda invocar mediante aplicaciones administradas de Intune, debe agregar una excepción de transferencia de datos para la siguiente cadena: <code>wbx</code>
+- Ejemplo de **Webex** de iOS/iPadOS:   Para excluir la aplicación **Webex** para que se pueda invocar mediante aplicaciones administradas de Intune, debe agregar una excepción de transferencia de datos para la siguiente cadena: <code>wbx</code>
     
-- Ejemplo de **Maps** de iOS:   Para excluir la aplicación nativa **Maps** para que se pueda invocar mediante aplicaciones administradas de Intune, debe agregar una excepción de transferencia de datos para la siguiente cadena: <code>maps</code>
+- Ejemplo de **Maps** de iOS/iPadOS:   Para excluir la aplicación nativa **Maps** para que se pueda invocar mediante aplicaciones administradas de Intune, debe agregar una excepción de transferencia de datos para la siguiente cadena: <code>maps</code>
 
 - Ejemplo de **Webex** de Android:   Para excluir la aplicación **Webex** para que se pueda invocar mediante aplicaciones administradas de Intune, debe agregar una excepción de transferencia de datos para la siguiente cadena: <code>com.cisco.webex.meetings</code>
     
@@ -66,7 +66,7 @@ Si agrega el paquete **Webex** como una excepción a la directiva de transferenc
     
     <code>com.samsung.android.messaging</code>
 
-- Ejemplo de **Instalador del certificado** de Android: Para excluir la aplicación nativa **Instalador del certificado** de modo que Outlook para Android pueda instalar un certificado S/MIME (entregado como datos adjuntos de correo electrónico) en el almacén de claves Android, debe agregar la excepción de transferencia de datos para la cadena siguiente: <code>com.android.certinstaller</code>. Para más información, consulte [Etiquetado de sensibilidad y protección en Outlook para iOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
+- Ejemplo de **Instalador del certificado** de Android: Para excluir la aplicación nativa **Instalador del certificado** de modo que Outlook para Android pueda instalar un certificado S/MIME (entregado como datos adjuntos de correo electrónico) en el almacén de claves Android, debe agregar la excepción de transferencia de datos para la cadena siguiente: <code>com.android.certinstaller</code>. Para más información, vea [Etiquetado de sensibilidad y protección en Outlook para iOS/iPadOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
