@@ -77,7 +77,7 @@ Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versi
   - El número mínimo de conjuntos de caracteres es superior a dos
 
 - **Tipo de contraseña**:  
-  elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (alfanuméricos).
+  elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
 
   Cuando se establece en *alfanumérico*, está disponible la siguiente configuración.  
 
