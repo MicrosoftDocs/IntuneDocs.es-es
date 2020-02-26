@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505145"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514938"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinación de los requisitos de los escenarios de casos de uso
 
@@ -35,13 +35,13 @@ También puede tener grupos organizativos en el escenario de caso de uso corpora
 
 Estos son algunos ejemplos de requisitos de casos de uso de la organización, que muestran diferentes conjuntos de requisitos para cada escenario de casos de subuso o uso, grupo organizativo y plataforma de dispositivos móviles. También puede usar la tabla siguiente para especificar los requisitos de casos de uso de la organización:
 
-| **Casos de uso** | **Casos de subuso** | **Grupos** | **Plataformas de dispositivos** | **Requisitos** |
+| **Casos de uso** | **Casos de subuso** | **Grupos** | **Plataformas de dispositivos** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
-| Corporativos | Trabajador de la información | Recursos humanos, finanzas | iOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                          
-| Corporativos | Ejecutivos | Recursos humanos, finanzas | iOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                         
+| Corporativos | Trabajador de la información | Recursos humanos, finanzas | iOS/iPadOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                          
+| Corporativos | Ejecutivos | Recursos humanos, finanzas | iOS/iPadOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                         
 | Corporativos | Pantalla completa | Venta directa | Android | Configuración de dispositivo, perfiles, aplicaciones |
-| BYOD | Trabajador de la información | Marketing, ventas | iOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                         
-| BYOD | Ejecutivos | Marketing, ventas | iOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |
+| BYOD | Trabajador de la información | Marketing, ventas | iOS/iPadOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                         
+| BYOD | Ejecutivos | Marketing, ventas | iOS/iPadOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |
 
 Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para especificar los requisitos de casos de uso y subuso de su organización.
 
