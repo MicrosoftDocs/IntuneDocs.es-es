@@ -215,7 +215,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 - **Bloquear aplicaciones de orígenes desconocidos**: 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Bloquee** los dispositivos con **seguridad** > orígenes **desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores).  
+  - **Bloquee** los dispositivos con **seguridad** > orígenes **desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores*).  
 
   Para realizar instalaciones de prueba de las aplicaciones, se deben permitir los orígenes desconocidos. Si no realiza instalaciones de prueba de las aplicaciones Android, establezca esta característica en **Bloquear** para habilitar esta directiva de cumplimiento.
 
