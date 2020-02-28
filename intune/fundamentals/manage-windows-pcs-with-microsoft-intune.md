@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414388"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415236"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414388"
 > [!WARNING]
 > Microsoft anunció que el [soporte técnico para Windows 7 terminará el 14 de enero de 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). En esta fecha, Intune también retirará la compatibilidad con dispositivos que ejecutan Windows 7. Microsoft recomienda encarecidamente que cambie a Windows 10 para evitar las interrupciones de servicio o soporte técnico.
 > 
-> Para más información, consulte [Plan de cambio de Intune: aproximación de la finalización del ciclo de vida de soporte técnico de Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+> Para más información, consulte la [entrada de blog sobre el plan de cambio](https://aka.ms/Windows7_Intune).
 
 > [!NOTE]
 > Puede usar Microsoft Intune para administrar equipos con Windows [como dispositivos móviles con la administración de dispositivos móviles (MDM)](../enrollment/windows-enroll.md) o como equipos con el software cliente de Intune, tal y como se describe a continuación. Sin embargo, Microsoft recomienda que los clientes [usen la solución de administración de MDM](../enrollment/windows-enroll.md) siempre que sea posible. Para obtener más información, vea [Comparación de la administración de equipos con Windows como dispositivos móviles o equipos](pc-management-comparison.md). 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 978ddf279dc221a56fddaf99da4dbb2377a93c24
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206438"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511160"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configuración del dispositivo Android Enterprise para definir el correo electrónico, la autenticación y la sincronización en Intune
 
@@ -35,7 +35,7 @@ Para más información sobre los perfiles de correo electrónico en Intune, cons
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-Cree un [Perfil de configuración de dispositivo](email-settings-configure.md#create-a-device-profile) (elija el perfil de trabajo) o cree una [Directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md).
+Cree un [perfil de configuración de dispositivo](email-settings-configure.md#create-a-device-profile) (elija el perfil de trabajo) o cree una [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md).
 
 ## <a name="android-enterprise"></a>Android Enterprise
 
@@ -63,4 +63,4 @@ Cree un [Perfil de configuración de dispositivo](email-settings-configure.md#cr
 
 [Asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
-También puede crear perfiles de correo electrónico para dispositivos [Android Samsung Knox](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 y versiones posteriores](email-settings-windows-10.md) y [Windows Phone 8.1](email-settings-windows-phone-8-1.md).
+También puede crear perfiles de correo electrónico para dispositivos [Android Samsung Knox](email-settings-android.md), [iOS/iPadOS](email-settings-ios.md), [Windows 10 y versiones posteriores](email-settings-windows-10.md) y [Windows Phone 8.1](email-settings-windows-phone-8-1.md).

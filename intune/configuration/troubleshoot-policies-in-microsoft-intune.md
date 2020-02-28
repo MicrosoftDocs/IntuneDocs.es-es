@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 9acb934cdf67aae9c18091a0340f27de635b5399
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059269"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511024"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solución de problemas de directivas y perfiles en Intune
 
@@ -31,13 +31,13 @@ Microsoft Intune incluye algunas características integradas de solución de pro
 
 En este artículo se enumeran algunas técnicas de solución de problemas comunes y se describen algunos problemas que puede experimentar.
 
-## <a name="check-tenant-status"></a>Comprobar el estado del inquilino
+## <a name="check-tenant-status"></a>Comprobación del estado del inquilino
 
-Compruebe el [Estado del inquilino](../fundamentals/tenant-status.md) y confirme que la suscripción está activa. También puede ver los detalles de incidentes activos y avisos que pueden afectar a la implementación de la Directiva o el perfil.
+Compruebe el valor de [Estado del inquilino](../fundamentals/tenant-status.md) y confirme que la suscripción está activa. También puede ver los detalles de incidentes activos y avisos que pueden afectar a la implementación de la directiva o el perfil.
 
 ## <a name="use-built-in-troubleshooting"></a>Uso de la solución de problemas integrada
 
-1. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **solución de problemas y soporte técnico**:
+1. En el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Solución de problemas y soporte técnico**:
 
     ![En Intune, vaya a Ayuda y soporte técnico, y haga clic en Solucionar problemas](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -63,11 +63,11 @@ Compruebe el [Estado del inquilino](../fundamentals/tenant-status.md) y confirme
  
         - Si el valor de esta columna es **No registrado**, es posible que haya un problema con la inscripción. Normalmente, anular la inscripción y volver a inscribir el dispositivo resuelve este estado.
 
-    - **Conforme con Intune**: debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
+    - **Conforme con Intune**: el valor debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
 
         Para más información, vea [Introducción a las directivas de cumplimiento de dispositivos](../protect/device-compliance-get-started.md).
 
-    - **Conforme con Azure AD**: debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
+    - **Conforme con Azure AD**: el valor debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
 
         Para más información, vea [Introducción a las directivas de cumplimiento de dispositivos](../protect/device-compliance-get-started.md).
 
@@ -77,7 +77,7 @@ Compruebe el [Estado del inquilino](../fundamentals/tenant-status.md) y confirme
 
         - Para forzar la conexión:
             - En el dispositivo Android, abra la aplicación de Portal de empresa > **Dispositivos** > elija el dispositivo en la lista > **Comprobar configuración del dispositivo**.
-            - En el dispositivo iOS, abra la aplicación de Portal de empresa > **Dispositivos** > elija el dispositivo en la lista > **Comprobar configuración**.
+            - En el dispositivo iOS/iPadOS, abra la aplicación de Portal de empresa > **Dispositivos** > elija el dispositivo de la lista > **Comprobar configuración**.
 
         - En un dispositivo Windows, abra **Configuración** > **Cuentas** > **Acceso profesional o educativo** > seleccione la cuenta o inscripción MDM > **Información** > **Sincronización**.
 
@@ -91,9 +91,9 @@ Compruebe el [Estado del inquilino](../fundamentals/tenant-status.md) y confirme
 
         **Estados de directiva**:
 
-        - **No aplicable**: esta directiva no se admite en esta plataforma. Por ejemplo, las directivas de iOS no funcionan en Android. Las directivas de Samsung KNOX no funcionan en dispositivos Windows.
+        - **No aplicable**: esta directiva no se admite en esta plataforma. Por ejemplo, las directivas de iOS/iPadOS no funcionan en Android. Las directivas de Samsung KNOX no funcionan en dispositivos Windows.
         - **Conflicto**: hay una configuración existente en el dispositivo que Intune no puede invalidar. O bien, ha implementado dos directivas con la misma configuración mediante valores diferentes.
-        - **Pendiente**: el dispositivo no se ha registrado con Intune para recibir la directiva. O bien, el dispositivo ha recibido la directiva, pero no ha informado del estado a Intune.
+        - **Pendiente**: el dispositivo no se ha conectado a Intune para obtener la directiva. O bien, el dispositivo ha recibido la directiva, pero no ha informado del estado a Intune.
         - **Errores**: busque los errores y las posibles resoluciones en [Solucionar problemas de acceso a los recursos de la empresa](../fundamentals/troubleshoot-company-resource-access-problems.md).
 
         **Vínculos de ayuda**: 
@@ -110,25 +110,25 @@ Compruebe el [Estado del inquilino](../fundamentals/tenant-status.md) y confirme
 
     - **Cumple**: el dispositivo ha recibido el perfil y notifica a Intune que cumple la configuración.
 
-    - **No aplicable**: la configuración de perfil no es aplicable. Por ejemplo, la configuración de correo electrónico para dispositivos iOS no se aplica a un dispositivo Android.
+    - **No aplicable**: la configuración de perfil no es aplicable. Por ejemplo, la configuración de correo electrónico de los dispositivos iOS/iPadOS no se aplica a un dispositivo Android.
 
     - **Pendiente**: el perfil ha enviado al dispositivo, pero no ha informado del estado a Intune. Por ejemplo, el cifrado en Android requiere que el usuario final lo habilite y, por tanto, la directiva podría mostrarse como pendiente.
 
-**Vínculo de utilidad**: [Supervisar perfiles de dispositivo](../configuration/device-profile-monitor.md)
+**Vínculo de ayuda**: [Supervisar perfiles de dispositivo](../configuration/device-profile-monitor.md)
 
 > [!NOTE]
 > Cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva es la que se aplica.
 
 ## <a name="policy-troubleshooting-resources"></a>Recursos de solución de problemas de directivas
 
-- [Solución de problemas de directivas de iOS o Android que no se aplican a los dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre otro sitio de Microsoft)
-- [Solución de problemas de errores de directivas de Windows 10 Intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre un blog)
-- [Solucionar problemas de configuración personalizada de CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre otro sitio de Microsoft)
-- [Directiva de MDM de Windows 10 Directiva de grupo frente a Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre otro sitio de Microsoft)
+- [Solución de problemas de directivas de iOS/iPadOS o Android que no se aplican a los dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (se abre otro sitio de Microsoft)
+- [Solución de problemas de errores de directivas de Intune en Windows 10](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre un blog)
+- [Solución de problemas de configuración personalizada de CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre otro sitio de Microsoft)
+- [Directiva de grupo de Windows 10 frente a directiva de MDM de Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre otro sitio de Microsoft)
 
-## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: error al guardar las reglas de acceso en Exchange
+## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: Error al guardar las reglas de acceso en Exchange
 
-**Problema**: recibe la alerta **Error al guardar las reglas de acceso en Exchange**  en la consola de administración.
+**Problema**: recibe la alerta **Error al guardar las reglas de acceso en Exchange** en la consola de administración.
 
 Si crea directivas en el área de trabajo Directiva de Exchange local (consola de administración) pero usa Office 365, Intune no aplica las opciones configuradas de la directiva. En la alerta, tenga en cuenta el origen de la directiva. En el área de trabajo Directiva de Exchange local, elimine las reglas heredadas. Las reglas heredadas son reglas de Exchange globales en Intune para Exchange local y no son pertinentes para Office 365. Después, cree una directiva para Office 365.
 
@@ -138,13 +138,13 @@ Si crea directivas en el área de trabajo Directiva de Exchange local (consola d
 
 Una vez establecidas las directivas de seguridad a través de MDM o EAS, los dispositivos Windows Phone no permiten que se reduzca su nivel de seguridad. Por ejemplo, establece una **contraseña con un número mínimo de caracteres** en 8 y después intenta reducirla a 4. Se aplica la directiva más restrictiva al dispositivo.
 
-Los dispositivos de Windows 10 no pueden quitar directivas de seguridad cuando se anula la asignación de la Directiva (detener la implementación). Es posible que deba dejar la directiva asignada y, a continuación, volver a cambiar la configuración de seguridad a los valores predeterminados.
+Los dispositivos Windows 10 no pueden quitar las directivas de seguridad cuando se anula la asignación de la directiva (se detiene la implementación). Puede que deba dejar la directiva asignada y, luego, volver a cambiar la configuración de seguridad a los valores predeterminados.
 
 En función de la plataforma del dispositivo, si quiere cambiar la directiva a un valor menos seguro, es posible que tenga que restablecer las directivas de seguridad.
 
 Por ejemplo, en Windows 8.1, en el escritorio, deslice el dedo desde la derecha para abrir la barra **Accesos**. Seleccione **Configuración** > **Panel de control** > **Cuentas de usuario**. En el lado izquierdo, seleccione el vínculo **Restablecer directivas de seguridad** y elija **Restablecer directivas**.
 
-En otras plataformas, como Android, iOS y Windows Phone 8.1, es posible que tenga que retirarlos y volver a inscribirlos para aplicar una directiva menos restrictiva.
+En otras plataformas, como Android, iOS/iPadOS y Windows Phone 8.1, es posible que tenga que retirarlos y volver a inscribirlos para aplicar una directiva menos restrictiva.
 
 [Solución de problemas con la inscripción de dispositivos en Intune](../enrollment/troubleshoot-device-enrollment-in-intune.md) puede ser un buen recurso.
 
@@ -153,7 +153,7 @@ En otras plataformas, como Android, iOS y Windows Phone 8.1, es posible que teng
 > [!NOTE]
 > Esta sección se aplica al portal clásico. 
 
-### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errores relacionados con la directiva de Microsoft Intune en policyplatform.log
 
 Para los equipos Windows con el cliente de software de Intune, los errores de directivas del archivo `policyplatform.log` se pueden deber a opciones de configuración no predeterminadas en el Control de cuentas de usuario (UAC) de Windows en el dispositivo. Algunas opciones de configuración de UAC no predeterminadas pueden afectar a las instalaciones de cliente de Microsoft Intune y a la ejecución de directivas.
 
@@ -161,7 +161,7 @@ Para los equipos Windows con el cliente de software de Intune, los errores de di
 
 1. Retire el equipo. Consulte, [Retirada de dispositivos](../remote-actions/devices-wipe.md).
 
-2. Espere 20 minutos a que se quite el software de cliente.
+2. Espere 20 minutos para que se quite el software de cliente.
 
     > [!NOTE]
     > No intente quitar el cliente desde Programas y características.

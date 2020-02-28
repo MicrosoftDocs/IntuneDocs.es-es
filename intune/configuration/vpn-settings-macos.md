@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0bb2cb757e944369642807f117683dad3a9805a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: b20a7eca6f71d46380f9fcdb1674226cc54a104f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206268"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510786"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>Incorporación de la configuración de VPN en dispositivos macOS en Microsoft Intune
 
@@ -35,7 +35,7 @@ Según la configuración que elija, no todos los valores de la lista siguiente s
 [Cree un perfil de configuración de dispositivo](vpn-settings-configure.md).
 
 > [!NOTE]
-> Estas opciones están disponibles para todos los tipos de inscripción. Para obtener más información sobre los tipos de inscripción, consulte [inscripción de MacOS](../enrollment/macos-enroll.md).
+> Estas configuraciones están disponibles para todos los tipos de inscripción. Para más información sobre los tipos de inscripción, consulte [Inscripción de macOS](../enrollment/macos-enroll.md).
 
 ## <a name="base-vpn-settings"></a>Configuración de VPN base
 
@@ -51,9 +51,9 @@ Según la configuración que elija, no todos los valores de la lista siguiente s
   - **F5 Edge Client**
   - **Pulse Secure**
   - **VPN personalizada**
-- **Tunelización dividida**: **Habilite** o **Deshabilite** esta opción, que permite que los dispositivos decidan qué conexión usar en función del tráfico. Por ejemplo, un usuario en un hotel usará la conexión VPN para acceder a los archivos de trabajo, pero usará la red normal del hotel para la exploración web habitual.
+- **Tunelización dividida**: **habilite** o **deshabilite** esta opción, que permite que los dispositivos decidan qué conexión usar en función del tráfico. Por ejemplo, un usuario en un hotel usará la conexión VPN para acceder a los archivos de trabajo, pero usará la red normal del hotel para la exploración web habitual.
 
-<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
+<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS/iPadOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
 
 ## <a name="custom-vpn-settings"></a>Configuración de VPN personalizada
 
@@ -72,4 +72,4 @@ Si seleccionó **VPN personalizado**, configure estas opciones adicionales:
 
 Se crea el perfil, pero todavía no hace nada. Después, [asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
-Configure las opciones de VPN en dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [iOS](vpn-settings-ios.md)y [Windows 10](vpn-settings-windows-10.md) .
+Configure las opciones de VPN en dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [iOS/iPadOS](vpn-settings-ios.md) y [Windows 10](vpn-settings-windows-10.md).

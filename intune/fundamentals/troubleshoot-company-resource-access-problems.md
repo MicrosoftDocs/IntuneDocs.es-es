@@ -1,6 +1,6 @@
 ---
 title: Códigos de error y estado de Microsoft Intune - Azure | Microsoft Docs
-description: Vea una lista de los errores, el código de estado, las descripciones y las soluciones cuando use dispositivos administrados mediante MDM, obtenga acceso a recursos de la empresa, errores en dispositivos iOS y errores de respuesta de OMA en Microsoft Intune.
+description: Vea una lista de los errores, el código de estado, las descripciones y las soluciones al usar dispositivos administrados mediante MDM y obtener acceso a recursos de la empresa, errores de dispositivos iOS/iPadOS y errores de respuesta de OMA en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: bf31ce5f812603534f30b3b3aa3836ede0be6f6d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509793"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510595"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Códigos de error comunes y descripciones en Microsoft Intune
 
@@ -36,7 +36,7 @@ Si necesita ayuda del equipo de soporte técnico, vea [Cómo obtener asistencia 
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Instalación en curso||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Esperando contenido||
-|30 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Recuperando contenido|Causa probable: el estado de trabajo 30 indica un error de descarga de aplicación de un usuario.<br /><br />Las causas probables pueden ser:<br /><br />El dispositivo había perdido la conectividad de Internet mientras la descarga estaba en curso.<br /><br />Puede haber expirado el certificado emitido para el dispositivo en el momento de la inscripción.<br /><br />Mitigación:<br /><br />Inicie la aplicación Aplicaciones de empresa desde el Panel de Control del dispositivo para confirmar que el certificado del dispositivo no ha expirado; en caso afirmativo, deberá volver a inscribirlo.<br /><br />Compruebe que el dispositivo está conectado a Internet y pruebe a solicitar la aplicación de nuevo.|
+|30 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Recuperando contenido|Causa probable: el estado 30 del trabajo indica un error de descarga de aplicación de un usuario.<br /><br />Las causas probables pueden ser:<br /><br />El dispositivo había perdido la conectividad de Internet mientras la descarga estaba en curso.<br /><br />Puede haber expirado el certificado emitido para el dispositivo en el momento de la inscripción.<br /><br />Mitigación:<br /><br />Inicie la aplicación Aplicaciones de empresa desde el Panel de Control del dispositivo para confirmar que el certificado del dispositivo no ha expirado; en caso afirmativo, deberá volver a inscribirlo.<br /><br />Compruebe que el dispositivo está conectado a Internet y pruebe a solicitar la aplicación de nuevo.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Descarga de contenido completa||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Instalación en curso||
 |60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Error de instalación|Error en la instalación de la aplicación después de la descarga.<br /><br />El certificado de firma de código con el que se firmó la aplicación no está presente en el dispositivo.<br /><br />Una dependencia de marco de trabajo de la que depende la aplicación no se encuentra instalada en el dispositivo.<br /><br />Asegúrese de que el certificado de firma de código con el que se firmó la aplicación está presente en el dispositivo y confirme con el administrador que este certificado está destinado a todos los dispositivos de Windows RT inscritos de la empresa.<br /><br />Si el error de instalación se debe a la falta de una dependencia de marco de trabajo, el administrador tendrá que volver a publicar la aplicación y empaquetar el marco de trabajo junto con el paquete de aplicación.<br /><br />El paquete de aplicación descargado no es un paquete válido, puede estar dañado o no ser compatible con la versión del sistema operativo del dispositivo.|
@@ -78,7 +78,7 @@ Si necesita ayuda del equipo de soporte técnico, vea [Cómo obtener asistencia 
 |-2016341111|0x87D11389|El dispositivo iOS ha devuelto un estado Inactivo inesperado|
 |-2016341112|0x87D11388|El dispositivo iOS está ocupado actualmente|
 
-## <a name="errors-returned-by-ios-devices"></a>Errores devueltos por dispositivos iOS
+## <a name="errors-returned-by-iosipados-devices"></a>Errores devueltos por dispositivos iOS/iPadOS
 
 ### <a name="company-portal-errors"></a>Errores de Portal de empresa
 
@@ -87,7 +87,7 @@ Si necesita ayuda del equipo de soporte técnico, vea [Cómo obtener asistencia 
 |__Error interno del servidor__ <br>Al parecer, no pudo comunicarse con nosotros debido a un error interno del servidor. Vuelva a intentarlo y, luego, póngase en contacto con el administrador de TI si el problema persiste.|Error 500|Es probable que este error se deba a un problema en el servicio Intune. El problema se debe solucionar en el lado del servicio Intune y probablemente no se debe a problemas en el lado cliente.|
 |__Servicio no disponible temporalmente__ <br>Al parecer, no pudo comunicarse con nosotros porque nuestro servicio no está disponible temporalmente. Vuelva a intentarlo y, luego, póngase en contacto con el administrador de TI si el problema persiste.|Error 503|Es probable que este error se deba a un problema temporal del servicio Intune, como un mantenimiento del servicio. El problema se debe solucionar en el lado del servicio Intune y probablemente no se debe a problemas en el lado cliente.|
 |__No se puede conectar con el servidor__ <br>Al parecer, no pudo comunicarse con nosotros. Vuelva a intentarlo y, luego, póngase en contacto con el administrador de TI si el problema persiste.|No está asociado con un código de estado HTTP|No se pudo establecer una conexión segura con el servidor, probablemente debido a un problema de SSL con los certificados que se usan. Este problema puede deberse a que las configuraciones del cliente no cumplen con los requisitos de Apple para App Transport Security (ATS).|
-|__Se produjo un error__ <br>No se pudo cargar el cliente de Portal de empresa. Vuelva a intentarlo y, luego, póngase en contacto con el administrador de TI si el problema persiste.|Error 400|Cualquier error con un código de estado HTTP dentro del intervalo de los 400 que no tiene un mensaje de error más específico verá este error. Se trata de un error del lado cliente que se produce en la aplicación Portal de empresa para iOS.|
+|__Se produjo un error__ <br>No se pudo cargar el cliente de Portal de empresa. Vuelva a intentarlo y, luego, póngase en contacto con el administrador de TI si el problema persiste.|Error 400|Cualquier error con un código de estado HTTP dentro del intervalo de los 400 que no tiene un mensaje de error más específico verá este error. Se trata de un error del lado cliente que se produce en la aplicación Portal de empresa para iOS/iPadOS.|
 |__No se puede alcanzar el servidor__ <br>Al parecer, no pudo comunicarse con nosotros. Vuelva a intentarlo y, luego, póngase en contacto con el administrador de TI si el problema persiste.|Error 500|Cualquier error con un código de estado HTTP dentro del intervalo de los 500 que no tiene un mensaje de error más específico verá este error. Se trata de un error que se produce en el servicio Intune.|
 
 ### <a name="service-errors"></a>Errores de servicio
@@ -276,7 +276,7 @@ Si necesita ayuda del equipo de soporte técnico, vea [Cómo obtener asistencia 
 |-2016332105|0x87D136B7|4007: Formato de archivo no reconocido|
 |-2016332106|0x87D136B6|4006: La fecha de eliminación del perfil está en el pasado|
 |-2016332107|0x87D136B5|4005: El código de acceso no es compatible|
-|-2016332108|0x87D136B4|4004: El usuario canceló la instalación|
+|-2016332108|0x87D136B4|4004: Instalación cancelada por el usuario|
 |-2016332109|0x87D136B3|4003: El perfil no está en cola para la instalación|
 |-2016332110|0x87D136B2|4002: UUID duplicado|
 |-2016332111|0x87D136B1|4001: Error al instalar|
@@ -304,75 +304,75 @@ Si necesita ayuda del equipo de soporte técnico, vea [Cómo obtener asistencia 
 
 |Código de estado|Código de error hexadecimal|Mensaje de error|
 |---------------|--------------------------|-----------------|
-|-2016344008|0x87D10838|(1404): se ha denegado el acceso al certificado|
+|-2016344008|0x87D10838|(1404): Certificate access denied (se ha denegado el acceso al certificado)|
 |-2016344009|0x87D10837|(1403): no se encuentra el certificado|
 |-2016344010|0x87D10836|DCMO(1402): error de la operación|
-|-2016344011|0x87D10835|DCMO(1401): el usuario eligió no aceptar la operación cuando se le solicitó|
+|-2016344011|0x87D10835|DCMO(1401): User chose not to accept the operation when prompted (el usuario eligió no aceptar la operación cuando se le solicitó)|
 |-2016344012|0x87D10834|DCMO(1400): error de cliente|
-|-2016344108|0x87D107D4|DCMO(1204): la funcionalidad del dispositivo está deshabilitada y el usuario puede volver a habilitarla|
-|-2016344109|0x87D107D3|DCMO(1203): la funcionalidad del dispositivo está deshabilitada y el usuario no puede volver a habilitarla|
-|-2016344110|0x87D107D2|DCMO(1202): la operación de habilitación finalizó correctamente pero la funcionalidad del dispositivo está desconectada|
-|-2016344111|0xF3FB4D95|DCMO(1201): la operación de habilitación finalizó correctamente y la funcionalidad del dispositivo está asociada|
-|-2016344112|0x87D107D0|DCMO(1200): la operación finalizó correctamente|
-|-2016345595|0x87D10205|Syncml(517): la respuesta a un comando atómico fue demasiado grande para un único mensaje.|
-|-2016345596|0x87D10204|Syncml(516): el comando estaba dentro de un elemento atómico y se produjo un error del mismo. El comando no se revirtió correctamente.|
-|-2016345598|0x87D10202|Syncml(514): el comando SyncML no se completó correctamente porque la operación se canceló antes de procesar el comando.|
-|-2016345599|0x87D10201|Syncml(513): el destinatario no admite o rechaza la versión especificada del protocolo de sincronización de SyncML que se usa en el mensaje de solicitud de SyncML.|
-|-2016345600|0x87D10200|Syncml(512): error de aplicación durante la sesión de sincronización.|
-|-2016345601|0x87D101FF|Syncml(511): error grave en el servidor al procesar la solicitud.|
+|-2016344108|0x87D107D4|DCMO(1204): Device Capability is disabled and User is allowed to re-enable it (la funcionalidad del dispositivo está deshabilitada y el usuario puede volver a habilitarla)|
+|-2016344109|0x87D107D3|DCMO(1203): Device Capability is disabled and User is not allowed to re-enable it (la funcionalidad del dispositivo está deshabilitada y el usuario no puede volver a habilitarla)|
+|-2016344110|0x87D107D2|DCMO(1202): Enable operation is performed successfully but the Device Capability is currently detached (la operación de habilitación finalizó correctamente pero la funcionalidad del dispositivo está desasociada)|
+|-2016344111|0xF3FB4D95|DCMO(1201): Enable operation is performed successfully and the Device Capability is currently attached (la operación de habilitación finalizó correctamente y la funcionalidad del dispositivo está asociada)|
+|-2016344112|0x87D107D0|DCMO(1200): Operation is performed successfully (la operación finalizó correctamente)|
+|-2016345595|0x87D10205|Syncml(517): The response to an atomic command was too large to fit in a single message (la respuesta a un comando atómico fue demasiado grande para que cupiera en un solo mensaje).|
+|-2016345596|0x87D10204|Syncml(516): Command was inside Atomic element and Atomic failed (el comando estaba dentro de un elemento atómico y se produjo un error en este). El comando no se revirtió correctamente.|
+|-2016345598|0x87D10202|Syncml(514): The SyncML command was not completed successfully, since the operation was already canceled before processing the command (el comando SyncML no se completó correctamente porque la operación se canceló antes de procesarlo).|
+|-2016345599|0x87D10201|Syncml(513): The recipient does not support or refuses to support the specified version of the SyncML Synchronization Protocol used in the request SyncML Message (el destinatario no admite o rechaza admitir la versión especificada del protocolo de sincronización SyncML que se usa en el mensaje de solicitud de SyncML).|
+|-2016345600|0x87D10200|Syncml(512): An application error occurred during the synchronization session (error de aplicación durante la sesión de sincronización).|
+|-2016345601|0x87D101FF|Syncml(511): A severe error occurred in the server while processing the request (error grave en el servidor al procesar la solicitud).|
 |-2016345602|0x87D101FE|Syncml(510): error al procesar la solicitud. El error está relacionado con un error en el almacén de datos del destinatario.|
-|-2016345603|0x87D101FD|Syncml(509): reservado para uso en el futuro.|
-|-2016345604|0x87D101FC|Syncml(508): se produjo un error que necesita una actualización del estado de sincronización actual del cliente con el servidor.|
-|-2016345605|0x87D101FB|Syncml(507): el error hizo que todos los comandos de SyncML en un tipo de elemento atómico finalizaran incorrectamente.|
-|-2016345606|0x87D101FA|Syncml(506): error de aplicación al procesar la solicitud.|
-|-2016345607|0x87D101F9|Syncml(505): el destinatario no admite o rechaza admitir la versión especificada del DTD de SyncML que se usa en el mensaje de solicitud de SyncML.|
-|-2016345608|=0x87D101F8|Syncml(504): el destinatario, mientras actuaba como puerta de enlace o proxy, no recibió una respuesta puntual del destinatario ascendente especificado por el URI (por ejemplo, HTTP, FTP o LDAP) u otro destinatario auxiliar (por ejemplo, DNS) al que necesitaba obtener acceso para satisfacer la solicitud.|
-|-2016345609|0x87D101F7|Syncml(503): el destinatario no puede controlar la solicitud porque está temporalmente sobrecargado o se está realizando el mantenimiento del mismo.|
-|-2016345610|0x87D101F6|Syncml(502): el destinatario, mientras actuaba como puerta de enlace o proxy, recibió una respuesta no válida del destinatario ascendente al que obtuvo acceso para satisfacer la solicitud.|
-|-2016345611|0x87D101F5|Syncml(501): el destinatario no admite el comando requerido para satisfacer la solicitud.|
-|-2016345612|0x87D101F4|Syncml(500): el destinatario detectó una condición inesperada que le impidió satisfacer la solicitud|
-|-2016345684|0x87D101AC|Syncml(428): no se pudo mover|
-|-2016345685|0x87D101AB|Syncml(427): el elemento primario no se puede eliminar porque contiene elementos secundarios.|
-|-2016345686|0x87D101AA|Syncml:(426) elemento parcial no aceptado.|
-|-2016345687|0x87D101A9|Syncml(425): error del comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario.|
-|-2016345688|0x87D101A8|Syncml(424): el objeto fragmentado se recibió, pero el tamaño del objeto recibido no coincidió con el tamaño declarado en el primer fragmento.|
-|-2016345689|0x87D101A7|Syncml(423): error del comando solicitado porque el elemento que se eliminó temporalmente se había eliminado permanentemente previamente en el servidor.|
-|-2016345690|0x87D101A6|Syncml(422): error en el servidor del comando solicitado porque el formato de script CGI en LocURI era incorrecto.|
-|-2016345691|0x87D101A5|Syncml(421): error en el servidor del comando solicitado porque la gramática de búsqueda especificada era desconocida.|
-|-2016345692|0x87D101A4|Syncml(420): el destinatario no dispone de más espacio de almacenamiento para los datos de sincronización restantes.|
-|-2016345693|0x87D101A3|Syncml(419): la solicitud de cliente creó un conflicto que se resolvió al imponerse el comando del servidor.|
-|-2016345694|0x87D101A2|Syncml(418): error del comando Put o Add porque el destino ya existe.|
-|-2016345695|0x87D101A1|Syncml(417): error de solicitud. El originador debe reintentar la solicitud más tarde.|
-|-2016345696|0x87D101A0|Syncml(416): error de la solicitud porque el tamaño de bytes especificado en la solicitud es demasiado grande.|
-|-2016345697|0x87D1019F|Syncml(415): tipo o formato de soporte no admitido.|
-|-2016345698|0x87D1019E|Syncml(414): error del comando solicitado porque la longitud del URI de destino es mayor que la que el destinatario puede o desea procesar.|
-|-2016345699|0x87D1019D|Syncml(413): el destinatario rechaza realizar el comando solicitado porque el tamaño del elemento solicitado es mayor que el que el destinatario puede o desea procesar.|
-|-2016345700|0x87D1019C|Syncml(412): error del comando solicitado en el destinatario porque estaba incompleto o su formato era incorrecto.|
-|-2016345701|0x87D1019B|Syncml(411): información de longitud o tamaño de bytes en el tipo de elemento Meta debe acompañar al comando solicitado.|
-|-2016345702|0x87D1019A|Syncml(410): el destino solicitado ya no está en el destinatario y no se conoce ningún URI de reenvío.|
-|-2016345703|0x87D10199|Syncml(409): error de solicitud porque se produjo un conflicto de actualizaciones entre las versiones de datos de cliente y servidor.|
-|-2016345704|0x87D10198|Syncml(408): no se recibió un mensaje previsto en el periodo de tiempo necesario.|
-|-2016345705|0x87D10197|Syncml(407): error del comando solicitado debido a que el originador debe proporcionar la autenticación correcta.|
-|-2016345706|0x87D10196|Syncml(406): error del comando solicitado porque una característica opcional en la solicitud no se admite.|
-|-2016345707|0x87D10195|Syncml(405): el comando solicitado no se admite en el destino.|
-|-2016345708|0x87D10194|Syncml(404): el destino solicitado no se encontró.|
-|-2016345709|0x87D10193|Syncml(403): error del comando solicitado, pero el destinatario entendió el comando solicitado.|
-|-2016345710|0x87D10192|Syncml(402): error del comando solicitado porque es preciso realizar el pago correspondiente.|
-|-2016345711|0x87D10191|Syncml(401): error del comando solicitado porque el solicitante debe proporcionar la autenticación correcta.|
-|-2016345712|0x87D10190|Syncml(400): el comando solicitado no se pudo realizar porque el formato de la sintaxis del comando es incorrecto.|
-|-2016345807|0x87D10131|Syncml(305): se debe obtener acceso al destino solicitado mediante el proxy de URI especificado.|
+|-2016345603|0x87D101FD|Syncml(509): Reservado para su uso en el futuro:|
+|-2016345604|0x87D101FC|Syncml(508): An error occurred that necessitates a refresh of the current synchronization state of the client with the server (se produjo un error que necesita una actualización del estado de sincronización actual del cliente con el servidor).|
+|-2016345605|0x87D101FB|Syncml(507): The error caused all SyncML commands within an Atomic element type to fail (el error hizo que todos los comandos de SyncML en un tipo de elemento atómico finalizaran incorrectamente).|
+|-2016345606|0x87D101FA|Syncml(506): An application error occurred while processing the request (error de aplicación al procesar la solicitud).|
+|-2016345607|0x87D101F9|Syncml(505): The recipient does not support or refuses to support the specified version of SyncML DTD used in the request SyncML Message (el destinatario no admite o rechaza admitir la versión especificada del DTD de SyncML que se usa en el mensaje de solicitud de SyncML).|
+|-2016345608|=0x87D101F8|Syncml(504): The recipient, while acting as a gateway or proxy, did not receive a timely response from the upstream recipient specified by the URI (e.g. HTTP, FTP, LDAP) or some other auxiliary recipient (e.g. DNS) it needed to access in attempting to complete the request (el destinatario, mientras actuaba como puerta de enlace o proxy, no recibió una respuesta puntual del destinatario ascendente especificado por el URI (por ejemplo, HTTP, FTP o LDAP) u otro destinatario auxiliar (por ejemplo, DNS) al que necesitaba obtener acceso para satisfacer la solicitud).|
+|-2016345609|0x87D101F7|Syncml(503): The recipient is currently unable to handle the request due to a temporary overloading or maintenance of the recipient (el destinatario no puede controlar la solicitud porque está temporalmente sobrecargado o se está realizando el mantenimiento del mismo).|
+|-2016345610|0x87D101F6|Syncml(502): The recipient, while acting as a gateway or proxy, received an invalid response from the upstream recipient it accessed in attempting to fulfill the request (el destinatario, mientras actuaba como puerta de enlace o proxy, recibió una respuesta no válida del destinatario ascendente al que obtuvo acceso para satisfacer la solicitud).|
+|-2016345611|0x87D101F5|Syncml(501): The recipient does not support the command required to fulfill the request (el destinatario no admite el comando requerido para satisfacer la solicitud).|
+|-2016345612|0x87D101F4|Syncml(500): The recipient encountered an unexpected condition which prevented it from fulfilling the request (el destinatario detectó una condición inesperada que le impidió satisfacer la solicitud).|
+|-2016345684|0x87D101AC|Syncml(428): Move failed (no se pudo mover)|
+|-2016345685|0x87D101AB|Syncml(427): Parent cannot be deleted since it contains children (el elemento primario no se puede eliminar porque contiene elementos secundarios).|
+|-2016345686|0x87D101AA|Syncml(426): Partial item not accepted (elemento parcial no aceptado).|
+|-2016345687|0x87D101A9|Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient (error del comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario).|
+|-2016345688|0x87D101A8|Syncml(424): The chunked object was received, but the size of the received object did not match the size declared within the first chunk (el objeto fragmentado se recibió, pero el tamaño del objeto recibido no coincidió con el tamaño declarado en el primer fragmento).|
+|-2016345689|0x87D101A7|Syncml(423): The requested command failed because the "Soft Deleted" item was previously "Hard Deleted" on the server (error del comando solicitado porque el elemento que se eliminó temporalmente se había eliminado permanentemente previamente en el servidor).|
+|-2016345690|0x87D101A6|Syncml(422): The requested command failed on the server because the CGI scripting in the LocURI was incorrectly formed (error en el servidor del comando solicitado porque el formato de script CGI en LocURI era incorrecto).|
+|-2016345691|0x87D101A5|Syncml(421): The requested command failed on the server because the specified search grammar was not known (error en el servidor del comando solicitado porque la gramática de búsqueda especificada era desconocida).|
+|-2016345692|0x87D101A4|Syncml(420): The recipient has no more storage space for the remaining synchronization data (el destinatario no dispone de más espacio de almacenamiento para los datos de sincronización restantes).|
+|-2016345693|0x87D101A3|Syncml(419): The client request created a conflict which was resolved by the server command winning (la solicitud de cliente creó un conflicto que se resolvió al imponerse el comando del servidor).|
+|-2016345694|0x87D101A2|Syncml(418): The requested Put or Add command failed because the target already exists (error del comando Put o Add porque el destino ya existe).|
+|-2016345695|0x87D101A1|Syncml(417): The request failed at this time and the originator should retry the request later (error de solicitud. El originador debe reintentar la solicitud más tarde).|
+|-2016345696|0x87D101A0|Syncml(416): The request failed because the specified byte size in the request was too big (error de la solicitud porque el tamaño de bytes especificado en la solicitud es demasiado grande).|
+|-2016345697|0x87D1019F|Syncml(415): Unsupported media type or format (tipo o formato de soporte no admitido).|
+|-2016345698|0x87D1019E|Syncml(414): The requested command failed because the target URI is too long for what the recipient is able or willing to process (error del comando solicitado porque la longitud del URI de destino es mayor que la que el destinatario puede o desea procesar).|
+|-2016345699|0x87D1019D|Syncml(413): The recipient is refusing to perform the requested command because the requested item is larger than the recipient is able or willing to process (el destinatario rechaza realizar el comando solicitado porque el tamaño del elemento solicitado es mayor que el que el destinatario puede o desea procesar).|
+|-2016345700|0x87D1019C|Syncml(412): The requested command failed on the recipient because it was incomplete or incorrectly formed (error del comando solicitado en el destinatario porque estaba incompleto o su formato era incorrecto)|
+|-2016345701|0x87D1019B|Syncml(411): The requested command must be accompanied by byte size or length information in the Meta element type (información de longitud o tamaño de bytes en el tipo de elemento Meta debe acompañar al comando solicitado).|
+|-2016345702|0x87D1019A|Syncml(410): The requested target is no longer on the recipient and no forwarding URI is known (el destino solicitado ya no está en el destinatario y no se conoce ningún URI de reenvío).|
+|-2016345703|0x87D10199|Syncml(409): The requested failed because of an update conflict between the client and server versions of the data (error de solicitud porque se produjo un conflicto de actualizaciones entre las versiones de datos de cliente y servidor).|
+|-2016345704|0x87D10198|Syncml(408): An expected message was not received within the required period of time (no se recibió un mensaje previsto en el período de tiempo necesario).|
+|-2016345705|0x87D10197|Syncml(407): The requested command failed because the originator must provide proper authentication (error del comando solicitado debido a que el originador debe proporcionar la autenticación correcta).|
+|-2016345706|0x87D10196|Syncml(406): The requested command failed because an optional feature in the request was not supported (error del comando solicitado porque una característica opcional en la solicitud no se admite).|
+|-2016345707|0x87D10195|Syncml(405): The requested command is not allowed on the target (El comando solicitado no se admite en el destino).|
+|-2016345708|0x87D10194|Syncml(404): The requested target was not found (el destino solicitado no se encontró).|
+|-2016345709|0x87D10193|Syncml(403): The requested command failed, but the recipient understood the requested command (error del comando solicitado, pero el destinatario entendió el comando solicitado).|
+|-2016345710|0x87D10192|Syncml(402): The requested command failed because proper payment is needed (error del comando solicitado porque es preciso realizar el pago correspondiente).|
+|-2016345711|0x87D10191|Syncml(401): The requested command failed because the requestor must provide proper authentication (error del comando solicitado porque el solicitante debe proporcionar la autenticación correcta).|
+|-2016345712|0x87D10190|Syncml(400): The requested command could not be performed because of malformed syntax in the command (el comando solicitado no se pudo realizar porque el formato de la sintaxis del comando es incorrecto).|
+|-2016345807|0x87D10131|Syncml(305): The requested target must be accessed through the specified proxy URI (se debe obtener acceso al destino solicitado mediante el proxy de URI especificado).|
 |-2016345808|0x87D10130|Syncml(304): el comando SyncML solicitado no se ejecutó en el destino.|
-|-2016345809|0x87D1012F|Syncml(303): el destino solicitado se puede encontrar en otro URI.|
-|-2016345810|0x87D1012E|Syncml(302): el destino solicitado se ha movido temporalmente a otro URI.|
-|-2016345811|0x87D1012D|Syncml(301): el destino solicitado tiene un nuevo URI.|
-|-2016345812|0x87D1012C|Syncml(300): el destino solicitado es uno de varios destinos solicitados alternativos.|
-|-2016345896|0x87D100D8|Syncml(216): error de Atomic debido a un comando que estaba dentro del elemento Atomic. El comando se revirtió correctamente.|
-|-2016345897|0x87D100D7|Syncml(215): no se ejecutó un comando debido a la interacción del usuario, que decidió no aceptar la elección.|
+|-2016345809|0x87D1012F|Syncml(303): The requested target can be found at another URI (el destino solicitado se puede encontrar en otro URI).|
+|-2016345810|0x87D1012E|Syncml(302): The requested target has temporarily moved to a different URI (el destino solicitado se ha movido temporalmente a otro URI).|
+|-2016345811|0x87D1012D|Syncml(301): The requested target has a new URI (el destino solicitado tiene un nuevo URI).|
+|-2016345812|0x87D1012C|Syncml(300): The requested target is one of a number of multiple alternatives requested target (el destino solicitado es uno de varios destinos solicitados alternativos).|
+|-2016345896|0x87D100D8|Syncml(216): A command was inside Atomic element and Atomic failed (error de Atomic debido a un comando que estaba dentro del elemento Atomic). El comando se revirtió correctamente.|
+|-2016345897|0x87D100D7|Syncml(215): A command was not executed, as a result of user interaction and user chose not to accept the choice (no se ejecutó un comando debido a la interacción del usuario, que decidió no aceptar la elección).|
 |-2016345898|0x87D100D6|Syncml(214): operación cancelada. El comando SyncML se realizó correctamente, pero no se procesarán más comandos en esta sesión.|
-|-2016345899|0x87D100D5|Syncml(213): se aceptó y se almacenó en búfer el elemento fragmentado.|
+|-2016345899|0x87D100D5|Syncml(213): Chunked item accepted and buffered (se aceptó y se almacenó en búfer el elemento fragmentado)|
 |-2016345900|0x87D100D4|Syncml(212): autenticación aceptada; no será necesario autenticarse de nuevo durante el resto de la sesión de sincronización. Este código de respuesta solo se puede usar para responder a una solicitud en la que se proporcionan credenciales.|
 |-2016345901|0x87D100D3|Syncml(211): elemento no eliminado. No se encontró el elemento solicitado. Es posible que se haya eliminado previamente.|
-|-2016345902|0x87D100D2|Syncml(210): eliminación sin archivar. La respuesta indica que los datos solicitados se eliminaron correctamente pero que no se archivaron antes de su eliminación porque esta característica OPCIONAL no es compatible con la implementación.|
+|-2016345902|0x87D100D2|Syncml(210): Delete without archive (eliminación sin archivar). La respuesta indica que los datos solicitados se eliminaron correctamente pero que no se archivaron antes de su eliminación porque esta característica OPCIONAL no es compatible con la implementación.|
 |-2016345903|0x87D100D1|conflicto resuelto con duplicado. La respuesta indica que la solicitud generó un conflicto de actualización que se resolvió con una duplicación de los datos del cliente que se estaban creando en la base de datos del servidor. La respuesta incluye el URI de destino del duplicado en el elemento del estado. Además, en el caso de una sincronización bidireccional, se devuelve un comando Add con la definición de datos duplicados.|
 |-2016345904|0x87D100D0|conflicto resuelto a favor del comando del cliente. La respuesta indica que se produjo un conflicto de actualización que se resolvió a favor del comando del cliente.|
 |-2016345905|0x87D100CF|conflicto resuelto con combinación. La respuesta indica que la solicitud ha generado un conflicto que se ha resuelto con la combinación de las instancias de datos del cliente y del servidor. La respuesta incluye las URL de destino y origen del elemento de estado. Además, se devuelve un comando Replace con los datos combinados.|

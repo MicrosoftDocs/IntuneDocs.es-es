@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755602"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514751"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solución de problemas de acciones de dispositivo en Intune
 
@@ -34,7 +34,7 @@ Microsoft Intune tiene muchas acciones que ayudan a administrar dispositivos. E
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>He hecho clic en la acción "Deshabilitar el bloqueo de activación" en el portal, pero no ha sucedido nada en el dispositivo.
 Esto es lo esperado. Después de iniciar la acción Deshabilitar el bloqueo de activación, Apple solicita un código actualizado a Intune. Una vez en la pantalla Bloqueo de activación, se escribe manualmente el código en el campo de código de acceso. Este código solo es válido durante 15 días, por lo que debe asegurarse de hacer clic en la acción y copiar el código antes del borrado.
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>¿Por qué no veo el código Deshabilitar el bloqueo de activación en la hoja Información general del hardware del dispositivo iOS?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>¿Por qué no veo el código Deshabilitar el bloqueo de activación en la hoja Información general del hardware del dispositivo iOS/iPadOS?
 Los motivos más probables incluyen:
 - El código ha expirado y se ha borrado del servicio.
 - El dispositivo no está supervisado con la directiva de restricción de dispositivos para permitir el bloqueo de activación.
@@ -43,7 +43,7 @@ Puede comprobar el código en el Probador de Graph con la siguiente consulta:
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>¿Por qué la acción Deshabilitar el bloqueo de activación está atenuada para el dispositivo iOS?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>¿Por qué la acción Deshabilitar el bloqueo de activación está atenuada para el dispositivo iOS/iPadOS?
 Los motivos más probables incluyen: 
 - El código ha expirado y se ha borrado del servicio.
 - El dispositivo no está supervisado con la directiva de restricción de dispositivos para permitir el bloqueo de activación.
@@ -90,8 +90,22 @@ Porque el token de restablecimiento no se ha activado en el dispositivo. Para ac
 3. El usuario final debe aceptar el mensaje secundario para permitir el restablecimiento del código de acceso.
 Una vez completados estos pasos, ya no debería recibir esta respuesta.
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>¿Por qué se me pide que establezca un nuevo código de acceso en el dispositivo iOS cuando emito la acción Quitar código de acceso?
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>¿Por qué se me pide que establezca un nuevo código de acceso en el dispositivo iOS/iPadOS cuando ejecuto la acción Quitar código de acceso?
 Porque una de las directivas de cumplimiento requiere un código de acceso.
+
+
+## <a name="wipe-action"></a>Acción de borrado
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>No puedo reiniciar un dispositivo Windows 10 después de usar la acción de borrado
+Esto puede ocurrir si usa la opción **Borrar dispositivo y sigue borrando aunque los dispositivos pierdan potencia. Si selecciona esta opción, tenga en cuenta que esto puede impedir que algunos dispositivos Windows 10 vuelvan a iniciarse** en un dispositivo Windows 10.
+
+Esto puede deberse a que la instalación de Windows presenta daños importantes que impiden que el sistema operativo se vuelva a instalar. En tal caso, el proceso genera un error y deja el sistema en el [Entorno de recuperación de Windows]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>No puedo reiniciar un dispositivo cifrado con BitLocker después de usar la acción de borrado
+Esto puede ocurrir si usa la opción **Borrar dispositivo y sigue borrando aunque los dispositivos pierdan potencia. Si selecciona esta opción, tenga en cuenta que esto puede impedir que algunos dispositivos Windows 10 vuelvan a iniciarse** en un dispositivo cifrado con BitLocker.
+
+Para resolver este problema, use medios de arranque para volver a instalar Windows 10 en el dispositivo.
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

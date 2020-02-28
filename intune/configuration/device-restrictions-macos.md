@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 3d26c4c6cd05a411555f7824ad21b72431eb569c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206557"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511179"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos macOS para permitir o restringir características mediante Intune
 
@@ -36,11 +36,11 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 [Crear un perfil de configuración de restricciones de dispositivos](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Esta configuración se aplica a diferentes tipos de inscripción. Para obtener más información sobre los diferentes tipos de inscripción, consulte [inscripción de MacOS](../macos-enroll.md).
+> Esta configuración se aplica a diferentes tipos de inscripción. Para más información sobre los diferentes tipos de inscripción, consulte [Inscripción en macOS](../macos-enroll.md).
 
 ## <a name="general"></a>General
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivos e inscripción de dispositivos automatizada
 
 - **Búsqueda de definiciones**: **Bloquear** evita que el usuario resalte una palabra y luego busque su definición en el dispositivo. **No configurado** (valor predeterminado) permite el acceso a la característica de búsqueda de definiciones.
 - **Dictado**: **Bloquear** evita que el usuario use la entrada de voz para escribir texto. **No configurado** (valor predeterminado) permite que el usuario use la entrada de dictado.
@@ -62,29 +62,29 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
     Esta característica se aplica a:  
     - macOS 10.13.4 y versiones más recientes
 
-- **Capturas de pantallas**: el dispositivo debe inscribirse en la inscripción automática de dispositivos (DEP) de Apple. Cuando se establece en **bloquear**, los usuarios no pueden guardar una captura de pantalla de la pantalla. También evita que la aplicación Classroom Observe pantallas remotas. **No configurado** (valor predeterminado) permite a los usuarios capturar capturas de pantalla y permite que la aplicación Classroom vea pantallas remotas.
+- **Capturas de pantallas**: el dispositivo debe inscribirse en la inscripción automática de dispositivos (DEP) de Apple. Cuando se establece en **Bloquear**, los usuarios no pueden guardar una captura de la pantalla. También evita que la aplicación Classroom observe pantallas remotas. **No configurado** (valor predeterminado) permite a los usuarios realizar capturas de pantalla y hace posible que la aplicación Classroom vea pantallas remotas.
 
-### <a name="settings-apply-to-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos automatizada
+### <a name="settings-apply-to-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivo automatizada
 
-- **Observación de pantalla remota a través de la aplicación Classroom**: **deshabilitar** evita que los profesores usen la aplicación Classroom para ver las pantallas de los estudiantes. **No configurado** (valor predeterminado) permite a los profesores ver las pantallas de los estudiantes.
+- **Observación de pantalla remota mediante la aplicación Classroom**: **Deshabilitar** evita que los profesores usen la aplicación Classroom para ver las pantallas de sus alumnos. **No configurado** (valor predeterminado) permite que los profesores vean las pantallas de sus alumnos.
 
-  Para usar esta opción, establezca el valor de **capturas de pantallas** en **no configurado** (se permiten capturas de pantallas).
+  Para usar esta opción, establezca el valor **Capturas de pantallas** en **No configurado** (se permiten capturas de pantallas).
 
-- **Observación de pantalla sin preguntar por aplicación de aula**: **permitir** a los profesores ver las pantallas de los estudiantes sin necesidad de que el estudiante lo acepte. **No configurado** (valor predeterminado) requiere que el estudiante acepte antes de que el profesor pueda ver las pantallas.
+- **Observación de pantalla sin mensajes por la aplicación Classroom**: **Permitir** deja que los profesores vean las pantallas de sus alumnos sin que el alumno esté de acuerdo. **No configurado** (valor predeterminado) requiere que el alumno esté de acuerdo antes de que el profesor pueda ver las pantallas.
 
-  Para usar esta opción, establezca el valor de **capturas de pantallas** en **no configurado** (se permiten capturas de pantallas).
+  Para usar esta opción, establezca el valor **Capturas de pantallas** en **No configurado** (se permiten capturas de pantallas).
 
-- **Los estudiantes deben solicitar permiso para dejar clase Classroom**: **requerir** fuerza a los estudiantes inscritos en un curso de la sala no administrada para obtener la aprobación del profesor para salir del curso. **No configurado** (valor predeterminado) permite que el estudiante deje el curso cada vez que el estudiante decida.
+- **Los alumnos deben solicitar permiso para abandonar la clase de Classroom**: **Requerir** obliga a los alumnos inscritos en un curso de Classroom sin administrar a obtener la aprobación del profesor para abandonar el curso. **No configurado** (valor predeterminado) permite que el alumno abandone el curso siempre que así lo decida.
 
-- **Los profesores pueden bloquear automáticamente dispositivos o aplicaciones en la aplicación Classroom**: **permitir que** los profesores bloqueen el dispositivo o la aplicación de un estudiante sin la aprobación del estudiante. **No configurado** (valor predeterminado) requiere que el estudiante acepte antes de que el profesor pueda bloquear el dispositivo o la aplicación.
+- **Los profesores pueden bloquear automáticamente dispositivos o aplicaciones en la aplicación Classroom**: **Permitir** deja que los profesores bloqueen el dispositivo o la aplicación de un alumno sin su aprobación. **No configurado** (valor predeterminado) requiere que el alumno esté de acuerdo antes de que el profesor pueda bloquear el dispositivo o la aplicación.
 
-- **Los estudiantes pueden unirse automáticamente a la clase Classroom**: **Allow** permite a los estudiantes unirse a una clase sin preguntar al profesor. **No configurado** (valor predeterminado) requiere la aprobación del profesor para unirse a una clase.
+- **Los alumnos pueden unirse automáticamente a la clase de Classroom**: **Permitir** deja que los alumnos se unan a una clase sin preguntar al profesor. **No configurado** (valor predeterminado) requiere la aprobación del profesor para unirse a una clase.
 
 ## <a name="password"></a>Contraseña
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivos e inscripción de dispositivos automatizada
 
-- **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **No configurado** (valor predeterminado) no requiere una contraseña. Tampoco fuerza ninguna restricción, como el bloqueo de contraseñas simples o la configuración de una longitud mínima.
+- **Contraseña**: **Requerir** que el usuario final escriba una contraseña para acceder al dispositivo. **No configurado** (valor predeterminado) no requiere una contraseña. Tampoco obliga a ninguna restricción, como el bloqueo de contraseñas sencillas o la configuración de una longitud mínima.
   - **Tipo de contraseña requerida**: especifique si la contraseña puede ser Numérica únicamente o si debe ser Alfanumérica (contiene letras y números).
 
     Esta característica se aplica a:  
@@ -114,7 +114,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="built-in-apps"></a>Aplicaciones integradas
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivos e inscripción de dispositivos automatizada
 
 - **Bloquear Autorrelleno en Safari**: **Bloquear** deshabilita la característica Autorrellenar de Safari en el dispositivo. **No configurado** (valor predeterminado) permite que los usuarios cambien la configuración de Autorrellenar del explorador web.
 - **Bloquear la cámara**: elija **Bloquear** para impedir el acceso a la cámara del dispositivo. **No configurado** (valor predeterminado) permite el acceso a la cámara del dispositivo.
@@ -127,32 +127,32 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="restricted-apps"></a>Aplicaciones restringidas
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivos e inscripción de dispositivos automatizada
 
 - **Tipo de lista de aplicaciones restringidas**: cree una lista de aplicaciones que los usuarios no pueden instalar ni usar. Las opciones son:
 
-  - **No configurado** (valor predeterminado): no hay restricciones en Intune. Los usuarios tienen acceso a las aplicaciones que asigne y a las aplicaciones integradas.
-  - **Aplicaciones prohibidas**: aplicaciones no administradas por Intune que no se quieren instalar en el dispositivo. No se impide que los usuarios instalen una aplicación prohibida. Pero si un usuario instala una aplicación a partir de esta lista, se muestra en Intune.
-  - **Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. No se impide a los usuarios que instalen una aplicación que no se encuentra en la lista aprobada, Pero si lo hacen, se muestra en Intune.
-- **Identificador de lote de aplicaciones**: escriba el [identificador del lote](bundle-ids-built-in-ios-apps.md) de aplicaciones de la aplicación que quiere. Puede mostrar u ocultar las aplicaciones integradas y las aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094).
-- **Nombre de la aplicación**: escriba el nombre de la aplicación que quiere. Puede mostrar u ocultar las aplicaciones integradas y las aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094).
+  - **Sin configurar** (valor predeterminado): no hay restricciones en Intune. Los usuarios tienen acceso a las aplicaciones que asigne y a las aplicaciones integradas.
+  - **Aplicaciones prohibidas**: aplicaciones no administradas por Intune que no se quieren instalar en el dispositivo. No se evita que los usuarios instalen una aplicación prohibida. Pero si un usuario instala una aplicación de esta lista, se notifica en Intune.
+  - **Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. No se impide a los usuarios que instalen una aplicación que no se encuentra en la lista aprobada, Pero si lo hacen, se notifica en Intune.
+- **Identificador de lote de aplicaciones**: escriba el [identificador del lote](bundle-ids-built-in-ios-apps.md) de aplicaciones de la aplicación que quiere. Puede mostrar u ocultar aplicaciones integradas y aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094).
+- **Nombre de la aplicación**: escriba el nombre de la aplicación que quiere. Puede mostrar u ocultar aplicaciones integradas y aplicaciones de línea de negocio. El sitio web de Apple tiene una lista de [aplicaciones de Apple integradas](https://support.apple.com/HT208094).
 - **Publicador**: escriba el publicador de la aplicación que quiere.
 
 Para agregar aplicaciones a estas listas, puede:
 
-- **Agregar**: Seleccione esta aplicación para crear la lista de aplicaciones.
-- **Importe** un archivo .csv con detalles sobre la aplicación, incluida la dirección URL. Use el formato `<app bundle ID>, <app name>, <app publisher>`. O bien, **exporte** para crear una lista de las aplicaciones que ha agregado en el mismo formato.
+- **Agregar**: seleccione para crear la lista de aplicaciones.
+- **Importe** un archivo .csv con detalles sobre la aplicación, incluida la dirección URL. Use el formato `<app bundle ID>, <app name>, <app publisher>`. O bien, use **Exportar** para crear una lista de las aplicaciones agregadas, en el mismo formato.
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivos e inscripción de dispositivos automatizada
 
 - **Bloquear AirDrop**: **Bloquear** evita el uso de AirDrop en el dispositivo. **No configurado** (valor predeterminado) permite usar la característica AirDrop para intercambiar contenido con dispositivos cercanos.
 - **Impedir el desbloqueo automático de Apple Watch**: **Bloquear** evita que los usuarios desbloqueen su dispositivo macOS con su Apple Watch. **Sin configurar** (valor predeterminado) permite a los usuarios desbloquear su dispositivo macOS mediante Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivos e inscripción de dispositivos automatizada
 
 - **Bloquear la sincronización de Keychain en iCloud**: Elija **Bloquear** para deshabilitar la sincronización de las credenciales almacenadas en Keychain en iCloud. **No configurado** (valor predeterminado) permite que los usuarios sincronicen estas credenciales.
 - **Bloquear la sincronización de documentos en iCloud**: **Bloquear** impide que iCloud sincronice documentos y datos. **No configurado** (valor predeterminado) permite la sincronización de clave-valor y documentos en el espacio de almacenamiento de iCloud.
@@ -162,15 +162,15 @@ Para agregar aplicaciones a estas listas, puede:
 - **Bloquear la copia de seguridad de Recordatorios de iCloud**: **Bloquear** evita que iCloud se sincronice con la aplicación de recordatorios de macOS. **Sin configurar** (valor predeterminado) permite la sincronización de Recordatorios en iCloud.
 - **Bloquear la copia de seguridad de los marcadores en iCloud**: **Bloquear** evita que iCloud sincronice los marcadores de los dispositivos. **Sin configurar** (valor predeterminado) permite la sincronización de Marcadores en iCloud.
 - **Bloquear la copia de seguridad de Notas de iCloud**: **Bloquear** evita que iCloud sincronice las notas de los dispositivos. **Sin configurar** (valor predeterminado) permite la sincronización de Notas en iCloud.
-- **Bloquear la biblioteca de fotografías de icloud**: **bloquear** deshabilita la biblioteca de fotos de iCloud y evita que iCloud Sincronice las fotos de los dispositivos. Las fotos que no se hayan descargado de la Fototeca de iCloud se quitarán del almacenamiento local del dispositivo. **No configurado** (valor predeterminado) permite sincronizar fotos entre el dispositivo y la biblioteca de fotografías de iCloud.
-- **Entrega**: **no configurado** (valor predeterminado) permite a los usuarios iniciar el trabajo en un dispositivo MacOS y, a continuación, continuar el trabajo que han iniciado en otro dispositivo iOS o MacOS. **Bloquear** impide la característica de entrega en el dispositivo. 
+- **Bloquear la Fototeca de iCloud**: **Bloquear** deshabilita la Fototeca de iCloud y evita que iCloud sincronice las fotos de los dispositivos. Las fotos que no se hayan descargado de la Fototeca de iCloud se quitarán del almacenamiento local del dispositivo. **No configurado** (valor predeterminado) permite sincronizar fotos entre el dispositivo y la Fototeca de iCloud.
+- **Handoff**: **No configurado** (valor predeterminado) permite que los usuarios comiencen a trabajar en un dispositivo macOS y, luego, seguir con el trabajo iniciado en otro dispositivo iOS/iPadOS o macOS. **Bloquear** impide la característica de entrega en el dispositivo. 
 
   Esta característica se aplica a:  
   - macOS 10.15 y versiones más recientes
 
 ## <a name="domains"></a>Dominios
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>La configuración se aplica a: inscripción de dispositivos y inscripción de dispositivo automatizada
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Las opciones se aplican a: Inscripción de dispositivos e inscripción de dispositivos automatizada
 
 - **URL de dominio de correo electrónico**: **agregue** una o más direcciones URL a la lista. Cuando los usuarios reciben un correo electrónico de un dominio distinto del que ha configurado, este se marca como correo electrónico de no confianza en la aplicación Mail de macOS.
 
@@ -178,4 +178,4 @@ Para agregar aplicaciones a estas listas, puede:
 
 [Asigne el perfil](../device-profile-assign.md) y [supervise el estado](../device-profile-monitor.md).
 
-También puede restringir la configuración y las características en dispositivos [iOS](../device-restrictions-ios.md).
+También puede restringir la configuración y las características de dispositivos en dispositivos [iOS/iPadOS](../device-restrictions-ios.md).

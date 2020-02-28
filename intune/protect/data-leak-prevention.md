@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502399"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514445"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Evitar fugas de datos en dispositivos no administrados con Microsoft Intune.
 
@@ -47,7 +47,7 @@ Se puede aplicar el siguiente plan de acción si se cumplen los siguientes requi
 
 ## <a name="action-plan"></a>Plan de acción
 
-Para dispositivos iOS y Android:
+Para dispositivos iOS/iPadOS y Android:
 
 1. Vea cómo funcionan las [directivas de protección de aplicaciones](../apps/app-protection-policy.md).
 2. Aprenda a [crear e implementar directivas de protección de aplicaciones](../apps/app-protection-policies.md) para las aplicaciones móviles de Office.
@@ -63,7 +63,7 @@ Para dispositivos Windows 10:
 
 Según corresponda, comparta los vínculos siguientes para proporcionar más información:
 
-* [What to expect when your iOS app is managed by app protection policies](../fundamentals/end-user-mam-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
+* [Qué esperar cuando la aplicación iOS/iPadOS se administra con directivas de protección de aplicaciones](../fundamentals/end-user-mam-apps-ios.md)
 * [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 
 ## <a name="next-steps"></a>Pasos siguientes

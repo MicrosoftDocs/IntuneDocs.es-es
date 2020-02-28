@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c662de98ffa497c5fbc89ac1b78ed8537ff0d80c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71732703"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514207"
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acceso condicional
 En este artículo se describe qué hacer cuando los usuarios no pueden obtener acceso a los recursos protegidos con el acceso condicional o cuando los usuarios pueden acceder a recursos protegidos, pero se debería bloquear el acceso.
 
 Con Intune y el acceso condicional, puede proteger el acceso a servicios como:
-- Servicios de Office 365 como Exchange Online, SharePoint Online y Skype empresarial online
+- Servicios de Office 365 como Exchange Online, SharePoint Online y Skype Empresarial Online
 - Intercambio en entorno local
 - Otros servicios
 
@@ -48,7 +48,7 @@ Para que funcione el acceso condicional, se deben cumplir los siguientes requisi
 
 - En el caso de Exchange local, Intune Exchange Connector debe estar configurado correctamente. Para más información, consulte [Solucionar problemas de Exchange Connector en Microsoft Intune](troubleshoot-exchange-connector.md).
 
-- Para Skype local, debe configurar la autenticación moderna híbrida. Consulte [información general sobre la autenticación moderna híbrida](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
+- Para Skype local, debe configurar la autenticación moderna híbrida. Vea [Introducción a la autenticación moderna híbrida](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
 
 Puede ver si estas condiciones se cumplen en los dispositivos en Azure Portal y en el informe de inventario del dispositivo.
 
@@ -60,7 +60,7 @@ Puede ver si estas condiciones se cumplen en los dispositivos en Azure Portal y 
 
 - El registro de la información de cumplimiento de un dispositivo puede llevar un tiempo cuando se inscribe por primera vez. Espere unos minutos y vuelva a intentarlo .
 
-- Para dispositivos iOS, un perfil de correo electrónico existente podría bloquear la implementación de un perfil de correo electrónico creado por el administrador de Intune y asignado a ese usuario, lo que hace que el dispositivo no sea compatible. En este escenario, la aplicación Portal de empresa notificará al usuario de que no es compatible por su perfil de correo electrónico configurado manualmente y le solicitará que quite ese perfil. Una vez que el usuario haya quitado el perfil de correo electrónico existente, el perfil de correo electrónico de Intune se implementará correctamente. Para evitar este problema, indique a los usuarios que deben quitar los perfiles de correo electrónico existentes en sus dispositivos antes de inscribirse.
+- Para dispositivos iOS/iPadOS, un perfil de correo electrónico existente podría bloquear la implementación de un perfil de correo electrónico creado por el administrador de Intune y asignado a ese usuario, lo que hace que el dispositivo no sea compatible. En este escenario, la aplicación Portal de empresa notificará al usuario de que no es compatible por su perfil de correo electrónico configurado manualmente y le solicitará que quite ese perfil. Una vez que el usuario haya quitado el perfil de correo electrónico existente, el perfil de correo electrónico de Intune se implementará correctamente. Para evitar este problema, indique a los usuarios que deben quitar los perfiles de correo electrónico existentes en sus dispositivos antes de inscribirse.
 
 - Un dispositivo puede quedarse atascado en un estado de comprobación de cumplimiento e impedir que el usuario inicie otra comprobación. Si tiene un dispositivo en este estado:
   - Asegúrese de que el dispositivo está usando la versión más reciente de la aplicación de Portal de empresa.
@@ -76,11 +76,11 @@ Puede ver si estas condiciones se cumplen en los dispositivos en Azure Portal y 
 
 - Un dispositivo Android inscrito y compatible podría quedar bloqueado y recibir un aviso de cuarentena al intentar acceder a recursos corporativos por primera vez. Si esto ocurre, asegúrese de que la aplicación Portal de empresa no se está ejecutando, después seleccione el vínculo **Empezar ahora** del correo electrónico de cuarentena para desencadenar la evaluación. Esto solo debería tener que hacerse cuando el acceso condicional se habilita por primera vez.
 
-- Un dispositivo Android inscrito podría pedirle al usuario "no se encontraron certificados" y no se le concederá acceso a los recursos de Office 365. El usuario debe habilitar la opción *Habilitar acceso al explorador* en el dispositivo inscrito de este modo:
+- Un dispositivo Android inscrito puede indicar al usuario "No se ha encontrado ningún certificado" y, por ello, no se le concederá acceso a los recursos de Office 365. El usuario debe habilitar la opción *Habilitar acceso al explorador* en el dispositivo inscrito de este modo:
   1. Abra la aplicación del portal de empresa.
   2. Vaya a la página Configuración desde los tres puntos (…) o desde el botón de menú de hardware.
   3. Seleccione el botón *Habilitar acceso al explorador*.
-  4. En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.  
+  4. En el Explorador de Chrome, cierre sesión en Office 365 y reinicie Chrome.  
 
 
 ## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>Los dispositivos están bloqueados y no se recibe ningún correo electrónico de cuarentena
@@ -97,9 +97,9 @@ Puede ver si estas condiciones se cumplen en los dispositivos en Azure Portal y 
 
 - Si el dispositivo se borra selectivamente o se retira de Intune, podría continuar teniendo acceso durante varias horas después de la retirada. Esto es se debe a que Exchange almacena en caché los derechos de acceso durante seis horas. Considere otras formas de proteger los datos en dispositivos retirados en este escenario.
 
-- Los dispositivos Windows inscritos en Surface Hub, inscritos de forma masiva y DEM pueden admitir el acceso condicional cuando un usuario al que se ha asignado una licencia de Intune ha iniciado sesión. Sin embargo, debe implementar la Directiva de cumplimiento en grupos de dispositivos (no grupos de usuarios) para una evaluación correcta.
+- Los dispositivos Windows inscritos con Surface Hub, de forma masiva y con DEM pueden admitir el acceso condicional cuando un usuario al que se ha asignado una licencia de Intune ha iniciado sesión. Sin embargo, debe implementar la directiva de cumplimiento en grupos de dispositivos (no grupos de usuarios) para una evaluación correcta.
 
-- Compruebe las asignaciones de las directivas de cumplimiento y las directivas de acceso condicional. Si un usuario no está en el grupo al que se le han asignado las directivas o está en un grupo que se excluye, el usuario no se bloquea. Solo se comprueba el cumplimiento de los dispositivos de los usuarios de un grupo asignado.
+- Compruebe las asignaciones de las directivas de cumplimiento y las directivas de acceso condicional. Si un usuario no está en el grupo al que se le han asignado las directivas o está en un grupo excluido, el usuario no se bloquea. Solo se comprueba el cumplimiento de los dispositivos de los usuarios de un grupo asignado.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>No se bloquea un dispositivo que no es compatible
 
@@ -110,7 +110,7 @@ Si un dispositivo no es compatible pero sigue teniendo acceso, realice las sigui
 - Asegúrese de que se detecte el dispositivo. ¿El conector de Exchange apunta a un CAS de Exchange 2010 mientras el usuario está en un servidor de Exchange 2013? En este caso, si la regla de Exchange predeterminada es Permitir, incluso si el usuario está en el grupo de destino, Intune no puede ser consciente de la conexión del dispositivo a Exchange.
 
 - Comprobar estado de la existencia y acceso del dispositivo en Exchange:
-  - Use este cmdlet de PowerShell para obtener una lista de todos los dispositivos móviles para un buzón de correo: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Si el dispositivo no aparece en la lista, no dispone de acceso a Exchange.
+  - Use este cmdlet de PowerShell para obtener una lista de todos los dispositivos móviles para un buzón de correo: "Get-ActiveSyncDeviceStatistics -mailbox mbx". Si el dispositivo no aparece en la lista, no dispone de acceso a Exchange.
   
   - Si aparece el dispositivo, use el cmdlet "Get-CASmailbox -identity: 'upn' | fl" para información detallada sobre su estado de acceso y proporcione esta información al Soporte técnico de Microsoft.
 

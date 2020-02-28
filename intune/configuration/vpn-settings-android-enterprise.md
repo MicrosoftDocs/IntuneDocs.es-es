@@ -1,11 +1,11 @@
 ---
 title: 'Uso de la configuración de VPN en Microsoft Intune para dispositivos que ejecutan Android: Azure | Microsoft Docs'
-description: Consulte toda la configuración para crear conexiones VPN en dispositivos empresariales Android en Microsoft Intune. Escriba el nombre de la conexión, la dirección IP o el FQDN del servidor VPN, elija cómo se autentican los usuarios y elija los tipos de conexión Citrix, SonicWall, Check Point cápsula y pulse Secure.
+description: Consulte toda la configuración para crear conexiones VPN en dispositivos Android Enterprise en Microsoft Intune. Escriba el nombre de la conexión, la dirección IP o el FQDN del servidor VPN, elija cómo se autentican los usuarios y elija los tipos de conexión Citrix, SonicWall, Check Point Capsule y Pulse Secure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 81300651355e52f438ea2a314eeb1d0d48e3fcbc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206319"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510871"
 ---
-# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Configuración de dispositivos empresariales de Android para configurar VPN en Intune
+# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Configuración de dispositivos Android Enterprise para configurar VPN en Intune
 
-
-
-En este artículo se enumeran y describen las distintas configuraciones de conexión de VPN que puede controlar en los dispositivos Android Enterprise. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para crear una conexión VPN, elija cómo se autentica la VPN, seleccione un tipo de servidor VPN, etc.
+En este artículo se enumeran y describen las distintas configuraciones de conexión de VPN que puede controlar en los dispositivos Android Enterprise. Como parte de la solución de administración de dispositivos móviles (MDM), use esta configuración para crear una conexión VPN, elegir cómo se autentica dicha conexión, seleccionar un tipo de servidor VPN, etc.
 
 Como administrador de Intune, puede crear y asignar estas opciones de configuración de VPN a los dispositivos Android Enterprise. 
 
-Para más información sobre los perfiles de VPN en Intune, consulte [perfiles de VPN](vpn-settings-configure.md).
+Para más información sobre los perfiles de VPN en Intune, consulte [Perfiles de VPN](vpn-settings-configure.md).
 
 > [!NOTE]
-> Para configurar una VPN de AlwaysOn, debe crear un perfil de VPN y crear también un perfil de [restricciones de dispositivos](device-restrictions-android-for-work.md#connectivity) con la configuración de VPN AlwaysOn configurada.
+> Para configurar una VPN AlwaysOn, debe crear un perfil de VPN y también un perfil de [restricciones de dispositivos](device-restrictions-android-for-work.md#connectivity) con los valores de VPN AlwaysOn configurados.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -77,4 +75,4 @@ Para más información sobre los perfiles de VPN en Intune, consulte [perfiles d
 
 [Asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
-También puede crear perfiles de VPN para dispositivos [Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md), [MacOS](vpn-settings-macos.md), [Windows 10 y versiones posteriores](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)y [Windows Phone 8,1](vpn-settings-windows-phone-8-1.md) .
+También puede crear perfiles de VPN para dispositivos [Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md), [macOS](vpn-settings-macos.md), [Windows 10 y posterior](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md) y [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md).

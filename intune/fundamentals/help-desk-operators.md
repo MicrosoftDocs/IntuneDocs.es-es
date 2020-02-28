@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510254"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514598"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Uso del portal de solución de problemas para ayudar a los usuarios de su empresa
 
@@ -269,7 +269,7 @@ Cuando se elige una fila de error, se proporcionan más detalles.
 
 | Error | Detalles |
 |-------------|----------|
-| Error o tiempo de espera de iOS | Tiempo de espera agotado entre el dispositivo e Intune debido a que el usuario tarda demasiado en realizar la inscripción. |
+| Tiempo de espera o error de iOS/iPadOS | Tiempo de espera agotado entre el dispositivo e Intune debido a que el usuario tarda demasiado en realizar la inscripción. |
 | Usuario no encontrado o sin licencia | El usuario no tiene una licencia o se ha quitado del servicio. |
 | Dispositivo ya inscrito | Un usuario intentó inscribir un dispositivo mediante el Portal de empresa en un dispositivo que todavía está inscrito para otro usuario. |
 | No incorporado a Intune | Se intentó una inscripción sin que la entidad de administración de dispositivos móviles (MDM) de Intune estuviese configurada. |
@@ -286,14 +286,14 @@ Cuando se elige una fila de error, se proporcionan más detalles.
 | Método de inscripción de Autopilot no esperado | El dispositivo ha intentado inscribirse mediante un método no permitido. |
 | El dispositivo Autopilot se ha eliminado | Se ha quitado de Autopilot el dispositivo que intentaba inscribirse para esta cuenta. |
 | Se alcanzó el límite de dispositivos | Esta inscripción se ha bloqueado debido a una restricción en el límite de dispositivos configurada por el administrador. |
-| Incorporación de Apple | Se ha bloqueado la inscripción de todos los dispositivos iOS debido a que falta o ha expirado el certificado de inserción de MDM de Apple en Intune. |
+| Incorporación de Apple | Se ha bloqueado la inscripción de todos los dispositivos iOS/iPadOS debido a que falta o ha expirado el certificado push MDM de Apple en Intune. |
 | Dispositivo no registrado previamente | El dispositivo no se ha registrado previamente como corporativo y todas las inscripciones personales han sido bloqueadas por el administrador. |
 | Característica no compatible | Es probable que el usuario intentase realizar la inscripción a través de un método que no es compatible con la configuración de Intune. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Recopilación de los datos disponibles desde un dispositivo móvil
 
 Use los siguientes recursos para ayudarle a recopilar los datos de servicio al solucionar problemas del dispositivo del usuario:
-- [Enviar errores de inscripción de iOS al administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [Enviar errores de inscripción de iOS/iPadOS al administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [Ayudar al equipo de soporte técnico de su empresa a solucionar los problemas del dispositivo mediante el registro detallado](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [Enviar registros de Android al equipo de soporte técnico de su empresa mediante un cable USB](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Enviar registros de datos de diagnóstico al administrador de TI mediante correo electrónico](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

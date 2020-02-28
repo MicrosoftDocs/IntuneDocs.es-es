@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 47be57dece7867109565622ec2a1380e9a9d57d7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207067"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512507"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Configuración de dispositivos con Windows 10 y Windows Holographic para agregar conexiones VPN mediante Intune
 
@@ -185,4 +185,4 @@ Por ejemplo, si el usuario ya está conectado a un sufijo DNS de confianza, se o
 
 Se crea el perfil, pero todavía no hace nada. Después, [asigne el perfil](device-profile-assign.md) y [supervise su estado](device-profile-monitor.md).
 
-Configure los valores de VPN en dispositivos [Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md) y [macOS](vpn-settings-macos.md).
+Configure los valores de VPN en dispositivos [Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md) y [macOS](vpn-settings-macos.md).

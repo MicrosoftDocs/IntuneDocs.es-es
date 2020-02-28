@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43a2b00ae824656621c8a586e41ba6425c69ed40
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0a1bc53e0f05818b28bbd975e0de5cf5c9368afb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506771"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512864"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configuración del dispositivo Android para configurar el correo electrónico, la autenticación y la sincronización en Intune
 
@@ -36,43 +36,43 @@ Para más información sobre los perfiles de correo electrónico en Intune, cons
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 
-- **Servidor de correo electrónico**: indique el nombre de host del servidor Exchange. Por ejemplo, escriba `outlook.office365.com`.
+- **Servidor de correo electrónico**: escriba el nombre de host del servidor de Exchange. Por ejemplo, escriba `outlook.office365.com`.
 - **Nombre de la cuenta**: indique el nombre para mostrar en la cuenta de correo electrónico. Este nombre se muestra en los dispositivos de los usuarios.
 - **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (Azure AD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Las opciones son:
-  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`.
+  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`
   - **Nombre de usuario**: obtiene solo el nombre, como `user1`.
-  - **Nombre de la cuenta sAM**: requiere el dominio, como `domain\user1`. El nombre de la cuenta sAM solo se usa con dispositivos Android.
+  - **Nombre de cuenta sAM**: requiere el dominio, como `domain\user1`. El nombre de la cuenta sAM solo se usa con dispositivos Android.
 
     Indique también:  
-    - **Origen del nombre de dominio de usuario**: elija **AAD** (Azure Active Directory) o **Personalizar**.
+    - **Origen de nombre de dominio del usuario**: elija **AAD** (Azure Active Directory) o **Personalizar**.
 
       Si quiere obtener los atributos de **AAD**, escriba:
-      - **Atributo de nombre de dominio de usuario de AAD**: elija si quiere obtener el atributo **Nombre de dominio completo** o **Nombre de NetBIOS** del usuario
+      - **Atributo de nombre de dominio del usuario de ADD**: elija si quiere obtener el atributo **Nombre de dominio completo** o **Nombre de NetBIOS** del usuario
 
       Si quiere usar los atributos **Personalizados**, escriba:
-      - **Nombre de dominio personalizado que quiere usar**: escriba un valor que Intune use como nombre de dominio, como `contoso.com` o `contoso`.
+      - **Nombre de dominio personalizado que se usará**: escriba un valor que Intune use como nombre de dominio, como `contoso.com` o `contoso`.
 
-- **Atributo de dirección de correo electrónico de AAD**: este nombre es el atributo de correo electrónico que Intune obtiene de Azure Active AD. Intune genera dinámicamente la dirección de correo electrónico que este perfil usa. Las opciones son:
-  - **Nombre principal de usuario**: usa el nombre principal completo, como `user1@contoso.com` o `user1`, como dirección de correo electrónico.
-  - **Dirección SMTP principal**: usa la dirección SMTP principal, como `user1@contoso.com`, para iniciar sesión en Exchange.
+- **Atributo de dirección de correo electrónico de AAD**: este nombre es el atributo de correo electrónico que Intune obtiene de Azure AD. Intune genera dinámicamente la dirección de correo electrónico que este perfil usa. Las opciones son:
+  - **Nombre principal de usuario**:  usa el nombre principal completo, como `user1@contoso.com` o `user1`, como dirección de correo electrónico.
+  - **Dirección SMTP principal**: use la dirección SMTP principal, como `user1@contoso.com`, para iniciar sesión en Exchange.
 
-- **Método de autenticación**: seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico.
+- **Método de autenticación**: Seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico.
   - Si seleccionó **Certificado**, seleccione un SCEP cliente o un perfil de certificado PKCS que haya creado anteriormente para autenticar la conexión de Exchange.
 
 ### <a name="security-settings"></a>Configuración de seguridad
 
-- **SSL**: use la comunicación de Capa de sockets seguros (SSL) al enviar correos electrónicos, recibir correos electrónicos y comunicarse con el servidor Exchange.
-- **S/MIME**: envíe correo electrónico saliente mediante cifrado S/MIME.
+- **SSL**: Usa la comunicación de Capa de sockets seguros (SSL) al enviar correos electrónicos, recibir correos electrónicos y comunicarse con el servidor Exchange.
+- **S/MIME**: Enviar correo electrónico saliente mediante cifrado S/MIME.
   - Si seleccionó **Certificado**, seleccione un SCEP cliente o un perfil de certificado PKCS que haya creado anteriormente para autenticar la conexión de Exchange.
 
 ### <a name="synchronization-settings"></a>Configuración de sincronización
 
-- **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar, o seleccione **Sin límite** para sincronizar todos el correo electrónico disponible.
+- **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar o seleccione **Sin límite** para sincronizar todo el correo electrónico disponible.
 - **Programación de sincronización**: seleccione una programación para que los dispositivos sincronicen datos de Exchange Server. También puede seleccionar **Cuando llegan los mensajes**, en cuyo caso los datos se sincronizan tan pronto como llegan, o **Manual**, donde el usuario del dispositivo debe iniciar la sincronización.
 
 ### <a name="content-sync-settings"></a>Configuración de la sincronización de contenido
 
-- **Tipo de contenido para sincronizar**: seleccione los tipos de contenido que quiere sincronizar en los dispositivos. **No configurado** deshabilita esta opción. Cuando se establece en **No configurado**, si un usuario final permite la sincronización en el dispositivo, la sincronización se deshabilitará de nuevo cuando el dispositivo se sincronice con Intune, como refuerza la directiva. 
+- **Tipo de contenido para sincronizar**: Seleccione los tipos de contenido que quiere sincronizar en los dispositivos. **No configurado** deshabilita esta opción. Cuando se establece en **No configurado**, si un usuario final permite la sincronización en el dispositivo, la sincronización se deshabilitará de nuevo cuando el dispositivo se sincronice con Intune, como refuerza la directiva. 
 
   Puede sincronizar este contenido:  
   - **Contactos**: elija **Habilitar** para permitir que los usuarios finales sincronicen contactos con sus dispositivos.
@@ -83,4 +83,4 @@ Para más información sobre los perfiles de correo electrónico en Intune, cons
 
 [Asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
 
-También puede crear perfiles de correo electrónico para [Android Enterprise (perfil de trabajo)](email-settings-android-enterprise.md), [iOS](email-settings-ios.md), [Windows 10 y versiones posteriores](email-settings-windows-10.md) y [Windows Phone 8.1](email-settings-windows-phone-8-1.md).
+También puede crear perfiles de correo electrónico para [Android Enterprise (perfil de trabajo)](email-settings-android-enterprise.md), [iOS/iPadOS](email-settings-ios.md), [Windows 10 y versiones posteriores](email-settings-windows-10.md) y [Windows Phone 8.1](email-settings-windows-phone-8-1.md).

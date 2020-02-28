@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058521"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510391"
 ---
 # <a name="device-management-overview"></a>Información general sobre la administración de dispositivos
 
@@ -33,7 +33,7 @@ Si la organización usa un proveedor de administración de dispositivos, tendrá
 
 La respuesta es [Microsoft Intune](what-is-intune.md). Intune ofrece administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM). Estas son algunas tareas esenciales de cualquier solución de MDM o MAM:
 
-- Admitir un entorno móvil variado y administrar dispositivos iOS, Android, Windows y macOS de forma segura.
+- Admitir un entorno móvil variado y administrar dispositivos iOS/iPadOS, Android, Windows y macOS de forma segura.
 - Garantizar que los dispositivos y las aplicaciones sean compatibles con los requisitos de seguridad de la organización.
 - Crear directivas que ayuden a proteger los datos de la organización en dispositivos personales y corporativos.
 - Usar una solución móvil única y unificada para aplicar estas directivas y ayudar a administrar dispositivos, aplicaciones, usuarios y grupos.
@@ -41,13 +41,13 @@ La respuesta es [Microsoft Intune](what-is-intune.md). Intune ofrece administrac
 
 Intune se incluye con Microsoft Azure y Microsoft 365 y se integra con Azure Active Directory (Azure AD). Con Azure AD es más fácil controlar quién tiene acceso y a qué tiene acceso.
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 
 Muchas organizaciones, como Microsoft, usan Intune para proteger datos de su propiedad a los que acceden los usuarios desde sus dispositivos móviles personales o de la empresa. Intune incluye directivas de configuración de dispositivos y aplicaciones, directivas de actualización de software y estados de instalación (gráficos, tablas e informes) con los que puede proteger y supervisar el acceso a los datos.
 
 Es habitual que las personas tengan varios dispositivos que usan plataformas distintas. Por ejemplo, es posible que un empleado use Surface Pro para el trabajo y un dispositivo móvil Android a nivel personal. Y es habitual que una persona acceda a los recursos de la organización, como Microsoft Outlook y SharePoint, desde distintos dispositivos.
 
-Con Intune es posible administrar varios dispositivos por persona y las distintas plataformas que se ejecutan en cada dispositivo, incluido iOS, macOS, Android y Windows. Intune separa las directivas y la configuración por plataforma de dispositivo, para que resulte fácil administrar y ver los dispositivos de una plataforma específica.
+Con Intune, es posible administrar varios dispositivos por persona y las distintas plataformas que se ejecutan en cada uno, como iOS/iPadOS, macOS, Android y Windows. Intune separa las directivas y la configuración por plataforma de dispositivo, para que resulte fácil administrar y ver los dispositivos de una plataforma específica.
 
 **[Usos habituales de Microsoft Intune](common-scenarios.md)** es un excelente recurso para ver cómo Intune responde ante preguntas comunes al trabajar con dispositivos móviles. Encontrará escenarios sobre:  
 
@@ -55,7 +55,7 @@ Con Intune es posible administrar varios dispositivos por persona y las distinta
 - Acceso a Office 365 de forma segura
 - Uso de dispositivos personales para acceder a recursos de la organización
 
-Para obtener más información acerca de Intune, consulte [¿Qué es Intune](what-is-intune.md)?.
+Para más información sobre Intune, consulte [¿Qué es Intune?](what-is-intune.md)
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integración con servicios de protección
 
@@ -63,7 +63,7 @@ Una tarea esencial de cualquier solución de administración de dispositivos con
 
 - **Microsoft 365** es un componente clave para simplificar las tareas comunes de TI. En el centro de administración de Microsoft 365, se crean usuarios y se administran grupos. También se puede acceder a otros servicios, como Intune, Azure AD y mucho más.
 
-  Por ejemplo, se puede crear un grupo de dispositivos iOS en Microsoft 365. Después, use Intune para insertar directivas en el grupo de dispositivos iOS que se centra en características de iOS, como acceder a la tienda de aplicaciones, usar AirDrop, hacer copias de seguridad en iCloud, usar el filtro web de Apple y mucho más.
+  Por ejemplo, cree un grupo de dispositivos iOS/iPadOS en Microsoft 365. Después, use Intune para insertar directivas en el grupo de dispositivos iOS/iPadOS que se centra en características de iOS/iPadOS, como acceder a la tienda de aplicaciones, usar AirDrop, hacer copias de seguridad en iCloud, usar el filtro web de Apple y mucho más.
 
 - **Windows Defender** incluye muchas características de seguridad con las que puede proteger dispositivos Windows 10. Por ejemplo, con Intune y Windows Defender juntos puede hacer esto:
 
@@ -97,7 +97,7 @@ En el centro de administración de dispositivos, puede:
 - [Administración de roles](role-based-access-control.md)  
 - Administrar actualizaciones de software
   - [Administrar actualizaciones de Windows 10](../protect/windows-update-for-business-configure.md)  
-  - [Administrar actualizaciones de iOS](../protect/software-updates-ios.md)  
+  - [Administración de actualizaciones de iOS/iPadOS](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Administración de usuarios](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Administrar grupos y miembros](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
