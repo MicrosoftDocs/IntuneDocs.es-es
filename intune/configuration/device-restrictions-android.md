@@ -18,7 +18,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6e7709eac2b360aa09415249c1c3f704b52a492b
 ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/19/2019
 ms.locfileid: "75206591"

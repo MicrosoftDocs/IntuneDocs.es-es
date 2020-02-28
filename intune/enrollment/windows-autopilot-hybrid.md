@@ -46,7 +46,7 @@ Los dispositivos que se inscriban también deben:
 
    ![Azure Portal](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
-1. Seleccione **Movilidad (MDM y MAM)**.
+1. Seleccione **Movilidad (MDM y MAM)** .
 
    ![El panel Azure Active Directory](./media/windows-autopilot-hybrid/auto-enroll-mdm.png)
 
@@ -70,7 +70,7 @@ La unidad organizativa a la que se conceden los derechos para crear equipos debe
 - la unidad organizativa especificada en el perfil Unión a dominio.
 - Si no se ha seleccionado ningún perfil, el nombre de dominio del equipo para el dominio.
 
-1. Abra **Usuarios y equipos de Active Directory (DSA.msc)**.
+1. Abra **Usuarios y equipos de Active Directory (DSA.msc)** .
 
 1. Haga clic con el botón derecho en la unidad organizativa que se va a usar para crear equipos unidos a Azure AD híbrido y, después, seleccione **Delegar control**.
 
@@ -177,7 +177,7 @@ Después de *inscribir* los dispositivos Autopilot, se muestran en cuatro lugare
 - El panel **Todos los dispositivos de Azure AD** en Azure Active Directory en Azure Portal. Seleccione **Dispositivos** > **Todos los dispositivos**.
 - El panel **Todos los dispositivos** de Intune en Azure Portal. Seleccione **Dispositivos** > **Todos los dispositivos**.
 
-Una vez que se hayan inscrito los dispositivos Autopilot, sus nombres se convierten en el nombre de host del dispositivo. De forma predeterminada, el nombre de host comienza con *DESKTOP-*.
+Una vez que se hayan inscrito los dispositivos Autopilot, sus nombres se convierten en el nombre de host del dispositivo. De forma predeterminada, el nombre de host comienza con *DESKTOP-* .
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Creación y asignación de un perfil de implementación de Autopilot
@@ -187,9 +187,9 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
 2. En la página de los **datos básicos**, escriba un **nombre** y, opcionalmente, una **descripción**.
 3. Si quiere que todos los dispositivos en los grupos asignados se conviertan automáticamente en Autopilot, establezca **Convertir todos los dispositivos de destino a Autopilot** en **Sí**. Todos los dispositivos propiedad de la empresa que no sean Autopilot en grupos asignados se registrarán con el servicio de implementación de Autopilot. Los dispositivos de propiedad personal no se convertirán en Autopilot. Permita un plazo de 48 horas para que se procese el registro. Cuando se anule la inscripción del dispositivo y este se restablezca, Autopilot lo inscribirá. Una vez registrado un dispositivo de este modo, si deshabilita esta opción o quitar la asignación de perfil, el dispositivo no se quitará desde el servicio de implementación de Autopilot, sino que deberá [quitar el dispositivo directamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. Seleccione **Siguiente**.
-5. En la página **Configuración rápida (OOBE)**, para **Modo de implementación**, seleccione **Controlado por el usuario**.
+5. En la página **Configuración rápida (OOBE)** , para **Modo de implementación**, seleccione **Controlado por el usuario**.
 6. En el cuadro **Unirse a Azure AD como**, seleccione **Unidos a Azure AD híbrido**.
-7. Configure las opciones restantes en la página **Configuración rápida (OOBE)**, según sea necesario.
+7. Configure las opciones restantes en la página **Configuración rápida (OOBE)** , según sea necesario.
 8. Seleccione **Siguiente**.
 9. En la página **Etiquetas de ámbito**, seleccione las [etiquetas de ámbito](../fundamentals/scope-tags.md) para este perfil.
 10. Seleccione **Siguiente**.
@@ -213,7 +213,7 @@ El cambio de estado del perfil de dispositivo de *No asignado* a *Asignando* y, 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
    - **Descripción**: escriba una descripción para el perfil.
    - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
-   - **Tipo de perfil**: seleccione **Unión a un dominio (vista previa)**.
+   - **Tipo de perfil**: seleccione **Unión a un dominio (vista previa)** .
 3. Seleccione **Configuración** y, luego, proporcione valores para **Prefijo del nombre de equipo** y **Nombre de dominio**.
 4. (Opcional) Proporcione una **unidad organizativa** (OU) en [Formato de DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). Existen varias opciones:
    - Proporcionar una unidad organizativa en la que haya delegado el control en el dispositivo de Windows 2016 que ejecuta el conector de Intune.
