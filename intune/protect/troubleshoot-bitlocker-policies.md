@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886784"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556506"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Solución de problemas de directivas de BitLocker en Microsoft Intune
 
@@ -35,11 +35,13 @@ Con Microsoft Intune, dispone de los siguientes métodos para administrar BitLo
 
 - **Directivas de configuración de dispositivos**: hay determinadas opciones de directivas integradas disponibles en Intune cuando se crea un perfil de configuración de dispositivo para administrar Endpoint Protection. Para encontrar estas opciones, debe [crear un perfil de dispositivo que contenga la configuración de Endpoint Protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings), seleccionar **Windows 10 y versiones posteriores** como *Plataforma* y, luego, la categoría **Cifrado de Windows** como *Configuración*. 
 
-   Puede obtener información sobre las opciones y características disponibles en [Cifrado de Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+   Puede obtener información sobre las opciones y características disponibles en: [Cifrado de Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
 - **Líneas base de seguridad**: las [líneas base de seguridad](security-baselines.md) son grupos conocidos de opciones y valores predeterminados que el equipo de seguridad correspondiente recomienda para ayudar a proteger los dispositivos Windows. Distintos orígenes de líneas base, como la *línea base de seguridad de MDM* o la *línea base de ATP de Microsoft Defender*, pueden administrar la misma configuración u otra distinta. También pueden administrar la misma configuración que administra con directivas de configuración de dispositivos. 
 
-Además de Intune, es posible que la configuración de BitLocker esté administrada por otros medios, como directivas de grupo, o que un usuario del dispositivo la establezca de forma manual.
+Además de Intune, para el hardware compatible con el modo de espera moderno y HSTI, cuando se usa cualquiera de estas características, el cifrado de dispositivos con BitLocker se activa automáticamente cada vez que el usuario une un dispositivo a Azure AD. Azure AD proporciona un portal en el que también se realiza una copia de seguridad de las claves de recuperación, para que los usuarios puedan recuperar su propia clave de recuperación para autoservicio, si es necesario.
+
+Es posible que la configuración de BitLocker esté administrada por otros medios, como directivas de grupo, o que un usuario del dispositivo la establezca de forma manual.
 
 Independientemente de cómo se aplique la configuración a un dispositivo, las directivas de BitLocker usan el [CSP de BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) para configurar el cifrado en el dispositivo. El CSP de BitLocker está integrado en Windows y, cuando Intune implementa una directiva de BitLocker en un dispositivo asignado, es el CSP de BitLocker del dispositivo el que escribe los valores adecuados en el Registro de Windows para que la configuración de la directiva surta efecto.
 
@@ -103,7 +105,7 @@ Confirm-SecureBootUEFI
 
 ### <a name="review-the-devices-registry-key-configuration"></a>Revisión de la configuración de la clave del Registro de dispositivos
 
-Una vez que la directiva de BitLocker se implementa correctamente en un dispositivo, vea la siguiente clave del Registro en el dispositivo, donde puede revisar la configuración de BitLocker: *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Este podría ser un ejemplo:
+Una vez que la directiva de BitLocker se implementa correctamente en un dispositivo, vea la siguiente clave del Registro en el dispositivo, donde puede revisar la configuración de BitLocker:  *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Este podría ser un ejemplo:
 
 ![Clave del Registro de BitLocker](./media/troubleshooting-bitlocker-policies/registry.png)
 
@@ -164,6 +166,15 @@ Ahora debería tener una buena idea de cómo confirmar que Intune ha implementad
 
   2. **BitLocker no se admite en todo el hardware**.
      Aunque tenga la versión correcta de Windows, es posible que el hardware del dispositivo subyacente no cumpla los requisitos de cifrado de BitLocker. Puede encontrar los [requisitos del sistema de BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) en la documentación de Windows, pero lo principal que debe comprobar es que el dispositivo tenga un chip TPM compatible (1.2 o posterior) y un firmware UEFI o BIOS compatible con Trusted Computing Group (TCG).
+     
+El **cifrado de BitLocker no se realiza de forma silenciosa**: ha configurado una directiva de Endpoint Protection con la opción "Advertencia para otro cifrado de disco" establecida en bloquear, y el asistente para cifrado sigue apareciendo:
+
+- **Confirmar que la versión de Windows admite el cifrado silencioso**: esto requiere la versión mínima 1803. Si el usuario no es un administrador del dispositivo, se requiere la versión mínima 1809. Además, la versión 1809 agrega compatibilidad con dispositivos que no admiten el modo de espera moderno.
+
+El **dispositivo cifrado con BitLocker se muestra como no compatible con las directivas de cumplimiento de Intune**: el problema se produce cuando el cifrado de BitLocker no finaliza. En función de factores como el tamaño del disco, el número de archivos y la configuración de BitLocker, el cifrado de BitLocker puede tardar mucho tiempo. Una vez completado el cifrado, el dispositivo se mostrará como compatible. Los dispositivos también pueden dejar de ser compatibles temporalmente justo después de una instalación reciente de actualizaciones de Windows.
+
+**Los dispositivos se cifran con un algoritmo de 128 bits cuando la directiva especifica 256 bits**: de forma predeterminada, Windows 10 cifrará una unidad con el cifrado XTS-AES de 128 bits. Vea esta guía para [establecer el cifrado de 256 bits para BitLocker durante Autopilot](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#).
+
 
 **Ejemplo de investigación**
 

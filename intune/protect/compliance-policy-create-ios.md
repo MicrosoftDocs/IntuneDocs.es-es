@@ -1,6 +1,6 @@
 ---
-title: Configuración de cumplimiento de dispositivos iOS en Microsoft Intune - Azure | Microsoft Docs
-description: Vea una lista de todas las opciones que puede usar al configurar el cumplimiento de dispositivos iOS en Microsoft Intune. Requerir un correo electrónico, comprobar dispositivos liberados o modificados, establecer una versión mínima o máxima permitida de sistema operativo, establecer restricciones de contraseña, incluida la inactividad del dispositivo y la longitud de contraseña, restringir aplicaciones y mucho más.
+title: 'Configuración de cumplimiento de dispositivos iOS/iPadOS en Microsoft Intune: Azure | Microsoft Docs'
+description: Vea una lista de todas las opciones que puede usar al configurar el cumplimiento de dispositivos iOS/iPadOS en Microsoft Intune. Requerir un correo electrónico, comprobar dispositivos liberados o modificados, establecer una versión mínima o máxima permitida de sistema operativo, establecer restricciones de contraseña, incluida la inactividad del dispositivo y la longitud de contraseña, restringir aplicaciones y mucho más.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074638"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514037"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de iOS para marcar dispositivos como compatibles o no compatibles con Intune
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de iOS/iPadOS para marcar los dispositivos como compatibles o no compatibles con Intune
 
-En este artículo se enumeran y describen las distintas opciones de configuración de cumplimiento que se pueden establecer en dispositivos con iOS y versiones posteriores en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use estas opciones para requerir un correo electrónico, marcar los dispositivos liberados (descodificados) como no compatibles, establecer un nivel de amenaza permitido, configurar la expiración de las contraseñas y mucho más.
+En este artículo se enumeran y describen las distintas opciones de configuración de cumplimiento que se pueden establecer en dispositivos iOS/iPadOS en Intune. Como parte de la solución de administración de dispositivos móviles (MDM), use estas opciones para requerir un correo electrónico, marcar los dispositivos liberados (descodificados) como no compatibles, establecer un nivel de amenaza permitido, configurar la expiración de las contraseñas y mucho más.
 
 Esta característica se aplica a:
 
@@ -86,11 +86,11 @@ Para más información sobre los perfiles de correo, vea [Configurar el acceso a
 ### <a name="password"></a>Contraseña
 
 > [!NOTE]
-> Después de poner en marcha una directiva de configuración o cumplimiento en un dispositivo iOS, cada 15 minutos se pedirá al usuario que establezca un código de acceso y se le seguirá pidiendo hasta que se establezca un código de acceso. Si se establece un código de acceso para el dispositivo iOS, se iniciará automáticamente el proceso de cifrado. El dispositivo permanecerá cifrado hasta que se deshabilite el código de acceso.
+> Después de aplicar una directiva de configuración o cumplimiento en un dispositivo iOS/iPadOS, cada 15 minutos se pedirá al usuario que establezca un código de acceso y se le seguirá pidiendo hasta que se establezca un código de acceso. Si se establece un código de acceso para el dispositivo iOS/iPadOS, se iniciará automáticamente el proceso de cifrado. El dispositivo permanecerá cifrado hasta que se deshabilite el código de acceso.
 
 - **Requerir una contraseña para desbloquear dispositivos móviles**:  
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.  
-  - **Requerir**: los usuarios deben introducir una contraseña para poder acceder al dispositivo. Los dispositivos iOS que usan una contraseña están cifrados.
+  - **Requerir**: los usuarios deben introducir una contraseña para poder acceder al dispositivo. Los dispositivos iOS/iPadOS que usan una contraseña están cifrados.
 
 - **Contraseñas sencillas**:  
   - **Sin configurar** (*valor predeterminado*): los usuarios pueden crear contraseñas sencillas como **1234** o **1111**.
@@ -125,7 +125,7 @@ Para más información sobre los perfiles de correo, vea [Configurar el acceso a
   Puede restringir aplicaciones si agrega sus identificadores de lote a la directiva. Si un dispositivo tiene instalada la aplicación, el dispositivo se marca como no compatible.
 
   - **Nombre de la aplicación**: escriba un nombre descriptivo que ayude a identificar el identificador de lote.
-  - **Identificador de lote de aplicaciones**: escriba el identificador de lote único asignado por el proveedor de la aplicación. Para buscar el identificador de lote, vea [Cómo buscar el identificador de lote para una aplicación iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre otro sitio web de Microsoft).  
+  - **Identificador de lote de aplicaciones**: escriba el identificador de lote único asignado por el proveedor de la aplicación. Para buscar el identificador de lote, consulte [Cómo buscar el identificador de lote para una aplicación iOS/iPadOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre otro sitio web de Microsoft).  
 
 ## <a name="next-steps"></a>Pasos siguientes
 
