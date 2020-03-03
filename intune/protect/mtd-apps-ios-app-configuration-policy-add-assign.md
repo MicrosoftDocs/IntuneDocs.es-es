@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188478"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576295"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune
 
@@ -80,7 +80,7 @@ Elija la sección que corresponda, según su proveedor MTD:
 
     2. Agregue la **aplicación Lookout for Work de iOS** como una **aplicación de cliente nativ**.
 
-    3. Reemplace **com.lookout.enterprise.yourcompanyname** por el ID de agrupación del cliente que ha seleccionado cuando se registró el IPA.
+    3. Reemplace **com.lookout.enterprise.yourcompanyname** por el id. de agrupación del cliente que ha seleccionado al registrar el IPA.
 
     4. Agregue un URI de redireccionamiento adicional: **&lt;companyportal://code/>** seguido de una versión codificada por URL del URI de redireccionamiento original.
 
@@ -96,7 +96,7 @@ Elija la sección que corresponda, según su proveedor MTD:
 ### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>Configuración de aplicaciones Symantec Endpoint Protection Mobile
 
 - **Android**
-  - Vea las instrucciones para [agregar aplicaciones de la tienda Android en Microsoft Intune](../apps/store-apps-android.md). Use la [dirección URL de SEP Mobile en la tienda App Store](https://play.google.com/store/apps/details?id=com.skycure.skycure) como la **dirección URL de la tienda App Store**.  En **Versión mínima del sistema operativo**, seleccione **Android 4.0 (Ice Cream Sandwich)** .
+  - Vea las instrucciones para [agregar aplicaciones de la tienda Android en Microsoft Intune](../apps/store-apps-android.md). Use la [dirección URL de SEP Mobile en la tienda App Store](https://play.google.com/store/apps/details?id=com.skycure.skycure) como la **dirección URL de la tienda App Store**.  En **Versión mínima del sistema operativo**, seleccione **Android 4.0 (Ice Cream Sandwich)**.
 
 - **iOS**
   - Vea las instrucciones para [agregar aplicaciones de la tienda iOS en Microsoft Intune](../apps/store-apps-ios.md). Use la [dirección URL de SEP Mobile en la tienda App Store](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) como la **dirección URL de la tienda App Store**.
@@ -164,11 +164,11 @@ Use la misma cuenta de Azure AD configurada anteriormente en la [consola de admi
 
   - Vaya a **Settings** (Configuración) y, en **Integrations** (Integraciones), elija **Intune**. Elija **EMM Integration Selection** (Selección de la integración de EMM). Elija **Microsoft** y guarde la selección.
 
-  - Haga clic en el vínculo **Integration setup files** (Archivos de configuración de la integración) y guarde el archivo \*.zip generado. El archivo .zip contiene el archivo * **.plist**, que se usará para crear la directiva de configuración de aplicaciones iOS en Intune.
+  - Haga clic en el vínculo **Integration setup files** (Archivos de configuración de la integración) y guarde el archivo \*.zip generado. El archivo .zip contiene el archivo ***.plist**, que se usará para crear la directiva de configuración de aplicaciones iOS en Intune.
 
   - Para agregar la directiva de configuración de aplicaciones de SEP Mobile, consulte las instrucciones para [usar directivas de configuración de aplicaciones de Microsoft Intune para iOS](../apps/app-configuration-policies-use-ios.md).
 
-    - Para **Formato de opciones de configuración**, seleccione **Especificar datos XML**, copie el contenido del archivo * **.plist** y péguelo en el cuerpo de la directiva de configuración.
+    - Para **Formato de opciones de configuración**, seleccione **Especificar datos XML**, copie el contenido del archivo ***.plist** y péguelo en el cuerpo de la directiva de configuración.
 
 > [!NOTE]
 > Si no puede recuperar los archivos, póngase en contacto con el [soporte técnico de Symantec Endpoint Protection Mobile Enterprise](https://support.symantec.com/en_US/contact-support.html).
@@ -203,7 +203,7 @@ Vea las instrucciones para [usar las directivas de configuración de aplicacione
 
 ### <a name="pradeo-app-configuration-policy"></a>Directiva de configuración de aplicaciones de Pradeo
 
-Pradeo no es compatible con la directiva de configuración de aplicaciones en iOS.  En su lugar, para configurar una aplicación, trabaje con Pradeo para implementar archivos IPA o APK personalizados que estén preconfigurados con la configuración que quiera.
+Pradeo no admite la directiva de configuración de aplicaciones en iOS/iPadOS.  En su lugar, para configurar una aplicación, trabaje con Pradeo para implementar archivos IPA o APK personalizados que estén preconfigurados con la configuración que quiera.
 
 ### <a name="better-mobile-app-configuration-policy"></a>Directiva de configuración de aplicaciones de Better Mobile
 

@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
-ms.reviewer: elocholi
+ms.reviewer: jinyoon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 9dab1025e283ed1591c22b03ed4e3a61d40a20c3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946689"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515091"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integración de Jamf Pro con Intune para cumplimiento
 
@@ -92,19 +92,17 @@ Para conectar Intune con Jamf Pro:
 
 6. Seleccione **Permisos de API** en **Administrar**. 
 
-7. En la página de permisos de API, seleccione **Agregar un permiso** para agregar un permiso nuevo. En la página **Request API permissions** (Solicitar permisos de API), seleccione **Intune** y, luego, **Permisos de aplicación**. Active solo la casilla para **update_device_attributes**.
+7. En la página de permisos de API, para quitar todos los permisos de esta aplicación, seleccione el icono **...** situado junto a cada permiso existente. Tenga en cuenta que esto es obligatorio; la integración no se realizará correctamente si hay algún permiso adicional inesperado en el registro de esta aplicación.
 
-8. Espere unos minutos para que el nuevo permiso surta efecto. Después, seleccione **Conceder consentimiento del administrador para _\<su inquilino>_**. Autentique la cuenta en la nueva ventana y siga las indicaciones para conceder acceso a la aplicación.  
+8. A continuación, se agregarán permisos para actualizar los atributos del dispositivo. En la parte superior izquierda de la página **Permisos de API**, seleccione **Agregar un permiso** para agregar un permiso nuevo. 
 
-9. Es posible que tenga que esperar unos minutos para que el consentimiento del administrador surta efecto.
+9. En la página **Request API permissions** (Solicitar permisos de API), seleccione **Intune** y, luego, **Permisos de aplicación**. Active solo la casilla para **update_device_attributes** y guarde el permiso nuevo.
 
-10. Para actualizar la página, haga clic en el botón **Actualizar** de la parte superior de la página. Confirme que se ha concedido el consentimiento del administrador para el permiso **update_device_attributes**. 
+10. Después, para conceder consentimiento de administrador para esta aplicación, seleccione **Conceder consentimiento de administrador para _\<su inquilino>_** en la parte superior izquierda de la página **Permisos de API**. Es posible que tenga que volver a autenticar la cuenta en la nueva ventana y seguir las indicaciones para conceder acceso a la aplicación.  
 
-11. Quite el consentimiento de administrador del permiso **User.Read**. Para ello, seleccione el menú **...** y después **Revocar consentimiento del administrador**.
+11. Para actualizar la página, haga clic en el botón **Actualizar** de la parte superior de la página. Confirme que se ha concedido el consentimiento del administrador para el permiso **update_device_attributes**. 
 
-12. También tendrá que quitar el permiso **User.Read**. Seleccione el menú **...** de **User.Read** y seleccione **Quitar permiso**. 
-
-8. Una vez que la aplicación se haya registrado correctamente, los permisos de API solo deben contener un permiso llamado **update_device_attributes** y deben aparecer de la siguiente manera:
+12. Una vez que la aplicación se haya registrado correctamente, los permisos de API solo deben contener un permiso llamado **update_device_attributes** y deben aparecer de la siguiente manera:
 
    ![Permisos correctos](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

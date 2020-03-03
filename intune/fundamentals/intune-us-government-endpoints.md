@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: d7edf84ada3c84b7ad31748909ef81a877237fd5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966290"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514479"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Puntos de conexión del Gobierno de EE. UU. de Microsoft Intune
 
@@ -31,7 +31,7 @@ En esta página se enumeran los puntos de conexión del Gobierno de EE. UU. nec
 
 Para administrar dispositivos que se encuentren detrás de firewalls y servidores proxy, debe habilitar la comunicación para Intune.
 
-- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)** , ya que los clientes de Intune usan ambos protocolos.
+- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)**, ya que los clientes de Intune usan ambos protocolos.
 - Para algunas tareas (como descargar actualizaciones de software), Intune necesita acceso de un servidor proxy no autenticado a manage.microsoft.com.
 
 Puede modificar la configuración del servidor proxy en equipos cliente individuales. También puede usar la opción de directiva de grupo para cambiar la configuración de todos los equipos cliente que se encuentran detrás de un servidor proxy especificado.
@@ -74,8 +74,8 @@ En los dispositivos Windows administrados por Intune que se administran mediante
 Para obtener más información, vea:
 
 - [Puertos TCP y UDP usados por los productos de software de Apple](https://support.apple.com/HT202944)
-- [Acerca de los procesos en segundo plano de iTunes y las conexiones del host para el servidor de iTunes, iOS y macOS](https://support.apple.com/HT201999)
-- [Si tus clientes macOS e iOS no reciben notificaciones push de Apple](https://support.apple.com/HT203609)
+- [Acerca de los procesos en segundo plano de iTunes y las conexiones del host para el servidor de iTunes, iOS/iPadOS y macOS](https://support.apple.com/HT201999)
+- [Si tus clientes macOS e iOS/iPadOS no reciben notificaciones push de Apple](https://support.apple.com/HT203609)
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Puntos de conexión de red de Microsoft Intune](intune-endpoints.md)

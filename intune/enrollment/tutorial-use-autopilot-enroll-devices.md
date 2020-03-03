@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 257b15879f6df5763c407904a2c2b46319d64fb7
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036541"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473733"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Uso de Autopilot para inscribir dispositivos Windows en Intune
 
@@ -91,13 +91,13 @@ Después, se creará un grupo de dispositivos e incluirá en él los dispositivo
 Después de crear un grupo de dispositivos, debe crear un perfil de implementación para que pueda configurar los dispositivos Autopilot.
 
 1. En el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), elija **Dispositivos** > **Windows** > **Inscripción de Windows** > **Perfiles de implementación** > **Crear perfil**.
-2. En la página **Aspectos básicos**, en **Nombre**, escriba *Perfil de Autopilot*. En **Descripción**, escriba *Probar perfil para dispositivos Autopilot*.
+2. En la página **Datos básicos**, en **Nombre**, escriba *Perfil de Autopilot*. En **Descripción**, escriba *Probar perfil para dispositivos Autopilot*.
 3. Establezca **Convertir todos los dispositivos de destino a Autopilot** en **Sí**. Esta configuración garantiza que todos los dispositivos de la lista se registren en el servicio de implementación de Autopilot. Permita un plazo de 48 horas para que se procese el registro.
 4. Seleccione **Siguiente**.
-5. En la página **Configuración rápida (OOBE)** , para **Modo de implementación**, elija **Controlado por el usuario**. Los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
+5. En la página **Configuración rápida (OOBE)**, para **Modo de implementación**, elija **Controlado por el usuario**. Los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
 6. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 7. Configure las opciones siguientes y deje el valor predeterminado en las demás:
-    - **Contrato de licencia para el usuario final (CLUF)** : **Ocultar**
+    - **Contrato de licencia para el usuario final (CLUF)**: **Ocultar**
     - **Configuración de privacidad**: **Mostrar**
     - **Tipo de cuenta de usuario**: **Estándar**
 8. Seleccione **Siguiente**.

@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 936e4836938ddddc8e795d85de5a449ee77edaa4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510028"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515006"
 ---
 # <a name="special-migration-considerations"></a>Consideraciones especiales sobre la migración
 
@@ -32,7 +32,7 @@ Hay consideraciones especiales sobre la migración que se pueden aplicar en func
 
 El Programa de inscripción de dispositivos (DEP) de Apple establece configuraciones de dispositivo que el usuario final no puede quitar. Para conservar las características de administración avanzada del DEP, el dispositivo se debe devolver al estado original (nuevo) mediante un borrado para inscribirlo en Intune.
 
-Para seguir usando DEP para administrar los dispositivos en Intune, [configure la inscripción de dispositivos iOS con el Programa de inscripción de dispositivos](../enrollment/device-enrollment-program-enroll-ios.md).
+Para seguir usando DEP a fin de administrar los dispositivos en Intune, [configure la inscripción de dispositivos iOS/iPadOS con el Programa de inscripción de dispositivos](../enrollment/device-enrollment-program-enroll-ios.md).
 
 
 ## <a name="next-steps"></a>Pasos siguientes

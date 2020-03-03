@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206625"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513083"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicación de la configuración y características en dispositivos con perfiles de dispositivos Microsoft Intune
 
 
 
-Microsoft Intune incluye valores de configuración y características que puede habilitar o deshabilitar en distintos dispositivos dentro de su organización. Estas características y opciones de configuración se agregan a los "perfiles de configuración". Puede crear perfiles para diferentes dispositivos y plataformas, incluidas iOS, Android y Windows. Luego, use Intune para aplicar o "asignar" el perfil a los dispositivos.
+Microsoft Intune incluye valores de configuración y características que puede habilitar o deshabilitar en distintos dispositivos dentro de su organización. Estas características y opciones de configuración se agregan a los "perfiles de configuración". Puede crear perfiles para diferentes dispositivos y plataformas, incluidas iOS/iPadOS, Android y Windows. Luego, use Intune para aplicar o "asignar" el perfil a los dispositivos.
 
 Como parte de la solución de administración de dispositivos móviles (MDM), use estos perfiles de configuración para completar distintas tareas. Estos son algunos ejemplos de perfiles:
 
 - En dispositivos Windows 10, use una plantilla de perfil que bloquee los controles ActiveX en Internet Explorer.
-- En dispositivos macOS y iOS, permita que los usuarios usen impresoras AirPrint en su organización.
+- En dispositivos iOS/iPadOS y macOS, permita que los usuarios usen impresoras AirPrint en la organización.
 - Permita o impida el acceso a Bluetooth en el dispositivo.
 - Cree un perfil Wi-Fi o VPN que proporcione a distintos dispositivos acceso a su servidor VPN dentro de su red corporativa.
 - Administre las actualizaciones de software, incluido el momento de la instalación.
@@ -67,7 +67,7 @@ Esta característica es compatible con:
 
 ## <a name="custom-profile"></a>Perfil personalizado
 
-La [configuración personalizada](custom-settings-configure.md) permite que los administradores asignen la configuración del dispositivo que no está integrada en Intune. En dispositivos Android, puede escribir valores de OMA-URI. Para dispositivos iOS, puede importar un archivo de configuración creado Apple Configurator.
+La [configuración personalizada](custom-settings-configure.md) permite que los administradores asignen la configuración del dispositivo que no está integrada en Intune. En dispositivos Android, puede escribir valores de OMA-URI. Para dispositivos iOS/iPadOS, puede importar un archivo de configuración creado en Apple Configurator.
 
 Esta característica es compatible con:
 
@@ -89,7 +89,7 @@ Esta característica es compatible con:
 
 ## <a name="device-features"></a>Características del dispositivo
 
-Las [características del dispositivo](device-features-configure.md) controlan las características de dispositivos iOS y macOS, como AirPrint, notificaciones y mensajes de la pantalla de bloqueo.
+Las [características del dispositivo](device-features-configure.md) controlan las características de dispositivos iOS/iPadOS y macOS, como AirPrint, las notificaciones y los mensajes de la pantalla de bloqueo.
 
 Esta característica es compatible con:
 
@@ -106,7 +106,7 @@ Esta característica es compatible con:
 
 ## <a name="device-restrictions"></a>Restricciones de dispositivos
 
-Las [restricciones de dispositivos](device-restrictions-configure.md) controlan la seguridad, el hardware, el uso compartido de datos y otras opciones de configuración de los dispositivos. Por ejemplo, cree un perfil de restricción de dispositivos que impida que los usuarios de dispositivos iOS usen la cámara del dispositivo. 
+Las [restricciones de dispositivos](device-restrictions-configure.md) controlan la seguridad, el hardware, el uso compartido de datos y otras opciones de configuración de los dispositivos. Por ejemplo, cree un perfil de restricción de dispositivos que impida que los usuarios de dispositivos iOS/iPadOS utilicen la cámara del dispositivo. 
 
 Esta característica es compatible con:
 
@@ -129,7 +129,7 @@ Esta característica es compatible con:
 
 En [Configuración de los ajustes de educación de Windows 10 en Microsoft Intune](education-settings-configure.md) se configuran opciones para la [aplicación Take a Test de Windows](https://education.microsoft.com/gettrained/win10takeatest). Al configurar estas opciones, no puede ejecutar ninguna otra aplicación en el dispositivo hasta que se complete la prueba.
 
-En [Configuración del entorno educativo de Intune para dispositivos iPad compartidos](../fundamentals/education-settings-configure-ios-shared.md) se usa la aplicación Classroom de iOS para ayudar a los profesores a guiar el aprendizaje y controlar los dispositivos de los alumnos en el aula. Puede configurar dispositivos iPad para que muchos alumnos puedan compartir un solo dispositivo.
+En [Configuración del entorno educativo: iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) se usa la aplicación Classroom de iOS/iPadOS para guiar el aprendizaje y controlar los dispositivos de los alumnos en el aula. Puede configurar dispositivos iPad para que muchos alumnos puedan compartir un solo dispositivo.
 
 ## <a name="email"></a>Correo electrónico
 
@@ -186,7 +186,7 @@ Esta característica es compatible con:
 
 - Windows 10 y versiones posteriores
 
-La configuración de pantalla completa también está disponible como restricciones de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [iOS](device-restrictions-ios.md#kiosk).
+La configuración de pantalla completa también está disponible como restricciones de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [iOS/iPadOS](device-restrictions-ios.md#kiosk).
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Esta característica es compatible con:
 
 ## <a name="update-policies"></a>Directivas de actualización
 
-En [Configurar directivas de actualización de iOS en Microsoft Intune](../protect/software-updates-ios.md) se muestra cómo crear y asignar directivas de iOS para instalar actualizaciones de software en dispositivos iOS. También puede revisar el estado de la instalación.
+En [Directivas de actualización de iOS/iPadOS](../protect/software-updates-ios.md) se muestra cómo crear y asignar directivas de iOS/iPadOS para instalar actualizaciones de software en los dispositivos iOS/iPadOS. También puede revisar el estado de la instalación.
 
 Para actualizar las directivas en dispositivos con Windows, vea [Optimización de entrega](delivery-optimization-windows.md). 
 

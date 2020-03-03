@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206676"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511436"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
@@ -87,7 +87,7 @@ En este artículo:
 
      Por ejemplo, si selecciona **iOS/iPadOS** como plataforma, las opciones de tipo de perfil serán similares al perfil siguiente:
 
-     ![Creación de perfil de iOS en Intune](./media/device-profile-create/create-device-profile.png)
+     ![Creación de perfil de iOS/iPadOS en Intune](./media/device-profile-create/create-device-profile.png)
 
 4. Cuando termine, seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y se muestra en la lista.
 
@@ -99,7 +99,7 @@ Para más información sobre las etiquetas de ámbito y lo que puede hacer el us
 
 ### <a name="add-a-scope-tag"></a>Incorporación de una etiqueta de ámbito
 
-1. Seleccione **Ámbito (etiquetas)** .
+1. Seleccione **Ámbito (etiquetas)**.
 2. Seleccione **Agregar** para crear una etiqueta de ámbito. O seleccione una etiqueta de ámbito existente en la lista.
 3. Haga clic en **Aceptar** para guardar los cambios.
 
@@ -171,10 +171,10 @@ Al crear perfiles, tenga en cuenta las siguientes recomendaciones:
   **Nombre del perfil**: plantilla de administración: perfil de configuración de OneDrive para todos los usuarios de Windows 10  
   **Descripción de perfil**: perfil de plantilla de administración de OneDrive que incluye la configuración mínima y base para todos los usuarios de Windows 10. Lo ha creado user@contoso.com para impedir que los usuarios compartan datos de la organización con cuentas personales de OneDrive.
 
-  **Nombre del perfil**: perfil de VPN de todos los usuarios de iOS.  
-  **Descripción de perfil**: perfil de VPN que incluye la configuración mínima y base para que todos los usuarios de iOS se conecten a la VPN de Contoso. Lo ha creado user@contoso.com para que los usuarios se autentiquen automáticamente en la VPN, en lugar de solicitarles su nombre de usuario y contraseña.
+  **Nombre del perfil**: perfil de VPN de todos los usuarios de iOS/iPadOS  
+  **Descripción de perfil**: perfil de VPN que incluye la configuración mínima y base para que todos los usuarios de iOS/iPadOS se conecten a la VPN de Contoso. Lo ha creado user@contoso.com para que los usuarios se autentiquen automáticamente en la VPN, en lugar de solicitarles su nombre de usuario y contraseña.
 
-- Cree el perfil por su tarea, como configurar las opciones de Microsoft Edge, habilitar la configuración antivirus de Microsoft Defender, bloquear dispositivos con Jailbreak de iOS, etc.
+- Cree el perfil por su tarea, como configurar las opciones de Microsoft Edge, habilitar la configuración antivirus de Microsoft Defender, bloquear dispositivos con jailbreak de iOS/iPadOS, etc.
 
 - Cree perfiles que se apliquen a grupos específicos, como Marketing, Ventas, Administradores de TI, o por ubicación o sistema educativo.
 

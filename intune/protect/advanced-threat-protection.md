@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: bd1aaa545f11f7eaaa591f2057f4a6c8946fac4a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547094"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514173"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Aplicación del cumplimiento de ATP de Microsoft Defender con acceso condicional en Intune
 
@@ -62,7 +62,7 @@ Para usar ATP de Microsoft Defender con Intune, asegúrese de que tiene configu
 - [ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) y acceso al Centro de seguridad de Microsoft Defender (portal de ATP)
 
 > [!NOTE]
-> ATP de Microsoft Defender no es compatible con las directivas de protección de aplicaciones de Intune de iOS y Android.
+> ATP de Microsoft Defender no es compatible con las directivas de protección de aplicaciones de Intune de iOS/iPadOS y Android.
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Habilitación de ATP de Microsoft Defender en Intune
 
@@ -116,7 +116,7 @@ Cuando estableció la conexión a ATP de Microsoft Defender, Intune recibió un 
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba la información que desee en **Nombre** y **Descripción**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
-5. En **Tipo de perfil**, seleccione **ATP de Microsoft Defender (Windows 10 Desktop)** .
+5. En **Tipo de perfil**, seleccione **ATP de Microsoft Defender (Windows 10 Desktop)**.
 6. Defina la configuración:
 
    - **Tipo de paquete de configuración del cliente ATP de Microsoft Defender**: seleccione **Incorporar** para agregar el paquete de configuración al perfil. Seleccione **Cesar** para quitar el paquete de configuración del perfil.

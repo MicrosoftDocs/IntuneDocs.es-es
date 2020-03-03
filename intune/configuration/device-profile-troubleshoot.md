@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812357"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511334"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Preguntas comunes, problemas y su solución con perfiles y directivas de dispositivos en Microsoft Intune
 
@@ -36,11 +36,11 @@ Para mitigar este problema, configure una Wi-Fi de invitado. Si se produce un er
 
 Algunas recomendaciones adicionales:  
 
-- Si la red Wi-Fi a la que se está conectando usa una contraseña o frase de contraseña, asegúrese de que puede conectarse directamente al enrutador Wi-Fi. Esto lo puede comprobar con un dispositivo iOS.
+- Si la red Wi-Fi a la que se está conectando usa una contraseña o frase de contraseña, asegúrese de que puede conectarse directamente al enrutador Wi-Fi. Lo puede comprobar con un dispositivo iOS/iPadOS.
 - Después de conectarse correctamente al punto de conexión Wi-Fi (enrutador Wi-Fi), anote el SSID y las credenciales que se han usado (este valor es la contraseña o frase de contraseña).
 - Escriba el SSID y la credencial (contraseña o frase de contraseña) en el campo Clave precompartida. 
 - Realice la implementación en un grupo de prueba que tenga un número de usuarios limitado, preferiblemente solo del equipo de TI. 
-- Sincronice el dispositivo iOS con Intune. Inscríbalo si aún no lo ha hecho. 
+- Sincronice el dispositivo iOS/iPadOS con Intune. Inscríbalo si aún no lo ha hecho. 
 - Vuelva a probar la conexión al mismo punto de conexión Wi-Fi (mencionado en el primer paso).
 - Realice la implementación en grupos más grandes y, finalmente, en todos los usuarios relevantes de la organización. 
 
@@ -54,7 +54,7 @@ Frecuencias **estimadas**:
 
 | Plataforma | Ciclo de actualización|
 | --- | --- |
-| iOS | Aproximadamente cada 8 horas |
+| iOS/iPadOS | Aproximadamente cada 8 horas |
 | macOS | Aproximadamente cada 8 horas |
 | Android | Aproximadamente cada 8 horas |
 | Equipos Windows 10 inscritos como dispositivos | Aproximadamente cada 8 horas |
@@ -65,7 +65,7 @@ Si el dispositivo se ha inscrito recientemente, la comprobación de cumplimiento
 
 | Plataforma | Frecuencia |
 | --- | --- |
-| iOS | Cada 15 minutos durante 1 hora y, luego, cada 8 horas |  
+| iOS/iPadOS | Cada 15 minutos durante 1 hora y, luego, cada 8 horas |  
 | macOS | Cada 15 minutos durante 1 hora y, luego, cada 8 horas | 
 | Android | Cada 3 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
 | Equipos Windows 10 inscritos como dispositivos | Cada 3 minutos durante 15 minutos, luego cada 15 minutos durante 2 horas y, luego, cada 8 horas | 
@@ -102,7 +102,7 @@ Se producen conflictos cuando dos configuraciones de perfil son iguales. Por eje
 
 Se implementa una directiva en la aplicación y surte efecto. Se implementa una segunda directiva. En este escenario, la primera directiva tiene prioridad y sigue siendo la directiva aplicada. La segunda directiva muestra un conflicto. Si ambas se aplican al mismo tiempo, lo que significa que no hay ninguna directiva precedente, ambas están en conflicto. Cualquier configuración en conflicto se establece en los valores más restrictivos.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>¿Qué sucede cuando hay un conflicto de directivas personalizadas de iOS?
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>¿Qué sucede cuando hay un conflicto de directivas personalizadas de iOS/iPadOS?
 
 Intune no evalúa la carga de archivos de configuración de Apple ni directivas personalizadas de identificador uniforme de recursos de Open Mobile Alliance (OMA-URI). Sencillamente, se usa como mecanismo de entrega.
 
@@ -144,7 +144,7 @@ Al eliminar un perfil o quitar un dispositivo de un grupo que tiene el perfil, s
     - Permitir NFC
     - Permitir Wi-Fi
 
-  - **iOS**: se quitan todas las opciones de configuración, excepto las siguientes:
+  - **iOS/iPadOS**: se quitan todas las opciones de configuración, excepto las siguientes:
   
     - Permitir itinerancia de voz
     - Permitir itinerancia de datos
@@ -156,7 +156,7 @@ Una vez establecidas, los dispositivos Windows Phone no permiten que las direct
 
 Para cambiar el perfil a un valor menos seguro, debe restablecer las directivas de seguridad. Por ejemplo, en el escritorio de Windows 8.1, deslice el dedo desde la derecha > seleccione **Configuración** > **Panel de control**. Seleccione el applet **Cuentas de usuario** . En el menú de navegación de la izquierda, hay un vínculo denominado **Restablecer las directivas de seguridad** (hacia la parte inferior). Selecciónelo y, después, elija **Restablecer directivas**.
 
-Es posible que sea necesario retirar otros dispositivos MDM, como Android, Windows Phone 8.1 y versiones posteriores, iOS y Windows 10, y volver a inscribirlos en Intune para aplicar un perfil menos restrictivo.
+Es posible que sea necesario retirar otros dispositivos MDM, como Android, Windows Phone 8.1 y versiones posteriores, iOS/iPadOS y Windows 10, y volver a inscribirlos en Intune para aplicar un perfil menos restrictivo.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Algunas opciones de configuración de un perfil de Windows 10 devuelven "No aplicable"
 

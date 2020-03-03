@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b9fe275be3f7eccee7f60dc27e5068e5b91ca93d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713287"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514156"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acceso condicional basado en aplicación con Intune
 
@@ -34,7 +34,7 @@ El acceso condicional basado en la aplicación y la administración de aplicacio
 > [!NOTE]
 > Una aplicación administrada es aquella que tiene las directivas de protección de aplicaciones aplicadas y puede administrarse mediante Intune.
 
-Puede bloquear las aplicaciones de correo electrónico integradas en iOS y Android cuando solo se permite a la aplicación Microsoft Outlook tener acceso a Exchange Online. Además, puede bloquear las aplicaciones que no tienen directivas de protección de aplicaciones de Intune aplicadas para que no puedan acceder a SharePoint Online.
+Puede bloquear las aplicaciones de correo electrónico integradas en iOS/iPadOS y Android cuando solo permita a la aplicación Microsoft Outlook acceder a Exchange Online. Además, puede bloquear las aplicaciones que no tienen directivas de protección de aplicaciones de Intune aplicadas para que no puedan acceder a SharePoint Online.
 
 ## <a name="prerequisites"></a>Requisitos previos
 

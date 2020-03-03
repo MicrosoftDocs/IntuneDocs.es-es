@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437892"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513918"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Borrado de los datos mediante acciones de inicio condicional de la directiva de protección de aplicaciones en Intune
 
@@ -85,7 +85,7 @@ Para Android, podrá configurar las acciones de las siguientes opciones desde el
 - Versión mínima del Portal de empresa
 - Nivel máximo de amenazas de dispositivo permitido
 
-Con la opción **Min Company Portal version** (Versión mínima del Portal de empresa), puede especificar una versión definida mínima específica del Portal de empresa que se aplique en un dispositivo de usuario final. Esta configuración de inicio condicional permite establecer valores para **bloquear el acceso**, **borrar datos** y **advertir** como posibles acciones cuando no se cumple cada uno de los valores. Los posibles formatos de este valor siguen el patrón *[Principal].[Secundaria]* , *[Principal].[Secundaria].[Compilación]* o *[Principal].[Secundaria].[Compilación].[Revisión]* . Dado que es posible que algunos usuarios finales no prefieran una actualización forzada de las aplicaciones en el momento, la opción "advertir" puede ser muy adecuada al configurar este valor. Lo bueno de Google Play Store es que solo envía la diferencia de bytes de las actualizaciones de aplicaciones, pero aún así puede seguir siendo una gran cantidad de datos que quizás el usuario no quiera utilizar si está trabajando con datos en el momento de la actualización. Forzar una actualización y, por tanto, descargar una aplicación actualizada podría dar lugar a cargos por datos inesperados en el momento de la actualización. La opción **Min Company Portal version** (Versión mínima del Portal de empresa), si está configurada, afectará a cualquier usuario final que obtenga la versión 5.0.4560.0 del Portal de empresa y todas sus versiones futuras. Esta configuración no afectará a los usuarios que usen una versión del Portal de empresa anterior a la versión con la que se publique esta característica. Los usuarios finales que usen actualizaciones automáticas de aplicaciones en su dispositivo probablemente no verán ningún cuadro de diálogo de esta característica, dado que es posible que estén en la versión más reciente del Portal de empresa. Esta opción es solo para Android con la protección de aplicaciones para dispositivos inscritos y no inscritos.
+Con la opción **Min Company Portal version** (Versión mínima del Portal de empresa), puede especificar una versión definida mínima específica del Portal de empresa que se aplique en un dispositivo de usuario final. Esta configuración de inicio condicional permite establecer valores para **bloquear el acceso**, **borrar datos** y **advertir** como posibles acciones cuando no se cumple cada uno de los valores. Los posibles formatos de este valor siguen el patrón *[Principal].[Secundaria]*, *[Principal].[Secundaria].[Compilación]* o *[Principal].[Secundaria].[Compilación].[Revisión]*. Dado que es posible que algunos usuarios finales no prefieran una actualización forzada de las aplicaciones en el momento, la opción "advertir" puede ser muy adecuada al configurar este valor. Lo bueno de Google Play Store es que solo envía la diferencia de bytes de las actualizaciones de aplicaciones, pero aún así puede seguir siendo una gran cantidad de datos que quizás el usuario no quiera utilizar si está trabajando con datos en el momento de la actualización. Forzar una actualización y, por tanto, descargar una aplicación actualizada podría dar lugar a cargos por datos inesperados en el momento de la actualización. La opción **Min Company Portal version** (Versión mínima del Portal de empresa), si está configurada, afectará a cualquier usuario final que obtenga la versión 5.0.4560.0 del Portal de empresa y todas sus versiones futuras. Esta configuración no afectará a los usuarios que usen una versión del Portal de empresa anterior a la versión con la que se publique esta característica. Los usuarios finales que usen actualizaciones automáticas de aplicaciones en su dispositivo probablemente no verán ningún cuadro de diálogo de esta característica, dado que es posible que estén en la versión más reciente del Portal de empresa. Esta opción es solo para Android con la protección de aplicaciones para dispositivos inscritos y no inscritos.
 
 Para usar el valor de configuración **Fabricantes de dispositivos**, indique una lista de fabricantes de Android separados por punto y coma. Estos valores no distinguen mayúsculas de minúsculas. Además de en los informes de Intune, puede encontrar el fabricante de Android de un dispositivo en la configuración del dispositivo. <br>
 Entrada de ejemplo: *Fabricante A; Fabricante B* 
@@ -122,5 +122,5 @@ Cuando una opción está totalmente configurada, la fila aparecerá en la vista 
 
 Para obtener más información sobre las directivas de protección de aplicaciones de Intune, consulte:
 - [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md)
-- [Configuración de directivas de protección de aplicaciones de iOS](app-protection-policy-settings-ios.md)
+- [Configuración de directivas de protección de aplicaciones iOS/iPadOS](app-protection-policy-settings-ios.md)
 - [Configuración de directivas de protección de aplicaciones Android en Microsoft Intune](app-protection-policy-settings-android.md) 

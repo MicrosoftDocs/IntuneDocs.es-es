@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414068"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514734"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
 
@@ -50,7 +50,7 @@ Al aceptar este aviso, los usuarios permiten que se envíen los números de tel�
 > [!NOTE]
 > **La aplicación Portal de empresa nunca hace ni administra llamadas telefónicas.** Google controla el texto del mensaje y no se puede cambiar.
 
-Para ver la página **Hardware**, debe ir a **Grupos** > **All mobile devices (Todos los dispositivos móviles)**  > **Dispositivos**. Seleccione el dispositivo del usuario y vaya a **Ver propiedades** > **Hardware**.
+Para ver la página **Hardware**, debe ir a **Grupos** > **All mobile devices (Todos los dispositivos móviles)** > **Dispositivos**. Seleccione el dispositivo del usuario y vaya a **Ver propiedades** > **Hardware**.
 
 ### <a name="what-happens-if-users-deny-access"></a>Qué sucede si los usuarios deniegan el acceso
 
@@ -117,7 +117,7 @@ Envíe a sus usuarios a [Enviar registros al administrador de TI mediante correo
 
 ### <a name="where-it-appears"></a>Dónde aparece
 
-Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** y un usuario intenta iniciar sesión, se producirá un error en el inicio de sesión. Se mostrará el siguiente mensaje:
+Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** y un usuario intenta iniciar sesión, se producirá un error en el inicio de sesión. Se mostrará este mensaje:
 
 > **El servicio de soporte técnico de su empresa debe concederle acceso a sus recursos**  
 > Su empresa está usando directivas de Windows Information Protection para proteger su dispositivo. El servicio de soporte técnico de su empresa tendrá que asegurarse de que permite que Portal de empresa pueda acceder a esos recursos.
@@ -126,7 +126,7 @@ Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones p
 
 Agregue Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** en la directiva de protección de aplicaciones de Windows Information Protection (WIP). Para obtener más información, consulte [Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune](../apps/windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprobación de una aplicación de empresa iOS (aplicación de línea de negocio) en un dispositivo iOS 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>Aprobación de una aplicación de empresa iOS/iPadOS (aplicación de línea de negocio) en un dispositivo iOS/iPadOS 
 
 ### <a name="where-it-appears"></a>Dónde aparece
 
@@ -136,7 +136,7 @@ De manera predeterminada, su dispositivo no confía en las aplicaciones iOS que 
 
 ### <a name="what-it-means"></a>Significado
 
-Este mensaje significa que deberá modificar la configuración del dispositivo iOS para aprobar e instalar una aplicación desarrollada por su empresa en el dispositivo iOS.
+Este mensaje significa que tendrá que modificar la configuración del dispositivo iOS/iPadOS para aprobar e instalar una aplicación desarrollada por la empresa en el dispositivo iOS/iPadOS.
 
 Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia la aplicación, siga estos pasos para aprobar la aplicación después de descargarla:
 
@@ -148,7 +148,7 @@ Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia
 
 3. Seleccione **Perfil de administración** > **Aplicación de empresa**.
 4. Seleccione el nombre del desarrollador.
-5. Presione **Confiar en _nombre del desarrollador_** .
+5. Presione **Confiar en _nombre del desarrollador_**.
 6. Para confirmar la aplicación, seleccione **Confiar** en el mensaje emergente de instalación de la aplicación.
 
    ![UI de dispositivo iOS: Mensaje de aplicación de confianza](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
@@ -156,5 +156,5 @@ Cuando instala ese tipo de aplicaciones con Portal de empresa de Intune e inicia
     Debería ser capaz de iniciar y usar la aplicación de empresa.
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 [Qué decirles a los usuarios finales sobre el uso de Intune](end-user-educate.md)

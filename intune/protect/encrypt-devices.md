@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756009"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609303"
 ---
 # <a name="use-device-encryption-with-intune"></a>Uso del cifrado de dispositivos con Intune
 
@@ -39,17 +39,30 @@ Intune también proporciona un [informe de cifrado](encryption-monitor.md) integ
 
 Use Intune para configurar el cifrado de discos de FileVault en los dispositivos que ejecutan macOS. Después, use el informe de cifrado de Intune para ver los detalles de cifrado de esos dispositivos y administrar las claves de recuperación de los dispositivos cifrados de FileVault.
 
-Tenga en cuenta que la inscripción de dispositivos aprobados por el usuario es necesaria para que FileVault funcione en el dispositivo. El usuario debe aprobar manualmente el perfil de administración en las preferencias del sistema para que la inscripción se considere aprobada por el usuario. 
+La inscripción de dispositivos aprobados por el usuario es necesaria para que FileVault funcione en el dispositivo. El usuario debe aprobar manualmente el perfil de administración en las preferencias del sistema para que la inscripción se considere aprobada por el usuario.
 
 FileVault es un programa de cifrado de disco completo que se incluye con macOS. Puede usar Intune para configurar FileVault en dispositivos que ejecuten **macOS 10.13 o versiones posteriores**.
 
 Para configurar FileVault, cree un [perfil de configuración de dispositivo](../configuration/device-profile-create.md) para la protección de punto de conexión en la plataforma de macOS. La configuración de FileVault es una de las categorías de configuración disponibles para la protección de punto de conexión de macOS.
 
-Después de crear una directiva para cifrar dispositivos con FileVault, la directiva se aplica a los dispositivos en dos fases. En primer lugar, el dispositivo se prepara para habilitar a Intune a recuperar y hacer una copia de seguridad de la clave de recuperación. A esto se le conoce como custodia. Una vez que se ha custodiado la clave, se puede iniciar el cifrado de disco.
+Después de crear una directiva para cifrar dispositivos con FileVault, la directiva se aplica a los dispositivos en dos fases. En primer lugar, el dispositivo se prepara para habilitar a Intune a recuperar y hacer una copia de seguridad de la clave de recuperación. Esta acción se denomina custodia. Una vez que se ha custodiado la clave, se puede iniciar el cifrado de disco.
 
 ![Configuración de FileVault](./media/encrypt-devices/filevault-settings.png)
 
 Para obtener más información sobre la configuración de FileVault que puede administrar con Intune, consulte [FileVault](endpoint-protection-macos.md#filevault) en el artículo de Intune para la configuración de protección de punto de conexión de MacOS.
+
+### <a name="permissions-to-manage-filevault"></a>Permisos para administrar FileVault
+
+Para administrar FileVault en Intune, la cuenta debe tener los permisos de [control de acceso basado en roles](../fundamentals/role-based-access-control.md) (RBAC) de Intune aplicables.
+
+A continuación se muestran los permisos de FileVault, que forman parte de la categoría **Tareas remotas** y los roles de RBAC integrados que conceden el permiso:
+ 
+- **Obtener la clave de FileVault**:
+  - Operador del departamento de soporte técnico
+  - Administrador de seguridad de puntos de conexión
+
+- **Rotar la clave de FileVault**
+  - Operador del departamento de soporte técnico
 
 ### <a name="how-to-configure-macos-filevault"></a>Cómo configurar FileVault en macOS
 
@@ -84,7 +97,7 @@ Una vez que Intune cifra un dispositivo macOS con FileVault, puede ver la clave 
 
 ### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Recuperación de una clave de recuperación personal desde dispositivos macOS con cifrado de MEM
 
-Los usuarios finales podrán recuperar su clave de recuperación personal (clave de FileVault) mediante la aplicación Portal de empresa de iOS. El dispositivo que tiene la clave de recuperación personal se debe inscribir en Intune y cifrar con FileVault a través de Intune. Con la aplicación Portal de empresa de iOS, el usuario final puede abrir una página web que incluya la clave de recuperación personal de FileVault. También puede recuperar la clave de recuperación en Intune si selecciona **Dispositivos** > *el dispositivos macOS cifrado e inscrito* > **Obtener clave de recuperación**. 
+Los usuarios finales recuperan su clave de recuperación personal (clave de FileVault) mediante la aplicación Portal de empresa de iOS. El dispositivo que tiene la clave de recuperación personal se debe inscribir en Intune y cifrar con FileVault a través de Intune. Con la aplicación Portal de empresa de iOS, el usuario final puede abrir una página web que incluya la clave de recuperación personal de FileVault. También puede recuperar la clave de recuperación en Intune si selecciona **Dispositivos** > *el dispositivos macOS cifrado e inscrito* > **Obtener clave de recuperación**. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>Cifrado de BitLocker en Windows 10
 

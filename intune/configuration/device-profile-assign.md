@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812369"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513102"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -89,7 +89,7 @@ En resumen, use grupos de dispositivos cuando no le preocupe quién haya iniciad
 
 ### <a name="user-groups"></a>Grupos de usuarios
 
-La configuración del perfil que se aplica a los grupos de usuarios siempre acompaña al usuario y va con él cuando inicia sesión en sus muchos dispositivos. Es normal que los usuarios tengan muchos dispositivos, como un equipo Surface Pro para trabajar o un dispositivo iOS personal. Además, es normal que una persona acceda al correo electrónico y a otros recursos de la organización desde estos dispositivos.
+La configuración del perfil que se aplica a los grupos de usuarios siempre acompaña al usuario y va con él cuando inicia sesión en sus muchos dispositivos. Es normal que los usuarios tengan muchos dispositivos, como un equipo Surface Pro para trabajar o un dispositivo iOS/iPadOS personal. Además, es normal que una persona acceda al correo electrónico y a otros recursos de la organización desde estos dispositivos.
 
 Por ejemplo:
 

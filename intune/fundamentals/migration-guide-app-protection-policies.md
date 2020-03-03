@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c0571eb2a369e440b3c7732b6d55ba05ace2c34
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 183a1dc7083aa9b427df225297fb7c393939220f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839352"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515057"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Configuración de directivas de protección de aplicaciones (opcional)
 
@@ -38,7 +38,7 @@ Las directivas de protección de aplicaciones aplican seguridad en el nivel de a
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Directivas de protección de aplicaciones con aplicaciones LOB
 
-También puede ampliar las directivas de protección de aplicaciones móviles a las aplicaciones de línea de negocio (LOB) con el [SDK para aplicaciones de Microsoft Intune](../developer/app-sdk-get-started.md) o la herramienta de ajuste de aplicaciones de Microsoft Intune para ambas plataformas, iOS y Android. Para más información, vea la [herramienta de ajuste de aplicaciones para iOS](../developer/app-wrapper-prepare-ios.md) o la [herramienta de ajuste de aplicaciones para Android](./../developer/app-wrapper-prepare-android.md). Además, vea [Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones](../developer/apps-prepare-mobile-application-management.md).
+También puede ampliar las directivas de protección de aplicaciones móviles a las aplicaciones de línea de negocio (LOB) con el [SDK para aplicaciones de Microsoft Intune](../developer/app-sdk-get-started.md) o la herramienta de ajuste de aplicaciones de Microsoft Intune para las plataformas iOS/iPadOS y Android. Para más información, vea la [herramienta de ajuste de aplicaciones para iOS](../developer/app-wrapper-prepare-ios.md) o la [herramienta de ajuste de aplicaciones para Android](./../developer/app-wrapper-prepare-android.md). Además, vea [Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones](../developer/apps-prepare-mobile-application-management.md).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>¿Cómo ayudan las directivas de protección de aplicaciones durante la migración?
 

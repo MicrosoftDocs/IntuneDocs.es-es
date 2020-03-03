@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207217"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510527"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Uso de credenciales derivadas en Microsoft Intune
 
@@ -37,7 +37,7 @@ Las credenciales derivadas son una implementación de las directrices del Nation
 
 - El administrador de Intune especifica la **credencial derivada** como *método de autenticación* de los siguientes objetos:
 
-  - Tipos de perfiles comunes, como Wi-Fi, VPN y correo electrónico, que incluye la aplicación de correo electrónico nativa de iOS
+  - Tipos de perfiles comunes, como Wi-Fi, VPN y correo electrónico, que incluye la aplicación de correo electrónico nativa de iOS/iPadOS
 
   - Autenticación de aplicaciones
 
@@ -76,7 +76,7 @@ Para obtener información importante sobre el uso de los distintos emisores, con
 
 Planee la implementación de la aplicación Portal de empresa de Intune en los dispositivos que se van a inscribir en una credencial derivada. Los usuarios de dispositivos usan la aplicación Portal de empresa para iniciar el proceso de inscripción de credenciales.
 
-Para los dispositivos iOS, consulte [Adición de aplicaciones de la tienda iOS a Microsoft Intune](../apps/store-apps-ios.md).
+Para los dispositivos iOS/iPadOS, vea [Adición de aplicaciones de la tienda iOS/iPadOS a Microsoft Intune](../apps/store-apps-ios.md).
 
 ## <a name="plan-for-derived-credentials"></a>Planear las credenciales derivadas
 
@@ -198,7 +198,7 @@ Además de implementar la aplicación con Intune, configure una VPN por aplicaci
 **Lleve a cabo las siguientes tareas**:
   
 1. Descargue la [aplicación DISA Purebred](https://cyber.mil/pki-pke/purebred/).
-2. Implemente la aplicación DISA Purebred en Intune.  Vea [Incorporación de una aplicación de línea de negocio de iOS a Microsoft Intune](../apps/lob-apps-ios.md).
+2. Implemente la aplicación DISA Purebred en Intune.  Vea [Incorporación de una aplicación de línea de negocio iOS/iPadOS a Microsoft Intune](../apps/lob-apps-ios.md).
 3. [Cree una VPN por aplicación](../configuration/vpn-settings-configure.md) para la aplicación DISA Purebred.
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>Usar credenciales derivadas para la autenticación, la firma S/MIME y el cifrado
@@ -224,7 +224,7 @@ Use credenciales derivadas para la autenticación basada en certificados en siti
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba los valores siguientes:
 
-    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil. Asígnele un nombre a los perfiles para que pueda identificarlos de manera sencilla más adelante. Por ejemplo, un buen nombre de perfil es **Perfil Credencial derivada para dispositivos iOS**.
+    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil. Asígnele un nombre a los perfiles para que pueda identificarlos de manera sencilla más adelante. Por ejemplo, un buen nombre de perfil es **Perfil Credencial derivada para dispositivos iOS/iPadOS**.
     - **Descripción**: escriba una descripción con información general sobre la configuración y otros detalles importantes.
     - **Plataforma**: Seleccione **iOS/iPad**.
     - **Tipo de perfil**: Seleccione **Credencial derivada**.

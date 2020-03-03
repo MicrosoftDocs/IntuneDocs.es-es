@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: b83367bb2f1d3622a1fc4e11eedd88f3f26ee8dd
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886722"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510612"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Uso de un perfil de dispositivo personalizado para crear un perfil Wi-Fi con una clave precompartida en Intune
 
@@ -44,7 +44,7 @@ Esta característica es compatible con:
 
 - Le resultará más fácil copiar el código de un equipo conectado a esa red, tal como se describe a continuación.
 - Puede agregar varias redes y claves si agrega más configuraciones de OMA-URI.
-- En iOS, use Apple Configurator en una estación Mac para configurar el perfil.
+- En iOS/iPadOS, use Apple Configurator en una estación Mac para configurar el perfil.
 - La opción de PSK requiere una cadena de 64 dígitos hexadecimales o una frase de contraseña de entre 8 y 63 caracteres ASCII imprimibles. No se admiten algunos caracteres, como el asterisco (*).
 
 ## <a name="create-a-custom-profile"></a>Creación de un perfil personalizado

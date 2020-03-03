@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505173"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514904"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificación de escenarios de casos de uso de administración de dispositivos móviles
 
@@ -79,15 +79,15 @@ Ahora necesita identificar los grupos de la organización que están asociados c
 
 El siguiente paso consiste en identificar las plataformas de dispositivos móviles asociadas con cada escenario de casos de uso. Puede haber más de una.
 
-Por ejemplo, su escenario de caso de uso corporativo puede admitir las plataformas de dispositivos iOS y Android Samsung Knox. La directiva BYOD puede incluir compatibilidad con plataformas de dispositivos móviles adicionales como Windows 10 Mobile y Android (no Samsung Knox). Según los ejemplos anteriores, se han asociado las plataformas de dispositivos móviles con cada escenario de caso de uso.
+Por ejemplo, en un escenario de caso de uso corporativo se pueden admitir las plataformas de dispositivos iOS/iPadOS y Android Samsung Knox. La directiva BYOD puede incluir compatibilidad con plataformas de dispositivos móviles adicionales como Windows 10 Mobile y Android (no Samsung Knox). Según los ejemplos anteriores, se han asociado las plataformas de dispositivos móviles con cada escenario de caso de uso.
 
 | **Casos de uso** | **Casos de subuso** | **Grupos** | **Plataformas de dispositivos** |   
 |:---:|:---:|:---:|:---:|
-| Corporativos | Trabajador de la información | Recursos humanos, finanzas | iOS |                                                           
-| Corporativos | Ejecutivos | Recursos humanos, finanzas | iOS |                                                           
+| Corporativos | Trabajador de la información | Recursos humanos, finanzas | iOS/iPadOS |                                                           
+| Corporativos | Ejecutivos | Recursos humanos, finanzas | iOS/iPadOS |                                                           
 | Corporativos | Pantalla completa | Venta directa | Android |
-| BYOD | Trabajador de la información | Marketing, ventas | iOS |                                                           
-| BYOD | Ejecutivos | Marketing, ventas | iOS |
+| BYOD | Trabajador de la información | Marketing, ventas | iOS/iPadOS |                                                           
+| BYOD | Ejecutivos | Marketing, ventas | iOS/iPadOS |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

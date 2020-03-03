@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912665"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511871"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -49,7 +49,7 @@ En esta tabla se muestran las diversas opciones para asignar aplicaciones a usua
 | Los usuarios finales instalan las aplicaciones disponibles desde el Portal de empresa basado en web | Sí | Sí |
 
 > [!NOTE]
-> Actualmente, puede asignar aplicaciones iOS y Android (tanto de línea de negocio como compradas en la tienda) a dispositivos que no estén inscritos en Intune.
+> Actualmente, puede asignar aplicaciones iOS/iPadOS y Android (tanto de línea de negocio como compradas en la tienda) a dispositivos que no estén inscritos en Intune.
 >
 > Para recibir actualizaciones de aplicaciones en dispositivos que no están inscritos en Intune, los usuarios de los dispositivos deben dirigirse al Portal de empresa de su organización e instalar manualmente las actualizaciones de aplicaciones.
 
@@ -67,9 +67,9 @@ En esta tabla se muestran las diversas opciones para asignar aplicaciones a usua
    - **Desinstalar**: La aplicación se desinstala de los dispositivos de los grupos seleccionados si Intune ha instalado la aplicación anteriormente en el dispositivo a través de una asignación "Disponible para dispositivos inscritos" o "Requerido" utilizando la misma implementación. Los vínculos web no se puede quitar después de la implementación.
 
      > [!NOTE]
-     > **Solo para aplicaciones iOS**:
-     > - Para configurar lo que sucede con las aplicaciones administradas cuando los dispositivos ya no se administran, puede seleccionar el valor previsto en **Desinstalar al eliminar el dispositivo**. Para más información, consulte [Configuración de desinstalación de aplicación para aplicaciones administradas de iOS](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
-     > - si ha creado un perfil de VPN para iOS que contiene la configuración de VPN por aplicación, puede seleccionarlo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS](../vpn-settings-ios.md).
+     > **Solo para aplicaciones iOS/iPadOS**:
+     > - Para configurar lo que sucede con las aplicaciones administradas cuando los dispositivos ya no se administran, puede seleccionar el valor previsto en **Desinstalar al eliminar el dispositivo**. Para obtener más información, vea [Configuración de desinstalación de aplicación para aplicaciones administradas de iOS/iPadOS](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
+     > - Si ha creado un perfil de VPN para iOS/iPadOS que contiene la configuración de VPN por aplicación, selecciónelo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS/iPadOS](../vpn-settings-ios.md).
      >
      > **Solo para aplicaciones Android**: si implementa una aplicación Android como **Disponible con o sin inscripción**, el estado de notificación solo estará disponible en los dispositivos inscritos.
      >
@@ -114,7 +114,7 @@ La información de la tabla siguiente puede ayudarle a comprender la intención 
 
 > [!NOTE]
 > Solo en el caso de aplicaciones administradas de la tienda de iOS, cuando agrega estas aplicaciones a Microsoft Intune y las asigna como **Requeridas**, se crean automáticamente con las intenciones **Requerida** y **Disponible**.<br><br>
-> Las aplicaciones de la tienda de iOS (distintas de las aplicaciones VPP de iOS) que se asignan como destino con intención necesaria se aplicarán en el dispositivo en el momento del registro del dispositivo en el repositorio y también se mostrarán en la aplicación Portal de empresa.<br><br>
+> Las aplicaciones de la tienda de iOS (distintas de las aplicaciones VPP de iOS/iPadOS) que se asignan como destino con intención necesaria se aplicarán en el dispositivo al registrarlo en el repositorio y también se mostrarán en la aplicación Portal de empresa.<br><br>
 > Cuando se producen conflictos con el valor de **Desinstalar al eliminar el dispositivo**, la aplicación no se elimina del dispositivo cuando este ya no se administra.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implementación de aplicaciones de Google Play administrado en dispositivos no administrados
@@ -132,7 +132,7 @@ Pasos para asignar una aplicación de Google Play administrado a dispositivos no
 Cuando se emite un borrado selectivo de aplicaciones en la consola de Intune, la cuenta profesional se quita automáticamente de la aplicación Play Store y, desde ese momento, el usuario final deja de ver aplicaciones de trabajo en el catálogo de aplicaciones de Play Store. Cuando se quita la cuenta profesional de un dispositivo, las aplicaciones instaladas desde Play Store seguirán instaladas en el dispositivo y no se desinstalarán. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Configuración de desinstalación de aplicación para aplicaciones administradas de iOS
-En el caso de los dispositivos iOS, puede elegir lo que sucede con las aplicaciones administradas al anular la inscripción del dispositivo de Intune o quitar el perfil de administración con el valor de **Desinstalar al eliminar el dispositivo**. Este valor solo se aplica a las aplicaciones después de que el dispositivo se haya inscrito y las aplicaciones se hayan instalado como administradas. El valor no se puede configurar para aplicaciones web ni vínculos web. Solo los datos protegidos por la administración de aplicaciones móviles (MAM) se retiran después de un borrado selectivo de la aplicación.
+En el caso de los dispositivos iOS/iPadOS, puede elegir lo que sucede con las aplicaciones administradas al anular la inscripción del dispositivo de Intune o quitar el perfil de administración mediante la opción **Desinstalar al eliminar el dispositivo**. Este valor solo se aplica a las aplicaciones después de que el dispositivo se haya inscrito y las aplicaciones se hayan instalado como administradas. El valor no se puede configurar para aplicaciones web ni vínculos web. Solo los datos protegidos por la administración de aplicaciones móviles (MAM) se retiran después de un borrado selectivo de la aplicación.
 
 Los valores de configuración predeterminados se rellenan automáticamente para las nuevas asignaciones de la siguiente manera:
 

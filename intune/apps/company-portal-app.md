@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563633"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576422"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -37,9 +37,9 @@ El Portal de empresa de Intune es el lugar donde los usuarios tienen acceso a lo
 > [!Tip]
 > Al personalizar el portal de empresa, los valores de configuración se aplicarán tanto al sitio web como a las aplicaciones del portal de empresa. Tenga en cuenta que los usuarios deben tener una licencia de Intune asignada para tener acceso al sitio web Portal de empresa.
 
-Con la personalización del Portal de empresa de Intune, podrá ofrecer una experiencia conocida y útil a los usuarios finales. Para ello, en el portal de Intune, seleccione **Aplicaciones** > **Personalización de marca y personalización**.
+Con la personalización del Portal de empresa de Intune, podrá ofrecer una experiencia conocida y útil a los usuarios finales. Para ello, vaya al [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), seleccione **Administración de inquilinos** > **Personalización de marca y personalización** y, después, configure las opciones necesarias.
 
-Cuando un usuario instala una aplicación de iOS desde el Portal de empresa recibirá un mensaje. Esto sucede cuando la aplicación iOS está vinculada a la tienda de aplicaciones, a un programa de compras por volumen (VPP) o a una aplicación de línea de negocio (LOB). El mensaje permite a los usuarios aceptar la acción o permitir la administración de la aplicación. El mensaje mostrará el nombre de la empresa o, cuando este no esté disponible, se mostrará **Portal de empresa**. 
+Al instalar una aplicación iOS/iPadOS desde el Portal de empresa, el usuario recibirá un mensaje. Esto sucede cuando la aplicación iOS/iPadOS está vinculada a la tienda de aplicaciones, a un programa de compras por volumen (VPP) o a una aplicación de línea de negocio (LOB). El mensaje permite a los usuarios aceptar la acción o permitir la administración de la aplicación. El mensaje mostrará el nombre de la empresa o, cuando este no esté disponible, se mostrará **Portal de empresa**. 
 
 > [!Note]
 > Si usa Azure Government, se ofrecen registros de aplicaciones para que el usuario final decida cómo compartirá cuando inicie el proceso para pedir ayuda para un problema. Pero si no usa Azure Government, el Portal de empresa para Windows 10 enviará registros de aplicaciones directamente a Microsoft cuando el usuario inicie el proceso de pedir ayuda para un problema. Si se envían los registros de aplicaciones a Microsoft, será más fácil solucionar los problemas. 
@@ -92,11 +92,11 @@ Elija un logotipo que encaje mejor en fondos blancos o claros.
 
 ### <a name="brand-image-for-company-portal"></a>Imagen de marca del Portal de empresa
 
-Muestra una imagen de marca que refleja la marca de la empresa. Después de guardar los cambios, puede elegir **Preview your settings** (Vista previa de la configuración) en el portal web de Intune, en la parte superior del panel para ver qué aspecto tendrá la configuración. Tenga en cuenta que solo podrá obtener una vista previa de la imagen de marca en un dispositivo iOS y no el portal web de Intune. 
+Muestra una imagen de marca que refleja la marca de la empresa. Después de guardar los cambios, puede elegir **Preview your settings** (Vista previa de la configuración) en el portal web de Intune, en la parte superior del panel para ver qué aspecto tendrá la configuración. Tenga en cuenta que solo podrá obtener una vista previa de la imagen de marca en un dispositivo iOS/iPadOS y no el portal web de Intune. 
 
 |Nombre de campo|Más información|
 |---|---|
-|**Upload your brand image** (Cargar imagen de marca)| Esta opción permite mostrar una imagen de marca. En el Portal de empresa de iOS, muestra una imagen de fondo en la página de perfil del usuario.<p><ul><li>Ancho de imagen recomendado: Mayor que 1125 píxeles (se requiere que sea por lo menos 650 píxeles )</li><li>Tamaño máximo de imagen: 1,3 MB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
+|**Upload your brand image** (Cargar imagen de marca)| Esta opción permite mostrar una imagen de marca. En el Portal de empresa de iOS/iPadOS, muestra una imagen de fondo en la página de perfil del usuario.<p><ul><li>Ancho de imagen recomendado: Mayor que 1125 píxeles (se requiere que sea por lo menos 650 píxeles )</li><li>Tamaño máximo de imagen: 1,3 MB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
 
 La imagen de marca adecuada puede mejorar la confianza del usuario en el Portal de empresa, ya que presenta un fuerte sentido de marca de la empresa. Estas son algunas sugerencias que puede tener en cuenta para adquirir, elegir y optimizar la imagen para el Portal de empresa. 
 
@@ -108,7 +108,7 @@ La imagen de marca adecuada puede mejorar la confianza del usuario en el Portal 
 
 - Quite los metadatos que sean innecesarios. El archivo de imagen puede incluir metadatos, como el perfil de la cámara, la ubicación geográfica, el título, la leyenda, etc. Use una herramienta de optimización de imágenes para eliminar esta información y mantener la calidad al tiempo que cumple los límites de tamaño de archivo. 
 
-Después de agregar o cambiar una imagen de marca en Intune, es posible que el usuario final no vea el cambio en los dispositivos iOS hasta que el Portal de empresa haya reconocido el cambio durante el inicio y se haya reiniciado luego para mostrar la imagen de marca. 
+Después de agregar o cambiar una imagen de marca en Intune, es posible que el usuario final no vea el cambio en los dispositivos iOS/iPadOS hasta que el Portal de empresa haya reconocido el cambio durante el inicio y después se haya reiniciado para mostrar la imagen de marca. 
 
 ### <a name="brand-image-examples"></a>Ejemplos de imagen de marca
 
@@ -122,20 +122,20 @@ En la siguiente imagen se muestra un ejemplo de imagen de personalización de ma
 
 ## <a name="privacy-statement-customization"></a>Personalización de la declaración de privacidad
 
-Puede personalizar la declaración de privacidad que aparece para su organización en dispositivos iOS administrados. Este mensaje indica los elementos que su organización no puede ver o realizar en los dispositivos iOS administrados.
+Puede personalizar la declaración de privacidad que aparece para la organización en los dispositivos iOS/iPadOS administrados. Este mensaje indica los elementos que la organización no puede ver o realizar en los dispositivos iOS/iPadOS administrados.
 
 En **Personalización del Portal de empresa** > **Mensaje de administración de dispositivos y privacidad**, puede:
 
 - Aceptar el **Valor predeterminado** para usar la lista tal y como se muestra, o bien
-- Elegir **Personalizar** para personalizar la lista de elementos que su organización no puede ver o realizar en los dispositivos iOS administrados. Puede usar [markdown](https://daringfireball.net/projects/markdown/) para agregar viñetas, negritas, cursivas y vínculos.
+- Elegir **Personalizar** para personalizar la lista de elementos que la organización no puede ver o realizar en los dispositivos iOS/iPadOS administrados. Puede usar [markdown](https://daringfireball.net/projects/markdown/) para agregar viñetas, negritas, cursivas y vínculos.
 
 ## <a name="company-portal-derived-credentials-for-ios-devices"></a>Credenciales derivadas de Portal de empresa para dispositivos iOS
-Intune admite las credenciales derivadas de tarjeta de verificación de identidad personal (PIV) o de tarjeta de acceso común (CAC) en colaboración con los proveedores de credenciales DISA Purebred, Entrust Datacard e Intercede. Los usuarios finales deberán realizar más pasos tras inscribir su dispositivo iOS para verificar sus identidades en la aplicación Portal de empresa. Para que las credenciales derivadas se habiliten para los usuarios, primero se configurará un proveedor de credenciales para el inquilino y, seguidamente, se establecerá como destino un perfil que use credenciales derivadas para usuarios o dispositivos.
+Intune admite las credenciales derivadas de tarjeta de verificación de identidad personal (PIV) o de tarjeta de acceso común (CAC) en colaboración con los proveedores de credenciales DISA Purebred, Entrust Datacard e Intercede. Los usuarios finales tendrán que realizar más pasos tras inscribir su dispositivo iOS/iPadOS para verificar sus identidades en la aplicación Portal de empresa. Para que las credenciales derivadas se habiliten para los usuarios, primero se configurará un proveedor de credenciales para el inquilino y, seguidamente, se establecerá como destino un perfil que use credenciales derivadas para usuarios o dispositivos.
 
 > [!NOTE]
 > El usuario verá instrucciones sobre las credenciales derivadas según el vínculo que se haya especificado a través de Intune.
 
-Para más información sobre las credenciales derivadas de dispositivos iOS, vea [Usar credenciales derivadas en Microsoft Intune](~/protect/derived-credentials.md).
+Para obtener más información sobre las credenciales derivadas de dispositivos iOS/iPadOS, vea [Uso de credenciales derivadas en Microsoft Intune](~/protect/derived-credentials.md).
 
 ## <a name="dark-mode-for-ios-company-portal"></a>Modo oscuro para el Portal de empresa de iOS
 
@@ -163,7 +163,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la aplicaci�
 |  | Quitar | Ctrl+D o Eliminar |
 |  | Comprobar acceso | Ctrl+M o F9 |
 | Detalles de la aplicación | Instalar | Ctrl+I |
-| Dispositivos | Available | Ctrl+D |
+| Dispositivos | Disponible | Ctrl+D |
 
 Los usuarios finales también podrán ver los accesos directos disponibles en la aplicación Portal de empresa de Windows.
 
@@ -177,7 +177,7 @@ Los usuarios pueden realizar acciones en sus dispositivos locales o remotos a tr
 - **Cambiar nombre**: esta acción cambia el nombre del dispositivo que el usuario puede ver en el Portal de empresa. No cambia el nombre del dispositivo local, solo la lista del Portal de empresa.
 - **Sincronizar**: esta acción inicia una inserción en el repositorio del dispositivo en el servicio Intune. Esto se muestra como **Comprobar estado** en el Portal de empresa.
 - **Bloqueo remoto**: bloquea el dispositivo y requiere un PIN para desbloquearlo.
-- **Restablecer código de acceso**: esta acción se usa para restablecer el código de acceso del dispositivo. En los dispositivos iOS, se quitará el código de acceso y se solicitará al usuario final que especifique un nuevo código en la configuración. En los dispositivos Android compatibles, Intune genera un nuevo código de acceso que se muestra temporalmente en el Portal de empresa.
+- **Restablecer código de acceso**: esta acción se usa para restablecer el código de acceso del dispositivo. En los dispositivos iOS/iPadOS, se quitará el código de acceso y se solicitará al usuario final que especifique uno nuevo en la configuración. En los dispositivos Android compatibles, Intune genera un nuevo código de acceso que se muestra temporalmente en el Portal de empresa.
 - **Recuperación de clave**: esta acción se utiliza para recuperar una clave de recuperación personal para dispositivos macOS cifrados desde el sitio web Portal de empresa. 
 
 ### <a name="self-service-actions"></a>Acciones de autoservicio
@@ -186,21 +186,21 @@ Algunas plataformas y configuraciones no realizar permiten acciones de autoservi
 
 |  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Retirar | Disponible<sup>(1)</sup> | Available | Available | Disponible<sup>(7)</sup> |
-| Eliminación de datos | Available | Disponible<sup>(5)</sup> | N/D | Disponible<sup>(7)</sup> |
-| Cambiar nombre<sup>(4)</sup> | Available | Available | Available | Available |
-| Sincronización | Available | Available | Available | Available |
-| Bloqueo remoto | Solo en Windows Phone | Available | Available | Available |
+| Retirar | Disponible<sup>(1)</sup> | Disponible | Disponible | Disponible<sup>(7)</sup> |
+| Eliminación de datos | Disponible | Disponible<sup>(5)</sup> | N/D | Disponible<sup>(7)</sup> |
+| Cambiar nombre<sup>(4)</sup> | Disponible | Disponible | Disponible | Disponible |
+| Sincronización | Disponible | Disponible | Disponible | Disponible |
+| Bloqueo remoto | Solo en Windows Phone | Disponible | Disponible | Disponible |
 | Restablecer el código de acceso | Solo en Windows Phone | Disponible<sup>(8)</sup> | N/D | Disponible<sup>(6)</sup> |
-| Recuperación de clave | N/D | N/D | Disponible<sup>(2)</sup> | N/D |
+| Recuperación de claves | N/D | N/D | Disponible<sup>(2)</sup> | N/D |
 
-<sup>(1)</sup> La función **Retirar** siempre está bloqueada en los dispositivos Windows unidos a Azure AD.<br>
-<sup>(2)</sup> **Recuperación de clave** para MacOS solo está disponible a través del portal web.<br>
+<sup>(1)</sup> La función **Retirar** siempre está bloqueada en los dispositivos Windows unidos a Azure AD.<br>
+<sup>(2)</sup> **Recuperación de claves** para MacOS solo está disponible a través del portal web.<br>
 <sup>(3) </sup> Todas las acciones remotas se deshabilitan si se usa una inscripción del administrador de inscripción de dispositivos.<br>
 <sup>(4)</sup> **Cambiar nombre** solo cambia el nombre del dispositivo en la aplicación Portal de empresa o en el portal web, no en el dispositivo.<br>
 <sup>(5)</sup> **Borrar** no está disponible en los dispositivos iOS inscritos por el usuario.<br>
-<sup>(6)</sup> **Restablecer el código de acceso** no se admite en algunas configuraciones de Android y Android Enterprise. Para más información, consulte [Restablecimiento o eliminación del código de acceso de un dispositivo en Intune](../remote-actions/device-passcode-reset.md).<br>
-<sup>(7)</sup> **Retirar** y **Borrar** no están disponibles en escenarios de propietario del dispositivo Android Enterprise (COPE, COBO, COSU).<br> 
+<sup>(6)</sup> **Restablecer el código de acceso** no se admite en algunas configuraciones de Android y Android Enterprise. Para más información, consulte [Restablecimiento o eliminación del código de acceso de un dispositivo en Intune](../remote-actions/device-passcode-reset.md).<br>
+<sup>(7)</sup> **Retirar** y **Borrar** no están disponibles en escenarios de propietario del dispositivo Android Enterprise (COPE, COBO, COSU).<br> 
 <sup>(8)</sup> **Restablecer contraseña** no se admite en dispositivos iOS inscritos por el usuario.
 
 ## <a name="next-steps"></a>Pasos siguientes

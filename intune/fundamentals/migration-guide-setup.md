@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 08041a57ab52f395283e57cda596d00ba168aba1
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885852"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556489"
 ---
 # <a name="basic-setup"></a>Configuración básica
 
@@ -53,18 +53,11 @@ Si piensa usar autenticación basada en certificados para perfiles de VPN, Wi-Fi
 
 - [Cómo configurar la infraestructura de certificados para PFX](/intune/certficates-pfx-configure).
 
-
 ## <a name="task-list-for-an-intune-setup"></a>Lista de tareas para una configuración de Intune
 
 ### <a name="task-1-intune-subscription"></a>Tarea 1: Suscripción a Intune
 
-Para poder migrar a Intune, necesita primero una suscripción a Intune.
-
-- Puede visitar [esta página](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que le ofrece instrucciones sobre cómo:
-
-  - Crear una suscripción a Intune vinculada a un nuevo inquilino de AAD.
-
-  - Vincular la suscripción a Intune iniciando sesión en un inquilino existente de AAD.
+Para poder migrar a Intune, necesita primero una [suscripción a Intune](account-sign-up.md).
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Tarea 2: Asignación de licencias de usuario de Intune
 

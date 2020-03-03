@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860237"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514020"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Creación de una directiva de cumplimiento en Microsoft Intune
 
@@ -53,7 +53,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
   - macOS
   - Windows 10
   - Windows 8.1
-  - Windows Phone 8,1
+  - Windows Phone 8.1
 
 - Inscriba dispositivos en Intune (necesario para ver el estado de cumplimiento)
 
@@ -67,7 +67,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
 3. Especifique las siguientes propiedades:
 
-   - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Marcar los dispositivos iOS liberados como no compatibles**.
+   - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un buen nombre de directiva es **Marcar los dispositivos iOS/iPadOS con jailbreak como no compatibles**.
 
    - **Descripción**: escriba una descripción para la directiva. Esta configuración es opcional pero recomendada.
 
@@ -92,7 +92,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
      - [Windows Phone 8.1, Windows 8.1 y versiones posteriores](compliance-policy-create-windows-8-1.md)
      - [Windows 10 y versiones posteriores](compliance-policy-create-windows.md)  
 
-   - **Ubicaciones** *(administrador de dispositivos Android)* : En la directiva, puede forzar el cumplimiento según la ubicación del dispositivo. Elija entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se ofrecen algunas instrucciones.  
+   - **Ubicaciones** *(Administrador de dispositivos Android)*: En la directiva, puede forzar el cumplimiento según la ubicación del dispositivo. Elija entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se ofrecen algunas instrucciones.  
 
    - **Acciones en caso de incumplimiento**: En el caso de los dispositivos que no cumplen con las directivas de cumplimiento, puede agregar una secuencia de acciones para aplicar de manera automática. Puede cambiar la programación cuando el dispositivo se marca como no conforme, por ejemplo, después de un día. También puede configurar una segunda acción que envía un correo electrónico al usuario cuando el dispositivo es no conforme.
 
@@ -100,7 +100,7 @@ Para usar las directivas de cumplimiento de dispositivos, asegúrese de lo sigui
 
      Por ejemplo, se usa la característica Ubicaciones y se agrega una ubicación en una directiva de cumplimiento. La acción predeterminada en caso de incumplimiento se aplica cuando se selecciona al menos una ubicación. Si el dispositivo no está conectado a las ubicaciones seleccionadas, se considera de inmediato como no conforme. Puede dar a los usuarios un período de gracia, por ejemplo, un día.
 
-   - **Ámbito (etiquetas)** : Las etiquetas de ámbito son una excelente manera de filtrar las directivas por grupos específicos, como `US-NC IT Team` o `JohnGlenn_ITDepartment`. Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito a las directivas de cumplimiento. [Uso de etiquetas de ámbito para filtrar directivas](../fundamentals/scope-tags.md) es un recurso útil.
+   - **Ámbito (etiquetas)**: Las etiquetas de ámbito son una excelente manera de filtrar las directivas por grupos específicos, como `US-NC IT Team` o `JohnGlenn_ITDepartment`. Una vez que agrega la configuración, también puede agregar una etiqueta de ámbito a las directivas de cumplimiento. [Uso de etiquetas de ámbito para filtrar directivas](../fundamentals/scope-tags.md) es un recurso útil.
 
 4. Cuando termine, seleccione **Aceptar** > **Crear** para guardar los cambios. La directiva se crea y se muestra en la lista. A continuación, asigne la directiva a los grupos.
 
@@ -141,7 +141,7 @@ Scope tags are a great way to assign and filter policies to specific groups, suc
 
 ## <a name="refresh-cycle-times"></a>Tiempos de ciclo de actualización
 
-Intune usa distintos ciclos de actualización para comprobar las actualizaciones de las directivas de cumplimiento. Si el dispositivo se inscribió recientemente, la inserción en el repositorio se ejecuta con más frecuencia. En el artículo sobre [ciclos de actualización de directivas y perfiles](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) se indican los tiempos de actualización estimados.
+Intune usa distintos ciclos de actualización para comprobar las actualizaciones de las directivas de cumplimiento. Si el dispositivo se inscribió recientemente, la inserción en el repositorio se ejecuta con más frecuencia. En el artículo sobre [ciclos de actualización de directivas y perfiles](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) se muestran los tiempos de actualización estimados.
 
 En cualquier momento, los usuarios pueden abrir la aplicación Portal de empresa de Intune y sincronizar el dispositivo para comprobar de inmediato las actualizaciones del perfil.
 
@@ -173,7 +173,7 @@ Si un dispositivo tiene varias directivas de cumplimiento y distintos estados de
 |---------|---------|
 |Unknown     |1|
 |No aplicable     |2|
-|Conforme|3|
+|conforme|3|
 |En período de gracia|4|
 |No conforme|5|
 |Error|6|

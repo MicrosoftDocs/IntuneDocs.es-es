@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966307"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576513"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Creación y asignación de perfiles de certificado SCEP en Intune
 
@@ -60,7 +60,7 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
 
    - **Tipo de certificado**:
 
-     *(Se aplica a:  Android, Android Enterprise, iOS, macOS, Windows 8.1 y versiones posteriores, y Windows 10 y versiones posteriores).*
+     *(Se aplica a:  Android, Android Enterprise, iOS/iPadOS, macOS, Windows 8.1 y versiones posteriores, y Windows 10 y versiones posteriores).*
 
      Seleccione un tipo en función de cómo vaya a usar el perfil de certificado:
 
@@ -90,19 +90,19 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
        - **Nombre común como correo electrónico**
        - **IMEI (Identidad de equipo móvil internacional)**
        - **Número de serie**
-       - **Personalizado**: cuando se selecciona esta opción, se muestra también un cuadro de texto **Personalizado**. Use este campo para escribir un formato de nombre del firmante personalizado, incluidas las variables. El formato personalizado admite dos variables: **Nombre común (CN)** y **dirección de correo electrónico (E)** . **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
+       - **Personalizado**: cuando se selecciona esta opción, se muestra también un cuadro de texto **Personalizado**. Use este campo para escribir un formato de nombre del firmante personalizado, incluidas las variables. El formato personalizado admite dos variables: **Nombre común (CN)** y **dirección de correo electrónico (E)**. **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
 
-         - **CN={{UserName}}** : nombre principal de usuario, como janedoe@contoso.com.
-         - **CN={{AAD_Device_ID}}** : identificador asignado al registrar un dispositivo en Azure Active Directory (AD). Este identificador normalmente se usa para autenticarse en Azure AD.
-         - **CN={{SERIALNUMBER}}** : número de serie (SN) único que normalmente usa el fabricante para identificar un dispositivo.
-         - **CN={{IMEINumber}}** : número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil.
-         - **CN={{OnPrem_Distinguished_Name}}** : Secuencia de nombres distintivos relativos separados por comas, como *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
+         - **CN={{UserName}}**: nombre principal de usuario, como janedoe@contoso.com.
+         - **CN={{AAD_Device_ID}}**: identificador asignado al registrar un dispositivo en Azure Active Directory (AD). Este identificador normalmente se usa para autenticarse en Azure AD.
+         - **CN={{SERIALNUMBER}}**: número de serie (SN) único que normalmente usa el fabricante para identificar un dispositivo.
+         - **CN={{IMEINumber}}**: número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil.
+         - **CN={{OnPrem_Distinguished_Name}}**: Secuencia de nombres distintivos relativos separados por comas, como *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
 
-           Para usar la variable *{{OnPrem_Distinguished_Name}}* , asegúrese de sincronizar el atributo de usuario *onpremisesdistinguishedname* mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con la instancia de Azure AD.
+           Para usar la variable *{{OnPrem_Distinguished_Name}}*, asegúrese de sincronizar el atributo de usuario *onpremisesdistinguishedname* mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con la instancia de Azure AD.
 
-         - **CN={{onPremisesSamAccountName}}** : los administradores pueden sincronizar el atributo samAccountName de Active Directory con Azure AD mediante Azure AD Connect en un atributo llamado *onPremisesSamAccountName*. Intune puede sustituir esa variable como parte de una solicitud de emisión de certificado en el asunto de un certificado. El atributo samAccountName es el nombre de inicio de sesión del usuario que se utiliza para admitir clientes y servidores de una versión anterior de Windows (anterior a Windows 2000). El formato de nombre de inicio de sesión de usuario es el siguiente: *NombreDeDominio\usuario de prueba*, o bien solo *usuario de prueba*.
+         - **CN={{onPremisesSamAccountName}}**: los administradores pueden sincronizar el atributo samAccountName de Active Directory con Azure AD mediante Azure AD Connect en un atributo llamado *onPremisesSamAccountName*. Intune puede sustituir esa variable como parte de una solicitud de emisión de certificado en el asunto de un certificado. El atributo samAccountName es el nombre de inicio de sesión del usuario que se utiliza para admitir clientes y servidores de una versión anterior de Windows (anterior a Windows 2000). El formato de nombre de inicio de sesión de usuario es el siguiente: *NombreDeDominio\usuario de prueba*, o bien solo *usuario de prueba*.
 
-            Para usar la variable *{{onPremisesSamAccountName}}* , asegúrese de sincronizar el atributo de usuario *onPremisesSamAccountName* mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con la instancia de Azure AD.
+            Para usar la variable *{{onPremisesSamAccountName}}*, asegúrese de sincronizar el atributo de usuario *onPremisesSamAccountName* mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con la instancia de Azure AD.
 
          Mediante una combinación de una o muchas de estas variables y cadenas estáticas, puede crear un formato de nombre de firmante personalizado como este:  
          - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
@@ -113,7 +113,7 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
 
         Las opciones de formato para el formato de nombre del firmante incluyen las variables siguientes:
 
-        - **{{AAD_Device_ID}}** o **{{AzureADDeviceId}}** : cualquiera de las variables se puede usar para identificar un dispositivo por su identificador de Azure AD.
+        - **{{AAD_Device_ID}}** o **{{AzureADDeviceId}}**: cualquiera de las variables se puede usar para identificar un dispositivo por su identificador de Azure AD.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
@@ -154,7 +154,7 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
 
         Con el tipo de certificado *Dispositivo*, puede usar estas variables de certificado de dispositivo para el valor:
 
-        - **{{AAD_Device_ID}}** o **{{AzureADDeviceId}}** : cualquiera de las variables se puede usar para identificar un dispositivo por su identificador de Azure AD.
+        - **{{AAD_Device_ID}}** o **{{AzureADDeviceId}}**: cualquiera de las variables se puede usar para identificar un dispositivo por su identificador de Azure AD.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
@@ -169,7 +169,7 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
 
         > [!IMPORTANT]
         > - Cuando use una variable de certificado de dispositivo, incluya el nombre de la variable entre llaves { }.
-        > - No use llaves **{ }** , símbolos de barra vertical **|** ni puntos y coma **;** en el texto que sigue a la variable.
+        > - No use llaves **{ }**, símbolos de barra vertical **|** ni puntos y coma **;** en el texto que sigue a la variable.
         > - Una persona con acceso al dispositivo podría suplantar las propiedades del dispositivo que se usan en el *asunto* o *SAN*, como **IMEI**, **SerialNumber** y **FullyQualifiedDomainName**.
         > - Un dispositivo debe admitir todas las variables especificadas en un perfil de certificado para que ese perfil se instale en ese dispositivo.  Por ejemplo, si se usa **{{IMEI}}** en el SAN de un perfil SCEP y se asigna a un dispositivo que no tiene un número IMEI, se producirá un error en la instalación del perfil.
 
@@ -179,7 +179,7 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
 
      Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora.
 
-   - **Proveedor de almacenamiento de claves (KSP)** :
+   - **Proveedor de almacenamiento de claves (KSP)**:
 
      *(Se aplica a:  Windows 8.1 y versiones posteriores, y Windows 10 y versiones posteriores)*
 
@@ -197,7 +197,7 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
      - **Firma digital**: permite el intercambio de claves solo si una firma digital protege la clave.
      - **Cifrado de clave**: permite el intercambio de claves solo si la clave está cifrada.
 
-   - **Tamaño de la clave (bits)** :
+   - **Tamaño de la clave (bits)**:
 
      seleccione el número de bits que contiene la clave.
 
@@ -215,13 +215,13 @@ Después de [configurar la infraestructura](certificates-scep-configure.md) para
 
      Agregue valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere *autenticación de cliente* para que el usuario o dispositivo se pueda autenticar en un servidor. Puede agregar usos de la clave adicionales según sea necesario.
 
-   - **Umbral de renovación (%)** :
+   - **Umbral de renovación (%)**:
 
      especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado. Por ejemplo, si escribe 20, se intentará la renovación del certificado cuando haya caducado al 80 %. Los intentos de renovación proseguirán hasta que la renovación sea correcta. La renovación genera un certificado nuevo, lo que da como resultado un nuevo par de claves pública y privada.
 
    - **Direcciones URL de servidor SCEP**:
 
-     especifique una o varias direcciones URL para los servidores SCEP que emiten certificados mediante SCEP. Por ejemplo, escriba algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . Puede agregar direcciones URL de SCEP adicionales para el equilibrio de carga según sea necesario, ya que las direcciones URL se insertan de forma aleatoria en el dispositivo con el perfil. Si uno de los servidores SCEP no está disponible, se producirá un error en la solicitud de SCEP y es posible que, en las comprobaciones posteriores del dispositivo, la solicitud de certificado se realice en el mismo servidor inactivo.
+     especifique una o varias direcciones URL para los servidores SCEP que emiten certificados mediante SCEP. Por ejemplo, escriba algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll*. Puede agregar direcciones URL de SCEP adicionales para el equilibrio de carga según sea necesario, ya que las direcciones URL se insertan de forma aleatoria en el dispositivo con el perfil. Si uno de los servidores SCEP no está disponible, se producirá un error en la solicitud de SCEP y es posible que, en las comprobaciones posteriores del dispositivo, la solicitud de certificado se realice en el mismo servidor inactivo.
 
 8. Seleccione **Aceptar** y, luego, **Crear**. El perfil se crea y aparece en la lista *Configuración del dispositivo - Perfiles*.
 
@@ -242,7 +242,7 @@ Cuando el nombre del firmante incluya uno de los caracteres especiales, use una 
 
 **Por ejemplo**, tiene un nombre del firmante que aparece como *Test User (TestCompany, LLC*).  Un CSR que incluya un CN con la coma entre *TestCompany* y *LLC* presenta un problema.  Para evitar el problema se puede poner el CN entero ente comillas o se puede quitar la coma que hay entre *TestCompany* y *LLC*:
 
-- **Agregar comillas**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Agregar comillas**: *CN=*”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 - **Quitar la coma**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 
  Sin embargo, al intentar usar un carácter de barra diagonal inversa para escapar la coma, se producirá un error en los registros de CRP:
@@ -280,7 +280,7 @@ Los perfiles de certificado SCEP se asignan de la misma manera que [se implement
 - Aunque cree y asigne el perfil de certificado de confianza y el perfil de certificado SCEP por separado, los dos se deben asignar. Si no están instalados en un dispositivo, se produce un error en la directiva de certificado SCEP. Asegúrese de que los perfiles de certificado raíz de confianza también se implementan en los mismos grupos que el perfil SCEP.
 
 > [!NOTE]
-> En los dispositivos iOS, cuando hay un perfil de certificado SCEP asociado con un perfil adicional, como un perfil de Wi-Fi o VPN, el dispositivo recibe un certificado para cada uno de esos perfiles adicionales. Esto hace que el dispositivo iOS tenga varios certificados entregados por la solicitud de certificado SCEP.  Si solo quiere un certificado, tendrá que usar certificados PKCS en lugar de certificados SCEP.  Esto se debe a diferencias en la forma de entregar los certificados SCEP y PKCS a los dispositivos.
+> En los dispositivos iOS/iPadOS, cuando hay un perfil de certificado SCEP asociado con un perfil adicional, como un perfil de Wi-Fi o VPN, el dispositivo recibe un certificado para cada uno de esos perfiles adicionales. Esto hace que el dispositivo iOS/iPadOS tenga varios certificados entregados por la solicitud de certificado SCEP.  Si solo quiere un certificado, tendrá que usar certificados PKCS en lugar de certificados SCEP.  Esto se debe a diferencias en la forma de entregar los certificados SCEP y PKCS a los dispositivos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

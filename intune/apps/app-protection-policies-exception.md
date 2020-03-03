@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 77a4f0ea0ee076907d2a6cd14000c5cf319231e6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437858"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513782"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Creación de excepciones a la directiva de transferencia de datos de la directiva de Intune App Protection (APP)
 
@@ -32,13 +32,13 @@ Como administrador, puede crear excepciones a la directiva de transferencia de d
 >[!WARNING] 
 > Usted es el responsable de realizar cambios en la directiva de excepciones de transferencia de datos. Las adiciones a esta directiva permiten que las aplicaciones no administradas (aplicaciones que no administra Intune) accedan a datos protegidos por las aplicaciones administradas. Este acceso a datos protegidos puede dar lugar a pérdidas de seguridad de datos. Agregue excepciones de transferencia de datos únicamente a las aplicaciones que su organización deba usar, pero que no admitan APP (directivas de protección de aplicaciones) de Intune. Además, agregue solo excepciones a las aplicaciones que no considere que sean riesgos de pérdida de datos.
 
-Dentro de una directiva de protección de aplicaciones de Intune, el establecimiento de **Permitir que la aplicación transfiera datos a otras aplicaciones** en **Aplicaciones administradas por directivas** significa que la aplicación solo puede transferir datos a las aplicaciones administradas por Intune. Si necesita permitir la transferencia de datos a aplicaciones concretas que no son compatibles con la directiva de Intune App Protection, puede crear excepciones a esta directiva mediante el uso de **Select apps to exempt** (Seleccionar aplicaciones exentas). Las exenciones permiten que las aplicaciones administradas por Intune invoquen aplicaciones no administradas basadas en el protocolo de dirección URL (iOS) o el nombre del paquete (Android). De manera predeterminada, Intune agrega aplicaciones nativas fundamentales a esta lista de excepciones. 
+Dentro de una directiva de protección de aplicaciones de Intune, el establecimiento de **Permitir que la aplicación transfiera datos a otras aplicaciones** en **Aplicaciones administradas por directivas** significa que la aplicación solo puede transferir datos a las aplicaciones administradas por Intune. Si necesita permitir la transferencia de datos a aplicaciones concretas que no son compatibles con la directiva de Intune App Protection, puede crear excepciones a esta directiva mediante el uso de **Select apps to exempt** (Seleccionar aplicaciones exentas). Las exenciones permiten que las aplicaciones administradas por Intune invoquen aplicaciones no administradas basadas en el protocolo de dirección URL (iOS/iPadOS) o el nombre del paquete (Android). De manera predeterminada, Intune agrega aplicaciones nativas fundamentales a esta lista de excepciones. 
 
 > [!NOTE]
 > Las modificaciones o adiciones a las excepciones de la directiva de transferencia de datos no afectan a otras directivas de protección de datos, como las restricciones para cortar, copiar y pegar. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Excepciones de transferencia de datos de iOS
-Para una directiva que tenga iOS/iPadOS como destino, puede configurar excepciones de transferencia de datos mediante el protocolo de URL. Para agregar una excepción, compruebe la documentación proporcionada por el desarrollador de la aplicación para buscar información sobre los protocolos de URL admitidos. Para más información sobre las excepciones de transferencia de datos de iOS/iPadOS, vea [Configuración de directivas de protección de aplicaciones iOS: Exenciones de transferencia de datos](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+Para una directiva que tenga iOS/iPadOS como destino, puede configurar excepciones de transferencia de datos mediante el protocolo de URL. Para agregar una excepción, compruebe la documentación proporcionada por el desarrollador de la aplicación para buscar información sobre los protocolos de URL admitidos. Para más información sobre las excepciones de transferencia de datos de iOS/iPadOS, vea [Configuración de directivas de protección de aplicaciones iOS/iPadOS: Exenciones de transferencia de datos](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > Microsoft no tiene un método para buscar manualmente el protocolo URL para crear excepciones de aplicación para aplicaciones de terceros. 
@@ -71,5 +71,5 @@ Si agrega el paquete **Webex** como una excepción a la directiva de transferenc
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Crear e implementar directivas de protección de aplicaciones](app-protection-policies.md)
-- [Configuración de directivas de protección de aplicaciones de iOS: Exenciones de transferencia de datos](app-protection-policy-settings-ios.md#data-transfer-exemptions)
+- [Configuración de directivas de protección de aplicaciones iOS/iPadOS: Exenciones de transferencia de datos](app-protection-policy-settings-ios.md#data-transfer-exemptions)
 - [Configuración de directivas de protección de aplicaciones de Android: Exenciones de transferencia de datos](app-protection-policy-settings-android.md#data-transfer-exemptions)

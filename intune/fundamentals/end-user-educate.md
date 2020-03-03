@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94c52257072bc713cfd3b7a44f342d5d9a4ba2f8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502896"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514683"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Cómo presentar Microsoft Intune a los usuarios finales
 
@@ -68,8 +68,8 @@ En esta lista ofrecemos algunas sugerencias para facilitar la implementación de
   * [Cómo obtienen sus aplicaciones los usuarios de Android](end-user-apps-android.md)
 
 * **iOS**
-  * [Uso de un dispositivo iOS con Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
-  * [Cómo obtienen sus aplicaciones los usuarios de iOS](end-user-apps-ios.md)
+  * [Uso de un dispositivo iOS/iPadOS con Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
+  * [Cómo obtienen sus aplicaciones los usuarios de iOS/iPadOS](end-user-apps-ios.md)
 
 * **Windows**
   * [Uso de un dispositivo Windows con Intune](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)

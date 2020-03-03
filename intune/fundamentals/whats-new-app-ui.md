@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125054"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576549"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 
@@ -59,7 +59,7 @@ La experiencia de inscripción del Portal de empresa para macOS cuenta con un pr
 ## <a name="week-of-october-28-2019"></a>Semana del 28 de octubre de 2019  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Diseño de la lista de comprobación mejorado en la aplicación Portal de empresa para Android <!-- 5550857 -->  
-La lista de comprobación de configuración de la aplicación Portal de empresa para Android se ha actualizado con un diseño ligero y nuevos iconos. Los cambios se alinean con las actualizaciones recientes realizadas en la aplicación Portal de empresa para iOS. Para ver los pasos de inscripción actualizados, consulte [Inscripción con el perfil de trabajo Android](/intune-user-help/enroll-device-android-work-profile) e [Inscripción de su dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
+La lista de comprobación de configuración de la aplicación Portal de empresa para Android se ha actualizado con un diseño ligero y nuevos iconos. Los cambios se alinean con las actualizaciones recientes realizadas en la aplicación Portal de empresa para iOS/iPadOS. Para ver los pasos de inscripción actualizados, consulte [Inscripción con el perfil de trabajo Android](/intune-user-help/enroll-device-android-work-profile) e [Inscripción de su dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
 
 En las pantallas siguientes se muestra la lista de comprobación actualizada para la inscripción del perfil de trabajo de Android:
 
@@ -216,7 +216,7 @@ La aplicación Portal de empresa de Intune para Windows 10 se ha actualizado con
 ## <a name="week-of-april-2-2018"></a>Semana del 2 de abril de 2018
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Actualización de la experiencia de usuario para la aplicación Portal de empresa para iOS <!-- 1412866 -->
-Hemos publicado una importante actualización de la experiencia de usuario para la aplicación Portal de empresa para iOS. La actualización incluye un completo cambio de diseño visual con una apariencia modernizada. Hemos mantenido la funcionalidad de la aplicación, pero hemos mejorado su facilidad de uso y accesibilidad.  
+Se ha publicado una importante actualización de la experiencia de usuario para la aplicación Portal de empresa para iOS/iPadOS. La actualización incluye un completo cambio de diseño visual con una apariencia modernizada. Hemos mantenido la funcionalidad de la aplicación, pero hemos mejorado su facilidad de uso y accesibilidad.  
 
 También verá:
 - Compatibilidad con el iPhone X.
@@ -267,7 +267,7 @@ Si ha habilitado la [asignación de grupos de dispositivos](../enrollment/device
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Mejoras en el flujo de trabajo de configuración de dispositivos en la versión 2.9.0 de Portal de empresa para iOS <!-- 1417174 -->
 
-Se ha mejorado el flujo de trabajo de instalación de dispositivos en la aplicación Portal de empresa para iOS. El lenguaje ahora es más fácil de entender, y también hemos combinado las pantallas que hemos podido. El lenguaje también se ha hecho más específico para la empresa mediante el uso del nombre de la empresa en el texto de instalación.
+Se ha mejorado el flujo de trabajo de instalación de dispositivos en la aplicación Portal de empresa para iOS/iPadOS. El lenguaje resulta más fácil de usar y se han combinado pantallas donde era posible. El lenguaje también se ha hecho más específico para la empresa mediante el uso del nombre de la empresa en el texto de instalación.
 
 > [!NOTE]
 > Se usa el nombre de empresa que ha establecido en Azure Portal, en **Microsoft Intune** > **Aplicaciones cliente** > **Personalización de marca del Portal de empresa** > **Nombre de la empresa**. Si no ha definido este valor, se usará el nombre del inquilino establecido en **Azure Active Directory** > **Propiedades** > **Nombre**. Si no ha establecido ningún nombre de empresa en Personalización de marca del Portal de empresa y no quiere que se muestre el nombre del inquilino, se recomienda definir el nombre de la empresa en dicha pestaña. Si no quiere que esta cadena aparezca en el encabezado de Portal de empresa, puede anular la selección de la casilla "Mostrar nombre de la empresa junto al logotipo".
@@ -303,7 +303,7 @@ Seguimos ajustando el modo de seguimiento de la relevancia, por lo que le agrade
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Mejoras de búsqueda en el sitio web del Portal de empresa <!-- 1331697 -->
 Estamos mejorando nuestras capacidades de búsqueda de aplicaciones, empezando por el [sitio web del Portal de empresa](https://portal.manage.microsoft.com). Las búsquedas ahora se efectuarán en categorías de aplicaciones, además de en los campos Nombre y Descripción. Los resultados se ordenarán, de forma predeterminada, en orden decreciente de relevancia. 
 
-Los usuarios de dispositivos iOS también recibirán este cambio, ya que el sitio web del Portal de empresa también se usa como parte de la aplicación del Portal de empresa para iOS. Las aplicaciones del Portal de empresa para Android y Windows recibirán actualizaciones similares en los próximos meses.
+Los usuarios de dispositivos iOS también recibirán este cambio, ya que el sitio web del Portal de empresa también se usa como parte de la aplicación del Portal de empresa para iOS/iPadOS. Las aplicaciones del Portal de empresa para Android y Windows recibirán actualizaciones similares en los próximos meses.
 
 Seguimos ajustando el modo de seguimiento de la relevancia, por lo que le agradeceríamos que nos hiciera saber si resulta útil mediante el vínculo "Comentarios" situado en la parte inferior del sitio web del Portal de empresa.
 
@@ -407,7 +407,7 @@ La página de información de aplicaciones de la aplicación Portal de empresa p
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Mejora de la experiencia de inicio de sesión en todas las aplicaciones del Portal de empresa para todas las plataformas <!--User Story 1132123-->
 
-Estamos anunciando un cambio que aparecerá en los próximos meses que mejorará la experiencia de inicio de sesión para las aplicaciones de Portal de empresa de Intune para Android, iOS y Windows. La nueva experiencia del usuario aparecerá automáticamente en todas las plataformas de la aplicación Portal de empresa cuando Azure AD haga este cambio. Además, los usuarios ahora pueden iniciar sesión en Portal de empresa desde otro dispositivo con un código generado de un solo uso. Esto resulta útil especialmente en casos en los que los usuarios necesitan iniciar sesión sin credenciales.  
+Se anuncia un cambio que aparecerá en los próximos meses y que mejorará la experiencia de inicio de sesión para las aplicaciones del Portal de empresa de Intune para Android, iOS/iPadOS y Windows. La nueva experiencia del usuario aparecerá automáticamente en todas las plataformas de la aplicación Portal de empresa cuando Azure AD haga este cambio. Además, los usuarios ahora pueden iniciar sesión en Portal de empresa desde otro dispositivo con un código generado de un solo uso. Esto resulta útil especialmente en casos en los que los usuarios necesitan iniciar sesión sin credenciales.  
 
 Aquí puede ver la experiencia de inicio de sesión anterior, la nueva experiencia de inicio de sesión con credenciales y la nueva experiencia de inicio de sesión desde otro dispositivo.
 

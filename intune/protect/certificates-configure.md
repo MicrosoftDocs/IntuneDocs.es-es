@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410195"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576530"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Uso de certificados para la autenticación en Microsoft Intune
 
@@ -38,7 +38,7 @@ Use certificados con Intune para autenticar a los usuarios en las aplicaciones y
 
 Para implementar estos certificados, debe crear y asignar perfiles de certificado a los dispositivos.
 
-Cada perfil de certificado individual que cree es compatible con una sola plataforma. Por ejemplo, si usa certificados PKCS, creará un perfil de certificado PKCS para Android y un perfil de certificado PKCS independiente para iOS. Si también usa certificados SCEP para esas dos plataformas, tendrá que crear un perfil de certificado SCEP para Android y otro para iOS.
+Cada perfil de certificado individual que cree es compatible con una sola plataforma. Por ejemplo, si usa certificados PKCS, creará un perfil de certificado PKCS para Android y otro independiente para iOS/iPadOS. Si también usa certificados SCEP para esas dos plataformas, tendrá que crear un perfil de certificado SCEP para Android y otro para iOS/iPadOS.
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Consideraciones generales al usar una entidad de certificación de Microsoft
 
@@ -83,9 +83,9 @@ Cuando se usa una entidad de certificación (CA) de terceros (que no es de Micro
 | Android Enterprise <br> - Totalmente administrado (propietario del dispositivo)   | ![Compatible.](./media/certificates-configure/green-check.png) |   | ![Compatible.](./media/certificates-configure/green-check.png) |   |
 | Android Enterprise <br> - Dedicado (propietario del dispositivo)   | ![Compatible.](./media/certificates-configure/green-check.png)  |   | ![Compatible.](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> - Perfil de trabajo    | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
-| iOS                   | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Compatible.](./media/certificates-configure/green-check.png) |  ![Compatible.](./media/certificates-configure/green-check.png) |![Compatible.](./media/certificates-configure/green-check.png)|![Compatible.](./media/certificates-configure/green-check.png)|
-| Windows Phone 8,1     |![Compatible.](./media/certificates-configure/green-check.png)  |  | ![Compatible.](./media/certificates-configure/green-check.png)| ![Compatible.](./media/certificates-configure/green-check.png) |
+| Windows Phone 8.1     |![Compatible.](./media/certificates-configure/green-check.png)  |  | ![Compatible.](./media/certificates-configure/green-check.png)| ![Compatible.](./media/certificates-configure/green-check.png) |
 | Windows 8.1 y posterior |![Compatible.](./media/certificates-configure/green-check.png)  |  |![Compatible.](./media/certificates-configure/green-check.png) |   |
 | Windows 10 y versiones posteriores  | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) | ![Compatible.](./media/certificates-configure/green-check.png) |
 

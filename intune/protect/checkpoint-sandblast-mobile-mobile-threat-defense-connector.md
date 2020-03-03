@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801604"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515142"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector de defensa contra amenazas SandBlast Mobile de Check Point con Intune
 
@@ -33,7 +33,7 @@ Puede configurar directivas de acceso condicional según la evaluación de riesg
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y SandBlast Mobile de Check Point a proteger los recursos de su empresa?
 
-La aplicación SandBlast Mobile de Check Point para Android e iOS capta el sistema de archivos, la pila de red y la telemetría de aplicaciones y dispositivos cuando está disponible. Después, envía los datos de telemetría al servicio en la nube de SandBlast Mobile de Check Point para evaluar el riesgo del dispositivo frente a las amenazas móviles.
+La aplicación Sandblast Mobile de Check Point para iOS/iPadOS y Android captura telemetría del sistema de archivos, la pila de red, los dispositivos y las aplicaciones si está disponible y, después, envía los datos de telemetría al servicio en la nube de Sandblast de Check Point para evaluar el riesgo del dispositivo frente a las amenazas móviles.
 
 La directiva de cumplimiento de dispositivos de Intune incluye una regla para el conector de defensa contra amenazas SandBlast Mobile de Check Point, que se basa en la evaluación de riesgos de SandBlast de Check Point. Cuando esta regla está habilitada, Intune evalúa la conformidad del dispositivo con la directiva que habilitó. Si se detecta que el dispositivo no cumple con la directiva, se bloqueará el acceso de los usuarios a los recursos corporativos, como Exchange Online y SharePoint Online. Los usuarios también reciben los pasos de la aplicación móvil de SandBlast de Check Point instalada en sus dispositivos para resolver el problema y volver a obtener acceso a los recursos corporativos.
 
@@ -57,7 +57,7 @@ Cuando se detectan aplicaciones malintencionadas, como malware, en los dispositi
 
 ![Check Point MTD: acceso concedido](./media/checkpoint-sandblast-mobile-mobile-threat-defense-connector/checkpoint-MTD-3.PNG)
 
-### <a name="control-access-based-on-threat-to-network"></a>Control del acceso basado en amenazas a la red
+### <a name="control-access-based-on-threat-to-network"></a>Controlar el acceso basándose en amenazas en la red
 
 Detecte amenazas para la red, como **ataques de tipo Man-in-the-middle**, y proteja el acceso a las redes Wi-Fi según el riesgo del dispositivo.
 
@@ -69,7 +69,7 @@ Detecte amenazas para la red, como **ataques de tipo Man-in-the-middle**, y prot
 
 ![Check Point MTD: acceso a través de Wi-Fi concedido](./media/checkpoint-sandblast-mobile-mobile-threat-defense-connector/checkpoint-MTD-5.PNG)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Control del acceso a SharePoint Online basado en amenazas a la red
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar el acceso a SharePoint Online basándose en amenazas en la red
 
 Detecte amenazas para la red, como **ataques de tipo Man-in-the-middle**, y evite la sincronización de archivos corporativos según el riesgo del dispositivo.
 

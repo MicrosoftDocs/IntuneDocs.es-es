@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437926"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609260"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Exploradores y sistemas operativos compatibles en Intune
 
@@ -32,6 +32,9 @@ Antes de configurar Microsoft Intune, consulte los sistemas operativos y explora
 Para obtener ayuda para la instalación de Intune en su dispositivo, consulte el [uso de dispositivos administrados para realizar el trabajo](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) y [Uso de ancho de banda de red de Intune](network-bandwidth-use.md).
 
 Para más información sobre la compatibilidad con proveedores de servicios de configuración, consulte [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (Referencia del proveedor de servicios de configuración).
+
+> [!NOTE]
+> Intune ahora requiere Android 5.x (Lollipop) o superior para que las aplicaciones y los dispositivos accedan a los recursos de la empresa a través de la aplicación Portal de empresa para Android e Intune App SDK para Android. Este requisito no se aplica a los equipos Polycom basados en Android que ejecuten la versión 4.4. Estos dispositivos seguirán siendo compatibles. 
 
 ## <a name="intune-supported-operating-systems"></a>Sistemas operativos admitidos por Intune
 
@@ -119,7 +122,7 @@ Estos portales son compatibles con los siguientes exploradores:
 
 ### <a name="intune-classic-portal"></a>Portal de Intune clásico
 
-El portal de Intune clásico solo se usa para administrar dispositivos inscritos con el cliente de software de equipos de Intune (https://manage.microsoft.com) ). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
+El portal de Intune clásico solo se usa para administrar dispositivos inscritos con el cliente de software de equipos de Intune (https://manage.microsoft.com)). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
 
 Los siguientes exploradores Silverlight admiten la consola de Intune:
 

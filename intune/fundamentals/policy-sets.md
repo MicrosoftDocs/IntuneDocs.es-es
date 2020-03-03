@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206132"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514836"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Uso de conjuntos de directivas para agrupar colecciones de objetos de administración
 
@@ -52,7 +52,7 @@ Se pueden incluir los siguientes objetos de administración en un conjunto de di
 Cuando se crea un conjunto de directivas, se crea una única unidad de asignación y se administran las asociaciones entre los distintos objetos. Un conjunto de directivas será una referencia a los objetos que son externos a él. Cualquier cambio que se realice en los objetos incluidos también afectará al conjunto de directivas. Después de crear un conjunto de directivas, puede ver y editar repetidamente sus objetos y asignaciones. 
 
 > [!NOTE]
-> Los conjuntos de directivas admiten configuraciones de Windows, Android, macOS e iOS, y se pueden asignar entre plataformas.
+> Los conjuntos de directivas admiten configuraciones de Windows, Android, macOS e iOS/iPadOS, y se pueden asignar entre plataformas.
 
 ## <a name="how-to-create-a-policy-set"></a>Cómo crear un conjunto de directivas
 
@@ -82,15 +82,15 @@ Los conjuntos de directivas, novedad en la versión 1910, presentan los siguien
 - Al crear un conjunto de directivas, si un administrador con ámbito intenta crear un conjunto de directivas sin seleccionar ninguna etiqueta de ámbito, cuando llegue a la página **Revisar + crear**, se producirá un error de validación y se mostrará un error en la barra de estado. El administrador deberá cambiar a otra página en el proceso y, tras ello, regresar a la página **Revisar + crear**. Esto hará que la opción **Crear** se habilite.  
  
 - Actualmente, los conjuntos de directivas admiten los siguientes tipos de aplicaciones:
-    - Aplicación de la tienda iOS
-    - Aplicación de línea de negocio de iOS
-    - Aplicación de línea de negocio de iOS administrada
+    - Aplicación de la Tienda iOS/iPadOS
+    - Aplicación de línea de negocio iOS/iPadOS
+    - Aplicación de línea de negocio iOS/iPadOS administrada
     - Aplicación de la tienda Android
     - Aplicación de línea de negocio de Android
     - Aplicación de línea de negocio de Android administrada
     - Office 365 ProPlus Suite (Windows 10)
     - Vínculo web
-    - Aplicación de iOS integrada
+    - Aplicación iOS/iPadOS integrada
     - Aplicación de Android integrada
 
 - Una asignación de conjunto de directivas de tipo **Todos los usuarios** no se puede establecer en **Perfil de AutoPilot**.
@@ -103,18 +103,18 @@ Los conjuntos de directivas, novedad en la versión 1910, presentan los siguien
 
 - Los tipos de directivas MAM que admiten conjuntos de directivas son los siguientes: 
     - Protección de aplicaciones administradas de destino de MDM de WIP (Windows) MAM 
-    - Protección de aplicaciones administradas de destino de iOS MAM
+    - Protección de aplicaciones administradas de destino de iOS/iPadOS MAM
     - Protección de aplicaciones administradas de destino de Android MAM
-    - Configuración de aplicaciones administradas de destino de iOS MAM
+    - Configuración de aplicaciones administradas de destino de iOS/iPadOS MAM
     - Configuración de aplicaciones administradas de destino de Android MAM
 
 - Los tipos de directivas MAM que no admiten conjuntos de directivas son los siguientes: 
     - Protección de aplicaciones administradas de destino de WIP (Windows) MAM
 
 - MAM procesa las asignaciones de conjuntos de directivas como asignaciones directas en los siguientes tipos de directivas:
-    - Protección de aplicaciones administradas de destino de iOS MAM
+    - Protección de aplicaciones administradas de destino de iOS/iPadOS MAM
     - Protección de aplicaciones administradas de destino de Android MAM
-    - Configuración de aplicaciones administradas de destino de iOS MAM
+    - Configuración de aplicaciones administradas de destino de iOS/iPadOS MAM
     - Configuración de aplicaciones administradas de destino de Android MAM
 
     Si se agrega una directiva a un conjunto de directivas que está implementado en un grupo, dicho grupo se mostraría como directamente asignado en la carga de trabajo, y no "asignado mediante el conjunto de directivas". En consecuencia, MAM no procesa las eliminaciones de asignaciones de grupos procedentes de conjuntos de directivas.

@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956236"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515023"
 ---
 # <a name="plan-communications"></a>Planeamiento de las comunicaciones
 
@@ -52,7 +52,7 @@ Hemos creado vídeos cortos y detallados para ayudar a los usuarios a inscribir 
 
 - [Inscripción de su dispositivo Android](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [Inscripción de su dispositivo de perfil de trabajo Android](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [Inscripción de dispositivos iOS](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [Inscripción de dispositivos iOS/iPadOS](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [Inscripción de dispositivos macOS](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Inscripción de dispositivos Windows](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ Hemos creado vídeos cortos y detallados para ayudar a los usuarios a inscribir 
 Intune cuenta con otros recursos que puede usar para promover la inscripción de dispositivos con los usuarios:
 
 - En [Cómo presentar Microsoft Intune a los usuarios finales](end-user-educate.md) se detallan los pasos de inscripción por plataforma de SO móvil.
-- En [Inscripción de dispositivos de Intune para administradores de TI](../enrollment/device-enrollment.md) se explica cómo inscribir dispositivos Android, iOS y Mac en Intune.
-- Comparta la aplicación Portal de empresa con los usuarios de Windows, iOS y Android.
+- En [Inscripción de dispositivos de Intune para administradores de TI](../enrollment/device-enrollment.md) se explica cómo inscribir dispositivos Android, iOS/iPadOS y Mac en Intune.
+- Comparta la aplicación Portal de empresa con los usuarios de Android, iOS/iPadOS y Windows.

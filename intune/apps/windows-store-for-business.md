@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562490"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609164"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Administración de aplicaciones compradas por volumen en Microsoft Store para Empresas con Microsoft Intune
 
@@ -48,7 +48,7 @@ Revise la información siguiente antes de iniciar la sincronización y la asigna
 - Las aplicaciones con licencia en línea y sin conexión que haya adquirido en la Microsoft Store para Empresas se sincronizarán con el portal de Intune. Así, puede implementar estas aplicaciones en grupos de usuarios o grupos de dispositivos. 
 - Las instalaciones de aplicaciones en línea las administra la tienda.
 - Las aplicaciones sin conexión gratuitas también pueden sincronizarse con Intune. Estas aplicaciones las instala Intune, no la tienda.
-- Para usar esta función, los dispositivos deben estar unidos a Active Directory Domain Services o al área de trabajo.
+- Para usar esta función, los dispositivos deben estar unidos a Active Directory Domain Services, a Azure AD o al área de trabajo.
 - Los dispositivos inscritos deben usar la versión 1511 de Windows 10 o versiones posteriores.
 
 Además, los conjuntos relacionados y las aplicaciones con licencia sin conexión de la Microsoft Store para Empresas se consolidarán ahora en una única entrada de aplicación en la interfaz de usuario. Los detalles de implementación de los paquetes individuales se migrarán a la entrada única. Para ver los conjuntos relacionados en Azure Portal, seleccione **Licencias de aplicaciones** en el panel **Aplicaciones**.

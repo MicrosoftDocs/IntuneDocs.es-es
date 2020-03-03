@@ -1,7 +1,7 @@
 ---
 title: Informe de cifrado para dispositivos cifrados en Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Vea un informe sobre el estado de cifrado del dispositivo iOS o Windows y acceda a las claves de recuperación de BitLocker y FileVault desde el portal de Microsoft Intune.
+description: Vea un informe sobre el estado de cifrado del dispositivo iOS/iPadOS o Windows, y acceda a las claves de recuperación de BitLocker y FileVault desde el portal de Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164652"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510510"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Supervisión del cifrado de dispositivos con Intune
 
@@ -48,7 +48,7 @@ En el panel de informe de cifrado se muestra una lista de los dispositivos que s
 - **Nombre de dispositivo**: representa el nombre del dispositivo.
 - **SO**: contiene la plataforma del dispositivo, como Windows o macOS.
 - **Versión del SO**: versión de Windows o macOS del dispositivo.
-- **Versión de TPM**: *(se aplica solo a Windows 10)* : versión del chip del Módulo de plataforma segura (TPM) en el dispositivo Windows 10.
+- **Versión de TPM** *(se aplica solo a Windows 10)*: versión del chip del Módulo de plataforma segura (TPM) en el dispositivo Windows 10.
 - **Preparación del cifrado**: evaluación de la preparación de los dispositivos para admitir una tecnología de cifrado aplicable, como el cifrado de BitLocker o FileVault. Los dispositivos se identifican de la siguiente manera:
   - **Listo**: el dispositivo se puede cifrar mediante el uso de la directiva MDM, que necesita que el dispositivo cumpla los requisitos siguientes:
 
@@ -122,7 +122,7 @@ Cuando se selecciona un dispositivo desde el informe de cifrado, Intune muestra 
 
   - FileVault necesita que el usuario apruebe su perfil de administración en macOS Catalina y versiones posteriores.
 
-    *Tenga en cuenta lo siguiente: a partir de la versión de macOS 10.15 (Catalina), la configuración de inscripción aprobada por el usuario puede tener como resultado un requisito por el que los usuarios deban aprobar el cifrado de FileVault de forma manual. Para obtener más información, en la documentación de Intune consulte [Inscripción aprobada por el usuario](../enrollment/macos-enroll.md)* .
+    *Tenga en cuenta lo siguiente: a partir de la versión de macOS 10.15 (Catalina), la configuración de inscripción aprobada por el usuario puede tener como resultado un requisito por el que los usuarios deban aprobar el cifrado de FileVault de forma manual. Para obtener más información, en la documentación de Intune consulte [Inscripción aprobada por el usuario](../enrollment/macos-enroll.md)*.
 
   - Desconocido.
 

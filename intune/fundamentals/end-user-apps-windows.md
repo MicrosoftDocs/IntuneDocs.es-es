@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ba79260891c1a26fcb9a92c25b46277c08c92908
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414576"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514377"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de Windows
 
@@ -36,7 +36,7 @@ Las **aplicaciones administradas** se pueden administrar mediante directivas y q
 
 Las **aplicaciones no administradas** se pueden administrar mediante directivas y no se han encapsulado con Intune o no incorporan el SDK para aplicaciones de Intune. Las directivas de protección de aplicaciones no pueden aplicarse a estas aplicaciones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Cómo obtienen sus aplicaciones los usuarios de Android](end-user-apps-android.md)
-[Cómo obtienen sus aplicaciones los usuarios de iOS](end-user-apps-android.md)
+[Cómo obtienen sus aplicaciones los usuarios de iOS/iPadOS](end-user-apps-android.md)

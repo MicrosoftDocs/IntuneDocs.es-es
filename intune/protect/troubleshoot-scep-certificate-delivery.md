@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77be59d126dc7e73bee468ca938938c6bb1b2e1a
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 40075ad3c90f9ce5131d88780d15eec5c258e276
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915881"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515261"
 ---
 # <a name="troubleshoot-the-delivery-of-certificates-provisioned-by-scep-to-devices-in-microsoft-intune"></a>Solución de problemas con la entrega de certificados aprovisionados por SCEP a dispositivos en Microsoft Intune
 
@@ -73,9 +73,9 @@ También puede revisar el [registro OMADM de los dispositivos](troubleshoot-scep
 2018-02-27T05:20:15.3520000    INFO    Event     com.microsoft.omadm.platforms.android.certmgr.state.NativeScepCertInstallStateMachine    18327       21    SCEP cert 'ModelName=AC_51…%2FLogicalName_39907…;Hash=1677525787' state changed from CERT_ACCESS_REQUESTED to CERT_ACCESS_GRANTED
 ```
 
-### <a name="ios-and-ipados"></a>iOS y iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
-En el dispositivo iOS o iPadOS, puede ver el certificado en el perfil de administración de dispositivos. Profundice para ver los detalles de los certificados instalados.
+En el dispositivo iOS/iPadOS o iPadOS, puede ver el certificado en el perfil de administración de dispositivos. Profundice para ver los detalles de los certificados instalados.
 
 ![Certificado de iOS](../protect/media/troubleshoot-scep-certificate-delivery/ios-certificate.png)
 
@@ -99,7 +99,7 @@ En el dispositivo Windows, compruebe que el certificado se entregó:
 
 Para ver el certificado en el dispositivo, ejecute **certmgr.msc** para abrir el complemento MMC Certificados y comprobar que los certificados raíz y SCEP están instalados correctamente en el dispositivo del almacén personal:
 
-   1. Vaya a **Certificados (equipo local)**  > **Entidades de certificación raíz de confianza** > **Certificados** y compruebe que el certificado raíz de la entidad de certificación está presente. Los valores de *Emitidos para* y *Emitido por* serán los mismos.
+   1. Vaya a **Certificados (equipo local)** > **Entidades de certificación raíz de confianza** > **Certificados** y compruebe que el certificado raíz de la entidad de certificación está presente. Los valores de *Emitidos para* y *Emitido por* serán los mismos.
    2. En el complemento MMC Certificados, vaya a **Certificados – Usuario actual** > **Personal** > **Certificados** y compruebe que el certificado solicitado esté presente, con *Emitidos por* igual al nombre de la entidad de certificación.
 
 ## <a name="troubleshoot-failures"></a>Solución de errores
@@ -108,7 +108,7 @@ Para ver el certificado en el dispositivo, ejecute **certmgr.msc** para abrir el
 
 Para solucionar este paso, revise los errores que se registran en el registro DM de OMA.
 
-### <a name="ios-and-ipados"></a>iOS y iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
 Para solucionar este paso, revise los errores que se registran en el registro de depuración de dispositivos.
 

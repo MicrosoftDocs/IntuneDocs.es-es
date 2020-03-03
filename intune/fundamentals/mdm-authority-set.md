@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c5d0731736df193bf615391ad486a60dff6cdd
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: b611b2307b7b4f7e789e7db9d070e4b6b3f1350c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885908"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514496"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -69,7 +69,7 @@ En cada caso, el consentimiento está estrictamente relacionado con la ejecució
 Después de cambiar a la nueva entidad de MDM, habrá probablemente un tiempo de transición (hasta ocho horas) antes de que el dispositivo se compruebe y se sincronice con el servicio. Es necesario que configure los parámetros en la nueva entidad de MDM para asegurarse de que los dispositivos inscritos seguirán administrados y protegidos después del cambio. 
 - Los dispositivos deben conectarse al servicio después del cambio para que la configuración de la nueva entidad de MDM (Intune independiente) reemplace la configuración existente en el dispositivo.
 - Después de cambiar la entidad de MDM, algunas de las opciones básicas (como los perfiles) de la entidad de MDM anterior permanecerán en el dispositivo durante siete días o hasta que el dispositivo se conecte al servicio por primera vez. Se recomienda que configure aplicaciones y parámetros (directivas, perfiles, aplicaciones, etc.) en la nueva entidad de MDM tan pronto como sea posible y que implemente la configuración en los grupos de usuarios que contienen usuarios con dispositivos ya inscritos. En cuanto el dispositivo se conecte con el servicio tras el cambio en la entidad de MDM, recibirá la nueva configuración desde la nueva entidad de MDM, evitando así los tiempos de inactividad en administración y protección.
-- Los dispositivos sin usuarios asociados (normalmente al tener el Programa de inscripción de dispositivos iOS o escenarios de inscripción de forma masiva) no se migran a la nueva entidad de MDM. Para esos dispositivos, debe llamar al soporte técnico para solicitar ayuda para trasladarlos a la nueva entidad de MDM.
+- Los dispositivos sin usuarios asociados (normalmente al tener el Programa de inscripción de dispositivos iOS/iPadOS o escenarios de inscripción de forma masiva) no se migran a la nueva entidad de MDM. Para esos dispositivos, debe llamar al soporte técnico para solicitar ayuda para trasladarlos a la nueva entidad de MDM.
 
 ## <a name="change-mdm-authority-to-office-365"></a>Cambio de la entidad de MDM a Office 365
 
@@ -93,7 +93,7 @@ No se puede cambiar la entidad de MDM a Desconocido. El servicio usa la entidad 
 - Incluso para los dispositivos que están encendidos y en línea durante el cambio en la entidad de MDM (o poco tiempo después), pasarán hasta ocho horas (según el tiempo de la siguiente comprobación periódica programada) hasta que los dispositivos se registren en el servicio bajo la nueva entidad de MDM.    
 
   > [!IMPORTANT]    
-  > Entre el momento en que cambie la entidad MDM y se cargue el certificado de Apple Push Notification Service renovado en la nueva entidad, las inscripciones de nuevos dispositivos y las comprobaciones de dispositivos iOS darán error. Por lo tanto, es importante revisar y cargar el certificado de Apple Push Notification Service en la nueva entidad tan pronto como sea posible después del cambio de entidad de MDM.
+  > Entre el momento en que cambie la entidad MDM y se cargue el certificado de APNs renovado en la nueva entidad, se producirá un error en las inscripciones de nuevos dispositivos y las comprobaciones de dispositivos iOS/iPadOS. Por lo tanto, es importante revisar y cargar el certificado de Apple Push Notification Service en la nueva entidad tan pronto como sea posible después del cambio de entidad de MDM.
 
 - Los usuarios pueden cambiar rápidamente a la nueva entidad de MDM iniciando manualmente una comprobación desde el dispositivo en el servicio. Los usuarios pueden realizar este cambio con facilidad mediante la aplicación Portal de empresa e iniciando una comprobación de cumplimiento del dispositivo.
 - Para validar que todo funciona correctamente después de que los dispositivos se hayan comprobado y sincronizado con el servicio tras el cambio de entidad de MDM, busque los dispositivos en la entidad de MDM.

@@ -1,11 +1,11 @@
 ---
 title: 'Uso de una configuración de dispositivo personalizada en Microsoft Intune: Azure | Microsoft Docs'
-description: Agregar o crear un perfil para usar una configuración personalizada para dispositivos Windows Phone, Windows 8.1, Windows 10 y versiones posteriores, Android, Android Enterprise, macOS e iOS mediante Microsoft Intune
+description: Adición o creación de un perfil para usar una configuración personalizada para dispositivos Windows Phone, Windows 8.1, Windows 10 y versiones posteriores, Android, Android Enterprise, macOS e iOS/iPadOS mediante Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,22 +15,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c815a2c911dba6d17fc864b446122931fa88e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2ca5a120e50819208743564279a5d16c6b4aa2f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73755383"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511521"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Crear un perfil con una configuración personalizada en Intune
 
 ## <a name="what-are-custom-profiles"></a>¿Qué son los perfiles personalizados?
 
-Microsoft Intune incluye muchas configuraciones integradas para controlar diversas características de un dispositivo. También es posible crear perfiles personalizados para usar las configuraciones de dispositivo y las características que no están integradas en Intune. Estos perfiles incluyen características y configuraciones para controlar dispositivos de la organización. Por ejemplo, puede crear un perfil personalizado que establece la misma función para todos los dispositivos iOS.
+Microsoft Intune incluye muchas configuraciones integradas para controlar diversas características de un dispositivo. También es posible crear perfiles personalizados para usar las configuraciones de dispositivo y las características que no están integradas en Intune. Estos perfiles incluyen características y configuraciones para controlar dispositivos de la organización. Por ejemplo, puede crear un perfil personalizado que establece la misma función para todos los dispositivos iOS/iPadOS.
 
 Para obtener más información sobre los perfiles de configuración, vea [¿Qué son los perfiles de dispositivo de Microsoft Intune?](device-profiles.md) 
 
-Este artículo contiene vínculos para crear perfiles personalizados para Android, Android Enterprise, iOS, macOS y Windows.
+Este artículo contiene vínculos para crear perfiles personalizados para Android, Android Enterprise, iOS/iPadOS, macOS y Windows.
 
 ## <a name="available-platforms"></a>Plataformas disponibles
 

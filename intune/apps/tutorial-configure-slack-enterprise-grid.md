@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415478"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511555"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configuración de Slack para usar Intune para EMM y la configuración de aplicaciones
 
@@ -32,8 +32,8 @@ Slack es una aplicación de colaboración que puede usar con Microsoft Intune.
 En este tutorial, aprenderá a:
 > [!div class="checklist"]
 > - Establecer Intune como el proveedor de Enterprise Mobility Management (EMM) en Slack Enterprise Grid. Podrá limitar el acceso a las áreas de trabajo del plan de Grid a los dispositivos administrados de Intune.
-> - Crear directivas de configuración de aplicaciones para administrar la aplicación Slack para EMM en iOS y la aplicación Slack para los dispositivos Android con perfiles de trabajo.
-> - Crear directivas de cumplimiento de dispositivos de Intune para establecer las condiciones que deben cumplir los dispositivos Android e iOS para que se los considere compatibles.
+> - Crear directivas de configuración de aplicaciones para administrar la aplicación Slack para EMM en iOS/iPadOS y la aplicación Slack para dispositivos Android con perfiles de trabajo.
+> - Crear directivas de cumplimiento de dispositivos de Intune para establecer las condiciones que deben cumplir los dispositivos Android e iOS/iPadOS para que se los considere compatibles.
 
 Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de prueba gratuita](../fundamentals/free-trial-sign-up.md).
 
@@ -51,10 +51,10 @@ Para activar EMM para el plan de Slack Enterprise Grid, siga las [instrucciones 
 Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como administrador global o administrador de servicios de Intune. Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Configuración de Slack para EMM en dispositivos iOS
-Agregue la aplicación Slack para EMM de iOS al inquilino de Intune y cree una directiva de configuración de aplicaciones para permitir que los usuarios de iOS de las organizaciones tengan acceso a Slack con Intune como proveedor de EMM.
+Agregue la aplicación Slack para EMM de iOS/iPadOS al inquilino de Intune y cree una directiva de configuración de aplicaciones para permitir que los usuarios de iOS/iPadOS de las organizaciones accedan a Slack con Intune como proveedor de EMM.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Incorporación de Slack para EMM a Intune
-Agregue Slack para EMM como una aplicación iOS administrada en Intune y asigne sus usuarios de Slack. Las aplicaciones son específicas para una plataforma, por lo que deberá agregar una aplicación de Intune distinta para los usuarios de Slack en dispositivos Android.
+Agregue Slack para EMM como una aplicación iOS/iPadOS administrada en Intune y asigne los usuarios de Slack. Las aplicaciones son específicas para una plataforma, por lo que deberá agregar una aplicación de Intune distinta para los usuarios de Slack en dispositivos Android.
 1. En el centro de administración, seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 2. En **Tipo de aplicación**, seleccione la aplicación de la tienda **iOS**.
 3. Seleccione **Buscar en App Store**. Escriba el término de búsqueda "Slack para EMM" y seleccione la aplicación. Haga clic en **Seleccionar** en el panel **Buscar en App Store**.
@@ -84,7 +84,7 @@ Agregue una directiva de configuración de aplicaciones de Slack para EMM de iOS
 12. Haga clic en **Guardar**.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Opcional) Creación de una directiva de cumplimiento de dispositivos iOS
-Configure una directiva de cumplimiento para dispositivos Intune para establecer las condiciones que debe cumplir un dispositivo para que se considere compatible. Para este tutorial, se creará una directiva de cumplimiento para dispositivos iOS. Las directivas de cumplimiento son específicas para una plataforma, por lo que deberá crear una directiva distinta para los usuarios de Slack en dispositivos Android.
+Configure una directiva de cumplimiento para dispositivos Intune para establecer las condiciones que debe cumplir un dispositivo para que se considere compatible. Para este tutorial, se creará una directiva de cumplimiento para dispositivos iOS/iPadOS. Las directivas de cumplimiento son específicas para una plataforma, por lo que deberá crear una directiva distinta para los usuarios de Slack en dispositivos Android.
 1. En el centro de administración, seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
 2. En Nombre, escriba "Prueba de directiva de cumplimiento de iOS".
 3. En Descripción, escriba "Prueba de directiva de cumplimiento de iOS".
@@ -105,7 +105,7 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
 Agregue la aplicación administrada de Google Play Slack al inquilino de Intune y cree una directiva de configuración de aplicaciones para permitir que los usuarios de Android de las organizaciones tengan acceso a Slack con Intune como proveedor de EMM.
 
 ### <a name="add-slack-to-intune"></a>Incorporación de Slack a Intune
-Agregue Slack como aplicación administrada de Google Play en Intune y asigne sus usuarios de Slack. Las aplicaciones son específicas para una plataforma, por lo que deberá agregar una aplicación de Intune distinta para los usuarios de Slack en dispositivos iOS.
+Agregue Slack como aplicación administrada de Google Play en Intune y asigne sus usuarios de Slack. Las aplicaciones son específicas de la plataforma, por lo que tendrá que agregar una aplicación de Intune distinta para los usuarios de Slack en dispositivos iOS/iPadOS.
 1. En Intune, seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 2. En Tipo de aplicación, seleccione **Store app – Managed Google Play** (Aplicación de la tienda: administrada de Google Play).
 3. Seleccione **Managed Google Play - Approve** (Administrada de Google Play: aprobar). Escriba el término de búsqueda "Slack para EMM" y seleccione la aplicación.
@@ -120,7 +120,7 @@ Agregue Slack como aplicación administrada de Google Play en Intune y asigne su
 10. Haga clic en **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Incorporación de una directiva de configuración de aplicaciones de Slack
-Agregue una directiva de configuración de aplicaciones de Slack. Las directivas de configuración de aplicaciones para los dispositivos administrados son específicas para una plataforma, por lo que deberá agregar una directiva distinta para los usuarios de Slack en dispositivos iOS.
+Agregue una directiva de configuración de aplicaciones de Slack. Las directivas de configuración de aplicaciones para los dispositivos administrados son específicas de la plataforma, por lo que tendrá que agregar una directiva distinta para los usuarios de Slack en dispositivos iOS/iPadOS.
 1. En Intune, seleccione **Aplicaciones cliente** > **Directivas de configuración de aplicaciones** > **Agregar**.
 2. En Nombre, escriba Prueba de la directiva de configuración de aplicaciones de Slack.
 3. En Tipo de inscripción del dispositivo, seleccione **Dispositivos administrados**.
@@ -136,7 +136,7 @@ Agregue una directiva de configuración de aplicaciones de Slack. Las directivas
 12. Haga clic en **Guardar**.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(Opcional) Creación de una directiva de cumplimiento de dispositivos Android
-Configure una directiva de cumplimiento para dispositivos Intune para establecer las condiciones que debe cumplir un dispositivo para que se considere compatible. Para este tutorial, se creará una directiva de cumplimiento para dispositivos Android. Las directivas de cumplimiento son específicas para una plataforma, por lo que deberá crear una directiva distinta para los usuarios de Slack en dispositivos iOS.
+Configure una directiva de cumplimiento para dispositivos Intune para establecer las condiciones que debe cumplir un dispositivo para que se considere compatible. Para este tutorial, se creará una directiva de cumplimiento para dispositivos Android. Las directivas de cumplimiento son específicas de la plataforma, por lo que tendrá que crear una directiva distinta para los usuarios de Slack en dispositivos iOS/iPadOS.
 1. En Intune, seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
 2. En Nombre, escriba "Prueba de directiva de cumplimiento de Android".
 3. En Descripción, escriba "Prueba de directiva de cumplimiento de Android".
@@ -155,13 +155,13 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
 
 ## <a name="launch-slack"></a>Inicio de Slack
 
-Con las directivas que acaba de crear, todo dispositivo iOS o Android con perfil de trabajo que intente iniciar sesión en una de las áreas de trabajo deberá estar inscrito en Intune. Para probar este escenario, intente iniciar Slack para EMM en un dispositivo iOS inscrito en Intune o iniciar Slack en un dispositivo Android con perfil de trabajo inscrito en Intune. 
+Con las directivas que acaba de crear, todo dispositivo iOS/iPadOS o Android con perfil de trabajo que intente iniciar sesión en una de las áreas de trabajo deberá estar inscrito en Intune. Para probar este escenario, intente iniciar Slack para EMM en un dispositivo iOS/iPadOS inscrito en Intune, o bien iniciar Slack en un dispositivo Android con perfil de trabajo inscrito en Intune. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 En este tutorial:
 - Estableció Intune como el proveedor de Enterprise Mobility Management (EMM) en Slack Enterprise Grid. 
-- Creó directivas de configuración de aplicaciones para administrar la aplicación Slack para EMM en iOS y la aplicación Slack para los dispositivos Android con perfiles de trabajo.
-- Creó directivas de cumplimiento de dispositivos de Intune para establecer las condiciones que deben cumplir los dispositivos Android e iOS para que se los considere compatibles.
+- Ha creado directivas de configuración de aplicaciones para administrar la aplicación Slack para EMM en iOS/iPadOS y la aplicación Slack para dispositivos Android con perfiles de trabajo.
+- Ha creado directivas de cumplimiento de dispositivos de Intune para establecer las condiciones que deben cumplir los dispositivos Android e iOS/iPadOS para que se los considere compatibles.
 
 Para más información sobre las directivas de configuración de aplicaciones, consulte las [directivas de configuración de aplicaciones para Microosft Intune](app-configuration-policies-overview.md). Para más información sobre las directivas de cumplimiento de los dispositivos, consulte [Establecimiento de reglas en los dispositivos para permitir el acceso a recursos de su organización con Intune](../protect/device-compliance-get-started.md).

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a300070e06725e165316172bf10ca079861f56f
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: b12781c55abc3ce7d9e964b0f139fc4c1d1fd69b
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547570"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529369"
 ---
 # <a name="set-up-intune"></a>Configurar Intune
 
@@ -35,19 +35,16 @@ Si actualmente usa Microsoft Endpoint Configuration Manager para administrar eq
 >[!TIP]
 >Si adquiere un mínimo de 150 licencias de Intune en un plan válido, puede usar el *Beneficio del centro de FastTrack*. Con este servicio, los especialistas de Microsoft trabajan con usted para preparar su entorno para Intune. Consulte [Programa FastTrack para Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
-
-
-| Pasos |                                                                                                                       Estado                                                                                                                       |
-|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   1   |                                        [Configuraciones compatibles](supported-devices-browsers.md): información necesaria antes de empezar. Esto incluye las configuraciones admitidas y los requisitos de red.                                         |
-|   2   |                                                                 [Iniciar sesión en Intune](account-sign-up.md): inicie sesión en la suscripción de prueba o cree una suscripción a Intune.                                                                  |
-|   3   |                [Configurar el nombre de dominio](custom-domain-name-configure.md): establezca el registro DNS para conectar el nombre de dominio de la empresa con Intune. Esto proporciona a los usuarios un dominio conocido al conectarse a Intune y usar los recursos.                |
-|   4   |                                   [Agregar usuarios](users-add.md): agregue usuarios manualmente o conecte Active Directory para sincronizar usuarios con Intune. Se requiere, a menos que los dispositivos sean de pantalla completa "sin usuarios".                                    |
-|   5   |                                            [Asignar licencias](../licenses-assign.md): conceda permiso a los usuarios para que usen Intune. Cada usuario o dispositivo sin usuarios necesita una licencia de Intune para poder acceder al servicio.                                             |
-|   6   |                                               [Agregar grupos](../groups-add.md): use grupos de usuarios y dispositivos para simplificar las tareas de administración. Los grupos se usan para asignar aplicaciones, configuraciones y otros recursos.                                                |
-|   7   |                                                                        [Agregar aplicaciones](../apps/apps-add.md): las aplicaciones se pueden asignar a grupos e instalarse de forma automática u opcional.                                                                         |
+| Pasos | Estado  |
+|---|---|
+|   1   | [Configuraciones compatibles](supported-devices-browsers.md): información necesaria antes de empezar. Esto incluye las configuraciones admitidas y los requisitos de red.|
+|   2   |  [Iniciar sesión en Intune](account-sign-up.md): inicie sesión en la suscripción de prueba o cree una suscripción a Intune. |
+|   3   | [Configurar el nombre de dominio](custom-domain-name-configure.md): establezca el registro DNS para conectar el nombre de dominio de la empresa con Intune. Esto proporciona a los usuarios un dominio conocido al conectarse a Intune y usar los recursos. |
+|   4   | [Agregar usuarios](users-add.md) y [grupos](../groups-add.md): agregue usuarios y grupos, o bien conecte Active Directory para la sincronización con Intune. Se requiere, a menos que los dispositivos sean de pantalla completa "sin usuarios". Los grupos se usan para asignar aplicaciones, configuraciones y otros recursos.|
+|   5   | [Asignar licencias](../licenses-assign.md): conceda permiso a los usuarios para que usen Intune. Cada usuario o dispositivo sin usuarios necesita una licencia de Intune para poder acceder al servicio. |
+|   6   | [Establecer la autoridad de MDM](../mdm-authority-set.md): use grupos de usuarios y dispositivos para simplificar las tareas de administración. Los grupos se usan para asignar aplicaciones, configuraciones y otros recursos. |
+|   7   | [Agregar aplicaciones](../apps/apps-add.md): las aplicaciones se pueden asignar a grupos e instalarse de forma automática u opcional. |
 |   8   | [Configurar dispositivos](../configuration/device-profiles.md): configure los perfiles que administren la configuración de los dispositivos. Los perfiles de dispositivo pueden establecer con antelación la configuración del correo, la VPN, el Wi-Fi y las características del dispositivo. También pueden restringir dispositivos para ayudar a proteger tanto a los propios dispositivos como a los datos. |
-|   9   |       [Personalizar el Portal de empresa](../apps/company-portal-app.md): personalice el Portal de empresa de Intune que los usuarios emplean para inscribir dispositivos e instalar aplicaciones. Estos valores se muestran tanto en la aplicación Portal de empresa como en el sitio web del Portal de empresa de Intune.       |
-|  10   |                                [Habilitar la inscripción de dispositivos](mdm-authority-set.md): habilite la administración de Intune de dispositivos iOS, Windows, Android y Mac estableciendo la entidad MDM y activando plataformas específicas.                                 |
-|  11   |                                                        [Configurar directivas de aplicaciones](../apps/app-protection-policy.md): proporcione valores concretos en función de las directivas de protección de aplicaciones en Microsoft Intune.                                                         |
-
+|   9   |  [Personalizar el Portal de empresa](../apps/company-portal-app.md): personalice el Portal de empresa de Intune que los usuarios emplean para inscribir dispositivos e instalar aplicaciones. Estos valores se muestran tanto en la aplicación Portal de empresa como en el sitio web del Portal de empresa de Intune.       |
+|  10   | [Habilitar la inscripción de dispositivos](mdm-authority-set.md): habilite la administración de Intune de dispositivos iOS/iPadOS, Windows, Android y Mac mediante el establecimiento de la entidad MDM y la habilitación de plataformas específicas. |
+|  11   |  [Configurar directivas de aplicaciones](../apps/app-protection-policy.md): proporcione valores concretos en función de las directivas de protección de aplicaciones en Microsoft Intune. |

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/10/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258137"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569530"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configuración y uso de certificados PKCS importados con Intune
 
@@ -31,6 +31,17 @@ Microsoft Intune admite el uso de certificados de pares de claves públicas (PKC
 El cifrado S/MIME es complejo porque el correo electrónico está cifrado con un certificado específico. Debe tener la clave privada del certificado que cifró el correo electrónico en el dispositivo en el que lee el correo electrónico para que se pueda descifrar. Los certificados de cifrado se renuevan periódicamente, lo que significa que es posible que necesite el historial de cifrado en todos los dispositivos para asegurarse de que puede leer el correo electrónico anterior.  Dado que se debe usar el mismo certificado en todos los dispositivos, no es posible usar perfiles de certificado [SCEP](certificates-scep-configure.md) o [PKCS](certficates-pfx-configure.md) para este propósito, ya que los mecanismos de entrega de certificados proporcionan certificados únicos por dispositivo.
 
 Para más información sobre el uso de S/MIME con Intune, consulte [Uso de S/MIME para cifrar el correo electrónico](certificates-s-mime-encryption-sign.md).
+
+## <a name="supported-platforms"></a>Plataformas compatibles
+
+Intune admite la importación de certificados PFX para las plataformas siguientes:
+
+- Android: Administrador de dispositivos
+- Android Enterprise: Totalmente administrado
+- Android Enterprise: Perfil de trabajo
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,6 +60,8 @@ Para usar certificados PKCS importados con Intune, debe contar con esta infraest
 - **Windows Server**:
 
   Utilice una instancia de Windows Server para hospedar el conector de certificado PFX para Microsoft Intune.  El conector se usa para procesar solicitudes de los certificados importados a Intune.
+  
+  El conector requiere acceso a los mismos puertos que se han detallado para los dispositivos administrados, como se indica en el [contenido de punto de conexión de dispositivo](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices).
 
   Intune admite la instalación de *Microsoft Intune Certificate Connector* en el mismo servidor que el *conector de certificado PFX para Microsoft Intune*.
 
@@ -207,7 +220,7 @@ Después de importar los certificados en Intune, cree un perfil de **certificado
 
    - **Propósito planteado**: Especifique el propósito planteado de los certificados que se importan para este perfil. Los administradores pueden importar los certificados con otros propósitos planteados (como firma S/MIME o cifrado S/MIME). El propósito planteado seleccionado en el perfil de certificado coincide con el perfil de certificado con los certificados importados adecuados. El propósito planteado es una etiqueta para agrupar los certificados importados y no garantiza que los certificados importados con esa etiqueta cumplan dicho propósito.  
    - **Período de validez del certificado**: A menos que se haya cambiado el período de validez en la plantilla de certificado, esta opción tiene como valor predeterminado un año.
-   - **Proveedor de almacenamiento de claves (KSP)** : en el caso de Windows, seleccione la ubicación del dispositivo en la que quiera almacenar las claves.
+   - **Proveedor de almacenamiento de claves (KSP)**: en el caso de Windows, seleccione la ubicación del dispositivo en la que quiera almacenar las claves.
 
 5. Seleccione **Aceptar** > **Crear** para guardar el perfil.
 

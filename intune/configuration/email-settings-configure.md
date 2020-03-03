@@ -1,12 +1,12 @@
 ---
 title: Configuración del correo electrónico en Microsoft Intune (Azure) | Microsoft Docs
 titleSuffix: ''
-description: Cree un perfil de correo electrónico en Microsoft Intune e implemente este perfil en dispositivos Windows, iOS y Android Enterprise. Use un perfil de correo electrónico para configurar los valores de correo electrónico comunes, incluidos un servidor de correo electrónico y un método de autenticación para conectarse al correo electrónico corporativo en los dispositivos que administra.
+description: Cree un perfil de correo electrónico en Microsoft Intune e impleméntelo en dispositivos Android Enterprise, iOS, iPadOS y Windows. Use un perfil de correo electrónico para configurar los valores de correo electrónico comunes, incluidos un servidor de correo electrónico y un método de autenticación para conectarse al correo electrónico corporativo en los dispositivos que administra.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 110db564dce5ad68d3c2a26b85e60ecbe99e7335
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 908a20098917540e6f823d94c6643d15f13ecf68
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059424"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511092"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Agregar la configuración de correo electrónico a dispositivos que usan Intune
 
@@ -29,10 +29,11 @@ Microsoft Intune incluye una configuración de correo electrónico diferente que
 
 Puede usar perfiles de correo electrónico para configurar las opciones de correo electrónico integradas en los siguientes dispositivos:
 
-- Samsung Knox Standard 4.0 y versiones posteriores
+- Android Samsung Knox Standard 4.0 y versiones posteriores
 - Android Enterprise
 - iOS 8.0 y versiones posteriores
-- Windows Phone 8.1 y versiones posteriores
+- IPadOS 13.0 y versiones más recientes
+- Windows Phone 8.1 y versiones posteriores
 - Windows 10 (escritorio) y Windows 10 Mobile
 
 En este artículo se explica cómo crear un perfil de correo electrónico en Microsoft Intune. También incluye vínculos a las distintas plataformas para consultar configuraciones más específicas.
@@ -89,7 +90,7 @@ Puede ayudar a proteger los perfiles de correo electrónico con las siguientes o
 
 Si el usuario ya ha configurado una cuenta de correo electrónico, el perfil de correo electrónico se asigna de forma diferente, dependiendo de la plataforma.
 
-- **iOS**: Se detecta un perfil de correo electrónico existente duplicado en función del nombre de host y la dirección de correo electrónico. El perfil de correo electrónico duplicado bloquea la asignación de un perfil de Intune. En este caso, la aplicación de Portal de empresa informa al usuario final de que no es compatible y le pide que quite el perfil configurado manualmente. Para evitar este problema, indique a los usuarios finales que se inscriban *antes* de instalar un perfil de correo electrónico. Esto permite que Intune configure el perfil.
+- **iOS/iPadOS**: Se detecta un perfil de correo electrónico existente duplicado en función del nombre de host y la dirección de correo electrónico. El perfil de correo electrónico duplicado bloquea la asignación de un perfil de Intune. En este caso, la aplicación de Portal de empresa informa al usuario final de que no es compatible y le pide que quite el perfil configurado manualmente. Para evitar este problema, indique a los usuarios finales que se inscriban *antes* de instalar un perfil de correo electrónico. Esto permite que Intune configure el perfil.
 
 - **Windows:** Se detecta un perfil de correo electrónico existente duplicado en función del nombre de host y la dirección de correo electrónico. Intune sobrescribe el perfil de correo electrónico existente que ha creado el usuario final.
 

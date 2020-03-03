@@ -1,7 +1,7 @@
 ---
-title: 'Inscripción de dispositivos macOS: Programa de inscripción de dispositivos o Apple School Manager'
+title: 'Inscripción de dispositivos macOS: Apple Business Manager o Apple School Manager'
 titleSuffix: ''
-description: Obtenga información sobre cómo inscribir dispositivos macOS corporativos con el Programa de inscripción de dispositivos.
+description: Obtenga información sobre cómo inscribir dispositivos macOS corporativos.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414488"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514343"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos o Apple School Manager
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>Inscripción automática de dispositivos macOS con Apple Business Manager o Apple School Manager
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Puede configurar la inscripción de Intune de los dispositivos macOS adquiridos mediante el [Programa de inscripción de dispositivos (DEP)](https://deploy.apple.com) de Apple o [Apple School Manager](https://school.apple.com/). Puede usar cualquiera de estas inscripciones para un gran número de dispositivos sin siquiera tener que tocarlos. Puede enviar dispositivos macOS directamente a los usuarios. Cuando el usuario activa el dispositivo, se ejecuta el Asistente para la instalación con opciones preconfiguradas y el dispositivo se inscribe en la administración de Intune.
+Puede configurar la inscripción de Intune de los dispositivos macOS comprados mediante [Apple Business Manager](https://business.apple.com/) o [Apple School Manager](https://school.apple.com/) de Apple. Puede usar cualquiera de estas inscripciones para un gran número de dispositivos sin siquiera tener que tocarlos. Puede enviar dispositivos macOS directamente a los usuarios. Cuando el usuario activa el dispositivo, se ejecuta el Asistente para la instalación con opciones preconfiguradas y el dispositivo se inscribe en la administración de Intune.
 
-Para configurar la inscripción, use los portales de DEP de Apple y de Intune. Puede crear perfiles de inscripción que contengan opciones que se apliquen a los dispositivos durante la inscripción.
+Para configurar la inscripción, use los portales de Intune y Apple. Puede crear perfiles de inscripción que contengan opciones que se apliquen a los dispositivos durante la inscripción.
 
-Ni la inscripción de DEP ni Apple School Manager funcionan con el [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md).
+Ni la inscripción de Apple Business Manager ni Apple School Manager funcionan con el [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -78,7 +78,7 @@ Use el portal de Apple para crear un token. También puede usar el portal de App
 3. Para Apple School Manager, en el portal de Apple, elija **Servidores de MDM** > **Agregar servidor de MDM**.
 4. Escriba el **nombre del servidor MDM** y, después, elija **Siguiente**. El nombre del servidor es su referencia para identificar el servidor de administración de dispositivos móviles (MDM). No es el nombre ni la dirección URL del servidor de Microsoft Intune.
 
-5. Se abre el cuadro de diálogo **Agregar&lt;Nombre del servidor&gt;** , indicando **Cargar la clave pública**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
+5. Se abre el cuadro de diálogo **Agregar&lt;Nombre del servidor&gt;**, indicando **Cargar la clave pública**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
 
 6. Vaya a **Programas de implementación** &gt; **Programa de inscripción de dispositivos** &gt; **Administrar dispositivos**.
 7. En **Elegir dispositivos por**, especifique cómo se identifican los dispositivos:

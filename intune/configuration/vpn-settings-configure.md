@@ -1,11 +1,11 @@
 ---
 title: 'Incorporación de una configuración de VPN a dispositivos iOS en Microsoft Intune: Azure | Microsoft Docs'
-description: En el caso de dispositivos Android, Android Enterprise, iOS, macOS y Windows, use la configuración integrada para crear conexiones de red privada virtual (VPN) en Microsoft Intune.
+description: En el caso de dispositivos Android, Android Enterprise, iOS, iPadOS, macOS y Windows, use la configuración integrada para crear conexiones de red privada virtual (VPN) en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 134ef9a2a4dfe8a4576c753a001439c42f678adc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206285"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510820"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Creación de perfiles de VPN para conectarse a servidores VPN en Intune
 
@@ -28,7 +28,7 @@ ms.locfileid: "75206285"
 
 Las redes privadas virtuales (VPN) ofrecen a los usuarios acceso remoto seguro a la red de la empresa. Los dispositivos usan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Los **perfiles de VPN** de Microsoft Intune asignan la configuración de VPN a los usuarios y dispositivos de la organización, para que puedan conectarse de forma fácil y segura a la red de la empresa.
 
-Por ejemplo, quiere configurar todos los dispositivos iOS con las opciones de configuración necesarias para conectarse a un recurso compartido de archivos de la red de la empresa. Cree un perfil de VPN que incluya estas opciones de configuración. Después, asigne este perfil a todos los usuarios que tengan dispositivos iOS. Los usuarios verán la conexión VPN en la lista de redes disponibles y podrán conectarse con un esfuerzo mínimo.
+Por ejemplo, quiere configurar todos los dispositivos iOS/iPadOS con las opciones de configuración necesarias para conectarse a un recurso compartido de archivos de la red de la empresa. Cree un perfil de VPN que incluya estas opciones de configuración. Después, asigne este perfil a todos los usuarios que tengan dispositivos iOS/iPadOS. Los usuarios verán la conexión VPN en la lista de redes disponibles y podrán conectarse con un esfuerzo mínimo.
 
 > [!NOTE]
 > Puede usar [directivas de configuración personalizadas](custom-settings-configure.md) de Intune para crear perfiles de VPN para las siguientes plataformas:
@@ -47,19 +47,19 @@ Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 |Tipo de conexión|Plataforma|
 |-|-|
 |Automático|Windows 10|
-|Check Point Capsule VPN|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Cisco AnyConnect|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS<br/>- macOS|
-|Cisco (IPsec)|iOS|
-|SSO de Citrix|- Android<br/>- Perfiles de trabajo de Android Enterprise: uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado): uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
-|VPN personalizada|- iOS<br/>- macOS|
-|F5 Access|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2| - iOS<br/>- Windows 10|
+|Check Point Capsule VPN|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Cisco AnyConnect|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS/iPadOS<br/>- macOS|
+|Cisco (IPsec)|iOS/iPadOS|
+|SSO de Citrix|- Android<br/>- Perfiles de trabajo de Android Enterprise: uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado): uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- iOS/iPadOS<br/>- Windows 10|
+|VPN personalizada|- iOS/iPadOS<br/>- macOS|
+|F5 Access|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|IKEv2| - iOS/iPadOS<br/>- Windows 10|
 |L2TP|Windows 10|
-|Palo Alto Networks GlobalProtect|- Perfiles de trabajo de Android Enterprise: uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
+|Palo Alto Networks GlobalProtect|- Perfiles de trabajo de Android Enterprise: uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- iOS/iPadOS<br/>- Windows 10|
 |PPTP|Windows 10|
-|Pulse Secure|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|SonicWall Mobile Connect|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Zscaler|- Perfiles de trabajo de Android Enterprise: uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- iOS|
+|Pulse Secure|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- Propietario del dispositivo Android Enterprise (totalmente administrado)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|SonicWall Mobile Connect|- Android<br/>- Perfiles de trabajo de Android Enterprise<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Zscaler|- Perfiles de trabajo de Android Enterprise: uso de la [directiva de configuración de aplicaciones](../apps/app-configuration-policies-use-android.md)<br/>- iOS/iPadOS|
 
 > [!IMPORTANT]
 > Para poder usar perfiles de VPN asignados a un dispositivo, debe instalar la aplicación VPN aplicable al perfil. Puede usar la información del artículo [¿Qué es la administración de aplicaciones de Microsoft Intune?](../apps/app-management.md) para obtener ayuda sobre cómo asignar la aplicación con Intune.  
@@ -78,7 +78,7 @@ Aprenda a crear perfiles de VPN personalizados usando la configuración de URI d
 
       - **Android**
       - **Android Enterprise** > **Solo el propietario del dispositivo**
-      - **Android Enterprise** > **Solo perfil de trabajo**
+      - **Android Enterprise** > **Solo perfil de trabajo **
       - **iOS/iPadOS**
       - **macOS**
       - **Windows Phone 8.1**
@@ -119,4 +119,4 @@ El usuario se autentica en el servidor de VPN proporcionando el nombre de usuari
 
 Se crea el perfil, pero todavía no hace nada. A continuación, [asigne el perfil](device-profile-assign.md) a algunos dispositivos.
 
-También puede crear y usar instancias de VPN por aplicación en dispositivos [Android](android-pulse-secure-per-app-vpn.md) e [iOS](vpn-setting-configure-per-app.md).
+También puede crear y usar instancias de VPN por aplicación en dispositivos [Android](android-pulse-secure-per-app-vpn.md) e [iOS/iPadOS](vpn-setting-configure-per-app.md).

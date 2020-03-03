@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206064"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575985"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adición de entidades de certificación de asociado en Intune mediante SCEP
 
-Uso de entidades de certificación de terceros (CA) con Intune. Las entidades de certificación de terceros pueden aprovisionar dispositivos móviles con certificados nuevos o renovados mediante el Protocolo de inscripción de certificados simple (SCEP) y pueden admitir dispositivos Windows, iOS, Android y macOS.
+Uso de entidades de certificación de terceros (CA) con Intune. Las entidades de certificación de terceros pueden aprovisionar dispositivos móviles con certificados nuevos o renovados mediante el Protocolo de inscripción de certificados simple (SCEP) y pueden admitir dispositivos Windows, iOS/iPadOS, Android y macOS.
 
 El uso de esta característica tiene dos partes: la API de código abierto y las tareas de administrador de Intune.
 
@@ -89,7 +89,7 @@ Asegúrese de que tiene los permisos necesarios para registrar una aplicación d
    > [!IMPORTANT]  
    > Antes de salir de la página, copie el valor del secreto de cliente y anótelo para usarlo más adelante con la implementación de la CA de terceros. Este valor no se volverá a mostrar. No olvide revisar las instrucciones correspondientes a la CA de terceros sobre cómo se configuran el identificador de la aplicación, la clave de autenticación y el identificador de inquilino.  
 
-6. Anote el **identificador de inquilino**. El identificador de inquilino es el texto de dominio después del signo @ de la cuenta. Por ejemplo, si la cuenta es *admin@name.onmicrosoft.com* , entonces el identificador de inquilino es **name.onmicrosoft.com**.  
+6. Anote el **identificador de inquilino**. El identificador de inquilino es el texto de dominio después del signo @ de la cuenta. Por ejemplo, si la cuenta es *admin@name.onmicrosoft.com*, entonces el identificador de inquilino es **name.onmicrosoft.com**.  
 
 7. En el panel de navegación de la aplicación, vaya a **Permisos de API** en **Administrar** y seleccione **Agregar un permiso**.  
 

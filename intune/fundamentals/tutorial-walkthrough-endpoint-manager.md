@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267f09c3dc16aab10fbe64f0e8662ee6f7c7ffa0
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 1d8950e57c2427c522d337807d315ed5c399c0d5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907997"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514088"
 ---
 # <a name="tutorial-walkthrough-intune-in-microsoft-endpoint-manager"></a>Tutorial: Tutorial de Intune en el Administrador de puntos de conexión de Microsoft
 
@@ -70,7 +70,7 @@ Siga los pasos que se indican a continuación para comprender mejor Intune en el
     
     Intune permite administrar los dispositivos y las aplicaciones de sus recursos, incluida la forma de acceder a los datos de la empresa. Para usar este servicio de administración de dispositivos móviles (MDM), primero es necesario inscribir los dispositivos en Intune. Al inscribir un dispositivo, se emite un certificado MDM. Dicho certificado se usa para la comunicación con el servicio de Intune. 
 
-    Hay varios métodos para inscribir los dispositivos de los recursos en Intune. Cada método depende de la propiedad del dispositivo (personal o corporativo), el tipo de dispositivo (iOS, Windows o Android) y los requisitos de administración (restablecimiento, afinidad o bloqueo). Pero antes de poder habilitar la inscripción de dispositivos, debe configurar la infraestructura de Intune. En concreto, la inscripción de dispositivos requiere que [establezca su autoridad de MDM](mdm-authority-set.md). Para más información sobre cómo preparar el entorno de Intune (el inquilino), vea [Configurar Intune](setup-steps.md). Una vez que el inquilino de Intune esté listo, puede inscribir los dispositivos. Para obtener más información sobre la inscripción de dispositivos, consulte [¿Qué es la inscripción de dispositivos?](../enrollment/device-enrollment.md)
+    Hay varios métodos para inscribir los dispositivos de los recursos en Intune. Cada método depende de la propiedad del dispositivo (personal o corporativo), el tipo de dispositivo (iOS/iPadOS, Windows o Android) y los requisitos de administración (restablecimiento, afinidad o bloqueo). Pero antes de poder habilitar la inscripción de dispositivos, debe configurar la infraestructura de Intune. En concreto, la inscripción de dispositivos requiere que [establezca su autoridad de MDM](mdm-authority-set.md). Para más información sobre cómo preparar el entorno de Intune (el inquilino), vea [Configurar Intune](setup-steps.md). Una vez que el inquilino de Intune esté listo, puede inscribir los dispositivos. Para obtener más información sobre la inscripción de dispositivos, consulte [¿Qué es la inscripción de dispositivos?](../enrollment/device-enrollment.md)
 
 3. Desde el panel de navegación, seleccione **Dispositivos** para mostrar detalles sobre los dispositivos inscritos en el inquilino de Intune. 
 
@@ -117,7 +117,7 @@ Siga los pasos que se indican a continuación para comprender mejor Intune en el
     > [!TIP]
     > Si ya ha usado Intune en Azure Portal antes, encontraría los detalles anteriores en Azure Portal al iniciar sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) y seleccionar **Configuración de dispositivos**.
 
-    Intune incluye opciones y características que se pueden habilitar o deshabilitar en distintos dispositivos dentro de la organización. Estas características y opciones de configuración se agregan a los "perfiles de configuración". Puede crear perfiles para diferentes dispositivos y plataformas, incluidas iOS, Android, macOS y Windows. Después, puede usar Intune para aplicar el perfil a los dispositivos de la organización.   
+    Intune incluye opciones y características que se pueden habilitar o deshabilitar en distintos dispositivos dentro de la organización. Estas características y opciones de configuración se agregan a los "perfiles de configuración". Puede crear perfiles para otros dispositivos y plataformas, incluidas iOS/iPadOS, Android, macOS y Windows. Después, puede usar Intune para aplicar el perfil a los dispositivos de la organización.   
 
     Para más información sobre la configuración de dispositivos, vea [Aplicación de la configuración de características en dispositivos con perfiles de dispositivos Microsoft Intune](../configuration/device-profiles.md).
 

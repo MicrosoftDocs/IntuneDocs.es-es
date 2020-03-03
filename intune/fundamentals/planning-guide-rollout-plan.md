@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509950"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514921"
 ---
 # <a name="develop-a-rollout-plan"></a>Desarrollo de un plan de lanzamiento
 
@@ -58,7 +58,7 @@ Tras una fase piloto satisfactoria, ya puede iniciar un lanzamiento completo en 
 
 - **Geografía** <br/>Con este método, la implementación está destinada a todos los usuarios de una geografía determinada; ya sea el mismo continente, país, región o el mismo edificio de la empresa. Este tipo de implementación por fases permite centrarse en la ubicación específica de los usuarios. Esto puede permitir un enfoque más [preferencial](#user-assisted-enrollment), ya que se reduce el número de ubicaciones que implementa Intune al mismo tiempo. Como existen posibilidades de que departamentos o casos de uso diferentes se encuentren en la misma ubicación, los casos de uso diferentes deben implementarse al mismo tiempo.
 
-- **Plataforma** <br/>Este tipo de implementación consiste en la implementación de plataformas similares a la vez. Un ejemplo puede ser todos los dispositivos iOS el primer mes, seguidos de Android y, después, de Windows. Este tipo de implementación por fases permite simplificar el soporte técnico porque el departamento competente en este ámbito solo tendría que prestar asistencia en una única plataforma a la vez.
+- **Plataforma** <br/>Este tipo de implementación consiste en la implementación de plataformas similares a la vez. Un ejemplo podría ser todos los dispositivos iOS/iPadOS el primer mes, seguidos de Android y, después, de Windows. Este tipo de implementación por fases permite simplificar el soporte técnico porque el departamento competente en este ámbito solo tendría que prestar asistencia en una única plataforma a la vez.
 
 Aquí se muestra un ejemplo de un plan de implementación de Intune que incluye grupos de destino y escalas de tiempo:
 

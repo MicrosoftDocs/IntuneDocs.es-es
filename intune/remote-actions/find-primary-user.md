@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413674"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569462"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Búsqueda del usuario primario de un dispositivo de Intune
 
-El usuario primario, también conocido como la afinidad entre usuario y dispositivo, es una propiedad de cada dispositivo de Intune. Un dispositivo de Intune puede tener un usuario primario asignado o no tener ninguno. Si no hay ningún usuario primario asignado, el dispositivo se conoce como un "dispositivo compartido".
+El usuario primario, también conocido como Afinidad entre usuario y dispositivo, es una propiedad de cada dispositivo de Intune. Un dispositivo de Intune puede tener un usuario primario asignado o no tener ninguno. Si no hay ningún usuario primario asignado, el dispositivo se denomina "dispositivo compartido".
 
-## <a name="how-to-find-a-devices-primary-user"></a>Búsqueda del usuario primario de un dispositivo
+## <a name="find-a-devices-primary-user"></a>Búsqueda del usuario primario de un dispositivo
 
 1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Elija **Dispositivos** > y elija un dispositivo.
@@ -38,7 +38,7 @@ El usuario primario, también conocido como la afinidad entre usuario y disposit
 La propiedad del usuario primario se usa para asignar un usuario de Intune con licencia con sus dispositivos en:
 - La aplicación Portal de empresa.
 - El sitio web del usuario final.
-- Experiencias de los profesionales de TI, como las páginas de solución de problemas en Azure Portal. Estas páginas usan el usuario primario para asignar las cuentas de usuario a los dispositivos.    
+- Experiencias de los profesionales de TI, como las páginas de solución de problemas en Azure Portal. Estas páginas usan el usuario primario para asignar las cuentas de usuario a los dispositivos. 
 
 ### <a name="company-portal-app"></a>Aplicación de portal de empresa
 La aplicación Portal de empresa espera que la cuenta de usuario que inició sesión en Portal de empresa sea el usuario primario de dicho dispositivo. Si se asignó otro usuario como el usuario primario, la aplicación Portal de empresa muestra una advertencia:

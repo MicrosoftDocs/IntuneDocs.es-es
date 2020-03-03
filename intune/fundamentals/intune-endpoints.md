@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c3ff190509de08be0c900dbd1540408ea3532e10
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502727"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609210"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Puntos de conexión de red de Microsoft Intune  
 
@@ -34,7 +34,7 @@ Como un servicio solo en la nube, Intune no requiere una infraestructura local c
 
 Para administrar dispositivos que se encuentren detrás de firewalls y servidores proxy, debe habilitar la comunicación para Intune.
 
-- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)** , ya que los clientes de Intune usan ambos protocolos. Windows Information Protection utiliza el puerto 444.
+- El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)**, ya que los clientes de Intune usan ambos protocolos. Windows Information Protection utiliza el puerto 444.
 - Para algunas tareas (como descargar actualizaciones de software para el agente de PC clásico), Intune necesita acceso de un servidor proxy no autenticado a manage.microsoft.com.
 
 Puede modificar la configuración del servidor proxy en equipos cliente individuales. También puede usar la opción de directiva de grupo para cambiar la configuración de todos los equipos cliente que se encuentran detrás de un servidor proxy especificado.
@@ -47,7 +47,7 @@ Los dispositivos administrados requieren configuraciones que dejen acceder a **T
 
 En las siguientes tablas se enumeran los puertos y los servicios a los que accede el cliente de Intune:
 
-|Domains    |Dirección IP      |
+|Dominios    |Dirección IP      |
 |-----------|----------------|
 |login.microsoftonline.com <br> *.officeconfig.msocdn.com <br> config.office.com <br> graph.windows.net| Más información [URL de Office 365 e intervalos de direcciones IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 <br>13.72.226.202<br>52.189.220.232|
@@ -95,27 +95,9 @@ Si usa Intune para implementar scripts de PowerShell o aplicaciones Win32, tambi
 
 |ASU | Nombre de almacenamiento | CDN |
 | --- | --- |--- |
-| AMSUA0601 | prodmsua06data | https:\//prodmsua06data.azureedge.net |
-| AMSUA0602 | prodamsua0602data | https:\//prodamsua0602data.azureedge.net |
-| AMSUA0101 | prodmsua01data | https:\//prodmsua01data.azureedge.net |
-| AMSUA0201 | prodmsua02data | https:\//prodmsua02data.azureedge.net |
-| AMSUA0202 | Prodmsua0202rcdata | https:\//prodamsua0202data.azureedge.net/ |
-| AMSUA0401 | prodmsua04data | https:\//prodmsua04data.azureedge.net |
-| AMSUA0402 | Prodmsua0402rcdata | https:\//prodamsua0402data.azureedge.net/ |
-| AMSUA0501 | prodmsua05data | https:\//prodmsua05data.azureedge.net |
-| AMSUA0502 | prodmsua0502data | https:\//prodmsua0502data.azureedge.net |
-| AMSUB0101 | prodmsub01data | https:\//prodmsub01data.azureedge.net |
-| AMSUB0102 | prodamsub0102data | https:\//prodamsub0102data.azureedge.net |
-| AMSUB0201 | prodmsub02data | https:\//prodmsub02data.azureedge.net |
-| AMSUB0202 | Prodmsub0202rcdata | https:\//prodamsub0202data.azureedge.net |
-| AMSUB0301 | Prodmsub03data2 | https:\//prodmsub03data2.azureedge.net |
-| AMSUB0302 | Prodmsub0302rcdata | https:\//prodamsub0302data.azureedge.net |
-| AMSUB0501 | prodmsub05data | https:\//prodmsub05data.azureedge.net |
-| AMSUC0101 | prodmsuc01data | https:\//prodmsuc01data.azureedge.net |
-| AMSUC0201 | prodmsuc02data | https:\//prodmsuc02data.azureedge.net |
-| AMSUC0301 | prodmsuc03data | https:\//prodmsuc03data.azureedge.net |
-| AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
-| AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
+|AMSUA0601<br>AMSUA0602<br>AMSUA0101<br>AMSUA0102<br>AMSUA0201<br>AMSUA0202<br>AMSUA0401<br>AMSUA0402<br>AMSUA0501<br>AMSUA0502<br>AMSUA0701<br>AMSUA0702 | naprodimedatapri<br>naprodimedatasec<br>naprodimedatahotfix | naprodimedatapri.azureedge.net<br>naprodimedatasec.azureedge.net<br>naprodimedatahotfix.azureedge.net |
+| AMSUB0101<br>AMSUB0102<br>AMSUB0201<br>AMSUB0202<br>AMSUB0301<br>AMSUB0302<br>AMSUB0501<br>AMSUB0502 | euprodimedatapri<br>euprodimedatasec<br>euprodimedatahotfix | euprodimedatapri.azureedge.net<br>euprodimedatasec.azureedge.net<br>euprodimedatahotfix.azureedge.net |
+| AMSUC0101<br>AMSUC0201<br>AMSUC0301<br>AMSUC0501<br>AMSUD0101| approdimedatapri<br>approdimedatasec<br>approdimedatahotifx | approdimedatapri.azureedge.net<br>approdimedatasec.azureedge.net<br>approdimedatahotfix.azureedge.net |
 
 ## <a name="windows-push-notification-services-wns"></a>Servicios de notificaciones de inserción de Windows (WNS)  
 
@@ -143,10 +125,10 @@ Para los metadatos de optimización de entrega:
 
 ## <a name="apple-device-network-information"></a>Información de red de dispositivos de Apple  
 
-|Usada para|Nombre de host (dirección IP/subred)|Protocol|Puerto|
+|Usada para|Nombre de host (dirección IP/subred)|Protocolo|Puerto|
 |-----|--------|------|-------|
 |Recuperación y visualización de contenido de los servidores de Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
 |Comunicaciones con servidores APNS|#-courier.push.apple.com<br>"#" es un número aleatorio entre 0 y 50.|    TCP     |  5223 y 443  |
 |Distintas funcionalidades, como acceso a la World Wide Web, iTunes Store, App Store de macOS, iCloud, mensajería, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 o 443   |
 
-Para más información, consulte los artículos [Puertos TCP y UDP usados por los productos de software de Apple](https://support.apple.com/en-us/HT202944), [Acerca de los procesos en segundo plano de iTunes y las conexiones del host para el servidor de iTunes, iOS y macOS](https://support.apple.com/en-us/HT201999) y [Si tus clientes macOS e iOS no reciben notificaciones push de Apple](https://support.apple.com/en-us/HT203609) de Apple.  
+Para obtener más información, vea los artículos de Apple [Puertos TCP y UDP usados por los productos de software de Apple](https://support.apple.com/HT202944), [Acerca de los procesos en segundo plano de iTunes y las conexiones del host para el servidor de iTunes, iOS/iPadOS y macOS](https://support.apple.com/HT201999) y [Si tus clientes macOS e iOS/iPadOS no reciben notificaciones push de Apple](https://support.apple.com/HT203609).  

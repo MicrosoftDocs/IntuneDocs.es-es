@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 514baf3395a2cad9682e6c070b8615f320cc214c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0f543d38b6688b03126e8fb7d5666c1383b2fc0f
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801454"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576500"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrar SandBlast Mobile de Check Point con Intune
 
@@ -74,7 +74,7 @@ El proceso de autorización de la aplicación SandBlast de Check Point consta de
 
 4. Seleccione **Microsoft Intune** en la lista desplegable **MDM Service** (Servicio MDM).
 
-5. Una vez configurado Microsoft Intune como servicio de MDM, aparecerá la ventana **Microsoft Intune Configuration** (Configuración de Microsoft Intune). Seleccione **Add to my organization** (Agregar a mi organización) para cada plataforma de dispositivo (iOS, Android y Windows) para autorizar a SandBlast Mobile de Check Point que se comunique con Intune y Azure AD.
+5. Una vez configurado Microsoft Intune como servicio de MDM, aparecerá la ventana **Microsoft Intune Configuration** (Configuración de Microsoft Intune); seleccione **Add to my organization** (Agregar a mi organización) para cada plataforma de dispositivo (iOS/iPadOS, Android y Windows) para autorizar a SandBlast Mobile de Check Point que se comunique con Intune y Azure AD.
 
     ![Imagen en la que se muestra la configuración de MTD de Check Point en Intune](./media/checkpoint-sandblast-mobile-mtd-connector-integration/checkpoint-MTD-1.PNG)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504966"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510752"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Envío de datos de registro al almacenamiento, a Event Hubs o a Log Analytics en Intune (versión preliminar)
 
 Microsoft Intune incluye registros integrados que proporcionan información sobre el entorno:
 
-- Los **registros de auditoría** muestran detalles sobre los distintos eventos o tareas que tienen lugar en Intune.
+- Los **registros de auditoría** muestran un registro de las actividades que generan un cambio en Intune, incluidas las acciones de creación, actualización (edición), eliminación, asignación y remotas.
 - Los **registros operativos (versión preliminar)** muestran detalles sobre los usuarios y los dispositivos que se han inscrito correctamente o que no se pudieron inscribir, y detalles sobre los dispositivos no compatibles.
 - **Los registros organizativos de conformidad de dispositivos (versión preliminar)** muestran un informe organizativo de la conformidad de dispositivos en Intune y detalles sobre los dispositivos no compatibles.
 
@@ -59,10 +59,11 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
 
 ## <a name="send-logs-to-azure-monitor"></a>Envío de registros a Azure Monitor
 
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. En **Supervisión**, seleccione **Configuración de diagnóstico**. La primera vez que lo abra, actívelo. De lo contrario, agregue un valor de configuración.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Informes** > **Configuración de diagnóstico**. La primera vez que lo abra, actívelo. De lo contrario, agregue un valor de configuración.
 
-    ![Activación de Configuración de diagnóstico en Intune para enviar registros a Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > ![Activación de Configuración de diagnóstico en Intune para enviar registros a Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. Escriba las propiedades siguientes:
 
@@ -104,7 +105,8 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
 
     Cuando termine, la configuración tendrá un aspecto similar a la siguiente configuración: 
 
-    ![Imagen de ejemplo que envía los registros de auditoría de Intune a una cuenta de almacenamiento de Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Imagen de ejemplo que envía los registros de auditoría de Intune a una cuenta de almacenamiento de Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
 4. Guarde los cambios mediante **Guardar**. La configuración se mostrará en la lista. Cuando se haya creado, puede cambiar la configuración seleccionando **Editar configuración** > **Guardar**.
 
@@ -112,14 +114,7 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
 
 También puede exportar los registros de auditoría en otras partes de Intune, incluida la inscripción, el cumplimiento, la configuración, los dispositivos, las aplicaciones cliente y mucho más.
 
-Por ejemplo, para exportar los registros de auditoría al usar el cumplimiento del dispositivo:
-
-1. Inicie sesión en [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Seleccione **Cumplimiento del dispositivo** > **Monitor** > **Registros de auditoría**:
-
-    ![Selección de registros de auditoría para enrutar datos de Intune al almacenamiento de Azure Monitor, centros de eventos o análisis](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. Seleccione **Exportar configuración de datos**. Si no está habilitada, puede activar la **Configuración de diagnóstico**. También puede elegir dónde enviar los registros, como se describe en [Envío de registros a Azure Monitor](#send-logs-to-azure-monitor) (en este artículo).
+Para más información, vea [Uso de registros de auditoría para realizar el seguimiento de los eventos y supervisarlos](monitor-audit-logs.md). Puede elegir dónde enviar los registros de auditoría, como se describe en [Envío de registros a Azure Monitor](#send-logs-to-azure-monitor) (en este artículo).
 
 ## <a name="cost-considerations"></a>Consideraciones sobre el costo
 

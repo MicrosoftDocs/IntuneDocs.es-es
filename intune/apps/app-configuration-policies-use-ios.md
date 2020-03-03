@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438011"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513969"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS/iPadOS administrados
 
@@ -43,7 +43,7 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 > [!TIP]
 > Este tipo de directiva está disponible solo para dispositivos con iOS/iPadOS 8.0 y versiones posteriores. Admite los siguientes tipos de instalación de la aplicación:
 >
-> - **Aplicación iOS administrada desde la tienda de aplicaciones**
+> - **Aplicación iOS/iPadOS administrada desde la tienda de aplicaciones**
 > - **Paquete de aplicación de iOS**
 >
 > Para más información sobre los tipos de instalación de aplicaciones, consulte [Adición de una aplicación a Microsoft Intune](apps-add.md). Para más información sobre cómo incorporar la configuración de la aplicación en el paquete de la aplicación .ipa para dispositivos administrados, consulte Configuración de aplicaciones administradas en la [documentación para desarrolladores de iOS](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html).
@@ -99,7 +99,7 @@ Microsoft Intune proporciona opciones de configuración que son únicas para una
 
 ### <a name="delete-a-setting"></a>Eliminar una opción de configuración
 
-1. Elija los puntos suspensivos ( **...** ) junto a la opción de configuración.
+1. Elija los puntos suspensivos (**...**) junto a la opción de configuración.
 2. Seleccione **Eliminar**.
 
 Los caracteres \{\{ y \}\} solo se usan para los tipos de token y no deben usarse para otros fines.
@@ -108,9 +108,10 @@ Los caracteres \{\{ y \}\} solo se usan para los tipos de token y no deben usars
 
 Para dispositivos iOS/iPadOS, use los siguientes pares clave-valor:
 
-| **Clave** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Valores** | <ul><li>**Habilitada**: la única cuenta permitida es la cuenta de usuario administrado definida por la clave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Deshabilitada** (o cualquier valor que no sea una coincidencia con **Habilitada**, sin distinguir mayúsculas de minúsculas): se permite cualquier cuenta.</li></ul> |.
+| **Clave** | **Valores** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**Habilitada**: la única cuenta permitida es la cuenta de usuario administrado definida por la clave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Deshabilitada** (o cualquier valor que no sea una coincidencia con **Habilitada**, sin distinguir mayúsculas de minúsculas): se permite cualquier cuenta.</li></ul> |
+| IntuneMAMUPN | <ul><li>UPN de la cuenta con permiso para iniciar sesión en la aplicación.</li><li> Para los dispositivos inscritos en Intune, el token <code>{{userprincipalname}}</code> se puede usar para representar la cuenta de usuario inscrito.</li></ul>  |
 
    > [!NOTE]
    > Debe usar OneDrive para iOS 10.34 o posterior, Outlook para iOS 2.99.0 o posterior o Edge para iOS 44.8.7 o posterior y la aplicación debe ser objeto de [directivas de protección de aplicaciones de Intune](app-protection-policy.md) cuando se permitan solo cuentas de organización configuradas con varias identidades.
@@ -181,7 +182,7 @@ Además, Intune admite los siguientes tipos de token en la lista de propiedades:
 - \{\{serialnumberlast4digits\}\}. Por ejemplo, **G5V2** (en dispositivos iOS/iPadOS)
 - \{\{aaddeviceid\}\}: por ejemplo, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Configuración de la aplicación Portal de empresa para que admita dispositivos iOS DEP
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>Configuración de la aplicación Portal de empresa para que admita dispositivos iOS e iPadOS de DEP
 
 Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no son compatibles con la versión de App Store de la aplicación Portal de empresa. Sin embargo, puede configurar la aplicación Portal de empresa para que admita dispositivos iOS/iPadOS con DEP mediante los pasos siguientes.
 
@@ -204,7 +205,7 @@ Las inscripciones de DEP (Programa de inscripción de dispositivos de Apple) no 
 3. Implemente el Portal de empresa en dispositivos con la directiva de configuración de aplicaciones destinada a grupos deseados. Asegúrese de implementar solo la directiva en grupos de dispositivos que ya están inscritos en DEP.
 4. Indique a los usuarios finales que inicien sesión en la aplicación Portal de empresa cuando se instale automáticamente.
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>Supervisar el estado de configuración de aplicaciones iOS por dispositivo 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>Supervisión del estado de configuración de aplicaciones iOS/iPadOS por dispositivo 
 Una vez que se ha asignado una directiva de configuración, puede supervisar el estado de configuración de aplicaciones iOS/iPadOS de cada dispositivo administrado. Desde **Microsoft Intune** en Azure Portal, seleccione **Dispositivos** > **Todos los dispositivos**. En la lista de dispositivos administrados, seleccione un dispositivo específico para mostrar un panel para el dispositivo. En el panel del dispositivo, seleccione **Configuración de aplicaciones**.  
 
 ## <a name="additional-information"></a>Información adicional

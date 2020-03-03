@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 53985a9af523ecf60efda5c5c651161c132e326c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206574"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511228"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar restricciones de dispositivos en Microsoft Intune
 
 
 
-Intune incluye directivas de restricción de dispositivos que ayudan a los administradores a controlar dispositivos Android, iOS, macOS y Windows. Estas restricciones permiten controlar una amplia variedad de configuraciones y características para proteger los recursos de la organización. Por ejemplo, los administradores pueden:
+Intune incluye directivas de restricción de dispositivos que ayudan a los administradores a controlar dispositivos Android, iOS/iPadOS, macOS y Windows. Estas restricciones permiten controlar una amplia variedad de configuraciones y características para proteger los recursos de la organización. Por ejemplo, los administradores pueden:
 
 - Permitir o bloquear la cámara del dispositivo
 - Controlar el acceso a Google Play, las tiendas de aplicaciones, la visualización de documentos y los juegos
@@ -44,7 +44,7 @@ En este artículo se muestra cómo crear un perfil de restricciones de dispositi
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 
-    - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un nombre de directiva válido es **iOS: Bloquear la cámara en los dispositivos**.
+    - **Nombre**: escriba un nombre descriptivo para la directiva. Asígnele un nombre a las directivas para que pueda identificarlas de manera sencilla más adelante. Por ejemplo, un nombre de directiva válido es **iOS/iPadOS: Bloquear la cámara en los dispositivos**.
     - **Descripción**: escriba una descripción para la directiva. Esta configuración es opcional pero recomendada.
     - **Plataforma**: seleccione la plataforma de los dispositivos. Las opciones son:  
 
@@ -58,7 +58,7 @@ En este artículo se muestra cómo crear un perfil de restricciones de dispositi
 
     - **Tipo de perfil**: Seleccione **Restricciones de dispositivos**.
 
-        Para crear un perfil de restricciones de dispositivos para dispositivos Windows 10 Team, como Surface Hub, elija **Restricciones de dispositivos (Windows 10 Team)** .
+        Para crear un perfil de restricciones de dispositivos para dispositivos Windows 10 Team, como Surface Hub, elija **Restricciones de dispositivos (Windows 10 Team)**.
 
 4. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Elija la plataforma para la configuración detallada:
 

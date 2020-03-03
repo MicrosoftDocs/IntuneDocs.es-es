@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057579"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514853"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integración de Mobile Threat Defense con Intune
 
@@ -50,7 +50,7 @@ Si está habilitado, Intune recopila la información de inventario de aplicacion
 Este servicio es de suscripción, y no se comparte información de inventario de la aplicación de forma predeterminada. Un administrador de Intune debe habilitar la **sincronización de aplicaciones para dispositivos iOS** en la configuración del conector de Mobile Threat Defense antes de compartir la información de inventario de una aplicación.
 
 **Inventario de aplicaciones**  
-Si activa la sincronización de aplicaciones para dispositivos iOS, los inventarios de los dispositivos iOS, tanto de empresa como personales, se envían al proveedor de servicios MTD. El inventario de aplicaciones incluye los datos siguientes:
+Si activa la sincronización de aplicaciones para dispositivos iOS/iPadOS, los inventarios de los dispositivos iOS/iPadOS, tanto de empresa como personales, se envían al proveedor de servicios MTD. El inventario de aplicaciones incluye los datos siguientes:
 
 - Identificador de la aplicación
 - Versión de la aplicación
@@ -63,28 +63,28 @@ Si activa la sincronización de aplicaciones para dispositivos iOS, los inventar
 
 ## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>Escenarios de ejemplo para dispositivos inscritos mediante directivas de cumplimiento de dispositivos
 
-Cuando un dispositivo se considera infectado por la solución de Mobile Threat Defense:
+Cuando un dispositivo se considera infectado por la solución Mobile Threat Defense:
 
 ![Imagen en que se muestra un dispositivo de Mobile Threat Defense infectado](./media/mobile-threat-defense/MTD-image-1.png)
 
-Se concede el acceso cuando se corrige el dispositivo:
+Se concede acceso cuando el dispositivo se repara:
 
 ![Imagen en que se muestra un acceso concedido por Mobile Threat Defense](./media/mobile-threat-defense/MTD-image-2.png)
 
 ## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Escenarios de ejemplo para dispositivos no inscritos mediante directivas de protección de aplicaciones de Intune
 
-Cuando un dispositivo se considera infectado por la solución de Mobile Threat Defense:<br>
+Cuando un dispositivo se considera infectado por la solución Mobile Threat Defense:<br>
 ![Imagen en la que se muestra un dispositivo de Mobile Threat Defense infectado](./media/mobile-threat-defense/MTD-image-3.png)
 
-Se concede el acceso cuando se corrige el dispositivo:<br>
+Se concede acceso cuando el dispositivo se repara:<br>
 ![Imagen en la que se muestra un acceso concedido por Mobile Threat Defense](./media/mobile-threat-defense/MTD-image-4.png)
 
 > [!NOTE]
 > Puede usar varios proveedores de Mobile Defense con un solo inquilino de Intune. Sin embargo, cuando se configuran dos o más proveedores para usarlos en la misma plataforma, todos los dispositivos que ejecutan esa plataforma deben instalar cada aplicación MTD y examinar las posibles amenazas. Si no se envía un examen desde alguna aplicación configurada, el dispositivo se marca como no conforme. 
 
-## <a name="mobile-threat-defense-partners"></a>Socios de Mobile Threat Defense
+## <a name="mobile-threat-defense-partners"></a>Asociados de Mobile Threat Defense
 
-Obtenga información sobre cómo proteger el acceso al recurso de la empresa en función del riesgo del dispositivo, la red y la aplicación con:
+Aprenda a proteger el acceso a los recursos de la compañía según el riesgo de los dispositivos, la red y las aplicaciones con:
 
 - [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)

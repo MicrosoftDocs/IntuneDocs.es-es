@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437909"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513731"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -74,7 +74,7 @@ Cuando se crea una directiva de protección de aplicaciones para aplicaciones de
     Esta página proporciona opciones de controles de prevención de pérdida de datos (DLP), incluidas restricciones para cortar, copiar, pegar y guardar como. Estas opciones determinan cómo van a interactuar los usuarios con los datos de las aplicaciones donde esta directiva de protección de aplicaciones está en vigor.
 
     **Configuración de la protección de datos**:<br>
-    - **Protección de datos de iOS/iPadOS**: para más información, vea la sección [Protección de datos en Configuración de directivas de protección de aplicaciones de iOS](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Protección de datos de iOS/iPadOS**: para más información, vea la sección [Protección de datos en Configuración de directivas de protección de aplicaciones de iOS/iPadOS](~/apps/app-protection-policy-settings-ios.md#data-protection).
     - **Protección de datos de Android**: para más información, vea la sección [Protección de datos en Configuración de directivas de protección de aplicaciones de Android](~/apps/app-protection-policy-settings-android.md#data-protection).
 
 7. Haga clic en **Siguiente** para abrir la página **Requisitos de acceso**.<br>
@@ -180,7 +180,7 @@ Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de p
 > [!NOTE]
 > Los dispositivos Android le pedirán que instale la aplicación Portal de empresa de Intune independientemente del tipo de dispositivo que se elija. Por ejemplo, si selecciona "Android Enterprise", se le seguirá solicitando a los usuarios con dispositivos Android no administrados.
 
-Para iOS, se requieren ajustes adicionales en la configuración de la aplicación para dirigir la configuración de la directiva de protección de aplicaciones (APP) a las aplicaciones en dispositivos inscritos en Intune:
+Para iOS/iPadOS, se requieren ajustes adicionales en la configuración de la aplicación para dirigir la configuración de la directiva de protección de aplicaciones (APP) a las aplicaciones de dispositivos inscritos en Intune:
 
 - **IntuneMAMUPN** debe configurarse para todas las aplicaciones administradas de MDM. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS/iPadOS en Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 - **IntuneMAMDeviceID** debe configurarse para todas las aplicaciones administradas por MDM de línea de negocio y de terceros. **IntuneMAMDeviceID** debe configurarse en el token de identificador de dispositivo. Por ejemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para más información, vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS/iPadOS administrados](app-configuration-policies-use-ios.md).
@@ -192,7 +192,7 @@ Para iOS, se requieren ajustes adicionales en la configuración de la aplicació
 ## <a name="policy-settings"></a>Configuración de la directiva
 Para ver una lista completa de las configuraciones de directivas para iOS/iPadOS y Android, seleccione uno de los siguientes vínculos:
 
-- [Directivas de iOS](app-protection-policy-settings-ios.md)
+- [Directivas de iOS/iPadOS](app-protection-policy-settings-ios.md)
 - [Directivas de Android](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>Pasos siguientes

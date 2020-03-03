@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504372"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514887"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Pradeo con Intune
 
@@ -30,7 +30,7 @@ Se pueden configurar directivas de acceso condicional según la evaluación de r
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y Pradeo a proteger los recursos de la empresa?
 
-La aplicación Pradeo para iOS y Android capta el sistema de archivos, la pila de red, el dispositivo y la telemetría de aplicaciones, cuando está disponible y, después, envía los datos de telemetría al servicio en la nube de Pradeo para evaluar el riesgo del dispositivo frente a las amenazas móviles.
+La aplicación Pradeo para iOS/iPadOS y Android captura telemetría del sistema de archivos, la pila de red, el dispositivo y las aplicaciones cuando está disponible. Después, envía los datos de telemetría al servicio en la nube de Pradeo para evaluar el riesgo del dispositivo frente a las amenazas móviles.
 
 La directiva de cumplimiento de dispositivos de Intune incluye una regla para Mobile Threat Defense de Pradeo que se basa en la evaluación del riesgo de Pradeo. Cuando esta regla está habilitada, Intune evalúa la conformidad del dispositivo con la directiva que habilitó. Si se detecta que el dispositivo no cumple con la directiva, se bloqueará el acceso de los usuarios a los recursos corporativos, como Exchange Online y SharePoint Online. Los usuarios también reciben los pasos de la aplicación Pradeo instalada en sus dispositivos para resolver el problema y volver a obtener acceso a los recursos corporativos.
 
@@ -56,7 +56,7 @@ Cuando se detectan aplicaciones malintencionadas, como el malware, en los dispos
 
 ![Aplicaciones malintencionadas detectadas y acceso concedido](./media/pradeo-mobile-threat-defense-connector/pradeo_maliciousapps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Control del acceso basado en amenazas a la red
+### <a name="control-access-based-on-threat-to-network"></a>Controlar el acceso basándose en amenazas en la red
 
 Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**, y proteja el acceso a las redes Wi-Fi según el riesgo del dispositivo.
 
@@ -68,7 +68,7 @@ Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**
 
 ![Imagen conceptual de acceso concedido tras la corrección](./media/pradeo-mobile-threat-defense-connector/pradeo_network_wifi_unblocked.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Control del acceso a SharePoint Online basado en amenazas a la red
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar el acceso a SharePoint Online basándose en amenazas en la red
 
 Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**, y evite la sincronización de archivos corporativos según el riesgo del dispositivo.
 

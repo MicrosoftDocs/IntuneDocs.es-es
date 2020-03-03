@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034250"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515227"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Información general para solucionar problemas de los perfiles de certificados SCEP con Microsoft Intune
 
@@ -123,9 +123,9 @@ También puede consultar la sección sobre [carga y envío por correo electróni
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>Registros para dispositivos iOS e iPadOS
 
-En el caso de los dispositivos que ejecutan iOS o iPadOS, puede usar registros de depuración y **Xcode** que se ejecuta en un equipo Mac:
+En el caso de los dispositivos que ejecutan iOS/iPadOS, puede usar registros de depuración y **Xcode** que se ejecuta en un equipo Mac:
 
-1. Conecte el dispositivo iOS con el equipo Mac y, luego, vaya a **Aplicaciones** > **Utilidades** para abrir la aplicación de consola. 
+1. Conecte el dispositivo iOS/iPadOS con el equipo Mac y, luego, vaya a **Aplicaciones** > **Utilidades** para abrir la aplicación de consola. 
 
 2. En **Acción**, seleccione **Incluir mensajes de información** e **Incluir mensajes de depuración**.
 
@@ -142,7 +142,7 @@ El registro de Portal de empresa para dispositivos iOS e iPadOS no contiene info
 
 En el caso de los dispositivos que ejecutan Windows, use los registros de eventos de Windows para diagnosticar problemas de inscripción o de administración de dispositivos en los dispositivos que administra con Intune.
 
-En el dispositivo, abra **Visor de eventos** > **Registros de aplicaciones y servicios-**  > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider**
+En el dispositivo, abra **Visor de eventos** > **Registros de aplicaciones y servicios-** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider**
 
 ![Registros de eventos de Windows](../protect/media/troubleshoot-scep-certificate-profiles/windows-event-log.png)
 

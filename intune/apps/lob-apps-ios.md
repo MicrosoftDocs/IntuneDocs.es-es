@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755194"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609180"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de iOS a Microsoft Intune
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755194"
 
 Use la información de este artículo para agregar una aplicación de línea de negocio (LOB) de iOS a Microsoft Intune. Una aplicación de línea de negocio (LOB) es aquella que se agrega a Intune desde un archivo de instalación de la aplicación IPA. Este tipo de aplicación normalmente se escribe localmente. En primer lugar, debe unirse al programa iOS Developer Enterprise Program. Para más información sobre cómo hacerlo, consulte el [sitio web de Apple](https://developer.apple.com/programs/ios/enterprise/).
 
->[!NOTE]
->Los usuarios de dispositivos iOS pueden quitar algunas de las aplicaciones iOS integradas, como Bolsa y Mapas. No puede usar Intune para volver a implementar esas aplicaciones. Si los usuarios eliminan estas aplicaciones, deben ir a la tienda de aplicaciones y reinstalarlas manualmente.
+> [!NOTE]
+> Los usuarios de dispositivos iOS pueden quitar algunas de las aplicaciones iOS integradas, como Bolsa y Mapas. No puede usar Intune para volver a implementar esas aplicaciones. Si los usuarios eliminan estas aplicaciones, deben ir a la tienda de aplicaciones y reinstalarlas manualmente.
 >
->Las aplicaciones LOB de iOS tienen un límite de tamaño máximo de 4 GB por aplicación.
+> Las aplicaciones LOB de iOS tienen un límite de tamaño máximo de 4 GB por aplicación.
+
+> [!NOTE]
+> Los identificadores de paquete (por ejemplo, *com.contoso.app*) están diseñados para ser identificadores únicos de una aplicación. Por ejemplo, para instalar una versión beta de una aplicación de línea de negocio junto a la versión de producción con fines de prueba, la versión beta debe tener otro identificador único (por ejemplo, *com.contoso.app-beta*). De lo contrario, la versión beta se superpondrá a la de producción y se tratará como una actualización. El cambio del nombre del archivo .ipa no tiene ningún efecto en este comportamiento.
 
 ## <a name="select-the-app-type"></a>Selección del tipo de aplicación
 

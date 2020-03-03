@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509898"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575865"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Inicio rápido: Crear y asignar un rol personalizado
 
@@ -58,10 +58,10 @@ Para que el operador de seguridad pueda usar los nuevos permisos, debe asignar e
 1. En Intune, elija **Roles** > **Todos los roles** > **Security operations** (Operaciones de seguridad).
 2. En **Roles de Intune**, elija **Asignaciones** > **Asignar**.
 3. En el cuadro **Nombre de asignación**, escriba *Oper. seg.*
-4. Elija **Miembros (grupos)**  > **Agregar**.
+4. Elija **Miembros (grupos)** > **Agregar**.
 5. Elija el grupo **Contoso Testers** (Evaluadores de Contoso).
 6. Elija **Seleccionar** > **Aceptar**.
-7. Elija **Ámbito (grupos)**  > **Seleccionar grupos para incluir** > **Contoso Testers** (Evaluadores de Contoso).
+7. Elija **Ámbito (grupos)** > **Seleccionar grupos para incluir** > **Contoso Testers** (Evaluadores de Contoso).
 8. Elija **Seleccionar** > **Aceptar** > **Aceptar**.
 
 Ahora, todos los miembros del grupo pertenecen al rol *Operaciones de seguridad* y pueden revisar esta información sobre un dispositivo: identificadores de dispositivos corporativos, directivas de cumplimiento de dispositivos, configuraciones de dispositivo e información de organización.
@@ -77,4 +77,4 @@ En este tutorial ha creado un rol de operaciones de seguridad personalizado y lo
 Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
 
 > [!div class="nextstepaction"]
-> [Inicio rápido: Crear un perfil de dispositivo de correo para iOS](../configuration/quickstart-email-profile.md)
+> [Inicio rápido: Creación de un perfil de dispositivo de correo para iOS/iPadOS](../configuration/quickstart-email-profile.md)

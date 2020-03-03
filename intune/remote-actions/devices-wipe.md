@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415515"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609380"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -47,7 +47,7 @@ La acción **Borrar** restaura un dispositivo a su configuración de fábrica pr
 
 La opción **Conservar el estado de inscripción y la cuenta de usuario** solo está disponible para Windows 10 versión 1709 o posterior.
 
-La opción **Realizar borrado protegido** garantiza que no se pueda eludir la acción de borrado mediante la desactivación del dispositivo. Un borrado protegido seguirá intentando restablecer el dispositivo hasta que se complete de forma correcta. En algunas configuraciones, esta acción puede hacer que el dispositivo no se pueda reiniciar.
+La opción **Realizar borrado protegido** garantiza que no se pueda eludir la acción de borrado mediante la desactivación del dispositivo. Un borrado protegido seguirá intentando restablecer el dispositivo hasta que se complete de forma correcta. En algunas configuraciones, esta acción puede hacer que el dispositivo [no se pueda reiniciar](troubleshoot-device-actions.md#wipe-action).
 
 Las directivas de MDM se volverán a aplicar la próxima vez que el dispositivo se conecte a Intune.
 
@@ -196,6 +196,9 @@ Si quiere quitar completamente un dispositivo DEP de Apple de la administración
 5. Elija **Reasignar**.
 
     ![Captura de pantalla de reasignación de Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="device-states"></a>Estados del dispositivo
+Para obtener una descripción de los estados del dispositivo, vea la [colección managementStates](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates).
 
 ## <a name="fresh-start"></a>Empezar de cero
 

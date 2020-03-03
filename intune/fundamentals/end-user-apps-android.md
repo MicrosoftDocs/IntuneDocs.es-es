@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40e8dd8409f70a70934684c56ed9e9729f4ebf0f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 231b30e93a3e56811e1569c32cc1286e02320f0d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414600"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514411"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de Android
 
@@ -61,10 +61,10 @@ Intune usa el kit de herramientas Zebra Mobility Extensions (MX) para instalar d
 
 Las aplicaciones de LOB implementadas en dispositivos Zebra deben instalarse desde una ubicación pública en el dispositivo. El paquete de la aplicación. apk puede ser accesible para otras aplicaciones y servicios que también tienen acceso al almacenamiento público en el dispositivo. Normalmente, este acceso es una ventana pequeña entre la finalización de la descarga de la aplicación y el principio de la instalación. Esta ventana puede permitir un ataque de temporización. Por ejemplo, un paquete. apk se podría cambiar durante esta ventana. Intune reduce la cantidad de tiempo que el .apk pasa en el almacenamiento público y no permite la instalación de aplicaciones sin firmar. Para ayudar a minimizar el riesgo de seguridad, asegúrese de que los archivos. apk que cargue no contengan información confidencial.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Agregar aplicaciones con Microsoft Intune](../apps/apps-add.md)
 
-[Cómo obtienen sus aplicaciones los usuarios de iOS](end-user-apps-ios.md)
+[Cómo obtienen sus aplicaciones los usuarios de iOS/iPadOS](end-user-apps-ios.md)
 
 [Cómo obtienen sus aplicaciones los usuarios de Windows](end-user-apps-windows.md)

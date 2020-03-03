@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 67d9b5df39311d58571f875b8d41c16088010fad
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414019"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514309"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Usos habituales de Microsoft Intune
 
 Antes de sumergirse en las tareas de implementación, es importante poner de acuerdo a las partes interesadas de Enterprise Mobility en torno a los objetivos empresariales de utilización de Intune. El acuerdo de las partes interesadas es fundamental cuando se es totalmente profano en Enterprise Mobility o al migrar desde otro producto.  
 
-Las necesidades de Enterprise Mobility están en constante evolución y, en este sentido, los distintos métodos de Microsoft para abordar estas necesidades son a veces diferentes de los de otras soluciones del mercado. La mejor manera de ponerse de acuerdo en torno a los objetivos empresariales es expresar lo que se pretende lograr en lo relativo a los escenarios que se quieren habilitar para los empleados, los asociados y el departamento de TI.  
+Las necesidades de Enterprise Mobilityestán en constante evolución y, en este sentido, los distintos métodos de Microsoft para abordar estas necesidades son a veces diferentes de los de otras soluciones del mercado. La mejor manera de ponerse de acuerdo en torno a los objetivos empresariales es expresar lo que se pretende lograr en lo relativo a los escenarios que se quieren habilitar para los empleados, los asociados y el departamento de TI.  
 
 A continuación se presentan brevemente los seis escenarios más comunes que se basan en Intune, así como vínculos para obtener más información sobre cómo planear e implementar cada uno de ellos.
 
@@ -35,7 +35,7 @@ A continuación se presentan brevemente los seis escenarios más comunes que se 
 >¿Quiere saber cómo el equipo de TI de Microsoft usa Intune para permitir que Microsoft tenga acceso a los recursos corporativos en sus dispositivos móviles y, al mismo tiempo, tener protegidos los datos de la empresa? [Lea este caso práctico técnico](https://www.microsoft.com/itshowcase/Article/Content/588) para ver en detalle cómo el equipo de TI de Microsoft usa Intune y otros servicios para administrar identidades, dispositivos, aplicaciones y datos.  
 
 >[!IMPORTANT]
->En vista de los recientes ataques del malware "Trident" en dispositivos iOS, queremos asegurarnos de que los dispositivos móviles estén actualizados. Por este motivo, hemos publicado una entrada de blog titulada [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (Cómo asegurarse de que los dispositivos móviles están actualizados con Microsoft Intune). En él se proporciona información sobre las distintas formas en las que Intune ayuda a mantener los dispositivos seguros y actualizados.
+>En vista de los recientes ataques del malware "Trident" en dispositivos iOS/iPadOS, queremos asegurarnos de que los dispositivos móviles estén actualizados. Por este motivo, hemos publicado una entrada de blog titulada [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (Cómo asegurarse de que los dispositivos móviles están actualizados con Microsoft Intune). En él se proporciona información sobre las distintas formas en las que Intune ayuda a mantener los dispositivos seguros y actualizados.
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Proteger el correo electrónico y los datos locales para tener acceso a ellos sin riesgos desde un dispositivo móvil
 
@@ -61,7 +61,7 @@ Una práctica común de implementación de Office 365 es exigir que los disposit
 
 En cambio, si el usuario solo necesita obtener acceso a los documentos y el correo electrónico corporativo (que suele ser el caso de los dispositivos de propiedad personal), puede exigir al usuario que use las aplicaciones móviles de Office (regidas por [directivas de protección de datos](../apps/app-protection-policies.md)) y no será preciso inscribir el dispositivo.  
 
-En cualquier caso, los datos de Office 365 estarán protegidos con las directivas que se hayan definido.
+En cualquier caso, los datos de Office 365 estarán protegidos por las directivas que haya definido usted.
 
 <!-- Learn more about how to plan and deploy Intune to help secure Office 365 email and data. -->
 
@@ -95,7 +95,7 @@ En este caso, la simplicidad de la experiencia del usuario es fundamental. Por e
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
-## <a name="enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk"></a>Permitir que los empleados tengan un acceso seguro a Office 365 desde un quiosco público no administrado
+## <a name="enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk"></a>Permitir que los empleados tengan acceso seguro a Office 365 desde un quiosco multimedia público no administrado
 
 A veces, los empleados necesitan usar dispositivos, aplicaciones o exploradores que no se pueden administrar, como los equipos públicos de ferias y hoteles.
 

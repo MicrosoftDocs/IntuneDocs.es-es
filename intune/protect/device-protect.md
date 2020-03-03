@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755585"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510476"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Proteger dispositivos con Microsoft Intune
 
@@ -43,7 +43,7 @@ Cuando un dispositivo se debe [quitar de la administración de Intune](../remote
 
 ## <a name="require-devices-to-be-compliant"></a>Requerir que los dispositivos sean conformes
 Intune cuenta con [directivas de conformidad de dispositivos](device-compliance-get-started.md), que le permiten evaluar (y, en algunos casos, corregir) aquellos dispositivos que no se ajustan a las reglas especificadas. Por ejemplo, puede obtener informes sobre:
-- dispositivos iOS JailBroken
+- dispositivos iOS/iPadOS con jailbreak
 - dispositivos cifrados o no cifrados
 - el estado de los dispositivos Windows 10 (según lo determinado por el servicio de atestación de estado).
 
@@ -60,7 +60,7 @@ La [autenticación multifactor (MFA)](../enrollment/multi-factor-authentication.
 Intune permite la integración con [Windows Hello para empresas](windows-hello.md), que es un método alternativo de inicio de sesión para Windows 10 y versiones posteriores que usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual.
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>Deshabilitación del bloqueo de activación en dispositivos iOS
-Bloqueo de activación es una característica que ayuda a proteger los dispositivos de los usuarios. La característica requiere que los usuarios escriban su identificador de Apple y su contraseña antes de que alguien pueda borrar o reactivar el dispositivo. Pero esta característica puede provocar problemas, por ejemplo, si el usuario deja la empresa sin quitar el bloqueo. La [deshabilitación del Bloqueo de activación de iOS](../remote-actions/device-activation-lock-disable.md) sirve para quitar el bloqueo de los dispositivos iOS supervisados, de forma que pueda reasignarlos o borrarlos.
+Bloqueo de activación es una característica que ayuda a proteger los dispositivos de los usuarios. La característica requiere que los usuarios escriban su identificador de Apple y su contraseña antes de que alguien pueda borrar o reactivar el dispositivo. Pero esta característica puede provocar problemas, por ejemplo, si el usuario deja la empresa sin quitar el bloqueo. La [deshabilitación del Bloqueo de activación de iOS/iPadOS](../remote-actions/device-activation-lock-disable.md) sirve para quitar el bloqueo de los dispositivos iOS/iPadOS supervisados, de forma que pueda reasignarlos o borrarlos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
