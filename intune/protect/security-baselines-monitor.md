@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556409"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569292"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Supervisión de la línea base de seguridad y los perfiles en Microsoft Intune
 
@@ -106,6 +106,18 @@ La supervisión del perfil proporciona conclusiones sobre el estado de implement
 
    ![Visualización de diferentes opciones de supervisión para un perfil de las líneas de base de seguridad](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>Visualización de configuraciones de seguridad de los puntos de conexión por dispositivo
+
+Vea detalles sobre las configuraciones de seguridad que se aplican a un dispositivo individual, lo que puede ayudarle a aislar los valores configurados incorrectamente.
+
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Vaya a **Dispositivos** > **Todos los dispositivos** y seleccione el dispositivo que quiera ver.
+
+3. En la categoría *Supervisión*, seleccione **Configuración de seguridad de los puntos de conexión** para ver la lista de configuraciones de seguridad que se aplican a ese dispositivo.
+
+4. Puede seleccionar una configuración de seguridad de los puntos de conexión para profundizar y ver detalles adicionales sobre la evaluación de esa configuración de seguridad en el dispositivo.
+
 ## <a name="troubleshoot-using-per-setting-status"></a>Solución de problemas utilizando el estado por valor de configuración
 
 Ha implementado una línea de base de seguridad, pero el estado de implementación muestra un error. Los pasos siguientes ofrecen algunas instrucciones sobre cómo solucionar el error.
@@ -135,6 +147,7 @@ En dispositivos con Windows 10, hay un informe de detalles de diagnóstico integ
 En [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (Diagnósticos de errores MDM en Windows 10) se proporciona más información sobre este informe integrado.
 
 > [!TIP]
+>
 > - Algunas configuraciones también enumeran el GUID. Puede buscar este GUID en el registro local (regedit) para cualquier valor establecido.
 > - Los registros del Visor de eventos también pueden incluir alguna información de error sobre el valor de configuración problemático (**Visor de eventos** > **Registros de aplicaciones y servicios** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Admin**).
 

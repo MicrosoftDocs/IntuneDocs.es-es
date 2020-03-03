@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409820"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576275"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados
 
@@ -45,7 +45,7 @@ Necesitará a un inquilino de prueba con las siguientes suscripciones para este 
 
 - Suscripción de Office 365 Empresa que incluya Exchange ([evaluación gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
-Antes de comenzar, cree un perfil de dispositivo de prueba para dispositivos iOS siguiendo los pasos descritos en [Inicio rápido: Crear un perfil de dispositivo de correo para iOS](../configuration/quickstart-email-profile.md).
+Antes de comenzar, cree un perfil de dispositivo de prueba para dispositivos iOS siguiendo los pasos descritos en [Inicio rápido: Creación de un perfil de dispositivo de correo para iOS/iPadOS](../configuration/quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 
@@ -156,13 +156,13 @@ Ahora se va a crear una directiva de acceso condicional que requiere que todas l
 
 8. En **Habilitar directiva**, seleccione **Activar**.
 
-   ![Habilitar una directiva](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+   ![Habilitar directiva](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. Seleccione **Crear**.
 
 ## <a name="try-it-out"></a>Haga la prueba
 
-Con las directivas que se han creado, cualquier dispositivo iOS que intente iniciar sesión en el correo electrónico de Office 365 deberá inscribirse en Intune y usar la aplicación móvil de Outlook para iOS. Para probar este escenario en un dispositivo iOS, intente iniciar sesión en Exchange Online con las credenciales de un usuario en su inquilino de prueba. Se le pedirá que inscriba el dispositivo e instale la aplicación móvil de Outlook.
+Con las directivas que se han creado, cualquier dispositivo iOS que intente iniciar sesión en el correo electrónico de Office 365 tendrá que inscribirse en Intune y usar la aplicación móvil de Outlook para iOS/iPadOS. Para probar este escenario en un dispositivo iOS, intente iniciar sesión en Exchange Online con las credenciales de un usuario en su inquilino de prueba. Se le pedirá que inscriba el dispositivo e instale la aplicación móvil de Outlook.
 
 1. Para realizar pruebas en un iPhone, vaya a **Configuración** > **Contraseñas y cuentas** > **Agregar cuenta** > **Exchange** .
 
@@ -181,7 +181,7 @@ Cuando ya no se necesiten las directivas de prueba, puede quitarlas.
 
 2. Seleccione **Dispositivos** > **Directivas de cumplimiento**.
 
-3. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Aceptar** para confirmar la operación.
+3. En la lista **Nombre de directiva**, seleccione el menú contextual ( **...** ) de la directiva de prueba y después seleccione **Eliminar**. Seleccione **Aceptar** para confirmar.
 
 4. Seleccione **Seguridad de los puntos de conexión** > **Acceso condicional**.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755279"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511844"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune 
 
@@ -52,7 +52,7 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 | --- | --- | --- |
 | Aplicaciones de Google Play Store  | Aplicación de la tienda  | Seleccione **Android** como el **tipo de aplicación** y escriba la dirección URL de Google Play Store de la aplicación. |
 | Aplicaciones de Android Enterprise  | Aplicación de la tienda  | Seleccione **Android** como **tipo de aplicación** y escriba la dirección URL de Google Play Store administrado de la aplicación. <sup>1</sup> |
-| Aplicaciones de App Store  | Aplicación de la tienda  | Seleccione **iOS** como el **tipo de aplicación**, busque la aplicación y selecciónela en Intune. |
+| Aplicaciones de la Tienda iOS/iPadOS  | Aplicación de la tienda  | Seleccione **iOS** como el **tipo de aplicación**, busque la aplicación y selecciónela en Intune. |
 | Aplicaciones de la Tienda Windows Phone 8.1  | Aplicación de la tienda  | Seleccione **Windows Phone 8.1** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
 | Aplicaciones de Microsoft Store  | Aplicación de la tienda  | Seleccione **Windows** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
 | Aplicaciones administradas de Google Play | Aplicación de la tienda  | Seleccione **Google Play administrado** para **Tipo de aplicación**, busque la aplicación y selecciónela en Intune. |
@@ -61,10 +61,10 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 | Microsoft Edge versión 77 y posteriores para Windows 10 | Aplicación de la tienda | Seleccione **Windows 10** en **Microsoft Edge, versión 77 y posteriores**, como el **tipo de aplicación**. |
 | Microsoft Edge versión 77 y posteriores para macOS | Aplicación de la tienda | Seleccione **macOS** en **Microsoft Edge, versión 77 y posteriores**, como el **tipo de aplicación**. |
 | Aplicaciones de línea de negocio (LOB) Android | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de Android con la extensión **.apk** .  |
-| Aplicaciones de LOB para iOS | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de iOS con la extensión **.ipa**.  |
+| Aplicaciones de línea de negocio de la Tienda iOS/iPadOS | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de iOS/iPadOS con la extensión **.ipa**.  |
 | Aplicaciones de LOB para Windows Phone | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo del paquete de aplicaciones** y, después, indique un archivo de instalación de Windows Phone con la extensión **.xap**.  |
 | Aplicaciones de LOB de Windows | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como el tipo de aplicación, seleccione el **archivo del paquete de aplicaciones** y, después, escriba un archivo de instalación de Windows con la extensión **.msi**, **.appx**, **.appxbundle**, **.msix** y **.msixbundle**. |
-| Aplicación de iOS integrada  | Aplicación integrada | Seleccione **Aplicación integrada** como el **tipo de aplicación** y después seleccione la aplicación integrada en la lista de aplicaciones proporcionadas.  |
+| Aplicación iOS/iPadOS integrada  | Aplicación integrada | Seleccione **Aplicación integrada** como el **tipo de aplicación** y después seleccione la aplicación integrada en la lista de aplicaciones proporcionadas.  |
 | Aplicación de Android integrada  | Aplicación integrada | Seleccione **Aplicación integrada** como el **tipo de aplicación** y después seleccione la aplicación integrada en la lista de aplicaciones proporcionadas.  |
 | Aplicaciones web  | Aplicación web  | Seleccione **Vínculo web** como el **tipo de aplicación** y escriba una dirección URL válida que apunte a la aplicación web.  |
 | Aplicaciones del sistema de Android Enterprise  | Aplicación de la tienda  | Seleccione **Aplicación del sistema Android Enterprise** como **tipo de aplicación** y escriba el nombre de la aplicación, el publicador y el archivo de paquete.  |
@@ -77,7 +77,7 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones** > **Todas las aplicaciones** > **Agregar**. Se mostrará el panel **Seleccionar tipo de aplicación** y podrá seleccionar el **Tipo de aplicación**. 
 
 >[!TIP]
-> Una aplicación de línea de negocio es aquella que se agrega desde un archivo de instalación de la aplicación. Por ejemplo, para instalar una aplicación de línea de negocio de iOS, agregue la aplicación seleccionando **Aplicación de línea de negocio** como el **Tipo de aplicación** en el panel **Seleccionar tipo de aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .ipa). Estos tipos de aplicaciones normalmente se han escrito internamente.
+> Una aplicación de línea de negocio es aquella que se agrega desde un archivo de instalación de la aplicación. Por ejemplo, para instalar una aplicación de línea de negocio de iOS/iPadOS, puede agregarla si selecciona **Aplicación de línea de negocio** como el **Tipo de aplicación** en el panel **Seleccionar tipo de aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .ipa). Estos tipos de aplicaciones normalmente se han escrito internamente.
 
 ## <a name="assess-app-requirements"></a>Acceso a los requisitos de la aplicación
 Como administrador de TI, determine qué aplicaciones debe usar el grupo, así como las capacidades necesarias para cada grupo y subgrupo. Para cada aplicación, determine las plataformas necesarias, los grupos de usuarios que necesitan la aplicación, las directivas de configuración para aplicar a todos los grupos y las directivas de protección que se aplicarán.  
@@ -109,8 +109,8 @@ Use la [Guía de planeamiento de la implementación, diseño e implementación d
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Determinar el tipo de aplicación para la solución
 
 Puede elegir entre los siguientes tipos de aplicaciones:
-- **Aplicaciones de la tienda**: aplicaciones que se han cargado en Microsoft Store, App Store o Google Play Store. El proveedor de una aplicación de la tienda mantiene y proporciona las actualizaciones de la aplicación. Seleccione la aplicación en la lista de la tienda y agréguela mediante Intune como una aplicación disponible para los usuarios.
-- **Aplicaciones escritas internamente (línea de negocio)** : las aplicaciones que se crean internamente son aplicaciones de línea de negocio (LOB). La funcionalidad de este tipo de aplicación se ha creado para una de las plataformas compatibles con Intune, por ejemplo, Windows, iOS, macOS o Android. Su organización crea y le proporciona actualizaciones como un archivo independiente. Puede proporcionar actualizaciones de la aplicación a los usuarios agregando e implementando las actualizaciones mediante Intune.
+- **Aplicaciones de la tienda**: aplicaciones que se han cargado en Microsoft Store, la tienda iOS/iPadOS o la tienda de Android son aplicaciones de la tienda. El proveedor de una aplicación de la tienda mantiene y proporciona las actualizaciones de la aplicación. Seleccione la aplicación en la lista de la tienda y agréguela mediante Intune como una aplicación disponible para los usuarios.
+- **Aplicaciones escritas internamente (línea de negocio)** : las aplicaciones que se crean internamente son aplicaciones de línea de negocio (LOB). La funcionalidad de este tipo de aplicación se ha creado para una de las plataformas compatibles con Intune, por ejemplo, Windows, iOS/iPadOS, macOS o Android. Su organización crea y le proporciona actualizaciones como un archivo independiente. Puede proporcionar actualizaciones de la aplicación a los usuarios agregando e implementando las actualizaciones mediante Intune.
 - **Aplicaciones en la Web**: las aplicaciones web son aplicaciones cliente-servidor. El servidor proporciona la aplicación web, que incluye la interfaz de usuario, el contenido y la funcionalidad. Además, las plataformas de hospedaje web modernas normalmente ofrecen seguridad, equilibrio de carga y otras ventajas. Este tipo de aplicación se mantiene por separado en la Web. Intune se usa para que apunte a este tipo de aplicación. También puede asignar qué grupos de usuarios pueden tener acceso a la aplicación. Tenga en cuenta que Android no es compatible con las aplicaciones web.
 
 A medida que determina qué aplicaciones necesita su organización, tenga en cuenta cómo se integran las aplicaciones con los servicios en la nube, a qué datos pueden acceder las aplicaciones, si las aplicaciones están disponibles para los usuarios BYOD y si las aplicaciones requieren acceso a internet.
@@ -128,7 +128,7 @@ Las aplicaciones administradas de Intune también pueden habilitar la protecció
 
 ### <a name="understanding-licensed-apps"></a>Información sobre el uso de aplicaciones con licencia
 Además de comprender las aplicaciones web, las aplicaciones de la tienda y las aplicaciones LOB, también debe conocer las diferencias de las aplicaciones del programa de compras por volumen y las aplicaciones con licencia, como, por ejemplo: 
-- **Programa de Compras por Volumen (VPP) de Apple para empresas (iOS)** : la App Store de iOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Comprar varias copias permite administrar de manera eficaz las aplicaciones de la empresa. Para obtener más información, consulte [Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune](vpp-apps-ios.md).
+- **Programa de Compras por Volumen (VPP) de Apple para empresas (iOS)** : la App Store de iOS/iPadOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Comprar varias copias permite administrar de manera eficaz las aplicaciones de la empresa. Para obtener más información, vea [Administración de aplicaciones iOS/iPadOS compradas por volumen](vpp-apps-ios.md).
 - **Perfil de trabajo Android**: La forma de asignar aplicaciones a dispositivos de perfil de trabajo Android es diferente a cómo las asigna a dispositivos Android estándar. Todas las aplicaciones que se instalen para perfiles de trabajo Android proceden de Google Play Store administrado. Utilice Intune para buscar las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
 - **Microsoft Store para Empresas (Windows 10)** : en Microsoft Store para Empresas puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar las aplicaciones adquiridas por volumen en Azure Portal. Para más información, vea [Administrar las aplicaciones de Microsoft Store para Empresas](windows-store-for-business.md).
 
@@ -139,7 +139,7 @@ Además de comprender las aplicaciones web, las aplicaciones de la tienda y las 
 Antes de empezar a agregar y asignar aplicaciones, considere los puntos siguientes:
 
 - Al agregar y asignar una aplicación desde una tienda, los usuarios finales deben tener una cuenta con la tienda para poder instalar la aplicación.
-- Algunas aplicaciones o elementos que asigna podrían depender de aplicaciones iOS integradas. Por ejemplo, si asigna un libro de App Store, la aplicación iBooks debe existir en el dispositivo. Si quitó la aplicación integrada iBooks, no puede usar Intune para restablecerla.
+- Es posible que algunas aplicaciones o elementos que asigne dependan de aplicaciones iOS/iPadOS integradas. Por ejemplo, si asigna un libro de la tienda de iOS/iPadOS, la aplicación iBooks debe existir en el dispositivo. Si quitó la aplicación integrada iBooks, no puede usar Intune para restablecerla.
 
 > [!IMPORTANT]
 > Si cambia el nombre de la aplicación a través de Azure Portal de Intune una vez que ha implementado e instalado la aplicación, ya no se podrá llegar a la aplicación mediante comandos.
@@ -153,7 +153,7 @@ Estos son los requisitos de espacio de almacenamiento en la nube:
 - El tamaño máximo de archivo de cualquier archivo que se cargue es de 8 GB.
 
   > [!NOTE]
-  > Las aplicaciones de línea de negocio (LOB) de Windows, como Win32, Windows Universal AppX, la agrupación Windows Universal AppX, Windows Universal MSI X y la agrupación Windows Universal MSI X tienen un límite de tamaño máximo de 8 GB por aplicación. El resto de aplicaciones de LOB, incluidas las aplicaciones de LOB de iOS, tienen un límite de tamaño máximo de 2 GB por aplicación.
+  > Las aplicaciones de línea de negocio (LOB) de Windows, como Win32, Windows Universal AppX, la agrupación Windows Universal AppX, Windows Universal MSI X y la agrupación Windows Universal MSI X tienen un límite de tamaño máximo de 8 GB por aplicación. El resto de aplicaciones de línea de negocio, incluidas las de iOS/iPadOS, tienen un límite de tamaño máximo de 2 GB por aplicación.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Creación y edición de categorías de aplicaciones
 

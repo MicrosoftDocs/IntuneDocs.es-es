@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966392"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514105"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configuración de la infraestructura para admitir SCEP con Intune
 
@@ -148,7 +148,7 @@ En las secciones siguientes se requieren conocimientos de Windows Server 2012 R2
        > [!IMPORTANT]
        > Agregue solo las directivas de aplicación que necesite. Confirme las elecciones con los administradores de seguridad.
 
-     - Para las plantillas de certificado de iOS y macOS, edite también **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
+     - Para las plantillas de certificado de iOS/iPadOS y macOS, edite también **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
 
      ![Plantilla, pestaña Extensiones](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Después de [crear la plantilla de certificado SCEP](#create-the-scep-certificat
 Intune usa de forma predeterminada el valor configurado en la plantilla. Pero puede configurar la entidad de certificación para permitir que el solicitante escriba otro valor, que se puede establecer desde la consola de Intune.
 
 > [!IMPORTANT]
-> Para iOS y macOS, use siempre un valor establecido en la plantilla.
+> Para iOS/iPadOS y macOS, use siempre un valor establecido en la plantilla.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Para configurar un valor que se puede establecer desde la consola de Intune
 
