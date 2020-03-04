@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,21 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 262d36817e86c8087c6ef4b642d1bd53b1511104
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514887"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782111"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Pradeo con Intune
 
 Puede controlar el acceso desde dispositivos móviles a recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos efectuada por Pradeo, una solución de defensa contra amenazas móviles (MTD) integrada en Microsoft Intune. El riesgo se evalúa en función de la telemetría recopilada de los dispositivos que ejecutan la aplicación Pradeo.
 
 Se pueden configurar directivas de acceso condicional según la evaluación de riesgos de Pradeo habilitada mediante las directivas de cumplimiento de dispositivos de Intune. Puede usar dichas directivas para permitir o bloquear dispositivos que no cumplan los requisitos y, de este modo, evitar que estos accedan a recursos corporativos en función de las amenazas detectadas.
+
+> [!NOTE]
+> Este proveedor de Mobile Threat Defense no es compatible con dispositivos no inscritos.
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y Pradeo a proteger los recursos de la empresa?
 

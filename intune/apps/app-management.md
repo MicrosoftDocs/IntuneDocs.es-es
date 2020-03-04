@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: c22fafce6583dd1e58d61e3fa8e6077b70998588
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513952"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781789"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -44,8 +44,8 @@ La [administración de aplicaciones móviles de Intune](app-lifecycle.md) hace r
 MAM permite administrar y proteger los datos de la organización dentro de una aplicación. Con **MAM sin inscripción** (MAM-WE), una aplicación profesional o educativa que contiene información confidencial puede administrarse en casi cualquier [dispositivo](app-management.md#app-management-capabilities-by-platform), incluidos los dispositivos personales en escenarios de **Bring Your Own Device** (BYOD). Muchas aplicaciones de productividad, como las aplicaciones de Microsoft Office, pueden administrarse mediante Intune MAM. Consulte la lista oficial de [aplicaciones protegidas de Microsoft Intune](apps-supported-intune-apps.md), disponible para uso público.
 
 Intune MAM admite dos configuraciones:
-- **Intune MDM + MAM**: Los administradores de TI solo pueden administrar aplicaciones mediante directivas de protección de aplicaciones y MAM en los dispositivos que están inscritos con la administración de dispositivos móviles (MDM) de Intune. Para administrar aplicaciones mediante MDM + MAM, los clientes deben usar la consola de Intune en Azure Portal (en https://portal.azure.com).
-- **MAM sin inscripción de dispositivos**: MAM sin inscripción de dispositivos o MAM-WE permite a los administradores de TI administrar aplicaciones mediante directivas de protección de aplicaciones y MAM en dispositivos no inscritos con Intune MDM. Esto significa que las aplicaciones pueden administrarse mediante Intune en dispositivos inscritos con proveedores de EMM de terceros. Para administrar aplicaciones mediante MAM-WE, los clientes deben usar la consola de Intune en Azure Portal (en https://portal.azure.com). Además, Intune puede administrar las aplicaciones en dispositivos inscritos con otros proveedores de Enterprise Mobility Management (EMM) o no inscritos con MDM. Para más información sobre BYOD y EMS de Microsoft, consulte [Decisiones de tecnología para habilitar BYOD con Microsoft Enterprise Mobility + Security (EMS)](../fundamentals/byod-technology-decisions.md).
+- **Intune MDM + MAM**: Los administradores de TI solo pueden administrar aplicaciones mediante directivas de protección de aplicaciones y MAM en los dispositivos que están inscritos con la administración de dispositivos móviles (MDM) de Intune. Para administrar aplicaciones mediante MDM + MAM, los clientes deben usar la consola de Intune en Azure Portal (en https://portal.azure.com ).
+- **MAM sin inscripción de dispositivos**: MAM sin inscripción de dispositivos o MAM-WE permite a los administradores de TI administrar aplicaciones mediante directivas de protección de aplicaciones y MAM en dispositivos no inscritos con Intune MDM. Esto significa que las aplicaciones pueden administrarse mediante Intune en dispositivos inscritos con proveedores de EMM de terceros. Para administrar aplicaciones mediante MAM-WE, los clientes deben usar la consola de Intune en Azure Portal (en https://portal.azure.com ). Además, Intune puede administrar las aplicaciones en dispositivos inscritos con otros proveedores de Enterprise Mobility Management (EMM) o no inscritos con MDM. Para más información sobre BYOD y EMS de Microsoft, consulte [Decisiones de tecnología para habilitar BYOD con Microsoft Enterprise Mobility + Security (EMS)](../fundamentals/byod-technology-decisions.md).
 
 ## <a name="app-management-capabilities-by-platform"></a>Funcionalidades de administración de aplicaciones por plataforma
 
@@ -78,7 +78,7 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 
 Puede encontrar la mayoría de la información relacionada con las aplicaciones en la carga de trabajo **Aplicaciones**, a la que puede acceder haciendo lo siguiente:
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Aplicaciones**.
 
     ![Panel de carga de trabajo Aplicaciones](./media/app-management/apps-workload.png)

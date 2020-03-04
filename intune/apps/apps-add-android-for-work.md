@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609189"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256465"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adición de aplicaciones de Google Play administrado a dispositivos Android Enterprise con Intune
 
@@ -31,10 +31,10 @@ Google Play administrado es la tienda de aplicaciones empresariales de Google y 
 
 Para facilitarle la configuración y el uso de la administración de Android Enterprise, tras conectarse el inquilino de Intune a Google Play administrado, Intune agregará automáticamente cuatro aplicaciones comunes relacionadas con Android Enterprise a la consola de administración de Intune. Las cuatro aplicaciones son las siguientes:
 
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)**: se usa para escenarios totalmente administrados de Android Enterprise. Esta aplicación se instala automáticamente en los dispositivos totalmente administrados durante su proceso de inscripción.
-- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)**: ayuda a iniciar sesión en las cuentas si se usa la verificación de dos fases. Esta aplicación se instala automáticamente en los dispositivos totalmente administrados durante su proceso de inscripción.
-- **[Portal de empresa de Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)**: se usa para las directivas de protección de aplicación y escenarios de perfil de trabajo de Android Enterprise.
-- **[Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise)**: se usa en los escenarios de pantalla completa o de varias aplicaciones dedicados de Android Enterprise. Los administradores de TI deben crear una asignación para instalar esta aplicación en dispositivos dedicados que se van a usar en escenarios de pantalla completa de varias aplicaciones.
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** : se usa para escenarios totalmente administrados de Android Enterprise. Esta aplicación se instala automáticamente en los dispositivos totalmente administrados durante su proceso de inscripción.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** : ayuda a iniciar sesión en las cuentas si se usa la verificación de dos fases. Esta aplicación se instala automáticamente en los dispositivos totalmente administrados durante su proceso de inscripción.
+- **[Portal de empresa de Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** : se usa para las directivas de protección de aplicación y escenarios de perfil de trabajo de Android Enterprise.
+- **[Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise)** : se usa en los escenarios de pantalla completa o de varias aplicaciones dedicados de Android Enterprise. Los administradores de TI deben crear una asignación para instalar esta aplicación en dispositivos dedicados que se van a usar en escenarios de pantalla completa de varias aplicaciones.
 
 >[!NOTE]
 >Cuando un usuario final inscribe su dispositivo de Android Enterprise totalmente administrado, la aplicación Portal de empresa de Intune se instala automáticamente y el icono de la aplicación puede estar visible para el usuario final. Si el usuario final intenta iniciar la aplicación Portal de empresa de Intune, se redirigirá a la aplicación Microsoft Intune y el icono de la aplicación Portal de empresa se ocultará posteriormente.
@@ -61,7 +61,7 @@ Hay dos maneras de examinar y aprobar las aplicaciones de Google Play Store admi
 
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Adición de una aplicación de Google Play Store administrado directamente en la consola de Intune
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 3. En el panel **Seleccionar tipo de aplicación**, en los tipos de **Aplicación de la Tienda** disponibles, seleccione la **Aplicación de Google Play administrado**.
 4. Haga clic en **Seleccionar**. Se muestra la aplicación de la Tienda **Google Play administrado**.
@@ -115,7 +115,7 @@ Hay dos maneras de agregar aplicaciones de línea de negocio a Google Play admin
 
 ### <a name="managed-google-play-private-lob-app-publishing-directly-in-the-intune-console"></a>Publicación de aplicaciones privadas (LOB) de Google Play administrado directamente en la consola de Intune
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 3. En el panel **Seleccionar tipo de aplicación**, en los tipos de **Aplicación de la Tienda** disponibles, seleccione la **Aplicación de Google Play administrado**.
 4. Haga clic en **Seleccionar**. Se muestra la aplicación de la Tienda **Google Play administrado** dentro de Intune.
@@ -139,7 +139,7 @@ Para más información sobre las aplicaciones privadas de Google Play administra
 1. Inicie sesión en la [consola para desarrolladores Google Play](https://play.google.com/apps/publish) con la misma cuenta que usó para configurar la conexión entre Intune y Android Enterprise.  
     Si inicia sesión por primera vez, debe registrar y pagar una cuota para participar en el programa para desarrolladores de Google.
 2. En la consola, seleccione **Agregar nueva aplicación**.
-3. Puede cargar y proporcionar información sobre la aplicación de la misma manera que publica cualquier aplicación en Google Play Store. Sin embargo, debe seleccionar **Solo hacer que esta aplicación esté disponible para mi organización (<*nombre de la organización*>)**.
+3. Puede cargar y proporcionar información sobre la aplicación de la misma manera que publica cualquier aplicación en Google Play Store. Sin embargo, debe seleccionar **Solo hacer que esta aplicación esté disponible para mi organización (<*nombre de la organización*>)** .
 
     ![Hacer que la aplicación esté disponible solo para su organización](./media/apps-add-android-for-work/restrict.png)
 
@@ -156,10 +156,7 @@ Los vínculos web de Google Play administrado se pueden instalar y administrar c
 
 Los vínculos web se abrirán con Microsoft Edge o con cualquier otra aplicación del explorador que decida implementar. Asegúrese de implementar al menos una aplicación de explorador en los dispositivos para que los vínculos web puedan abrirse correctamente. Sin embargo, todas las opciones de **presentación** disponibles para vínculos web (interfaz de usuario de pantalla completa, independiente y mínima) solo funcionarán con el explorador Chrome. 
 
-> [!IMPORTANT]
-> A partir de la publicación de este documento, hay un error conocido de Google que impide que los vínculos web se abran en dispositivos con exploradores distintos de Chrome. Google se ha comprometido a corregir este error.  Este aviso se quitará cuando Microsoft haya confirmado que Google ha publicado la corrección.
-
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones** > **Agregar**.
 3. En el panel **Seleccionar tipo de aplicación**, en los tipos de **Aplicación de la Tienda** disponibles, seleccione la **Aplicación de Google Play administrado**.
 4. Haga clic en **Seleccionar**. Se muestra la aplicación de la Tienda **Google Play administrado** dentro de Intune.
@@ -177,11 +174,11 @@ Los vínculos web se abrirán con Microsoft Edge o con cualquier otra aplicaci�
 
 Si se ha aprobado una aplicación desde la tienda y todavía no la ve en la carga de trabajo **Aplicaciones**, fuerce una sincronización inmediata como sigue:
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Aplicaciones** > **Administración de inquilinos** > **Conectores y tokens** > **Google Play administrado**.
 5. En el panel **Google Play administrado**, elija **Actualizar**.  
     En la página actualiza la hora y el estado de la última sincronización.
-6. En el Centro de administración del Administrador de puntos de conexión de Microsoft, seleccione **Aplicaciones** > **Todas las aplicaciones**.  
+6. En el Centro de administración de Microsoft Endpoint Manager, seleccione **Aplicaciones** > **Todas las aplicaciones**.  
     Se muestra la aplicación Google Play administrado que se ha publicado recientemente.
 
 ## <a name="assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices"></a>Asignación de una aplicación de Google Play administrado para dispositivos de perfil de trabajo de Android Enterprise

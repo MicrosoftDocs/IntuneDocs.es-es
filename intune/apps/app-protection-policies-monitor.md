@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 317f39b28909196d03ef5e7c68c7980f5fdfea3f
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 152edba9ba6821cc17960bfbbaef248459d12ac0
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512218"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181864"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -42,7 +42,7 @@ El período de retención de los datos de protección de la aplicación es de 90
 
 ## <a name="summary-view"></a>Vista Resumen
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Aplicaciones** > **Supervisar** > **Estado de protección de la aplicación**.
 
    ![Captura de pantalla del icono Resumen en el panel de administración de aplicaciones móviles de Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)

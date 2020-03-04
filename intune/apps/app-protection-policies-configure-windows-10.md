@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 66cf454290903705d8500c2b1f9a07c9097351bf
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564235"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781751"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparativos para configurar directivas de protección de aplicaciones para Windows 10 
 
@@ -33,7 +33,7 @@ Habilite la administración de aplicaciones móviles (MAM) para Windows 10. Para
 
 ## <a name="to-configure-the-mam-provider"></a>Para configurar el proveedor de MAM
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Todos los servicios** y elija **Azure Active Directory de M365** para cambiar los paneles.
 3. Seleccione **Azure Active Directory**.
 4. Elija **Movilidad (MDM y MAM)** en el grupo **Administrar**.

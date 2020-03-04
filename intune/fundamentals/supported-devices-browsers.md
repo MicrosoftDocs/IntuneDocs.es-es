@@ -16,14 +16,14 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
-ms.custom: seodec18
+ms.custom: intune-classic; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 536f689a009f3e7e0128c350bafd3bf1340aeaaa
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609260"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260221"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Exploradores y sistemas operativos compatibles en Intune
 
@@ -122,7 +122,7 @@ Estos portales son compatibles con los siguientes exploradores:
 
 ### <a name="intune-classic-portal"></a>Portal de Intune clásico
 
-El portal de Intune clásico solo se usa para administrar dispositivos inscritos con el cliente de software de equipos de Intune (https://manage.microsoft.com)). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
+El portal de Intune clásico solo se usa para administrar dispositivos inscritos con el cliente de software de equipos de Intune (https://manage.microsoft.com) ). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
 
 Los siguientes exploradores Silverlight admiten la consola de Intune:
 

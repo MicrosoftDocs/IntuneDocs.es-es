@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 2471a48a1222448a2a45c7813bbb513cefda5276
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515142"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782006"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector de defensa contra amenazas SandBlast Mobile de Check Point con Intune
 
 Puede controlar el acceso desde dispositivos móviles a recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos efectuada por SandBlast Mobile de Check Point, una solución de defensa contra amenazas móviles integrada en Microsoft Intune. El riesgo se evalúa según la telemetría recopilada de dispositivos que ejecutan la aplicación SandBlast Mobile de Check Point.
 
 Puede configurar directivas de acceso condicional según la evaluación de riesgos de SandBlast Mobile de Check Point habilitada mediante las directivas de cumplimiento de dispositivos de Intune, que puede usar a fin de permitir o bloquear dispositivos que no cumplan los requisitos para que no obtengan acceso a recursos corporativos en función de las amenazas detectadas.
+
+> [!NOTE]
+> Este proveedor de Mobile Threat Defense no es compatible con dispositivos no inscritos.
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y SandBlast Mobile de Check Point a proteger los recursos de su empresa?
 

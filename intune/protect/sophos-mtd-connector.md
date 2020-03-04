@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 816968d512b73a8592c7a86b39c41057aa99e827
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514819"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782063"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Conector Sophos Mobile Threat Defense con Intune
 Puede controlar el acceso de los dispositivos móviles a los recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos realizada por Sophos Mobile, una solución de Mobile Threat Defense (MTD) integrada en Microsoft Intune. El riesgo se evalúa en función de la telemetría recopilada de los dispositivos que ejecutan la aplicación Sophos Mobile.
 Se pueden configurar directivas de acceso condicional según la evaluación de riesgos de Sophos Mobile habilitada mediante las directivas de cumplimiento de dispositivos de Intune. Esas directivas se pueden usar para permitir o bloquear los dispositivos que no cumplan los requisitos y evitar que accedan a recursos corporativos en función de las amenazas detectadas.
+
+> [!NOTE]
+> Este proveedor de Mobile Threat Defense no es compatible con dispositivos no inscritos.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y Sophos Mobile a proteger los recursos de la empresa?
 La aplicación Sophos Mobile para iOS/iPadOS y Android captura telemetría del sistema de archivos, la pila de red, los dispositivos y las aplicaciones si está disponible y, después, envía los datos de telemetría al servicio en la nube de Sophos Mobile para evaluar el riesgo del dispositivo frente a las amenazas móviles.

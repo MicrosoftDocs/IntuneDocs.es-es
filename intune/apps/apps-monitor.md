@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd5b26073611d9ff974d4a53f7794919e8672c7
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: d044357ffe15a0f621636cf2a8524851d72595d2
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513544"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781315"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Supervisión de información y asignaciones de aplicaciones con Microsoft Intune
 
@@ -31,7 +31,7 @@ ms.locfileid: "77513544"
 
 Intune ofrece varias formas de supervisar las propiedades de las aplicaciones administra y de administrar el estado de asignación de estas.
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones**.
 3. En la lista de aplicaciones, seleccione una aplicación para supervisar. Verá el panel de la aplicación, que incluye información general sobre el estado del dispositivo y del usuario.
 

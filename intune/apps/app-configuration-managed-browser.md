@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/27/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 03b89225ee5691aea2653fb3ca19f99139a015aa
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414901"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181828"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Administración del acceso web con un explorador protegido por directiva de Microsoft Intune
 
@@ -94,7 +94,7 @@ Para limitar las aplicaciones web conectadas a Azure AD al uso de Intune Manag
 > [!TIP]  
 > Acceso condicional es una tecnología de Azure Active Directory (Azure AD). El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Dispositivos** > **Acceso condicional** > **Nueva directiva**.
 3. En **Nombre** agregue el nombre de la directiva. 
 4. En la sección **Asignaciones**, seleccione **Condiciones** > **Aplicaciones cliente**. Aparecerá el panel **Aplicaciones cliente**.
@@ -135,7 +135,7 @@ Para el inicio de sesión único, hace falta que el dispositivo esté registrado
 >[!IMPORTANT]
 >Para que se apliquen las configuraciones de aplicaciones, el explorador protegido del usuario u otra aplicación del dispositivo ya deben estar administrados mediante [directivas de aplicación de Intune]( ../app-protection-policy.md)
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Aplicaciones administradas**.
 3. En la página **Aspectos básicos** del panel **Crear una directiva de configuración de aplicaciones**, escriba un **nombre** y una **descripción** opcional para las opciones de configuración de aplicaciones.
 4. Elija **Seleccionar la aplicación pública** y elija **Managed Browser** o **Edge** para iOS/iPadOS, para Android o para ambos.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4a9372a67dc0f45e256c3eba9b816db866e23998
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564220"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781799"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configuración de la aplicación Managed Home Screen de Microsoft para Android Enterprise
 
@@ -36,7 +36,7 @@ Normalmente, si las opciones están disponibles a través de Configuración del 
 > [!NOTE]
 > Actualmente es posible, y recomendable, establecer las aplicaciones permitidas y los vínculos web anclados a través de **Aplicaciones** y **Configuración del dispositivo**. Para obtener la lista completa de opciones disponibles en **Configuración del dispositivo** que afectan a Managed Home Screen, vea [ Configuración del dispositivo dedicado](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-En primer lugar, vaya al [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones**. Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Managed Home Screen** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Managed Home Screen. 
+En primer lugar, vaya al [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones**. Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Managed Home Screen** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Managed Home Screen. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Selección de un formato de opciones de configuración
 
@@ -59,10 +59,10 @@ En la tabla siguiente se enumeran las claves de configuración disponibles de Ma
 
 | Clave de configuración | Tipo de valor | Valor predeterminado | Descripción |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Definir tamaño de la cuadrícula | cadena | Automático | Permite establecer el tamaño de la cuadrícula para las aplicaciones que se van a colocar en la pantalla principal administrada. Puede establecer el número de filas y columnas de la aplicación para definir el tamaño de la cuadrícula en el formato siguiente, `columns;rows`. Si define el tamaño de la cuadrícula, el número máximo de aplicaciones que se mostrarán en una fila de la pantalla principal será el número de filas que establezca, y el número máximo de aplicaciones que se mostrarán en una columna de la pantalla principal será el número de columnas que establezca. |
+| Definir tamaño de la cuadrícula | string | Auto | Permite establecer el tamaño de la cuadrícula para las aplicaciones que se van a colocar en la pantalla principal administrada. Puede establecer el número de filas y columnas de la aplicación para definir el tamaño de la cuadrícula en el formato siguiente, `columns;rows`. Si define el tamaño de la cuadrícula, el número máximo de aplicaciones que se mostrarán en una fila de la pantalla principal será el número de filas que establezca, y el número máximo de aplicaciones que se mostrarán en una columna de la pantalla principal será el número de columnas que establezca. |
 | Habilitar la señal de notificaciones | bool | FALSE | Permite la señal de notificación para los iconos de aplicación que muestra el número de notificaciones nuevas en la aplicación. Si habilita esta opción, los usuarios finales verán señales de notificación en las aplicaciones que tienen notificaciones sin leer. Si mantiene deshabilitada esta configuración clave, el usuario final no verá ninguna notificación señalada para las aplicaciones que podrían tener notificaciones sin leer. |
 | Bloquear la pantalla de inicio | bool | TRUE | Impide al usuario final mover los iconos de las aplicaciones en la pantalla principal. Si habilita esta clave de configuración, se bloquearán los iconos de las aplicaciones en la pantalla principal y el usuario final no podrá arrastrarlos y colocarlos en otras posiciones de la cuadrícula de la pantalla principal. Si se establece en `false`, los usuarios finales podrán mover los iconos de las aplicaciones y los vínculos web en Managed Home Screen.  |
-| Establecer el fondo de pantalla del dispositivo | cadena | Default | Le permite establecer el fondo de pantalla que elija si escribe la dirección URL de la imagen que quiera establecer como fondo de pantalla. |
+| Establecer el fondo de pantalla del dispositivo | string | Predeterminado | Le permite establecer el fondo de pantalla que elija si escribe la dirección URL de la imagen que quiera establecer como fondo de pantalla. |
 | Establecer el tamaño del icono de la aplicación | integer | 2 | Le permite establecer el tamaño de icono para las aplicaciones que se muestran en la pantalla principal. Puede elegir los valores siguientes en esta configuración para diferentes tamaños: 0 (el más pequeño), 1 (pequeño), 2 (estándar), 3 (grande) y 4 (el más grande). |
 | Establecer el icono de la carpeta de aplicación | integer | 0 | Le permite definir la apariencia de las carpetas de aplicación en la pantalla principal. Puede elegir la apariencia entre los valores siguientes: Dark Square(0); Dark Circle(1); Light Square(2); Light Circle(3). |
 | Establecer la orientación de la pantalla | integer | 1 | Le permite establecer la orientación de la pantalla principal en modo vertical, horizontal o permitir el giro automático. Puede establecer la orientación si escribe los valores 1 (para el modo vertical), 2 (para el modo horizontal), 3 (para Girar automáticamente). |
@@ -70,14 +70,14 @@ En la tabla siguiente se enumeran las claves de configuración disponibles de Ma
 | Establecer aplicaciones permitidas | bundleArray | FALSE | Le permite definir el conjunto de aplicaciones visibles en la pantalla principal de entre las instaladas en el dispositivo. Para definir las aplicaciones, escriba el nombre del paquete de aplicación de las aplicaciones que le gustaría hacer visibles; por ejemplo, com.microsoft.emmx hará que se pueda acceder a la configuración desde la pantalla principal. Las aplicaciones que incluya en la lista de permitidas en esta sección ya deben estar instaladas en el dispositivo para que se vean en la pantalla principal. |
 | Establecer vínculos web anclados | bundleArray | FALSE | Le permite anclar sitios web como iconos de inicio rápido en la pantalla principal. Con esta configuración, puede definir la dirección URL y agregarla a la pantalla principal para que el usuario final inicie el explorador con un solo toque. |
 | Habilitar protector de pantalla | bool | FALSE | Para habilitar o no el modo de protector de pantalla. Si se establece en true, puede configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** y **media_detect_screen_saver**. |
-| Imagen del protector de pantalla | cadena |   | Establezca la dirección URL de la imagen del protector de pantalla. Si no se establece ninguna dirección URL, los dispositivos mostrarán la imagen del protector de pantalla predeterminada cuando se active el protector de pantalla. La imagen predeterminada muestra el icono de la aplicación Managed Home Screen.  |
+| Imagen del protector de pantalla | string |   | Establezca la dirección URL de la imagen del protector de pantalla. Si no se establece ninguna dirección URL, los dispositivos mostrarán la imagen del protector de pantalla predeterminada cuando se active el protector de pantalla. La imagen predeterminada muestra el icono de la aplicación Managed Home Screen.  |
 | Mostrar hora del protector de pantalla | integer | 0 | Ofrece la opción de establecer la cantidad de tiempo en segundos que el dispositivo mostrará el protector de pantalla durante el modo de protector de pantalla. Si se establece en 0, el protector de pantalla se mostrará en modo de protector de pantalla indefinidamente hasta que el dispositivo se active.  |
 | Tiempo de inactividad para habilitar el protector de pantalla | integer | 30 | El número de segundos que el dispositivo está inactivo antes de desencadenar el protector de pantalla. Si se establece en 0, el dispositivo nunca pasará al modo de protector de pantalla. |
 | Detectar medios antes de mostrar el protector de pantalla | bool | TRUE | Elija si en la pantalla del dispositivo se debe mostrar el protector de pantalla cuando se reproduce audio o vídeo en el dispositivo. Si se establece en true, el dispositivo no reproducirá audio o vídeo, con independencia del valor de **inactive_time_to_show_scree_saver**. Si se establece en false, en la pantalla del dispositivo se mostrará el protector de pantalla según el valor establecido en **inactive_time_to_show_screen_saver**.   |
 | Habilitar botón de inicio virtual | bool | FALSE | Establezca esta opción en `True` para permitir que el usuario final tenga acceso a un botón de inicio de Managed Home Screen que lo devolverá a la pantalla de la aplicación desde la tarea actual en la que se encuentre.  |
-| Tipo de botón de inicio virtual | cadena | Swipe_up | Use **swipe_up** para acceder al botón de inicio con un gesto de deslizar rápidamente hacia arriba. Use **float** para acceder a un botón de inicio fijo y persistente que el usuario final pueda mover por la pantalla. |
+| Tipo de botón de inicio virtual | string | Swipe_up | Use **swipe_up** para acceder al botón de inicio con un gesto de deslizar rápidamente hacia arriba. Use **float** para acceder a un botón de inicio fijo y persistente que el usuario final pueda mover por la pantalla. |
 | Barra indicadora de la batería y la intensidad de la señal | bool | True  | Al establecer esta opción en `True` se muestra la barra indicadora de la batería y la intensidad de la señal. |
-| Contraseña para salir del modo de bloqueo de tareas | cadena |   | Escriba un código de 4-6 dígitos para salir temporalmente del modo de bloqueo de tareas para solucionar problemas. |
+| Contraseña para salir del modo de bloqueo de tareas | string |   | Escriba un código de 4-6 dígitos para salir temporalmente del modo de bloqueo de tareas para solucionar problemas. |
 | Mostrar configuración de Wi-Fi | bool | FALSE | Al establecer esta opción en `True` se permite al usuario final activar o desactivar la conexión Wi-Fi, o bien conectarse a otras redes Wi-Fi.  |
 | Mostrar la configuración de Bluetooth | bool | FALSE | Al establecer esta opción en `True` se permite al usuario final activar o desactivar Bluetooth, o bien conectarse a otros dispositivos compatibles con Bluetooth.   |
 | Las aplicaciones de la carpeta se ordenan por nombre. | bool | TRUE | Si selecciona `False`, los elementos de una carpeta aparecerán en el orden en que se hayan especificado. En caso contrario, aparecerán en la carpeta ordenados alfabéticamente.   |

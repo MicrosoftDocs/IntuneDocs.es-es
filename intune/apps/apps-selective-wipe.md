@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f6992aa93e1ca5a095b1e92a16a07bd0eb1c2f5
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 66319fab8449ac1832f7796fbfdd470d2a52e88a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513646"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781281"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Borrado solo de datos corporativos de aplicaciones administradas por Intune
 
@@ -44,7 +44,7 @@ Las directivas de Windows Information Protection (WIP) se pueden implementar sin
 
 ## <a name="create-a-wipe-request"></a>Crear una solicitud de borrado
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Borrado selectivo de aplicaciones** > **Crear solicitud de borrado**.<br>
    Se muestra el panel **Crear solicitud de borrado**.
 3. Haga clic en **Seleccionar usuario**, elija el usuario cuyos datos de aplicación quiere borrar y haga clic en **Seleccionar** en la parte inferior del panel **Seleccionar usuario**.

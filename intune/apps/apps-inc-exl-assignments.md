@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: efc712840a75e533e85ea8c930e2b2ac5aaf119e
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563979"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181745"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
 
@@ -55,7 +55,7 @@ Como resultado, no se recomienda asignar aplicaciones a grupos mixtos.
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Inclusión y exclusión de grupos al asignar aplicaciones 
 Para asignar una aplicación a grupos mediante la asignación de inclusión y exclusión, siga estos pasos:
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones**. Se muestra la lista de aplicaciones agregadas.
 3. Seleccione la aplicación que quiera asignar. Un panel muestra información sobre la aplicación. 
 4. En la sección **Administrar** del menú, seleccione **Asignaciones**. 

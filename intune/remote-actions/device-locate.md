@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc276a6235fb4951c83b62e3c488145062814728
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7285ba1d8df5b53411bf6462fc165beeee66172f
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415579"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782216"
 ---
 # <a name="locate-lost-or-stolen-iosipados-devices-with-intune"></a>Búsqueda de dispositivos iOS/iPadOS perdidos o robados con Intune
 
@@ -41,7 +41,7 @@ Esta característica no se admite en los siguientes sistemas:
 
 ## <a name="locate-a-lost-or-stolen-device"></a>Búsqueda de un dispositivo perdido o robado
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
 4. En la lista de dispositivos que administra, seleccione un dispositivo iOS/iPadOS y seleccione **Más...** . Luego, elija la acción remota **Buscar dispositivo**.
 5. Al encontrar el dispositivo, su ubicación se mostrará en **Buscar dispositivo**.

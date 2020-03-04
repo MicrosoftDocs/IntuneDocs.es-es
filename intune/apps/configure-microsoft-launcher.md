@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0145a17434d8b309806f468bf066d54ae117144
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: 55f76b0c5c71f7828fed17233c2b81d6b066cc3b
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155367"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216110"
 ---
 # <a name="configure-microsoft-launcher"></a>Configuración de Microsoft Launcher
 
@@ -33,7 +33,7 @@ En dispositivos Android Enterprise totalmente administrados, Launcher permite a 
 
 ## <a name="how-to-configure-the-microsoft-launcher-app"></a>Cómo configurar la aplicación Microsoft Launcher 
 
-Vaya al [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** . Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Microsoft Launcher** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Microsoft Launcher. 
+Vaya al [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Aplicaciones** > **Directivas de configuración de aplicaciones** . Agregue una directiva de configuración para **Dispositivos administrados** que se ejecutan en **Android** y elija **Microsoft Launcher** como la aplicación asociada. Haga clic en **Opciones de configuración** para configurar las distintas opciones disponibles de Microsoft Launcher. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Selección de un formato de opciones de configuración 
 

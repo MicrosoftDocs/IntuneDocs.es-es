@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754565"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652409"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Adición de la configuración de Wi-Fi en Microsoft Intune para dispositivos que ejecutan Android
 
@@ -39,13 +39,13 @@ Ambas se describen en este artículo.
 ## <a name="basic"></a>Básico
 
 - **Tipo de Wi-Fi**: Elija **Básica**.
-- **SSID**: escriba el **identificador de red**, que es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Sin embargo, los usuarios solo ven el **nombre de red** que ha configurado al elegir la conexión.
+- **SSID**: escriba el **identificador de conjunto de servicios**, que es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Sin embargo, los usuarios solo ven el **nombre de red** que ha configurado al elegir la conexión.
 - **Red oculta**: elija **Habilitar** para ocultar esta red en la lista de redes disponibles en el dispositivo. No se difunde el SSID. Elija **Deshabilitar** para mostrar esta red en la lista de redes disponibles en el dispositivo.
 
 ## <a name="enterprise"></a>Enterprise
 
 - **Tipo de Wi-Fi**: elija **Empresa**.
-- **SSID**: escriba el **identificador de red**, que es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Sin embargo, los usuarios solo ven el **nombre de red** que ha configurado al elegir la conexión.
+- **SSID**: escriba el **identificador de conjunto de servicios**, que es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Sin embargo, los usuarios solo ven el **nombre de red** que ha configurado al elegir la conexión.
 - **Red oculta**: elija **Habilitar** para ocultar esta red en la lista de redes disponibles en el dispositivo. No se difunde el SSID. Elija **Deshabilitar** para mostrar esta red en la lista de redes disponibles en el dispositivo.
 - **Tipo de EAP**: elija el tipo Protocolo de autenticación extensible (EAP) que se usa para autenticar conexiones inalámbricas seguras. Las opciones son:
 
@@ -56,19 +56,6 @@ Ambas se describen en este artículo.
     - **Autenticación de cliente** - **Certificado cliente para la autenticación del cliente (certificado de identidad)** : elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
 
     - **Privacidad de identidad (identidad externa)** : escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
-
-    - **Configuración del proxy**: especifique la configuración de proxy usada por la organización. Las opciones son:
-
-      - **Ninguno**: no se usa ningún servidor proxy.
-      - **Automático**: seleccione esta opción para que el valor *URL del servidor proxy* esté disponible, ya que se usa para especificar el servidor proxy o un archivo de configuración automática de proxy (PAC) que contiene una lista de los servidores proxy.
-
-    - **URL del servidor proxy**: esta opción está disponible cuando se establece *Configuración del proxy* en *Automático*. Especifique una de las siguientes opciones para dirigir los dispositivos al servidor proxy:
-
-      - Dirección IP. Por ejemplo, `10.0.0.11`.
-      - Dirección URL. Por ejemplo, `http://proxyserver.contoso.com`.
-      - La dirección URL de un archivo de configuración automática de proxy (PAC). Por ejemplo: `http://proxy.contoso.com/proxy.pac`.
-
-      Para obtener más información sobre los archivos PAC, vea [Archivo de configuración automática de proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file), aunque tenga en cuenta que este sitio no pertenece a Microsoft.
 
   - **EAP-TTLS**: Indique también:
 
@@ -88,19 +75,6 @@ Ambas se describen en este artículo.
 
       - **Privacidad de identidad (identidad externa)** : escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
 
-    - **Configuración del proxy**: especifique la configuración de proxy usada por la organización. Las opciones son:
-
-      - **Ninguno**: no se usa ningún servidor proxy.
-      - **Automático**: seleccione esta opción para que el valor *URL del servidor proxy* esté disponible, ya que se usa para especificar el servidor proxy o un archivo de configuración automática de proxy (PAC) que contiene una lista de los servidores proxy.
-
-    - **URL del servidor proxy**: esta opción está disponible cuando se establece *Configuración del proxy* en *Automático*. Especifique una de las siguientes opciones para dirigir los dispositivos al servidor proxy:
-
-      - Dirección IP. Por ejemplo, `10.0.0.11`.
-      - Dirección URL. Por ejemplo, `http://proxyserver.contoso.com`.
-      - La dirección URL de un archivo de configuración automática de proxy (PAC). Por ejemplo: `http://proxy.contoso.com/proxy.pac`.
-
-      Para obtener más información sobre los archivos PAC, vea [Archivo de configuración automática de proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file), aunque tenga en cuenta que este sitio no pertenece a Microsoft.
-
   - **PEAP**: Indique también:
 
     - **Confianza del servidor** - **Certificado raíz para validación del servidor**: elija un perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red. Autentica la conexión.
@@ -116,19 +90,6 @@ Ambas se describen en este artículo.
       - **Certificados**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
 
       - **Privacidad de identidad (identidad externa)** : escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
-
-      - **Configuración del proxy**: especifique la configuración de proxy usada por la organización. Las opciones son:
-
-        - **Ninguno**: no se usa ningún servidor proxy.
-        - **Automático**: seleccione esta opción para que el valor *URL del servidor proxy* esté disponible, ya que se usa para especificar el servidor proxy o un archivo de configuración automática de proxy (PAC) que contiene una lista de los servidores proxy.
-
-      - **URL del servidor proxy**: esta opción está disponible cuando se establece *Configuración del proxy* en *Automático*. Especifique una de las siguientes opciones para dirigir los dispositivos al servidor proxy:
-
-        - Dirección IP. Por ejemplo, `10.0.0.11`.
-        - Dirección URL. Por ejemplo, `http://proxyserver.contoso.com`.
-        - La dirección URL de un archivo de configuración automática de proxy (PAC). Por ejemplo: `http://proxy.contoso.com/proxy.pac`.
-
-        Para obtener más información sobre los archivos PAC, vea [Archivo de configuración automática de proxy (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file), aunque tenga en cuenta que este sitio no pertenece a Microsoft.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

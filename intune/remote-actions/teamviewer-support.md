@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812b2e40c32b1442e632739c3964eb57027e6d9e
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: fede9e67e77804ca293bbe9889d5a6623e4ea90c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413727"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781128"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Uso de TeamViewer para administrar dispositivos de Intune de forma remota
 
@@ -47,7 +47,7 @@ Al usar TeamViewer, permite que el conector de TeamViewer para Intune cree sesio
 
 Para proporcionar asistencia remota a los dispositivos, configure el conector de TeamViewer para Intune siguiendo estos pasos:
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Administración de inquilinos** > **Conectores y tokens** > **Conector de TeamViewer**.
 3. Seleccione **Conectar** y acepte el contrato de licencia.
 4. Seleccione **Inicie sesión en TeamViewer para autorizar**.
@@ -57,7 +57,7 @@ Para proporcionar asistencia remota a los dispositivos, configure el conector de
 
 Una vez configurado el conector, estará listo para administrar un dispositivo de forma remota. Use los pasos siguientes: 
 
-1. Vaya al [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Vaya al [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
 3. En la lista, seleccione el dispositivo que quiere administrar de forma remota> **...**  > **Nueva sesión de Asistencia remota**.
 4. Cuando Intune se conecte al servicio TeamViewer, verá información sobre el dispositivo. Elija **Conectar** para iniciar la sesión remota.

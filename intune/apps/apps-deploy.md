@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: b3d29dce9b12a18e5d0f77cd7f9ecac07b3aefee
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77511871"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781230"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -55,7 +55,7 @@ En esta tabla se muestran las diversas opciones para asignar aplicaciones a usua
 
 ## <a name="assign-an-app"></a>Asignación de una aplicación
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Aplicaciones** > **Todas las aplicaciones**.
 3. En el panel **Aplicaciones**, seleccione la aplicación que quiere asignar.
 4. En la sección **Administrar** del menú, seleccione **Asignaciones**.

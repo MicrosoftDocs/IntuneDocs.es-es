@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52c8d10f0b8d06d68d75450c3d708f910bc5ddd4
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7650230e419a639adfe02cd6c01f6170a4eb878b
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415042"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181858"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adición de directivas de configuración de aplicaciones para dispositivos Android Enterprise administrados
 
@@ -34,7 +34,7 @@ Las directivas de configuración de aplicaciones en Microsoft Intune proporcion
 > [!NOTE]  
 > No todas las aplicaciones admiten la configuración de aplicaciones. Póngase en contacto con el desarrollador de la aplicación para comprobar si la aplicación admite directivas de configuración de aplicaciones.
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Elija **Aplicaciones** > **Directivas de configuración de aplicaciones** > **Agregar** > **Dispositivos administrados**. Observe que puede elegir entre **Dispositivos administrados** y **Aplicaciones administradas**. Para más información, consulte [Aplicaciones que admiten la configuración de aplicaciones](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
 3. En la página **Aspectos básicos**, establezca los detalles siguientes:
     - **Nombre**: nombre del perfil que aparece en Azure Portal.

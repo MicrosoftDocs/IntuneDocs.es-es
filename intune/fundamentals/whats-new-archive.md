@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886765"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181827"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novedades de Microsoft Intune: meses anteriores
 
@@ -187,7 +187,7 @@ La inscripción en Intune y el Portal de empresa ahora admiten las versiones de 
 Al cambiar el nombre de un dispositivo Windows, se deben seguir reglas nuevas:
 - 15 caracteres o menos (debe ser menor o igual que 63 bytes, sin incluir el valor NULL final).
 - No puede ser una cadena nula o vacía.
-- Caracteres ASCII permitidos: letras (a-z, A-Z), números (0-9) y guiones
+- Caracteres ASCII permitidos: letras (a-z, A-Z), números (0-9) y guiones.
 - Caracteres Unicode permitidos: caracteres >=0x80, debe tener un formato UTF8 válido, debe ser asignable mediante IDN (es decir, el proceso RtlIdnToNameprepUnicode debe finalizar correctamente. Consulte el documento RFC 3492).
 - El nombre no debe contener números exclusivamente.
 - El nombre no debe contener espacios.
@@ -341,7 +341,7 @@ En Intune, puede crear directivas para ejecutar dispositivos iOS supervisados co
 
 En esta actualización, hay nuevas opciones de configuración que puede controlar:
 - **Control de voz**: Habilita el control de voz en el dispositivo mientras se encuentra en pantalla completa.
-- **Modificación del control de voz**: permite a los usuarios cambiar el valor Control de voz en el dispositivo en pantalla completa.
+- **Modificación del control de voz**: Permite a los usuarios cambiar el ajuste del control de voz del dispositivo mientras se encuentra en pantalla completa.
 
 Para ver la configuración actual, vaya a los [parámetros de pantalla completa de iOS](../configuration/device-restrictions-ios.md#kiosk).
 
@@ -407,7 +407,7 @@ Se aplica a:
 ### <a name="device-enrollment"></a>Inscripción de dispositivos
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>Los nuevos inquilinos desaparecerán de forma predeterminada de la administración del administrador de dispositivos de Android.<!-- 4869790   -->
-Las funcionalidades del administrador de dispositivos de Android se han sustituido por Android Enterprise. Por lo tanto, se recomienda usar Android Enterprise para nuevas inscripciones. En una actualización futura, los nuevos inquilinos van a tener que seguir los siguientes pasos de requisitos previos en la inscripción de Android para usar administración de administrador de dispositivos: **Intune** > **Inscripción de dispositivos** > **Inscripción de Android** > **Personal and corporate-owned devices with device administration privileges** (Use device administrator to manage devices) > **Use el administrador de dispositivos para administrar los dispositivos**.
+Las funcionalidades del administrador de dispositivos de Android se han sustituido por Android Enterprise. Por lo tanto, se recomienda usar Android Enterprise para nuevas inscripciones. En una actualización futura, los nuevos inquilinos deberán completar los siguientes requisitos previos en la inscripción de Android para usar la administración del administrador de dispositivos: Vaya a **Intune** > **Inscripción de dispositivos** > **Inscripción de Android** > **Personal and corporate-owned devices with device administration privileges**(Dispositivos personales y corporativos con privilegios de administración de dispositivos) > **Use el administrador de dispositivos para administrar los dispositivos**.
 
 Los inquilinos existentes no experimentarán cambio alguno en sus entornos.
 
@@ -580,11 +580,11 @@ Puede crear perfiles para restringir configuraciones en dispositivos que ejecuta
 
 - En **iOS** > **Restricciones de dispositivos**, hay algunos cambios:
 
-  - **Aplicaciones integradas** > **Buscar mi iPhone (solo supervisado)** : nueva opción que bloquea esta característica en la aplicación Buscar mi iPhone. 
-  - **Aplicaciones integradas** > **Buscar a mis amigos (solo supervisado)** : nueva opción que bloquea esta característica en la aplicación Buscar a mis amigos. 
-  - **Inalámbrica** > **Modificación del estado de Wi-Fi (solo supervisado)** : nueva opción que impide que los usuarios activen o desactiven la conexión Wi-Fi en el dispositivo.
-  - **Teclado y diccionario** > **QuickPath (solo supervisado)** : nueva opción que bloquea la característica QuickPath.
-  - **Nube y almacenamiento**: **Continuación de la actividad** ha cambiado de nombre a **Handoff**.
+  - **Aplicaciones integradas** > **Buscar mi iPhone (solo supervisado)** : nueva configuración que bloquea esta característica en la característica Buscar mi aplicación. 
+  - **Aplicaciones integradas** > **Find My Friends (solo supervisado)** : nueva configuración que bloquea esta característica en la característica Buscar mi aplicación. 
+  - **Inalámbrica** > **Modificación del estado de Wi-Fi (solo supervisado)** : nueva configuración que impide que los usuarios activen o desactiven la conexión Wi-Fi en el dispositivo.
+  - **Teclado y diccionario** > **QuickPath (solo supervisado)** : nueva configuración que bloquea la característica QuickPath.
+  - **Nube y almacenamiento**: **Continuación de la actividad** pasa a llamarse **Handoff**.
 
   Para ver la configuración actual, vaya a [Configuración de dispositivos iOS para permitir o restringir características mediante Intune](../configuration/device-restrictions-ios.md).
 
@@ -1444,7 +1444,7 @@ Para obtener una lista de estos valores, vea:
 
 - [Configuración de dispositivos con Windows 10 y versiones posteriores para ejecutarse como una pantalla completa](../configuration/kiosk-settings-windows.md)
 - [Restricciones de dispositivos del explorador Microsoft Edge](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [Favoritos y restricciones de búsqueda de dispositivos](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [Favoritos y restricciones de búsqueda de dispositivos](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 Se aplica a: Windows 10 y versiones posteriores
 
@@ -1639,7 +1639,7 @@ Al crear un perfil de configuración de dispositivos iOS, puede agregar la opci�
 En [Configuración para mostrar mensaje en la pantalla de bloqueo](../configuration/ios-device-features-settings.md#lock-screen-message), se muestra la configuración actual.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>Adición en dispositivos iOS de nuevo App Store, visualización de documentos y configuración de restricción de dispositivos de juego<!-- 2827760-->
-En **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **iOS** para plataforma > **Restricciones de dispositivo** para tipo de perfil > **App Store, visualización de documentos y juegos**, se han agregado las siguientes opciones de configuración: Permitir a las aplicaciones administradas escribir contactos en cuentas de contactos no administradas y Permitir a las aplicaciones no administradas leer en cuentas de contactos administradas. Para ver estas opciones, vaya a [Restricciones de dispositivos iOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
+En **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **iOS** para la plataforma y **Restricciones de dispositivo** para el tipo de perfil, en **App Store, visualización de documentos y juegos**, se han agregado las siguientes opciones de configuración: Permitir a las aplicaciones administradas escribir contactos en cuentas de contactos no administradas y Permitir a las aplicaciones no administradas leer en cuentas de contactos administradas. Para ver estas opciones de configuración, vaya a [Restricciones de dispositivos iOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Nueva configuración de notificaciones, sugerencias y bloqueo del teclado para dispositivos de propietarios de dispositivos Android Enterprise<!-- 3201839 3201843 -->
 Esta actualización incluye varias características de los dispositivos Android Enterprise cuando se ejecutan como propietario del dispositivo. Para usar estas características, vaya a **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > en **Plataforma**, elija **Android Enterprise** > en **Tipo de perfil**, elija **Solo el propietario del dispositivo** > **Restricciones de dispositivos**.
@@ -1702,7 +1702,7 @@ La configuración **Compartir contacto a través de Bluetooth** no es compatible
 
 Para ver la lista actual de configuraciones, vaya a [Configuración de dispositivos Android Enterprise para permitir o restringir características](../configuration/device-restrictions-android-for-work.md).
 
-Se aplica a: propietario de dispositivo Android Enterprise
+Se aplica a: Propietario del dispositivo Android Enterprise
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -1850,9 +1850,9 @@ Esta actualización incluye nuevas configuraciones para los dispositivos iOS y M
 - Contraseña: bloquear el uso compartido de contraseñas (solo supervisado)
 
 **Configuración de macOS**: 
-- Contraseña: impedir el relleno automático de contraseñas
+- Contraseña: bloquear el relleno automático de contraseñas
 - Contraseña: bloquear las solicitudes de proximidad de contraseñas
-- Contraseña: impedir el uso compartido de contraseñas
+- Contraseña: bloquear el uso compartido de contraseñas
 
 Para más información sobre estas configuraciones, consulte la configuración de restricciones de dispositivos [iOS](../configuration/device-restrictions-ios.md) y [macOS](../configuration/device-restrictions-macos.md).
 

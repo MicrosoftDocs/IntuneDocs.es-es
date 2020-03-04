@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886804"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181728"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Administración de actualizaciones de software de Windows 10 en Intune
 
@@ -77,14 +77,14 @@ Los anillos de actualización de Windows 10 admiten las [etiquetas de ámbito](
 
 ### <a name="create-and-assign-update-rings"></a>Crear y asignar anillos de actualización
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft]( https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Seleccione **Dispositivos** > **Windows** > **Anillos de actualización de Windows 10** > **Crear**.
 
 3. En la pestaña *Datos básicos*, indique un nombre, una descripción (opcional) y, después, seleccione **Siguiente**.
-  ![Creación de un anillo de actualización]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. En **Configuración del anillo de actualización**, configure los valores según sus necesidades empresariales. Para información sobre la configuración disponible, consulte Configuración de Windows Update. Después de configurar las opciones *Actualizar y Experiencia del usuario*, seleccione **Siguiente**.
+  ![Creación de un anillo de actualización](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. En **Configuración del anillo de actualización**, configure los valores según sus necesidades empresariales. Para información sobre la configuración disponible, consulte [Configuración de Windows Update](../protect/windows-update-settings.md). Después de configurar las opciones *Actualizar y Experiencia del usuario*, seleccione **Siguiente**.
 
 5. En **Etiquetas de ámbito**, seleccione **+ Seleccionar etiquetas de ámbito** para abrir el panel *Seleccionar etiquetas* si quiere aplicarlas al anillo de actualización. Elija una o más etiquetas y, después, haga clic en **Seleccionar** para agregarlas al anillo de actualización y volver al panel *Etiqueta de ámbito*.
 
@@ -224,7 +224,7 @@ Deben cumplirse los requisitos previos siguientes para usar las actualizaciones 
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Creación y asignación de actualizaciones de características de Windows 10
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Seleccione **Dispositivos** > **Windows** > **Actualizaciones de características de Windows 10** > **Crear**.
 

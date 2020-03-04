@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 662c60b8eb5295997f3c37a02ea23771cf1abaa9
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513731"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781308"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -44,7 +44,7 @@ Para obtener información acerca de cómo agregar aplicaciones de línea de nego
 Cuando se crea una directiva de protección de aplicaciones para aplicaciones de iOS/iPadOS y Android, se lleva a cabo un moderno flujo de proceso de Intune que da como resultado una directiva de protección de aplicaciones nueva.
 
 ### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Crear una directiva de protección de aplicaciones para aplicaciones de iOS/iPadOS o Android
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. En el portal de Intune, elija **Aplicaciones** > **Directivas de protección de aplicaciones**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
 3. Seleccione **Crear directiva** y, luego, **iOS/iPadOS** o **Android**. Se abre el panel **Crear directiva**.
 4. En la página **Datos básicos**, agregue los siguientes valores:
