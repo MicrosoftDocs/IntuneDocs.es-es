@@ -161,6 +161,8 @@
             - name: Introducción general a las directivas de protección de aplicaciones
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: Marco de protección de datos mediante APP
+              href: app-protection-framework.md
             - name: Creación de directivas de protección de aplicaciones
               items:
                 - name: Configuración general
