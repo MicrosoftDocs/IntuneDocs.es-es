@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,24 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
+ms.openlocfilehash: 900858d9c437f2d2662260ca62534a987446d2b2
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075712"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782130"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Creación de una directiva de protección de aplicaciones de Mobile Threat Defense con Intune
 
 Intune con Mobile Threat Defense (MTD) le ayuda a detectar amenazas y a evaluar el riesgo en dispositivos móviles. Puede crear una directiva de protección de aplicaciones de Intune que evalúe el riesgo para determinar si el dispositivo puede acceder a los datos corporativos o no.
 
-
 > [!NOTE]
 > Este artículo se aplica a todos los asociados de Mobile Threat Defense que admiten directivas de protección de aplicaciones:
 >
-> - Better Mobile (Android)
-> - Zimperium (Android, iOS)
-> - Lookout for Work (Android, iOS).
+> - Better Mobile (Android, iOS/iPadOS)
+> - Zimperium (Android, iOS/iPadOS)
+> - Lookout for Work (Android, iOS/iPadOS)
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -49,7 +48,7 @@ Requisitos previos de la directiva de protección de aplicaciones con MTD:
 
 Use el procedimiento para [crear una directiva de protección de aplicaciones para iOS/iPadOS o Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps) y use la siguiente información en las páginas *Aplicaciones*, *Inicio condicional* y *Asignaciones*:
 
-- **Aplicaciones**: Seleccione las aplicaciones a las que quiere que se apliquen las directivas de protección de aplicaciones. Para este conjunto de características, estas aplicaciones se bloquearán o borrarán de forma selectiva en función de la evaluación de riesgos del dispositivo del proveedor de Mobile Threat Defense elegido. 
+- **Aplicaciones**: Seleccione las aplicaciones a las que quiere que se apliquen las directivas de protección de aplicaciones. En este conjunto de características, estas aplicaciones se bloquean o se borran de forma selectiva en función de la evaluación de riesgos del dispositivo del proveedor de Mobile Threat Defense elegido.
 - **Inicio condicional**:  Bajo *Condiciones del dispositivo*, use el cuadro desplegable para seleccionar el **Nivel máximo de amenazas de dispositivo permitido**.
 
   Opciones para el **Valor** del nivel de amenaza:
@@ -57,7 +56,7 @@ Use el procedimiento para [crear una directiva de protección de aplicaciones pa
   - **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
   - **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
   - **Media**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
-  - **Alta**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
+  - **Alta**: este nivel es el menor seguro, ya que permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
 
   Opciones para **Acción**:
 
@@ -66,7 +65,6 @@ Use el procedimiento para [crear una directiva de protección de aplicaciones pa
 
 - **Asignaciones**: Asigne la directiva a los grupos de usuarios.  Los dispositivos que utilicen los miembros de los grupos se evaluarán para determinar su acceso a los datos corporativos en las aplicaciones de destino a través de la protección de aplicaciones de Intune.
 
-
-## <a name="next-steps"></a>Pasos siguientes  
+## <a name="next-steps"></a>Pasos siguientes
 
 - Más información sobre [Mobile Threat Defense ](~/protect/mobile-threat-defense.md) en Microsoft Intune.

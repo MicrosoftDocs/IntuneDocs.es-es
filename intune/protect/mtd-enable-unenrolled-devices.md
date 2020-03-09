@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 25d7c357c0ea313891f80433f33cd4ac57cfad2c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545945"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782085"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Habilitación del conector Mobile Threat Defense en Intune para dispositivos no inscritos
 
 Durante la configuración de Mobile Threat Defense (MTD), ha configurado una directiva para clasificar amenazas en la consola del asociado de MTD y ha creado la directiva de protección de aplicaciones en Intune. Si ya ha configurado el conector de Intune en la consola del asociado de MTD, ya puede habilitar la conexión de MTD para las aplicaciones de asociados de MTD.
 
 > [!NOTE]
-> Este artículo se aplica a todos los asociados de Mobile Threat Defense que admiten directivas de protección de aplicaciones: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
+> Este artículo se aplica a todos los asociados de Mobile Threat Defense que admiten directivas de protección de aplicaciones:
+>
+> - Better Mobile (Android, iOS/iPadOS)
+> - Zimperium (Android, iOS/iPadOS)
+> - Lookout for Work (Android, iOS/iPadOS)
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>Directivas de acceso condicional clásicas para aplicaciones de MTD
 
@@ -52,7 +56,7 @@ Para ver las directivas de acceso condicional clásicas, en [Azure](https://port
 
 ## <a name="to-enable-the-mtd-connector"></a>Para habilitar el conector de MTD
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Seleccione **Administración de inquilinos** > **Conectores y tokens** > **Mobile Threat Defense**.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
-ms.translationtype: MTE75
+ms.openlocfilehash: a46532467f8de7caf8cc88fe60e7a5cbc10ba147
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075797"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256533"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Configuración de líneas de base de seguridad de MDM para Windows para Intune
 
@@ -97,7 +97,7 @@ Para más información, vea [Policy CSP - ApplicationManagement](https://docs.mi
 
   - *Si habilita esta configuración de directiva*, los privilegios se extenderán a todos los programas. Normalmente, estos privilegios se reservan para los programas que están asignados al usuario (ofrecidos en el escritorio), asignados al equipo (instalados automáticamente) o a los que se puede tener acceso por medio de Agregar o quitar programas en el Panel de control. Esta configuración de directiva permite a los usuarios instalar programas que requieren acceso a directorios en los que el usuario podría no tener permiso de visualización o modificación, incluidos los directorios de equipos con restricción alta.
 
-  - *Si deshabilita o no establece esta configuración de directiva*, el sistema aplicará los permisos del usuario actual al instalar programas que un administrador del sistema no distribuya u ofrezca. Nota: Esta configuración de directiva aparece en las carpetas Configuración del equipo y Configuración de usuario. Para activar esta configuración de directiva, debe habilitarla en las dos carpetas. Precaución: Los usuarios experimentados pueden aprovechar los permisos de esta configuración de directiva para modificar sus privilegios y obtener acceso permanente a carpetas y archivos de uso restringido. No se garantiza que la versión de Configuración de usuario de esta configuración de directiva sea segura.  
+  - *Si deshabilita o no establece esta configuración de directiva*, el sistema aplicará los permisos del usuario actual al instalar programas que un administrador del sistema no distribuya u ofrezca. Nota: Esta configuración de directiva aparece en las carpetas Configuración del equipo y Configuración de usuario. Para activar esta configuración de directiva, debe habilitarla en las dos carpetas. Atención: Los usuarios experimentados pueden aprovechar los permisos que concede esta configuración de directiva para modificar sus privilegios y obtener acceso permanente a carpetas y archivos restringidos. No se garantiza que la versión de Configuración de usuario de esta configuración de directiva sea segura.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067134).
 
   **Valor predeterminado**: Sí
@@ -231,7 +231,7 @@ Para más información, vea [Policy CSP - Connectivity](https://docs.microsoft.c
   Esta configuración de directiva establece un acceso seguro a las rutas de acceso UNC. Si habilita esta directiva, Windows solo permitirá el acceso a las rutas de acceso UNC especificadas, una vez satisfechos los requisitos de seguridad adicionales.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067243).
 
-  **Valor predeterminado**: Configurar Windows para permitir el acceso solo a las rutas de acceso UNC especificadas una vez satisfechos los requisitos de seguridad adicionales.
+  **Valor predeterminado**: configurar Windows para permitir el acceso solo a las rutas de acceso UNC especificadas una vez satisfechos los requisitos de seguridad adicionales.
 
   Cuando está seleccionado *Configurar Windows para permitir el acceso solo a las rutas de acceso UNC especificadas una vez satisfechos los requisitos de seguridad adicionales*, puede configurar la *lista de rutas de acceso UNC protegidas*.
 
@@ -291,7 +291,7 @@ Para más información, vea [Policy CSP - DeviceGuard](https://docs.microsoft.co
 ::: zone pivot="mdm-may-2019"
 
 - **Seguridad basada en la virtualización**:  
-  **Valor predeterminado**: Habilitar VBS con arranque seguro
+  **Valor predeterminado**: habilitar VBS con arranque seguro
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -364,7 +364,7 @@ Para más información, vea [Policy CSP - DeviceLock](https://docs.microsoft.com
   Cuando *Requerir contraseña* está establecido en *Sí*, las siguientes opciones están disponibles.
 
   - **Número mínimo de conjuntos de caracteres de contraseña**:  
-    El número de elementos complejos (letras mayúsculas y minúsculas, números y signos de puntuación) necesarios para una contraseña o PIN fuerte. El PIN aplica el comportamiento siguiente para los dispositivos móviles y de escritorios: 1 - Solo dígitos 2 - Se requieren dígitos y letras minúsculas 3 - Se requieren dígitos, letras minúsculas y letras mayúsculas. No se admite en cuentas de Microsoft de escritorio y cuentas de dominio. 4 - Se requieren dígitos, letras minúsculas, letras mayúsculas y caracteres especiales. No se admite en el escritorio. El valor predeterminado es 1.  
+    El número de elementos complejos (letras mayúsculas y minúsculas, números y signos de puntuación) necesarios para una contraseña o PIN fuerte. El PIN aplica el comportamiento siguiente para los dispositivos móviles y de escritorios: 1 - Solo dígitos 2 - Se requieren dígitos y letras minúsculas 3 - Se requieren dígitos, letras minúsculas y letras mayúsculas. No se admite en cuentas de Microsoft de escritorio y cuentas de dominio. 4 - Se requieren dígitos, letras minúsculas, letras mayúsculas y caracteres especiales. No se admite en el escritorio.  
     [Más información](https://go.microsoft.com/fwlink/?linkid=2067055).
 
     **Valor predeterminado**: 3
@@ -722,7 +722,7 @@ Para más información, vea [Policy CSP - InternetExplorer](https://docs.microso
   Esta configuración de directiva le permite desactivar la compatibilidad con la seguridad de la capa de transporte (TLS) 1.0, TLS 1.1, TLS 1.2, capa de sockets seguros (SSL) 2.0 o SSL 3.0 en el explorador. TLS y SSL son protocolos que ayudan a proteger la comunicación entre el explorador y el servidor de destino. Cuando el explorador intenta establecer una comunicación protegida con el servidor de destino, el explorador y el servidor negocian qué protocolo y versión usar. El explorador y el servidor intentan hacer coincidir la lista de protocolos y versiones compatibles entre sí y seleccionan la coincidencia preferida. Si habilita esta configuración de directiva, el explorador negocia o no un túnel de cifrado mediante los métodos de cifrado que seleccione en la lista desplegable. Si deshabilita o no establece esta configuración de directiva, el usuario puede seleccionar el método de cifrado que admite el explorador.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067057).
 
-  **Valor predeterminado**: 2 elementos, TLS v1.1 y TLS v1.2  
+  **Valor predeterminado**: 2 elementos:  TLS v1.1 y TLS v1.2  
   *Seleccione la flecha abajo para mostrar las opciones que puede seleccionar para esta configuración.*
 
 ::: zone-end
@@ -1366,9 +1366,9 @@ Para más información, vea [Policy CSP - LocalPoliciesSecurityOptions](https://
 
   - *Enviar solo respuesta NTLMv2*: los clientes usan solo la autenticación NTLMv2 y usan la seguridad de sesión NTLMv2 si el servidor la admite; los controladores de dominio aceptan la autenticación LM, NTLM y NTLMv2.
 
-  - *Enviar solo respuesta NTLMv2 y rechazar LM*: los clientes usan solo la autenticación NTLMv2 y usan la seguridad de sesión NTLMv2 si el servidor la admite. Los controladores de dominio rechazan LM (solo aceptan la autenticación NTLM y NTLMv2).
+  - *Enviar solo respuesta NTLMv2 y rechazar LM*: los clientes usan solo la autenticación NTLMv2 y la seguridad de sesión NTLMv2 si el servidor la admite. Los controladores de dominio rechazan LM (solo aceptan la autenticación NTLM y NTLMv2).
 
-  - *Enviar solo respuesta NTLMv2 y rechazar LM y NTLM*: los clientes usan solo la autenticación NTLMv2 y usan la seguridad de sesión NTLMv2 si el servidor la admite. Los controladores de dominio rechazan LM y NTLM (solo aceptan la autenticación NTLMv2).
+  - *Enviar solo respuesta NTLMv2 y rechazar LM y NTLM*: los clientes usan solo la autenticación NTLMv2 y la seguridad de sesión NTLMv2 si el servidor la admite. Los controladores de dominio rechazan LM y NTLM (solo aceptan la autenticación NTLMv2).
 
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067189).
 
@@ -1779,10 +1779,10 @@ Para más información, vea [Policy CSP - RemoteAssistance](https://docs.microso
 
   - *Si no establece esta configuración de directiva*, los usuarios podrán activar o desactivar la asistencia remota solicitada en la opción Propiedades del sistema del Panel de control. Asimismo, podrán configurar los valores de Asistencia remota.
 
-  Si habilita esta configuración de directiva, tiene dos formas de permitir que los ayudantes presten Asistencia remota: "Permitir que los ayudantes solo vean el equipo" o "Permitir que los ayudantes controlen el equipo de forma remota". La configuración de directiva "Validez máxima del vale" establece un límite respecto a la cantidad de tiempo que puede permanecer abierta una invitación de Asistencia remota creada mediante el correo electrónico o la transferencia de archivos. La configuración "Seleccionar método para enviar invitaciones por correo electrónico" especifica el estándar de correo electrónico que se va a usar para enviar invitaciones de Asistencia remota. Según el programa de correo electrónico, puede usar el estándar *Mailto* (el destinatario de la invitación se conecta a través de un vínculo de Internet) o el estándar SMAPI (Simple MAPI, la invitación se adjunta al mensaje de correo electrónico). Esta configuración de directiva no está disponible en Windows Vista, dado que SMAPI es el único método admitido. Si habilita esta configuración de directiva, también debe habilitar las excepciones apropiadas del firewall para permitir las comunicaciones de Asistencia remota.  
+  Si habilita esta configuración de directiva, tiene dos maneras de permitir que las aplicaciones auxiliares proporcionen asistencia remota: "Permitir que los ayudantes solo vean el equipo" o "Permitir que los ayudantes controlen el equipo de forma remota". La configuración de directiva "Validez máxima del vale" establece un límite respecto a la cantidad de tiempo que puede permanecer abierta una invitación de Asistencia remota creada mediante el correo electrónico o la transferencia de archivos. La configuración "Seleccionar método para enviar invitaciones por correo electrónico" especifica el estándar de correo electrónico que se va a usar para enviar invitaciones de Asistencia remota. Según el programa de correo electrónico, puede usar el estándar *Mailto* (el destinatario de la invitación se conecta a través de un vínculo de Internet) o el estándar SMAPI (Simple MAPI, la invitación se adjunta al mensaje de correo electrónico). Esta configuración de directiva no está disponible en Windows Vista, dado que SMAPI es el único método admitido. Si habilita esta configuración de directiva, también debe habilitar las excepciones apropiadas del firewall para permitir las comunicaciones de Asistencia remota.  
   [Más información](https://go.microsoft.com/fwlink/?linkid=2067198).
 
-  **Valor predeterminado**: Deshabilitar Asistencia remota
+  **Valor predeterminado**: deshabilitar Asistencia remota
 
   Si se establece en *Habilitar Asistencia remota*, configure las siguientes opciones adicionales:
 
@@ -1793,10 +1793,10 @@ Para más información, vea [Policy CSP - RemoteAssistance](https://docs.microso
     **Valor predeterminado**: *No configurado*.
 
   - **Período máximo de tiempo de vale**:  
-    **Valor predeterminado**: minutos
+    **Valor predeterminado**: Minutos
 
   - **Método de invitación por correo electrónico**:  
-    **Valor predeterminado**: Simple MAPI
+    **Valor predeterminado**: MAPI simple
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
