@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ed343f652c4afe87273eeaa4a2e35b7669056d
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: d26721ff27f380917fec7f4d23c0c5524737a4a3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839245"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216166"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Descripción de los plazos de entrega de las directivas de protección de aplicaciones
 
@@ -38,6 +38,7 @@ La entrega de directivas de protección de aplicaciones depende del estado de la
 |    Inquilino no incorporado    |    Espere al próximo intervalo de reintento.  La protección de aplicaciones no está activa para el usuario.    |    24 horas    |    Se produce cuando no se ha configurado el inquilino de Intune.    |
 |    Usuario sin licencia     |    Espere al próximo intervalo de reintento.  La protección de aplicaciones no está activa para el usuario.     |    12 horas. En dispositivos Android, para este intervalo se necesita la versión 5.6.0 o posterior del SDK de la directiva de protección de aplicaciones (APP) de Intune. Si no, para los dispositivos Android el intervalo es de 24 horas.   |    Se produce cuando el usuario no tiene licencia para Intune.    |
 |    Usuario sin directivas de protección asignadas    |    Espere al próximo intervalo de reintento.  La protección de aplicaciones no está activa para el usuario.    |    12 horas        |    Se produce cuando no se ha asignado una configuración de directivas de protección de aplicaciones (APP) al usuario.    |
+|    Directivas de protección de aplicaciones asignadas por el usuario, pero la aplicación no está definida en las directivas de protección de aplicaciones   |    Espere al próximo intervalo de reintento.  La protección de aplicaciones no está activa para el usuario.    |    12 horas        |    Se produce cuando no se ha agregado la aplicación a Protección de aplicaciones.    |
 |    Usuario registrado correctamente para MAM de Intune    |    Se aplica la protección de aplicaciones según la configuración de la directiva.    Se realizan actualizaciones según el intervalo de reintento    |    Se define el servicio de Intune según la carga de usuarios.    Normalmente 30 minutos.     |    Se produce cuando el usuario se ha registrado correctamente con el servicio de Intune para la configuración de MAM.    |
 
 > [!NOTE]

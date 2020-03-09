@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: 1bc811bcac80f8321284ece8d3860efc7164a270
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886695"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256329"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Uso y administración de dispositivos Android Enterprise con OEMConfig en Microsoft Intune
 
@@ -78,7 +78,7 @@ Asegúrese de que el dispositivo admite OEMConfig, de que se ha agregado la apli
 
 ## <a name="create-an-oemconfig-profile"></a>Creación de un perfil de OEMConfig
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 
@@ -90,7 +90,7 @@ Asegúrese de que el dispositivo admite OEMConfig, de que se ha agregado la apli
 
     - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
     - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
-    - **Aplicación OEMConfig**: seleccione **Seleccionar una aplicación OEMConfig**.
+    - **Aplicación OEMConfig**: elija **Seleccionar una aplicación OEMConfig**.
 
 6. En **Aplicación asociada**, seleccione una aplicación OEMConfig existente que haya agregado previamente > **Seleccionar**. Asegúrese de elegir la aplicación OEMConfig correcta para los dispositivos a los que va a asignar la directiva.
 
@@ -161,7 +161,8 @@ En comparación con las aplicaciones estándar, las aplicaciones OEMConfig expan
 | Spectralink: dispositivo | com.spectralink.slnkdevicesettings  |  |
 | Spectralink: registro | com.spectralink.slnklogger |  |
 | Spectralink: VQO | com.spectralink.slnkvqo |  |
-| HMD Global | com.hmdglobal.app.oemconfig.ironman |  |
+| Seuic | com.seuic.seuicoemconfig | |
+| Unitech Electronics | com.unitech.oemconfig | |
 
 -----------------
 
@@ -169,6 +170,8 @@ Si existe una aplicación OEMConfig para el dispositivo, pero no aparece en la t
 
 > [!NOTE]
 > Las aplicaciones OEMConfig deben ser incorporadas por Intune para que se puedan configurar con perfiles de OEMConfig. Una vez que una aplicación se ha admitido, no es necesario ponerse en contacto con Microsoft al respecto de su configuración en el inquilino. Solo tiene que seguir las instrucciones que aparecerán en esta página.
+>
+> Si tiene una aplicación OEMConfig que se comporta de manera incorrecta, póngase en contacto con los desarrolladores de la aplicación. Intune no es responsable de los problemas técnicos de las aplicaciones OEMConfig individuales.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

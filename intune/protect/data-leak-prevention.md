@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 7f7a6203fcf641c41192eec8aaa0835939376d54
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514445"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575939"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Evitar fugas de datos en dispositivos no administrados con Microsoft Intune.
 
@@ -31,7 +31,7 @@ Si permite el acceso a datos corporativos hospedados en Office 365, puede contro
 
 Las directivas de protección de aplicaciones configuradas con Intune también funcionan en los dispositivos administrados con una solución de administración de dispositivos que no sea de Microsoft. Los datos personales del dispositivo no se modifican. Solo el departamento de TI administra los datos de la empresa. 
 
-Puede establecer directivas de protección de aplicaciones para aplicaciones móviles de Office en dispositivos que ejecutan Windows, iOS o Android para proteger los datos de la empresa. Estas directivas le permiten establecer directivas como el cifrado de datos de empresa o el PIN basado en aplicación, o bien opciones más avanzadas para restringir cómo usan los usuarios las acciones cortar, copiar, pegar y "Guardar como" entre aplicaciones administradas y aplicaciones no administradas. También puede borrar de forma remota datos corporativos sin requerir que los usuarios inscriban los dispositivos.
+Puede establecer directivas de protección de aplicaciones para aplicaciones móviles de Office en dispositivos que ejecutan Windows, iOS/iPadOS o Android para proteger los datos de la empresa. Estas directivas le permiten establecer directivas como el cifrado de datos de empresa o el PIN basado en aplicación, o bien opciones más avanzadas para restringir cómo usan los usuarios las acciones cortar, copiar, pegar y "Guardar como" entre aplicaciones administradas y aplicaciones no administradas. También puede borrar de forma remota datos corporativos sin requerir que los usuarios inscriban los dispositivos.
 
 Las directivas de protección de aplicaciones de Intune son independientes de la administración de dispositivos. Las directivas de protección de aplicaciones le permiten administrar aplicaciones móviles de Office en dispositivos no administrados y en dispositivos administrados por Intune, así como en dispositivos administrados por soluciones MDM que no sean de Microsoft.
 
@@ -42,7 +42,7 @@ Se puede aplicar el siguiente plan de acción si se cumplen los siguientes requi
 * Su empresa está preparada para pasar de forma segura a la nube.
 * Su empresa usa Office 365 Exchange Online, SharePoint Online, OneDrive para la Empresa o Yammer.
 * Su empresa tiene licencias de Microsoft 365, Enterprise Mobility + Security (EMS) o de Azure Information Protection.
-* Su empresa permite que los usuarios tengan acceso a datos corporativos desde dispositivos Android, iOS o Windows propiedad del usuario o de la empresa.
+* La empresa permite que los usuarios accedan a datos corporativos desde dispositivos Windows, iOS/iPadOS o Android personales o propiedad de la empresa.
 * Su empresa no quiere requerir la inscripción de dispositivos personales en un servicio de administración de dispositivos.
 
 ## <a name="action-plan"></a>Plan de acción

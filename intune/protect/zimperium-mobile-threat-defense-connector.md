@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 32ace832e44f1cb6d334f69a0c1f03cb41515b2f
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515244"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782046"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Zimperium con Intune
 
 Puede controlar el acceso desde dispositivos móviles a recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos efectuada por Zimperium, una solución de defensa contra amenazas móviles (MTD) integrada en Microsoft Intune. El riesgo se evalúa en función de la telemetría recopilada de los dispositivos que ejecutan la aplicación Zimperium.
 
-Puede configurar directivas de acceso condicional basadas en la evaluación de riesgos de Zimperium habilitada mediante las directivas de cumplimiento de dispositivos de Intune. La directiva de evaluación de riesgos puede permitir o bloquear el acceso de dispositivos no compatibles a recursos corporativos en función de las amenazas detectadas.
+Se pueden configurar directivas de acceso condicional según la evaluación de riesgos de Zimperium habilitada mediante las directivas de cumplimiento de dispositivos de Intune para dispositivos inscritos, que se pueden usar para permitir o bloquear dispositivos que no cumplan los requisitos y, así, evitar que accedan a recursos corporativos en función de las amenazas detectadas. En el caso de los dispositivos no inscritos, puede usar directivas de protección de aplicaciones para aplicar un bloqueo o un borrado selectivo en función de las amenazas detectadas.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y Zimperium a proteger los recursos de la empresa?
 
@@ -108,3 +108,5 @@ Detecte amenazas para la red, como **ataques de tipo Man-in-the-middle**, y evit
 - [Crear una directiva de cumplimiento de dispositivos de Zimperium](mtd-device-compliance-policy-create.md)
 
 - [Habilitar el conector MTD de Zimperium](mtd-connector-enable.md)
+
+- [Creación de una directiva de protección de aplicaciones de MTD](../protect/mtd-app-protection-policy.md)

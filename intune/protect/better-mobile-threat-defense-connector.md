@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a52636a140778f6e78bfe081cda40b36ef2354f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbab3aae2e38e1ce7d3c8c526b706d70e0cf2b2a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509643"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781213"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Better Mobile con Intune
 
 Puede controlar el acceso desde dispositivos móviles a recursos corporativos mediante el acceso condicional basado en la evaluación de riesgos efectuada por Better Mobile, una solución de Mobile Threat Defense (MTD) integrada en Microsoft Intune. El riesgo se evalúa en función de la telemetría recopilada de los dispositivos que ejecutan la aplicación Better Mobile.
 
-Se pueden configurar directivas de acceso condicional según la evaluación de riesgos de Better Mobile habilitada mediante las directivas de cumplimiento de dispositivos de Intune. Puede usar dichas directivas para permitir o bloquear dispositivos que no cumplan los requisitos y, así, evitar que accedan a recursos corporativos en función de las amenazas detectadas.
+Se pueden configurar directivas de acceso condicional según la evaluación de riesgos de Better Mobile habilitada mediante las directivas de cumplimiento de dispositivos de Intune para dispositivos inscritos, que se pueden usar para permitir o bloquear dispositivos que no cumplan los requisitos y, así, evitar que accedan a recursos corporativos en función de las amenazas detectadas. En el caso de los dispositivos no inscritos, puede usar directivas de protección de aplicaciones para aplicar un bloqueo o un borrado selectivo en función de las amenazas detectadas.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y Better Mobile a proteger los recursos de la empresa?
 
@@ -56,7 +56,7 @@ Cuando se detectan aplicaciones malintencionadas, como el malware, en los dispos
 
 ![Aplicaciones malintencionadas detectadas y acceso concedido](./media/better-mobile-threat-defense-connector/better_mobile_maliciousapps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>Control del acceso basado en amenazas a la red
+### <a name="control-access-based-on-threat-to-network"></a>Controlar el acceso basándose en amenazas en la red
 
 Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**, y proteja el acceso a las redes Wi-Fi según el riesgo del dispositivo.
 
@@ -68,7 +68,7 @@ Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**
 
 ![Imagen que muestra el acceso concedido tras la corrección](./media/better-mobile-threat-defense-connector/better_mobile_network_wifi_unblocked.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Control del acceso a SharePoint Online basado en amenazas a la red
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar el acceso a SharePoint Online basándose en amenazas en la red
 
 Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**, y evite la sincronización de archivos corporativos según el riesgo del dispositivo.
 
@@ -105,3 +105,5 @@ Detecte amenazas para la red, por ejemplo, ataques de tipo **Man in the middle**
 - [Create Better Mobile device compliance policy](mtd-device-compliance-policy-create.md) (Creación de la directiva de cumplimiento de dispositivos de Better Mobile)
 
 - [Enable Better Mobile MTD connector](mtd-connector-enable.md) (Habilitación del conector de MTD de Better Mobile)
+
+- [Creación de una directiva de protección de aplicaciones de MTD](mtd-app-protection-policy.md) 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: e2075ed8328e6a33732e03fbf521d32b2edd6a35
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912682"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575823"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -103,7 +103,7 @@ En esta tabla se indican los valores que se habilitan si una aplicación usa App
 |Bloquear captura de pantalla (solo Android)|X|X|
 |Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
 |Borrado completo de datos de aplicaciones|X|X|
-|Borrado selectivo de datos profesionales y educativos en escenarios de varias identidades <br><br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
+|Borrado selectivo de datos profesionales y educativos en escenarios de varias identidades <br><br>**Nota:** Para iOS/iPadOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
 |Impedir "Guardar como"|X||
 |Configuración de aplicación de destino (o configuración de aplicación a través del "canal de MAM")|X|X|
 |Compatibilidad con aplicaciones de identidades múltiples|X||
@@ -117,7 +117,7 @@ En esta tabla se indican los valores que se habilitan si una aplicación usa App
 |Requerir el SDK de Intune mínimo para iOS (solo iOS)|X|X|
 |Atestación de dispositivo SafetyNet (solo Android)|X|X|
 |Examen de amenazas en las aplicaciones (solo Android)|X|X|
-|Requerir nivel de riesgo máximo y mínimo de dispositivo de proveedor de Mobile Threat Defense|X||
+|Requerir nivel de riesgo máximo del dispositivo del proveedor de Mobile Threat Defense|X||
 |Configuración del contenido de las notificaciones de una aplicación para las cuentas de organización|X|X|
 |Requerir uso de teclados aprobados (solo Android)|X|X|
 |Requerir directiva de protección de aplicaciones (acceso condicional)|X||

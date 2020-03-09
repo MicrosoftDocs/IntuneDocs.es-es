@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcb3a9f817b0e765fee79342bcd212f33509209a
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 8d47d91388fffd0e5716d20be640c4afbad2862e
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653553"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576324"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 El SDK de aplicaciones de Intune, disponible para iOS y Android, permite que la aplicación admita [directivas de protección de aplicaciones](../apps/app-protection-policy.md) de Intune. Cuando la aplicación tiene aplicadas directivas de protección, puede administrarse mediante Intune y se reconoce mediante Intune como una aplicación administrada. El SDK intenta minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Verá que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar las API del SDK con el objetivo de personalizar el comportamiento de la aplicación para que admita las características que requieren la participación de esta.
@@ -56,7 +56,7 @@ Los administradores de TI pueden solicitar al usuario final que escriba un PIN a
 Los administradores de TI pueden solicitar a los usuarios que inicien sesión con su cuenta profesional o educativa para tener acceso a la aplicación. El SDK de la aplicación de Intune usa Azure Active Directory para proporcionar una experiencia de inicio de sesión única, en la que las credenciales, una vez introducidas, se vuelven a usar para los inicios de sesión posteriores. Además, se admite la autenticación de las soluciones de administración de identidades federadas con Azure Active Directory.
 
 ### <a name="check-device-health-and-compliance"></a>Comprobar el cumplimiento y el estado del dispositivo
-Los administradores de TI pueden comprobar el estado del dispositivo y su cumplimiento de las directivas de Intune antes de que los usuarios finales accedan a la aplicación. En iOS, esta directiva comprueba si se ha descodificado el dispositivo. En Android, esta directiva comprueba si se ha descifrado el dispositivo.
+Los administradores de TI pueden comprobar el estado del dispositivo y su cumplimiento de las directivas de Intune antes de que los usuarios finales accedan a la aplicación. En iOS/iPadOS, esta directiva comprueba si el dispositivo tiene Jailbreak. En Android, esta directiva comprueba si se ha descifrado el dispositivo.
 
 ### <a name="support-multi-identity"></a>Compatibilidad con varias identidades
 Compatibilidad con varias identidades es una característica del SDK que permite la coexistencia de cuentas administradas por directiva (corporativas) y cuentas (personales) no administradas en una sola aplicación.

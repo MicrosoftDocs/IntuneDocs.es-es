@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6f5d11cade1e22ca5d306dd1896e8136f9e7c1ed
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413787"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256414"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>¿Qué es la administración de dispositivos de Microsoft Intune?
 
@@ -33,13 +33,13 @@ La carga de trabajo de **Dispositivos**ofrece información sobre los dispositivo
 
 ## <a name="get-to-your-devices"></a>Ir a los dispositivos
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Seleccione **Dispositivos**. Esta vista muestra información detallada sobre los dispositivos individuales y lo que se puede hacer con ellos, lo que incluye:
 
    - **Información general** muestra una instantánea visual de los dispositivos inscritos y además muestra cuántos dispositivos usan las diferentes plataformas, incluidas Android, iOS/iPadOS, etc.
    - **Todos los dispositivos** muestra una lista de los dispositivos inscritos que administra.
 
-     Use la característica **Exportar** para crear una lista .csv de todos los dispositivos, en incrementos de 10.000 (Internet Explorer) o de 30.000 (Microsoft Edge y Chrome).
+     Use la característica **Exportar** para crear una lista .zip de todos los dispositivos, en incrementos de 10 000 (Internet Explorer) o 30 000 (Microsoft Edge y Chrome).
 
      Seleccione cualquier dispositivo para [ver detalles adicionales sobre ese dispositivo](device-inventory.md), incluidos detalles de hardware, aplicaciones instaladas, estado de la directiva de cumplimiento, etc.
 
@@ -61,7 +61,7 @@ Las acciones disponibles dependen de la plataforma y la configuración del dispo
   - [Borrar](devices-wipe.md#wipe)
   - [Bloqueo remoto](device-remote-lock.md)
   - [Restablecer el código de acceso](device-passcode-reset.md)
-  - [Deshabilitar Bloqueo de activación](device-activation-lock-bypass.md) (solo para iOS)
+  - [Deshabilitar Bloqueo de activación](device-activation-lock-disable.md) (solo para iOS)
   - [Comienzo de cero](device-fresh-start.md) (solo para Windows)
   - [Modo perdido](device-lost-mode.md) (solo para iOS)
   - [Buscar dispositivo](device-locate.md) (solo para iOS)

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: ee3020c2a1dfadb21b55ca29a2295498bf893080
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415530"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781971"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronización de dispositivos para obtener las directivas y las acciones más recientes con Intune
 
@@ -38,12 +38,12 @@ La acción del dispositivo **Sincronizar** obliga al dispositivo seleccionado a 
 
 ## <a name="sync-a-device"></a>Sincronizar un dispositivo
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). 
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). 
 3. Seleccione **Dispositivos** > **Todos los dispositivos**.
 4. En la lista de dispositivos que administra, seleccione un dispositivo para abrir su panel de *información general* y, luego, seleccione **Sincronizar**.
 5. Para confirmar, seleccione **Sí**.
 
-Seleccione **Dispositivos** > **Acciones de dispositivo** para ver el estado de la acción de sincronización.
+Para ver el estado de la acción de sincronización, seleccione **Dispositivos** > **Supervisar** > **Acciones de dispositivo**.
 
 Puede encontrar las frecuencias de sincronización de directivas de Intune estándar en [Tiempos de ciclo de actualización](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 

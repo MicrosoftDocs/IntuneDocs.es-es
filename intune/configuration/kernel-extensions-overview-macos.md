@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 02/25/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,14 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
-ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
+ms.openlocfilehash: f8a516ce9dda525d5c7a48fcbc2c799471489d0d
+ms.sourcegitcommit: ff254acb94df88afc3e3e7b878084052adf40745
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76146776"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77600252"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Incorporación de extensiones de kernel de macOS en Intune
+
+> [!NOTE]
+> Las extensiones de kernel de macOS se van a reemplazar por extensiones del sistema. Para obtener más información, vea [Sugerencia de soporte técnico: Uso de extensiones del sistema en lugar de extensiones de kernel para macOS Catalina 10.15 en Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-using-system-extensions-instead-of-kernel-extensions/ba-p/1191413).
 
 En los dispositivos macOS, puede agregar características en el nivel de kernel. Estas características acceden a elementos del sistema operativo a los que no pueden hacerlo los programas normales. La organización puede tener necesidades o requisitos específicos que no están disponibles en una aplicación, una característica de dispositivo, etc. 
 
@@ -67,7 +70,7 @@ En este artículo se muestra cómo crear un perfil de configuración de disposit
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Seleccione **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 3. Escriba las propiedades siguientes:
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
-ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
-ms.translationtype: MTE75
+ms.openlocfilehash: 163f5dd246fb17e7d67a8baffbae9926f2f4bc79
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75722613"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256448"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de Android Enterprise para marcar dispositivos como compatibles o no compatibles con Intune
 
@@ -35,7 +35,7 @@ Esta característica se aplica a:
 Como administrador del servicio Intune, use esta configuración de cumplimiento para proteger mejor los recursos de la organización. Para más información sobre las directivas de cumplimiento y lo que hacen, vea [Introducción a las directivas de cumplimiento](device-compliance-get-started.md).
 
 > [!IMPORTANT]
-> Las directivas de cumplimiento también aplican dispositivos de Android Enterprise dedicados. Si se asigna una directiva de cumplimiento a un dispositivo dedicado, el dispositivo puede mostrarse como **no conforme**. El acceso condicional y la aplicación de cumplimiento no están disponibles en dispositivos dedicados. Asegúrese de completar las tareas o acciones para obtener dispositivos dedicados compatibles con las directivas asignadas.
+> Las directivas de cumplimiento también se aplican a dispositivos Android Enterprise dedicados. Si se asigna una directiva de cumplimiento a un dispositivo dedicado, es posible que el dispositivo se muestre como **No es compatible**. El acceso condicional y la exigencia del cumplimiento no está disponible en dispositivos dedicados. Asegúrese de completar las tareas o acciones para obtener dispositivos dedicados compatibles con las directivas asignadas.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -45,7 +45,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 ### <a name="device-health"></a>Estado del dispositivo
 
-- **Requerir que el dispositivo esté en el nivel de amenaza del dispositivo**: seleccione el nivel de amenaza de dispositivo máximo permitido evaluado por el [servicio de Mobile Threat Defense](mobile-threat-defense.md). Los dispositivos que superan este nivel de amenaza se marcan como no compatibles. Para usar esta configuración, elija el nivel de amenaza permitido:
+- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**: Seleccione el máximo nivel de amenaza del dispositivo permitido evaluado por el [servicio de defensa frente a amenazas para dispositivos móviles](mobile-threat-defense.md). Los dispositivos que superan este nivel de amenaza se marcan como no compatibles. Para usar esta configuración, elija el nivel de amenaza permitido:
 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
   - **Protegido**: esta opción es la más segura y significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
@@ -54,7 +54,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
   - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
   
 > [!NOTE] 
-> Todos los proveedores de Mobile Threat Defense (MTD) se admiten en las implementaciones de propietarios de dispositivos empresariales de Android mediante la configuración de la aplicación. Consulte con su proveedor de MTD la configuración exacta necesaria para admitir las plataformas de propietarios de dispositivos empresariales de Android en Intune.
+> Todos los proveedores de Mobile Threat Defense (MTD) se admiten en las implementaciones de propietarios de dispositivos Android Enterprise mediante la configuración de la aplicación. Consulte con el proveedor de MTD la configuración exacta necesaria para admitir las plataformas de propietarios de dispositivos Android Enterprise en Intune.
 
 #### <a name="google-play-protect"></a>Google Play Protect
 
@@ -67,13 +67,13 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 #### <a name="operating-system-version"></a>Versión de sistema operativo
 
-- **Versión mínima del sistema operativo**: Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y, a continuación, tener acceso a los recursos de la organización.
+- **Versión mínima del sistema operativo**: Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y luego acceder a los recursos de la organización.
 
-  *De forma predeterminada, no hay ninguna versión configurada*.
+  *De forma predeterminada, no se configura ninguna versión*.
 
 - **Versión máxima de SO**: si un dispositivo usa una versión del sistema operativo posterior a la de la regla, se bloquea el acceso a los recursos de la organización. Se pide al usuario que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no se cambie la regla para permitir la versión de sistema operativo.
 
-  *De forma predeterminada, no hay ninguna versión configurada*.
+  *De forma predeterminada, no se configura ninguna versión*.
 
 - **Nivel mínimo de revisión de seguridad**:  seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. Los dispositivos que no estén al menos en este nivel de revisión se consideran no conformes. La fecha debe especificarse en el formato AAAA-MM-DD.
 
@@ -84,12 +84,9 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 - **Requerir una contraseña para desbloquear dispositivos móviles**: 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Requerir**: los usuarios deben introducir una contraseña para poder acceder al dispositivo. 
-
-  Esta configuración se aplica en el nivel de dispositivo. Si solo tiene que solicitar una contraseña en el nivel de perfil de trabajo, entonces use una directiva de configuración. Vea [Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune](../configuration/device-restrictions-android-for-work.md).
-
+  - **Requerir**: los usuarios deben introducir una contraseña para poder acceder al dispositivo.
   - **Tipo de contraseña requerida**: elija si una contraseña debe incluir solo caracteres numéricos o una combinación de números y otros caracteres. Las opciones son:
-    - **Dispositivo predeterminado** : para evaluar la compatibilidad con contraseñas, asegúrese de seleccionar una seguridad de contraseña distinta de la **predeterminada del dispositivo**.  
+    - **Dispositivo predeterminado**: para evaluar el cumplimiento de las contraseñas, asegúrese de seleccionar una seguridad de contraseña distinta de **Predeterminada del dispositivo**.  
     - **Contraseña necesaria, sin restricciones**
     - **Biométrica deficiente** - [Biométricas eficientes frente a deficientes](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre el sitio web de Android).
     - **Numérica** (*valor predeterminado*): la contraseña solo debe contener números, por ejemplo, `123456789`. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
@@ -98,7 +95,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
     - **Alfanumérica**: incluye letras mayúsculas, minúsculas y caracteres numéricos. Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
     - **Alfanumérica con símbolos**: incluye letras mayúsculas, minúsculas, caracteres numéricos, signos de puntuación y símbolos. Indique también:
     
-    Según el tipo de *contraseña* que seleccione, está disponible la siguiente configuración:  
+    En función del *tipo de contraseña* que seleccione, están disponibles las opciones siguientes:  
     - **Longitud mínima de la contraseña**: escriba la longitud mínima que debe tener la contraseña, entre 4 y 16 caracteres.  
 
     - **Número de caracteres requeridos**: escriba el número de caracteres que debe tener la contraseña, entre 0 y 16 caracteres.
@@ -113,7 +110,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
     
     - **Número de caracteres de símbolo requeridos**: escriba el número de caracteres de símbolo (`&`, `#`, `%`, etc.) que debe tener la contraseña, entre 0 y 16.
  
-- **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado de *no configurado*y de *1 minuto* a *8 horas*.
+- **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado *Sin configurar* y entre *1 minuto* y *8 horas*.
 
 - **Número de días hasta que expire la contraseña**: especifique el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
 
@@ -121,13 +118,13 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 - **Número de contraseñas requeridas antes de que el usuario pueda reusar una**: indique el número de contraseñas recientes que no se pueden volver a usar, entre 1 y 24. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.  
 
-    *De forma predeterminada, no hay ninguna versión configurada*.
+    *De forma predeterminada, no se configura ninguna versión*.
 
 #### <a name="encryption"></a>Cifrado
 
 - **Cifrado de almacenamiento de datos en el dispositivo**: 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Requerir** : Cifre el almacenamiento de datos en los dispositivos.  
+  - **Requerir**: se cifra el almacenamiento de datos en los dispositivos.  
 
   No tiene que configurar este valor ya que los dispositivos Android Enterprise fuerzan el cifrado.
 
@@ -139,7 +136,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
   - **Bloquear**: marcar los dispositivos raíz (con jailbreak) como no conformes.  
 
-- **Requerir que el dispositivo esté en el nivel de amenaza del dispositivo**: seleccione el nivel de amenaza de dispositivo máximo permitido evaluado por el [servicio de Mobile Threat Defense](mobile-threat-defense.md). Los dispositivos que superan este nivel de amenaza se marcan como no compatibles. Para usar esta configuración, elija el nivel de amenaza permitido:
+- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**: Seleccione el máximo nivel de amenaza del dispositivo permitido evaluado por el [servicio de defensa frente a amenazas para dispositivos móviles](mobile-threat-defense.md). Los dispositivos que superan este nivel de amenaza se marcan como no compatibles. Para usar esta configuración, elija el nivel de amenaza permitido:
 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
   - **Protegido**: esta opción es la más segura y significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
@@ -169,13 +166,13 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 #### <a name="operating-system-version"></a>Versión de sistema operativo
 
-- **Versión mínima del sistema operativo**: Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y, a continuación, tener acceso a los recursos de la organización.
+- **Versión mínima del sistema operativo**: Cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede actualizar el dispositivo y luego acceder a los recursos de la organización.
 
-  *De forma predeterminada, no hay ninguna versión configurada*.
+  *De forma predeterminada, no se configura ninguna versión*.
 
 - **Versión máxima de SO**: si un dispositivo usa una versión del sistema operativo posterior a la de la regla, se bloquea el acceso a los recursos de la organización. Se pide al usuario que se ponga en contacto con el administrador de TI. El dispositivo no podrá acceder a los recursos de la empresa mientras no se cambie la regla para permitir la versión de sistema operativo.
 
-  *De forma predeterminada, no hay ninguna versión configurada*.
+  *De forma predeterminada, no se configura ninguna versión*.
 
 ### <a name="system-security"></a>Seguridad del sistema
 
@@ -194,8 +191,8 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
   - **Al menos alfanumérica**: Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
   - **Al menos alfanumérica con símbolos**: Escriba la **longitud mínima de la contraseña** que un usuario debe escribir, entre 4 y 16 caracteres.
 
-  Según el tipo de *contraseña* que seleccione, está disponible la siguiente configuración:  
-  - **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado de *no configurado*y de *1 minuto* a *8 horas*.
+  En función del *tipo de contraseña* que seleccione, están disponibles las opciones siguientes:  
+  - **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña. Las opciones incluyen el valor predeterminado *Sin configurar* y entre *1 minuto* y *8 horas*.
 
   - **Número de días hasta que expire la contraseña**: especifique el número de días, entre 1 y 365, hasta que se deba cambiar la contraseña del dispositivo. Por ejemplo, para cambiar la contraseña después de 60 días, escriba `60`. Cuando la contraseña expire, se le solicitará a los usuarios que creen una nueva contraseña.
 
@@ -207,7 +204,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 - **Cifrado de almacenamiento de datos en el dispositivo**: 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Requerir** : Cifre el almacenamiento de datos en los dispositivos.  
+  - **Requerir**: se cifra el almacenamiento de datos en los dispositivos.  
 
   No tiene que configurar este valor ya que los dispositivos Android Enterprise fuerzan el cifrado.
 
@@ -215,7 +212,7 @@ Como administrador del servicio Intune, use esta configuración de cumplimiento 
 
 - **Bloquear aplicaciones de orígenes desconocidos**: 
   - **Sin configurar** (*valor predeterminado*): no se evalúa el cumplimiento o incumplimiento de esta opción de configuración.
-  - **Bloquee** los dispositivos con **seguridad** > orígenes **desconocidos** habilitados (*admitidos en Android 4,0 a Android 7. x. No se admite en Android 8.0 y versiones posteriores*).  
+  - **Bloquear**: bloquee los dispositivos con orígenes habilitados mediante **Seguridad** > **Orígenes desconocidos** (*admitidos en Android 4.0 a Android 7.x. No se admite en Android 8.0 y versiones posteriores*).  
 
   Para realizar instalaciones de prueba de las aplicaciones, se deben permitir los orígenes desconocidos. Si no realiza instalaciones de prueba de las aplicaciones Android, establezca esta característica en **Bloquear** para habilitar esta directiva de cumplimiento.
 

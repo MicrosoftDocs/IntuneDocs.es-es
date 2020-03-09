@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 11e757d22274a0e1cc327d9037a74e4ffac024dd
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653672"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576348"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -198,15 +198,15 @@ Puede usar los siguientes parámetros de línea de comandos con la herramienta d
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Muestra información de uso detallada sobre las propiedades de línea de comandos disponibles para la herramienta de ajuste de aplicaciones. |
-|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` es decir `login.windows.net/common` |
-|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` es el GUID del campo ID. de cliente procede de la lista de la aplicación en la hoja registro de aplicaciones. |
-|**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` este es el URI de redireccionamiento configurado en el registro de la aplicación. Normalmente sería el protocolo de dirección URL de la aplicación a la que se devolvería la aplicación Microsoft Authenticator después de la autenticación negociada. |
+|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` por ejemplo, `login.windows.net/common` |
+|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` es el GUID del campo Id. de cliente que procede de la lista de la aplicación en la hoja Registro de aplicación. |
+|**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` Este es el URI de redireccionamiento configurado en el registro de la aplicación. Normalmente sería el protocolo URL de la aplicación al que volvería la aplicación Microsoft Authenticator después de la autenticación asincrónica. |
 |**-v**| (Opcional) Genera mensajes detallados para la consola. Se recomienda usar esta marca para depurar cualquier error. |
 |**-e**| (Opcional) Use esta marca para que la herramienta de ajuste de aplicaciones quite los derechos que faltan mientras procesa la aplicación. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para más información.|
 |**-xe**| (Opcional) Imprime información sobre las extensiones de iOS de la aplicación y sobre los derechos necesarios para usarlas. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para más información. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Úsela si la aplicación necesita perfiles de aprovisionamiento de extensión.|
 |**-b**|(Opcional) Use -b sin un argumento si quiere que la aplicación de salida ajustada tenga la misma versión de paquete que la aplicación de entrada (no recomendado). <br/><br/> Use `-b <custom bundle version>` si quiere que la aplicación ajustada tenga un valor CFBundleVersion personalizado. Si decide especificar un valor CFBundleVersion personalizado, se recomienda que incremente el valor de CFBundleVersion de la aplicación nativa según el componente menos significativo, por ejemplo, 1.0.0 -> 1.0.1. |
-|**-citrix**|Opta Incluya el SDK para aplicaciones de Citrix XenMobile (variante solo de red). Para usar esta opción, debe tener el [Kit de herramientas de Citrix MDX](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) instalado. |
+|**-citrix**|(Opcional) Incluya el SDK para aplicaciones de Citrix XenMobile (variante solo de red). Para usar esta opción, debe tener instalado el [kit de herramientas de Citrix MDX](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html). |
 |**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Use esta marca delante del archivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) si decide usar la plantilla plist para especificar el resto de las propiedades de IntuneMAMPackager, como -i, -o y -p. Consulte Usar un archivo plist para la entrada de argumentos. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Usar un archivo plist para la entrada de argumentos
@@ -222,13 +222,13 @@ En la carpeta IntuneMAMPackager/Contents/MacOS, abra `Parameters.plist`, que es 
 | Ruta de acceso del perfil de aprovisionamiento |String|vacío| Igual que -p|
 | Hash del certificado SHA-1 |String|vacío| Igual que -c|
 | Autoridad de ADAL |String|vacío| Igual que -aa|
-| IDENTIFICADOR de cliente de ADAL |String|vacío| Igual que -ac|
+| Id. de cliente de ADAL |String|vacío| Igual que -ac|
 | URI de respuesta de ADAL |String|vacío| Igual que -ar|
 | Modo detallado habilitado |Boolean|false| Igual que -v|
 | Quitar los derechos que faltan |Boolean|false| Igual que -c|
-| Impedir la actualización de la compilación predeterminada |Boolen|false| Equivale a usar -b sin argumentos|
+| Impedir la actualización de la compilación predeterminada |Boolean|false| Equivale a usar -b sin argumentos|
 | Invalidación de la cadena de compilación |String|vacío| Valor de CFBundleVersion personalizado de la aplicación de salida ajustada.|
-| Incluir el SDK de aplicación de Citrix XenMobile (variante solo de red)|Boolean|false| Igual que-Citrix|
+| Incluir el SDK de aplicaciones de Citrix XenMobile (variante solo de red)|Boolean|false| Igual que -citrix|
 | Rutas de acceso del perfil de aprovisionamiento de extensión |Matriz de cadenas|vacío| Matriz de perfiles de aprovisionamiento de extensión para la aplicación.
 
 Ejecute IntuneMAMPackager con plist como único argumento:
@@ -255,7 +255,7 @@ Los casos principales en los que resulta necesario reajustar las aplicaciones so
 * La aplicación tiene una nueva versión. La versión anterior de la aplicación se ha ajustado y cargado en la consola de Intune.
 * La herramienta de ajuste de aplicaciones de Intune para iOS tiene una nueva versión que permite corregir errores importantes o bien presenta características nuevas y específicas relativas a la directiva de protección de la aplicación de Intune. Esto suele darse tras seis u ocho semanas a través del repositorio de GitHub para la [herramienta de ajuste de aplicaciones de Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
-Para iOS, aunque es posible ajustar con un perfil de certificados y aprovisionamiento diferente al original utilizado para firmar la aplicación, si los derechos especificados en la aplicación no se incluyen en el nuevo perfil de aprovisionamiento, se producirá un error en el ajuste. Al usar la opción de línea de comandos "-e", que quita los derechos que faltan de la aplicación, para forzar que el ajuste no produzca un error en este escenario, puede provocar interrupciones de la funcionalidad en la aplicación.
+Para iOS/iPadOS, aunque es posible ajustar con un perfil de certificados y aprovisionamiento diferente al original que se ha usado para firmar la aplicación, si los derechos especificados en la aplicación no se incluyen en el nuevo perfil de aprovisionamiento, se producirá un error en el ajuste. Al usar la opción de línea de comandos "-e", que quita los derechos que faltan de la aplicación, para forzar que el ajuste no produzca un error en este escenario, puede provocar interrupciones de la funcionalidad en la aplicación.
 
 Entre los procedimientos recomendados para el reajuste destacan los siguientes:
 
@@ -289,7 +289,7 @@ Si la herramienta de ajuste de aplicaciones no se completa correctamente, se mos
 |La aplicación de entrada especificada ya se ajustó y se encuentra en la última versión de la plantilla de directiva.|La herramienta de ajuste de aplicaciones no ajustará una aplicación ajustada existente con la última versión de la plantilla de directiva.|
 |WARNING: No ha especificado un hash de certificado SHA1. Asegúrese de que la aplicación ajustada se firme antes de implementarla.|Asegúrese de especificar un valor de hash SHA1 válido después de la marca de línea de comandos –c. |
 
-### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Recopilación de registros para las aplicaciones ajustadas desde el dispositivo
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Obtención de registros para las aplicaciones ajustadas desde el dispositivo
 Siga estos pasos para obtener registros para las aplicaciones ajustadas durante la solución de problemas.
 
 1. Vaya a la aplicación de configuración de iOS en el dispositivo y seleccione la aplicación LOB.
@@ -419,7 +419,7 @@ Use los procedimientos recomendados de seguridad y privacidad siguientes al usar
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Herramienta de ajuste de aplicaciones de Intune para iOS con mVPN de Citrix MDX
 
-Esta característica es una integración con el contenedor de aplicaciones de Citrix MDX para iOS. La integración es simplemente una marca adicional y opcional de línea de comandos, `-citrix` para la Herramienta de ajuste de aplicaciones de Intune general.
+Esta característica es una integración con el contenedor de aplicaciones de Citrix MDX para iOS/iPadOS. La integración es simplemente una marca adicional y opcional de línea de comandos, `-citrix` para la Herramienta de ajuste de aplicaciones de Intune general.
 
 ### <a name="requirements"></a>Requisitos
 

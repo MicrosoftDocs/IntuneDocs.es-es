@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 279b35f2dd7cd515784e86687b7917914ea9cf8c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413700"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781907"
 ---
 # <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>Cierre de la sesión del usuario actual en dispositivos iOS/iPadOS administrados con Intune
 
@@ -41,9 +41,8 @@ La acción **Cerrar sesión del usuario actual** cierra la sesión del usuario a
 
 ## <a name="how-to-log-out-the-current-user"></a>Cómo cerrar la sesión del usuario actual
 
-1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Dispositivos**.
-4. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, seleccione un dispositivo iOS/iPadOS y, luego, seleccione la acción remota del dispositivo **Cerrar sesión del usuario actual**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) y seleccione **Dispositivos** > **Todos los dispositivos**.
+2. Elija un dispositivo iOS/iPadOS > **...**  > **Cerrar sesión del usuario actual**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
